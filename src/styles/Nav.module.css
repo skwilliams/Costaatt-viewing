@@ -1,0 +1,61 @@
+.header {
+  background-color: rgb(172, 186, 213);
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 15px 40px;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  gap: 75px;
+}
+
+.navbarMenus {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.navbarMenus a {
+  text-decoration: none;
+}
+.navbarMenus a:hover {
+  transition: all 0.3s ease;
+  color: white;
+  border: 2px solid white;
+  border-radius: 15px;
+  background: rgb(109, 128, 167);
+  padding: 8px;
+}
+
+.dropDown {
+  list-style: none;
+  font-size: medium;
+  position: absolute;
+  left: 0;
+  top: 105px;
+  line-height: 42px;
+  width: 100vw;
+  background-color: rgb(135, 145, 163);
+  opacity: 80%;
+}
+.dropDown .dropDownLi {
+  color: white;
+  border-bottom: 1px solid white;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.hamburger {
+  display: none;
+}
+
+.parent {
+  display: flex;
+}/*# sourceMappingURL=Nav.module.css.map */

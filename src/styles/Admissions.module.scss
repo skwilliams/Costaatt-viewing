@@ -1,0 +1,37 @@
+.adminHome {
+  margin-bottom: 8rem;
+  height: 100%;
+}
+
+.topHeader {
+  position: relative;
+
+  color: white;
+  img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.topHeaderTitle {
+  position: absolute;
+  padding: 35px;
+  text-transform: uppercase;
+  width: 420px;
+  top: 250px;
+  right: 0;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.applicationInstructions {
+  padding: 15px 20%;
+  // margin-top: 8rem;
+  margin-bottom: 8rem;
+  line-height: 1.5rem;
+}
+
+.applicationInstructions h3 {
+  color: orangered;
+}

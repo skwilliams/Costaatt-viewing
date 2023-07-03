@@ -1,0 +1,527 @@
+@import "./variable";
+
+.homeContainer {
+  background-size: cover;
+  background-position: fixed;
+  background-repeat: no-repeat;
+}
+
+/*Section One, Slider and Select styles*/
+.sectionOne {
+  display: flex;
+  height: 100vh;
+  padding: 0;
+  background-color: $base-color;
+}
+
+.sectionOneLeft {
+  //background-image: url("../../images/Links/CostaatBackTopBack.jpg");
+  background-size: cover;
+  padding: 0 20px;
+  position: relative;
+  display: block;
+  min-width: 30%;
+  height: 100%;
+  margin: auto;
+  // p {
+  //   font-size: 1.1rem;
+  //   margin-top: 15px;
+  //   margin-bottom: 20px;
+  // }
+  h2 {
+    font-size: 4rem;
+    font-weight: bolder;
+    margin-top: 80px;
+  }
+}
+
+.sectionOneRight {
+  height: 100%;
+  min-width: 70%;
+  overflow: hidden;
+}
+
+.sliderImage {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.sliderText {
+  position: relative;
+  bottom: 82px;
+  text-align: center;
+  padding: 20px;
+  background-color: $brown;
+  opacity: 80%;
+  font-size: xx-large;
+  color: white;
+}
+
+.sliderArrows {
+  position: relative;
+  top: 375px;
+  font-size: 6rem;
+  z-index: 10;
+  cursor: pointer;
+  color: white;
+}
+
+.rightSliderArrow {
+  position: absolute;
+  right: 2px;
+}
+
+.leftSliderArrow {
+  position: absolute;
+  left: 30px;
+}
+
+.selectContainer {
+  margin-top: 40px;
+  width: auto;
+  padding: 20px;
+}
+.innerSelectContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+.Arrow {
+  position: absolute;
+  right: 60px;
+  font: 2.5rem sans-serif;
+  height: 100%;
+  overflow: hidden;
+  color: $brown;
+  cursor: pointer;
+}
+
+.innerSelectContainer .selectDropDown {
+  padding: 10px 12px;
+  opacity: 100%;
+
+  cursor: pointer;
+  appearance: none;
+  height: 100%;
+  width: 100%;
+  font-size: large;
+  line-break: 2rem;
+  &:focus,
+  &:hover {
+    outline: none;
+  }
+}
+
+/*Section Two styles*/
+.sectionTwo {
+  padding: 0 120px;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  display: grid;
+  padding-top: 50px;
+  height: 100%;
+  gap: 10px;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .ourSchoolsText {
+    grid-column: 4/5;
+    grid-row: 1/2;
+
+    h1 {
+      text-align: center;
+      color: $brown;
+      font-size: 7rem;
+      padding: 15px;
+    }
+    p {
+      padding: 0 3rem;
+      line-height: 1.8rem;
+      text-align: center;
+    }
+  }
+}
+
+.schoolTile {
+  width: auto;
+  height: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    &:hover {
+      opacity: 90%;
+    }
+  }
+}
+
+.schoolTileTitle {
+  position: relative;
+  bottom: 55px;
+  text-align: center;
+  padding: 10px;
+  background-color: $brown;
+  color: white;
+  opacity: 90%;
+  font-size: smaller;
+}
+
+/*Section Three styles*/
+.sectionThree {
+  padding: 0 20px;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  border-color: lightgray;
+}
+
+.sectionThreeTiles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.events {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 15px;
+  margin-right: 30px;
+  gap: 15px;
+  img {
+    width: 100%;
+    height: 300px;
+    border: 2px solid white;
+    box-shadow: 2px 2px 5px white;
+    object-fit: cover;
+  }
+  h1 {
+    font-size: x-large;
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+  p {
+    padding-bottom: 10px;
+  }
+}
+.eventHeading {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  span {
+    color: $brown;
+  }
+}
+
+/*Section Four styles*/
+.sectionFour {
+  padding: 0 120px;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+
+  border-color: lightgray;
+}
+
+.sectionFourTiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.newsHeading {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  span {
+    color: $brown;
+  }
+}
+
+.newsTileHomepage {
+  position: relative;
+  margin-bottom: 15px;
+  justify-content: center;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+
+  img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 15px;
+    object-fit: cover;
+  }
+  h1 {
+    font-size: large;
+    font-weight: bolder;
+  }
+  .newsDate {
+    background-color: white;
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  &:hover {
+    img {
+      opacity: 90%;
+      object-fit: cover;
+      border: 5px solid white;
+    }
+  }
+}
+.submit {
+  text-align: center;
+  width: 30%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 400ms;
+  &:hover {
+    transform: scale(95%);
+  }
+}
+/*Success section styles*/
+
+.successSlider {
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+}
+.successSection {
+  //background-image: url("../../images/Links/campus 2.jpg");
+  background-size: cover;
+  height: 100%;
+  width: auto;
+  //  padding: 20px;
+}
+
+.successStories {
+  text-align: center;
+  background-color: $brown;
+  color: white;
+  padding: 1rem;
+  p {
+    font-size: larger;
+    text-transform: uppercase;
+    margin-top: 1rem;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+//------------ MOBILE STYLES Max 1200px  -----------------//
+
+@media only screen and (max-width: 1200px) {
+  .sectionOneLeft {
+    padding: 0 3rem;
+    text-align: center;
+    width: 50%;
+    h1 {
+      line-height: 3.3rem;
+      font-size: 1.3rem;
+      font-weight: bolder;
+    }
+  }
+
+  .dropDown {
+    width: 100%;
+  }
+
+  .sectionTwo {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    .ourSchoolsText {
+      grid-column: 1/4;
+      h1 {
+        font-size: 5rem;
+        padding: 0;
+      }
+      p {
+        padding: 0 2rem;
+        text-align: center;
+      }
+    }
+  }
+  .sectionThreeTiles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 0px;
+  }
+
+  .events {
+    p {
+      font-size: small;
+      padding-bottom: 10px;
+    }
+  }
+
+  .eventHeading {
+    text-align: center;
+    font-size: 3rem;
+    span {
+      color: blue;
+    }
+  }
+}
+
+//------------ MOBILE STYLES Max 960px  -----------------//
+
+@media only screen and (max-width: 960px) {
+  .sectionOneLeft {
+    p {
+      display: none;
+    }
+    h1 {
+      display: none;
+    }
+    img {
+      display: none;
+    }
+    margin-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .sectionOneRight {
+    display: none;
+    margin: 0px;
+  }
+
+  .sectionOne {
+    margin: 0px;
+    height: 100%;
+  }
+
+  .sectionTwo {
+    margin-top: 0px;
+    .ourSchoolsText {
+      p {
+        display: none;
+      }
+    }
+  }
+  .sectionThreeTiles {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 0px;
+  }
+
+  .events {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    img {
+      width: 80%;
+      height: auto;
+      padding-right: 0;
+      border: 4px solid white;
+    }
+    h1 {
+      text-align: center;
+      font-size: large;
+      margin-top: 5px;
+    }
+    p {
+      display: none;
+    }
+  }
+
+  .eventHeading {
+    text-align: center;
+    font-size: 3rem;
+    span {
+      color: green;
+    }
+  }
+}
+
+//------------ MOBILE STYLES Max 480px  -----------------//
+
+@media only screen and (max-width: 480px) {
+  .sectionOneLeft {
+    margin-top: 40px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .sectionTwo {
+    padding-top: 0;
+    display: block;
+    .ourSchoolsText {
+      h1 {
+        display: none;
+      }
+    }
+  }
+  .schoolTile {
+    height: 300px;
+    margin-bottom: 5px;
+  }
+  .schoolTileTitle {
+    font-size: large;
+  }
+
+  .sectionThreeTiles {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 10px;
+  }
+
+  .events {
+    grid-template-columns: repeat(1, 1fr);
+
+    width: 100%;
+
+    img {
+      width: 100%;
+      border: 1px solid white;
+    }
+    h1 {
+      font-size: small;
+    }
+    p {
+      display: none;
+    }
+  }
+
+  .eventHeading {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 8px;
+  }
+  .newsHeading {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 8px;
+    span {
+      color: yellow;
+    }
+  }
+
+  .successStories {
+    p {
+      text-align: center;
+    }
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,271 @@
+.homeContainer {
+  background-image: url("../../images/Links/homeBackground.jpg");
+  background-size: cover;
+  background-position: fixed;
+  background-repeat: no-repeat;
+}
+
+/*Section One, Slider and Select styles*/
+.sectionOne {
+  display: flex;
+  height: 100vh;
+}
+
+.sectionOneLeft {
+   margin-top: 25px;
+  padding: 0 20px;
+  display: block;
+  min-width: 40%;
+}
+.sectionOneLeft p {
+  font-size: 1.1rem;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.sectionOneLeft h1 {
+  line-height: 3rem;
+  font-size: 1.7rem;
+  font-weight: bolder;
+}
+
+.sectionOneRight {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sliderImage {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sliderText {
+  position: relative;
+  bottom: 220px;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(172, 186, 213);
+  font-size: xx-large;
+}
+
+.sliderArrows {
+  position: relative;
+  top: 375px;
+  font-size: 6rem;
+  z-index: 10;
+  cursor: pointer;
+  color: white;
+}
+
+.rightSliderArrow {
+  position: absolute;
+  right: 2px;
+}
+
+.leftSliderArrow {
+  position: absolute;
+  left: 30px;
+}
+
+.dropDown {
+  background-color: rgb(172, 186, 213);
+  margin-top: 20px;
+  height: 40%;
+  width: 90%;
+  color: black;
+  padding: 20px;
+}
+.dropDown h1 {
+  font-size: x-large;
+}
+
+.dropDownSelect {
+  height: 80px;
+}
+
+/*Section Two styles*/
+.sectionTwo {
+  background-color: rgb(172, 186, 213);
+  display: grid;
+  padding-top: 20px;
+  height: 100%;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.sectionTwo a {
+  text-decoration: none;
+}
+.sectionTwo .ourSchoolsText {
+  grid-column: 4/5;
+  grid-row: 1/4;
+}
+.sectionTwo .ourSchoolsText h1 {
+  text-align: center;
+  color: white;
+  font-size: 7rem;
+  line-height: 7rem;
+  padding: 5px;
+}
+.sectionTwo .ourSchoolsText p {
+  padding: 1rem 3rem;
+  line-height: 1.5rem;
+}
+
+.tile {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+}
+.tile img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tileTitle {
+  position: relative;
+  bottom: 90px;
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+  font-size: smaller;
+}
+
+.sectionThree {
+  padding: 20px;
+  height: 100%;
+}
+
+.sectionThreeTiles {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 30px;
+}
+
+.events {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.events img {
+  width: 340px;
+  height: 300px;
+}
+.events h1 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.events p {
+  font-size: 1rem;
+  padding-bottom: 10px;
+}
+
+.eventHeading {
+  font-family: Arial Black;
+  text-align: center;
+  font-size: 4rem;
+}
+.eventHeading span {
+  font-family: Arial Black;
+  color: blue;
+}
+
+.sectionFour {
+  background-image: url("../../images/Links/campus 2.jpg");
+  background-size: cover;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 20px;
+}
+
+.successStories {
+  padding-right: 230px;
+  text-align: right;
+}
+.successStories h1 {
+  font-size: 55px;
+}
+.successStories a {
+  text-decoration: none;
+  color: white;
+  text-align: end;
+}
+
+.succeessButton {
+  position: relative;
+  float: right;
+  justify-content: end;
+  text-align: center;
+  margin-top: 10px;
+  padding: 30px;
+  width: 200px;
+  background-color: rgb(172, 186, 213);
+}
+
+@media only screen and (max-width: 960px) {
+  .sectionOneLeft {
+    padding: 0 3rem;
+    text-align: center;
+    width: 100%;
+  }
+  .sectionOneRight {
+    display: none;
+  }
+  .dropDown {
+    width: 100%;
+  }
+  .sectionTwo {
+    padding-top: 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sectionTwo .ourSchoolsText {
+    grid-column: 1/3;
+  }
+  .sectionTwo .ourSchoolsText h1 {
+    text-align: center;
+    font-size: 7rem;
+    padding: 0;
+  }
+  .sectionTwo .ourSchoolsText p {
+    padding: 1rem 8rem;
+    line-height: 1.5;
+  }
+  .sectionThreeTiles {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .events {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+  .events img {
+    width: 340px;
+    height: 300px;
+  }
+  .events h1 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+  .events p {
+    font-size: 1rem;
+    padding-bottom: 10px;
+  }
+  .eventHeading {
+    font-family: Arial Black;
+    text-align: center;
+    font-size: 3rem;
+  }
+  .eventHeading span {
+    font-family: Arial Black;
+    color: blue;
+  }
+}/*# sourceMappingURL=Home.module.css.map */
