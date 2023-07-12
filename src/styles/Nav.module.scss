@@ -1,19 +1,13 @@
 @import "./variable";
 
 .header {
-  position: sticky;
-  z-index: 40;
-  top: 0;
+  // position: sticky;
 }
 
 .headerStyles {
-  background-color: white;
-  display: flex;
+  //background-color: green;
+  // display: flex;
 
-  width: 100%;
-  gap: 20px;
-  justify-content: space-between;
-  padding: 15px 15px;
   // animation: navLoad 300ms ease-in;
   animation: navScale 300ms ease-in;
   transform: scale(0);
@@ -26,7 +20,7 @@
 }
 
 .hover-underline-animation::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -42,11 +36,33 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-.navbar {
+
+.topNav {
   display: flex;
-  padding: 5px;
+  padding: 5px 30px;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+}
+
+.centerNav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+
+  text-align: center;
   align-items: center;
 }
+.centerNav h2 {
+  font-size: 1.7rem;
+}
+
+.bottomNav {
+  justify-content: center;
+  padding: 5px 30px;
+  display: flex;
+}
+
 .navbarMenus {
   display: flex;
   gap: 20px;
@@ -60,61 +76,44 @@
 }
 .navBarLinks {
   width: 100%;
-  padding: 5px 5px;
+  padding: 9px 5px;
   text-decoration-color: white;
   cursor: pointer;
 }
+
 .navBarLinks:hover {
   transition: all 0.8s ease;
   border-radius: 15px;
   text-decoration: underline;
   text-decoration-thickness: 0.2rem;
   text-underline-position: under;
-  text-decoration-color: $brown;
   background: white;
-  padding: 5px 5px;
-  text-Decoration: underline !important;
+  color: $base-color;
+  padding: 9px 5px;
+  text-decoration: underline !important;
 }
 
 .dropDownMain {
-  // display: flex;
-  position: absolute;
-  left: 0px;
-  top: 100px;
+  left: 0;
+  top: 195px;
   width: 100%;
-  z-index: 20;
-}
-
-.dropDownNotices {
-  background-color: white;
-  // width: 70%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: center;
-  text-align: center;
-  padding: 22px;
+  position: absolute;
 }
 
 .dropDown {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  //  grid-template-columns: repeat(8, 2fr);
-  list-style: none;
-  font-size: medium;
-  top: 105px;
-  margin: auto;
-  line-height: 24px;
-  opacity: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   background-color: $base-color;
-
+  box-shadow: inset 0px 14px 15px rgba(0, 0, 0, 0.3);
+  padding: 40px 120px;
   .dropDownLi {
-    display: flex;
     color: white;
-    //border-bottom: 1px solid white;
     padding: 20px;
-    text-align: left;
+    align-content: center;
+    width: 100%;
+    height: fit-content;
     &:hover {
       transition: all 1s ease;
       color: black;
@@ -123,6 +122,25 @@
   }
 }
 
+.dropDownPictures {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  text-align: center;
+}
+
+.dropDownLinksGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.tempSquare {
+  background-color: black;
+  margin-bottom: 20px;
+  width: 250px;
+  height: 175px;
+}
+//need to finish
 .magnifyingGlass {
   border: 1px rgb(109, 128, 167) solid;
 

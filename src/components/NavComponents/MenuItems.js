@@ -1,24 +1,33 @@
 import DropDown from "./DropDown";
-import { FaAngleDown } from "react-icons/fa";
+import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import navStyles from "../../styles/Nav.module.scss";
 import { useState } from "react";
 
-const MenuItems = ({ items }) => {
+const MenuItems = ({ items, isLastItem }) => {
   const [showDropDown, setShowDropDown] = useState(false);
+
+  //pass this itemStyle to component
+  const itemStyle = isLastItem
+    ? {
+        backgroundColor: "rgb(58, 168, 199)",
+        color: "black",
+        padding: "7px",
+      }
+    : {};
 
   return (
     <li onClick={() => setShowDropDown((prev) => !prev)}>
       {items.submenu ? (
-        <div className={navStyles.navBarLinks}>
+        <div className={navStyles.navBarLinks} style={itemStyle}>
           {/* Need to put correct href link of submenu and searchbar */}
           {items.title}
-          <FaAngleDown />
+          {showDropDown ? <FaAngleUp /> : <FaAngleDown />}
 
           {/* if showdropdown is true display dropdown */}
           {showDropDown && <DropDown items={items} />}
         </div>
       ) : (
-        <div className={navStyles.navBarLinks}>
+        <div className={navStyles.navBarLinks} style={itemStyle}>
           <a href={items.url}>{items.title}</a>
         </div>
       )}

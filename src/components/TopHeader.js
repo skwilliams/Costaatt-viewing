@@ -5,7 +5,7 @@ import admissionStyles from "../styles/Admissions.module.scss";
 const TopHeader = ({ image, color, text }) => {
   return (
     <div>
-      <Image src={image} />
+      <Image src={image} alt="img" />
       <h1
         className={admissionStyles.topHeaderTitle}
         style={{ backgroundColor: color }}

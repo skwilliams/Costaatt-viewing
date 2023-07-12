@@ -8,6 +8,7 @@ import {
   TableCell,
   Paper,
 } from "@mui/material";
+
 const FeesAndFunding = ({ dept }) => {
   return (
     <TableContainer component={Paper}>
@@ -26,7 +27,6 @@ const FeesAndFunding = ({ dept }) => {
           {dept.map((row) => (
             <TableRow key={row}>
               <TableCell>{row.Programme}</TableCell>
-
               <TableCell>{row.Total_Credit}</TableCell>
               <TableCell>{row.National}</TableCell>
               <TableCell>{row.CARICOM}</TableCell>

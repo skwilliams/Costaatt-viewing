@@ -8,9 +8,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 const Headernew = () => {
   return (
     <header>
-      <div className>
-     
-      </div>
+      <div className></div>
     </header>
   );
 };

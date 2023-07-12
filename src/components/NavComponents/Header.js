@@ -10,9 +10,6 @@ const Header = () => {
     <header className={navStyles.header}>
       <div className={navStyles.headerStyles}>
         <div>
-          <Link href="/">
-            <Image src={logo} alt="costaatt logo" height={70} />
-          </Link>
           <GiHamburgerMenu className={navStyles.hamburger} />
         </div>
         <Navbar />

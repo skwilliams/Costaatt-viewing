@@ -9,6 +9,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+
 import {
   institutionFees,
   deptOfInformation,
@@ -27,7 +28,7 @@ import {
   continuingEduc,
   deptOFJour,
   deptOfComm,
-} from "../../pages/admissions/admissionsData";
+} from "./admissionsData";
 import {
   TableContainer,
   Table,
@@ -52,7 +53,7 @@ const feesandfunding = () => {
           <p>
             The table below provides a summary of fees payable to the College.
             Only nationals of Trinidad and Tobago are eligible to receive
-            government's GATE funding for tuition expenses listed hereunder.
+            government&#39;s GATE funding for tuition expenses listed hereunder.
           </p>
           <p>&nbsp;</p>
           <div>
@@ -71,7 +72,6 @@ const feesandfunding = () => {
                   {institutionFees.map((row) => (
                     <TableRow key={row.Fees}>
                       <TableCell>{row.Fees}</TableCell>
-
                       <TableCell>{row.Citizens}</TableCell>
                       <TableCell>{row.Caricom}</TableCell>
                       <TableCell>{row.International}</TableCell>
@@ -266,7 +266,7 @@ const feesandfunding = () => {
               <li> Cash </li>
               <li>LINX</li>
               <li>Visa/Master card </li>
-              <li>Certified/Manager's cheque</li>
+              <li>Certified/Manager&#39;s cheque</li>
             </ul>
             <p>
               Institutional fees are non-refundable. Students who officially

@@ -62,7 +62,7 @@ const Home = () => {
             {/* <h1>The Freedom to Dream</h1>
             <h1>The Environment to Thrive</h1>
             <h1>The Technology to Win</h1> */}
-            <h2>Experience Costaatt</h2>
+            <h2>Write your own story</h2>
 
             <div className={HomeStyles.selectContainer}>
               <h3>I am</h3>

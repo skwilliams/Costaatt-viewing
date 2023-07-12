@@ -9,10 +9,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Typography from "@mui/material/Typography";
-import {
-  supportDocA,
-  supportDocB,
-} from "../../pages/admissions/admissionsData";
+import { supportDocA, supportDocB } from "./admissionsData";
 
 import {
   TableContainer,
@@ -36,14 +33,14 @@ const requirements = () => {
             <h1> MINIMUM ENTRY REQUIREMENTS</h1>
             <br />
             <p>
-              Five (5) CSEC (CXC)/GCE O'Level subjects, inclusive of English A
-              and Mathematics, Grades 1,2,3* or A,B,C.
+              Five (5) CSEC (CXC)/GCE O&#39;Level subjects, inclusive of English
+              A and Mathematics, Grades 1,2,3* or A,B,C.
             </p>
             <p>&nbsp;</p>
             <p>*Grade 3 accepted if attained in June 1998 or beyond</p>
             <p>&nbsp;</p>
             <p>
-              Applicants who possess CAPE or A'Level qualiﬁcations may be
+              Applicants who possess CAPE or A&#39;Level qualiﬁcations may be
               considered for advanced standing (the award of credits towards
               your degree programme). <Link href="">Find out more.</Link>
             </p>
@@ -155,7 +152,7 @@ const requirements = () => {
           <br />
           <div>
             <TableContainer component={Paper}>
-              <Table aria-aria-label="simple table">
+              <Table aria-label="simple table">
                 <TableHead sx={{ backgroundColor: "royalblue" }}>
                   <TableRow>
                     <TableCell>

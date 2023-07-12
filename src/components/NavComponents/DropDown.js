@@ -1,40 +1,43 @@
 import Link from "next/link";
 import navStyles from "../../styles/Nav.module.scss";
 import logo from "../../../images/Links/costaatLogoBlack.png";
+import { FaAngleDown, FaAngleUp } from "react-icons/fa";
+import Image from "next/image";
+import { useState } from "react";
 const DropDown = ({ items }) => {
+  const [showDropDown, setShowDropDown] = useState(false);
+
   return (
     <div className={navStyles.dropDownMain}>
-      <div className={navStyles.test}>
-        <ul className={navStyles.dropDown}>
+      <div
+        className={navStyles.dropDown}
+        onClick={() => setShowDropDown((prev) => !prev)}
+      >
+        <div className={navStyles.dropDownLinksGrid}>
           {items.submenu.map((submenu, index) => (
-            <li key={index} className={navStyles.dropDownLi}>
-              <Link href={submenu.href}>{submenu.title}</Link>
-            </li>
-          ))}
-        </ul>
-        <div className={navStyles.dropDownNotices}>
-          {items.notices ? (
             <>
-              <Link href="/" className={navStyles.dropDownNoticesLink}>
-                {items.notices.map((item, index) => (
-                  <>
-                    <div key={index}>
-                      <h1>{item.heading}</h1>
-                      <p>{item.text}</p>
-                    </div>
-                  </>
-                ))}
-              </Link>
-              <div>
-                <img src={logo} />
+              <div className={navStyles.dropDownLi}>
+                <Link href={submenu.href}>{submenu.title}</Link>
               </div>
+              {/* <li key={index} className={navStyles.dropDownInner}>
+                {showDropDown && submenu.innerMenu
+                  ? submenu.innerMenu.map((menu) => (
+                      <Link href={submenu.href}>{menu.title}</Link>
+                    ))
+                  : ""}
+              </li> */}
             </>
-          ) : (
-            <h1>
-              Costatt Logo <br />
-              if nothing is shown
-            </h1>
-          )}
+          ))}
+        </div>
+        <div className={navStyles.dropDownPictures}>
+          <div>
+            <div className={navStyles.tempSquare}></div>
+            <h3>Admissions</h3>
+          </div>
+          <div>
+            <div className={navStyles.tempSquare}></div>
+            <h3>Visits Us</h3>
+          </div>
         </div>
       </div>
     </div>

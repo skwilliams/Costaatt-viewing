@@ -9,10 +9,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import {
-  supportDocA,
-  supportDocB,
-} from "../../pages/admissions/admissionsData";
+import { supportDocA, supportDocB } from "./admissionsData";
 import {
   TableContainer,
   Table,
@@ -105,7 +102,7 @@ const applynow = () => {
           </h3>{" "}
           <p>&nbsp;</p>
           <TableContainer component={Paper}>
-            <Table aria-aria-label="simple table">
+            <Table aria-label="simple table">
               <TableHead sx={{ backgroundColor: "royalblue" }}>
                 <TableRow>
                   <TableCell>
@@ -363,7 +360,7 @@ const applynow = () => {
               </AccordionSummary>
               <AccordionDetails>
                 <p>
-                  To be admitted to the music programme (bachelor's and
+                  To be admitted to the music programme (bachelor&#39;s and
                   associate degree), short-listed applicants will be required to
                   successfully complete the audition process.
                 </p>
@@ -408,8 +405,8 @@ const applynow = () => {
                 <p>
                   Please note that placement tests are online assessments. For
                   applicants who do not have access to a laptop, computer or
-                  Internet, arrangements will be made to sit an 'in-person' test
-                  at a campus.
+                  Internet, arrangements will be made to sit an
+                  &#39;in-person&#39; test at a campus.
                 </p>
                 <p>
                   Remember, this is an important step towards your academic
@@ -427,17 +424,18 @@ const applynow = () => {
                     Persons who completed degree level studies at COSTAATT
                   </li>
                   <li>
-                    Holders of bachelor's and associate degrees from other
+                    Holders of bachelor&#39;s and associate degrees from other
                     recognised institutions
                   </li>
                   <li>Holders of recognised professional certification</li>
                   Exempt from English test only:
                   <li>
-                    CAPE/GCE A' Level graduates with grades 1, 2 or 3 / A, B or
-                    C in Communication Studies or Literature
+                    CAPE/GCE A&#39; Level graduates with grades 1, 2 or 3 / A, B
+                    or C in Communication Studies or Literature
                   </li>
                   <li>
-                    CSEC/GCE O'Level graduates with grade 1 or A in English A
+                    CSEC/GCE O&#39;Level graduates with grade 1 or A in English
+                    A
                   </li>
                   <li></li>
                   <li></li>
@@ -449,10 +447,11 @@ const applynow = () => {
                   COSTAATT
                 </p>
                 <p>
-                  CAPE/ A'Level graduates with grades 1, 2 or 3 / A, B or C in
-                  Mathematics or Physics CSEC/ GCE O' Level graduates with
-                  grades 1, 2 or 3 / A, B or C in Additional Mathematics CSEC/
-                  GCE O' Level graduates with grade 1 or A in Mathematics
+                  CAPE/ A&#39;Level graduates with grades 1, 2 or 3 / A, B or C
+                  in Mathematics or Physics CSEC/ GCE O&#39; Level graduates
+                  with grades 1, 2 or 3 / A, B or C in Additional Mathematics
+                  CSEC/ GCE O&#39; Level graduates with grade 1 or A in
+                  Mathematics
                 </p>
               </AccordionDetails>
             </Accordion>
