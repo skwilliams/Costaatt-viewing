@@ -46,44 +46,18 @@ export const mainNavLinks = [
         title: "All Courses",
         href: "/programmes",
       },
-      {
-        title: "Schools",
-        href: "/coursesbysubject",
-        innerMenu: [
-          {
-            title: "School of Nursing, Health and Medical Technologies",
-          },
-          {
-            title: "School of Liberal Arts, Education and Digital Humanities",
-          },
-          {
-            title: "School of Environment, Circular Economy and Sustainability",
-          },
-          {
-            title:
-              "The Ken Gordon School of Communication Creative and Digital Media",
-          },
-          {
-            title: "School of Business and Digital Technologies",
-          },
-          {
-            title: "School of Workforce Enhancement and Development",
-          },
-        ],
-      },
-      {
-        title: "Academic Calendar",
-        href: "/",
-      },
+
       {
         title: "College Core",
         href: "/",
       },
-      {
-        img: "This is an image",
-        title: "Areas of Study",
-        href: "/",
-      },
+      // {
+      //   title: "Areas of Study",
+      //   href: "/",
+      // }, // {
+      //   title: "Academic Calendar",
+      //   href: "/",
+      // },
     ],
     notices: [
       { text: "A link to a page" },
@@ -95,6 +69,39 @@ export const mainNavLinks = [
       { text: "A link to a page" },
     ],
   },
+
+  {
+    title: "Schools",
+    href: "/coursesbysubject",
+    submenu: [
+      {
+        title: "School of Nursing, Health and Medical Technologies",
+        href: "/programmes",
+      },
+      {
+        title: "School of Liberal Arts, Education and Digital Humanities",
+        href: "/programmes",
+      },
+      {
+        title: "School of Environment, Circular Economy and Sustainability",
+        href: "/programmes",
+      },
+      {
+        title:
+          "The Ken Gordon School of Communication Creative and Digital Media",
+        href: "/programmes",
+      },
+      {
+        title: "School of Business and Digital Technologies",
+        href: "/programmes",
+      },
+      {
+        title: "School of Workforce Enhancement and Development",
+        href: "/programmes",
+      },
+    ],
+  },
+
   {
     title: "Admissions and Aid ",
     submenu: [

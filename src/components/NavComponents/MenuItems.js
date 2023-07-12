@@ -9,7 +9,7 @@ const MenuItems = ({ items, isLastItem }) => {
   //pass this itemStyle to component
   const itemStyle = isLastItem
     ? {
-        backgroundColor: "rgb(58, 168, 199)",
+        backgroundColor: "yellow",
         color: "black",
         padding: "7px",
       }
@@ -18,7 +18,7 @@ const MenuItems = ({ items, isLastItem }) => {
   return (
     <li onClick={() => setShowDropDown((prev) => !prev)}>
       {items.submenu ? (
-        <div className={navStyles.navBarLinks} style={itemStyle}>
+        <div className={navStyles.navBarLinks}>
           {/* Need to put correct href link of submenu and searchbar */}
           {items.title}
           {showDropDown ? <FaAngleUp /> : <FaAngleDown />}

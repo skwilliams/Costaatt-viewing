@@ -32,11 +32,11 @@ const DropDown = ({ items }) => {
         <div className={navStyles.dropDownPictures}>
           <div>
             <div className={navStyles.tempSquare}></div>
-            <h3>Admissions</h3>
+            <p>Academic Calendar</p>
           </div>
           <div>
             <div className={navStyles.tempSquare}></div>
-            <h3>Visits Us</h3>
+            <p>Areas of Study</p>
           </div>
         </div>
       </div>

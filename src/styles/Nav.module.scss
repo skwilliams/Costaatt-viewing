@@ -47,10 +47,8 @@
 
 .centerNav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 15px 40px;
-
-  text-align: center;
   align-items: center;
 }
 .centerNav h2 {
@@ -67,12 +65,12 @@
   display: flex;
   gap: 20px;
   list-style: none;
-  a {
-    text-decoration: none;
-    color: inherit;
-    border-radius: 15px;
-    width: fit-content;
-  }
+  // a {
+  //   text-decoration: none;
+  //   color: inherit;
+  //   border-radius: 15px;
+  //   width: fit-content;
+  // }
 }
 .navBarLinks {
   width: 100%;
@@ -95,7 +93,7 @@
 
 .dropDownMain {
   left: 0;
-  top: 195px;
+  top: 230px;
   width: 100%;
   position: absolute;
 }
