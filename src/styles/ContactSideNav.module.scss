@@ -1,0 +1,48 @@
+@import "./variable";
+
+.sidenavcontact{
+    background-color:#F0F0F0;
+    margin-top:.5rem;
+    font-family: "Lato","sans serif";
+    font-size:1.25rem;
+    margin-left:1rem;
+    color:		#1d1d1f;
+    
+    }
+    .sidenav p{
+      font-size:1.5rem;
+      color:		#1d1d1f;
+      margin-bottom: 1rem ;
+      font-weight: 700;
+    
+    }
+    .name{
+     
+      margin: .5rem 0;
+    }
+    
+    .tel{
+      /* color:red; */
+      margin: 0;
+    }
+    .email{
+      color:red;
+      margin: 0;
+      padding: 0;
+    }
+    .sidenavbutton{
+    
+        background-color:red; 
+        border: .25em;
+        
+        color: whitesmoke;
+        padding: 1rem 2rem ;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.25rem;
+        font-weight: bolder;
+        /* margin: .25rem .50rem; */
+        cursor: pointer;
+      
+    }
