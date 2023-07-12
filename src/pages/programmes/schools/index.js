@@ -1,128 +1,114 @@
-import React from "react";
-import ProgStyles from "../../styles/Programmes.module.scss";
-import Image from 'next/image';
+import React from 'react';
+import ProgStyles from "../../../styles/Programmes.module.scss"
+import visitus from "../../../../images/Programmes/visit-home-v2.jpg"
+import SchoolCard from '../../../components/PageComponents/SchoolCard';
+import SchoolImage from "../../../../images/Links/campus 1.jpg";
+import Layout from '@/components/Layout';
+import Link from 'next/link';
+import Image from "next/image";
 import Head from 'next/head';
-import Link from "next/link";
 import HeadImage from "@/components/PageComponents/HeadImage";
-import imgwhy1 from "../../../images/Programmes/acttlogo.jpg";
-import headImg from "../../../images/Programmes/tester2.jpg";
-import Layout from '@/components/Layout'
-import studyitems from '../../components/PageComponents/AreasStudyItems'
+import headImg from "../../../../images/Programmes/tester2.jpg";
 
 
 
-const progoverview = () => {
-  console.log(studyitems)
+
+const schools = () => {
+  
   return (
     <>
-      <Head>
-        <title>Overview of Programmes </title>
-      </Head>
-      
-<HeadImage imagetext="Programmes" mainimage={headImg} />
+    <Head>
+      <title>Schools</title>
+    </Head>
+    
+<HeadImage imagetext="Schools" mainimage={headImg} />
 
 
+    <section id="overview" className={ProgStyles.sectionoverview }>
+    <div className={ProgStyles.umargintopsmall}>
+      <p className={ProgStyles.headingprimary} > Overview of Schools</p>
+       <p className={ProgStyles.text}>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed
+        quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo
+        eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde.
+        We are here for you Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa?
+        Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo
+        necessitatibus praesentium! Dolorem.
+      </p>
+    </div>
+    </section>
 
-<p className={ProgStyles.headingprimarysub}>COSTAATT/Programmes/Overview </p>     
 
-<section id="overview" className={ProgStyles.sectionoverview }>
-  <div className={ProgStyles.umargintopsmall}>
-    <p className={ProgStyles.headingprimary} > Overview of Programmes</p>
-     <p className={ProgStyles.text}>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed
-      quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo
-      eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde.
-      We are here for you Lorem ipsum dolor sit amet consectetur adipisicing
-      elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa?
-      Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo
-      necessitatibus praesentium! Dolorem.
-    </p>
-  </div>
+     <section id='all schools' className ={ProgStyles.sectionallschools}>
+    <SchoolCard image ={SchoolImage}
+    schoolname="School of Business and Digital Technologies"
+    intro="lorem ispsum isdf Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed
+    quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo
+    eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde.
+    We are here for you Lorem ipsum dolor sit amet consectetur adipisicing
+   "
+    linkpage="/programmes/schools/sbdt"
+    shortname="SBDT"
+    
+    />
+    <SchoolCard image ={SchoolImage}
+    schoolname=" School of Liberal Arts, Education and Digital Humanities "
+    intro="lorem ispsum isdf Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed
+    quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo
+    eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde.
+    We are here for you Lorem ipsum dolor sit amet consectetur adipisicing
+   "
+    linkpage="/programmes/schools/"
+    shortname="SLAEDH"
+    
+    />
+    <SchoolCard image ={SchoolImage}
+    schoolname="The School of Workforce Enhancement and Development  "
+    intro="lorem ispsum isdf Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed
+    quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo
+    eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde.
+    We are here for you Lorem ipsum dolor sit amet consectetur adipisicing
+   "
+    linkpage="/programmes/schools/"
+    shortname="SWED"
+    
+    />
+    <SchoolCard image ={SchoolImage}
+    schoolname="School of Nursing, Health and Medical Technologies "
+    intro="lorem ispsum isdf Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed
+    quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo
+    eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde.
+    We are here for you Lorem ipsum dolor sit amet consectetur adipisicing
+   "
+    linkpage="/programmes/schools/"
+    shortname="SNHM"
+    
+    />
+    <SchoolCard image ={SchoolImage}
+    schoolname="The Ken Gordon School of Communication, Creative and Digital Media "
+    intro="lorem ispsum isdf Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed
+    quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo
+    eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde.
+    We are here for you Lorem ipsum dolor sit amet consectetur adipisicing
+   "
+    linkpage="/programmes/schools/kgsc"
+    shortname="KGSC"
+    
+    /><SchoolCard image ={SchoolImage}
+    schoolname="School of Environment, Circular Economy and Sustainability  "
+    intro="lorem ispsum isdf Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed
+    quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo
+    eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde.
+    We are here for you Lorem ipsum dolor sit amet consectetur adipisicing
+   "
+    linkpage="/programmes/schools/"
+    shortname="SECE"
+    
+    />
 
-</section>
-<section id="bynumbers" className={ProgStyles.sectionbythenumbers}>
-  <div className={ProgStyles.umargintopsmall}>
-    <p className={ProgStyles.headingprimary}> By the Numbers </p>
-    <div className={ProgStyles.progGridCon}>
-      <div className={ProgStyles.progGrid}>
-        <h2 className={ProgStyles.bythenumbers}>20</h2>
-        <p className={ProgStyles.bythenumbersheading}>Bachelors</p>
-        <p className={ProgStyles.bythenumberstext}>
-           In a wide range of areas
-        </p>
-        <Link className={ProgStyles.explore} href="/programmes/undergrad">
-          {" "}
-          View Bachelor Degrees →
-        </Link>
-      </div>
-      <div className={ProgStyles.progGrid}>
-        <h2 className={ProgStyles.bythenumbers}>24</h2>
-        <p className={ProgStyles.bythenumbersheading}>Associates</p>
-        <p className={ProgStyles.bythenumberstext}>
-           Prepare you for Bachelor Degrees
-        </p>
-        <Link className={ProgStyles.explore} href="/programmes/associate">
-          {" "}
-          View Associate Degrees →
-        </Link>
-      </div>
-      <div className={ProgStyles.progGrid}>
-        <h2 className={ProgStyles.bythenumbers}>19</h2>
-        <p className={ProgStyles.bythenumbersheading}>Certificates</p>
-        <p className={ProgStyles.bythenumberstext}>
-          {" "}
-          A wide range available 
-        </p>
-        <Link className={ProgStyles.explore}  href="/programmes/certificates">
-          {" "}
-          View All Certificates →
-        </Link>
-      </div>
-      <div className={ProgStyles.progGrid}>
-        <h2 className={ProgStyles.bythenumbers}>7</h2>
-        <p className={ProgStyles.bythenumbersheading}>Diplomas</p>
-        <p className={ProgStyles.bythenumberstext}>
-          {" "}knowledge packed & Quick
-        </p>
-        <Link className={ProgStyles.explore} href="/programmes/diploma">
-          {" "}
-          View All Diploma →
-        </Link>
-      </div>
-    </div> 
-    <p />
-  </div>
-</section>
-<section id="whychoose" className={ProgStyles.sectionwhychoose}>
-  <div className={ProgStyles.umargintopsmall}>
-    <p className={ProgStyles.headingprimary}> Why Choose Us </p>
-    <div className={ProgStyles.progGridCon}>
-      <div className={ProgStyles.progGrid}>
-        
-     <Image className={ProgStyles.whychooseimg} src={imgwhy1} alt="page image" />
-        <p className={ProgStyles.whychoosetext}>Top Class Lecturers</p>
-       
-      </div>
-      <div className={ProgStyles.progGrid}>
-      <Image className={ProgStyles.whychooseimg} src={imgwhy1}   alt="page image" />
-        <p className={ProgStyles.whychoosetext}>Accredited Programmes</p>
-       
-      </div>
-      <div className={ProgStyles.progGrid}>
-      <Image className={ProgStyles.whychooseimg} src={imgwhy1}  alt="page image" />
-        <p className={ProgStyles.whychoosetext}>Work Ready Graduates</p>
-       
-      </div>
-      <div className={ProgStyles.progGrid}>
-      <Image className={ProgStyles.whychooseimg} src={imgwhy1}  alt="page image" />
-        <p className={ProgStyles.whychoosetext}>Credit Transfers</p>
-       
-      </div>
-    </div> 
-    <p />
-  </div>
-</section>
-<section id="areastudy" className={ProgStyles.sectionareasofstudy}>
+      </section>
+  <section id="areastudy" className={ProgStyles.sectionareasofstudy}>
   <div className={ProgStyles.umargintopsmall}>
     <p className={ProgStyles.headingprimary }> Areas of Study </p>
     <p className={ProgStyles.umargintopsmall}></p>
@@ -196,46 +182,47 @@ const progoverview = () => {
       </div>
     </div>
   
-</section>
-<section id="higlight" className={ProgStyles.sectionhighlights}>
+  </section>
+
+  <section id="apply" className={ProgStyles.sectionapply }>
   <div className={ProgStyles.umargintopsmall}>
-    <p className={ProgStyles.headingprimary}> Highlights </p>
+    <p className={ProgStyles.headingprimary}> Apply Now </p>
     <div className={ProgStyles.threeColGridCon}>
       <div className={ProgStyles.threeColGrid}>
-      <Image className={ProgStyles.whychooseimg} src={imgwhy1} alt="page image" />
+      <Image className={ProgStyles.applyimages} src={visitus} alt="page image" />
 
-        <p className={ProgStyles.highlightheading}>College Core</p>
-        <p className={ProgStyles.highlighttext}>
-           In a wide range of areas
+        <p className={ProgStyles.applyheading}>Visit us </p>
+        <p className={ProgStyles.applytext}>
+           Schedule a tour 
         </p>
-        <Link className={ProgStyles.explore} href="/programmes/undergrad">
+        <Link className={ProgStyles.goto} href="/admissions/visitus">
           {" "}
-          View Bachelor Degrees →
+          Make an appointment 
         </Link>
       </div>
       <div className={ProgStyles.threeColGrid}>
-      <Image className={ProgStyles.whychooseimg} src={imgwhy1} alt="page image" />
+      <Image className={ProgStyles.applyimages} src={visitus}  alt="page image" />
 
-        <p className={ProgStyles.highlightheading}>Affiliations and MOU</p>
-        <p className={ProgStyles.highlighttext}>
-           Prepare you for Bachelor Degrees
+        <p className={ProgStyles.applyheading}>Have Qeustions ?</p>
+        <p className={ProgStyles.applytext}>
+           Speak to an Admission Councillor
         </p>
-        <Link className={ProgStyles.explore} href="/programmes/associate">
+        <Link className={ProgStyles.goto} href="/admissions/contactcoun">
           {" "}
-          View Associate Degrees →
+         Book an appointment with a councillor →
         </Link>
       </div>
       <div className={ProgStyles.threeColGrid}>
-      <Image className={ProgStyles.whychooseimg} src={imgwhy1} alt="page image" />
+      <Image className={ProgStyles.applyimages} src={visitus} alt="page image" />
 
-        <p className={ProgStyles.highlightheading}>Online Learning </p>
-        <p className={ProgStyles.highlighttext}>
+        <p className={ProgStyles.applyheading}>Apply Now </p>
+        <p className={ProgStyles.applytext}>
           {" "}
-          A wide range available 
+          Ready to start your journey.
         </p>
-        <Link className={ProgStyles.explore}  href="/programmes/certificates">
+        <Link className={ProgStyles.goto}  href="/admissions/applynow">
           {" "}
-          More Info →
+          Apply Now →
         </Link>
       </div>
 
@@ -243,13 +230,13 @@ const progoverview = () => {
     <p />
   </div>
 </section>
+</>
+  );
+};
 
-    </>
-  )
-}
 
-progoverview.getLayout = function getLayout(page) {
+
+schools.getLayout = function getLayout(page) {
   return <Layout>{page}</Layout>
 }
-
-  export default progoverview;
+export default schools;
