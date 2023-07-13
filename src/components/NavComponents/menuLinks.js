@@ -40,7 +40,7 @@ export const mainNavLinks = [
     submenu: [
       {
         title: "Overview",
-        href: "/programmes/",
+        href: "/programmes",
       },
       {
         title: "All Courses",
@@ -141,7 +141,7 @@ export const mainNavLinks = [
         href: "/",
       },
       {
-        title: "health and wellness",
+        title: "Health and wellness",
         href: "/",
       },
       {
