@@ -16,7 +16,7 @@ const MenuItems = ({ items, isLastItem }) => {
     : {};
 
   return (
-    <li onClick={() => setShowDropDown((prev) => !prev)}>
+    <div onClick={() => setShowDropDown((prev) => !prev)}>
       {items.submenu ? (
         <div className={navStyles.navBarLinks}>
           {/* Need to put correct href link of submenu and searchbar */}
@@ -31,7 +31,7 @@ const MenuItems = ({ items, isLastItem }) => {
           <a href={items.url}>{items.title}</a>
         </div>
       )}
-    </li>
+    </div>
   );
 };
 

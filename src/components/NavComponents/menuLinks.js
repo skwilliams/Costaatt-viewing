@@ -51,13 +51,31 @@ export const mainNavLinks = [
         title: "College Core",
         href: "/",
       },
-      // {
-      //   title: "Areas of Study",
-      //   href: "/",
-      // }, // {
-      //   title: "Academic Calendar",
-      //   href: "/",
-      // },
+      {
+        title: "School of Nursing, Health and Medical Technologies",
+        href: "/programmes",
+      },
+      {
+        title: "School of Liberal Arts, Education and Digital Humanities",
+        href: "/programmes",
+      },
+      {
+        title: "School of Environment, Circular Economy and Sustainability",
+        href: "/programmes",
+      },
+      {
+        title:
+          "The Ken Gordon School of Communication Creative and Digital Media",
+        href: "/programmes",
+      },
+      {
+        title: "School of Business and Digital Technologies",
+        href: "/programmes",
+      },
+      {
+        title: "School of Workforce Enhancement and Development",
+        href: "/programmes",
+      },
     ],
     notices: [
       { text: "A link to a page" },
