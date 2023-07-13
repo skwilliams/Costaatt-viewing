@@ -53,28 +53,28 @@ export const mainNavLinks = [
       },
       {
         title: "School of Nursing, Health and Medical Technologies",
-        href: "/programmes",
+        href: "/programmes/nurisng",
       },
       {
         title: "School of Liberal Arts, Education and Digital Humanities",
-        href: "/programmes",
+        href: "/programmes/liberal",
       },
       {
         title: "School of Environment, Circular Economy and Sustainability",
-        href: "/programmes",
+        href: "/programmes/enviro",
       },
       {
         title:
           "The Ken Gordon School of Communication Creative and Digital Media",
-        href: "/programmes",
+        href: "/programmes/kengord",
       },
       {
         title: "School of Business and Digital Technologies",
-        href: "/programmes",
+        href: "/programmes/busIT",
       },
       {
         title: "School of Workforce Enhancement and Development",
-        href: "/programmes",
+        href: "/programmes/workF",
       },
     ],
     submenuImage: [
