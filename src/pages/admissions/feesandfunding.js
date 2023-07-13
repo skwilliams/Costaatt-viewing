@@ -349,5 +349,7 @@ const feesandfunding = () => {
     </>
   );
 };
-
+feesandfunding.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};
 export default feesandfunding;

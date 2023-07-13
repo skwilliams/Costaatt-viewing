@@ -2,6 +2,7 @@ import DropDown from "./DropDown";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import navStyles from "../../styles/Nav.module.scss";
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 const MenuItems = ({ items, isLastItem }) => {
   const [showDropDown, setShowDropDown] = useState(false);
@@ -28,7 +29,7 @@ const MenuItems = ({ items, isLastItem }) => {
         </div>
       ) : (
         <div className={navStyles.navBarLinks} style={itemStyle}>
-          <a href={items.href}>{items.title}</a>
+          <Link href={items.href}>{items.title}</Link>
         </div>
       )}
     </div>

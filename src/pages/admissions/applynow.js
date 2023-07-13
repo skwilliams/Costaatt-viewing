@@ -461,5 +461,7 @@ const applynow = () => {
     </>
   );
 };
-
+applynow.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};
 export default applynow;

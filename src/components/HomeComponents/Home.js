@@ -211,5 +211,7 @@ const Home = () => {
     </>
   );
 };
-
+Home.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};
 export default Home;

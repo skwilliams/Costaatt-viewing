@@ -312,5 +312,7 @@ const requirements = () => {
     </>
   );
 };
-
+requirements.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};
 export default requirements;

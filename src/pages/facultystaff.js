@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-
-const facultystaff = () => {
-  return <div>facultystaff</div>;
-};
-
-export default facultystaff;
-=======
 import React from "react";
 import Head from "next/head";
 
@@ -27,4 +18,3 @@ facultystaff.getLayout = function getLayout(page) {
 };
 
 export default facultystaff;
->>>>>>> 342e671bdebcad76122f5789442ee0d6e9c0a608
