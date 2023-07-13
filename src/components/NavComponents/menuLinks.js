@@ -40,16 +40,16 @@ export const mainNavLinks = [
     submenu: [
       {
         title: "Overview",
-        href: "/programmes",
+        href: "/programmes/",
       },
       {
         title: "All Courses",
-        href: "/programmes",
+        href: "/programmes/allcourses",
       },
 
       {
         title: "College Core",
-        href: "/",
+        href: "/programmes/collegecore",
       },
       {
         title: "School of Nursing, Health and Medical Technologies",
