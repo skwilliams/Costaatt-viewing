@@ -1,6 +1,7 @@
 import Link from "next/link";
 import navStyles from "../../styles/Nav.module.scss";
-import logo from "../../../images/Links/costaatLogoBlack.png";
+import dummyImg1 from "../../../images/Links/dummyImg1.jpg";
+import dummyImg2 from "../../../images/Links/dummyImg2.jpg";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import Image from "next/image";
 import { useState } from "react";
@@ -30,14 +31,19 @@ const DropDown = ({ items }) => {
           ))}
         </div>
         <div className={navStyles.dropDownPictures}>
-          <div>
-            <div className={navStyles.tempSquare}></div>
-            <p>Academic Calendar</p>
-          </div>
-          <div>
-            <div className={navStyles.tempSquare}></div>
-            <p>Areas of Study</p>
-          </div>
+          {items.submenuImage.map((submenu, index) => (
+            <>
+              <div>
+                <Image
+                  src={submenu.img}
+                  className={navStyles.dummyImage}
+                  alt="dummyimg"
+                />
+
+                <Link href={submenu.href}>{submenu.title}</Link>
+              </div>
+            </>
+          ))}{" "}
         </div>
       </div>
     </div>

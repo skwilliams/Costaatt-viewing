@@ -1,11 +1,11 @@
 export const topNavLinksLeft = [
   {
     title: "Current Students",
-    href: "/programmes",
+    href: "/currentstudents",
   },
   {
     title: "Faculty & Staff",
-    href: "/programmes",
+    href: "/facultystaff",
   },
   {
     title: "My Costaatt",
@@ -13,24 +13,24 @@ export const topNavLinksLeft = [
   },
   {
     title: "Alumni",
-    href: "/programmes",
+    href: "/alumni",
   },
   {
     title: "Facilities",
-    href: "/programmes",
+    href: "/facilities",
   },
 ];
 
 export const topNavLinksRight = [
   {
     title: "Request Info",
-    href: "/programmes",
+    href: "/requestinfo",
   },
 
   {
     id: "apply",
     title: "Apply",
-    href: "/programmes",
+    href: "/apply",
   },
 ];
 
@@ -77,44 +77,15 @@ export const mainNavLinks = [
         href: "/programmes",
       },
     ],
-    notices: [
-      { text: "A link to a page" },
-      { text: "A link to a page" },
-      { text: "A link to a page" },
-      { text: "A link to a page" },
-      { text: "A link to a page" },
-      { text: "A link to a page" },
-      { text: "A link to a page" },
-    ],
-  },
-
-  {
-    title: "Schools",
-    href: "/coursesbysubject",
-    submenu: [
+    submenuImage: [
       {
-        title: "School of Nursing, Health and Medical Technologies",
+        img: require("../../../images/Links/dummyImg1.jpg"),
+        title: "Academic Calendar",
         href: "/programmes",
       },
       {
-        title: "School of Liberal Arts, Education and Digital Humanities",
-        href: "/programmes",
-      },
-      {
-        title: "School of Environment, Circular Economy and Sustainability",
-        href: "/programmes",
-      },
-      {
-        title:
-          "The Ken Gordon School of Communication Creative and Digital Media",
-        href: "/programmes",
-      },
-      {
-        title: "School of Business and Digital Technologies",
-        href: "/programmes",
-      },
-      {
-        title: "School of Workforce Enhancement and Development",
+        img: require("../../../images/Links/dummyImg2.jpg"),
+        title: "Areas of Study",
         href: "/programmes",
       },
     ],

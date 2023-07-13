@@ -96,6 +96,7 @@
   top: 230px;
   width: 100%;
   position: absolute;
+  z-index: 40;
 }
 
 .dropDown {
@@ -123,20 +124,20 @@
 .dropDownPictures {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-content: space-between;
+  gap: 20px;
   text-align: center;
 }
 
 .dropDownLinksGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.tempSquare {
-  background-color: black;
+.dummyImage {
   margin-bottom: 20px;
-  width: 250px;
-  height: 175px;
+  width: 350px;
+  height: auto;
 }
 //need to finish
 .magnifyingGlass {

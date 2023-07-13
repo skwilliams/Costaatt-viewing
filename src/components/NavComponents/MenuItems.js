@@ -28,7 +28,7 @@ const MenuItems = ({ items, isLastItem }) => {
         </div>
       ) : (
         <div className={navStyles.navBarLinks} style={itemStyle}>
-          <a href={items.url}>{items.title}</a>
+          <a href={items.href}>{items.title}</a>
         </div>
       )}
     </div>
