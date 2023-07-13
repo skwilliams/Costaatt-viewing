@@ -1,0 +1,47 @@
+@import "./variable";
+
+/* Grid layout 2 for prog serachcolumns */
+.schGridContwo{
+ 
+    display: grid;
+     gap: 8rem;
+     grid-gap:2rem ;
+    grid-template-columns: auto auto ;
+    padding: 1rem 10rem ;
+
+    margin: 0 auto;
+   }
+   .schGridtwo {
+     text-align: center;
+     font-size: 30px;
+     margin: 1.5rem 0 2rem 0;
+    
+     // padding: 10px;
+   }
+   .schoolname{
+    font-weight: bolder;
+    font-size:1.5rem;
+    color:$base-color;
+    padding:0 0  2rem 0;
+    
+
+   }
+   .text{
+    font-size:1.25rem;
+    line-height: 1.5;
+    text-align: justify;
+    padding-bottom:2rem;
+   }
+   .imgstyle{
+  
+    width:300px;
+    height:200px;
+    // grid-row: 1 / span 3 ;
+    
+   }
+   .linkpage{
+    font-size:1.25rem;
+    float:right;
+    color:$base-color-tint;
+   }
+   
