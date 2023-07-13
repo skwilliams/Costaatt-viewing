@@ -1,36 +1,36 @@
 export const topNavLinksLeft = [
   {
     title: "Current Students",
-    href: "/currentstudents",
+    path: "/currentstudents",
   },
   {
     title: "Faculty & Staff",
-    href: "/facultystaff",
+    path: "/facultystaff",
   },
   {
     title: "My Costaatt",
-    href: "/programmes",
+    path: "/programmes",
   },
   {
     title: "Alumni",
-    href: "/alumni",
+    path: "/alumni",
   },
   {
     title: "Facilities",
-    href: "/facilities",
+    path: "/facilities",
   },
 ];
 
 export const topNavLinksRight = [
   {
     title: "Request Info",
-    href: "/requestinfo",
+    path: "/requestinfo",
   },
 
   {
     id: "apply",
     title: "Apply",
-    href: "/apply",
+    path: "/apply",
   },
 ];
 
@@ -40,53 +40,53 @@ export const mainNavLinks = [
     submenu: [
       {
         title: "Overview",
-        href: "/programmes",
+        path: "/programmes",
       },
       {
         title: "All Courses",
-        href: "/programmes/allcourses",
+        path: "/programmes/allcourses",
       },
 
       {
         title: "College Core",
-        href: "/programmes/collegecore",
+        path: "/programmes/collegecore",
       },
       {
         title: "School of Nursing, Health and Medical Technologies",
-        href: "/programmes/nurisng",
+        path: "/programmes/schools/nurisng",
       },
       {
         title: "School of Liberal Arts, Education and Digital Humanities",
-        href: "/programmes/liberal",
+        path: "/programmes/schools/liberal",
       },
       {
         title: "School of Environment, Circular Economy and Sustainability",
-        href: "/programmes/enviro",
+        path: "/programmes/schools/enviro",
       },
       {
         title:
           "The Ken Gordon School of Communication Creative and Digital Media",
-        href: "/programmes/kengord",
+        path: "/programmes/schools/kengord",
       },
       {
         title: "School of Business and Digital Technologies",
-        href: "/programmes/busIT",
+        path: "/programmes/schools/busIT",
       },
       {
         title: "School of Workforce Enhancement and Development",
-        href: "/programmes/workF",
+        path: "/programmes/schools/workF",
       },
     ],
     submenuImage: [
       {
         img: require("../../../images/Links/dummyImg1.jpg"),
         title: "Academic Calendar",
-        href: "/programmes",
+        path: "/programmes",
       },
       {
         img: require("../../../images/Links/dummyImg2.jpg"),
         title: "Areas of Study",
-        href: "/programmes",
+        path: "/programmes",
       },
     ],
   },
@@ -96,108 +96,134 @@ export const mainNavLinks = [
     submenu: [
       {
         title: "Apply Now",
-        href: "/admissions/applynow",
+        path: "/admissions/applynow",
       },
       {
         title: "Admission Requirements",
-        href: "/admissions/requirements",
+        path: "/admissions/requirements",
       },
       {
         title: "Fees and Funding",
-        href: "/admissions/feesandfunding",
+        path: "/admissions/feesandfunding",
       },
       {
         title: "Our Campuses",
-        href: "/",
+        path: "/",
       },
       {
         title: "Contact and Admissions Counsellor",
-        href: "/",
+        path: "/",
       },
       {
         title: "New Student ",
-        href: "/",
+        path: "/",
       },
       {
         title: "Visit us ",
-        href: "/",
+        path: "/",
       },
     ],
-    notices: [
+    submenuImage: [
       {
-        heading: "Image here",
-        text: "Paragraph",
-        href: "/",
+        img: require("../../../images/Links/dummyImg1.jpg"),
+        title: "Academic Calendar",
+        path: "/programmes",
+      },
+      {
+        img: require("../../../images/Links/dummyImg2.jpg"),
+        title: "Areas of Study",
+        path: "/programmes",
       },
     ],
   },
 
   {
     title: "Costaatt Life ",
-    url: "/",
+    path: "/",
     submenu: [
       {
         title: "Campus Activities",
-        href: "/",
+        path: "/",
       },
       {
         title: "Health and wellness",
-        href: "/",
+        path: "/",
       },
       {
         title: "Career Management",
-        href: "/",
+        path: "/",
       },
       {
         title: "College Library",
-        href: "/",
+        path: "/",
       },
       {
         title: "I.T. Facilities",
-        href: "/",
+        path: "/",
       },
       {
         title: "Compass Center",
-        href: "/",
+        path: "/",
+      },
+    ],
+    submenuImage: [
+      {
+        img: require("../../../images/Links/dummyImg1.jpg"),
+        title: "Academic Calendar",
+        path: "/programmes",
+      },
+      {
+        img: require("../../../images/Links/dummyImg2.jpg"),
+        title: "Areas of Study",
+        path: "/programmes",
       },
     ],
   },
   {
     title: "About",
-    url: "/",
+    path: "/",
     submenu: [
       {
         title: "Overview of Costaatt",
-        href: "/",
+        path: "/",
       },
       {
         title: "History",
-        href: "/",
+        path: "/",
       },
       {
         title: "Institutional Profile",
-        href: "/",
+        path: "/",
       },
       {
         title: "Accreditation",
-        href: "/",
+        path: "/",
       },
       {
         title: "College Leadership",
-        href: "/",
+        path: "/",
       },
       {
         title: "Careers",
-        href: "/",
+        path: "/",
+      },
+    ],
+    submenuImage: [
+      {
+        img: require("../../../images/Links/dummyImg1.jpg"),
+        title: "Academic Calendar",
+        path: "/programmes",
+      },
+      {
+        img: require("../../../images/Links/dummyImg2.jpg"),
+        title: "Areas of Study",
+        path: "/programmes",
       },
     ],
   },
-  {
-    title: "Alumni",
-    url: "/",
-  },
+
   {
     title: "Directory",
-    url: "/",
+    path: "/",
   },
 ];

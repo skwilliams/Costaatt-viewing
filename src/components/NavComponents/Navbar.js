@@ -3,7 +3,7 @@ import MenuItems from "./MenuItems";
 import navStyles from "../../styles/Nav.module.scss";
 import SearchBar from "../SearchBar";
 import Link from "next/link";
-import logo from "../../../images/Links/costaattlogo.jpg";
+import logo from "../../../images/Links/costaattlogocrop.jpg";
 import Image from "next/image";
 
 const Navbar = () => {

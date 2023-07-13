@@ -18,7 +18,7 @@ const DropDown = ({ items }) => {
           {items.submenu.map((submenu, index) => (
             <>
               <div className={navStyles.dropDownLi}>
-                <Link href={submenu.href}>{submenu.title}</Link>
+                <Link href={submenu.path}>{submenu.title}</Link>
               </div>
               {/* <li key={index} className={navStyles.dropDownInner}>
                 {showDropDown && submenu.innerMenu
@@ -40,7 +40,7 @@ const DropDown = ({ items }) => {
                   alt="dummyimg"
                 />
 
-                <Link href={submenu.href}>{submenu.title}</Link>
+                <Link href={submenu.path}>{submenu.title}</Link>
               </div>
             </>
           ))}{" "}

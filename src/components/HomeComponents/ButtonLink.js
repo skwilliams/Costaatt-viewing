@@ -1,12 +1,12 @@
 import React from "react";
 import { Button } from "@mui/material";
-const ButtonLink = ({ text, color, size, href }) => {
+const ButtonLink = ({ text, color, size, path }) => {
   return (
     <Button
       variant="contained"
       color={color}
       size={size}
-      href={href}
+      path={path}
       disableElevation
     >
       {text}

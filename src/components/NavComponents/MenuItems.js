@@ -2,15 +2,14 @@ import DropDown from "./DropDown";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import navStyles from "../../styles/Nav.module.scss";
 import { useState } from "react";
-import { Link } from "react-scroll";
-
+import Link from "next/link";
 const MenuItems = ({ items, isLastItem }) => {
   const [showDropDown, setShowDropDown] = useState(false);
 
   //pass this itemStyle to component
   const itemStyle = isLastItem
     ? {
-        backgroundColor: "yellow",
+        backgroundColor: " rgb(255, 109, 10)",
         color: "black",
         padding: "7px",
       }
@@ -20,7 +19,7 @@ const MenuItems = ({ items, isLastItem }) => {
     <div onClick={() => setShowDropDown((prev) => !prev)}>
       {items.submenu ? (
         <div className={navStyles.navBarLinks}>
-          {/* Need to put correct href link of submenu and searchbar */}
+          {/* Need to put correct path link of submenu and searchbar */}
           {items.title}
           {showDropDown ? <FaAngleUp /> : <FaAngleDown />}
 
@@ -29,7 +28,7 @@ const MenuItems = ({ items, isLastItem }) => {
         </div>
       ) : (
         <div className={navStyles.navBarLinks} style={itemStyle}>
-          <Link href={items.href}>{items.title}</Link>
+          <Link href={items.path}> {items.title} </Link>
         </div>
       )}
     </div>

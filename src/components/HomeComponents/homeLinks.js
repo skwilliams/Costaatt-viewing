@@ -12,7 +12,7 @@ export const SliderLinks = [
   {
     title: "Nursing",
     image: require("../../../images/Links/courses nursing.jpg"),
-    url: "https://www.costaatt.edu.tt/academics/school-of-nursing-health-and-environmental-sciences/",
+    path: "https://www.costaatt.edu.tt/academics/school-of-nursing-health-and-environmental-sciences/",
   },
   {
     title: "Business",
@@ -32,7 +32,7 @@ export const SuccessLinks = [
   {
     title: "Sample Student 1",
     image: require("../../../images/Links/courses nursing.jpg"),
-    url: "https://www.costaatt.edu.tt/academics/school-of-nursing-health-and-environmental-sciences/",
+    path: "https://www.costaatt.edu.tt/academics/school-of-nursing-health-and-environmental-sciences/",
   },
   {
     title: "Sample Student 2",
@@ -44,32 +44,32 @@ export const TILES_INFO = [
   {
     title: "School of Nursing, Health and Medical Technologies",
     img: home1,
-    url: "https://www.costaatt.edu.tt/academics/school-of-nursing-health-and-environmental-sciences/",
+    path: "https://www.costaatt.edu.tt/academics/school-of-nursing-health-and-environmental-sciences/",
   },
   {
     title: "School of Business and Digital Technologies",
     img: home2,
-    url: "https://www.costaatt.edu.tt/academics/school-of-business-and-information-technologies/",
+    path: "https://www.costaatt.edu.tt/academics/school-of-business-and-information-technologies/",
   },
   {
     title: "School of Liberal Arts, Education and Digital Humanities",
     img: home3,
-    url: "https://www.costaatt.edu.tt/academics/school-of-liberal-arts-and-human-services/",
+    path: "https://www.costaatt.edu.tt/academics/school-of-liberal-arts-and-human-services/",
   },
   {
     title: "Ken Gordon School of Creative and Digital Media",
     img: home4,
-    url: "https://www.costaatt.edu.tt/academics/ken-gordon-school-of-journalism-and-communication-studies/",
+    path: "https://www.costaatt.edu.tt/academics/ken-gordon-school-of-journalism-and-communication-studies/",
   },
   {
     title: "School of Environment, Circular Economy and Sustainablity",
     img: home5,
-    url: "http://www.go.com",
+    path: "http://www.go.com",
   },
   {
     title: "School of Workforce Enhancement and Development",
     img: home7,
-    url: "https://www.costaatt.edu.tt/academics/school-of-continuing-education-and-lifelong-learning/",
+    path: "https://www.costaatt.edu.tt/academics/school-of-continuing-education-and-lifelong-learning/",
   },
 ];
 
