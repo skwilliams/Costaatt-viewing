@@ -61,7 +61,7 @@ const sbdt = () => {
             information technology enthusiasts, this school is for you! Students   
             at this school will be able to connect classroom content, to real world application. 
             You will be equipped with the skills and support for success."
-                linkpage="/programmes/schools/sbdt/business/"
+                linkpage="/programmes/schools/busIT/business/"
                 shortname="Business"
               />
             </div>
@@ -73,7 +73,7 @@ const sbdt = () => {
             information technology enthusiasts, this school is for you! Students   
             at this school will be able to connect classroom content, to real world application. 
             You will be equipped with the skills and support for success."
-                linkpage="/programmes/schools/sbdt/it/"
+                linkpage="/programmes/schools/busIT/ist/"
                 shortname="IST"
               />
             </div>
@@ -82,7 +82,7 @@ const sbdt = () => {
       </section>
       <section id="depcourses" className={ProgStyles.sectiondeptcourses}>
         <div className={ProgStyles.umargintopsmall}>
-          <p className={ProgStyles.headingprimary}>We Offer</p>
+          <p className={ProgStyles.headingprimary}>Find your Degree</p>
 
           <div className={ProgStyles.progGridCon}>
             <div className={ProgStyles.progGrid}>

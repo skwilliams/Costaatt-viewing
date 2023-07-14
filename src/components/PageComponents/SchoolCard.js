@@ -15,7 +15,7 @@ const SchoolCard = ({image,schoolname,intro,linkpage,shortname}) => {
             <p className={SchoolStyles.schoolname}> {schoolname}</p>
             <p className={SchoolStyles.text}>{intro}  </p>
             <Link className ={SchoolStyles.linkpage}
-             href="{linkpage}"
+             href={linkpage}
              
             >   
              visit {shortname}... </Link>
