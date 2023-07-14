@@ -43,7 +43,7 @@
     color:white;
     font-family: "Bodoni" ,Arial, Helvetica, sans-serif;
     line-height: 1.95;
-    text-align: center;
+    text-align: left;
     
   }
   h3{
@@ -54,6 +54,7 @@
 .sectionLeftBottom{
   background-color: $orange;
   background-image: url("../../images/Links/colors.png");
+  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
 
@@ -107,6 +108,9 @@
   width: auto;
   padding: 20px;
   margin-bottom: 0;
+  h3{
+    color:white;
+  }
 
   
 }

@@ -23,7 +23,7 @@ const Subheader = ({ show }) => {
       <Progressbar />
       <div className={navStyles.subheaderContainer}>
         <Link href="/">
-          <Image src={logo} alt="costaatt-logo" height={70} />
+          <Image src={logo} alt="costaatt-logo" height={60} />
         </Link>
 
         <div className={navStyles.subheader}>

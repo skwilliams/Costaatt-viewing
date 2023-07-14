@@ -8,7 +8,7 @@ export const topNavLinksLeft = [
     path: "/facultystaff",
   },
   {
-    title: "My Costaatt",
+    title: "MY COSTAATT",
     path: "/programmes",
   },
   {
@@ -138,7 +138,7 @@ export const mainNavLinks = [
   },
 
   {
-    title: "Costaatt Life ",
+    title: "COSTAATT Life ",
     path: "/",
     submenu: [
       {

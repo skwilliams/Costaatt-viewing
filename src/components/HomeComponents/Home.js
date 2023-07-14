@@ -54,11 +54,11 @@ const Home = () => {
                 Write your Story
               </h2> */}
 
-             <h2>
+              <h2>
                 {" "}
                 The College of Science Technology and Applied Arts of Trinidad
                 and Tobago
-              </h2> 
+              </h2>
             </div>
             <div className={HomeStyles.sectionLeftBottom}>
               <div className={HomeStyles.selectContainer}>
@@ -92,7 +92,7 @@ const Home = () => {
                 </div>
                 <Button
                   href="news"
-                  backgroundColor="#c4161c"
+                  backgroundColor="rgb(67, 63, 64, 0.9)"
                   textcolor="white"
                   text="Submit"
                 />
