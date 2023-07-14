@@ -48,59 +48,59 @@ const Home = () => {
       <section className={HomeStyles.homeContainer}>
         <section className={HomeStyles.sectionOne}>
           <div className={HomeStyles.sectionOneLeft}>
-            {/* <Link href="/">
-              <Image
-                src={logo}
-                alt="costaatt logo"
-                className={HomeStyles.logo}
-              />
-            </Link> */}
-            {/* <p>
-              The College of Science Technology <br /> and Applied Arts of
-              Trinidad and Tobago
-            </p> */}
-            {/* <h1>The Freedom to Dream</h1>
-            <h1>The Environment to Thrive</h1>
-            <h1>The Technology to Win</h1> */}
-            <h2>Write your own story</h2>
+            <div className={HomeStyles.sectionLeftTop}>
+              {/* <h2>
+                {" "}
+                Write your Story
+              </h2> */}
 
-            <div className={HomeStyles.selectContainer}>
-              <h3>I am</h3>
-              <div className={HomeStyles.innerSelectContainer}>
-                <select
-                  onChange={changeOption}
-                  className={HomeStyles.selectDropDown}
-                >
-                  {schoolOptions.map((opt) => (
-                    <option key={opt.name} value={opt.name}>
-                      {opt.name}
-                    </option>
-                  ))}
-                </select>
-                <FaAngleDown className={HomeStyles.Arrow} />
-              </div>
-
-              <h3>I Interested in</h3>
-              <div className={HomeStyles.innerSelectContainer}>
-                <select className={HomeStyles.selectDropDown}>
-                  {interested.map((opt) => (
-                    <>
+             <h2>
+                {" "}
+                The College of Science Technology and Applied Arts of Trinidad
+                and Tobago
+              </h2> 
+            </div>
+            <div className={HomeStyles.sectionLeftBottom}>
+              <div className={HomeStyles.selectContainer}>
+                <h3>I am</h3>
+                <div className={HomeStyles.innerSelectContainer}>
+                  <select
+                    onChange={changeOption}
+                    className={HomeStyles.selectDropDown}
+                  >
+                    {schoolOptions.map((opt) => (
                       <option key={opt.name} value={opt.name}>
                         {opt.name}
                       </option>
-                    </>
-                  ))}
-                </select>
-                <FaAngleDown className={HomeStyles.Arrow} />
+                    ))}
+                  </select>
+                  <FaAngleDown className={HomeStyles.Arrow} />
+                </div>
+
+                <h3>I Interested in</h3>
+                <div className={HomeStyles.innerSelectContainer}>
+                  <select className={HomeStyles.selectDropDown}>
+                    {interested.map((opt) => (
+                      <>
+                        <option key={opt.name} value={opt.name}>
+                          {opt.name}
+                        </option>
+                      </>
+                    ))}
+                  </select>
+                  <FaAngleDown className={HomeStyles.Arrow} />
+                </div>
+                <Button
+                  href="news"
+                  backgroundColor="#c4161c"
+                  textcolor="white"
+                  text="Submit"
+                />
               </div>
-              <Button
-                href="news"
-                backgroundColor="rgb(179,93,16)"
-                textcolor="white"
-                text="Submit"
-              />
-            </div>
-          </div>
+            </div>{" "}
+            {/*end of left bottom */}
+          </div>{" "}
+          {/*end of left container */}
           <div className={HomeStyles.sectionOneRight}>
             <HomeSlider slides={SliderLinks} />
           </div>
@@ -183,7 +183,7 @@ const Home = () => {
             href="news"
             backgroundColor="rgb(173, 93, 16)"
             textcolor="white"
-            text={'More News...'}
+            text={"More News..."}
           />
         </section>
 

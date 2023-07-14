@@ -181,7 +181,7 @@
 .navBarLinks {
   width: 100%;
   padding: 9px 5px;
-  text-decoration-color: white;
+  text-decoration-color: $grey-light;
   cursor: pointer;
 }
 
@@ -196,13 +196,12 @@
   text-decoration: underline !important;
 }
 .searchicon{
-     margin-left:5rem;
-   margin-top:5rem;
+  margin:10rem;
 }
 
 .dropDownMain {
   left: 0;
-  top: 305px;
+  top: 400px;
   width: 100%;
   position: absolute;
   z-index: 40;
@@ -255,17 +254,19 @@
 }
 //need to finish
 .magnifyingGlass {
-  border: 1px rgb(109, 128, 167) solid;
+  // border: 1px rgb(109, 128, 167) solid;
 
   display: flex;
   align-items: center;
   justify-content: center;
   height: 2.5rem;
-  font-size: 1.5rem;
-  border-radius: 5px;
+  color: white;
+  font-size: 1.25rem;
+  // border-radius: 5px;
   padding: 0 15px;
-  box-shadow: 0 0 4px white;
+  // box-shadow: 0 0 4px white;
   margin-left: 20px;
+  margin-top:20px;
   transition: 0.5s ease-in-out;
   &:hover {
     background-color: white;
@@ -383,6 +384,7 @@
     width: auto;
     height: 40px;
     padding: 4px;
+    margin-top:2rem;
     top: 20px;
     right: 30px;
   }

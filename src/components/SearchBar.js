@@ -16,6 +16,7 @@ const SearchBar = ({ placeholder }) => {
       </div>
       {showInput ? (
         <div className={navBarStyles.searchInput}>
+          {/* should go to a search page */}
           <div className={navBarStyles.dropDownSearch}>
             <input type="text" name="" id="" placeholder={placeholder} />
             <button className={navBarStyles.homeSearchButton}>Search</button>
