@@ -12,8 +12,5 @@ const facilities = () => {
   );
 }
 
-facilities.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
-};
 
 export default facilities

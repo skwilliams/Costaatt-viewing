@@ -13,8 +13,6 @@ const facultystaff = () => {
   );
 };
 
-facultystaff.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
-};
+
 
 export default facultystaff;

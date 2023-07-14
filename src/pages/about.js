@@ -11,7 +11,5 @@ const about = () => {
     </>
   );
 };
-about.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
-};
+
 export default about;

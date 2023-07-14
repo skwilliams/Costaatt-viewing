@@ -395,8 +395,6 @@ const progoverview = () => {
   );
 };
 
-// progoverview.getLayout = function getLayout(page) {
-//   return <Layout>{page}</Layout>;
-// };
+
 
 export default progoverview;

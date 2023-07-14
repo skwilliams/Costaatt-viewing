@@ -11,8 +11,6 @@ const apply = () => {
   );
 }
 
-apply.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
-};
+
 
 export default apply

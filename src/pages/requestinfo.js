@@ -12,8 +12,6 @@ const requestinfo = () => {
     </>
   );
 };
-requestinfo.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
-};
+
 
 export default requestinfo;
