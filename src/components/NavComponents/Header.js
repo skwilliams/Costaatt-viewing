@@ -1,21 +1,17 @@
-import React from "react";
-import Navbar from "./Navbar";
-import navStyles from "../../styles/Nav.module.scss";
-import Image from "next/image";
-import logo from "../../../images/Links/costaatLogoBlack.png";
-import Link from "next/link";
-import { GiHamburgerMenu } from "react-icons/gi";
-const Header = () => {
+import React from 'react';
+import { useRef, useImperativeHandle, forwardRef } from 'react';
+import Navbar from './Navbar';
+
+const Header = forwardRef((props, ref) => {
+  const navRef = useRef();
+  useImperativeHandle(ref, () => ({
+    getNavHeight: () => navRef.current.getBoundingClientRect().height,
+  }));
   return (
-    <header className={navStyles.header}>
-      <div className={navStyles.headerStyles}>
-        <div>
-          <GiHamburgerMenu className={navStyles.hamburger} />
-        </div>
-        <Navbar />
-      </div>
+    <header ref={navRef}>
+      <Navbar />
     </header>
   );
-};
+});
 
 export default Header;

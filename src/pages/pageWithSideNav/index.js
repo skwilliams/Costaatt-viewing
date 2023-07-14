@@ -1,14 +1,13 @@
-import Layout from '@/components/PageWithSideNavComponents/Layout'
-import Landing from '@/components/HomeComponents/Home'  
-import Courses from '../../pages/programmes/allcourses'
+import Layout from '@/components/PageWithSideNavComponents/Layout';
+import Programmes from '@/pages/programmes/index';
+// import Courses from '../../pages/programmes/allcourses'
 // page to take
-import React from 'react'
+import React from 'react';
 
 export default function PageWithSideNav() {
-  return (
-    <Layout>
-      {/* <Landing />  */}
-    { <Courses/> }
-    </Layout>
-  )
+  return <Programmes />;
 }
+
+PageWithSideNav.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};

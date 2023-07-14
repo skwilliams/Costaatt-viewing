@@ -1,17 +1,91 @@
-@import "./variable";
+@import './variable';
 
 .header {
   // position: sticky;
+  position: relative;
+  z-index: 40;
+  top: 0;
 }
 
 .headerStyles {
-  //background-color: green;
-  // display: flex;
-
+  background-color: white;
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 15px 15px;
   // animation: navLoad 300ms ease-in;
-  // animation: navScale 300ms ease-in;
-  // transform: scale(0);
-  // animation-fill-mode: forwards;
+  animation: navScale 300ms ease-in;
+  transform: scale(0);
+  animation-fill-mode: forwards;
+}
+.subheaderContainer {
+  position: fixed;
+  z-index: 40;
+  top: 0;
+  background-color: white;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0.5rem 10dvw 0 10dvw;
+}
+.sideNavContainer {
+  position: sticky;
+  top: 0;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.sideNav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 15px 2rem 0 2rem;
+  gap: 0.25rem;
+  text-transform: capitalize;
+  // animation: navLoad 300ms ease-in;
+  animation: navScale 300ms ease-in;
+  transform: scale(0);
+  animation-fill-mode: forwards;
+}
+.sideNavElement {
+  padding: 0.5rem 1.5rem;
+  position: relative;
+  // border: black 1px solid;
+}
+
+.subheader {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 15px 2rem 0 2rem;
+  text-transform: capitalize;
+  // animation: navLoad 300ms ease-in;
+  animation: navScale 300ms ease-in;
+  transform: scale(0);
+  animation-fill-mode: forwards;
+}
+.activeSubsection {
+  border-bottom: black 5px solid;
+}
+.rslink {
+  padding: 0 2rem 1rem 2rem;
+  cursor: pointer;
+}
+.rslinkSideNav {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.activeSideNavSubsection {
+  color: rgb(0, 0, 0);
 }
 .hover-underline-animation {
   display: inline-block;
@@ -20,7 +94,7 @@
 }
 
 .hover-underline-animation::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   transform: scaleX(0);

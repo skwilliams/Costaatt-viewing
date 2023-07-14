@@ -1,14 +1,14 @@
-import logo from "../../../images/Links/costaatLogoBlack.png";
-import HomeStyles from "../../styles/Home.module.scss";
-import HomeSlider from "../Slider";
-import SuccessSlider from "../Slider";
+import logo from '../../../images/Links/costaatLogoBlack.png';
+import HomeStyles from '../../styles/Home.module.scss';
+import HomeSlider from '../Slider';
+import SuccessSlider from '../Slider';
 
-import EventTile from "./EventTile";
-import SchoolTile from "./SchoolTile";
-import NewsTile from "./NewsTile";
-import Image from "next/image";
-import Link from "next/link";
-import { FaAngleDown } from "react-icons/fa";
+import EventTile from './EventTile';
+import SchoolTile from './SchoolTile';
+import NewsTile from './NewsTile';
+import Image from 'next/image';
+import Link from 'next/link';
+import { FaAngleDown } from 'react-icons/fa';
 import {
   SliderLinks,
   TILES_INFO,
@@ -17,10 +17,10 @@ import {
   iAmInterested,
   schoolOptions,
   SuccessLinks,
-} from "../HomeComponents/homeLinks";
-import { useState } from "react";
-import Button from "../Button";
-import Slider from "../Slider";
+} from '../HomeComponents/homeLinks';
+import { useState } from 'react';
+import Button from '../Button';
+import Slider from '../Slider';
 
 /**This component renders the home page which is called <Landing /> in index.js
  *
@@ -30,7 +30,7 @@ import Slider from "../Slider";
  *
  */
 const Home = () => {
-  const [options, setoptions] = useState("");
+  const [options, setoptions] = useState('');
   const [interested, setinterested] = useState([]);
 
   const changeOption = (e) => {
@@ -106,7 +106,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className={HomeStyles.sectionTwo}>
+        <section id="schools" className={HomeStyles.sectionTwo}>
           <div className={HomeStyles.ourSchoolsText}>
             <h1>
               Our <br />
@@ -134,7 +134,7 @@ const Home = () => {
           })}
         </section>
 
-        <section className={HomeStyles.sectionThree}>
+        <section id="events" className={HomeStyles.sectionThree}>
           <h1 className={HomeStyles.eventHeading}>
             <span>Events </span> at COSTAATT
           </h1>
@@ -156,7 +156,7 @@ const Home = () => {
             })}
           </div>
         </section>
-        <section className={HomeStyles.sectionFour}>
+        <section id="news" className={HomeStyles.sectionFour}>
           <h1 className={HomeStyles.newsHeading}>
             Latest <span>News</span>
           </h1>
@@ -183,11 +183,11 @@ const Home = () => {
             href="news"
             backgroundColor="rgb(173, 93, 16)"
             textcolor="white"
-            text={"More News..."}
+            text={'More News...'}
           />
         </section>
 
-        <section className={HomeStyles.successSection}>
+        <section id="success-stories" className={HomeStyles.successSection}>
           <div className={HomeStyles.successStories}>
             <h1>Success Stories</h1>
             <p>
@@ -211,7 +211,5 @@ const Home = () => {
     </>
   );
 };
-Home.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
-};
+
 export default Home;
