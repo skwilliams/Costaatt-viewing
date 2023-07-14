@@ -1,14 +1,14 @@
-import React from "react";
-import admissionStyles from "../../styles/Admissions.module.scss";
-import home5 from "../../../images/Links/home5.png";
-import TopHeader from "@/components/TopHeader";
-import ButtonLink from "@/components/HomeComponents/ButtonLink";
+import React from 'react';
+import admissionStyles from '../../styles/Admissions.module.scss';
+import home5 from '../../../images/Links/home5.png';
+import TopHeader from '@/components/TopHeader';
+import ButtonLink from '@/components/HomeComponents/ButtonLink';
 // import Button from "@/components/Button";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import {
   institutionFees,
@@ -28,7 +28,7 @@ import {
   continuingEduc,
   deptOFJour,
   deptOfComm,
-} from "./admissionsData";
+} from './admissionsData';
 import {
   TableContainer,
   Table,
@@ -37,8 +37,8 @@ import {
   TableRow,
   TableCell,
   Paper,
-} from "@mui/material";
-import FeesAndFunding from "@/components/FeesAndFunding";
+} from '@mui/material';
+import FeesAndFunding from '@/components/FeesAndFunding';
 const feesandfunding = () => {
   return (
     <>
@@ -59,7 +59,7 @@ const feesandfunding = () => {
           <div>
             <TableContainer component={Paper}>
               <Table aria-label="simple table">
-                <TableHead sx={{ backgroundColor: "royalblue" }}>
+                <TableHead sx={{ backgroundColor: 'royalblue' }}>
                   <TableRow>
                     <TableCell>Fees</TableCell>
                     <TableCell>Citizens</TableCell>
@@ -144,13 +144,13 @@ const feesandfunding = () => {
               </AccordionSummary>
               <AccordionDetails>
                 <FeesAndFunding dept={deptOfHealth} />
-              </AccordionDetails>{" "}
+              </AccordionDetails>{' '}
               <AccordionSummary>
                 <Typography>DEPARTMENT OF NATURAL AND LIFE SCIENCES</Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <FeesAndFunding dept={dptOfNatSci} />
-              </AccordionDetails>{" "}
+              </AccordionDetails>{' '}
               <AccordionSummary>
                 <Typography>DEPARTMENT OF ENVIRONMENTAL STUDIES</Typography>
               </AccordionSummary>
@@ -307,7 +307,7 @@ const feesandfunding = () => {
             and Tobago. Only nationals of Trinidad and Tobago are eligible to
             apply, and students must be registered in a course of study leading
             to a tertiary level qualification. For further information on the
-            GATE programme please visit the website of the{" "}
+            GATE programme please visit the website of the{' '}
             <a href="http://https://moe.gov.tt/"> Ministry of Education</a>.
             <br /> The vast majority of the College’s programmes are eligible
             for GATE. For a full list of these programmes please contact the
@@ -339,7 +339,7 @@ const feesandfunding = () => {
           </p>
           <p>
             Payment plans are available, please contact the Office of the
-            Registrar for further details:{" "}
+            Registrar for further details:{' '}
             <a href="mailto:registrar@costaatt.edu.tt">
               registrar@costaatt.edu.tt
             </a>
@@ -349,7 +349,7 @@ const feesandfunding = () => {
     </>
   );
 };
-feesandfunding.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
-};
+// feesandfunding.getLayout = function getLayout(page) {
+//   return <Layout>{page}</Layout>;
+// };
 export default feesandfunding;

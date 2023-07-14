@@ -1,5 +1,5 @@
-import React from "react";
-import Head from "next/head";
+import React from 'react';
+import Head from 'next/head';
 
 const facultystaff = () => {
   return (
@@ -13,8 +13,8 @@ const facultystaff = () => {
   );
 };
 
-facultystaff.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
-};
+// facultystaff.getLayout = function getLayout(page) {
+//   return <Layout>{page}</Layout>;
+// };
 
 export default facultystaff;

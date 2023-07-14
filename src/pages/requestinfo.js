@@ -1,5 +1,5 @@
-import React from "react";
-import Head from "next/head";
+import React from 'react';
+import Head from 'next/head';
 
 const requestinfo = () => {
   return (
@@ -12,8 +12,8 @@ const requestinfo = () => {
     </>
   );
 };
-requestinfo.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
-};
+// requestinfo.getLayout = function getLayout(page) {
+//   return <Layout>{page}</Layout>;
+// };
 
 export default requestinfo;

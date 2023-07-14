@@ -1,5 +1,5 @@
-import React from 'react'
-import Head from "next/head";
+import React from 'react';
+import Head from 'next/head';
 
 const facilities = () => {
   return (
@@ -10,10 +10,10 @@ const facilities = () => {
       <div>facilities</div>
     </>
   );
-}
-
-facilities.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
 };
 
-export default facilities
+// facilities.getLayout = function getLayout(page) {
+//   return <Layout>{page}</Layout>;
+// };
+
+export default facilities;

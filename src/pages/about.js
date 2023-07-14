@@ -1,5 +1,5 @@
-import React from "react";
-import Head from "next/head";
+import React from 'react';
+import Head from 'next/head';
 
 const about = () => {
   return (
@@ -11,7 +11,7 @@ const about = () => {
     </>
   );
 };
-about.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
-};
+// about.getLayout = function getLayout(page) {
+//   return <Layout>{page}</Layout>;
+// };
 export default about;

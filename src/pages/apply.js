@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const apply = () => {
   return (
@@ -9,10 +9,10 @@ const apply = () => {
       <div>Apply Now</div>
     </>
   );
-}
-
-apply.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
 };
 
-export default apply
+// apply.getLayout = function getLayout(page) {
+//   return <Layout>{page}</Layout>;
+// };
+
+export default apply;

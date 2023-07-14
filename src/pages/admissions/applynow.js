@@ -1,15 +1,15 @@
-import React from "react";
-import admissionStyles from "../../styles/Admissions.module.scss";
-import home5 from "../../../images/Links/home5.png";
-import TopHeader from "@/components/TopHeader";
-import ButtonLink from "@/components/HomeComponents/ButtonLink";
+import React from 'react';
+import admissionStyles from '../../styles/Admissions.module.scss';
+import home5 from '../../../images/Links/home5.png';
+import TopHeader from '@/components/TopHeader';
+import ButtonLink from '@/components/HomeComponents/ButtonLink';
 // import Button from "@/components/Button";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { supportDocA, supportDocB } from "./admissionsData";
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { supportDocA, supportDocB } from './admissionsData';
 import {
   TableContainer,
   Table,
@@ -18,7 +18,7 @@ import {
   TableRow,
   TableCell,
   Paper,
-} from "@mui/material";
+} from '@mui/material';
 const applynow = () => {
   return (
     <>
@@ -46,9 +46,9 @@ const applynow = () => {
           <p>&nbsp;</p>
           <div
             style={{
-              padding: "15px",
-              border: "2px solid orange",
-              width: "fit-content",
+              padding: '15px',
+              border: '2px solid orange',
+              width: 'fit-content',
             }}
           >
             <h3>APPLICATION DEADLINE FOR SEPTEMBER 2023 (Semester I)</h3>
@@ -99,11 +99,11 @@ const applynow = () => {
           <h3>
             REQUIRED SUPPORTING DOCUMENTS (must be submitted along with your
             application)
-          </h3>{" "}
+          </h3>{' '}
           <p>&nbsp;</p>
           <TableContainer component={Paper}>
             <Table aria-label="simple table">
-              <TableHead sx={{ backgroundColor: "royalblue" }}>
+              <TableHead sx={{ backgroundColor: 'royalblue' }}>
                 <TableRow>
                   <TableCell>
                     Nationality - General Supporting Documents
@@ -129,7 +129,7 @@ const applynow = () => {
           </TableContainer>
           <TableContainer component={Paper}>
             <Table aria-label="simple table">
-              <TableHead sx={{ backgroundColor: "royalblue" }}>
+              <TableHead sx={{ backgroundColor: 'royalblue' }}>
                 <TableRow>
                   <TableCell>
                     Programme - Specific Suporting Documents
@@ -206,7 +206,7 @@ const applynow = () => {
                 CARICOM and International applicants)
               </p>
             </AccordionDetails>
-          </Accordion>{" "}
+          </Accordion>{' '}
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <Typography>Returning Applicant</Typography>
@@ -216,7 +216,7 @@ const applynow = () => {
                 Complete a re-admission form if you: Previously started a
                 programme with COSTAATT, but have been absent for three or more
                 consecutive semesters; Previously completed a programme with
-                COSTAATT and wish to apply for another.{" "}
+                COSTAATT and wish to apply for another.{' '}
               </p>
               STEPS TO RE-APPLY
               <p>Step 1: Download the Re-admission Application Form</p>
@@ -231,7 +231,7 @@ const applynow = () => {
                 to the college.
               </p>
             </AccordionDetails>
-          </Accordion>{" "}
+          </Accordion>{' '}
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <Typography>Non-Matriculated</Typography>
@@ -326,7 +326,7 @@ const applynow = () => {
             color="warning"
             size="large"
             href="/"
-          />{" "}
+          />{' '}
           <p>&nbsp;</p>
           <div>
             <h1>AFTER YOU HAVE APPLIED</h1> <p>&nbsp;</p>
@@ -365,7 +365,7 @@ const applynow = () => {
                   successfully complete the audition process.
                 </p>
               </AccordionDetails>
-            </Accordion>{" "}
+            </Accordion>{' '}
             <p>&nbsp;</p>
             <h1>OFFERS OF ADMISSION</h1>
             <p>&nbsp;</p>
@@ -379,7 +379,7 @@ const applynow = () => {
                   writing, by the Director of Enrolment or designate.
                 </p>
               </AccordionDetails>
-            </Accordion>{" "}
+            </Accordion>{' '}
             <p>&nbsp;</p>
             <Accordion>
               <AccordionSummary expandIcon={<ExpandMoreIcon />}>
@@ -461,7 +461,7 @@ const applynow = () => {
     </>
   );
 };
-applynow.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
-};
+// applynow.getLayout = function getLayout(page) {
+//   return <Layout>{page}</Layout>;
+// };
 export default applynow;

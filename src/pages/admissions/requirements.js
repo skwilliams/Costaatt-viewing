@@ -1,15 +1,15 @@
-import React from "react";
-import admissionStyles from "../../styles/Admissions.module.scss";
+import React from 'react';
+import admissionStyles from '../../styles/Admissions.module.scss';
 // import Image from "next/image";
-import home5 from "../../../images/Links/home5.png";
-import TopHeader from "@/components/TopHeader";
-import Link from "next/link";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import Typography from "@mui/material/Typography";
-import { supportDocA, supportDocB } from "./admissionsData";
+import home5 from '../../../images/Links/home5.png';
+import TopHeader from '@/components/TopHeader';
+import Link from 'next/link';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Typography from '@mui/material/Typography';
+import { supportDocA, supportDocB } from './admissionsData';
 
 import {
   TableContainer,
@@ -19,8 +19,8 @@ import {
   TableRow,
   TableCell,
   Paper,
-} from "@mui/material";
-import { Padding } from "@mui/icons-material";
+} from '@mui/material';
+import { Padding } from '@mui/icons-material';
 const requirements = () => {
   return (
     <>
@@ -153,7 +153,7 @@ const requirements = () => {
           <div>
             <TableContainer component={Paper}>
               <Table aria-label="simple table">
-                <TableHead sx={{ backgroundColor: "royalblue" }}>
+                <TableHead sx={{ backgroundColor: 'royalblue' }}>
                   <TableRow>
                     <TableCell>
                       Nationality - General Supporting Documents
@@ -179,7 +179,7 @@ const requirements = () => {
             </TableContainer>
             <TableContainer component={Paper}>
               <Table aria-label="simple table">
-                <TableHead sx={{ backgroundColor: "royalblue" }}>
+                <TableHead sx={{ backgroundColor: 'royalblue' }}>
                   <TableRow>
                     <TableCell>
                       Programme - Specific Suporting Documents
@@ -286,7 +286,7 @@ const requirements = () => {
             October – January
           </p>
           <p>&nbsp;</p>
-          <div style={{ padding: "15px", background: "orange" }}>
+          <div style={{ padding: '15px', background: 'orange' }}>
             <p>
               <strong>
                 APPLICATION DEADLINE FOR SEPTEMBER 2023 (Semester I)
@@ -312,7 +312,7 @@ const requirements = () => {
     </>
   );
 };
-requirements.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
-};
+// requirements.getLayout = function getLayout(page) {
+//   return <Layout>{page}</Layout>;
+// };
 export default requirements;

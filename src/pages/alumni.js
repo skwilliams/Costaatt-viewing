@@ -1,5 +1,5 @@
-import React from "react";
-import Head from "next/head";
+import React from 'react';
+import Head from 'next/head';
 const alumni = () => {
   return (
     <>
@@ -12,8 +12,8 @@ const alumni = () => {
   );
 };
 
-alumni.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
-};
+// alumni.getLayout = function getLayout(page) {
+//   return <Layout>{page}</Layout>;
+// };
 
 export default alumni;

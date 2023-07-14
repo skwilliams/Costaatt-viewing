@@ -1,24 +1,24 @@
-import React from "react";
-import Head from "next/head";
-import HeadImage from "@/components/PageComponents/HeadImage";
-import headImg from "../../../../../images/Programmes/tester2.jpg";
-import Layout from "../../../../components/Layout";
-import ProgStyles from "../../../../styles/Programmes.module.scss";
-import DepartCard from "@/components/PageComponents/DepartCard";
-import DeanStyles from "../../../../styles/Dean.module.scss";
-import BusImg from "../../../../../images/Links/home2.png";
+import React from 'react';
+import Head from 'next/head';
+import HeadImage from '@/components/PageComponents/HeadImage';
+import headImg from '../../../../../images/Programmes/tester2.jpg';
+import Layout from '../../../../components/Layout';
+import ProgStyles from '../../../../styles/Programmes.module.scss';
+import DepartCard from '@/components/PageComponents/DepartCard';
+import DeanStyles from '../../../../styles/Dean.module.scss';
+import BusImg from '../../../../../images/Links/home2.png';
 
-import deanimg from "../../../../../images/Links/home1.png";
-import { Accordion } from "@mui/material";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import Link from "next/link";
-import Image from "next/image";
-import NewsCard from "@/components/PageComponents/NewsCard";
+import deanimg from '../../../../../images/Links/home1.png';
+import { Accordion } from '@mui/material';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Link from 'next/link';
+import Image from 'next/image';
+import NewsCard from '@/components/PageComponents/NewsCard';
 
-//The School of Workforce Enhancement and Development 
+//The School of Workforce Enhancement and Development
 const sbdt = () => {
   return (
     <>
@@ -32,7 +32,7 @@ const sbdt = () => {
       />
 
       <p className={ProgStyles.headingprimarysub}>
-        COSTAATT/Programmes/Work Force{" "}
+        COSTAATT/Programmes/Work Force{' '}
       </p>
 
       <section id="overview" className={ProgStyles.sectionoverview}>
@@ -101,7 +101,7 @@ const sbdt = () => {
                       <Link href="">Management and Entrepreneurship</Link>
                     </li>
                     <li className={ProgStyles.degcoursesli}>
-                      <Link href=""> Human Resource Management</Link>{" "}
+                      <Link href=""> Human Resource Management</Link>{' '}
                     </li>
                     <li className={ProgStyles.degcoursesli}>
                       <Link href=""> Marketing</Link>
@@ -140,7 +140,7 @@ const sbdt = () => {
                       </Link>
                     </li>
                     <li className={ProgStyles.degcoursesli}>
-                      <Link href="">Information Technology</Link>{" "}
+                      <Link href="">Information Technology</Link>{' '}
                     </li>
                     <li className={ProgStyles.degcoursesli}>
                       <Link href="">Web Development</Link>
@@ -168,7 +168,7 @@ const sbdt = () => {
                       <Link href=""> Records Management</Link>
                     </li>
                     <li className={ProgStyles.degcoursesli}>
-                      <Link href=""> CISCO-CCNA</Link>{" "}
+                      <Link href=""> CISCO-CCNA</Link>{' '}
                     </li>
                     <li className={ProgStyles.degcoursesli}>
                       <Link href=""> Web Development</Link>
@@ -209,7 +209,7 @@ const sbdt = () => {
             <div className={DeanStyles.deanColGrid}>
               <p className={DeanStyles.deanwords}>
                 <q>
-                  {" "}
+                  {' '}
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Consequuntur quaerat possimus, at iure soluta sequi eaque
                   doloribus ex fugit aliquid quidem dolores non nisi optio
@@ -221,16 +221,16 @@ const sbdt = () => {
               <div className={DeanStyles.deancontact}>
                 <p>
                   <span className={DeanStyles.standout}>
-                    {" "}
-                    Lalita Ramlal-Chirckoot{" "}
-                  </span>{" "}
+                    {' '}
+                    Lalita Ramlal-Chirckoot{' '}
+                  </span>{' '}
                   <br /> Dean, <br />
                   WorkForce Enhancement and Development <br />
                   <span className={DeanStyles.standout}>
                     ltchirkoot@costaatt.edu.tt
-                  </span>{" "}
+                  </span>{' '}
                   <br />
-                  868-625-5030 ext 1111{" "}
+                  868-625-5030 ext 1111{' '}
                 </p>
               </div>
             </div>
@@ -257,8 +257,8 @@ const sbdt = () => {
   );
 };
 
-sbdt.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
-};
+// sbdt.getLayout = function getLayout(page) {
+//   return <Layout>{page}</Layout>;
+// };
 
 export default sbdt;

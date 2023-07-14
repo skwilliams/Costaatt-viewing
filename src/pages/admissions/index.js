@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const index = () => {
   return (
@@ -7,7 +7,7 @@ const index = () => {
     </>
   );
 };
-index.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
-};
+// index.getLayout = function getLayout(page) {
+//   return <Layout>{page}</Layout>;
+// };
 export default index;
