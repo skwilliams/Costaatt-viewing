@@ -19,6 +19,9 @@ import {
   TableCell,
   Paper,
 } from "@mui/material";
+
+
+
 const applynow = () => {
   return (
     <>
@@ -461,7 +464,5 @@ const applynow = () => {
     </>
   );
 };
-applynow.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
-};
+
 export default applynow;
