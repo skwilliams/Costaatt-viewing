@@ -8,7 +8,7 @@
 }
 
 .headerStyles {
-  background-color: white;
+  background-color: $purple-secondary;
   display: flex;
   width: 100%;
   gap: 20px;
@@ -23,11 +23,12 @@
   position: fixed;
   z-index: 40;
   top: 0;
-  background-color: white;
+  background-color: $grey;
   display: flex;
   width: 100%;
   justify-content: space-between;
   padding: 0.5rem 10dvw 0 10dvw;
+  color:$whiteback;
 }
 .sideNavContainer {
   position: sticky;
@@ -90,7 +91,7 @@
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: #ca0011;
+  color: $orange;
 }
 
 .hover-underline-animation::after {
@@ -115,7 +116,7 @@
   display: flex;
   padding: 5px 30px;
   justify-content: space-between;
-  background-color: black;
+  background-color: $purple-main;
   color: white;
 }
 
@@ -124,8 +125,8 @@
   flex-direction: column;
   gap: 30px;
   justify-content: space-between;
-  padding: 15px 40px;
-  align-items: center;
+  padding: 10px 20px;
+  align-items: left;
 }
 .centerNav h2 {
   font-size: 1.7rem;
@@ -162,9 +163,9 @@
   transition: all 0.8s ease;
   border-radius: 15px;
   text-decoration: underline;
-  text-decoration-thickness: 0.2rem;
+  text-decoration-thickness: 0.5rem;
   text-underline-position: under;
-  color: $base-color;
+  color: $orange;
   padding: 9px 5px;
   text-decoration: underline !important;
 }
@@ -182,19 +183,25 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  background-color: $base-color;
+  color: $grey-light;
+  background-color: $grey-light;
   box-shadow: inset 0px 14px 15px rgba(0, 0, 0, 0.3);
   padding: 40px 120px;
   .dropDownLi {
-    color: white;
+    color: $purple-main;
     padding: 20px;
     align-content: center;
     width: 100%;
     height: fit-content;
     &:hover {
-      transition: all 1s ease;
+      transition: all .5s ease;
       color: black;
-      background: white;
+      // background: $whiteback;
+       text-decoration: underline;
+  text-decoration-thickness: 0.4rem;
+  text-underline-position: under;
+  color: $orange;
+      
     }
   }
 }
@@ -214,7 +221,7 @@
 
 .dummyImage {
   margin-bottom: 20px;
-  width: 350px;
+  width: 250px;
   height: auto;
 }
 //need to finish

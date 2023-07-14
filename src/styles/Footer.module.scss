@@ -3,8 +3,9 @@
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: $base-color;
+  background-color: $grey;
   white-space: nowrap;
+  color:white;
 }
 .mainFooter {
   display: flex;

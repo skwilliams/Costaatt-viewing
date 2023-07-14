@@ -11,6 +11,7 @@ import HeadImage from '@/components/PageComponents/HeadImage';
 import { BiSearch } from 'react-icons/bi';
 import SearchCourse from '@/components/PageComponents/SearchCourse';
 import Layout from '@/components/Layout';
+import graphicimg from '../../../images/Links/costaattlogographic.png'
 
 import ProgCard from '../../components/PageComponents/ProgCard';
 
@@ -23,6 +24,7 @@ const allcourses = () => {
       <p className={CardStyles.urllayout}>COSTAATT / Academics / All Courses</p>
 
       <p className={CardStyles.mainheading}>ALL COURSES </p>
+    
       <div>
         <SearchCourse />
       </div>
@@ -121,5 +123,6 @@ const allcourses = () => {
     </>
   );
 };
+
 
 export default allcourses;

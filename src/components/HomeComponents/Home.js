@@ -1,4 +1,4 @@
-import logo from '../../../images/Links/costaatLogoBlack.png';
+import logo from "../../../images/Links/costaattlogographic.png";
 import HomeStyles from '../../styles/Home.module.scss';
 import HomeSlider from '../Slider';
 import SuccessSlider from '../Slider';

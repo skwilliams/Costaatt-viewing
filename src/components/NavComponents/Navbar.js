@@ -3,7 +3,7 @@ import MenuItems from "./MenuItems";
 import navStyles from "../../styles/Nav.module.scss";
 import SearchBar from "../SearchBar";
 import Link from "next/link";
-import logo from "../../../images/Links/costaattlogocrop.jpg";
+import logo from "../../../images/Links/costaattlogographic.png";
 import Image from "next/image";
 
 const Navbar = () => {
@@ -33,9 +33,7 @@ const Navbar = () => {
       </nav>
       <nav className={navStyles.centerNav}>
         <Image src={logo} alt="costaatt logo" height={110} />
-        <h2>
-          College of Science, Technology & Applied Arts of Trinidad and Tobago
-        </h2>
+        
         {/* <p>news</p> */}
       </nav>
 
