@@ -7,7 +7,4 @@ const index = () => {
     </>
   );
 };
-// index.getLayout = function getLayout(page) {
-//   return <Layout>{page}</Layout>;
-// };
 export default index;

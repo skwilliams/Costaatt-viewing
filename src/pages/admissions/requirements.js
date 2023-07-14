@@ -265,7 +265,7 @@ const requirements = () => {
           <h1>DEADLINES</h1>
           <p>&nbsp;</p>
           <p>
-            It’s important to submit your application, test scores, and related
+            It's important to submit your application, test scores, and related
             materials as soon as possible — ideally, before the deadline. Your
             application materials will be reviewed once all of them have been
             received. Although deadlines vary by semester, here are some general
@@ -274,16 +274,16 @@ const requirements = () => {
           <p>&nbsp;</p>
           <p>
             <strong>
-              SEMESTER I – SEPTEMBER <br /> Applications normally accepted:
+              SEMESTER I - SEPTEMBER <br /> Applications normally accepted:
             </strong>
-            April – August
+            April -August
           </p>
           <p>&nbsp;</p>
           <p>
             <strong>
-              SEMESTER II – FEBRUARY <br /> Applications normally accepted:
+              SEMESTER II - FEBRUARY <br /> Applications normally accepted:
             </strong>
-            October – January
+            October - January
           </p>
           <p>&nbsp;</p>
           <div style={{ padding: '15px', background: 'orange' }}>
@@ -312,7 +312,4 @@ const requirements = () => {
     </>
   );
 };
-// requirements.getLayout = function getLayout(page) {
-//   return <Layout>{page}</Layout>;
-// };
 export default requirements;

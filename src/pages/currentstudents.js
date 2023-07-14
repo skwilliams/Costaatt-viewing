@@ -13,8 +13,4 @@ const currentstudents = () => {
   );
 };
 
-// currentstudents.getLayout = function getLayout(page) {
-//   return <Layout>{page}</Layout>;
-// };
-
 export default currentstudents;

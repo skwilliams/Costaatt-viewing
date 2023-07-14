@@ -12,8 +12,4 @@ const alumni = () => {
   );
 };
 
-// alumni.getLayout = function getLayout(page) {
-//   return <Layout>{page}</Layout>;
-// };
-
 export default alumni;

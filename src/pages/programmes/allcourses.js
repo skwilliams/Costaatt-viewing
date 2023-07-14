@@ -122,7 +122,4 @@ const allcourses = () => {
   );
 };
 
-// allcourses.getLayout = function getLayout(page) {
-//   return <Layout>{page}</Layout>
-// }
 export default allcourses;

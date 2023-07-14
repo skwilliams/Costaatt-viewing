@@ -18,7 +18,14 @@ import {
   TableRow,
   TableCell,
   Paper,
+<<<<<<< HEAD
 } from '@mui/material';
+=======
+} from "@mui/material";
+
+
+
+>>>>>>> 86bbcce37e3c862de8e0a1bb1d5a9c46ae54bde9
 const applynow = () => {
   return (
     <>
@@ -461,7 +468,4 @@ const applynow = () => {
     </>
   );
 };
-// applynow.getLayout = function getLayout(page) {
-//   return <Layout>{page}</Layout>;
-// };
 export default applynow;
