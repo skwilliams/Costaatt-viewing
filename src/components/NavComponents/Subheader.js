@@ -2,7 +2,7 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import navStyles from '../../styles/Nav.module.scss';
 import Image from 'next/image';
-import logo from "../../../images/Links/costaattlogographic.png";
+import logo from "../../../images/Links/costaattWhiteLogo.png";
 import Link from 'next/link';
 import { subHeaderSections } from './subHeaderSections';
 import Progressbar from './progressBar';
@@ -23,7 +23,7 @@ const Subheader = ({ show }) => {
       <Progressbar />
       <div className={navStyles.subheaderContainer}>
         <Link href="/">
-          <Image src={logo} alt="costaatt-logo" height={50} />
+          <Image src={logo} alt="costaatt-logo" height={70} />
         </Link>
 
         <div className={navStyles.subheader}>

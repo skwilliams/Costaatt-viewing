@@ -3,7 +3,7 @@ import MenuItems from "./MenuItems";
 import navStyles from "../../styles/Nav.module.scss";
 import SearchBar from "../SearchBar";
 import Link from "next/link";
-import logo from "../../../images/Links/costaattlogographic.png";
+import logo from "../../../images/Links/costaattWhiteLogo.png";
 import Image from "next/image";
 
 const Navbar = () => {
@@ -31,23 +31,32 @@ const Navbar = () => {
           })}
         </ul>
       </nav>
-      <nav className={navStyles.centerNav}>
-        <Image src={logo} alt="costaatt logo" height={110} />
-        
-        {/* <p>news</p> */}
-      </nav>
+      {/* <nav className={navStyles.centerNav}>
+        <Image className ={navStyles.logo}src={logo} alt="costaatt logo" height={90} />
+        <p className={navStyles.costaattwords}> The College of Science Technology and Applied Arts of Trinidad and Tobago</p>
+      </nav> */}
 
       <nav className={navStyles.bottomNav}>
-        <ul className={navStyles.navbarMenus}>
-          {mainNavLinks.map((menu, index) => {
-            return (
-              <li key={index}>
-                <MenuItems items={menu} />
-              </li>
-            );
-          })}
-        </ul>
-        <div>
+        <div className={navStyles.logo}>
+          <Image
+           
+            src={logo}
+            alt="costaatt logo"
+            height={100}
+          />
+        </div>
+        <div className={navStyles.navbarMenusCon}> 
+          <ul className={navStyles.navbarMenus}>
+            {mainNavLinks.map((menu, index) => {
+              return (
+                <li key={index}>
+                  <MenuItems items={menu} />
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+        <div className={navStyles.seacrhicon}>
           <SearchBar placeholder="Search Costaatt..." />
         </div>
       </nav>

@@ -1,4 +1,4 @@
-@import './variable';
+@import "./variable";
 
 .header {
   // position: sticky;
@@ -23,12 +23,15 @@
   position: fixed;
   z-index: 40;
   top: 0;
-  background-color: $grey;
+  // background-color: $grey;
+
+  background-image: linear-gradient(to right, $orange, $purple-secondary);
+
   display: flex;
   width: 100%;
   justify-content: space-between;
   padding: 0.5rem 10dvw 0 10dvw;
-  color:$whiteback;
+  color: $whiteback;
 }
 .sideNavContainer {
   position: sticky;
@@ -95,7 +98,7 @@
 }
 
 .hover-underline-animation::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -116,7 +119,7 @@
   display: flex;
   padding: 5px 30px;
   justify-content: space-between;
-  background-color: $purple-main;
+  background-color: $purple-secondary;
   color: white;
 }
 
@@ -127,30 +130,53 @@
   justify-content: space-between;
   padding: 10px 20px;
   align-items: left;
+  background-color: $grey;
+  margin: 0;
 }
 .centerNav h2 {
   font-size: 1.7rem;
 }
+//costaatt logo on main page 
+.logo{
+ padding: 0;
+ margin: 0;
+ float:left;
+ padding-left: 0;
+}
+.costaattwords{
+ 
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 1.25rem;
+  color:black;
+}
 
 .bottomNav {
-  justify-content: center;
-  padding: 5px 30px;
+  justify-content: left;
+  margin: 0;
+  // padding: 30px 30px 15px 0;
   display: flex;
+  background-color: $grey;
+  color: $whiteback;
+  // z-index: 10;
 }
 .bottomNav li {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+}
+
+.navbarMenusCon{
+
+   margin-left:5rem;
+   margin-top:1.5rem;
+  // padding:2rem;
+  justify-items: center;
 }
 
 .navbarMenus {
   display: flex;
   gap: 20px;
   list-style: none;
-  // a {
-  //   text-decoration: none;
-  //   color: inherit;
-  //   border-radius: 15px;
-  //   width: fit-content;
-  // }
+  justify-content: center;
 }
 .navBarLinks {
   width: 100%;
@@ -169,6 +195,10 @@
   padding: 9px 5px;
   text-decoration: underline !important;
 }
+.searchicon{
+     margin-left:5rem;
+   margin-top:5rem;
+}
 
 .dropDownMain {
   left: 0;
@@ -183,8 +213,8 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  color: $grey-light;
-  background-color: $grey-light;
+  color: $whiteback;
+  background-color: $whiteback;
   box-shadow: inset 0px 14px 15px rgba(0, 0, 0, 0.3);
   padding: 40px 120px;
   .dropDownLi {
@@ -194,14 +224,13 @@
     width: 100%;
     height: fit-content;
     &:hover {
-      transition: all .5s ease;
+      transition: all 0.5s ease;
       color: black;
       // background: $whiteback;
-       text-decoration: underline;
-  text-decoration-thickness: 0.4rem;
-  text-underline-position: under;
-  color: $orange;
-      
+      text-decoration: underline;
+      text-decoration-thickness: 0.4rem;
+      text-underline-position: under;
+      color: $orange;
     }
   }
 }
