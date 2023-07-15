@@ -9,11 +9,11 @@
   background-color: $purple-main;
   background-image: linear-gradient(to right, $purple-main,$orange2);
   // //   /* For older browsers */
-  // background-image: -webkit-linear-gradient(left, #b5179e, #3a0ca3);
-  // background-image: -moz-linear-gradient(left, #b5179e, #3a0ca3);
-  // background-image: -o-linear-gradient(left, #b5179e, #3a0ca3);
+  background-image: -webkit-linear-gradient(right,$purple-main,$orange2);
+  background-image: -moz-linear-gradient(right,$purple-main,$orange2);
+  background-image: -o-linear-gradient(right,$purple-main,$orange2);
 
-  //   transition: width 0.4s ease;
+    transition: width 0.4s ease;
 }
 .progressBarDown {
   position: absolute;
@@ -24,9 +24,9 @@
   background-color: $purple-main;
   background-image: linear-gradient(to bottom, $purple-secondary, $orange2);
   //   /* For older browsers */
-  background-image: -webkit-linear-gradient(bottom, #b5179e, #3a0ca3);
-  background-image: -moz-linear-gradient(bottom, #b5179e, #3a0ca3);
-  background-image: -o-linear-gradient(bottom, #b5179e, #3a0ca3);
+  background-image: -webkit-linear-gradient(bottom,$purple-secondary, $orange2);
+  background-image: -moz-linear-gradient(bottom, $purple-secondary, $orange2);
+  background-image: -o-linear-gradient(bottom, $purple-secondary, $orange2);
 
   //   transition: width 0.4s ease;
 }

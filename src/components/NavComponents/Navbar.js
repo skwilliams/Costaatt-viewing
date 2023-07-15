@@ -38,14 +38,11 @@ const Navbar = () => {
 
       <nav className={navStyles.bottomNav}>
         <div className={navStyles.logo}>
-          <Image
-           
-            src={logo}
-            alt="costaatt logo"
-            height={100}
-          />
+           <Link href="/">
+                <Image src={logo} alt="costaatt logo" height={100} />
+          </Link>
         </div>
-        <div className={navStyles.navbarMenusCon}> 
+        <div className={navStyles.navbarMenusCon}>
           <ul className={navStyles.navbarMenus}>
             {mainNavLinks.map((menu, index) => {
               return (

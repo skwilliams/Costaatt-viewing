@@ -4,7 +4,7 @@ export const subHeaderSections = {
     events: "events",
     news: "news",
     "success stories": "success-stories",
-    // connect:'footer' see if you can get footer on th
+    // connect:'footer' see if you can get footer on the top nav
   },
 
   programmes: {
@@ -28,6 +28,13 @@ export const subHeaderSections = {
     "apply now": "apply",
   },
   busIT: {
+    "school overview": "overview",
+    Departments: "depart",
+    "find your Degree": "depcourses",
+    "meet the dean": "meetthedean",
+    "school events and news": "schoolnews",
+  },
+  ist: {
     "school overview": "overview",
     Departments: "depart",
     "find your Degree": "depcourses",
