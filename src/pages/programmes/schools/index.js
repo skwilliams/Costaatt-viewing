@@ -3,7 +3,7 @@ import ProgStyles from '../../../styles/Programmes.module.scss';
 import visitus from '../../../../images/Programmes/visit-home-v2.jpg';
 import SchoolCard from '../../../components/PageComponents/SchoolCard';
 import SchoolImage from '../../../../images/Links/campus 1.jpg';
-import Layout from '@/components/Layout';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import Head from 'next/head';
