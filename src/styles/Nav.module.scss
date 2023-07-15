@@ -26,11 +26,11 @@
   // background-color: $grey;
 
   background-image: linear-gradient(to right, $orange, $purple-secondary);
-
+  height: auto;
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 0.5rem 10dvw 0 10dvw;
+  padding: 0 10rem 0 10rem;
   color: $whiteback;
 }
 .sideNavContainer {
@@ -76,7 +76,12 @@
   animation-fill-mode: forwards;
 }
 .activeSubsection {
-  border-bottom: black 5px solid;
+  // margin-bottom:.4rem;
+  border-bottom: white 5px solid;
+  font-weight: 900;
+ 
+
+  // text-decoration: underline solid white 4px;
 }
 .rslink {
   padding: 0 2rem 1rem 2rem;
@@ -89,7 +94,8 @@
   font-weight: 600;
 }
 .activeSideNavSubsection {
-  color: rgb(0, 0, 0);
+  // color: rgb(0, 0, 0);
+  color:white;
 }
 .hover-underline-animation {
   display: inline-block;
@@ -119,8 +125,7 @@
   display: flex;
   padding: 5px 30px;
   justify-content: space-between;
-
-    background-image: linear-gradient(to bottom , $purple-main ,$purple-secondary);
+  background-image: linear-gradient(to bottom right , $purple-main ,$purple-secondary);
   color: white;
 }
 
@@ -189,12 +194,12 @@
 .navBarLinks:hover {
   transition: all 0.8s ease;
   border-radius: 15px;
-  text-decoration: underline;
-  text-decoration-thickness: 0.5rem;
+ ;  
   text-underline-position: under;
-  color: $orange;
+  color: white;
+  font-weight: 800;
   padding: 9px 5px;
-  text-decoration: underline !important;
+  text-decoration: underline solid $orange 4px !important;
 }
 .searchicon{
   margin:10rem;
@@ -202,7 +207,7 @@
 
 .dropDownMain {
   left: 0;
-  top: 400px;
+  top: 120px;
   width: 100%;
   position: absolute;
   z-index: 40;
@@ -218,19 +223,18 @@
   box-shadow: inset 0px 14px 15px rgba(0, 0, 0, 0.3);
   padding: 40px 120px;
   .dropDownLi {
-    color: $purple-main;
+    color: $grey;
     padding: 20px;
     align-content: center;
     width: 100%;
     height: fit-content;
     &:hover {
       transition: all 0.5s ease;
-      color: black;
+     font-weight: 800;
       // background: $whiteback;
-      text-decoration: underline;
-      text-decoration-thickness: 0.4rem;
+      text-decoration: underline solid $orange 4px;
       text-underline-position: under;
-      color: $orange;
+      
     }
   }
 }
@@ -270,7 +274,7 @@
   margin-top:20px;
   transition: 0.5s ease-in-out;
   &:hover {
-    background-color: white;
+  
   }
 }
 
@@ -314,7 +318,7 @@
   width: 100%;
   height: 100%;
 
-  color: black;
+  color: white;
   cursor: pointer;
 }
 

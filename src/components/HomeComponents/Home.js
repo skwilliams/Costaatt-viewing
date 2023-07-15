@@ -77,7 +77,7 @@ const Home = () => {
                   <FaAngleDown className={HomeStyles.Arrow} />
                 </div>
 
-                <h3>I Interested in</h3>
+                <h3>Interested in</h3>
                 <div className={HomeStyles.innerSelectContainer}>
                   <select className={HomeStyles.selectDropDown}>
                     {interested.map((opt) => (
