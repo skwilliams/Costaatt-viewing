@@ -9,9 +9,10 @@ const MenuItems = ({ items, isLastItem }) => {
   //pass this itemStyle to component
   const itemStyle = isLastItem
     ? {
-        backgroundColor: " rgb(255, 109, 10)",
-        color: "black",
-        padding: "7px",
+        backgroundColor: "#F58220",
+        color: "white",
+        padding: "10px",
+        
       }
     : {};
 

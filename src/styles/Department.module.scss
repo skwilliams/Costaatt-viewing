@@ -1,0 +1,34 @@
+@import "./variable";
+
+/* Department */
+
+.sectionoverview{
+    background-color: $grey-light;
+
+}
+.sectionwhatsup{
+    height: 250px;
+    background-color: $red-dark
+}
+
+.sectionfeaturedwork{
+    height: 250px;
+       background-color: $grey-light;
+
+}
+
+.sectionfaculty{
+    height: 250px;
+     background-color: $red-dark
+}
+
+.sectionprogrammes{
+        height:250px;
+     background-color: $grey-light;
+
+}
+.sectionsturesources{
+        height: 250px;
+         background-color: $red-dark
+
+}
