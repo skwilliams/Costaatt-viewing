@@ -38,6 +38,10 @@ export const SuccessLinks = [
     title: "Sample Student 2",
     image: require("../../../images/Links/news gate.jpg"),
   },
+  {
+    title: "Sample Student 2",
+    image: require("../../../images/Links/news gate.jpg"),
+  },
 ];
 
 export const TILES_INFO = [

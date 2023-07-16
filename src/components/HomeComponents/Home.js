@@ -20,7 +20,8 @@ import {
 } from "../HomeComponents/homeLinks";
 import { useState } from "react";
 import Button from "../Button";
-import Slider from "../Slider";
+// import Slider from "../Slider";
+import CarouselSuccess from "../Carousel";
 
 /**This component renders the home page which is called <Landing /> in index.js
  *
@@ -192,9 +193,10 @@ const Home = () => {
               right here, right now.
             </p>
           </div>
-          <div className={HomeStyles.successSlider}>
+          <CarouselSuccess story={SuccessLinks} />
+          {/* <div className={HomeStyles.successSlider}>
             <SuccessSlider slides={SuccessLinks} />
-          </div>
+          </div> */}
         </section>
       </section>
     </>

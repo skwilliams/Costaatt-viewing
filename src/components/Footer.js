@@ -43,7 +43,9 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <div className={footerStyles.quickLinks}>
             {footerLinks.map((menu, index) => {
-              return <MenuItems items={menu} />;
+              <div key={index}>
+                return <MenuItems items={menu} />;
+              </div>;
             })}
           </div>
         </div>
