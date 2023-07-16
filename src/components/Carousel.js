@@ -1,6 +1,4 @@
-import React, { useState } from "react";
 import Image from "next/image";
-import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 import CarouselStyles from "../styles/Carousel.module.scss";
 import Link from "next/link";
 import Carousel from "react-multi-carousel";
@@ -28,58 +26,23 @@ const CarouselSlider = ({ story }) => {
   };
   return (
     <div className={CarouselStyles.carousel}>
-      <Carousel responsive={responsive}>
+      <Carousel responsive={responsive} autoPlay>
         {story.map((slide, index) => (
-          <div key={index}>
-            <Image src={slide.image} className={CarouselStyles.sliderImage} />
-          </div>
+          <>
+            <div key={index}>
+              <img src={slide.image} className={CarouselStyles.sliderImage} />
+            </div>{" "}
+            <Link href={`${slide.url}`}>
+              <div className={CarouselStyles.sliderText}>
+                <h1> MEET </h1>
+                <h1> {slide.title} </h1>
+              </div>{" "}
+            </Link>
+          </>
         ))}
-      </Carousel>{" "}
+      </Carousel>
     </div>
   );
 };
 
 export default CarouselSlider;
-
-// <div className={CarouselStyles.slider}>
-//   <div className={CarouselStyles.sliderArrows}>
-//     <FaAngleLeft
-//       className={CarouselStyles.leftSliderArrow}
-//       onClick={prevSlide}
-//     />
-//     <FaAngleRight
-//       className={CarouselStyles.rightSliderArrow}
-//       onClick={nextSlide}
-//     />
-//   </div>
-//   <div className={CarouselStyles.carousel}>
-//     {story.map((slide, index) => (
-//       <div
-//         key={index}
-//         className={`${CarouselStyles.slide} ${
-//           index === current ? CarouselStyles.active : ""
-//         }`}
-//       >
-//         <Image
-//           src={slide.image}
-//           alt="image"
-//           className={CarouselStyles.sliderImage}
-//         />
-//       </div>
-//     ))}
-//   </div>
-// </div>
-// const [current, setCurrent] = useState(0);
-// const length = story.length;
-
-// if (!Array.isArray(story) || story.length <= 0) {
-//   return null;
-// }
-
-// const nextSlide = () => {
-//   setCurrent((current + 1) % length);
-// };
-
-// const prevSlide = () => {
-//   setCurrent((current - 1 + length) % length);
-// };

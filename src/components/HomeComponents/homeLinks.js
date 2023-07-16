@@ -30,17 +30,28 @@ export const SliderLinks = [
 
 export const SuccessLinks = [
   {
-    title: "Sample Student 1",
-    image: require("../../../images/Links/courses nursing.jpg"),
-    path: "https://www.costaatt.edu.tt/academics/school-of-nursing-health-and-environmental-sciences/",
+    title: "Anthony",
+    image: "https://picsum.photos/id/22/200",
   },
   {
-    title: "Sample Student 2",
-    image: require("../../../images/Links/news gate.jpg"),
+    title: "Stacy",
+    image: "https://picsum.photos/id/319/200",
   },
   {
-    title: "Sample Student 2",
-    image: require("../../../images/Links/news gate.jpg"),
+    title: "Jamal",
+    image: "https://picsum.photos/id/338/200",
+  },
+  {
+    title: "John",
+    image: "https://picsum.photos/id/177/200",
+  },
+  {
+    title: "Jane",
+    image: "https://picsum.photos/id/4/200",
+  },
+  {
+    title: "Harry",
+    image: "https://picsum.photos/id/5/200",
   },
 ];
 

@@ -42,11 +42,11 @@ const Footer = () => {
         <div className={footerStyles.siteMap}>
           <h3>Quick Links</h3>
           <div className={footerStyles.quickLinks}>
-            {footerLinks.map((menu, index) => {
+            {footerLinks.map((menu, index) => (
               <div key={index}>
-                return <MenuItems items={menu} />;
-              </div>;
-            })}
+                <MenuItems items={menu} />
+              </div>
+            ))}
           </div>
         </div>
 
