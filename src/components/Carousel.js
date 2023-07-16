@@ -9,11 +9,11 @@ const CarouselSlider = ({ story }) => {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 5,
+      items: 6,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
+      items: 4,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -34,8 +34,8 @@ const CarouselSlider = ({ story }) => {
             </div>{" "}
             <Link href={`${slide.url}`}>
               <div className={CarouselStyles.sliderText}>
-                <h1> MEET </h1>
-                <h1> {slide.title} </h1>
+                <h3> MEET </h3>
+                <h3> {slide.title} </h3>
               </div>{" "}
             </Link>
           </>

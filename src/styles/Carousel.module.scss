@@ -1,23 +1,21 @@
 @import "./variable";
 
 .carousel {
-  padding: 20px;
-  background-color: $orange;
+  padding: 20px 0;
+  // background-color: $orange;
 }
 
 .sliderImage {
-  width: 100%;
-  height: 100%;
-  gap: 20px;
+  width: 60%;
+  height: auto;
   border-radius: 2rem;
   border: 6px solid white;
-  max-width: 420px;
 }
 
 .sliderText {
   position: absolute;
-  top: 10%;
-  left: 80%;
+  top: 20%;
+  left: 60%;
   width: 120px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   transform: translate(-50%, -50%);

@@ -31,27 +31,51 @@ export const SliderLinks = [
 export const SuccessLinks = [
   {
     title: "Anthony",
-    image: "https://picsum.photos/id/22/200",
+    image: "https://picsum.photos/id/22/200/200",
   },
   {
     title: "Stacy",
-    image: "https://picsum.photos/id/319/200",
+    image: "https://picsum.photos/id/319/200/200",
   },
   {
     title: "Jamal",
-    image: "https://picsum.photos/id/338/200",
+    image: "https://picsum.photos/id/338/200/200",
   },
   {
     title: "John",
-    image: "https://picsum.photos/id/177/200",
+    image: "https://picsum.photos/id/177/200/200",
   },
   {
     title: "Jane",
-    image: "https://picsum.photos/id/4/200",
+    image: "https://picsum.photos/id/4/200/200",
   },
   {
     title: "Harry",
-    image: "https://picsum.photos/id/5/200",
+    image: "https://picsum.photos/id/5/200/200",
+  },
+  {
+    title: "Anthony",
+    image: "https://picsum.photos/id/22/200/200",
+  },
+  {
+    title: "Stacy",
+    image: "https://picsum.photos/id/319/200/200",
+  },
+  {
+    title: "Jamal",
+    image: "https://picsum.photos/id/338/200/200",
+  },
+  {
+    title: "John",
+    image: "https://picsum.photos/id/177/200/200",
+  },
+  {
+    title: "Jane",
+    image: "https://picsum.photos/id/4/200/200",
+  },
+  {
+    title: "Harry",
+    image: "https://picsum.photos/id/5/200/200",
   },
 ];
 
