@@ -1,14 +1,14 @@
 import logo from "../../../images/Links/costaattlogographic.png";
-import HomeStyles from '../../styles/Home.module.scss';
-import HomeSlider from '../Slider';
-import SuccessSlider from '../Slider';
+import HomeStyles from "../../styles/Home.module.scss";
+import HomeSlider from "../Slider";
+import SuccessSlider from "../Slider";
 
-import EventTile from './EventTile';
-import SchoolTile from './SchoolTile';
-import NewsTile from './NewsTile';
-import Image from 'next/image';
-import Link from 'next/link';
-import { FaAngleDown } from 'react-icons/fa';
+import EventTile from "./EventTile";
+import SchoolTile from "./SchoolTile";
+import NewsTile from "./NewsTile";
+import Image from "next/image";
+import Link from "next/link";
+import { FaAngleDown } from "react-icons/fa";
 import {
   SliderLinks,
   TILES_INFO,
@@ -17,10 +17,10 @@ import {
   iAmInterested,
   schoolOptions,
   SuccessLinks,
-} from '../HomeComponents/homeLinks';
-import { useState } from 'react';
-import Button from '../Button';
-import Slider from '../Slider';
+} from "../HomeComponents/homeLinks";
+import { useState } from "react";
+import Button from "../Button";
+import Slider from "../Slider";
 
 /**This component renders the home page which is called <Landing /> in index.js
  *
@@ -30,7 +30,7 @@ import Slider from '../Slider';
  *
  */
 const Home = () => {
-  const [options, setoptions] = useState('');
+  const [options, setoptions] = useState("");
   const [interested, setinterested] = useState([]);
 
   const changeOption = (e) => {
@@ -108,10 +108,7 @@ const Home = () => {
 
         <section id="schools" className={HomeStyles.sectionTwo}>
           <div className={HomeStyles.ourSchoolsText}>
-            <h1>
-              Our <br />
-              Schools
-            </h1>
+            <h2>Our Schools</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
               vel reiciendis in delectus aliquid perspiciatis quidem mollitia
@@ -194,14 +191,6 @@ const Home = () => {
               Have a big question. Get some answers from people who are studying
               right here, right now.
             </p>
-
-            {/* <HomeSlider slides={SliderLinks} /> */}
-            {/* <Button
-              href="news"
-              textcolor="white"
-              backgroundColor="rgb(173, 93, 16)"
-              text="Meet a Student"
-            /> */}
           </div>
           <div className={HomeStyles.successSlider}>
             <SuccessSlider slides={SuccessLinks} />
