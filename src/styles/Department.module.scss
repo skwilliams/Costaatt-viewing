@@ -2,13 +2,19 @@
 
 /* Department */
 
+
+
 .sectionoverview{
+    
     background-color: $grey-light;
 
 }
 .sectionwhatsup{
-    height: 250px;
+
+    margin:2rem 10rem;
     background-color: $red-dark
+
+
 }
 
 .sectionfeaturedwork{
@@ -32,3 +38,24 @@
          background-color: $red-dark
 
 }
+
+ .threeGridCon{
+    display: grid;
+     gap: 3rem;
+     grid-gap:2rem ;
+    grid-template-columns: auto auto auto;
+    margin: 0 auto;
+    margin-right:5rem;
+  
+
+   }
+   .threeGridCol {
+
+     text-align: center;
+     padding-top: 5rem; 
+     font-size: 30px;
+     margin: 1.5rem 0 3rem 0;
+     margin-bottom:0;
+     
+    
+   }

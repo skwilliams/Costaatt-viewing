@@ -1,9 +1,9 @@
 @import "./variable";
 .departname{
 
-    font-weight: bolder;
+    font-weight: 900;
     font-size:1.25rem;
-    color:$base-color;
+    color:$orange;
     padding:1rem 0  2rem 0;
     
    }
@@ -24,6 +24,7 @@
    .linkpage{
     font-size:1.25rem;
     float:center;
-    color:$base-color-tint;
+    color:$orange;
+    font-weight: 800;
    }
    
