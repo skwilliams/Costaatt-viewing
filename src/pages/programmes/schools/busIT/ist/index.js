@@ -8,6 +8,11 @@ import ProgStyles from '../../../../../styles/Programmes.module.scss'
 import ContactSideNav from '../../../../../components/PageComponents/ContactSideNav'
 import DeptStyles from '../../../../../styles/Department.module.scss'
 import EventCard from '../../../../../components/PageComponents/EventsCard'
+import NewsCard from '@/components/PageComponents/NewsCard'
+import BusImg from "../../../../../../images/Links/home2.png";
+import Link from "next/link"
+import Featured from '@/components/PageComponents/Featured'
+
 
 const index = () => {
  
@@ -22,10 +27,10 @@ const index = () => {
           mainimage={headImg}
         />
 
-        <section id="overview" className={ProgStyles.sectionoverview}>
+        <section id="overview" className={DeptStyles.sectionoverviewSide}>
           <div className={ProgStyles.umargintopsmall}>
-            <p className={ProgStyles.headingprimary}> Mission</p>
-            <p className={ProgStyles.text}>
+            <p className={ProgStyles.headingprimaryleft}> Mission</p>
+            <p className={DeptStyles.sidenavtext}>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo
               sed quae repellat blanditiis corrupti rerum quia voluptatem
               dolores, explicabo eius numquam, dolore incidunt reprehenderit
@@ -35,34 +40,73 @@ const index = () => {
               aspernatur, esse eius id ut accusamus nihil ipsam nemo
               necessitatibus praesentium! Dolorem.
             </p>
-            <ContactSideNav
-              btn1txt="Visit"
-              btn2txt="Apply"
-              contacttype="Department Contact"
-              tel="625-5030 ext 2222"
-              email="mcharles@costtatt.edu.tt"
-            />
+            <div className={DeptStyles.contactcard}>
+              <ContactSideNav
+                btn1txt="Visit"
+                btn2txt="Apply"
+                contacttype="Department Contact"
+                name="Maurisa Charles"
+                tel="625-5030 ext 2222"
+                // mailto="mcharles@costaatt.edu.tt "
+                email="mcharles@costtatt.edu.tt"
+              />
+            </div>
           </div>
         </section>
         <section id="whatsup" className={DeptStyles.sectionwhatsup}>
-          <p className={ProgStyles.headingprimary}> IST Events</p>
-          <div className={DeptStyles.threeGridCon}>
-            <div className={DeptStyles.threeCardCol}>
-              {" "}
-              <EventCard /> /
+          <p className={ProgStyles.headingprimaryleft}> IST Events</p>
+
+          <div className={ProgStyles.threeColGridCon}>
+            <div className={ProgStyles.threeColGrid}>
+              <NewsCard
+                mainimage={BusImg}
+                title="Graduation"
+                text="Get ready Graduates !!, submit your documents to ensure you walk across the stage, along with a team behind the Cosmic Evolution Early Release Science (CEERS) Survey, have used new observations from the James Webb Space Telescope to confirm the existence of the most distant active supermassive black hole ever found"
+                link="https:www.google.com"
+                schoolcolor="rgb(187,41,187)"
+              />
             </div>
-            <div className={DeptStyles.threeCardCol}>
-              {" "}
-              <EventCard /> /
+            <div className={ProgStyles.threeColGrid}>
+              <NewsCard
+                mainimage={BusImg}
+                title="New Faculty "
+                text="Business & Digital Technologies, welcome Mr.Jim James to the faculty of Business in the School of Physics and Astronomy, along with a team behind the Cosmic Evolution Early Release Science (CEERS) Survey, have used new observations from the James Webb Space Telescope to confirm the existence of the most distant active supermassive black hole ever found"
+                link="https:www.google.com"
+                schoolcolor="rgb(187,41,187)"
+              />
             </div>
-            <div className={DeptStyles.threeCardCol}>
-              {" "}
-              <EventCard /> /
+            <div className={ProgStyles.threeColGrid}>
+              <NewsCard
+                mainimage={BusImg}
+                title="Advisement"
+                text="associate professor in the School of Physics and Astronomy, along with a team behind the Cosmic Evolution Early Release Science (CEERS) Survey, have used new observations from the James Webb Space Telescope to confirm the existence of the most distant active supermassive black hole ever found"
+                link="https:www.google.com"
+                schoolcolor="rgb(187,41,187)"
+              />
             </div>
+          </div>
+          <div className={ProgStyles.goto}>
+            <Link className={ProgStyles.goto} href="#">
+              {" "}
+              View More..
+            </Link>
           </div>
         </section>
         <section id="featuredwork" className={DeptStyles.sectionfeaturedwork}>
-          <p>Featured Work</p>
+          <Featured
+            photo={BusImg}
+            altText="Student Code"
+            title="Library Science talks in AI Conference"
+            text="Maneka Gookool, Joanne Jarvis-Patrick presented at first AI Congerence hosted by UWI Jamaica"
+            link="www.gmail.com"
+          />
+          <Featured
+            photo={BusImg}
+            altText="Student Code"
+            title="Library Science talks in AI Conference"
+            text="Maneka Gookool, Joanne Jarvis-Patrick presented at first AI Congerence hosted by UWI Jamaica"
+            link="www.gmail.com"
+          />
         </section>
         <section id="facultystaff" className={DeptStyles.sectionfaculty}>
           <p>Images of faculty and Staff</p>

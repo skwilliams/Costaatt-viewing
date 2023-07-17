@@ -1,0 +1,45 @@
+@import './variable';
+
+.gridContwo{
+  display: grid;
+   gap: 8rem;
+   grid-gap:2rem ;
+  grid-template-columns: 2fr 1fr ;
+  margin: 0 auto;
+
+  
+ 
+ }
+ .gridtwo {
+ 
+  
+   text-align: center;
+   padding: 1.5rem 0 0 0;
+   font-size: 30px;
+   margin: 1.5rem 0 0 0;
+  
+   // padding: 10px;
+ }
+.title{
+    font-size: 1.5rem;
+    color:black;
+    font-weight: 900;
+    font-family: "Roboto",sans-serif;
+    text-align: left;
+}
+.imgstyle{
+    width:200px;
+    height: 200px;
+}
+
+.text{
+    font-size: 1.25rem;
+    color: $grey-light;
+    text-align: left;
+}
+
+.goto{
+  color:$orange2;
+  font-size:1.5rem;
+  text-align: left;
+}
