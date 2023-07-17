@@ -33,7 +33,7 @@ const CarouselSlider = ({ story }) => {
               <img src={slide.image} className={CarouselStyles.sliderImage} />
             </div>{" "}
             <Link href={`${slide.url}`}>
-              <div className={CarouselStyles.sliderText}>
+              <div key={index} className={CarouselStyles.sliderText}>
                 <h3> MEET </h3>
                 <h3> {slide.title} </h3>
               </div>{" "}
