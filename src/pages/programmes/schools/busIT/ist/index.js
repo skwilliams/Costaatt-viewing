@@ -2,10 +2,13 @@ import React from 'react'
 import Head from 'next/head'
 import HeadImage from '../../../../../components/PageComponents/HeadImage'
 import headImg from "../../../../../../images/Programmes/tester2.jpg"
-import Layout from '../../../../../components/Layout'
+import Layout from '../../../../../components/PageWithSideNavComponents/Layout'
 import ProgStyles from '../../../../../styles/Programmes.module.scss'
+
 import ContactSideNav from '../../../../../components/PageComponents/ContactSideNav'
 import DeptStyles from '../../../../../styles/Department.module.scss'
+import EventCard from '../../../../../components/PageComponents/EventsCard'
+
 const index = () => {
  
     return (
@@ -42,8 +45,21 @@ const index = () => {
           </div>
         </section>
         <section id="whatsup" className={DeptStyles.sectionwhatsup}>
-          <p>What's happening use cards like post-it</p>
-          <SchoolCard/>
+          <p className={ProgStyles.headingprimary}> IST Events</p>
+          <div className={DeptStyles.threeGridCon}>
+            <div className={DeptStyles.threeCardCol}>
+              {" "}
+              <EventCard /> /
+            </div>
+            <div className={DeptStyles.threeCardCol}>
+              {" "}
+              <EventCard /> /
+            </div>
+            <div className={DeptStyles.threeCardCol}>
+              {" "}
+              <EventCard /> /
+            </div>
+          </div>
         </section>
         <section id="featuredwork" className={DeptStyles.sectionfeaturedwork}>
           <p>Featured Work</p>
@@ -62,8 +78,8 @@ const index = () => {
     );
 
 }
-// index.getLayout = function getLayout(page) {
-//     return <Layout>{page}</Layout>
-//   }
+index.getLayout = function getLayout(page) {
+    return <Layout>{page}</Layout>
+  }
 
 export default index

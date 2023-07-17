@@ -3,6 +3,8 @@ import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import navStyles from "../../styles/Nav.module.scss";
 import { useState } from "react";
 import Link from "next/link";
+
+
 const MenuItems = ({ items, isLastItem }) => {
   const [showDropDown, setShowDropDown] = useState(false);
 

@@ -319,7 +319,7 @@ export const deptOfInformation = [
     GATE: "	Yes",
   },
   {
-    Programme: "Certificate – Records Mgmt.",
+    Programme: "Certificate - Records Mgmt.",
     Total_Credit: "		20",
     National: "	$6,000",
     CARICOM: "$8,000",
