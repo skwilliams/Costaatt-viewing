@@ -12,6 +12,7 @@ import NewsCard from '@/components/PageComponents/NewsCard'
 import BusImg from "../../../../../../images/Links/home2.png";
 import Link from "next/link"
 import Featured from '@/components/PageComponents/Featured'
+import { features } from '@/components/PageComponents/featuresdata'
 
 
 const index = () => {
@@ -93,20 +94,7 @@ const index = () => {
           </div>
         </section>
         <section id="featuredwork" className={DeptStyles.sectionfeaturedwork}>
-          <Featured
-            photo={BusImg}
-            altText="Student Code"
-            title="Library Science talks in AI Conference"
-            text="Maneka Gookool, Joanne Jarvis-Patrick presented at first AI Congerence hosted by UWI Jamaica"
-            link="www.gmail.com"
-          />
-          <Featured
-            photo={BusImg}
-            altText="Student Code"
-            title="Library Science talks in AI Conference"
-            text="Maneka Gookool, Joanne Jarvis-Patrick presented at first AI Congerence hosted by UWI Jamaica"
-            link="www.gmail.com"
-          />
+            <Featured feat={features}  />
         </section>
         <section id="facultystaff" className={DeptStyles.sectionfaculty}>
           <p>Images of faculty and Staff</p>

@@ -8,12 +8,11 @@ import Link from 'next/link';
 import { FaAngleDown } from 'react-icons/fa';
 import SearchBar from '@/components/SearchBar';
 import HeadImage from '@/components/PageComponents/HeadImage';
-import { BiSearch } from 'react-icons/bi';
 import SearchCourse from '@/components/PageComponents/SearchCourse';
 import Layout from '@/components/Layout';
-import graphicimg from '../../../images/Links/costaattlogographic.png'
 
 import ProgCard from '../../components/PageComponents/ProgCard';
+import coursedata from '../../pages/programmes/allcoursesdata'
 
 const allcourses = () => {
   return (
@@ -69,57 +68,10 @@ const allcourses = () => {
       </section>
       {/* const ProgCard =({photo,degreeTile,campus,fulltime,parttime,startdate1,startdate2}) */}
 
-      <section className={CardStyles.mainright}>
-        <ProgCard
-          photo={logo}
-          degreeTitle="Nursing"
-          campus="Chaguanas"
-          fulltime={3}
-          parttime={6}
-          startdate1={'June 2023'}
-          startdate2={'January 2024'}
-          level={'Bachelors | Associate '}
-        />
-        <ProgCard
-          photo={logo}
-          degreeTitle="Web Development "
-          campus="Chaguanas"
-          fulltime={3}
-          parttime={6}
-          startdate1={'June 2023'}
-          startdate2={'January 2024'}
-          level={'Bachelors | Associate | Certificate'}
-        />
-        <ProgCard
-          photo={logo}
-          degreeTitle="Radiography"
-          campus="Chaguanas"
-          fulltime={3}
-          parttime={6}
-          startdate1={'June 2023'}
-          startdate2={'January 2024'}
-          level={' Associate | Certificate'}
-        />
-        <ProgCard
-          photo={logo}
-          degreeTitle="Music"
-          campus="Chaguanas"
-          fulltime={3}
-          parttime={6}
-          startdate1={'June 2023'}
-          startdate2={'January 2024'}
-          level={' Associate | Certificate'}
-        />
-        <ProgCard
-          photo={logo}
-          degreeTitle="Nursing"
-          campus="Chaguanas"
-          fulltime={3}
-          parttime={6}
-          startdate1={'June 2023'}
-          startdate2={'January 2024'}
-        />
-      </section>
+       <section className={CardStyles.mainright}>
+        <ProgCard courses={coursedata} />
+       
+      </section> 
     </>
   );
 };
