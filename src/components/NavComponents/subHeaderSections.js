@@ -34,5 +34,8 @@ export const subHeaderSections = {
     "meet the dean": "meetthedean",
     "school events and news": "schoolnews",
   },
+  allcourses: {
+    'All courses':'all courses',
+  }
 
 };

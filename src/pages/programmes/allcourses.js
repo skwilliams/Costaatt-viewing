@@ -1,15 +1,11 @@
 import React from "react";
-import ProgStyles from "../../styles/Programmes.module.scss";
+
 import CardStyles from "../../styles/ProgCard.module.scss";
 import Head from "next/head";
-import logo from "../../../images/Links/courses business.jpg";
-import Image from "next/image";
+
 import Link from "next/link";
-import { FaAngleDown } from "react-icons/fa";
-import SearchBar from "@/components/SearchBar";
-import HeadImage from "@/components/PageComponents/HeadImage";
+import Layout from '../../components/PageWithSideNavComponents/Layout'
 import SearchCourse from "@/components/PageComponents/SearchCourse";
-import Layout from "@/components/Layout";
 import ProgCard from "../../components/PageComponents/ProgCard";
 import { coursedata } from "../programmes/allcoursesdata";
 
@@ -23,7 +19,7 @@ const allcourses = () => {
       </Head>
       <p className={CardStyles.urllayout}>COSTAATT / Academics / All Courses</p>
 
-      <p className={CardStyles.mainheading}>ALL COURSES </p>
+      <p className={CardStyles.pheading}>ALL COURSES </p>
 
       <div>
         <SearchCourse />
@@ -66,8 +62,9 @@ const allcourses = () => {
             Certificates
           </Link>
         </div>
-      </section>
-      <section className={CardStyles.mainright}>
+      </section> 
+       
+      <section className={CardStyles.main} >
         {coursedata.map((courses, index) => {
           return (
             <li key={index}>
@@ -79,5 +76,9 @@ const allcourses = () => {
     </>
   );
 };
+// allcourses.getLayout = function getLayout(page) {
+//   return <Layout>{page}</Layout>;
+// };
+
 
 export default allcourses;

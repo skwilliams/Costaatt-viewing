@@ -18,7 +18,7 @@ const ProgCard = ({ course }) => {
             {/* <div className={CardStyle.bannerbottomBsc}> Bachelors</div> */}
           </div>
           <div className={CardStyle.progGridthree}>
-            <div className={CardStyle.coursersetitle}>{course.degreeTitle}</div>{" "}
+            <div className={CardStyle.coursetitle}>{course.degreeTitle}</div>{" "}
             {/*dynamic content}*/}
             <div className={CardStyle.block}>
               <p className={CardStyle.cardtext}> {course.campus}</p>{" "}
@@ -42,13 +42,17 @@ const ProgCard = ({ course }) => {
               {/*dynamic content}*/}
               <p className={CardStyle.cardtext}>{course.startdate2}</p>{" "}
               {/*dynamic content}*/}
-            </div>
+            </div> 
             {/* <div className={CardStyle.bannerbottomDip}> Certificate</div> */}
           </div>
 
-          <div className={CardStyle.bannerbottom}> {course.level} </div>
+         
         </>
       </div>
+       <div className={CardStyle.progGridConthree}> 
+            <div className={CardStyle.bannerbottom}> {course.level} </div>
+        </div>
+
     </>
   );
 };

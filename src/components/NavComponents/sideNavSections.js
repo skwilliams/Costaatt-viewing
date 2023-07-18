@@ -23,10 +23,18 @@ export const sideNavSections = {
   },
   ist: {
     Mission: "overview",
-    'You should know': "whatsup",
+    "You should know": "whatsup",
     "Featured Work": "featuredwork",
     "Faculty & Staff": "facultystaff",
     "Programmes we offer": "programmes",
-    'Student Resources':'sturesource'
+    "Student Resources": "sturesource",
+  },
+  allcourses: {
+    
+    "Bachelor Degrees ": "bachelor",
+    "Associate Degrees": "associates",
+    Diploma: "diploma",
+    Certificates: "certificates",
+    Accounting: "accounting",
   },
 };
