@@ -1,20 +1,21 @@
-import React from 'react';
-import ProgStyles from '../../styles/Programmes.module.scss';
-import CardStyles from '../../styles/ProgCard.module.scss';
-import Head from 'next/head';
-import logo from '../../../images/Links/courses business.jpg';
-import Image from 'next/image';
-import Link from 'next/link';
-import { FaAngleDown } from 'react-icons/fa';
-import SearchBar from '@/components/SearchBar';
-import HeadImage from '@/components/PageComponents/HeadImage';
-import SearchCourse from '@/components/PageComponents/SearchCourse';
-import Layout from '@/components/Layout';
-
-import ProgCard from '../../components/PageComponents/ProgCard';
-import coursedata from '../../pages/programmes/allcoursesdata'
+import React from "react";
+import ProgStyles from "../../styles/Programmes.module.scss";
+import CardStyles from "../../styles/ProgCard.module.scss";
+import Head from "next/head";
+import logo from "../../../images/Links/courses business.jpg";
+import Image from "next/image";
+import Link from "next/link";
+import { FaAngleDown } from "react-icons/fa";
+import SearchBar from "@/components/SearchBar";
+import HeadImage from "@/components/PageComponents/HeadImage";
+import SearchCourse from "@/components/PageComponents/SearchCourse";
+import Layout from "@/components/Layout";
+import ProgCard from "../../components/PageComponents/ProgCard";
+import { coursedata } from "../programmes/allcoursesdata";
 
 const allcourses = () => {
+  console.log(coursedata);
+
   return (
     <>
       <Head>
@@ -23,7 +24,7 @@ const allcourses = () => {
       <p className={CardStyles.urllayout}>COSTAATT / Academics / All Courses</p>
 
       <p className={CardStyles.mainheading}>ALL COURSES </p>
-    
+
       <div>
         <SearchCourse />
       </div>
@@ -66,15 +67,17 @@ const allcourses = () => {
           </Link>
         </div>
       </section>
-      {/* const ProgCard =({photo,degreeTile,campus,fulltime,parttime,startdate1,startdate2}) */}
-
-       <section className={CardStyles.mainright}>
-        <ProgCard courses={coursedata} />
-       
-      </section> 
+      <section className={CardStyles.mainright}>
+        {coursedata.map((courses, index) => {
+          return (
+            <li key={index}>
+              <ProgCard course={courses} />
+            </li>
+          );
+        })}
+      </section>
     </>
   );
 };
-
 
 export default allcourses;

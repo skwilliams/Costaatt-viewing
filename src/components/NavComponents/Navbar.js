@@ -38,8 +38,8 @@ const Navbar = () => {
 
       <nav className={navStyles.bottomNav}>
         <div className={navStyles.logo}>
-           <Link href="/">
-                <Image src={logo} alt="costaatt logo" height={100} />
+          <Link href="/">
+            <Image src={logo} alt="costaatt logo" height={100} />
           </Link>
         </div>
         <div className={navStyles.navbarMenusCon}>

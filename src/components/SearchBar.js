@@ -1,30 +1,24 @@
 import React, { useState } from "react";
 import navBarStyles from "../styles/Nav.module.scss";
+import SearchBarModal from "./SearchBarModal";
+import Button from "@mui/material/Button";
 import { BiSearch } from "react-icons/bi";
 
 const SearchBar = ({ placeholder }) => {
-  const [showInput, setshowInput] = useState(false);
+  const [open, setOpen] = React.useState(false);
 
-  const displayInput = () => {
-    setshowInput(() => !showInput);
+  const handleClickOpen = () => {
+    setOpen(true);
   };
 
   return (
     <>
-      <div onClick={displayInput} className={navBarStyles.magnifyingGlass}>
-        <BiSearch className={navBarStyles.searchIcon} />
+      <div className={navBarStyles.magnifyingGlass}>
+        <Button onClick={handleClickOpen}>
+          <BiSearch />
+        </Button>
+        <SearchBarModal />
       </div>
-      {showInput ? (
-        <div className={navBarStyles.searchInput}>
-          {/* should go to a search page */}
-          <div className={navBarStyles.dropDownSearch}>
-            <input type="text" name="" id="" placeholder={placeholder} />
-            <button className={navBarStyles.homeSearchButton}>Search</button>
-          </div>{" "}
-        </div>
-      ) : (
-        ""
-      )}
     </>
   );
 };

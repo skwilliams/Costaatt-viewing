@@ -79,7 +79,6 @@
   // margin-bottom:.4rem;
   border-bottom: white 5px solid;
   font-weight: 900;
- 
 
   // text-decoration: underline solid white 4px;
 }
@@ -95,7 +94,7 @@
 }
 .activeSideNavSubsection {
   // color: rgb(0, 0, 0);
-  color:white;
+  color: white;
 }
 .hover-underline-animation {
   display: inline-block;
@@ -125,7 +124,11 @@
   display: flex;
   padding: 5px 30px;
   justify-content: space-between;
-  background-image: linear-gradient(to bottom right , $purple-main ,$purple-secondary);
+  background-image: linear-gradient(
+    to bottom right,
+    $purple-main,
+    $purple-secondary
+  );
   color: white;
 }
 
@@ -142,19 +145,18 @@
 .centerNav h2 {
   font-size: 1.7rem;
 }
-//costaatt logo on main page 
-.logo{
- padding: 0;
- margin: 0;
- float:left;
- padding-left: 0;
+//costaatt logo on main page
+.logo {
+  padding: 0;
+  margin: 0;
+  float: left;
+  padding-left: 0;
 }
-.costaattwords{
- 
+.costaattwords {
   font-family: "Lato", Helvetica, sans-serif;
   font-weight: 900;
   font-size: 1.25rem;
-  color:black;
+  color: black;
 }
 
 .bottomNav {
@@ -170,10 +172,9 @@
   font-size: 1.2rem;
 }
 
-.navbarMenusCon{
-
-   margin-left:5rem;
-   margin-top:1.5rem;
+.navbarMenusCon {
+  margin-left: 5rem;
+  margin-top: 1.5rem;
   // padding:2rem;
   justify-items: center;
 }
@@ -194,15 +195,12 @@
 .navBarLinks:hover {
   transition: all 0.8s ease;
   border-radius: 15px;
-   
   text-underline-position: under;
   color: white;
-  font-weight: 800;
-  padding: 9px 5px;
   text-decoration: underline solid $orange 4px !important;
 }
-.searchicon{
-  margin:10rem;
+.searchicon {
+  margin: 10rem;
 }
 
 .dropDownMain {
@@ -230,11 +228,10 @@
     height: fit-content;
     &:hover {
       transition: all 0.5s ease;
-     font-weight: 800;
+      font-weight: 800;
       // background: $whiteback;
       text-decoration: underline solid $orange 4px;
       text-underline-position: under;
-      
     }
   }
 }
@@ -271,11 +268,10 @@
   padding: 0 15px;
   // box-shadow: 0 0 4px white;
   margin-left: 20px;
-  margin-top:20px;
+  margin-top: 20px;
   transition: 0.5s ease-in-out;
   &:hover {
-        border-bottom:  underline solid $orange 4px;
-
+    border-bottom: underline solid $orange 4px;
   }
 }
 
@@ -390,7 +386,7 @@
     width: auto;
     height: 40px;
     padding: 4px;
-    margin-top:2rem;
+    margin-top: 2rem;
     top: 20px;
     right: 30px;
   }
