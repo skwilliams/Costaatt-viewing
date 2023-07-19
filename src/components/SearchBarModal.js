@@ -6,14 +6,37 @@ import { useState } from "react";
 import { Padding } from "@mui/icons-material";
 export default function SearchBarModal({ handleClose }) {
   return (
-    <div className={searchBarStyles.search}>
-      <form style={{ display: "flex" }}>
-        <div style={{ fontSize: "2rem", padding: "2rem" }}>Search Costaatt</div>
-        <input autoFocus id="name" label="Search" fullWidth />
-        <Button onClick={handleClose} style={{ backgroundColor: "white" }}>
+    <div className={searchBarStyles.searchModal}>
+      <div className={searchBarStyles.searchModalHeading}>
+        <h1>Search Costaatt</h1>
+        {/* <Button disableElevation onClick={handleClose} variant="contained">
           <GrClose />
+        </Button> */}
+        <GrClose onClick={handleClose} />
+      </div>
+      <form
+        action="https://www.google.com/search"
+        method="get"
+        className={searchBarStyles.searchModalInput}
+      >
+        <input id="search" placeholder="Search" type="text" />
+        <Button
+          type="submit"
+          variant="contained"
+          disableElevation
+          // onClick={handleClose}
+        >
+          Search
         </Button>
       </form>
+      <div>
+        <p className="lorem">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+          similique delectus voluptatem officiis voluptatum facilis, consectetur
+          itaque cum! Nobis impedit quo animi totam doloribus soluta ducimus
+          minus laboriosam maxime perferendis?
+        </p>
+      </div>
     </div>
   );
 }
