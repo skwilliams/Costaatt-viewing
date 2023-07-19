@@ -84,8 +84,8 @@ export const mainNavLinks = [
         path: "/programmes",
       },
       {
-        title: "All Courses",
-        path: "/programmes/allcourses",
+        title: "All Programmes",
+        path: "/programmes/allprogrammes",
       },
 
       {

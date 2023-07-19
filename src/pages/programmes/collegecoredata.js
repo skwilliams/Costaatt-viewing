@@ -492,16 +492,16 @@
   {
     Discipline: "Social Sciences",
     Course Code: "MKTG 125",
-    Course Title: "Customer Service Fundamentals",
+    CourseTitle: "Customer Service Fundamentals",
     Credits: "3",
     Pre-requisite: "None"
   },
   {
-    Discipline: "Social Sciences",
-    Course Code: "MKTG 290",
-    Course Title: "Digital Marketing and Communications",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Social Sciences",
+    courseCode: "MKTG 290",
+    courseTitle: "Digital Marketing and Communications",
+    credits: "3",
+    prerequisite: "None"
   },
   {
     Discipline: "Behavioural Science",
@@ -568,8 +568,8 @@
   },
   {
     Discipline: "Science",
-    Course Code: "OSHE 123",
-    Course Title: "Introduction to Occupational Safety and Health",
+    CourseCode: "OSHE 123",
+    CourseTitle: "Introduction to Occupational Safety and Health",
     Credits: "3",
     Pre-requisite: "None"
   },
@@ -582,8 +582,8 @@
   },
   {
     Discipline: "Science",
-    Course Code: "SCIE 201",
-    Course Title: "Intro to Contemporary Issues in Sciences",
+    CourseCode: "SCIE 201",
+    CourseTitle: "Intro to Contemporary Issues in Sciences",
     Credits: "1",
     Pre-requisite: "CXC Math/English and or any related pre-college"
   },
@@ -629,7 +629,5 @@
     Credits: "1",
     Pre-requisite: "None"
   },
-  {
-    Discipline: ""
-  }
+ 
 ]
