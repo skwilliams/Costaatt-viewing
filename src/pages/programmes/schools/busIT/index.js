@@ -6,7 +6,7 @@ import Layout from '../../../../components/Layout';
 import ProgStyles from '../../../../styles/Programmes.module.scss';
 import DepartCard from '@/components/PageComponents/DepartCard';
 import DeanStyles from '../../../../styles/Dean.module.scss';
-import BusImg from '../../../../../images/Links/home2.png';
+import BusImg from '../../../../../images/Programmes/sobdt header.jpg';
 
 import deanimg from '../../../../../images/Links/home1.png';
 import { Accordion } from '@mui/material';
