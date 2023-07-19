@@ -1,500 +1,501 @@
- [
+export const collegecoredata =
+[
   {
-    Discipline: "Humanities ",
-    Course Code: "ANTH 250",
-    Course Title: "Caribbean Anthropology",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "ANTH 250",
+    courseTitle: "Caribbean Anthropology",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "COMM 108",
-    Course Title: "Oral Presentation Skills",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "COMM 108",
+    courseTitle: "Oral Presentation Skills",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "COMM 118",
-    Course Title: "Communication in the Workplace",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "COMM 118",
+    courseTitle: "Communication in the Workplace",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "COMM 119",
-    Course Title: "Advanced Grammar for Office Professionals",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "COMM 119",
+    courseTitle: "Advanced Grammar for Office Professionals",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "COMM 140",
-    Course Title: "Speech Writing",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "COMM 140",
+    courseTitle: "Speech Writing",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "PUBR 221",
-    Course Title: "Image, Etiquette and Protocol",
-    Credits: "2",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "PUBR 221",
+    courseTitle: "Image, Etiquette and Protocol",
+    credits: "2",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "CRIM 125",
-    Course Title: "Introduction to Criminal Justice",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "CRIM 125",
+    courseTitle: "Introduction to Criminal Justice",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "CLTR 120",
-    Course Title: "Introduction to the Culture of Trinidad and Tobago",
-    Credits: "1",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "CLTR 120",
+    courseTitle: "Introduction to the Culture of Trinidad and Tobago",
+    credits: "1",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "ECCE 100",
-    Course Title: "Introduction to the World of the Learner",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "ECCE 100",
+    courseTitle: "Introduction to the World of the Learner",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "EDUC 124",
-    Course Title: "Sign Language 1",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "EDUC 124",
+    courseTitle: "Sign Language 1",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "EDUC 125",
-    Course Title: "Advanced Sign Language for Educators",
-    Credits: "3",
-    Pre-requisite: "EDUC 124"
+    discipline: "Humanities ",
+    courseCode: "EDUC 125",
+    courseTitle: "Advanced Sign Language for Educators",
+    credits: "3",
+    prerequisite: "EDUC 124"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "ECCE 150",
-    Course Title: "Child Development",
-    Credits: "3",
-    Pre-requisite: "WRIT 117"
+    discipline: "Humanities ",
+    courseCode: "ECCE 150",
+    courseTitle: "Child Development",
+    credits: "3",
+    prerequisite: "WRIT 117"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "ECCE 120",
-    Course Title: "Introduction to Developmental Disabilities",
-    Credits: "3",
-    Pre-requisite: "ECCE 150"
+    discipline: "Humanities ",
+    courseCode: "ECCE 120",
+    courseTitle: "Introduction to Developmental Disabilities",
+    credits: "3",
+    prerequisite: "ECCE 150"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "ECCE 211",
-    Course Title: "Instructional Technology for Early Learners",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "ECCE 211",
+    courseTitle: "Instructional Technology for Early Learners",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "FILM 290",
-    Course Title: "Introduction to Video Production",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "FILM 290",
+    courseTitle: "Introduction to Video Production",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "FILM 261",
-    Course Title: "Single Camera Production",
-    Credits: "3",
-    Pre-requisite: "FILM 290"
+    discipline: "Humanities ",
+    courseCode: "FILM 261",
+    courseTitle: "Single Camera Production",
+    credits: "3",
+    prerequisite: "FILM 290"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "ARTS 120",
-    Course Title: "Survey of Art History",
-    Credits: "1",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "ARTS 120",
+    courseTitle: "Survey of Art History",
+    credits: "1",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "GRDE 123",
-    Course Title: "Introduction to Drawing and Painting",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "GRDE 123",
+    courseTitle: "Introduction to Drawing and Painting",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "GRDE 127",
-    Course Title: "Digital Communication Design",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "GRDE 127",
+    courseTitle: "Digital Communication Design",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "GRDE 129",
-    Course Title: "Introduction to Graphic Design",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "GRDE 129",
+    courseTitle: "Introduction to Graphic Design",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "HIST 210",
-    Course Title: "History of Trinidad and Tobago",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "HIST 210",
+    courseTitle: "History of Trinidad and Tobago",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "HIST 225",
-    Course Title: "Latin American History 1",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "HIST 225",
+    courseTitle: "Latin American History 1",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "JOUR 135",
-    Course Title: "Photojournalism",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "JOUR 135",
+    courseTitle: "Photojournalism",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "SPAN 100",
-    Course Title: "Introduction to Spanish",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "SPAN 100",
+    courseTitle: "Introduction to Spanish",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "PORT 150",
-    Course Title: "Brazilian Culture and Language I",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "PORT 150",
+    courseTitle: "Brazilian Culture and Language I",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "SPAN 140",
-    Course Title: "Spanish Language I",
-    Credits: "4",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "SPAN 140",
+    courseTitle: "Spanish Language I",
+    credits: "4",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "LAWW 130",
-    Course Title: "Caribbean Legal Systems",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "LAWW 130",
+    courseTitle: "Caribbean Legal Systems",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "LAWW 133",
-    Course Title: "Law and Community",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "LAWW 133",
+    courseTitle: "Law and Community",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "LIBS 130",
-    Course Title: "Fundamental Research Skills",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "LIBS 130",
+    courseTitle: "Fundamental Research Skills",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "RCMT 150",
-    Course Title: "Introduction to Records Management",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "RCMT 150",
+    courseTitle: "Introduction to Records Management",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "ENGL 121",
-    Course Title: "Introduction to Poetry",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "ENGL 121",
+    courseTitle: "Introduction to Poetry",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "ENGL 122",
-    Course Title: "Introduction to Drama",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "ENGL 122",
+    courseTitle: "Introduction to Drama",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "ENGL 123",
-    Course Title: "Introduction to Prose Fiction",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "ENGL 123",
+    courseTitle: "Introduction to Prose Fiction",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "ENGL 131",
-    Course Title: "Oral Literatures",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "ENGL 131",
+    courseTitle: "Oral Literatures",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "ENGL 270",
-    Course Title: "Creative Writing",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "ENGL 270",
+    courseTitle: "Creative Writing",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "MUSC 120",
-    Course Title: "Introduction to the History of Western Music",
-    Credits: "1",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "MUSC 120",
+    courseTitle: "Introduction to the History of Western Music",
+    credits: "1",
+    prerequisite: "None"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "MUSV 151",
-    Course Title: "Major Performing Ensemble I - Voice",
-    Credits: "1",
-    Pre-requisite: "Audition"
+    discipline: "Humanities ",
+    courseCode: "MUSV 151",
+    courseTitle: "Major Performing Ensemble I - Voice",
+    credits: "1",
+    prerequisite: "Audition"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "MUSJ 151",
-    Course Title: "Major Performing Ensemble I - Pan",
-    Credits: "1",
-    Pre-requisite: "Audition"
+    discipline: "Humanities ",
+    courseCode: "MUSJ 151",
+    courseTitle: "Major Performing Ensemble I - Pan",
+    credits: "1",
+    prerequisite: "Audition"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "MUSG 313",
-    Course Title: "Guitar Accompaniment",
-    Credits: "2",
-    Pre-requisite: "All students must have an instrument"
+    discipline: "Humanities ",
+    courseCode: "MUSG 313",
+    courseTitle: "Guitar Accompaniment",
+    credits: "2",
+    prerequisite: "All students must have an instrument"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "MUSC 312",
-    Course Title: "Introduction to Music Therapy",
-    Credits: "2",
-    Pre-requisite: "WRIT 117"
+    discipline: "Humanities ",
+    courseCode: "MUSC 312",
+    courseTitle: "Introduction to Music Therapy",
+    credits: "2",
+    prerequisite: "WRIT 117"
   },
   {
-    Discipline: "Humanities ",
-    Course Code: "MUSC 404",
-    Course Title: "Acoustics/Pan Technology",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Humanities ",
+    courseCode: "MUSC 404",
+    courseTitle: "Acoustics/Pan Technology",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Mathematics",
-    Course Code: "MATH 117",
-    Course Title: "College Algebra",
-    Credits: "3",
-    Pre-requisite: "MATH 093"
+    discipline: "Mathematics",
+    courseCode: "MATH 117",
+    courseTitle: "College Algebra",
+    credits: "3",
+    prerequisite: "MATH 093"
   },
   {
-    Discipline: "Mathematics",
-    Course Code: "MATH 119",
-    Course Title: "Finite Mathematics",
-    Credits: "3",
-    Pre-requisite: "MATH 117"
+    discipline: "Mathematics",
+    courseCode: "MATH 119",
+    courseTitle: "Finite Mathematics",
+    credits: "3",
+    prerequisite: "MATH 117"
   },
   {
-    Discipline: "Mathematics",
-    Course Code: "MATH 116",
-    Course Title: "Contemporary College Mathematics",
-    Credits: "3",
-    Pre-requisite: "MATH 092"
+    discipline: "Mathematics",
+    courseCode: "MATH 116",
+    courseTitle: "Contemporary College Mathematics",
+    credits: "3",
+    prerequisite: "MATH 092"
   },
   {
-    Discipline: "Mathematics",
-    Course Code: "MATH 111",
-    Course Title: "Geometry",
-    Credits: "3",
-    Pre-requisite: "MATH 093"
+    discipline: "Mathematics",
+    courseCode: "MATH 111",
+    courseTitle: "Geometry",
+    credits: "3",
+    prerequisite: "MATH 093"
   },
   {
-    Discipline: "Mathematics",
-    Course Code: "MATH 126",
-    Course Title: "Introduction to Financial Mathematics",
-    Credits: "3",
-    Pre-requisite: "MATH 118"
+    discipline: "Mathematics",
+    courseCode: "MATH 126",
+    courseTitle: "Introduction to Financial Mathematics",
+    credits: "3",
+    prerequisite: "MATH 118"
   },
   {
-    Discipline: "Mathematics",
-    Course Code: "MATH 175",
-    Course Title: "Mathematics for Elementary School Teachers",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Mathematics",
+    courseCode: "MATH 175",
+    courseTitle: "Mathematics for Elementary School Teachers",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Mathematics",
-    Course Code: "STAT 120",
-    Course Title: "Fundamentals of Statistics",
-    Credits: "3",
-    Pre-requisite: "MATH 093, or MATH 092 and a 100-level mathematics course"
+    discipline: "Mathematics",
+    courseCode: "STAT 120",
+    courseTitle: "Fundamentals of Statistics",
+    credits: "3",
+    prerequisite: "MATH 093, or MATH 092 and a 100-level mathematics course"
   },
   {
-    Discipline: "Mathematics",
-    Course Code: "STAT 121",
-    Course Title: "Introduction to Inferential Statistics",
-    Credits: "3",
-    Pre-requisite: "STAT 120"
+    discipline: "Mathematics",
+    courseCode: "STAT 121",
+    courseTitle: "Introduction to Inferential Statistics",
+    credits: "3",
+    prerequisite: "STAT 120"
   },
   {
-    Discipline: "Information Technology",
-    Course Code: "ITEC 121",
-    Course Title: "Productivity Tools",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Information Technology",
+    courseCode: "ITEC 121",
+    courseTitle: "Productivity Tools",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Information Technology",
-    Course Code: "ITEC 240",
-    Course Title: "Web Page Design",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Information Technology",
+    courseCode: "ITEC 240",
+    courseTitle: "Web Page Design",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Information Technology",
-    Course Code: "ITEC 229",
-    Course Title: "Human Computer Interface Design",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Information Technology",
+    courseCode: "ITEC 229",
+    courseTitle: "Human Computer Interface Design",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Information Technology",
-    Course Code: "ITEC 120",
-    Course Title: "Introduction to Computer Hardware",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Information Technology",
+    courseCode: "ITEC 120",
+    courseTitle: "Introduction to Computer Hardware",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Information Technology",
-    Course Code: "GISY 172",
-    Course Title: "Intro to Geographic Information Systems",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Information Technology",
+    courseCode: "GISY 172",
+    courseTitle: "Intro to Geographic Information Systems",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Social Sciences",
-    Course Code: "ACCT 126",
-    Course Title: "Fundamentals of Accounting",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Social Sciences",
+    courseCode: "ACCT 126",
+    courseTitle: "Fundamentals of Accounting",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Social Sciences",
-    Course Code: "ADMN 310",
-    Course Title: "Introduction to Public Administration",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Social Sciences",
+    courseCode: "ADMN 310",
+    courseTitle: "Introduction to Public Administration",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Social Sciences",
-    Course Code: "BUSI 203",
-    Course Title: "Leadership and Ethics",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Social Sciences",
+    courseCode: "BUSI 203",
+    courseTitle: "Leadership and Ethics",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Social Sciences",
-    Course Code: "MGMT 105",
-    Course Title: "Introduction to Supervisory Management",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Social Sciences",
+    courseCode: "MGMT 105",
+    courseTitle: "Introduction to Supervisory Management",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Social Sciences",
-    Course Code: "MGMT 108",
-    Course Title: "Introduction to Organisational Behaviour",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Social Sciences",
+    courseCode: "MGMT 108",
+    courseTitle: "Introduction to Organisational Behaviour",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Social Sciences",
-    Course Code: "MGMT 125",
-    Course Title: "Principles of Management",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Social Sciences",
+    courseCode: "MGMT 125",
+    courseTitle: "Principles of Management",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Social Sciences",
-    Course Code: "MGMT 200",
-    Course Title: "Event Management",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Social Sciences",
+    courseCode: "MGMT 200",
+    courseTitle: "Event Management",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Social Sciences",
-    Course Code: "MGMT 225",
-    Course Title: "Procurement and Inventory Management",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Social Sciences",
+    courseCode: "MGMT 225",
+    courseTitle: "Procurement and Inventory Management",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Social Sciences",
-    Course Code: "ECON 110",
-    Course Title: "Introduction to General Economics",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Social Sciences",
+    courseCode: "ECON 110",
+    courseTitle: "Introduction to General Economics",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Social Sciences",
-    Course Code: "ENTP 210",
-    Course Title: "Fundamentals of Entrepreneurship",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Social Sciences",
+    courseCode: "ENTP 210",
+    courseTitle: "Fundamentals of Entrepreneurship",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Social Sciences",
-    Course Code: "FINC 205",
-    Course Title: "Financial Management",
-    Credits: "3",
-    Pre-requisite: "ACTT 126"
+    discipline: "Social Sciences",
+    courseCode: "FINC 205",
+    courseTitle: "Financial Management",
+    credits: "3",
+    prerequisite: "ACTT 126"
   },
   {
-    Discipline: "Social Sciences",
-    Course Code: "GEOG 121",
-    Course Title: "Introduction to Geography ",
-    Credits: "3",
-    Pre-requisite: "CXC Math/English and or any related pre-college"
+    discipline: "Social Sciences",
+    courseCode: "GEOG 121",
+    courseTitle: "Introduction to Geography ",
+    credits: "3",
+    prerequisite: "CXC Math/English and or any related pre-college"
   },
   {
-    Discipline: "Social Sciences",
-    Course Code: "HURM 117",
-    Course Title: "Conflict Resolution and Mediation",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Social Sciences",
+    courseCode: "HURM 117",
+    courseTitle: "Conflict Resolution and Mediation",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Social Sciences",
-    Course Code: "HURM 120",
-    Course Title: "Introduction to Industrial Relations",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Social Sciences",
+    courseCode: "HURM 120",
+    courseTitle: "Introduction to Industrial Relations",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Social Sciences",
-    Course Code: "HURM 310",
-    Course Title: "Human Resource Management",
-    Credits: "3",
-    Pre-requisite: "MGMT 125"
+    discipline: "Social Sciences",
+    courseCode: "HURM 310",
+    courseTitle: "Human Resource Management",
+    credits: "3",
+    prerequisite: "MGMT 125"
   },
   {
-    Discipline: "Social Sciences",
-    Course Code: "LAST 120",
-    Course Title: "Introduction to Latin American Studies",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Social Sciences",
+    courseCode: "LAST 120",
+    courseTitle: "Introduction to Latin American Studies",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Social Sciences",
-    Course Code: "MKTG 125",
+    discipline: "Social Sciences",
+    courseCode: "MKTG 125",
     CourseTitle: "Customer Service Fundamentals",
-    Credits: "3",
-    Pre-requisite: "None"
+    credits: "3",
+    prerequisite: "None"
   },
   {
     discipline: "Social Sciences",
@@ -504,130 +505,130 @@
     prerequisite: "None"
   },
   {
-    Discipline: "Behavioural Science",
-    Course Code: "PSYC 103",
-    Course Title: "Understanding Human Behaviour and Diversity",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Behavioural Science",
+    courseCode: "PSYC 103",
+    courseTitle: "Understanding Human Behaviour and Diversity",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Behavioural Science",
-    Course Code: "RELI 205",
-    Course Title: "Comparative Religion",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Behavioural Science",
+    courseCode: "RELI 205",
+    courseTitle: "Comparative Religion",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Behavioural Science",
-    Course Code: "SOCI 102",
-    Course Title: "Introduction to the Study of Society",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Behavioural Science",
+    courseCode: "SOCI 102",
+    courseTitle: "Introduction to the Study of Society",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Behavioural Science",
-    Course Code: "SOBE 135",
-    Course Title: "Understanding Culture, Communication and Conflict",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Behavioural Science",
+    courseCode: "SOBE 135",
+    courseTitle: "Understanding Culture, Communication and Conflict",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Science",
-    Course Code: "ENVH 102",
-    Course Title: "World Issues in Public Health",
-    Credits: "1",
-    Pre-requisite: "None"
+    discipline: "Science",
+    courseCode: "ENVH 102",
+    courseTitle: "World Issues in Public Health",
+    credits: "1",
+    prerequisite: "None"
   },
   {
-    Discipline: "Science",
-    Course Code: "ENVS 121",
-    Course Title: "Environmental Issues and Sustainability",
-    Credits: "1",
-    Pre-requisite: "None"
+    discipline: "Science",
+    courseCode: "ENVS 121",
+    courseTitle: "Environmental Issues and Sustainability",
+    credits: "1",
+    prerequisite: "None"
   },
   {
-    Discipline: "Science",
-    Course Code: "ENVS 160",
-    Course Title: "Environmental Studies I",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Science",
+    courseCode: "ENVS 160",
+    courseTitle: "Environmental Studies I",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Science",
-    Course Code: "ENVS 215",
-    Course Title: "Disaster Management",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Science",
+    courseCode: "ENVS 215",
+    courseTitle: "Disaster Management",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Science",
-    Course Code: "HLED 100",
-    Course Title: "Intro to OSH and First Aid",
-    Credits: "3",
-    Pre-requisite: "None"
+    discipline: "Science",
+    courseCode: "HLED 100",
+    courseTitle: "Intro to OSH and First Aid",
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Science",
+    discipline: "Science",
     CourseCode: "OSHE 123",
     CourseTitle: "Introduction to Occupational Safety and Health",
-    Credits: "3",
-    Pre-requisite: "None"
+    credits: "3",
+    prerequisite: "None"
   },
   {
-    Discipline: "Science",
-    Course Code: "SCIE 121",
-    Course Title: "Foundations of Natural Science",
-    Credits: "3",
-    Pre-requisite: "CXC Math/English and or any related pre-college"
+    discipline: "Science",
+    courseCode: "SCIE 121",
+    courseTitle: "Foundations of Natural Science",
+    credits: "3",
+    prerequisite: "CXC Math/English and or any related pre-college"
   },
   {
-    Discipline: "Science",
+    discipline: "Science",
     CourseCode: "SCIE 201",
     CourseTitle: "Intro to Contemporary Issues in Sciences",
-    Credits: "1",
-    Pre-requisite: "CXC Math/English and or any related pre-college"
+    credits: "1",
+    prerequisite: "CXC Math/English and or any related pre-college"
   },
   {
-    Discipline: "Continuing Education",
-    Course Code: "TOUR 101",
-    Course Title: "Tour Guiding",
-    Credits: "4",
-    Pre-requisite: "Any 3 CXC passes"
+    discipline: "Continuing Education",
+    courseCode: "TOUR 101",
+    courseTitle: "Tour Guiding",
+    credits: "4",
+    prerequisite: "Any 3 CXC passes"
   },
   {
-    Discipline: "Continuing Education",
-    Course Code: "OFAD 101",
-    Course Title: "Keyboarding I",
-    Credits: "2",
-    Pre-requisite: "None"
+    discipline: "Continuing Education",
+    courseCode: "OFAD 101",
+    courseTitle: "Keyboarding I",
+    credits: "2",
+    prerequisite: "None"
   },
   {
-    Discipline: "Continuing Education",
-    Course Code: "OFAD 102",
-    Course Title: "Keyboarding II",
-    Credits: "2",
-    Pre-requisite: "OFAD101"
+    discipline: "Continuing Education",
+    courseCode: "OFAD 102",
+    courseTitle: "Keyboarding II",
+    credits: "2",
+    prerequisite: "OFAD101"
   },
   {
-    Discipline: "Continuing Education",
-    Course Code: "OFAD 103",
-    Course Title: "Keyboarding III",
-    Credits: "3",
-    Pre-requisite: "OFAD102"
+    discipline: "Continuing Education",
+    courseCode: "OFAD 103",
+    courseTitle: "Keyboarding III",
+    credits: "3",
+    prerequisite: "OFAD102"
   },
   {
-    Discipline: "Continuing Education",
-    Course Code: "COMM 100",
-    Course Title: "Technical Report Writing Workshop",
-    Credits: "1",
-    Pre-requisite: "None"
+    discipline: "Continuing Education",
+    courseCode: "COMM 100",
+    courseTitle: "Technical Report Writing Workshop",
+    credits: "1",
+    prerequisite: "None"
   },
   {
-    Discipline: "Continuing Education",
-    Course Code: "SOBE 103",
-    Course Title: "Conflict Management Workshop",
-    Credits: "1",
-    Pre-requisite: "None"
+    discipline: "Continuing Education",
+    courseCode: "SOBE 103",
+    courseTitle: "Conflict Management Workshop",
+    credits: "1",
+    prerequisite: "None"
   },
  
 ]

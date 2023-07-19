@@ -7,19 +7,22 @@ import Link from "next/link";
 import Layout from "../../components/PageWithSideNavComponents/Layout";
 import SearchCourse from "@/components/PageComponents/SearchCourse";
 import ProgCard from "../../components/PageComponents/ProgCard";
-import { coursedata } from "./allprogrammedata";
+import { collegecoredata } from "./collegecoredata";
+import CollegeCoreCard from "@/components/PageComponents/CollegeCoreCard";
 
 const collegecore = () => {
-  console.log(coursedata);
+
 
   return (
     <>
       <Head>
-        <title>All Programmes </title>
+        <title>College Core</title>
       </Head>
-      <p className={CardStyles.urllayout}>COSTAATT / Academics / All Courses</p>
+      <p className={CardStyles.urllayout}>
+        COSTAATT / Programmes / College Core
+      </p>
 
-      <p className={CardStyles.pheading}>All Programmes </p>
+      <p className={CardStyles.pheading}>College Core </p>
 
       <section className={CardStyles.sidenav}>
         <div className={CardStyles.sidenavtitlemain}> Filter By </div>
@@ -27,21 +30,21 @@ const collegecore = () => {
         <div>
           <SearchCourse />
         </div>
-        <p className={CardStyles.sidenavtitle}> by Subject Area</p>
+        <p className={CardStyles.sidenavtitle}> by Discipline</p>
         <Link className={CardStyles.sidenavlink} href="#progoverview">
-          Accounting
+          Continuing Education
         </Link>
         <Link className={CardStyles.sidenavlink} href="#careers">
-          Information Technology
+          Social Sciences
         </Link>
         <Link className={CardStyles.sidenavlink} href="#featuredwork">
-          Library Science
+          Science
         </Link>
         <Link className={CardStyles.sidenavlink} href="#facultystaff">
           Music
         </Link>
         <Link className={CardStyles.sidenavlink} href="#programmes">
-          Journalism
+          Behavioual Science
         </Link>
         <Link className={CardStyles.sidenavlink} href="#fees">
           Mathematics
@@ -65,10 +68,10 @@ const collegecore = () => {
       </section>
 
       <section className={CardStyles.main}>
-        {coursedata.map((courses, index) => {
+        {collegecoredata.map((data, index) => {
           return (
             <li key={index}>
-              <ProgCard course={courses} />
+              <CollegeCoreCard course={data} />
             </li>
           );
         })}

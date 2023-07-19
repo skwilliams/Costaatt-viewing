@@ -17,7 +17,7 @@ const allcourses = () => {
       <Head>
         <title>All Programmes </title>
       </Head>
-      <p className={CardStyles.urllayout}>COSTAATT / Academics / All Courses</p>
+      <p className={CardStyles.urllayout}>COSTAATT  Programmes/ All Programmes</p>
 
       <p className={CardStyles.pheading}>All Programmes </p>
 
