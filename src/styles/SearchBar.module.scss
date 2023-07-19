@@ -23,7 +23,14 @@
   font-size: 5rem;
   color: $brown;
 }
-
+.closeButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 800;
+}
 .searchModalInput {
   display: flex;
   width: 50%;
@@ -43,9 +50,12 @@
   height: 80px;
   background: transparent;
 }
-
+.popularLinks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
 .searchModalInput button {
-  display: block;
   cursor: pointer;
 }
 
