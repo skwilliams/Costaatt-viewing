@@ -1,12 +1,19 @@
 import { mainNavLinks, topNavLinksLeft, topNavLinksRight } from "./menuLinks";
 import MenuItems from "./MenuItems";
 import navStyles from "../../styles/Nav.module.scss";
-import SearchBar from "../SearchBar";
 import Link from "next/link";
 import logo from "../../../images/Links/costaattWhiteLogo.png";
 import Image from "next/image";
-
+import { useState } from "react";
+import { Button } from "@mui/material";
+import { BiSearch } from "react-icons/bi";
+import SearchBarModal from "../SearchBarModal";
 const Navbar = () => {
+  const [modal, setModal] = useState(false);
+
+  const handleClick = () => {
+    setModal(!modal);
+  };
   return (
     <>
       <nav className={navStyles.topNav}>
@@ -53,10 +60,15 @@ const Navbar = () => {
             })}
           </ul>
         </div>
-        <div className={navStyles.seacrhicon}>
-          <SearchBar placeholder="Search Costaatt..." />
-        </div>
+        <Button onClick={handleClick}>
+          <BiSearch />
+        </Button>
       </nav>
+      {modal && (
+        <div>
+          <SearchBarModal handleClose={handleClick} />
+        </div>
+      )}
     </>
   );
 };
