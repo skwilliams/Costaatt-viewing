@@ -4,7 +4,7 @@ import CardStyles from "../../styles/ProgCard.module.scss";
 import Head from "next/head";
 
 import Link from "next/link";
-import Layout from '../../components/PageWithSideNavComponents/Layout'
+import Layout from "../../components/PageWithSideNavComponents/Layout";
 import SearchCourse from "@/components/PageComponents/SearchCourse";
 import ProgCard from "../../components/PageComponents/ProgCard";
 import { coursedata } from "./allprogrammedata";
@@ -17,7 +17,9 @@ const allprogrammes = () => {
       <Head>
         <title>All Programmes </title>
       </Head>
-      <p className={CardStyles.urllayout}>COSTAATT / Programmes / All Programmes</p>
+      <p className={CardStyles.urllayout}>
+        COSTAATT / Programmes / All Programmes
+      </p>
 
       <p className={CardStyles.pheading}>All Programmes </p>
 
@@ -79,6 +81,5 @@ const allprogrammes = () => {
 // allcourses.getLayout = function getLayout(page) {
 //   return <Layout>{page}</Layout>;
 // };
-
 
 export default allprogrammes;
