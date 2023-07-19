@@ -119,7 +119,9 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
+// .navContainer {
+//   align-items: center;
+// }
 .topNav {
   display: flex;
   padding: 5px 30px;
@@ -160,24 +162,24 @@
 }
 
 .bottomNav {
-  justify-content: left;
-  margin: 0;
-  // padding: 30px 30px 15px 0;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0 65px;
   background-color: $grey;
   color: $whiteback;
-  // z-index: 10;
 }
 .bottomNav li {
   font-size: 1.2rem;
 }
 
-.navbarMenusCon {
-  margin-left: 5rem;
-  margin-top: 1.5rem;
-  // padding:2rem;
-  justify-items: center;
-}
+// .navbarMenusCon {
+//   margin-left: 5rem;
+//   margin-top: 1.5rem;
+//   // padding:2rem;
+//   justify-items: center;
+// }
 
 .navbarMenus {
   display: flex;
@@ -199,13 +201,10 @@
   color: white;
   text-decoration: underline solid $orange 4px !important;
 }
-.searchicon {
-  margin: 10rem;
-}
 
 .dropDownMain {
   left: 0;
-  top: 120px;
+  top: 180px;
   width: 100%;
   position: absolute;
   z-index: 40;
@@ -228,7 +227,7 @@
     height: fit-content;
     &:hover {
       transition: all 0.5s ease;
-      font-weight: 800;
+      font-weight: 700;
       // background: $whiteback;
       text-decoration: underline solid $orange 4px;
       text-underline-position: under;
@@ -254,27 +253,15 @@
   width: 250px;
   height: auto;
 }
-//need to finish
-.magnifyingGlass {
-  // border: 1px rgb(109, 128, 167) solid;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 2.5rem;
-  color: white;
-  font-size: 1.25rem;
-  // border-radius: 5px;
-  padding: 0 15px;
-  // box-shadow: 0 0 4px white;
-  margin-left: 20px;
-  margin-top: 20px;
-  transition: 0.5s ease-in-out;
-  &:hover {
-    border-bottom: underline solid $orange 4px;
-  }
+.searchButton {
+  cursor: pointer;
+  width: auto;
+  height: 30px;
 }
 
+.searchButton:hover {
+  color: white;
+}
 .searchInput {
   background-color: white;
   width: 100%;

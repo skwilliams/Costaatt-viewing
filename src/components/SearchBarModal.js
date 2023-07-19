@@ -1,32 +1,42 @@
 import * as React from "react";
 import Button from "@mui/material/Button";
-import input from "@mui/material/TextField";
-import Dialog from "@mui/material/Dialog";
-import DialogActions from "@mui/material/DialogActions";
-import DialogContent from "@mui/material/DialogContent";
-import DialogContentText from "@mui/material/DialogContentText";
-import DialogTitle from "@mui/material/DialogTitle";
-import { BiSearch } from "react-icons/bi";
-
-export default function SearchBarModal() {
-  const handleClose = () => {
-    setOpen(false);
-  };
+import searchBarStyles from "../styles/SearchBar.module.scss";
+import { GrClose } from "react-icons/gr";
+import { useState } from "react";
+import { Padding } from "@mui/icons-material";
+export default function SearchBarModal({ handleClose }) {
   return (
-    <div>
-      <form onClose={handleClose}>
-        <div>Search Costaatt</div>
-        <label>Form</label>
-        <input
-          autoFocus
-          margin="dense"
-          id="name"
-          label="Search"
-          type="email"
-          fullWidth
-        />
-        <BiSearch />
+    <div className={searchBarStyles.searchModal}>
+      <div className={searchBarStyles.searchModalHeading}>
+        <h1>Search Costaatt</h1>
+        {/* <Button disableElevation onClick={handleClose} variant="contained">
+          <GrClose />
+        </Button> */}
+        <GrClose onClick={handleClose} />
+      </div>
+      <form
+        action="https://www.google.com/search"
+        method="get"
+        className={searchBarStyles.searchModalInput}
+      >
+        <input id="search" placeholder="Search" type="text" />
+        <Button
+          type="submit"
+          variant="contained"
+          disableElevation
+          // onClick={handleClose}
+        >
+          Search
+        </Button>
       </form>
+      <div>
+        <p className="lorem">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+          similique delectus voluptatem officiis voluptatum facilis, consectetur
+          itaque cum! Nobis impedit quo animi totam doloribus soluta ducimus
+          minus laboriosam maxime perferendis?
+        </p>
+      </div>
     </div>
   );
 }
