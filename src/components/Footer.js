@@ -1,4 +1,6 @@
 import footerStyles from "../styles/Footer.module.scss";
+import { footerLinks } from "../components/NavComponents/menuLinks";
+
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import {
@@ -10,6 +12,7 @@ import {
 } from "react-icons/ti";
 
 import Link from "next/link";
+import MenuItems from "./NavComponents/MenuItems";
 
 const Footer = () => {
   return (
@@ -36,14 +39,22 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className={footerStyles.uptoDate}>
-          <div>Stay up to date with our latest news</div>
-          <div className={footerStyles.button}>
-            <Link href="/">Join</Link>
+        <div className={footerStyles.siteMap}>
+          <h3>Quick Links</h3>
+          <div className={footerStyles.quickLinks}>
+            {footerLinks.map((menu, index) => (
+              <div key={index}>
+                <MenuItems items={menu} />
+              </div>
+            ))}
           </div>
         </div>
 
         <div className={footerStyles.socials}>
+          <div>Stay up to date with our latest news</div>
+          <div className={footerStyles.button}>
+            <Link href="/">Join</Link>
+          </div>
           <div>Follow us on social media</div>
           <div className={footerStyles.socialsIcons}>
             <a href="#">

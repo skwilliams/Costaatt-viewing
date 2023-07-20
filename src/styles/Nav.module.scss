@@ -1,4 +1,4 @@
-@import './variable';
+@import "./variable";
 
 .header {
   // position: sticky;
@@ -8,7 +8,7 @@
 }
 
 .headerStyles {
-  background-color: white;
+  background-color: $purple-secondary;
   display: flex;
   width: 100%;
   gap: 20px;
@@ -23,11 +23,15 @@
   position: fixed;
   z-index: 40;
   top: 0;
-  background-color: white;
+  // background-color: $grey;
+
+  background-image: linear-gradient(to right, $orange, $purple-secondary);
+  height: auto;
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 0.5rem 10dvw 0 10dvw;
+  padding: 0 10rem 0 10rem;
+  color: $whiteback;
 }
 .sideNavContainer {
   position: sticky;
@@ -72,7 +76,11 @@
   animation-fill-mode: forwards;
 }
 .activeSubsection {
-  border-bottom: black 5px solid;
+  // margin-bottom:.4rem;
+  border-bottom: white 5px solid;
+  font-weight: 900;
+
+  // text-decoration: underline solid white 4px;
 }
 .rslink {
   padding: 0 2rem 1rem 2rem;
@@ -85,16 +93,17 @@
   font-weight: 600;
 }
 .activeSideNavSubsection {
-  color: rgb(0, 0, 0);
+  // color: rgb(0, 0, 0);
+  color: white;
 }
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: #ca0011;
+  color: $orange;
 }
 
 .hover-underline-animation::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -110,12 +119,18 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
+// .navContainer {
+//   align-items: center;
+// }
 .topNav {
   display: flex;
   padding: 5px 30px;
   justify-content: space-between;
-  background-color: black;
+  background-image: linear-gradient(
+    to bottom right,
+    $purple-main,
+    $purple-secondary
+  );
   color: white;
 }
 
@@ -124,54 +139,72 @@
   flex-direction: column;
   gap: 30px;
   justify-content: space-between;
-  padding: 15px 40px;
-  align-items: center;
+  padding: 10px 20px;
+  align-items: left;
+  background-color: $grey;
+  margin: 0;
 }
 .centerNav h2 {
   font-size: 1.7rem;
 }
+//costaatt logo on main page
+.logo {
+  padding: 0;
+  margin: 0;
+  float: left;
+  padding-left: 0;
+}
+.costaattwords {
+  font-family: "Lato", Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 1.25rem;
+  color: black;
+}
 
 .bottomNav {
-  justify-content: center;
-  padding: 5px 30px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0 65px;
+  background-color: $grey;
+  color: $whiteback;
 }
 .bottomNav li {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
+
+// .navbarMenusCon {
+//   margin-left: 5rem;
+//   margin-top: 1.5rem;
+//   // padding:2rem;
+//   justify-items: center;
+// }
 
 .navbarMenus {
   display: flex;
   gap: 20px;
   list-style: none;
-  // a {
-  //   text-decoration: none;
-  //   color: inherit;
-  //   border-radius: 15px;
-  //   width: fit-content;
-  // }
+  justify-content: center;
 }
 .navBarLinks {
   width: 100%;
   padding: 9px 5px;
-  text-decoration-color: white;
+  text-decoration-color: $grey-light;
   cursor: pointer;
 }
 
 .navBarLinks:hover {
   transition: all 0.8s ease;
   border-radius: 15px;
-  text-decoration: underline;
-  text-decoration-thickness: 0.2rem;
   text-underline-position: under;
-  color: $base-color;
-  padding: 9px 5px;
-  text-decoration: underline !important;
+  color: white;
+  text-decoration: underline solid $orange 4px !important;
 }
 
 .dropDownMain {
   left: 0;
-  top: 305px;
+  top: 180px;
   width: 100%;
   position: absolute;
   z-index: 40;
@@ -182,19 +215,22 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  background-color: $base-color;
+  color: $whiteback;
+  background-color: $whiteback;
   box-shadow: inset 0px 14px 15px rgba(0, 0, 0, 0.3);
   padding: 40px 120px;
   .dropDownLi {
-    color: white;
+    color: $grey;
     padding: 20px;
     align-content: center;
     width: 100%;
     height: fit-content;
     &:hover {
-      transition: all 1s ease;
-      color: black;
-      background: white;
+      transition: all 0.5s ease;
+      font-weight: 700;
+      // background: $whiteback;
+      text-decoration: underline solid $orange 4px;
+      text-underline-position: under;
     }
   }
 }
@@ -214,28 +250,18 @@
 
 .dummyImage {
   margin-bottom: 20px;
-  width: 350px;
+  width: 250px;
   height: auto;
 }
-//need to finish
-.magnifyingGlass {
-  border: 1px rgb(109, 128, 167) solid;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 2.5rem;
-  font-size: 1.5rem;
-  border-radius: 5px;
-  padding: 0 15px;
-  box-shadow: 0 0 4px white;
-  margin-left: 20px;
-  transition: 0.5s ease-in-out;
-  &:hover {
-    background-color: white;
-  }
+.searchButton {
+  cursor: pointer;
+  width: auto;
+  height: 30px;
 }
 
+.searchButton:hover {
+  color: white;
+}
 .searchInput {
   background-color: white;
   width: 100%;
@@ -276,7 +302,7 @@
   width: 100%;
   height: 100%;
 
-  color: black;
+  color: white;
   cursor: pointer;
 }
 
@@ -347,6 +373,7 @@
     width: auto;
     height: 40px;
     padding: 4px;
+    margin-top: 2rem;
     top: 20px;
     right: 30px;
   }

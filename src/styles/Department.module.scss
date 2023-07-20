@@ -1,0 +1,96 @@
+@import "./variable";
+
+/* Department */
+
+/*Department Styles Has Side nav */
+
+.sidenavtext{
+  text-align: left;
+  font-size: 1.2rem;
+  color:$grey;
+  line-height: 1.75;
+  text-align: justify;
+}
+
+
+.sectionoverviewSide{
+  color: $grey;
+  // box-sizing: inherit;
+  padding: 5rem 5rem 8rem 0;
+  background-color: white;
+  font-family: "Lato", sans-serif;
+  font-size:1.5rem;
+
+
+}
+
+.sectionwhatsup{ 
+     padding: 5rem 5rem 8rem 0;
+
+//  .threeColGridCon{  
+//    display: grid;
+//    gap: 8rem;
+//    grid-gap:2rem ;
+//    grid-template-columns: auto auto auto;
+ 
+//  }
+//  .threeColGrid {  
+//    text-align: center;
+//    padding: 2rem 0;
+//    font-size: 1.5rem;
+//    // padding: 10px;
+//  }
+      
+}
+/*3 columns change name*/ 
+
+
+
+
+
+.sectionfeaturedwork{
+      padding: 5rem 5rem 8rem 0;
+   
+       background-color: $grey-light;
+
+}
+
+.sectionfaculty{
+    height: 250px;
+     background-color: $red-dark;
+       padding: 5rem 5rem 8rem 0;
+}
+
+.sectionprogrammes{
+        height:250px;
+     background-color: $grey-light;
+       padding: 5rem 5rem 8rem 0;
+
+}
+.sectionsturesources{
+        height: 250px;
+         background-color: $red-dark;
+           padding: 5rem 5rem 8rem 0;
+
+}
+
+ .threeGridCon{
+    display: grid;
+     gap: 3rem;
+     grid-gap:2rem ;
+    grid-template-columns: auto auto auto;
+    margin: 0 auto;
+    margin-right:5rem;
+  
+
+   }
+   .threeGridCol {
+
+     text-align: center;
+     padding-top: 5rem; 
+     font-size: 30px;
+     margin: 1.5rem 0 3rem 0;
+     margin-bottom:0;
+     
+    
+   }

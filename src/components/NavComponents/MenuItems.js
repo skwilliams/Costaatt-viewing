@@ -3,15 +3,18 @@ import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import navStyles from "../../styles/Nav.module.scss";
 import { useState } from "react";
 import Link from "next/link";
+
+
 const MenuItems = ({ items, isLastItem }) => {
   const [showDropDown, setShowDropDown] = useState(false);
 
   //pass this itemStyle to component
   const itemStyle = isLastItem
     ? {
-        backgroundColor: " rgb(255, 109, 10)",
-        color: "black",
-        padding: "7px",
+        backgroundColor: "#F58220",
+        color: "white",
+        padding: "10px",
+        
       }
     : {};
 

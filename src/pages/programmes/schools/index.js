@@ -3,7 +3,7 @@ import ProgStyles from '../../../styles/Programmes.module.scss';
 import visitus from '../../../../images/Programmes/visit-home-v2.jpg';
 import SchoolCard from '../../../components/PageComponents/SchoolCard';
 import SchoolImage from '../../../../images/Links/campus 1.jpg';
-import Layout from '@/components/Layout';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import Head from 'next/head';
@@ -34,7 +34,9 @@ const schools = () => {
         </div>
       </section>
 
-      <section id="all schools" className={ProgStyles.sectionallschools}>
+      <section id="allschools" className={ProgStyles.sectionallschools}>
+        <p className={ProgStyles.headingprimary}> All Schools</p>
+
         <SchoolCard
           image={SchoolImage}
           schoolname="School of Business and Digital Technologies"
@@ -43,7 +45,7 @@ const schools = () => {
     eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde.
     We are here for you Lorem ipsum dolor sit amet consectetur adipisicing
    "
-          linkpage="/programmes/schools/sbdt"
+          linkpage="/programmes/schools/busIT"
           shortname="SBDT"
         />
         <SchoolCard
@@ -54,7 +56,7 @@ const schools = () => {
     eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde.
     We are here for you Lorem ipsum dolor sit amet consectetur adipisicing
    "
-          linkpage="/programmes/schools/"
+          linkpage="/programmes/schools/liberal"
           shortname="SLAEDH"
         />
         <SchoolCard
@@ -65,7 +67,7 @@ const schools = () => {
     eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde.
     We are here for you Lorem ipsum dolor sit amet consectetur adipisicing
    "
-          linkpage="/programmes/schools/"
+          linkpage="/programmes/schools/workF"
           shortname="SWED"
         />
         <SchoolCard
@@ -76,7 +78,7 @@ const schools = () => {
     eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde.
     We are here for you Lorem ipsum dolor sit amet consectetur adipisicing
    "
-          linkpage="/programmes/schools/"
+          linkpage="/programmes/schools/nursing"
           shortname="SNHM"
         />
         <SchoolCard
@@ -87,7 +89,7 @@ const schools = () => {
     eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde.
     We are here for you Lorem ipsum dolor sit amet consectetur adipisicing
    "
-          linkpage="/programmes/schools/kgsc"
+          linkpage="/programmes/schools/kengord"
           shortname="KGSC"
         />
         <SchoolCard
@@ -98,7 +100,7 @@ const schools = () => {
     eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde.
     We are here for you Lorem ipsum dolor sit amet consectetur adipisicing
    "
-          linkpage="/programmes/schools/"
+          linkpage="/programmes/schools/enviro"
           shortname="SECE"
         />
       </section>
@@ -110,31 +112,31 @@ const schools = () => {
             <div className={ProgStyles.areasofSGrid}>
               <ul className={ProgStyles.areasofstudyul}>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
+                  {" "}
                   <Link href="#">District Health Visiting</Link>
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
-                  <Link href="#">Medical Lab Technology</Link>{' '}
+                  {" "}
+                  <Link href="#">Medical Lab Technology</Link>{" "}
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
+                  {" "}
                   <Link href="#">Midwifery</Link>
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
+                  {" "}
                   <Link href="#">Nursing</Link>
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
-                  <Link href="#">Pharmacy Assistant</Link>{' '}
+                  {" "}
+                  <Link href="#">Pharmacy Assistant</Link>{" "}
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
                   <Link href="#">Phlebotomy</Link>
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
-                  <Link href="#">Radiography</Link>{' '}
+                  {" "}
+                  <Link href="#">Radiography</Link>{" "}
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
                   <Link href="#">Sonography for Midwives</Link>
@@ -144,78 +146,78 @@ const schools = () => {
             <div className={ProgStyles.areasofSGrid}>
               <ul className={ProgStyles.areasofstudyul}>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
+                  {" "}
                   <Link href="#">Criminal Justice</Link>
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
-                  <Link href="#">Early Childhood Care and Education</Link>{' '}
+                  {" "}
+                  <Link href="#">Early Childhood Care and Education</Link>{" "}
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
                   <Link href="#">Mathematics</Link>
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
+                  {" "}
                   <Link href="#">Psychology</Link>
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
-                  <Link href="#">Social Work</Link>{' '}
+                  {" "}
+                  <Link href="#">Social Work</Link>{" "}
                 </li>
               </ul>
             </div>
             <div className={ProgStyles.areasofSGrid}>
               <ul className={ProgStyles.areasofstudyul}>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
+                  {" "}
                   <Link href="#">Biology</Link>
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
-                  <Link href="#">Emergency Care</Link>{' '}
+                  {" "}
+                  <Link href="#">Emergency Care</Link>{" "}
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
+                  {" "}
                   <Link href="#">Environmental Health</Link>
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
+                  {" "}
                   <Link href="#">Natural and Life Science</Link>
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
-                  <Link href="#">Occupational Safety and Health</Link>{' '}
+                  {" "}
+                  <Link href="#">Occupational Safety and Health</Link>{" "}
                 </li>
               </ul>
             </div>
             <div className={ProgStyles.areasofSGrid}>
               <ul className={ProgStyles.areasofstudyul}>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
+                  {" "}
                   <Link href="#">Advertising and Promotions</Link>
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
-                  <Link href="#">Films and Video Production</Link>{' '}
+                  {" "}
+                  <Link href="#">Films and Video Production</Link>{" "}
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
+                  {" "}
                   <Link href="#">Graphic Design</Link>
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
+                  {" "}
                   <Link href="#">Journalism and PR</Link>
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
-                  <Link href="#">Literatues in English</Link>{' '}
+                  {" "}
+                  <Link href="#">Literatues in English</Link>{" "}
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
                   <Link href="#">Mass Communications</Link>
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
-                  <Link href="#">Music</Link>{' '}
+                  {" "}
+                  <Link href="#">Music</Link>{" "}
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
                   <Link href="#">Spanish</Link>
@@ -225,43 +227,43 @@ const schools = () => {
             <div className={ProgStyles.areasofSGrid}>
               <ul className={ProgStyles.areasofstudyul}>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
+                  {" "}
                   <Link href="#">Accounting</Link>
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
-                  <Link href="#">Business Administration</Link>{' '}
+                  {" "}
+                  <Link href="#">Business Administration</Link>{" "}
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
+                  {" "}
                   <Link href="#">Entrepreneurship</Link>
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
+                  {" "}
                   <Link href="#">Human Resources</Link>
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
-                  <Link href="#">Information Technology</Link>{' '}
+                  {" "}
+                  <Link href="#">Information Technology</Link>{" "}
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
                   <Link href="#">Library Studies</Link>
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
-                  <Link href="#">Marketing</Link>{' '}
+                  {" "}
+                  <Link href="#">Marketing</Link>{" "}
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
+                  {" "}
                   <Link href="#">Networking</Link>
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
+                  {" "}
                   <Link href="#">Supervisory Management</Link>
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
-                  <Link href="#">Records Management</Link>{' '}
+                  {" "}
+                  <Link href="#">Records Management</Link>{" "}
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
                   <Link href="#">Web Development</Link>
@@ -271,26 +273,26 @@ const schools = () => {
             <div className={ProgStyles.areasofSGrid}>
               <ul className={ProgStyles.areasofstudyul}>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
+                  {" "}
                   <Link href="#">Corporate and Upskilling Training</Link>
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
+                  {" "}
                   <Link href="#">
                     Customized Workshops and Short Courses
-                  </Link>{' '}
+                  </Link>{" "}
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
+                  {" "}
                   <Link href="#">Professional Development</Link>
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
+                  {" "}
                   <Link href="#">Translation and Interpretation Services</Link>
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
-                  {' '}
-                  <Link href="#">CollegeStartTT Programme</Link>{' '}
+                  {" "}
+                  <Link href="#">CollegeStartTT Programme</Link>{" "}
                 </li>
               </ul>
             </div>
@@ -312,7 +314,7 @@ const schools = () => {
               <p className={ProgStyles.applyheading}>Visit us </p>
               <p className={ProgStyles.applytext}>Schedule a tour</p>
               <Link className={ProgStyles.goto} href="/admissions/visitus">
-                {' '}
+                {" "}
                 Make an appointment
               </Link>
             </div>
@@ -328,7 +330,7 @@ const schools = () => {
                 Speak to an Admission Councillor
               </p>
               <Link className={ProgStyles.goto} href="/admissions/contactcoun">
-                {' '}
+                {" "}
                 Book an appointment with a councillor →
               </Link>
             </div>
@@ -341,11 +343,11 @@ const schools = () => {
 
               <p className={ProgStyles.applyheading}>Apply Now </p>
               <p className={ProgStyles.applytext}>
-                {' '}
+                {" "}
                 Ready to start your journey.
               </p>
               <Link className={ProgStyles.goto} href="/admissions/applynow">
-                {' '}
+                {" "}
                 Apply Now →
               </Link>
             </div>

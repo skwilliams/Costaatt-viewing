@@ -16,7 +16,7 @@ const DepartCard = ({image,departname,intro,linkpage,shortname}) => {
              href={linkpage}
              
             >   
-             visit {shortname}... </Link>
+             Visit {shortname}... </Link>
       
     </>
 

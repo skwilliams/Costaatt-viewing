@@ -1,53 +1,65 @@
-// .searchBar {
-//   // border: 3px rgb(109, 128, 167) solid;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   height: 2rem;
-//   border-radius: 5px;
-//   padding: 0 15px;
-//   box-shadow: 0 0 4px white;
-//   margin-left: 20px;
-//   transition: 0.5s ease-in-out;
-//   &:hover {
-//     background-color: white;
-//   }
-//   input {
-//     border: none;
-//     position: absolute;
-//     text-align: center;
-//     font-size: 3rem;
-//     top: 100px;
-//     left: 0;
-//     width: 100%;
-//     height: 20%;
-//     &:focus {
-//       outline: none;
-//       width: 100%;
-//       background-color: white;
-//     }
-//   }
-// }
+@import "./variable";
 
-// .searchIcon {
-//   width: 100%;
-//   height: 100%;
-//   color: black;
-//   cursor: pointer;
-// }
+.searchModal {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $whiteback; /* Black background with opacity */
+  padding: 100px 150px;
+  z-index: 1000;
+}
 
-// @media only screen and (max-width: 1200px) {
-//   .searchBar {
-//     // border: 3px rgb(109, 128, 167) solid;
-//     align-items: left;
-//     justify-content: left;
-//     transition: 0.5s ease-in-out;
-//     &:hover {
-//       background-color: white;
-//     }
-//     input {
-//       top: 72px;
-//       z-index: 10;
-//     }
-//   }
-// }
+.searchModalHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchModalHeading h1 {
+  font-size: 5rem;
+  color: $brown;
+}
+.closeButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 800;
+}
+.searchModalInput {
+  display: flex;
+  width: 50%;
+  font-size: 2rem;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.searchModalInput ::placeholder {
+  color: $brown;
+}
+.searchModalInput input {
+  font-size: 2rem;
+  padding: 20px;
+  border: 0.25px solid black;
+  width: 100%;
+  height: 80px;
+  background: transparent;
+}
+.popularLinks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.searchModalInput button {
+  cursor: pointer;
+}
+
+.searchModalHeading button:hover {
+  background-color: orange;
+  color: white;
+}

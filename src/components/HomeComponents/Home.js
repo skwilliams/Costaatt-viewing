@@ -1,26 +1,24 @@
-import logo from '../../../images/Links/costaatLogoBlack.png';
-import HomeStyles from '../../styles/Home.module.scss';
-import HomeSlider from '../Slider';
-import SuccessSlider from '../Slider';
-
-import EventTile from './EventTile';
-import SchoolTile from './SchoolTile';
-import NewsTile from './NewsTile';
-import Image from 'next/image';
-import Link from 'next/link';
-import { FaAngleDown } from 'react-icons/fa';
+import logo from "../../../images/Links/costaattlogographic.png";
+import HomeStyles from "../../styles/Home.module.scss";
+import HomeSlider from "../Slider";
+import EventTile from "./EventTile";
+import SchoolTile from "./SchoolTile";
+import NewsTile from "./NewsTile";
+import Link from "next/link";
+import { FaAngleDown } from "react-icons/fa";
 import {
   SliderLinks,
   TILES_INFO,
   EVENTS,
   NEWS,
-  iAmInterested,
   schoolOptions,
   SuccessLinks,
-} from '../HomeComponents/homeLinks';
-import { useState } from 'react';
-import Button from '../Button';
-import Slider from '../Slider';
+  FEATURED_NEWS,
+} from "../HomeComponents/homeLinks";
+import { useState } from "react";
+import Button from "../Button";
+// import Slider from "../Slider";
+import CarouselSuccess from "../Carousel";
 
 /**This component renders the home page which is called <Landing /> in index.js
  *
@@ -30,7 +28,7 @@ import Slider from '../Slider';
  *
  */
 const Home = () => {
-  const [options, setoptions] = useState('');
+  const [options, setoptions] = useState("");
   const [interested, setinterested] = useState([]);
 
   const changeOption = (e) => {
@@ -48,59 +46,54 @@ const Home = () => {
       <section className={HomeStyles.homeContainer}>
         <section className={HomeStyles.sectionOne}>
           <div className={HomeStyles.sectionOneLeft}>
-            {/* <Link href="/">
-              <Image
-                src={logo}
-                alt="costaatt logo"
-                className={HomeStyles.logo}
-              />
-            </Link> */}
-            {/* <p>
-              The College of Science Technology <br /> and Applied Arts of
-              Trinidad and Tobago
-            </p> */}
-            {/* <h1>The Freedom to Dream</h1>
-            <h1>The Environment to Thrive</h1>
-            <h1>The Technology to Win</h1> */}
-            <h2>Write your own story</h2>
-
-            <div className={HomeStyles.selectContainer}>
-              <h3>I am</h3>
-              <div className={HomeStyles.innerSelectContainer}>
-                <select
-                  onChange={changeOption}
-                  className={HomeStyles.selectDropDown}
-                >
-                  {schoolOptions.map((opt) => (
-                    <option key={opt.name} value={opt.name}>
-                      {opt.name}
-                    </option>
-                  ))}
-                </select>
-                <FaAngleDown className={HomeStyles.Arrow} />
-              </div>
-
-              <h3>I Interested in</h3>
-              <div className={HomeStyles.innerSelectContainer}>
-                <select className={HomeStyles.selectDropDown}>
-                  {interested.map((opt) => (
-                    <>
+            <div className={HomeStyles.sectionLeftTop}>
+              <h2>
+                {" "}
+                The College of Science Technology and Applied Arts of Trinidad
+                and Tobago
+              </h2>
+            </div>
+            <div className={HomeStyles.sectionLeftBottom}>
+              <div className={HomeStyles.selectContainer}>
+                <h3>I am</h3>
+                <div className={HomeStyles.innerSelectContainer}>
+                  <select
+                    onChange={changeOption}
+                    className={HomeStyles.selectDropDown}
+                  >
+                    {schoolOptions.map((opt) => (
                       <option key={opt.name} value={opt.name}>
                         {opt.name}
                       </option>
-                    </>
-                  ))}
-                </select>
-                <FaAngleDown className={HomeStyles.Arrow} />
+                    ))}
+                  </select>
+                  <FaAngleDown className={HomeStyles.Arrow} />
+                </div>
+
+                <h3>Interested in</h3>
+                <div className={HomeStyles.innerSelectContainer}>
+                  <select className={HomeStyles.selectDropDown}>
+                    {interested.map((opt) => (
+                      <>
+                        <option key={opt.name} value={opt.name}>
+                          {opt.name}
+                        </option>
+                      </>
+                    ))}
+                  </select>
+                  <FaAngleDown className={HomeStyles.Arrow} />
+                </div>
+                <Button
+                  href="news"
+                  backgroundColor="rgb(67, 63, 64, 0.9)"
+                  textcolor="white"
+                  text="Submit"
+                />
               </div>
-              <Button
-                href="news"
-                backgroundColor="rgb(179,93,16)"
-                textcolor="white"
-                text="Submit"
-              />
-            </div>
-          </div>
+            </div>{" "}
+            {/*end of left bottom */}
+          </div>{" "}
+          {/*end of left container */}
           <div className={HomeStyles.sectionOneRight}>
             <HomeSlider slides={SliderLinks} />
           </div>
@@ -108,10 +101,7 @@ const Home = () => {
 
         <section id="schools" className={HomeStyles.sectionTwo}>
           <div className={HomeStyles.ourSchoolsText}>
-            <h1>
-              Our <br />
-              Schools
-            </h1>
+            <h2>Our Schools</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
               vel reiciendis in delectus aliquid perspiciatis quidem mollitia
@@ -156,10 +146,26 @@ const Home = () => {
             })}
           </div>
         </section>
+
         <section id="news" className={HomeStyles.sectionFour}>
           <h1 className={HomeStyles.newsHeading}>
             Latest <span>News</span>
           </h1>
+          <div className={HomeStyles.featuredNews}>
+            {FEATURED_NEWS.map((tile, index) => {
+              return (
+                <div>
+                  <Link href="news">
+                    <NewsTile
+                      title={tile.title}
+                      img={tile.image}
+                      date={tile.date}
+                    />{" "}
+                  </Link>
+                </div>
+              );
+            })}
+          </div>
           <div className={HomeStyles.sectionFourTiles}>
             {NEWS.map((tile, index) => {
               return (
@@ -183,7 +189,7 @@ const Home = () => {
             href="news"
             backgroundColor="rgb(173, 93, 16)"
             textcolor="white"
-            text={'More News...'}
+            text={"More News..."}
           />
         </section>
 
@@ -194,18 +200,11 @@ const Home = () => {
               Have a big question. Get some answers from people who are studying
               right here, right now.
             </p>
-
-            {/* <HomeSlider slides={SliderLinks} /> */}
-            {/* <Button
-              href="news"
-              textcolor="white"
-              backgroundColor="rgb(173, 93, 16)"
-              text="Meet a Student"
-            /> */}
           </div>
-          <div className={HomeStyles.successSlider}>
+          <CarouselSuccess story={SuccessLinks} />
+          {/* <div className={HomeStyles.successSlider}>
             <SuccessSlider slides={SuccessLinks} />
-          </div>
+          </div> */}
         </section>
       </section>
     </>

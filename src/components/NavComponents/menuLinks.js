@@ -8,7 +8,7 @@ export const topNavLinksLeft = [
     path: "/facultystaff",
   },
   {
-    title: "My Costaatt",
+    title: "MY COSTAATT",
     path: "/programmes",
   },
   {
@@ -33,7 +33,48 @@ export const topNavLinksRight = [
     path: "/apply",
   },
 ];
-
+export const footerLinks = [
+  {
+    title: "Programmes",
+    path: "/programmes",
+  },
+  {
+    title: "Admissions and Aid",
+    path: "/admissions/applynow",
+  },
+  {
+    title: "COSTAATT Life",
+    path: "/",
+  },
+  {
+    title: "About",
+    path: "/",
+  },
+  {
+    title: "Directory",
+    path: "/",
+  },
+  {
+    title: "Current Students",
+    path: "/currentstudents",
+  },
+  {
+    title: "Faculty & Staff",
+    path: "/facultystaff",
+  },
+  {
+    title: "MY COSTAATT",
+    path: "/programmes",
+  },
+  {
+    title: "Alumni",
+    path: "/alumni",
+  },
+  {
+    title: "Facilities",
+    path: "/facilities",
+  },
+];
 export const mainNavLinks = [
   {
     title: "Programmes",
@@ -43,8 +84,8 @@ export const mainNavLinks = [
         path: "/programmes",
       },
       {
-        title: "All Courses",
-        path: "/programmes/allcourses",
+        title: "All Programmes",
+        path: "/programmes/allprogrammes",
       },
 
       {
@@ -90,7 +131,6 @@ export const mainNavLinks = [
       },
     ],
   },
-
   {
     title: "Admissions and Aid ",
     submenu: [
@@ -136,9 +176,8 @@ export const mainNavLinks = [
       },
     ],
   },
-
   {
-    title: "Costaatt Life ",
+    title: "COSTAATT Life ",
     path: "/",
     submenu: [
       {
