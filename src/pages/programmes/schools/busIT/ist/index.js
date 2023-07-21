@@ -4,6 +4,13 @@ import HeadImage from '../../../../../components/PageComponents/HeadImage'
 import headImg from "../../../../../../images/Programmes/tester2.jpg"
 import Layout from '../../../../../components/PageWithSideNavComponents/Layout'
 import ProgStyles from '../../../../../styles/Programmes.module.scss'
+import { Accordion } from "@mui/material";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+
+
 
 import ContactSideNav from '../../../../../components/PageComponents/ContactSideNav'
 import DeptStyles from '../../../../../styles/Department.module.scss'
@@ -30,17 +37,74 @@ const index = () => {
 
         <section id="overview" className={DeptStyles.sectionoverviewSide}>
           <div className={ProgStyles.umargintopsmall}>
-            <p className={ProgStyles.headingprimaryleft}> Mission</p>
+            <p className={ProgStyles.headingprimaryleft}> Overview</p>
             <p className={DeptStyles.sidenavtext}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo
-              sed quae repellat blanditiis corrupti rerum quia voluptatem
-              dolores, explicabo eius numquam, dolore incidunt reprehenderit
-              aperiam, ad eos veniam unde. We are here for you Lorem ipsum dolor
-              sit amet consectetur adipisicing elit. Mollitia distinctio
-              voluptatem a nemo quam, blanditiis quasi ipsa? Architecto
-              aspernatur, esse eius id ut accusamus nihil ipsam nemo
-              necessitatibus praesentium! Dolorem.
+              The Department of ICTs and Digital Technologies is part of the
+              School of Business and Digital Technologies. The department
+              currently offers several programs designed to meet your
+              educational and career goals. Our programmes include the Library
+              Science and Information Technology disciplines.
             </p>
+            <p className={DeptStyles.subheading}> Vision</p>
+            <p className={DeptStyles.sidenavtext}>
+              {" "}
+              The vision of the ICTs and Digital Technologies department is to
+              be the premier Information Technology educational institution in
+              the Caribbean.{" "}
+            </p>
+            <p className={DeptStyles.subheading}> Mission</p>
+            <p className={DeptStyles.sidenavtext}>
+              {" "}
+              To develop expert Information Technology (IT) solution providers,
+              equipped with the most up-to-date and relevant information
+              technology and critical thinking skills, through training,
+              practicum and industry experience.
+            </p>{" "}
+            <Accordion className={DeptStyles.accordion}>
+              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                <Typography className={DeptStyles.acoordiantext}>
+                  Core Values
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <ul className={ProgStyles.degcourses}>
+                  <li className={ProgStyles.degcoursesli}>
+                    Dedication - We are dedicated to the task of educating all
+                    students in our department. We invest the time and energy
+                    necessary to create a positive learning environment for our
+                    students.
+                  </li>
+                  <li className={ProgStyles.degcoursesli}>
+                    Teamwork - We share knowledge and support each other as we
+                    work towards achieving our vision and mission.{" "}
+                  </li>
+                  <li className={ProgStyles.degcoursesli}>
+                    Integrity- We are honest in our actions and have respect for
+                    our students and each other.{" "}
+                  </li>
+                  <li className={ProgStyles.degcoursesli}>
+                    Compassion - we care about our student's success and
+                    well-being.{" "}
+                  </li>
+                  <li className={ProgStyles.degcoursesli}>
+                    Innovation - we are continuously striving to create a
+                    dynamic learning environment for our students. We utilize
+                    where necessary new techniques and strategies to improve
+                    teaching and learning.{" "}
+                  </li>
+                  <li className={ProgStyles.degcoursesli}>
+                    Student-Centeredness - we value and respect the students as
+                    unique individuals with different learning abilities. We
+                    assist the students as much as possible in realizing their
+                    educational goals.{" "}
+                  </li>
+                  <li className={ProgStyles.degcoursesli}>
+                    Lifelong learning - we engage in lifelong learning and
+                    encourage our students to be lifelong learners.{" "}
+                  </li>
+                </ul>
+              </AccordionDetails>
+            </Accordion>
             <div className={DeptStyles.contactcard}>
               <ContactSideNav
                 btn1txt="Visit"
@@ -94,7 +158,7 @@ const index = () => {
           </div>
         </section>
         <section id="featuredwork" className={DeptStyles.sectionfeaturedwork}>
-            <Featured feat={features}  />
+          <Featured feat={features} />
         </section>
         <section id="facultystaff" className={DeptStyles.sectionfaculty}>
           <p>Images of faculty and Staff</p>

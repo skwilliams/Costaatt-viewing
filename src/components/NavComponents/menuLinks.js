@@ -204,6 +204,10 @@ export const mainNavLinks = [
         title: "Compass Center",
         path: "/",
       },
+      {
+        title: "Events",
+        path: "/",
+      },
     ],
     submenuImage: [
       {
