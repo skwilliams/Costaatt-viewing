@@ -543,9 +543,11 @@ form.degreesearch input[type="text"] {
 }
 .courseaccordion{
   text-align: center;
-
-  background-color: $purple-secondary;
-  // //  margin: 0 2rem ;
+  background-image: linear-gradient(to right, $purple-main,$orange2);
+  // //   /* For older browsers */
+  background-image: -webkit-linear-gradient(right,$purple-main,$orange2);
+  background-image: -moz-linear-gradient(right,$purple-main,$orange2);
+  background-image: -o-linear-gradient(right,$purple-main,$orange2);
 }
 .courseaccordion:first-child{
   margin-left:2rem ;

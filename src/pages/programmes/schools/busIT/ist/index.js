@@ -20,7 +20,18 @@ import BusImg from "../../../../../../images/Links/home2.png";
 import Link from "next/link"
 import Featured from '@/components/PageComponents/Featured'
 import { features } from '@/components/PageComponents/featuresdata'
-
+import {staffdata} from '@/pages/programmes/schools/busIT/ist/facultystaffdata'
+import { facultydata } from "@/pages/programmes/schools/busIT/ist/facultystaffdata"
+import FacultyStaffCard from '../../../../../components/PageComponents/FacultyStaffDepCard'
+import {
+  TableContainer,
+  Table,
+  TableHead,
+  TableBody,
+  TableRow,
+  TableCell,
+  Paper,
+} from "@mui/material";
 
 const index = () => {
  
@@ -29,12 +40,10 @@ const index = () => {
         <Head>
           <title>IST</title>
         </Head>
-
         <HeadImage
           imagetext="Information Science and Technology"
           mainimage={headImg}
         />
-
         <section id="overview" className={DeptStyles.sectionOverview}>
           <div className={ProgStyles.umargintopsmall}>
             <p className={ProgStyles.headingprimary}> Our Mission</p>
@@ -128,8 +137,7 @@ const index = () => {
             />
           </div>
         </section>
-
-        <section id="whatsup" className={DeptStyles.sectionWhatsup}>
+        <section id="happening" className={DeptStyles.sectionWhatsup}>
           <p className={ProgStyles.headingprimary}> Department Events</p>
 
           <div className={ProgStyles.threeColGridCon}>
@@ -167,17 +175,146 @@ const index = () => {
               View More..
             </Link>
           </div>
-        </section>    <p className={ProgStyles.headingprimary}> Featured Work</p>
+        </section>{" "}
         <section id="featuredwork" className={DeptStyles.sectionFeaturedwork}>
-      
+          <p className={ProgStyles.headingprimary}> Featured Work</p>
 
           <Featured feat={features} />
         </section>
         <section id="facultystaff" className={DeptStyles.sectionFaculty}>
-          <p>Images of faculty and Staff</p>
+          <p className={ProgStyles.headingprimary}> Faculty and Staff</p>
+          <div className={DeptStyles.fourGridCon}>
+            <FacultyStaffCard staff={staffdata} />
+          </div>
         </section>
-        <section id="prgorammes" className={DeptStyles.sectionProgrammes}>
-          <p>accordian</p>
+        <section id="programmes" className={DeptStyles.sectionProgrammes}>
+          <p className={ProgStyles.headingprimary}> Department Programmes </p>
+
+          <div className={ProgStyles.threeGridRowCon}>
+            <div className={ProgStyles.threeGridRow}>
+              <Accordion className={DeptStyles.courseaccordion}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                  <Typography className={ProgStyles.acoordiantext}>
+                    Bachelor Degrees
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <ul className={ProgStyles.degcourses}>
+                    <li className={ProgStyles.degcoursesli}>
+                      <Link href=""> Information Technology </Link>
+                    </li>
+                    <li className={ProgStyles.degcoursesli}>
+                      <Link href="">Networking</Link>
+                    </li>
+                    <li className={ProgStyles.degcoursesli}>
+                      <Link href=""> Web Development</Link>
+                    </li>
+                    <li className={ProgStyles.degcoursesli}>
+                      <Link href="">Library and Information Science</Link>
+                    </li>
+                  </ul>
+                </AccordionDetails>
+              </Accordion>
+            </div>
+            <div className={ProgStyles.threeGridRow}>
+              <Accordion className={DeptStyles.courseaccordion}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                  <Typography className={ProgStyles.acoordiantext}>
+                    Associate Degrees
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails className={ProgStyles.bachelors}>
+                  <ul className={ProgStyles.degcourses}>
+                    <li className={ProgStyles.degcoursesli}>
+                      <Link href="">Information Technology</Link>{" "}
+                    </li>
+                    <li className={ProgStyles.degcoursesli}>
+                      <Link href="">Web Development</Link>
+                    </li>
+                    <li className={ProgStyles.degcoursesli}>
+                      <Link href="">Library and Information Studies</Link>
+                    </li>
+                  </ul>
+                </AccordionDetails>
+              </Accordion>
+            </div>
+            <div className={ProgStyles.threeGridRow}>
+              <Accordion className={DeptStyles.courseaccordion}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                  <Typography className={ProgStyles.acoordiantext}>
+                    Certificates
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails className={ProgStyles.bachelors}>
+                  <ul className={ProgStyles.degcourses}>
+                    <li className={ProgStyles.degcoursesli}>
+                      <Link href=""> Records Management</Link>
+                    </li>
+                    <li className={ProgStyles.degcoursesli}>
+                      <Link href=""> CISCO-CCNA</Link>{" "}
+                    </li>
+                    <li className={ProgStyles.degcoursesli}>
+                      <Link href=""> Web Development</Link>
+                    </li>
+                  </ul>
+                </AccordionDetails>
+              </Accordion>
+            </div>
+          </div>
+
+          {/* <TableContainer component={Paper}>
+            <Table aria-label="simple table">
+              <TableHead sx={{}}>
+                <TableRow>
+                  <TableCell>Bachelor Degrees</TableCell>
+                  <TableCell>Associate Degrees</TableCell>
+                  <TableCell>Certificates</TableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                <TableRow>
+                  <TableCell>
+                    {" "}
+                    <Link href="#">Information Technology </Link>
+                  </TableCell>
+                  <TableCell>
+                    {" "}
+                    <Link href="#">Information Technology </Link>
+                  </TableCell>
+                  <TableCell>
+                    {" "}
+                    <Link href="#">Records Management </Link>
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>
+                    {" "}
+                    <Link href="#">Networking </Link>
+                  </TableCell>
+                  <TableCell>Web Development</TableCell>
+                  <TableCell>Cisco-CCNA</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>
+                    {" "}
+                    <Link href="#">Web Development </Link>
+                  </TableCell>
+                  <TableCell>Library Science and Information Systems</TableCell>
+                  <TableCell>Web Development</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>
+                    {" "}
+                    <Link href="#">
+                      Library Science and Information Systems{" "}
+                    </Link>
+                  </TableCell>
+                  <TableCell></TableCell>
+                  <TableCell></TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
+          </TableContainer> */}
         </section>
         <section
           id="sturesource"

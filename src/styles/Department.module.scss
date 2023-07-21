@@ -33,7 +33,7 @@
   color: $grey;
   // box-sizing: inherit;
   padding: 5rem 5rem 8rem 0;
-  margin: 0 15rem;
+  margin: 0 10rem;
 
   font-family: "Lato", sans-serif;
   font-size:1.5rem;
@@ -60,7 +60,11 @@
 
   .accordion{
   text-align: center;
-   background-color: $grey-light;
+   background-image: linear-gradient(to right, $purple-secondary,$orange);
+  // //   /* For older browsers */
+  background-image: -webkit-linear-gradient(right,$purple-secondary,$orange);
+  background-image: -moz-linear-gradient(right,$purple-secondary,$orange);
+  background-image: -o-linear-gradient(right,$purple-secondary,$orange);
   margin-bottom: 2rem;
 
   // //  margin: 0 2rem ;
@@ -75,7 +79,7 @@
   display: block;
   font-size: 1.4rem;
   font-weight: 800;
-  color:$sobitCol;
+  color:white;
   
   text-align: center;
   margin:0;
@@ -86,7 +90,7 @@
 }
 .sectionContact{
   background-color: $lightgrey1;
- margin: 0 15rem;
+ margin: 0 10rem;
 }
 
 
@@ -116,23 +120,63 @@
 
 .sectionFeaturedwork{
       padding: 5rem 5rem 8rem 0;
-       margin: 0 15rem;
+       margin: 0 10rem;
       
 
 }
 
 .sectionFaculty{
-    height: 250px;
-     background-color: $red-dark;
-       padding: 5rem 5rem 8rem 0;
-        margin: 0 15rem;
-}
+
+   
+    padding: 5rem 5rem 8rem 0;
+    margin: 0 15rem;
+    font-size:1.25rem;
+  
+  
+ .fourGridCon{
+    display: grid;
+     gap: 3rem;
+     grid-gap:2rem ;
+    grid-template-columns: auto auto auto auto;
+    margin: 0 auto;
+    margin-right:5rem;
+  
+
+   }
+   .fourGridCol {
+
+     text-align: center;
+     padding-top: 5rem; 
+     font-size: 30px;
+     margin: 1.5rem 0 3rem 0;
+     margin-bottom:0;
+     
+    
+   }
+  
+  
+  }
+        
+
+
+
 
 .sectionProgrammes{
-   margin: 0 15rem;
-        height:250px;
-     background-color: $grey-light;
-       padding: 5rem 5rem 8rem 0;
+     margin: 0 10rem;
+     padding: 5rem 5rem 8rem 0;
+
+       .courseaccordion{
+          text-align: center;
+          font-size: 1.5rem;
+           background-image: linear-gradient(to right, $purple-secondary,$orange);
+  // //   /* For older browsers */
+  background-image: -webkit-linear-gradient(right,$purple-secondary,$orange);
+  background-image: -moz-linear-gradient(right,$purple-secondary,$orange);
+  background-image: -o-linear-gradient(right,$purple-secondary,$orange);
+          margin: 2rem 0 ;
+        }
+
+     
 
 }
 .sectionStuResources{
@@ -160,6 +204,27 @@
      font-size: 30px;
      margin: 1.5rem 0 3rem 0;
      margin-bottom:0;
+     
+    
+   }
+    .threeGridRowCon{
+    display: grid;
+     gap: 3rem;
+     grid-gap:2rem ;
+    grid-template-rows: auto auto auto;
+    margin: 0 auto;
+    margin-right:5rem;
+   
+  
+
+   }
+   .threeGridRow {
+
+     text-align: center;
+     padding-top: 5rem; 
+     font-size: 30px;
+     margin: 1.5rem 0 3rem 0;
+     margin:2rem;
      
     
    }

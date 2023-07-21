@@ -18,14 +18,11 @@ import {
   TableRow,
   TableCell,
   Paper,
-<<<<<<< HEAD
 } from '@mui/material';
-=======
-} from "@mui/material";
 
 
 
->>>>>>> 86bbcce37e3c862de8e0a1bb1d5a9c46ae54bde9
+
 const applynow = () => {
   return (
     <>
