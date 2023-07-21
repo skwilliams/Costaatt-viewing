@@ -36,6 +36,16 @@ export const subHeaderSections = {
   },
   allcourses: {
     'All courses':'all courses',
+  },
+  ist:{
+    'Overveiw of Department' : "overview",
+    'Department Contact':'contact',
+     'Happening Now' : " whatsup",
+     'Featured Work' : 'featuredwork',
+     'Faculty and Staff': 'facultystaff',
+     'Programmes in Department': 'programmes',
+     'Student Resources':'sturesource',
+
   }
 
 };

@@ -13,14 +13,9 @@
 
 }
 
-.sidenavtext{
-  text-align: left;
-  font-size: 1.2rem;
-  color:$grey;
-  line-height: 1.75;
-  text-align: justify;
-  margin-bottom:2rem;
-}
+
+
+
 
 .subheading{
  
@@ -34,20 +29,39 @@
 }
 
 
-.sectionoverviewSide{
+.sectionOverview{
   color: $grey;
   // box-sizing: inherit;
   padding: 5rem 5rem 8rem 0;
-  background-color: white;
+  margin: 0 15rem;
+
   font-family: "Lato", sans-serif;
   font-size:1.5rem;
+  text-align:center;
 
+
+.maintext{
+ 
+  font-size: 1.75rem;
+  color:$grey;
+  line-height: 1.75;
+  text-align: center;
+  margin-bottom:2rem;
+
+}
+.subtext{
+  text-align: center;
+  font-size: 1.2rem;
+  color:$grey;
+  line-height: 1.75;
+  text-align: justify;
+  margin-bottom:2rem;
+}
 
   .accordion{
   text-align: center;
    background-color: $grey-light;
-  // background-image: linear-gradient(to right,$orange, $purple-secondary);
-
+  margin-bottom: 2rem;
 
   // //  margin: 0 2rem ;
 }
@@ -61,22 +75,24 @@
   display: block;
   font-size: 1.4rem;
   font-weight: 800;
-  color:black;
+  color:$sobitCol;
   
   text-align: center;
   margin:0;
   padding:0;
-  
-  
 
 }
 
 }
+.sectionContact{
+  background-color: $lightgrey1;
+ margin: 0 15rem;
+}
 
 
-.sectionwhatsup{ 
+.sectionWhatsup{ 
      padding: 5rem 5rem 8rem 0;
-
+     margin: 0 15rem;
 //  .threeColGridCon{  
 //    display: grid;
 //    gap: 8rem;
@@ -98,26 +114,29 @@
 
 
 
-.sectionfeaturedwork{
+.sectionFeaturedwork{
       padding: 5rem 5rem 8rem 0;
-   
-       background-color: $grey-light;
+       margin: 0 15rem;
+      
 
 }
 
-.sectionfaculty{
+.sectionFaculty{
     height: 250px;
      background-color: $red-dark;
        padding: 5rem 5rem 8rem 0;
+        margin: 0 15rem;
 }
 
-.sectionprogrammes{
+.sectionProgrammes{
+   margin: 0 15rem;
         height:250px;
      background-color: $grey-light;
        padding: 5rem 5rem 8rem 0;
 
 }
-.sectionsturesources{
+.sectionStuResources{
+   margin: 0 15rem;
         height: 250px;
          background-color: $red-dark;
            padding: 5rem 5rem 8rem 0;

@@ -35,25 +35,32 @@ const index = () => {
           mainimage={headImg}
         />
 
-        <section id="overview" className={DeptStyles.sectionoverviewSide}>
+        <section id="overview" className={DeptStyles.sectionOverview}>
           <div className={ProgStyles.umargintopsmall}>
-            <p className={ProgStyles.headingprimaryleft}> Overview</p>
-            <p className={DeptStyles.sidenavtext}>
-              The Department of ICTs and Digital Technologies is part of the
+            <p className={ProgStyles.headingprimary}> Our Mission</p>
+            <p className={DeptStyles.maintext}>
+              The department of ICT's and Digital Technologies is the hub were
+              technologies meet. It's an infusion of Library Science and
+              Technology. If you desire to be exposed to technology that runs
+              through the viens of the world, you have come to the right place.
+              You can specialize in Databases,Networking, Library Science and
+              Web Development. You will be exposed to the best and latest
+              technologies all while learning the building blocks that makes up
+              Information and Technology.
+            </p>
+            {/* <p className={DeptStyles.subheading}> Vision</p> */}
+            <p className={DeptStyles.subtext}>
+              {" "}
+              The department of ICTs and Digital Technologies is part of the
               School of Business and Digital Technologies. The department
               currently offers several programs designed to meet your
               educational and career goals. Our programmes include the Library
-              Science and Information Technology disciplines.
+              Science and Information Technology discipline The vision of the
+              ICTs and Digital Technologies department is to be the premier
+              Information Technology educational institution in the Caribbean.{" "}
             </p>
-            <p className={DeptStyles.subheading}> Vision</p>
-            <p className={DeptStyles.sidenavtext}>
-              {" "}
-              The vision of the ICTs and Digital Technologies department is to
-              be the premier Information Technology educational institution in
-              the Caribbean.{" "}
-            </p>
-            <p className={DeptStyles.subheading}> Mission</p>
-            <p className={DeptStyles.sidenavtext}>
+            {/* <p className={DeptStyles.subheading}> Mission</p> */}
+            <p className={DeptStyles.subtext}>
               {" "}
               To develop expert Information Technology (IT) solution providers,
               equipped with the most up-to-date and relevant information
@@ -105,21 +112,25 @@ const index = () => {
                 </ul>
               </AccordionDetails>
             </Accordion>
-            <div className={DeptStyles.contactcard}>
-              <ContactSideNav
-                btn1txt="Visit"
-                btn2txt="Apply"
-                contacttype="Department Contact"
-                name="Maurisa Charles"
-                tel="625-5030 ext 2222"
-                // mailto="mcharles@costaatt.edu.tt "
-                email="mcharles@costtatt.edu.tt"
-              />
-            </div>
           </div>
         </section>
-        <section id="whatsup" className={DeptStyles.sectionwhatsup}>
-          <p className={ProgStyles.headingprimaryleft}> IST Events</p>
+        <section id="contact" className={DeptStyles.sectionContact}>
+          <div className={DeptStyles.contactcard}>
+            <ContactSideNav
+              btn1txt="Visit"
+              btn2txt="Apply"
+              btn3txt="Request Info"
+              contacttype="Department Contact"
+              name="Maurisa Charles"
+              tel="625-5030 ext 2222"
+              // mailto="mcharles@costaatt.edu.tt "
+              email="mcharles@costtatt.edu.tt"
+            />
+          </div>
+        </section>
+
+        <section id="whatsup" className={DeptStyles.sectionWhatsup}>
+          <p className={ProgStyles.headingprimary}> Department Events</p>
 
           <div className={ProgStyles.threeColGridCon}>
             <div className={ProgStyles.threeColGrid}>
@@ -156,26 +167,28 @@ const index = () => {
               View More..
             </Link>
           </div>
-        </section>
-        <section id="featuredwork" className={DeptStyles.sectionfeaturedwork}>
+        </section>    <p className={ProgStyles.headingprimary}> Featured Work</p>
+        <section id="featuredwork" className={DeptStyles.sectionFeaturedwork}>
+      
+
           <Featured feat={features} />
         </section>
-        <section id="facultystaff" className={DeptStyles.sectionfaculty}>
+        <section id="facultystaff" className={DeptStyles.sectionFaculty}>
           <p>Images of faculty and Staff</p>
         </section>
-        <section id="prgorammes" className={DeptStyles.sectionprogrammes}>
+        <section id="prgorammes" className={DeptStyles.sectionProgrammes}>
           <p>accordian</p>
         </section>
         <section
           id="sturesource"
-          className={DeptStyles.sectionsturesources}
+          className={DeptStyles.sectionStuResources}
         ></section>
       </>
     );
 
 }
-index.getLayout = function getLayout(page) {
-    return <Layout>{page}</Layout>
-  }
+// index.getLayout = function getLayout(page) {
+//     return <Layout>{page}</Layout>
+//   }
 
 export default index

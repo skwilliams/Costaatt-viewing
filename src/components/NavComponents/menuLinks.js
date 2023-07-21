@@ -93,6 +93,10 @@ export const mainNavLinks = [
         path: "/programmes/collegecore",
       },
       {
+        title: "Academic Advising",
+        path: "/programmes/advising",
+      },
+      {
         title: "School of Nursing, Health and Medical Technologies",
         path: "/programmes/schools/nurisng",
       },
