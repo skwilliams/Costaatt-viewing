@@ -28,7 +28,7 @@ const Featured = ({feat}) => {
           <p className={FeatStyle.text}> {fe.text}</p>
           <Link className={FeatStyle.goto} href={fe.link}>
             {" "}
-            View More...{" "}
+            Read More...{" "}
           </Link>       
           </div>     
         </>    

@@ -10,7 +10,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-
+import Image from 'next/image'
 
 import ContactSideNav from '../../../../../components/PageComponents/ContactSideNav'
 import DeptStyles from '../../../../../styles/Department.module.scss'
@@ -21,17 +21,10 @@ import Link from "next/link"
 import Featured from '@/components/PageComponents/Featured'
 import { features } from '@/components/PageComponents/featuresdata'
 import {staffdata} from '@/pages/programmes/schools/busIT/ist/facultystaffdata'
-import { facultydata } from "@/pages/programmes/schools/busIT/ist/facultystaffdata"
 import FacultyStaffCard from '../../../../../components/PageComponents/FacultyStaffDepCard'
-import {
-  TableContainer,
-  Table,
-  TableHead,
-  TableBody,
-  TableRow,
-  TableCell,
-  Paper,
-} from "@mui/material";
+import image from "../../../../../../images/Programmes/visit-home-v2.jpg"
+import StudentResources from '@/components/PageComponents/StudentResources'
+
 
 const index = () => {
  
@@ -41,7 +34,7 @@ const index = () => {
           <title>IST</title>
         </Head>
         <HeadImage
-          imagetext="Information Science and Technology"
+          imagetext="ICT and Digital Technologies"
           mainimage={headImg}
         />
         <section id="overview" className={DeptStyles.sectionOverview}>
@@ -262,64 +255,27 @@ const index = () => {
             </div>
           </div>
 
-          {/* <TableContainer component={Paper}>
-            <Table aria-label="simple table">
-              <TableHead sx={{}}>
-                <TableRow>
-                  <TableCell>Bachelor Degrees</TableCell>
-                  <TableCell>Associate Degrees</TableCell>
-                  <TableCell>Certificates</TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                <TableRow>
-                  <TableCell>
-                    {" "}
-                    <Link href="#">Information Technology </Link>
-                  </TableCell>
-                  <TableCell>
-                    {" "}
-                    <Link href="#">Information Technology </Link>
-                  </TableCell>
-                  <TableCell>
-                    {" "}
-                    <Link href="#">Records Management </Link>
-                  </TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>
-                    {" "}
-                    <Link href="#">Networking </Link>
-                  </TableCell>
-                  <TableCell>Web Development</TableCell>
-                  <TableCell>Cisco-CCNA</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>
-                    {" "}
-                    <Link href="#">Web Development </Link>
-                  </TableCell>
-                  <TableCell>Library Science and Information Systems</TableCell>
-                  <TableCell>Web Development</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>
-                    {" "}
-                    <Link href="#">
-                      Library Science and Information Systems{" "}
-                    </Link>
-                  </TableCell>
-                  <TableCell></TableCell>
-                  <TableCell></TableCell>
-                </TableRow>
-              </TableBody>
-            </Table>
-          </TableContainer> */}
+          
         </section>
-        <section
-          id="sturesource"
-          className={DeptStyles.sectionStuResources}
-        ></section>
+        <section id="sturesource" className={DeptStyles.sectionStuResources}>
+          <p className={ProgStyles.headingprimary}>  COSTAATT WANTS YOU </p>
+          <div className={DeptStyles.threeGridCon}>
+            <div className={DeptStyles.threeGridCol}>
+              <StudentResources image={image} imagetxt="Apply Now" />{" "}
+            </div>
+            <div className={DeptStyles.threeGridCol}>
+              {" "}
+              <StudentResources
+                image={image}
+                imagetxt="See Admissions Counsellor"
+              />
+            </div>
+            <div className={DeptStyles.threeGridCol}>
+              {" "}
+              <StudentResources image={image} imagetxt="Visit Us" />
+            </div>
+          </div>
+        </section>
       </>
     );
 

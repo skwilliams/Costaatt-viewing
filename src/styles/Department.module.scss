@@ -180,11 +180,28 @@
 
 }
 .sectionStuResources{
-   margin: 0 15rem;
-        height: 250px;
-         background-color: $red-dark;
-           padding: 5rem 5rem 8rem 0;
+   margin: 0 10rem;
+ 
+   padding: 3rem 5rem 8rem 0;
+box-sizing: border-box;
 
+
+.studCont {
+  position: relative;
+ }
+
+// /* Bottom right text */
+.textblock {
+  position: absolute;
+   bottom: 20px;
+  right: 20px;
+   background-color:black;
+   color: white;
+  padding-left: 1rem;
+   padding-right: 1rem;
+   font-size: 1.5rem;
+   
+}
 }
 
  .threeGridCon{
@@ -207,6 +224,8 @@
      
     
    }
+
+
     .threeGridRowCon{
     display: grid;
      gap: 3rem;

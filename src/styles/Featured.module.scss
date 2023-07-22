@@ -6,13 +6,10 @@
    grid-gap:2rem ;
   grid-template-columns: 60% 40% ;
   margin: 0 auto;
-
-  
  
  }
  .gridtwo {
  
-  
    text-align: center;
    padding: 1.5rem 0 0 0;
    font-size: 30px;
@@ -21,11 +18,12 @@
    // padding: 10px;
  }
 .title{
-    font-size: 1.5rem;
-    color:black;
+    font-size: 1.25rem;
+   
     font-weight: 900;
-    font-family: "Roboto",sans-serif;
+   
     text-align: left;
+    margin-bottom:1rem;
 }
 // .imgstyle{
 // //     width:200px;
@@ -40,6 +38,6 @@
 
 .goto{
   color:$orange2;
-  font-size:1.5rem;
-  text-align: left;
+  font-size:1.25rem;
+  text-align: right;
 }
