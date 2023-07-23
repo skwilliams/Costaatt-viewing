@@ -36,6 +36,7 @@
  }
 .sectionOverview{
 
+  margin:0 5rem;
     margin-right:3rem;
     font-size:1.25rem;
      line-height: 2;
@@ -87,11 +88,11 @@
 
 }
 .sectionCareers{
- margin:3rem 3rem 6rem 0;
+//  margin:6rem 3rem 6rem 0;
 //  margin-top:6rem;
   background-color: white;
   color: #222222;
-//   margin-bottom: 6rem;
+  margin: 6rem 3rem;
 
 
 
@@ -132,14 +133,26 @@ th {
 }
 
 .sectionPortfolio{
+     margin-right:2rem;
+     padding:0;
+     margin-bottom:6rem;
+     margin-top:6rem;
+    
+
 
 }
 .sectionGradSpeak{
+  margin: 6rem 0;
+    //  margin-top:6rem;
 
 }
 .sectionCurriculum{
+  margin:6rem 0;
+    
 
 }
 .sectionFinancial{
+  margin:6rem 0;
+    
 
 }

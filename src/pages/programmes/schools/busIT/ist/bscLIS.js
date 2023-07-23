@@ -10,6 +10,13 @@ import mode from "../../../../../../images/Programmes/mode.svg";
 import location from "../../../../../../images/Programmes/location.svg";
 import Image from "next/image";
 import ContactUs from "@/components/PageComponents/ContactUs";
+import Featured from '../../../../../components/PageComponents/Featured'
+import {featuredLIS} from '../../busIT/ist/featuredwork'
+import {gradsspeakLIS} from'../../busIT/ist/featuredwork'
+import GradStyle from "../../../../../styles/GradsSpeak.module.scss";
+import GradsSpeak from "@/components/PageComponents/GradsSpeak";
+import Divider from "@mui/material/Divider";
+
 
 const bscLIS = () => {
   return (
@@ -25,7 +32,6 @@ const bscLIS = () => {
         BSC. Library and Information Science
       </p>
       <section id="courseoverview" className={CourseStyle.sectionOverview}>
-        {/* <p className={ProgStyles.headingprimaryleft}> Description</p> */}
         <p className={CourseStyle.desc}>
           The Bachelor of Science in Information and Library Science allows
           graduates to qualify for employment in a variety of professional
@@ -99,45 +105,53 @@ const bscLIS = () => {
         <div className={CourseStyle.inquiryform}>
           <ContactUs />
         </div>
+         
       </section>
+     <Divider dark />
       <section id="careers" className={CourseStyle.sectionCareers}>
         <p className={ProgStyles.headingprimaryleft}> Possible Careers</p>
-    
-          <table className={CourseStyle.careerstable}>
-            <thead>
-              <tr>
-                <th> Position</th>
-                <th> Median Salary</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Senior (Librarian, Information Specialist, others..) </td>
-                <td>$11,000 -$15,000</td>
-              </tr>
-              <tr>
-                <td>School Librarian </td>
-                <td>$11,000 -$15,000</td>
-              </tr>
-              <tr>
-                <td> Records Manager 1 </td>
-                <td>$7,800 -$10,200</td>
-              </tr>
-            </tbody>
-          </table>
-          <p className={CourseStyle.footnote}>
-           
-              * Salaries are subject to years of experience, projects and
-              professional certification{" "}
-            
-          </p>
-        </section>
-    
+
+        <table className={CourseStyle.careerstable}>
+          <thead>
+            <tr>
+              <th> Position</th>
+              <th> Median Salary</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Senior (Librarian, Information Specialist, others..) </td>
+              <td>$11,000 -$15,000</td>
+            </tr>
+            <tr>
+              <td>School Librarian </td>
+              <td>$11,000 -$15,000</td>
+            </tr>
+            <tr>
+              <td> Records Manager 1 </td>
+              <td>$7,800 -$10,200</td>
+            </tr>
+          </tbody>
+        </table>
+        <p className={CourseStyle.footnote}>
+          * Salaries are subject to years of experience, projects and
+          professional certification{" "}
+        </p>
+      </section>
+      <Divider dark />
       <section id="gradPortfolio" className={CourseStyle.sectionPortfolio}>
         <p className={ProgStyles.headingprimaryleft}> Graduates Portfolio</p>
+
+        <Featured feat={featuredLIS} />
       </section>
+      <Divider dark />
       <section id="gradSpeak" className={CourseStyle.sectionGradSpeak}>
+
         <p className={ProgStyles.headingprimaryleft}> Graduates Speak</p>
+
+        <div className={GradStyle.threeColGridCon}>
+          <GradsSpeak graduate={gradsspeakLIS} />
+        </div>
       </section>
       <section id="curriculum" className={CourseStyle.sectionCurriculum}>
         <p className={ProgStyles.headingprimaryleft}> Curriculum</p>
