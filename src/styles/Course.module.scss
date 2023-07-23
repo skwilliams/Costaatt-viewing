@@ -1,0 +1,97 @@
+@import "./variable";
+
+
+.courseName{
+    font:"Bodoni", Helvitica;
+    font-size:3rem;
+    color:white;
+    margin: 0 0 2rem 0 ;
+    background-image: linear-gradient(to right, $orange,$purple-secondary);
+}
+.headingsecondary{
+    font-size: 1.5rem;
+    font:"Lato",Arial;
+    margin:1.5rem 0;
+    font-weight: bold;
+}
+.footnote{
+    font-size: 1.1rem;
+    font-style: italic;
+}
+.threeColGridCon{  
+  display: grid;
+   gap: 5rem;
+   grid-gap:2rem ;
+  grid-template-columns: auto auto auto;
+ 
+ }
+ .threeColGrid {  
+   text-align: center;
+//    padding: 20px ;
+   font-size: 1.5rem;
+   
+ 
+   // padding: 10px;
+ }
+.sectionOverview{
+
+    margin-right:3rem;
+    font-size:1.25rem;
+     line-height: 2;
+    //  margin-left:5rem;
+    .desc{
+        font-size:1.25rem;
+        text-align: justify;
+        font-family: "Lato" ,Arial, Helvetica, sans-serif;
+        margin: 3rem 0;
+       
+    }
+    .entryreq{
+        .list{
+           margin-left:2rem;
+        .items{
+         list-style-type: square;
+         margin:.5rem 0;
+         
+            }
+             .items::marker{
+         
+             color:$orange;
+               }        
+
+        }
+
+    }
+    .icon{
+        width:70px;
+        height: 70px;
+        
+    }
+    .iconsection{
+        // margin:  2rem 0;
+        margin:3rem 0;
+    }
+    .iconfont{
+        font-size: 1.1rem;
+       
+        
+    }
+    
+
+}
+.sectionCareers{
+
+}
+
+.sectionPortfolio{
+
+}
+.sectionGradSpeak{
+
+}
+.sectionCurriculum{
+
+}
+.sectionFinancial{
+
+}

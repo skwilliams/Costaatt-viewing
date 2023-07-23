@@ -35,7 +35,7 @@
 }
 
 .headingprimary{
-  font-family: "Roboto", serif;
+  font-family: "Bodoni"; 
   font-size: 2rem;
   font-weight: 700;
 
@@ -46,7 +46,7 @@
 }
 
 .headingprimaryleft{
-  font-family: "Roboto", serif;
+  font-family: "Bodoni";
   font-size: 2rem;
   font-weight: 700;
   text-align: left;
@@ -93,7 +93,6 @@
 }
 .pageheaderimg {
   height: 75vh;
- 
   background-position: center;
   background-size: cover;
   margin:0;  
@@ -126,8 +125,6 @@
 
 /*Main menu for top of pages*/
 .navtop {
-  
-  
   padding: 0 5rem 0 5rem;
   font-size: 1.25rem;
   margin-right: 2rem;
@@ -543,9 +540,11 @@ form.degreesearch input[type="text"] {
 }
 .courseaccordion{
   text-align: center;
-
-  background-color: $purple-secondary;
-  // //  margin: 0 2rem ;
+  background-image: linear-gradient(to right, $purple-main,$orange2);
+  // //   /* For older browsers */
+  background-image: -webkit-linear-gradient(right,$purple-main,$orange2);
+  background-image: -moz-linear-gradient(right,$purple-main,$orange2);
+  background-image: -o-linear-gradient(right,$purple-main,$orange2);
 }
 .courseaccordion:first-child{
   margin-left:2rem ;

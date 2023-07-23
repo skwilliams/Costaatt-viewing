@@ -41,10 +41,10 @@ const schools = () => {
           image={SchoolImage}
           schoolname="School of Business and Digital Technologies"
           intro="lorem ispsum isdf Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed
-    quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo
-    eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde.
-    We are here for you Lorem ipsum dolor sit amet consectetur adipisicing
-   "
+                  quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo
+                  eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde.
+                  We are here for you Lorem ipsum dolor sit amet consectetur adipisicing
+                "
           linkpage="/programmes/schools/busIT"
           shortname="SBDT"
         />
@@ -52,10 +52,9 @@ const schools = () => {
           image={SchoolImage}
           schoolname=" School of Liberal Arts, Education and Digital Humanities "
           intro="lorem ispsum isdf Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed
-    quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo
-    eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde.
-    We are here for you Lorem ipsum dolor sit amet consectetur adipisicing
-   "
+                  quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo
+                  eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde.
+                  We are here for you Lorem ipsum dolor sit amet consectetur adipisicing"
           linkpage="/programmes/schools/liberal"
           shortname="SLAEDH"
         />

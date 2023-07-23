@@ -27,5 +27,8 @@
     "sass": "^1.62.0",
     "sharp": "^0.32.1",
     "styled-components": "^6.0.4"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0"
   }
 }

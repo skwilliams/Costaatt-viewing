@@ -11,7 +11,7 @@ const HeadImage = ({imagetext, mainimage}) => {
      <Image className={style.pageheaderimg}
                src={mainimage} 
                width="1366" 
-               height ="330"
+               height ="300"
                alt="page image" 
                />
       <div className={style.pageheadertext}>
