@@ -9,6 +9,7 @@ import time from "../../../../../../images/Programmes/time.svg";
 import mode from "../../../../../../images/Programmes/mode.svg";
 import location from "../../../../../../images/Programmes/location.svg";
 import Image from "next/image";
+import ContactUs from "@/components/PageComponents/ContactUs";
 
 const bscLIS = () => {
   return (
@@ -98,15 +99,7 @@ const bscLIS = () => {
         </div>
         <div className={CourseStyle.inquiryform}>
 
-    <form action="/api/courseform" method="post">
-      <label htmlFor="first">First Name</label>
-      <input type="text" id="first" name="first" required />
- 
-      <label htmlFor="last">Last Name</label>
-      <input type="text" id="last" name="last" required />
- 
-      <button type="submit">Submit</button>
-    </form>
+          <ContactUs/>
   
 
         </div>
