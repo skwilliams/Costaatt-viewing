@@ -32,7 +32,7 @@ export const staffdata = [
     phone: "1-868-625-5030 ext 5496",
   },
 
-// export const facultydata = [
+
   {
     photo:  require("../../../../../../images/Programmes/deanavatar.jpg"),
     altText: " photo Dexter Absalom",

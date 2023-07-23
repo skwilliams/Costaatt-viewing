@@ -38,7 +38,7 @@ export const sideNavSections = {
     Accounting: "accounting",
   },
   bscLIS:{
-    'Course Overview':'courseoverview',
+    'Course Description':'courseoverview',
     'Careers':'careers',
     'Garduates Portfolio':'gradPortfolio',
     'Graduates Speak':'gradSpeak',
