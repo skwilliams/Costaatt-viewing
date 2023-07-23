@@ -81,7 +81,7 @@ const bscLIS = () => {
                 &#10004; Part-time : 6 years
               </p>
               <p className={CourseStyle.footnote}>
-                Subject to change based on college Matriculation
+                *Subject to change based on college Matriculation
               </p>{" "}
             </div>
             <div className={CourseStyle.threeColGrid}>
@@ -93,21 +93,46 @@ const bscLIS = () => {
               />
               <p className={CourseStyle.iconfont}> &#10004; Blended</p>
               <p className={CourseStyle.iconfont}> &#10004; Online</p>
-             
             </div>
           </div>
         </div>
         <div className={CourseStyle.inquiryform}>
-
-          <ContactUs/>
-  
-
+          <ContactUs />
         </div>
-       
       </section>
       <section id="careers" className={CourseStyle.sectionCareers}>
-        <p className={ProgStyles.headingprimaryleft}> Careers</p>
-      </section>
+        <p className={ProgStyles.headingprimaryleft}> Possible Careers</p>
+    
+          <table className={CourseStyle.careerstable}>
+            <thead>
+              <tr>
+                <th> Position</th>
+                <th> Median Salary</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Senior (Librarian, Information Specialist, others..) </td>
+                <td>$11,000 -$15,000</td>
+              </tr>
+              <tr>
+                <td>School Librarian </td>
+                <td>$11,000 -$15,000</td>
+              </tr>
+              <tr>
+                <td> Records Manager 1 </td>
+                <td>$7,800 -$10,200</td>
+              </tr>
+            </tbody>
+          </table>
+          <p className={CourseStyle.footnote}>
+           
+              * Salaries are subject to years of experience, projects and
+              professional certification{" "}
+            
+          </p>
+        </section>
+    
       <section id="gradPortfolio" className={CourseStyle.sectionPortfolio}>
         <p className={ProgStyles.headingprimaryleft}> Graduates Portfolio</p>
       </section>

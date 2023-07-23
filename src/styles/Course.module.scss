@@ -2,7 +2,7 @@
 
 
 .courseName{
-    font:"Bodoni", Helvitica;
+    font-family:"Bodoni", Helvitica;
     font-size:3rem;
     color:white;
     margin: 0 0 2rem 0 ;
@@ -17,6 +17,7 @@
 .footnote{
     font-size: 1.1rem;
     font-style: italic;
+    margin:1rem 0;
 }
 .threeColGridCon{  
   display: grid;
@@ -86,6 +87,47 @@
 
 }
 .sectionCareers{
+ margin:3rem 3rem 6rem 0;
+//  margin-top:6rem;
+  background-color: white;
+  color: #222222;
+//   margin-bottom: 6rem;
+
+
+
+.careerstable {
+  font-family: Lato;
+  font-size: 1.25rem;
+  border-collapse: collapse;
+  width:100%;
+}
+
+.careerstable td,
+th {
+  padding: 10px;
+  text-align: left;
+  margin: 0;
+}
+
+.careerstable tbody tr:nth-child(2n) {
+  background-color: #eee;
+}
+
+.careerstable th {
+
+  /* background-color: red; */
+  color: #222222;
+
+  font-family: "Libre Baskerville", serif;
+  text-transform: capitalize;
+
+  backface-visibility: hidden;
+ 
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+
 
 }
 
