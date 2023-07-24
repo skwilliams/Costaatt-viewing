@@ -1,11 +1,11 @@
-import logo from "../../../images/Links/costaattlogographic.png";
-import HomeStyles from "../../styles/Home.module.scss";
-import HomeSlider from "../Slider";
-import EventTile from "./EventTile";
-import SchoolTile from "./SchoolTile";
-import NewsTile from "./NewsTile";
-import Link from "next/link";
-import { FaAngleDown } from "react-icons/fa";
+import logo from '../../../images/Links/costaattlogographic.png';
+import HomeStyles from '../../styles/Home.module.scss';
+import HomeSlider from '../Slider';
+import EventTile from './EventTile';
+import SchoolTile from './SchoolTile';
+import NewsTile from './NewsTile';
+import Link from 'next/link';
+import { FaAngleDown } from 'react-icons/fa';
 import {
   SliderLinks,
   TILES_INFO,
@@ -14,11 +14,11 @@ import {
   schoolOptions,
   SuccessLinks,
   FEATURED_NEWS,
-} from "../HomeComponents/homeLinks";
-import { useState } from "react";
-import Button from "../Button";
+} from '../HomeComponents/homeLinks';
+import { useState } from 'react';
+import Button from '../Button';
 // import Slider from "../Slider";
-import CarouselSuccess from "../Carousel";
+import CarouselSuccess from '../Carousel';
 
 /**This component renders the home page which is called <Landing /> in index.js
  *
@@ -28,7 +28,7 @@ import CarouselSuccess from "../Carousel";
  *
  */
 const Home = () => {
-  const [options, setoptions] = useState("");
+  const [options, setoptions] = useState('');
   const [interested, setinterested] = useState([]);
 
   const changeOption = (e) => {
@@ -48,7 +48,7 @@ const Home = () => {
           <div className={HomeStyles.sectionOneLeft}>
             <div className={HomeStyles.sectionLeftTop}>
               <h2>
-                {" "}
+                {' '}
                 The College of Science Technology and Applied Arts of Trinidad
                 and Tobago
               </h2>
@@ -90,9 +90,9 @@ const Home = () => {
                   text="Submit"
                 />
               </div>
-            </div>{" "}
+            </div>{' '}
             {/*end of left bottom */}
-          </div>{" "}
+          </div>{' '}
           {/*end of left container */}
           <div className={HomeStyles.sectionOneRight}>
             <HomeSlider slides={SliderLinks} />
@@ -154,13 +154,13 @@ const Home = () => {
           <div className={HomeStyles.featuredNews}>
             {FEATURED_NEWS.map((tile, index) => {
               return (
-                <div>
+                <div key={tile.title}>
                   <Link href="news">
                     <NewsTile
                       title={tile.title}
                       img={tile.image}
                       date={tile.date}
-                    />{" "}
+                    />{' '}
                   </Link>
                 </div>
               );
@@ -189,7 +189,7 @@ const Home = () => {
             href="news"
             backgroundColor="rgb(173, 93, 16)"
             textcolor="white"
-            text={"More News..."}
+            text={'More News...'}
           />
         </section>
 
