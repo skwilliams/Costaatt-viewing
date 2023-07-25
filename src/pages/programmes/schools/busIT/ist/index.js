@@ -23,6 +23,8 @@ import { features } from '@/components/PageComponents/featuresdata'
 import {staffdata} from '@/pages/programmes/schools/busIT/ist/facultystaffdata'
 import FacultyStaffCard from '../../../../../components/PageComponents/FacultyStaffDepCard'
 import image from "../../../../../../images/Programmes/visit-home-v2.jpg"
+import image2 from "../../../../../../images/Programmes/campus.png";
+
 import StudentResources from '@/components/PageComponents/StudentResources'
 
 
@@ -117,6 +119,8 @@ const index = () => {
           </div>
         </section>
         <section id="contact" className={DeptStyles.sectionContact}>
+          <p className={ProgStyles.headingprimary}> Department Contact</p>
+
           <div className={DeptStyles.contactcard}>
             <ContactSideNav
               btn1txt="Visit"
@@ -254,11 +258,9 @@ const index = () => {
               </Accordion>
             </div>
           </div>
-
-          
         </section>
         <section id="sturesource" className={DeptStyles.sectionStuResources}>
-          <p className={ProgStyles.headingprimary}>  COSTAATT WANTS YOU </p>
+          <p className={ProgStyles.headingprimary}> COSTAATT WANTS YOU </p>
           <div className={DeptStyles.threeGridCon}>
             <div className={DeptStyles.threeGridCol}>
               <StudentResources image={image} imagetxt="Apply Now" />{" "}
@@ -266,7 +268,7 @@ const index = () => {
             <div className={DeptStyles.threeGridCol}>
               {" "}
               <StudentResources
-                image={image}
+                image={image2}
                 imagetxt="See Admissions Counsellor"
               />
             </div>

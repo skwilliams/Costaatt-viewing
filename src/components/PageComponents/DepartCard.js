@@ -5,7 +5,7 @@ import Link from "next/link";
 
  
 
-const DepartCard = ({image,departname,intro,linkpage,shortname}) => {
+const DepartCard = ({image,departname,intro,linkpage,shortname,schoolcolor}) => {
   return (
     <>
    <Image className={DepartStyles.imgstyle} src={image} alt="Department Image" />
@@ -16,7 +16,7 @@ const DepartCard = ({image,departname,intro,linkpage,shortname}) => {
              href={linkpage}
              
             >   
-             Visit {shortname}... </Link>
+             <p className={DepartStyles.shortname}>Visit {shortname}...  </p></Link>
       
     </>
 

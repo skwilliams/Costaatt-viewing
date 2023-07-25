@@ -195,8 +195,7 @@ const bscLIS = () => {
         </Accordion>
         <TableCell sx={{alignContent:"right"}} className={CourseStyle.total}>120</TableCell>
 
-        {/* <DegreeCo sx={{margin:2}}urses courses={bscLismajor} type="Core Courses" />
-        // <DegreeCourses courses={bscLismajor} type="Supporting Courses" /> */}
+     
       </section>
       <section id="feesfinancial" className={CourseStyle.sectionFinancial}>
         <p className={ProgStyles.headingprimaryleft}> Fees and Financial Aid</p>
