@@ -19,7 +19,7 @@ import Image from 'next/image';
 import NewsCard from '@/components/PageComponents/NewsCard';
 
 //The School of Environment, Circular Economy and Sustainability
-const sbdt = () => {
+const enviro = () => {
   return (
     <>
       <Head>
@@ -56,25 +56,25 @@ const sbdt = () => {
             <div className={ProgStyles.progGridtwo}>
               <DepartCard
                 image={BusImg}
-                departname="Department of Business "
+                departname="Environmental and Sustainability Studies "
                 intro="From entrepreneurs and business professionals to
             information technology enthusiasts, this school is for you! Students   
             at this school will be able to connect classroom content, to real world application. 
             You will be equipped with the skills and support for success."
-                linkpage="/programmes/schools/sbdt/business/"
-                shortname="Business"
+                linkpage="/programmes/schools/enviro/envsustud/"
+                shortname="Environmental Studies"
               />
             </div>
             <div className={ProgStyles.progGridtwo}>
               <DepartCard
                 image={BusImg}
-                departname="Department of Information Science Technology "
+                departname="Natural and Life Sciences "
                 intro="From entrepreneurs and business professionals to
             information technology enthusiasts, this school is for you! Students   
             at this school will be able to connect classroom content, to real world application. 
             You will be equipped with the skills and support for success."
-                linkpage="/programmes/schools/sbdt/it/"
-                shortname="IST"
+                linkpage="/programmes/schools/enviro/naturlifesci/"
+                shortname="Natural and Life Sciences"
               />
             </div>
           </div>
@@ -261,4 +261,4 @@ const sbdt = () => {
 //   return <Layout>{page}</Layout>;
 // };
 
-export default sbdt;
+export default enviro;
