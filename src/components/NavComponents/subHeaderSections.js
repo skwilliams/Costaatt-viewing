@@ -46,4 +46,9 @@ export const subHeaderSections = {
     "Programmes in Department": "programmes",
     "Student Resources": "sturesource",
   },
+  nursing:{
+    "Stuff":"yudh",
+    "difid" : 'fhjdhfj',
+
+  },
 };

@@ -11,9 +11,9 @@ const GradsSpeak = ({ graduate }) => {
         <>
           <div className={GradStyle.gradcont}>
             {grad.video && (
-             <> <div className={GradStyle.video}>
-                
-                
+             <> 
+             <div className={GradStyle.video}>
+                 
                 <ReactPlayer
                 height= "320px"
                 width="270px"

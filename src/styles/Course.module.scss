@@ -36,7 +36,7 @@
  }
 .sectionOverview{
 
-  margin:0 5rem;
+  
     margin-right:3rem;
     font-size:1.25rem;
      line-height: 2;
@@ -80,7 +80,7 @@
     }
     .inquiryform{
     text-align: left;
-   margin-left:1rem;
+    margin-left:1rem;
     font-size:2rem;
     }
   
@@ -88,11 +88,11 @@
 
 }
 .sectionCareers{
-//  margin:6rem 3rem 6rem 0;
-//  margin-top:6rem;
+ margin:6rem 3rem 6rem 0;
+ margin-top:6rem;
   background-color: white;
   color: #222222;
-  margin: 6rem 3rem;
+  // margin: 6rem 3rem;
 
 
 
@@ -148,7 +148,23 @@ th {
 }
 .sectionCurriculum{
   margin:6rem 0;
-    
+  .row{
+    font-size: 1rem; 
+    margin:0;
+    text-align: left;
+  }
+  .coursename{
+    color:$orange;
+     font-size: 1rem; 
+  }
+  .accdetails{
+    margin-bottom:2rem;
+  }
+  .total{
+    font-size:1.2rem;
+    font-weight: 900;
+    text-align:right;
+  }
 
 }
 .sectionFinancial{

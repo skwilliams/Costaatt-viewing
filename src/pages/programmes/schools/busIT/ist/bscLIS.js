@@ -16,7 +16,22 @@ import {gradsspeakLIS} from'../../busIT/ist/featuredwork'
 import GradStyle from "../../../../../styles/GradsSpeak.module.scss";
 import GradsSpeak from "@/components/PageComponents/GradsSpeak";
 import Divider from "@mui/material/Divider";
-
+import {bscLismajor} from "../../busIT/ist/bscliscourses"
+import DegreeCourses from "@/components/PageComponents/DegreeCourses";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import {
+  TableContainer,
+  Table,
+  TableHead,
+  TableBody,
+  TableRow,
+  TableCell,
+  Paper,
+} from "@mui/material";
 
 const bscLIS = () => {
   return (
@@ -105,9 +120,8 @@ const bscLIS = () => {
         <div className={CourseStyle.inquiryform}>
           <ContactUs />
         </div>
-         
       </section>
-     <Divider dark />
+      {/* <Divider dark /> */}
       <section id="careers" className={CourseStyle.sectionCareers}>
         <p className={ProgStyles.headingprimaryleft}> Possible Careers</p>
 
@@ -146,7 +160,6 @@ const bscLIS = () => {
       </section>
       <Divider dark />
       <section id="gradSpeak" className={CourseStyle.sectionGradSpeak}>
-
         <p className={ProgStyles.headingprimaryleft}> Graduates Speak</p>
 
         <div className={GradStyle.threeColGridCon}>
@@ -155,6 +168,35 @@ const bscLIS = () => {
       </section>
       <section id="curriculum" className={CourseStyle.sectionCurriculum}>
         <p className={ProgStyles.headingprimaryleft}> Curriculum</p>
+
+        <Accordion sx={{ margin: 2 }}>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography>Courses in Major</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <DegreeCourses courses={bscLismajor} />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion sx={{ margin: 2, color: "primary" }}>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography>Core Curriculum Courses</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <DegreeCourses courses={bscLismajor} />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion sx={{ margin: 2 }}>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography>Support Courses</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <DegreeCourses courses={bscLismajor} />
+          </AccordionDetails>
+        </Accordion>
+        <TableCell sx={{alignContent:"right"}} className={CourseStyle.total}>120</TableCell>
+
+        {/* <DegreeCo sx={{margin:2}}urses courses={bscLismajor} type="Core Courses" />
+        // <DegreeCourses courses={bscLismajor} type="Supporting Courses" /> */}
       </section>
       <section id="feesfinancial" className={CourseStyle.sectionFinancial}>
         <p className={ProgStyles.headingprimaryleft}> Fees and Financial Aid</p>
