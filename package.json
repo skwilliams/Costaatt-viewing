@@ -31,5 +31,10 @@
   },
   "devDependencies": {
     "file-loader": "^6.2.0"
+  },
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false
   }
 }
