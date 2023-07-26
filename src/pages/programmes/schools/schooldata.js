@@ -5,7 +5,7 @@ export const schools = [
     nameStump: "busIT",
     dean: {
       name: "Lalita Ramlal-Chirckoot",
-      image: "../../../../../images/Links/home1.png",
+      image: require("../../../../../images/Links/home1.png"),
       message:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
       email: "ltchirkoot@costaatt.edu.tt",

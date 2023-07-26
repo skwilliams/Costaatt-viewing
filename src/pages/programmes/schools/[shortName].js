@@ -9,9 +9,6 @@ import DepartCard from "@/components/PageComponents/DepartCard";
 import DeanStyles from "../../../styles/Dean.module.scss";
 import BusImg from "../../../../images/Links/home2.png";
 
-import { usePathname } from "next/navigation";
-import { schools } from "./schooldata"; //*******/
-import { useRouter } from "next/router";
 import path from "path";
 import fs from "fs/promises";
 
@@ -27,7 +24,19 @@ import Divider from "@mui/material/Divider";
 
 //School of Business and Digital Technologies
 const school = (props) => {
-  const { _school } = props;
+  const { foundSchool } = props;
+  const lgrid = foundSchool.departments.length;
+  let deptLayout = ProgStyles.progGridConthree;
+  let depcardLayout = ProgStyles.progGridthree;
+  if (lgrid === 2 || lgrid === 4) {
+    deptLayout = ProgStyles.progGridContwo;
+    depcardLayout = ProgStyles.progGridtwo;
+  }
+
+  // only needed if SOME pages prefetched
+  // if (!_school) {
+  //   return <p>Loading...</p>;
+  // }
 
   //{ school } destructured param for getStaticProps fn
 
@@ -37,48 +46,43 @@ const school = (props) => {
   // const _school = schools.find(
   //   (school) => school.nameStump === router.query.param
   // );
-  console.log(_school);
+  console.log(foundSchool);
 
-  //// PERHAPS it will not work because in essence we are awaiting user data via the URL to build the page.
   // console.log("params are " + params);
   // console.log(_school);
 
   return (
     <>
       <Head>
-        <title>Business & Digital Technologies</title>
-        {/* <title>{_school.shortName || "School"}</title> */}
-        {/* <title>{test.tname || "School"}</title> */}
+        <title>{foundSchool.shortName || "School"}</title>
       </Head>
       <HeadImage imagetext="" mainimage={headImg} />
       <p className={ProgStyles.headingprimarysub}>
-        COSTAATT/Programmes/Business & Digital Technologies{" "}
+        COSTAATT/Programmes/{foundSchool.shortName}
       </p>
       <section id="overview" className={ProgStyles.sectionoverview}>
         <p className={ProgStyles.headingprimary}> Overview of School</p>
-        {/* <p className={ProgStyles.text}> {school.sectionoverview} </p> */}
-        <p className={ProgStyles.text}>
-          {" "}
-          Dynamic school overview to go here for the school{" "}
-        </p>
+        <p className={ProgStyles.text}>{foundSchool.overview}</p>
       </section>{" "}
       <Divider light />
-      {/* <section id="depart" className={ProgStyles.sectiondepart}>
+      <section id="depart" className={ProgStyles.sectiondepart}>
         <p className={ProgStyles.headingprimary}> Departments </p>
-        <div className={ProgStyles.progGridContwo}>
-          <div className={ProgStyles.progGridtwo}>
-            {_school.departments.map((dept) => {
-              <DepartCard
-                image={dept.image}
-                departname={dept.name}
-                intro={dept.summary}
-                linkpage={`/programmes/schools/${_school.nameStump}/{dept.shortName}`}
-                shortname="dept.shortName"
-              />;
-            })}
-          </div>
+        <div className={deptLayout}>
+          {foundSchool.departments.map((dept, index) => {
+            return (
+              <div className={depcardLayout} key={index}>
+                <DepartCard
+                  image={dept.image}
+                  departname={dept.name}
+                  intro={dept.summary}
+                  linkpage={`/programmes/schools/${foundSchool.nameStump}/${dept.shortName}`}
+                  shortname={dept.shortName}
+                />
+              </div>
+            );
+          })}
         </div>
-      </section> */}
+      </section>
       <section id="depcourses" className={ProgStyles.sectiondeptcourses}>
         <p className={ProgStyles.headingprimary}>Find your Degree</p>
 
@@ -294,6 +298,25 @@ export async function getStaticPaths() {
   };
 }
 
+// export async function getStaticProps(context) {
+//   const { params } = context;
+//   const schName = params.shortName;
+//   // const router = useRouter();
+//   // console.log(`the param is ${router.query.param}`);
+
+//   const filepath = path.join(process.cwd(), "data", "schooldata.js");
+//   let data = await fs.readFile(filepath, "utf8");
+//   // data = JSON.parse(data);
+//   console.log(data);
+//   const sch = data.find((school) => school.nameStump === schName);
+//   console.log(sch);
+//   return {
+//     props: {
+//       foundSchool: sch,
+//     },
+//   };
+// }
+
 export async function getStaticProps(context) {
   const { params } = context;
   const schName = params.shortName;
@@ -308,7 +331,7 @@ export async function getStaticProps(context) {
   console.log(sch);
   return {
     props: {
-      _school: sch,
+      foundSchool: sch,
     },
   };
 }
