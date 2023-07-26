@@ -14,29 +14,58 @@ import {
 const DegreeCourses = ({courses} ) => {
   return (
     <>
-      <TableContainer>
-        <Table>
+      {/* <Table>
           <TableHead>
             <TableCell className={CourseStyle.row}>Course Code</TableCell>
             <TableCell className={CourseStyle.coursename}>
               Course Name
             </TableCell>
             <TableCell className={CourseStyle.row}>Credits</TableCell>
-          </TableHead>
+          </TableHead>  */}
 
-          {courses.map((row) => (
-            <TableRow fullWidth key={row.coursecode}>
-              <TableCell className={CourseStyle.row}>
-                {row.coursecode}
-              </TableCell>
-              <TableCell className={CourseStyle.coursename}>
-                {row.coursename}
-              </TableCell>
-              <TableCell className={CourseStyle.row}>{row.credits}</TableCell>
-            </TableRow>
+      {/* {courses.map((row) => (
+             <>
+              <TableRow fullWidth key={row.coursecode}>
+                <TableCell className={CourseStyle.row}>
+                  {row.coursecode}
+                </TableCell>
+                <TableCell className={CourseStyle.coursename}>
+                  {row.coursename}
+                </TableCell>
+                <TableCell className={CourseStyle.row}>{row.credits}</TableCell>
+              </TableRow>
+             </>
+             
           ))}
-        </Table>{" "}
-      </TableContainer>
+         </Table>{" "} */}
+
+      <div className={CourseStyle.coursesGridCon}>
+        {courses.map((course) => (
+          <>
+            <div className={CourseStyle.coursesColGrid}>
+              {course.coursecode && (
+                <div className={CourseStyle.coursecode}>
+                  {course.coursecode}{" "}
+                </div>
+              )}
+            </div>
+
+            <div className={CourseStyle.coursesColGrid}>
+              {course.coursename && (
+                <div className={CourseStyle.coursename}>
+                  {course.coursename}{" "}
+                </div>
+              )}
+            </div>
+            <div className={CourseStyle.coursesColGrid}>
+              {course.credits && (
+                <div className={CourseStyle.credits}>{course.credits} </div>
+              )}
+            </div>
+            
+          </>
+        ))}
+      </div>
     </>
   );
 }

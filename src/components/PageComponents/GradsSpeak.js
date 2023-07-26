@@ -8,28 +8,21 @@ const GradsSpeak = ({ graduate }) => {
   return (
     <>
       {graduate.map((grad) => (
-        <>
-          <div className={GradStyle.gradcont}>
-            {grad.video && (
-             <> 
-             <div className={GradStyle.video}>
-                 
-                <ReactPlayer
-                height= "320px"
-                width="270px"
-                url= {grad.video} />
+        <div className={GradStyle.gradcont}>
+          <>
+            <div className={GradStyle.video}>
+              {grad.video && (
+                <ReactPlayer height="320px" width="270px" url={grad.video} />
+              )}
+            </div>
 
-             
-              </div>
-                </>
-            )}
             {grad.name && <div className={GradStyle.name}>{grad.name}</div>}
             {grad.placeofwork && (
               <div className={GradStyle.placeofwork}>{grad.placeofwork}</div>
             )}
             {grad.words && <div className={GradStyle.says}>{grad.words} </div>}
-          </div>
-        </>
+          </>
+        </div>
       ))}
     </>
   );

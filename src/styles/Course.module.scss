@@ -148,7 +148,7 @@ th {
 }
 .sectionCurriculum{
   margin:6rem 0;
-  .row{
+  .coursecode{
     font-size: 1rem; 
     margin:0;
     text-align: left;
@@ -156,6 +156,10 @@ th {
   .coursename{
     color:$orange;
      font-size: 1rem; 
+  }
+  .credits{
+    font-size: 1rem;
+    
   }
   .accdetails{
     margin-bottom:2rem;
@@ -165,6 +169,26 @@ th {
     font-weight: 900;
     text-align:right;
   }
+
+
+  .coursesGridCon{  
+  display: grid;
+   gap: 2rem;
+   grid-gap:1rem ;
+   grid-template-columns: auto auto auto;
+   margin:0;
+   padding:0
+  
+ 
+ }
+ .coursesColGrid {  
+   text-align: center;
+//    padding: 20px ;
+   font-size: 1.5rem;
+   
+ 
+   // padding: 10px;
+ }
 
 }
 .sectionFinancial{
