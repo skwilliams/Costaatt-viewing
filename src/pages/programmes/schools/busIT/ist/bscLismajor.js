@@ -1,4 +1,4 @@
- export const bscLis= [
+ export const bscLismajor= [
   {
     coursecode: "ITEC 120",
     coursename: "Introduction to Computer Hardware",
