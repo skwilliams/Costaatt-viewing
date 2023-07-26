@@ -166,7 +166,7 @@ const bscLIS = () => {
           <GradsSpeak graduate={gradsspeakLIS} />
         </div>
       </section>  */}
-    <section id="curriculum" className={CourseStyle.sectionCurriculum}>
+      <section id="curriculum" className={CourseStyle.sectionCurriculum}>
         <p className={ProgStyles.headingprimaryleft}> Curriculum</p>
 
         <Accordion sx={{ margin: 2 }}>
@@ -193,10 +193,33 @@ const bscLIS = () => {
             <DegreeCourses courses={bscLissupport} />
           </AccordionDetails>
         </Accordion>
-   
-    </section>
+      </section>
       <section id="feesfinancial" className={CourseStyle.sectionFinancial}>
         <p className={ProgStyles.headingprimaryleft}> Fees and Financial Aid</p>
+        <Accordion sx={{ margin: 2 }}>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography>Courses in Major</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <DegreeCourses courses={bscLismajor} />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion sx={{ margin: 2, color: "primary" }}>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography>Core Curriculum Courses</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <DegreeCourses courses={bscLiscore} />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion sx={{ margin: 2 }}>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography>Support Courses</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <DegreeCourses courses={bscLissupport} />
+          </AccordionDetails>
+        </Accordion>
       </section>
       <section id="application" className={CourseStyle.sectionFinancial}>
         <p className={ProgStyles.headingprimaryleft}> Supporting Documents</p>

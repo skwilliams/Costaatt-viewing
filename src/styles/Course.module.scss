@@ -119,7 +119,7 @@ th {
   /* background-color: red; */
   color: #222222;
 
-  font-family: "Libre Baskerville", serif;
+  font-family: "Bodoni";
   text-transform: capitalize;
 
   backface-visibility: hidden;
@@ -127,8 +127,6 @@ th {
   font-size: 1.25rem;
   font-weight: 900;
 }
-
-
 
 }
 
@@ -149,16 +147,24 @@ th {
 .sectionCurriculum{
   margin:6rem 0;
   .coursecode{
-    font-size: 1rem; 
+    font-size: 1.15rem; 
     margin:0;
+    text-align: left;
+  }
+  .courseheadings{
+    font-size: 1.2rem;
+    font-weight: 700;
     text-align: left;
   }
   .coursename{
     color:$orange;
-     font-size: 1rem; 
+     font-size: 1.15rem; 
+     text-align: left;
   }
   .credits{
-    font-size: 1rem;
+    margin-left:1rem;
+    font-size: 1.15rem;
+     text-align: left;
     
   }
   .accdetails{
@@ -175,7 +181,7 @@ th {
   display: grid;
    gap: 2rem;
    grid-gap:1rem ;
-   grid-template-columns: auto auto auto;
+   grid-template-columns: 1fr 2fr 1fr;
    margin:0;
    padding:0
   
