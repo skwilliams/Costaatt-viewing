@@ -6,8 +6,8 @@
     "overview": "School of Business and Digital Technologies overview. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde. We are here for you Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa? Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo necessitatibus praesentium! Dolorem.",
     "dean": {
       "name": "Vacant",
-      "image": "/images/schools/deanavatar.jpg",
-      "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+      "image": "../../../../images/Programmes/deanavatar.jpg",
+      "message": "As the dean of Business & Digital Technologies, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
       "email": "info@costaatt.edu.tt",
       "phone": "868-625-5030 ext 1111"
     },
@@ -33,10 +33,10 @@
     "nameStump": "liberal",
     "dean": {
       "name": "Neil Sylvester",
-      "image": "/images/schools/deanavatar.jpg",
-      "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+      "image": "../../../../images/Programmes/deanavatar.jpg",
+      "message": "As the dean of School of Liberal Arts, Education and Digital Humanities, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
       "email": "nsylvester@costaatt.edu.tt",
-      "phone": "868-625-5030 ext 1111"
+      "phone": "868-625-5030 ext 2222"
     },
     "overview": "School of Liberal Arts, Education and Digital Humanities overview. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde. We are here for you Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa? Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo necessitatibus praesentium! Dolorem.",
     "departments": [
@@ -66,10 +66,10 @@
     "nameStump": "nursing",
     "dean": {
       "name": "Anjenney Boodoosingh-Dwarika",
-      "image": "/images/schools/deanavatar.jpg",
-      "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+      "image": "../../../../images/Programmes/deanavatar.jpg",
+      "message": "As the dean of School of Nursing, Health and Medical Technologies, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
       "email": "adwarika@costaatt.edu.tt",
-      "phone": "868-625-5030 ext 1111"
+      "phone": "868-625-5030 ext 3333"
     },
     "overview": "School of Nursing, Health and Medical Technologies overview. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde. We are here for you Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa? Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo necessitatibus praesentium! Dolorem.",
     "departments": [

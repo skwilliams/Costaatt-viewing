@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import HeadImage from "@/components/PageComponents/HeadImage";
+import thedeanimg from "../../../../images/Programmes/deanavatar.jpg";
 import deanimg from "../../../../images/Links/home1.png";
 import headImg from "../../../../images/Programmes/sobdt header.jpg";
 import Layout from "../../../components/Layout";
@@ -26,30 +27,13 @@ import Divider from "@mui/material/Divider";
 const school = (props) => {
   const { foundSchool } = props;
   const lgrid = foundSchool.departments.length;
-  let deptLayout = ProgStyles.progGridConthree;
-  let depcardLayout = ProgStyles.progGridthree;
+
+  let deptLayout = ProgStyles.threeColGridCon;
+  let depcardLayout = ProgStyles.threeColGrid;
   if (lgrid === 2 || lgrid === 4) {
     deptLayout = ProgStyles.progGridContwo;
     depcardLayout = ProgStyles.progGridtwo;
   }
-
-  // only needed if SOME pages prefetched
-  // if (!_school) {
-  //   return <p>Loading...</p>;
-  // }
-
-  //{ school } destructured param for getStaticProps fn
-
-  // const router = useRouter();
-  // console.log(router.query.param);
-
-  // const _school = schools.find(
-  //   (school) => school.nameStump === router.query.param
-  // );
-  console.log(foundSchool);
-
-  // console.log("params are " + params);
-  // console.log(_school);
 
   return (
     <>
@@ -205,33 +189,31 @@ const school = (props) => {
           <p className={ProgStyles.headingprimary}> Meet the Dean </p>
           <div className={DeanStyles.deanColGridCon}>
             <div className={DeanStyles.deanColGrid}>
-              <Image className={DeanStyles.deanimg} src={deanimg} alt="" />
+              <Image
+                className={DeanStyles.deanimg}
+                src={deanimg}
+                alt={foundSchool.dean.name}
+              />
             </div>
+
             <div className={DeanStyles.deanColGrid}>
               <p className={DeanStyles.deanwords}>
-                <q>
-                  {" "}
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Consequuntur quaerat possimus, at iure soluta sequi eaque
-                  doloribus ex fugit aliquid quidem dolores non nisi optio
-                  adipisci dolore numquam laudantium quis.
-                </q>
+                <q> {foundSchool.dean.message}</q>
               </p>
             </div>
             <div className={DeanStyles.deanColGrid}>
               <div className={DeanStyles.deancontact}>
                 <p>
                   <span className={DeanStyles.standout}>
-                    {" "}
-                    Lalita Ramlal-Chirckoot{" "}
+                    {foundSchool.dean.name}
                   </span>{" "}
                   <br /> Dean, <br />
-                  WorkForce Enhancement and Development <br />
+                  {foundSchool.shortName} <br />
                   <span className={DeanStyles.standout}>
-                    ltchirkoot@costaatt.edu.tt
+                    {foundSchool.dean.email}
                   </span>{" "}
                   <br />
-                  868-625-5030 ext 1111{" "}
+                  {foundSchool.dean.phone}
                 </p>
               </div>
             </div>
