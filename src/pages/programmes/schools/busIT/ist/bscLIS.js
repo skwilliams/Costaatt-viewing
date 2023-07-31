@@ -17,12 +17,14 @@ import GradStyle from "../../../../../styles/GradsSpeak.module.scss";
 import GradsSpeak from "@/components/PageComponents/GradsSpeak";
 import Divider from "@mui/material/Divider";
 import {bscLismajor, bscLissupport,bscLiscore} from "../../busIT/ist/bscLiscourses"
+import {institutionFees} from "../../../../admissions/admissionsData"
 import DegreeCourses from "@/components/PageComponents/DegreeCourses";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import InstitutionFees from '@/components/PageComponents/InstiutionFees'
 import {
   TableContainer,
   Table,
@@ -182,7 +184,7 @@ const bscLIS = () => {
             <Typography>Core Curriculum Courses</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <DegreeCourses courses={bscLiscore} />
+            <DegreeCourses courses={bscLismajor} />
           </AccordionDetails>
         </Accordion>
         <Accordion sx={{ margin: 2 }}>
@@ -190,7 +192,7 @@ const bscLIS = () => {
             <Typography>Support Courses</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <DegreeCourses courses={bscLissupport} />
+            <DegreeCourses courses={bscLismajor} />
           </AccordionDetails>
         </Accordion>
       </section>
@@ -198,7 +200,7 @@ const bscLIS = () => {
         <p className={ProgStyles.headingprimaryleft}> Fees and Financial Aid</p>
         <Accordion sx={{ margin: 2 }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>Courses in Major</Typography>
+            <Typography>Tution Fees</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <DegreeCourses courses={bscLismajor} />
@@ -206,18 +208,18 @@ const bscLIS = () => {
         </Accordion>
         <Accordion sx={{ margin: 2, color: "primary" }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>Core Curriculum Courses</Typography>
+            <Typography>College Fees</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <DegreeCourses courses={bscLiscore} />
+            <InstitutionFees fees={institutionFees} />
           </AccordionDetails>
         </Accordion>
         <Accordion sx={{ margin: 2 }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>Support Courses</Typography>
+            <Typography>Financial Aid</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <DegreeCourses courses={bscLissupport} />
+            <DegreeCourses courses={bscLismajor} />
           </AccordionDetails>
         </Accordion>
       </section>

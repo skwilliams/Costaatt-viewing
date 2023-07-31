@@ -145,13 +145,17 @@ th {
 
 }
 .sectionCurriculum{
-  margin:6rem 0;
+ 
+ margin:6rem 0;
+
+}
   .coursecode{
     font-size: 1.15rem; 
     margin:0;
     text-align: left;
   }
-  .courseheadings{
+ 
+ .courseheadings{
     font-size: 1.2rem;
     font-weight: 700;
     text-align: left;
@@ -195,10 +199,28 @@ th {
  
    // padding: 10px;
  }
-
-}
 .sectionFinancial{
   margin:6rem 0;
+  font-size: 1.15rem;
+
+  .coursesGridCon{  
+  display: grid;
+   gap: 2rem;
+   grid-gap:1rem ;
+   grid-template-columns: 2fr 1fr 1fr;
+   margin:0;
+   padding:0
+  
+ 
+ }
+ .coursesColGrid {  
+   text-align: center;
+//    padding: 20px ;
+   font-size: 1.5rem;
+   
+ 
+   // padding: 10px;
+ }
     
 
 }

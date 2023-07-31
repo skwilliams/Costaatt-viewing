@@ -44,9 +44,20 @@ const DegreeCourses = ({courses} ) => {
                 <div className={CourseStyle.credits}>{course.credits}</div>
               )}
             </div>
-          
           </>
         ))}
+        
+          <div className={CourseStyle.coursesColGrid}>
+            <div className={CourseStyle.courseheadings}></div>
+          </div>
+
+          <div className={CourseStyle.coursesColGrid}>
+            <div className={CourseStyle.courseheadings}>Total Credits</div>
+          </div>
+          <div className={CourseStyle.coursesColGrid}>
+            <div className={CourseStyle.courseheadings}>120</div>
+          </div> 
+        
       </div>
     </>
   );
