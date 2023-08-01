@@ -123,16 +123,9 @@ const ContactUs = () => {
 
         <Box
           sx={{
-            // //   minWidth: 700,
-            // width: 1000,
-            // height: 400,
-            // backgroundColor: "secondary",
+      
             textAlign: "center",
 
-            // '&:hover': {
-            //   backgroundColor: 'primary.main',
-            //   opacity: [0.9, 0.8, 0.7],
-            //
           }}
         >
           <FormControl sx={{ m: 3, minWidth: 200, textAlign: "center" }}>

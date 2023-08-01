@@ -20,7 +20,7 @@ const progoverview = () => {
       </Head>
 
       <HeadImage imagetext="Programmes" mainimage={headImg} />
-      <SideNavOnlyLayout>
+      {/* <SideNavOnlyLayout> */}
         <p className={ProgStyles.headingprimarysub}>
           COSTAATT/Programmes/Overview{' '}
         </p>
@@ -412,7 +412,7 @@ const progoverview = () => {
             <p />
           </div>
         </section>
-      </SideNavOnlyLayout>
+      {/* </SideNavOnlyLayout> */}
     </>
   );
 };

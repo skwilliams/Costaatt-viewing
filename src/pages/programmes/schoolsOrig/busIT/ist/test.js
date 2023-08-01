@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Headimagesmall from "../../../../../components/PageComponents/Headimagesmall";
 import headImg from "../../../../../../images/Programmes/tester2.jpg";
-import Layout from "../../../../../components/PageWithSideNavComponents/Layout"
+import Layout from "../../../../../components/PageWithSideNavComponents/Layout";
 import CourseStyle from "../../../../../styles/Course.module.scss";
 import ProgStyles from "../../../../../styles/Programmes.module.scss";
 import time from "../../../../../../images/Programmes/time.svg";
@@ -10,21 +10,19 @@ import mode from "../../../../../../images/Programmes/mode.svg";
 import location from "../../../../../../images/Programmes/location.svg";
 import Image from "next/image";
 import ContactUs from "@/components/PageComponents/ContactUs";
-import Featured from '../../../../../components/PageComponents/Featured'
-import {featuredLIS} from '../../busIT/ist/featuredwork'
-import {gradsspeakLIS} from'../../busIT/ist/featuredwork'
+import Featured from "../../../../../components/PageComponents/Featured";
+import { featuredLIS } from "../../busIT/ist/featuredwork";
+import { gradsspeakLIS } from "../../busIT/ist/featuredwork";
 import GradStyle from "../../../../../styles/GradsSpeak.module.scss";
 import GradsSpeak from "@/components/PageComponents/GradsSpeak";
 import Divider from "@mui/material/Divider";
-import {bscLismajor, bscLissupport,bscLiscore} from "../../busIT/ist/bscLiscourses"
-import {institutionFees} from "../../../../admissions/admissionsData"
+import { bscLismajor } from "../../busIT/ist/bscLiscourses";
 import DegreeCourses from "@/components/PageComponents/DegreeCourses";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import InstitutionFees from '@/components/PageComponents/InstiutionFees'
 import {
   TableContainer,
   Table,
@@ -35,19 +33,9 @@ import {
   Paper,
 } from "@mui/material";
 
-const bscLIS = () => {
+const test = () => {
   return (
     <>
-      <Head>
-        <title>IST</title>
-      </Head>
-      {/* <Headimagesmall
-        imagetext=""
-        mainimage={headImg}
-      /> */}
-      <p className={CourseStyle.courseName}>
-        BSC. Library and Information Science
-      </p>
       <section id="courseoverview" className={CourseStyle.sectionOverview}>
         <p className={CourseStyle.desc}>
           The Bachelor of Science in Information and Library Science allows
@@ -123,7 +111,7 @@ const bscLIS = () => {
           <ContactUs />
         </div>
       </section>
-      <Divider dark />
+
       <section id="careers" className={CourseStyle.sectionCareers}>
         <p className={ProgStyles.headingprimaryleft}> Possible Careers</p>
 
@@ -154,86 +142,24 @@ const bscLIS = () => {
           professional certification{" "}
         </p>
       </section>
+
       <Divider dark />
       <section id="gradPortfolio" className={CourseStyle.sectionPortfolio}>
         <p className={ProgStyles.headingprimaryleft}> Graduates Portfolio</p>
 
         <Featured feat={featuredLIS} />
       </section>
-      <Divider dark />
-      {/* <section id="gradSpeak" className={CourseStyle.sectionGradSpeak}>
+      <section id="gradSpeak" className={CourseStyle.sectionGradSpeak}>
         <p className={ProgStyles.headingprimaryleft}> Graduates Speak</p>
 
         <div className={GradStyle.threeColGridCon}>
           <GradsSpeak graduate={gradsspeakLIS} />
         </div>
-      </section>  */}
-      <section id="curriculum" className={CourseStyle.sectionCurriculum}>
-        <p className={ProgStyles.headingprimaryleft}> Curriculum</p>
-
-        <Accordion sx={{ margin: 2 }}>
-          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>Courses in Major</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <DegreeCourses courses={bscLismajor} />
-          </AccordionDetails>
-        </Accordion>
-        <Accordion sx={{ margin: 2, color: "primary" }}>
-          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>Core Curriculum Courses</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <DegreeCourses courses={bscLismajor} />
-          </AccordionDetails>
-        </Accordion>
-        <Accordion sx={{ margin: 2 }}>
-          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>Support Courses</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <DegreeCourses courses={bscLismajor} />
-          </AccordionDetails>
-        </Accordion>
-      </section>
-      <section id="feesfinancial" className={CourseStyle.sectionFinancial}>
-        <p className={ProgStyles.headingprimaryleft}> Fees and Financial Aid</p>
-        <Accordion sx={{ margin: 2 }}>
-          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>Tution Fees</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <DegreeCourses courses={bscLismajor} />
-          </AccordionDetails>
-        </Accordion>
-        <Accordion sx={{ margin: 2, color: "primary" }}>
-          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>College Fees</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <InstitutionFees fees={institutionFees} />
-          </AccordionDetails>
-        </Accordion>
-        <Accordion sx={{ margin: 2 }}>
-          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>Financial Aid</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <DegreeCourses courses={bscLismajor} />
-          </AccordionDetails>
-        </Accordion>
-      </section>
-      <section id="application" className={CourseStyle.sectionFinancial}>
-        <p className={ProgStyles.headingprimaryleft}> Supporting Documents</p>
-      </section>
-      <section id="sturesource" className={CourseStyle.sectionFinancial}>
-        <p className={ProgStyles.headingprimaryleft}> Student Resources</p>
-      </section>
+      </section>  
     </>
   );
 };
-
-bscLIS.getLayout = function getLayout(page) {
+test.getLayout = function getLayout(page) {
   return <Layout>{page}</Layout>;
 };
-export default bscLIS;
+export default test;
