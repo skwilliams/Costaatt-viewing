@@ -20,12 +20,12 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Link from "next/link";
 import Image from "next/image";
-import NewsCard from "@/components/PageComponents/NewsCard";
+import NewsRow from "@/components/PageComponents/NewsRow";
 import Divider from "@mui/material/Divider";
-
 //School of Business and Digital Technologies
 const school = (props) => {
-  const { foundSchool } = props;
+  const { foundSchool, news } = props;
+  // console.log(news);
   const lgrid = foundSchool.departments.length;
 
   let deptLayout = ProgStyles.threeColGridCon;
@@ -44,11 +44,13 @@ const school = (props) => {
       <p className={ProgStyles.headingprimarysub}>
         COSTAATT/Programmes/{foundSchool.shortName}
       </p>
+      {/* Section Overview */}
       <section id="overview" className={ProgStyles.sectionoverview}>
         <p className={ProgStyles.headingprimary}> Overview of School</p>
         <p className={ProgStyles.text}>{foundSchool.overview}</p>
       </section>{" "}
       <Divider light />
+      {/* Department Cards Section */}
       <section id="depart" className={ProgStyles.sectiondepart}>
         <p className={ProgStyles.headingprimary}> Departments </p>
         <div className={deptLayout}>
@@ -67,6 +69,7 @@ const school = (props) => {
           })}
         </div>
       </section>
+      {/* Programme Accordion */}
       <section id="depcourses" className={ProgStyles.sectiondeptcourses}>
         <p className={ProgStyles.headingprimary}>Find your Degree</p>
 
@@ -184,6 +187,7 @@ const school = (props) => {
           </div>
         </div>
       </section>
+      {/* Meet the Dean Section */}
       <section id="meetthedean" className={DeanStyles.sectionmeetthedean}>
         <div className={ProgStyles.umargintopsmall}>
           <p className={ProgStyles.headingprimary}> Meet the Dean </p>
@@ -220,39 +224,13 @@ const school = (props) => {
           </div>
         </div>
       </section>
-      <Divider dark />
+      <Divider dark="dark" />
+      {/* School News Section */}
       <section id="schoolnews" className={ProgStyles.sectionschoolnews}>
-        <p className={ProgStyles.headingprimary}> Business and IT News </p>
-
-        <div className={ProgStyles.threeColGridCon}>
-          <div className={ProgStyles.threeColGrid}>
-            <NewsCard
-              mainimage={BusImg}
-              title="Graduation"
-              text="Get ready Graduates !!, submit your documents to ensure you walk across the stage, along with a team behind the Cosmic Evolution Early Release Science (CEERS) Survey, have used new observations from the James Webb Space Telescope to confirm the existence of the most distant active supermassive black hole ever found"
-              link="https:www.google.com"
-              schoolcolor="rgb(187,41,187)"
-            />
-          </div>
-          <div className={ProgStyles.threeColGrid}>
-            <NewsCard
-              mainimage={BusImg}
-              title="New Faculty "
-              text="Business & Digital Technologies, welcome Mr.Jim James to the faculty of Business in the School of Physics and Astronomy, along with a team behind the Cosmic Evolution Early Release Science (CEERS) Survey, have used new observations from the James Webb Space Telescope to confirm the existence of the most distant active supermassive black hole ever found"
-              link="https:www.google.com"
-              schoolcolor="rgb(187,41,187)"
-            />
-          </div>
-          <div className={ProgStyles.threeColGrid}>
-            <NewsCard
-              mainimage={BusImg}
-              title="Advisement"
-              text="associate professor in the School of Physics and Astronomy, along with a team behind the Cosmic Evolution Early Release Science (CEERS) Survey, have used new observations from the James Webb Space Telescope to confirm the existence of the most distant active supermassive black hole ever found"
-              link="https:www.google.com"
-              schoolcolor="rgb(187,41,187)"
-            />
-          </div>
-        </div>
+        <p className={ProgStyles.headingprimary}>
+          {foundSchool.shortName} News
+        </p>
+        <NewsRow news={news.slice(0, 3)} />
         <div className={ProgStyles.goto}>
           <Link className={ProgStyles.goto} href="#">
             {" "}
@@ -302,18 +280,32 @@ export async function getStaticPaths() {
 export async function getStaticProps(context) {
   const { params } = context;
   const schName = params.shortName;
-  // const router = useRouter();
-  // console.log(`the param is ${router.query.param}`);
-
-  const filepath = path.join(process.cwd(), "data", "schooldata.json");
-  const jsonData = await fs.readFile(filepath);
-  const data = JSON.parse(jsonData);
-
-  const sch = data.find((school) => school.nameStump === schName);
-  console.log(sch);
   return {
     props: {
-      foundSchool: sch,
+      foundSchool: await getData(
+        "data",
+        "schooldata.json",
+        schName,
+        "nameStump"
+      ),
+      news: await getData(
+        "public/data",
+        "newsdata.json",
+        schName,
+        "schoolDivision"
+      ),
     },
   };
 }
+
+const getData = async function (pathName, fileName, schName, key) {
+  const filepath = path.join(process.cwd(), pathName, fileName);
+  const jsonData = await fs.readFile(filepath);
+  const data = JSON.parse(jsonData);
+  const finalData =
+    key === "nameStump"
+      ? data.find((info) => info[key] === schName)
+      : data.filter((info) => info[key] === schName);
+
+  return finalData === undefined ? null : finalData;
+};
