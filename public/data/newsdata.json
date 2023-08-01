@@ -17,6 +17,22 @@
     "schoolcolor": "rgb(187,41,187)"
   },
   {
+    "schoolDivision": "liberal",
+    "department": "Education",
+    "mainimage": "/images/schools/liberal.png",
+    "title": "New Diploma in ECCE",
+    "text": "In the upcoming academic year applicants can look forward to one additional option: The Diploma in Early Childhood Care and Education.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non quam mi. Vivamus augue ligula, fringilla ut malesuada eget, euismod vel turpis. Ut id erat sed mi rhoncus pulvinar. Vestibulum ut diam leo. Praesent id lectus eros. Maecenas semper massa at viverra dapibus. Quisque accumsan orci sed nunc lobortis sodales. Duis molestie velit mauris, semper molestie sem auctor ut. <br />Donec nisl odio, laoreet a magna et, fermentum dignissim metus. Donec accumsan blandit quam at eleifend. Vestibulum molestie augue a nibh sollicitudin porta. Mauris lacinia eros tempus vehicula vulputate. Fusce eu ullamcorper nulla, a egestas dolor. Praesent leo lacus, ultricies sed nisi feugiat, commodo cursus sem. Vivamus facilisis vulputate nibh ac scelerisque. <br />Maecenas aliquet eget sem quis lobortis. Sed sed dui iaculis, pretium nibh quis, dapibus nunc. Donec finibus ante sed neque ultricies porta. Aenean magna dolor, euismod a dui et, ultricies condimentum augue. Donec quam nisi, blandit a suscipit eu, tempor a urna. Nullam aliquam orci arcu, vel faucibus quam lobortis ac. Mauris vehicula tellus id erat vestibulum rhoncus nec vitae odio. Vivamus blandit eget tellus ac posuere. Curabitur facilisis nisi sed lacus commodo venenatis sit amet id felis. Suspendisse potenti. Etiam sollicitudin nisi non est blandit, mollis finibus magna euismod. Ut facilisis vel magna vel tincidunt. Vivamus ut felis placerat, vestibulum arcu eget, scelerisque augue. Duis eget lorem ipsum.",
+    "schoolcolor": "rgb(187,41,187)"
+  },
+  {
+    "schoolDivision": "liberal",
+    "department": "Criminal Justice",
+    "mainimage": "/images/schools/liberal.png",
+    "title": "COSTAATT Link-Up Gains Support from UNDP and ILF",
+    "text": "On Tuesday, May 22, 2023, the COSTAATT Link-Up team had an incredible opportunity to meet with esteemed representatives from the United Nations Development Programme (UNDP) and Alexus McNally- Programme Officer of the International Legal Foundation (ILF).  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non quam mi. Vivamus augue ligula, fringilla ut malesuada eget, euismod vel turpis. Ut id erat sed mi rhoncus pulvinar. Vestibulum ut diam leo. Praesent id lectus eros. Maecenas semper massa at viverra dapibus. Quisque accumsan orci sed nunc lobortis sodales. Duis molestie velit mauris, semper molestie sem auctor ut. <br />Donec nisl odio, laoreet a magna et, fermentum dignissim metus. Donec accumsan blandit quam at eleifend. Vestibulum molestie augue a nibh sollicitudin porta. Mauris lacinia eros tempus vehicula vulputate. Fusce eu ullamcorper nulla, a egestas dolor. Praesent leo lacus, ultricies sed nisi feugiat, commodo cursus sem. Vivamus facilisis vulputate nibh ac scelerisque. <br />Maecenas aliquet eget sem quis lobortis. Sed sed dui iaculis, pretium nibh quis, dapibus nunc. Donec finibus ante sed neque ultricies porta. Aenean magna dolor, euismod a dui et, ultricies condimentum augue. Donec quam nisi, blandit a suscipit eu, tempor a urna. Nullam aliquam orci arcu, vel faucibus quam lobortis ac. Mauris vehicula tellus id erat vestibulum rhoncus nec vitae odio. Vivamus blandit eget tellus ac posuere. Curabitur facilisis nisi sed lacus commodo venenatis sit amet id felis. Suspendisse potenti. Etiam sollicitudin nisi non est blandit, mollis finibus magna euismod. Ut facilisis vel magna vel tincidunt. Vivamus ut felis placerat, vestibulum arcu eget, scelerisque augue. Duis eget lorem ipsum.",
+    "schoolcolor": "rgb(187,41,187)"
+  },
+  {
     "schoolDivision": "busIT",
     "department": "Business",
     "mainimage": "/images/news/post_2023-04-13-Dr_Medine_presents_book-1.jpg",
