@@ -53,4 +53,9 @@ export const subHeaderSections = {
     "meet the dean": "meetthedean",
     "school events and news": "schoolnews",
   },
+  nursing:{
+    "Stuff":"yudh",
+    "difid" : 'fhjdhfj',
+
+  },
 };

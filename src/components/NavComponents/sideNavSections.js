@@ -30,19 +30,20 @@ export const sideNavSections = {
     "Student Resources": "sturesource",
   },
   allcourses: {
-    
     "Bachelor Degrees ": "bachelor",
     "Associate Degrees": "associates",
     Diploma: "diploma",
     Certificates: "certificates",
     Accounting: "accounting",
   },
-  bscLIS:{
-    'Course Description':'courseoverview',
-    'Careers':'careers',
-    'Garduates Portfolio':'gradPortfolio',
-    'Graduates Speak':'gradSpeak',
-    'Curriculum':'curriculum',
-    "Fess and Financial Aid":'feesfinancial',
-  }
+  bscLIS: {
+    "Course Description": "courseoverview",
+    Careers: "careers",
+    "Garduates Portfolio": "gradPortfolio",
+    "Graduates Speak": "gradSpeak",
+    Curriculum: "curriculum",
+    "Fess and Financial Aid": "feesfinancial",
+    "Application requriements": "apply",
+    "Student Resources": "sturesource",
+  },
 };
