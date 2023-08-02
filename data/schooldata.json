@@ -3,10 +3,11 @@
     "name": "School of Business and Digital Technologies",
     "shortName": "Business & Digital Technologies",
     "nameStump": "busIT",
+    "image": "/images/schools/sobdt header.jpg",
     "overview": "School of Business and Digital Technologies overview. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde. We are here for you Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa? Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo necessitatibus praesentium! Dolorem.",
     "dean": {
       "name": "Vacant",
-      "image": "../../../../images/Programmes/deanavatar.jpg",
+      "image": "/images/schools/deanavatar.jpg",
       "message": "As the dean of Business & Digital Technologies, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
       "email": "info@costaatt.edu.tt",
       "phone": "868-625-5030 ext 1111"
@@ -17,13 +18,174 @@
         "name": "Business",
         "image": "/images/schools/busIT.png",
         "summary": "From entrepreneurs and business professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
-        "shortName": "Business"
+        "shortName": "Business",
+        "programmes": [
+          {
+            "prog_code": "ACCT_BA",
+            "prog_name": "BA Accounting",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "MGDE",
+            "prog_major_credits": 86,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 4,
+            "prog_description": "The Bachelor of Arts in Accounting degree provides students with technical financial accounting skills which are complemented with a solid foundation in business management and general education competencies that enhance workplace performance.  The programme is relevant to individuals seeking careers in financial services in a variety of related fields in the public and private sector. Students enrolled in the Bachelor of Arts degree in Accounting will earn the Associate in Applied Science – Management with Accounting after the first 61 credits."
+          },
+          {
+            "prog_code": "BSAD_AAS",
+            "prog_name": "AAS  Business Administration",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "MGDE",
+            "prog_major_credits": 40,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 6,
+            "prog_supp_credits": 0,
+            "prog_description": "The AAS degree in Business Administration prepares the student for entry into a business environment, ensuring that they understand the fundamental operations of any business, including accounting, management, finance and marketing.  With value-added courses in project management and information systems, students are well prepared to take up a role to support managerial and business functions at the end of this programme"
+          },
+
+          {
+            "prog_code": "CERT_SMGT",
+            "prog_name": "Certificate in Supervisory Management ",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "MGDE",
+            "prog_major_credits": 18,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "This certificate programme is the first level of a two-year diploma programme which has been specially designed for persons who have been assigned supervisory responsibilities without formal training.  In addition to acquiring practical supervisory skills and enhanced communication skills, students are exposed to the theoretical framework of organizational behavior which will equip them to make more judicious and informed decisions."
+          },
+          {
+            "prog_code": "ENTP_BBA",
+            "prog_name": "BBA Management and Entrepreneurship",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "MGDE",
+            "prog_major_credits": 88,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 0,
+            "prog_description": "The Bachelor of Business Administration in Management and Entrepreneurship provides provides students with the foundations for functioning in and managing 21st century business.  It addresses important issues in management and leadership within organisations and develops key entrepreneurship and business development competencies needed to drive a modern economy. Students will be exposed to a course of study that spans the major managerial functions thereby equipping them to undertake a variety of roles within organisations.  In addition, the programme fosters the development of skills and values considered fundamental to the formation of educated citizens and community leaders, such as independent and critical thinking, creative problem-solving and lifelong learning."
+          },
+          {
+            "prog_code": "HURM_BBA",
+            "prog_name": "BBA Human Resource Management ",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "MGDE",
+            "prog_major_credits": 86,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 3,
+            "prog_description": "The Bachelor of Business Administration degree in Human Resource Management prepares students to function as HRM professionals within public and private sector organizations, locally and internationally. Students gain insight into cutting edge practices in HR for the 21st century organization and acquire a wide range of skills in core HR competencies such as training and development, industrial relations, strategic human resource management, compensation and human resource management information systems. Specific attention is paid to HR as a key strategy in public sector reform."
+          },
+          {
+            "prog_code": "MKTG_BBA",
+            "prog_name": "BBA Marketing",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "MGDE",
+            "prog_major_credits": 78,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 12,
+            "prog_supp_credits": 0,
+            "prog_description": "Effective marketing is a key requirement for every successful business and industry. The Bachelor of Business Administration in Marketing is designed to provide graduates with a broad foundation in business administration and specialized competencies in marketing and marketing management."
+          }
+        ]
       },
       {
         "name": "Digital Technologies",
         "image": "/images/schools/busIT.png",
         "summary": "From entrepreneurs and business professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
-        "shortName": "IST"
+        "shortName": "IST",
+        "programmes": [
+          {
+            "prog_code": "CERT_CCNA",
+            "prog_name": "Certificate in CISCO-CCNA",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "ICTD",
+            "prog_major_credits": 16,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The CISCO-CCNA (Cisco Certified Network Associate) Certificate is designed for CISCO Networking Academy students.  The CCNA programme provides an integrated and comprehensive coverage of networking topics, from fundamentals to advanced applications and services and offers students the hands-on practical experience required for industry.  Upon completion of this curriculum, students will be prepared to sit CISCO-CCNA examinations leading to a professional certification in networking. This programme normally fulfills matriculation requirements for networking engineering degree programmes."
+          },
+          {
+            "prog_code": "CERT_RECM",
+            "prog_name": "Certificate in Records Management",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "ICTD",
+            "prog_major_credits": 20,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "This certificate programme is designed to provide training for persons who have at least three (3) years’ work experience in records management in a public or private sector organization.  Students will examine topics such as the classification, storage, preservation, retention and disposal of records."
+          },
+          {
+            "prog_code": "ILSC_BS",
+            "prog_name": "BSc Library and Information Science ",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "ICTD",
+            "prog_major_credits": 75,
+            "prog_core_credits": 33,
+            "prog_elect_credits": 9,
+            "prog_supp_credits": 3,
+            "prog_description": "Graduates of this programme qualify for employment in a variety of professional positions in schools, public, academic and special libraries or in any other organization engaged in library-related and information management activities. The course content covers areas such as management of libraries and information centres, library organisation, library reference services, technical services in libraries, media management, library standards and practices."
+          },
+          {
+            "prog_code": "ITGN_AAS",
+            "prog_name": "AAS Information Technology - General",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "ICTD",
+            "prog_major_credits": 39,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 4,
+            "prog_supp_credits": 6,
+            "prog_description": "This degree programme essentially comprises the first two years of the Bachelor of Science in Information Technology. Students pursuing a Bachelor of Science in Information Technology can exit with an Associate in Applied Science degree in Information Technology once they have completed the prescribed list of courses below. Graduates at the associate level in information technology will be prepared for technician or technologist entry level positions in the job market."
+          },
+          {
+            "prog_code": "ITGN_BS",
+            "prog_name": "BSc Information Technology - General",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "ICTD",
+            "prog_major_credits": 72,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 13,
+            "prog_supp_credits": 6,
+            "prog_description": "This general IT degree provides students with a well-rounded knowledge of the fundamental skills necessary to develop and maintain the changes required in the dynamic and challenging information technology field.  The graduate will have the advantage of being able to work in diverse environments throughout the information technology industry. The practical knowledge gained from the programme provides a foundation of information technology skill-sets that can be used in the fields of IT Project Manager, IT Teacher, Java Developer, Business Analyst, Database Administrator, Software Implementation Analyst, Applications Architect, Windows Administrator, Enterprise Architect  or any number of fields within the industry."
+          },
+          {
+            "prog_code": "ITNT_BS",
+            "prog_name": "BSc IT - Networking",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "ICTD",
+            "prog_major_credits": 75,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 12,
+            "prog_supp_credits": 4,
+            "prog_description": "This programme is designed for individuals seeking a career in information technology, with an emphasis on networking. Students acquire sound foundational skills in key areas such as network administration, network security, network architecture and wireless communication.  Students receive hands-on training in network systems commonly found in business environments; discover how information systems support organizational success; and how the technologies that comprise the network infrastructure allow for successful transfer and use of mission critical business information. In addition, students install, configure, secure, administer, and troubleshoot network systems; address the management of users, shared resources, and various other network components such as routers and switches in LANs, WANs,  wireless and mobile network environments. Students who are successful in this programme will have acquired the competencies to complete the Cisco Certified Network Associate (CCNA) and Certified Information Systems Security Professional (CISSP) professional examinations."
+          },
+          {
+            "prog_code": "LBIS_AAS",
+            "prog_name": "AAS Library and Information Studies",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "ICTD",
+            "prog_major_credits": 30,
+            "prog_core_credits": 18,
+            "prog_elect_credits": 9,
+            "prog_supp_credits": 3,
+            "prog_description": "Graduates of this programme qualify for employment in a variety of para-professional positions in schools, public, academic and special libraries or in any other organization engaged in library-related and information management activities."
+          }
+        ]
       }
     ]
   },
@@ -31,9 +193,10 @@
     "name": "School of Liberal Arts, Education and Digital Humanities",
     "shortName": "Liberal Arts",
     "nameStump": "liberal",
+    "image": "/images/schools/sobdt header.jpg",
     "dean": {
       "name": "Neil Sylvester",
-      "image": "../../../../images/Programmes/deanavatar.jpg",
+      "image": "/images/schools/deanavatar.jpg",
       "message": "As the dean of School of Liberal Arts, Education and Digital Humanities, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
       "email": "nsylvester@costaatt.edu.tt",
       "phone": "868-625-5030 ext 2222"
@@ -64,9 +227,10 @@
     "name": "School of Nursing, Health and Medical Technologies",
     "shortName": "Nursing and Allied Health",
     "nameStump": "nursing",
+    "image": "/images/schools/nursing header.jpg",
     "dean": {
       "name": "Anjenney Boodoosingh-Dwarika",
-      "image": "../../../../images/Programmes/deanavatar.jpg",
+      "image": "/images/schools/deanavatar.jpg",
       "message": "As the dean of School of Nursing, Health and Medical Technologies, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
       "email": "adwarika@costaatt.edu.tt",
       "phone": "868-625-5030 ext 3333"
