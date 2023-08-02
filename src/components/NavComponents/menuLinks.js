@@ -98,7 +98,7 @@ export const mainNavLinks = [
       },
       {
         title: "School of Nursing, Health and Medical Technologies",
-        path: "/programmes/schools/nurisng",
+        path: "/programmes/schools/nursing",
       },
       {
         title: "School of Liberal Arts, Education and Digital Humanities",

@@ -31,3 +31,18 @@
    .shortname{
     color:$sobitCol;
    }
+
+   /*3 columns change name*/
+.threeColGridCon {
+  display: grid;
+  gap: 8rem;
+  grid-gap: 2rem;
+  grid-template-columns: auto auto auto;
+}
+.threeColGrid {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1.5rem;
+  // padding: 10px;
+}
+
