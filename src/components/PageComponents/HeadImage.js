@@ -1,6 +1,6 @@
-import React from 'react';
-import Image from 'next/image';
-import style from '../../styles/Programmes.module.scss';
+import React from "react";
+import Image from "next/image";
+import style from "../../styles/Programmes.module.scss";
 
 const HeadImage = ({ imagetext, mainimage }) => {
   return (
@@ -11,6 +11,7 @@ const HeadImage = ({ imagetext, mainimage }) => {
         width="1366"
         height="300"
         alt={imagetext}
+        priority={true}
       />
       <div className={style.pageheadertext}>{imagetext}</div>
     </div>
