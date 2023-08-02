@@ -19,6 +19,12 @@ import Divider from "@mui/material/Divider";
 import {bscLismajor, bscLissupport,bscLiscore} from "../../busIT/ist/bscLiscourses"
 import {institutionFees} from "../../../../admissions/admissionsData"
 import DegreeCourses from "@/components/PageComponents/DegreeCourses";
+
+import DeptStyles from "../../../../../styles/Department.module.scss";
+import StudentResources from "@/components/PageComponents/StudentResources";
+import image from "../../../../../../images/Programmes/visit-home-v2.jpg";
+import image2 from "../../../../../../images/Programmes/campus.png";
+
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -120,6 +126,9 @@ const bscLIS = () => {
           </div>
         </div>
         <div className={CourseStyle.inquiryform}>
+          <div className={CourseStyle.specialrequiremnets}>
+            Speical Requirements
+          </div>
           <ContactUs />
         </div>
       </section>
@@ -223,12 +232,30 @@ const bscLIS = () => {
           </AccordionDetails>
         </Accordion>
       </section>
-      <section id="application" className={CourseStyle.sectionFinancial}>
+
+      {/* <section id="application" className={CourseStyle.sectionFinancial}>
         <p className={ProgStyles.headingprimaryleft}> Supporting Documents</p>
-      </section>
-      <section id="sturesource" className={CourseStyle.sectionFinancial}>
-        <p className={ProgStyles.headingprimaryleft}> Student Resources</p>
-      </section>
+      </section> 
+       */}
+      {/* <section id="sturesource" className={DeptStyles.sectionStuResources}>
+        <p className={ProgStyles.headingprimaryleft}> COSTAATT WANTS YOU </p>
+        <div className={DeptStyles.threeGridCon}>
+          <div className={DeptStyles.threeGridCol}>
+            <StudentResources image={image} imagetxt="Apply Now" />{" "}
+          </div>
+          <div className={DeptStyles.threeGridCol}>
+            {" "}
+            <StudentResources
+              image={image2}
+              imagetxt="See Admissions Counsellor"
+            />
+          </div>
+          <div className={DeptStyles.threeGridCol}>
+            {" "}
+            <StudentResources image={image} imagetxt="Visit Us" />
+          </div>
+        </div>
+      </section> */}
     </>
   );
 };
