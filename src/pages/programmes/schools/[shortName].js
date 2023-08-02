@@ -1,8 +1,5 @@
-import React from "react";
 import Head from "next/head";
 import HeadImage from "@/components/PageComponents/HeadImage";
-import deanimg from "../../../../images/Links/home1.png";
-import headImg from "../../../../images/Programmes/sobdt header.jpg";
 import ProgStyles from "../../../styles/Programmes.module.scss";
 import DepartCard from "@/components/PageComponents/DepartCard";
 import DeanStyles from "../../../styles/Dean.module.scss";
@@ -36,7 +33,7 @@ const school = (props) => {
       <Head>
         <title>{foundSchool.shortName || "School"}</title>
       </Head>
-      <HeadImage imagetext="" mainimage={headImg} />
+      <HeadImage imagetext="" mainimage={foundSchool.image} />
       <p className={ProgStyles.headingprimarysub}>
         COSTAATT/Programmes/{foundSchool.shortName}
       </p>
@@ -190,9 +187,11 @@ const school = (props) => {
           <div className={DeanStyles.deanColGridCon}>
             <div className={DeanStyles.deanColGrid}>
               <Image
-                className={DeanStyles.deanimg}
-                src={deanimg}
+                className={`${DeanStyles.deanimg}`}
+                src={foundSchool.dean.image}
                 alt={foundSchool.dean.name}
+                width={300}
+                height={200}
               />
             </div>
 
