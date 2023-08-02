@@ -57,10 +57,7 @@ const enviro = () => {
               <DepartCard
                 image={BusImg}
                 departname="Environmental and Sustainability Studies "
-                intro="From entrepreneurs and business professionals to
-            information technology enthusiasts, this school is for you! Students   
-            at this school will be able to connect classroom content, to real world application. 
-            You will be equipped with the skills and support for success."
+                intro="The Department of Environmental and Sustainability Studies... "
                 linkpage="/programmes/schools/enviro/envsustud/"
                 shortname="Environmental Studies"
               />
@@ -69,10 +66,7 @@ const enviro = () => {
               <DepartCard
                 image={BusImg}
                 departname="Natural and Life Sciences "
-                intro="From entrepreneurs and business professionals to
-            information technology enthusiasts, this school is for you! Students   
-            at this school will be able to connect classroom content, to real world application. 
-            You will be equipped with the skills and support for success."
+                intro="The Department of Natural and Life Sciences..."
                 linkpage="/programmes/schools/enviro/naturlifesci/"
                 shortname="Natural and Life Sciences"
               />
@@ -89,36 +83,19 @@ const enviro = () => {
               <Accordion className={ProgStyles.courseaccordion}>
                 <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                   <Typography className={ProgStyles.acoordiantext}>
-                    Bachelor Degrees
+                    Bachelor's Degrees
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                   <ul className={ProgStyles.degcourses}>
                     <li className={ProgStyles.degcoursesli}>
-                      <Link href=""> Accounting </Link>
+                      <Link href=""> Environmental Health </Link>
                     </li>
                     <li className={ProgStyles.degcoursesli}>
-                      <Link href="">Management and Entrepreneurship</Link>
+                      <Link href="">Occupational Safety and Health </Link>
                     </li>
-                    <li className={ProgStyles.degcoursesli}>
-                      <Link href=""> Human Resource Management</Link>{' '}
-                    </li>
-                    <li className={ProgStyles.degcoursesli}>
-                      <Link href=""> Marketing</Link>
-                    </li>
-                    <li className={ProgStyles.degcoursesli}>
-                      <Link href=""> Information Technology </Link>
-                    </li>
-                    <li className={ProgStyles.degcoursesli}>
-                      <Link href="">Networking</Link>
-                    </li>
-                    <li className={ProgStyles.degcoursesli}>
-                      <Link href=""> Web Development</Link>
-                    </li>
-                    <li className={ProgStyles.degcoursesli}>
-                      <Link href="">Library and Information Science</Link>
-                    </li>
-                  </ul>
+                    
+                   </ul>
                 </AccordionDetails>
               </Accordion>
             </div>
@@ -132,23 +109,16 @@ const enviro = () => {
                 <AccordionDetails className={ProgStyles.bachelors}>
                   <ul className={ProgStyles.degcourses}>
                     <li className={ProgStyles.degcoursesli}>
-                      <Link href="">Business Administration</Link>
+                      <Link href="">Occupational Safety and Health</Link>
                     </li>
                     <li className={ProgStyles.degcoursesli}>
-                      <Link href="">
-                        Management Studies for the Protective Services
+                      <Link href="">Environmental Health
                       </Link>
                     </li>
                     <li className={ProgStyles.degcoursesli}>
-                      <Link href="">Information Technology</Link>{' '}
+                      <Link href="">Biology</Link>{' '}
                     </li>
-                    <li className={ProgStyles.degcoursesli}>
-                      <Link href="">Web Development</Link>
-                    </li>
-                    <li className={ProgStyles.degcoursesli}>
-                      <Link href="">Library and Information Studies</Link>
-                    </li>
-                  </ul>
+                    </ul>
                 </AccordionDetails>
               </Accordion>
             </div>
@@ -162,18 +132,9 @@ const enviro = () => {
                 <AccordionDetails className={ProgStyles.bachelors}>
                   <ul className={ProgStyles.degcourses}>
                     <li className={ProgStyles.degcoursesli}>
-                      <Link href=""> Supervisory Management</Link>
-                    </li>
-                    <li className={ProgStyles.degcoursesli}>
-                      <Link href=""> Records Management</Link>
-                    </li>
-                    <li className={ProgStyles.degcoursesli}>
-                      <Link href=""> CISCO-CCNA</Link>{' '}
-                    </li>
-                    <li className={ProgStyles.degcoursesli}>
-                      <Link href=""> Web Development</Link>
-                    </li>
-                  </ul>
+                      <Link href=""> Emergency Care</Link>
+                    </li>                
+                    </ul>
                 </AccordionDetails>
               </Accordion>
             </div>
