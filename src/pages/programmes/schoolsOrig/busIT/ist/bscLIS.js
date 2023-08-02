@@ -11,19 +11,19 @@ import location from "../../../../../../images/Programmes/location.svg";
 import Image from "next/image";
 import ContactUs from "@/components/PageComponents/ContactUs";
 import Featured from '../../../../../components/PageComponents/Featured'
-import {featuredLIS} from '../../busIT/ist/featuredwork'
-import {gradsspeakLIS} from'../../busIT/ist/featuredwork'
-import GradStyle from "../../../../../styles/GradsSpeak.module.scss";
-import GradsSpeak from "@/components/PageComponents/GradsSpeak";
+import {featured} from '../../../../../components/PageComponents/featuresdata'
+import { gradspeak } from "../../../../../components/PageComponents/featuresdata";
+
+
+import GradStyle from "../../../../../styles/GradsSpeak.module.scss"
+import GradsSpeak from "@/components/PageComponents/GradsSpeak"
 import Divider from "@mui/material/Divider";
 import {bscLismajor, bscLissupport,bscLiscore} from "../../busIT/ist/bscLiscourses"
 import {institutionFees} from "../../../../admissions/admissionsData"
-import DegreeCourses from "@/components/PageComponents/DegreeCourses";
+import DegreeCourses from "@/components/PageComponents/DegreeCourses"
 
-import DeptStyles from "../../../../../styles/Department.module.scss";
+import DeptStyles from "../../../../../styles/Department.module.scss"
 import StudentResources from "@/components/PageComponents/StudentResources";
-import image from "../../../../../../images/Programmes/visit-home-v2.jpg";
-import image2 from "../../../../../../images/Programmes/campus.png";
 
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -167,16 +167,16 @@ const bscLIS = () => {
       <section id="gradPortfolio" className={CourseStyle.sectionPortfolio}>
         <p className={ProgStyles.headingprimaryleft}> Graduates Portfolio</p>
 
-        <Featured feat={featuredLIS} />
+        <Featured feat={features} />
       </section>
       <Divider dark />
-      {/* <section id="gradSpeak" className={CourseStyle.sectionGradSpeak}>
+      <section id="gradSpeak" className={CourseStyle.sectionGradSpeak}>
         <p className={ProgStyles.headingprimaryleft}> Graduates Speak</p>
 
         <div className={GradStyle.threeColGridCon}>
           <GradsSpeak graduate={gradsspeakLIS} />
         </div>
-      </section>  */}
+      </section>  
       <section id="curriculum" className={CourseStyle.sectionCurriculum}>
         <p className={ProgStyles.headingprimaryleft}> Curriculum</p>
 
