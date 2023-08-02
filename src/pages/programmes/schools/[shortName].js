@@ -33,7 +33,9 @@ const school = (props) => {
       <Head>
         <title>{foundSchool.shortName || "School"}</title>
       </Head>
+      <section id="Mainheader" className={ProgStyles.sectionmainheader}>
       <HeadImage imagetext="" mainimage={foundSchool.image} />
+      </section>
       <p className={ProgStyles.headingprimarysub}>
         COSTAATT/Programmes/{foundSchool.shortName}
       </p>
