@@ -1,6 +1,5 @@
 import Head from "next/head";
 import HeadImage from "@/components/PageComponents/HeadImage";
-import headImg from "../../../../images/Programmes/sobdt header.jpg";
 import ProgStyles from "../../../styles/Programmes.module.scss";
 import DepartCard from "@/components/PageComponents/DepartCard";
 import DeanStyles from "../../../styles/Dean.module.scss";
