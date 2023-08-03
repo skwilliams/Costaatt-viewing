@@ -1,0 +1,41 @@
+.container {
+  display: grid;
+  grid-gap: 20px;
+  max-width: 100vw;
+  grid-template-columns: minmax(100px, max-content) minmax(100px, max-content);
+  grid-template-areas: "header  header" "sidebar content" "footer  footer";
+}
+
+.containerWithHero {
+  display: grid;
+  grid-gap: 20px;
+  max-width: 100vw;
+  grid-template-columns: minmax(100px, max-content) minmax(100px, max-content);
+  grid-template-areas: "header  header" "hero    hero" "sidebar content" "footer  footer";
+}
+
+.hero {
+  grid-area: hero;
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  height: 100px;
+  max-width: 25dvw;
+  position: sticky;
+  top: 0;
+}
+
+.content {
+  grid-area: content;
+  max-width: 75dvw;
+  overflow: hidden;
+}
+
+.footer {
+  grid-area: footer;
+}/*# sourceMappingURL=PageWithSideNav.module.css.map */

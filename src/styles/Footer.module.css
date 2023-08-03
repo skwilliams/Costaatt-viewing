@@ -1,4 +1,113 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(67, 63, 64);
+  white-space: nowrap;
+  color: white;
+  border-top: 6px solid rgb(245, 130, 32);
+}
+
 .mainFooter {
-  background-color: rgb(172, 186, 213);
-  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+}
+
+.contact {
+  line-height: 1.5;
+}
+.contact div:first-child {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.uptoDate {
+  text-align: center;
+}
+.uptoDate div:first-child {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.siteMap {
+  padding: 4px;
+  text-align: center;
+}
+
+.siteMap h3 {
+  border-bottom: 0.05px solid white;
+  border-top: 0.05px solid white;
+  padding: 4px;
+}
+
+.quickLinks {
+  display: grid;
+  text-align: left;
+  gap: 0 25px;
+  line-height: -2px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.button {
+  margin: 15px auto;
+  border-radius: 20px;
+  border: 2px solid white;
+  padding: 3px;
+  text-align: center;
+  width: 60%;
+  font-size: 1rem;
+  transition: 0.5s;
+}
+.button:hover {
+  border: 2px solid white;
+  background-color: white;
+  cursor: pointer;
+  color: black;
+}
+.button a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.socials {
+  text-align: center;
+  font-size: 1rem;
+}
+.socials div:first-child {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.socialsIcons {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  margin-top: 15px;
+}
+.socialsIcons a {
+  transition: 0.5s;
+}
+.socialsIcons a:hover {
+  cursor: pointer;
+  color: white;
+  border-bottom: 1px solid rgb(245, 130, 32);
+}
+
+.copyRight {
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 960px) {
+  .mainFooter {
+    flex-direction: column;
+    gap: 30px;
+    padding: 2rem 2rem;
+    align-items: center;
+  }
+  .contact {
+    text-align: center;
+  }
 }/*# sourceMappingURL=Footer.module.css.map */
