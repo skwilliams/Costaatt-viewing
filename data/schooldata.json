@@ -15,7 +15,7 @@
 
     "departments": [
       {
-        "name": "Business",
+        "name": "Management and Digital Entrepreneurship",
         "image": "/images/schools/busIT.png",
         "summary": "From entrepreneurs and business professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
         "shortName": "Business",
@@ -96,7 +96,7 @@
         ]
       },
       {
-        "name": "Digital Technologies",
+        "name": "ICTs and Digital Technologies",
         "image": "/images/schools/busIT.png",
         "summary": "From entrepreneurs and business professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
         "shortName": "IST",
@@ -297,32 +297,27 @@
     "nameStump": "kengord",
     "image": "/images/schools/kengord header.jpg",
     "dean": {
-      "name": "Neil Sylvester",
+      "name": "Clarinda Jack",
       "image": "/images/schools/deanavatar.jpg",
-      "message": "As the dean of School of Liberal Arts, Education and Digital Humanities, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
-      "email": "nsylvester@costaatt.edu.tt",
+      "message": "As the dean of The Ken Gordon School of Communication, Creative and Digital Media, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+      "email": "cjack@costaatt.edu.tt",
       "phone": "868-625-5030 ext 2222"
     },
-    "overview": "School of Liberal Arts, Education and Digital Humanities overview. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde. We are here for you Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa? Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo necessitatibus praesentium! Dolorem.",
+    "overview": "Ken Gordon School of Communication, Creative and Digital Media overview. Media and Communication ",
     "departments": [
       {
-        "name": "Education",
+        "name": "Creative Industries and Culture",
         "image": "/images/schools/liberal.png",
         "summary": "From language experts and mathematics professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
-        "shortName": "Education"
+        "shortName": "Arts and Culture"
       },
       {
-        "name": "Criminal Justice, Human Security and Legal Studies",
+        "name": "Digital Media and Communication",
         "image": "/images/schools/liberal.png",
         "summary": "From protective service professionals, paralegal professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
-        "shortName": "Criminal Justice"
-      },
-      {
-        "name": "Social and Behavioural Sciences",
-        "image": "/images/schools/liberal.png",
-        "summary": "From Social workers, Therapists and Counselling professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
-        "shortName": "Social and Behavioural Sciences"
+        "shortName": "Communication"
       }
+      
     ]
   },
   {
@@ -331,31 +326,31 @@
     "nameStump": "workF",
     "image": "/images/schools/workforce header.jpg",
     "dean": {
-      "name": "Neil Sylvester",
+      "name": "Lalita Ramlal-Chirkoot",
       "image": "/images/schools/deanavatar.jpg",
-      "message": "As the dean of School of Liberal Arts, Education and Digital Humanities, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
-      "email": "nsylvester@costaatt.edu.tt",
+      "message": "As the dean of the School of Workforce Enhancement and Development, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+      "email": "lrchirkoot@costaatt.edu.tt",
       "phone": "868-625-5030 ext 2222"
     },
-    "overview": "School of Liberal Arts, Education and Digital Humanities overview. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde. We are here for you Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa? Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo necessitatibus praesentium! Dolorem.",
+    "overview": "School of Workforce Enhancement and Development overview. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde. We are here for you Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa? Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo necessitatibus praesentium! Dolorem.",
     "departments": [
       {
-        "name": "Education",
+        "name": "Upskilling Academy",
         "image": "/images/schools/liberal.png",
         "summary": "From language experts and mathematics professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
-        "shortName": "Education"
+        "shortName": "Skills"
       },
       {
-        "name": "Criminal Justice, Human Security and Legal Studies",
+        "name": "CollegeStarTT",
         "image": "/images/schools/liberal.png",
         "summary": "From protective service professionals, paralegal professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
-        "shortName": "Criminal Justice"
+        "shortName": "CollegeStar"
       },
       {
-        "name": "Social and Behavioural Sciences",
+        "name": "Translation and Interpreting",
         "image": "/images/schools/liberal.png",
         "summary": "From Social workers, Therapists and Counselling professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
-        "shortName": "Social and Behavioural Sciences"
+        "shortName": "T&I"
       }
     ]
   }
