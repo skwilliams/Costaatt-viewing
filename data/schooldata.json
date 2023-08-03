@@ -191,7 +191,7 @@
   },
   {
     "name": "School of Liberal Arts, Education and Digital Humanities",
-    "shortName": "liberal",
+    "shortName": "Liberal Arts, Education and Digital Humanities",
     "nameStump": "liberal",
     "image": "/images/schools/liberal header.jpg",
     "dean": {
@@ -225,7 +225,7 @@
   },
   {
     "name": "School of Nursing, Health and Medical Technologies",
-    "shortName": "Nursing and Allied Health",
+    "shortName": "Nursing, Health and Medical Technologies",
     "nameStump": "nursing",
     "image": "/images/schools/nursing header.jpg",
     "dean": {
@@ -259,7 +259,7 @@
   },
   {
     "name": "School of School of Environment, Circular Economy and Sustainability",
-    "shortName": "SECE",
+    "shortName": "Environment, Circular Economy and Sustainability",
     "nameStump": "enviro",
     "image": "/images/schools/enviro header.jpg",
     "dean": {
@@ -293,7 +293,7 @@
   },
   {
     "name": "Ken Gordon School of Communication, Creative and Digital Media",
-    "shortName": "kengord",
+    "shortName": "Communication, Creative and Digital Media",
     "nameStump": "kengord",
     "image": "/images/schools/kengord header.jpg",
     "dean": {
@@ -327,7 +327,7 @@
   },
   {
     "name": "School of Workforce Enhancement and Development",
-    "shortName": "workF",
+    "shortName": "Workforce Enhancement and Development",
     "nameStump": "workF",
     "image": "/images/schools/workforce header.jpg",
     "dean": {
