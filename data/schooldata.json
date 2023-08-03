@@ -204,7 +204,7 @@
     "overview": "School of Liberal Arts, Education and Digital Humanities overview. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde. We are here for you Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa? Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo necessitatibus praesentium! Dolorem.",
     "departments": [
       {
-        "name": "Office of the Dean/Education",
+        "name": "Education",
         "image": "/images/schools/liberal.png",
         "summary": "From language experts and mathematics professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
         "shortName": "Education"
@@ -220,19 +220,8 @@
         "image": "/images/schools/liberal.png",
         "summary": "From Social workers, Therapists and Counselling professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
         "shortName": "Social and Behavioural Sciences"
-      },
-      {
-        "name": "Language, Literature and Caribbean Studies",
-        "image": "/images/schools/liberal.png",
-        "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
-        "shortName": "Language, Literature & Caribbean Studies"
-      },
-      {
-        "name": "Fine and Performing Arts",
-        "image": "/images/schools/liberal.png",
-        "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
-        "shortName": "Fine & Performing Arts"
       }
+      
     ]
   },
   {
@@ -260,14 +249,8 @@
         "image": "/images/schools/nursing.png",
         "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
         "shortName": "HMST"
-      },
-      {
-        "name": "Public Health and Wellness",
-        "image": "/images/schools/nursing.png",
-        "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
-        "shortName": "Health and Wellness"
       }
-    ]
+     ]
   },
   {
     "name": "School of Environment, Circular Economy and Sustainability",
@@ -284,10 +267,10 @@
     "overview": "School of Environment, Circular Economy and Sustainability overview. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde. We are here for you Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa? Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo necessitatibus praesentium! Dolorem.",
     "departments": [
       {
-        "name": "Environmental Studies",
+        "name": "Environmental and Sustainability Studies",
         "image": "/images/schools/liberal.png",
         "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
-        "shortName": "Environmental Studies"
+        "shortName": "Environmental & Sustainability Studies"
       },
       {
         "name": "Natural and Life Sciences",
@@ -316,7 +299,7 @@
         "name": "Creative Industries and Culture",
         "image": "/images/schools/liberal.png",
         "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
-        "shortName": "Arts and Culture"
+        "shortName": "Arts, Music & Culture"
       },
       {
         "name": "Digital Media and Communication",
