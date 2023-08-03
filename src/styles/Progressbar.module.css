@@ -1,0 +1,22 @@
+.progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  z-index: 50;
+  background-color: rgb(62, 19, 83);
+  background-image: linear-gradient(to right, rgb(62, 19, 83), rgb(239, 65, 41));
+  background-image: -o-linear-gradient(right, rgb(62, 19, 83), rgb(239, 65, 41));
+  transition: width 0.4s ease;
+}
+
+.progressBarDown {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  z-index: 50;
+  background-color: rgb(62, 19, 83);
+  background-image: linear-gradient(to bottom, rgb(121, 47, 142), rgb(239, 65, 41));
+  background-image: -o-linear-gradient(bottom, rgb(121, 47, 142), rgb(239, 65, 41));
+}/*# sourceMappingURL=Progressbar.module.css.map */

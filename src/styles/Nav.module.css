@@ -1,61 +1,430 @@
 .header {
-  background-color: rgb(172, 186, 213);
+  position: relative;
+  z-index: 40;
+  top: 0;
+}
+
+.headerStyles {
+  background-color: rgb(121, 47, 142);
   display: flex;
   width: 100%;
   gap: 20px;
   justify-content: space-between;
-  padding: 15px 40px;
-  align-items: center;
+  padding: 15px 15px;
+  animation: navScale 300ms ease-in;
+  transform: scale(0);
+  animation-fill-mode: forwards;
 }
 
-.navbar {
+.subheaderContainer {
+  position: fixed;
+  z-index: 40;
+  top: 0;
+  background-image: linear-gradient(to right, rgb(245, 130, 32), rgb(121, 47, 142));
+  height: auto;
   display: flex;
-  padding: 5px;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 10rem 0 10rem;
+  color: rgb(230, 231, 200);
+}
+
+.sideNavContainer {
+  position: sticky;
+  top: 0;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
   align-items: center;
-  gap: 75px;
+  padding: 0.5rem 0;
+}
+
+.sideNav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 15px 2rem 0 2rem;
+  gap: 0.25rem;
+  text-transform: capitalize;
+  animation: navScale 300ms ease-in;
+  transform: scale(0);
+  animation-fill-mode: forwards;
+}
+
+.sideNavElement {
+  padding: 0.5rem 1.5rem;
+  position: relative;
+}
+
+.subheader {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 15px 2rem 0 2rem;
+  text-transform: capitalize;
+  animation: navScale 300ms ease-in;
+  transform: scale(0);
+  animation-fill-mode: forwards;
+}
+
+.activeSubsection {
+  border-bottom: white 5px solid;
+  font-weight: 900;
+}
+
+.rslink {
+  padding: 0 2rem 1rem 2rem;
+  cursor: pointer;
+}
+
+.rslinkSideNav {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.activeSideNavSubsection {
+  color: white;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: rgb(245, 130, 32);
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ca0011;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.topNav {
+  display: flex;
+  padding: 5px 30px;
+  justify-content: space-between;
+  background-image: linear-gradient(to bottom right, rgb(62, 19, 83), rgb(121, 47, 142));
+  color: white;
+}
+
+.centerNav {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: left;
+  background-color: rgb(67, 63, 64);
+  margin: 0;
+}
+
+.centerNav h2 {
+  font-size: 1.7rem;
+}
+
+.logo {
+  padding: 0;
+  margin: 0;
+  float: left;
+  padding-left: 0;
+}
+
+.costaattwords {
+  font-family: "Lato", Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 1.25rem;
+  color: black;
+}
+
+.bottomNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0 65px;
+  background-color: rgb(67, 63, 64);
+  color: rgb(230, 231, 200);
+}
+
+.bottomNav li {
+  font-size: 1.2rem;
 }
 
 .navbarMenus {
   display: flex;
   gap: 20px;
   list-style: none;
+  justify-content: center;
 }
-.navbarMenus a {
-  text-decoration: none;
+
+.navBarLinks {
+  width: 100%;
+  padding: 9px 5px;
+  text-decoration-color: rgba(67, 63, 64, 0.9);
+  cursor: pointer;
 }
-.navbarMenus a:hover {
-  transition: all 0.3s ease;
-  color: white;
-  border: 2px solid white;
+
+.navBarLinks:hover {
+  transition: all 0.8s ease;
   border-radius: 15px;
-  background: rgb(109, 128, 167);
-  padding: 8px;
+  text-underline-position: under;
+  color: white;
+  -webkit-text-decoration: underline solid rgb(245, 130, 32) 4px !important;
+          text-decoration: underline solid rgb(245, 130, 32) 4px !important;
+}
+
+.dropDownMain {
+  left: 0;
+  top: 180px;
+  width: 100%;
+  position: absolute;
+  z-index: 40;
 }
 
 .dropDown {
-  list-style: none;
-  font-size: medium;
-  position: absolute;
-  left: 0;
-  top: 105px;
-  line-height: 42px;
-  width: 100vw;
-  background-color: rgb(135, 145, 163);
-  opacity: 80%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  color: rgb(230, 231, 200);
+  background-color: rgb(230, 231, 200);
+  box-shadow: inset 0px 14px 15px rgba(0, 0, 0, 0.3);
+  padding: 40px 120px;
 }
 .dropDown .dropDownLi {
-  color: white;
-  border-bottom: 1px solid white;
-  margin-bottom: 5px;
-  padding: 10px;
-  border-radius: 10px;
+  color: rgb(67, 63, 64);
+  padding: 20px;
+  align-content: center;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.dropDown .dropDownLi:hover {
+  transition: all 0.5s ease;
+  font-weight: 700;
+  -webkit-text-decoration: underline solid rgb(245, 130, 32) 4px;
+          text-decoration: underline solid rgb(245, 130, 32) 4px;
+  text-underline-position: under;
+}
+
+.dropDownPictures {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   text-align: center;
+}
+
+.dropDownLinksGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.dummyImage {
+  margin-bottom: 20px;
+  width: 250px;
+  height: auto;
+}
+
+.searchButton {
+  cursor: pointer;
+  width: auto;
+  height: 30px;
+}
+
+.searchButton:hover {
+  color: white;
+}
+
+.searchInput {
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  padding: 20px;
+}
+.searchInput input {
+  border: 3px solid rgb(135, 145, 163);
+  padding: 40px;
+  font-size: xx-large;
+  height: 20%;
+  width: 40%;
+  margin-right: 5px;
+}
+
+.dropDownSearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeSearchButton {
+  background-color: rgb(135, 145, 163);
+  color: white;
+  width: 15%;
+  height: 123px;
+  font-size: xx-large;
+  cursor: pointer;
+  padding: 15px;
+}
+.homeSearchButton:hover {
+  background-color: green;
+}
+
+.searchIcon {
+  width: 100%;
+  height: 100%;
+  color: white;
+  cursor: pointer;
 }
 
 .hamburger {
   display: none;
 }
 
-.parent {
-  display: flex;
+@media only screen and (max-width: 1200px) {
+  .headerStyles {
+    justify-content: center;
+    padding: 15px 0px;
+  }
+  .headerStyles img {
+    display: none;
+  }
+  .dropDownMain {
+    top: 75px;
+  }
+  .searchInput {
+    top: 85px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .headerStyles {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 5px;
+  }
+  .headerStyles img {
+    display: block;
+    height: 130px;
+    width: auto;
+  }
+  .navbar {
+    gap: 0;
+    align-items: center;
+  }
+  .navbarMenus {
+    gap: 0;
+  }
+  .dropDownMain {
+    top: 210px;
+  }
+  .searchInput {
+    top: 210px;
+  }
+  .searchInput input {
+    padding: 15px;
+    width: 60%;
+  }
+  .homeSearchButton {
+    width: 25%;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 17px;
+  }
+  .magnifyingGlass {
+    position: absolute;
+    width: auto;
+    height: 40px;
+    padding: 4px;
+    margin-top: 2rem;
+    top: 20px;
+    right: 30px;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .headerStyles {
+    align-items: start;
+    padding: 12px 20px;
+  }
+  .headerStyles img {
+    display: block;
+    height: 60px;
+    width: auto;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    height: 36px;
+    width: 35px;
+    top: 18px;
+    right: 20px;
+  }
+  .navbar {
+    gap: 0;
+    align-items: center;
+  }
+  .navbarMenus {
+    display: none;
+    gap: 0;
+  }
+  .dropDownMain {
+    top: 210px;
+  }
+  .searchInput {
+    top: 120px;
+  }
+  .searchInput input {
+    padding: 15px;
+    width: 60%;
+  }
+  .homeSearchButton {
+    width: 25%;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 17px;
+  }
+  .magnifyingGlass {
+    position: absolute;
+    width: auto;
+    height: 30px;
+    padding: 4px;
+    top: 20px;
+    right: 80px;
+  }
+}
+@keyframes navLoad {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes navScale {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }/*# sourceMappingURL=Nav.module.css.map */

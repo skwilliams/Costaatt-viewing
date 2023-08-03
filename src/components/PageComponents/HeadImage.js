@@ -5,12 +5,21 @@ const HeadImage = ({ imagetext, mainimage }) => {
   return (
     <div className={style.pageheader}>
       <Image
-        // className={style.pageheaderimg}
+        //className={style.pageheaderimg}
         src={mainimage}
-        width="1366"
-        height="300"
         alt={imagetext}
         priority={true}
+        sizes ="100vw"
+        style= {{width:'100%',
+               height:'auto',}}
+       width="0"
+       height="0"
+     
+        quality="100"
+        //fill={true} //(makes the two two menus above disappear, we may use this instead of the width and height
+        //parent element then should be position fixed, relative?)
+        
+        
       />
       <div className={style.pageheadertext}>{imagetext}</div>
     </div>

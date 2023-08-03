@@ -46,6 +46,13 @@ export const subHeaderSections = {
     "Programmes in Department": "programmes",
     "Student Resources": "sturesource",
   },
+  enviro: {
+    "school overview": "overview",
+    Departments: "depart",
+    "find your Degree": "depcourses",
+    "meet the dean": "meetthedean",
+    "school events and news": "schoolnews",
+  },
   nursing:{
     "Stuff":"yudh",
     "difid" : 'fhjdhfj',
