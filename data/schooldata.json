@@ -318,28 +318,28 @@
     "dean": {
       "name": "Lalita Ramlal-Chirkoot",
       "image": "/images/schools/deanavatar.jpg",
-      "message": "As the dean of the School of Workforce Enhancement and Development, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+      "message": "The School of Workforce Enhancement and Development (SWED)  of COSTAATT is supported by the other five (5) academic schools of the college.  As one of the six (6) schools within the College, SWED provides credit and non-credit, micro-credentials and continuing education courses as well as professional development programmes.  Our year round operations and multiple modes of delivery provides the gateway to lifelong learning for those from ages 14 years to 70 years. SWED is committed to leading change and transformation in Trinidad and Tobago and within the Caribbean through workforce development in many disciplinary areas, encouraging persons to stay current with their workplace needs, thereby improving workplace knowledge, competence and performance. Through the School of Workforce Enhancement and Development, students can earn PDUs, certificates, diplomas, graduate diplomas, and professional re-licensure.  The main focus of the School is to broaden access to opportunities for continuing education and professional development and open the doors of COSTAATT to a diverse range of learners. ",
       "email": "lrchirkoot@costaatt.edu.tt",
-      "phone": "868-625-5030 ext 2222"
+      "phone": "868-625-5030 ext 5431"
     },
-    "overview": "School of Workforce Enhancement and Development overview. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde. We are here for you Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa? Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo necessitatibus praesentium! Dolorem.",
+    "overview": "The School of Workforce Enhancement and Development (SWED) is committed to opening doors by providing expanded access to educational opportunities and experiences at COSTAATT.  With both credit and non-credit based options, SWED delivers a variety of short term, flexible programming focused on skill and professional development, academic preparation, and foreign language services.  The School serves a diverse population ranging from individuals seeking alternative paths to tertiary education, to individuals seeking to upskill themselves personally or professionally, and business enterprises seeking to support and develop their human resources.",
     "departments": [
       {
         "name": "Upskilling Academy",
         "image": "/images/schools/liberal.png",
-        "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+        "summary": "The Upskilling Academy provides a wide variety of educational content services, including certificate and diploma programmes, stand-alone short courses, professional development workshops, and customised training to support client needs and desired outcomes. ",
         "shortName": "Skills"
       },
       {
         "name": "CollegeStarTT",
         "image": "/images/schools/liberal.png",
-        "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+        "summary": "The CollegeStarTT Centre  is COSTAATT’s flagship developmental education programme designed to assist students in obtaining the necessary qualifications to access degree programmes of their choice at COSTAATT. CollegeStarTT provides an alternative pathway to tertiary level education for those students who have the aptitude and the desire to pursue tertiary education but are currently academically under-prepared.",
         "shortName": "CollegeStarTT"
       },
       {
-        "name": "Translation and Interpreting",
+        "name": "Translation and Interpreting Centre",
         "image": "/images/schools/liberal.png",
-        "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+        "summary": "As an official agent recognised by the Government of Trinidad and Tobago, the Translating and Interpreting Services (T&I) Centre provides a wide array of translation and interpretation services at local and regional levels. Our clients include corporate entities, government organisations and individuals. Official translation services include English, Dutch, French, German, Portuguese, and Spanish.",
         "shortName": "T & I"
       }
     ]
