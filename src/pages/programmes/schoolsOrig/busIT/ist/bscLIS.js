@@ -3,6 +3,8 @@ import Head from "next/head";
 import Headimagesmall from "../../../../../components/PageComponents/Headimagesmall";
 import headImg from "../../../../../../images/Programmes/tester2.jpg";
 import Layout from "../../../../../components/PageWithSideNavComponents/Layout"
+import SideNavWithTopNav_NoDropdown from '../../../../../components/Layouts/SideNavWithTopNav_NoDropdown'
+
 import CourseStyle from "../../../../../styles/Course.module.scss";
 import ProgStyles from "../../../../../styles/Programmes.module.scss";
 import time from "../../../../../../images/Programmes/time.svg";
@@ -167,16 +169,16 @@ const bscLIS = () => {
       <section id="gradPortfolio" className={CourseStyle.sectionPortfolio}>
         <p className={ProgStyles.headingprimaryleft}> Graduates Portfolio</p>
 
-        <Featured feat={features} />
+        <Featured feat={featured} />
       </section>
-      <Divider dark />
+      {/* <Divider dark />
       <section id="gradSpeak" className={CourseStyle.sectionGradSpeak}>
         <p className={ProgStyles.headingprimaryleft}> Graduates Speak</p>
 
         <div className={GradStyle.threeColGridCon}>
-          <GradsSpeak graduate={gradsspeakLIS} />
+          <GradsSpeak graduate={gradspeak} />
         </div>
-      </section>  
+      </section>    */}
       <section id="curriculum" className={CourseStyle.sectionCurriculum}>
         <p className={ProgStyles.headingprimaryleft}> Curriculum</p>
 
@@ -261,6 +263,8 @@ const bscLIS = () => {
 };
 
 bscLIS.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
+  return <SideNavWithTopNav_NoDropdown>{page}</SideNavWithTopNav_NoDropdown>;
 };
+
+
 export default bscLIS;

@@ -1,0 +1,37 @@
+.gradcont {
+  border: 2px;
+  height: 30rem;
+  margin-top: 3rem;
+  width: 17rem;
+  box-shadow: 5px 5px 5px rgb(245, 245, 247);
+}
+.gradcont .video {
+  height: 20rem;
+  width: 16.8rem;
+}
+.gradcont .name {
+  font-size: 1.5rem;
+  color: rgb(62, 19, 83);
+  padding-bottom: 0.5rem;
+}
+.gradcont .placeofwork {
+  font-size: 1.25rem;
+  font-weight: 800;
+  padding-bottom: 0.5rem;
+}
+.gradcont .says {
+  font-size: 1.1rem;
+}
+
+.threeColGridCon {
+  display: grid;
+  grid-row-gap: 2rem;
+  grid-column-gap: 1rem;
+  grid-template-columns: auto auto auto;
+}
+
+.threeColGrid {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1.5rem;
+}/*# sourceMappingURL=GradsSpeak.module.css.map */

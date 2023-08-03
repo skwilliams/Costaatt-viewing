@@ -1,0 +1,32 @@
+.carousel {
+  padding: 20px 0;
+}
+
+.sliderImage {
+  width: 60%;
+  height: auto;
+  border-radius: 2rem;
+  border: 6px solid white;
+}
+
+.sliderText {
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  width: 120px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  transform: translate(-50%, -50%);
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 1rem;
+  background-color: rgb(255, 109, 10);
+  border: 1px solid white;
+  color: white;
+  transition: 500ms;
+}
+
+.sliderText:hover {
+  background-color: white;
+  color: rgb(245, 130, 32);
+}/*# sourceMappingURL=Carousel.module.css.map */

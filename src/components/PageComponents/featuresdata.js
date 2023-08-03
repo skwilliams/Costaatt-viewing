@@ -23,7 +23,7 @@ export const featured=
     export const gradspeak = [
       {
         id:1,
-        video: "https://www.youtube.com/watch?v=kz7n9JxHrN0",
+        video: ("https://www.youtube.com/watch?v=kz7n9JxHrN0"),
         name: "Keith Harry",
         placeofwork: "Jaimano IT Solutions",
         words:
@@ -31,7 +31,7 @@ export const featured=
       },
       {
         id: 2,
-        video: require("https://www.youtube.com/watch?v=kz7n9JxHrN0"),
+        video: ("https://www.youtube.com/watch?v=kz7n9JxHrN0"),
         name: "Nicholas Mohammed",
         placeofwork: "Jaimano IT Solutions",
         words:
@@ -39,7 +39,7 @@ export const featured=
       },
       {
         id: 3,
-        video: require("https://www.youtube.com/watch?v=kz7n9JxHrN0"),
+        video: ("https://www.youtube.com/watch?v=kz7n9JxHrN0"),
         name: "Kafra Morris",
         placeofwork: "CTRL-ALT-Fix Solutions",
         words:
