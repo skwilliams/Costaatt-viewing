@@ -102,6 +102,18 @@
         "shortName": "IST",
         "programmes": [
           {
+            "prog_code": "DIPL_CCNA",
+            "prog_name": "Diploma in Web Development",
+            "prog_level": "Diploma",
+            "prog_del_mode": "Blended",
+            "dept_code": "ICTD",
+            "prog_major_credits": 27,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 3,
+            "prog_description": "The Diploma in Web Development is designed for ... students.  The CCNA programme provides an integrated and comprehensive coverage of networking topics, from fundamentals to advanced applications and services and offers students the hands-on practical experience required for industry.  Upon completion of this curriculum, students will be prepared to sit CISCO-CCNA examinations leading to a professional certification in networking. This programme normally fulfills matriculation requirements for networking engineering degree programmes."
+          },
+          {
             "prog_code": "CERT_CCNA",
             "prog_name": "Certificate in CISCO-CCNA",
             "prog_level": "Bachelor",
@@ -207,21 +219,148 @@
         "name": "Education",
         "image": "/images/schools/liberal.png",
         "summary": "From language experts and mathematics professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
-        "shortName": "Education"
+        "shortName": "Education",
+        "programmes": [
+          {
+            "prog_code": "MATH_AS",
+            "prog_name": "AS Mathematics",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "EDUC",
+            "prog_major_credits": 45,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The Associate in Science degree in Mathematics is essentially the first two years of the bachelor’s degree programme in mathematics. As students’ progress through the programme, they develop rigorous, logical thinking and problem-solving skills; an appreciation of and familiarity with complex structures and algorithms, and the ability to learn technical, detailed or abstract material."
+          },
+          {
+            "prog_code": "ECCE_BA",
+            "prog_name": "BA in  Early Childhood Care and Education ",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "EDUC",
+            "prog_major_credits": 75,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 15,
+            "prog_description": "The Bachelor of Arts degree in Early Childhood Care and Education provide students with critical knowledge and skills in the field of child development, care and learning. The programme is developed on the fundamental belief that all children can learn and deserve equal opportunities to grow and develop.  Thus, it is among the few, if not the only, with a strong emphasis on special and inclusive education. The ultimate goal of the programme is to prepare students (prospective caregivers and educators) to enter the childcare and early learning field as highly skilled caregivers or early learning professionals who can immediately contribute to the development and growth of children and deliver the highest quality of care and education to every child."
+          },
+          {
+            "prog_code": "CERT_ECCE",
+            "prog_name": "Certificate in  Early Childhood Care and Education",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "EDUC",
+            "prog_major_credits": 25,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The Certificate in Early Childhood Care & Education is designed to equip early childhood educators with teaching skills and knowledge and dispositions for working in both kindergarten and childcare settings. It aims to provide the foundation for effective teaching and interaction with young children."
+          }
+        ]
       },
       {
         "name": "Criminal Justice, Human Security and Legal Studies",
         "image": "/images/schools/liberal.png",
         "summary": "From protective service professionals, paralegal professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
-        "shortName": "Criminal Justice"
+        "shortName": "Criminal Justice",
+        "programmes": [
+          {
+            "prog_code": "CRIM_BA",
+            "prog_name": "BA - Criminal Justice  ",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "CRIM",
+            "prog_major_credits": 61,
+            "prog_core_credits": 33,
+            "prog_elect_credits": 24,
+            "prog_supp_credits": 3,
+            "prog_description": "This programme is designed to provide students with real-world experiences in the field of criminal justice through theoretical studies, seminars and field visits. Courses are drawn from both the corrections and police science tracks so that students may be considered as generalist with the capability to pursue any desired career path within the criminal justice system. Contemporary topics and issues such as restorative justice, crime and the media, and juvenile justice are among some of the courses covered in this programme."
+          },
+
+          {
+            "prog_code": "CRIM_AAS",
+            "prog_name": "AAS in Criminal Justice",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "CRIM",
+            "prog_major_credits": 36,
+            "prog_core_credits": 21,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 3,
+            "prog_description": "The Associate in Applied Science degree in Criminal Justice targets professionals in the protective services and security industries as well as persons interested in careers in these areas. The aim of the programme is to enhance students’ knowledge, understanding and competence to confront the complex challenges encountered by professionals in crime, justice and public safety contexts. All credits earned in this programme will transfer to the Bachelor of Arts degree in Criminal Justice."
+          },
+          {
+            "prog_code": "CERT_CRIM",
+            "prog_name": "Certificate in Criminal Justice",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "CRIM",
+            "prog_major_credits": 9,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The Certificate in Criminal Justice programme examines contemporary issues facing criminal justice professionals in Trinidad and Tobago and the region. Students will acquire knowledge, understanding and skills in critical areas including policing styles, restorative justice, the complexities of criminal justice systems, inmates’ rights, rehabilitation, community and institutional corrections, prison management, and psychological theories. Courses taught by academics and expert practitioners offer students the opportunity to gain practical insights into the exciting and evolving world of modern corrections."
+          }
+        ]
       },
       {
         "name": "Social and Behavioural Sciences",
         "image": "/images/schools/liberal.png",
         "summary": "From Social workers, Therapists and Counselling professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
-        "shortName": "Social and Behavioural Sciences"
+        "shortName": "Social and Behavioural Sciences",
+        "programmes": [
+          {
+            "prog_code": "SOWK_AAS",
+            "prog_name": "AAS Social Work",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "SBSC",
+            "prog_major_credits": 21,
+            "prog_core_credits": 21,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 15,
+            "prog_description": "This Associate in Applied Science degree in Social Work develops social work competencies which enables students to work immediately as paraprofessionals in the field. It also provides them with a solid foundation to pursue baccalaureate studies, if they so desire.  Graduates would have gained exposure to various service areas such as individual and group work, youth work, direct practice, community practice, and family and child issues."
+          },
+          {
+            "prog_code": "SOWK_AAS",
+            "prog_name": "AAS Social Work",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "SBSC",
+            "prog_major_credits": 21,
+            "prog_core_credits": 21,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 15,
+            "prog_description": "This Associate in Applied Science degree in Social Work develops social work competencies which enables students to work immediately as paraprofessionals in the field. It also provides them with a solid foundation to pursue baccalaureate studies, if they so desire.  Graduates would have gained exposure to various service areas such as individual and group work, youth work, direct practice, community practice, and family and child issues."
+          },
+          {
+            "prog_code": "SOWK_BSW",
+            "prog_name": "BSW Social Work ",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "SBSC",
+            "prog_major_credits": 63,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 24,
+            "prog_description": "The Bachelor of Social Work degree prepares graduates to function as professional social workers in the education, social services and national security sectors.  Students acquire critical social work competencies in individual and group work, direct practice, and addressing family and child issues."
+          },
+
+          {
+            "prog_code": "PSYC_AA",
+            "prog_name": "AA - Psychology",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "SBSC",
+            "prog_major_credits": 27,
+            "prog_core_credits": 21,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 9,
+            "prog_description": "The Associate in Arts degree in Psychology offers a solid base in the area of psychology. It has been specifically designed to furnish participants with the key theoretical understandings and scientific insights into the complexity of human behaviour and mental processes, and to equip them with practical competencies in specific areas. This associate degree provides students with the foundation courses in the discipline of psychology required to transfer into a baccalaureate programme at both regional and extra-regional institutions of higher learning. It will also be an invaluable course of study for those wishing to get certification as competent paraprofessionals in all areas of human development services."
+          }
+        ]
       }
-      
     ]
   },
   {
@@ -250,7 +389,7 @@
         "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
         "shortName": "HMST"
       }
-     ]
+    ]
   },
   {
     "name": "School of Environment, Circular Economy and Sustainability",
@@ -278,7 +417,6 @@
         "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
         "shortName": "Natural & Life Sciences"
       }
-      
     ]
   },
   {
@@ -307,7 +445,6 @@
         "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
         "shortName": "Digital Media & Communication"
       }
-      
     ]
   },
   {
