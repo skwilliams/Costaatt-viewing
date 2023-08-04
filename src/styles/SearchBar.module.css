@@ -1,25 +1,73 @@
-.searchBar {
-  border: 3px rgb(109, 128, 167) solid;
+.searchModal {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(230, 231, 200); /* Black background with opacity */
+  padding: 100px 150px;
+  z-index: 1000;
+}
+
+.searchModalHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchModalHeading h1 {
+  font-size: 5rem;
+  color: rgb(255, 109, 10);
+}
+
+.closeButton {
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-.searchBar input {
-  position: relative;
-  width: 80%;
-  height: 100%;
-  padding-left: 8px;
+  gap: 10px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 800;
 }
 
-.searchBar span {
-  width: 20%;
-  height: 100%;
+.searchModalInput {
+  display: flex;
+  width: 50%;
+  font-size: 2rem;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.searchIcon {
+.searchModalInput ::-moz-placeholder {
+  color: rgb(255, 109, 10);
+}
+
+.searchModalInput ::placeholder {
+  color: rgb(255, 109, 10);
+}
+
+.searchModalInput input {
+  font-size: 2rem;
+  padding: 20px;
+  border: 0.25px solid black;
   width: 100%;
-  height: 100%;
-  padding: 2px;
+  height: 80px;
+  background: transparent;
+}
+
+.popularLinks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.searchModalInput button {
+  cursor: pointer;
+}
+
+.searchModalHeading button:hover {
+  background-color: orange;
   color: white;
-  background: rgb(109, 128, 167);
 }/*# sourceMappingURL=SearchBar.module.css.map */

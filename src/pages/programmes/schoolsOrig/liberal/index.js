@@ -1,14 +1,14 @@
 import React from 'react';
 import Head from 'next/head';
 import HeadImage from '@/components/PageComponents/HeadImage';
-import deanimg from '../../../../../images/Links/home1.png';
-import headImg from '../../../../../images/Programmes/sobdt header.jpg';
+import headImg from '../../../../../images/Programmes/tester2.jpg';
 import Layout from '../../../../components/Layout';
 import ProgStyles from '../../../../styles/Programmes.module.scss';
 import DepartCard from '@/components/PageComponents/DepartCard';
 import DeanStyles from '../../../../styles/Dean.module.scss';
 import BusImg from '../../../../../images/Links/home2.png';
 
+import deanimg from '../../../../../images/Links/home1.png';
 import { Accordion } from '@mui/material';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -17,28 +17,26 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Link from 'next/link';
 import Image from 'next/image';
 import NewsCard from '@/components/PageComponents/NewsCard';
-import Divider from "@mui/material/Divider";
 
-
-//School of Business and Digital Technologies
+//The School of Liberal Arts, Education and Digital Humanities
 const sbdt = () => {
   return (
     <>
       <Head>
-        <title>Business & Digital Technologies</title>
+        <title> Liberal Arts </title>
       </Head>
 
       <HeadImage
-        imagetext=""
+        imagetext="The School of Liberal Arts, Education and Digital Humanities   "
         mainimage={headImg}
       />
 
       <p className={ProgStyles.headingprimarysub}>
-        COSTAATT/Programmes/Business & Digital Technologies{" "}
+        COSTAATT/Programmes/Liberal Arts{' '}
       </p>
 
       <section id="overview" className={ProgStyles.sectionoverview}>
-        
+        <div className={ProgStyles.umargintopsmall}>
           <p className={ProgStyles.headingprimary}> Overview of School</p>
           <p className={ProgStyles.text}>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo
@@ -49,11 +47,10 @@ const sbdt = () => {
             quam, blanditiis quasi ipsa? Architecto aspernatur, esse eius id ut
             accusamus nihil ipsam nemo necessitatibus praesentium! Dolorem.
           </p>
-       
-     
-      </section>   <Divider light/>
+        </div>
+      </section>
       <section id="depart" className={ProgStyles.sectiondepart}>
-  
+        <div className={ProgStyles.umargintopsmall}>
           <p className={ProgStyles.headingprimary}> Departments </p>
           <div className={ProgStyles.progGridContwo}>
             <div className={ProgStyles.progGridtwo}>
@@ -64,7 +61,7 @@ const sbdt = () => {
             information technology enthusiasts, this school is for you! Students   
             at this school will be able to connect classroom content, to real world application. 
             You will be equipped with the skills and support for success."
-                linkpage="/programmes/schools/busIT/business/"
+                linkpage="/programmes/schools/sbdt/business/"
                 shortname="Business"
               />
             </div>
@@ -76,22 +73,20 @@ const sbdt = () => {
             information technology enthusiasts, this school is for you! Students   
             at this school will be able to connect classroom content, to real world application. 
             You will be equipped with the skills and support for success."
-                linkpage="/programmes/schools/busIT/ist/"
+                linkpage="/programmes/schools/sbdt/it/"
                 shortname="IST"
               />
             </div>
           </div>
-      
+        </div>
       </section>
       <section id="depcourses" className={ProgStyles.sectiondeptcourses}>
-        
-          <p className={ProgStyles.headingprimary}>Find your Degree</p>
+        <div className={ProgStyles.umargintopsmall}>
+          <p className={ProgStyles.headingprimary}>We Offer</p>
 
           <div className={ProgStyles.progGridCon}>
             <div className={ProgStyles.progGrid}>
-              <Accordion 
-              
-              className={ProgStyles.courseaccordion}>
+              <Accordion className={ProgStyles.courseaccordion}>
                 <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                   <Typography className={ProgStyles.acoordiantext}>
                     Bachelor Degrees
@@ -106,7 +101,7 @@ const sbdt = () => {
                       <Link href="">Management and Entrepreneurship</Link>
                     </li>
                     <li className={ProgStyles.degcoursesli}>
-                      <Link href=""> Human Resource Management</Link>{" "}
+                      <Link href=""> Human Resource Management</Link>{' '}
                     </li>
                     <li className={ProgStyles.degcoursesli}>
                       <Link href=""> Marketing</Link>
@@ -145,7 +140,7 @@ const sbdt = () => {
                       </Link>
                     </li>
                     <li className={ProgStyles.degcoursesli}>
-                      <Link href="">Information Technology</Link>{" "}
+                      <Link href="">Information Technology</Link>{' '}
                     </li>
                     <li className={ProgStyles.degcoursesli}>
                       <Link href="">Web Development</Link>
@@ -173,7 +168,7 @@ const sbdt = () => {
                       <Link href=""> Records Management</Link>
                     </li>
                     <li className={ProgStyles.degcoursesli}>
-                      <Link href=""> CISCO-CCNA</Link>{" "}
+                      <Link href=""> CISCO-CCNA</Link>{' '}
                     </li>
                     <li className={ProgStyles.degcoursesli}>
                       <Link href=""> Web Development</Link>
@@ -202,7 +197,7 @@ const sbdt = () => {
               </Accordion>
             </div>
           </div>
-      
+        </div>
       </section>
       <section id="meetthedean" className={DeanStyles.sectionmeetthedean}>
         <div className={ProgStyles.umargintopsmall}>
@@ -214,7 +209,7 @@ const sbdt = () => {
             <div className={DeanStyles.deanColGrid}>
               <p className={DeanStyles.deanwords}>
                 <q>
-                  {" "}
+                  {' '}
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Consequuntur quaerat possimus, at iure soluta sequi eaque
                   doloribus ex fugit aliquid quidem dolores non nisi optio
@@ -226,16 +221,16 @@ const sbdt = () => {
               <div className={DeanStyles.deancontact}>
                 <p>
                   <span className={DeanStyles.standout}>
-                    {" "}
-                    Lalita Ramlal-Chirckoot{" "}
-                  </span>{" "}
+                    {' '}
+                    Lalita Ramlal-Chirckoot{' '}
+                  </span>{' '}
                   <br /> Dean, <br />
                   WorkForce Enhancement and Development <br />
                   <span className={DeanStyles.standout}>
                     ltchirkoot@costaatt.edu.tt
-                  </span>{" "}
+                  </span>{' '}
                   <br />
-                  868-625-5030 ext 1111{" "}
+                  868-625-5030 ext 1111{' '}
                 </p>
               </div>
             </div>
@@ -243,51 +238,27 @@ const sbdt = () => {
         </div>
       </section>
 
-      <Divider dark />
       <section id="schoolnews" className={ProgStyles.sectionschoolnews}>
-        
-        <p className={ProgStyles.headingprimary}> Business and IT News </p>
+        <p className={ProgStyles.headingprimary}> School News and Events </p>
 
         <div className={ProgStyles.threeColGridCon}>
           <div className={ProgStyles.threeColGrid}>
-            <NewsCard
-              mainimage={BusImg}
-              title="Graduation"
-              text="Get ready Graduates !!, submit your documents to ensure you walk across the stage, along with a team behind the Cosmic Evolution Early Release Science (CEERS) Survey, have used new observations from the James Webb Space Telescope to confirm the existence of the most distant active supermassive black hole ever found"
-              link="https:www.google.com"
-              schoolcolor="rgb(187,41,187)"
-            />
+            <NewsCard />
           </div>
           <div className={ProgStyles.threeColGrid}>
-            <NewsCard
-              mainimage={BusImg}
-              title="New Faculty "
-              text="Business & Digital Technologies, welcome Mr.Jim James to the faculty of Business in the School of Physics and Astronomy, along with a team behind the Cosmic Evolution Early Release Science (CEERS) Survey, have used new observations from the James Webb Space Telescope to confirm the existence of the most distant active supermassive black hole ever found"
-              link="https:www.google.com"
-              schoolcolor="rgb(187,41,187)"
-            />
+            <NewsCard />
           </div>
           <div className={ProgStyles.threeColGrid}>
-            <NewsCard
-              mainimage={BusImg}
-              title="Advisement"
-              text="associate professor in the School of Physics and Astronomy, along with a team behind the Cosmic Evolution Early Release Science (CEERS) Survey, have used new observations from the James Webb Space Telescope to confirm the existence of the most distant active supermassive black hole ever found"
-              link="https:www.google.com"
-              schoolcolor="rgb(187,41,187)"
-            />
+            <NewsCard />
           </div>
-        </div>
-        <div className={ProgStyles.goto}>
-          <Link className={ProgStyles.goto} href="#">
-            {" "}
-            View More..
-          </Link>
         </div>
       </section>
     </>
   );
 };
 
-
+// sbdt.getLayout = function getLayout(page) {
+//   return <Layout>{page}</Layout>;
+// };
 
 export default sbdt;

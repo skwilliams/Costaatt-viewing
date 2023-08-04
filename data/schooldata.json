@@ -15,7 +15,7 @@
 
     "departments": [
       {
-        "name": "Business",
+        "name": "Management and Digital Entrepreneurship",
         "image": "/images/schools/busIT.png",
         "summary": "From entrepreneurs and business professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
         "shortName": "Business",
@@ -96,7 +96,7 @@
         ]
       },
       {
-        "name": "Digital Technologies",
+        "name": "ICTs and Digital Technologies",
         "image": "/images/schools/busIT.png",
         "summary": "From entrepreneurs and business professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
         "shortName": "IST",
@@ -191,7 +191,7 @@
   },
   {
     "name": "School of Liberal Arts, Education and Digital Humanities",
-    "shortName": "liberal",
+    "shortName": "Liberal Arts, Education and Digital Humanities",
     "nameStump": "liberal",
     "image": "/images/schools/liberal header.jpg",
     "dean": {
@@ -221,11 +221,12 @@
         "summary": "From Social workers, Therapists and Counselling professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
         "shortName": "Social and Behavioural Sciences"
       }
+      
     ]
   },
   {
     "name": "School of Nursing, Health and Medical Technologies",
-    "shortName": "Nursing and Allied Health",
+    "shortName": "Nursing, Health and Medical Technologies",
     "nameStump": "nursing",
     "image": "/images/schools/nursing header.jpg",
     "dean": {
@@ -246,116 +247,100 @@
       {
         "name": "Health and Medical Science Technologies",
         "image": "/images/schools/nursing.png",
-        "summary": "From entrepreneurs and business professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
+        "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
         "shortName": "HMST"
-      },
-      {
-        "name": "Public Health and Wellness",
-        "image": "/images/schools/nursing.png",
-        "summary": "From entrepreneurs and business professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
-        "shortName": "Health and Wellness"
       }
-    ]
+     ]
   },
   {
-    "name": "School of School of Environment, Circular Economy and Sustainability",
-    "shortName": "SECE",
+    "name": "School of Environment, Circular Economy and Sustainability",
+    "shortName": "Environment, Circular Economy and Sustainability",
     "nameStump": "enviro",
     "image": "/images/schools/enviro header.jpg",
     "dean": {
-      "name": "Neil Sylvester",
+      "name": "Anjenney Boodoosingh-Dwarika",
       "image": "/images/schools/deanavatar.jpg",
       "message": "As the dean of School of Liberal Arts, Education and Digital Humanities, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
-      "email": "nsylvester@costaatt.edu.tt",
+      "email": "adwarika@costaatt.edu.tt",
       "phone": "868-625-5030 ext 2222"
     },
-    "overview": "School of Liberal Arts, Education and Digital Humanities overview. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde. We are here for you Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa? Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo necessitatibus praesentium! Dolorem.",
+    "overview": "School of Environment, Circular Economy and Sustainability overview. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde. We are here for you Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa? Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo necessitatibus praesentium! Dolorem.",
     "departments": [
       {
-        "name": "Education",
+        "name": "Environmental and Sustainability Studies",
         "image": "/images/schools/liberal.png",
-        "summary": "From language experts and mathematics professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
-        "shortName": "Education"
+        "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+        "shortName": "Environmental & Sustainability Studies"
       },
       {
-        "name": "Criminal Justice, Human Security and Legal Studies",
+        "name": "Natural and Life Sciences",
         "image": "/images/schools/liberal.png",
-        "summary": "From protective service professionals, paralegal professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
-        "shortName": "Criminal Justice"
-      },
-      {
-        "name": "Social and Behavioural Sciences",
-        "image": "/images/schools/liberal.png",
-        "summary": "From Social workers, Therapists and Counselling professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
-        "shortName": "Social and Behavioural Sciences"
+        "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+        "shortName": "Natural & Life Sciences"
       }
+      
     ]
   },
   {
     "name": "Ken Gordon School of Communication, Creative and Digital Media",
-    "shortName": "kengord",
+    "shortName": "Communication, Creative and Digital Media",
     "nameStump": "kengord",
     "image": "/images/schools/kengord header.jpg",
     "dean": {
-      "name": "Neil Sylvester",
+      "name": "Clarinda Jack",
       "image": "/images/schools/deanavatar.jpg",
-      "message": "As the dean of School of Liberal Arts, Education and Digital Humanities, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
-      "email": "nsylvester@costaatt.edu.tt",
+      "message": "As the dean of The Ken Gordon School of Communication, Creative and Digital Media, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+      "email": "cjack@costaatt.edu.tt",
       "phone": "868-625-5030 ext 2222"
     },
-    "overview": "School of Liberal Arts, Education and Digital Humanities overview. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde. We are here for you Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa? Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo necessitatibus praesentium! Dolorem.",
+    "overview": "Ken Gordon School of Communication, Creative and Digital Media overview. Media and Communication ",
     "departments": [
       {
-        "name": "Education",
+        "name": "Creative Industries and Culture",
         "image": "/images/schools/liberal.png",
-        "summary": "From language experts and mathematics professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
-        "shortName": "Education"
+        "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+        "shortName": "Arts, Music & Culture"
       },
       {
-        "name": "Criminal Justice, Human Security and Legal Studies",
+        "name": "Digital Media and Communication",
         "image": "/images/schools/liberal.png",
-        "summary": "From protective service professionals, paralegal professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
-        "shortName": "Criminal Justice"
-      },
-      {
-        "name": "Social and Behavioural Sciences",
-        "image": "/images/schools/liberal.png",
-        "summary": "From Social workers, Therapists and Counselling professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
-        "shortName": "Social and Behavioural Sciences"
+        "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+        "shortName": "Digital Media & Communication"
       }
+      
     ]
   },
   {
     "name": "School of Workforce Enhancement and Development",
-    "shortName": "workF",
+    "shortName": "Workforce Enhancement and Development",
     "nameStump": "workF",
     "image": "/images/schools/workforce header.jpg",
     "dean": {
-      "name": "Neil Sylvester",
+      "name": "Lalita Ramlal-Chirkoot",
       "image": "/images/schools/deanavatar.jpg",
-      "message": "As the dean of School of Liberal Arts, Education and Digital Humanities, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
-      "email": "nsylvester@costaatt.edu.tt",
-      "phone": "868-625-5030 ext 2222"
+      "message": "The School of Workforce Enhancement and Development (SWED)  of COSTAATT is supported by the other five (5) academic schools of the college.  As one of the six (6) schools within the College, SWED provides credit and non-credit, micro-credentials and continuing education courses as well as professional development programmes.  Our year round operations and multiple modes of delivery provides the gateway to lifelong learning for those from ages 14 years to 70 years. SWED is committed to leading change and transformation in Trinidad and Tobago and within the Caribbean through workforce development in many disciplinary areas, encouraging persons to stay current with their workplace needs, thereby improving workplace knowledge, competence and performance. Through the School of Workforce Enhancement and Development, students can earn PDUs, certificates, diplomas, graduate diplomas, and professional re-licensure.  The main focus of the School is to broaden access to opportunities for continuing education and professional development and open the doors of COSTAATT to a diverse range of learners. ",
+      "email": "lrchirkoot@costaatt.edu.tt",
+      "phone": "868-625-5030 ext 5431"
     },
-    "overview": "School of Liberal Arts, Education and Digital Humanities overview. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde. We are here for you Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa? Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo necessitatibus praesentium! Dolorem.",
+    "overview": "The School of Workforce Enhancement and Development (SWED) is committed to opening doors by providing expanded access to educational opportunities and experiences at COSTAATT.  With both credit and non-credit based options, SWED delivers a variety of short term, flexible programming focused on skill and professional development, academic preparation, and foreign language services.  The School serves a diverse population ranging from individuals seeking alternative paths to tertiary education, to individuals seeking to upskill themselves personally or professionally, and business enterprises seeking to support and develop their human resources.",
     "departments": [
       {
-        "name": "Education",
+        "name": "Upskilling Academy",
         "image": "/images/schools/liberal.png",
-        "summary": "From language experts and mathematics professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
-        "shortName": "Education"
+        "summary": "The Upskilling Academy provides a wide variety of educational content services, including certificate and diploma programmes, stand-alone short courses, professional development workshops, and customised training to support client needs and desired outcomes. ",
+        "shortName": "Skills"
       },
       {
-        "name": "Criminal Justice, Human Security and Legal Studies",
+        "name": "CollegeStarTT",
         "image": "/images/schools/liberal.png",
-        "summary": "From protective service professionals, paralegal professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
-        "shortName": "Criminal Justice"
+        "summary": "The CollegeStarTT Centre  is COSTAATT’s flagship developmental education programme designed to assist students in obtaining the necessary qualifications to access degree programmes of their choice at COSTAATT. CollegeStarTT provides an alternative pathway to tertiary level education for those students who have the aptitude and the desire to pursue tertiary education but are currently academically under-prepared.",
+        "shortName": "CollegeStarTT"
       },
       {
-        "name": "Social and Behavioural Sciences",
+        "name": "Translation and Interpreting Centre",
         "image": "/images/schools/liberal.png",
-        "summary": "From Social workers, Therapists and Counselling professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
-        "shortName": "Social and Behavioural Sciences"
+        "summary": "As an official agent recognised by the Government of Trinidad and Tobago, the Translating and Interpreting Services (T&I) Centre provides a wide array of translation and interpretation services at local and regional levels. Our clients include corporate entities, government organisations and individuals. Official translation services include English, Dutch, French, German, Portuguese, and Spanish.",
+        "shortName": "T & I"
       }
     ]
   }

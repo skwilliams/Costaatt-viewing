@@ -1,0 +1,183 @@
+.imgstyle {
+  width: 300px;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  grid-row-end: span 3;
+}
+
+.pheading {
+  font-size: 4rem;
+  color: rgb(62, 19, 83);
+  text-align: center;
+  font-family: "Bodoni";
+  margin-left: 0;
+}
+
+.sectionSideNav {
+  width: 200px;
+  float: left;
+  z-index: -1;
+  background-color: lightgrey;
+}
+
+.sidenav {
+  height: auto;
+  width: 20%;
+  z-index: -1;
+  float: left;
+  top: 0;
+  position: sticky;
+  background-color: rgba(67, 63, 64, 0.9);
+  overflow-x: hidden;
+  background-color: white;
+  margin-left: 5rem;
+  font-family: "Lato", "sans serif";
+}
+
+.sidenavlink {
+  display: block;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #818181;
+  /* top:5rem; */
+}
+
+.sidenavlink:hover {
+  color: darkgray;
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 109, 10);
+  text-decoration-thickness: 4px;
+  text-underline-position: under;
+}
+
+.mainheading {
+  margin: 1em 0;
+  color: rgb(58, 168, 199);
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: "Libre Baskerville", sans-serif;
+}
+
+.sidenavtitle {
+  color: rgb(62, 19, 83);
+  font-weight: 600;
+  margin: 0 1rem;
+  padding: 1rem 0;
+}
+
+.sidenavtitlemain {
+  color: rgb(62, 19, 83);
+  font-weight: 600;
+  margin-bottom: 2rem;
+  padding-left: 0;
+  padding-top: 1rem;
+}
+
+.urllayout {
+  font-size: 1rem;
+  margin-bottom: 5rem;
+  font-weight: 700;
+  margin: 0 3rem;
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+
+.main {
+  margin-left: 5rem; /* Same as the width of the sidenav */
+  font-size: 1.2rem; /* Increased text to enable scrolling */
+  padding-left: 2rem;
+  padding-right: 3rem;
+  max-width: 80%;
+  font-family: "Lato", "sans serif";
+  margin-left: 25rem;
+  color: rgba(67, 63, 64, 0.9);
+}
+
+.searchbox {
+  border-style: ridge;
+  font-size: 1rem;
+  padding: 0.75rem;
+  margin-bottom: 3rem;
+  width: 13rem;
+  height: 2rem;
+  border: 2px solid rgb(58, 168, 199);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.searchIcon {
+  width: 3%;
+  height: 5%;
+  margin-left: 0.5rem;
+  margin-top: 1.5rem;
+  color: rgba(67, 63, 64, 0.9);
+  cursor: pointer;
+}
+
+.progGridConthree {
+  display: grid;
+  gap: 3rem;
+  grid-gap: 2rem;
+  grid-template-columns: auto auto auto;
+  margin: 0 auto;
+  margin-right: 5rem;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.progGridthree {
+  text-align: center;
+  padding-top: 5rem;
+  font-size: 30px;
+  margin: 1.5rem 0 3rem 0;
+  margin-bottom: 0;
+  padding: 0;
+  z-index: 5;
+}
+
+.coursetitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 0;
+  font-family: "Lato";
+  grid-column-end: span 2;
+  text-align: left;
+  color: rgb(62, 19, 83);
+}
+
+.block {
+  padding: 1.76rem 0;
+}
+
+.block2 {
+  padding: 4rem 0;
+  padding-bottom: 1.3rem;
+  margin-left: 0;
+}
+
+.cardtext {
+  color: rgb(245, 130, 32);
+  font-weight: 800;
+  font-size: 1rem;
+  text-align: left;
+  line-height: 2em;
+}
+
+.cardtextIn {
+  line-height: 2em;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.bannerbottom {
+  background-color: rgb(245, 130, 32);
+  color: white;
+  height: 3rem;
+  font-size: 1.25rem;
+  margin-top: 0;
+  padding: 0.5rem;
+  text-align: right;
+  grid-column-end: span 3;
+}/*# sourceMappingURL=ProgCard.module.css.map */
