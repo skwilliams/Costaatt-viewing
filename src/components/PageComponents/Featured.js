@@ -10,7 +10,7 @@ const Featured = ({feat}) => {
   return (
     <>
       <div className={FeatStyle.gridContwo}>
-        {feat.map((fe)=> (
+        {feat?.map((fe)=> (
         <>   
         <div className={FeatStyle.gridtwo}>
           <Image

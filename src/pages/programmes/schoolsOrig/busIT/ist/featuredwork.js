@@ -1,4 +1,4 @@
-export const featuredLIS = [
+export const features = [
   {
     id: 1,
     photo: require("../../../../../../images/Programmes/ken.png"),
