@@ -1,36 +1,40 @@
-import React from "react";
-import Head from "next/head";
-import Headimagesmall from "../../../../../components/PageComponents/Headimagesmall";
-import headImg from "../../../../../../images/Programmes/tester2.jpg";
-import Layout from "../../../../../components/PageWithSideNavComponents/Layout"
-import CourseStyle from "../../../../../styles/Course.module.scss";
-import ProgStyles from "../../../../../styles/Programmes.module.scss";
-import time from "../../../../../../images/Programmes/time.svg";
-import mode from "../../../../../../images/Programmes/mode.svg";
-import location from "../../../../../../images/Programmes/location.svg";
-import Image from "next/image";
-import ContactUs from "@/components/PageComponents/ContactUs";
-import Featured from '../../../../../components/PageComponents/Featured'
-import {featured} from '../../../../../components/PageComponents/featuresdata'
-import { gradspeak } from "../../../../../components/PageComponents/featuresdata";
+import React from 'react';
+import Head from 'next/head';
+import Headimagesmall from '../../../../../components/PageComponents/Headimagesmall';
+import headImg from '../../../../../../images/Programmes/tester2.jpg';
+import Layout from '../../../../../components/PageWithSideNavComponents/Layout';
+import CourseStyle from '../../../../../styles/Course.module.scss';
+import ProgStyles from '../../../../../styles/Programmes.module.scss';
+import time from '../../../../../../images/Programmes/time.svg';
+import mode from '../../../../../../images/Programmes/mode.svg';
+import location from '../../../../../../images/Programmes/location.svg';
+import Image from 'next/image';
+import ContactUs from '@/components/PageComponents/ContactUs';
+import Featured from '../../../../../components/PageComponents/Featured';
+import { featured } from '../../../../../components/PageComponents/featuresdata';
+import { gradspeak } from '../../../../../components/PageComponents/featuresdata';
 
+import GradStyle from '../../../../../styles/GradsSpeak.module.scss';
+import GradsSpeak from '@/components/PageComponents/GradsSpeak';
+import Divider from '@mui/material/Divider';
+import {
+  bscLismajor,
+  bscLissupport,
+  bscLiscore,
+} from '../../busIT/ist/bscLiscourses';
+import { institutionFees } from '../../../../admissions/admissionsData';
+import DegreeCourses from '@/components/PageComponents/DegreeCourses';
 
-import GradStyle from "../../../../../styles/GradsSpeak.module.scss"
-import GradsSpeak from "@/components/PageComponents/GradsSpeak"
-import Divider from "@mui/material/Divider";
-import {bscLismajor, bscLissupport,bscLiscore} from "../../busIT/ist/bscLiscourses"
-import {institutionFees} from "../../../../admissions/admissionsData"
-import DegreeCourses from "@/components/PageComponents/DegreeCourses"
+import DeptStyles from '../../../../../styles/Department.module.scss';
+import StudentResources from '@/components/PageComponents/StudentResources';
 
-import DeptStyles from "../../../../../styles/Department.module.scss"
-import StudentResources from "@/components/PageComponents/StudentResources";
-
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import InstitutionFees from '@/components/PageComponents/InstiutionFees'
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import InstitutionFees from '@/components/PageComponents/InstiutionFees';
+import SideNavOnly_NoTopOrDropdown from '@/components/Layouts/SideNavOnly_NoTopOrDropdown';
 import {
   TableContainer,
   Table,
@@ -39,7 +43,7 @@ import {
   TableRow,
   TableCell,
   Paper,
-} from "@mui/material";
+} from '@mui/material';
 
 const bscLIS = () => {
   return (
@@ -69,7 +73,7 @@ const bscLIS = () => {
           <ul className={CourseStyle.list}>
             <li className={CourseStyle.items}>
               Minimum five (5) CSEC/GCE O'Level subjects, inclusive of English A
-              and Mathematics.{" "}
+              and Mathematics.{' '}
               <p className={CourseStyle.footnote}>
                 Grades 1,2,3* or A, B, C. *Grade 3 accepted if attained in June
                 1998 and beyond
@@ -79,11 +83,11 @@ const bscLIS = () => {
               Prerequisites : College Matriculation requirements
             </li>
           </ul>
-        </div>{" "}
+        </div>{' '}
         <div className={CourseStyle.iconsection}>
           <div className={CourseStyle.threeColGridCon}>
             <div className={CourseStyle.threeColGrid}>
-              {" "}
+              {' '}
               <Image
                 className={CourseStyle.icon}
                 src={location}
@@ -91,7 +95,7 @@ const bscLIS = () => {
               />
               <p className={CourseStyle.iconfont}> &#10004; City Campus</p>
               <p className={CourseStyle.iconfont}>
-                {" "}
+                {' '}
                 &#10004; Part-time : 6 years
               </p>
             </div>
@@ -102,19 +106,19 @@ const bscLIS = () => {
                 alt="duration icon"
               />
               <p className={CourseStyle.iconfont}>
-                {" "}
+                {' '}
                 &#10004; Full-time : 4 years
               </p>
               <p className={CourseStyle.iconfont}>
-                {" "}
+                {' '}
                 &#10004; Part-time : 6 years
               </p>
               <p className={CourseStyle.footnote}>
                 *Subject to change based on college Matriculation
-              </p>{" "}
+              </p>{' '}
             </div>
             <div className={CourseStyle.threeColGrid}>
-              {" "}
+              {' '}
               <Image
                 className={CourseStyle.icon}
                 src={mode}
@@ -160,7 +164,7 @@ const bscLIS = () => {
         </table>
         <p className={CourseStyle.footnote}>
           * Salaries are subject to years of experience, projects and
-          professional certification{" "}
+          professional certification{' '}
         </p>
       </section>
       <Divider dark />
@@ -176,7 +180,7 @@ const bscLIS = () => {
         <div className={GradStyle.threeColGridCon}>
           <GradsSpeak graduate={gradsspeakLIS} />
         </div>
-      </section>  
+      </section>
       <section id="curriculum" className={CourseStyle.sectionCurriculum}>
         <p className={ProgStyles.headingprimaryleft}> Curriculum</p>
 
@@ -188,7 +192,7 @@ const bscLIS = () => {
             <DegreeCourses courses={bscLismajor} />
           </AccordionDetails>
         </Accordion>
-        <Accordion sx={{ margin: 2, color: "primary" }}>
+        <Accordion sx={{ margin: 2, color: 'primary' }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography>Core Curriculum Courses</Typography>
           </AccordionSummary>
@@ -215,7 +219,7 @@ const bscLIS = () => {
             <DegreeCourses courses={bscLismajor} />
           </AccordionDetails>
         </Accordion>
-        <Accordion sx={{ margin: 2, color: "primary" }}>
+        <Accordion sx={{ margin: 2, color: 'primary' }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography>College Fees</Typography>
           </AccordionSummary>
@@ -261,6 +265,6 @@ const bscLIS = () => {
 };
 
 bscLIS.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
+  return <SideNavOnly_NoTopOrDropdown>{page}</SideNavOnly_NoTopOrDropdown>;
 };
 export default bscLIS;
