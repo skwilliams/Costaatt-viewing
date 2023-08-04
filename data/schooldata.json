@@ -102,6 +102,18 @@
         "shortName": "IST",
         "programmes": [
           {
+            "prog_code": "DIPL_CCNA",
+            "prog_name": "Diploma in Web Development",
+            "prog_level": "Diploma",
+            "prog_del_mode": "Blended",
+            "dept_code": "ICTD",
+            "prog_major_credits": 27,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 3,
+            "prog_description": "The Diploma in Web Development is designed for ... students.  The CCNA programme provides an integrated and comprehensive coverage of networking topics, from fundamentals to advanced applications and services and offers students the hands-on practical experience required for industry.  Upon completion of this curriculum, students will be prepared to sit CISCO-CCNA examinations leading to a professional certification in networking. This programme normally fulfills matriculation requirements for networking engineering degree programmes."
+          },
+          {
             "prog_code": "CERT_CCNA",
             "prog_name": "Certificate in CISCO-CCNA",
             "prog_level": "Bachelor",
@@ -265,11 +277,11 @@
     "dean": {
       "name": "Neil Sylvester",
       "image": "/images/schools/deanavatar.jpg",
-      "message": "As the dean of School of Liberal Arts, Education and Digital Humanities, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+      "message": "As the dean of School of School of Environment, Circular Economy and Sustainability, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
       "email": "nsylvester@costaatt.edu.tt",
       "phone": "868-625-5030 ext 2222"
     },
-    "overview": "School of Liberal Arts, Education and Digital Humanities overview. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde. We are here for you Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa? Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo necessitatibus praesentium! Dolorem.",
+    "overview": "School of School of Environment, Circular Economy and Sustainability overview. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde. We are here for you Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa? Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo necessitatibus praesentium! Dolorem.",
     "departments": [
       {
         "name": "Education",
@@ -299,11 +311,11 @@
     "dean": {
       "name": "Neil Sylvester",
       "image": "/images/schools/deanavatar.jpg",
-      "message": "As the dean of School of Liberal Arts, Education and Digital Humanities, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+      "message": "As the dean of Ken Gordon School of Communication, Creative and Digital Media, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
       "email": "nsylvester@costaatt.edu.tt",
       "phone": "868-625-5030 ext 2222"
     },
-    "overview": "School of Liberal Arts, Education and Digital Humanities overview. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde. We are here for you Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa? Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo necessitatibus praesentium! Dolorem.",
+    "overview": "Ken Gordon School of Communication, Creative and Digital Media overview. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde. We are here for you Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa? Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo necessitatibus praesentium! Dolorem.",
     "departments": [
       {
         "name": "Education",
@@ -333,11 +345,11 @@
     "dean": {
       "name": "Neil Sylvester",
       "image": "/images/schools/deanavatar.jpg",
-      "message": "As the dean of School of Liberal Arts, Education and Digital Humanities, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+      "message": "As the dean of School of Workforce Enhancement and Development, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
       "email": "nsylvester@costaatt.edu.tt",
       "phone": "868-625-5030 ext 2222"
     },
-    "overview": "School of Liberal Arts, Education and Digital Humanities overview. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde. We are here for you Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa? Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo necessitatibus praesentium! Dolorem.",
+    "overview": "School of Workforce Enhancement and Development overview. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde. We are here for you Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa? Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo necessitatibus praesentium! Dolorem.",
     "departments": [
       {
         "name": "Education",
