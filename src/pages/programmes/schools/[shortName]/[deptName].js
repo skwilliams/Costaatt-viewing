@@ -1,35 +1,40 @@
 import React from "react";
 import Head from "next/head";
-import HeadImage from "../../../../../components/PageComponents/HeadImage";
-import headImg from "../../../../../../images/Programmes/tester2.jpg";
-import Layout from "../../../../../components/PageWithSideNavComponents/Layout";
-import ProgStyles from "../../../../../styles/Programmes.module.scss";
+import HeadImage from "../../../../components/PageComponents/HeadImage";
+import headImg from "../../../../../images/Programmes/tester2.jpg";
+import Layout from "../../../../components/PageWithSideNavComponents/Layout";
+import ProgStyles from "../../../../styles/Programmes.module.scss";
 import { Accordion } from "@mui/material";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { useRouter } from "next/router";
+import path from "path";
+import fs from "fs/promises";
 
 import Image from "next/image";
 
-import ContactSideNav from "../../../../../components/PageComponents/ContactSideNav";
-import DeptStyles from "../../../../../styles/Department.module.scss";
-import EventCard from "../../../../../components/PageComponents/EventsCard";
+import ContactSideNav from "../../../../components/PageComponents/ContactSideNav";
+import DeptStyles from "../../../../styles/Department.module.scss";
+import EventCard from "../../../../components/PageComponents/EventsCard";
 import NewsCard from "@/components/PageComponents/NewsCard";
-import BusImg from "../../../../../../images/Links/home2.png";
+import BusImg from "../../../../../images/Links/home2.png";
 import Link from "next/link";
 import Featured from "@/components/PageComponents/Featured";
 import { features } from "@/components/PageComponents/featuresdata";
-import { staffdata } from "@/pages/programmes/schools/busIT/ist/facultystaffdata";
-import FacultyStaffCard from "../../../../../components/PageComponents/FacultyStaffDepCard";
-import image from "../../../../../../images/Programmes/visit-home-v2.jpg";
+import { staffdata } from "./facultystaffdata";
+import FacultyStaffCard from "../../../../components/PageComponents/FacultyStaffDepCard";
+import image from "../../../../../images/Programmes/visit-home-v2.jpg";
 import StudentResources from "@/components/PageComponents/StudentResources";
 
-const index = () => {
+const index = (props) => {
+  const { foundDept } = props;
+  console.log(foundDept);
   return (
     <>
       <Head>
-        <title>IST</title>
+        <title>{foundDept.shortName}</title>
       </Head>
       <HeadImage imagetext="ICT and Digital Technologies" mainimage={headImg} />
       <section id="overview" className={DeptStyles.sectionOverview}>
@@ -165,9 +170,9 @@ const index = () => {
         </div>
       </section>{" "}
       <section id="featuredwork" className={DeptStyles.sectionFeaturedwork}>
-        <p className={ProgStyles.headingprimary}> Featured Work</p>
+        {/* <p className={ProgStyles.headingprimary}> Featured Work</p>
 
-        <Featured feat={features} />
+        <Featured feat={features} /> */}
       </section>
       <section id="facultystaff" className={DeptStyles.sectionFaculty}>
         <p className={ProgStyles.headingprimary}> Faculty and Staff</p>
@@ -277,3 +282,58 @@ const index = () => {
 //   }
 
 export default index;
+
+export async function getStaticPaths() {
+  return {
+    paths: [],
+    fallback: "blocking",
+  };
+}
+export async function getStaticProps(context) {
+  //   const router = useRouter();
+  const { params } = context;
+  const { shortName, deptName } = params;
+  console.log(deptName);
+  return {
+    props: {
+      foundDept: await getData(
+        "data",
+        "schooldata.json",
+        shortName,
+        "nameStump",
+        deptName,
+        "deptCode"
+      ),
+      //   news: await getData(
+      //     "data",
+      //     "public/data",
+      //     "newsdata.json",
+      //     shortName,
+      //     "schoolDivision",
+      //     deptName,
+      //     "department"
+      //   ),
+    },
+  };
+}
+
+const getData = async function (
+  pathName,
+  fileName,
+  schName,
+  key,
+  deptName,
+  deptKey
+) {
+  const filepath = path.join(process.cwd(), pathName, fileName);
+  const jsonData = await fs.readFile(filepath);
+  const data = JSON.parse(jsonData);
+  const finalData =
+    key === "nameStump"
+      ? data
+          .filter((info) => info[key] === schName)[0]
+          .departments.find((dept) => dept.shortName === deptName)
+      : null; //data.filter((info) => info[key] === schName);
+
+  return finalData === undefined ? null : finalData;
+};

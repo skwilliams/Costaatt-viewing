@@ -1,6 +1,6 @@
 export const staffdata = [
   {
-    photo: require("../../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
     altText: " photo Roger Chung",
     name: "Roger Chung",
     position: "Department Chair",
@@ -8,7 +8,7 @@ export const staffdata = [
     phone: "1-868-625-5030 ext 5480",
   },
   {
-    photo: require("../../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
     altText: " photo Maurisa Charles",
     name: "Maruisa Charles",
     position: "Administrative Assistant",
@@ -16,7 +16,7 @@ export const staffdata = [
     phone: "1-868-625-5030 ext 5463",
   },
   {
-    photo: require("../../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
     altText: " photo Cindy Bernard",
     name: "Cindy Bernard",
     position: "Programme Assistant (Library Science)",
@@ -24,7 +24,7 @@ export const staffdata = [
     phone: "1-868-625-5030 ext 5418",
   },
   {
-    photo: require("../../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
     altText: " photo Raechelle David",
     name: "Rachelle David",
     position: "Programme Assistant (ICT's)",
@@ -32,69 +32,67 @@ export const staffdata = [
     phone: "1-868-625-5030 ext 5496",
   },
 
-
   {
-    photo:  require("../../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
     altText: " photo Dexter Absalom",
     name: "Dexter Absalom",
     position: "Senior Lecturer ",
     email: "dabsalom@costaatt.edu.tt",
   },
   {
-    photo:  require("../../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
     altText: " photo Nicole Alexander",
     name: "Nicole Alexander",
     position: "Senior Lecturer",
     email: "nalexander@costaatt.edu.tt",
   },
   {
-    photo:  require("../../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
     altText: " photo Adrian Andrews",
     name: "Adrian Andrews",
     position: "Senior Lecuter",
     email: "aandrews@costaatt.edu.tt",
   },
   {
-    photo:  require("../../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
     altText: " photo Andre Cadogan",
     name: "Andre Cadogan",
     position: "Senior Lecturer",
     email: "acadogan@costaatt.edu.tt",
   },
   {
-    photo:  require("../../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
     altText: " photo Alicia Dennis-Nagee",
     name: "Alicia Dennis-Nagee",
     position: "Senior Lecturer",
     email: "adnagee@costaatt.edu.tt",
   },
   {
-    photo:  require("../../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
     altText: " photo Maneka Gokool",
     name: "Maneka Gokool",
     position: "Senior Lecturer",
     email: "mgokool@costaatt.edu.tt",
   },
   {
-    photo:  require("../../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
     altText: " photo Joanne Jarvis-Patrick",
     name: "Joanne Jarvis-Patrick",
     position: "Senior Lecturer",
     email: "jjpatrick@costaatt.edu.tt",
   },
   {
-    photo:  require("../../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
     altText: " photo Job Sterling",
     name: "Job Sterling",
     position: "Senior Lecturer",
     email: "jsterling@costaatt.edu.tt",
   },
   {
-    photo:  require("../../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
     altText: " photo Stacy Williams",
     name: "Stacy Williams",
     position: "Senior Lecturer",
     email: "skwilliams@costaatt.edu.tt",
   },
 ];
-

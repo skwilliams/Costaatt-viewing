@@ -1,8 +1,8 @@
 import Head from "next/head";
 import HeadImage from "@/components/PageComponents/HeadImage";
-import ProgStyles from "../../../styles/Programmes.module.scss";
+import ProgStyles from "../../../../styles/Programmes.module.scss";
 import DepartCard from "@/components/PageComponents/DepartCard";
-import DeanStyles from "../../../styles/Dean.module.scss";
+import DeanStyles from "../../../../styles/Dean.module.scss";
 import { Accordion } from "@mui/material";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
