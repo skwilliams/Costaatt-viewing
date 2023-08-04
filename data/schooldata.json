@@ -102,6 +102,18 @@
         "shortName": "IST",
         "programmes": [
           {
+            "prog_code": "DIPL_CCNA",
+            "prog_name": "Diploma in Web Development",
+            "prog_level": "Diploma",
+            "prog_del_mode": "Blended",
+            "dept_code": "ICTD",
+            "prog_major_credits": 27,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 3,
+            "prog_description": "The Diploma in Web Development is designed for ... students.  The CCNA programme provides an integrated and comprehensive coverage of networking topics, from fundamentals to advanced applications and services and offers students the hands-on practical experience required for industry.  Upon completion of this curriculum, students will be prepared to sit CISCO-CCNA examinations leading to a professional certification in networking. This programme normally fulfills matriculation requirements for networking engineering degree programmes."
+          },
+          {
             "prog_code": "CERT_CCNA",
             "prog_name": "Certificate in CISCO-CCNA",
             "prog_level": "Bachelor",
@@ -221,7 +233,6 @@
         "summary": "From Social workers, Therapists and Counselling professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
         "shortName": "Social and Behavioural Sciences"
       }
-      
     ]
   },
   {
@@ -250,7 +261,7 @@
         "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
         "shortName": "HMST"
       }
-     ]
+    ]
   },
   {
     "name": "School of Environment, Circular Economy and Sustainability",
@@ -278,7 +289,6 @@
         "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
         "shortName": "Natural & Life Sciences"
       }
-      
     ]
   },
   {
@@ -307,7 +317,6 @@
         "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
         "shortName": "Digital Media & Communication"
       }
-      
     ]
   },
   {

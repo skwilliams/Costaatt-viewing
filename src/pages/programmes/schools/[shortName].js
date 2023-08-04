@@ -18,9 +18,24 @@ import fs from "fs/promises";
 //School of Business and Digital Technologies
 const school = (props) => {
   const { foundSchool, news } = props;
-  // console.log(news);
-  const lgrid = foundSchool.departments.length;
+  // retrieve all programmes in the school and restructure data for Accordion
+  const schoolProgrammes = {
+    Bachelor: [],
+    Associate: [],
+    Certificate: [],
+    Diploma: [],
+  };
 
+  foundSchool.departments.forEach((dept) => {
+    const { programmes } = dept;
+    programmes &&
+      programmes.forEach((prog) => {
+        schoolProgrammes[prog.prog_level].push(prog);
+      });
+  });
+
+  console.log(schoolProgrammes);
+  const lgrid = foundSchool.departments.length;
   let deptLayout = ProgStyles.threeColGridCon;
   let depcardLayout = ProgStyles.threeColGrid;
   if (lgrid === 2 || lgrid === 4) {
@@ -34,7 +49,7 @@ const school = (props) => {
         <title>{foundSchool.shortName || "School"}</title>
       </Head>
       <section id="Mainheader" className={ProgStyles.sectionmainheader}>
-      <HeadImage imagetext="" mainimage={foundSchool.image} />
+        <HeadImage imagetext="" mainimage={foundSchool.image} />
       </section>
       <p className={ProgStyles.headingprimarysub}>
         COSTAATT/Programmes/{foundSchool.shortName}
@@ -69,117 +84,45 @@ const school = (props) => {
         <p className={ProgStyles.headingprimary}>Find your Degree</p>
 
         <div className={ProgStyles.progGridCon}>
-          <div className={ProgStyles.progGrid}>
-            <Accordion className={ProgStyles.courseaccordion}>
-              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                <Typography className={ProgStyles.acoordiantext}>
-                  Bachelor Degrees
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <ul className={ProgStyles.degcourses}>
-                  <li className={ProgStyles.degcoursesli}>
-                    <Link href=""> Accounting </Link>
-                  </li>
-                  <li className={ProgStyles.degcoursesli}>
-                    <Link href="">Management and Entrepreneurship</Link>
-                  </li>
-                  <li className={ProgStyles.degcoursesli}>
-                    <Link href=""> Human Resource Management</Link>{" "}
-                  </li>
-                  <li className={ProgStyles.degcoursesli}>
-                    <Link href=""> Marketing</Link>
-                  </li>
-                  <li className={ProgStyles.degcoursesli}>
-                    <Link href=""> Information Technology </Link>
-                  </li>
-                  <li className={ProgStyles.degcoursesli}>
-                    <Link href="">Networking</Link>
-                  </li>
-                  <li className={ProgStyles.degcoursesli}>
-                    <Link href=""> Web Development</Link>
-                  </li>
-                  <li className={ProgStyles.degcoursesli}>
-                    <Link href="">Library and Information Science</Link>
-                  </li>
-                </ul>
-              </AccordionDetails>
-            </Accordion>
-          </div>
-          <div className={ProgStyles.progGrid}>
-            <Accordion className={ProgStyles.courseaccordion}>
-              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                <Typography className={ProgStyles.acoordiantext}>
-                  Associate Degrees
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails className={ProgStyles.bachelors}>
-                <ul className={ProgStyles.degcourses}>
-                  <li className={ProgStyles.degcoursesli}>
-                    <Link href="">Business Administration</Link>
-                  </li>
-                  <li className={ProgStyles.degcoursesli}>
-                    <Link href="">
-                      Management Studies for the Protective Services
-                    </Link>
-                  </li>
-                  <li className={ProgStyles.degcoursesli}>
-                    <Link href="">Information Technology</Link>{" "}
-                  </li>
-                  <li className={ProgStyles.degcoursesli}>
-                    <Link href="">Web Development</Link>
-                  </li>
-                  <li className={ProgStyles.degcoursesli}>
-                    <Link href="">Library and Information Studies</Link>
-                  </li>
-                </ul>
-              </AccordionDetails>
-            </Accordion>
-          </div>
-          <div className={ProgStyles.progGrid}>
-            <Accordion className={ProgStyles.courseaccordion}>
-              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                <Typography className={ProgStyles.acoordiantext}>
-                  Certificates
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails className={ProgStyles.bachelors}>
-                <ul className={ProgStyles.degcourses}>
-                  <li className={ProgStyles.degcoursesli}>
-                    <Link href=""> Supervisory Management</Link>
-                  </li>
-                  <li className={ProgStyles.degcoursesli}>
-                    <Link href=""> Records Management</Link>
-                  </li>
-                  <li className={ProgStyles.degcoursesli}>
-                    <Link href=""> CISCO-CCNA</Link>{" "}
-                  </li>
-                  <li className={ProgStyles.degcoursesli}>
-                    <Link href=""> Web Development</Link>
-                  </li>
-                </ul>
-              </AccordionDetails>
-            </Accordion>
-          </div>
-          <div className={ProgStyles.progGrid}>
-            <Accordion className={ProgStyles.courseaccordion}>
-              <AccordionSummary
-                className={ProgStyles.arrow}
-                expandIcon={<ExpandMoreIcon />}
-              >
-                <Typography className={ProgStyles.acoordiantext}>
-                  Diploma
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <ul className={ProgStyles.degcourses}>
-                  <li className={ProgStyles.degcoursesli}>
-                    <Link href="">Supervisory Management</Link>
-                  </li>
-                </ul>
-              </AccordionDetails>
-            </Accordion>
-          </div>
+          {/* Show accordion for only the type/level of programmes available.  return empty fragment otherwise*/}
+          {Object.entries(schoolProgrammes).map((level) => {
+            return (
+              <>
+                {level[1].length > 0 ? (
+                  <>
+                    <div className={ProgStyles.progGrid} key={level[0]}>
+                      <Accordion className={ProgStyles.courseaccordion}>
+                        <AccordionSummary
+                          key={level[0]}
+                          expandIcon={<ExpandMoreIcon />}
+                        >
+                          <Typography className={ProgStyles.acoordiantext}>
+                            {level[0]}
+                          </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                          <ul className={ProgStyles.degcourses}>
+                            {level[1].map((levelProgs) => {
+                              return (
+                                <li
+                                  key={levelProgs.prog_code}
+                                  className={ProgStyles.degcoursesli}
+                                >
+                                  <Link href=""> {levelProgs.prog_name} </Link>
+                                </li>
+                              );
+                            })}
+                          </ul>
+                        </AccordionDetails>
+                      </Accordion>
+                    </div>
+                  </>
+                ) : (
+                  <></>
+                )}
+              </>
+            );
+          })}
         </div>
       </section>
       {/* Meet the Dean Section */}
@@ -254,25 +197,6 @@ export async function getStaticPaths() {
     fallback: false,
   };
 }
-
-// export async function getStaticProps(context) {
-//   const { params } = context;
-//   const schName = params.shortName;
-//   // const router = useRouter();
-//   // console.log(`the param is ${router.query.param}`);
-
-//   const filepath = path.join(process.cwd(), "data", "schooldata.js");
-//   let data = await fs.readFile(filepath, "utf8");
-//   // data = JSON.parse(data);
-//   console.log(data);
-//   const sch = data.find((school) => school.nameStump === schName);
-//   console.log(sch);
-//   return {
-//     props: {
-//       foundSchool: sch,
-//     },
-//   };
-// }
 
 export async function getStaticProps(context) {
   const { params } = context;
