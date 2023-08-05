@@ -53,9 +53,11 @@ export const subHeaderSections = {
     "meet the dean": "meetthedean",
     "school events and news": "schoolnews",
   },
-  nursing:{
-    "Stuff":"yudh",
-    "difid" : 'fhjdhfj',
-
+  nursing: {
+    "school overview": "overview",
+    Departments: "depart",
+    "find your Degree": "depcourses",
+    "meet the dean": "meetthedean",
+    "school events and news": "schoolnews",  
   },
 };

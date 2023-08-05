@@ -33,6 +33,8 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import InstitutionFees from '@/components/PageComponents/InstiutionFees'
+import image from "../../../../../../images/Programmes/visit-home-v2.jpg";
+
 import {
   TableContainer,
   Table,
@@ -47,7 +49,7 @@ const bscLIS = () => {
   return (
     <>
       <Head>
-        <title>IST</title>
+        <title>BSC LIS</title>
       </Head>
       {/* <Headimagesmall
         imagetext=""
@@ -65,23 +67,6 @@ const bscLIS = () => {
           activities. This degree prepares candidates who would like to pursue a
           masters' degree to easily transition to such a programme.
         </p>
-        <div className={CourseStyle.entryreq}>
-          <p className={CourseStyle.headingsecondary}> Entry Requirements</p>
-
-          <ul className={CourseStyle.list}>
-            <li className={CourseStyle.items}>
-              Minimum five (5) CSEC/GCE O'Level subjects, inclusive of English A
-              and Mathematics.{" "}
-              <p className={CourseStyle.footnote}>
-                Grades 1,2,3* or A, B, C. *Grade 3 accepted if attained in June
-                1998 and beyond
-              </p>
-            </li>
-            <li className={CourseStyle.items}>
-              Prerequisites : College Matriculation requirements
-            </li>
-          </ul>
-        </div>{" "}
         <div className={CourseStyle.iconsection}>
           <div className={CourseStyle.threeColGridCon}>
             <div className={CourseStyle.threeColGrid}>
@@ -92,10 +77,6 @@ const bscLIS = () => {
                 alt="duration icon"
               />
               <p className={CourseStyle.iconfont}> &#10004; City Campus</p>
-              <p className={CourseStyle.iconfont}>
-                {" "}
-                &#10004; Part-time : 6 years
-              </p>
             </div>
             <div className={CourseStyle.threeColGrid}>
               <Image
@@ -127,17 +108,11 @@ const bscLIS = () => {
             </div>
           </div>
         </div>
-        <div className={CourseStyle.inquiryform}>
-          <div className={CourseStyle.specialrequiremnets}>
-            Speical Requirements
-          </div>
-          <ContactUs />
-        </div>
       </section>
       <Divider dark />
       <section id="careers" className={CourseStyle.sectionCareers}>
         <p className={ProgStyles.headingprimaryleft}> Possible Careers</p>
-
+        {/*to change to a copoonent */}
         <table className={CourseStyle.careerstable}>
           <thead>
             <tr>
@@ -171,14 +146,14 @@ const bscLIS = () => {
 
         <Featured feat={featured} />
       </section>
-      {/* <Divider dark />
+      <Divider dark />
       <section id="gradSpeak" className={CourseStyle.sectionGradSpeak}>
         <p className={ProgStyles.headingprimaryleft}> Graduates Speak</p>
 
         <div className={GradStyle.threeColGridCon}>
           <GradsSpeak graduate={gradspeak} />
         </div>
-      </section>    */}
+      </section>
       <section id="curriculum" className={CourseStyle.sectionCurriculum}>
         <p className={ProgStyles.headingprimaryleft}> Curriculum</p>
 
@@ -195,6 +170,7 @@ const bscLIS = () => {
             <Typography>Core Curriculum Courses</Typography>
           </AccordionSummary>
           <AccordionDetails>
+            {/* Core Curriculum Courses */}
             <DegreeCourses courses={bscLismajor} />
           </AccordionDetails>
         </Accordion>
@@ -203,10 +179,13 @@ const bscLIS = () => {
             <Typography>Support Courses</Typography>
           </AccordionSummary>
           <AccordionDetails>
+            {/* Support Courses */}
+
             <DegreeCourses courses={bscLismajor} />
           </AccordionDetails>
         </Accordion>
       </section>
+
       <section id="feesfinancial" className={CourseStyle.sectionFinancial}>
         <p className={ProgStyles.headingprimaryleft}> Fees and Financial Aid</p>
         <Accordion sx={{ margin: 2 }}>
@@ -235,12 +214,79 @@ const bscLIS = () => {
         </Accordion>
       </section>
 
-      {/* <section id="application" className={CourseStyle.sectionFinancial}>
-        <p className={ProgStyles.headingprimaryleft}> Supporting Documents</p>
-      </section> 
-       */}
-      {/* <section id="sturesource" className={DeptStyles.sectionStuResources}>
+      <section id="requirements" className={CourseStyle.sectionRequirements}>
+        <p className={ProgStyles.headingprimaryleft}> Requirements</p>
+        <Accordion sx={{ margin: 2 }}>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography>Minimum Entry Requirements</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <DegreeCourses courses={bscLismajor} />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion sx={{ margin: 2, color: "primary" }}>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography>Alternative Routes</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <div className={CourseStyle.text}>
+              Applicants who do not possess the minimum requirements for entry
+              into a degree programme may be eligible for admission via the
+              following: Mature applicants (25 years and over) with relevant
+              experience, who do not possess the minimum entry requirements, may
+              be considered on the basis of experience and demonstrable
+              competence.
+              <p>
+                {" "}
+                COMPASS is designed to help students gain the qualifications
+                needed to access the degree programme of their choice at
+                COSTAATT. The duration of study in COMPASS depends on students'
+                entry-level competencies; performance on the placement tests in
+                English, Mathematics and, where relevant, Science; and the
+                admission requirements of the programme they wish to pursue.
+              </p>
+              <p>
+                {" "}
+                To qualify for the COMPASS programme, applicants MUST have
+                completed five years of secondary school and: Possess 3-4 CSEC
+                (CXC)/GCE passes Possess 5 CSEC (CXC)/GCE passes without
+                mathematics or English or Be 25 years or older (mature student)
+                with academic literacy acquired through work or life
+                experiences. Upon successful completion of the COMPASS
+                programme, students may apply to the college programme for which
+                they would then have gained the necessary entry requirements.{" "}
+              </p>
+            </div>{" "}
+          </AccordionDetails>
+        </Accordion>
+        <Accordion sx={{ margin: 2 }}>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography>Resource Requirements</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <p className={CourseStyle.text}>
+              Access to a mid range computer and internet access
+            </p>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion sx={{ margin: 2 }}>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography>Required Supporting Documents </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <ul className={CourseStyle.text}>
+              <li> </li>
+            </ul>
+          </AccordionDetails>
+        </Accordion>
+      </section>
+      
+      <div className={CourseStyle.inquiryform}>
+        <ContactUs />
+      </div>
+      <section id="applylink" className={DeptStyles.sectionStuResources}>
         <p className={ProgStyles.headingprimaryleft}> COSTAATT WANTS YOU </p>
+
         <div className={DeptStyles.threeGridCon}>
           <div className={DeptStyles.threeGridCol}>
             <StudentResources image={image} imagetxt="Apply Now" />{" "}
@@ -248,7 +294,7 @@ const bscLIS = () => {
           <div className={DeptStyles.threeGridCol}>
             {" "}
             <StudentResources
-              image={image2}
+              image={image}
               imagetxt="See Admissions Counsellor"
             />
           </div>
@@ -257,7 +303,7 @@ const bscLIS = () => {
             <StudentResources image={image} imagetxt="Visit Us" />
           </div>
         </div>
-      </section> */}
+      </section>
     </>
   );
 };

@@ -24,10 +24,13 @@
   margin-bottom: 0;
 }
 .sectionmainheader {
-  //height:300;
+ // height:300;
  // width:1024;
-  background-color:blue;
-  .pageheader {
+ background-color: white;
+ 
+
+ 
+}.pageheader {
   margin-bottom: 0;
   overflow: hidden;
   max-width: 100vw;
@@ -39,7 +42,6 @@
   background-size: cover;
   margin: 0;
   position: relative;
-}
 }
 .sectionoverview {
   color: #161716;

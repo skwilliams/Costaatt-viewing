@@ -6,7 +6,7 @@
   left: 0;
   height: 4px;
   z-index: 50;
-  background-color: $purple-main;
+  background-color: $orange2;
   background-image: linear-gradient(to right, $purple-main,$orange2);
   // //   /* For older browsers */
   background-image: -webkit-linear-gradient(right,$purple-main,$orange2);
@@ -21,12 +21,12 @@
   left: 0;
   width: 4px;
   z-index: 50;
-  background-color: $purple-main;
-  background-image: linear-gradient(to bottom, $purple-secondary, $orange2);
-  //   /* For older browsers */
-  background-image: -webkit-linear-gradient(bottom,$purple-secondary, $orange2);
-  background-image: -moz-linear-gradient(bottom, $purple-secondary, $orange2);
-  background-image: -o-linear-gradient(bottom, $purple-secondary, $orange2);
+  background-color: $orange2;
+  // // background-image: linear-gradient(to bottom, $purple-secondary, $orange2);
+  // //   /* For older browsers */
+  // background-image: -webkit-linear-gradient(bottom,$purple-secondary, $orange2);
+  // background-image: -moz-linear-gradient(bottom, $purple-secondary, $orange2);
+  // background-image: -o-linear-gradient(bottom, $purple-secondary, $orange2);
 
-  //   transition: width 0.4s ease;
+    transition: width 0.4s ease;
 }
