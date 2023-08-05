@@ -204,7 +204,7 @@
 
 .dropDownMain {
   left: 0;
-  top: 180px;
+  top: 150px;
   width: 100%;
   position: absolute;
   z-index: 40;
@@ -218,7 +218,7 @@
   color: $whiteback;
   background-color: $whiteback;
   box-shadow: inset 0px 14px 15px rgba(0, 0, 0, 0.3);
-  padding: 40px 120px;
+  padding: 30px 120px;
   .dropDownLi {
     color: $grey;
     padding: 20px;
