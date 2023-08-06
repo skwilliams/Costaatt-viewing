@@ -14,7 +14,7 @@ import Image from "next/image";
 import ContactUs from "@/components/PageComponents/ContactUs";
 import Featured from '../../../../../components/PageComponents/Featured'
 import {featured} from '../../../../../components/PageComponents/featuresdata'
-import { gradspeak } from "../../../../../components/PageComponents/featuresdata";
+import { gradspeak}  from "../../../../api/gradspeak";
 
 
 import GradStyle from "../../../../../styles/GradsSpeak.module.scss"
@@ -35,15 +35,6 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import InstitutionFees from '@/components/PageComponents/InstiutionFees'
 import image from "../../../../../../images/Programmes/visit-home-v2.jpg";
 
-import {
-  TableContainer,
-  Table,
-  TableHead,
-  TableBody,
-  TableRow,
-  TableCell,
-  Paper,
-} from "@mui/material";
 
 const bscLIS = () => {
   return (
@@ -171,7 +162,7 @@ const bscLIS = () => {
           </AccordionSummary>
           <AccordionDetails>
             {/* Core Curriculum Courses */}
-            <DegreeCourses courses={bscLismajor} />
+            <DegreeCourses courses={bscLiscore} />
           </AccordionDetails>
         </Accordion>
         <Accordion sx={{ margin: 2 }}>
@@ -181,7 +172,7 @@ const bscLIS = () => {
           <AccordionDetails>
             {/* Support Courses */}
 
-            <DegreeCourses courses={bscLismajor} />
+            <DegreeCourses courses={bscLissupport} />
           </AccordionDetails>
         </Accordion>
       </section>
@@ -280,7 +271,7 @@ const bscLIS = () => {
           </AccordionDetails>
         </Accordion>
       </section>
-      
+
       <div className={CourseStyle.inquiryform}>
         <ContactUs />
       </div>

@@ -1,20 +1,35 @@
 import React from "react";
 import GradStyle from "../../styles/GradsSpeak.module.scss";
 import ReactPlayer from "react-player";
+import { useState } from "react";
+import { useEffect } from "react";
+
 
 
 
 const GradsSpeak = ({ graduate }) => {
+
+//video is taking long to load, need to check..
+
+ const [hasWindow, setHasWindow] = useState(false);
+ useEffect(() => {
+   if (typeof window !== "undefined") {
+     setHasWindow(true);
+   }
+ }, []);
+
+
+
   return (
     <>
       {graduate.map((grad) => (
         <div className={GradStyle.gradcont}>
           <>
-            <div className={GradStyle.video}>
+              <div className={GradStyle.video}>
               {grad.video && (
-                <ReactPlayer height="320px" width="270px" url={grad.video} />
+               hasWindow && <ReactPlayer height="320px" width="270px" url={grad.video} />
               )}
-            </div>
+            </div>  
 
             {grad.name && <div className={GradStyle.name}>{grad.name}</div>}
             {grad.placeofwork && (
