@@ -25,21 +25,21 @@
 }
 .sectionmainheader {
   //height:300;
- // width:1024;
-  background-color:blue;
+  // width:1024;
+  background-color: blue;
   .pageheader {
-  margin-bottom: 0;
-  overflow: hidden;
-  max-width: 100vw;
-}
-.pageheaderimg {
-  height: 75vw;
-  width: 100vw;
-  background-position: center;
-  background-size: cover;
-  margin: 0;
-  position: relative;
-}
+    margin-bottom: 0;
+    overflow: hidden;
+    max-width: 100vw;
+  }
+  .pageheaderimg {
+    height: 75vw;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    position: relative;
+  }
 }
 .sectionoverview {
   color: #161716;
@@ -554,7 +554,7 @@ form.degreesearch input[type="text"] {
   padding-left: 1rem;
 }
 .degcoursesli {
-  padding: 0.3rem 1rem;
+  padding: 0rem 1rem;
   color: white;
 
   :hover {

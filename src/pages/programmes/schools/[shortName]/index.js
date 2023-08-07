@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { getSchProgrammes } from "../../utilities";
 import HeadImage from "@/components/PageComponents/HeadImage";
 import ProgStyles from "../../../../styles/Programmes.module.scss";
 import DepartCard from "@/components/PageComponents/DepartCard";
@@ -19,20 +20,7 @@ import fs from "fs/promises";
 const school = (props) => {
   const { foundSchool, news } = props;
   // retrieve all programmes in the school and restructure data for Accordion
-  const schoolProgrammes = {
-    Bachelor: [],
-    Associate: [],
-    Certificate: [],
-    Diploma: [],
-  };
-
-  foundSchool.departments.forEach((dept) => {
-    const { programmes } = dept;
-    programmes &&
-      programmes.forEach((prog) => {
-        schoolProgrammes[prog.prog_level].push(prog);
-      });
-  });
+  const schoolProgrammes = getSchProgrammes(foundSchool);
 
   console.log(schoolProgrammes);
   const lgrid = foundSchool.departments.length;
