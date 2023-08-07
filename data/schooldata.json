@@ -58,6 +58,18 @@
             "prog_description": "This certificate programme is the first level of a two-year diploma programme which has been specially designed for persons who have been assigned supervisory responsibilities without formal training.  In addition to acquiring practical supervisory skills and enhanced communication skills, students are exposed to the theoretical framework of organizational behavior which will equip them to make more judicious and informed decisions."
           },
           {
+            "prog_code": "DIPL_SMGT",
+            "prog_name": "Diploma in Supervisory Management ",
+            "prog_level": "Diploma",
+            "prog_del_mode": "Blended",
+            "dept_code": "MGDE",
+            "prog_major_credits": 36,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "This two year part-time programme is specially designed for persons who have been assigned supervisory responsibilities without formal training. Students learn practical skills in supervision, effective communication, conflict management and resolution, industrial relations, financial procedures and budgeting. Applicants with significant supervisory experience can apply for exemption from selected Year 1 courses through the College’s Prior Learning Assessment and Recognition (PLAR) Services"
+          },
+          {
             "prog_code": "ENTP_BBA",
             "prog_name": "BBA Management and Entrepreneurship",
             "prog_level": "Bachelor",
@@ -102,21 +114,21 @@
         "shortName": "IST",
         "programmes": [
           {
-            "prog_code": "DIPL_CCNA",
-            "prog_name": "Diploma in Web Development",
-            "prog_level": "Diploma",
+            "prog_code": "CERT_WEB",
+            "prog_name": "Diploma in IT - Web Development",
+            "prog_level": "Certificate",
             "prog_del_mode": "Blended",
             "dept_code": "ICTD",
-            "prog_major_credits": 27,
+            "prog_major_credits": 15,
             "prog_core_credits": 0,
             "prog_elect_credits": 0,
-            "prog_supp_credits": 3,
-            "prog_description": "The Diploma in Web Development is designed for ... students.  The CCNA programme provides an integrated and comprehensive coverage of networking topics, from fundamentals to advanced applications and services and offers students the hands-on practical experience required for industry.  Upon completion of this curriculum, students will be prepared to sit CISCO-CCNA examinations leading to a professional certification in networking. This programme normally fulfills matriculation requirements for networking engineering degree programmes."
+            "prog_supp_credits": 0,
+            "prog_description": "The Certificate in Web Development is designed for ..."
           },
           {
             "prog_code": "CERT_CCNA",
             "prog_name": "Certificate in CISCO-CCNA",
-            "prog_level": "Bachelor",
+            "prog_level": "Certificate",
             "prog_del_mode": "Blended",
             "dept_code": "ICTD",
             "prog_major_credits": 16,
@@ -162,6 +174,18 @@
             "prog_description": "This degree programme essentially comprises the first two years of the Bachelor of Science in Information Technology. Students pursuing a Bachelor of Science in Information Technology can exit with an Associate in Applied Science degree in Information Technology once they have completed the prescribed list of courses below. Graduates at the associate level in information technology will be prepared for technician or technologist entry level positions in the job market."
           },
           {
+            "prog_code": "ITWEB_AAS",
+            "prog_name": "AAS Information Technology - Web Development",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "ICTD",
+            "prog_major_credits": 42,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 3,
+            "prog_description": "This degree programme essentially comprises the first two years of the Bachelor of Science in Information Technology. Students pursuing a Bachelor of Science in Information Technology can exit with an Associate in Applied Science degree in Information Technology once they have completed the prescribed list of courses below. Graduates at the associate level in information technology will be prepared for technician or technologist entry level positions in the job market."
+          },
+          {
             "prog_code": "ITGN_BS",
             "prog_name": "BSc Information Technology - General",
             "prog_level": "Bachelor",
@@ -172,6 +196,18 @@
             "prog_elect_credits": 13,
             "prog_supp_credits": 6,
             "prog_description": "This general IT degree provides students with a well-rounded knowledge of the fundamental skills necessary to develop and maintain the changes required in the dynamic and challenging information technology field.  The graduate will have the advantage of being able to work in diverse environments throughout the information technology industry. The practical knowledge gained from the programme provides a foundation of information technology skill-sets that can be used in the fields of IT Project Manager, IT Teacher, Java Developer, Business Analyst, Database Administrator, Software Implementation Analyst, Applications Architect, Windows Administrator, Enterprise Architect  or any number of fields within the industry."
+          },
+          {
+            "prog_code": "ITWEB_BS",
+            "prog_name": "BSc Information Technology - Web Development",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "ICTD",
+            "prog_major_credits": 84,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 3,
+            "prog_description": "This degree ..."
           },
           {
             "prog_code": "ITNT_BS",
