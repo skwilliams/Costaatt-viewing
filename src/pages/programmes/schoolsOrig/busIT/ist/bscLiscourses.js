@@ -45,3 +45,19 @@ export const bscLissupport = [
     credits: 3,
   },
 ];
+export const salaries = [
+  {
+    position: "Senior (Librarian, Information Specialist, others..)",
+    figure: "$11,000 -$15,000",
+  },
+
+  {
+    postion: "School Librarian",
+    figure: "$11,000 -$15,000",
+  },
+    {
+    postion: "Records Manager 1",
+    figure: "$7,800 -$10,200",
+  },
+  
+];

@@ -20,10 +20,10 @@ import { gradspeak}  from "../../../../api/gradspeak";
 import GradStyle from "../../../../../styles/GradsSpeak.module.scss"
 import GradsSpeak from "@/components/PageComponents/GradsSpeak"
 import Divider from "@mui/material/Divider";
-import {bscLismajor, bscLissupport,bscLiscore} from "../../busIT/ist/bscLiscourses"
+import {bscLismajor, bscLissupport,bscLiscore,salaries} from "../../busIT/ist/bscLiscourses"
 import {institutionFees} from "../../../../admissions/admissionsData"
 import DegreeCourses from "@/components/PageComponents/DegreeCourses"
-
+import PossibleSalary from "@/components/PageComponents/PossibleSalary"
 import DeptStyles from "../../../../../styles/Department.module.scss"
 import StudentResources from "@/components/PageComponents/StudentResources";
 
@@ -104,7 +104,8 @@ const bscLIS = () => {
       <section id="careers" className={CourseStyle.sectionCareers}>
         <p className={ProgStyles.headingprimaryleft}> Possible Careers</p>
         {/*to change to a copoonent */}
-        <table className={CourseStyle.careerstable}>
+        <PossibleSalary salaries ={salaries}/>
+        {/* <table className={CourseStyle.careerstable}>
           <thead>
             <tr>
               <th> Position</th>
@@ -125,7 +126,7 @@ const bscLIS = () => {
               <td>$7,800 -$10,200</td>
             </tr>
           </tbody>
-        </table>
+        </table> */}
         <p className={CourseStyle.footnote}>
           * Salaries are subject to years of experience, projects and
           professional certification{" "}
