@@ -505,14 +505,90 @@
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/liberal.png",
         "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
-        "shortName": "Arts, Music and Culture"
+        "shortName": "Arts, Music and Culture",
+        "programmes": [
+          {
+            "prog_code": "ELIT_AA",
+            "prog_name": "AA Literatures in English",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "CIC",
+            "prog_major_credits": 36,
+            "prog_core_credits": 24,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The Assoicate in Arts degree in Literature and English.provide students with exposure to the major literary genres, through the examination of the works of both renowned and contemporary authors. These studies are complemented by general education courses drawn from a broad range of disciplines, creating a solid foundation for students who wish to pursue studies up to the bachelor’s level or for language and literature teachers who wish to enhance their knowledge base in the field. This associate degree programme is also suitable for students who wish to pursue careers and/ or further study in the areas of journalism, advertising, and communications. "
+          },
+          {
+            "prog_code": "FAVP_AA",
+            "prog_name": "AA Film and Video Production",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "CIC",
+            "prog_major_credits": 24,
+            "prog_core_credits": 21,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 15,
+            "prog_description": "In this degree students will be exposed to several elements of filmmaking such as video producing, editing, scriptwriting, and film and television studies. The Associate in Arts degree is the first two years of the BA in Film and Video Production. It prepares students for entry level positions in the film industry or enables them to be independent earners."
+          },
+          {
+            "prog_code": "PERM_AA",
+            "prog_name": "AA Performing Arts: Music",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "CIC",
+            "prog_major_credits": 44,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 6,
+            "prog_supp_credits": 0,
+            "prog_description": "This degree essentially comprises the first two years of the Bachelor of Music programme.  Students pursuing a Bachelor of Music degree can exit with an Associate in Arts degree in Performing Arts: Music, once they have completed the prescribed list of courses below."
+          },
+          {
+            "prog_code": "CERT_FVP",
+            "prog_name": "Certificate in Film and Video Production",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "CIC",
+            "prog_major_credits": 15,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "In this introductory certificate students will be exposed to basic video producing, editing, scriptwriting, and film studies."
+          },
+          {
+            "prog_code": "CERT_MUP",
+            "prog_name": "Certificate in Music Performance",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "CIC",
+            "prog_major_credits": 21,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The certificate programme is intended to provide options for individuals who are unable to commit to lengthy programs of study and caters to hobbyist musicians, industry professionals seeking to gain formal training and improved skills, and talented individuals preparing to embark on professional performance careers."
+          }
+        ]
       },
       {
         "name": "Digital Media and Communication",
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/liberal.png",
         "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
-        "shortName": "Digital Media and Communication"
+        "shortName": "Digital Media and Communication",
+        "programmes": [
+          {
+            "prog_code": "SOWK_AAS",
+            "prog_name": "AAS Social Work",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "SBSC",
+            "prog_major_credits": 21,
+            "prog_core_credits": 21,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 15,
+            "prog_description": "This Associate in Applied Science degree in Social Work develops social work competencies which enables students to work immediately as paraprofessionals in the field. It also provides them with a solid foundation to pursue baccalaureate studies, if they so desire.  Graduates would have gained exposure to various service areas such as individual and group work, youth work, direct practice, community practice, and family and child issues."
+          }
+        ]
       }
     ]
   },
