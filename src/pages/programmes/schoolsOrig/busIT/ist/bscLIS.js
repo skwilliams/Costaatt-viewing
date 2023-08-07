@@ -21,7 +21,19 @@ import { gradspeak}  from "../../../../api/gradspeak";
 import GradStyle from "../../../../../styles/GradsSpeak.module.scss"
 import GradsSpeak from "@/components/PageComponents/GradsSpeak"
 import Divider from "@mui/material/Divider";
-import {bscLismajor, bscLissupport,bscLiscore,salaries,tuition} from "../../busIT/ist/bscLiscourses"
+import {
+  supportingDoc,
+  supportDocA,
+  
+  minrequirements,
+  bscLismajor,
+  bscLissupport,
+  bscLiscore,
+  salaries,
+  tuition,
+  totalcredits,
+  resources,
+} from "../../busIT/ist/bscLiscourses";
 import {
   institutionFees,
   dptOfManagementFees,
@@ -39,6 +51,11 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import InstitutionFees from '@/components/PageComponents/InstiutionFees'
 import image from "../../../../../../images/Programmes/visit-home-v2.jpg";
 import TuitionFees from "@/components/PageComponents/TuitionFees";
+import Requirements from "@/components/PageComponents/Requirements";
+import SupportDoc from "@/components/PageComponents/SupportDoc";
+
+
+
 
 
 const bscLIS = () => {
@@ -64,8 +81,20 @@ const bscLIS = () => {
           masters' degree to easily transition to such a programme.
         </p>
         <div className={CourseStyle.iconsection}>
-          <div className={CourseStyle.fourColGridCon}>
-            <div className={CourseStyle.fourColGrid}>
+          <div className={CourseStyle.fiveColGridCon}>
+            <div className={CourseStyle.fiveColGrid}>
+              {" "}
+              <Image
+                className={CourseStyle.icon}
+                src={location}
+                alt="duration icon"
+              />
+              
+              <p className={CourseStyle.iconfont}> &#10004; September</p>
+              <p className={CourseStyle.iconfont}> &#10004; January</p>
+            </div>
+
+            <div className={CourseStyle.fiveColGrid}>
               {" "}
               <Image
                 className={CourseStyle.icon}
@@ -73,8 +102,9 @@ const bscLIS = () => {
                 alt="duration icon"
               />
               <p className={CourseStyle.iconfont}> &#10004; City Campus</p>
+              <p className={CourseStyle.iconfont}> &#10004; Online</p>
             </div>
-            <div className={CourseStyle.fourColGrid}>
+            <div className={CourseStyle.fiveColGrid}>
               <Image
                 className={CourseStyle.icon}
                 src={time}
@@ -92,7 +122,7 @@ const bscLIS = () => {
                 *Subject to change based on college Matriculation
               </p>{" "} */}
             </div>
-            <div className={CourseStyle.fourColGrid}>
+            <div className={CourseStyle.fiveColGrid}>
               {" "}
               <Image
                 className={CourseStyle.icon}
@@ -102,7 +132,7 @@ const bscLIS = () => {
               <p className={CourseStyle.iconfont}> &#10004; Blended</p>
               <p className={CourseStyle.iconfont}> &#10004; Online</p>
             </div>
-            <div className={CourseStyle.fourColGrid}>
+            <div className={CourseStyle.fiveColGrid}>
               {" "}
               <Image
                 className={CourseStyle.icon}
@@ -143,7 +173,7 @@ const bscLIS = () => {
 
         <Accordion sx={{ margin: 2 }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>Courses in Major</Typography>
+            <Typography fontSize={18}>Courses in Major</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <DegreeCourses courses={bscLismajor} />
@@ -151,7 +181,7 @@ const bscLIS = () => {
         </Accordion>
         <Accordion sx={{ margin: 2, color: "primary" }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>Core Curriculum Courses</Typography>
+            <Typography fontSize={18}>Core Curriculum Courses</Typography>
           </AccordionSummary>
           <AccordionDetails>
             {/* Core Curriculum Courses */}
@@ -160,7 +190,7 @@ const bscLIS = () => {
         </Accordion>
         <Accordion sx={{ margin: 2 }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>Support Courses</Typography>
+            <Typography fontSize={18}>Support Courses</Typography>
           </AccordionSummary>
           <AccordionDetails>
             {/* Support Courses */}
@@ -168,13 +198,19 @@ const bscLIS = () => {
             <DegreeCourses courses={bscLissupport} />
           </AccordionDetails>
         </Accordion>
+        <p className={CourseStyle.text}>
+          {" "}
+          Total credits to achieve a BSC in Library Sciecne and Information
+          Systems{" "}
+          <span className={CourseStyle.courseheading}>{totalcredits} </span>
+        </p>
       </section>
 
       <section id="feesfinancial" className={CourseStyle.sectionFinancial}>
         <p className={ProgStyles.headingprimaryleft}> Fees and Financial Aid</p>
         <Accordion sx={{ margin: 2 }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>Tuition Fees</Typography>
+            <Typography fontSize={18}>Tuition Fees</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <TuitionFees fees={tuition} />
@@ -188,7 +224,7 @@ const bscLIS = () => {
         </Accordion>
         <Accordion sx={{ margin: 2, color: "primary" }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>College Fees</Typography>
+            <Typography fontSize={18}>College Fees</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <InstitutionFees fees={institutionFees} />
@@ -215,7 +251,7 @@ const bscLIS = () => {
         </Accordion>
         <Accordion sx={{ margin: 2 }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>Financial Aid</Typography>
+            <Typography fontSize={18}>Financial Aid</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <div className={CourseStyle.text}>
@@ -252,7 +288,7 @@ const bscLIS = () => {
                 information on the GATE programme please visit the website of
                 the{" "}
                 <a href="http://https://moe.gov.tt/"> Ministry of Education</a>.
-                <br /> The vast majority of the College’s programmes are
+                <br /> The vast majority of the College's programmes are
                 eligible for GATE. For a full list of these programmes please
                 contact the Admissions Department, Tel 625-5030 ext 5900
               </p>
@@ -317,74 +353,80 @@ const bscLIS = () => {
         <p className={ProgStyles.headingprimaryleft}> Requirements</p>
         <Accordion sx={{ margin: 2 }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>Minimum Entry Requirements</Typography>
+            <Typography fontSize={18}>Minimum Entry Requirements</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <DegreeCourses courses={bscLismajor} />
+            <Requirements reqs={minrequirements} />
           </AccordionDetails>
         </Accordion>
         <Accordion sx={{ margin: 2, color: "primary" }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>Alternative Routes</Typography>
+            <Typography fontSize={18}>Alternative Routes</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <div className={CourseStyle.text}>
               Applicants who do not possess the minimum requirements for entry
               into a degree programme may be eligible for admission via the
-              following: Mature applicants (25 years and over) with relevant
-              experience, who do not possess the minimum entry requirements, may
-              be considered on the basis of experience and demonstrable
-              competence.
+              following: <br />{" "}
+              <span className={CourseStyle.bold}> Mature applicants</span> (25
+              years and over) with relevant experience, who do not possess the
+              minimum entry requirements, may be considered on the basis of
+              experience and demonstrable competence.
               <p>
                 {" "}
-                COMPASS is designed to help students gain the qualifications
-                needed to access the degree programme of their choice at
-                COSTAATT. The duration of study in COMPASS depends on students'
-                entry-level competencies; performance on the placement tests in
-                English, Mathematics and, where relevant, Science; and the
-                admission requirements of the programme they wish to pursue.
+                <span className={CourseStyle.bold}> COMPASS </span> is designed
+                to help students gain the qualifications needed to access the
+                degree programme of their choice at COSTAATT. The duration of
+                study in COMPASS depends on students' entry-level competencies;
+                performance on the placement tests in English, Mathematics and,
+                where relevant, Science; and the admission requirements of the
+                programme they wish to pursue.
               </p>
-              <p>
+              <br />
+              <div className={CourseStyle.entryreq}>
                 {" "}
-                To qualify for the COMPASS programme, applicants MUST have
-                completed five years of secondary school and: Possess 3-4 CSEC
-                (CXC)/GCE passes Possess 5 CSEC (CXC)/GCE passes without
-                mathematics or English or Be 25 years or older (mature student)
-                with academic literacy acquired through work or life
-                experiences. Upon successful completion of the COMPASS
-                programme, students may apply to the college programme for which
-                they would then have gained the necessary entry requirements.{" "}
-              </p>
+                To qualify for the{" "}
+                <span className={CourseStyle.bold}>COMPASS programme </span>,
+                applicants MUST have completed five years of secondary school
+                and:
+                <ul className={CourseStyle.list}>
+                  <li className={CourseStyle.items}>
+                    {" "}
+                    Possess 3-4 CSEC (CXC)/GCE passes Possess
+                  </li>
+                  <li className={CourseStyle.items}>
+                    {" "}
+                    5 CSEC (CXC)/GCE passes without mathematics or English or{" "}
+                  </li>
+                  <li className={CourseStyle.items}>
+                    {" "}
+                    Be 25 years or older (mature student) with academic literacy
+                    acquired through work or life experiences.
+                  </li>
+                </ul>{" "}
+                Upon successful completion of the COMPASS programme, students
+                may apply to the college programme for which they would then
+                have gained the necessary entry requirements.{" "}
+              </div>
             </div>{" "}
           </AccordionDetails>
         </Accordion>
         <Accordion sx={{ margin: 2 }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>Resource Requirements</Typography>
+            <Typography fontSize={18}>Resource Requirements</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <p className={CourseStyle.text}>
-              Access to a mid range computer and internet access
-            </p>
+            <Requirements reqs={resources} />/
           </AccordionDetails>
         </Accordion>
         <Accordion sx={{ margin: 2 }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>Required Supporting Documents </Typography>
+            <Typography fontSize={18}>
+              Required Supporting Documents{" "}
+            </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <div className={CourseStyle.entryreq}>
-              <ul className={CourseStyle.list}>
-                <li className={CourseStyle.items}></li>
-                <li className={CourseStyle.items}>accommodation</li>
-                <li className={CourseStyle.items}>
-                  airfare and other transportation costs
-                </li>
-                <li className={CourseStyle.items}>
-                  personal maintenance costs and living expenses
-                </li>
-              </ul>
-            </div>
+            <SupportDoc docs={supportDocA} />
           </AccordionDetails>
         </Accordion>
       </section>

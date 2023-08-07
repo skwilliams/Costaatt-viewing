@@ -137,7 +137,7 @@ const requirements = () => {
               <strong>School of Liberal Arts and Human Services:</strong>
             </p>
             <p>
-              To be admitted to the music programme (bachelor’s and associate
+              To be admitted to the music programme (bachelor's and associate
               degree), short-listed applicants will be required to successfully
               complete the audition process.
             </p>
@@ -226,7 +226,7 @@ const requirements = () => {
           <p>
             COMPASS is designed to help students gain the qualifications needed
             to access the degree programme of their choice at COSTAATT. The
-            duration of study in COMPASS depends on students’ entry-level
+            duration of study in COMPASS depends on students' entry-level
             competencies; performance on the placement tests in English,
             mathematics and, where relevant, science; and the admission
             requirements of the programme they wish to pursue.

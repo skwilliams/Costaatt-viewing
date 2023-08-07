@@ -40,17 +40,33 @@
  
    // padding: 10px;
  }
+ 
+ .fiveColGridCon{  
+    display: grid;
+    gap: 5rem;
+    grid-gap:2rem ;
+    grid-template-columns: auto auto auto auto auto;
+ }
+ 
+ .fiveColGrid {  
+   text-align: center;
+  //  padding: 20px ;
+   font-size: 1.5rem;
+   
+ 
+   // padding: 10px;
+ }
 
  .fourColGridCon{  
-  display: grid;
-   gap: 5rem;
-   grid-gap:2rem ;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
- 
+    display: grid;
+    gap: 5rem;
+    grid-gap:2rem ;
+    grid-template-columns: auto auto auto auto;
  }
+
  .fourColGrid {  
    text-align: center;
-//    padding: 20px ;
+   padding: 20px ;
    font-size: 1.5rem;
    
  
@@ -163,6 +179,16 @@ th {
     text-align: left;
   }
  
+  .bold{
+    font-weight: 800;
+    font-size: 1.25rem;
+  }
+   .tableheadings{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: left;
+    color:$orange;
+  }
  .courseheadings{
     font-size: 1.2rem;
     font-weight: 700;
@@ -255,9 +281,47 @@ th {
       line-height: 2;
       
   }
+ 
 
 
 }
+
+ 
+.careerstable {
+  font-family: "Lato";
+  font-size: 2rem;
+  border-collapse: collapse;
+  width:100%;
+
+
+.careerstable td,
+th {
+  padding: 10px;
+  text-align: left;
+  margin: 0;
+}
+
+.careerstable tbody tr:nth-child(2n) {
+  background-color: #eee;
+}
+
+.careerstable th {
+
+  color: #222222;
+
+  font-family: "Bodoni";
+  text-transform: capitalize;
+
+  backface-visibility: hidden;
+ 
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+
+
+}
+
 .entryreq{
         .list{
            margin-left:2rem;
@@ -297,3 +361,9 @@ th {
   font-size: 1.15rem;
 
 }
+
+.courseheadings{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: left;
+  }

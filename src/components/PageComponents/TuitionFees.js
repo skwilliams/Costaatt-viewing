@@ -20,8 +20,8 @@ const TuitionFees = ({ fees }) => {
         {fees.map((fee) => (
           <>
             <div className={CourseStyle.coursesColGrid}>
-              {fee.studnettype && (
-                <div className={CourseStyle.coursecode}>{fee.studnettype}</div>
+              {fee.studenttype && (
+                <div className={CourseStyle.coursecode}>{fee.studenttype}</div>
               )}
             </div>
 
