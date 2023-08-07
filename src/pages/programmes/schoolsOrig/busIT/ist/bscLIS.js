@@ -10,6 +10,7 @@ import ProgStyles from "../../../../../styles/Programmes.module.scss";
 import time from "../../../../../../images/Programmes/time.svg";
 import mode from "../../../../../../images/Programmes/mode.svg";
 import location from "../../../../../../images/Programmes/location.svg";
+import calendar from "../../../../../../images/Programmes/calendar.svg";
 import gate from "../../../../../../images/Programmes/gate.png"
 import Image from "next/image";
 import ContactUs from "@/components/PageComponents/ContactUs";
@@ -86,10 +87,9 @@ const bscLIS = () => {
               {" "}
               <Image
                 className={CourseStyle.icon}
-                src={location}
+                src={calendar}
                 alt="duration icon"
               />
-              
               <p className={CourseStyle.iconfont}> &#10004; September</p>
               <p className={CourseStyle.iconfont}> &#10004; January</p>
             </div>
@@ -173,7 +173,9 @@ const bscLIS = () => {
 
         <Accordion sx={{ margin: 2 }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography fontSize={18}>Courses in Major</Typography>
+            <Typography fontWeight={900} fontSize={19}>
+              Courses in Major
+            </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <DegreeCourses courses={bscLismajor} />
@@ -181,7 +183,9 @@ const bscLIS = () => {
         </Accordion>
         <Accordion sx={{ margin: 2, color: "primary" }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography fontSize={18}>Core Curriculum Courses</Typography>
+            <Typography  fontSize={19}>
+              Core Curriculum Courses
+            </Typography>
           </AccordionSummary>
           <AccordionDetails>
             {/* Core Curriculum Courses */}
@@ -190,7 +194,7 @@ const bscLIS = () => {
         </Accordion>
         <Accordion sx={{ margin: 2 }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography fontSize={18}>Support Courses</Typography>
+            <Typography fontSize={19}>Support Courses</Typography>
           </AccordionSummary>
           <AccordionDetails>
             {/* Support Courses */}
@@ -200,8 +204,8 @@ const bscLIS = () => {
         </Accordion>
         <p className={CourseStyle.text}>
           {" "}
-          Total credits to achieve a BSC in Library Sciecne and Information
-          Systems{" "}
+          Total credits to achieve a BSC in Library and Information Sciecne
+          {" "}
           <span className={CourseStyle.courseheading}>{totalcredits} </span>
         </p>
       </section>
