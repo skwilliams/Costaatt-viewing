@@ -1,7 +1,6 @@
 import { txtToPara, getCoreValues } from "../../utilities";
 import Head from "next/head";
 import HeadImage from "../../../../components/PageComponents/HeadImage";
-// import headImg from "../../../../../images/Programmes/tester2.jpg";
 import Layout from "../../../../components/PageWithSideNavComponents/Layout";
 import ProgStyles from "../../../../styles/Programmes.module.scss";
 import { Accordion } from "@mui/material";
@@ -74,11 +73,10 @@ const index = (props) => {
             btn1txt="Visit"
             btn2txt="Apply"
             btn3txt="Request Info"
-            contacttype="Department Contact"
-            name="Maurisa Charles"
-            tel="625-5030 ext 2222"
-            // mailto="mcharles@costaatt.edu.tt "
-            email="mcharles@costtatt.edu.tt"
+            contacttype="Department Contacts"
+            contactArr={staffdata.filter((staff) =>
+              foundDept.contacts.find((handle) => handle === staff.handle)
+            )}
           />
         </div>
       </section>

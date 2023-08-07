@@ -1,6 +1,7 @@
 export const staffdata = [
   {
     photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    handle: "rchung",
     altText: " photo Roger Chung",
     name: "Roger Chung",
     position: "Department Chair",
@@ -9,6 +10,7 @@ export const staffdata = [
   },
   {
     photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    handle: "mcharles",
     altText: " photo Maurisa Charles",
     name: "Maruisa Charles",
     position: "Administrative Assistant",
@@ -17,6 +19,7 @@ export const staffdata = [
   },
   {
     photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    handle: "cbernard",
     altText: " photo Cindy Bernard",
     name: "Cindy Bernard",
     position: "Programme Assistant (Library Science)",
@@ -25,6 +28,7 @@ export const staffdata = [
   },
   {
     photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    handle: "rdavid",
     altText: " photo Raechelle David",
     name: "Rachelle David",
     position: "Programme Assistant (ICT's)",
@@ -34,6 +38,7 @@ export const staffdata = [
 
   {
     photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    handle: "dabsalom",
     altText: " photo Dexter Absalom",
     name: "Dexter Absalom",
     position: "Senior Lecturer ",
@@ -41,6 +46,7 @@ export const staffdata = [
   },
   {
     photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    handle: "nalexander",
     altText: " photo Nicole Alexander",
     name: "Nicole Alexander",
     position: "Senior Lecturer",
@@ -48,6 +54,7 @@ export const staffdata = [
   },
   {
     photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    handle: "aandrews",
     altText: " photo Adrian Andrews",
     name: "Adrian Andrews",
     position: "Senior Lecuter",
@@ -55,6 +62,7 @@ export const staffdata = [
   },
   {
     photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    handle: "acadogan",
     altText: " photo Andre Cadogan",
     name: "Andre Cadogan",
     position: "Senior Lecturer",
@@ -62,6 +70,7 @@ export const staffdata = [
   },
   {
     photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    handle: "adnagee",
     altText: " photo Alicia Dennis-Nagee",
     name: "Alicia Dennis-Nagee",
     position: "Senior Lecturer",
@@ -69,6 +78,7 @@ export const staffdata = [
   },
   {
     photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    handle: "mgokool",
     altText: " photo Maneka Gokool",
     name: "Maneka Gokool",
     position: "Senior Lecturer",
@@ -76,6 +86,7 @@ export const staffdata = [
   },
   {
     photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    handle: "jjpatrick",
     altText: " photo Joanne Jarvis-Patrick",
     name: "Joanne Jarvis-Patrick",
     position: "Senior Lecturer",
@@ -83,6 +94,7 @@ export const staffdata = [
   },
   {
     photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    handle: "jsterling",
     altText: " photo Job Sterling",
     name: "Job Sterling",
     position: "Senior Lecturer",
@@ -90,6 +102,7 @@ export const staffdata = [
   },
   {
     photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    handle: "skwilliams",
     altText: " photo Stacy Williams",
     name: "Stacy Williams",
     position: "Senior Lecturer",

@@ -19,7 +19,15 @@
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/busIT.png",
         "summary": "From entrepreneurs and business professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
+        "coreValues": [
+          "Integrity",
+          "Compassion",
+          "Innovation",
+          "Student-Centeredness",
+          "Lifelong-Learning"
+        ],
         "shortName": "Business",
+        "contacts": [],
         "programmes": [
           {
             "prog_code": "ACCT_BA",
@@ -124,6 +132,7 @@
           "Lifelong-Learning"
         ],
         "shortName": "IST",
+        "contacts": ["mcharles", "rdavid"],
         "programmes": [
           {
             "prog_code": "CERT_WEB",
@@ -269,6 +278,7 @@
         "image": "/images/schools/liberal.png",
         "summary": "From language experts and mathematics professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
         "shortName": "Education",
+        "contacts": [],
         "programmes": [
           {
             "prog_code": "MATH_AS",
@@ -314,6 +324,7 @@
         "image": "/images/schools/liberal.png",
         "summary": "From protective service professionals, paralegal professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
         "shortName": "Criminal Justice",
+        "contacts": [],
         "programmes": [
           {
             "prog_code": "CRIM_BA",
@@ -360,6 +371,7 @@
         "image": "/images/schools/liberal.png",
         "summary": "From Social workers, Therapists and Counselling professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
         "shortName": "Social and Behavioural Sciences",
+        "contacts": [],
         "programmes": [
           {
             "prog_code": "SOWK_AAS",
