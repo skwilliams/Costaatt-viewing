@@ -1,7 +1,7 @@
-import React from "react";
+import { txtToPara, getCoreValues } from "../../utilities";
 import Head from "next/head";
 import HeadImage from "../../../../components/PageComponents/HeadImage";
-import headImg from "../../../../../images/Programmes/tester2.jpg";
+// import headImg from "../../../../../images/Programmes/tester2.jpg";
 import Layout from "../../../../components/PageWithSideNavComponents/Layout";
 import ProgStyles from "../../../../styles/Programmes.module.scss";
 import { Accordion } from "@mui/material";
@@ -36,84 +36,36 @@ const index = (props) => {
       <Head>
         <title>{foundDept.shortName}</title>
       </Head>
-      <HeadImage imagetext="ICT and Digital Technologies" mainimage={headImg} />
+      <HeadImage imagetext={foundDept.name} mainimage={foundDept.headImage} />
       <section id="overview" className={DeptStyles.sectionOverview}>
         <div className={ProgStyles.umargintopsmall}>
           <p className={ProgStyles.headingprimary}> Our Mission</p>
-          <p className={DeptStyles.maintext}>
-            The department of ICT's and Digital Technologies is the hub were
-            technologies meet. It's an infusion of Library Science and
-            Technology. If you desire to be exposed to technology that runs
-            through the viens of the world, you have come to the right place.
-            You can specialize in Databases,Networking, Library Science and Web
-            Development. You will be exposed to the best and latest technologies
-            all while learning the building blocks that makes up Information and
-            Technology.
-          </p>
+          <p className={DeptStyles.maintext}>{foundDept.mission}</p>
           {/* <p className={DeptStyles.subheading}> Vision</p> */}
-          <p className={DeptStyles.subtext}>
-            {" "}
-            The department of ICTs and Digital Technologies is part of the
-            School of Business and Digital Technologies. The department
-            currently offers several programs designed to meet your educational
-            and career goals. Our programmes include the Library Science and
-            Information Technology discipline The vision of the ICTs and Digital
-            Technologies department is to be the premier Information Technology
-            educational institution in the Caribbean.{" "}
-          </p>
-          {/* <p className={DeptStyles.subheading}> Mission</p> */}
-          <p className={DeptStyles.subtext}>
-            {" "}
-            To develop expert Information Technology (IT) solution providers,
-            equipped with the most up-to-date and relevant information
-            technology and critical thinking skills, through training, practicum
-            and industry experience.
-          </p>{" "}
-          <Accordion className={DeptStyles.accordion}>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography className={DeptStyles.acoordiantext}>
-                Core Values
-              </Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <ul className={ProgStyles.degcourses}>
-                <li className={ProgStyles.degcoursesli}>
-                  Dedication - We are dedicated to the task of educating all
-                  students in our department. We invest the time and energy
-                  necessary to create a positive learning environment for our
-                  students.
-                </li>
-                <li className={ProgStyles.degcoursesli}>
-                  Teamwork - We share knowledge and support each other as we
-                  work towards achieving our vision and mission.{" "}
-                </li>
-                <li className={ProgStyles.degcoursesli}>
-                  Integrity- We are honest in our actions and have respect for
-                  our students and each other.{" "}
-                </li>
-                <li className={ProgStyles.degcoursesli}>
-                  Compassion - we care about our student's success and
-                  well-being.{" "}
-                </li>
-                <li className={ProgStyles.degcoursesli}>
-                  Innovation - we are continuously striving to create a dynamic
-                  learning environment for our students. We utilize where
-                  necessary new techniques and strategies to improve teaching
-                  and learning.{" "}
-                </li>
-                <li className={ProgStyles.degcoursesli}>
-                  Student-Centeredness - we value and respect the students as
-                  unique individuals with different learning abilities. We
-                  assist the students as much as possible in realizing their
-                  educational goals.{" "}
-                </li>
-                <li className={ProgStyles.degcoursesli}>
-                  Lifelong learning - we engage in lifelong learning and
-                  encourage our students to be lifelong learners.{" "}
-                </li>
-              </ul>
-            </AccordionDetails>
-          </Accordion>
+          {txtToPara(foundDept.summary, DeptStyles.subtext)}
+
+          {foundDept.coreValues.length > 0 ? (
+            <Accordion className={DeptStyles.accordion}>
+              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                <Typography className={DeptStyles.acoordiantext}>
+                  Core Values
+                </Typography>
+              </AccordionSummary>
+              {foundDept.coreValues.map((value) => {
+                return (
+                  <AccordionDetails key={value}>
+                    <ul className={ProgStyles.degcourses}>
+                      <li className={ProgStyles.degcoursesli}>
+                        {value} - {getCoreValues(value)}
+                      </li>
+                    </ul>
+                  </AccordionDetails>
+                );
+              })}
+            </Accordion>
+          ) : (
+            <></>
+          )}
         </div>
       </section>
       <section id="contact" className={DeptStyles.sectionContact}>
@@ -296,6 +248,7 @@ export async function getStaticProps(context) {
   console.log(deptName);
   return {
     props: {
+      // retrieve the entire department object
       foundDept: await getData(
         "data",
         "schooldata.json",
@@ -304,6 +257,7 @@ export async function getStaticProps(context) {
         deptName,
         "deptCode"
       ),
+      // retrieve the latest news posts for this department
       //   news: await getData(
       //     "data",
       //     "public/data",
