@@ -10,6 +10,7 @@ import ProgStyles from "../../../../../styles/Programmes.module.scss";
 import time from "../../../../../../images/Programmes/time.svg";
 import mode from "../../../../../../images/Programmes/mode.svg";
 import location from "../../../../../../images/Programmes/location.svg";
+import gate from "../../../../../../images/Programmes/gate.png"
 import Image from "next/image";
 import ContactUs from "@/components/PageComponents/ContactUs";
 import Featured from '../../../../../components/PageComponents/Featured'
@@ -20,8 +21,11 @@ import { gradspeak}  from "../../../../api/gradspeak";
 import GradStyle from "../../../../../styles/GradsSpeak.module.scss"
 import GradsSpeak from "@/components/PageComponents/GradsSpeak"
 import Divider from "@mui/material/Divider";
-import {bscLismajor, bscLissupport,bscLiscore,salaries} from "../../busIT/ist/bscLiscourses"
-import {institutionFees} from "../../../../admissions/admissionsData"
+import {bscLismajor, bscLissupport,bscLiscore,salaries,tuition} from "../../busIT/ist/bscLiscourses"
+import {
+  institutionFees,
+  dptOfManagementFees,
+} from "../../../../admissions/admissionsData";
 import DegreeCourses from "@/components/PageComponents/DegreeCourses"
 import PossibleSalary from "@/components/PageComponents/PossibleSalary"
 import DeptStyles from "../../../../../styles/Department.module.scss"
@@ -34,6 +38,7 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import InstitutionFees from '@/components/PageComponents/InstiutionFees'
 import image from "../../../../../../images/Programmes/visit-home-v2.jpg";
+import TuitionFees from "@/components/PageComponents/TuitionFees";
 
 
 const bscLIS = () => {
@@ -59,8 +64,8 @@ const bscLIS = () => {
           masters' degree to easily transition to such a programme.
         </p>
         <div className={CourseStyle.iconsection}>
-          <div className={CourseStyle.threeColGridCon}>
-            <div className={CourseStyle.threeColGrid}>
+          <div className={CourseStyle.fourColGridCon}>
+            <div className={CourseStyle.fourColGrid}>
               {" "}
               <Image
                 className={CourseStyle.icon}
@@ -69,7 +74,7 @@ const bscLIS = () => {
               />
               <p className={CourseStyle.iconfont}> &#10004; City Campus</p>
             </div>
-            <div className={CourseStyle.threeColGrid}>
+            <div className={CourseStyle.fourColGrid}>
               <Image
                 className={CourseStyle.icon}
                 src={time}
@@ -83,11 +88,11 @@ const bscLIS = () => {
                 {" "}
                 &#10004; Part-time : 6 years
               </p>
-              <p className={CourseStyle.footnote}>
+              {/* <p className={CourseStyle.footnote}>
                 *Subject to change based on college Matriculation
-              </p>{" "}
+              </p>{" "} */}
             </div>
-            <div className={CourseStyle.threeColGrid}>
+            <div className={CourseStyle.fourColGrid}>
               {" "}
               <Image
                 className={CourseStyle.icon}
@@ -97,36 +102,23 @@ const bscLIS = () => {
               <p className={CourseStyle.iconfont}> &#10004; Blended</p>
               <p className={CourseStyle.iconfont}> &#10004; Online</p>
             </div>
+            <div className={CourseStyle.fourColGrid}>
+              {" "}
+              <Image
+                className={CourseStyle.icon}
+                src={gate}
+                alt="duration icon"
+              />
+              <p className={CourseStyle.iconfont}> &#10004; Approved</p>
+            </div>
           </div>
         </div>
       </section>
       <Divider dark />
       <section id="careers" className={CourseStyle.sectionCareers}>
         <p className={ProgStyles.headingprimaryleft}> Possible Careers</p>
-        {/*to change to a copoonent */}
-        <PossibleSalary salaries ={salaries}/>
-        {/* <table className={CourseStyle.careerstable}>
-          <thead>
-            <tr>
-              <th> Position</th>
-              <th> Median Salary</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Senior (Librarian, Information Specialist, others..) </td>
-              <td>$11,000 -$15,000</td>
-            </tr>
-            <tr>
-              <td>School Librarian </td>
-              <td>$11,000 -$15,000</td>
-            </tr>
-            <tr>
-              <td> Records Manager 1 </td>
-              <td>$7,800 -$10,200</td>
-            </tr>
-          </tbody>
-        </table> */}
+        <PossibleSalary salaries={salaries} />
+
         <p className={CourseStyle.footnote}>
           * Salaries are subject to years of experience, projects and
           professional certification{" "}
@@ -182,10 +174,16 @@ const bscLIS = () => {
         <p className={ProgStyles.headingprimaryleft}> Fees and Financial Aid</p>
         <Accordion sx={{ margin: 2 }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>Tution Fees</Typography>
+            <Typography>Tuition Fees</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <DegreeCourses courses={bscLismajor} />
+            <TuitionFees fees={tuition} />
+            <br />
+
+            <p className={CourseStyle.footnote}>
+              Disclaimer: COSTAATT reserves the right to modify fees as may be
+              necessary.
+            </p>
           </AccordionDetails>
         </Accordion>
         <Accordion sx={{ margin: 2, color: "primary" }}>
@@ -194,6 +192,25 @@ const bscLIS = () => {
           </AccordionSummary>
           <AccordionDetails>
             <InstitutionFees fees={institutionFees} />
+            <div>
+              <p className={CourseStyle.footnote}>
+                Student insurance covers basic accident and injury. However,
+                CARICOM and international students are also required to secure
+                additional insurance to cover medical expenses. All students of
+                COSTAATT are required to pay an annual insurance fee of $30.00.
+                Completed student insurance forms must be submitted to the
+                College at the beginning of the first semester in which students
+                register for the academic year. Coverage is restricted to
+                students who are between ages 15 to 75.
+              </p>
+              <p className={CourseStyle.footnote}>
+                Institutional fees are non-refundable. Students who officially
+                withdraw from the College may be eligible for a refund of
+                tuition fees in accordance with the schedule outlined in the
+                Academic Calendar. Please note that students in receipt of GATE
+                funding are not eligible for tuition refunds.
+              </p>
+            </div>
           </AccordionDetails>
         </Accordion>
         <Accordion sx={{ margin: 2 }}>
@@ -201,7 +218,97 @@ const bscLIS = () => {
             <Typography>Financial Aid</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <DegreeCourses courses={bscLismajor} />
+            <div className={CourseStyle.text}>
+              <p>
+                <strong>
+                  The Government Assistance for Tuition Expenses (GATE)
+                </strong>
+              </p>
+              <p>
+                The Government Assistance for Tuition Expenses programme (GATE)
+                provides free tuition to all eligible citizens of Trinidad and
+                Tobago pursuing approved programmes at public and private
+                tertiary level institutions. Information on eligibility and
+                conditions for accessing GATE funding is available at the
+                Ministry of Education website{" "}
+                <a href="http://www.moe.gov.tt">www.moe.gov.tt</a>
+              </p>
+              <p>
+                <strong>
+                  Important: <br />
+                  Students must note that GATE funding is available for the
+                  duration of their course of study and one year beyond.
+                  Students who fail to complete their programme within the
+                  stipulated time frame will be required to meet the cost of
+                  programme completion.
+                </strong>
+              </p>
+              <p>
+                The Government Assistance for Tuition Expenses (GATE) programme
+                is a tuition fee funding programme offered by the Government of
+                Trinidad and Tobago. Only nationals of Trinidad and Tobago are
+                eligible to apply, and students must be registered in a course
+                of study leading to a tertiary level qualification. For further
+                information on the GATE programme please visit the website of
+                the{" "}
+                <a href="http://https://moe.gov.tt/"> Ministry of Education</a>.
+                <br /> The vast majority of the College’s programmes are
+                eligible for GATE. For a full list of these programmes please
+                contact the Admissions Department, Tel 625-5030 ext 5900
+              </p>
+              <br />
+              <div>
+                <strong>Higher Education Loan Programme (HELP)</strong>
+                <p>
+                  {" "}
+                  The Higher Education Loan Programme (HELP) is a special loan
+                  facility made available to citizens of Trinidad and Tobago who
+                  are enrolled in an approved tertiary level programme at a
+                  registered tertiary institution to meet the following
+                  expenses:
+                </p>
+              </div>
+              <div className={CourseStyle.entryreq}>
+                <ul className={CourseStyle.list}>
+                  <li className={CourseStyle.items}>tuition fees</li>
+                  <li className={CourseStyle.items}>accommodation</li>
+                  <li className={CourseStyle.items}>
+                    airfare and other transportation costs
+                  </li>
+                  <li className={CourseStyle.items}>
+                    personal maintenance costs and living expenses
+                  </li>
+                  <li className={CourseStyle.items}>
+                    books and related materials
+                  </li>
+                  <li className={CourseStyle.items}>special equipment</li>
+                  <li className={CourseStyle.items}>
+                    other related tertiary expenses
+                  </li>
+                </ul>
+              </div>
+              <p>
+                For further information on the Higher Education Loan Programme
+                (HELP) students can visit the Ministry of Education website :{" "}
+                <a className={CourseStyle.goto} href="https.www.moe.gov.tt">
+                  www.moe.gov.tt
+                </a>
+              </p>{" "}
+              <br />
+              <p>
+                <strong>Payment Plans</strong>
+              </p>
+              <p>
+                Payment plans are available, please contact the Office of the
+                Registrar for further details:{" "}
+                <a
+                  className={CourseStyle.goto}
+                  href="mailto:registrar@costaatt.edu.tt"
+                >
+                  registrar@costaatt.edu.tt
+                </a>
+              </p>
+            </div>
           </AccordionDetails>
         </Accordion>
       </section>
@@ -266,35 +373,46 @@ const bscLIS = () => {
             <Typography>Required Supporting Documents </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <ul className={CourseStyle.text}>
-              <li> </li>
-            </ul>
+            <div className={CourseStyle.entryreq}>
+              <ul className={CourseStyle.list}>
+                <li className={CourseStyle.items}></li>
+                <li className={CourseStyle.items}>accommodation</li>
+                <li className={CourseStyle.items}>
+                  airfare and other transportation costs
+                </li>
+                <li className={CourseStyle.items}>
+                  personal maintenance costs and living expenses
+                </li>
+              </ul>
+            </div>
           </AccordionDetails>
         </Accordion>
       </section>
 
-      <div className={CourseStyle.inquiryform}>
-        <ContactUs />
-      </div>
-      <section id="applylink" className={DeptStyles.sectionStuResources}>
-        <p className={ProgStyles.headingprimaryleft}> COSTAATT WANTS YOU </p>
+      <section id="applylink" className={CourseStyle.sectionStuResources}>
+        <p className={ProgStyles.headingprimaryleft}> COSTAATT Wants You </p>
+        <>
+          <div className={CourseStyle.inquiryform}>
+            <ContactUs />
+          </div>
 
-        <div className={DeptStyles.threeGridCon}>
-          <div className={DeptStyles.threeGridCol}>
-            <StudentResources image={image} imagetxt="Apply Now" />{" "}
+          <div className={DeptStyles.threeGridCon}>
+            <div className={DeptStyles.threeGridCol}>
+              <StudentResources image={image} imagetxt="Apply Now" />{" "}
+            </div>
+            <div className={DeptStyles.threeGridCol}>
+              {" "}
+              <StudentResources
+                image={image}
+                imagetxt="See Admissions Counsellor"
+              />
+            </div>
+            <div className={DeptStyles.threeGridCol}>
+              {" "}
+              <StudentResources image={image} imagetxt="Visit Us" />
+            </div>
           </div>
-          <div className={DeptStyles.threeGridCol}>
-            {" "}
-            <StudentResources
-              image={image}
-              imagetxt="See Admissions Counsellor"
-            />
-          </div>
-          <div className={DeptStyles.threeGridCol}>
-            {" "}
-            <StudentResources image={image} imagetxt="Visit Us" />
-          </div>
-        </div>
+        </>
       </section>
     </>
   );

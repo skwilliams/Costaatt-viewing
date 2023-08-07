@@ -7,6 +7,10 @@ import {
 } from "@mui/material";
 
 const DegreeCourses = ({courses} ) => {
+              const totalCredits = courses.reduce((total,item)=>{
+                return total + item.credits
+              },0);
+
   return (
     <>
       <div className={CourseStyle.coursesGridCon}>
@@ -55,7 +59,7 @@ const DegreeCourses = ({courses} ) => {
             <div className={CourseStyle.courseheadings}>Total Credits</div>
           </div>
           <div className={CourseStyle.coursesColGrid}>
-            <div className={CourseStyle.courseheadings}>120</div>
+            <div className={CourseStyle.creditstotal}>{totalCredits}</div>
           </div> 
         
       </div>

@@ -1,7 +1,6 @@
 import React from "react";
 import CourseStyle from "../../styles/Course.module.scss";
 
-import { Divider } from "@mui/material";
 
 
 const PossibleSalary = ({ salaries }) => {
@@ -24,7 +23,7 @@ const PossibleSalary = ({ salaries }) => {
           <>
               <tr>
               <td>{salary.position && (salary.position)} </td>
-              <td>{salary.figure && (slary.figure)}</td>
+              <td>{salary.figure && (salary.figure)}</td>
             </tr>
 
           </>

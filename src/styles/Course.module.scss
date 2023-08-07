@@ -3,7 +3,7 @@
 
 .courseName{
     font-family:"Bodoni", Helvitica;
-    font-size:3rem;
+    font-size:2.5rem;
     color:white;
     margin: 0 0 2rem 0 ;
     background-image: linear-gradient(to right, $orange,$purple-secondary);
@@ -18,6 +18,12 @@
     font-size: 1.1rem;
     font-style: italic;
     margin:1rem 0;
+}
+.footnote2{
+    font-size: 1.25rem;
+    font-style: italic;
+    margin:1rem 0;
+    font-weight: bold;
 }
 .threeColGridCon{  
   display: grid;
@@ -34,6 +40,23 @@
  
    // padding: 10px;
  }
+
+ .fourColGridCon{  
+  display: grid;
+   gap: 5rem;
+   grid-gap:2rem ;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+ 
+ }
+ .fourColGrid {  
+   text-align: center;
+//    padding: 20px ;
+   font-size: 1.5rem;
+   
+ 
+   // padding: 10px;
+ }
+
 .sectionOverview{
 
   
@@ -48,22 +71,7 @@
         margin: 3rem 0;
        
     }
-    .entryreq{
-        .list{
-           margin-left:2rem;
-        .items{
-         list-style-type: square;
-         margin:.5rem 0;
-         
-            }
-             .items::marker{
-         
-             color:$orange;
-               }        
-
-        }
-
-    }
+    
     .icon{
         width:70px;
         height: 70px;
@@ -171,6 +179,13 @@ th {
      text-align: left;
     
   }
+  .creditstotal{
+    margin-left:1rem;
+    font-size: 1.2rem;
+     text-align: left;
+     font-weight: 800;
+    
+  }
   .accdetails{
     margin-bottom:2rem;
   }
@@ -204,10 +219,10 @@ th {
   font-size: 1.15rem;
 
   .coursesGridCon{  
-  display: grid;
+   display: grid;
    gap: 2rem;
    grid-gap:1rem ;
-   grid-template-columns: 2fr 1fr 1fr;
+   grid-template-columns: auto auto auto;
    margin:0;
    padding:0
   
@@ -221,8 +236,12 @@ th {
  
    // padding: 10px;
  }
+ .credits{
+    // margin-left:1rem;
+    font-size: 1.15rem;
+     text-align: justify;
+ }
     
-
 }
 
 .sectionRequirements{
@@ -235,6 +254,46 @@ th {
       font-family: "Lato";
       line-height: 2;
       
+  }
+
+
+}
+.entryreq{
+        .list{
+           margin-left:2rem;
+        .items{
+         list-style-type: square;
+         margin:.5rem 0;
+         
+            }
+             .items::marker{
+         
+             color:$orange;
+               }        
+
+        }
+
+    }
+
+
+
+  .text{
+    font-size:1.1rem;
+    text-align: justify;
+      font-family: "Lato";
+      line-height: 2;
+      
 
   }
+  .goto {
+  color: $orange;
+  font-size: 1.1rem;
+  float: center;
+}
+
+
+.sectionStuResources{
+  margin:6rem 0;
+  font-size: 1.15rem;
+
 }
