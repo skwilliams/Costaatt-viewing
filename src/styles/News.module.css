@@ -1,0 +1,80 @@
+.mainPageContainer {
+  padding: 0 80px;
+}
+
+.mainTitle {
+  font-size: 6rem;
+  color: rgb(255, 109, 10);
+}
+
+.newsTop {
+  display: flex;
+}
+
+.newsSlider {
+  width: auto;
+  height: 100%;
+  border-right: 8px solid rgb(255, 109, 10);
+}
+
+.featuredNews {
+  width: 30%;
+}
+
+.featuredNews h1 {
+  padding: 0 20px;
+  color: rgb(239, 65, 41);
+}
+
+.featuredNewsLinks {
+  border-bottom: 1px solid black;
+  padding: 3px 20px;
+  transition: 400ms;
+}
+.featuredNewsLinks:hover {
+  background-color: rgb(255, 109, 10);
+  color: white;
+}
+
+.latestNews {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.latestNewsTitle {
+  font-size: 4rem;
+  padding: 20px 0;
+  margin-top: 10px;
+}
+
+.newsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.newsGrid2 {
+  position: relative;
+  margin-bottom: 15px;
+  justify-content: center;
+  padding: 10px;
+}
+.newsGrid2 h1 {
+  font-size: large;
+  font-weight: bolder;
+}
+.newsGrid2:hover img {
+  opacity: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 5px solid white;
+}
+.newsGrid2 img {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid white;
+  box-shadow: 2px 2px 15px white;
+}/*# sourceMappingURL=News.module.css.map */

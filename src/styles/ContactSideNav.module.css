@@ -1,0 +1,43 @@
+.sidenavcontact {
+  background-color: rgb(250, 250, 252);
+  margin-top: 0.5rem;
+  font-family: "Lato", "sans serif";
+  font-size: 1.25rem;
+  color: #1d1d1f;
+}
+
+.sidenav p {
+  font-size: 1.5rem;
+  color: #1d1d1f;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.name {
+  margin: 0.5rem 0;
+}
+
+.tel {
+  /* color:red; */
+  margin: 0;
+}
+
+.email {
+  color: rgb(245, 130, 32);
+  margin: 0;
+  padding: 0;
+}
+
+.sidenavbutton {
+  background-color: rgb(245, 130, 32);
+  border: 0.25em;
+  color: whitesmoke;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  margin: 0.5rem 0.5rem;
+  cursor: pointer;
+}/*# sourceMappingURL=ContactSideNav.module.css.map */

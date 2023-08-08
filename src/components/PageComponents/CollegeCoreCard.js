@@ -7,18 +7,7 @@ const CollegeCoreCard = ({ course }) => {
     <>
       <div className={CardStyle.progGridConthree}>
         <>
-          {/* <div className={CardStyle.progGridthree}>
-            {/* <Image
-              className={CardStyle.imgstyle}
-              src={course.photo}
-              alt={course.alttext}
-              width="200"
-              height="200"
-            /> */}
-            {/* <div className={CardStyle.bannerbottomBsc}> Bachelors</div> */}
-            {/* <h2>Discipline</h2>
-            <p>{course.discipline} </p>
-          </div> */} 
+       
           <div className={CardStyle.progGridthree}>
             <div className={CardStyle.coursetitle}>{course.courseTitle}</div>{" "}
             {/*dynamic content}*/}

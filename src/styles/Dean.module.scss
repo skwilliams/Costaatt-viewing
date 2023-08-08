@@ -1,59 +1,53 @@
 @import "./variable";
 
-
- /*3 columns change name*/  
- .deanColGridCon{  
-    display: grid;
-     gap: 8rem;
-     grid-gap:2rem ;
-    grid-template-columns: 1fr 3fr 1fr;
-   
-   }
-   .deanColGrid {  
-     text-align: center;
-     padding: 20px 0;
-     font-size: 1.5rem;
-     // padding: 10px;
-   }
-  
-
+/*3 columns change name*/
+.deanColGridCon {
+  display: grid;
+  gap: 8rem;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+.deanColGrid {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1.5rem;
+  // position: relative;
+  // padding: 10px;
+}
 
 .sectionmeetthedean {
-    padding: 0;
-    box-sizing: border-box;
-    margin: 5rem 5rem;
-  }
- 
-  .deanimg {
-   width:200px;
-    height:200px;
-   
-  }
-  
-  .deanimgImg  {
-  
-    border-radius: 3rem 1.5rem;
-  }
-  .deantext {
-    font-size: 1.75rem;
-    padding-left: 2rem;
-  }
-  
-  .deanwords  {
-    color: #060607;
-    font-size: 1.75rem;
-    padding: 0;
-    margin-left: 2rem;
-    text-align: center;
-  }
-  .deancontact  {
-    color:  #060607;
-    font-size: 1.25rem;
-    padding: 3rem;
-    margin-left: 2rem;
-  }
+  padding: 0;
+  box-sizing: border-box;
+  margin: 5rem 5rem;
+}
 
-  .standout{
-    color:$brown;
+.deanimg {
+  width: 12.5rem !important;
+  height: auto;
+}
 
-  }
+.deanimgImg {
+  border-radius: 3rem 1.5rem;
+}
+.deantext {
+  font-size: 1.75rem;
+  padding-left: 2rem;
+}
+
+.deanwords {
+  color: #060607;
+  font-size: 1.75rem;
+  padding: 0;
+  margin-left: 2rem;
+  text-align: center;
+}
+.deancontact {
+  color: #060607;
+  font-size: 1.25rem;
+  padding: 3rem;
+  margin-left: 2rem;
+}
+
+.standout {
+  color: $orange;
+}

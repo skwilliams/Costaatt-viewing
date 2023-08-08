@@ -19,7 +19,7 @@ import Image from 'next/image';
 import NewsCard from '@/components/PageComponents/NewsCard';
 
 //The School of Environment, Circular Economy and Sustainability
-const sbdt = () => {
+const enviro = () => {
   return (
     <>
       <Head>
@@ -56,25 +56,19 @@ const sbdt = () => {
             <div className={ProgStyles.progGridtwo}>
               <DepartCard
                 image={BusImg}
-                departname="Department of Business "
-                intro="From entrepreneurs and business professionals to
-            information technology enthusiasts, this school is for you! Students   
-            at this school will be able to connect classroom content, to real world application. 
-            You will be equipped with the skills and support for success."
-                linkpage="/programmes/schools/sbdt/business/"
-                shortname="Business"
+                departname="Environmental and Sustainability Studies "
+                intro="The Department of Environmental and Sustainability Studies... "
+                linkpage="/programmes/schools/enviro/envsustud/"
+                shortname="Environmental Studies"
               />
             </div>
             <div className={ProgStyles.progGridtwo}>
               <DepartCard
                 image={BusImg}
-                departname="Department of Information Science Technology "
-                intro="From entrepreneurs and business professionals to
-            information technology enthusiasts, this school is for you! Students   
-            at this school will be able to connect classroom content, to real world application. 
-            You will be equipped with the skills and support for success."
-                linkpage="/programmes/schools/sbdt/it/"
-                shortname="IST"
+                departname="Natural and Life Sciences "
+                intro="The Department of Natural and Life Sciences..."
+                linkpage="/programmes/schools/enviro/naturlifesci/"
+                shortname="Natural and Life Sciences"
               />
             </div>
           </div>
@@ -89,36 +83,19 @@ const sbdt = () => {
               <Accordion className={ProgStyles.courseaccordion}>
                 <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                   <Typography className={ProgStyles.acoordiantext}>
-                    Bachelor Degrees
+                    Bachelor's Degrees
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                   <ul className={ProgStyles.degcourses}>
                     <li className={ProgStyles.degcoursesli}>
-                      <Link href=""> Accounting </Link>
+                      <Link href=""> Environmental Health </Link>
                     </li>
                     <li className={ProgStyles.degcoursesli}>
-                      <Link href="">Management and Entrepreneurship</Link>
+                      <Link href="">Occupational Safety and Health </Link>
                     </li>
-                    <li className={ProgStyles.degcoursesli}>
-                      <Link href=""> Human Resource Management</Link>{' '}
-                    </li>
-                    <li className={ProgStyles.degcoursesli}>
-                      <Link href=""> Marketing</Link>
-                    </li>
-                    <li className={ProgStyles.degcoursesli}>
-                      <Link href=""> Information Technology </Link>
-                    </li>
-                    <li className={ProgStyles.degcoursesli}>
-                      <Link href="">Networking</Link>
-                    </li>
-                    <li className={ProgStyles.degcoursesli}>
-                      <Link href=""> Web Development</Link>
-                    </li>
-                    <li className={ProgStyles.degcoursesli}>
-                      <Link href="">Library and Information Science</Link>
-                    </li>
-                  </ul>
+                    
+                   </ul>
                 </AccordionDetails>
               </Accordion>
             </div>
@@ -132,23 +109,16 @@ const sbdt = () => {
                 <AccordionDetails className={ProgStyles.bachelors}>
                   <ul className={ProgStyles.degcourses}>
                     <li className={ProgStyles.degcoursesli}>
-                      <Link href="">Business Administration</Link>
+                      <Link href="">Occupational Safety and Health</Link>
                     </li>
                     <li className={ProgStyles.degcoursesli}>
-                      <Link href="">
-                        Management Studies for the Protective Services
+                      <Link href="">Environmental Health
                       </Link>
                     </li>
                     <li className={ProgStyles.degcoursesli}>
-                      <Link href="">Information Technology</Link>{' '}
+                      <Link href="">Biology</Link>{' '}
                     </li>
-                    <li className={ProgStyles.degcoursesli}>
-                      <Link href="">Web Development</Link>
-                    </li>
-                    <li className={ProgStyles.degcoursesli}>
-                      <Link href="">Library and Information Studies</Link>
-                    </li>
-                  </ul>
+                    </ul>
                 </AccordionDetails>
               </Accordion>
             </div>
@@ -162,18 +132,9 @@ const sbdt = () => {
                 <AccordionDetails className={ProgStyles.bachelors}>
                   <ul className={ProgStyles.degcourses}>
                     <li className={ProgStyles.degcoursesli}>
-                      <Link href=""> Supervisory Management</Link>
-                    </li>
-                    <li className={ProgStyles.degcoursesli}>
-                      <Link href=""> Records Management</Link>
-                    </li>
-                    <li className={ProgStyles.degcoursesli}>
-                      <Link href=""> CISCO-CCNA</Link>{' '}
-                    </li>
-                    <li className={ProgStyles.degcoursesli}>
-                      <Link href=""> Web Development</Link>
-                    </li>
-                  </ul>
+                      <Link href=""> Emergency Care</Link>
+                    </li>                
+                    </ul>
                 </AccordionDetails>
               </Accordion>
             </div>
@@ -261,4 +222,4 @@ const sbdt = () => {
 //   return <Layout>{page}</Layout>;
 // };
 
-export default sbdt;
+export default enviro;

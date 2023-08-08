@@ -1,0 +1,27 @@
+.cardCont {
+  color: #060607;
+  font-size: 1rem;
+  border-radius: 75%;
+  text-align: center;
+}
+.cardCont .photo {
+  width: 12.5rem;
+  height: 12.5rem;
+}
+.cardCont .name {
+  font-size: 1rem;
+  color: rgb(245, 130, 32);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.cardCont .position {
+  margin: 0.5rem 0;
+}
+.cardCont .email {
+  color: rgb(245, 130, 32);
+  margin: 0;
+  padding: 0;
+}
+.cardCont .tel {
+  margin: 0;
+}/*# sourceMappingURL=StaffDeptCard.module.css.map */

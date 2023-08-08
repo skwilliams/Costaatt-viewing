@@ -154,7 +154,7 @@ const Home = () => {
           <div className={HomeStyles.featuredNews}>
             {FEATURED_NEWS.map((tile, index) => {
               return (
-                <div key={index}>
+                <div>
                   <Link href="news">
                     <NewsTile
                       title={tile.title}

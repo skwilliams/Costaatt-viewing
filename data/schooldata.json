@@ -1,0 +1,1104 @@
+[
+  {
+    "name": "School of Business and Digital Technologies",
+    "shortName": "Business & Digital Technologies",
+    "nameStump": "busIT",
+    "image": "/images/schools/busIT header.jpg",
+    "overview": "The School of Business and Digital Technologies provides access to a world-class and work-relevant education, focused on achieving institutional and national goals of workforce development. The School of Business and Digital Technologies comprises two (2) schools, the Department of ICTs and Digital Technologies and the Department of Management and Digital Entrepreneurship. These departments provide the public with a range of academic services to meet a growing number of careers and opportunities locally, regionally, and globally.The School is devoted to the development and preparation of students who are able to confront the challenges of the fast-paced, dynamic work environment. The School produces graduates who are work ready, professional and ethical, adept at creative problem-solving, embrace technological advancement and able to adapt to a rapidly evolving world.",
+    "dean": {
+      "name": "Vacant",
+      "image": "/images/schools/deanavatar.jpg",
+      "message": "As the dean of Business & Digital Technologies, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+      "email": "info@costaatt.edu.tt",
+      "phone": "868-625-5030 ext 1111"
+    },
+
+    "departments": [
+      {
+        "name": "Management and Digital Entrepreneurship",
+        "headImage": "/images/schools/departments/istHead.jpg",
+        "image": "/images/schools/busIT.png",
+        "summary": "From entrepreneurs and business professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
+        "coreValues": [
+          "Integrity",
+          "Compassion",
+          "Innovation",
+          "Student-Centeredness",
+          "Lifelong-Learning"
+        ],
+        "shortName": "Business",
+        "contacts": [],
+        "programmes": [
+          {
+            "prog_code": "ACCT_BA",
+            "prog_name": "BA Accounting",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "MGDE",
+            "prog_major_credits": 86,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 4,
+            "prog_description": "The Bachelor of Arts in Accounting degree provides students with technical financial accounting skills which are complemented with a solid foundation in business management and general education competencies that enhance workplace performance.  The programme is relevant to individuals seeking careers in financial services in a variety of related fields in the public and private sector. Students enrolled in the Bachelor of Arts degree in Accounting will earn the Associate in Applied Science – Management with Accounting after the first 61 credits."
+          },
+          {
+            "prog_code": "BSAD_AAS",
+            "prog_name": "AAS  Business Administration",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "MGDE",
+            "prog_major_credits": 40,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 6,
+            "prog_supp_credits": 0,
+            "prog_description": "The AAS degree in Business Administration prepares the student for entry into a business environment, ensuring that they understand the fundamental operations of any business, including accounting, management, finance and marketing.  With value-added courses in project management and information systems, students are well prepared to take up a role to support managerial and business functions at the end of this programme"
+          },
+
+          {
+            "prog_code": "CERT_SMGT",
+            "prog_name": "Certificate in Supervisory Management ",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "MGDE",
+            "prog_major_credits": 18,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "This certificate programme is the first level of a two-year diploma programme which has been specially designed for persons who have been assigned supervisory responsibilities without formal training.  In addition to acquiring practical supervisory skills and enhanced communication skills, students are exposed to the theoretical framework of organizational behavior which will equip them to make more judicious and informed decisions."
+          },
+          {
+            "prog_code": "DIPL_SMGT",
+            "prog_name": "Diploma in Supervisory Management ",
+            "prog_level": "Diploma",
+            "prog_del_mode": "Blended",
+            "dept_code": "MGDE",
+            "prog_major_credits": 36,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "This two year part-time programme is specially designed for persons who have been assigned supervisory responsibilities without formal training. Students learn practical skills in supervision, effective communication, conflict management and resolution, industrial relations, financial procedures and budgeting. Applicants with significant supervisory experience can apply for exemption from selected Year 1 courses through the College’s Prior Learning Assessment and Recognition (PLAR) Services"
+          },
+          {
+            "prog_code": "ENTP_BBA",
+            "prog_name": "BBA Management and Entrepreneurship",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "MGDE",
+            "prog_major_credits": 88,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 0,
+            "prog_description": "The Bachelor of Business Administration in Management and Entrepreneurship provides provides students with the foundations for functioning in and managing 21st century business.  It addresses important issues in management and leadership within organisations and develops key entrepreneurship and business development competencies needed to drive a modern economy. Students will be exposed to a course of study that spans the major managerial functions thereby equipping them to undertake a variety of roles within organisations.  In addition, the programme fosters the development of skills and values considered fundamental to the formation of educated citizens and community leaders, such as independent and critical thinking, creative problem-solving and lifelong learning."
+          },
+          {
+            "prog_code": "HURM_BBA",
+            "prog_name": "BBA Human Resource Management ",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "MGDE",
+            "prog_major_credits": 86,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 3,
+            "prog_description": "The Bachelor of Business Administration degree in Human Resource Management prepares students to function as HRM professionals within public and private sector organizations, locally and internationally. Students gain insight into cutting edge practices in HR for the 21st century organization and acquire a wide range of skills in core HR competencies such as training and development, industrial relations, strategic human resource management, compensation and human resource management information systems. Specific attention is paid to HR as a key strategy in public sector reform."
+          },
+          {
+            "prog_code": "MKTG_BBA",
+            "prog_name": "BBA Marketing",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "MGDE",
+            "prog_major_credits": 78,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 12,
+            "prog_supp_credits": 0,
+            "prog_description": "Effective marketing is a key requirement for every successful business and industry. The Bachelor of Business Administration in Marketing is designed to provide graduates with a broad foundation in business administration and specialized competencies in marketing and marketing management."
+          }
+        ]
+      },
+      {
+        "name": "ICTs and Digital Technologies",
+        "headImage": "/images/schools/departments/istHead.jpg",
+        "image": "/images/schools/busIT.png",
+        "mission": "The department of ICT's and Digital Technologies is the hub were technologies meet. It's an infusion of Library Science and Technology. If you desire to be exposed to technology that runs through the viens of the world, you have come to the right place. You can specialize in Databases,Networking, Library Science and Web Development. You will be exposed to the best and latest technologies all while learning the building blocks that makes up Information and Technology.",
+        "summary": "The department of ICTs and Digital Technologies is part of the School of Business and Digital Technologies. The department currently offers several programs designed to meet your educational and career goals. Our programmes include the Library Science and Information Technology discipline The vision of the ICTs and Digital Technologies department is to be the premier Information Technology educational institution in the Caribbean. \n To develop expert nformation Technology (IT) solution providers, equipped with the most up-to-date and relevant information technology and critical thinking skills, through training, practicum and industry experience.",
+        "coreValues": [
+          "Dedication",
+          "Teamwork",
+          "Integrity",
+          "Compassion",
+          "Innovation",
+          "Student-Centeredness",
+          "Lifelong-Learning"
+        ],
+        "shortName": "IST",
+        "contacts": ["mcharles", "rdavid"],
+        "programmes": [
+          {
+            "prog_code": "CERT_WEB",
+            "prog_name": "Diploma in IT - Web Development",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "ICTD",
+            "prog_major_credits": 15,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The Certificate in Web Development is designed for ..."
+          },
+          {
+            "prog_code": "CERT_CCNA",
+            "prog_name": "Certificate in CISCO-CCNA",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "ICTD",
+            "prog_major_credits": 16,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The CISCO-CCNA (Cisco Certified Network Associate) Certificate is designed for CISCO Networking Academy students.  The CCNA programme provides an integrated and comprehensive coverage of networking topics, from fundamentals to advanced applications and services and offers students the hands-on practical experience required for industry.  Upon completion of this curriculum, students will be prepared to sit CISCO-CCNA examinations leading to a professional certification in networking. This programme normally fulfills matriculation requirements for networking engineering degree programmes."
+          },
+          {
+            "prog_code": "CERT_RECM",
+            "prog_name": "Certificate in Records Management",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "ICTD",
+            "prog_major_credits": 20,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "This certificate programme is designed to provide training for persons who have at least three (3) years’ work experience in records management in a public or private sector organization.  Students will examine topics such as the classification, storage, preservation, retention and disposal of records."
+          },
+          {
+            "prog_code": "ILSC_BS",
+            "prog_name": "BSc Library and Information Science ",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "ICTD",
+            "prog_major_credits": 75,
+            "prog_core_credits": 33,
+            "prog_elect_credits": 9,
+            "prog_supp_credits": 3,
+            "prog_description": "Graduates of this programme qualify for employment in a variety of professional positions in schools, public, academic and special libraries or in any other organization engaged in library-related and information management activities. The course content covers areas such as management of libraries and information centres, library organisation, library reference services, technical services in libraries, media management, library standards and practices."
+          },
+          {
+            "prog_code": "ITGN_AAS",
+            "prog_name": "AAS Information Technology - General",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "ICTD",
+            "prog_major_credits": 39,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 4,
+            "prog_supp_credits": 6,
+            "prog_description": "This degree programme essentially comprises the first two years of the Bachelor of Science in Information Technology. Students pursuing a Bachelor of Science in Information Technology can exit with an Associate in Applied Science degree in Information Technology once they have completed the prescribed list of courses below. Graduates at the associate level in information technology will be prepared for technician or technologist entry level positions in the job market."
+          },
+          {
+            "prog_code": "ITWEB_AAS",
+            "prog_name": "AAS Information Technology - Web Development",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "ICTD",
+            "prog_major_credits": 42,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 3,
+            "prog_description": "This degree programme essentially comprises the first two years of the Bachelor of Science in Information Technology. Students pursuing a Bachelor of Science in Information Technology can exit with an Associate in Applied Science degree in Information Technology once they have completed the prescribed list of courses below. Graduates at the associate level in information technology will be prepared for technician or technologist entry level positions in the job market."
+          },
+          {
+            "prog_code": "ITGN_BS",
+            "prog_name": "BSc Information Technology - General",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "ICTD",
+            "prog_major_credits": 72,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 13,
+            "prog_supp_credits": 6,
+            "prog_description": "This general IT degree provides students with a well-rounded knowledge of the fundamental skills necessary to develop and maintain the changes required in the dynamic and challenging information technology field.  The graduate will have the advantage of being able to work in diverse environments throughout the information technology industry. The practical knowledge gained from the programme provides a foundation of information technology skill-sets that can be used in the fields of IT Project Manager, IT Teacher, Java Developer, Business Analyst, Database Administrator, Software Implementation Analyst, Applications Architect, Windows Administrator, Enterprise Architect  or any number of fields within the industry."
+          },
+          {
+            "prog_code": "ITWEB_BS",
+            "prog_name": "BSc Information Technology - Web Development",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "ICTD",
+            "prog_major_credits": 84,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 3,
+            "prog_description": "This degree ..."
+          },
+          {
+            "prog_code": "ITNT_BS",
+            "prog_name": "BSc IT - Networking",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "ICTD",
+            "prog_major_credits": 75,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 12,
+            "prog_supp_credits": 4,
+            "prog_description": "This programme is designed for individuals seeking a career in information technology, with an emphasis on networking. Students acquire sound foundational skills in key areas such as network administration, network security, network architecture and wireless communication.  Students receive hands-on training in network systems commonly found in business environments; discover how information systems support organizational success; and how the technologies that comprise the network infrastructure allow for successful transfer and use of mission critical business information. In addition, students install, configure, secure, administer, and troubleshoot network systems; address the management of users, shared resources, and various other network components such as routers and switches in LANs, WANs,  wireless and mobile network environments. Students who are successful in this programme will have acquired the competencies to complete the Cisco Certified Network Associate (CCNA) and Certified Information Systems Security Professional (CISSP) professional examinations."
+          },
+          {
+            "prog_code": "LBIS_AAS",
+            "prog_name": "AAS Library and Information Studies",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "ICTD",
+            "prog_major_credits": 30,
+            "prog_core_credits": 18,
+            "prog_elect_credits": 9,
+            "prog_supp_credits": 3,
+            "prog_description": "Graduates of this programme qualify for employment in a variety of para-professional positions in schools, public, academic and special libraries or in any other organization engaged in library-related and information management activities."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "School of Liberal Arts, Education and Digital Humanities",
+    "shortName": "Liberal Arts, Education and Digital Humanities",
+    "nameStump": "liberal",
+    "image": "/images/schools/liberal header.jpg",
+    "dean": {
+      "name": "Neil Sylvester",
+      "image": "/images/schools/deanavatar.jpg",
+      "message": "As the dean of School of Liberal Arts, Education and Digital Humanities...",
+      "email": "nsylvester@costaatt.edu.tt",
+      "phone": "868-625-5030 ext 2222"
+    },
+    "overview": "School of Liberal Arts, Education and Digital Humanities overview...",
+    "departments": [
+      {
+        "name": "Education",
+        "headImage": "/images/schools/departments/istHead.jpg",
+        "image": "/images/schools/liberal.png",
+        "summary": "From language experts and mathematics professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
+        "shortName": "Education",
+        "contacts": [],
+        "programmes": [
+          {
+            "prog_code": "MATH_AS",
+            "prog_name": "AS Mathematics",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "EDUC",
+            "prog_major_credits": 45,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The Associate in Science degree in Mathematics is essentially the first two years of the bachelor’s degree programme in mathematics. As students’ progress through the programme, they develop rigorous, logical thinking and problem-solving skills; an appreciation of and familiarity with complex structures and algorithms, and the ability to learn technical, detailed or abstract material."
+          },
+          {
+            "prog_code": "ECCE_BA",
+            "prog_name": "BA in  Early Childhood Care and Education ",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "EDUC",
+            "prog_major_credits": 75,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 15,
+            "prog_description": "The Bachelor of Arts degree in Early Childhood Care and Education provide students with critical knowledge and skills in the field of child development, care and learning. The programme is developed on the fundamental belief that all children can learn and deserve equal opportunities to grow and develop.  Thus, it is among the few, if not the only, with a strong emphasis on special and inclusive education. The ultimate goal of the programme is to prepare students (prospective caregivers and educators) to enter the childcare and early learning field as highly skilled caregivers or early learning professionals who can immediately contribute to the development and growth of children and deliver the highest quality of care and education to every child."
+          },
+          {
+            "prog_code": "CERT_ECCE",
+            "prog_name": "Certificate in  Early Childhood Care and Education",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "EDUC",
+            "prog_major_credits": 25,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The Certificate in Early Childhood Care & Education is designed to equip early childhood educators with teaching skills and knowledge and dispositions for working in both kindergarten and childcare settings. It aims to provide the foundation for effective teaching and interaction with young children."
+          }
+        ]
+      },
+      {
+        "name": "Criminal Justice, Human Security and Legal Studies",
+        "headImage": "/images/schools/departments/criminalJusticeHead.jpg",
+        "image": "/images/schools/liberal.png",
+        "summary": "From protective service professionals, paralegal professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
+        "shortName": "Criminal Justice",
+        "contacts": [],
+        "programmes": [
+          {
+            "prog_code": "CRIM_BA",
+            "prog_name": "BA - Criminal Justice  ",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "CRIM",
+            "prog_major_credits": 61,
+            "prog_core_credits": 33,
+            "prog_elect_credits": 24,
+            "prog_supp_credits": 3,
+            "prog_description": "This programme is designed to provide students with real-world experiences in the field of criminal justice through theoretical studies, seminars and field visits. Courses are drawn from both the corrections and police science tracks so that students may be considered as generalist with the capability to pursue any desired career path within the criminal justice system. Contemporary topics and issues such as restorative justice, crime and the media, and juvenile justice are among some of the courses covered in this programme."
+          },
+
+          {
+            "prog_code": "CRIM_AAS",
+            "prog_name": "AAS in Criminal Justice",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "CRIM",
+            "prog_major_credits": 36,
+            "prog_core_credits": 21,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 3,
+            "prog_description": "The Associate in Applied Science degree in Criminal Justice targets professionals in the protective services and security industries as well as persons interested in careers in these areas. The aim of the programme is to enhance students’ knowledge, understanding and competence to confront the complex challenges encountered by professionals in crime, justice and public safety contexts. All credits earned in this programme will transfer to the Bachelor of Arts degree in Criminal Justice."
+          },
+          {
+            "prog_code": "CERT_CRIM",
+            "prog_name": "Certificate in Criminal Justice",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "CRIM",
+            "prog_major_credits": 9,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The Certificate in Criminal Justice programme examines contemporary issues facing criminal justice professionals in Trinidad and Tobago and the region. Students will acquire knowledge, understanding and skills in critical areas including policing styles, restorative justice, the complexities of criminal justice systems, inmates’ rights, rehabilitation, community and institutional corrections, prison management, and psychological theories. Courses taught by academics and expert practitioners offer students the opportunity to gain practical insights into the exciting and evolving world of modern corrections."
+          }
+        ]
+      },
+      {
+        "name": "Social and Behavioural Sciences",
+        "headImage": "public/images/schools/departments/istHead.jpg",
+        "image": "/images/schools/liberal.png",
+        "summary": "From Social workers, Therapists and Counselling professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
+        "shortName": "Social and Behavioural Sciences",
+        "contacts": [],
+        "programmes": [
+          {
+            "prog_code": "SOWK_AAS",
+            "prog_name": "AAS Social Work",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "SBSC",
+            "prog_major_credits": 21,
+            "prog_core_credits": 21,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 15,
+            "prog_description": "This Associate in Applied Science degree in Social Work develops social work competencies which enables students to work immediately as paraprofessionals in the field. It also provides them with a solid foundation to pursue baccalaureate studies, if they so desire.  Graduates would have gained exposure to various service areas such as individual and group work, youth work, direct practice, community practice, and family and child issues."
+          },
+          {
+            "prog_code": "SOWK_AAS",
+            "prog_name": "AAS Social Work",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "SBSC",
+            "prog_major_credits": 21,
+            "prog_core_credits": 21,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 15,
+            "prog_description": "This Associate in Applied Science degree in Social Work develops social work competencies which enables students to work immediately as paraprofessionals in the field. It also provides them with a solid foundation to pursue baccalaureate studies, if they so desire.  Graduates would have gained exposure to various service areas such as individual and group work, youth work, direct practice, community practice, and family and child issues."
+          },
+          {
+            "prog_code": "SOWK_BSW",
+            "prog_name": "BSW Social Work ",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "SBSC",
+            "prog_major_credits": 63,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 24,
+            "prog_description": "The Bachelor of Social Work degree prepares graduates to function as professional social workers in the education, social services and national security sectors.  Students acquire critical social work competencies in individual and group work, direct practice, and addressing family and child issues."
+          },
+
+          {
+            "prog_code": "PSYC_AA",
+            "prog_name": "AA - Psychology",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "SBSC",
+            "prog_major_credits": 27,
+            "prog_core_credits": 21,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 9,
+            "prog_description": "The Associate in Arts degree in Psychology offers a solid base in the area of psychology. It has been specifically designed to furnish participants with the key theoretical understandings and scientific insights into the complexity of human behaviour and mental processes, and to equip them with practical competencies in specific areas. This associate degree provides students with the foundation courses in the discipline of psychology required to transfer into a baccalaureate programme at both regional and extra-regional institutions of higher learning. It will also be an invaluable course of study for those wishing to get certification as competent paraprofessionals in all areas of human development services."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "School of Nursing, Health and Medical Technologies",
+    "shortName": "Nursing, Health and Medical Technologies",
+    "nameStump": "nursing",
+    "image": "/images/schools/nursing header.jpg",
+    "dean": {
+      "name": "Anjenney Boodoosingh-Dwarika",
+      "image": "/images/schools/deanavatar.jpg",
+      "message": "As the dean of School of Nursing, Health and Medical Technologies...",
+      "email": "adwarika@costaatt.edu.tt",
+      "phone": "868-625-5030 ext 3333"
+    },
+    "overview": "School of Nursing, Health and Medical Technologies overview...",
+    "departments": [
+      {
+        "name": "Nursing",
+        "headImage": "/images/schools/departments/istHead.jpg",
+        "image": "/images/schools/nursing.png",
+        "summary": "From Nurses, nurses aides,  this department is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
+        "shortName": "Nursing",
+        "contacts": [],
+        "programmes": [
+          {
+            "prog_code": "BGNU_AAS",
+            "prog_name": "AAS General Nursing",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "NURS",
+            "prog_major_credits": 54,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 16,
+            "prog_description": "The Associate in Applied Science degree programme in General Nursing is appropriate for persons who wish to enter the nursing profession. This programme has two tracks: general and psychiatric nursing. The main aims of the programme are to prepare nurses with the critical thinking, analytical, evaluation and technology skills and competencies that will equip them to provide quality patient care in any local, regional or international health care setting. It also provides a sound foundation for further studies in nursing or other health science professions."
+          },
+          {
+            "prog_code": "BPNU_AAS",
+            "prog_name": "AAS Psychiatric Nursing",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "NURS",
+            "prog_major_credits": 60,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 16,
+            "prog_description": "The Associate in Applied Science degree programme in Nursing (Psychiatric) is appropriate for persons who wish to enter the nursing profession. This programme has two tracks: general and psychiatric nursing. The main aims of the programme are to prepare nurses with the critical thinking, analytical, evaluation and technology skills and competencies that will equip them to provide quality patient care in any local, regional or international health care setting. It also provides a sound foundation for further studies in nursing or other health science professions."
+          },
+          {
+            "prog_code": "MWIF_ADIP",
+            "prog_name": "Advanced Diploma in Midwifery",
+            "prog_level": "Diploma",
+            "prog_del_mode": "Blended",
+            "dept_code": "NURS",
+            "prog_major_credits": 39,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The Advanced Diploma in Midwifery is suitable for entry by practising nurses who hold the Bachelor of Science degree in Nursing or Associate in Science degree in Nursing or who are Registered Nurses and wish to upgrade their professional status.  This programme is designed to produce midwifery professionals who are equipped to function autonomously, efficiently and effectively in the constantly changing dynamics of the modern health care environment. Through the curriculum, students develop an in-depth understanding of midwifery philosophy, midwifery theory and conceptual frameworks that underpin midwifery practice. They also acquire critical thinking skills and the ability to engage in evidence-based practice, professional reflection and visioning, thereby ensuring their readiness to make a meaningful contribution to midwifery leadership and management in Trinidad and Tobago."
+          },
+          {
+            "prog_code": "DTHV_DIPL",
+            "prog_name": "Diploma in District Health Visiting",
+            "prog_level": "Diploma",
+            "prog_del_mode": "Blended",
+            "dept_code": "NURS",
+            "prog_major_credits": 35,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The Post Graduate Diploma in District Health Visiting is intended for the professional nurse, midwife and psychiatric nurse who wish to upgrade his/her professional status and develop a career in community health nursing. The programme recognizes the demand for nurses to be better equipped to function more efficiently and effectively in the constantly changing dynamics of the modern health care environment. The programme will develop competencies for leading and managing activities that aim to promote health and social wellbeing, prevent illness and ameliorate illness through working in partnership with individuals, families, groups and communities."
+          },
+          {
+            "prog_code": "BGNU_BS",
+            "prog_name": "BSc General Nursing ",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "NURS",
+            "prog_major_credits": 72,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 22,
+            "prog_description": "The Bachelor of Science degree in Nursing is suitable for new applicants who want enter the nursing profession as well as for practicing nurses who wish to upgrade their professional status. This programme has two tracks: general and psychiatric nursing. The programme is designed to produce nursing professionals who are equipped to function more efficiently and effectively in the constantly changing dynamics of the modern health care environment. Through the curriculum, students develop an in-depth understanding of nursing philosophy, nursing theory and conceptual frameworks that underpin nursing practice. They also acquire critical thinking skills and the ability to engage in evidence-based practice, professional reflection and visioning, thereby ensuring their readiness to make a meaningful contribution to nursing leadership and management in Trinidad and Tobago."
+          },
+          {
+            "prog_code": "BPNU_BS",
+            "prog_name": "BSc Psychiatric Nursing",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "NURS",
+            "prog_major_credits": 75,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 22,
+            "prog_description": "The Bachelor of Science degree in Nursing is suitable for new applicants who want enter the nursing profession as well as for practicing nurses who wish to upgrade their professional status. This programme has two tracks: general and psychiatric nursing. The programme is designed to produce nursing professionals who are equipped to function more efficiently and effectively in the constantly changing dynamics of the modern health care environment. Through the curriculum, students develop an in-depth understanding of nursing philosophy, nursing theory and conceptual frameworks that underpin nursing practice. They also acquire critical thinking skills and the ability to engage in evidence-based practice, professional reflection and visioning, thereby ensuring their readiness to make a meaningful contribution to nursing leadership and management in Trinidad and Tobago."
+          }
+        ]
+      },
+      {
+        "name": "Health and Medical Science Technologies",
+        "headImage": "/images/schools/departments/istHead.jpg",
+        "image": "/images/schools/nursing.png",
+        "summary": "Health and Medical Science Technologies...",
+        "shortName": "HMST",
+        "contacts": [],
+        "programmes": [
+          {
+            "prog_code": "MDLT_BS",
+            "prog_name": "BSc Medical Laboratory Technology",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "HMST",
+            "prog_major_credits": 80,
+            "prog_core_credits": 21,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 24,
+            "prog_description": "Medical laboratory technology is an important sub-discipline within the allied health sciences. The medical laboratory technologist is an important member of the healthcare team and plays a critical support role in the provision of quality diagnostic laboratory work. Students in the programme acquire knowledge and practical skills in microbiology, haematology, immunohaematology, clinical chemistry, immunology, histology, health policy, molecular biology, applied research and clinical appraisal. The curriculum is organized around a sound foundation in the natural and social sciences and develops the cognitive and psychomotor skills needed for clinical pathological testing.  Instructional activities are designed to allow students to demonstrate growth, empathy, competence and confidence; to apply scientific principles, and to develop problem-solving skills which will enable them to easily adjust to changes and function effectively as an allied health professional and a member of society."
+          },
+          {
+            "prog_code": "MDLT_AAS",
+            "prog_name": "AAS Medical Laboratory Technology",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "HMST",
+            "prog_major_credits": 40,
+            "prog_core_credits": 12,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 21,
+            "prog_description": "The Associate in Applied Science degree in Medical Laboratory Technology prepares students to become healthcare professionals. Graduates work in all areas of the clinical laboratory, including blood banking, clinical biochemistry, hematology, immunology, histology and microbiology. They perform a full range of laboratory tests – from simple prenatal blood tests, to more complex tests to uncover diseases such as HIV/AIDS, diabetes, and cancer; thus, supporting diagnostic prognoses that are critical in the area of healthcare. Often, the medical laboratory technician is responsible for interpreting and communicating critical patient results to the physician. This programme is currently the required qualification for entry for into the profession."
+          },
+          {
+            "prog_code": "RADG_BS",
+            "prog_name": "BSc Radiography",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "HMST",
+            "prog_major_credits": 95,
+            "prog_core_credits": 21,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 25,
+            "prog_description": "The Bachelor of Science degree in Radiography is designed to prepare students to operate x-ray equipment, position patients for x-ray procedures, practice radiation safety, produce x-ray images of human anatomy and deliver quality patient care through a combination of classroom, laboratory and clinical education. Through an integrated curriculum, students learn to analyze, reason, work independently or collaboratively, take appropriate actions in accordance with practice standards and evaluate the care delivered to patients through reflection, critical thinking and research. Students enrolled in this programme are expected to exhibit exceptional professional conduct and communicate effectively. Graduates of this programme are in high demand and qualify for entry level positions as radiographers at public and private hospitals and imaging centers. They are also well-prepared to pursue advanced certification in medical imaging specialties such as diagnostic medical ultrasound, nuclear medicine and magnetic resonance imaging to name a few. The curriculum is bench-marked against international standards in radiography education and graduates of the programme are eligible to apply through the Board of Radiographers of Trinidad and Tobago, to the Council for the Professions Related to Medicine for registration to practice in Trinidad and Tobago."
+          },
+          {
+            "prog_code": "CERT_PHAR",
+            "prog_name": "Certificate in Pharmacy Assisting ",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "HMST",
+            "prog_major_credits": 18,
+            "prog_core_credits": 9,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "Our Certificate in Pharmacy Assisting prepares students to work as pharmacy assistants under the supervision of registered pharmacists. At the end of this programme, students will (1) fill prescriptions (under supervision) and manage inventory; (2) develop techniques in compounding for a variety of formulations; (3) adhere to best practices in pharmacy quality assurance and regulatory requirements; (4) maintain and operate a pharmacy, ensure safety are carefully observed; (5) conduct themselves professionally."
+          },
+          {
+            "prog_code": "CERT_PHLE",
+            "prog_name": "Certificate in Phlebotomy",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "HMST",
+            "prog_major_credits": 18,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "This programme prepares students to be part of the healthcare team by training them – through didactic, practical, simulated practicum and clinical practicum sessions to draw small quantities of blood by multiple methods from varied anatomical sites. Through our on-site clinical practicum component, students obtain hands-on, blood-letting experience under the supervision of expert phlebotomists. This clinical practicum component ends after each student has independently performed 100 successful blood collection procedures and deemed competent through rigorous assessments by phlebotomy assessors."
+          },
+          {
+            "prog_code": "CERT_SOMW",
+            "prog_name": "Certificate in Sonography for Midwives",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "HMST",
+            "prog_major_credits": 18,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "No description..."
+          }
+        ]
+        
+      }
+    ]
+  },
+  {
+    "name": "School of Environment, Circular Economy and Sustainability",
+    "shortName": "Environment, Circular Economy and Sustainability",
+    "nameStump": "enviro",
+    "image": "/images/schools/enviro header.jpg",
+    "dean": {
+      "name": "Anjenney Boodoosingh-Dwarika",
+      "image": "/images/schools/deanavatar.jpg",
+      "message": "As the dean of School of Liberal Arts, Education and Digital Humanities...",
+      "email": "adwarika@costaatt.edu.tt",
+      "phone": "868-625-5030 ext 2222"
+    },
+    "overview": "School of Environment, Circular Economy and Sustainability overview...",
+    "departments": [
+      {
+        "name": "Environmental and Sustainability Studies",
+        "headImage": "/images/schools/departments/istHead.jpg",
+        "image": "/images/schools/liberal.png",
+        "summary": "Environmental and Sustainability Studies...",
+        "shortName": "Environmental and Sustainability Studies",
+        "contacts": [],
+        "programmes": [
+          {
+            "prog_code": "OSHE_BS",
+            "prog_name": "BSc Occupational Safety and Health",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "ENVS",
+            "prog_major_credits": 72,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 9,
+            "prog_supp_credits": 10,
+            "prog_description": "Students are also exposed to, among other things, IV access, point-of-care testing (theory and practical), and standard protocols to collect, handle and transport other human specimen."
+          },
+          {
+            "prog_code": "ENVH_BS",
+            "prog_name": "BSc Environmental Health",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "ENVS",
+            "prog_major_credits": 64,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 22,
+            "prog_description": "This programme is designed to equip students with the knowledge and skills to identify and control environmental hazards that adversely affect the health of communities. Graduates of this programme are equipped to be part of the global initiative to protect the human population from threats to our health and well-being in our living, working or recreational environments."
+          },
+          {
+            "prog_code": "OSHE_AAS",
+            "prog_name": "AAS Occupational Safety and Health",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "ENVS",
+            "prog_major_credits": 39,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 10,
+            "prog_description": "This programme is designed to meet the local needs in occupational safety and health and to keep abreast the changing industrial environment. Students will learn the various methods used in the identification of potential hazards and other major issues associated with challenges in the workplace and develop the necessary skills for the necessary corrective/preventive measures."
+          },
+          {
+            "prog_code": "ENVH_AAS",
+            "prog_name": "AAS Environmental Health",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "ENVS",
+            "prog_major_credits": 42,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 7,
+            "prog_description": "This programme is designed to equip students with the knowledge and skills to identify and find solutions for environmental problems that adversely affect the health of communities.  Students learn about the operations of efficient health management systems and are kept up to date on scientific advances in the field. In addition, they are made aware of current regional developments in the management of environmental health systems."
+          },
+          {
+            "prog_code": "CERT_EMGC",
+            "prog_name": "Certificate in Emergency Care",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "ENVS",
+            "prog_major_credits": 12,
+            "prog_core_credits": 6,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 4,
+            "prog_description": "The aim of this programme is to increase the scope and effectiveness of emergency care management and transportation of the ill and injured. The programme is designed to equip the participants with the skills to enable them to quickly assess any emergency situation for potential danger, appropriate access, triage and safe transportation, and to arouse a greater awareness of the important priorities on which the survival of a patient may depend. The focus of the programme is to instruct paramedic personnel in the techniques of immediate care of the ill/injured in such emergencies as: fractured limbs, head injuries, cardiac arrest, haemorrhage, near drowning, emergency childbirth and mental disturbances among other medical emergency situations."
+          }
+        ]
+      },
+      {
+        "name": "Natural and Life Sciences",
+        "headImage": "/images/schools/departments/istHead.jpg",
+        "image": "/images/schools/liberal.png",
+        "summary": "The Department of Natural and Life Sciences...",
+        "shortName": "Natural and Life Sciences",
+        "contacts": [],
+        "programmes": [
+          {
+            "prog_code": "BIOL_AS",
+            "prog_name": "AS Biology",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "NLSC",
+            "prog_major_credits": 33,
+            "prog_core_credits": 21,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 8,
+            "prog_description": "The Associate in Science degree in Biology is designed to provide students with a solid foundation in the fundamental principles of biology.  It aims to foster greater understanding of the need to conserve and protect natural biodiversity, with special emphasis on local and regional ecosystems.  As students on this course increase their understanding of life processes, they will develop an appreciation of the importance of responsible lifestyle choices in areas related to nutrition, exercise and safe sexual practices."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ken Gordon School of Communication, Creative and Digital Media",
+    "shortName": "Communication, Creative and Digital Media",
+    "nameStump": "kengord",
+    "image": "/images/schools/kengord header.jpg",
+    "dean": {
+      "name": "Ms. Clarinda Jack",
+      "image": "/images/schools/deanavatar.jpg",
+      "message": "At the core of The Ken Gordon School of Communication, Creative and Digital Media remains the vision to produce graduates who are excellent communicators and story tellers of the past, present and future in written, oral, visual and musical forms.  We will continue to prepare students to hit the ground running in their respective disciplines on completion of their studies, and to be responsible, ethical and creative consumers and producers of content in this rapidly evolving digital world.",
+      "email": "cjack@costaatt.edu.tt",
+      "phone": "868-625-5030 ext 5061"
+    },
+    "overview": "Are you interested in journalism, corporate communications or public relations? Is graphic design, photography, advertising and promotions, or film and video production your passion? Do you want to become fluent in a foreign language, understand Latin American culture, communicate via music, play and instrument, write short stories or have a better understanding of our heritage and oral history? The Ken Gordon School of Communication Creative and Digital Media's dedicated, qualified and experienced faculty will enlighten you and provide you with every opportunity to realise your dream or ambition.  We train students to be innovative, responsible and knowledgeable consumers and creators of content.",
+    "departments": [
+      {
+        "name": "Creative Industries and Culture",
+        "headImage": "/images/schools/departments/istHead.jpg",
+        "image": "/images/schools/liberal.png",
+        "summary": "The Department of Creative Industries and Culture offers degrees, diplomas and certificates in music, performing arts, film and video production, literature, creative writing, history, heritage and archival studies.",
+        "shortName": "Arts, Music and Culture",
+        "programmes": [
+          {
+            "prog_code": "ELIT_AA",
+            "prog_name": "AA Literatures in English",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "CIAC",
+            "prog_major_credits": 36,
+            "prog_core_credits": 24,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The Assoicate in Arts degree in Literature and English.provide students with exposure to the major literary genres, through the examination of the works of both renowned and contemporary authors. These studies are complemented by general education courses drawn from a broad range of disciplines, creating a solid foundation for students who wish to pursue studies up to the bachelor’s level or for language and literature teachers who wish to enhance their knowledge base in the field. This associate degree programme is also suitable for students who wish to pursue careers and/ or further study in the areas of journalism, advertising, and communications. "
+          },
+          {
+            "prog_code": "FAVP_AA",
+            "prog_name": "AA Film and Video Production",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "CIAC",
+            "prog_major_credits": 24,
+            "prog_core_credits": 21,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 15,
+            "prog_description": "In this degree students will be exposed to several elements of filmmaking such as video producing, editing, scriptwriting, and film and television studies. The Associate in Arts degree is the first two years of the BA in Film and Video Production. It prepares students for entry level positions in the film industry or enables them to be independent earners."
+          },
+          {
+            "prog_code": "PERM_AA",
+            "prog_name": "AA Performing Arts: Music",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "CIAC",
+            "prog_major_credits": 44,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 6,
+            "prog_supp_credits": 0,
+            "prog_description": "This degree essentially comprises the first two years of the Bachelor of Music programme.  Students pursuing a Bachelor of Music degree can exit with an Associate in Arts degree in Performing Arts: Music, once they have completed the prescribed list of courses below."
+          },
+          {
+            "prog_code": "CERT_FVP",
+            "prog_name": "Certificate in Film and Video Production",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "CIAC",
+            "prog_major_credits": 15,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "In this introductory certificate students will be exposed to basic video producing, editing, scriptwriting, and film studies."
+          },
+          {
+            "prog_code": "CERT_MUP",
+            "prog_name": "Certificate in Music Performance",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "CIAC",
+            "prog_major_credits": 21,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The certificate programme is intended to provide options for individuals who are unable to commit to lengthy programs of study and caters to hobbyist musicians, industry professionals seeking to gain formal training and improved skills, and talented individuals preparing to embark on professional performance careers."
+          }
+        ]
+      },
+      {
+        "name": "Digital Media and Communication",
+        "headImage": "/images/schools/departments/istHead.jpg",
+        "image": "/images/schools/liberal.png",
+        "summary": "The Department of Digital Media and Communication offers degrees, diplomas and certificates in mass communication, graphic design, advertising and promotions, Spanish, Latin American Studies, photography, journalism and public relations.",
+        "shortName": "Digital Media and Communication",
+        "programmes": [
+          {
+            "prog_code": "MCOM_BA",
+            "prog_name": "BA Mass Communications",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 75,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 15,
+            "prog_supp_credits": 0,
+            "prog_description": "The Bachelor of Arts degree in Mass Communication is designed to create synergies among the various disciplines that comprise the field of mass communication, such as media studies, public relations and advertising. Students acquire an understanding of current communication theories and develop critical thinking, and analytical and research skills. Additionally, much needed practical experience is gained via internships in the industry."
+          },
+          {
+            "prog_code": "GRDS_BA",
+            "prog_name": "BA Graphic Design",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 64,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 26,
+            "prog_description": "In a profession that combines artistic ability, creativity, typography, photography, video, film, web and computer knowledge, graphic designers are challenged to communicate through a variety of media. Consequently, the Bachelor of Arts Degree in Graphic Design is structured to meet the needs of the industry, and create work-ready graduates. This program utilizes current technology, specific to design, and is inclusive of specialized courses in the field of advertising. Thus, the graphic design bachelor’s student develops visual, written and verbal communication skills which they employ in their designs."
+          },
+          {
+            "prog_code": "GRDS_AAS",
+            "prog_name": "AAS Graphic Design",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 42,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 5,
+            "prog_description": "The Associate of Applied Science degree in Graphic Design develops students’ skills in the latest technologies, while building a solid foundation in traditional art and design. Students learn the theories of advertising, layout, type, colour and illustration and become proficient in the use of electronic technologies for visual communications. The internship at the end of this degree programme gives participants an opportunity to network and work in the field."
+          },
+          {
+            "prog_code": "ADVP_AAS",
+            "prog_name": "AAS Advertising and Promotions",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 29,
+            "prog_core_credits": 25,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 12,
+            "prog_description": "This degree is particularly suited to anyone with a great imagination, who is passionate, persuasive and creative. It is appropriate for recent secondary school graduates who wish to pursue a career in creative advertising, as well as persons who are already employed in the industry, but who have no formal training and are keen on improving their skills. This would equip students for entry level and paraprofessional positions in the advertising industry."
+          },
+          {
+            "prog_code": "JOUR_AA",
+            "prog_name": "AA Journalism",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 43,
+            "prog_core_credits": 18,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The programme combines theoretical analysis with practical industry-immersion. This associate degree takes cognizance of the constitutional foundation of freedom of expression, freedom of the press and its pillars of responsibility, accuracy, balance and fairness. It aims to produce graduates who can move easily into newsrooms across the country. It is the first two years of the BA in Journalism."
+          },
+          {
+            "prog_code": "JOPR_AAS",
+            "prog_name": "AAS Journalism and Public Relations",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 37,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 6,
+            "prog_supp_credits": 3,
+            "prog_description": "The programme is designed to enable students to function as paraprofessionals in dynamic and fast-paced media and communication environments. It facilitates their advancement to increasingly higher levels of responsibility in the workplace and provides them with a solid foundation of theoretical knowledge and practical skills needed to pursue studies at undergraduate level."
+          },
+          {
+            "prog_code": "SPAN_AA",
+            "prog_name": "AA - Spanish",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 42,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 6,
+            "prog_description": "The Associate in Arts degree in Spanish is designed to provide a strong foundation in using the Spanish Language in speech and writing and in understanding Latin American history, culture and civilization. The students may exit with the AA Spanish or continue on to the Bachelor’s level."
+          },
+          {
+            "prog_code": "SPAN_AAS",
+            "prog_name": "AAS - Spanish for Business",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 39,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 9,
+            "prog_description": "The Associate in Applied Science degree in Foreign Language for Business: Spanish is designed to provide graduates with a competitive edge in the global marketplace, through an intensive learning experience that focuses on the development of competencies in Spanish language skills, international business and cultural awareness required to effectively conduct or support business activity in a Latin American context."
+          },
+          {
+            "prog_code": "DIPL_ADVT",
+            "prog_name": "Diploma in Advertising and Promotions",
+            "prog_level": "Diploma",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 30,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The Diploma in Advertising and Promotions is suited to anyone with a great imagination, who is passionate, persuasive and creative. It will expose participants to some of the facets of today’s advertising and promotions industry, such as digital marketing, graphic design, animation, photography, videography, copywriting, public relations, and event management, all of which are important elements in brand positioning and consumer engagement."
+          },
+          {
+            "prog_code": "CERT_GRDS",
+            "prog_name": "Certificate in Graphic Design",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 15,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The Certificate in Graphic Design will develop students’ basic skills in the latest technologies, while building a foundation in design. Participants will learn the elementary theories of layout, type, colour and illustration, which will enable them to produce flyers, call cards, banners, and graphics for social media posts, to name a few."
+          },
+          {
+            "prog_code": "CERT_ESWP",
+            "prog_name": "Essential Skills for the Workplace Certificate",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 15,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "This certificate is designed to equip participants with universal workplace skills such as the ability to produce a professional résumé, communicate proficiently, and be service oriented, professional, and competent in Microsoft Office. These capabilities will enhance their employability."
+          },
+          {
+            "prog_code": "CERT_JOUR",
+            "prog_name": "Certificate in Journalism",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 12,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "This certificate programme is specifically focused on developing basic reporting skills."
+          },
+          {
+            "prog_code": "CERT_PHVI",
+            "prog_name": "Certificate in Photography and Video",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 15,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "In an increasingly digitized world where attention spans are less than ten seconds, it is critical to use effective visuals to capture significant moments, enhance messages, boost engagement, and ignite social media. These are some of the skills with which the Certificate in Photography and Video will equip students; these will allow them to tell stories using powerful still and moving images."
+          },
+          {
+            "prog_code": "CERT_ADVP",
+            "prog_name": "Certificate in Advertising and Promotions",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 15,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The Certificate in Advertising and Promotions will develop students’ basic skills in advertising, marketing, graphic design, and communications. It will expose them to all the facets of today’s advertising industry, such as digital marketing, animation, copywriting and event management, all of which are important elements in brand positioning and consumer engagement."
+          },
+          {
+            "prog_code": "CERT_PUBR",
+            "prog_name": "Certificate in Public Relations",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 14,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "Given that public relations and advertising go hand in hand, the contemporary public relations practitioner must be multi-skilled and able to multi task. With this in mind, this certificate is designed to prepare graduates to take charge of the social media presence of organizations, write and present speeches, organize PR events (mindful of all protocols), and deal with press releases to name a few."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "School of Workforce Enhancement and Development",
+    "shortName": "Workforce Enhancement and Development",
+    "nameStump": "workF",
+    "image": "/images/schools/workforce header.jpg",
+    "dean": {
+      "name": "Lalita Ramlal-Chirkoot",
+      "image": "/images/schools/deanavatar.jpg",
+      "message": "The School of Workforce Enhancement and Development (SWED)  of COSTAATT is supported by the other five (5) academic schools of the college.  As one of the six (6) schools within the College, SWED provides credit and non-credit, micro-credentials and continuing education courses as well as professional development programmes.  Our year round operations and multiple modes of delivery provides the gateway to lifelong learning for those from ages 14 years to 70 years. SWED is committed to leading change and transformation in Trinidad and Tobago and within the Caribbean through workforce development in many disciplinary areas, encouraging persons to stay current with their workplace needs, thereby improving workplace knowledge, competence and performance. Through the School of Workforce Enhancement and Development, students can earn PDUs, certificates, diplomas, graduate diplomas, and professional re-licensure.  The main focus of the School is to broaden access to opportunities for continuing education and professional development and open the doors of COSTAATT to a diverse range of learners. ",
+      "email": "lrchirkoot@costaatt.edu.tt",
+      "phone": "868-625-5030 ext 5431"
+    },
+    "overview": "The School of Workforce Enhancement and Development (SWED) is committed to opening doors by providing expanded access to educational opportunities and experiences at COSTAATT.  With both credit and non-credit based options, SWED delivers a variety of short term, flexible programming focused on skill and professional development, academic preparation, and foreign language services.  The School serves a diverse population ranging from individuals seeking alternative paths to tertiary education, to individuals seeking to upskill themselves personally or professionally, and business enterprises seeking to support and develop their human resources.",
+    "departments": [
+      {
+        "name": "Upskilling Academy",
+        "headImage": "/images/schools/departments/istHead.jpg",
+        "image": "/images/schools/liberal.png",
+        "summary": "The Upskilling Academy provides a wide variety of educational content services, including certificate and diploma programmes, stand-alone short courses, professional development workshops, and customised training to support client needs and desired outcomes. ",
+        "shortName": "Skills",
+        "contacts": [],
+        "programmes": [
+          {
+            "prog_code": "CERT_TGUI",
+            "prog_name": "Certificate in Tour Guiding",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Face_to_Face",
+            "dept_code": "UPSK",
+            "prog_major_credits": 4,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "In this course participants will be exposed to the knowledge and techniques required to become an effective tour guide. Participants will explore and engage with content in preparation for the delivery of educational as well as entertaining presentations on specific sites used in tour guiding."
+          },
+          {
+            "prog_code": "CERT_COTR",
+            "prog_name": "Certificate in Court Transcription ",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "UPSK",
+            "prog_major_credits": 25,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "In this programme, participants are trained to produce accurate typewritten records of court proceedings including reproductions of statements, findings and verdicts.  The specialist software ‘Audio Digital Court Recording,’ is used to develop necessary skills and competencies.  Applicants should have excellent listening skills, powers of concentration and above average vocabulary and punctuation skills. To ensure that they have the required foundation competencies to succeed in this rigorous certificate programme, students may be guided to do preparatory work prior to registering for required courses.  This will be address through the academic advisement process and may include remedial writing courses through the COMPASS department. In addition, applicants should possess superb computer skills.  Participants will develop the requisite speed for a court transcriptionist to function in the workplace i.e. a minimum of 60 to 80 words per minute."
+          },
+          {
+            "prog_code": "PORT_ADIP",
+            "prog_name": "Advanced Diploma in Vector Control",
+            "prog_level": "Diploma",
+            "prog_del_mode": "Blended",
+            "dept_code": "UPSK",
+            "prog_major_credits": 33,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The Advanced Diploma in Vector Control programme is aimed at equipping practicing public health inspectors with the knowledge and skills required to assume a role in monitoring, studying, investigating and seeking to address the health hazards in terms of vector borne diseases in communities and the region as a whole.   The programme exposes participants to the various types of vectors as well as the key components of planning and implementing a vector control plan for any community within which they operate."
+          },
+          {
+            "prog_code": "PORT_ADIP",
+            "prog_name": "Advanced Diploma in Port Health",
+            "prog_level": "Diploma",
+            "prog_del_mode": "Blended",
+            "dept_code": "UPSK",
+            "prog_major_credits": 28,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "This programme is aimed at training to support the role of the Public Health Inspector in evaluating activities in and around air and sea ports. This includes but is not limited to; monitoring, investigating and addressing current and potential health hazards relating to food borne diseases, vector control and human contamination which are critical to controlling of spread of diseases and prevention of epidemics emanating from foreign countries."
+          },
+          {
+            "prog_code": "FDIN_ADIP",
+            "prog_name": "Advanced Diploma in Food Inspection",
+            "prog_level": "Diploma",
+            "prog_del_mode": "Blended",
+            "dept_code": "UPSK",
+            "prog_major_credits": 28,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "This programme is aimed at training to support the role of the Public Health Inspector as it relates to food inspections. This includes, but is not limited to; monitoring practices of food producers; granting of licenses to operate with food; education of food public safety, enforcing Public Health legislation; investigating and addressing current and potential hazards of food borne diseases throughout the food industry."
+          },
+          {
+            "prog_code": "CERT_COTR",
+            "prog_name": "AAS CAT Reporting",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "UPSK",
+            "prog_major_credits": 61,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "This Associate in Applied Science Degree in CAT Reporting prepares the student to be a real-time verbatim reporter. The programme design allows for immersion into skill building from onset. Participants are required to develop excellent listening skills, powers of concentration and above average vocabulary and punctuation skills. Participants are also required to become proficient in the use of the machine and software for the production of play-back notes, or accurate transcripts. The programme is delivered using the StenEd. Stenotype machine and Eclipse software. This is similar to that used in the workplace. In addition, participants will develop the requisite speed to function in the workplace i.e. a minimum of 180 to 200 to 225 words per minute. The programme is built around the use of StenEd. technology and aims to provide a thorough knowledge and understanding of court procedures, strengthen language and writing skills of participants, develop powers of listening and concentration, promote accuracy and speed in essential job related competencies inclusive of transcribing verbatim, software manipulation and producing accurate transcripts, provide the skills, competencies and attitudes required to become a successful verbatim reporter."
+          }
+        ]
+      },
+      {
+        "name": "CollegeStarTT",
+        "headImage": "/images/schools/departments/istHead.jpg",
+        "image": "/images/schools/liberal.png",
+        "summary": "The CollegeStarTT Centre  is COSTAATT’s flagship developmental education programme designed to assist students in obtaining the necessary qualifications to access degree programmes of their choice at COSTAATT. CollegeStarTT provides an alternative pathway to tertiary level education for those students who have the aptitude and the desire to pursue tertiary education but are currently academically under-prepared.",
+        "shortName": "CollegeStarTT"
+      },
+      {
+        "name": "Translation and Interpreting Centre",
+        "headImage": "/images/schools/departments/istHead.jpg",
+        "image": "/images/schools/liberal.png",
+        "summary": "As an official agent recognised by the Government of Trinidad and Tobago, the Translating and Interpreting Services (T&I) Centre provides a wide array of translation and interpretation services at local and regional levels. Our clients include corporate entities, government organisations and individuals. Official translation services include English, Dutch, French, German, Portuguese, and Spanish.",
+        "shortName": "Translation"
+      }
+    ]
+  }
+]

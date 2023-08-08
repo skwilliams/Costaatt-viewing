@@ -1,0 +1,44 @@
+.contactform {
+  /* border: .5rem solid red; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contactform .headerform {
+  font-size: 1.65rem;
+  font-family: "Bodoni";
+  color: #222222;
+  margin-left: 1rem;
+}
+.contactform form.prospective {
+  margin: 5rem 0;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  background-color: hsl(0, 0%, 100%);
+  border: 4px solid rgb(245, 130, 32);
+  grid-gap: 0.75em;
+  /* display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr; */
+}
+.contactform .items {
+  width: 20rem;
+  height: 3rem;
+  align-items: left;
+  margin: 2rem;
+  grid-gap: 0.75em;
+}
+.contactform .prospective input, .contactform select {
+  display: inline-block;
+  width: 20rem;
+  height: 3rem;
+  align-items: left;
+}
+.contactform .prospective label {
+  font-size: 1.5rem;
+  color: #222222;
+}
+.contactform .text {
+  font-size: 1.75rem;
+  font-weight: 800;
+}/*# sourceMappingURL=ContactUs.module.css.map */

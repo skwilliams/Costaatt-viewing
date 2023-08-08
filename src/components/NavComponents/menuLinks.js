@@ -132,8 +132,12 @@ export const mainNavLinks = [
         path: "/programmes/collegecore",
       },
       {
+        title: "Academic Advising",
+        path: "/programmes/advising",
+      },
+      {
         title: "School of Nursing, Health and Medical Technologies",
-        path: "/programmes/schools/nurisng",
+        path: "/programmes/schools/nursing",
       },
       {
         title: "School of Liberal Arts, Education and Digital Humanities",
@@ -241,6 +245,10 @@ export const mainNavLinks = [
       },
       {
         title: "Compass Center",
+        path: "/",
+      },
+      {
+        title: "Events",
         path: "/",
       },
     ],

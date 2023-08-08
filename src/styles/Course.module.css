@@ -1,0 +1,180 @@
+.courseName {
+  font-family: "Bodoni", Helvitica;
+  font-size: 3rem;
+  color: white;
+  margin: 0 0 2rem 0;
+  background-image: linear-gradient(to right, rgb(245, 130, 32), rgb(121, 47, 142));
+}
+
+.headingsecondary {
+  font-size: 1.5rem;
+  font: "Lato", Arial;
+  margin: 1.5rem 0;
+  font-weight: bold;
+}
+
+.footnote {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin: 1rem 0;
+}
+
+.threeColGridCon {
+  display: grid;
+  gap: 5rem;
+  grid-gap: 2rem;
+  grid-template-columns: auto auto auto;
+}
+
+.threeColGrid {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.sectionOverview {
+  margin-right: 3rem;
+  font-size: 1.25rem;
+  line-height: 2;
+}
+.sectionOverview .desc {
+  font-size: 1.25rem;
+  text-align: justify;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  margin: 3rem 0;
+}
+.sectionOverview .entryreq .list {
+  margin-left: 2rem;
+}
+.sectionOverview .entryreq .list .items {
+  list-style-type: square;
+  margin: 0.5rem 0;
+}
+.sectionOverview .entryreq .list .items::marker {
+  color: rgb(245, 130, 32);
+}
+.sectionOverview .icon {
+  width: 70px;
+  height: 70px;
+}
+.sectionOverview .iconsection {
+  margin: 3rem 0;
+}
+.sectionOverview .iconfont {
+  font-size: 1.1rem;
+}
+.sectionOverview .inquiryform {
+  text-align: left;
+  margin-left: 1rem;
+  font-size: 2rem;
+}
+
+.sectionCareers {
+  margin: 6rem 3rem 6rem 0;
+  margin-top: 6rem;
+  background-color: white;
+  color: #222222;
+}
+.sectionCareers .careerstable {
+  font-family: Lato;
+  font-size: 1.25rem;
+  border-collapse: collapse;
+  width: 100%;
+}
+.sectionCareers .careerstable td,
+.sectionCareers th {
+  padding: 10px;
+  text-align: left;
+  margin: 0;
+}
+.sectionCareers .careerstable tbody tr:nth-child(2n) {
+  background-color: #eee;
+}
+.sectionCareers .careerstable th {
+  /* background-color: red; */
+  color: #222222;
+  font-family: "Bodoni";
+  text-transform: capitalize;
+  backface-visibility: hidden;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.sectionPortfolio {
+  margin-right: 2rem;
+  padding: 0;
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+}
+
+.sectionGradSpeak {
+  margin: 6rem 0;
+}
+
+.sectionCurriculum {
+  margin: 6rem 0;
+}
+
+.coursecode {
+  font-size: 1.15rem;
+  margin: 0;
+  text-align: left;
+}
+
+.courseheadings {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.coursename {
+  color: rgb(245, 130, 32);
+  font-size: 1.15rem;
+  text-align: left;
+}
+
+.credits {
+  margin-left: 1rem;
+  font-size: 1.15rem;
+  text-align: left;
+}
+
+.accdetails {
+  margin-bottom: 2rem;
+}
+
+.total {
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-align: right;
+}
+
+.coursesGridCon {
+  display: grid;
+  gap: 2rem;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin: 0;
+  padding: 0;
+}
+
+.coursesColGrid {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.sectionFinancial {
+  margin: 6rem 0;
+  font-size: 1.15rem;
+}
+.sectionFinancial .coursesGridCon {
+  display: grid;
+  gap: 2rem;
+  grid-gap: 1rem;
+  grid-template-columns: 2fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+}
+.sectionFinancial .coursesColGrid {
+  text-align: center;
+  font-size: 1.5rem;
+}/*# sourceMappingURL=Course.module.css.map */

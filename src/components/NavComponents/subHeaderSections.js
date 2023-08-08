@@ -35,7 +35,29 @@ export const subHeaderSections = {
     "school events and news": "schoolnews",
   },
   allcourses: {
-    'All courses':'all courses',
-  }
-
+    "All courses": "all courses",
+  },
+  ist: {
+    "Overveiw of Department": "overview",
+    "Department Contact": "contact",
+    "Happening Now": "happening",
+    "Featured Work": "featuredwork",
+    "Faculty and Staff": "facultystaff",
+    "Programmes in Department": "programmes",
+    "Student Resources": "sturesource",
+  },
+  enviro: {
+    "school overview": "overview",
+    Departments: "depart",
+    "find your Degree": "depcourses",
+    "meet the dean": "meetthedean",
+    "school events and news": "schoolnews",
+  },
+  nursing: {
+    "school overview": "overview",
+    Departments: "depart",
+    "find your Degree": "depcourses",
+    "meet the dean": "meetthedean",
+    "school events and news": "schoolnews",  
+  },
 };

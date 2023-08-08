@@ -4,29 +4,95 @@
 
 /*Department Styles Has Side nav */
 
-.sidenavtext{
+.primaryheading{
+  font-family: "Bodoni";
+  font-size: 2rem;
+  font-weight: 700;
   text-align: left;
+  margin-bottom: 1.5rem;
+
+}
+
+.subheading{
+ 
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;  
+  margin:0;
+  padding:0;
+  text-align: left;
+  box-sizing: inherit;  
+}
+
+
+.sectionOverview{
+  color: $grey;
+  // box-sizing: inherit;
+  padding: 5rem 5rem 8rem 0;
+  margin: 0 10rem;
+
+  font-family: "Lato", sans-serif;
+  font-size:1.5rem;
+  text-align:center;
+
+
+.maintext{
+ 
+  font-size: 1.75rem;
+  color:$grey;
+  line-height: 1.75;
+  text-align: center;
+  margin-bottom:2rem;
+
+}
+.subtext{
+  text-align: center;
   font-size: 1.2rem;
   color:$grey;
   line-height: 1.75;
   text-align: justify;
+  margin-bottom:2rem;
+}
+
+  .accordion{
+  text-align: center;
+   background-image: linear-gradient(to right, $purple-secondary,$orange);
+  // //   /* For older browsers */
+  background-image: -webkit-linear-gradient(right,$purple-secondary,$orange);
+  background-image: -moz-linear-gradient(right,$purple-secondary,$orange);
+  background-image: -o-linear-gradient(right,$purple-secondary,$orange);
+  margin-bottom: 2rem;
+
+  // //  margin: 0 2rem ;
+}
+.accordion:first-child{
+  margin-left:2rem ;
+}
+.accordion:last-child{
+  margin-right:2rem;
+}
+.acoordiantext{
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color:white;
+  
+  text-align: center;
+  margin:0;
+  padding:0;
+
+}
+
+}
+.sectionContact{
+  background-color: $lightgrey1;
+ margin: 0 10rem;
 }
 
 
-.sectionoverviewSide{
-  color: $grey;
-  // box-sizing: inherit;
-  padding: 5rem 5rem 8rem 0;
-  background-color: white;
-  font-family: "Lato", sans-serif;
-  font-size:1.5rem;
-
-
-}
-
-.sectionwhatsup{ 
+.sectionWhatsup{ 
      padding: 5rem 5rem 8rem 0;
-
+     margin: 0 15rem;
 //  .threeColGridCon{  
 //    display: grid;
 //    gap: 8rem;
@@ -48,30 +114,90 @@
 
 
 
-.sectionfeaturedwork{
+.sectionFeaturedwork{
       padding: 5rem 5rem 8rem 0;
+       margin: 0 10rem;
+      
+
+}
+
+.sectionFaculty{
+
    
-       background-color: $grey-light;
+    padding: 5rem 5rem 8rem 0;
+    margin: 0 15rem;
+    font-size:1.25rem;
+  
+  
+ .fourGridCon{
+    display: grid;
+     gap: 3rem;
+     grid-gap:2rem ;
+    grid-template-columns: auto auto auto auto;
+    margin: 0 auto;
+    margin-right:5rem;
+  
+
+   }
+   .fourGridCol {
+
+     text-align: center;
+     padding-top: 5rem; 
+     font-size: 30px;
+     margin: 1.5rem 0 3rem 0;
+     margin-bottom:0;
+     
+    
+   }
+  
+  
+  }
+        
+
+
+
+
+.sectionProgrammes{
+     margin: 0 10rem;
+     padding: 5rem 5rem 8rem 0;
+
+       .courseaccordion{
+          text-align: center;
+          font-size: 1.5rem;
+           background-image: linear-gradient(to right, $purple-secondary,$orange);
+  // //   /* For older browsers */
+  background-image: -webkit-linear-gradient(right,$purple-secondary,$orange);
+  background-image: -moz-linear-gradient(right,$purple-secondary,$orange);
+  background-image: -o-linear-gradient(right,$purple-secondary,$orange);
+          margin: 2rem 0 ;
+        }
+
+     
 
 }
+.sectionStuResources{
+   margin: 0 10rem;
+ 
+   padding: 3rem 5rem 8rem 0;
+box-sizing: border-box;
 
-.sectionfaculty{
-    height: 250px;
-     background-color: $red-dark;
-       padding: 5rem 5rem 8rem 0;
+
+.studCont {
+  position: relative;
+ }
+
+// /* Bottom right text */
+.textblock {
+  position: absolute;
+   bottom: 20px;
+  right: 20px;
+   background-color:black;
+   color: white;
+  padding-left: 1rem;
+   padding-right: 1rem;
+   font-size: 1.5rem;
+   
 }
-
-.sectionprogrammes{
-        height:250px;
-     background-color: $grey-light;
-       padding: 5rem 5rem 8rem 0;
-
-}
-.sectionsturesources{
-        height: 250px;
-         background-color: $red-dark;
-           padding: 5rem 5rem 8rem 0;
-
 }
 
  .threeGridCon{
@@ -91,6 +217,29 @@
      font-size: 30px;
      margin: 1.5rem 0 3rem 0;
      margin-bottom:0;
+     
+    
+   }
+
+
+    .threeGridRowCon{
+    display: grid;
+     gap: 3rem;
+     grid-gap:2rem ;
+    grid-template-rows: auto auto auto;
+    margin: 0 auto;
+    margin-right:5rem;
+   
+  
+
+   }
+   .threeGridRow {
+
+     text-align: center;
+     padding-top: 5rem; 
+     font-size: 30px;
+     margin: 1.5rem 0 3rem 0;
+     margin:2rem;
      
     
    }
