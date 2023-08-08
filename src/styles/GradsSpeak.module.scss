@@ -2,7 +2,7 @@
 
 .gradcont{
     border:2px ;
-    height: 30rem;
+    height: auto;
     margin-top:3rem;
     width: 17rem;
     box-shadow: 5px 5px 5px  $lightgrey3;
@@ -23,6 +23,7 @@
 }
 .says{
     font-size:1.1rem;
+    line-height: 2;
 }
 
 }

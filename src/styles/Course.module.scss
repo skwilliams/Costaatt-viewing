@@ -170,7 +170,11 @@ th {
 }
 .sectionCurriculum{
  
- margin:6rem 0;
+  margin-right:2rem;
+     padding:0;
+     margin-bottom:6rem;
+     margin-top:6rem;
+//  margin:6rem 0;
 
 }
   .coursecode{
@@ -241,8 +245,13 @@ th {
    // padding: 10px;
  }
 .sectionFinancial{
-  margin:6rem 0;
+  // margin:6rem 0;
   font-size: 1.15rem;
+   margin-right:2rem;
+     padding:0;
+     margin-bottom:6rem;
+     margin-top:6rem;
+
 
   .coursesGridCon{  
    display: grid;
@@ -273,6 +282,11 @@ th {
 .sectionRequirements{
   font-size:1.15rem;
   font-family: "Lato";
+   margin-right:2rem;
+     padding:0;
+     margin-bottom:6rem;
+     margin-top:6rem;
+
 
   .text{
     font-size:1.15rem;
@@ -366,4 +380,15 @@ th {
     font-size: 1.2rem;
     font-weight: 700;
     text-align: left;
+  }
+
+  .creditsummarytext{
+    font-size: 1.25rem;
+    text-align:right;
+    margin:2rem;
+    
+  }
+  .creditsummarynumber{
+    font-size: 1.5rem;
+    text-align:right;
   }

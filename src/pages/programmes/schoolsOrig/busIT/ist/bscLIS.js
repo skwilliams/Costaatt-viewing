@@ -168,9 +168,16 @@ const bscLIS = () => {
           <GradsSpeak graduate={gradspeak} />
         </div>
       </section>
-      <section id="curriculum" className={CourseStyle.sectionCurriculum}>
-        <p className={ProgStyles.headingprimaryleft}> Curriculum</p>
+      <Divider dark />
 
+      <section id="curriculum" className={CourseStyle.sectionCurriculum}>
+        <p className={ProgStyles.headingprimaryleft}>
+          {" "}
+          Curriculum{" "}
+          <a style={{ float: "right" }} className={ProgStyles.explore} href=" ">
+            View Printable Curriculum →
+          </a>
+        </p>
         <Accordion sx={{ margin: 2 }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography fontWeight={900} fontSize={19}>
@@ -183,9 +190,7 @@ const bscLIS = () => {
         </Accordion>
         <Accordion sx={{ margin: 2, color: "primary" }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography  fontSize={19}>
-              Core Curriculum Courses
-            </Typography>
+            <Typography fontSize={19}>Core Curriculum Courses</Typography>
           </AccordionSummary>
           <AccordionDetails>
             {/* Core Curriculum Courses */}
@@ -202,13 +207,14 @@ const bscLIS = () => {
             <DegreeCourses courses={bscLissupport} />
           </AccordionDetails>
         </Accordion>
-        <p className={CourseStyle.text}>
+        <p className={CourseStyle.creditsummarytext}>
           {" "}
-          Total credits to achieve a BSC in Library and Information Sciecne
-          {" "}
-          <span className={CourseStyle.courseheading}>{totalcredits} </span>
+          Total Credits :{" "}
+          {/* <span className={CourseStyle.creditsummarynumber}> */}
+          {totalcredits} {/* </span> */}
         </p>
       </section>
+      <Divider dark />
 
       <section id="feesfinancial" className={CourseStyle.sectionFinancial}>
         <p className={ProgStyles.headingprimaryleft}> Fees and Financial Aid</p>
@@ -352,6 +358,7 @@ const bscLIS = () => {
           </AccordionDetails>
         </Accordion>
       </section>
+      <Divider dark />
 
       <section id="requirements" className={CourseStyle.sectionRequirements}>
         <p className={ProgStyles.headingprimaryleft}> Requirements</p>
@@ -420,7 +427,7 @@ const bscLIS = () => {
             <Typography fontSize={18}>Resource Requirements</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Requirements reqs={resources} />/
+            <Requirements reqs={resources} />
           </AccordionDetails>
         </Accordion>
         <Accordion sx={{ margin: 2 }}>
@@ -434,6 +441,7 @@ const bscLIS = () => {
           </AccordionDetails>
         </Accordion>
       </section>
+      <Divider dark />
 
       <section id="applylink" className={CourseStyle.sectionStuResources}>
         <p className={ProgStyles.headingprimaryleft}> COSTAATT Wants You </p>
