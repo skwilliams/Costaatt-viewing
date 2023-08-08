@@ -4,7 +4,7 @@
     "shortName": "Business & Digital Technologies",
     "nameStump": "busIT",
     "image": "/images/schools/busIT header.jpg",
-    "overview": "The School of Business and Digital Technologies provides access to a world-class and work-relevant education, focused on achieving institutional and national goals of workforce development. The School of Business and Digital Technologies comprises two (2) schools, the Department of ICTs and Digital Technologies and the Department of Management and Digital Entrepreneurship. These departments provide the public with a range of academic services to meet a growing number of careers and opportunities locally, regionally, and globally.The School is devoted to the development and preparation of students who are able to confront the challenges of the fast-paced, dynamic work environment. The School produces graduates who are work ready;professional and ethical;adept at creative problem-solving;embrace technological advancement; and able to adapt to a rapidly evolving world.",
+    "overview": "The School of Business and Digital Technologies provides access to a world-class and work-relevant education, focused on achieving institutional and national goals of workforce development. The School of Business and Digital Technologies comprises two (2) schools, the Department of ICTs and Digital Technologies and the Department of Management and Digital Entrepreneurship. These departments provide the public with a range of academic services to meet a growing number of careers and opportunities locally, regionally, and globally.The School is devoted to the development and preparation of students who are able to confront the challenges of the fast-paced, dynamic work environment. The School produces graduates who are work ready, professional and ethical, adept at creative problem-solving, embrace technological advancement and able to adapt to a rapidly evolving world.",
     "dean": {
       "name": "Vacant",
       "image": "/images/schools/deanavatar.jpg",
@@ -266,11 +266,11 @@
     "dean": {
       "name": "Neil Sylvester",
       "image": "/images/schools/deanavatar.jpg",
-      "message": "As the dean of School of Liberal Arts, Education and Digital Humanities, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+      "message": "As the dean of School of Liberal Arts, Education and Digital Humanities...",
       "email": "nsylvester@costaatt.edu.tt",
       "phone": "868-625-5030 ext 2222"
     },
-    "overview": "School of Liberal Arts, Education and Digital Humanities overview. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde. We are here for you Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa? Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo necessitatibus praesentium! Dolorem.",
+    "overview": "School of Liberal Arts, Education and Digital Humanities overview...",
     "departments": [
       {
         "name": "Education",
@@ -434,25 +434,176 @@
     "dean": {
       "name": "Anjenney Boodoosingh-Dwarika",
       "image": "/images/schools/deanavatar.jpg",
-      "message": "As the dean of School of Nursing, Health and Medical Technologies, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+      "message": "As the dean of School of Nursing, Health and Medical Technologies...",
       "email": "adwarika@costaatt.edu.tt",
       "phone": "868-625-5030 ext 3333"
     },
-    "overview": "School of Nursing, Health and Medical Technologies overview. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde. We are here for you Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa? Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo necessitatibus praesentium! Dolorem.",
+    "overview": "School of Nursing, Health and Medical Technologies overview...",
     "departments": [
       {
         "name": "Nursing",
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/nursing.png",
         "summary": "From Nurses, nurses aides,  this department is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
-        "shortName": "Nursing"
+        "shortName": "Nursing",
+        "contacts": [],
+        "programmes": [
+          {
+            "prog_code": "BGNU_AAS",
+            "prog_name": "AAS General Nursing",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "NURS",
+            "prog_major_credits": 54,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 16,
+            "prog_description": "The Associate in Applied Science degree programme in General Nursing is appropriate for persons who wish to enter the nursing profession. This programme has two tracks: general and psychiatric nursing. The main aims of the programme are to prepare nurses with the critical thinking, analytical, evaluation and technology skills and competencies that will equip them to provide quality patient care in any local, regional or international health care setting. It also provides a sound foundation for further studies in nursing or other health science professions."
+          },
+          {
+            "prog_code": "BPNU_AAS",
+            "prog_name": "AAS Psychiatric Nursing",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "NURS",
+            "prog_major_credits": 60,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 16,
+            "prog_description": "The Associate in Applied Science degree programme in Nursing (Psychiatric) is appropriate for persons who wish to enter the nursing profession. This programme has two tracks: general and psychiatric nursing. The main aims of the programme are to prepare nurses with the critical thinking, analytical, evaluation and technology skills and competencies that will equip them to provide quality patient care in any local, regional or international health care setting. It also provides a sound foundation for further studies in nursing or other health science professions."
+          },
+          {
+            "prog_code": "MWIF_ADIP",
+            "prog_name": "Advanced Diploma in Midwifery",
+            "prog_level": "Diploma",
+            "prog_del_mode": "Blended",
+            "dept_code": "NURS",
+            "prog_major_credits": 39,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The Advanced Diploma in Midwifery is suitable for entry by practising nurses who hold the Bachelor of Science degree in Nursing or Associate in Science degree in Nursing or who are Registered Nurses and wish to upgrade their professional status.  This programme is designed to produce midwifery professionals who are equipped to function autonomously, efficiently and effectively in the constantly changing dynamics of the modern health care environment. Through the curriculum, students develop an in-depth understanding of midwifery philosophy, midwifery theory and conceptual frameworks that underpin midwifery practice. They also acquire critical thinking skills and the ability to engage in evidence-based practice, professional reflection and visioning, thereby ensuring their readiness to make a meaningful contribution to midwifery leadership and management in Trinidad and Tobago."
+          },
+          {
+            "prog_code": "DTHV_DIPL",
+            "prog_name": "Diploma in District Health Visiting",
+            "prog_level": "Diploma",
+            "prog_del_mode": "Blended",
+            "dept_code": "NURS",
+            "prog_major_credits": 35,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The Post Graduate Diploma in District Health Visiting is intended for the professional nurse, midwife and psychiatric nurse who wish to upgrade his/her professional status and develop a career in community health nursing. The programme recognizes the demand for nurses to be better equipped to function more efficiently and effectively in the constantly changing dynamics of the modern health care environment. The programme will develop competencies for leading and managing activities that aim to promote health and social wellbeing, prevent illness and ameliorate illness through working in partnership with individuals, families, groups and communities."
+          },
+          {
+            "prog_code": "BGNU_BS",
+            "prog_name": "BSc General Nursing ",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "NURS",
+            "prog_major_credits": 72,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 22,
+            "prog_description": "The Bachelor of Science degree in Nursing is suitable for new applicants who want enter the nursing profession as well as for practicing nurses who wish to upgrade their professional status. This programme has two tracks: general and psychiatric nursing. The programme is designed to produce nursing professionals who are equipped to function more efficiently and effectively in the constantly changing dynamics of the modern health care environment. Through the curriculum, students develop an in-depth understanding of nursing philosophy, nursing theory and conceptual frameworks that underpin nursing practice. They also acquire critical thinking skills and the ability to engage in evidence-based practice, professional reflection and visioning, thereby ensuring their readiness to make a meaningful contribution to nursing leadership and management in Trinidad and Tobago."
+          },
+          {
+            "prog_code": "BPNU_BS",
+            "prog_name": "BSc Psychiatric Nursing",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "NURS",
+            "prog_major_credits": 75,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 22,
+            "prog_description": "The Bachelor of Science degree in Nursing is suitable for new applicants who want enter the nursing profession as well as for practicing nurses who wish to upgrade their professional status. This programme has two tracks: general and psychiatric nursing. The programme is designed to produce nursing professionals who are equipped to function more efficiently and effectively in the constantly changing dynamics of the modern health care environment. Through the curriculum, students develop an in-depth understanding of nursing philosophy, nursing theory and conceptual frameworks that underpin nursing practice. They also acquire critical thinking skills and the ability to engage in evidence-based practice, professional reflection and visioning, thereby ensuring their readiness to make a meaningful contribution to nursing leadership and management in Trinidad and Tobago."
+          }
+        ]
       },
       {
         "name": "Health and Medical Science Technologies",
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/nursing.png",
-        "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
-        "shortName": "HMST"
+        "summary": "Health and Medical Science Technologies...",
+        "shortName": "HMST",
+        "contacts": [],
+        "programmes": [
+          {
+            "prog_code": "MDLT_BS",
+            "prog_name": "BSc Medical Laboratory Technology",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "HMST",
+            "prog_major_credits": 80,
+            "prog_core_credits": 21,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 24,
+            "prog_description": "Medical laboratory technology is an important sub-discipline within the allied health sciences. The medical laboratory technologist is an important member of the healthcare team and plays a critical support role in the provision of quality diagnostic laboratory work. Students in the programme acquire knowledge and practical skills in microbiology, haematology, immunohaematology, clinical chemistry, immunology, histology, health policy, molecular biology, applied research and clinical appraisal. The curriculum is organized around a sound foundation in the natural and social sciences and develops the cognitive and psychomotor skills needed for clinical pathological testing.  Instructional activities are designed to allow students to demonstrate growth, empathy, competence and confidence; to apply scientific principles, and to develop problem-solving skills which will enable them to easily adjust to changes and function effectively as an allied health professional and a member of society."
+          },
+          {
+            "prog_code": "MDLT_AAS",
+            "prog_name": "AAS Medical Laboratory Technology",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "HMST",
+            "prog_major_credits": 40,
+            "prog_core_credits": 12,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 21,
+            "prog_description": "The Associate in Applied Science degree in Medical Laboratory Technology prepares students to become healthcare professionals. Graduates work in all areas of the clinical laboratory, including blood banking, clinical biochemistry, hematology, immunology, histology and microbiology. They perform a full range of laboratory tests – from simple prenatal blood tests, to more complex tests to uncover diseases such as HIV/AIDS, diabetes, and cancer; thus, supporting diagnostic prognoses that are critical in the area of healthcare. Often, the medical laboratory technician is responsible for interpreting and communicating critical patient results to the physician. This programme is currently the required qualification for entry for into the profession."
+          },
+          {
+            "prog_code": "RADG_BS",
+            "prog_name": "BSc Radiography",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "HMST",
+            "prog_major_credits": 95,
+            "prog_core_credits": 21,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 25,
+            "prog_description": "The Bachelor of Science degree in Radiography is designed to prepare students to operate x-ray equipment, position patients for x-ray procedures, practice radiation safety, produce x-ray images of human anatomy and deliver quality patient care through a combination of classroom, laboratory and clinical education. Through an integrated curriculum, students learn to analyze, reason, work independently or collaboratively, take appropriate actions in accordance with practice standards and evaluate the care delivered to patients through reflection, critical thinking and research. Students enrolled in this programme are expected to exhibit exceptional professional conduct and communicate effectively. Graduates of this programme are in high demand and qualify for entry level positions as radiographers at public and private hospitals and imaging centers. They are also well-prepared to pursue advanced certification in medical imaging specialties such as diagnostic medical ultrasound, nuclear medicine and magnetic resonance imaging to name a few. The curriculum is bench-marked against international standards in radiography education and graduates of the programme are eligible to apply through the Board of Radiographers of Trinidad and Tobago, to the Council for the Professions Related to Medicine for registration to practice in Trinidad and Tobago."
+          },
+          {
+            "prog_code": "CERT_PHAR",
+            "prog_name": "Certificate in Pharmacy Assisting ",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "HMST",
+            "prog_major_credits": 18,
+            "prog_core_credits": 9,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "Our Certificate in Pharmacy Assisting prepares students to work as pharmacy assistants under the supervision of registered pharmacists. At the end of this programme, students will (1) fill prescriptions (under supervision) and manage inventory; (2) develop techniques in compounding for a variety of formulations; (3) adhere to best practices in pharmacy quality assurance and regulatory requirements; (4) maintain and operate a pharmacy, ensure safety are carefully observed; (5) conduct themselves professionally."
+          },
+          {
+            "prog_code": "CERT_PHLE",
+            "prog_name": "Certificate in Phlebotomy",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "HMST",
+            "prog_major_credits": 18,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "This programme prepares students to be part of the healthcare team by training them – through didactic, practical, simulated practicum and clinical practicum sessions to draw small quantities of blood by multiple methods from varied anatomical sites. Through our on-site clinical practicum component, students obtain hands-on, blood-letting experience under the supervision of expert phlebotomists. This clinical practicum component ends after each student has independently performed 100 successful blood collection procedures and deemed competent through rigorous assessments by phlebotomy assessors."
+          },
+          {
+            "prog_code": "CERT_SOMW",
+            "prog_name": "Certificate in Sonography for Midwives",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "HMST",
+            "prog_major_credits": 18,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "No description..."
+          }
+        ]
+        
       }
     ]
   },
@@ -464,25 +615,55 @@
     "dean": {
       "name": "Anjenney Boodoosingh-Dwarika",
       "image": "/images/schools/deanavatar.jpg",
-      "message": "As the dean of School of Liberal Arts, Education and Digital Humanities, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+      "message": "As the dean of School of Liberal Arts, Education and Digital Humanities...",
       "email": "adwarika@costaatt.edu.tt",
       "phone": "868-625-5030 ext 2222"
     },
-    "overview": "School of Environment, Circular Economy and Sustainability overview. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde. We are here for you Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa? Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo necessitatibus praesentium! Dolorem.",
+    "overview": "School of Environment, Circular Economy and Sustainability overview...",
     "departments": [
       {
         "name": "Environmental and Sustainability Studies",
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/liberal.png",
         "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
-        "shortName": "Environmental and Sustainability Studies"
+        "shortName": "Environmental and Sustainability Studies",
+        "contacts": [],
+        "programmes": [
+          {
+            "prog_code": "MATH_AS",
+            "prog_name": "AS Mathematics",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "EDUC",
+            "prog_major_credits": 45,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The Associate in Science degree in Mathematics is essentially the first two years of the bachelor’s degree programme in mathematics. As students’ progress through the programme, they develop rigorous, logical thinking and problem-solving skills; an appreciation of and familiarity with complex structures and algorithms, and the ability to learn technical, detailed or abstract material."
+          }
+        ]
       },
       {
         "name": "Natural and Life Sciences",
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/liberal.png",
-        "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
-        "shortName": "Natural and Life Sciences"
+        "summary": "The Department of Natural and Life Sciences...",
+        "shortName": "Natural and Life Sciences",
+        "contacts": [],
+        "programmes": [
+          {
+            "prog_code": "MATH_AS",
+            "prog_name": "AS Mathematics",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "EDUC",
+            "prog_major_credits": 45,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The Associate in Science degree in Mathematics is essentially the first two years of the bachelor’s degree programme in mathematics. As students’ progress through the programme, they develop rigorous, logical thinking and problem-solving skills; an appreciation of and familiarity with complex structures and algorithms, and the ability to learn technical, detailed or abstract material."
+          }
+        ]
       }
     ]
   },
