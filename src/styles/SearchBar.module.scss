@@ -10,7 +10,8 @@
   bottom: 0;
   background-color: $whiteback; /* Black background with opacity */
   padding: 100px 150px;
-  z-index: 1000;
+  z-index: 3000;
+  color: $grey;
 }
 
 .searchModalHeading {
@@ -48,7 +49,6 @@
   border: 0.25px solid black;
   width: 100%;
   height: 80px;
-  background: transparent;
 }
 .popularLinks {
   display: grid;
@@ -61,5 +61,4 @@
 
 .searchModalHeading button:hover {
   background-color: orange;
-  color: white;
 }

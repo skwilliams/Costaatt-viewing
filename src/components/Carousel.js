@@ -28,8 +28,8 @@ const CarouselSlider = ({ story }) => {
     <div className={CarouselStyles.carousel}>
       <Carousel responsive={responsive} autoPlay>
         {story.map((slide, index) => (
-          <>
-            <div key={index}>
+          <div key={index}>
+            <div>
               <img src={slide.image} className={CarouselStyles.sliderImage} />
             </div>{" "}
             <Link href={`${slide.url}`}>
@@ -38,7 +38,7 @@ const CarouselSlider = ({ story }) => {
                 <h3> {slide.title} </h3>
               </div>{" "}
             </Link>
-          </>
+          </div>
         ))}
       </Carousel>
     </div>

@@ -61,8 +61,8 @@ const Home = () => {
                     onChange={changeOption}
                     className={HomeStyles.selectDropDown}
                   >
-                    {schoolOptions.map((opt) => (
-                      <option key={opt.name} value={opt.name}>
+                    {schoolOptions.map((opt, index) => (
+                      <option key={index} value={opt.name}>
                         {opt.name}
                       </option>
                     ))}
@@ -73,9 +73,9 @@ const Home = () => {
                 <h3>Interested in</h3>
                 <div className={HomeStyles.innerSelectContainer}>
                   <select className={HomeStyles.selectDropDown}>
-                    {interested.map((opt) => (
+                    {interested.map((opt, index) => (
                       <>
-                        <option key={opt.name} value={opt.name}>
+                        <option key={index} value={opt.name}>
                           {opt.name}
                         </option>
                       </>
@@ -154,7 +154,7 @@ const Home = () => {
           <div className={HomeStyles.featuredNews}>
             {FEATURED_NEWS.map((tile, index) => {
               return (
-                <div>
+                <div key={index}>
                   <Link href="news">
                     <NewsTile
                       title={tile.title}

@@ -1,0 +1,69 @@
+@import "./variable";
+
+.topNavMain {
+  display: flex;
+  padding: 5px 30px;
+  justify-content: space-between;
+  background-image: linear-gradient(
+    to bottom right,
+    $purple-main,
+    $purple-secondary
+  );
+  color: white;
+}
+
+.topNavMain ul {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topBarLinks {
+  padding: 9px 5px;
+  cursor: pointer;
+}
+
+.topBarLinks:hover {
+  transition: all 0.8s ease;
+  border-radius: 15px;
+  text-underline-position: under;
+  text-decoration: underline solid green 4px !important;
+}
+
+.topNavDropDownMain {
+  top: 48px;
+  width: fit-content;
+  position: absolute;
+  z-index: 40;
+  background-color: $whiteback;
+  padding: 10px;
+}
+
+.topNavDropDown {
+  box-shadow: inset 0px 14px 15px rgba(0, 0, 0, 0.3);
+  padding: 20px 10px;
+}
+.topNavdropDownLinks {
+  //display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  color: $grey;
+  padding: 5px;
+  align-items: baseline;
+}
+.dropDownLi {
+  color: aqua;
+}
+.dropDownPictures {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  text-align: center;
+  color: $grey;
+}
+
+.dummyImage {
+  margin-bottom: 20px;
+  width: 250px;
+  height: auto;
+}
