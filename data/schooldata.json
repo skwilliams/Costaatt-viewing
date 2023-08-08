@@ -625,21 +625,69 @@
         "name": "Environmental and Sustainability Studies",
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/liberal.png",
-        "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+        "summary": "Environmental and Sustainability Studies...",
         "shortName": "Environmental and Sustainability Studies",
         "contacts": [],
         "programmes": [
           {
-            "prog_code": "MATH_AS",
-            "prog_name": "AS Mathematics",
+            "prog_code": "OSHE_BS",
+            "prog_name": "BSc Occupational Safety and Health",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "ENVS",
+            "prog_major_credits": 72,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 9,
+            "prog_supp_credits": 10,
+            "prog_description": "Students are also exposed to, among other things, IV access, point-of-care testing (theory and practical), and standard protocols to collect, handle and transport other human specimen."
+          },
+          {
+            "prog_code": "ENVH_BS",
+            "prog_name": "BSc Environmental Health",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "ENVS",
+            "prog_major_credits": 64,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 22,
+            "prog_description": "This programme is designed to equip students with the knowledge and skills to identify and control environmental hazards that adversely affect the health of communities. Graduates of this programme are equipped to be part of the global initiative to protect the human population from threats to our health and well-being in our living, working or recreational environments."
+          },
+          {
+            "prog_code": "OSHE_AAS",
+            "prog_name": "AAS Occupational Safety and Health",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
-            "dept_code": "EDUC",
-            "prog_major_credits": 45,
+            "dept_code": "ENVS",
+            "prog_major_credits": 39,
             "prog_core_credits": 15,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 10,
+            "prog_description": "This programme is designed to meet the local needs in occupational safety and health and to keep abreast the changing industrial environment. Students will learn the various methods used in the identification of potential hazards and other major issues associated with challenges in the workplace and develop the necessary skills for the necessary corrective/preventive measures."
+          },
+          {
+            "prog_code": "ENVH_AAS",
+            "prog_name": "AAS Environmental Health",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "ENVS",
+            "prog_major_credits": 42,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 7,
+            "prog_description": "This programme is designed to equip students with the knowledge and skills to identify and find solutions for environmental problems that adversely affect the health of communities.  Students learn about the operations of efficient health management systems and are kept up to date on scientific advances in the field. In addition, they are made aware of current regional developments in the management of environmental health systems."
+          },
+          {
+            "prog_code": "CERT_EMGC",
+            "prog_name": "Certificate in Emergency Care",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "ENVS",
+            "prog_major_credits": 12,
+            "prog_core_credits": 6,
             "prog_elect_credits": 0,
-            "prog_supp_credits": 0,
-            "prog_description": "The Associate in Science degree in Mathematics is essentially the first two years of the bachelor’s degree programme in mathematics. As students’ progress through the programme, they develop rigorous, logical thinking and problem-solving skills; an appreciation of and familiarity with complex structures and algorithms, and the ability to learn technical, detailed or abstract material."
+            "prog_supp_credits": 4,
+            "prog_description": "The aim of this programme is to increase the scope and effectiveness of emergency care management and transportation of the ill and injured. The programme is designed to equip the participants with the skills to enable them to quickly assess any emergency situation for potential danger, appropriate access, triage and safe transportation, and to arouse a greater awareness of the important priorities on which the survival of a patient may depend. The focus of the programme is to instruct paramedic personnel in the techniques of immediate care of the ill/injured in such emergencies as: fractured limbs, head injuries, cardiac arrest, haemorrhage, near drowning, emergency childbirth and mental disturbances among other medical emergency situations."
           }
         ]
       },
@@ -652,16 +700,16 @@
         "contacts": [],
         "programmes": [
           {
-            "prog_code": "MATH_AS",
-            "prog_name": "AS Mathematics",
+            "prog_code": "BIOL_AS",
+            "prog_name": "AS Biology",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
-            "dept_code": "EDUC",
-            "prog_major_credits": 45,
-            "prog_core_credits": 15,
+            "dept_code": "NLSC",
+            "prog_major_credits": 33,
+            "prog_core_credits": 21,
             "prog_elect_credits": 0,
-            "prog_supp_credits": 0,
-            "prog_description": "The Associate in Science degree in Mathematics is essentially the first two years of the bachelor’s degree programme in mathematics. As students’ progress through the programme, they develop rigorous, logical thinking and problem-solving skills; an appreciation of and familiarity with complex structures and algorithms, and the ability to learn technical, detailed or abstract material."
+            "prog_supp_credits": 8,
+            "prog_description": "The Associate in Science degree in Biology is designed to provide students with a solid foundation in the fundamental principles of biology.  It aims to foster greater understanding of the need to conserve and protect natural biodiversity, with special emphasis on local and regional ecosystems.  As students on this course increase their understanding of life processes, they will develop an appreciation of the importance of responsible lifestyle choices in areas related to nutrition, exercise and safe sexual practices."
           }
         ]
       }
