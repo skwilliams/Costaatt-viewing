@@ -1008,7 +1008,82 @@
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/liberal.png",
         "summary": "The Upskilling Academy provides a wide variety of educational content services, including certificate and diploma programmes, stand-alone short courses, professional development workshops, and customised training to support client needs and desired outcomes. ",
-        "shortName": "Skills"
+        "shortName": "Skills",
+        "contacts": [],
+        "programmes": [
+          {
+            "prog_code": "CERT_TGUI",
+            "prog_name": "Certificate in Tour Guiding",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Face_to_Face",
+            "dept_code": "UPSK",
+            "prog_major_credits": 4,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "In this course participants will be exposed to the knowledge and techniques required to become an effective tour guide. Participants will explore and engage with content in preparation for the delivery of educational as well as entertaining presentations on specific sites used in tour guiding."
+          },
+          {
+            "prog_code": "CERT_COTR",
+            "prog_name": "Certificate in Court Transcription ",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "UPSK",
+            "prog_major_credits": 25,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "In this programme, participants are trained to produce accurate typewritten records of court proceedings including reproductions of statements, findings and verdicts.  The specialist software ‘Audio Digital Court Recording,’ is used to develop necessary skills and competencies.  Applicants should have excellent listening skills, powers of concentration and above average vocabulary and punctuation skills. To ensure that they have the required foundation competencies to succeed in this rigorous certificate programme, students may be guided to do preparatory work prior to registering for required courses.  This will be address through the academic advisement process and may include remedial writing courses through the COMPASS department. In addition, applicants should possess superb computer skills.  Participants will develop the requisite speed for a court transcriptionist to function in the workplace i.e. a minimum of 60 to 80 words per minute."
+          },
+          {
+            "prog_code": "PORT_ADIP",
+            "prog_name": "Advanced Diploma in Vector Control",
+            "prog_level": "Diploma",
+            "prog_del_mode": "Blended",
+            "dept_code": "UPSK",
+            "prog_major_credits": 33,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The Advanced Diploma in Vector Control programme is aimed at equipping practicing public health inspectors with the knowledge and skills required to assume a role in monitoring, studying, investigating and seeking to address the health hazards in terms of vector borne diseases in communities and the region as a whole.   The programme exposes participants to the various types of vectors as well as the key components of planning and implementing a vector control plan for any community within which they operate."
+          },
+          {
+            "prog_code": "PORT_ADIP",
+            "prog_name": "Advanced Diploma in Port Health",
+            "prog_level": "Diploma",
+            "prog_del_mode": "Blended",
+            "dept_code": "UPSK",
+            "prog_major_credits": 28,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "This programme is aimed at training to support the role of the Public Health Inspector in evaluating activities in and around air and sea ports. This includes but is not limited to; monitoring, investigating and addressing current and potential health hazards relating to food borne diseases, vector control and human contamination which are critical to controlling of spread of diseases and prevention of epidemics emanating from foreign countries."
+          },
+          {
+            "prog_code": "FDIN_ADIP",
+            "prog_name": "Advanced Diploma in Food Inspection",
+            "prog_level": "Diploma",
+            "prog_del_mode": "Blended",
+            "dept_code": "UPSK",
+            "prog_major_credits": 28,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "This programme is aimed at training to support the role of the Public Health Inspector as it relates to food inspections. This includes, but is not limited to; monitoring practices of food producers; granting of licenses to operate with food; education of food public safety, enforcing Public Health legislation; investigating and addressing current and potential hazards of food borne diseases throughout the food industry."
+          },
+          {
+            "prog_code": "CERT_COTR",
+            "prog_name": "AAS CAT Reporting",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "UPSK",
+            "prog_major_credits": 61,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "This Associate in Applied Science Degree in CAT Reporting prepares the student to be a real-time verbatim reporter. The programme design allows for immersion into skill building from onset. Participants are required to develop excellent listening skills, powers of concentration and above average vocabulary and punctuation skills. Participants are also required to become proficient in the use of the machine and software for the production of play-back notes, or accurate transcripts. The programme is delivered using the StenEd. Stenotype machine and Eclipse software. This is similar to that used in the workplace. In addition, participants will develop the requisite speed to function in the workplace i.e. a minimum of 180 to 200 to 225 words per minute. The programme is built around the use of StenEd. technology and aims to provide a thorough knowledge and understanding of court procedures, strengthen language and writing skills of participants, develop powers of listening and concentration, promote accuracy and speed in essential job related competencies inclusive of transcribing verbatim, software manipulation and producing accurate transcripts, provide the skills, competencies and attitudes required to become a successful verbatim reporter."
+          }
+        ]
       },
       {
         "name": "CollegeStarTT",
