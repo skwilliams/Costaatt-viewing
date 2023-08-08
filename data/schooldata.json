@@ -8,7 +8,7 @@
     "dean": {
       "name": "Vacant",
       "image": "/images/schools/deanavatar.jpg",
-      "message": "As the dean of Business & Digital Technologies, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+      "message": "Welcome to the School of Business and Digital Technologies at COSTAATT. The School offers courses of study that lead to the award of certificates, diplomas, associate and bachelor’s degrees. We are in the business of changing lives, a key component of which is preparing our students through hands-on skills development for future careers using technology. Faculty members incorporate the use of cutting-edge business techniques, digital technology and information science to prepare students for new innovative opportunities where others see challenges. We welcome you to our School and to a dynamic and promising future!",
       "email": "info@costaatt.edu.tt",
       "phone": "868-625-5030 ext 1111"
     },
@@ -121,7 +121,7 @@
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/busIT.png",
         "mission": "The department of ICT's and Digital Technologies is the hub were technologies meet. It's an infusion of Library Science and Technology. If you desire to be exposed to technology that runs through the viens of the world, you have come to the right place. You can specialize in Databases,Networking, Library Science and Web Development. You will be exposed to the best and latest technologies all while learning the building blocks that makes up Information and Technology.",
-        "summary": "The department of ICTs and Digital Technologies is part of the School of Business and Digital Technologies. The department currently offers several programs designed to meet your educational and career goals. Our programmes include the Library Science and Information Technology discipline The vision of the ICTs and Digital Technologies department is to be the premier Information Technology educational institution in the Caribbean. \n To develop expert nformation Technology (IT) solution providers, equipped with the most up-to-date and relevant information technology and critical thinking skills, through training, practicum and industry experience.",
+        "summary": "If you are interested in Web Development (Internet Technologies), Information Technology, Networking, Databases, Information Systems, or Library Science then the programmes offered by the Department of Information Science and Technology are tailor-made for you. Students will undertake courses in Systems Administration, Data Management, Voice over Internet Protocols (VoIP), Wireless Systems, Wired Systems, Routers, Switches, CCNA, Oracle, Microsoft certifications and Systems Analysis and Design, e-commerce, Cyber Security, Database Administration, Database Programming, Human Computer Interface Design, Internships and Senior Projects. These will prepare students to fulfil what ACM/IEEE considers as the five pillars of IT Essentials. The pillars are web development, programming, networking, databases and interface design (ACM/IEEE 2017). Our Information and Library Science students will learn cataloguing, and classification, Caribbeana, records management, schools’ librarianship, information technology, management of libraries, digital libraries, and curricula development. In addition, you will be encouraged to engage with a broad range of contemporary issues in philosophy, politics, social sciences and economics to develop your analytical and critical thinking skills.",
         "coreValues": [
           "Dedication",
           "Teamwork",
@@ -228,7 +228,7 @@
             "prog_core_credits": 30,
             "prog_elect_credits": 3,
             "prog_supp_credits": 3,
-            "prog_description": "This degree ..."
+            "prog_description": "A degree specialization in the Web Development (Internet Technology) track will provide students with the fundamental skills necessary to develop and maintain the changes required in this dynamic and challenging field.  Students will learn the basics of Internet application development and understand the importance of data security of the internet.   A well-rounded programme of instruction addresses both the technical aspects of the field, as well as the many emerging business applications.  The graduate will have the advantage of being able to work in diversified environments throughout the information technology industry. The practical knowledge gained from the programme provides a foundation of information technology skill-sets that can be used in website development, network management, programming, systems analysis, project management, e-commerce, or any number of fields within the industry. This programme is designed for students to be able to sit the CIW professional examinations."
           },
           {
             "prog_code": "ITNT_BS",
@@ -240,7 +240,7 @@
             "prog_core_credits": 30,
             "prog_elect_credits": 12,
             "prog_supp_credits": 4,
-            "prog_description": "This programme is designed for individuals seeking a career in information technology, with an emphasis on networking. Students acquire sound foundational skills in key areas such as network administration, network security, network architecture and wireless communication.  Students receive hands-on training in network systems commonly found in business environments; discover how information systems support organizational success; and how the technologies that comprise the network infrastructure allow for successful transfer and use of mission critical business information. In addition, students install, configure, secure, administer, and troubleshoot network systems; address the management of users, shared resources, and various other network components such as routers and switches in LANs, WANs,  wireless and mobile network environments. Students who are successful in this programme will have acquired the competencies to complete the Cisco Certified Network Associate (CCNA) and Certified Information Systems Security Professional (CISSP) professional examinations."
+            "prog_description": "The degree specialization in Networking is designed for individuals seeking a career in Information Technology with an emphasis on Networking. Some of the key areas include Network Administration, Network Security, Network Architecture and Wireless Communication. Students will have hands-on experiences with Network Systems commonly found in business environments.  Students will discover how information systems support organizational success.  Students will discover the technologies that make up the network infrastructures that allow for the successful transfer and use of mission-critical business information.  They will install, configure, secure, administer, and troubleshoot network systems.  Students will also address managing users, shared resources, and various other network components like routers and switches in LANs, WANs, and wireless and mobile network environments. This programme has been built to include the necessary competencies to complete the CCNA and CISSP professional examinations."
           },
           {
             "prog_code": "LBIS_AAS",
@@ -1090,7 +1090,22 @@
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/liberal.png",
         "summary": "The CollegeStarTT Centre  is COSTAATT’s flagship developmental education programme designed to assist students in obtaining the necessary qualifications to access degree programmes of their choice at COSTAATT. CollegeStarTT provides an alternative pathway to tertiary level education for those students who have the aptitude and the desire to pursue tertiary education but are currently academically under-prepared.",
-        "shortName": "CollegeStarTT"
+        "shortName": "CollegeStarTT",
+        "contacts": [],
+        "programmes": [
+          {
+            "prog_code": "CERT_TGUI",
+            "prog_name": "Certificate in Tour Guiding",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Face_to_Face",
+            "dept_code": "UPSK",
+            "prog_major_credits": 4,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "In this course participants will be exposed to the knowledge and techniques required to become an effective tour guide. Participants will explore and engage with content in preparation for the delivery of educational as well as entertaining presentations on specific sites used in tour guiding."
+          }
+        ]
       },
       {
         "name": "Translation and Interpreting Centre",
