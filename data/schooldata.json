@@ -27,6 +27,7 @@
           "Lifelong-Learning"
         ],
         "shortName": "Business",
+        "dept_code": "MGDE",
         "contacts": [],
         "programmes": [
           {
@@ -133,6 +134,7 @@
         ],
         "shortName": "IST",
         "contacts": ["mcharles", "rdavid"],
+        "dept_code": "ICTD",
         "programmes": [
           {
             "prog_code": "CERT_WEB",
@@ -277,8 +279,10 @@
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/liberal.png",
         "summary": "From language experts and mathematics professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
+        "coreValues": [],
         "shortName": "Education",
         "contacts": [],
+        "dept_code": "EDUC",
         "programmes": [
           {
             "prog_code": "MATH_AS",
@@ -323,8 +327,10 @@
         "headImage": "/images/schools/departments/criminalJusticeHead.jpg",
         "image": "/images/schools/liberal.png",
         "summary": "From protective service professionals, paralegal professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
+        "coreValues": [],
         "shortName": "Criminal Justice",
         "contacts": [],
+        "dept_code": "CRIM",
         "programmes": [
           {
             "prog_code": "CRIM_BA",
@@ -370,15 +376,17 @@
         "headImage": "public/images/schools/departments/istHead.jpg",
         "image": "/images/schools/liberal.png",
         "summary": "From Social workers, Therapists and Counselling professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
+        "coreValues": [],
         "shortName": "Social and Behavioural Sciences",
         "contacts": [],
+        "dept_code": "SABS",
         "programmes": [
           {
             "prog_code": "SOWK_AAS",
             "prog_name": "AAS Social Work",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
-            "dept_code": "SBSC",
+            "dept_code": "SABS",
             "prog_major_credits": 21,
             "prog_core_credits": 21,
             "prog_elect_credits": 3,
@@ -390,7 +398,7 @@
             "prog_name": "AAS Social Work",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
-            "dept_code": "SBSC",
+            "dept_code": "SABS",
             "prog_major_credits": 21,
             "prog_core_credits": 21,
             "prog_elect_credits": 3,
@@ -402,7 +410,7 @@
             "prog_name": "BSW Social Work ",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
-            "dept_code": "SBSC",
+            "dept_code": "SABS",
             "prog_major_credits": 63,
             "prog_core_credits": 30,
             "prog_elect_credits": 3,
@@ -415,7 +423,7 @@
             "prog_name": "AA - Psychology",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
-            "dept_code": "SBSC",
+            "dept_code": "SABS",
             "prog_major_credits": 27,
             "prog_core_credits": 21,
             "prog_elect_credits": 3,
@@ -445,14 +453,20 @@
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/nursing.png",
         "summary": "From Nurses, nurses aides,  this department is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
-        "shortName": "Nursing"
+        "coreValues": [],
+        "shortName": "Nursing",
+        "dept_code": "NURS",
+        "contacts": []
       },
       {
         "name": "Health and Medical Science Technologies",
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/nursing.png",
         "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
-        "shortName": "HMST"
+        "coreValues": [],
+        "shortName": "HMST",
+        "contacts": [],
+        "dept_code": "HMST"
       }
     ]
   },
@@ -475,14 +489,20 @@
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/liberal.png",
         "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
-        "shortName": "Environmental and Sustainability Studies"
+        "coreValues": [],
+        "shortName": "Environmental and Sustainability Studies",
+        "contacts": [],
+        "dept_code": "ENVS"
       },
       {
         "name": "Natural and Life Sciences",
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/liberal.png",
         "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
-        "shortName": "Natural and Life Sciences"
+        "coreValues": [],
+        "shortName": "Natural and Life Sciences",
+        "contacts": [],
+        "dept_code": "NLSC"
       }
     ]
   },
@@ -505,7 +525,10 @@
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/liberal.png",
         "summary": "The Department of Creative Industries and Culture offers degrees, diplomas and certificates in music, performing arts, film and video production, literature, creative writing, history, heritage and archival studies.",
+        "coreValues": [],
         "shortName": "Arts, Music and Culture",
+        "contacts": [],
+        "dept_code": "CIAC",
         "programmes": [
           {
             "prog_code": "ELIT_AA",
@@ -574,7 +597,10 @@
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/liberal.png",
         "summary": "The Department of Digital Media and Communication offers degrees, diplomas and certificates in mass communication, graphic design, advertising and promotions, Spanish, Latin American Studies, photography, journalism and public relations.",
+        "coreValues": [],
         "shortName": "Digital Media and Communication",
+        "contacts": [],
+        "dept_code": "DMAC",
         "programmes": [
           {
             "prog_code": "MCOM_BA",
@@ -779,21 +805,30 @@
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/liberal.png",
         "summary": "The Upskilling Academy provides a wide variety of educational content services, including certificate and diploma programmes, stand-alone short courses, professional development workshops, and customised training to support client needs and desired outcomes. ",
-        "shortName": "Skills"
+        "coreValues": [],
+        "shortName": "Skills",
+        "contacts": [],
+        "dept_code": "UPSK"
       },
       {
         "name": "CollegeStarTT",
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/liberal.png",
         "summary": "The CollegeStarTT Centre  is COSTAATT’s flagship developmental education programme designed to assist students in obtaining the necessary qualifications to access degree programmes of their choice at COSTAATT. CollegeStarTT provides an alternative pathway to tertiary level education for those students who have the aptitude and the desire to pursue tertiary education but are currently academically under-prepared.",
-        "shortName": "CollegeStarTT"
+        "coreValues": [],
+        "shortName": "CollegeStarTT",
+        "contacts": [],
+        "dept_code": "CSTT"
       },
       {
         "name": "Translation and Interpreting Centre",
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/liberal.png",
         "summary": "As an official agent recognised by the Government of Trinidad and Tobago, the Translating and Interpreting Services (T&I) Centre provides a wide array of translation and interpretation services at local and regional levels. Our clients include corporate entities, government organisations and individuals. Official translation services include English, Dutch, French, German, Portuguese, and Spanish.",
-        "shortName": "Translation"
+        "coreValues": [],
+        "shortName": "Translation",
+        "contacts": [],
+        "dept_code": "CFTI"
       }
     ]
   }

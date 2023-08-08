@@ -17,6 +17,7 @@ import Image from "next/image";
 import ContactSideNav from "../../../../components/PageComponents/ContactSideNav";
 import DeptStyles from "../../../../styles/Department.module.scss";
 import EventCard from "../../../../components/PageComponents/EventsCard";
+import NewsRow from "@/components/PageComponents/NewsRow";
 import NewsCard from "@/components/PageComponents/NewsCard";
 import BusImg from "../../../../../images/Links/home2.png";
 import Link from "next/link";
@@ -28,17 +29,22 @@ import image from "../../../../../images/Programmes/visit-home-v2.jpg";
 import StudentResources from "@/components/PageComponents/StudentResources";
 
 const index = (props) => {
-  const { foundDept } = props;
-  console.log(foundDept);
+  const { foundDept, news } = props;
+  const getDeptContacts = function () {
+    return staffdata.filter((staff) =>
+      foundDept.contacts.find((handle) => handle === staff.handle)
+    );
+  };
   return (
     <>
       <Head>
         <title>{foundDept.shortName}</title>
       </Head>
       <HeadImage imagetext={foundDept.name} mainimage={foundDept.headImage} />
+      {/* Department Overview Section */}
       <section id="overview" className={DeptStyles.sectionOverview}>
         <div className={ProgStyles.umargintopsmall}>
-          <p className={ProgStyles.headingprimary}> Our Mission</p>
+          <p className={ProgStyles.headingprimary}>Our Mission</p>
           <p className={DeptStyles.maintext}>{foundDept.mission}</p>
           {/* <p className={DeptStyles.subheading}> Vision</p> */}
           {txtToPara(foundDept.summary, DeptStyles.subtext)}
@@ -67,6 +73,7 @@ const index = (props) => {
           )}
         </div>
       </section>
+      {/* Dept Contact Section */}
       <section id="contact" className={DeptStyles.sectionContact}>
         <div className={DeptStyles.contactcard}>
           <ContactSideNav
@@ -74,14 +81,15 @@ const index = (props) => {
             btn2txt="Apply"
             btn3txt="Request Info"
             contacttype="Department Contacts"
-            contactArr={staffdata.filter((staff) =>
-              foundDept.contacts.find((handle) => handle === staff.handle)
-            )}
+            contactArr={getDeptContacts()}
           />
         </div>
       </section>
+      {/* Department events Section */}
       <section id="happening" className={DeptStyles.sectionWhatsup}>
-        <p className={ProgStyles.headingprimary}> Department Events</p>
+        <p className={ProgStyles.headingprimary}>
+          {foundDept.shortName} Events
+        </p>
 
         <div className={ProgStyles.threeColGridCon}>
           <div className={ProgStyles.threeColGrid}>
@@ -119,6 +127,16 @@ const index = (props) => {
           </Link>
         </div>
       </section>{" "}
+      {/* Department News Section */}
+      <section id="schoolnews" className={ProgStyles.sectionschoolnews}>
+        <p className={ProgStyles.headingprimary}>{foundDept.shortName} News</p>
+        <NewsRow news={news.slice(0, 3)} />
+        <div className={ProgStyles.goto}>
+          <Link className={ProgStyles.goto} href="#">
+            View More...
+          </Link>
+        </div>
+      </section>
       <section id="featuredwork" className={DeptStyles.sectionFeaturedwork}>
         {/* <p className={ProgStyles.headingprimary}> Featured Work</p>
 
@@ -130,6 +148,7 @@ const index = (props) => {
           <FacultyStaffCard staff={staffdata} />
         </div>
       </section>
+      {/* Department Programmes Section */}
       <section id="programmes" className={DeptStyles.sectionProgrammes}>
         <p className={ProgStyles.headingprimary}> Department Programmes </p>
 
@@ -253,18 +272,17 @@ export async function getStaticProps(context) {
         shortName,
         "nameStump",
         deptName,
-        "deptCode"
+        "dept_code"
       ),
       // retrieve the latest news posts for this department
-      //   news: await getData(
-      //     "data",
-      //     "public/data",
-      //     "newsdata.json",
-      //     shortName,
-      //     "schoolDivision",
-      //     deptName,
-      //     "department"
-      //   ),
+      news: await getData(
+        "public/data",
+        "newsdata.json",
+        shortName,
+        null,
+        deptName,
+        "dept_code"
+      ),
     },
   };
 }
@@ -283,9 +301,16 @@ const getData = async function (
   const finalData =
     key === "nameStump"
       ? data
-          .filter((info) => info[key] === schName)[0]
-          .departments.find((dept) => dept.shortName === deptName)
-      : null; //data.filter((info) => info[key] === schName);
+          .filter(
+            (school) => school[key].toLowerCase() === schName.toLowerCase()
+          )[0]
+          .departments.find(
+            (dept) => dept.dept_code.toLowerCase() === deptName.toLowerCase()
+          )
+      : data.filter(
+          (newsPost) =>
+            newsPost[deptKey].toLowerCase() === deptName.toLowerCase()
+        );
 
   return finalData === undefined ? null : finalData;
 };
