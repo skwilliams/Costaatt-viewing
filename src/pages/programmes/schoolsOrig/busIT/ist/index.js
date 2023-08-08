@@ -16,11 +16,11 @@ import ContactSideNav from "../../../../../components/PageComponents/ContactSide
 import DeptStyles from "../../../../../styles/Department.module.scss";
 import EventCard from "../../../../../components/PageComponents/EventsCard";
 import NewsCard from "@/components/PageComponents/NewsCard";
-import BusImg from "../../../../../../images/Links/home2.png";
+import BusImg from "../../../../../../public/images/schools/departments/ist.png";
 import Link from "next/link";
 import Featured from "@/components/PageComponents/Featured";
 import { features } from "@/components/PageComponents/featuresdata";
-import { staffdata } from "@/pages/programmes/schools/busIT/ist/facultystaffdata";
+import { staffdata } from "@/pages/programmes/schoolsOrig/busIT/ist/facultystaffdata";
 import FacultyStaffCard from "../../../../../components/PageComponents/FacultyStaffDepCard";
 import image from "../../../../../../images/Programmes/visit-home-v2.jpg";
 import StudentResources from "@/components/PageComponents/StudentResources";

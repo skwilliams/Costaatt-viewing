@@ -60,4 +60,10 @@ export const subHeaderSections = {
     "meet the dean": "meetthedean",
     "school events and news": "schoolnews",  
   },
+  apply:{
+    "Apply":"intro",
+    "Online Application" :"onlineapp",
+    "Paper Based Application":"paperapp",
+    "Contact Admission" :"contactadmin"
+  }
 };

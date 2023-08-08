@@ -126,12 +126,12 @@ export const mainNavLinks = [
       {
         img: require("../../../images/Links/dummyImg1.jpg"),
         title: "Academic Calendar",
-        path: "/programmes",
+        path: "/programmes/academiccalendar",
       },
       {
         img: require("../../../images/Links/dummyImg2.jpg"),
         title: "Areas of Study",
-        path: "/programmes",
+        path: "/programmes/areasofstudy",
       },
     ],
   },
@@ -140,7 +140,7 @@ export const mainNavLinks = [
     submenu: [
       {
         title: "Apply Now",
-        path: "/admissions/applynow",
+        path: "/admissions/apply",
       },
       {
         title: "Admission Requirements",
@@ -151,32 +151,29 @@ export const mainNavLinks = [
         path: "/admissions/feesandfunding",
       },
       {
-        title: "Our Campuses",
-        path: "/",
+        title: "Our Programmes",
+        path: "/programmes/allprogrammes",
       },
       {
-        title: "Contact and Admissions Counsellor",
-        path: "/",
+        title: "Professional Development Courses",
+        path: "/admissions/developmentcourses",
       },
       {
-        title: "New Student ",
-        path: "/",
+        title: "Transfer Credit and Exemptions ",
+        path: "/admissions/transfercredit",
       },
-      {
-        title: "Visit us ",
-        path: "/",
-      },
+      
     ],
     submenuImage: [
       {
         img: require("../../../images/Links/dummyImg1.jpg"),
-        title: "Academic Calendar",
-        path: "/programmes",
+        title: "Get Oriented",
+        path: "/admissions/orientation",
       },
       {
         img: require("../../../images/Links/dummyImg2.jpg"),
-        title: "Areas of Study",
-        path: "/programmes",
+        title: "Visit us",
+        path: "/admissions/visitus",
       },
     ],
   },
