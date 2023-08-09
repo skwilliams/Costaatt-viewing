@@ -24,7 +24,9 @@ import Featured from "@/components/PageComponents/Featured";
 import { features } from "@/components/PageComponents/featuresdata";
 import { staffdata } from "./facultystaffdata";
 import FacultyStaffCard from "../../../../components/PageComponents/FacultyStaffDepCard";
-import image from "../../../../../images/Programmes/visit-home-v2.jpg";
+import imagevisitUS from "../../../../../public/images/schools/departments/costaatt wants you images/visitUs.png";
+import imageapplyNow from "../../../../../public/images/schools/departments/costaatt wants you images/applyNow.png";
+import imagecounsellor from "../../../../../public/images/schools/departments/costaatt wants you images/counsellor.png";
 import StudentResources from "@/components/PageComponents/StudentResources";
 
 const index = (props) => {
@@ -209,18 +211,18 @@ const index = (props) => {
         <p className={ProgStyles.headingprimary}> COSTAATT WANTS YOU </p>
         <div className={DeptStyles.threeGridCon}>
           <div className={DeptStyles.threeGridCol}>
-            <StudentResources image={image} imagetxt="Apply Now" />{" "}
+            <StudentResources image={imageapplyNow} imagetxt="" />{" "}
           </div>
           <div className={DeptStyles.threeGridCol}>
             {" "}
             <StudentResources
-              image={image}
-              imagetxt="See Admissions Counsellor"
+              image={imagecounsellor}
+              imagetxt=""
             />
           </div>
           <div className={DeptStyles.threeGridCol}>
             {" "}
-            <StudentResources image={image} imagetxt="Visit Us" />
+            <StudentResources image={imagevisitUS} imagetxt="" />
           </div>
         </div>
       </section>

@@ -21,7 +21,7 @@ const HeadImage = ({ imagetext, mainimage }) => {
 />
             
       
-      <div className={style.pageheadertext}>{imagetext}</div>
+      {/* <div className={style.pageheadertext}>{imagetext}</div> */}
     </div>
   );
 };
