@@ -27,6 +27,7 @@
           "Lifelong-Learning"
         ],
         "shortName": "Business",
+        "dept_code": "MGDE",
         "contacts": [],
         "programmes": [
           {
@@ -133,6 +134,7 @@
         ],
         "shortName": "IST",
         "contacts": ["mcharles", "rdavid"],
+        "dept_code": "ICTD",
         "programmes": [
           {
             "prog_code": "CERT_WEB",
@@ -277,8 +279,10 @@
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/liberal.png",
         "summary": "From language experts and mathematics professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
+        "coreValues": [],
         "shortName": "Education",
         "contacts": [],
+        "dept_code": "EDUC",
         "programmes": [
           {
             "prog_code": "MATH_AS",
@@ -323,8 +327,10 @@
         "headImage": "/images/schools/departments/criminalJusticeHead.jpg",
         "image": "/images/schools/liberal.png",
         "summary": "From protective service professionals, paralegal professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
+        "coreValues": [],
         "shortName": "Criminal Justice",
         "contacts": [],
+        "dept_code": "CRIM",
         "programmes": [
           {
             "prog_code": "CRIM_BA",
@@ -367,18 +373,20 @@
       },
       {
         "name": "Social and Behavioural Sciences",
-        "headImage": "public/images/schools/departments/istHead.jpg",
+        "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/liberal.png",
         "summary": "From Social workers, Therapists and Counselling professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
+        "coreValues": [],
         "shortName": "Social and Behavioural Sciences",
         "contacts": [],
+        "dept_code": "SABS",
         "programmes": [
           {
             "prog_code": "SOWK_AAS",
             "prog_name": "AAS Social Work",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
-            "dept_code": "SBSC",
+            "dept_code": "SABS",
             "prog_major_credits": 21,
             "prog_core_credits": 21,
             "prog_elect_credits": 3,
@@ -390,7 +398,7 @@
             "prog_name": "AAS Social Work",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
-            "dept_code": "SBSC",
+            "dept_code": "SABS",
             "prog_major_credits": 21,
             "prog_core_credits": 21,
             "prog_elect_credits": 3,
@@ -402,7 +410,7 @@
             "prog_name": "BSW Social Work ",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
-            "dept_code": "SBSC",
+            "dept_code": "SABS",
             "prog_major_credits": 63,
             "prog_core_credits": 30,
             "prog_elect_credits": 3,
@@ -415,7 +423,7 @@
             "prog_name": "AA - Psychology",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
-            "dept_code": "SBSC",
+            "dept_code": "SABS",
             "prog_major_credits": 27,
             "prog_core_credits": 21,
             "prog_elect_credits": 3,
@@ -445,82 +453,10 @@
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/nursing.png",
         "summary": "From Nurses, nurses aides,  this department is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
+        "coreValues": [],
         "shortName": "Nursing",
-        "contacts": [],
-        "programmes": [
-          {
-            "prog_code": "BGNU_AAS",
-            "prog_name": "AAS General Nursing",
-            "prog_level": "Associate",
-            "prog_del_mode": "Blended",
-            "dept_code": "NURS",
-            "prog_major_credits": 54,
-            "prog_core_credits": 15,
-            "prog_elect_credits": 0,
-            "prog_supp_credits": 16,
-            "prog_description": "The Associate in Applied Science degree programme in General Nursing is appropriate for persons who wish to enter the nursing profession. This programme has two tracks: general and psychiatric nursing. The main aims of the programme are to prepare nurses with the critical thinking, analytical, evaluation and technology skills and competencies that will equip them to provide quality patient care in any local, regional or international health care setting. It also provides a sound foundation for further studies in nursing or other health science professions."
-          },
-          {
-            "prog_code": "BPNU_AAS",
-            "prog_name": "AAS Psychiatric Nursing",
-            "prog_level": "Associate",
-            "prog_del_mode": "Blended",
-            "dept_code": "NURS",
-            "prog_major_credits": 60,
-            "prog_core_credits": 15,
-            "prog_elect_credits": 0,
-            "prog_supp_credits": 16,
-            "prog_description": "The Associate in Applied Science degree programme in Nursing (Psychiatric) is appropriate for persons who wish to enter the nursing profession. This programme has two tracks: general and psychiatric nursing. The main aims of the programme are to prepare nurses with the critical thinking, analytical, evaluation and technology skills and competencies that will equip them to provide quality patient care in any local, regional or international health care setting. It also provides a sound foundation for further studies in nursing or other health science professions."
-          },
-          {
-            "prog_code": "MWIF_ADIP",
-            "prog_name": "Advanced Diploma in Midwifery",
-            "prog_level": "Diploma",
-            "prog_del_mode": "Blended",
-            "dept_code": "NURS",
-            "prog_major_credits": 39,
-            "prog_core_credits": 0,
-            "prog_elect_credits": 0,
-            "prog_supp_credits": 0,
-            "prog_description": "The Advanced Diploma in Midwifery is suitable for entry by practising nurses who hold the Bachelor of Science degree in Nursing or Associate in Science degree in Nursing or who are Registered Nurses and wish to upgrade their professional status.  This programme is designed to produce midwifery professionals who are equipped to function autonomously, efficiently and effectively in the constantly changing dynamics of the modern health care environment. Through the curriculum, students develop an in-depth understanding of midwifery philosophy, midwifery theory and conceptual frameworks that underpin midwifery practice. They also acquire critical thinking skills and the ability to engage in evidence-based practice, professional reflection and visioning, thereby ensuring their readiness to make a meaningful contribution to midwifery leadership and management in Trinidad and Tobago."
-          },
-          {
-            "prog_code": "DTHV_DIPL",
-            "prog_name": "Diploma in District Health Visiting",
-            "prog_level": "Diploma",
-            "prog_del_mode": "Blended",
-            "dept_code": "NURS",
-            "prog_major_credits": 35,
-            "prog_core_credits": 0,
-            "prog_elect_credits": 0,
-            "prog_supp_credits": 0,
-            "prog_description": "The Post Graduate Diploma in District Health Visiting is intended for the professional nurse, midwife and psychiatric nurse who wish to upgrade his/her professional status and develop a career in community health nursing. The programme recognizes the demand for nurses to be better equipped to function more efficiently and effectively in the constantly changing dynamics of the modern health care environment. The programme will develop competencies for leading and managing activities that aim to promote health and social wellbeing, prevent illness and ameliorate illness through working in partnership with individuals, families, groups and communities."
-          },
-          {
-            "prog_code": "BGNU_BS",
-            "prog_name": "BSc General Nursing ",
-            "prog_level": "Bachelor",
-            "prog_del_mode": "Blended",
-            "dept_code": "NURS",
-            "prog_major_credits": 72,
-            "prog_core_credits": 30,
-            "prog_elect_credits": 0,
-            "prog_supp_credits": 22,
-            "prog_description": "The Bachelor of Science degree in Nursing is suitable for new applicants who want enter the nursing profession as well as for practicing nurses who wish to upgrade their professional status. This programme has two tracks: general and psychiatric nursing. The programme is designed to produce nursing professionals who are equipped to function more efficiently and effectively in the constantly changing dynamics of the modern health care environment. Through the curriculum, students develop an in-depth understanding of nursing philosophy, nursing theory and conceptual frameworks that underpin nursing practice. They also acquire critical thinking skills and the ability to engage in evidence-based practice, professional reflection and visioning, thereby ensuring their readiness to make a meaningful contribution to nursing leadership and management in Trinidad and Tobago."
-          },
-          {
-            "prog_code": "BPNU_BS",
-            "prog_name": "BSc Psychiatric Nursing",
-            "prog_level": "Bachelor",
-            "prog_del_mode": "Blended",
-            "dept_code": "NURS",
-            "prog_major_credits": 75,
-            "prog_core_credits": 30,
-            "prog_elect_credits": 0,
-            "prog_supp_credits": 22,
-            "prog_description": "The Bachelor of Science degree in Nursing is suitable for new applicants who want enter the nursing profession as well as for practicing nurses who wish to upgrade their professional status. This programme has two tracks: general and psychiatric nursing. The programme is designed to produce nursing professionals who are equipped to function more efficiently and effectively in the constantly changing dynamics of the modern health care environment. Through the curriculum, students develop an in-depth understanding of nursing philosophy, nursing theory and conceptual frameworks that underpin nursing practice. They also acquire critical thinking skills and the ability to engage in evidence-based practice, professional reflection and visioning, thereby ensuring their readiness to make a meaningful contribution to nursing leadership and management in Trinidad and Tobago."
-          }
-        ]
+        "dept_code": "NURS",
+        "contacts": []
       },
       {
         "name": "Health and Medical Science Technologies",
@@ -529,81 +465,7 @@
         "summary": "Health and Medical Science Technologies...",
         "shortName": "HMST",
         "contacts": [],
-        "programmes": [
-          {
-            "prog_code": "MDLT_BS",
-            "prog_name": "BSc Medical Laboratory Technology",
-            "prog_level": "Bachelor",
-            "prog_del_mode": "Blended",
-            "dept_code": "HMST",
-            "prog_major_credits": 80,
-            "prog_core_credits": 21,
-            "prog_elect_credits": 3,
-            "prog_supp_credits": 24,
-            "prog_description": "Medical laboratory technology is an important sub-discipline within the allied health sciences. The medical laboratory technologist is an important member of the healthcare team and plays a critical support role in the provision of quality diagnostic laboratory work. Students in the programme acquire knowledge and practical skills in microbiology, haematology, immunohaematology, clinical chemistry, immunology, histology, health policy, molecular biology, applied research and clinical appraisal. The curriculum is organized around a sound foundation in the natural and social sciences and develops the cognitive and psychomotor skills needed for clinical pathological testing.  Instructional activities are designed to allow students to demonstrate growth, empathy, competence and confidence; to apply scientific principles, and to develop problem-solving skills which will enable them to easily adjust to changes and function effectively as an allied health professional and a member of society."
-          },
-          {
-            "prog_code": "MDLT_AAS",
-            "prog_name": "AAS Medical Laboratory Technology",
-            "prog_level": "Associate",
-            "prog_del_mode": "Blended",
-            "dept_code": "HMST",
-            "prog_major_credits": 40,
-            "prog_core_credits": 12,
-            "prog_elect_credits": 0,
-            "prog_supp_credits": 21,
-            "prog_description": "The Associate in Applied Science degree in Medical Laboratory Technology prepares students to become healthcare professionals. Graduates work in all areas of the clinical laboratory, including blood banking, clinical biochemistry, hematology, immunology, histology and microbiology. They perform a full range of laboratory tests – from simple prenatal blood tests, to more complex tests to uncover diseases such as HIV/AIDS, diabetes, and cancer; thus, supporting diagnostic prognoses that are critical in the area of healthcare. Often, the medical laboratory technician is responsible for interpreting and communicating critical patient results to the physician. This programme is currently the required qualification for entry for into the profession."
-          },
-          {
-            "prog_code": "RADG_BS",
-            "prog_name": "BSc Radiography",
-            "prog_level": "Bachelor",
-            "prog_del_mode": "Blended",
-            "dept_code": "HMST",
-            "prog_major_credits": 95,
-            "prog_core_credits": 21,
-            "prog_elect_credits": 0,
-            "prog_supp_credits": 25,
-            "prog_description": "The Bachelor of Science degree in Radiography is designed to prepare students to operate x-ray equipment, position patients for x-ray procedures, practice radiation safety, produce x-ray images of human anatomy and deliver quality patient care through a combination of classroom, laboratory and clinical education. Through an integrated curriculum, students learn to analyze, reason, work independently or collaboratively, take appropriate actions in accordance with practice standards and evaluate the care delivered to patients through reflection, critical thinking and research. Students enrolled in this programme are expected to exhibit exceptional professional conduct and communicate effectively. Graduates of this programme are in high demand and qualify for entry level positions as radiographers at public and private hospitals and imaging centers. They are also well-prepared to pursue advanced certification in medical imaging specialties such as diagnostic medical ultrasound, nuclear medicine and magnetic resonance imaging to name a few. The curriculum is bench-marked against international standards in radiography education and graduates of the programme are eligible to apply through the Board of Radiographers of Trinidad and Tobago, to the Council for the Professions Related to Medicine for registration to practice in Trinidad and Tobago."
-          },
-          {
-            "prog_code": "CERT_PHAR",
-            "prog_name": "Certificate in Pharmacy Assisting ",
-            "prog_level": "Certificate",
-            "prog_del_mode": "Blended",
-            "dept_code": "HMST",
-            "prog_major_credits": 18,
-            "prog_core_credits": 9,
-            "prog_elect_credits": 0,
-            "prog_supp_credits": 0,
-            "prog_description": "Our Certificate in Pharmacy Assisting prepares students to work as pharmacy assistants under the supervision of registered pharmacists. At the end of this programme, students will (1) fill prescriptions (under supervision) and manage inventory; (2) develop techniques in compounding for a variety of formulations; (3) adhere to best practices in pharmacy quality assurance and regulatory requirements; (4) maintain and operate a pharmacy, ensure safety are carefully observed; (5) conduct themselves professionally."
-          },
-          {
-            "prog_code": "CERT_PHLE",
-            "prog_name": "Certificate in Phlebotomy",
-            "prog_level": "Certificate",
-            "prog_del_mode": "Blended",
-            "dept_code": "HMST",
-            "prog_major_credits": 18,
-            "prog_core_credits": 0,
-            "prog_elect_credits": 0,
-            "prog_supp_credits": 0,
-            "prog_description": "This programme prepares students to be part of the healthcare team by training them – through didactic, practical, simulated practicum and clinical practicum sessions to draw small quantities of blood by multiple methods from varied anatomical sites. Through our on-site clinical practicum component, students obtain hands-on, blood-letting experience under the supervision of expert phlebotomists. This clinical practicum component ends after each student has independently performed 100 successful blood collection procedures and deemed competent through rigorous assessments by phlebotomy assessors."
-          },
-          {
-            "prog_code": "CERT_SOMW",
-            "prog_name": "Certificate in Sonography for Midwives",
-            "prog_level": "Certificate",
-            "prog_del_mode": "Blended",
-            "dept_code": "HMST",
-            "prog_major_credits": 18,
-            "prog_core_credits": 0,
-            "prog_elect_credits": 0,
-            "prog_supp_credits": 0,
-            "prog_description": "No description..."
-          }
-        ]
-        
+        "dept_code": "HMST"
       }
     ]
   },
@@ -625,93 +487,21 @@
         "name": "Environmental and Sustainability Studies",
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/liberal.png",
-        "summary": "Environmental and Sustainability Studies...",
+        "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+        "coreValues": [],
         "shortName": "Environmental and Sustainability Studies",
         "contacts": [],
-        "programmes": [
-          {
-            "prog_code": "OSHE_BS",
-            "prog_name": "BSc Occupational Safety and Health",
-            "prog_level": "Bachelor",
-            "prog_del_mode": "Blended",
-            "dept_code": "ENVS",
-            "prog_major_credits": 72,
-            "prog_core_credits": 30,
-            "prog_elect_credits": 9,
-            "prog_supp_credits": 10,
-            "prog_description": "Students are also exposed to, among other things, IV access, point-of-care testing (theory and practical), and standard protocols to collect, handle and transport other human specimen."
-          },
-          {
-            "prog_code": "ENVH_BS",
-            "prog_name": "BSc Environmental Health",
-            "prog_level": "Bachelor",
-            "prog_del_mode": "Blended",
-            "dept_code": "ENVS",
-            "prog_major_credits": 64,
-            "prog_core_credits": 30,
-            "prog_elect_credits": 0,
-            "prog_supp_credits": 22,
-            "prog_description": "This programme is designed to equip students with the knowledge and skills to identify and control environmental hazards that adversely affect the health of communities. Graduates of this programme are equipped to be part of the global initiative to protect the human population from threats to our health and well-being in our living, working or recreational environments."
-          },
-          {
-            "prog_code": "OSHE_AAS",
-            "prog_name": "AAS Occupational Safety and Health",
-            "prog_level": "Associate",
-            "prog_del_mode": "Blended",
-            "dept_code": "ENVS",
-            "prog_major_credits": 39,
-            "prog_core_credits": 15,
-            "prog_elect_credits": 3,
-            "prog_supp_credits": 10,
-            "prog_description": "This programme is designed to meet the local needs in occupational safety and health and to keep abreast the changing industrial environment. Students will learn the various methods used in the identification of potential hazards and other major issues associated with challenges in the workplace and develop the necessary skills for the necessary corrective/preventive measures."
-          },
-          {
-            "prog_code": "ENVH_AAS",
-            "prog_name": "AAS Environmental Health",
-            "prog_level": "Associate",
-            "prog_del_mode": "Blended",
-            "dept_code": "ENVS",
-            "prog_major_credits": 42,
-            "prog_core_credits": 15,
-            "prog_elect_credits": 3,
-            "prog_supp_credits": 7,
-            "prog_description": "This programme is designed to equip students with the knowledge and skills to identify and find solutions for environmental problems that adversely affect the health of communities.  Students learn about the operations of efficient health management systems and are kept up to date on scientific advances in the field. In addition, they are made aware of current regional developments in the management of environmental health systems."
-          },
-          {
-            "prog_code": "CERT_EMGC",
-            "prog_name": "Certificate in Emergency Care",
-            "prog_level": "Certificate",
-            "prog_del_mode": "Blended",
-            "dept_code": "ENVS",
-            "prog_major_credits": 12,
-            "prog_core_credits": 6,
-            "prog_elect_credits": 0,
-            "prog_supp_credits": 4,
-            "prog_description": "The aim of this programme is to increase the scope and effectiveness of emergency care management and transportation of the ill and injured. The programme is designed to equip the participants with the skills to enable them to quickly assess any emergency situation for potential danger, appropriate access, triage and safe transportation, and to arouse a greater awareness of the important priorities on which the survival of a patient may depend. The focus of the programme is to instruct paramedic personnel in the techniques of immediate care of the ill/injured in such emergencies as: fractured limbs, head injuries, cardiac arrest, haemorrhage, near drowning, emergency childbirth and mental disturbances among other medical emergency situations."
-          }
-        ]
+        "dept_code": "ENVS"
       },
       {
         "name": "Natural and Life Sciences",
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/liberal.png",
-        "summary": "The Department of Natural and Life Sciences...",
+        "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+        "coreValues": [],
         "shortName": "Natural and Life Sciences",
         "contacts": [],
-        "programmes": [
-          {
-            "prog_code": "BIOL_AS",
-            "prog_name": "AS Biology",
-            "prog_level": "Associate",
-            "prog_del_mode": "Blended",
-            "dept_code": "NLSC",
-            "prog_major_credits": 33,
-            "prog_core_credits": 21,
-            "prog_elect_credits": 0,
-            "prog_supp_credits": 8,
-            "prog_description": "The Associate in Science degree in Biology is designed to provide students with a solid foundation in the fundamental principles of biology.  It aims to foster greater understanding of the need to conserve and protect natural biodiversity, with special emphasis on local and regional ecosystems.  As students on this course increase their understanding of life processes, they will develop an appreciation of the importance of responsible lifestyle choices in areas related to nutrition, exercise and safe sexual practices."
-          }
-        ]
+        "dept_code": "NLSC"
       }
     ]
   },
@@ -734,7 +524,10 @@
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/liberal.png",
         "summary": "The Department of Creative Industries and Culture offers degrees, diplomas and certificates in music, performing arts, film and video production, literature, creative writing, history, heritage and archival studies.",
+        "coreValues": [],
         "shortName": "Arts, Music and Culture",
+        "contacts": [],
+        "dept_code": "CIAC",
         "programmes": [
           {
             "prog_code": "ELIT_AA",
@@ -803,7 +596,10 @@
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/liberal.png",
         "summary": "The Department of Digital Media and Communication offers degrees, diplomas and certificates in mass communication, graphic design, advertising and promotions, Spanish, Latin American Studies, photography, journalism and public relations.",
+        "coreValues": [],
         "shortName": "Digital Media and Communication",
+        "contacts": [],
+        "dept_code": "DMAC",
         "programmes": [
           {
             "prog_code": "MCOM_BA",
@@ -1008,88 +804,17 @@
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/liberal.png",
         "summary": "The Upskilling Academy provides a wide variety of educational content services, including certificate and diploma programmes, stand-alone short courses, professional development workshops, and customised training to support client needs and desired outcomes. ",
+        "coreValues": [],
         "shortName": "Skills",
         "contacts": [],
-        "programmes": [
-          {
-            "prog_code": "CERT_TGUI",
-            "prog_name": "Certificate in Tour Guiding",
-            "prog_level": "Certificate",
-            "prog_del_mode": "Face_to_Face",
-            "dept_code": "UPSK",
-            "prog_major_credits": 4,
-            "prog_core_credits": 0,
-            "prog_elect_credits": 0,
-            "prog_supp_credits": 0,
-            "prog_description": "In this course participants will be exposed to the knowledge and techniques required to become an effective tour guide. Participants will explore and engage with content in preparation for the delivery of educational as well as entertaining presentations on specific sites used in tour guiding."
-          },
-          {
-            "prog_code": "CERT_COTR",
-            "prog_name": "Certificate in Court Transcription ",
-            "prog_level": "Certificate",
-            "prog_del_mode": "Blended",
-            "dept_code": "UPSK",
-            "prog_major_credits": 25,
-            "prog_core_credits": 0,
-            "prog_elect_credits": 0,
-            "prog_supp_credits": 0,
-            "prog_description": "In this programme, participants are trained to produce accurate typewritten records of court proceedings including reproductions of statements, findings and verdicts.  The specialist software ‘Audio Digital Court Recording,’ is used to develop necessary skills and competencies.  Applicants should have excellent listening skills, powers of concentration and above average vocabulary and punctuation skills. To ensure that they have the required foundation competencies to succeed in this rigorous certificate programme, students may be guided to do preparatory work prior to registering for required courses.  This will be address through the academic advisement process and may include remedial writing courses through the COMPASS department. In addition, applicants should possess superb computer skills.  Participants will develop the requisite speed for a court transcriptionist to function in the workplace i.e. a minimum of 60 to 80 words per minute."
-          },
-          {
-            "prog_code": "PORT_ADIP",
-            "prog_name": "Advanced Diploma in Vector Control",
-            "prog_level": "Diploma",
-            "prog_del_mode": "Blended",
-            "dept_code": "UPSK",
-            "prog_major_credits": 33,
-            "prog_core_credits": 0,
-            "prog_elect_credits": 0,
-            "prog_supp_credits": 0,
-            "prog_description": "The Advanced Diploma in Vector Control programme is aimed at equipping practicing public health inspectors with the knowledge and skills required to assume a role in monitoring, studying, investigating and seeking to address the health hazards in terms of vector borne diseases in communities and the region as a whole.   The programme exposes participants to the various types of vectors as well as the key components of planning and implementing a vector control plan for any community within which they operate."
-          },
-          {
-            "prog_code": "PORT_ADIP",
-            "prog_name": "Advanced Diploma in Port Health",
-            "prog_level": "Diploma",
-            "prog_del_mode": "Blended",
-            "dept_code": "UPSK",
-            "prog_major_credits": 28,
-            "prog_core_credits": 0,
-            "prog_elect_credits": 0,
-            "prog_supp_credits": 0,
-            "prog_description": "This programme is aimed at training to support the role of the Public Health Inspector in evaluating activities in and around air and sea ports. This includes but is not limited to; monitoring, investigating and addressing current and potential health hazards relating to food borne diseases, vector control and human contamination which are critical to controlling of spread of diseases and prevention of epidemics emanating from foreign countries."
-          },
-          {
-            "prog_code": "FDIN_ADIP",
-            "prog_name": "Advanced Diploma in Food Inspection",
-            "prog_level": "Diploma",
-            "prog_del_mode": "Blended",
-            "dept_code": "UPSK",
-            "prog_major_credits": 28,
-            "prog_core_credits": 0,
-            "prog_elect_credits": 0,
-            "prog_supp_credits": 0,
-            "prog_description": "This programme is aimed at training to support the role of the Public Health Inspector as it relates to food inspections. This includes, but is not limited to; monitoring practices of food producers; granting of licenses to operate with food; education of food public safety, enforcing Public Health legislation; investigating and addressing current and potential hazards of food borne diseases throughout the food industry."
-          },
-          {
-            "prog_code": "CERT_COTR",
-            "prog_name": "AAS CAT Reporting",
-            "prog_level": "Associate",
-            "prog_del_mode": "Blended",
-            "dept_code": "UPSK",
-            "prog_major_credits": 61,
-            "prog_core_credits": 0,
-            "prog_elect_credits": 0,
-            "prog_supp_credits": 0,
-            "prog_description": "This Associate in Applied Science Degree in CAT Reporting prepares the student to be a real-time verbatim reporter. The programme design allows for immersion into skill building from onset. Participants are required to develop excellent listening skills, powers of concentration and above average vocabulary and punctuation skills. Participants are also required to become proficient in the use of the machine and software for the production of play-back notes, or accurate transcripts. The programme is delivered using the StenEd. Stenotype machine and Eclipse software. This is similar to that used in the workplace. In addition, participants will develop the requisite speed to function in the workplace i.e. a minimum of 180 to 200 to 225 words per minute. The programme is built around the use of StenEd. technology and aims to provide a thorough knowledge and understanding of court procedures, strengthen language and writing skills of participants, develop powers of listening and concentration, promote accuracy and speed in essential job related competencies inclusive of transcribing verbatim, software manipulation and producing accurate transcripts, provide the skills, competencies and attitudes required to become a successful verbatim reporter."
-          }
-        ]
+        "dept_code": "UPSK"
       },
       {
         "name": "CollegeStarTT",
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/liberal.png",
         "summary": "The CollegeStarTT Centre  is COSTAATT’s flagship developmental education programme designed to assist students in obtaining the necessary qualifications to access degree programmes of their choice at COSTAATT. CollegeStarTT provides an alternative pathway to tertiary level education for those students who have the aptitude and the desire to pursue tertiary education but are currently academically under-prepared.",
+        "coreValues": [],
         "shortName": "CollegeStarTT",
         "contacts": [],
         "programmes": [
@@ -1112,7 +837,10 @@
         "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/liberal.png",
         "summary": "As an official agent recognised by the Government of Trinidad and Tobago, the Translating and Interpreting Services (T&I) Centre provides a wide array of translation and interpretation services at local and regional levels. Our clients include corporate entities, government organisations and individuals. Official translation services include English, Dutch, French, German, Portuguese, and Spanish.",
-        "shortName": "Translation"
+        "coreValues": [],
+        "shortName": "Translation",
+        "contacts": [],
+        "dept_code": "CFTI"
       }
     ]
   }
