@@ -1094,16 +1094,16 @@
         "contacts": [],
         "programmes": [
           {
-            "prog_code": "CERT_TGUI",
-            "prog_name": "Certificate in Tour Guiding",
-            "prog_level": "Certificate",
-            "prog_del_mode": "Face_to_Face",
-            "dept_code": "UPSK",
+            "prog_code": "",
+            "prog_name": "",
+            "prog_level": "",
+            "prog_del_mode": "",
+            "dept_code": "",
             "prog_major_credits": 4,
             "prog_core_credits": 0,
             "prog_elect_credits": 0,
             "prog_supp_credits": 0,
-            "prog_description": "In this course participants will be exposed to the knowledge and techniques required to become an effective tour guide. Participants will explore and engage with content in preparation for the delivery of educational as well as entertaining presentations on specific sites used in tour guiding."
+            "prog_description": ""
           }
         ]
       },
