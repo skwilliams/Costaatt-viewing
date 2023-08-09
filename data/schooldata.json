@@ -373,7 +373,7 @@
       },
       {
         "name": "Social and Behavioural Sciences",
-        "headImage": "public/images/schools/departments/istHead.jpg",
+        "headImage": "/images/schools/departments/istHead.jpg",
         "image": "/images/schools/liberal.png",
         "summary": "From Social workers, Therapists and Counselling professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
         "coreValues": [],

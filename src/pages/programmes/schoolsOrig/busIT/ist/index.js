@@ -14,7 +14,7 @@ import Image from "next/image";
 
 import ContactSideNav from "../../../../../components/PageComponents/ContactSideNav";
 import DeptStyles from "../../../../../styles/Department.module.scss";
-import EventCard from "../../../../../components/PageComponents/EventsCard";
+import EventCard from "../../../../../components/PageComponents/EventCard";
 import NewsCard from "@/components/PageComponents/NewsCard";
 import BusImg from "../../../../../../images/Links/home2.png";
 import Link from "next/link";

@@ -1,28 +1,22 @@
-import { txtToPara, getCoreValues } from "../../utilities";
+import { txtToPara, getCoreValues, getProgrammes } from "../../utilities";
 import Head from "next/head";
 import HeadImage from "../../../../components/PageComponents/HeadImage";
-import Layout from "../../../../components/PageWithSideNavComponents/Layout";
 import ProgStyles from "../../../../styles/Programmes.module.scss";
 import { Accordion } from "@mui/material";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { useRouter } from "next/router";
 import path from "path";
 import fs from "fs/promises";
-
-import Image from "next/image";
-
 import ContactSideNav from "../../../../components/PageComponents/ContactSideNav";
 import DeptStyles from "../../../../styles/Department.module.scss";
-import EventCard from "../../../../components/PageComponents/EventsCard";
 import NewsRow from "@/components/PageComponents/NewsRow";
-import NewsCard from "@/components/PageComponents/NewsCard";
-import BusImg from "../../../../../images/Links/home2.png";
+import EventsRow from "@/components/PageComponents/EventsRow";
 import Link from "next/link";
 import Featured from "@/components/PageComponents/Featured";
 import { features } from "@/components/PageComponents/featuresdata";
+import { getEventsByDept } from "../../../../../public/data/eventsdata";
 import { staffdata } from "./facultystaffdata";
 import FacultyStaffCard from "../../../../components/PageComponents/FacultyStaffDepCard";
 import image from "../../../../../images/Programmes/visit-home-v2.jpg";
@@ -30,11 +24,13 @@ import StudentResources from "@/components/PageComponents/StudentResources";
 
 const index = (props) => {
   const { foundDept, news } = props;
+  const deptProgrammes = getProgrammes("department", foundDept);
   const getDeptContacts = function () {
     return staffdata.filter((staff) =>
       foundDept.contacts.find((handle) => handle === staff.handle)
     );
   };
+
   return (
     <>
       <Head>
@@ -48,7 +44,7 @@ const index = (props) => {
           <p className={DeptStyles.maintext}>{foundDept.mission}</p>
           {/* <p className={DeptStyles.subheading}> Vision</p> */}
           {txtToPara(foundDept.summary, DeptStyles.subtext)}
-
+          {/* Department's Core Values */}
           {foundDept.coreValues.length > 0 ? (
             <Accordion className={DeptStyles.accordion}>
               <AccordionSummary expandIcon={<ExpandMoreIcon />}>
@@ -73,6 +69,51 @@ const index = (props) => {
           )}
         </div>
       </section>
+      {/* Department Programmes Section */}
+      <section id="programmes" className={DeptStyles.sectionProgrammes}>
+        <p className={ProgStyles.headingprimary}>
+          {" "}
+          {foundDept.shortName} Programmes
+        </p>
+        <div className={ProgStyles.threeGridRowCon}>
+          {/* Show accordion for only the type/level of programmes available in this department.  return empty fragment otherwise*/}
+          {Object.entries(deptProgrammes).map((level) => {
+            return (
+              <>
+                {level[1].length > 0 ? (
+                  <>
+                    <div className={ProgStyles.threeGridRow} key={level[0]}>
+                      <Accordion className={DeptStyles.courseaccordion}>
+                        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                          <Typography className={ProgStyles.acoordiantext}>
+                            {level[0]}
+                          </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                          <ul className={ProgStyles.degcourses}>
+                            {level[1].map((levelProgs) => {
+                              return (
+                                <li
+                                  key={levelProgs.prog_code}
+                                  className={ProgStyles.degcoursesli}
+                                >
+                                  <Link href=""> {levelProgs.prog_name} </Link>
+                                </li>
+                              );
+                            })}
+                          </ul>
+                        </AccordionDetails>
+                      </Accordion>
+                    </div>
+                  </>
+                ) : (
+                  <></>
+                )}
+              </>
+            );
+          })}
+        </div>
+      </section>
       {/* Dept Contact Section */}
       <section id="contact" className={DeptStyles.sectionContact}>
         <div className={DeptStyles.contactcard}>
@@ -87,39 +128,9 @@ const index = (props) => {
       </section>
       {/* Department events Section */}
       <section id="happening" className={DeptStyles.sectionWhatsup}>
-        <p className={ProgStyles.headingprimary}>
-          {foundDept.shortName} Events
-        </p>
+        <p className={ProgStyles.headingprimary}>Upcoming Events</p>
 
-        <div className={ProgStyles.threeColGridCon}>
-          <div className={ProgStyles.threeColGrid}>
-            <NewsCard
-              mainimage={BusImg}
-              title="Graduation"
-              text="Get ready Graduates !!, submit your documents to ensure you walk across the stage, along with a team behind the Cosmic Evolution Early Release Science (CEERS) Survey, have used new observations from the James Webb Space Telescope to confirm the existence of the most distant active supermassive black hole ever found"
-              link="https:www.google.com"
-              schoolcolor="rgb(187,41,187)"
-            />
-          </div>
-          <div className={ProgStyles.threeColGrid}>
-            <NewsCard
-              mainimage={BusImg}
-              title="New Faculty "
-              text="Business & Digital Technologies, welcome Mr.Jim James to the faculty of Business in the School of Physics and Astronomy, along with a team behind the Cosmic Evolution Early Release Science (CEERS) Survey, have used new observations from the James Webb Space Telescope to confirm the existence of the most distant active supermassive black hole ever found"
-              link="https:www.google.com"
-              schoolcolor="rgb(187,41,187)"
-            />
-          </div>
-          <div className={ProgStyles.threeColGrid}>
-            <NewsCard
-              mainimage={BusImg}
-              title="Advisement"
-              text="associate professor in the School of Physics and Astronomy, along with a team behind the Cosmic Evolution Early Release Science (CEERS) Survey, have used new observations from the James Webb Space Telescope to confirm the existence of the most distant active supermassive black hole ever found"
-              link="https:www.google.com"
-              schoolcolor="rgb(187,41,187)"
-            />
-          </div>
-        </div>
+        <EventsRow events={getEventsByDept(foundDept.dept_code)} />
         <div className={ProgStyles.goto}>
           <Link className={ProgStyles.goto} href="#">
             {" "}
@@ -129,7 +140,7 @@ const index = (props) => {
       </section>{" "}
       {/* Department News Section */}
       <section id="schoolnews" className={ProgStyles.sectionschoolnews}>
-        <p className={ProgStyles.headingprimary}>{foundDept.shortName} News</p>
+        <p className={ProgStyles.headingprimary}>Latest News</p>
         <NewsRow news={news.slice(0, 3)} />
         <div className={ProgStyles.goto}>
           <Link className={ProgStyles.goto} href="#">
@@ -142,88 +153,14 @@ const index = (props) => {
 
         <Featured feat={features} /> */}
       </section>
+      {/* Department Faculty and Staff Section */}
       <section id="facultystaff" className={DeptStyles.sectionFaculty}>
-        <p className={ProgStyles.headingprimary}> Faculty and Staff</p>
+        <p className={ProgStyles.headingprimary}>Our Faculty and Staff</p>
         <div className={DeptStyles.fourGridCon}>
-          <FacultyStaffCard staff={staffdata} />
+          <FacultyStaffCard staff={staffdata} dept={foundDept.dept_code} />
         </div>
       </section>
-      {/* Department Programmes Section */}
-      <section id="programmes" className={DeptStyles.sectionProgrammes}>
-        <p className={ProgStyles.headingprimary}> Department Programmes </p>
-
-        <div className={ProgStyles.threeGridRowCon}>
-          <div className={ProgStyles.threeGridRow}>
-            <Accordion className={DeptStyles.courseaccordion}>
-              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                <Typography className={ProgStyles.acoordiantext}>
-                  Bachelor Degrees
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <ul className={ProgStyles.degcourses}>
-                  <li className={ProgStyles.degcoursesli}>
-                    <Link href=""> Information Technology </Link>
-                  </li>
-                  <li className={ProgStyles.degcoursesli}>
-                    <Link href="">Networking</Link>
-                  </li>
-                  <li className={ProgStyles.degcoursesli}>
-                    <Link href=""> Web Development</Link>
-                  </li>
-                  <li className={ProgStyles.degcoursesli}>
-                    <Link href="">Library and Information Science</Link>
-                  </li>
-                </ul>
-              </AccordionDetails>
-            </Accordion>
-          </div>
-          <div className={ProgStyles.threeGridRow}>
-            <Accordion className={DeptStyles.courseaccordion}>
-              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                <Typography className={ProgStyles.acoordiantext}>
-                  Associate Degrees
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails className={ProgStyles.bachelors}>
-                <ul className={ProgStyles.degcourses}>
-                  <li className={ProgStyles.degcoursesli}>
-                    <Link href="">Information Technology</Link>{" "}
-                  </li>
-                  <li className={ProgStyles.degcoursesli}>
-                    <Link href="">Web Development</Link>
-                  </li>
-                  <li className={ProgStyles.degcoursesli}>
-                    <Link href="">Library and Information Studies</Link>
-                  </li>
-                </ul>
-              </AccordionDetails>
-            </Accordion>
-          </div>
-          <div className={ProgStyles.threeGridRow}>
-            <Accordion className={DeptStyles.courseaccordion}>
-              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                <Typography className={ProgStyles.acoordiantext}>
-                  Certificates
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails className={ProgStyles.bachelors}>
-                <ul className={ProgStyles.degcourses}>
-                  <li className={ProgStyles.degcoursesli}>
-                    <Link href=""> Records Management</Link>
-                  </li>
-                  <li className={ProgStyles.degcoursesli}>
-                    <Link href=""> CISCO-CCNA</Link>{" "}
-                  </li>
-                  <li className={ProgStyles.degcoursesli}>
-                    <Link href=""> Web Development</Link>
-                  </li>
-                </ul>
-              </AccordionDetails>
-            </Accordion>
-          </div>
-        </div>
-      </section>
+      {/* Shoutout Section- COSTAATT wants YOU!!! */}
       <section id="sturesource" className={DeptStyles.sectionStuResources}>
         <p className={ProgStyles.headingprimary}> COSTAATT WANTS YOU </p>
         <div className={DeptStyles.threeGridCon}>
@@ -246,9 +183,6 @@ const index = (props) => {
     </>
   );
 };
-// index.getLayout = function getLayout(page) {
-//     return <Layout>{page}</Layout>
-//   }
 
 export default index;
 
@@ -259,58 +193,36 @@ export async function getStaticPaths() {
   };
 }
 export async function getStaticProps(context) {
-  //   const router = useRouter();
   const { params } = context;
   const { shortName, deptName } = params;
-  console.log(deptName);
   return {
     props: {
       // retrieve the entire department object
-      foundDept: await getData(
-        "data",
-        "schooldata.json",
-        shortName,
-        "nameStump",
-        deptName,
-        "dept_code"
-      ),
+      foundDept: await getDeptData(shortName, "nameStump", deptName),
       // retrieve the latest news posts for this department
-      news: await getData(
-        "public/data",
-        "newsdata.json",
-        shortName,
-        null,
-        deptName,
-        "dept_code"
-      ),
+      news: await getDeptNewsData(deptName, "dept_code"),
     },
   };
 }
 
-const getData = async function (
-  pathName,
-  fileName,
-  schName,
-  key,
-  deptName,
-  deptKey
-) {
-  const filepath = path.join(process.cwd(), pathName, fileName);
+const getDeptNewsData = async function (deptName, deptKey) {
+  const filepath = path.join(process.cwd(), "public/data", "newsdata.json");
   const jsonData = await fs.readFile(filepath);
   const data = JSON.parse(jsonData);
-  const finalData =
-    key === "nameStump"
-      ? data
-          .filter(
-            (school) => school[key].toLowerCase() === schName.toLowerCase()
-          )[0]
-          .departments.find(
-            (dept) => dept.dept_code.toLowerCase() === deptName.toLowerCase()
-          )
-      : data.filter(
-          (newsPost) =>
-            newsPost[deptKey].toLowerCase() === deptName.toLowerCase()
-        );
+  const finalData = data.filter(
+    (newsPost) => newsPost[deptKey].toLowerCase() === deptName.toLowerCase()
+  );
+  return finalData === undefined ? null : finalData;
+};
 
+const getDeptData = async function (schName, key, deptName) {
+  const filepath = path.join(process.cwd(), "data", "schooldata.json");
+  const jsonData = await fs.readFile(filepath);
+  const data = JSON.parse(jsonData);
+  const finalData = data
+    .filter((school) => school[key].toLowerCase() === schName.toLowerCase())[0]
+    .departments.find(
+      (dept) => dept.dept_code.toLowerCase() === deptName.toLowerCase()
+    );
   return finalData === undefined ? null : finalData;
 };
