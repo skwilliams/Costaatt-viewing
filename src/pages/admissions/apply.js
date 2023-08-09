@@ -37,7 +37,7 @@ const apply = () => {
     <>
       <section id="intro" className={admissionStyles.sectionIntro}>
         <p className={ProgStyles.headingprimary}> Apply Now</p>
-        <p>
+        <p className={admissionStyles.text}>
           Prospective students have the option of applying online immediately,
           or completing a paper based application which can then be mailied or
           delivered to any of our campuses{" "}
