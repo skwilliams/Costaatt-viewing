@@ -4,22 +4,27 @@ export function txtToPara(data, style) {
   });
 }
 
-export function getSchProgrammes(school) {
-  const schProgrammes = {
+export function getProgrammes(level, data) {
+  const _programmes = {
     Bachelor: [],
     Associate: [],
     Certificate: [],
     Diploma: [],
   };
 
-  school.departments.forEach((dept) => {
-    const { programmes } = dept;
-    programmes &&
-      programmes.forEach((prog) => {
-        schProgrammes[prog.prog_level].push(prog);
+  level === "school"
+    ? data.departments.forEach((dept) => {
+        const { programmes } = dept;
+        programmes &&
+          programmes.forEach((prog) => {
+            _programmes[prog.prog_level].push(prog);
+          });
+      })
+    : data.programmes &&
+      data.programmes.forEach((prog) => {
+        _programmes[prog.prog_level].push(prog);
       });
-  });
-  return schProgrammes;
+  return _programmes;
 }
 
 export function getCoreValues(key) {
