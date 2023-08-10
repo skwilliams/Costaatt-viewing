@@ -1,43 +1,43 @@
 export const topNavLinksLeft = [
-  {
-    title: "Schools",
-    submenu: [
-      {
-        title: "The School Of Liberal Arts, Education And Digital Humanities",
-        submenu: [
-          {
-            title: "Department One",
-          },
-        ],
-      },
-      {
-        title:
-          "The Ken Gordon School of Communication Creative and Digital Media",
-        submenu: [
-          {
-            title: "Department One",
-          },
-        ],
-      },
-      {
-        title: "School of Workforce Enhancement and Development",
-        path: "programmes",
-      },
-      {
-        title: "School of Nursing, Health and Medical Technologies",
-        path: "programmes",
-      },
-      {
-        title: "School of Environment, Circular Economy and Sustainability",
-        path: "programmes",
-      },
-      {
-        title: "School of Business and Digital Technologies",
-        path: "programmes",
-      },
-    ],
-    submenuImage: [],
-  },
+  // {
+  //   title: "Schools",
+  //   submenu: [
+  //     {
+  //       title: "The School Of Liberal Arts, Education And Digital Humanities",
+  //       submenu: [
+  //         {
+  //           title: "Department One",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       title:
+  //         "The Ken Gordon School of Communication Creative and Digital Media",
+  //       submenu: [
+  //         {
+  //           title: "Department One",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       title: "School of Workforce Enhancement and Development",
+  //       path: "programmes",
+  //     },
+  //     {
+  //       title: "School of Nursing, Health and Medical Technologies",
+  //       path: "programmes",
+  //     },
+  //     {
+  //       title: "School of Environment, Circular Economy and Sustainability",
+  //       path: "programmes",
+  //     },
+  //     {
+  //       title: "School of Business and Digital Technologies",
+  //       path: "programmes",
+  //     },
+  //   ],
+  //   submenuImage: [],
+  // },
   {
     title: "Current Students",
     path: "currentstudents",
@@ -201,7 +201,6 @@ export const mainNavLinks = [
         title: "Transfer Credit and Exemptions ",
         path: "/admissions/transfercredit",
       },
-      
     ],
     submenuImage: [
       {

@@ -21,7 +21,7 @@ const TopNavDropDown = ({ items, depthLevel }) => {
           <ul className={navStyles.topNavdropDownLinks}>
             {items.submenu.submenu.map((submenu, index) => (
               <div key={index}>
-                {drp && (
+                {showDropDown && (
                   <TopNavItems
                     items={submenu}
                     className={navStyles.dropDownLi}

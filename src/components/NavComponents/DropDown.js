@@ -32,7 +32,7 @@ const DropDown = ({ items }) => {
                 alt="dummyimg"
               />
 
-              <Link href={submenu.path}>{submenu.title}</Link>
+              <p href={submenu.path}>{submenu.title}</p>
             </div>
           ))}
         </div>

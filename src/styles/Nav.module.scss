@@ -245,6 +245,12 @@
   width: 250px;
   height: auto;
 }
+
+.dropDownLinksGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .searchButton {
   cursor: pointer;
   width: auto;
