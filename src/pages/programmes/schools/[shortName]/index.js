@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { getSchProgrammes } from "../../utilities";
+import { getProgrammes } from "../../utilities";
 import HeadImage from "@/components/PageComponents/HeadImage";
 import ProgStyles from "../../../../styles/Programmes.module.scss";
 import DepartCard from "@/components/PageComponents/DepartCard";
@@ -20,7 +20,7 @@ import fs from "fs/promises";
 const school = (props) => {
   const { foundSchool, news } = props;
   // retrieve all programmes in the school and restructure data for Accordion
-  const schoolProgrammes = getSchProgrammes(foundSchool);
+  const schoolProgrammes = getProgrammes("school", foundSchool);
 
   console.log(schoolProgrammes);
   const lgrid = foundSchool.departments.length;
@@ -59,7 +59,7 @@ const school = (props) => {
                   image={dept.image}
                   departname={dept.name}
                   intro={dept.summary}
-                  linkpage={`/programmes/schools/${foundSchool.nameStump}/${dept.shortName}`}
+                  linkpage={`/programmes/schools/${foundSchool.nameStump}/${dept.dept_code}`}
                   shortname={dept.shortName}
                 />
               </div>
@@ -155,16 +155,7 @@ const school = (props) => {
       <Divider dark="dark" />
       {/* School News Section */}
       <section id="schoolnews" className={ProgStyles.sectionschoolnews}>
-        <p className={ProgStyles.headingprimary}>
-          {foundSchool.shortName} News
-        </p>
-        <NewsRow news={news.slice(0, 3)} />
-        <div className={ProgStyles.goto}>
-          <Link className={ProgStyles.goto} href="#">
-            {" "}
-            View More..
-          </Link>
-        </div>
+        <NewsRow label="School" news={news.slice(0, 3)} />
       </section>
     </>
   );
