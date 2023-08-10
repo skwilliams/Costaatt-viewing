@@ -201,7 +201,7 @@ const Home = () => {
           </div>
           <Button
             href="news"
-            backgroundColor="rgb(173, 93, 16)"
+            backgroundColor="rgb(255, 109, 10)"
             textcolor="white"
             text={"More News..."}
           />

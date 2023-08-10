@@ -3,7 +3,7 @@
     "name": "School of Business and Digital Technologies",
     "shortName": "Business & Digital Technologies",
     "nameStump": "busIT",
-    "image": "/images/schools/busIT header.jpg",
+    "image": "/images/schools/busIT header.png",
     "overview": "The School of Business and Digital Technologies provides access to a world-class and work-relevant education, focused on achieving institutional and national goals of workforce development. The School of Business and Digital Technologies comprises two (2) schools, the Department of ICTs and Digital Technologies and the Department of Management and Digital Entrepreneurship. These departments provide the public with a range of academic services to meet a growing number of careers and opportunities locally, regionally, and globally.The School is devoted to the development and preparation of students who are able to confront the challenges of the fast-paced, dynamic work environment. The School produces graduates who are work ready, professional and ethical, adept at creative problem-solving, embrace technological advancement and able to adapt to a rapidly evolving world.",
     "dean": {
       "name": "Vacant",
@@ -264,7 +264,7 @@
     "name": "School of Liberal Arts, Education and Digital Humanities",
     "shortName": "Liberal Arts, Education and Digital Humanities",
     "nameStump": "liberal",
-    "image": "/images/schools/liberal header.jpg",
+    "image": "/images/schools/liberal header.png",
     "dean": {
       "name": "Neil Sylvester",
       "image": "/images/schools/deanavatar.jpg",
@@ -438,7 +438,7 @@
     "name": "School of Nursing, Health and Medical Technologies",
     "shortName": "Nursing, Health and Medical Technologies",
     "nameStump": "nursing",
-    "image": "/images/schools/nursing header.jpg",
+    "image": "/images/schools/nursing header.png",
     "dean": {
       "name": "Anjenney Boodoosingh-Dwarika",
       "image": "/images/schools/deanavatar.jpg",
@@ -473,7 +473,7 @@
     "name": "School of Environment, Circular Economy and Sustainability",
     "shortName": "Environment, Circular Economy and Sustainability",
     "nameStump": "enviro",
-    "image": "/images/schools/enviro header.jpg",
+    "image": "/images/schools/enviro header.png",
     "dean": {
       "name": "Anjenney Boodoosingh-Dwarika",
       "image": "/images/schools/deanavatar.jpg",
@@ -485,8 +485,8 @@
     "departments": [
       {
         "name": "Environmental and Sustainability Studies",
-        "headImage": "/images/schools/departments/ENVSwl.png",
-        "image": "/images/schools/liberal.png",
+        "headImage": "/images/schools/departments/ENVSheader.png",
+        "image": "/images/schools/ENVSsmall.png",
         "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
         "coreValues": [],
         "shortName": "Environmental and Sustainability Studies",
@@ -495,8 +495,8 @@
       },
       {
         "name": "Natural and Life Sciences",
-        "headImage": "/images/schools/departments/NLSCwl.png",
-        "image": "/images/schools/liberal.png",
+        "headImage": "/images/schools/departments/NLSCheader.png",
+        "image": "/images/schools/NLSCsmall.png",
         "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
         "coreValues": [],
         "shortName": "Natural and Life Sciences",
@@ -509,7 +509,7 @@
     "name": "Ken Gordon School of Communication, Creative and Digital Media",
     "shortName": "Communication, Creative and Digital Media",
     "nameStump": "kengord",
-    "image": "/images/schools/kengord header.jpg",
+    "image": "/images/schools/kengord header.png",
     "dean": {
       "name": "Ms. Clarinda Jack",
       "image": "/images/schools/deanavatar.jpg",
@@ -522,7 +522,7 @@
       {
         "name": "Creative Industries and Culture",
         "headImage": "/images/schools/departments/CIACheader.png",
-        "image": "/images/schools/liberal.png",
+        "image": "/images/schools/CIACsmall.png",
         "summary": "The Department of Creative Industries and Culture offers degrees, diplomas and certificates in music, performing arts, film and video production, literature, creative writing, history, heritage and archival studies.",
         "coreValues": [],
         "shortName": "Arts, Music and Culture",
@@ -802,7 +802,7 @@
       {
         "name": "Upskilling Academy",
         "headImage": "/images/schools/departments/UPSKheader.png",
-        "image": "/images/schools/liberal.png",
+        "image": "/images/schools/UPSKsmall.png",
         "summary": "The Upskilling Academy provides a wide variety of educational content services, including certificate and diploma programmes, stand-alone short courses, professional development workshops, and customised training to support client needs and desired outcomes. ",
         "coreValues": [],
         "shortName": "Skills",
@@ -812,8 +812,8 @@
       {
         "name": "CollegeStarTT",
         "headImage": "/images/schools/departments/CSTTheader.png",
-        "image": "/images/schools/liberal.png",
-        "summary": "The CollegeStarTT Centre  is COSTAATT’s flagship developmental education programme designed to assist students in obtaining the necessary qualifications to access degree programmes of their choice at COSTAATT. CollegeStarTT provides an alternative pathway to tertiary level education for those students who have the aptitude and the desire to pursue tertiary education but are currently academically under-prepared.",
+        "image": "/images/schools/CSTTsmall.png",
+        "summary": "The CollegeStarTT Centre  is COSTAATT's flagship developmental education programme designed to assist students in obtaining the necessary qualifications to access degree programmes of their choice at COSTAATT. CollegeStarTT provides an alternative pathway to tertiary level education for those students who have the aptitude and the desire to pursue tertiary education but are currently academically under-prepared.",
         "coreValues": [],
         "shortName": "CollegeStarTT",
         "contacts": [],
