@@ -460,6 +460,21 @@ form.degreesearch input[type="text"] {
   font-size: 1.5rem;
   // padding: 10px;
 }
+.twoColGridCon {
+  display: grid;
+  gap: 8rem;
+  grid-gap: 2rem;
+  grid-template-columns: auto auto;
+  margin: 0 auto;
+}
+.twoColGrid {
+  text-align: left;
+  padding: 1.5rem 0 0 0;
+  font-size: 30px;
+  margin: 1.5rem 0 0 0;
+
+  // padding: 10px;
+}
 
 .applyheading {
   font-weight: 900;
@@ -497,7 +512,8 @@ form.degreesearch input[type="text"] {
 
 /*section depart in SCHOOL PAGE */
 .sectiondepart {
-  margin: 2rem 0;
+  margin: 3rem 5rem;
+
 }
 
 /* section department courses IN SCHOOL PAGE */

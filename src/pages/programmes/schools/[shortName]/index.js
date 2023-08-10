@@ -27,8 +27,8 @@ const school = (props) => {
   let deptLayout = ProgStyles.threeColGridCon;
   let depcardLayout = ProgStyles.threeColGrid;
   if (lgrid === 2 || lgrid === 4) {
-    deptLayout = ProgStyles.progGridContwo;
-    depcardLayout = ProgStyles.progGridtwo;
+    deptLayout = ProgStyles.twoColGridCon;
+    depcardLayout = ProgStyles.twoColGrid;
   }
 
   return (
