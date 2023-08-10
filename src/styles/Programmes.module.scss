@@ -460,6 +460,21 @@ form.degreesearch input[type="text"] {
   font-size: 1.5rem;
   // padding: 10px;
 }
+.twoColGridCon {
+  display: grid;
+  gap: 8rem;
+  grid-gap: 2rem;
+  grid-template-columns: auto auto;
+  margin: 0 auto;
+}
+.twoColGrid {
+  text-align: left;
+  padding: 1.5rem 0 0 0;
+  font-size: 30px;
+  margin: 1.5rem 0 0 0;
+
+  // padding: 10px;
+}
 
 .applyheading {
   font-weight: 900;
@@ -497,13 +512,14 @@ form.degreesearch input[type="text"] {
 
 /*section depart in SCHOOL PAGE */
 .sectiondepart {
-  margin: 2rem 0;
+  margin: 3rem 5rem;
+
 }
 
 /* section department courses IN SCHOOL PAGE */
 .sectiondeptcourses {
   margin: 2rem 0;
-  background-color: black;
+  background-color: $grey-light;
   min-height: 25rem;
   padding-top: 2rem;
   color: white;
@@ -514,12 +530,12 @@ form.degreesearch input[type="text"] {
 }
 .courseaccordion {
   text-align: center;
-  background-color: $sobitCol;
-  // background-image: linear-gradient(to right, $purple-main, $orange2);
-  // // //   /* For older browsers */
-  // background-image: -webkit-linear-gradient(right, $purple-main, $orange2);
-  // background-image: -moz-linear-gradient(right, $purple-main, $orange2);
-  // background-image: -o-linear-gradient(right, $purple-main, $orange2);
+  // background-color: $sobitCol;
+  background-image: linear-gradient(to right, $orange, $orange);
+  // //   /* For older browsers */
+  background-image: -webkit-linear-gradient(right, $purple-main, $orange2);
+  background-image: -moz-linear-gradient(right, $purple-main, $orange2);
+  background-image: -o-linear-gradient(right, $purple-main, $orange2);
 }
 .courseaccordion:first-child {
   margin-left: 2rem;
@@ -534,7 +550,7 @@ form.degreesearch input[type="text"] {
   color: white;
   margin-top: 0.5rem;
   margin-bottom: 0;
-  text-align: center;
+  text-align: left;
 }
 .arrow {
   color: white;
