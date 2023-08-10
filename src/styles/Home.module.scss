@@ -167,6 +167,10 @@
 }
 
 .ourSchoolsText {
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.7rem;
+  text-align: justify;
   position: relative;
   grid-column: 1/3;
   grid-row: 1/2;
@@ -191,7 +195,7 @@
 .schoolTileTitle {
   position: absolute;
   width: 100%;
-  top: 75%;
+  top: 65%;
   text-align: center;
   padding: 8px;
   background-color: $brown;

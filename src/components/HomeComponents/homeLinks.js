@@ -209,54 +209,54 @@ export const NEWS = [
     desc: "The College of Science, Technology and Applied Arts of Trinidad and Tobago (COSTAATT) and Monroe College signed a Memorandum of Understanding (MoU) on February 24, 2023,",
     date: "20 March 2023 - 26 Mar 2023",
   },
-  // {
-  //   id: 4,
+  {
+    id: 4,
 
-  //   title: "COSTAATT’s Senior Lecturer Co-Authors Text Book",
-  //   image: require("../../../images/Links/senior_lec.jpg"),
-  //   desc: "Speaking at the launch of the textbook, Chief Executive Officer of ALJGSB, Mariano Browne, in bringing greetings, congratulated the authors on the publication, observing the need for more publications grounded in the Caribbean context. ",
-  //   date: "14 Nov 2022 - 19 Dec 2022",
-  // },
-  // {
-  //   id: 5,
+    title: "COSTAATT’s Senior Lecturer Co-Authors Text Book",
+    image: require("../../../images/Links/senior_lec.jpg"),
+    desc: "Speaking at the launch of the textbook, Chief Executive Officer of ALJGSB, Mariano Browne, in bringing greetings, congratulated the authors on the publication, observing the need for more publications grounded in the Caribbean context. ",
+    date: "14 Nov 2022 - 19 Dec 2022",
+  },
+  {
+    id: 5,
 
-  //   title: "COSTAATT President Builds Strategic Partnerships",
-  //   image: require("../../../images/Links/partnership.jpg"),
-  //   desc: "In his capacity as President of COSTAATT, Dr Nurse also visited a few other international organizations during his trip to tap into potential sources of funding for the College ",
-  //   date: "14 Nov 2022 - 19 Dec 2022",
-  // },
-  // {
-  //   id: 6,
+    title: "COSTAATT President Builds Strategic Partnerships",
+    image: require("../../../images/Links/partnership.jpg"),
+    desc: "In his capacity as President of COSTAATT, Dr Nurse also visited a few other international organizations during his trip to tap into potential sources of funding for the College ",
+    date: "14 Nov 2022 - 19 Dec 2022",
+  },
+  {
+    id: 6,
 
-  //   title: "Triumphantly Forward: Carina Cockburn Encourages COSTAATT",
-  //   image: require("../../../images/Links/triump.jpg"),
-  //   desc: "The atmosphere was one of excitement and anticipation as the graduates filed into the hall. Family members and friends cheered as each graduand was called to cross the stage and receive their hard-earned diplomas. ",
-  //   date: "14 Nov 2022 - 19 Dec 2022",
-  // },
-  // {
-  //   id: 5,
+    title: "Triumphantly Forward: Carina Cockburn Encourages COSTAATT",
+    image: require("../../../images/Links/triump.jpg"),
+    desc: "The atmosphere was one of excitement and anticipation as the graduates filed into the hall. Family members and friends cheered as each graduand was called to cross the stage and receive their hard-earned diplomas. ",
+    date: "14 Nov 2022 - 19 Dec 2022",
+  },
+  {
+    id: 5,
 
-  //   title: "COSTAATT’s Senior Lecturer Co-Authors Text Book",
-  //   image: require("../../../images/Links/senior_lec.jpg"),
-  //   desc: "Speaking at the launch of the textbook, Chief Executive Officer of ALJGSB, Mariano Browne, in bringing greetings, congratulated the authors on the publication, observing the need for more publications grounded in the Caribbean context. ",
-  //   date: "14 Nov 2022 - 19 Dec 2022",
-  // },
-  // {
-  //   id: 6,
+    title: "COSTAATT’s Senior Lecturer Co-Authors Text Book",
+    image: require("../../../images/Links/senior_lec.jpg"),
+    desc: "Speaking at the launch of the textbook, Chief Executive Officer of ALJGSB, Mariano Browne, in bringing greetings, congratulated the authors on the publication, observing the need for more publications grounded in the Caribbean context. ",
+    date: "14 Nov 2022 - 19 Dec 2022",
+  },
+  {
+    id: 6,
 
-  //   title: "COSTAATT President Builds Strategic Partnerships",
-  //   image: require("../../../images/Links/partnership.jpg"),
-  //   desc: "In his capacity as President of COSTAATT, Dr Nurse also visited a few other international organizations during his trip to tap into potential sources of funding for the College ",
-  //   date: "14 Nov 2022 - 19 Dec 2022",
-  // },
-  // {
-  //   id: 7,
+    title: "COSTAATT President Builds Strategic Partnerships",
+    image: require("../../../images/Links/partnership.jpg"),
+    desc: "In his capacity as President of COSTAATT, Dr Nurse also visited a few other international organizations during his trip to tap into potential sources of funding for the College ",
+    date: "14 Nov 2022 - 19 Dec 2022",
+  },
+  {
+    id: 7,
 
-  //   title: "Triumphantly Forward: Carina Cockburn Encourages COSTAATT",
-  //   image: require("../../../images/Links/triump.jpg"),
-  //   desc: "The atmosphere was one of excitement and anticipation as the graduates filed into the hall. Family members and friends cheered as each graduand was called to cross the stage and receive their hard-earned diplomas. ",
-  //   date: "14 Nov 2022 - 19 Dec 2022",
-  // },
+    title: "Triumphantly Forward: Carina Cockburn Encourages COSTAATT",
+    image: require("../../../images/Links/triump.jpg"),
+    desc: "The atmosphere was one of excitement and anticipation as the graduates filed into the hall. Family members and friends cheered as each graduand was called to cross the stage and receive their hard-earned diplomas. ",
+    date: "14 Nov 2022 - 19 Dec 2022",
+  },
 ];
 
 export const FEATURED_NEWS = [

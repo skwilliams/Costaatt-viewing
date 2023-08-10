@@ -16,6 +16,7 @@ import {
   SuccessMainLinks,
   FEATURED_NEWS,
 } from "../HomeComponents/homeLinks";
+
 import { useState } from "react";
 import Button from "../Button";
 import SuccessSlider from "../Slider";
@@ -120,14 +121,6 @@ const Home = () => {
               nihil placeat! Labore tempore ipsa illum ipsam minima! Ad!illum
               ipsam minima! Ad! Lorem ipsum dolor sit amet consectetur
               adipisicing elit.
-              <br /> <br />
-              Dolore vel reiciendis in delectus aliquid perspiciatis quidem
-              mollitia officia praesentium optio repellat, nihil placeat! Labore
-              tempore ipsa illum ipsam minima! Ad Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Dolore vel reiciendis in delectus
-              aliquid perspiciatis quidem mollitia officia praesentium optio
-              repellat, nihil placeat! Labore tempore ipsa illum ipsam minima!
-              Ad!illum ipsam minima! Ad!
             </p>{" "}
             {TILES_INFO.map((tile, index) => {
               return (
@@ -172,7 +165,7 @@ const Home = () => {
           <h1 className={HomeStyles.newsHeading}>
             Latest <span>News</span>
           </h1>
-          <div className={HomeStyles.featuredNews}>
+          {/* <div className={HomeStyles.featuredNews}>
             {FEATURED_NEWS.map((tile, index) => {
               return (
                 <div>
@@ -186,7 +179,7 @@ const Home = () => {
                 </div>
               );
             })}
-          </div>
+          </div> */}
           <div className={HomeStyles.sectionFourTiles}>
             {NEWS.map((tile, index) => {
               return (
