@@ -20,7 +20,8 @@ const Footer = () => {
       <div className={footerStyles.mainFooter}>
         <div className={footerStyles.contact}>
           <div>
-            College of Science and Applied <br /> Arts of Trinidad and Tobago
+            College of Science, Technology and <br />
+            Applied Arts of Trinidad and Tobago
           </div>
           <p>Main Campus</p>
           <p>Pierre Road Connector</p>
@@ -35,7 +36,8 @@ const Footer = () => {
             <span>
               <MdEmail />
             </span>{" "}
-            Email: info@costaatt.edu.tt
+            Email:{" "}
+            <a href="mailto:info@costaatt.edu.tt">info@costaatt.edu.tt</a>
           </p>
         </div>
 
@@ -75,7 +77,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className={footerStyles.copyRight}>&copy; Costaatt | 2023</div>
+      <div className={footerStyles.copyRight}>&copy; COSTAATT | 2023</div>
     </div>
   );
 };

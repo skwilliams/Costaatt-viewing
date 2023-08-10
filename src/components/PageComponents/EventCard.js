@@ -12,14 +12,14 @@ const EventCard = (props) => {
   const addressText = props.location.replace(", ", "\n");
   return (
     <Card sx={{ maxWidth: 275 }}>
-      <Image
+      {/* <Image
         className={ProgStyles.newsCardimg}
         src={props.image}
         width="200"
         height="200"
         margin="20px"
         alt={props.title}
-      />
+      /> */}
       <CardContent>
         <Typography
           gutterBottom

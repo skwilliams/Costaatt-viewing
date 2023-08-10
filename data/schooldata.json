@@ -16,7 +16,7 @@
     "departments": [
       {
         "name": "Management and Digital Entrepreneurship",
-        "headImage": "/images/schools/departments/istHead.jpg",
+        "headImage": "/images/schools/departments/MGDEheader.png",
         "image": "/images/schools/busIT.png",
         "summary": "From entrepreneurs and business professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
         "coreValues": [
@@ -119,10 +119,10 @@
       },
       {
         "name": "ICTs and Digital Technologies",
-        "headImage": "/images/schools/departments/departments with labels headers/ist.png",
+        "headImage": "/images/schools/departments/ICTDheader.png",
         "image": "/images/schools/departments/department without labels/it.png",
         "mission": "The department of ICT's and Digital Technologies is the hub were technologies meet. It's an infusion of Library Science and Technology. If you desire to be exposed to technology that runs through the viens of the world, you have come to the right place. You can specialize in Databases,Networking, Library Science and Web Development. You will be exposed to the best and latest technologies all while learning the building blocks that makes up Information and Technology.",
-        "summary": "If you are interested in Web Development (Internet Technologies), Information Technology, Networking, Databases, Information Systems, or Library Science then the programmes offered by the Department of Information Science and Technology are tailor-made for you.  ",
+        "summary": "If you are interested in Web Development (Internet Technologies), Information Technology, Networking, Databases, Information Systems, or Library Science then the programmes offered by the Department of Information Science and Technology are tailor-made for you. ",
         "coreValues": [
           "Dedication",
           "Teamwork",
@@ -276,7 +276,7 @@
     "departments": [
       {
         "name": "Education",
-        "headImage": "/images/schools/departments/istHead.jpg",
+        "headImage": "/images/schools/departments/EDUCheader.png",
         "image": "/images/schools/liberal.png",
         "summary": "From language experts and mathematics professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
         "coreValues": [],
@@ -324,7 +324,7 @@
       },
       {
         "name": "Criminal Justice, Human Security and Legal Studies",
-        "headImage": "/images/schools/departments/criminalJusticeHead.jpg",
+        "headImage": "/images/schools/departments/CRIMheader.png",
         "image": "/images/schools/liberal.png",
         "summary": "From protective service professionals, paralegal professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
         "coreValues": [],
@@ -373,7 +373,7 @@
       },
       {
         "name": "Social and Behavioural Sciences",
-        "headImage": "/images/schools/departments/istHead.jpg",
+        "headImage": "/images/schools/departments/istHeadSABSwl.png",
         "image": "/images/schools/liberal.png",
         "summary": "From Social workers, Therapists and Counselling professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
         "coreValues": [],
@@ -450,7 +450,7 @@
     "departments": [
       {
         "name": "Nursing",
-        "headImage": "/images/schools/departments/istHead.jpg",
+        "headImage": "/images/schools/departments/NURSheader.png",
         "image": "/images/schools/nursing.png",
         "summary": "From Nurses, nurses aides,  this department is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
         "coreValues": [],
@@ -460,7 +460,7 @@
       },
       {
         "name": "Health and Medical Science Technologies",
-        "headImage": "/images/schools/departments/departments with labels headers/Artboard 1.png",
+        "headImage": "/images/schools/departments/HMSTheader.png",
         "image": "/images/schools/departments/department without labels/Artboard 1.png",
         "summary": "Health and Medical Science Technologies...",
         "shortName": "HMST",
@@ -485,7 +485,7 @@
     "departments": [
       {
         "name": "Environmental and Sustainability Studies",
-        "headImage": "/images/schools/departments/istHead.jpg",
+        "headImage": "/images/schools/departments/ENVSwl.png",
         "image": "/images/schools/liberal.png",
         "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
         "coreValues": [],
@@ -495,7 +495,7 @@
       },
       {
         "name": "Natural and Life Sciences",
-        "headImage": "/images/schools/departments/istHead.jpg",
+        "headImage": "/images/schools/departments/NLSCwl.png",
         "image": "/images/schools/liberal.png",
         "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
         "coreValues": [],
@@ -521,7 +521,7 @@
     "departments": [
       {
         "name": "Creative Industries and Culture",
-        "headImage": "/images/schools/departments/istHead.jpg",
+        "headImage": "/images/schools/departments/CIACheader.png",
         "image": "/images/schools/liberal.png",
         "summary": "The Department of Creative Industries and Culture offers degrees, diplomas and certificates in music, performing arts, film and video production, literature, creative writing, history, heritage and archival studies.",
         "coreValues": [],
@@ -593,7 +593,7 @@
       },
       {
         "name": "Digital Media and Communication",
-        "headImage": "/images/schools/departments/istHead.jpg",
+        "headImage": "/images/schools/departments/DMACwl.png",
         "image": "/images/schools/liberal.png",
         "summary": "The Department of Digital Media and Communication offers degrees, diplomas and certificates in mass communication, graphic design, advertising and promotions, Spanish, Latin American Studies, photography, journalism and public relations.",
         "coreValues": [],
@@ -801,7 +801,7 @@
     "departments": [
       {
         "name": "Upskilling Academy",
-        "headImage": "/images/schools/departments/istHead.jpg",
+        "headImage": "/images/schools/departments/UPSKheader.png",
         "image": "/images/schools/liberal.png",
         "summary": "The Upskilling Academy provides a wide variety of educational content services, including certificate and diploma programmes, stand-alone short courses, professional development workshops, and customised training to support client needs and desired outcomes. ",
         "coreValues": [],
@@ -811,7 +811,7 @@
       },
       {
         "name": "CollegeStarTT",
-        "headImage": "/images/schools/departments/istHead.jpg",
+        "headImage": "/images/schools/departments/CSTTheader.png",
         "image": "/images/schools/liberal.png",
         "summary": "The CollegeStarTT Centre  is COSTAATT’s flagship developmental education programme designed to assist students in obtaining the necessary qualifications to access degree programmes of their choice at COSTAATT. CollegeStarTT provides an alternative pathway to tertiary level education for those students who have the aptitude and the desire to pursue tertiary education but are currently academically under-prepared.",
         "coreValues": [],
@@ -834,7 +834,7 @@
       },
       {
         "name": "Translation and Interpreting Centre",
-        "headImage": "/images/schools/departments/istHead.jpg",
+        "headImage": "/images/schools/departments/TAICheader.png",
         "image": "/images/schools/liberal.png",
         "summary": "As an official agent recognised by the Government of Trinidad and Tobago, the Translating and Interpreting Services (T&I) Centre provides a wide array of translation and interpretation services at local and regional levels. Our clients include corporate entities, government organisations and individuals. Official translation services include English, Dutch, French, German, Portuguese, and Spanish.",
         "coreValues": [],

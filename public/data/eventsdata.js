@@ -6,7 +6,7 @@ const events = [
     description:
       "Everyone can learn to code! Yes, everyone! In this live event, we are going to go through all the key basics and get you started with programming as well.",
     location: "Somestreet 25, 12345 San Somewhereo",
-    date: "2023-08-12T17:00:00",
+    date: "2023-08-12",
     time: "17:00",
     image: "/images/events/coding-event.jpg",
   },
@@ -28,8 +28,8 @@ const events = [
     description:
       "We know: Networking is no fun if you are an introvert person. That's why we came up with this event - it'll be so much easier. Promised!",
     location: "New Wall Street 5, 98765 New Work",
-    date: "2021-08-30",
-    time: "9:00",
+    date: "2023-08-30",
+    time: "09:00",
     image: "/images/events/introvert-event.jpg",
   },
   {
@@ -39,7 +39,7 @@ const events = [
     description:
       "You probably need no help with networking in general. But focusing your energy correctly - that is something where most people can improve.",
     location: "My Street 12, 10115 Broke City",
-    date: "2022-09-10",
+    date: "2023-09-10",
     time: "09:30",
     image: "/images/events/extrovert-event.jpg",
   },
@@ -75,5 +75,8 @@ export function getEventDate(event) {
 }
 
 export function getEventTime(event) {
-  return new Date(event.date).toLocaleTimeString();
+  return new Date(event.date + "T" + event.time).toLocaleTimeString("en-US", {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
 }

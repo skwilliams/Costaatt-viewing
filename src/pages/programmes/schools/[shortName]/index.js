@@ -59,7 +59,7 @@ const school = (props) => {
                   image={dept.image}
                   departname={dept.name}
                   intro={dept.summary}
-                  linkpage={`/programmes/schools/${foundSchool.nameStump}/${dept.shortName}`}
+                  linkpage={`/programmes/schools/${foundSchool.nameStump}/${dept.dept_code}`}
                   shortname={dept.shortName}
                 />
               </div>
@@ -155,16 +155,7 @@ const school = (props) => {
       <Divider dark="dark" />
       {/* School News Section */}
       <section id="schoolnews" className={ProgStyles.sectionschoolnews}>
-        <p className={ProgStyles.headingprimary}>
-          {foundSchool.shortName} News
-        </p>
-        <NewsRow news={news.slice(0, 3)} />
-        <div className={ProgStyles.goto}>
-          <Link className={ProgStyles.goto} href="#">
-            {" "}
-            View More..
-          </Link>
-        </div>
+        <NewsRow label="School" news={news.slice(0, 3)} />
       </section>
     </>
   );
