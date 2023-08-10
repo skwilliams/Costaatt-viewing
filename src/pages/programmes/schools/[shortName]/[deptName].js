@@ -130,25 +130,14 @@ const index = (props) => {
       </section>
       {/* Department events Section */}
       <section id="happening" className={DeptStyles.sectionWhatsup}>
-        <p className={ProgStyles.headingprimary}>Upcoming Events</p>
-
-        <EventsRow events={getEventsByDept(foundDept.dept_code)} />
-        <div className={ProgStyles.goto}>
-          <Link className={ProgStyles.goto} href="#">
-            {" "}
-            View More..
-          </Link>
-        </div>
+        <EventsRow
+          label="Upcoming"
+          events={getEventsByDept(foundDept.dept_code)}
+        />
       </section>{" "}
       {/* Department News Section */}
       <section id="schoolnews" className={ProgStyles.sectionschoolnews}>
-        <p className={ProgStyles.headingprimary}>Latest News</p>
-        <NewsRow news={news.slice(0, 3)} />
-        <div className={ProgStyles.goto}>
-          <Link className={ProgStyles.goto} href="#">
-            View More...
-          </Link>
-        </div>
+        <NewsRow label="Latest" news={news.slice(0, 3)} />
       </section>
       <section id="featuredwork" className={DeptStyles.sectionFeaturedwork}>
         {/* <p className={ProgStyles.headingprimary}> Featured Work</p>
@@ -171,10 +160,7 @@ const index = (props) => {
           </div>
           <div className={DeptStyles.threeGridCol}>
             {" "}
-            <StudentResources
-              image={imagecounsellor}
-              imagetxt=""
-            />
+            <StudentResources image={imagecounsellor} imagetxt="" />
           </div>
           <div className={DeptStyles.threeGridCol}>
             {" "}
