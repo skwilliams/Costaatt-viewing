@@ -217,10 +217,6 @@ const Home = () => {
         <section id="success-stories" className={HomeStyles.successSection}>
           <div className={HomeStyles.successStories}>
             <h1>Success Stories</h1>
-            {/* <p>
-              Have a big question. Get some answers from people who are studying
-              right here, right now.
-            </p> */}
           </div>
           <div className={HomeStyles.successSlider}>
             <SuccessSlider
