@@ -42,7 +42,7 @@ const TopNavItems = ({ items, depthLevel }) => {
     >
       {items.submenu ? (
         <>
-          <div>
+          <div className={navStyles.topNavDropDownTest}>
             {" "}
             {items.title}
             {/* Need to put correct path link of submenu and searchbar */}

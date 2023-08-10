@@ -10,8 +10,7 @@ import TopNavItems from "./TopNavItems";
 
 const TopNavDropDown = ({ items, depthLevel }) => {
   depthLevel = depthLevel + 1;
-  const dropdownclass = depthLevel > 1 ? "dropdown-submenu" : "";
-  //const [showDropDown, setShowDropDown] = useState(false);
+  const [showDropDown, setShowDropDown] = useState(false);
   const [dropdown, setDropdown] = useState(false);
 
   console.log(items);
@@ -22,7 +21,7 @@ const TopNavDropDown = ({ items, depthLevel }) => {
           <ul className={navStyles.topNavdropDownLinks}>
             {items.submenu.submenu.map((submenu, index) => (
               <div key={index}>
-                {showDropDown && (
+                {drp && (
                   <TopNavItems
                     items={submenu}
                     className={navStyles.dropDownLi}

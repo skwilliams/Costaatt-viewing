@@ -4,7 +4,12 @@ import Link from "next/link";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-const CarouselSlider = ({ story }) => {
+const CarouselSlider = ({ story, onSelect }) => {
+  const handleSelect = (selectedItem, e) => {
+    e.stopPropagation(); // Prevent event from propagating
+    onSelect(selectedItem);
+  };
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -26,18 +31,14 @@ const CarouselSlider = ({ story }) => {
   };
   return (
     <div className={CarouselStyles.carousel}>
-      <Carousel responsive={responsive} autoPlay>
+      <Carousel responsive={responsive}>
         {story.map((slide, index) => (
           <div key={index}>
-            <div>
-              <img src={slide.image} className={CarouselStyles.sliderImage} />
-            </div>{" "}
-            <Link href={`${slide.url}`}>
-              <div key={index} className={CarouselStyles.sliderText}>
-                <h3> MEET </h3>
-                <h3> {slide.title} </h3>
-              </div>{" "}
-            </Link>
+            <Image
+              src={slide.image}
+              className={CarouselStyles.sliderImage}
+              onClick={(e) => handleSelect(slide, e)}
+            />
           </div>
         ))}
       </Carousel>

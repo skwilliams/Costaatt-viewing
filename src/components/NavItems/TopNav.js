@@ -14,15 +14,15 @@ import SearchBarModal from "../SearchBarModal";
 import TopNavItems from "../NavItems/TopNavItems";
 import navStyles from "../../styles/NavItems.module.scss";
 
-const TopNav = () => {
+const TopNav = ({ onDropDownLink }) => {
   return (
     <nav className={navStyles.topNavMain}>
       <ul>
         {topNavLinksLeft.map((menu, index) => {
           const depthLevel = 0;
           return (
-            <li key={index}>
-              <TopNavItems items={menu} key={index} depthLevel={depthLevel} />
+            <li key={index} onClick={onDropDownLink}>
+              <TopNavItems items={menu} key={index} />
             </li>
           );
         })}

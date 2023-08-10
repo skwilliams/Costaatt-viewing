@@ -6,8 +6,6 @@ import SearchBarModal from "../SearchBarModal";
 import { useState } from "react";
 
 const Navbar = () => {
-  const [modal, setModal] = useState(false);
-
   return (
     <div>
       <div>

@@ -13,11 +13,12 @@ import {
   NEWS,
   schoolOptions,
   SuccessLinks,
+  SuccessMainLinks,
   FEATURED_NEWS,
 } from "../HomeComponents/homeLinks";
 import { useState } from "react";
 import Button from "../Button";
-// import Slider from "../Slider";
+import SuccessSlider from "../Slider";
 import CarouselSuccess from "../Carousel";
 
 /**This component renders the home page which is called <Landing /> in index.js
@@ -30,6 +31,11 @@ import CarouselSuccess from "../Carousel";
 const Home = () => {
   const [options, setoptions] = useState("");
   const [interested, setinterested] = useState([]);
+  const [selectedSuccess, setSelectedSuccess] = useState(null);
+
+  const handleSuccessSelect = (selectedItem) => {
+    setSelectedSuccess(selectedItem);
+  };
 
   const changeOption = (e) => {
     const getName = e.target.name;
@@ -100,9 +106,11 @@ const Home = () => {
         </section>
 
         <section id="schools" className={HomeStyles.sectionTwo}>
-          <div className={HomeStyles.ourSchoolsText}>
-            <h2>Our Schools</h2>
-            <p>
+          <h1>
+            <span>Our</span> Schools
+          </h1>
+          <div className={HomeStyles.sectionTwoGrid}>
+            <p className={HomeStyles.ourSchoolsText}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
               vel reiciendis in delectus aliquid perspiciatis quidem mollitia
               officia praesentium optio repellat, nihil placeat! Labore tempore
@@ -110,18 +118,31 @@ const Home = () => {
               adipisicing elit. Dolore vel reiciendis in delectus aliquid
               perspiciatis quidem mollitia officia praesentium optio repellat,
               nihil placeat! Labore tempore ipsa illum ipsam minima! Ad!illum
-              ipsam minima! Ad!
-            </p>
+              ipsam minima! Ad! Lorem ipsum dolor sit amet consectetur
+              adipisicing elit.
+              <br /> <br />
+              Dolore vel reiciendis in delectus aliquid perspiciatis quidem
+              mollitia officia praesentium optio repellat, nihil placeat! Labore
+              tempore ipsa illum ipsam minima! Ad Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Dolore vel reiciendis in delectus
+              aliquid perspiciatis quidem mollitia officia praesentium optio
+              repellat, nihil placeat! Labore tempore ipsa illum ipsam minima!
+              Ad!illum ipsam minima! Ad!
+            </p>{" "}
+            {TILES_INFO.map((tile, index) => {
+              return (
+                <div key={index} className={HomeStyles.schoolTile}>
+                  <Link href={`${tile.url}`}>
+                    <SchoolTile
+                      title={tile.title}
+                      img={tile.img}
+                      className={HomeStyles.schoolTileTitle}
+                    />
+                  </Link>
+                </div>
+              );
+            })}
           </div>
-          {TILES_INFO.map((tile, index) => {
-            return (
-              <div key={index}>
-                <Link href={`${tile.url}`}>
-                  <SchoolTile title={tile.title} img={tile.img} />
-                </Link>
-              </div>
-            );
-          })}
         </section>
 
         <section id="events" className={HomeStyles.sectionThree}>
@@ -196,15 +217,20 @@ const Home = () => {
         <section id="success-stories" className={HomeStyles.successSection}>
           <div className={HomeStyles.successStories}>
             <h1>Success Stories</h1>
-            <p>
+            {/* <p>
               Have a big question. Get some answers from people who are studying
               right here, right now.
-            </p>
+            </p> */}
           </div>
-          <CarouselSuccess story={SuccessLinks} />
-          {/* <div className={HomeStyles.successSlider}>
-            <SuccessSlider slides={SuccessLinks} />
-          </div> */}
+          <div className={HomeStyles.successSlider}>
+            <SuccessSlider
+              slides={selectedSuccess ? [selectedSuccess] : SuccessMainLinks}
+            />
+            <CarouselSuccess
+              story={SuccessLinks}
+              onSelect={handleSuccessSelect}
+            />
+          </div>
         </section>
       </section>
     </>
