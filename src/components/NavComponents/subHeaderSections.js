@@ -19,7 +19,10 @@ export const subHeaderSections = {
     "CARICOM and international applicant": "caricom-international-applicant",
   },
   feesandfunding: {
-    "tuition and fees": "tution-and-fees",
+    "We are here":"intro",
+    "tuition and fees": "tution",
+    "financial support": "finsupport",
+    "Money tips":"moneytips"
   },
   schools: {
     overveiw: "overview",

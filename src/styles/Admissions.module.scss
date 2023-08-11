@@ -2,7 +2,14 @@
 @import "./variable";
 
 
+.introtext {
+  font-family: "Lato";
+  font-size: 1.75rem;
+  line-height: 2;
 
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
 
 
 .adminHome {
@@ -116,3 +123,37 @@
   // padding: 10px;
 }
 
+
+//Fees and Funding Page
+.sectionfeesintro{
+  margin:3rem;
+}
+
+
+.sectiontution{
+
+  margin:3rem;
+  background-color: black;
+
+  .cardCon{
+    max-width: 345;
+    max-height: 240;
+    background-color: $orange;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 18px $costtCol;
+  
+  .cardtext{
+      font-size:2rem;
+      color:white;
+    }
+  }
+}
+
+.sectionfinsupport{
+  margin: 3rem;
+}
+
+.sectionmoneytips{
+  margin: 2rem;
+}

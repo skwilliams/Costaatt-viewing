@@ -42,7 +42,6 @@ const index = (props) => {
       {/* Department Overview Section */}
       <section id="overview" className={DeptStyles.sectionOverview}>
         <div className={ProgStyles.umargintopsmall}>
-          <p className={ProgStyles.headingprimary}>Our Mission</p>
           <p className={DeptStyles.maintext}>{foundDept.mission}</p>
           {/* <p className={DeptStyles.subheading}> Vision</p> */}
           {txtToPara(foundDept.summary, DeptStyles.subtext)}
