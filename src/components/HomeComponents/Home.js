@@ -55,7 +55,6 @@ const Home = () => {
           <div className={HomeStyles.sectionOneLeft}>
             <div className={HomeStyles.sectionLeftTop}>
               <h2>
-                {" "}
                 The College of Science Technology and Applied Arts of Trinidad
                 and Tobago
               </h2>
