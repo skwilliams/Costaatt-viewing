@@ -6,7 +6,7 @@ const SimpleCard = ({ text, img, alt }) => {
   return (
     <>
       <div className={AdmissionStyles.cardCon}>
-        <Image className={AdmissionStyles.cardimg} alt={alt} src={img} />
+        <Image className={AdmissionStyles.cardimg} width="200" alt={alt} src={img} />
         <div className={AdmissionStyles.cardtext}>{text}</div>
       </div>
     </>
