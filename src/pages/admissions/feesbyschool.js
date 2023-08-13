@@ -2,6 +2,7 @@ import React from 'react';
 import admissionStyles from '../../styles/Admissions.module.scss';
 import home5 from '../../../images/Links/home5.png';
 import TopHeader from '@/components/TopHeader';
+import CardStyles from '../../styles/ProgCard.module.scss'
 import ButtonLink from '@/components/HomeComponents/ButtonLink';
 // import Button from "@/components/Button";
 import Accordion from '@mui/material/Accordion';
@@ -43,11 +44,12 @@ import FeesAndFunding from '@/components/FeesAndFunding';
 const feesandfunding = () => {
   return (
     <>
-
-        <HeaderNoImage caption="Tution Fees by Schools"/>
+      <HeaderNoImage caption="Tution Fees by Programmes" />
+      <p className={CardStyles.urllayout}>
+        COSTAATT / Admissions and Aid/Tution School Fees
+      </p>
 
       <div className={admissionStyles.applicationInstructions}>
-        
         <section>
           <h1>ESTIMATE OF TOTAL TUITION BY PROGRAMME</h1> <p>&nbsp;</p>
           <p>
@@ -103,13 +105,13 @@ const feesandfunding = () => {
               </AccordionSummary>
               <AccordionDetails>
                 <FeesAndFunding dept={deptOfHealth} />
-              </AccordionDetails>{' '}
+              </AccordionDetails>{" "}
               <AccordionSummary>
                 <Typography>DEPARTMENT OF NATURAL AND LIFE SCIENCES</Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <FeesAndFunding dept={dptOfNatSci} />
-              </AccordionDetails>{' '}
+              </AccordionDetails>{" "}
               <AccordionSummary>
                 <Typography>DEPARTMENT OF ENVIRONMENTAL STUDIES</Typography>
               </AccordionSummary>

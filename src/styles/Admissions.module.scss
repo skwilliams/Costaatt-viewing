@@ -46,16 +46,20 @@
 .detailstext {
   font-family: "Lato";
   font-size: 1rem;
-  line-height: 2;
+  line-height: 2.5;
 
   text-align: left;
   margin-bottom: 1.5rem;
 }
 
+.head{
+  font-size: 1rem;
+  color:hotpink;
+}
 .secondaryheading{
-  padding: 2rem;
+  
+  margin:  2rem 0;
   font-family: "Lato";
-  margin:2rem;
 }
 
 .adminHome {

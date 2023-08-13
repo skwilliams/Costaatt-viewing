@@ -599,3 +599,60 @@ form.degreesearch input[type="text"] {
     }
   }
 }
+
+/* Academic Calendar Page*/
+
+.sectionacademiccalendar{
+
+ background-color: white;
+  color: #222222;
+  margin:5rem;
+
+
+table.academiccalendar {
+  font-family: "Lato";
+  font-size: 1.25rem;
+  border-collapse: collapse;
+  width: 700px;
+}
+.publicholidays-table {
+  margin: 0;
+  padding: 0;
+}
+.publicholidays-table td {
+  padding-left: 0;
+  margin-left: 0;
+  padding-left: 0.3rem;
+}
+
+.academiccalendar td,
+th {
+  padding: 10px;
+  text-align: left;
+  margin: 0;
+}
+
+.academiccalendar tbody tr:nth-child(2n) {
+  background-color: #eee;
+}
+
+.academiccalendar th {
+  position: sticky;
+  top: 0;
+  background-color:$orange;
+  color: white;
+
+  font-family: "Bodoni";
+  text-transform: capitalize;
+
+  backface-visibility: hidden;
+  /* determines if the back part is visible to the */
+  /* margin-bottom: 6rem; */
+  /* display: block; */
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+
+
+}

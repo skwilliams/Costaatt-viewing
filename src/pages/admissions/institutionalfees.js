@@ -1,5 +1,7 @@
 import React from 'react';
 import admissionStyles from '../../styles/Admissions.module.scss';
+import TopNavOnly_NoDropdown from '../../components/Layouts/TopNavOnly_NoDropdown'
+
 import home5 from '../../../images/Links/home5.png';
 import TopHeader from '@/components/TopHeader';
 import ButtonLink from '@/components/HomeComponents/ButtonLink';
@@ -62,9 +64,12 @@ const institutionalfees = () => {
                   sx={{
                     backgroundColor: " rgb(67, 63, 64, 0.5) ",
                     color: "white",
+                    fontSize: "1rem",
                   }}
                 >
-                  <TableRow>
+                  <TableRow
+                  className={admissionStyles.head}
+                  >
                     <TableCell>Fees</TableCell>
                     <TableCell>Citizens</TableCell>
                     <TableCell>Caricom</TableCell>
@@ -115,14 +120,8 @@ const institutionalfees = () => {
               Technology Fees
             </h1>
             <p className={admissionStyles.detailstext}>
-              Included in the college fees, is basic insurance coverage for
-              accident and injury. However, CARICOM and international students
-              are also required to secure additional insurance to cover medical
-              expenses. All students of COSTAATT are required to pay an annual
-              insurance fee of $30.00. Completed student insurance forms must be
-              submitted to the College at the beginning of the first semester in
-              which students register for the academic year. Coverage is
-              restricted to students who are between ages 15 to 75.
+              Technlogy fees includes use of lab facilities at any of our
+              campuse, Use of printers.
             </p>
           </div>
         </section>
@@ -217,3 +216,7 @@ const institutionalfees = () => {
   );
 };
 export default institutionalfees;
+
+TopNavOnly_NoDropdown.getLayout = function getLayout(page) {
+  return <TopNavOnly_NoDropdown>{page}</TopNavOnly_NoDropdown>;
+};

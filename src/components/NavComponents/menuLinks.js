@@ -132,8 +132,8 @@ export const mainNavLinks = [
         path: "/programmes/collegecore",
       },
       {
-        title: "Academic Advising",
-        path: "/programmes/advising",
+        title: "Short Courses",
+        path: "/programmes/shortcourses",
       },
       {
         title: "School of Nursing, Health and Medical Technologies",
@@ -169,8 +169,8 @@ export const mainNavLinks = [
       },
       {
         img: require("../../../images/Links/dummyImg2.jpg"),
-        title: "Areas of Study",
-        path: "/programmes/areasofstudy",
+        title: "Academic Advising",
+        path: "/programmes/advising",
       },
     ],
   },
