@@ -43,55 +43,11 @@ import FeesAndFunding from '@/components/FeesAndFunding';
 const feesandfunding = () => {
   return (
     <>
-      {/* //   <div className={admissionStyles.adminHome}>
-    //     <section className={admissionStyles.topHeader}>
-    //       <TopHeader image={home5} color="orange" text="Fees and Funding" />
-    //     </section>
-    //   </div> */}
-      <HeaderNoImage caption="Tution Fees by Schools" />
+
+        <HeaderNoImage caption="Tution Fees by Schools"/>
 
       <div className={admissionStyles.applicationInstructions}>
-        <section>
-          <h1>TUITION AND INSTITUTIONAL FEES</h1> <p>&nbsp;</p>
-          <p>
-            The table below provides a summary of fees payable to the College.
-            Only nationals of Trinidad and Tobago are eligible to receive
-            government&#39;s GATE funding for tuition expenses listed hereunder.
-          </p>
-          <p>&nbsp;</p>
-          <div>
-            <TableContainer component={Paper}>
-              <Table aria-label="simple table">
-                <TableHead sx={{ backgroundColor: " rgb(67, 63, 64, 0.9)" }}>
-                  <TableRow>
-                    <TableCell>Fees</TableCell>
-                    <TableCell>Citizens</TableCell>
-                    <TableCell>Caricom</TableCell>
-                    <TableCell>International</TableCell>
-                    <TableCell> Per</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {institutionFees.map((row) => (
-                    <TableRow key={row.Fees}>
-                      <TableCell>{row.Fees}</TableCell>
-                      <TableCell>{row.Citizens}</TableCell>
-                      <TableCell>{row.Caricom}</TableCell>
-                      <TableCell>{row.International}</TableCell>
-                      <TableCell>{row.Per}</TableCell>
-                    </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
-            </TableContainer>
-          </div>
-          <br />
-          <h6>
-            Disclaimer: COSTAATT reserves the right to modify fees as may be
-            necessary.
-          </h6>
-        </section>
-        <br />
+        
         <section>
           <h1>ESTIMATE OF TOTAL TUITION BY PROGRAMME</h1> <p>&nbsp;</p>
           <p>
@@ -147,13 +103,13 @@ const feesandfunding = () => {
               </AccordionSummary>
               <AccordionDetails>
                 <FeesAndFunding dept={deptOfHealth} />
-              </AccordionDetails>{" "}
+              </AccordionDetails>{' '}
               <AccordionSummary>
                 <Typography>DEPARTMENT OF NATURAL AND LIFE SCIENCES</Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <FeesAndFunding dept={dptOfNatSci} />
-              </AccordionDetails>{" "}
+              </AccordionDetails>{' '}
               <AccordionSummary>
                 <Typography>DEPARTMENT OF ENVIRONMENTAL STUDIES</Typography>
               </AccordionSummary>
@@ -248,25 +204,13 @@ const feesandfunding = () => {
           </div>
           <br />
         </section>
-        <section>
-          <div>
-            <h1>STUDENT INSURANCE</h1>
-            <p>
-              Included in the college fees, is basic insurance coverage for
-              accident and injury. However, CARICOM and international students
-              are also required to secure additional insurance to cover medical
-              expenses. All students of COSTAATT are required to pay an annual
-              insurance fee of $30.00. Completed student insurance forms must be
-              submitted to the College at the beginning of the first semester in
-              which students register for the academic year. Coverage is
-              restricted to students who are between ages 15 to 75.
-            </p>
-          </div>
+        {/* <section>
+          
           <div>
             <h1>METHOD OF PAYMENT</h1>
             <p>The College accepts the following methods of payment:</p>
             <ul>
-              <li> Cash </li>
+              <li>Cash </li>
               <li>LINX</li>
               <li>Visa/Master card </li>
               <li>Certified/Manager&#39;s cheque</li>
@@ -279,8 +223,8 @@ const feesandfunding = () => {
               not eligible for tuition refunds.
             </p>
           </div>
-        </section>
-        <section>
+        </section> */}
+        {/* <section>
           <h1>FINANCIAL AID</h1>
           <p>
             <strong>
@@ -310,7 +254,7 @@ const feesandfunding = () => {
             and Tobago. Only nationals of Trinidad and Tobago are eligible to
             apply, and students must be registered in a course of study leading
             to a tertiary level qualification. For further information on the
-            GATE programme please visit the website of the{" "}
+            GATE programme please visit the website of the{' '}
             <a href="http://https://moe.gov.tt/"> Ministry of Education</a>.
             <br /> The vast majority of the College’s programmes are eligible
             for GATE. For a full list of these programmes please contact the
@@ -342,12 +286,12 @@ const feesandfunding = () => {
           </p>
           <p>
             Payment plans are available, please contact the Office of the
-            Registrar for further details:{" "}
+            Registrar for further details:{' '}
             <a href="mailto:registrar@costaatt.edu.tt">
               registrar@costaatt.edu.tt
             </a>
           </p>
-        </section>
+        </section> */}
       </div>
     </>
   );

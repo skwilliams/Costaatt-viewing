@@ -1,16 +1,21 @@
 import React from "react";
-import AdmissionStyles from "../../styles/Admissions.module.scss";
-import Image from "next/image";
+import AdminStyles from "../../styles/Admissions.module.scss";
+import Link from 'next/link'
 
-const SimpleCard = ({ text, img, alt }) => {
+
+const SimpleCard = ({text, linkpage }) => {
+
+
   return (
     <>
-      <div className={AdmissionStyles.cardCon}>
-        <Image className={AdmissionStyles.cardimg} width="200" alt={alt} src={img} />
-        <div className={AdmissionStyles.cardtext}>{text}</div>
-      </div>
+        <Link href={linkpage} className={AdminStyles.link}>
+          <div className={AdminStyles.cardCon}>
+            <p className={AdminStyles.cardtext}> {text}</p>
+          </div>
+        </Link>
     </>
   );
+  
 };
 
 export default SimpleCard;

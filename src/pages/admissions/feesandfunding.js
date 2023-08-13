@@ -3,9 +3,7 @@ import Head from 'next/head'
 import AdminStyles from '../../styles/Admissions.module.scss'
 
 import HeadImage from '@/components/PageComponents/HeadImage';
-import headImg from '../../../public/images/testerheight.png'
-import img from '../../../public/images/schools/departments/EDUCsmall.png'
-import img2 from '../../../images/Links/home7.png'
+import headImg from '../../../public/images/schools/departments/EDUCsmall.png'
 import SchoolTile from '@/components/HomeComponents/SchoolTile';
 import Link from "next/link"
 import HomeStyles from '../../styles/Home.module.scss'
@@ -31,42 +29,45 @@ const feesandfunding = () => {
         <title>Fees and Funding </title>
       </Head>
 
-      <HeadImage imagetext="" mainimage={headImg} />
+      <HeadImage imagetext="Fees and Funding" mainimage={headImg} />
 
       <section id="intro" className={AdminStyles.sectionfeesintro}>
         <div className={AdminStyles.introtext}>
           Going to university is one of the biggest investments in your future
-          you'll make. We are here to support your future success and make a
-          education within reach. We are committed to transforming lives and
-          making education accessible. We will work with you and provide avenues
-          to help you launch the career of your dreams
+          you'll make. We are here to support your future success and make
+          education reachable. We are committed to transforming lives and making
+          education accessible. We will work with you and provide avenues to
+          help you launch the career of your dreams
         </div>
       </section>
 
-      <section id="tution" className={AdminStyles.sectiontution}>
-        <p>Tution Fees</p>
-        <div className={AdminStyles.threeColGridCon}>
-          <div className={AdminStyles.threeColGrid}>
-            <SimpleCard text="Associate" img={img2} alt="associate" />
+      <section id="tuition" className={AdminStyles.sectiontuition}>
+        <p className={AdminStyles.sectiontext}>All about Fees</p>
+
+        <div className={AdminStyles.fourColGridCon}>
+          <div className={AdminStyles.fourColGrid}>
+            <SimpleCard
+              text=" Fees By Programmes "
+              linkpage="/admissions/feesbyschool"
+            />
           </div>
-          <div className={AdminStyles.threeColGrid}>
-            <SimpleCard text="Bachelors" img={img2} alt="degree" />
+          <div className={AdminStyles.fourColGrid}>
+            <SimpleCard
+              text="Upskilling Courses Fees"
+              linkpage="/admissions/fees1"
+            />
           </div>
-          <div className={AdminStyles.threeColGrid}>
-            <SimpleCard text="International" img={img2} alt="international" />
+          <div className={AdminStyles.fourColGrid}>
+            <SimpleCard
+            text="Institutional Fees"
+            linkpage="/admissions/institutionalfees"
+           />
           </div>
+          <div className={AdminStyles.fourColGrid}>
+              <SimpleCard text="How to Pay" linkpage="/admissions/fees1" />
+            </div>
         </div>
-        <div className={AdminStyles.threeColGridCon}>
-          <div className={AdminStyles.threeColGrid}>
-            <SimpleCard text="Fee Schedule" img={img2} alt="fees" />
-          </div>
-          <div className={AdminStyles.threeColGrid}>
-            <SimpleCard text="School Fees" img={img2} alt="schoolfees" />
-          </div>
-          <div className={AdminStyles.threeColGrid}>
-            <SimpleCard text="How to Pay" img={img2} alt="how to pay" />
-          </div>
-        </div>
+        
       </section>
 
       <section

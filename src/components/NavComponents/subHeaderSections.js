@@ -20,7 +20,7 @@ export const subHeaderSections = {
   },
   feesandfunding: {
     "We are here":"intro",
-    "tuition and fees": "tution",
+    "tuition and fees": "tuition",
     "financial support": "finsupport",
     "Money tips":"moneytips"
   },
