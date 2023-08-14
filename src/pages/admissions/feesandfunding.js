@@ -53,8 +53,8 @@ const feesandfunding = () => {
           </div>
           <div className={AdminStyles.fourColGrid}>
             <SimpleCard
-              text="Upskilling Courses Fees"
-              linkpage="/admissions/fees1"
+              text="Short Courses Fees"
+              linkpage="/admissions/feesbyshortcourses"
             />
           </div>
           <div className={AdminStyles.fourColGrid}>
