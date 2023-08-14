@@ -32,6 +32,7 @@
         "programmes": [
           {
             "prog_code": "ACCT_BA",
+            "prog_shortname": "baAccounting",
             "prog_name": "BA Accounting",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -44,6 +45,7 @@
           },
           {
             "prog_code": "BSAD_AAS",
+            "prog_shortname": "aasBusAdmin",
             "prog_name": "AAS  Business Administration",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -57,6 +59,7 @@
 
           {
             "prog_code": "CERT_SMGT",
+            "prog_shortname": "certSupMgmt",
             "prog_name": "Certificate in Supervisory Management ",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -69,6 +72,7 @@
           },
           {
             "prog_code": "DIPL_SMGT",
+            "prog_shortname": "dipSupMgmt",
             "prog_name": "Diploma in Supervisory Management ",
             "prog_level": "Diploma",
             "prog_del_mode": "Blended",
@@ -81,6 +85,7 @@
           },
           {
             "prog_code": "ENTP_BBA",
+            "prog_shortname": "baMgmtEntrep",
             "prog_name": "BBA Management and Entrepreneurship",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -93,6 +98,7 @@
           },
           {
             "prog_code": "HURM_BBA",
+            "prog_shortname": "bbaHRMgmt",
             "prog_name": "BBA Human Resource Management ",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -105,6 +111,7 @@
           },
           {
             "prog_code": "MKTG_BBA",
+            "prog_shortname": "bbaMarketing",
             "prog_name": "BBA Marketing",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -138,6 +145,7 @@
         "programmes": [
           {
             "prog_code": "CERT_WEB",
+            "prog_shortname": "certWebDev",
             "prog_name": "Diploma in IT - Web Development",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -150,6 +158,7 @@
           },
           {
             "prog_code": "CERT_CCNA",
+            "prog_shortname": "certCCNA",
             "prog_name": "Certificate in CISCO-CCNA",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -162,6 +171,7 @@
           },
           {
             "prog_code": "CERT_RECM",
+            "prog_shortname": "certRecMgmt",
             "prog_name": "Certificate in Records Management",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -174,6 +184,7 @@
           },
           {
             "prog_code": "ILSC_BS",
+            "prog_shortname": "bscLIS",
             "prog_name": "BSc Library and Information Science ",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -186,6 +197,7 @@
           },
           {
             "prog_code": "ITGN_AAS",
+            "prog_shortname": "aasITGen",
             "prog_name": "AAS Information Technology - General",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -198,6 +210,7 @@
           },
           {
             "prog_code": "ITWEB_AAS",
+            "prog_shortname": "aasWebDev",
             "prog_name": "AAS Information Technology - Web Development",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -210,6 +223,7 @@
           },
           {
             "prog_code": "ITGN_BS",
+            "prog_shortname": "bscITGen",
             "prog_name": "BSc Information Technology - General",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -222,6 +236,7 @@
           },
           {
             "prog_code": "ITWEB_BS",
+            "prog_shortname": "bscWebDev",
             "prog_name": "BSc Information Technology - Web Development",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -234,6 +249,7 @@
           },
           {
             "prog_code": "ITNT_BS",
+            "prog_shortname": "bscITNetworking",
             "prog_name": "BSc IT - Networking",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -246,6 +262,7 @@
           },
           {
             "prog_code": "LBIS_AAS",
+            "prog_shortname": "aasLIS",
             "prog_name": "AAS Library and Information Studies",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -286,6 +303,7 @@
         "programmes": [
           {
             "prog_code": "MATH_AS",
+            "prog_shortname": "aasMath",
             "prog_name": "AS Mathematics",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -298,6 +316,7 @@
           },
           {
             "prog_code": "ECCE_BA",
+            "prog_shortname": "baECCE",
             "prog_name": "BA in  Early Childhood Care and Education ",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -310,6 +329,7 @@
           },
           {
             "prog_code": "CERT_ECCE",
+            "prog_shortname": "certECCE",
             "prog_name": "Certificate in  Early Childhood Care and Education",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -347,6 +367,7 @@
 
           {
             "prog_code": "CRIM_AAS",
+            "prog_shortname": "aasCrimJustice",
             "prog_name": "AAS in Criminal Justice",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -359,6 +380,7 @@
           },
           {
             "prog_code": "CERT_CRIM",
+            "prog_shortname": "certCrimJustice",
             "prog_name": "Certificate in Criminal Justice",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -383,18 +405,7 @@
         "programmes": [
           {
             "prog_code": "SOWK_AAS",
-            "prog_name": "AAS Social Work",
-            "prog_level": "Associate",
-            "prog_del_mode": "Blended",
-            "dept_code": "SABS",
-            "prog_major_credits": 21,
-            "prog_core_credits": 21,
-            "prog_elect_credits": 3,
-            "prog_supp_credits": 15,
-            "prog_description": "This Associate in Applied Science degree in Social Work develops social work competencies which enables students to work immediately as paraprofessionals in the field. It also provides them with a solid foundation to pursue baccalaureate studies, if they so desire.  Graduates would have gained exposure to various service areas such as individual and group work, youth work, direct practice, community practice, and family and child issues."
-          },
-          {
-            "prog_code": "SOWK_AAS",
+            "prog_shortname": "aasSocialWork",
             "prog_name": "AAS Social Work",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -407,6 +418,7 @@
           },
           {
             "prog_code": "SOWK_BSW",
+            "prog_shortname": "bswSocialWork",
             "prog_name": "BSW Social Work ",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -420,6 +432,7 @@
 
           {
             "prog_code": "PSYC_AA",
+            "prog_shortname": "aaPsychology",
             "prog_name": "AA - Psychology",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -531,6 +544,7 @@
         "programmes": [
           {
             "prog_code": "ELIT_AA",
+            "prog_shortname": "aaLitInEnglish",
             "prog_name": "AA Literatures in English",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -543,6 +557,7 @@
           },
           {
             "prog_code": "FAVP_AA",
+            "prog_shortname": "aaFilmVidProd",
             "prog_name": "AA Film and Video Production",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -555,6 +570,7 @@
           },
           {
             "prog_code": "PERM_AA",
+            "prog_shortname": "aaPerfArtMusic",
             "prog_name": "AA Performing Arts: Music",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -567,6 +583,7 @@
           },
           {
             "prog_code": "CERT_FVP",
+            "prog_shortname": "certFilmVidProd",
             "prog_name": "Certificate in Film and Video Production",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -579,6 +596,7 @@
           },
           {
             "prog_code": "CERT_MUP",
+            "prog_shortname": "certMusicPerf",
             "prog_name": "Certificate in Music Performance",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -603,6 +621,7 @@
         "programmes": [
           {
             "prog_code": "MCOM_BA",
+            "prog_shortname": "baMassComm",
             "prog_name": "BA Mass Communications",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -615,6 +634,7 @@
           },
           {
             "prog_code": "GRDS_BA",
+            "prog_shortname": "baGraphicDes",
             "prog_name": "BA Graphic Design",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -627,6 +647,7 @@
           },
           {
             "prog_code": "GRDS_AAS",
+            "prog_shortname": "aasGraphicDes",
             "prog_name": "AAS Graphic Design",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -639,6 +660,7 @@
           },
           {
             "prog_code": "ADVP_AAS",
+            "prog_shortname": "aasAdvertPromo",
             "prog_name": "AAS Advertising and Promotions",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -651,6 +673,7 @@
           },
           {
             "prog_code": "JOUR_AA",
+            "prog_shortname": "aaJournalism",
             "prog_name": "AA Journalism",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -663,6 +686,7 @@
           },
           {
             "prog_code": "JOPR_AAS",
+            "prog_shortname": "aasJourPubRel",
             "prog_name": "AAS Journalism and Public Relations",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -675,6 +699,7 @@
           },
           {
             "prog_code": "SPAN_AA",
+            "prog_shortname": "aaSpanish",
             "prog_name": "AA - Spanish",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -687,6 +712,7 @@
           },
           {
             "prog_code": "SPAN_AAS",
+            "prog_shortname": "aaSpanForBus",
             "prog_name": "AAS - Spanish for Business",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -699,6 +725,7 @@
           },
           {
             "prog_code": "DIPL_ADVT",
+            "prog_shortname": "dipAdvertPromo",
             "prog_name": "Diploma in Advertising and Promotions",
             "prog_level": "Diploma",
             "prog_del_mode": "Blended",
@@ -711,6 +738,7 @@
           },
           {
             "prog_code": "CERT_GRDS",
+            "prog_shortname": "certGraphicDes",
             "prog_name": "Certificate in Graphic Design",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -723,6 +751,7 @@
           },
           {
             "prog_code": "CERT_ESWP",
+            "prog_shortname": "certWkplaceSkills",
             "prog_name": "Essential Skills for the Workplace Certificate",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -735,6 +764,7 @@
           },
           {
             "prog_code": "CERT_JOUR",
+            "prog_shortname": "certJournalism",
             "prog_name": "Certificate in Journalism",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -747,6 +777,7 @@
           },
           {
             "prog_code": "CERT_PHVI",
+            "prog_shortname": "certPhotoVid",
             "prog_name": "Certificate in Photography and Video",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -759,6 +790,7 @@
           },
           {
             "prog_code": "CERT_ADVP",
+            "prog_shortname": "certAdvertPromo",
             "prog_name": "Certificate in Advertising and Promotions",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -771,6 +803,7 @@
           },
           {
             "prog_code": "CERT_PUBR",
+            "prog_shortname": "certPublicRel",
             "prog_name": "Certificate in Public Relations",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -820,6 +853,7 @@
         "programmes": [
           {
             "prog_code": "",
+            "prog_shortname": "",
             "prog_name": "",
             "prog_level": "",
             "prog_del_mode": "",
