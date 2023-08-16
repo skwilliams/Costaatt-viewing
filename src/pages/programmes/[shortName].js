@@ -10,8 +10,11 @@ import gate from "../../../images/Programmes/gate.png";
 import Image from "next/image";
 import ContactUs from "@/components/PageComponents/ContactUs";
 import Featured from "../../components/PageComponents/Featured";
-import { featured } from "../../components/PageComponents/featuresdata";
-import { gradspeak } from "../api/gradspeak"; //"../../../../api/gradspeak";
+import {
+  featured,
+  gradspeak,
+} from "../../components/PageComponents/featuresdata";
+// import { gradspeak } from "../api/gradspeak"; //"../../../../api/gradspeak";
 
 import GradStyle from "../../styles/GradsSpeak.module.scss";
 import GradsSpeak from "@/components/PageComponents/GradsSpeak";
@@ -51,7 +54,8 @@ import SupportDoc from "@/components/PageComponents/SupportDoc";
 // DATA IMPORTS
 import path from "path";
 import fs from "fs/promises";
-import { getProgStruct, getRequirements } from "./programmesData";
+import { getProgStruct, getRequirements, getCourses } from "./programmesData";
+import ProgOfferingDetails from "@/components/PageComponents/ProgOfferingDetails";
 
 const programme = (props) => {
   const { prog } = props;
@@ -62,109 +66,75 @@ const programme = (props) => {
       <Head>
         <title>{prog.prog_name}</title>
       </Head>
-      {/* <Headimagesmall
-        imagetext=""
-        mainimage={headImg}
-      /> */}
+
       <p className={CourseStyle.courseName}>{prog.prog_name}</p>
-      {/* <section id="courseoverview" className={CourseStyle.sectionOverview}>
-        <p className={CourseStyle.desc}>
-          The Bachelor of Science in Information and Library Science allows
-          graduates to qualify for employment in a variety of professional
-          positions in schools, public, academic and special libraries or in any
-          other organization engaged in information science and library-related
-          activities. This degree prepares candidates who would like to pursue a
-          masters' degree to easily transition to such a programme.
-        </p>
+
+      <section id="courseoverview" className={CourseStyle.sectionOverview}>
+        <p className={CourseStyle.desc}>{prog.prog_description}</p>
         <div className={CourseStyle.iconsection}>
           <div className={CourseStyle.fiveColGridCon}>
-            <div className={CourseStyle.fiveColGrid}>
-              {" "}
-              <Image
-                className={CourseStyle.icon}
-                src={calendar}
-                alt="duration icon"
-              />
-              <p className={CourseStyle.iconfont}> &#10004; September</p>
-              <p className={CourseStyle.iconfont}> &#10004; January</p>
-            </div>
-
-            <div className={CourseStyle.fiveColGrid}>
-              {" "}
-              <Image
-                className={CourseStyle.icon}
-                src={location}
-                alt="duration icon"
-              />
-              <p className={CourseStyle.iconfont}> &#10004; City Campus</p>
-              <p className={CourseStyle.iconfont}> &#10004; Online</p>
-            </div>
-            <div className={CourseStyle.fiveColGrid}>
-              <Image
-                className={CourseStyle.icon}
-                src={time}
-                alt="duration icon"
-              />
-              <p className={CourseStyle.iconfont}>
-                {" "}
-                &#10004; Full-time : 4 years
-              </p>
-              <p className={CourseStyle.iconfont}>
-                {" "}
-                &#10004; Part-time : 6 years
-              </p>
-              {/* <p className={CourseStyle.footnote}>
-                *Subject to change based on college Matriculation
-              </p>{" "} */}
-      {/*}         </div>
-            <div className={CourseStyle.fiveColGrid}>
-              {" "}
-              <Image
-                className={CourseStyle.icon}
-                src={mode}
-                alt="duration icon"
-              />
-              <p className={CourseStyle.iconfont}> &#10004; Blended</p>
-              <p className={CourseStyle.iconfont}> &#10004; Online</p>
-            </div>
-            <div className={CourseStyle.fiveColGrid}>
-              {" "}
-              <Image
-                className={CourseStyle.icon}
-                src={gate}
-                alt="duration icon"
-              />
-              <p className={CourseStyle.iconfont}> &#10004; Approved</p>
-            </div>
+            <ProgOfferingDetails
+              txt={"duration"}
+              detailIcon={calendar}
+              data={progStruct.semester}
+            />
+            <ProgOfferingDetails
+              txt={"location"}
+              detailIcon={location}
+              data={progStruct.campus}
+            />
+            <ProgOfferingDetails
+              txt={"time"}
+              detailIcon={time}
+              data={progStruct.duration}
+            />
+            <ProgOfferingDetails
+              txt={"mode"}
+              detailIcon={mode}
+              data={progStruct.mode}
+            />
+            <ProgOfferingDetails
+              txt={"GATE"}
+              detailIcon={gate}
+              data={progStruct.GATE}
+            />
           </div>
         </div>
-      </section> */}
+      </section>
       <Divider dark />
-      {/* <section id="careers" className={CourseStyle.sectionCareers}>
+      <section id="careers" className={CourseStyle.sectionCareers}>
         <p className={ProgStyles.headingprimaryleft}> Possible Careers</p>
-        <PossibleSalary salaries={salaries} />
+        <PossibleSalary salaries={progStruct.salaries} />
 
         <p className={CourseStyle.footnote}>
           * Salaries are subject to years of experience, projects and
           professional certification{" "}
         </p>
-      </section> */}
+      </section>
       <Divider dark />
-      {/* <section id="gradPortfolio" className={CourseStyle.sectionPortfolio}>
+      <section id="gradPortfolio" className={CourseStyle.sectionPortfolio}>
         <p className={ProgStyles.headingprimaryleft}> Graduates Portfolio</p>
 
-        <Featured feat={featured} />
-      </section> */}
+        <Featured
+          feat={featured.filter((item) =>
+            item.tags.includes(prog.prog_shortname)
+          )}
+        />
+      </section>
       <Divider dark />
-      {/* <section id="gradSpeak" className={CourseStyle.sectionGradSpeak}>
+      <section id="gradSpeak" className={CourseStyle.sectionGradSpeak}>
         <p className={ProgStyles.headingprimaryleft}> Graduates Speak</p>
 
         <div className={GradStyle.threeColGridCon}>
-          <GradsSpeak graduate={gradspeak} />
+          <GradsSpeak
+            graduate={gradspeak.filter((item) =>
+              item.tags.includes(prog.prog_shortname)
+            )}
+          />
         </div>
-      </section> */}
+      </section>
       <Divider dark />
-      {/* 
+
       <section id="curriculum" className={CourseStyle.sectionCurriculum}>
         <p className={ProgStyles.headingprimaryleft}>
           {" "}
@@ -180,7 +150,7 @@ const programme = (props) => {
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <DegreeCourses courses={bscLismajor} />
+            <DegreeCourses courses={getCourses(progStruct.majorcourses)} />
           </AccordionDetails>
         </Accordion>
         <Accordion sx={{ margin: 2, color: "primary" }}>
@@ -189,7 +159,7 @@ const programme = (props) => {
           </AccordionSummary>
           <AccordionDetails>
             {/* Core Curriculum Courses */}
-      {/*}       <DegreeCourses courses={bscLiscore} />
+            <DegreeCourses courses={getCourses(progStruct.corecourses)} />
           </AccordionDetails>
         </Accordion>
         <Accordion sx={{ margin: 2 }}>
@@ -199,16 +169,17 @@ const programme = (props) => {
           <AccordionDetails>
             {/* Support Courses */}
 
-      {/*}        <DegreeCourses courses={bscLissupport} />
+            <DegreeCourses courses={getCourses(progStruct.supportcourses)} />
           </AccordionDetails>
         </Accordion>
         <p className={CourseStyle.creditsummarytext}>
           {" "}
           Total Credits :{" "}
-          {/* <span className={CourseStyle.creditsummarynumber}> */}
-      {/*}        {totalcredits} {/* </span> */}
-      {/*}      </p>
-      </section> */}
+          <span className={CourseStyle.creditsummarynumber}>
+            {progStruct.totalcredits}{" "}
+          </span>
+        </p>
+      </section>
       <Divider dark />
       {/* 
       <section id="feesfinancial" className={CourseStyle.sectionFinancial}>

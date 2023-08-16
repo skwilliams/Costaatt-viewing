@@ -123,17 +123,70 @@ const programmes = [
         figure: "$7,800 -$10,200",
       },
     ],
+    semester: ["September", "January"],
+    campus: ["City Campus"],
+    duration: ["Full-time: 4 yrs", "Part-time: 6 yrs"],
+    mode: ["Blended"],
+    GATE: ["Approved"],
+    specialMatricReqs: [],
+  },
+  {
+    prog_shortname: "aasITGen",
+    majorcourses: [
+      "ITEC 115",
+      "ITEC 120",
+      "ITEC 122",
+      "ITEC 229",
+      "ITEC 240",
+      "ITEC 250",
+      "ITEC 260",
+      "ITEC 270",
+      "ITEC 115",
+      "ITEC 124",
+      "ITEC 225",
+      "ITEC 235",
+      "ITEC 244",
+    ],
+    electivecourses: ["XXXX ###"],
+    corecourses: ["FYEC 100", "LIBS 130", "WRIT 117", "MATH 117", "COMM 108 "],
+    supportcourses: ["MATH 118", "GRDE 129"],
+    totalcredits: 64,
+    salaries: [
+      {
+        position:
+          "Professional positions in schools, public, academic and special libraries",
+        figure: "$11,000 -$15,000",
+      },
+      {
+        position: "Senior (Librarian, Information Specialist, others..)",
+        figure: "$11,000 -$15,000",
+      },
+      {
+        position: "School Librarian",
+        figure: "$11,000 -$15,000",
+      },
+      {
+        position: "Records Manager 1",
+        figure: "$7,800 -$10,200",
+      },
+    ],
+    semester: ["September", "January"],
+    campus: ["City Campus", "South Campus"],
+    duration: ["Full-time: 4 yrs", "Part-time: 6 yrs"],
+    mode: ["Blended"],
+    GATE: ["Approved"],
     specialMatricReqs: [],
   },
 ];
 
-const getCourses = function (courseList) {
+export const getCourses = function (courseList) {
   const progCourses = [];
   courseList.forEach((courseCode) => {
     progCourses.push(
       allCourses.find((course) => course.coursecode === courseCode)
     );
   });
+  console.log(progCourses);
   return progCourses;
 };
 
