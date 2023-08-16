@@ -89,7 +89,6 @@ const allCourses = [
 
 const programmes = [
   {
-    progname: "",
     prog_shortname: "bscLIS",
     majorcourses: [
       "LIBS 136",
@@ -157,6 +156,13 @@ export const tuition = function (prog) {
       totalcost: prog.totalcredits * costpercredit,
     },
   ];
+};
+
+export const getProgStruct = function (shortName) {
+  const result = programmes.find(
+    (prog) => prog.prog_shortname.toLowerCase() === shortName.toLowerCase()
+  );
+  return result ? result : null;
 };
 
 export const getRequirements = function (prog) {

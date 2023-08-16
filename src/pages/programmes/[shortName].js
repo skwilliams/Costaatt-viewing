@@ -1,41 +1,40 @@
 import Head from "next/head";
-import SideNavWithTopNav_NoDropdown from "../../../../../components/Layouts/SideNavWithTopNav_NoDropdown";
-
-import CourseStyle from "../../../../../styles/Course.module.scss";
-import ProgStyles from "../../../../../styles/Programmes.module.scss";
-import time from "../../../../../../images/Programmes/time.svg";
-import mode from "../../../../../../images/Programmes/mode.svg";
-import location from "../../../../../../images/Programmes/location.svg";
-import calendar from "../../../../../../images/Programmes/calendar.svg";
-import gate from "../../../../../../images/Programmes/gate.png";
+import SideNavWithTopNav_NoDropdown from "../../components/Layouts/SideNavWithTopNav_NoDropdown";
+import CourseStyle from "../../styles/Course.module.scss";
+import ProgStyles from "../../styles/Programmes.module.scss";
+import time from "../../../images/Programmes/time.svg";
+import mode from "../../../images/Programmes/mode.svg";
+import location from "../../../images/Programmes/location.svg";
+import calendar from "../../../images/Programmes/calendar.svg";
+import gate from "../../../images/Programmes/gate.png";
 import Image from "next/image";
 import ContactUs from "@/components/PageComponents/ContactUs";
-import Featured from "../../../../../components/PageComponents/Featured";
-import { featured } from "../../../../../components/PageComponents/featuresdata";
-import { gradspeak } from "../../../../api/gradspeak";
+import Featured from "../../components/PageComponents/Featured";
+import { featured } from "../../components/PageComponents/featuresdata";
+import { gradspeak } from "../api/gradspeak"; //"../../../../api/gradspeak";
 
-import GradStyle from "../../../../../styles/GradsSpeak.module.scss";
+import GradStyle from "../../styles/GradsSpeak.module.scss";
 import GradsSpeak from "@/components/PageComponents/GradsSpeak";
 import Divider from "@mui/material/Divider";
-import {
-  supportingDoc,
-  supportDocA,
-  minrequirements,
-  bscLismajor,
-  bscLissupport,
-  bscLiscore,
-  salaries,
-  tuition,
-  totalcredits,
-  resources,
-} from "../../busIT/ist/bscLiscourses";
+// import {
+//   supportingDoc,
+//   supportDocA,
+//   minrequirements,
+//   bscLismajor,
+//   bscLissupport,
+//   bscLiscore,
+//   salaries,
+//   tuition,
+//   totalcredits,
+//   resources,
+// } from "../../busIT/ist/bscLiscourses";
 import {
   institutionFees,
   dptOfManagementFees,
-} from "../../../../admissions/admissionsData";
+} from "../admissions/admissionsData"; // "../../../../admissions/admissionsData";
 import DegreeCourses from "@/components/PageComponents/DegreeCourses";
 import PossibleSalary from "@/components/PageComponents/PossibleSalary";
-import DeptStyles from "../../../../../styles/Department.module.scss";
+import DeptStyles from "../../styles/Department.module.scss";
 import StudentResources from "@/components/PageComponents/StudentResources";
 
 import Accordion from "@mui/material/Accordion";
@@ -44,25 +43,31 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import InstitutionFees from "@/components/PageComponents/InstiutionFees";
-import image from "../../../../../../images/Programmes/visit-home-v2.jpg";
+import image from "../../../images/Programmes/visit-home-v2.jpg";
 import TuitionFees from "@/components/PageComponents/TuitionFees";
 import Requirements from "@/components/PageComponents/Requirements";
 import SupportDoc from "@/components/PageComponents/SupportDoc";
 
-const programme = () => {
+// DATA IMPORTS
+import path from "path";
+import fs from "fs/promises";
+import { getProgStruct, getRequirements } from "./programmesData";
+
+const programme = (props) => {
+  const { prog } = props;
+  const progStruct = getProgStruct(prog.prog_shortname);
+
   return (
     <>
       <Head>
-        <title>BSC LIS</title>
+        <title>{prog.prog_name}</title>
       </Head>
       {/* <Headimagesmall
         imagetext=""
         mainimage={headImg}
       /> */}
-      <p className={CourseStyle.courseName}>
-        BSC. Library and Information Science
-      </p>
-      <section id="courseoverview" className={CourseStyle.sectionOverview}>
+      <p className={CourseStyle.courseName}>{prog.prog_name}</p>
+      {/* <section id="courseoverview" className={CourseStyle.sectionOverview}>
         <p className={CourseStyle.desc}>
           The Bachelor of Science in Information and Library Science allows
           graduates to qualify for employment in a variety of professional
@@ -111,7 +116,7 @@ const programme = () => {
               {/* <p className={CourseStyle.footnote}>
                 *Subject to change based on college Matriculation
               </p>{" "} */}
-            </div>
+      {/*}         </div>
             <div className={CourseStyle.fiveColGrid}>
               {" "}
               <Image
@@ -133,9 +138,9 @@ const programme = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <Divider dark />
-      <section id="careers" className={CourseStyle.sectionCareers}>
+      {/* <section id="careers" className={CourseStyle.sectionCareers}>
         <p className={ProgStyles.headingprimaryleft}> Possible Careers</p>
         <PossibleSalary salaries={salaries} />
 
@@ -143,23 +148,23 @@ const programme = () => {
           * Salaries are subject to years of experience, projects and
           professional certification{" "}
         </p>
-      </section>
+      </section> */}
       <Divider dark />
-      <section id="gradPortfolio" className={CourseStyle.sectionPortfolio}>
+      {/* <section id="gradPortfolio" className={CourseStyle.sectionPortfolio}>
         <p className={ProgStyles.headingprimaryleft}> Graduates Portfolio</p>
 
         <Featured feat={featured} />
-      </section>
+      </section> */}
       <Divider dark />
-      <section id="gradSpeak" className={CourseStyle.sectionGradSpeak}>
+      {/* <section id="gradSpeak" className={CourseStyle.sectionGradSpeak}>
         <p className={ProgStyles.headingprimaryleft}> Graduates Speak</p>
 
         <div className={GradStyle.threeColGridCon}>
           <GradsSpeak graduate={gradspeak} />
         </div>
-      </section>
+      </section> */}
       <Divider dark />
-
+      {/* 
       <section id="curriculum" className={CourseStyle.sectionCurriculum}>
         <p className={ProgStyles.headingprimaryleft}>
           {" "}
@@ -184,7 +189,7 @@ const programme = () => {
           </AccordionSummary>
           <AccordionDetails>
             {/* Core Curriculum Courses */}
-            <DegreeCourses courses={bscLiscore} />
+      {/*}       <DegreeCourses courses={bscLiscore} />
           </AccordionDetails>
         </Accordion>
         <Accordion sx={{ margin: 2 }}>
@@ -194,18 +199,18 @@ const programme = () => {
           <AccordionDetails>
             {/* Support Courses */}
 
-            <DegreeCourses courses={bscLissupport} />
+      {/*}        <DegreeCourses courses={bscLissupport} />
           </AccordionDetails>
         </Accordion>
         <p className={CourseStyle.creditsummarytext}>
           {" "}
           Total Credits :{" "}
           {/* <span className={CourseStyle.creditsummarynumber}> */}
-          {totalcredits} {/* </span> */}
-        </p>
-      </section>
+      {/*}        {totalcredits} {/* </span> */}
+      {/*}      </p>
+      </section> */}
       <Divider dark />
-
+      {/* 
       <section id="feesfinancial" className={CourseStyle.sectionFinancial}>
         <p className={ProgStyles.headingprimaryleft}> Fees and Financial Aid</p>
         <Accordion sx={{ margin: 2 }}>
@@ -347,10 +352,10 @@ const programme = () => {
             </div>
           </AccordionDetails>
         </Accordion>
-      </section>
+      </section> */}
       <Divider dark />
 
-      <section id="requirements" className={CourseStyle.sectionRequirements}>
+      {/* <section id="requirements" className={CourseStyle.sectionRequirements}>
         <p className={ProgStyles.headingprimaryleft}> Requirements</p>
         <Accordion sx={{ margin: 2 }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
@@ -430,10 +435,10 @@ const programme = () => {
             <SupportDoc docs={supportDocA} />
           </AccordionDetails>
         </Accordion>
-      </section>
+      </section> */}
       <Divider dark />
 
-      <section id="applylink" className={CourseStyle.sectionStuResources}>
+      {/* <section id="applylink" className={CourseStyle.sectionStuResources}>
         <p className={ProgStyles.headingprimaryleft}> COSTAATT Wants You </p>
         <>
           <div className={CourseStyle.inquiryform}>
@@ -457,7 +462,7 @@ const programme = () => {
             </div>
           </div>
         </>
-      </section>
+      </section> */}
     </>
   );
 };
@@ -467,3 +472,40 @@ programme.getLayout = function getLayout(page) {
 };
 
 export default programme;
+
+export async function getStaticPaths() {
+  return {
+    paths: [],
+    fallback: "blocking",
+  };
+}
+export async function getStaticProps(context) {
+  const { params } = context;
+  const { shortName } = params;
+  return {
+    props: {
+      // retrieve the entire programme object
+      prog: await getProgData(shortName),
+    },
+  };
+}
+
+const getProgData = async function (progKey) {
+  const filepath = path.join(process.cwd(), "data", "schooldata.json");
+  const jsonData = await fs.readFile(filepath);
+  const data = JSON.parse(jsonData);
+  let finalData = null;
+  data.forEach((school) => {
+    school.departments.forEach((dept) => {
+      dept.programmes &&
+        dept.programmes.length > 0 &&
+        dept.programmes.forEach((prog) => {
+          if (prog.prog_shortname === progKey) {
+            finalData = prog;
+            return;
+          }
+        });
+    });
+  });
+  return finalData;
+};

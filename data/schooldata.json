@@ -354,6 +354,7 @@
         "programmes": [
           {
             "prog_code": "CRIM_BA",
+            "prog_shortname": "baCrimJustice",
             "prog_name": "BA - Criminal Justice  ",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -477,8 +478,10 @@
         "image": "/images/schools/departments/department without labels/Artboard 1.png",
         "summary": "Health and Medical Science Technologies...",
         "shortName": "HMST",
+        "coreValues": [],
         "contacts": [],
-        "dept_code": "HMST"
+        "dept_code": "HMST",
+        "programmes": []
       }
     ]
   },
@@ -504,7 +507,8 @@
         "coreValues": [],
         "shortName": "Environmental and Sustainability Studies",
         "contacts": [],
-        "dept_code": "ENVS"
+        "dept_code": "ENVS",
+        "programmes": []
       },
       {
         "name": "Natural and Life Sciences",
@@ -514,7 +518,8 @@
         "coreValues": [],
         "shortName": "Natural and Life Sciences",
         "contacts": [],
-        "dept_code": "NLSC"
+        "dept_code": "NLSC",
+        "programmes": []
       }
     ]
   },
@@ -840,7 +845,8 @@
         "coreValues": [],
         "shortName": "Skills",
         "contacts": [],
-        "dept_code": "UPSK"
+        "dept_code": "UPSK",
+        "programmes": []
       },
       {
         "name": "CollegeStarTT",
@@ -850,6 +856,7 @@
         "coreValues": [],
         "shortName": "CollegeStarTT",
         "contacts": [],
+        "dept_code": "CSTT",
         "programmes": [
           {
             "prog_code": "",
@@ -874,7 +881,8 @@
         "coreValues": [],
         "shortName": "Translation",
         "contacts": [],
-        "dept_code": "CFTI"
+        "dept_code": "CFTI",
+        "programmes": []
       }
     ]
   }
