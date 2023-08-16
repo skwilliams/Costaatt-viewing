@@ -3,7 +3,7 @@ import Head from 'next/head'
 import AdminStyles from '../../styles/Admissions.module.scss'
 
 import HeadImage from '@/components/PageComponents/HeadImage';
-import headImg from '../../../public/images/schools/departments/EDUCsmall.png'
+import headImg from '../../../public/images/admissions/feesandfunding.jpg'
 import SchoolTile from '@/components/HomeComponents/SchoolTile';
 import Link from "next/link"
 import HomeStyles from '../../styles/Home.module.scss'
@@ -59,23 +59,32 @@ const feesandfunding = () => {
           </div>
           <div className={AdminStyles.fourColGrid}>
             <SimpleCard
-            text="Institutional Fees"
-            linkpage="/admissions/institutionalfees"
-           />
+              text="Institutional Fees"
+              linkpage="/admissions/institutionalfees"
+            />
           </div>
           <div className={AdminStyles.fourColGrid}>
-              <SimpleCard text="How to Pay" linkpage="/admissions/fees1" />
-            </div>
+            <SimpleCard text="How to Pay" linkpage="/admissions/howtopay" />
+          </div>
         </div>
-        
       </section>
 
-      <section
-        id="finsupport"
-        className={AdminStyles.sectionfinsupport}
-      ></section>
+      <section id="finsupport" className={AdminStyles.sectionfinsupport}>
+        <p className={AdminStyles.sectiontext}>Financial Support</p>
+
+        <div className={AdminStyles.fourColGridCon}>
+          <div className={AdminStyles.fourColGrid}>GATE</div>
+          <div className={AdminStyles.fourGridCol}> HELP Loan</div>
+
+          <div className={AdminStyles.fourGridCol}> Payment Plans</div>
+          <div className={AdminStyles.fourGridCol}>
+            {" "}
+            Scholarships and Bursaries
+          </div>
+        </div>
+      </section>
       <section id="moneytips" className={AdminStyles.sectionmoneytips}>
-        {" "}
+        <p className={AdminStyles.sectiontext}>Mon</p>{" "}
       </section>
     </>
   );

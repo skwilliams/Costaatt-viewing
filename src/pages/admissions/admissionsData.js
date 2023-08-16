@@ -145,6 +145,13 @@ export const institutionFees = [
     International: "$30.00",
     Per: "Annum",
   },
+  {
+    Fees: "Student Guild",
+    Citizens: "$100.00",
+    Caricom: "$100.00",
+    International: "$100.00",
+    Per: "Annum",
+  },
 ];
 
 export const dptOfManagementFees = [

@@ -49,164 +49,160 @@ const feesandfunding = () => {
         COSTAATT / Admissions and Aid/Tution School Fees
       </p>
 
-      <div className={admissionStyles.applicationInstructions}>
-        <section>
-          <h1>ESTIMATE OF TOTAL TUITION BY PROGRAMME</h1> <p>&nbsp;</p>
-          <p>
-            <strong>
-              IMPORTANT NOTE: Fees listed in the tables below are estimates ONLY
-            </strong>
-            and should be used as guidance. They do not include charges for
-            developmental or repeated courses.
-            <br /> All fees listed are in Trinidad and Tobago dollars (TTD)
-          </p>
-          <p>&nbsp;</p>
-          <div>
-            <Accordion>
-              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                <Typography fontWeight="bold">
-                  SCHOOL OF BUSINESS AND INFORMATION
-                </Typography>
-              </AccordionSummary>
-              <AccordionSummary>
-                <Typography>
-                  DEPARTMENT OF MANAGEMENT AND ENTREPRENEURSHIP
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <FeesAndFunding dept={dptOfManagementFees} />
-              </AccordionDetails>
-              <AccordionSummary>
-                <Typography>
-                  DEPARTMENT OF INFORMATION AND TECHNOLOGY
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <FeesAndFunding dept={deptOfInformation} />
-              </AccordionDetails>
-            </Accordion>
-            {/* ......................................................... */}
-            <Accordion>
-              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                <Typography fontWeight="bold">
-                  SCHOOL OF NURSING, HEALTH AND ENVIRONMENTAL SCIENCES
-                </Typography>
-              </AccordionSummary>
-              <AccordionSummary>
-                <Typography>DEPARTMENT OF NURSINGP</Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <FeesAndFunding dept={deptOfNursingFees} />
-              </AccordionDetails>
-              <AccordionSummary>
-                <Typography>
-                  DEPARTMENT OF HEALTH SCIENCE TECHNOLOGIES
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <FeesAndFunding dept={deptOfHealth} />
-              </AccordionDetails>{" "}
-              <AccordionSummary>
-                <Typography>DEPARTMENT OF NATURAL AND LIFE SCIENCES</Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <FeesAndFunding dept={dptOfNatSci} />
-              </AccordionDetails>{" "}
-              <AccordionSummary>
-                <Typography>DEPARTMENT OF ENVIRONMENTAL STUDIES</Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <FeesAndFunding dept={dptOfEnvStud} />
-              </AccordionDetails>
-            </Accordion>
-            {/* ......................................................... */}
-            <Accordion>
-              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                <Typography fontWeight="bold">
-                  SCHOOL OF AND LIBERAL ARTS AND HUMAN SERVICES
-                </Typography>
-              </AccordionSummary>
-              <AccordionSummary>
-                <Typography>
-                  DEPARTMENT OF CRIMINAL JUSTICE AND LEGAL STUDIES
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                {/* // <FeesAndFunding dept={dptOfManagementFees} /> */}
-              </AccordionDetails>
-              <AccordionSummary>
-                <Typography>DEPARTMENT OF MATHEMATICS</Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <FeesAndFunding dept={dptOfMath} />
-              </AccordionDetails>
-              <AccordionSummary>
-                <Typography>OFFICE OF THE DEAN</Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <FeesAndFunding dept={officeOfDean} />
-              </AccordionDetails>
-              <AccordionSummary>
-                <Typography>
-                  DEPARTMENT OF SOCIAL AND BEHAVIOURAL SCIENCES
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <FeesAndFunding dept={dptOfSocBehSci} />
-              </AccordionDetails>
-              <AccordionSummary>
-                <Typography>
-                  DEPARTMENT OF LANGUAGES, LITERATURE AND COMMUNICATION STUDIES
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <FeesAndFunding dept={deptOfLang} />
-              </AccordionDetails>
-              <AccordionSummary>
-                <Typography>DEPARTMENT OF FINE AND PERFORMING ARTS </Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <FeesAndFunding dept={dptofFineArts} />
-              </AccordionDetails>
-            </Accordion>
-            {/* ......................................................... */}
-            <Accordion>
-              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                <Typography fontWeight="bold">
-                  SCHOOL OF CONTINUING EDUCATION AND LIFELONG LEARNING
-                </Typography>
-              </AccordionSummary>
-              <AccordionSummary>
-                <Typography>CONTINUING EDUCATION</Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <FeesAndFunding dept={continuingEduc} />
-              </AccordionDetails>
-            </Accordion>
-            {/* ......................................................... */}
-            <Accordion>
-              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                <Typography fontWeight="bold">
-                  KEN GORDON SCHOOL OF JOURNALISM AND COMMUNICATION STUDIES
-                </Typography>
-              </AccordionSummary>
-              <AccordionSummary>
-                <Typography>DEPARTMENT OF JOURNALISM AND MEDIA </Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <FeesAndFunding dept={deptOFJour} />
-              </AccordionDetails>
-              <AccordionSummary>
-                <Typography>DEPARTMENT OF COMMUNICATION STUDIES </Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <FeesAndFunding dept={deptOfComm} />
-              </AccordionDetails>
-            </Accordion>
-          </div>
-          <br />
-        </section>
-        {/* <section>
+      {/* <div className={admissionStyles.applicationInstructions}> */}
+      <section className={admissionStyles.applicationInstructions}>
+        <h1>ESTIMATE OF TOTAL TUITION BY PROGRAMME</h1> <p>&nbsp;</p>
+        <p>
+          <strong>
+            IMPORTANT NOTE: Fees listed in the tables below are estimates ONLY
+          </strong>
+          and should be used as guidance. They do not include charges for
+          developmental or repeated courses.
+          <br /> All fees listed are in Trinidad and Tobago dollars (TTD)
+        </p>
+        <p>&nbsp;</p>
+        <div>
+          <Accordion>
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              <Typography fontWeight="bold">
+                SCHOOL OF BUSINESS AND INFORMATION
+              </Typography>
+            </AccordionSummary>
+            <AccordionSummary>
+              <Typography>
+                DEPARTMENT OF MANAGEMENT AND ENTREPRENEURSHIP
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <FeesAndFunding dept={dptOfManagementFees} />
+            </AccordionDetails>
+            <AccordionSummary>
+              <Typography>DEPARTMENT OF INFORMATION AND TECHNOLOGY</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <FeesAndFunding dept={deptOfInformation} />
+            </AccordionDetails>
+          </Accordion>
+          {/* ......................................................... */}
+          <Accordion>
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              <Typography fontWeight="bold">
+                SCHOOL OF NURSING, HEALTH AND ENVIRONMENTAL SCIENCES
+              </Typography>
+            </AccordionSummary>
+            <AccordionSummary>
+              <Typography>DEPARTMENT OF NURSINGP</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <FeesAndFunding dept={deptOfNursingFees} />
+            </AccordionDetails>
+            <AccordionSummary>
+              <Typography>DEPARTMENT OF HEALTH SCIENCE TECHNOLOGIES</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <FeesAndFunding dept={deptOfHealth} />
+            </AccordionDetails>{" "}
+            <AccordionSummary>
+              <Typography>DEPARTMENT OF NATURAL AND LIFE SCIENCES</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <FeesAndFunding dept={dptOfNatSci} />
+            </AccordionDetails>{" "}
+            <AccordionSummary>
+              <Typography>DEPARTMENT OF ENVIRONMENTAL STUDIES</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <FeesAndFunding dept={dptOfEnvStud} />
+            </AccordionDetails>
+          </Accordion>
+          {/* ......................................................... */}
+          <Accordion>
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              <Typography fontWeight="bold">
+                SCHOOL OF AND LIBERAL ARTS AND HUMAN SERVICES
+              </Typography>
+            </AccordionSummary>
+            <AccordionSummary>
+              <Typography>
+                DEPARTMENT OF CRIMINAL JUSTICE AND LEGAL STUDIES
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              {/* // <FeesAndFunding dept={dptOfManagementFees} /> */}
+            </AccordionDetails>
+            <AccordionSummary>
+              <Typography>DEPARTMENT OF MATHEMATICS</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <FeesAndFunding dept={dptOfMath} />
+            </AccordionDetails>
+            <AccordionSummary>
+              <Typography>OFFICE OF THE DEAN</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <FeesAndFunding dept={officeOfDean} />
+            </AccordionDetails>
+            <AccordionSummary>
+              <Typography>
+                DEPARTMENT OF SOCIAL AND BEHAVIOURAL SCIENCES
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <FeesAndFunding dept={dptOfSocBehSci} />
+            </AccordionDetails>
+            <AccordionSummary>
+              <Typography>
+                DEPARTMENT OF LANGUAGES, LITERATURE AND COMMUNICATION STUDIES
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <FeesAndFunding dept={deptOfLang} />
+            </AccordionDetails>
+            <AccordionSummary>
+              <Typography>DEPARTMENT OF FINE AND PERFORMING ARTS </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <FeesAndFunding dept={dptofFineArts} />
+            </AccordionDetails>
+          </Accordion>
+          {/* ......................................................... */}
+          <Accordion>
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              <Typography fontWeight="bold">
+                SCHOOL OF CONTINUING EDUCATION AND LIFELONG LEARNING
+              </Typography>
+            </AccordionSummary>
+            <AccordionSummary>
+              <Typography>CONTINUING EDUCATION</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <FeesAndFunding dept={continuingEduc} />
+            </AccordionDetails>
+          </Accordion>
+          {/* ......................................................... */}
+          <Accordion>
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              <Typography fontWeight="bold">
+                KEN GORDON SCHOOL OF JOURNALISM AND COMMUNICATION STUDIES
+              </Typography>
+            </AccordionSummary>
+            <AccordionSummary>
+              <Typography>DEPARTMENT OF JOURNALISM AND MEDIA </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <FeesAndFunding dept={deptOFJour} />
+            </AccordionDetails>
+            <AccordionSummary>
+              <Typography>DEPARTMENT OF COMMUNICATION STUDIES </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <FeesAndFunding dept={deptOfComm} />
+            </AccordionDetails>
+          </Accordion>
+        </div>
+        <br />
+      </section>
+      {/* <section>
           
           <div>
             <h1>METHOD OF PAYMENT</h1>
@@ -226,7 +222,7 @@ const feesandfunding = () => {
             </p>
           </div>
         </section> */}
-        {/* <section>
+      {/* <section>
           <h1>FINANCIAL AID</h1>
           <p>
             <strong>
@@ -294,7 +290,7 @@ const feesandfunding = () => {
             </a>
           </p>
         </section> */}
-      </div>
+      {/* </div> */}
     </>
   );
 };
