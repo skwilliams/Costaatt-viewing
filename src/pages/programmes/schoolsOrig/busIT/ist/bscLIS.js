@@ -175,14 +175,14 @@ const bscLIS = () => {
 
         <Featured feat={featured} />
       </section>
-      {/* <Divider dark />
+      <Divider dark />
       <section id="gradSpeak" className={CourseStyle.sectionGradSpeak}>
         <p className={ProgStyles.headingprimaryleft}> Graduates Speak</p>
 
         <div className={GradStyle.threeColGridCon}>
           <GradsSpeak graduate={gradspeak} />
         </div>
-      </section>    */}
+      </section>
       <section id="curriculum" className={CourseStyle.sectionCurriculum}>
         <p className={ProgStyles.headingprimaryleft}> Curriculum</p>
 
