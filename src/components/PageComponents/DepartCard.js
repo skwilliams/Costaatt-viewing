@@ -6,19 +6,21 @@ import Link from "next/link";
 const DepartCard = ({ image, departname, intro, linkpage, shortname }) => {
   return (
     <>
-      <Image
-        className={DepartStyles.imgstyle}
-        src={image}
-        alt="Department Image"
-        width={300}
-        height={200}
-      />
+      <div className={DepartStyles.container}>
+        <Image
+          className={DepartStyles.imgstyle}
+          src={image}
+          alt="Department Image"
+          width={400}
+          height={300}
+        />
 
-      <p className={DepartStyles.departname}> {departname}</p>
-      <p className={DepartStyles.text}>{intro} </p>
-      <Link className={DepartStyles.linkpage} href={linkpage}>
-        Visit {shortname}...{" "}
-      </Link>
+        <p className={DepartStyles.departname}> {departname}</p>
+        <p className={DepartStyles.text}>{intro} </p>
+        <Link className={DepartStyles.linkpage} href={linkpage}>
+          Visit {shortname}...{" "}
+        </Link>
+      </div>
     </>
   );
 };

@@ -44,13 +44,6 @@ const Slider = ({ slides }) => {
                 className={HomeStyles.sliderImage}
               />
             )}
-            <div>
-              {/* {index === current && (
-                <Link href={`${slide.url}`}>
-                  <h1 className={HomeStyles.sliderText}> {slide.title} </h1>
-                </Link>
-              )} */}
-            </div>
           </div>
         );
       })}

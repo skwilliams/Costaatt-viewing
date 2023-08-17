@@ -177,6 +177,16 @@
   padding-bottom:1.3rem;
   margin-left:0;
 }
+
+  .courseDescript
+  {
+    font-size:1rem;
+    color:black;
+    line-height: 2;
+    text-align: left;
+    font-family:"Lato";
+    padding-bottom: 1rem;
+  }
    .cardtext{
     color:$orange;
     font-weight: 800;
@@ -204,6 +214,20 @@
     margin-top: 0;
     padding:.5rem ;
     text-align: right;
+     grid-column-end: span 3;
+    // width: auto;
+  
+    
+
+   }
+   .bannerbottomleft{
+    background-color:$orange;
+    color:white;
+    height: 3rem;
+    font-size:1.25rem;
+    margin-top: 0;
+    padding:.5rem ;
+    text-align: left;
      grid-column-end: span 3;
     // width: auto;
   

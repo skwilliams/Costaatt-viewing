@@ -1908,7 +1908,7 @@ export const deptOfComm = [
     GATE: "No",
   },
   {
-    Programme: "Executive Dip. – Advertising and Promotions",
+    Programme: "Executive Dip. - Advertising and Promotions",
     Total_Credit: 30,
     National: "$9,000",
     CARICOM: "$12,000",

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const SchoolTile = ({ title, img }) => {
   return (
-    <div className={HomeStyles.schoolTile}>
+    <div>
       <Image src={img} alt={title} />
       <div className={HomeStyles.schoolTileTitle}>{title}</div>
     </div>

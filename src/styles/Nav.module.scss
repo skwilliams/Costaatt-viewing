@@ -174,12 +174,12 @@
   font-size: 1.2rem;
 }
 
-// .navbarMenusCon {
-//   margin-left: 5rem;
-//   margin-top: 1.5rem;
-//   // padding:2rem;
-//   justify-items: center;
-// }
+.navbarMenusCon {
+  margin-left: 5rem;
+  margin-top: 1.5rem;
+  // padding:2rem;
+  justify-items: center;
+}
 
 .navbarMenus {
   display: flex;
@@ -198,13 +198,12 @@
   transition: all 0.8s ease;
   border-radius: 15px;
   text-underline-position: under;
-  color: white;
   text-decoration: underline solid $orange 4px !important;
 }
 
 .dropDownMain {
   left: 0;
-  top: 180px;
+  top: 150px;
   width: 100%;
   position: absolute;
   z-index: 40;
@@ -215,20 +214,18 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  color: $whiteback;
   background-color: $whiteback;
   box-shadow: inset 0px 14px 15px rgba(0, 0, 0, 0.3);
-  padding: 40px 120px;
+  padding: 30px 120px;
   .dropDownLi {
     color: $grey;
-    padding: 20px;
+    padding: 5px;
     align-content: center;
     width: 100%;
     height: fit-content;
     &:hover {
       transition: all 0.5s ease;
       font-weight: 700;
-      // background: $whiteback;
       text-decoration: underline solid $orange 4px;
       text-underline-position: under;
     }
@@ -240,12 +237,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   text-align: center;
-}
-
-.dropDownLinksGrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-columns: repeat(2, 1fr);
+  color: $grey;
 }
 
 .dummyImage {
@@ -253,6 +245,12 @@
   width: 250px;
   height: auto;
 }
+
+.dropDownLinksGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .searchButton {
   cursor: pointer;
   width: auto;

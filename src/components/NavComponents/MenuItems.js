@@ -4,7 +4,6 @@ import navStyles from "../../styles/Nav.module.scss";
 import { useState } from "react";
 import Link from "next/link";
 
-
 const MenuItems = ({ items, isLastItem }) => {
   const [showDropDown, setShowDropDown] = useState(false);
 
@@ -14,7 +13,6 @@ const MenuItems = ({ items, isLastItem }) => {
         backgroundColor: "#F58220",
         color: "white",
         padding: "10px",
-        
       }
     : {};
 

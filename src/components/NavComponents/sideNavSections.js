@@ -43,7 +43,7 @@ export const sideNavSections = {
     "Graduates Speak": "gradSpeak",
     Curriculum: "curriculum",
     "Fess and Financial Aid": "feesfinancial",
-    "Application requriements": "apply",
-    "Student Resources": "sturesource",
+    "Requriements": "requirements",
+    "COSTAATT wants you": "applylink",
   },
 };

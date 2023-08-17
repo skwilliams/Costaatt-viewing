@@ -1,35 +1,14 @@
 @import "./variable";
 
 .carousel {
+  cursor: pointer;
   padding: 20px 0;
   // background-color: $orange;
 }
 
 .sliderImage {
-  width: 60%;
+  width: 100%;
   height: auto;
-  border-radius: 2rem;
   border: 6px solid white;
-}
-
-.sliderText {
-  position: absolute;
-  top: 20%;
-  left: 60%;
-  width: 120px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  transform: translate(-50%, -50%);
-  align-items: center;
-  text-align: center;
-  padding: 10px;
-  border-radius: 1rem;
-  background-color: $brown;
-  border: 1px solid white;
-  color: white;
-  transition: 500ms;
-}
-
-.sliderText:hover {
-  background-color: white;
-  color: $orange;
+  cursor: pointer;
 }

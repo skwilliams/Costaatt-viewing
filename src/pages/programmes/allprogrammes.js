@@ -8,6 +8,7 @@ import Layout from '../../components/PageWithSideNavComponents/Layout'
 import SearchCourse from "@/components/PageComponents/SearchCourse";
 import ProgCard from "../../components/PageComponents/ProgCard";
 import { coursedata } from "./allprogrammedata";
+import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
 
 const allcourses = () => {
   console.log(coursedata);
@@ -17,36 +18,32 @@ const allcourses = () => {
       <Head>
         <title>All Programmes </title>
       </Head>
-      <p className={CardStyles.urllayout}>COSTAATT  Programmes/ All Programmes</p>
-
-      <p className={CardStyles.pheading}>All Programmes </p>
+      <HeaderNoImage caption="All Porgrammes" />
+      <p className={CardStyles.urllayout}>
+        COSTAATT Programmes/ All Programmes
+      </p>
 
       <section className={CardStyles.sidenav}>
         <div className={CardStyles.sidenavtitlemain}> Filter By </div>
-
         <div>
           <SearchCourse />
         </div>
-        <p className={CardStyles.sidenavtitle}> by Subject Area</p>
-        <Link className={CardStyles.sidenavlink} href="#progoverview">
-          Accounting
+        <p className={CardStyles.sidenavtitle}> by Schools</p>{" "}
+        <Link className={CardStyles.sidenavlink} href="#programmes">
+          Business and Digital Technologies
         </Link>
         <Link className={CardStyles.sidenavlink} href="#careers">
-          Information Technology
+          Environment, Circular Economy and Sustainability
+        </Link>
+        <Link className={CardStyles.sidenavlink} href="#progoverview">
+          Ken Gordon School of Communication Creative and Digital Media
         </Link>
         <Link className={CardStyles.sidenavlink} href="#featuredwork">
-          Library Science
+          Liberal Arts, Education and Digital Humanities
         </Link>
         <Link className={CardStyles.sidenavlink} href="#facultystaff">
-          Music
+          Nursing, Health and Medical Technologies
         </Link>
-        <Link className={CardStyles.sidenavlink} href="#programmes">
-          Journalism
-        </Link>
-        <Link className={CardStyles.sidenavlink} href="#fees">
-          Mathematics
-        </Link>
-
         <p className={CardStyles.sidenavtitle}> by Levels</p>
         <div>
           <Link className={CardStyles.sidenavlink} href="#progoverview">

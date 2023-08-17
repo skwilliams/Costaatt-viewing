@@ -14,14 +14,14 @@ const HeadImage = ({ imagetext, mainimage }) => {
         //sizes ="100vw"
         //sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         sizes="100vw, 50vw, 33vw"
-        style= {{width:'100%',height:'10%',}}
+        style= {{width:'100%',height:'50%',}}
         quality="100"
         
         onLoadingComplete={e => console.log(e)} // {naturalHeight: ..., naturalWidth: ...}
 />
             
       
-      <div className={style.pageheadertext}>{imagetext}</div>
+      {/* <div className={style.pageheadertext}>{imagetext}</div> */}
     </div>
   );
 };

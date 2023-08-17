@@ -19,7 +19,10 @@ export const subHeaderSections = {
     "CARICOM and international applicant": "caricom-international-applicant",
   },
   feesandfunding: {
-    "tuition and fees": "tution-and-fees",
+    "We are here":"intro",
+    "tuition and fees": "tuition",
+    "financial support": "finsupport",
+    "Money tips":"moneytips"
   },
   schools: {
     overveiw: "overview",
@@ -53,9 +56,17 @@ export const subHeaderSections = {
     "meet the dean": "meetthedean",
     "school events and news": "schoolnews",
   },
-  nursing:{
-    "Stuff":"yudh",
-    "difid" : 'fhjdhfj',
-
+  nursing: {
+    "school overview": "overview",
+    Departments: "depart",
+    "find your Degree": "depcourses",
+    "meet the dean": "meetthedean",
+    "school events and news": "schoolnews",  
   },
+  apply:{
+    "Apply":"intro",
+    "Online Application" :"onlineapp",
+    "Paper Based Application":"paperapp",
+    "Contact Admission" :"contactadmin"
+  }
 };

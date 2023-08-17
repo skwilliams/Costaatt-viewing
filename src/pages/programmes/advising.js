@@ -1,10 +1,11 @@
 import React from 'react'
+import Head from 'next/head'
 
 const advising = () => {
 
-    <Title>
-        
-    </Title>
+    <Head>
+      <title> Advising</title>
+    </Head>
   return (
     <div>advising</div>
   )

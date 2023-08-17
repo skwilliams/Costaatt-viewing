@@ -1,23 +1,62 @@
 export const topNavLinksLeft = [
+  // {
+  //   title: "Schools",
+  //   submenu: [
+  //     {
+  //       title: "The School Of Liberal Arts, Education And Digital Humanities",
+  //       submenu: [
+  //         {
+  //           title: "Department One",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       title:
+  //         "The Ken Gordon School of Communication Creative and Digital Media",
+  //       submenu: [
+  //         {
+  //           title: "Department One",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       title: "School of Workforce Enhancement and Development",
+  //       path: "programmes",
+  //     },
+  //     {
+  //       title: "School of Nursing, Health and Medical Technologies",
+  //       path: "programmes",
+  //     },
+  //     {
+  //       title: "School of Environment, Circular Economy and Sustainability",
+  //       path: "programmes",
+  //     },
+  //     {
+  //       title: "School of Business and Digital Technologies",
+  //       path: "programmes",
+  //     },
+  //   ],
+  //   submenuImage: [],
+  // },
   {
     title: "Current Students",
-    path: "/currentstudents",
+    path: "currentstudents",
   },
   {
     title: "Faculty & Staff",
-    path: "/facultystaff",
+    path: "facultystaff",
   },
   {
     title: "MY COSTAATT",
-    path: "/programmes",
+    path: "programmes",
   },
   {
     title: "Alumni",
-    path: "/alumni",
+    path: "alumni",
   },
   {
     title: "Facilities",
-    path: "/facilities",
+    path: "facilities",
   },
 ];
 
@@ -93,8 +132,8 @@ export const mainNavLinks = [
         path: "/programmes/collegecore",
       },
       {
-        title: "Academic Advising",
-        path: "/programmes/advising",
+        title: "Short Courses",
+        path: "/programmes/shortcourses",
       },
       {
         title: "School of Nursing, Health and Medical Technologies",
@@ -126,12 +165,12 @@ export const mainNavLinks = [
       {
         img: require("../../../images/Links/dummyImg1.jpg"),
         title: "Academic Calendar",
-        path: "/programmes",
+        path: "/programmes/academiccalendar",
       },
       {
         img: require("../../../images/Links/dummyImg2.jpg"),
-        title: "Areas of Study",
-        path: "/programmes",
+        title: "Academic Advising",
+        path: "/programmes/advising",
       },
     ],
   },
@@ -140,7 +179,7 @@ export const mainNavLinks = [
     submenu: [
       {
         title: "Apply Now",
-        path: "/admissions/applynow",
+        path: "/admissions/apply",
       },
       {
         title: "Admission Requirements",
@@ -151,32 +190,28 @@ export const mainNavLinks = [
         path: "/admissions/feesandfunding",
       },
       {
-        title: "Our Campuses",
-        path: "/",
+        title: "Our Programmes",
+        path: "/programmes/allprogrammes",
       },
       {
-        title: "Contact and Admissions Counsellor",
-        path: "/",
+        title: "Professional Development Courses",
+        path: "/admissions/developmentcourses",
       },
       {
-        title: "New Student ",
-        path: "/",
-      },
-      {
-        title: "Visit us ",
-        path: "/",
+        title: "Transfer Credit and Exemptions ",
+        path: "/admissions/transfercredit",
       },
     ],
     submenuImage: [
       {
         img: require("../../../images/Links/dummyImg1.jpg"),
-        title: "Academic Calendar",
-        path: "/programmes",
+        title: "Get Oriented",
+        path: "/admissions/orientation",
       },
       {
         img: require("../../../images/Links/dummyImg2.jpg"),
-        title: "Areas of Study",
-        path: "/programmes",
+        title: "Visit us",
+        path: "/admissions/visitus",
       },
     ],
   },

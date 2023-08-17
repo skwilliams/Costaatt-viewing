@@ -31,7 +31,7 @@ export const schools = [
         },
       ],
     },
-    leberal: {
+    liberal: {
       name: "School of Liberal Arts, Education and Digital Humanities",
       shortName: "Liberal Arts",
       nameStump: "liberal",

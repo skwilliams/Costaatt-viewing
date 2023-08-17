@@ -3,7 +3,7 @@
 
 .courseName{
     font-family:"Bodoni", Helvitica;
-    font-size:3rem;
+    font-size:2.5rem;
     color:white;
     margin: 0 0 2rem 0 ;
     background-image: linear-gradient(to right, $orange,$purple-secondary);
@@ -18,6 +18,12 @@
     font-size: 1.1rem;
     font-style: italic;
     margin:1rem 0;
+}
+.footnote2{
+    font-size: 1.25rem;
+    font-style: italic;
+    margin:1rem 0;
+    font-weight: bold;
 }
 .threeColGridCon{  
   display: grid;
@@ -34,6 +40,39 @@
  
    // padding: 10px;
  }
+ 
+ .fiveColGridCon{  
+    display: grid;
+    gap: 5rem;
+    grid-gap:2rem ;
+    grid-template-columns: auto auto auto auto auto;
+ }
+ 
+ .fiveColGrid {  
+   text-align: center;
+  //  padding: 20px ;
+   font-size: 1.5rem;
+   
+ 
+   // padding: 10px;
+ }
+
+ .fourColGridCon{  
+    display: grid;
+    gap: 5rem;
+    grid-gap:2rem ;
+    grid-template-columns: auto auto auto auto;
+ }
+
+ .fourColGrid {  
+   text-align: center;
+   padding: 20px ;
+   font-size: 1.5rem;
+   
+ 
+   // padding: 10px;
+ }
+
 .sectionOverview{
 
   
@@ -48,22 +87,7 @@
         margin: 3rem 0;
        
     }
-    .entryreq{
-        .list{
-           margin-left:2rem;
-        .items{
-         list-style-type: square;
-         margin:.5rem 0;
-         
-            }
-             .items::marker{
-         
-             color:$orange;
-               }        
-
-        }
-
-    }
+    
     .icon{
         width:70px;
         height: 70px;
@@ -146,7 +170,11 @@ th {
 }
 .sectionCurriculum{
  
- margin:6rem 0;
+  margin-right:2rem;
+     padding:0;
+     margin-bottom:6rem;
+     margin-top:6rem;
+//  margin:6rem 0;
 
 }
   .coursecode{
@@ -155,6 +183,16 @@ th {
     text-align: left;
   }
  
+  .bold{
+    font-weight: 800;
+    font-size: 1.25rem;
+  }
+   .tableheadings{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: left;
+    color:$orange;
+  }
  .courseheadings{
     font-size: 1.2rem;
     font-weight: 700;
@@ -169,6 +207,13 @@ th {
     margin-left:1rem;
     font-size: 1.15rem;
      text-align: left;
+    
+  }
+  .creditstotal{
+    margin-left:1rem;
+    font-size: 1.2rem;
+     text-align: left;
+     font-weight: 800;
     
   }
   .accdetails{
@@ -200,14 +245,19 @@ th {
    // padding: 10px;
  }
 .sectionFinancial{
-  margin:6rem 0;
+  // margin:6rem 0;
   font-size: 1.15rem;
+   margin-right:2rem;
+     padding:0;
+     margin-bottom:6rem;
+     margin-top:6rem;
+
 
   .coursesGridCon{  
-  display: grid;
+   display: grid;
    gap: 2rem;
    grid-gap:1rem ;
-   grid-template-columns: 2fr 1fr 1fr;
+   grid-template-columns: auto auto auto;
    margin:0;
    padding:0
   
@@ -221,6 +271,124 @@ th {
  
    // padding: 10px;
  }
+ .credits{
+    // margin-left:1rem;
+    font-size: 1.15rem;
+     text-align: justify;
+ }
     
+}
+
+.sectionRequirements{
+  font-size:1.15rem;
+  font-family: "Lato";
+   margin-right:2rem;
+     padding:0;
+     margin-bottom:6rem;
+     margin-top:6rem;
+
+
+  .text{
+    font-size:1.15rem;
+    text-align: justify;
+      font-family: "Lato";
+      line-height: 2;
+      
+  }
+ 
+
 
 }
+
+ 
+.careerstable {
+  font-family: "Lato";
+  font-size: 2rem;
+  border-collapse: collapse;
+  width:100%;
+
+
+.careerstable td,
+th {
+  padding: 10px;
+  text-align: left;
+  margin: 0;
+}
+
+.careerstable tbody tr:nth-child(2n) {
+  background-color: #eee;
+}
+
+.careerstable th {
+
+  color: #222222;
+
+  font-family: "Bodoni";
+  text-transform: capitalize;
+
+  backface-visibility: hidden;
+ 
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+
+
+}
+
+.entryreq{
+        .list{
+           margin-left:2rem;
+        .items{
+         list-style-type: square;
+         margin:.5rem 0;
+         
+            }
+             .items::marker{
+         
+             color:$orange;
+               }        
+
+        }
+
+    }
+
+
+
+  .text{
+    font-size:1.1rem;
+    text-align: justify;
+      font-family: "Lato";
+      line-height: 2;
+      
+
+  }
+  .goto {
+  color: $orange;
+  font-size: 1.1rem;
+  float: center;
+}
+
+
+.sectionStuResources{
+  margin:6rem 0;
+  font-size: 1.15rem;
+
+}
+
+.courseheadings{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .creditsummarytext{
+    font-size: 1.25rem;
+    text-align:right;
+    margin:2rem;
+    
+  }
+  .creditsummarynumber{
+    font-size: 1.5rem;
+    text-align:right;
+  }

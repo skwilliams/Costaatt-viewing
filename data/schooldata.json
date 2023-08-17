@@ -3,12 +3,12 @@
     "name": "School of Business and Digital Technologies",
     "shortName": "Business & Digital Technologies",
     "nameStump": "busIT",
-    "image": "/images/schools/busIT header.jpg",
-    "overview": "School of Business and Digital Technologies overview. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde. We are here for you Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa? Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo necessitatibus praesentium! Dolorem.",
+    "image": "/images/schools/busIT header.png",
+    "overview": "The School of Business and Digital Technologies provides access to a world-class and work-relevant education, focused on achieving institutional and national goals of workforce development. The School of Business and Digital Technologies comprises two (2) schools, the Department of ICTs and Digital Technologies and the Department of Management and Digital Entrepreneurship. These departments provide the public with a range of academic services to meet a growing number of careers and opportunities locally, regionally, and globally.The School is devoted to the development and preparation of students who are able to confront the challenges of the fast-paced, dynamic work environment. The School produces graduates who are work ready, professional and ethical, adept at creative problem-solving, embrace technological advancement and able to adapt to a rapidly evolving world.",
     "dean": {
       "name": "Vacant",
       "image": "/images/schools/deanavatar.jpg",
-      "message": "As the dean of Business & Digital Technologies, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+      "message": "Welcome to the School of Business and Digital Technologies at COSTAATT. The School offers courses of study that lead to the award of certificates, diplomas, associate and bachelor’s degrees. We are in the business of changing lives, a key component of which is preparing our students through hands-on skills development for future careers using technology. Faculty members incorporate the use of cutting-edge business techniques, digital technology and information science to prepare students for new innovative opportunities where others see challenges. We welcome you to our School and to a dynamic and promising future!",
       "email": "info@costaatt.edu.tt",
       "phone": "868-625-5030 ext 1111"
     },
@@ -16,12 +16,23 @@
     "departments": [
       {
         "name": "Management and Digital Entrepreneurship",
-        "image": "/images/schools/busIT.png",
+        "headImage": "/images/schools/departments/MGDEheader.png",
+        "image": "/images/schools/departments/MGDEsmall.png",
         "summary": "From entrepreneurs and business professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
+        "coreValues": [
+          "Integrity",
+          "Compassion",
+          "Innovation",
+          "Student-Centeredness",
+          "Lifelong-Learning"
+        ],
         "shortName": "Business",
+        "dept_code": "MGDE",
+        "contacts": [],
         "programmes": [
           {
             "prog_code": "ACCT_BA",
+            "prog_shortname": "baAccounting",
             "prog_name": "BA Accounting",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -34,6 +45,7 @@
           },
           {
             "prog_code": "BSAD_AAS",
+            "prog_shortname": "aasBusAdmin",
             "prog_name": "AAS  Business Administration",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -47,6 +59,7 @@
 
           {
             "prog_code": "CERT_SMGT",
+            "prog_shortname": "certSupMgmt",
             "prog_name": "Certificate in Supervisory Management ",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -58,7 +71,21 @@
             "prog_description": "This certificate programme is the first level of a two-year diploma programme which has been specially designed for persons who have been assigned supervisory responsibilities without formal training.  In addition to acquiring practical supervisory skills and enhanced communication skills, students are exposed to the theoretical framework of organizational behavior which will equip them to make more judicious and informed decisions."
           },
           {
+            "prog_code": "DIPL_SMGT",
+            "prog_shortname": "dipSupMgmt",
+            "prog_name": "Diploma in Supervisory Management ",
+            "prog_level": "Diploma",
+            "prog_del_mode": "Blended",
+            "dept_code": "MGDE",
+            "prog_major_credits": 36,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "This two year part-time programme is specially designed for persons who have been assigned supervisory responsibilities without formal training. Students learn practical skills in supervision, effective communication, conflict management and resolution, industrial relations, financial procedures and budgeting. Applicants with significant supervisory experience can apply for exemption from selected Year 1 courses through the College’s Prior Learning Assessment and Recognition (PLAR) Services"
+          },
+          {
             "prog_code": "ENTP_BBA",
+            "prog_shortname": "baMgmtEntrep",
             "prog_name": "BBA Management and Entrepreneurship",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -71,6 +98,7 @@
           },
           {
             "prog_code": "HURM_BBA",
+            "prog_shortname": "bbaHRMgmt",
             "prog_name": "BBA Human Resource Management ",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -83,6 +111,7 @@
           },
           {
             "prog_code": "MKTG_BBA",
+            "prog_shortname": "bbaMarketing",
             "prog_name": "BBA Marketing",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -97,14 +126,41 @@
       },
       {
         "name": "ICTs and Digital Technologies",
-        "image": "/images/schools/busIT.png",
-        "summary": "From entrepreneurs and business professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
+        "headImage": "/images/schools/departments/ICTDheader.png",
+        "image": "/images/schools/departments/it.png",
+        "mission": "The department of ICT's and Digital Technologies is the hub were technologies meet. It's an infusion of Library Science and Technology. If you desire to be exposed to technology that runs through the viens of the world, you have come to the right place. You can specialize in Databases,Networking, Library Science and Web Development. You will be exposed to the best and latest technologies all while learning the building blocks that makes up Information and Technology.",
+        "summary": "If you are interested in Web Development (Internet Technologies), Information Technology, Networking, Databases, Information Systems, or Library Science then the programmes offered by the Department of Information Science and Technology are tailor-made for you. ",
+        "coreValues": [
+          "Dedication",
+          "Teamwork",
+          "Integrity",
+          "Compassion",
+          "Innovation",
+          "Student-Centeredness",
+          "Lifelong-Learning"
+        ],
         "shortName": "IST",
+        "contacts": ["mcharles", "rdavid"],
+        "dept_code": "ICTD",
         "programmes": [
           {
+            "prog_code": "CERT_WEB",
+            "prog_shortname": "certWebDev",
+            "prog_name": "Diploma in IT - Web Development",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "ICTD",
+            "prog_major_credits": 15,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The Certificate in Web Development is designed for ..."
+          },
+          {
             "prog_code": "CERT_CCNA",
+            "prog_shortname": "certCCNA",
             "prog_name": "Certificate in CISCO-CCNA",
-            "prog_level": "Bachelor",
+            "prog_level": "Certificate",
             "prog_del_mode": "Blended",
             "dept_code": "ICTD",
             "prog_major_credits": 16,
@@ -115,6 +171,7 @@
           },
           {
             "prog_code": "CERT_RECM",
+            "prog_shortname": "certRecMgmt",
             "prog_name": "Certificate in Records Management",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -127,6 +184,7 @@
           },
           {
             "prog_code": "ILSC_BS",
+            "prog_shortname": "bscLIS",
             "prog_name": "BSc Library and Information Science ",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -139,6 +197,7 @@
           },
           {
             "prog_code": "ITGN_AAS",
+            "prog_shortname": "aasITGen",
             "prog_name": "AAS Information Technology - General",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -150,7 +209,21 @@
             "prog_description": "This degree programme essentially comprises the first two years of the Bachelor of Science in Information Technology. Students pursuing a Bachelor of Science in Information Technology can exit with an Associate in Applied Science degree in Information Technology once they have completed the prescribed list of courses below. Graduates at the associate level in information technology will be prepared for technician or technologist entry level positions in the job market."
           },
           {
+            "prog_code": "ITWEB_AAS",
+            "prog_shortname": "aasWebDev",
+            "prog_name": "AAS Information Technology - Web Development",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "ICTD",
+            "prog_major_credits": 42,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 3,
+            "prog_description": "This degree programme essentially comprises the first two years of the Bachelor of Science in Information Technology. Students pursuing a Bachelor of Science in Information Technology can exit with an Associate in Applied Science degree in Information Technology once they have completed the prescribed list of courses below. Graduates at the associate level in information technology will be prepared for technician or technologist entry level positions in the job market."
+          },
+          {
             "prog_code": "ITGN_BS",
+            "prog_shortname": "bscITGen",
             "prog_name": "BSc Information Technology - General",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -162,7 +235,21 @@
             "prog_description": "This general IT degree provides students with a well-rounded knowledge of the fundamental skills necessary to develop and maintain the changes required in the dynamic and challenging information technology field.  The graduate will have the advantage of being able to work in diverse environments throughout the information technology industry. The practical knowledge gained from the programme provides a foundation of information technology skill-sets that can be used in the fields of IT Project Manager, IT Teacher, Java Developer, Business Analyst, Database Administrator, Software Implementation Analyst, Applications Architect, Windows Administrator, Enterprise Architect  or any number of fields within the industry."
           },
           {
+            "prog_code": "ITWEB_BS",
+            "prog_shortname": "bscWebDev",
+            "prog_name": "BSc Information Technology - Web Development",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "ICTD",
+            "prog_major_credits": 84,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 3,
+            "prog_description": "A degree specialization in the Web Development (Internet Technology) track will provide students with the fundamental skills necessary to develop and maintain the changes required in this dynamic and challenging field.  Students will learn the basics of Internet application development and understand the importance of data security of the internet.   A well-rounded programme of instruction addresses both the technical aspects of the field, as well as the many emerging business applications.  The graduate will have the advantage of being able to work in diversified environments throughout the information technology industry. The practical knowledge gained from the programme provides a foundation of information technology skill-sets that can be used in website development, network management, programming, systems analysis, project management, e-commerce, or any number of fields within the industry. This programme is designed for students to be able to sit the CIW professional examinations."
+          },
+          {
             "prog_code": "ITNT_BS",
+            "prog_shortname": "bscITNetworking",
             "prog_name": "BSc IT - Networking",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -171,10 +258,11 @@
             "prog_core_credits": 30,
             "prog_elect_credits": 12,
             "prog_supp_credits": 4,
-            "prog_description": "This programme is designed for individuals seeking a career in information technology, with an emphasis on networking. Students acquire sound foundational skills in key areas such as network administration, network security, network architecture and wireless communication.  Students receive hands-on training in network systems commonly found in business environments; discover how information systems support organizational success; and how the technologies that comprise the network infrastructure allow for successful transfer and use of mission critical business information. In addition, students install, configure, secure, administer, and troubleshoot network systems; address the management of users, shared resources, and various other network components such as routers and switches in LANs, WANs,  wireless and mobile network environments. Students who are successful in this programme will have acquired the competencies to complete the Cisco Certified Network Associate (CCNA) and Certified Information Systems Security Professional (CISSP) professional examinations."
+            "prog_description": "The degree specialization in Networking is designed for individuals seeking a career in Information Technology with an emphasis on Networking. Some of the key areas include Network Administration, Network Security, Network Architecture and Wireless Communication. Students will have hands-on experiences with Network Systems commonly found in business environments.  Students will discover how information systems support organizational success.  Students will discover the technologies that make up the network infrastructures that allow for the successful transfer and use of mission-critical business information.  They will install, configure, secure, administer, and troubleshoot network systems.  Students will also address managing users, shared resources, and various other network components like routers and switches in LANs, WANs, and wireless and mobile network environments. This programme has been built to include the necessary competencies to complete the CCNA and CISSP professional examinations."
           },
           {
             "prog_code": "LBIS_AAS",
+            "prog_shortname": "aasLIS",
             "prog_name": "AAS Library and Information Studies",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -193,121 +281,546 @@
     "name": "School of Liberal Arts, Education and Digital Humanities",
     "shortName": "Liberal Arts, Education and Digital Humanities",
     "nameStump": "liberal",
-    "image": "/images/schools/liberal header.jpg",
+    "image": "/images/schools/liberal header.png",
     "dean": {
       "name": "Neil Sylvester",
       "image": "/images/schools/deanavatar.jpg",
-      "message": "As the dean of School of Liberal Arts, Education and Digital Humanities, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+      "message": "As the dean of School of Liberal Arts, Education and Digital Humanities...",
       "email": "nsylvester@costaatt.edu.tt",
       "phone": "868-625-5030 ext 2222"
     },
-    "overview": "School of Liberal Arts, Education and Digital Humanities overview. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde. We are here for you Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa? Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo necessitatibus praesentium! Dolorem.",
+    "overview": "School of Liberal Arts, Education and Digital Humanities overview...",
     "departments": [
       {
         "name": "Education",
-        "image": "/images/schools/liberal.png",
+        "headImage": "/images/schools/departments/EDUCheader.png",
+        "image": "/images/schools/departments/EDUCsmall.png",
         "summary": "From language experts and mathematics professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
-        "shortName": "Education"
+        "coreValues": [],
+        "shortName": "Education",
+        "contacts": [],
+        "dept_code": "EDUC",
+        "programmes": [
+          {
+            "prog_code": "MATH_AS",
+            "prog_shortname": "aasMath",
+            "prog_name": "AS Mathematics",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "EDUC",
+            "prog_major_credits": 45,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The Associate in Science degree in Mathematics is essentially the first two years of the bachelor’s degree programme in mathematics. As students’ progress through the programme, they develop rigorous, logical thinking and problem-solving skills; an appreciation of and familiarity with complex structures and algorithms, and the ability to learn technical, detailed or abstract material."
+          },
+          {
+            "prog_code": "ECCE_BA",
+            "prog_shortname": "baECCE",
+            "prog_name": "BA in  Early Childhood Care and Education ",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "EDUC",
+            "prog_major_credits": 75,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 15,
+            "prog_description": "The Bachelor of Arts degree in Early Childhood Care and Education provide students with critical knowledge and skills in the field of child development, care and learning. The programme is developed on the fundamental belief that all children can learn and deserve equal opportunities to grow and develop.  Thus, it is among the few, if not the only, with a strong emphasis on special and inclusive education. The ultimate goal of the programme is to prepare students (prospective caregivers and educators) to enter the childcare and early learning field as highly skilled caregivers or early learning professionals who can immediately contribute to the development and growth of children and deliver the highest quality of care and education to every child."
+          },
+          {
+            "prog_code": "CERT_ECCE",
+            "prog_shortname": "certECCE",
+            "prog_name": "Certificate in  Early Childhood Care and Education",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "EDUC",
+            "prog_major_credits": 25,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The Certificate in Early Childhood Care & Education is designed to equip early childhood educators with teaching skills and knowledge and dispositions for working in both kindergarten and childcare settings. It aims to provide the foundation for effective teaching and interaction with young children."
+          }
+        ]
       },
       {
         "name": "Criminal Justice, Human Security and Legal Studies",
-        "image": "/images/schools/liberal.png",
+        "headImage": "/images/schools/departments/CRIMheader.png",
+        "image": "/images/schools/departments/CRIMsmall.png",
         "summary": "From protective service professionals, paralegal professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
-        "shortName": "Criminal Justice"
+        "coreValues": [],
+        "shortName": "Criminal Justice",
+        "contacts": [],
+        "dept_code": "CRIM",
+        "programmes": [
+          {
+            "prog_code": "CRIM_BA",
+            "prog_shortname": "baCrimJustice",
+            "prog_name": "BA - Criminal Justice  ",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "CRIM",
+            "prog_major_credits": 61,
+            "prog_core_credits": 33,
+            "prog_elect_credits": 24,
+            "prog_supp_credits": 3,
+            "prog_description": "This programme is designed to provide students with real-world experiences in the field of criminal justice through theoretical studies, seminars and field visits. Courses are drawn from both the corrections and police science tracks so that students may be considered as generalist with the capability to pursue any desired career path within the criminal justice system. Contemporary topics and issues such as restorative justice, crime and the media, and juvenile justice are among some of the courses covered in this programme."
+          },
+
+          {
+            "prog_code": "CRIM_AAS",
+            "prog_shortname": "aasCrimJustice",
+            "prog_name": "AAS in Criminal Justice",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "CRIM",
+            "prog_major_credits": 36,
+            "prog_core_credits": 21,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 3,
+            "prog_description": "The Associate in Applied Science degree in Criminal Justice targets professionals in the protective services and security industries as well as persons interested in careers in these areas. The aim of the programme is to enhance students’ knowledge, understanding and competence to confront the complex challenges encountered by professionals in crime, justice and public safety contexts. All credits earned in this programme will transfer to the Bachelor of Arts degree in Criminal Justice."
+          },
+          {
+            "prog_code": "CERT_CRIM",
+            "prog_shortname": "certCrimJustice",
+            "prog_name": "Certificate in Criminal Justice",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "CRIM",
+            "prog_major_credits": 9,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The Certificate in Criminal Justice programme examines contemporary issues facing criminal justice professionals in Trinidad and Tobago and the region. Students will acquire knowledge, understanding and skills in critical areas including policing styles, restorative justice, the complexities of criminal justice systems, inmates’ rights, rehabilitation, community and institutional corrections, prison management, and psychological theories. Courses taught by academics and expert practitioners offer students the opportunity to gain practical insights into the exciting and evolving world of modern corrections."
+          }
+        ]
       },
       {
         "name": "Social and Behavioural Sciences",
-        "image": "/images/schools/liberal.png",
+        "headImage": "/images/schools/departments/SABSheader.png",
+        "image": "/images/schools/departments/SABSsmall.png",
         "summary": "From Social workers, Therapists and Counselling professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
-        "shortName": "Social and Behavioural Sciences"
+        "coreValues": [],
+        "shortName": "Social and Behavioural Sciences",
+        "contacts": [],
+        "dept_code": "SABS",
+        "programmes": [
+          {
+            "prog_code": "SOWK_AAS",
+            "prog_shortname": "aasSocialWork",
+            "prog_name": "AAS Social Work",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "SABS",
+            "prog_major_credits": 21,
+            "prog_core_credits": 21,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 15,
+            "prog_description": "This Associate in Applied Science degree in Social Work develops social work competencies which enables students to work immediately as paraprofessionals in the field. It also provides them with a solid foundation to pursue baccalaureate studies, if they so desire.  Graduates would have gained exposure to various service areas such as individual and group work, youth work, direct practice, community practice, and family and child issues."
+          },
+          {
+            "prog_code": "SOWK_BSW",
+            "prog_shortname": "bswSocialWork",
+            "prog_name": "BSW Social Work ",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "SABS",
+            "prog_major_credits": 63,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 24,
+            "prog_description": "The Bachelor of Social Work degree prepares graduates to function as professional social workers in the education, social services and national security sectors.  Students acquire critical social work competencies in individual and group work, direct practice, and addressing family and child issues."
+          },
+
+          {
+            "prog_code": "PSYC_AA",
+            "prog_shortname": "aaPsychology",
+            "prog_name": "AA - Psychology",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "SABS",
+            "prog_major_credits": 27,
+            "prog_core_credits": 21,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 9,
+            "prog_description": "The Associate in Arts degree in Psychology offers a solid base in the area of psychology. It has been specifically designed to furnish participants with the key theoretical understandings and scientific insights into the complexity of human behaviour and mental processes, and to equip them with practical competencies in specific areas. This associate degree provides students with the foundation courses in the discipline of psychology required to transfer into a baccalaureate programme at both regional and extra-regional institutions of higher learning. It will also be an invaluable course of study for those wishing to get certification as competent paraprofessionals in all areas of human development services."
+          }
+        ]
       }
-      
     ]
   },
   {
     "name": "School of Nursing, Health and Medical Technologies",
     "shortName": "Nursing, Health and Medical Technologies",
     "nameStump": "nursing",
-    "image": "/images/schools/nursing header.jpg",
+    "image": "/images/schools/nursing header.png",
     "dean": {
       "name": "Anjenney Boodoosingh-Dwarika",
       "image": "/images/schools/deanavatar.jpg",
-      "message": "As the dean of School of Nursing, Health and Medical Technologies, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+      "message": "As the dean of School of Nursing, Health and Medical Technologies...",
       "email": "adwarika@costaatt.edu.tt",
       "phone": "868-625-5030 ext 3333"
     },
-    "overview": "School of Nursing, Health and Medical Technologies overview. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde. We are here for you Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa? Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo necessitatibus praesentium! Dolorem.",
+    "overview": "School of Nursing, Health and Medical Technologies overview...",
     "departments": [
       {
         "name": "Nursing",
+        "headImage": "/images/schools/departments/NURSheader.png",
         "image": "/images/schools/nursing.png",
         "summary": "From Nurses, nurses aides,  this department is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
-        "shortName": "Nursing"
+        "coreValues": [],
+        "shortName": "Nursing",
+        "dept_code": "NURS",
+        "contacts": []
       },
       {
         "name": "Health and Medical Science Technologies",
-        "image": "/images/schools/nursing.png",
-        "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
-        "shortName": "HMST"
+        "headImage": "/images/schools/departments/HMSTheader.png",
+        "image": "/images/schools/departments/department without labels/Artboard 1.png",
+        "summary": "Health and Medical Science Technologies...",
+        "shortName": "HMST",
+        "coreValues": [],
+        "contacts": [],
+        "dept_code": "HMST",
+        "programmes": []
       }
-     ]
+    ]
   },
   {
     "name": "School of Environment, Circular Economy and Sustainability",
     "shortName": "Environment, Circular Economy and Sustainability",
     "nameStump": "enviro",
-    "image": "/images/schools/enviro header.jpg",
+    "image": "/images/schools/enviro header.png",
     "dean": {
       "name": "Anjenney Boodoosingh-Dwarika",
       "image": "/images/schools/deanavatar.jpg",
-      "message": "As the dean of School of Liberal Arts, Education and Digital Humanities, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+      "message": "As the dean of School of Liberal Arts, Education and Digital Humanities...",
       "email": "adwarika@costaatt.edu.tt",
       "phone": "868-625-5030 ext 2222"
     },
-    "overview": "School of Environment, Circular Economy and Sustainability overview. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde. We are here for you Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia distinctio voluptatem a nemo quam, blanditiis quasi ipsa? Architecto aspernatur, esse eius id ut accusamus nihil ipsam nemo necessitatibus praesentium! Dolorem.",
+    "overview": "School of Environment, Circular Economy and Sustainability overview...",
     "departments": [
       {
         "name": "Environmental and Sustainability Studies",
-        "image": "/images/schools/liberal.png",
+        "headImage": "/images/schools/departments/ENVSheader.png",
+        "image": "/images/schools/departments/ENVSsmall.png",
         "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
-        "shortName": "Environmental & Sustainability Studies"
+        "coreValues": [],
+        "shortName": "Environmental and Sustainability Studies",
+        "contacts": [],
+        "dept_code": "ENVS",
+        "programmes": []
       },
       {
         "name": "Natural and Life Sciences",
-        "image": "/images/schools/liberal.png",
+        "headImage": "/images/schools/departments/NLSCheader.png",
+        "image": "/images/schools/departments/NLSCsmall.png",
         "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
-        "shortName": "Natural & Life Sciences"
+        "coreValues": [],
+        "shortName": "Natural and Life Sciences",
+        "contacts": [],
+        "dept_code": "NLSC",
+        "programmes": []
       }
-      
     ]
   },
   {
     "name": "Ken Gordon School of Communication, Creative and Digital Media",
     "shortName": "Communication, Creative and Digital Media",
     "nameStump": "kengord",
-    "image": "/images/schools/kengord header.jpg",
+    "image": "/images/schools/kengord header.png",
     "dean": {
-      "name": "Clarinda Jack",
+      "name": "Ms. Clarinda Jack",
       "image": "/images/schools/deanavatar.jpg",
-      "message": "As the dean of The Ken Gordon School of Communication, Creative and Digital Media, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+      "message": "At the core of The Ken Gordon School of Communication, Creative and Digital Media remains the vision to produce graduates who are excellent communicators and story tellers of the past, present and future in written, oral, visual and musical forms.  We will continue to prepare students to hit the ground running in their respective disciplines on completion of their studies, and to be responsible, ethical and creative consumers and producers of content in this rapidly evolving digital world.",
       "email": "cjack@costaatt.edu.tt",
-      "phone": "868-625-5030 ext 2222"
+      "phone": "868-625-5030 ext 5061"
     },
-    "overview": "Ken Gordon School of Communication, Creative and Digital Media overview. Media and Communication ",
+    "overview": "Are you interested in journalism, corporate communications or public relations? Is graphic design, photography, advertising and promotions, or film and video production your passion? Do you want to become fluent in a foreign language, understand Latin American culture, communicate via music, play and instrument, write short stories or have a better understanding of our heritage and oral history? The Ken Gordon School of Communication Creative and Digital Media's dedicated, qualified and experienced faculty will enlighten you and provide you with every opportunity to realise your dream or ambition.  We train students to be innovative, responsible and knowledgeable consumers and creators of content.",
     "departments": [
       {
         "name": "Creative Industries and Culture",
-        "image": "/images/schools/liberal.png",
-        "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
-        "shortName": "Arts, Music & Culture"
+        "headImage": "/images/schools/departments/CIACheader.png",
+        "image": "/images/schools/CIACsmall.png",
+        "summary": "The Department of Creative Industries and Culture offers degrees, diplomas and certificates in music, performing arts, film and video production, literature, creative writing, history, heritage and archival studies.",
+        "coreValues": [],
+        "shortName": "Arts, Music and Culture",
+        "contacts": [],
+        "dept_code": "CIAC",
+        "programmes": [
+          {
+            "prog_code": "ELIT_AA",
+            "prog_shortname": "aaLitInEnglish",
+            "prog_name": "AA Literatures in English",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "CIAC",
+            "prog_major_credits": 36,
+            "prog_core_credits": 24,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The Assoicate in Arts degree in Literature and English.provide students with exposure to the major literary genres, through the examination of the works of both renowned and contemporary authors. These studies are complemented by general education courses drawn from a broad range of disciplines, creating a solid foundation for students who wish to pursue studies up to the bachelor’s level or for language and literature teachers who wish to enhance their knowledge base in the field. This associate degree programme is also suitable for students who wish to pursue careers and/ or further study in the areas of journalism, advertising, and communications. "
+          },
+          {
+            "prog_code": "FAVP_AA",
+            "prog_shortname": "aaFilmVidProd",
+            "prog_name": "AA Film and Video Production",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "CIAC",
+            "prog_major_credits": 24,
+            "prog_core_credits": 21,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 15,
+            "prog_description": "In this degree students will be exposed to several elements of filmmaking such as video producing, editing, scriptwriting, and film and television studies. The Associate in Arts degree is the first two years of the BA in Film and Video Production. It prepares students for entry level positions in the film industry or enables them to be independent earners."
+          },
+          {
+            "prog_code": "PERM_AA",
+            "prog_shortname": "aaPerfArtMusic",
+            "prog_name": "AA Performing Arts: Music",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "CIAC",
+            "prog_major_credits": 44,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 6,
+            "prog_supp_credits": 0,
+            "prog_description": "This degree essentially comprises the first two years of the Bachelor of Music programme.  Students pursuing a Bachelor of Music degree can exit with an Associate in Arts degree in Performing Arts: Music, once they have completed the prescribed list of courses below."
+          },
+          {
+            "prog_code": "CERT_FVP",
+            "prog_shortname": "certFilmVidProd",
+            "prog_name": "Certificate in Film and Video Production",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "CIAC",
+            "prog_major_credits": 15,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "In this introductory certificate students will be exposed to basic video producing, editing, scriptwriting, and film studies."
+          },
+          {
+            "prog_code": "CERT_MUP",
+            "prog_shortname": "certMusicPerf",
+            "prog_name": "Certificate in Music Performance",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "CIAC",
+            "prog_major_credits": 21,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The certificate programme is intended to provide options for individuals who are unable to commit to lengthy programs of study and caters to hobbyist musicians, industry professionals seeking to gain formal training and improved skills, and talented individuals preparing to embark on professional performance careers."
+          }
+        ]
       },
       {
         "name": "Digital Media and Communication",
+        "headImage": "/images/schools/departments/DMACwl.png",
         "image": "/images/schools/liberal.png",
-        "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
-        "shortName": "Digital Media & Communication"
+        "summary": "The Department of Digital Media and Communication offers degrees, diplomas and certificates in mass communication, graphic design, advertising and promotions, Spanish, Latin American Studies, photography, journalism and public relations.",
+        "coreValues": [],
+        "shortName": "Digital Media and Communication",
+        "contacts": [],
+        "dept_code": "DMAC",
+        "programmes": [
+          {
+            "prog_code": "MCOM_BA",
+            "prog_shortname": "baMassComm",
+            "prog_name": "BA Mass Communications",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 75,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 15,
+            "prog_supp_credits": 0,
+            "prog_description": "The Bachelor of Arts degree in Mass Communication is designed to create synergies among the various disciplines that comprise the field of mass communication, such as media studies, public relations and advertising. Students acquire an understanding of current communication theories and develop critical thinking, and analytical and research skills. Additionally, much needed practical experience is gained via internships in the industry."
+          },
+          {
+            "prog_code": "GRDS_BA",
+            "prog_shortname": "baGraphicDes",
+            "prog_name": "BA Graphic Design",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 64,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 26,
+            "prog_description": "In a profession that combines artistic ability, creativity, typography, photography, video, film, web and computer knowledge, graphic designers are challenged to communicate through a variety of media. Consequently, the Bachelor of Arts Degree in Graphic Design is structured to meet the needs of the industry, and create work-ready graduates. This program utilizes current technology, specific to design, and is inclusive of specialized courses in the field of advertising. Thus, the graphic design bachelor’s student develops visual, written and verbal communication skills which they employ in their designs."
+          },
+          {
+            "prog_code": "GRDS_AAS",
+            "prog_shortname": "aasGraphicDes",
+            "prog_name": "AAS Graphic Design",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 42,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 5,
+            "prog_description": "The Associate of Applied Science degree in Graphic Design develops students’ skills in the latest technologies, while building a solid foundation in traditional art and design. Students learn the theories of advertising, layout, type, colour and illustration and become proficient in the use of electronic technologies for visual communications. The internship at the end of this degree programme gives participants an opportunity to network and work in the field."
+          },
+          {
+            "prog_code": "ADVP_AAS",
+            "prog_shortname": "aasAdvertPromo",
+            "prog_name": "AAS Advertising and Promotions",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 29,
+            "prog_core_credits": 25,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 12,
+            "prog_description": "This degree is particularly suited to anyone with a great imagination, who is passionate, persuasive and creative. It is appropriate for recent secondary school graduates who wish to pursue a career in creative advertising, as well as persons who are already employed in the industry, but who have no formal training and are keen on improving their skills. This would equip students for entry level and paraprofessional positions in the advertising industry."
+          },
+          {
+            "prog_code": "JOUR_AA",
+            "prog_shortname": "aaJournalism",
+            "prog_name": "AA Journalism",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 43,
+            "prog_core_credits": 18,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The programme combines theoretical analysis with practical industry-immersion. This associate degree takes cognizance of the constitutional foundation of freedom of expression, freedom of the press and its pillars of responsibility, accuracy, balance and fairness. It aims to produce graduates who can move easily into newsrooms across the country. It is the first two years of the BA in Journalism."
+          },
+          {
+            "prog_code": "JOPR_AAS",
+            "prog_shortname": "aasJourPubRel",
+            "prog_name": "AAS Journalism and Public Relations",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 37,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 6,
+            "prog_supp_credits": 3,
+            "prog_description": "The programme is designed to enable students to function as paraprofessionals in dynamic and fast-paced media and communication environments. It facilitates their advancement to increasingly higher levels of responsibility in the workplace and provides them with a solid foundation of theoretical knowledge and practical skills needed to pursue studies at undergraduate level."
+          },
+          {
+            "prog_code": "SPAN_AA",
+            "prog_shortname": "aaSpanish",
+            "prog_name": "AA - Spanish",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 42,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 6,
+            "prog_description": "The Associate in Arts degree in Spanish is designed to provide a strong foundation in using the Spanish Language in speech and writing and in understanding Latin American history, culture and civilization. The students may exit with the AA Spanish or continue on to the Bachelor’s level."
+          },
+          {
+            "prog_code": "SPAN_AAS",
+            "prog_shortname": "aaSpanForBus",
+            "prog_name": "AAS - Spanish for Business",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 39,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 9,
+            "prog_description": "The Associate in Applied Science degree in Foreign Language for Business: Spanish is designed to provide graduates with a competitive edge in the global marketplace, through an intensive learning experience that focuses on the development of competencies in Spanish language skills, international business and cultural awareness required to effectively conduct or support business activity in a Latin American context."
+          },
+          {
+            "prog_code": "DIPL_ADVT",
+            "prog_shortname": "dipAdvertPromo",
+            "prog_name": "Diploma in Advertising and Promotions",
+            "prog_level": "Diploma",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 30,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The Diploma in Advertising and Promotions is suited to anyone with a great imagination, who is passionate, persuasive and creative. It will expose participants to some of the facets of today’s advertising and promotions industry, such as digital marketing, graphic design, animation, photography, videography, copywriting, public relations, and event management, all of which are important elements in brand positioning and consumer engagement."
+          },
+          {
+            "prog_code": "CERT_GRDS",
+            "prog_shortname": "certGraphicDes",
+            "prog_name": "Certificate in Graphic Design",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 15,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The Certificate in Graphic Design will develop students’ basic skills in the latest technologies, while building a foundation in design. Participants will learn the elementary theories of layout, type, colour and illustration, which will enable them to produce flyers, call cards, banners, and graphics for social media posts, to name a few."
+          },
+          {
+            "prog_code": "CERT_ESWP",
+            "prog_shortname": "certWkplaceSkills",
+            "prog_name": "Essential Skills for the Workplace Certificate",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 15,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "This certificate is designed to equip participants with universal workplace skills such as the ability to produce a professional résumé, communicate proficiently, and be service oriented, professional, and competent in Microsoft Office. These capabilities will enhance their employability."
+          },
+          {
+            "prog_code": "CERT_JOUR",
+            "prog_shortname": "certJournalism",
+            "prog_name": "Certificate in Journalism",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 12,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "This certificate programme is specifically focused on developing basic reporting skills."
+          },
+          {
+            "prog_code": "CERT_PHVI",
+            "prog_shortname": "certPhotoVid",
+            "prog_name": "Certificate in Photography and Video",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 15,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "In an increasingly digitized world where attention spans are less than ten seconds, it is critical to use effective visuals to capture significant moments, enhance messages, boost engagement, and ignite social media. These are some of the skills with which the Certificate in Photography and Video will equip students; these will allow them to tell stories using powerful still and moving images."
+          },
+          {
+            "prog_code": "CERT_ADVP",
+            "prog_shortname": "certAdvertPromo",
+            "prog_name": "Certificate in Advertising and Promotions",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 15,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "The Certificate in Advertising and Promotions will develop students’ basic skills in advertising, marketing, graphic design, and communications. It will expose them to all the facets of today’s advertising industry, such as digital marketing, animation, copywriting and event management, all of which are important elements in brand positioning and consumer engagement."
+          },
+          {
+            "prog_code": "CERT_PUBR",
+            "prog_shortname": "certPublicRel",
+            "prog_name": "Certificate in Public Relations",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 14,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "Given that public relations and advertising go hand in hand, the contemporary public relations practitioner must be multi-skilled and able to multi task. With this in mind, this certificate is designed to prepare graduates to take charge of the social media presence of organizations, write and present speeches, organize PR events (mindful of all protocols), and deal with press releases to name a few."
+          }
+        ]
       }
-      
     ]
   },
   {
@@ -326,21 +839,50 @@
     "departments": [
       {
         "name": "Upskilling Academy",
-        "image": "/images/schools/liberal.png",
+        "headImage": "/images/schools/departments/UPSKheader.png",
+        "image": "/images/schools/departments/UPSKsmall.png",
         "summary": "The Upskilling Academy provides a wide variety of educational content services, including certificate and diploma programmes, stand-alone short courses, professional development workshops, and customised training to support client needs and desired outcomes. ",
-        "shortName": "Skills"
+        "coreValues": [],
+        "shortName": "Skills",
+        "contacts": [],
+        "dept_code": "UPSK",
+        "programmes": []
       },
       {
         "name": "CollegeStarTT",
-        "image": "/images/schools/liberal.png",
-        "summary": "The CollegeStarTT Centre  is COSTAATT’s flagship developmental education programme designed to assist students in obtaining the necessary qualifications to access degree programmes of their choice at COSTAATT. CollegeStarTT provides an alternative pathway to tertiary level education for those students who have the aptitude and the desire to pursue tertiary education but are currently academically under-prepared.",
-        "shortName": "CollegeStarTT"
+        "headImage": "/images/schools/departments/CSTTheader.png",
+        "image": "/images/schools/departments/CSTTsmall.png",
+        "summary": "The CollegeStarTT Centre  is COSTAATT's flagship developmental education programme designed to assist students in obtaining the necessary qualifications to access degree programmes of their choice at COSTAATT. CollegeStarTT provides an alternative pathway to tertiary level education for those students who have the aptitude and the desire to pursue tertiary education but are currently academically under-prepared.",
+        "coreValues": [],
+        "shortName": "CollegeStarTT",
+        "contacts": [],
+        "dept_code": "CSTT",
+        "programmes": [
+          {
+            "prog_code": "",
+            "prog_shortname": "",
+            "prog_name": "",
+            "prog_level": "",
+            "prog_del_mode": "",
+            "dept_code": "",
+            "prog_major_credits": 4,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": ""
+          }
+        ]
       },
       {
         "name": "Translation and Interpreting Centre",
-        "image": "/images/schools/liberal.png",
+        "headImage": "/images/schools/departments/TAICheader.png",
+        "image": "/images/schools/departments/TAICsmall.png",
         "summary": "As an official agent recognised by the Government of Trinidad and Tobago, the Translating and Interpreting Services (T&I) Centre provides a wide array of translation and interpretation services at local and regional levels. Our clients include corporate entities, government organisations and individuals. Official translation services include English, Dutch, French, German, Portuguese, and Spanish.",
-        "shortName": "T & I"
+        "coreValues": [],
+        "shortName": "Translation",
+        "contacts": [],
+        "dept_code": "CFTI",
+        "programmes": []
       }
     ]
   }
