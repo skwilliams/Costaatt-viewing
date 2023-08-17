@@ -24,11 +24,18 @@
   font-family: "Roboto", serif;
   text-transform: capitalize;
 }
+  .emphasis{
+    font-size: 1.25rem;
+    font-weight: bold;
+     padding: 1rem;
+     line-height: 1.75;
+      text-align: left;
+  }
 
 
 
 .sectiontext{
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: "Bodoni";
   font-weight: 500;
   text-align: center;
@@ -40,6 +47,7 @@
   line-height: 2;
 
   text-align: center;
+  font-style: italic;
   margin-bottom: 1.5rem;
 }
 
@@ -226,18 +234,21 @@ align-items: center;
   font-size: 1.5rem;
   padding: 10px;
 }
-
-  // background-color: black;
+}
+  
 
   .cardCon{
 
      height: 200px;
-  width: 200px;
+  width: 300px;
   background-color: $whiteback;
   color:black;
   padding: 10px;
   // border: solid 3px black;
      box-shadow: 5px 10px 18px $grey-light;
+-webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+
 
   margin: 0;
   &:hover{
@@ -248,7 +259,7 @@ align-items: center;
   .cardtext{
       font-size:1.5rem;
       color:black;
-      padding:70px 0;
+      padding:60px 0;
       
    
     }
@@ -256,12 +267,76 @@ align-items: center;
   }
 
   
+
+
+.sectionmethodofpayment{
+  margin:7rem;
+  font-size:1.5rem;
+  font-family: "Lato";
+
+  .twoColGridCon {
+  display: grid;
+  gap: 8rem;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+}
+.twoColGrid {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1.5rem;
+  // padding: 10px;
+}
+
+// .shape{
+
+// }
 }
 
 .sectionfinsupport{
-  margin: 3rem;
+  margin: 7rem;
+
+  .accordiantext{
+    font-size:1.25rem;
+    line-height: 1.75;
+   
+    padding: 1rem;
+    font-family: "Lato";
+
+  }
+  .emphasis{
+    font-size: 1.25rem;
+    font-weight: bold;
+     padding: 1rem;
+     line-height: 1.75;
+      text-align: left;
+  }
 }
 
-.sectionmoneytips{
-  margin: 2rem;
+
+  
+.entryreq{
+      font-size:1.25rem;
+
+        .list{
+           margin-left:2rem;
+                font-size:1.25rem;
+        .items{
+         list-style-type: square;
+         margin:.5rem 0;
+         
+            }
+             .items::marker{
+         
+             color:$orange;
+               }        
+        
+               .items:last-child{
+                margin-bottom:2rem;
+               }
+
+        }
+
+    
 }
+
+

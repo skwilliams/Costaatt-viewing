@@ -46,4 +46,14 @@ export const sideNavSections = {
     "Requriements": "requirements",
     "COSTAATT wants you": "applylink",
   },
+  howtopay:{
+    "Before you Pay" :"beforepay",
+    "Visit the Cashier":"visitcashier",
+    "Banner Online Payment":"banneronline",
+    "Personal Online Banking":"personalonline",
+    "Inter-Bank Transfer":"interbank",
+    "Direct Deposit":"directdeposit",
+    "After you Pay":"afterpay"
+
+  }
 };

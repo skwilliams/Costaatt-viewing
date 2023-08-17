@@ -41,6 +41,7 @@ import {
 } from '@mui/material';
 import HeaderNoImage from '@/components/PageComponents/HeaderNoImage';
 import FeesAndFunding from '@/components/FeesAndFunding';
+import { AdminPanelSettings } from '@mui/icons-material';
 const feesandfunding = () => {
   return (
     <>
@@ -201,6 +202,14 @@ const feesandfunding = () => {
           </Accordion>
         </div>
         <br />
+        <p className={admissionStyles.emphasis}>
+          {" "}
+          Institutional fees are non-refundable. Students who officially
+          withdraw from the College may be eligible for a refund of tuition fees
+          in accordance with the schedule outlined in the Academic Calendar.
+          Please note that students in receipt of GATE funding are not eligible
+          for tuition refunds.
+        </p>
       </section>
       {/* <section>
           
