@@ -54,7 +54,12 @@ import SupportDoc from "@/components/PageComponents/SupportDoc";
 // DATA IMPORTS
 import path from "path";
 import fs from "fs/promises";
-import { getProgStruct, getRequirements, getCourses } from "./programmesData";
+import {
+  getProgStruct,
+  getRequirements,
+  getTuition,
+  getCourses,
+} from "./programmesData";
 import ProgOfferingDetails from "@/components/PageComponents/ProgOfferingDetails";
 
 const programme = (props) => {
@@ -66,9 +71,7 @@ const programme = (props) => {
       <Head>
         <title>{prog.prog_name}</title>
       </Head>
-
       <p className={CourseStyle.courseName}>{prog.prog_name}</p>
-
       <section id="courseoverview" className={CourseStyle.sectionOverview}>
         <p className={CourseStyle.desc}>{prog.prog_description}</p>
         <div className={CourseStyle.iconsection}>
@@ -134,7 +137,6 @@ const programme = (props) => {
         </div>
       </section>
       <Divider dark />
-
       <section id="curriculum" className={CourseStyle.sectionCurriculum}>
         <p className={ProgStyles.headingprimaryleft}>
           {" "}
@@ -153,6 +155,16 @@ const programme = (props) => {
             <DegreeCourses courses={getCourses(progStruct.majorcourses)} />
           </AccordionDetails>
         </Accordion>
+        <Accordion sx={{ margin: 2 }}>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Specialization Courses
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <DegreeCourses courses={getCourses(progStruct.specialcourses)} />
+          </AccordionDetails>
+        </Accordion>
         <Accordion sx={{ margin: 2, color: "primary" }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography fontSize={19}>Core Curriculum Courses</Typography>
@@ -167,7 +179,7 @@ const programme = (props) => {
             <Typography fontSize={19}>Support Courses</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            {/* Support Courses */}
+            {/* Support Courses*/}
 
             <DegreeCourses courses={getCourses(progStruct.supportcourses)} />
           </AccordionDetails>
@@ -181,7 +193,6 @@ const programme = (props) => {
         </p>
       </section>
       <Divider dark />
-      {/* 
       <section id="feesfinancial" className={CourseStyle.sectionFinancial}>
         <p className={ProgStyles.headingprimaryleft}> Fees and Financial Aid</p>
         <Accordion sx={{ margin: 2 }}>
@@ -189,7 +200,7 @@ const programme = (props) => {
             <Typography fontSize={18}>Tuition Fees</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <TuitionFees fees={tuition} />
+            <TuitionFees fees={getTuition(progStruct)} />
             <br />
 
             <p className={CourseStyle.footnote}>
@@ -323,17 +334,16 @@ const programme = (props) => {
             </div>
           </AccordionDetails>
         </Accordion>
-      </section> */}
+      </section>{" "}
       <Divider dark />
-
-      {/* <section id="requirements" className={CourseStyle.sectionRequirements}>
+      <section id="requirements" className={CourseStyle.sectionRequirements}>
         <p className={ProgStyles.headingprimaryleft}> Requirements</p>
         <Accordion sx={{ margin: 2 }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography fontSize={18}>Minimum Entry Requirements</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Requirements reqs={minrequirements} />
+            <Requirements reqs={getRequirements(progStruct).minrequirements} />
           </AccordionDetails>
         </Accordion>
         <Accordion sx={{ margin: 2, color: "primary" }}>
@@ -393,7 +403,7 @@ const programme = (props) => {
             <Typography fontSize={18}>Resource Requirements</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Requirements reqs={resources} />
+            <Requirements reqs={getRequirements(progStruct).resources} />
           </AccordionDetails>
         </Accordion>
         <Accordion sx={{ margin: 2 }}>
@@ -403,13 +413,12 @@ const programme = (props) => {
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <SupportDoc docs={supportDocA} />
+            <SupportDoc docs={getRequirements(progStruct).supportingDocs} />
           </AccordionDetails>
         </Accordion>
-      </section> */}
+      </section>
       <Divider dark />
-
-      {/* <section id="applylink" className={CourseStyle.sectionStuResources}>
+      <section id="applylink" className={CourseStyle.sectionStuResources}>
         <p className={ProgStyles.headingprimaryleft}> COSTAATT Wants You </p>
         <>
           <div className={CourseStyle.inquiryform}>
@@ -433,7 +442,7 @@ const programme = (props) => {
             </div>
           </div>
         </>
-      </section> */}
+      </section>
     </>
   );
 };
