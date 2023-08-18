@@ -22,7 +22,7 @@ const NewsRow = ({ label, news }) => {
         })}
       </div>
       <div className={ProgStyles.goto}>
-        <Link className={ProgStyles.goto} href="#">
+        <Link className={ProgStyles.goto} href="/news">
           View More...
         </Link>
       </div>

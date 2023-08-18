@@ -7,7 +7,6 @@ const DegreeCourses = ({ courses }) => {
   let totalCredits = 0;
   courses.length > 0 &&
     (totalCredits = courses.reduce((total, item) => {
-      console.log(item);
       return total + item.credits;
     }, 0));
 
