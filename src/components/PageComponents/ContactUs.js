@@ -1,34 +1,31 @@
-import React from 'react'
-import ContactStyle from '../../styles/ContactUs.module.scss'
+import React from "react";
+import ContactStyle from "../../styles/ContactUs.module.scss";
 import SendIcon from "@mui/icons-material/Send";
 
-
-
-import{
-    InputLabel,
-    Box,
-    TextField,
-    FormControl,
-    Button,
-    Input,FormHelperText,Select,MenuItem, Typography
-    
-
-} from '@mui/material'
-import { FaPray } from 'react-icons/fa';
+import {
+  InputLabel,
+  Box,
+  TextField,
+  FormControl,
+  Button,
+  Input,
+  FormHelperText,
+  Select,
+  MenuItem,
+  Typography,
+} from "@mui/material";
+import { FaPray } from "react-icons/fa";
 import { orange } from "@mui/material/colors";
 
-
 const ContactUs = () => {
-  const [pros, setPros] = React.useState('');
-  const[year,setYear]=React.useState('')
+  const [pros, setPros] = React.useState("");
+  const [year, setYear] = React.useState("");
 
   const handleChange = (event) => {
     setPros(event.target.value);
     setYear(event.target.value);
-  }; 
-//   const color=orange[500]
-  
-
+  };
+  //   const color=orange[500]
 
   return (
     <>
@@ -53,7 +50,7 @@ const ContactUs = () => {
             {" "}
             Learn more about COSTAATT by connecting with us ..
           </Typography>
-          <Typography variant="h5">We'll be glad to assit you.</Typography>
+          <Typography variant="h5">We will be happy to assit you.</Typography>
         </div>
 
         <FormControl sx={{ m: 2, minWidth: 250 }}>
@@ -123,9 +120,7 @@ const ContactUs = () => {
 
         <Box
           sx={{
-      
             textAlign: "center",
-
           }}
         >
           <FormControl sx={{ m: 3, minWidth: 200, textAlign: "center" }}>
@@ -136,7 +131,6 @@ const ContactUs = () => {
               variant="contained"
               align="center"
               endIcon={<SendIcon />}
-            
             >
               {" "}
               Connect with us
@@ -146,6 +140,6 @@ const ContactUs = () => {
       </Box>
     </>
   );
-}
+};
 
-export default ContactUs
+export default ContactUs;

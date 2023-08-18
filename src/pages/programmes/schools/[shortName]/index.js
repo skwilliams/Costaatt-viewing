@@ -34,7 +34,7 @@ const school = (props) => {
   return (
     <>
       <Head>
-        <title>{foundSchool.shortName || "School"}</title>
+        <title>{foundSchool.shortName}</title>
       </Head>
       <section id="mainheader" className={ProgStyles.sectionmainheader}>
         <HeadImage imagetext="" mainimage={foundSchool.image} />
@@ -96,7 +96,10 @@ const school = (props) => {
                                   key={levelProgs.prog_code}
                                   className={ProgStyles.degcoursesli}
                                 >
-                                  <Link href=""> {levelProgs.prog_name} </Link>
+                                  <Link href={levelProgs.prog_shortname}>
+                                    {" "}
+                                    {levelProgs.prog_name}{" "}
+                                  </Link>
                                 </li>
                               );
                             })}
