@@ -67,9 +67,7 @@ const institutionalfees = () => {
                     fontSize: "1rem",
                   }}
                 >
-                  <TableRow
-                  className={admissionStyles.head}
-                  >
+                  <TableRow className={admissionStyles.head}>
                     <TableCell>Fees</TableCell>
                     <TableCell>Citizens</TableCell>
                     <TableCell>Caricom</TableCell>
@@ -95,6 +93,14 @@ const institutionalfees = () => {
           <p className={admissionStyles.disclaimer}>
             Disclaimer: COSTAATT reserves the right to modify fees as may be
             necessary.
+          </p>
+          <p className={admissionStyles.emphasis}>
+            {" "}
+            Institutional fees are non-refundable. Students who officially
+            withdraw from the College may be eligible for a refund of tuition
+            fees in accordance with the schedule outlined in the Academic
+            Calendar. Please note that students in receipt of GATE funding are
+            not eligible for tuition refunds.{" "}
           </p>
         </section>
         <br />

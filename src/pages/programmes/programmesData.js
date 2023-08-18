@@ -1457,7 +1457,6 @@ export const getCourses = function (courseList) {
       )
     );
   });
-  console.log(progCourses);
   return progCourses;
 };
 

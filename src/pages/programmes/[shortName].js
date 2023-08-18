@@ -7,7 +7,6 @@ import mode from "../../../images/Programmes/mode.svg";
 import location from "../../../images/Programmes/location.svg";
 import calendar from "../../../images/Programmes/calendar.svg";
 import gate from "../../../images/Programmes/gate.png";
-import Image from "next/image";
 import ContactUs from "@/components/PageComponents/ContactUs";
 import Featured from "../../components/PageComponents/Featured";
 import {
@@ -19,22 +18,7 @@ import {
 import GradStyle from "../../styles/GradsSpeak.module.scss";
 import GradsSpeak from "@/components/PageComponents/GradsSpeak";
 import Divider from "@mui/material/Divider";
-// import {
-//   supportingDoc,
-//   supportDocA,
-//   minrequirements,
-//   bscLismajor,
-//   bscLissupport,
-//   bscLiscore,
-//   salaries,
-//   tuition,
-//   totalcredits,
-//   resources,
-// } from "../../busIT/ist/bscLiscourses";
-import {
-  institutionFees,
-  dptOfManagementFees,
-} from "../admissions/admissionsData"; // "../../../../admissions/admissionsData";
+import { institutionFees } from "../admissions/admissionsData";
 import DegreeCourses from "@/components/PageComponents/DegreeCourses";
 import PossibleSalary from "@/components/PageComponents/PossibleSalary";
 import DeptStyles from "../../styles/Department.module.scss";
@@ -63,8 +47,7 @@ import {
 import ProgOfferingDetails from "@/components/PageComponents/ProgOfferingDetails";
 
 const programme = (props) => {
-  const { prog } = props;
-  const progStruct = getProgStruct(prog.prog_shortname);
+  const { prog, progStruct } = props;
 
   return (
     <>
@@ -462,18 +445,30 @@ export async function getStaticPaths() {
 export async function getStaticProps(context) {
   const { params } = context;
   const { shortName } = params;
-  return {
-    props: {
-      // retrieve the entire programme object
-      prog: await getProgData(shortName),
-    },
-  };
+
+  // retrieve the entire programme object
+  const data = await getProgData(shortName);
+  const struct = getProgStruct(shortName);
+
+  if (!(data && struct)) {
+    return {
+      notFound: true,
+    };
+  } else {
+    return {
+      props: {
+        prog: data,
+        progStruct: struct,
+      },
+    };
+  }
 }
 
 const getProgData = async function (progKey) {
   const filepath = path.join(process.cwd(), "data", "schooldata.json");
   const jsonData = await fs.readFile(filepath);
   const data = JSON.parse(jsonData);
+
   let finalData = null;
   data.forEach((school) => {
     school.departments.forEach((dept) => {
@@ -487,5 +482,6 @@ const getProgData = async function (progKey) {
         });
     });
   });
+
   return finalData;
 };

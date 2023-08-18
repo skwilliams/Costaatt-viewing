@@ -98,7 +98,12 @@ const index = (props) => {
                                   key={levelProgs.prog_code}
                                   className={ProgStyles.degcoursesli}
                                 >
-                                  <Link href=""> {levelProgs.prog_name} </Link>
+                                  <Link
+                                    href={`/programmes/${levelProgs.prog_shortname}`}
+                                  >
+                                    {" "}
+                                    {levelProgs.prog_name}{" "}
+                                  </Link>
                                 </li>
                               );
                             })}
@@ -182,14 +187,23 @@ export async function getStaticPaths() {
 export async function getStaticProps(context) {
   const { params } = context;
   const { shortName, deptName } = params;
-  return {
-    props: {
-      // retrieve the entire department object
-      foundDept: await getDeptData(shortName, "nameStump", deptName),
-      // retrieve the latest news posts for this department
-      news: await getDeptNewsData(deptName, "dept_code"),
-    },
-  };
+
+  // retrieve the entire department object
+  const data = await getDeptData(shortName, "nameStump", deptName);
+
+  if (!data) {
+    return {
+      notFound: true,
+    };
+  } else {
+    return {
+      props: {
+        foundDept: data,
+        // retrieve the latest news posts for this department
+        news: await getDeptNewsData(deptName, "dept_code"),
+      },
+    };
+  }
 }
 
 const getDeptNewsData = async function (deptName, deptKey) {

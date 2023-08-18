@@ -21,8 +21,9 @@ export const subHeaderSections = {
   feesandfunding: {
     "We are here":"intro",
     "tuition and fees": "tuition",
+    "methods of payment":"methodsofpayment",
     "financial support": "finsupport",
-    "Money tips":"moneytips"
+
   },
   schools: {
     overveiw: "overview",
