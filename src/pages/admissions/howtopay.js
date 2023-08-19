@@ -1,21 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-import Head from "next/head";
-import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
-import AdminStyles from "../../styles/Admissions.module.scss";
-import CourseStyles from "../../styles/Course.module.scss";
-import Image from "next/image";
-import Link from "next/link";
-import before from "../../../public/before.svg";
-import after from "../../../public/after.svg";
-import arrow from "../../../public/images/admissions/arrow.svg";
-
-import locationicon from "../../../public/images/admissions/location.svg";
-import downloadicon from "../../../public/images/admissions/downloadnoteicon.svg";
-import SideNavWithTopNav_NoDropdown from "@/components/Layouts/SideNavWithTopNav_NoDropdown";
-import SideNavOnlyLayout from "@/components/Layouts/SideNavOnly_NoTopOrDropdown";
-import TopNavOnlyLayout from "@/components/Layouts/TopNavOnly_NoDropdown";
-=======
 import React from 'react';
 import Head from 'next/head';
 import HeaderNoImage from '@/components/PageComponents/HeaderNoImage';
@@ -29,9 +11,9 @@ import arrow from '../../../public/images/admissions/arrow.svg';
 
 import locationicon from '../../../public/images/admissions/location.svg';
 import downloadicon from '../../../public/images/admissions/downloadnoteicon.svg';
+import SideNavWithTopNav_NoDropdown from '@/components/Layouts/SideNavWithTopNav_NoDropdown';
 import SideNavOnlyLayout from '@/components/Layouts/SideNavOnly_NoTopOrDropdown';
 import TopNavOnlyLayout from '@/components/Layouts/TopNavOnly_NoDropdown';
->>>>>>> 2332013728c44b791bead85f8ebd677f576fa863
 
 const howtopay = () => {
   return (
@@ -39,7 +21,6 @@ const howtopay = () => {
       <Head>
         <title> Fee Payment Options </title>
       </Head>
-<<<<<<< HEAD
       <HeaderNoImage caption="How to Pay " />
       <SideNavOnlyLayout>
         <p className={AdminStyles.sectiontextleft}> Fee Payment Options</p>
@@ -55,39 +36,39 @@ const howtopay = () => {
             </div>
             <div className={AdminStyles.feetwoColGrid}>
               <div className={AdminStyles.text}>
-                {" "}
+                {' '}
                 {/* <Image className={CourseStyles.icon} href={before} width="70" /> */}
               </div>
               <div className={AdminStyles.feesreq}>
                 <ul className={AdminStyles.feeslist}>
                   <p className={AdminStyles.howtoemphasis}>
-                    {" "}
-                    Before you pay ensure you are in possesion of the following:{" "}
+                    {' '}
+                    Before you pay ensure you are in possesion of the following:{' '}
                   </p>
                   <li className={AdminStyles.feesitems}>
                     Your 8-digit student ID
                   </li>
                   <li className={AdminStyles.feesitems}> Amount to be paid</li>
                   <li className={AdminStyles.feesitems}>
-                    {" "}
-                    Fee Code{" "}
+                    {' '}
+                    Fee Code{' '}
                     <span>
-                      {" "}
+                      {' '}
                       <a className={AdminStyles.linkingto} href="#">
-                        {" "}
-                        lookup codes here{" "}
-                      </a>{" "}
+                        {' '}
+                        lookup codes here{' '}
+                      </a>{' '}
                     </span>
                   </li>
                   <li className={AdminStyles.feesitems}>
-                    Relevant term/semester code e.g.202410{" "}
+                    Relevant term/semester code e.g.202410{' '}
                   </li>
                 </ul>
-              </div>{" "}
+              </div>{' '}
               {/*end of lisiting */}
-            </div>{" "}
+            </div>{' '}
             {/*end of second col */}
-          </div>{" "}
+          </div>{' '}
           {/*end of container */}
         </section>
         <section id="visitcashier" className={AdminStyles.sectionViewcashier}>
@@ -101,78 +82,78 @@ const howtopay = () => {
               <div className={AdminStyles.feesreq}>
                 <ul className={AdminStyles.feeslist}>
                   <p className={AdminStyles.howtoemphasis}>
-                    {" "}
+                    {' '}
                     Cashiers are located our main campuses for your conveience
                     <br />
                     Opening hours of 8:00 a.m. to 4:00 p.m.
                   </p>
                   <li className={AdminStyles.feesitems}>
                     <span>
-                      {" "}
+                      {' '}
                       <Link href="#" className={AdminStyles.emphasis}>
-                        {" "}
+                        {' '}
                         <Image
                           className={AdminStyles.downloadicon}
                           src={locationicon}
                           alt="location icon"
-                        />{" "}
-                      </Link>{" "}
-                    </span>{" "}
+                        />{' '}
+                      </Link>{' '}
+                    </span>{' '}
                     Chagauans Campus
                   </li>
                   <li className={AdminStyles.feesitems}>
                     <span>
-                      {" "}
+                      {' '}
                       <Link href="#" className={AdminStyles.emphasis}>
-                        {" "}
+                        {' '}
                         <Image
                           className={AdminStyles.downloadicon}
                           src={locationicon}
                           alt="location icon"
-                        />{" "}
-                      </Link>{" "}
+                        />{' '}
+                      </Link>{' '}
                     </span>
                     City Campus
                   </li>
 
                   <li className={AdminStyles.feesitems}>
-                    {" "}
+                    {' '}
                     <span>
-                      {" "}
+                      {' '}
                       <Link href="#" className={AdminStyles.emphasis}>
-                        {" "}
+                        {' '}
                         <Image
                           className={AdminStyles.downloadicon}
                           src={locationicon}
                           alt="location icon"
-                        />{" "}
-                      </Link>{" "}
+                        />{' '}
+                      </Link>{' '}
                     </span>
-                    South Campus{" "}
+                    South Campus{' '}
                   </li>
                   <li className={AdminStyles.feesitems}>
-                    {" "}
+                    {' '}
                     <Link href="#" className={AdminStyles.emphasis}>
-                      {" "}
+                      {' '}
                       <Image
                         className={AdminStyles.downloadicon}
                         src={locationicon}
                         alt="location icon"
-                      />{" "}
-                    </Link>{" "}
+                      />{' '}
+                    </Link>{' '}
                     Tobago Campus
                     {/* <span> */} {/* </span>{" "} */}
                   </li>
                 </ul>
-              </div>{" "}
+              </div>{' '}
               {/*end of lisiting */}
-            </div>{" "}
+            </div>{' '}
             {/*end of second col */}
-          </div>{" "}
+          </div>{' '}
         </section>
         <section id="banneronline" className={AdminStyles.sectionPayonline}>
           <p className={AdminStyles.sectiontextleft}>
-            {" "}
+            {' '}
             Banner Online Payment
             <span className={AdminStyles.downloads}>
               <Image
@@ -180,12 +161,12 @@ const howtopay = () => {
                 src={downloadicon}
                 alt="download icon"
               />
-              {"        "}
+              {'        '}
               {/* <br /> */}
               <Link href="#" className={AdminStyles.downloadsDoc}>
-                {" "}
+                {' '}
                 Banner Online Payment Manual
-              </Link>{" "}
+              </Link>{' '}
             </span>
           </p>
           <div className={AdminStyles.feetwoColCon}>
@@ -197,14 +178,14 @@ const howtopay = () => {
               <div className={AdminStyles.feesreq}>
                 <ul className={AdminStyles.feeslist}>
                   <p className={AdminStyles.howtoemphasis}>
-                    {" "}
+                    {' '}
                     *Confirm with your bank if your debit card can be used for
                     payments online and your daily limit allowed
                   </p>
                   <li className={AdminStyles.feesitems}>
-                    Login to{" "}
+                    Login to{' '}
                     <a className={AdminStyles.linkingto} href="#">
-                      {" "}
+                      {' '}
                       Self Service Banner
                     </a>
                   </li>
@@ -225,23 +206,23 @@ const howtopay = () => {
                   </li>
 
                   <li className={AdminStyles.feesitems}>
-                    {" "}
+                    {' '}
                     Using your credit card or VISA debit card* select the items
                     to be paid for and checkout
                   </li>
                 </ul>
-              </div>{" "}
+              </div>{' '}
               {/*end of lisiting */}
-            </div>{" "}
+            </div>{' '}
             {/*end of second col */}
-          </div>{" "}
+          </div>{' '}
         </section>
         <section
           id="personalonline"
           className={AdminStyles.sectionPaypersonalonline}
         >
           <p className={AdminStyles.sectiontextleft}>
-            {" "}
+            {' '}
             Personal Online Banking
             <span className={AdminStyles.downloads}>
               <Image
@@ -249,16 +230,16 @@ const howtopay = () => {
                 src={downloadicon}
                 alt="download icon"
               />
-              {"        "}
+              {'        '}
               {/* <br /> */}
               <Link href="#" className={AdminStyles.downloadsDoc}>
-                {" "}
-                FCB Manual{" "}
-              </Link>{" "}
+                {' '}
+                FCB Manual{' '}
+              </Link>{' '}
               <Link href="#" className={AdminStyles.downloadsDoc}>
-                {" "}
-                RBL Manual{" "}
-              </Link>{" "}
+                {' '}
+                RBL Manual{' '}
+              </Link>{' '}
             </span>
           </p>
           <div className={AdminStyles.feetwoColCon}>
@@ -267,7 +248,7 @@ const howtopay = () => {
             </div>
             <div className={AdminStyles.feetwoColGrid}>
               <div className={AdminStyles.emphasis}>
-                {" "}
+                {' '}
                 ** FCB and RBL Banks Only
               </div>
               <div className={AdminStyles.feesreq}>
@@ -280,16 +261,16 @@ const howtopay = () => {
                   </li>
 
                   <li className={AdminStyles.feesitems}>
-                    {" "}
+                    {' '}
                     Include in your payment description your student ID, then
-                    type of fee you are paying and the relevant term/semsester{" "}
+                    type of fee you are paying and the relevant term/semsester{' '}
                   </li>
                 </ul>
-              </div>{" "}
+              </div>{' '}
               {/*end of lisiting */}
-            </div>{" "}
+            </div>{' '}
             {/*end of second col */}
-          </div>{" "}
+          </div>{' '}
         </section>
         <section id="interbank" className={AdminStyles.sectionInterbank}>
           <p className={AdminStyles.sectiontextleft}> Inter Bank </p>
@@ -302,14 +283,14 @@ const howtopay = () => {
               <div className={AdminStyles.feesreq}>
                 <ul className={AdminStyles.feeslist}>
                   <p className={AdminStyles.howtoemphasis}>
-                    {" "}
+                    {' '}
                     *Confirm with your bank if your debit card can be used for
                     payments online and your daily limit allowed
                   </p>
                   <li className={AdminStyles.feesitems}>
-                    Login to{" "}
+                    Login to{' '}
                     <a className={AdminStyles.linkingto} href="#">
-                      {" "}
+                      {' '}
                       Self Service Banner
                     </a>
                   </li>
@@ -330,16 +311,16 @@ const howtopay = () => {
                   </li>
 
                   <li className={AdminStyles.feesitems}>
-                    {" "}
+                    {' '}
                     Using your credit card or VISA debit card* select the items
                     to be paid for and checkout
                   </li>
                 </ul>
-              </div>{" "}
+              </div>{' '}
               {/*end of lisiting */}
-            </div>{" "}
+            </div>{' '}
             {/*end of second col */}
-          </div>{" "}
+          </div>{' '}
         </section>
         <section
           id="directdeposit"
@@ -355,14 +336,14 @@ const howtopay = () => {
               <div className={AdminStyles.feesreq}>
                 <ul className={AdminStyles.feeslist}>
                   <p className={AdminStyles.howtoemphasis}>
-                    {" "}
+                    {' '}
                     *Confirm with your bank if your debit card can be used for
                     payments online and your daily limit allowed
                   </p>
                   <li className={AdminStyles.feesitems}>
-                    Login to{" "}
+                    Login to{' '}
                     <a className={AdminStyles.linkingto} href="#">
-                      {" "}
+                      {' '}
                       Self Service Banner
                     </a>
                   </li>
@@ -383,16 +364,16 @@ const howtopay = () => {
                   </li>
 
                   <li className={AdminStyles.feesitems}>
-                    {" "}
+                    {' '}
                     Using your credit card or VISA debit card* select the items
                     to be paid for and checkout
                   </li>
                 </ul>
-              </div>{" "}
+              </div>{' '}
               {/*end of lisiting */}
-            </div>{" "}
+            </div>{' '}
             {/*end of second col */}
-          </div>{" "}
+          </div>{' '}
         </section>
         <section id="afterpay" className={AdminStyles.sectionAfterpay}>
           <p className={AdminStyles.sectiontextleft}> After you Pay</p>
@@ -402,115 +383,45 @@ const howtopay = () => {
                 className={AdminStyles.icon}
                 src={after}
                 alt="after icon"
-              />{" "}
+              />{' '}
             </div>
             <div className={AdminStyles.feetwoColGrid}>
               <div className={AdminStyles.text}>
-                {" "}
+                {' '}
                 {/* <Image className={CourseStyles.icon} href={before} width="70" /> */}
               </div>
               <div className={AdminStyles.feesreq}>
                 <ul className={AdminStyles.feeslist}>
                   <p className={AdminStyles.howtoemphasis}></p>
                   <li className={AdminStyles.feesitems}>
-                    Retain a print/photograph/email of payment receipt{" "}
+                    Retain a print/photograph/email of payment receipt{' '}
                   </li>
                   <li className={AdminStyles.feesitems}>
-                    {" "}
+                    {' '}
                     Send to <a href="main"> </a>
                   </li>
                   <li className={AdminStyles.feesitems}>
-                    {" "}
-                    Fee Code{" "}
+                    {' '}
+                    Fee Code{' '}
                     <span>
-                      {" "}
+                      {' '}
                       <a className={AdminStyles.linkingto} href="#">
-                        {" "}
-                        lookup codes here{" "}
-                      </a>{" "}
+                        {' '}
+                        lookup codes here{' '}
+                      </a>{' '}
                     </span>
                   </li>
                   <li className={AdminStyles.feesitems}>
-                    Relevant term/semester code e.g.202410{" "}
+                    Relevant term/semester code e.g.202410{' '}
                   </li>
                 </ul>
-              </div>{" "}
+              </div>{' '}
               {/*end of lisiting */}
-            </div>{" "}
+            </div>{' '}
             {/*end of second col */}
-          </div>{" "}
+          </div>{' '}
         </section>
       </SideNavOnlyLayout>
-=======
-      {/* <HeaderNoImage caption="How to Pay " /> */}
-      <p className={AdminStyles.sectiontextleft}> Fee Payment Options</p>
-      <section id="beforepay" className={AdminStyles.sectionIntro}>
-        <p className={AdminStyles.text}>
-          {' '}
-          <Image className={CourseStyles.icon} href={before} width="70" />
-          Before you pay ensure you are in possesion of the following:
-        </p>
-        <div className={AdminStyles.entryreq}>
-          <ul className={AdminStyles.list}>
-            <li className={AdminStyles.items}>Your 8-digit student ID</li>
-            <li className={AdminStyles.items}> Amount to be paid</li>
-            <li className={AdminStyles.items}>
-              {' '}
-              Fee Code{' '}
-              <span>
-                {' '}
-                <Link href="#" className={AdminStyles.emphasis}>
-                  {' '}
-                  Place link to pdf Fee Code here
-                </Link>{' '}
-              </span>
-            </li>
-            <li className={AdminStyles.items}>
-              Relevant term/semester code e.g.202410{' '}
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section id="visitcashier" className={AdminStyles.viewcashier}>
-        <p className={AdminStyles.sectiontextleft}> Visit the Cashier</p>
-      </section>
-
-      <section id="personalonline" className={AdminStyles.payomline}>
-        <p className={AdminStyles.sectiontextleft}> Personal Online</p>
-      </section>
-      <section id="interbank" className={AdminStyles.pay}>
-        <p className={AdminStyles.sectiontextleft}> Inter Bank </p>
-      </section>
-      <section id="directdeposit" className={AdminStyles.pay}>
-        <p className={AdminStyles.sectiontextleft}> Direct Deposit</p>
-      </section>
-      <section id="afterpay" className={AdminStyles.pay}>
-        <p className={AdminStyles.sectiontextleft}> After you Pay</p>
-        <p className={AdminStyles.text}>
-          {' '}
-          After you pay it's important that you do the following:
-        </p>
-        <div className={AdminStyles.entryreq}>
-          <ul className={AdminStyles.list}>
-            <li className={AdminStyles.items}>
-              Retain a print/photograp/email of payment receipt
-            </li>
-            <li className={AdminStyles.items}>
-              {' '}
-              Send to{' '}
-              <a href="mailto:bursar@costaatt.edu.tt">
-                {' '}
-                bursar@costaatt.edu.tt
-              </a>
-            </li>
-            <li className={AdminStyles.items}>
-              {' '}
-              Check your student email for confirmation that the payment was
-              received and processed{' '}
-            </li>
-          </ul>
-        </div>
-      </section>
     </>
   );
 };
