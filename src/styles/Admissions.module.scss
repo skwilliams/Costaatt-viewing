@@ -321,7 +321,6 @@ clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 }
 
 
-  
 .entryreq{
       font-size:1.25rem;
 
@@ -346,5 +345,134 @@ clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 
     
 }
+
+// Fee Payment Options Page
+.sectionBeforepay{
+
+  background-color: $whiteback;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.text{
+
+    font-size:1.15rem;
+    line-height:2 ;  
+   }
+.sectionViewcashier{
+
+  background-color: white;
+}
+
+.sectionPayonline{
+
+  background-color: $whiteback;
+}
+
+.sectionPaypersonalonline{
+
+  background-color: $whiteback;
+}
+
+.sectionInterbank{
+
+  background-color: $whiteback;
+}
+.sectionDirectdeposit{
+
+  background-color: $sobitCol;
+}
+
+.sectionAfterpay{
+
+  background-color: $workFCol;
+}
+
+.feetwoColCon{
+
+  display: grid;
+  gap: 8rem;
+  grid-gap: 2rem;
+  grid-template-columns: 25% 75%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.feetwoColGrid {
+  text-align: center;
+  // padding: 20px 0;
+  font-size: 1.5rem;
+  // padding: 10px;\
+  align-items: center;
+}
+.number{
+  font-size: 10rem;
+
+}
+.downloads{
+  text-align:left;
+  font-size: 1.25rem;
+  float:right;
+  
+}
+.downloadsDoc{
+  text-align:right;
+  font-size: 1.25rem;
+  text-decoration: underline;
+  text-underline-position: under ;
+  padding:1rem 2rem 0 1rem ;
+  color:$orange;
+  float:right;
+  
+}
+
+.downloadicon{
+  width: 40px;
+  height: 40px;
+}
+.linkingto{
+  text-decoration: underline;
+  text-underline-position: under;
+  color:$purple-main;
+}
+   
+    .icon{
+        width:70px;
+        height:70px;
+        top:50%;
+        text-align: center;
+        
+    }
+
+    .feesreq{
+      font-size:1.25rem;
+
+        .feeslist{
+          margin-left:2rem;
+          font-size:1.25rem;
+        .feesitems{
+         list-style-type: square;
+         margin:.5rem 1.25rem;
+         text-align: left;
+         
+            }
+             .feesitems::marker{
+         
+             color:$orange;
+               }        
+        
+               .feesitems:last-child{
+                margin-bottom:2rem;
+               }
+
+        }
+      }
+      
+   .howtoemphasis{
+    font-size: 1.25rem;
+    font-weight: bold;
+     line-height: 1.75;
+      text-align: left;
+  }
+
+
 
 
