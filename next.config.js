@@ -8,6 +8,17 @@ const nextConfig = {
       fs: false,
       path: false,
     };
+    // config.module.rules.push({
+    //   test: /\.(png|svg|jpe?g|gif|pdf)$/i,
+    //   use: [
+    //     {
+    //       loader: 'file-loader',
+    //       options: {
+    //         name: '[name].[ext]',
+    //       },
+    //     },
+    //   ],
+    // });
     return config;
   },
 };
