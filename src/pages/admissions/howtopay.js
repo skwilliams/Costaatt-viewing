@@ -21,9 +21,9 @@ const howtopay = () => {
       <Head>
         <title> Fee Payment Options </title>
       </Head>
-      <HeaderNoImage caption="How to Pay " />
+      <HeaderNoImage caption="Fee Payment Options " />
       <SideNavOnlyLayout>
-        <p className={AdminStyles.sectiontextleft}> Fee Payment Options</p>
+        {/* <p className={AdminStyles.sectiontextleft}> Fee Payment Options</p> */}
         <section id="beforepay" className={AdminStyles.sectionBeforepay}>
           <p className={AdminStyles.sectiontextleft}> Before you Pay</p>
           <div className={AdminStyles.feetwoColCon}>
@@ -273,7 +273,22 @@ const howtopay = () => {
           </div>{" "}
         </section>
         <section id="interbank" className={AdminStyles.sectionInterbank}>
-          <p className={AdminStyles.sectiontextleft}> Inter Bank </p>
+          <p className={AdminStyles.sectiontextleft}>
+            {" "}
+            Inter-Bank Transfer Online{" "}
+            <span className={AdminStyles.downloads}>
+              <Image
+                className={AdminStyles.downloadicon}
+                src={downloadicon}
+                alt="download icon"
+              />
+              {"        "}
+              <Link href="#" className={AdminStyles.downloadsDoc}>
+                {" "}
+                Payment Guide (Page 2){" "}
+              </Link>{" "}
+            </span>
+          </p>
           <div className={AdminStyles.feetwoColCon}>
             <div className={AdminStyles.feetwoColGrid}>
               <p className={AdminStyles.number}>4</p>
@@ -282,38 +297,28 @@ const howtopay = () => {
               <div className={AdminStyles.text}> </div>
               <div className={AdminStyles.feesreq}>
                 <ul className={AdminStyles.feeslist}>
-                  <p className={AdminStyles.howtoemphasis}>
+                  {/* <p className={AdminStyles.howtoemphasis}>
                     {" "}
                     *Confirm with your bank if your debit card can be used for
                     payments online and your daily limit allowed
-                  </p>
+                  </p> */}
                   <li className={AdminStyles.feesitems}>
-                    Login to{" "}
-                    <a className={AdminStyles.linkingto} href="#">
-                      {" "}
-                      Self Service Banner
-                    </a>
+                    Login to your personal online banking
                   </li>
                   <li className={AdminStyles.feesitems}>
-                    Go to the Student tab and select Student & Financial Aid
-                    <Image
-                      // className={AdminStyles.downloadicon}
-                      src={arrow}
-                      alt="download icon"
-                    />
-                    Online Payment
-                    <Image
-                      // className={AdminStyles.downloadicon}
-                      src={arrow}
-                      alt="download icon"
-                    />
-                    COSTAATT Student Account Suite
+                    Select the relevant option to transfer funds
                   </li>
 
                   <li className={AdminStyles.feesitems}>
                     {" "}
-                    Using your credit card or VISA debit card* select the items
-                    to be paid for and checkout
+                    The receiving bank ins First Citizens Bank, account number
+                    1210236
+                  </li>
+                  <li className={AdminStyles.feesitems}>
+                    {" "}
+                    Include in your transfer/payment description your student
+                    ID,the type of fee you are paying and the relevant
+                    term/semester
                   </li>
                 </ul>
               </div>{" "}
@@ -326,7 +331,22 @@ const howtopay = () => {
           id="directdeposit"
           className={AdminStyles.sectionDirectdeposit}
         >
-          <p className={AdminStyles.sectiontextleft}> Direct Deposit</p>
+          <p className={AdminStyles.sectiontextleft}>
+            {" "}
+            Direct Deposit at First Citizens Bank Branch
+            <span className={AdminStyles.downloads}>
+              <Image
+                className={AdminStyles.downloadicon}
+                src={downloadicon}
+                alt="download icon"
+              />
+              {"        "}
+              <Link href="#" className={AdminStyles.downloadsDoc}>
+                {" "}
+                Payment Guide (Page 2){" "}
+              </Link>{" "}
+            </span>
+          </p>
           <div className={AdminStyles.feetwoColCon}>
             <div className={AdminStyles.feetwoColGrid}>
               <p className={AdminStyles.number}>5</p>
@@ -335,32 +355,13 @@ const howtopay = () => {
               <div className={AdminStyles.text}> </div>
               <div className={AdminStyles.feesreq}>
                 <ul className={AdminStyles.feeslist}>
-                  <p className={AdminStyles.howtoemphasis}>
-                    {" "}
-                    *Confirm with your bank if your debit card can be used for
-                    payments online and your daily limit allowed
-                  </p>
                   <li className={AdminStyles.feesitems}>
-                    Login to{" "}
-                    <a className={AdminStyles.linkingto} href="#">
-                      {" "}
-                      Self Service Banner
-                    </a>
+                    Visit any First Citizens Bank branch
                   </li>
                   <li className={AdminStyles.feesitems}>
-                    Go to the Student tab and select Student & Financial Aid
-                    <Image
-                      // className={AdminStyles.downloadicon}
-                      src={arrow}
-                      alt="download icon"
-                    />
-                    Online Payment
-                    <Image
-                      // className={AdminStyles.downloadicon}
-                      src={arrow}
-                      alt="download icon"
-                    />
-                    COSTAATT Student Account Suite
+                    At teller, provide your name, COSTAATT's account number
+                    (1210236), your student ID number, the type of fee you are
+                    paying and the relevant term/semester{" "}
                   </li>
 
                   <li className={AdminStyles.feesitems}>
@@ -398,21 +399,15 @@ const howtopay = () => {
                   </li>
                   <li className={AdminStyles.feesitems}>
                     {" "}
-                    Send to <a href="main"> </a>
-                  </li>
-                  <li className={AdminStyles.feesitems}>
-                    {" "}
-                    Fee Code{" "}
-                    <span>
+                    Send to{" "}
+                    <a href="bursar@costaatt.edu.tt">
                       {" "}
-                      <a className={AdminStyles.linkingto} href="#">
-                        {" "}
-                        lookup codes here{" "}
-                      </a>{" "}
-                    </span>
+                      bursar@costaatt.edu.tt{" "}
+                    </a>
                   </li>
                   <li className={AdminStyles.feesitems}>
-                    Relevant term/semester code e.g.202410{" "}
+                    Check your studnet email for confirmation that the payemnt
+                    was received and processed
                   </li>
                 </ul>
               </div>{" "}
@@ -420,6 +415,18 @@ const howtopay = () => {
             </div>{" "}
             {/*end of second col */}
           </div>{" "}
+        </section>
+        <section>
+          <p className={AdminStyles.text}>
+            {" "}
+            For payment queries, contact the Office of the Bursar
+            bursar@costaatt.edu.tt
+            <br/> NOTE: It is of extreme importance that all
+            requested details be provided, for each payment to be processed on
+            time. Missing or incorrect details result in delayed processing as
+            the Bursar's office must confirm the payee's identity, payment type
+            and relevant semester prior to posting the payment.
+          </p>
         </section>
       </SideNavOnlyLayout>
     </>
