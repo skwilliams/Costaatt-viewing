@@ -121,7 +121,7 @@ const allCourses = [
   },
   {
     coursecode: "ADVT 499",
-    coursename: "Senior Project – Advertising and Promotions",
+    coursename: "Senior Project - Advertising and Promotions",
     credits: 3,
   },
   {

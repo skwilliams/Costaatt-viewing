@@ -417,7 +417,7 @@ const howtopay = () => {
           </div>{" "}
         </section>
         <section>
-          <p className={AdminStyles.text}>
+          <p className={AdminStyles.emphasis}>
             {" "}
             For payment queries, contact the Office of the Bursar
             bursar@costaatt.edu.tt

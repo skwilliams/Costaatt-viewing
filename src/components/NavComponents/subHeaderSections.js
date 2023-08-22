@@ -69,5 +69,14 @@ export const subHeaderSections = {
     "Online Application" :"onlineapp",
     "Paper Based Application":"paperapp",
     "Contact Admission" :"contactadmin"
-  }
+  },
+
+  
+  // [deptName]: {
+  //   "school overview": "overview",
+  //   Departments: "depart",
+  //   "find your Degree": "depcourses",
+  //   "meet the dean": "meetthedean",
+  //   "school events and news": "schoolnews",
+  // },
 };
