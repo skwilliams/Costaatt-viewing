@@ -262,6 +262,9 @@ clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   &:hover{
     color: white;
     background-color: $orange;
+background-image: linear-gradient(to right,$orange,$purple-secondary);
+
+
   }
 
   .cardtext{
@@ -300,6 +303,14 @@ clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 // }
 }
 
+  .accordiantext{
+    font-size:1.25rem;
+    line-height: 2;
+   text-align: left;
+    padding: 1rem;
+    font-family: "Lato";
+
+  }
 .sectionfinsupport{
   margin: 7rem;
 
@@ -474,6 +485,6 @@ clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
       text-align: left;
   }
 
-
+//Transfer Credits and Exemptions
 
 

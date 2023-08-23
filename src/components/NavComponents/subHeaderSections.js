@@ -71,6 +71,12 @@ export const subHeaderSections = {
     "Contact Admission" :"contactadmin"
   },
 
+    transfercredits:{
+    "Transfer Credits" : "intro",
+    "Everything About Transfers":'freqestions',
+    "How to Apply":"howtoapply"
+  }
+
   
   // [deptName]: {
   //   "school overview": "overview",

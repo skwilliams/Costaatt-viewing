@@ -56,4 +56,5 @@ export const sideNavSections = {
     "After you Pay":"afterpay"
 
   }
+
 };

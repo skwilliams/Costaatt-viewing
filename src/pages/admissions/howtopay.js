@@ -2,7 +2,6 @@ import React from 'react';
 import Head from 'next/head';
 import HeaderNoImage from '@/components/PageComponents/HeaderNoImage';
 import AdminStyles from '../../styles/Admissions.module.scss';
-import CourseStyles from '../../styles/Course.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
 import before from '../../../public/before.svg';
@@ -11,7 +10,6 @@ import arrow from '../../../public/images/admissions/arrow.svg';
 
 import locationicon from '../../../public/images/admissions/location.svg';
 import downloadicon from '../../../public/images/admissions/downloadnoteicon.svg';
-import SideNavWithTopNav_NoDropdown from '@/components/Layouts/SideNavWithTopNav_NoDropdown';
 import SideNavOnlyLayout from '@/components/Layouts/SideNavOnly_NoTopOrDropdown';
 import TopNavOnlyLayout from '@/components/Layouts/TopNavOnly_NoDropdown';
 
