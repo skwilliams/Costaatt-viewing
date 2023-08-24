@@ -303,6 +303,15 @@ clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 // }
 }
 
+.secondheading{
+    font-size:1.25rem;
+    line-height: 2;
+    text-align: left;
+    font-family: "Lato";
+    margin-bottom: 2rem;
+    font-weight: bold;
+
+  }
   .accordiantext{
     font-size:1.25rem;
     line-height: 2;
@@ -487,19 +496,61 @@ clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 
 //Transfer Credits and Exemptions
 .sectionIntrotransfer{
-  margin: 0 7rem ;
+  margin: 4rem 7rem ;
 }
 
 .sectionQuestions{
-    margin: 0 7rem ;
+    margin: 4rem 7rem ;
 
 }
 .sectionHowTo{
-  margin:0 7rem ;
+  margin:4rem 7rem ;
 }
 .sectionExemptionListGce{
-  margin:0 7rem ;
+  margin: 4rem 7rem ;
 }
 .sectionExemptionListCape{
-  margin:0 7rem ;
+  margin:4rem 7rem ;
+.secondheading{
+    font-size:1.15rem;
+    line-height: 2;
+    text-align: left;
+    font-family: "Lato";
+    margin-bottom: 2rem;
+    // font-weight: bold;
+
+  }
+  .emphasis{
+    font-size: 1.1rem;
+    line-height: 1.75;
+    font-family: "Lato";
+    color: $orange;
+    text-align: left;
+  }
+
+   .twoColGridCon {
+  display: grid;
+  gap: 8rem;
+  grid-gap: 2rem;
+  grid-template-columns: auto auto;
+}
+.twoColGrid {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1.5rem;
+  // padding: 10px;
+}
+   .threeColGridCon {
+  display: grid;
+  gap: 8rem;
+  grid-gap: 2rem;
+  grid-template-columns: auto auto auto;
+}
+.threeColGrid {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1.5rem;
+  // padding: 10px;
+}
+
 }

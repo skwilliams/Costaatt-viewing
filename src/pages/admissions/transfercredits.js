@@ -7,27 +7,31 @@ import ProgStyles from "../../styles/Programmes.module.scss"
 import SideNavOnlyLayout from "@/components/Layouts/SideNavOnly_NoTopOrDropdown";
 import TopNavOnlyLayout from "@/components/Layouts/TopNavOnly_NoDropdown";
 import AdminStyles from "../../styles/Admissions.module.scss";
-import Accordion from "@mui/material/Accordion";
+import {Accordion, Divider} from "@mui/material/";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import DegreeCourses from '@/components/PageComponents/DegreeCourses'
+import SimpleStep from '@/components/PageComponents/SimpleStep'
 
 import {
 
   gce_Economics,gce_Geography,gce_Biology,gce_Accounting,
   gce_ICT,gce_MOB,gce_Physics,gce_Chemistry,
   cape_Accounting_Unit1,
-
+cape_Economics_Unit1,
   cape_Accounting_Unit2,
   cape_AppliedMath_Unit1,
   cape_AppliedMath_Unit2,
   cape_ArtDesign_Unit1,
-cape_Biology_Unit1_2,
-cape_Chemistry_Unit1,
+  cape_Biology_Unit1_2,
+  cape_Chemistry_Unit1,
+  cape_Chemistry_Unit2,
   cape_Communication,
+  cape_lit_Unit1or2,
+  cape_puremath_Unit2,
   cape_spanish_Unit1_2,
   cape_spanish_Unit2,
   cape_socio_Unit2,cape_EntrepUnit1_2,cape_Economics_Unit2,
@@ -284,7 +288,10 @@ const transfercredits = () => {
         </Accordion>
       </section>
 
-      <section id="exemptionlistgce" className={AdminStyles.sectionExemptionListGce}>
+      <section
+        id="exemptionlistgce"
+        className={AdminStyles.sectionExemptionListGce}
+      >
         <p className={ProgStyles.headingprimary}> GCE Course Exemptions </p>
         <Accordion>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
@@ -408,7 +415,10 @@ const transfercredits = () => {
         </table> */}
       </section>
 
-      <section id="exemptionlistcape" className={AdminStyles.sectionExemptionListCape}>
+      <section
+        id="exemptionlistcape"
+        className={AdminStyles.sectionExemptionListCape}
+      >
         <p className={ProgStyles.headingprimary}> CAPE Course Exemptions </p>
         <Accordion>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
@@ -417,7 +427,60 @@ const transfercredits = () => {
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <DegreeCourses courses={gce_Accounting} />
+            <div className={AdminStyles.twoColGridCon}>
+              <div className={AdminStyles.twoColGrid}>
+                <p className={AdminStyles.secondheading}>
+                  Unit 1 : Financial Accounting
+                </p>
+
+                <DegreeCourses courses={cape_Accounting_Unit1} />
+              </div>
+              <div className={AdminStyles.twoColGrid}>
+                <p className={AdminStyles.secondheading}>
+                  Unit 2 : Cost and Management Accounting
+                </p>{" "}
+                <DegreeCourses courses={gce_Accounting} />
+              </div>
+            </div>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Applied Mathematics{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <div className={AdminStyles.twoColGridCon}>
+              <div className={AdminStyles.twoColGrid}>
+                <p className={AdminStyles.secondheading}>
+                  Unit 1 :Statistical Analysis{" "}
+                </p>
+
+                <DegreeCourses courses={cape_AppliedMath_Unit1} />
+              </div>
+              <div className={AdminStyles.twoColGrid}>
+                <p className={AdminStyles.secondheading}>
+                  Unit 2 : Mathematical Applications
+                </p>{" "}
+                <DegreeCourses courses={cape_AppliedMath_Unit2} />
+              </div>
+            </div>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Art and Design{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <p className={AdminStyles.secondheading}>
+              Unit 1 :Foundations of Art and Design & Unit 2 : Applications of
+              Art and Design
+            </p>
+
+            <DegreeCourses courses={cape_ArtDesign_Unit1} />
           </AccordionDetails>
         </Accordion>
         <Accordion>
@@ -427,7 +490,21 @@ const transfercredits = () => {
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <DegreeCourses courses={gce_Biology} />
+            <div className={AdminStyles.twoColGridCon}>
+              <div className={AdminStyles.twoColGrid}>
+                <p className={AdminStyles.secondheading}>
+                  Unit 1 : Biomolecules, Reproduction and Development{" "}
+                </p>
+
+                <DegreeCourses courses={cape_Biology_Unit1_2} />
+              </div>
+              <div className={AdminStyles.twoColGrid}>
+                <p className={AdminStyles.secondheading}>
+                  Unit 2 : Bioenergetics, Biosystems and Applications
+                </p>{" "}
+                <DegreeCourses courses={cape_Biology_Unit1_2} />
+              </div>
+            </div>
           </AccordionDetails>
         </Accordion>
         <Accordion>
@@ -437,47 +514,31 @@ const transfercredits = () => {
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <DegreeCourses courses={gce_Chemistry} />
+            <div className={AdminStyles.twoColGridCon}>
+              <div className={AdminStyles.twoColGrid}>
+                <p className={AdminStyles.secondheading}>
+                  Unit 1 : Chemical Principles and Applications I{" "}
+                </p>
+
+                <DegreeCourses courses={cape_Chemistry_Unit1} />
+              </div>
+              <div className={AdminStyles.twoColGrid}>
+                <p className={AdminStyles.secondheading}>
+                  Unit 2 : Chemical Principles and Applications II{" "}
+                </p>{" "}
+                <DegreeCourses courses={cape_Chemistry_Unit2} />
+              </div>
+            </div>
           </AccordionDetails>
         </Accordion>
         <Accordion>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography fontWeight={900} fontSize={19}>
-              Physics{" "}
+              Communication Studies{" "}
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <DegreeCourses courses={gce_Physics} />
-          </AccordionDetails>
-        </Accordion>
-        <Accordion>
-          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography fontWeight={900} fontSize={19}>
-              Management of Business{" "}
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <DegreeCourses courses={gce_MOB} />
-          </AccordionDetails>
-        </Accordion>
-        <Accordion>
-          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography fontWeight={900} fontSize={19}>
-              Information Science Technology{" "}
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <DegreeCourses courses={gce_ICT} />
-          </AccordionDetails>
-        </Accordion>
-        <Accordion>
-          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography fontWeight={900} fontSize={19}>
-              Geography{" "}
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <DegreeCourses courses={gce_Geography} />
+            <DegreeCourses courses={cape_Communication} />
           </AccordionDetails>
         </Accordion>
         <Accordion>
@@ -487,14 +548,264 @@ const transfercredits = () => {
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <DegreeCourses courses={gce_Economics} />
+            <div className={AdminStyles.twoColGridCon}>
+              <div className={AdminStyles.twoColGrid}>
+                <p className={AdminStyles.secondheading}>
+                  Unit 1 (Microeconomics){" "}
+                </p>
+
+                <DegreeCourses courses={cape_Economics_Unit1} />
+              </div>
+              <div className={AdminStyles.twoColGrid}>
+                <p className={AdminStyles.secondheading}>
+                  Unit 2 : Macroeconomics
+                </p>{" "}
+                <DegreeCourses courses={cape_Economics_Unit2} />
+              </div>
+            </div>
           </AccordionDetails>
         </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Entrepreneurship{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <p className={AdminStyles.secondheading}>
+              Unit 1 : Entrepreneurship Theory <br /> Unit 2 : Entrepreneurship
+              Practice <br />
+              <span className={AdminStyles.emphasis}>
+                {" "}
+                **Both Unit 1 and 2 must be passed to gain exemptions
+              </span>
+            </p>
 
-            </section>
+            <DegreeCourses courses={cape_EntrepUnit1_2} />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Geography{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <p className={AdminStyles.secondheading}>
+              Unit 1 : Population Geography, Geomorphic Processes & Hazards{" "}
+              <br /> {"  "}
+              Unit 2 : Climate, Economic Activity and Development <br />{" "}
+              {"      "}
+              <span className={AdminStyles.emphasis}>
+                {" "}
+                **Both Unit 1 and 2 must be passed to gain exemptions
+              </span>
+            </p>
+
+            <DegreeCourses courses={cape_Geography1_2} />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              History{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <p className={AdminStyles.secondheading}>
+              Unit 1 : The Caribbean in the Atlantic World{" "}
+            </p>
+
+            <DegreeCourses courses={cape_HistoryUnit1} />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Information Technology{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <div className={AdminStyles.twoColGridCon}>
+              <div className={AdminStyles.twoColGrid}>
+                <p className={AdminStyles.secondheading}>
+                  Unit 1 : Information Technology Theory{" "}
+                </p>
+
+                <DegreeCourses courses={cape_ITUnit1} />
+              </div>
+              <div className={AdminStyles.twoColGrid}>
+                <p className={AdminStyles.secondheading}>
+                  Unit 2 : Application and Implication{" "}
+                </p>{" "}
+                <DegreeCourses courses={cape_ITUnit2} />
+              </div>
+            </div>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Law{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <p className={AdminStyles.secondheading}>Unit 1 : Public Law </p>
+
+            <DegreeCourses courses={cape_law_Unit1} />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Literatures in English{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <div className={AdminStyles.twoColGridCon}>
+              <div className={AdminStyles.twoColGrid}>
+                <p className={AdminStyles.secondheading}>Unit 1 and Unit 2</p>
+
+                <DegreeCourses courses={cape_lit_Unit1_2} />
+              </div>
+              <div className={AdminStyles.twoColGrid}>
+                <p className={AdminStyles.secondheading}>Unit 1 or Unit 2</p>{" "}
+                <DegreeCourses courses={cape_lit_Unit1or2} />
+              </div>
+            </div>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Management of Business{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <p className={AdminStyles.secondheading}>
+              Unit 1 : Management Principles and Processes{" "}
+            </p>
+
+            <DegreeCourses courses={cape_mob_1} />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Performing Arts{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <p className={AdminStyles.secondheading}>
+              Unit 2 : Theory, Practice and Innovation Option C (Drama)
+            </p>
+
+            <DegreeCourses courses={cape_performArts_drama_Unit2} />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Physics{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <div className={AdminStyles.twoColGridCon}>
+              <div className={AdminStyles.twoColGrid}>
+                <p className={AdminStyles.secondheading}>
+                  Unit 1 : Mechanics, Waves, Properties of Matter{" "}
+                </p>
+
+                <DegreeCourses courses={cape_phy_Unit1} />
+              </div>
+              <div className={AdminStyles.twoColGrid}>
+                <p className={AdminStyles.secondheading}>
+                  Unit 2 : Electricity and Magnetism, A.C. Theory and Atomic and
+                  Nuclear Physics{" "}
+                </p>{" "}
+                <DegreeCourses courses={cape_phy_Unit2} />
+              </div>
+            </div>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Pure Mathematics{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <div className={AdminStyles.twoColGridCon}>
+              <div className={AdminStyles.twoColGrid}>
+                <p className={AdminStyles.secondheading}>
+                  Unit 1: Algebra, Geometry and Calculus
+                </p>
+
+                <DegreeCourses courses={cape_puremath_Unit1} />
+              </div>
+              <div className={AdminStyles.twoColGrid}>
+                <p className={AdminStyles.secondheading}>
+                  Unit 2 : Complex Numbers, Analysis and Matrices{" "}
+                </p>{" "}
+                <DegreeCourses courses={cape_puremath_Unit2} />
+              </div>
+            </div>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Sociology{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <p className={AdminStyles.secondheading}>
+              Unit 2 :Development and Social Change
+            </p>
+
+            <DegreeCourses courses={cape_socio_Unit2} />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Spanish{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <div className={AdminStyles.threeColGridCon}>
+              <div className={AdminStyles.threeColGrid}>
+                <p className={AdminStyles.secondheading}>
+                  Unit 1 <br /> La familia, la sociedad y el medio ambiente{" "}
+                </p>
+
+                <DegreeCourses courses={cape_spanish_Unit1} />
+              </div>
+
+              <div className={AdminStyles.threeColGrid}>
+                <p className={AdminStyles.secondheading}>
+                  Unit 2 <br /> Las actualidades, la tecnología y la economía{" "}
+                </p>{" "}
+                <DegreeCourses courses={cape_spanish_Unit2} />
+              </div>
+
+              <div className={AdminStyles.threeColGrid}>
+                <Divider orientation="vertical" flexItem />
+                <p className={AdminStyles.secondheading}>
+                  Units 1 & 2
+                  <br /> <br />
+                  <br />{" "}
+                </p>{" "}
+                <DegreeCourses courses={cape_spanish_Unit1_2} />
+              </div>
+            </div>
+          </AccordionDetails>
+        </Accordion>
+      </section>
 
       <section id="howtoapply" className={AdminStyles.sectionHowTo}>
-        <p className={ProgStyles.headingprimary}>How to apply</p>
+        <p className={ProgStyles.headingprimary}>How to apply for Exemptions</p>
+        <SimpleStep/>
       </section>
     </>
   );

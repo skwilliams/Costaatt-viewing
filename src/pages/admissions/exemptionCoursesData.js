@@ -234,13 +234,14 @@ export const cape_Chemistry_Unit1 = [
     coursecode: "CHEM 131",
     coursename: "General Chemistry I",
     credits: 3,
-  },
-  {
-    coursecode: "CHEM 132",
-    coursename: "General Chemistry II",
-    credits: 3,
-  },
-];
+  },];
+  export const cape_Chemistry_Unit2 = [
+    {
+      coursecode: "CHEM 132",
+      coursename: "General Chemistry II",
+      credits: 3,
+    },
+  ];
 export const cape_Communication = [
   {
     coursecode: "COMM 120",
@@ -249,18 +250,19 @@ export const cape_Communication = [
   },
 
 ];
-export const cape_Economics_Unit2 = [
+export const cape_Economics_Unit1 = [
   {
     coursecode: "ECON 120",
     coursename: "Principles of Microeconomics",
     credits: 3,
-  },
-  {
-    coursecode: "ECON 125",
-    coursename: "Principles of Macroeconomics",
-    credits: 3,
-  },
-];
+  },];
+  export const cape_Economics_Unit2 = [
+    {
+      coursecode: "ECON 125",
+      coursename: "Principles of Macroeconomics",
+      credits: 3,
+    },
+  ];
 export const cape_EntrepUnit1_2 = [
   {
     coursecode: "ENTP 210",
@@ -293,18 +295,10 @@ export const cape_ITUnit1 = [
     coursename: "Introduction to Computer Hardware",
     credits: 3,
   },
-  {
-    coursecode: "ITEC 133",
-    coursename: "Programming 1",
-    credits: 3,
-  },
+  
 ];
 export const cape_ITUnit2 = [
-  {
-    coursecode: "ITEC 120",
-    coursename: "Introduction to Computer Hardware",
-    credits: 3,
-  },
+  
   {
     coursecode: "ITEC 133",
     coursename: "Programming 1",
@@ -346,7 +340,7 @@ export const cape_lit_Unit1_2 = [
     credits: 3,
   },
 ];
-export const cape_law_Unit1or2 = [
+export const cape_lit_Unit1or2 = [
   {
     coursecode: "ENGL 200",
     coursename: "Comparative Literature",
@@ -361,6 +355,7 @@ export const cape_mob_1 = [
     credits: 3,
   },
 ];
+
 export const cape_performArts_drama_Unit2 = [
   {
     coursecode: "MUSC 120",
