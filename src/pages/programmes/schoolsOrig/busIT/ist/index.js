@@ -24,6 +24,7 @@ import { staffdata } from "@/pages/programmes/schoolsOrig/busIT/ist/facultystaff
 import FacultyStaffCard from "../../../../../components/PageComponents/FacultyStaffDepCard";
 import image from "../../../../../../images/Programmes/visit-home-v2.jpg";
 import StudentResources from "@/components/PageComponents/StudentResources";
+import LoadPdf from 'src\components\PageComponents\LoadPdf.js';
 
 const index = () => {
   return (
@@ -275,5 +276,11 @@ const index = () => {
 // index.getLayout = function getLayout(page) {
 //     return <Layout>{page}</Layout>
 //   }
+
+
+
+//import React from 'react';
+//import Link from 'next/link';
+
 
 export default index;
