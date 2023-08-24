@@ -19,11 +19,10 @@ export const subHeaderSections = {
     "CARICOM and international applicant": "caricom-international-applicant",
   },
   feesandfunding: {
-    "We are here":"intro",
+    "We are here": "intro",
     "tuition and fees": "tuition",
-    "methods of payment":"methodsofpayment",
+    "methods of payment": "methodsofpayment",
     "financial support": "finsupport",
-
   },
   schools: {
     overveiw: "overview",
@@ -62,22 +61,23 @@ export const subHeaderSections = {
     Departments: "depart",
     "find your Degree": "depcourses",
     "meet the dean": "meetthedean",
-    "school events and news": "schoolnews",  
+    "school events and news": "schoolnews",
   },
-  apply:{
-    "Apply":"intro",
-    "Online Application" :"onlineapp",
-    "Paper Based Application":"paperapp",
-    "Contact Admission" :"contactadmin"
+  apply: {
+    Apply: "intro",
+    "Online Application": "onlineapp",
+    "Paper Based Application": "paperapp",
+    "Contact Admission": "contactadmin",
   },
 
-    transfercredits:{
-    "Transfer Credits" : "intro",
-    "Everything About Transfers":'freqestions',
-    "How to Apply":"howtoapply"
-  }
+  transfercredits: {
+    "Transfer Credits": "intro",
+    "Everything About Transfers": "freqestions",
+    "GCE Exemptions": "exemptionlistgce",
+    "CAPE Exemptions": "exemptionlistcape",
+    "How to Apply": "howtoapply",
+  },
 
-  
   // [deptName]: {
   //   "school overview": "overview",
   //   Departments: "depart",

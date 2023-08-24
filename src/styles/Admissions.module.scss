@@ -261,8 +261,8 @@ clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   margin: 0;
   &:hover{
     color: white;
-    background-color: $orange;
-background-image: linear-gradient(to right,$orange,$purple-secondary);
+    // background-color: $orange;
+    background-image: linear-gradient(to right,$orange,$purple-secondary);
 
 
   }
@@ -486,5 +486,20 @@ background-image: linear-gradient(to right,$orange,$purple-secondary);
   }
 
 //Transfer Credits and Exemptions
+.sectionIntrotransfer{
+  margin: 0 7rem ;
+}
 
+.sectionQuestions{
+    margin: 0 7rem ;
 
+}
+.sectionHowTo{
+  margin:0 7rem ;
+}
+.sectionExemptionListGce{
+  margin:0 7rem ;
+}
+.sectionExemptionListCape{
+  margin:0 7rem ;
+}

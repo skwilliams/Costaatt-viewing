@@ -199,7 +199,7 @@ export const mainNavLinks = [
       },
       {
         title: "Transfer Credit and Exemptions ",
-        path: "/admissions/transfercredit",
+        path: "/admissions/transfercredits",
       },
     ],
     submenuImage: [

@@ -2,6 +2,7 @@ import React from 'react'
 import HeadImage from '@/components/PageComponents/HeadImage'
 import Head from 'next/head'
 import headImg from "../../../public/images/admissions/transfercredits.jpg"
+import ProgStyles from "../../styles/Programmes.module.scss"
 
 import SideNavOnlyLayout from "@/components/Layouts/SideNavOnly_NoTopOrDropdown";
 import TopNavOnlyLayout from "@/components/Layouts/TopNavOnly_NoDropdown";
@@ -11,10 +12,35 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import AddIcon from "@mui/icons-material/Add";
 
+import DegreeCourses from '@/components/PageComponents/DegreeCourses'
 
+import {
 
+  gce_Economics,gce_Geography,gce_Biology,gce_Accounting,
+  gce_ICT,gce_MOB,gce_Physics,gce_Chemistry,
+  cape_Accounting_Unit1,
+
+  cape_Accounting_Unit2,
+  cape_AppliedMath_Unit1,
+  cape_AppliedMath_Unit2,
+  cape_ArtDesign_Unit1,
+cape_Biology_Unit1_2,
+cape_Chemistry_Unit1,
+  cape_Communication,
+  cape_spanish_Unit1_2,
+  cape_spanish_Unit2,
+  cape_socio_Unit2,cape_EntrepUnit1_2,cape_Economics_Unit2,
+  cape_spanish_Unit1,
+  cape_puremath_Unit1,cape_law_Unit1,
+  cape_phy_Unit2,cape_mob_1,ca,pe_law_Unit1or2,
+  cape_phy_Unit1,cape_ITUnit2,
+  cape_ITUnit1,cape_HistoryUnit1,cape_Geography1_2,
+
+  cape_lit_Unit1_2,
+  cape_performArts_drama_Unit2,
+
+} from "./exemptionCoursesData";
 
 
 
@@ -26,7 +52,7 @@ const transfercredits = () => {
       </Head>
 
       <HeadImage imagetext="Fees and Funding" mainimage={headImg} />
-      <section id="intro" className={AdminStyles.sectionintrotransfer}>
+      <section id="intro" className={AdminStyles.sectionIntrotransfer}>
         <p className={AdminStyles.introtext}>
           We are excited that you have chosen COSTAATT to continue your studies!
           We know that you may be wondering about the possibility of obtaining
@@ -34,7 +60,7 @@ const transfercredits = () => {
           sure to read the information below for helpful guidelines.
         </p>
       </section>
-      <section id="frequestions" className={AdminStyles.sectionintrotransfer}>
+      <section id="frequestions" className={AdminStyles.sectionQuestions}>
         <Accordion>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography fontWeight="bold" fontSize={"1.25rem"}>
@@ -257,13 +283,218 @@ const transfercredits = () => {
           </AccordionDetails>
         </Accordion>
       </section>
-      <section id="howtoapply" className={AdminStyles.sectionintrotransfer}>
-        <p className={AdminStyles.introtext}>How to apply</p>
+
+      <section id="exemptionlistgce" className={AdminStyles.sectionExemptionListGce}>
+        <p className={ProgStyles.headingprimary}> GCE Course Exemptions </p>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Accounting{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <DegreeCourses courses={gce_Accounting} />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Biology{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <DegreeCourses courses={gce_Biology} />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Chemistry{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <DegreeCourses courses={gce_Chemistry} />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Physics{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <DegreeCourses courses={gce_Physics} />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Management of Business{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <DegreeCourses courses={gce_MOB} />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Information Science Technology{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <DegreeCourses courses={gce_ICT} />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Geography{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <DegreeCourses courses={gce_Geography} />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Economics{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <DegreeCourses courses={gce_Economics} />
+          </AccordionDetails>
+        </Accordion>
+
+        {/* <table className={ProgStyles.academiccalendar}>
+          <thead>
+            <tr>
+              <th>GCE Subjects</th>
+              <th>COSTAATT Courses Exemptions/Transfer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span style={{ color: "orangered" }}>
+                  <b>Accounting </b>
+                </span>
+              </td>
+              <td>
+                <table className="publicholidays-table">
+                  <tbody>
+                    <tr>
+                      <td>ACCT 126</td>
+                      <td> Fundamentals of Accounting </td>
+                    </tr>
+                    <tr>
+                      <td>ACCT 215</td>
+                      <td>Intermediate Accounting II</td>
+                    </tr>
+                    <tr>
+                      <td>ACCT 210</td>
+                      <td> Cost and Managemnt Accounting</td>
+                    </tr>
+                    <tr>
+                      <td>ACCT 204</td>
+                      <td>Financial Procedures and Budgeting</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table> */}
       </section>
-      <section id="exemptionlist" className={AdminStyles.sectionExemptionList}>
 
+      <section id="exemptionlistcape" className={AdminStyles.sectionExemptionListCape}>
+        <p className={ProgStyles.headingprimary}> CAPE Course Exemptions </p>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Accounting{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <DegreeCourses courses={gce_Accounting} />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Biology{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <DegreeCourses courses={gce_Biology} />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Chemistry{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <DegreeCourses courses={gce_Chemistry} />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Physics{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <DegreeCourses courses={gce_Physics} />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Management of Business{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <DegreeCourses courses={gce_MOB} />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Information Science Technology{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <DegreeCourses courses={gce_ICT} />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Geography{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <DegreeCourses courses={gce_Geography} />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography fontWeight={900} fontSize={19}>
+              Economics{" "}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <DegreeCourses courses={gce_Economics} />
+          </AccordionDetails>
+        </Accordion>
 
-        
+            </section>
+
+      <section id="howtoapply" className={AdminStyles.sectionHowTo}>
+        <p className={ProgStyles.headingprimary}>How to apply</p>
       </section>
     </>
   );
