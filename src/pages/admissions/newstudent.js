@@ -1,49 +1,66 @@
 import SideNavOnlyLayout from "@/components/Layouts/SideNavOnly_NoTopOrDropdown";
 import TopNavOnlyLayout from "@/components/Layouts/TopNavOnly_NoDropdown";
 import React from "react";
+import Head from "next/head";
+
 import AdmisStyles from "@/styles/Admissions.module.scss";
 import telephone from "../../../public/images/admissions/telephone.svg";
-import Head from "next/head";
 import email from "../../../public/images/admissions/email.svg";
 import counsellor from "../../../public/images/admissions/contact.svg";
 import Image from "next/image";
 import Link from "next/link";
 import HeadImage from "@/components/PageComponents/HeadImage";
 import headImg from"../../../public/images/admissions/applynow.jpg"
+import SimpleCard from "@/components/PageComponents/SimpleCard";
 
 
 const newstudent = () => {
   return (
     <>
-    <Head>
+      <Head>
         <title>First Time Student</title>
-    </Head>
-    <HeadImage imagetext="" image={headImg}/>
+      </Head>
+      <HeadImage imagetext="" image={headImg} />
       <SideNavOnlyLayout>
         <section id="intro" className={AdmisStyles.introtext}>
           {" "}
+          <p className={AdmisStyles.sectiontext}>Ready to Apply</p>
+          <p className={AdmisStyles.introtext}></p>
         </section>
         <section id="visits" className={AdmisStyles.sectionVisit}>
-          Visit COSTAATT Why choose us...
+          <p className={AdmisStyles.sectiontext}>COSTAATT Wants you </p>
+          Costaatt is a unique place
+          <button> Explore Our Programmes </button>
         </section>
         <section id="howtoapply" className={AdmisStyles.sectionHowtoapply}>
+          <p className={AdmisStyles.sectiontext}>Start Application </p>
           Start Application send to *** How to Apply
         </section>
         <section id="timeline" className={AdmisStyles.sectionTimeline}>
-          Timeline
+          <p className={AdmisStyles.sectiontext}>Timeline </p>
         </section>
-        <section id="chooseyourpath"> Choose Your Path</section>
-        <section id="require" className={AdmisStyles.sectionRequired}>
+        <section id="chooseyourpath">
           {" "}
-          Requirements
+          <p className={AdmisStyles.sectiontext}>Choose Your Path </p>
+        </section>
+        <section id="require" className={AdmisStyles.sectionRequired}>
+          <p className={AdmisStyles.sectiontext}>Requirements </p> Requirements
         </section>
         <section id="checklist" className={AdmisStyles.sectionChecklist}>
           {" "}
-          Checklist
+          <p className={AdmisStyles.sectiontext}>Checklist </p>
         </section>
         <section id="nextstep" className={AdmisStyles.Nextstep}>
           {" "}
-          Ok I got accepted What's Next Registration{" "}
+          <p className={AdmisStyles.sectiontext}>Register </p>
+          <p className={AdmisStyles.introtext}>
+            {" "}
+            Ok I got accepted What's Next Registration{" "}
+          </p>
+          <SimpleCard
+            text=" How to Register "
+            linkpage="/admissions/howtoregister"
+          />{" "}
         </section>
         <section id="contact" className={AdmisStyles.sectionContact}>
           {" "}

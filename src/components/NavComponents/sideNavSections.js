@@ -1,3 +1,4 @@
+import admissioncounsellors from "@/pages/admissions/admissioncounsellors";
 import newstudent from "@/pages/admissions/newstudent";
 
 export const sideNavSections = {
@@ -69,6 +70,17 @@ export const sideNavSections = {
     "Contact":"contact",
     "Next Step":"nextstep"
 
+  },
+  admissioncounsellors:{
+    "admissions@costaatt.edu.tt":"",
+    "625-5030 ext 5900":"contact"
+  },
+  howtoregister:{
+    "Academic Advisement" :"advising",
+    "Registration":"register",
+    "Gate Appliation":"gate",
+    "Online Payment":"payment",
+    "Student Id":"studentid"
   }
 
 };

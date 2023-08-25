@@ -10,7 +10,13 @@ import Layout from '@/components/Layout';
 import studyitems from '../../components/PageComponents/AreasStudyItems';
 import pageWithSideNavClasses from '../../styles/PageWithSideNav.module.scss';
 import SideNavOnlyLayout from '@/components/Layouts/SideNavOnly_NoTopOrDropdown';
-
+import topclass from "../../../public/images/schools/topclassLect.png"
+import onlinelearnig from "../../../public/images/schools/onlineLearning.png"
+import workReady from "../../../public/images/schools/workreadyGrads.png"
+import creditTransfer from "../../../public/images/schools/creditTransfers.png"
+import collegeCore from "../../../public/images/schools/collegeCore.png"
+import affiliations from "../../../public/images/schools/affiliationsMou.png"
+import accredited from "../../../public/images/schools/accreditedprog.png"
 const progoverview = () => {
   console.log(studyitems);
   return (
@@ -110,7 +116,7 @@ const progoverview = () => {
               <div className={ProgStyles.progGrid}>
                 <Image
                   className={ProgStyles.whychooseimg}
-                  src={imgwhy1}
+                  src={topclass}
                   alt="page image"
                 />
                 <p className={ProgStyles.whychoosetext}>Top Class Lecturers</p>
@@ -118,7 +124,7 @@ const progoverview = () => {
               <div className={ProgStyles.progGrid}>
                 <Image
                   className={ProgStyles.whychooseimg}
-                  src={imgwhy1}
+                  src={accredited}
                   alt="page image"
                 />
                 <p className={ProgStyles.whychoosetext}>
@@ -128,7 +134,7 @@ const progoverview = () => {
               <div className={ProgStyles.progGrid}>
                 <Image
                   className={ProgStyles.whychooseimg}
-                  src={imgwhy1}
+                  src={workReady}
                   alt="page image"
                 />
                 <p className={ProgStyles.whychoosetext}>Work Ready Graduates</p>
@@ -136,7 +142,7 @@ const progoverview = () => {
               <div className={ProgStyles.progGrid}>
                 <Image
                   className={ProgStyles.whychooseimg}
-                  src={imgwhy1}
+                  src={creditTransfer}
                   alt="page image"
                 />
                 <p className={ProgStyles.whychoosetext}>Credit Transfers</p>
@@ -351,7 +357,7 @@ const progoverview = () => {
               <div className={ProgStyles.threeColGrid}>
                 <Image
                   className={ProgStyles.whychooseimg}
-                  src={imgwhy1}
+                  src={collegeCore}
                   alt="page image"
                 />
 
@@ -361,7 +367,7 @@ const progoverview = () => {
                 </p>
                 <Link
                   className={ProgStyles.explore}
-                  href="/programmes/undergrad"
+                  href="/programmes/allprogrammes"
                 >
                   {' '}
                   View Bachelor Degrees →
@@ -370,7 +376,7 @@ const progoverview = () => {
               <div className={ProgStyles.threeColGrid}>
                 <Image
                   className={ProgStyles.whychooseimg}
-                  src={imgwhy1}
+                  src={affiliations}
                   alt="page image"
                 />
 
@@ -382,7 +388,7 @@ const progoverview = () => {
                 </p>
                 <Link
                   className={ProgStyles.explore}
-                  href="/programmes/associate"
+                  href="/programmes/allprogrammes"
                 >
                   {' '}
                   View Associate Degrees →
@@ -391,7 +397,7 @@ const progoverview = () => {
               <div className={ProgStyles.threeColGrid}>
                 <Image
                   className={ProgStyles.whychooseimg}
-                  src={imgwhy1}
+                  src={onlinelearnig}
                   alt="page image"
                 />
 
@@ -402,7 +408,7 @@ const progoverview = () => {
                 </p>
                 <Link
                   className={ProgStyles.explore}
-                  href="/programmes/certificates"
+                  href="/programmes/allprogrammes"
                 >
                   {' '}
                   More Info →
