@@ -1,3 +1,5 @@
+import newstudent from "@/pages/admissions/newstudent";
+
 export const sideNavSections = {
   home: {
     schools: "schools",
@@ -54,6 +56,18 @@ export const sideNavSections = {
     "Inter-Bank Transfer":"interbank",
     "Direct Deposit":"directdeposit",
     "After you Pay":"afterpay"
+
+  },
+  newstudent:{
+    "Welcome":"intro",
+    "Visits":"visits",
+    "How to Apply":"howtoapply",
+    "Timeline":"timeline",
+    "Choose your path":"chooseyourpath",
+    "Requirements":"require",
+    "Checklist":"checklist",
+    "Contact":"contact",
+    "Next Step":"nextstep"
 
   }
 

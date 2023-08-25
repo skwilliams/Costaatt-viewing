@@ -205,7 +205,7 @@ export const mainNavLinks = [
     submenuImage: [
       {
         img: require("../../../images/Links/dummyImg1.jpg"),
-        title: "Get Oriented",
+        title: "New Student Registration",
         path: "/admissions/orientation",
       },
       {

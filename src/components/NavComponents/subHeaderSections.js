@@ -77,7 +77,7 @@ export const subHeaderSections = {
     "CAPE Exemptions": "exemptionlistcape",
     "How to Apply": "howtoapply",
   },
-
+  
   // [deptName]: {
   //   "school overview": "overview",
   //   Departments: "depart",

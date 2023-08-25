@@ -540,7 +540,10 @@ clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   font-size: 1.5rem;
   // padding: 10px;
 }
-   .threeColGridCon {
+  
+
+}
+ .threeColGridCon {
   display: grid;
   gap: 8rem;
   grid-gap: 2rem;
@@ -552,8 +555,54 @@ clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   font-size: 1.5rem;
   // padding: 10px;
 }
-
-}
 .stepicon{
   font-size: 8rem;
+}
+
+// First time applicant
+
+.sectionFirstTime{
+  margin: 3rem 7rem;
+
+}
+
+.sectionVisit{
+  margin:3rem 7rem;
+}
+.sectionHowtoapply{
+  margin: 3rem 7rem;
+}
+.sectionTimeline{
+margin:3rem 7rem;
+}
+.sectionRequired{
+  margin: 3rem 7rem;
+}
+
+.sectionCheckList{
+  margin:3rem 7rem;
+}
+.sectionNextstep{
+  margin:3rem 7rem;
+
+}
+.sectionContact{
+margin: 3rem 7rem;
+
+.icon{
+        width:70px;
+        height:70px;
+        
+    }
+    .iconsection{
+        // margin:  2rem 0;
+        margin:3rem 0;
+    }
+    .iconfont{
+        font-size: 1.1rem;
+       
+        
+    }
+
+
 }
