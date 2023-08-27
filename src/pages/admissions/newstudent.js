@@ -22,7 +22,7 @@ const newstudent = () => {
       </Head>
       <HeadImage imagetext="" image={headImg} />
       <SideNavOnlyLayout>
-        <section id="intro" className={AdmisStyles.introtext}>
+        <section id="intro" className={AdmisStyles.sectionIntroReg}>
           {" "}
           <p className={AdmisStyles.sectiontext}>Ready to Apply</p>
           <p className={AdmisStyles.introtext}></p>
@@ -96,7 +96,7 @@ const newstudent = () => {
               />
               <p className={AdmisStyles.icontext}>
                 {" "}
-                <Link href="admissionsdirectory">
+                <Link href="admissioncounsellors">
                   {" "}
                   Admissions Counsellor Directory{" "}
                 </Link>

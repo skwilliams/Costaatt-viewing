@@ -21,14 +21,14 @@ const admissioncounsellors = () => {
         <HeaderNoImage caption="Admissions Counsellor" />
 
         <SideNavOnlyLayout>
-          <section id="intro" className={AdmisStyles.sectiontext}>
+          <section id="intro" className={AdmisStyles.introtext}>
             Do yo have any questions about admissions <br /> We are here for you{" "}
             <br /> Feel free to contact us
           </section>
 
           <section id="meet the team">
             {" "}
-            <p className={AdmisStyles.introtext}>Meet the Team </p>
+            <p className={AdmisStyles.sectiontextleft}>Meet the Team </p>
             <div className={AdmisStyles.twoColGridCon}>
               <div className={AdmisStyles.twoColGridCol}>
                 <Image
@@ -48,9 +48,8 @@ const admissioncounsellors = () => {
               </div>
             </div>
           </section>
-          <section id="contact" className={AdmisStyles.sectionContact}>
-            {" "}
-            <p className={AdmisStyles.sectiontext}> Contact Admissions</p>
+          <section id="contact" className={AdmisStyles.sectionContactAdm}>
+            <p className={AdmisStyles.sectiontextleft}> Contact Admissions</p>
             <div className={AdmisStyles.threeColGridCon}>
               <div className={AdmisStyles.threeColGrid}>
                 <Image
@@ -82,7 +81,7 @@ const admissioncounsellors = () => {
                 />
                 <p className={AdmisStyles.icontext}>
                   {" "}
-                  <Link href="admissionsdirectory">
+                  <Link href="#">
                     {" "}
                     Admissions Counsellor Directory{" "}
                   </Link>
@@ -95,7 +94,7 @@ const admissioncounsellors = () => {
     );
 }
 
-// admissioncounsellors.getLayout = function getLayout(page) {
-//   return <TopNavOnlyLayout> {page} </TopNavOnlyLayout>;
-// };
+admissioncounsellors.getLayout = function getLayout(page) {
+  return <TopNavOnlyLayout> {page} </TopNavOnlyLayout>;
+};
 export default admissioncounsellors

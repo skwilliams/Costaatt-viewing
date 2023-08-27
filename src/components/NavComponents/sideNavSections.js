@@ -72,13 +72,13 @@ export const sideNavSections = {
 
   },
   admissioncounsellors:{
-    "admissions@costaatt.edu.tt":"",
+    "admissions@costaatt.edu.tt":"contact",
     "625-5030 ext 5900":"contact"
   },
   howtoregister:{
     "Academic Advisement" :"advising",
     "Registration":"register",
-    "Gate Appliation":"gate",
+    "Gate Application":"gate",
     "Online Payment":"payment",
     "Student Id":"studentid"
   }
