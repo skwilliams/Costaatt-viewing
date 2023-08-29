@@ -61,14 +61,23 @@ REGISTRATION
             </p>
             <div className={AdmisStyles.entryreq}>
               <ol className={AdmisStyles.list}>
-                <li className={AdmisStyles.items} >
+                <li className={AdmisStyles.items}>
                   Login to{" "}
-                  <a  className={AdmisStyles.anchortag} href="https://ssb-prod.ec.costaatt.edu.tt/">
+                  <a
+                    className={AdmisStyles.anchortag}
+                    href="https://ssb-prod.ec.costaatt.edu.tt/"
+                  >
                     Self Service Banner
                   </a>
                   See
-                  <a className={AdmisStyles.anchortag} href="https://ssb-prod.ec.costaatt.edu.tt/"> video </a>
-                   for instructions.
+                  <a
+                    className={AdmisStyles.anchortag}
+                    href="https://ssb-prod.ec.costaatt.edu.tt/"
+                  >
+                    {" "}
+                    video{" "}
+                  </a>
+                  for instructions.
                 </li>{" "}
                 <li className={AdmisStyles.items}>
                   Enter your username found at top left of your acceptance
@@ -88,12 +97,11 @@ REGISTRATION
                   courses.
                 </li>{" "}
                 <li className={AdmisStyles.items}>
-                Download and save your Student Invoice and Week at a Glance
-                schedule for future reference.
-
-                </li> Download the Banner Mobile
-                Registration Manual to complete this process using our mobile
-                app
+                  Download and save your Student Invoice and Week at a Glance
+                  schedule for future reference.
+                </li>{" "}
+                Download the Banner Mobile Registration Manual to complete this
+                process using our mobile app
               </ol>
             </div>
           </section>
@@ -102,6 +110,70 @@ REGISTRATION
             <p className={AdmisStyles.bannerSub}>
               {" "}
               <b> Trinidad and Tobago Nationals Only </b>
+            </p>
+            <div className={AdmisStyles.entryreq}>
+              <ul className={AdmisStyles.list}>
+                <li className={AdmisStyles.items}>
+                  In order to apply for GATE funding, you will need a GATE
+                  e-Service registration number. If you do not yet have an
+                  e-GATE ID, you may contact any{" "}
+                  <a href="https://www.ttconnect.gov.tt/index.php/ttconnect-service-centres/">
+                    {" "}
+                  </a>
+                  TT Connect Service Centre .{" "}
+                </li>
+                <li className={AdmisStyles.items}>
+                  Following the generation of your GATE ID, you are required to
+                  submit an application for GATE funding for this semester via
+                  the e-GATE web portal.
+                </li>
+              </ul>
+
+              <div className={AdmisStyles.threeColGridCon}>
+                <div className={AdmisStyles.threeColGrid}><b>Website : </b> 
+                <a href="http://e-gate.gov.tt/gate-app/index">
+                  http://e-gate.gov.tt/gate-app/index
+                </a></div>
+                <div className={AdmisStyles.threeColGrid}> <b>HOTLINE</b> 800-GATE (4283)</div>
+                <div className={AdmisStyles.threeColGrid}> <b> EMAIL </b>{" "}
+                <a href="mailto:gate.info@moe.gov.tt">gate.info@moe.gov.tt</a></div>
+              </div>
+              {/* <p className={AdmisStyles.text}>
+                {" "}
+                
+               
+                <br />
+               
+              </p> */}
+            </div>
+            <p className={AdmisStyles.seondheading}> Please note</p>
+            <div className={AdmisStyles.entryreq}>
+              <ol className={AdmisStyles.list}>
+                <li className={AdmisStyles.items}>
+                  All applications for GATE funding must be submitted within the
+                  academic year for which funding is requested. Failure to do so
+                  may result in your having to pay tuition fees using personal
+                  funds.
+                </li>
+                <li className={AdmisStyles.items}>
+                  The student copy of the GATE e-Service application is a
+                  required document for making a payment on campus.
+                </li>
+                <li className={AdmisStyles.items}>
+                  GATE has advised that COMPASS (Compensatory Programmes and
+                  Academic Support Services) will be assessed as a separate
+                  programme and not as a component of an undergraduate programme
+                  of choice. Only students pursuing the COMPASS Certificate
+                  programme are eligible for GATE funding for COMPASS courses.
+                </li>
+              </ol>
+            </div>
+            <p className={AdmisStyles.emphasis}>
+              Therefore, students admitted to degree programmes who are required
+              to pursue COMPASS courses to strengthen their academic foundations
+              will be responsible for the payment of tuition fees for these
+              courses at a cost of $300 per credit. Students can access a
+              payment plan to assist with tuition fees.
             </p>
           </section>
           <section id="payment" className={AdmisStyles}>
