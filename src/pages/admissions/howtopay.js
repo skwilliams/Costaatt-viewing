@@ -13,6 +13,7 @@ import downloadicon from '../../../public/images/admissions/downloadnoteicon.svg
 import SideNavOnlyLayout from '@/components/Layouts/SideNavOnly_NoTopOrDropdown';
 import TopNavOnlyLayout from '@/components/Layouts/TopNavOnly_NoDropdown';
 
+
 const howtopay = () => {
   return (
     <>
@@ -52,7 +53,7 @@ const howtopay = () => {
                     Fee Code{" "}
                     <span>
                       {" "}
-                      <a className={AdminStyles.linkingto} href="#">
+                      <a className={AdminStyles.linkingto} Link href="/pdfs/COSTAATT Fee Payment Codes.pdf" target="_blank">
                         {" "}
                         lookup codes here{" "}
                       </a>{" "}
@@ -88,7 +89,7 @@ const howtopay = () => {
                   <li className={AdminStyles.feesitems}>
                     <span>
                       {" "}
-                      <Link href="#" className={AdminStyles.emphasis}>
+                     <Link href="https://www.google.com/maps/place/College+of+Science+Technology+and+Applied+Arts+of+Trinidad+and+Tobago+(COSTAATT)+Main+Campus/@10.5273869,-61.4196525,17z/data=!3m1!4b1!4m6!3m5!1s0x8c35f962948039e7:0xbf1279a6112a80cc!8m2!3d10.5273869!4d-61.4196525!16s%2Fg%2F11c1nzhxtp?entry=ttu" target="_blank"className={AdminStyles.emphasis}>
                         {" "}
                         <Image
                           className={AdminStyles.downloadicon}
@@ -102,7 +103,7 @@ const howtopay = () => {
                   <li className={AdminStyles.feesitems}>
                     <span>
                       {" "}
-                      <Link href="#" className={AdminStyles.emphasis}>
+                      <Link href="https://www.google.com/maps/place/COSTAATT+City+Campus/@10.664234,-61.5270438,15z/data=!4m6!3m5!1s0x8c36080a0f804a1b:0x421ba1314a880816!8m2!3d10.6618488!4d-61.5141055!16s%2Fg%2F12xqj0dk0?entry=ttu"target="_blank" className={AdminStyles.emphasis}>
                         {" "}
                         <Image
                           className={AdminStyles.downloadicon}
@@ -118,7 +119,7 @@ const howtopay = () => {
                     {" "}
                     <span>
                       {" "}
-                      <Link href="#" className={AdminStyles.emphasis}>
+                      <Link href="https://www.google.com/maps/place/COSTAATT+South+Campus/@10.275326,-61.4637744,17z/data=!3m1!4b1!4m6!3m5!1s0x8c358c55a11f48d1:0x2c91fc2fc1ff9a51!8m2!3d10.275326!4d-61.4637744!16s%2Fg%2F1ptwgn_vh?entry=ttu" target="_blank"className={AdminStyles.emphasis}>
                         {" "}
                         <Image
                           className={AdminStyles.downloadicon}
@@ -131,7 +132,7 @@ const howtopay = () => {
                   </li>
                   <li className={AdminStyles.feesitems}>
                     {" "}
-                    <Link href="#" className={AdminStyles.emphasis}>
+                    <Link href="https://www.google.com/maps/place/COSTAATT-moved+to+the+Portmall,+Scarborough/@11.1915898,-60.7405329,17z/data=!3m1!4b1!4m6!3m5!1s0x8c49ad146b86f161:0x123c10314eab27f9!8m2!3d11.1915898!4d-60.7405329!16s%2Fg%2F1jkwp69tg?entry=ttu"target="_blank" className={AdminStyles.emphasis}>
                       {" "}
                       <Image
                         className={AdminStyles.downloadicon}
@@ -161,7 +162,7 @@ const howtopay = () => {
               />
               {"        "}
               {/* <br /> */}
-              <Link href="#" className={AdminStyles.downloadsDoc}>
+              <Link href="/pdfs/FINAL Online Payment Manual 15.08.18 v1.0.pdf" target="_blank" className={AdminStyles.downloadsDoc}>
                 {" "}
                 Banner Online Payment Manual
               </Link>{" "}
@@ -182,7 +183,7 @@ const howtopay = () => {
                   </p>
                   <li className={AdminStyles.feesitems}>
                     Login to{" "}
-                    <a className={AdminStyles.linkingto} href="#">
+                    <a className={AdminStyles.linkingto} href="https://ssb-prod.ec.costaatt.edu.tt/pls/PROD/twbkwbis.P_GenMenu?name=homepage" target="_blank">
                       {" "}
                       Self Service Banner
                     </a>
@@ -230,11 +231,11 @@ const howtopay = () => {
               />
               {"        "}
               {/* <br /> */}
-              <Link href="#" className={AdminStyles.downloadsDoc}>
+              <Link href="/pdfs/COSTAATT Tuition and Fee Payment-First Citizens Bank Limited_v3.1 - 2505....pdf" target="_blank" className={AdminStyles.downloadsDoc}>
                 {" "}
                 FCB Manual{" "}
               </Link>{" "}
-              <Link href="#" className={AdminStyles.downloadsDoc}>
+              <Link href="/pdfs/COSTAATT Tuition and Fee Payment-Republic Bank Limited_v1 updated August 2020.pdf" target="_blank"className={AdminStyles.downloadsDoc}>
                 {" "}
                 RBL Manual{" "}
               </Link>{" "}
@@ -281,7 +282,7 @@ const howtopay = () => {
                 alt="download icon"
               />
               {"        "}
-              <Link href="#" className={AdminStyles.downloadsDoc}>
+              <Link href="/pdfs/Online Payment - User Manual July 2021.pdf" target="_blank" className={AdminStyles.downloadsDoc}>
                 {" "}
                 Payment Guide (Page 2){" "}
               </Link>{" "}
@@ -339,7 +340,7 @@ const howtopay = () => {
                 alt="download icon"
               />
               {"        "}
-              <Link href="#" className={AdminStyles.downloadsDoc}>
+              <Link href="/pdfs/Online Payment - User Manual July 2021.pdf" target="_blank" className={AdminStyles.downloadsDoc}>
                 {" "}
                 Payment Guide (Page 2){" "}
               </Link>{" "}
@@ -404,7 +405,7 @@ const howtopay = () => {
                     </a>
                   </li>
                   <li className={AdminStyles.feesitems}>
-                    Check your studnet email for confirmation that the payemnt
+                    Check your student email for confirmation that the payemnt
                     was received and processed
                   </li>
                 </ul>
