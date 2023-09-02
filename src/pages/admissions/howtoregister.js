@@ -5,6 +5,7 @@ import AdmisStyles from "@/styles/Admissions.module.scss"
 import SideNavOnlyLayout from '@/components/Layouts/SideNavOnly_NoTopOrDropdown';
 import TopNavOnlyLayout from "@/components/Layouts/TopNavOnly_NoDropdown";
 import { AdminPanelSettings } from '@mui/icons-material';
+import Link from "next/link"
 
 const howtoregister = () => {
     return (
@@ -15,6 +16,24 @@ const howtoregister = () => {
         </Head>
         <HeaderNoImage caption={"How to register"} />
         <SideNavOnlyLayout>
+          <section id="checklist" className={AdmisStyles.sectionregChecklist}>
+            <p className={AdmisStyles.sectiontextleft}> Registration Steps</p>
+
+            <div className={AdmisStyles.entryreq}>
+              <p className={AdmisStyles.bannerSub}>
+                Registration invovles the following :{" "}
+              </p>
+              <ul className={AdmisStyles.list}>
+                <li className={AdmisStyles.items}>Receiving Advisement </li>
+                <li className={AdmisStyles.items}>Registering for Courses</li>
+                <li className={AdmisStyles.items}>
+                  Applying for Gate(if eligible)
+                </li>
+                <li className={AdmisStyles.items}>Paying Fees</li>
+                <li className={AdmisStyles.items}>Collecting Student Id</li>
+              </ul>
+            </div>
+          </section>
           <seciton id="advising" className={AdmisStyles.sectionAdvising}>
             <p className={AdmisStyles.sectiontextleft}>Academic Advisement</p>
             {/* <p className={AdmisStyles.banner}>
@@ -49,7 +68,7 @@ const howtoregister = () => {
           </seciton>
           <section id="register" className={AdmisStyles}>
             <p className={AdmisStyles.sectiontextleft}>Registration</p>
-        
+
             <p className={AdmisStyles.bannerSub}>
               Using Banner for Self-Registration Online
             </p>
@@ -124,23 +143,42 @@ const howtoregister = () => {
               </ul>
 
               <div className={AdmisStyles.threeColGridCon}>
-                <div className={AdmisStyles.threeColGrid}><b>Website : </b> 
-                <a href="http://e-gate.gov.tt/gate-app/index">
-                  http://e-gate.gov.tt/gate-app/index
-                </a></div>
-                <div className={AdmisStyles.threeColGrid}> <b>HOTLINE</b> 800-GATE (4283)</div>
-                <div className={AdmisStyles.threeColGrid}> <b> EMAIL </b>{" "}
-                <a href="mailto:gate.info@moe.gov.tt">gate.info@moe.gov.tt</a></div>
+                <div className={AdmisStyles.threeColGrid}>
+                  <p className={AdmisStyles.text}>
+                    <b>Website : </b>
+                    <a
+                      className={AdmisStyles.anchortag}
+                      href="http://e-gate.gov.tt/gate-app/index"
+                    >
+                      http://e-gate.gov.tt/gate-app/index
+                    </a>
+                  </p>
+                </div>
+                <div className={AdmisStyles.threeColGrid}>
+                  {" "}
+                  <p className={AdmisStyles.text}>
+                    {" "}
+                    <b>HOTLINE</b>{" "}
+                    <span className={AdmisStyles.anchortag}>
+                      800-GATE (4283)
+                    </span>
+                  </p>
+                </div>
+                <div className={AdmisStyles.threeColGrid}>
+                  {" "}
+                  <p className={AdmisStyles.text}>
+                    <b> EMAIL </b>{" "}
+                    <a
+                      className={AdmisStyles.anchortag}
+                      href="mailto:gate.info@moe.gov.tt"
+                    >
+                      gate.info@moe.gov.tt
+                    </a>
+                  </p>
+                </div>
               </div>
-              {/* <p className={AdmisStyles.text}>
-                {" "}
-                
-               
-                <br />
-               
-              </p> */}
             </div>
-            <p className={AdmisStyles.seondheading}> Please note</p>
+            <p className={AdmisStyles.secondheading}> Please note</p>
             <div className={AdmisStyles.entryreq}>
               <ol className={AdmisStyles.list}>
                 <li className={AdmisStyles.items}>
@@ -171,7 +209,44 @@ const howtoregister = () => {
             </p>
           </section>
           <section id="payment" className={AdmisStyles}>
-            <p className={AdmisStyles.sectiontextleft}>Online Payment</p>
+            <p className={AdmisStyles.sectiontextleft}>
+              {" "}
+              Online Payment and Payment Plan
+            </p>
+
+            <div className={AdmisStyles.entryreq}>
+              <p className={AdmisStyles.bannerSub}>
+                Fees can now be paid via the following:{" "}
+              </p>
+              <ul className={AdmisStyles.list}>
+                <li className={AdmisStyles.items}>
+                  Direct Deposit into COSTAATT's First Citizens Bank account at
+                  all First Citizens Bank Branches{" "}
+                </li>
+                <li className={AdmisStyles.items}>
+                  Net banking transfers from other commercial banks into the
+                  College's FCB account.
+                </li>
+                <li className={AdmisStyles.items}>
+                  Self-Service Banner using chip-enabled debit and credit cards.{" "}
+                </li>
+                <li className={AdmisStyles.items}>
+                  Online banking via FCB and Republic Bank (COSTAATT is listed
+                  as a registered payee)
+                </li>
+              </ul>
+              <p>
+                {" "}
+                For more details on Ways to Pay visit
+               <Link
+                  className={AdmisStyles.anchortag}
+                  href="/admissions/howtopay"
+                >
+                  {" "}
+                  Fee Payment Options &rarr;{" "}
+                </Link>
+              </p>
+            </div>
           </section>
           <section id="studentid" className={AdmisStyles}>
             <p className={AdmisStyles.sectiontextleft}>Student Id</p>

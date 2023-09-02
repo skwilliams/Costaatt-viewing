@@ -6,7 +6,7 @@ const ButtonLink = ({ text, color, size, path }) => {
       variant="contained"
       color={color}
       size={size}
-      path={path}
+      href={path}
       disableElevation
     >
       {text}

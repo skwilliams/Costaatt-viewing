@@ -2,6 +2,7 @@ import SideNavOnlyLayout from "@/components/Layouts/SideNavOnly_NoTopOrDropdown"
 import TopNavOnlyLayout from "@/components/Layouts/TopNavOnly_NoDropdown";
 import React from "react";
 import Head from "next/head";
+import ButtonLink from "@/components/HomeComponents/ButtonLink";
 
 import AdmisStyles from "@/styles/Admissions.module.scss";
 import telephone from "../../../public/images/admissions/telephone.svg";
@@ -14,7 +15,7 @@ import headImg from"../../../public/images/admissions/applynow.jpg"
 import SimpleCard from "@/components/PageComponents/SimpleCard";
 import tick from "../../../public/images/admissions/tick.svg"
 import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
-import { Accordion, Divider } from "@mui/material/";
+import { Accordion, Divider,Button } from "@mui/material/";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
@@ -70,8 +71,24 @@ const CustomHome = () => {
             <Image className={AdmisStyles.imgtick} src={tick} />
             <span className={AdmisStyles.heading}> Apply Online </span>
             <p className={AdmisStyles.text}>
-              <Link href="/admissions/apply">Online application</Link>
+              You have choosen your programme and this is your first time
+              applying to COSTAATT!!
+              <br />
+              You need to complete the online application form
+            </p>{" "}
+            <p className={AdmisStyles.text}>
+              <Link href="/admissions/applynow">
+                {" "}
+                Online application &rarr;
+              </Link>
             </p>
+            Change to button
+            <ButtonLink
+              text="Start Application"
+              color="warning"
+              size="large"
+              path="/admissions/applynow"
+            />
             <Divider />
           </div>
           <div className={AdmisStyles.checklist}>
@@ -315,17 +332,14 @@ const CustomHome = () => {
             <span className={AdmisStyles.heading}> Registration </span>
             <p className={AdmisStyles.text}>
               You have been accepted, now it's time to Register !!
-               </p>{" "}
-               <p className={AdmisStyles.text}>
-                {" "}
-                <Link
-                  className={AdmisStyles.anchortag}
-                  href="/admissions/howtoregister"
-                >
-                   How to Register &rarr;
-                </Link>{" "}
-             
-            </p>
+            </p>{" "}
+         
+            <ButtonLink
+              text="How to Register"
+              color="warning"
+              size="large"
+              path="/admissions/howtoregister"
+            />
             <Divider />
           </div>
         </section>

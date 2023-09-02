@@ -311,7 +311,7 @@ const applynow = () => {
             text="Downloadable Application Form"
             color="warning"
             size="large"
-            href="/"
+            path="/"
           />
           <p>&nbsp;</p>
           <h2>APPLICANTS FOR RE-ADMISSION</h2>

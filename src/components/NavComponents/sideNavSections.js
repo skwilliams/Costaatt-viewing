@@ -77,6 +77,7 @@ export const sideNavSections = {
     "625-5030 ext 5900":"contact"
   },
   howtoregister:{
+    "Registration Checklist" :"checklist",
     "Academic Advisement" :"advising",
     "Registration":"register",
     "Gate Application":"gate",
