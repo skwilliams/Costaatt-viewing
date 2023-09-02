@@ -45,6 +45,7 @@ import {
   getCourses,
 } from "./programmesData";
 import ProgOfferingDetails from "@/components/PageComponents/ProgOfferingDetails";
+import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
 
 const programme = (props) => {
   const { prog, progStruct } = props;
@@ -54,7 +55,7 @@ const programme = (props) => {
       <Head>
         <title>{prog.prog_name}</title>
       </Head>
-      <p className={CourseStyle.courseName}>{prog.prog_name}</p>
+      <HeaderNoImage caption={prog.prog_name} />  
       <section id="courseoverview" className={CourseStyle.sectionOverview}>
         <p className={CourseStyle.desc}>{prog.prog_description}</p>
         <div className={CourseStyle.iconsection}>

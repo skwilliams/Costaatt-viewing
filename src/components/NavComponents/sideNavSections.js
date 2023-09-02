@@ -67,8 +67,9 @@ export const sideNavSections = {
     "Choose your path":"chooseyourpath",
     "Requirements":"require",
     "Checklist":"checklist",
+    
     "Contact":"contact",
-    "Next Step":"nextstep"
+    
 
   },
   admissioncounsellors:{

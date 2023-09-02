@@ -399,7 +399,7 @@ const howtopay = () => {
                   <li className={AdminStyles.feesitems}>
                     {" "}
                     Send to{" "}
-                    <a href="bursar@costaatt.edu.tt">
+                    <a className={AdminStyles.anchortag} href="bursar@costaatt.edu.tt">
                       {" "}
                       bursar@costaatt.edu.tt{" "}
                     </a>

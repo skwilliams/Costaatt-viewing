@@ -49,13 +49,7 @@ const howtoregister = () => {
           </seciton>
           <section id="register" className={AdmisStyles}>
             <p className={AdmisStyles.sectiontextleft}>Registration</p>
-            {/* <p className={AdmisStyles.banner}>
-              {" "}
-              <b>
-                {" "}
-REGISTRATION
-              </b>
-            </p> */}
+        
             <p className={AdmisStyles.bannerSub}>
               Using Banner for Self-Registration Online
             </p>

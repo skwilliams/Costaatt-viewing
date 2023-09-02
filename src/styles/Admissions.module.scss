@@ -1,14 +1,14 @@
-
 @import "./variable";
 
 //Styles used throughout Admissions pages
 
- .twoColGridCon {
+.twoColGridCon {
   display: grid;
   gap: 8rem;
   grid-gap: 2rem;
   grid-template-columns: 1fr 1fr;
 }
+
 .twoColGrid {
   text-align: center;
   padding: 20px 0;
@@ -28,43 +28,46 @@
   // background-repeat: repeat-x;
 
 }
+
 .pageheadertext {
   position: absolute;
   top: 30%;
-  left: 5%; 
-  color:white;
+  left: 5%;
+  color: white;
   font-size: 2.5rem;
   font-weight: 700;
   letter-spacing: 0.4rem;
   font-family: "Roboto", serif;
   text-transform: capitalize;
 }
-  .emphasis{
-    font-size: 1.25rem;
-    font-weight: bold;
-     padding: 1rem;
-     line-height: 1.75;
-      text-align: left;
-  }
+
+.emphasis {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 1rem;
+  line-height: 1.75;
+  text-align: left;
+}
 
 
 
-.sectiontext{
+.sectiontext {
   font-size: 2.5rem;
   font-family: "Bodoni";
   font-weight: 500;
   text-align: center;
-  margin:3rem;
+  margin: 3rem;
   font-weight: 900;
 }
 
-.sectiontextleft{
+.sectiontextleft {
   font-size: 2.5rem;
   font-family: "Bodoni";
   font-weight: 700;
   text-align: left;
   margin: 3rem 0;
 }
+
 .introtext {
   font-family: "Lato";
   font-size: 1.5rem;
@@ -84,13 +87,14 @@
   margin-bottom: 1.5rem;
 }
 
-.head{
+.head {
   font-size: 1rem;
-  color:hotpink;
+  color: hotpink;
 }
-.secondaryheading{
-  
-  margin:  2rem 0;
+
+.secondaryheading {
+
+  margin: 2rem 0;
   font-family: "Lato";
 }
 
@@ -103,6 +107,7 @@
   position: relative;
 
   color: white;
+
   img {
     height: 100vh;
     width: 100%;
@@ -131,50 +136,56 @@
 .applicationInstructions h3 {
   color: orangered;
 }
- .icon{
-        width:70px;
-        height: 70px;
-        
-    }
-    .iconsection{
-        // margin:  2rem 0;
-        margin:3rem 0;
-    }
-    .iconfont{
-        font-size: 1.1rem;
-       
-        
-    }
+
+.icon {
+  width: 70px;
+  height: 70px;
+
+}
+
+.iconsection {
+  // margin:  2rem 0;
+  margin: 3rem 0;
+}
+
+.iconfont {
+  font-size: 1.1rem;
+
+
+}
 
 
 /* Apply Page */
-.sectionIntro{
-   font-size:2rem;
+.sectionIntro {
+  font-size: 2rem;
 
-   .text{
+  .text {
 
-    font-size:1.15rem;
-    line-height:2 ;  
-   }
+    font-size: 1.15rem;
+    line-height: 2;
+    text-align: left;
+  }
 
 }
-.sectionOnlineApp{
-    padding: 5rem 10rem 8rem 10rem;
+
+.sectionOnlineApp {
+  padding: 5rem 10rem 8rem 10rem;
   margin: 0;
 
 
 }
-.sectionPaperBased{
 
-    padding: 5rem 10rem 8rem 10rem;
+.sectionPaperBased {
+
+  padding: 5rem 10rem 8rem 10rem;
   margin: 0;
 }
-.sectionContactAdmin{
-    padding: 5rem 10rem 8rem 10rem;
+
+.sectionContactAdmin {
+  padding: 5rem 10rem 8rem 10rem;
   margin: 0;
 
 }
-
 
 
 // /*3 columns change name*/
@@ -192,18 +203,20 @@
 // }
 
 /*4 columns change name*/
-.disclaimer{
-  font-size:1.2rem;
+.disclaimer {
+  font-size: 1.2rem;
   line-height: 2;
   font-style: italic;
   font-weight: 500;
 }
+
 .fourColGridCon {
   display: grid;
   gap: 8rem;
   grid-gap: 2rem;
   grid-template-columns: auto auto auto auto;
 }
+
 .fourColGrid {
   text-align: center;
   padding: 20px 0;
@@ -213,218 +226,231 @@
 
 
 //Fees and Funding Page
-.sectionfeesintro{
-  margin:7rem;
+.sectionfeesintro {
+  margin: 7rem;
 }
 
-.link{
+.link {
   margin: 0;
   padding: 0;
-  
+
 }
 
-.sectiontuition{
+.sectiontuition {
 
-margin:3rem 8rem;
-align-items: center;
+  margin: 3rem 8rem;
+  align-items: center;
 
 
-.fourColGridCon {
-  display: grid;
-  gap: 8rem;
-  grid-gap: 2rem;
-  grid-template-columns: auto auto auto auto;
-}
-.fourColGrid {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 1.5rem;
-  // padding: 10px;
-}
+  .fourColGridCon {
+    display: grid;
+    gap: 8rem;
+    grid-gap: 2rem;
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .fourColGrid {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.5rem;
+    // padding: 10px;
+  }
 
   .threeColGridCon {
-  display: grid;
-  gap: 2rem;
-  grid-gap: 2rem;
-  align-items:flex-end;
-  grid-template-columns:1fr 1fr 1fr;
-  box-sizing: border-box;
-      margin:0 2rem;
+    display: grid;
+    gap: 2rem;
+    grid-gap: 2rem;
+    align-items: flex-end;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-sizing: border-box;
+    margin: 0 2rem;
 
-}
-.threeColGrid {
-  text-align: center;
-  padding: .5rem 0;
-  font-size: 1.5rem;
-  padding: 10px;
-}
-}
-  
+  }
 
-  .cardCon{
+  .threeColGrid {
+    text-align: center;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+}
 
-     height: 200px;
+
+.cardCon {
+
+  height: 200px;
   width: 300px;
-  background-color: $whiteback;
-  color:black;
+  background-color: whitesmoke;
+
+  color: black;
   padding: 10px;
   // border: solid 3px black;
-     box-shadow: 5px 10px 18px $grey-light;
--webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  box-shadow: 5px 10px 18px $grey-light;
+  -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 
 
   margin: 0;
-  &:hover{
+
+  &:hover {
     color: white;
     // background-color: $orange;
-    background-image: linear-gradient(to right,$orange,$purple-secondary);
+    background-image: linear-gradient(to right, $orange, $workFCol);
 
 
   }
 
-  .cardtext{
-      font-size:1.5rem;
-      color:black;
-      padding:60px 0;
-      
-   
-    }
-    
+  .cardtext {
+    font-size: 1.5rem;
+    color: black;
+    padding: 60px 0;
+
+
   }
 
-  
+}
 
 
-.sectionmethodofpayment{
-  margin:7rem;
-  font-size:1.5rem;
+
+
+.sectionmethodofpayment {
+  margin: 7rem;
+  font-size: 1.5rem;
   font-family: "Lato";
 
   .twoColGridCon {
-  display: grid;
-  gap: 8rem;
-  grid-gap: 2rem;
-  grid-template-columns: 1fr 1fr;
-}
-.twoColGrid {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 1.5rem;
-  // padding: 10px;
-}
-
-// .shape{
-
-// }
-}
-
-.secondheading{
-    font-size:1.25rem;
-    line-height: 2;
-    text-align: left;
-    font-family: "Lato";
-    margin-bottom: 2rem;
-    font-weight: bold;
-
+    display: grid;
+    gap: 8rem;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
   }
-  .accordiantext{
-    font-size:1.25rem;
-    line-height: 2;
-   text-align: left;
-    padding: 1rem;
-    font-family: "Lato";
 
+  .twoColGrid {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.5rem;
+    // padding: 10px;
   }
-.sectionfinsupport{
+
+  // .shape{
+
+  // }
+}
+
+.secondheading {
+  font-size: 1.25rem;
+  line-height: 2;
+  text-align: left;
+  font-family: "Lato";
+  margin-bottom: 2rem;
+  font-weight: bold;
+
+}
+
+.accordiantext {
+  font-size: 1.25rem;
+  line-height: 2;
+  text-align: left;
+  padding: 1rem;
+  font-family: "Lato";
+
+}
+
+.sectionfinsupport {
   margin: 7rem;
 
-  .accordiantext{
-    font-size:1.25rem;
+  .accordiantext {
+    font-size: 1.25rem;
     line-height: 1.75;
-   
+
     padding: 1rem;
     font-family: "Lato";
 
   }
-  .emphasis{
+
+  .emphasis {
     font-size: 1.25rem;
     font-weight: bold;
-     padding: 1rem;
-     line-height: 1.75;
-      text-align: left;
+    padding: 1rem;
+    line-height: 1.75;
+    text-align: left;
   }
 }
 
 
-.entryreq{
-      font-size:1.25rem;
+.entryreq {
+  font-size: 1.25rem;
 
-        .list{
-           margin-left:2rem;
-                font-size:1.25rem;
-        .items{
-         list-style-type: square;
-         margin:.5rem 0;
-         
-            }
-             .items::marker{
-         
-             color:$orange;
-               }        
-        
-               .items:last-child{
-                margin-bottom:2rem;
-               }
+  .list {
+    margin-left: 2rem;
+    font-size: 1.20rem;
 
-        }
+    .items {
+      list-style-type: square;
+      margin: .5rem 0;
 
-    
+    }
+
+    .items::marker {
+
+      color: $orange;
+    }
+
+    .items:last-child {
+      margin-bottom: 2rem;
+    }
+
+  }
+
+
 }
 
 // Fee Payment Options Page
-.sectionBeforepay{
+.sectionBeforepay {
 
   background-color: whitesmoke;
   margin-bottom: 0;
   padding-bottom: 0;
 }
-.text{
 
-    font-size:1.15rem;
-    line-height:2 ;  
-   }
-.sectionViewcashier{
+.text {
+
+  font-size: 1.15rem;
+  line-height: 2;
+}
+
+.sectionViewcashier {
 
   background-color: whitesmoke;
 }
 
-.sectionPayonline{
+.sectionPayonline {
 
   background-color: whitesmoke;
 }
 
-.sectionPaypersonalonline{
+.sectionPaypersonalonline {
 
   background-color: whitesmoke;
 }
 
-.sectionInterbank{
-
-  background-color: whitesmoke;
-}
-.sectionDirectdeposit{
-
-    background-color: whitesmoke;
-
-}
-
-.sectionAfterpay{
+.sectionInterbank {
 
   background-color: whitesmoke;
 }
 
-.feetwoColCon{
+.sectionDirectdeposit {
+
+  background-color: whitesmoke;
+
+}
+
+.sectionAfterpay {
+
+  background-color: whitesmoke;
+}
+
+.feetwoColCon {
 
   display: grid;
   gap: 8rem;
@@ -433,6 +459,7 @@ clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   margin-bottom: 0;
   padding-bottom: 0;
 }
+
 .feetwoColGrid {
   text-align: center;
   // padding: 20px 0;
@@ -440,95 +467,105 @@ clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   // padding: 10px;\
   align-items: center;
 }
-.number{
+
+.number {
   font-size: 10rem;
 
 }
-.downloads{
-  text-align:left;
+
+.downloads {
+  text-align: left;
   font-size: 1.25rem;
-  float:right;
-  
-}
-.downloadsDoc{
-  text-align:right;
-  font-size: 1.25rem;
-  text-decoration: underline;
-  text-underline-position: under ;
-  padding:1rem 2rem 0 1rem ;
-  color:$orange;
-  float:right;
-  
+  float: right;
+
 }
 
-.downloadicon{
+.downloadsDoc {
+  text-align: right;
+  font-size: 1.25rem;
+  text-decoration: underline;
+  text-underline-position: under;
+  padding: 1rem 2rem 0 1rem;
+  color: $orange;
+  float: right;
+
+}
+
+.downloadicon {
   width: 40px;
   height: 40px;
 }
-.linkingto{
+
+.linkingto {
   text-decoration: underline;
   text-underline-position: under;
-  color:$purple-main;
+  color: $purple-main;
 }
-   
-    .icon{
-        width:70px;
-        height:70px;
-        top:50%;
-        text-align: center;
-        
+
+.icon {
+  width: 70px;
+  height: 70px;
+  top: 50%;
+  text-align: center;
+
+}
+
+.feesreq {
+  font-size: 1.25rem;
+
+  .feeslist {
+    margin-left: 2rem;
+    font-size: 1.25rem;
+
+    .feesitems {
+      list-style-type: square;
+      margin: .5rem 1.25rem;
+      text-align: left;
+
     }
 
-    .feesreq{
-      font-size:1.25rem;
+    .feesitems::marker {
 
-        .feeslist{
-          margin-left:2rem;
-          font-size:1.25rem;
-        .feesitems{
-         list-style-type: square;
-         margin:.5rem 1.25rem;
-         text-align: left;
-         
-            }
-             .feesitems::marker{
-         
-             color:$orange;
-               }        
-        
-               .feesitems:last-child{
-                margin-bottom:2rem;
-               }
+      color: $orange;
+    }
 
-        }
-      }
-      
-   .howtoemphasis{
-    font-size: 1.25rem;
-    font-weight: bold;
-     line-height: 1.75;
-      text-align: left;
+    .feesitems:last-child {
+      margin-bottom: 2rem;
+    }
+
   }
+}
+
+.howtoemphasis {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.75;
+  text-align: left;
+}
 
 //Transfer Credits and Exemptions
-.sectionIntrotransfer{
-  margin: 4rem 7rem ;
+.sectionIntrotransfer {
+  margin: 4rem 7rem;
 }
 
-.sectionQuestions{
-    margin: 4rem 7rem ;
+.sectionQuestions {
+  margin: 4rem 7rem;
 
 }
-.sectionHowTo{
-  margin:4rem 7rem ;
+
+.sectionHowTo {
+  margin: 4rem 7rem;
 }
-.sectionExemptionListGce{
-  margin: 4rem 7rem ;
+
+.sectionExemptionListGce {
+  margin: 4rem 7rem;
 }
-.sectionExemptionListCape{
-  margin:4rem 7rem ;
-.secondheading{
-    font-size:1.15rem;
+
+.sectionExemptionListCape {
+  margin: 4rem 7rem;
+
+  .secondheading {
+    font-size: 1.15rem;
     line-height: 2;
     text-align: left;
     font-family: "Lato";
@@ -536,7 +573,8 @@ clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     // font-weight: bold;
 
   }
-  .emphasis{
+
+  .emphasis {
     font-size: 1.1rem;
     line-height: 1.75;
     font-family: "Lato";
@@ -544,101 +582,151 @@ clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     text-align: left;
   }
 
-   .twoColGridCon {
-  display: grid;
-  gap: 8rem;
-  grid-gap: 2rem;
-  grid-template-columns: auto auto;
-}
-.twoColGrid {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 1.5rem;
-  // padding: 10px;
-}
-  
+  .twoColGridCon {
+    display: grid;
+    gap: 8rem;
+    grid-gap: 2rem;
+    grid-template-columns: auto auto;
+  }
+
+  .twoColGrid {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.5rem;
+    // padding: 10px;
+  }
+
 
 }
- .threeColGridCon {
+
+.threeColGridCon {
   display: grid;
   gap: 8rem;
   grid-gap: 2rem;
   grid-template-columns: auto auto auto;
 }
+
 .threeColGrid {
   text-align: center;
   padding: 20px 0;
   font-size: 1.5rem;
   // padding: 10px;
 }
-.stepicon{
+
+.stepicon {
   font-size: 8rem;
 }
 
 // New Student newstudent.js applicant
 
-.sectionFirstTime{
+.sectionFirstTime {
   margin: 3rem 7rem;
 
 }
 
-.sectionVisit{
-  margin:3rem 7rem;
-}
-.sectionHowtoapply{
-  margin: 3rem 7rem;
-}
-.sectionTimeline{
-margin:3rem 7rem;
-}
-.sectionRequired{
+.sectionVisit {
   margin: 3rem 7rem;
 }
 
-.sectionCheckList{
-  margin:3rem 7rem;
+.sectionHowtoapply {
+  margin: 3rem 7rem;
 }
-.sectionNextstep{
-  margin:3rem 7rem;
+
+.sectionTimeline {
+  margin: 3rem 7rem;
+}
+
+.sectionRequired {
+  margin: 3rem 7rem;
+}
+
+.sectionCheckList {
+  margin: 3rem 7rem;
+  background-color: whitesmoke;
+
+  .checklist {
+
+
+    margin: 2rem 0 2rem 0;
+
+      .imgtick{
+        // float:left;
+        text-align: left;
+      }
+    .heading {
+      
+      text-transform: uppercase;
+      font-size: 1.25rem;
+      margin-left: 1rem;
+      // text-align: center;
+    }
+    
+
+    .text {
+
+      font-size: 1.15rem;
+      line-height: 2;
+      font-family: "Lato";
+      margin-top:1rem;
+          text-align: left;
+
+    
+    }
+
+  }
+  
+}
+
+.sectionNextstep {
+  margin: 3rem 7rem;
 
 }
-.sectionContact{
-margin: 3rem 7rem;
 
-.icon{
-        width:70px;
-        height:70px;
-        
-    }
-    .iconsection{
-        // margin:  2rem 0;
-        margin:3rem 0;
-    }
-    .iconfont{
-        font-size: 1.1rem;
-       
-        
-    }
+.sectionContact {
+  margin: 3rem 7rem;
+
+  .icon {
+    width: 70px;
+    height: 70px;
+
+  }
+
+  .iconsection {
+    // margin:  2rem 0;
+    margin: 3rem 0;
+  }
+
+  .iconfont {
+    font-size: 1.1rem;
+
+
+  }
 
 
 }
+
 //How to register 
-.sectionIntroReg{
-  margin:0;
+.sectionIntroReg {
+  margin: 0;
   background-color: whitesmoke;
 }
-.banner{
+
+.banner {
   // background-color: $grey;
-  font-size:1.15rem;
-    line-height:2 ;
+  font-size: 1.15rem;
+  line-height: 2;
 }
-.bannerSub{
+
+.bannerSub {
   background-color: $blue2;
-  font-size:1.15rem;
-  line-height:2 ;
+  font-size: 1.15rem;
+  line-height: 2;
   font-style: cpatialize;
 }
-.anchortag{
+
+.anchortag {
   text-decoration: underline;
-  color:$orange;
+  text-underline-position: below;
+  text-underline-offset: .3rem;
+  color: $orange;
 }
