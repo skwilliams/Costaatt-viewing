@@ -245,6 +245,18 @@ const howtoregister = () => {
                   {" "}
                   Fee Payment Options &rarr;{" "}
                 </Link>
+                </p>
+                <p>Submit</p>
+                <ol>
+                  <li>Email your payment receipt to <a className={AdmisStyles.anchortag} href="mailto:bursar@costaatt.edu.tt">bursar@costaatt.edu.tt</a></li>
+                  <li>Email the following signed documents to <a className={AdmisStyles.anchortag}  href="mailto:registrar@oostaatt.edu.tt">registra@costaatt.edu.tt</a> or submit to the Administrative Office at your campus by October 28,2023:<br/>
+                      <ul>
+                        <li>Student Invoice and Payment Terms and Conditions</li>
+                        <li><a href="../Insurance Benefit and Application Form 22-23 "</li>
+                      </ul>
+                  
+                  </li>
+                </ol>
               </p>
             </div>
           </section>
