@@ -5,7 +5,11 @@ import AdmisStyles from "@/styles/Admissions.module.scss"
 import SideNavOnlyLayout from '@/components/Layouts/SideNavOnly_NoTopOrDropdown';
 import TopNavOnlyLayout from "@/components/Layouts/TopNavOnly_NoDropdown";
 import { AdminPanelSettings } from '@mui/icons-material';
+import Image from "next/image"
+import downloadicon from "../../../public/images/admissions/downloadnoteicon.svg";
+
 import Link from "next/link"
+import { Divider } from '@mui/material';
 
 const howtoregister = () => {
     return (
@@ -36,14 +40,7 @@ const howtoregister = () => {
           </section>
           <seciton id="advising" className={AdmisStyles.sectionAdvising}>
             <p className={AdmisStyles.sectiontextleft}>Academic Advisement</p>
-            {/* <p className={AdmisStyles.banner}>
-              {" "}
-              <b>
-                {" "}
-                Acadmeic Advisement (must be completed online before
-                registration){" "}
-              </b>
-            </p> */}
+
             <p className={AdmisStyles.bannerSub}>
               Meet your Academic Advisor Online{" "}
             </p>
@@ -66,7 +63,7 @@ const howtoregister = () => {
               <a>department contacts</a>
             </p>
           </seciton>
-          <section id="register" className={AdmisStyles}>
+          <section id="register" className={AdmisStyles.sectionRegister}>
             <p className={AdmisStyles.sectiontextleft}>Registration</p>
 
             <p className={AdmisStyles.bannerSub}>
@@ -80,9 +77,9 @@ const howtoregister = () => {
                     className={AdmisStyles.anchortag}
                     href="https://ssb-prod.ec.costaatt.edu.tt/"
                   >
-                    Self Service Banner
+                    Self Service Banner{" "}
                   </a>
-                  See
+                  ( See{" "}
                   <a
                     className={AdmisStyles.anchortag}
                     href="https://ssb-prod.ec.costaatt.edu.tt/"
@@ -90,7 +87,7 @@ const howtoregister = () => {
                     {" "}
                     video{" "}
                   </a>
-                  for instructions.
+                  for instructions.)
                 </li>{" "}
                 <li className={AdmisStyles.items}>
                   Enter your username found at top left of your acceptance
@@ -113,12 +110,21 @@ const howtoregister = () => {
                   Download and save your Student Invoice and Week at a Glance
                   schedule for future reference.
                 </li>{" "}
-                Download the Banner Mobile Registration Manual to complete this
-                process using our mobile app
+                {/* <p className={AdmisStyles.anchortag}> */}{" "}
+                <Link
+                  href="/pdfs/FINAL Online Payment Manual 15.08.18 v1.0.pdf"
+                  target="_blank"
+                  className={AdmisStyles.anchortag}
+                >
+                  {/* {" "} */}
+                  You can refer to Banner Online Payment Manual to use our
+                  mobile app
+                </Link>{" "}
+                {/* </p> */}
               </ol>
             </div>
           </section>
-          <section id="gate" className={AdmisStyles}>
+          <section id="gate" className={AdmisStyles.sectionGate}>
             <p className={AdmisStyles.sectiontextleft}>Gate Application</p>
             <p className={AdmisStyles.bannerSub}>
               {" "}
@@ -208,12 +214,11 @@ const howtoregister = () => {
               payment plan to assist with tuition fees.
             </p>
           </section>
-          <section id="payment" className={AdmisStyles}>
+          <section id="payment" className={AdmisStyles.sectionPayment}>
             <p className={AdmisStyles.sectiontextleft}>
               {" "}
               Online Payment and Payment Plan
             </p>
-
             <div className={AdmisStyles.entryreq}>
               <p className={AdmisStyles.bannerSub}>
                 Fees can now be paid via the following:{" "}
@@ -238,30 +243,209 @@ const howtoregister = () => {
               <p>
                 {" "}
                 For more details on Ways to Pay visit
-               <Link
+                <Link
                   className={AdmisStyles.anchortag}
                   href="/admissions/howtopay"
                 >
                   {" "}
                   Fee Payment Options &rarr;{" "}
                 </Link>
-                </p>
-                <p>Submit</p>
-                <ol>
-                  <li>Email your payment receipt to <a className={AdmisStyles.anchortag} href="mailto:bursar@costaatt.edu.tt">bursar@costaatt.edu.tt</a></li>
-                  <li>Email the following signed documents to <a className={AdmisStyles.anchortag}  href="mailto:registrar@oostaatt.edu.tt">registra@costaatt.edu.tt</a> or submit to the Administrative Office at your campus by October 28,2023:<br/>
-                      <ul>
-                        <li>Student Invoice and Payment Terms and Conditions</li>
-                        <li><a href="../Insurance Benefit and Application Form 22-23 "</li>
-                      </ul>
-                  
-                  </li>
-                </ol>
               </p>
+              <p className={AdmisStyles.secondheading}>Submit</p>
+              {/* Replace with ordered list, need to figure out how to be done in next.js */}
+              <ol className={AdmisStyles.list}>
+                <li className={AdmisStyles.items}>
+                  Email your payment receipt to{" "}
+                  <a
+                    className={AdmisStyles.anchortag}
+                    href="mailto:bursar@costaatt.edu.tt"
+                  >
+                    bursar@costaatt.edu.tt
+                  </a>
+                </li>
+                <li className={AdmisStyles.items}>
+                  Email the following signed documents to{" "}
+                  <a
+                    className={AdmisStyles.anchortag}
+                    href="mailto:registrar@oostaatt.edu.tt"
+                  >
+                    registrar@costaatt.edu.tt
+                  </a>{" "}
+                  or submit to the Administrative Office at your campus by
+                  October 28,2023:
+                  {/* get data from database */}
+                  <br />
+                  <ul className={AdmisStyles.list}>
+                    <li className={AdmisStyles.items}>
+                      Student Invoice and Payment Terms and Conditions
+                    </li>
+                    <li className={AdmisStyles.items}>
+                      {" "}
+                      Student Insurance Form{" "}
+                      <Link
+                        href="/pdfs/Insurance Benefit and Application Form 22-23.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={AdmisStyles.anchortag}
+                      >
+                        {" "}
+                        <b>(Download Form here) </b>
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+            <p className={AdmisStyles.bannerSub2}>
+              {" "}
+              Payment Plans (Tuition Fees Only){" "}
+            </p>
+            <div className={AdmisStyles.entryreq}>
+              <ul className={AdmisStyles.list}>
+                <li className={AdmisStyles.items}>
+                  Sign and submit the Payment Plan Application Form.{" "}
+                </li>
+                <li className={AdmisStyles.items}>
+                  {" "}
+                  Submit scanned copy to registrar@costaatt.edu.tt or deliver to
+                  the Office of the Registrar, City Campus.
+                </li>
+                <li className={AdmisStyles.items}>
+                  If plan is approved, sign and submit the agreement using
+                  either method mentioned in #2
+                </li>
+
+                <li className={AdmisStyles.items}>
+                  {/* {" "} */}
+                  Pay using any of the payment methods stated above on or before
+                  each installment date
+                </li>
+              </ul>
+            </div>
+            <div className={AdmisStyles.twoColGridCon}>
+              <div className={AdmisStyles.twoColGrid}>
+                <Divider />
+                <p className={AdmisStyles.text}>
+                  Deadline to apply for a payment plan in 202410{" "}
+                </p>
+                <Divider />
+                <p className={AdmisStyles.text}>
+                  {" "}
+                  Installment for Semester I, Academic Year 2023-2024
+                </p>
+              </div>
+              <div className={AdmisStyles.twoColGrid}>
+                <Divider />
+                <p className={AdmisStyles.text}>
+                  <b> October 28, 2023 </b>
+                </p>
+                <Divider />
+
+                <p className={AdmisStyles.text}>
+                  {" "}
+                  <b> November 28,2023</b>
+                </p>
+                <p className={AdmisStyles.text}>
+                  <b>December 28, 2023 </b>{" "}
+                </p>
+                <p className={AdmisStyles.text}>
+                  {" "}
+                  <b>January 28,2024 </b>
+                </p>
+                <Divider />
+              </div>
             </div>
           </section>
-          <section id="studentid" className={AdmisStyles}>
-            <p className={AdmisStyles.sectiontextleft}>Student Id</p>
+          <section id="studentid" className={AdmisStyles.sectionStudentId}>
+            <p className={AdmisStyles.sectiontextleft}>Student Id Card</p>
+            <p className={AdmisStyles.text}>
+              The Office of the Registrar will provide guidance on the procedure
+              for obtaining your student ID card and validation sticker. A
+              <a
+                className={AdmisStyles.anchortag}
+                href="https://www.youtube.com/watch?v=f4zgpvuh2k4"
+              >
+                {" "}
+                student email account
+              </a>{" "}
+              will be assigned to you where we will be in communication with you
+              .
+            </p>
+          </section>
+          <section id="addinfo" className={AdmisStyles.sectionAdditionalInfo}>
+          <p className={AdmisStyles.sectiontextleft}>Additional Information</p>
+            <p className={AdmisStyles.bannerSub2}>On Campus Appointments</p>
+            <p className={AdmisStyles.text}>
+              Although we have resumed face-to-face interactions at our
+              campuses, please be advised that appointments will be required for
+              the following services:{" "}
+            </p>
+            <div className={AdmisStyles.entryreq}>
+              <ul className={AdmisStyles.list}>
+                <li className={AdmisStyles.items}>
+                  Student Account Billing Queries
+                </li>
+
+                <li className={AdmisStyles.items}> Diploma collection </li>
+              </ul>
+            </div>
+            <p className={AdmisStyles.text}>
+              {" "}
+              All other services will now be available without an appointment
+              Click
+              <a
+                className={AdmisStyles.anchortag}
+                href="https://costaattappointments.setmore.com/"
+              >
+                {" "}
+                Book an Appointment
+              </a>{" "}
+              if you need to book an appointment.
+            </p>
+
+            <p className={AdmisStyles.bannerSub2}> Documents Download </p>
+            <p className={AdmisStyles.text}>
+              {" "}
+              <Link
+                href="/pdfs/Academic Calendar 2023-2024.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={AdmisStyles.anchortag}
+              >
+                {" "}
+                2022/2023 Academic Calendar
+              </Link>
+              <br />
+              <Link
+                href="/pdfs/Insurance Benefit and Application Form 22-23.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={AdmisStyles.anchortag}
+              >
+                {" "}
+                Insurance Form 2022-2023
+              </Link>
+              <br />
+              <Link
+                href="/pdfs/Payment Plan Application Form_2020 - Fillable.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={AdmisStyles.anchortag}
+              >
+                {" "}
+                Payment Plan Application Form
+              </Link>
+              <br />
+              <Link
+                href="/pdfs/Final Banner Mobile Registration Manual 150818_v1.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={AdmisStyles.anchortag}
+              >
+                {" "}
+                Banner Mobile Registration Manual
+              </Link>
+            </p>
           </section>
         </SideNavOnlyLayout>
       </>

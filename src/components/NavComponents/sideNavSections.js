@@ -1,5 +1,3 @@
-import admissioncounsellors from "@/pages/admissions/admissioncounsellors";
-import newstudent from "@/pages/admissions/newstudent";
 
 export const sideNavSections = {
   home: {
@@ -82,7 +80,8 @@ export const sideNavSections = {
     "Registration":"register",
     "Gate Application":"gate",
     "Online Payment":"payment",
-    "Student Id":"studentid"
+    "Student Id Card":"studentid",
+    "Additional Information":"addinfo"
   }
 
 };
