@@ -1,5 +1,3 @@
-import admissioncounsellors from "@/pages/admissions/admissioncounsellors";
-import newstudent from "@/pages/admissions/newstudent";
 
 export const sideNavSections = {
   home: {
@@ -67,8 +65,9 @@ export const sideNavSections = {
     "Choose your path":"chooseyourpath",
     "Requirements":"require",
     "Checklist":"checklist",
+    
     "Contact":"contact",
-    "Next Step":"nextstep"
+    
 
   },
   admissioncounsellors:{
@@ -76,11 +75,13 @@ export const sideNavSections = {
     "625-5030 ext 5900":"contact"
   },
   howtoregister:{
+    "Registration Checklist" :"checklist",
     "Academic Advisement" :"advising",
     "Registration":"register",
     "Gate Application":"gate",
     "Online Payment":"payment",
-    "Student Id":"studentid"
+    "Student Id Card":"studentid",
+    "Additional Information":"addinfo"
   }
 
 };

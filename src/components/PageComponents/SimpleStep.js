@@ -13,23 +13,30 @@ const steps = [
     linkto: "applynow",
   },
   {
-    label: "Download and Complete your Appliation for Transfer",
-    linkto: "",
+    label: "Speak to admissions Counsellor",
+    linkto: "admissioncounsellors",
   },
-  
+  {
+    label: "Download and Complete your Appliation for Transfer",
+    linkto: "/pdfs/Transfer Exemption form-revised 110518.pdf",
+  },
 ];
 
 export default function SimpleStep() {
   return (
     <Box sx={{ width: "100%" }} >
-      <Stepper alternativeLabel>
+      <Stepper >
         {steps.map((label) => (
-          <Step key={label.label}>
-            <Link href={label.linkto}>
-              <StepLabel className={AdmisStyles.stepicon} StepIconComponent={SettingsIcon}>
+          <Step key={label.label} >
+            
+            {/* StepIconComponent={SettingsIcon} */}
+             <StepLabel >
+              <Link  className={AdmisStyles.stepfont} 
+              href={label.linkto}>
+             
                 {label.label}
-              </StepLabel>
-            </Link>
+              
+            </Link></StepLabel>
           </Step>
         ))}
       </Stepper>

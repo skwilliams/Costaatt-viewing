@@ -43,6 +43,7 @@
   justify-content: center;
   align-items: center;
   padding: 0.5rem 0;
+ 
 }
 
 .sideNav {
@@ -62,6 +63,7 @@
   padding: 0.5rem 1.5rem;
   position: relative;
   // border: black 1px solid;
+ 
 }
 
 .subheader {
@@ -89,12 +91,12 @@
 .rslinkSideNav {
   cursor: pointer;
   color: rgba(0, 0, 0, 0.6);
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 .activeSideNavSubsection {
-  // color: rgb(0, 0, 0);
-  color: white;
+  // color: rgb(0, 0, 0,1);
+  color: $orange;
 }
 .hover-underline-animation {
   display: inline-block;
@@ -124,7 +126,7 @@
 // }
 .topNav {
   display: flex;
-  padding: 5px 30px;
+  padding: .5em 2em;
   justify-content: space-between;
   background-image: linear-gradient(
     to bottom right,
