@@ -6,13 +6,21 @@
   display: grid;
   gap: 8rem;
   grid-gap: 2rem;
-  grid-template-columns: 1fr 1fr;
+  // grid-template-columns: 1fr 1fr;
+  width:min(95%,70rem);
+  margin-inline:auto;
+}
+@media (min-width:50em) {
+  .twoColGridCon{
+     grid-template-columns: 1fr 1fr;
+  }
+   
 }
 
 .twoColGrid {
   text-align: center;
-  padding: 20px 0;
-  font-size: 1.5rem;
+  padding: 1em 0;
+  // font-size: 1.5rem;
   // padding: 10px;
 }
 
@@ -188,19 +196,7 @@
 }
 
 
-// /*3 columns change name*/
-// .threeColGridCon {
-//   display: grid;
-//   gap: 8rem;
-//   grid-gap: 2rem;
-//   grid-template-columns: auto auto auto;
-// }
-// .threeColGrid {
-//   text-align: center;
-//   padding: 20px 0;
-//   font-size: 1.5rem;
-//   // padding: 10px;
-// }
+
 
 /*4 columns change name*/
 .disclaimer {
@@ -214,14 +210,25 @@
   display: grid;
   gap: 8rem;
   grid-gap: 2rem;
-  grid-template-columns: auto auto auto auto;
+  // width:min(95%,70rem);
+  // margin-inline:auto;
+
+  // //  align-items: flex-end;
+  
+  // //   box-sizing: border-box;
+  //   margin: 0 auto;
 }
 
+@media (min-width:50em) {
+  .fourColGridCon{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
 .fourColGrid {
-  text-align: center;
-  padding: 20px 0;
+ text-align:  center;
+  padding: 1.25em 0;
   font-size: 1.5rem;
-  // padding: 10px;
+  padding: 1em;
 }
 
 
@@ -242,37 +249,52 @@
   align-items: center;
 
 
-  .fourColGridCon {
-    display: grid;
-    gap: 8rem;
-    grid-gap: 2rem;
-    grid-template-columns: auto auto auto auto;
-  }
+//   .fourColGridCon {
+//     display: grid;
+//     gap: 8rem;
+//     grid-gap: 2rem;
+//     width:min(95%,70rem);
+    
+//   }
 
-  .fourColGrid {
-    text-align: center;
-    padding: 20px 0;
-    font-size: 1.5rem;
-    // padding: 10px;
-  }
+//   @media (min-width:50em) {
+//   .fourColGridCon{
+//    grid-template-columns: repeat(4,1fr);
+//   }
+   
+// }
 
-  .threeColGridCon {
-    display: grid;
-    gap: 2rem;
-    grid-gap: 2rem;
-    align-items: flex-end;
-    grid-template-columns: 1fr 1fr 1fr;
-    box-sizing: border-box;
-    margin: 0 2rem;
+//   .fourColGrid {
+//     text-align: center;
+//     padding: 20px 0;
+//     font-size: 1.5rem;
+//     padding: 1em;
+//   }
 
-  }
+//   .threeColGridCon {
+//     display: grid;
+//     gap: 2rem;
+//     grid-gap: 2rem;
+//     align-items: flex-end;
+  
+//     box-sizing: border-box;
+//     margin: 0 2rem;
 
-  .threeColGrid {
-    text-align: center;
-    padding: .5rem 0;
-    font-size: 1.5rem;
-    padding: 10px;
-  }
+//   }
+
+//   @media (min-width:50em) {
+//   .threeColGridCon{
+//       grid-template-columns: repeat(3,1fr);
+//   }
+   
+// }
+
+//   .threeColGrid {
+//     text-align: center;
+//     padding: .5em 0;
+//     font-size: 1.5rem;
+//     padding: 1em;
+//   }
 }
 
 
@@ -303,7 +325,7 @@
   .cardtext {
     font-size: 1.5rem;
     color: black;
-    padding: 60px 0;
+    padding: 3.75em 0;
 
 
   }
@@ -318,23 +340,7 @@
   font-size: 1.5rem;
   font-family: "Lato";
 
-  .twoColGridCon {
-    display: grid;
-    gap: 8rem;
-    grid-gap: 2rem;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .twoColGrid {
-    text-align: center;
-    padding: 20px 0;
-    font-size: 1.5rem;
-    // padding: 10px;
-  }
-
-  // .shape{
-
-  // }
+ 
 }
 
 .secondheading {
@@ -342,7 +348,7 @@
   line-height: 2;
   text-align: left;
   font-family: "Lato";
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   font-weight: bold;
 
 }
@@ -456,9 +462,15 @@
   display: grid;
   gap: 8rem;
   grid-gap: 2rem;
-  grid-template-columns: 20% 80%;
+ 
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+@media (min-width:40rem) {
+  .feetwoColCon{
+ grid-template-columns: 20% 80%;
+  }
 }
 
 .feetwoColGrid {
@@ -587,9 +599,15 @@
     display: grid;
     gap: 8rem;
     grid-gap: 2rem;
-    grid-template-columns: auto auto;
   }
 
+    @media (min-width:50em)
+    {
+      .twoColGridCon{
+    grid-template-columns: 1fr 1fr;
+
+      }
+    }
   .twoColGrid {
     text-align: center;
     padding: 20px 0;
@@ -604,19 +622,33 @@
   display: grid;
   gap: 8rem;
   grid-gap: 2rem;
-  grid-template-columns: auto auto auto;
+ 
+}
+
+
+  @media (min-width:50em) {
+  .threeColGridCon{
+     grid-template-columns: 1fr 1fr 1fr; 
+  }
+   
+}
 }
 
 .threeColGrid {
   text-align: center;
-  padding: 20px 0;
+  padding: 1.5em 0;
   font-size: 1.5rem;
   // padding: 10px;
 }
 
 .stepicon {
-  font-size: 8rem;
-}
+  font-size: 20px;
+
+
+  
+} .stepfont{
+    font-size: 1.2rem;
+ } 
 
 // New Student newstudent.js applicant
 
@@ -719,13 +751,41 @@
 }
 
 .bannerSub {
-  background-color: $purple-secondary;
+  background-color: $purple-main;
   color:white;
   font-size: 1.2rem;
+  opacity: .7;
   line-height: 2;
   font-style: cpatialize;
 }
+.bannerSub2 {
+  background-color: $purple-main;
+  color:white;
+  font-size: 1.2rem;
+  opacity: .5;
+  line-height: 2;
+margin:1.5rem 0;
+  font-style: cpatialize;
+}
 
+.sectionPayment{
+margin:0 auto;
+
+//   .twoColGridCon {
+//   display: grid;
+//   gap: 8rem;
+//   grid-gap: 2rem;
+//   grid-template-columns: 1fr 1fr;
+//   text-align: left;
+// }
+
+// .twoColGrid {
+//   text-align: left;
+//   padding: 20px 0;
+//   font-size: 1.5rem;
+//   // padding: 10px;
+// }
+}
 .anchortag {
   text-decoration: underline;
   text-underline-position: below;
