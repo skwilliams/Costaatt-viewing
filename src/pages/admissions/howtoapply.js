@@ -22,8 +22,11 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material"
 import AddIcon from "@mui/icons-material/Add";
 import AddCircleTwoToneIcon from "@mui/icons-material/AddCircleTwoTone";
+import ProgStyles from "../../styles/Programmes.module.scss";
 
-const newstudent = () => {
+
+
+const howtoapply = () => {
 
 const CustomHome = () => {
   return <AddCircleTwoToneIcon style={{ color: "rgb(245,130,32)" }} />
@@ -32,15 +35,31 @@ const CustomHome = () => {
   return (
     <>
       <Head>
-        <title>First Time Student</title>
+        <title>How to Apply</title>
       </Head>
-      {/* <HeadImage imagetext="" mainimage={headImg} /> */}
-      <HeaderNoImage caption={"First Time Applicant"} />
+      <HeadImage text="" mainimage={headImg} />
+      <p className={ProgStyles.headingprimarysub}>
+        <Link href="/"> COSTAATT </Link>
+        <Link href="/admissions/howtoapply">Admissions/ApplyNow</Link>
+        
+        
+      </p>
       <SideNavOnlyLayout>
         <section id="intro" className={AdmisStyles.sectionIntroReg}>
           {" "}
-          <p className={AdmisStyles.sectiontextleft}>Ready to Apply</p>
-          <p className={AdmisStyles.introtext}></p>
+          <p className={AdmisStyles.introtext}>
+            We are so excited that you have choosen COSTAATT to furthur your
+            education.
+            <br />
+            COSTAATT offers a unique learning experince.
+            <br />
+            To learn more about our programmes and why COSTAATT is the best
+            place visit{" "}
+            <Link className={AdmisStyles.anchortag} href="/programmes/">
+              {" "}
+              Overview of Programmes
+            </Link>
+          </p>
         </section>
         <section id="visits" className={AdmisStyles.sectionVisit}>
           <p className={AdmisStyles.sectiontextleft}>COSTAATT Wants you </p>
@@ -333,7 +352,6 @@ const CustomHome = () => {
             <p className={AdmisStyles.text}>
               You have been accepted, now it's time to Register !!
             </p>{" "}
-         
             <ButtonLink
               text="How to Register"
               color="warning"
@@ -391,8 +409,8 @@ const CustomHome = () => {
   );
 };
 
-newstudent.getLayout = function getLayout(page) {
+howtoapply.getLayout = function getLayout(page) {
   return <TopNavOnlyLayout> {page} </TopNavOnlyLayout>;
 };
 
-export default newstudent;
+export default howtoapply;

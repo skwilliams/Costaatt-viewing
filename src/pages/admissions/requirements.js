@@ -1,6 +1,8 @@
 import React from 'react';
 import admissionStyles from '../../styles/Admissions.module.scss';
 // import Image from "next/image";
+import ProgStyles from "../../styles/Programmes.module.scss";
+
 import home5 from '../../../images/Links/home5.png';
 import TopHeader from '@/components/TopHeader';
 import Link from 'next/link';
@@ -21,12 +23,17 @@ import {
   Paper,
 } from '@mui/material';
 import { Padding } from '@mui/icons-material';
+import HeaderNoImage from '@/components/PageComponents/HeaderNoImage';
 const requirements = () => {
   return (
     <>
+      <p className={ProgStyles.headingprimarysub}>
+        COSTAATT/Admissions/Requirements{" "}
+      </p>
       <section className={admissionStyles.topHeader}>
-        <TopHeader image={home5} color="royalblue" text="Requirements" />
+        <HeaderNoImage caption="Requirements" />
       </section>
+
       <div className={admissionStyles.applicationInstructions}>
         <section>
           <div>
@@ -153,7 +160,7 @@ const requirements = () => {
           <div>
             <TableContainer component={Paper}>
               <Table aria-label="simple table">
-                <TableHead sx={{ backgroundColor: 'royalblue' }}>
+                <TableHead sx={{ backgroundColor: "royalblue" }}>
                   <TableRow>
                     <TableCell>
                       Nationality - General Supporting Documents
@@ -179,7 +186,7 @@ const requirements = () => {
             </TableContainer>
             <TableContainer component={Paper}>
               <Table aria-label="simple table">
-                <TableHead sx={{ backgroundColor: 'royalblue' }}>
+                <TableHead sx={{ backgroundColor: "royalblue" }}>
                   <TableRow>
                     <TableCell>
                       Programme - Specific Suporting Documents
@@ -286,7 +293,7 @@ const requirements = () => {
             October - January
           </p>
           <p>&nbsp;</p>
-          <div style={{ padding: '15px', background: 'orange' }}>
+          <div style={{ padding: "15px", background: "orange" }}>
             <p>
               <strong>
                 APPLICATION DEADLINE FOR SEPTEMBER 2023 (Semester I)

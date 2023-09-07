@@ -23,7 +23,8 @@
   position: fixed;
   z-index: 40;
   top: 0;
-  // background-color: $grey;
+  //  background-color: $whiteback;
+   
 
   background-image: linear-gradient(to right, $orange, $purple-secondary);
   height: auto;
@@ -31,7 +32,7 @@
   width: 100%;
   justify-content: space-between;
   padding: 0 10rem 0 10rem;
-  color: $whiteback;
+  color: #D5CABD;
 }
 .sideNavContainer {
   position: sticky;
@@ -144,6 +145,7 @@
   padding: 10px 20px;
   align-items: left;
   background-color: $grey;
+  // background-color: #D5CABD;
   margin: 0;
 }
 .centerNav h2 {
@@ -169,6 +171,7 @@
   align-items: center;
   margin: 0;
   padding: 0 65px;
+  background-color: $grey;
   background-color: $grey;
   color: $whiteback;
 }

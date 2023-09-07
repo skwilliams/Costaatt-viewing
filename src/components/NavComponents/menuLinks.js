@@ -132,7 +132,7 @@ export const mainNavLinks = [
         path: "/programmes/collegecore",
       },
       {
-        title: "Short Courses",
+        title: "Professional Development Courses",
         path: "/programmes/shortcourses",
       },
       {
@@ -179,7 +179,7 @@ export const mainNavLinks = [
     submenu: [
       {
         title: "Apply Now",
-        path: "/admissions/apply",
+        path: "/admissions/howtoapply",
       },
       {
         title: "Admission Requirements",
@@ -194,8 +194,8 @@ export const mainNavLinks = [
         path: "/programmes/allprogrammes",
       },
       {
-        title: "Professional Development Courses",
-        path: "/admissions/developmentcourses",
+        title: "Professional Development Application",
+        path: "/admissions/developmentcoursesApp",
       },
       {
         title: "Transfer Credit and Exemptions ",
@@ -205,8 +205,8 @@ export const mainNavLinks = [
     submenuImage: [
       {
         img: require("../../../images/Links/dummyImg1.jpg"),
-        title: "New Student Registration",
-        path: "/admissions/orientation",
+        title: "How to Register ",
+        path: "/admissions/howtoregister",
       },
       {
         img: require("../../../images/Links/dummyImg2.jpg"),
