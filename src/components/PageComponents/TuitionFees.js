@@ -1,5 +1,5 @@
-import React from "react";
-import CourseStyle from "../../styles/Course.module.scss";
+import React from 'react';
+import CourseStyle from '../../styles/Course.module.scss';
 
 const TuitionFees = ({ fees }) => {
   return (
@@ -17,8 +17,8 @@ const TuitionFees = ({ fees }) => {
             <div className={CourseStyle.courseheadings}>Total Cost</div>
           </div>
         </>
-        {fees.map((fee) => (
-          <>
+        {fees.map((fee, ind) => (
+          <div key={ind}>
             <div className={CourseStyle.coursesColGrid}>
               {fee.studenttype && (
                 <div className={CourseStyle.coursecode}>{fee.studenttype}</div>
@@ -37,10 +37,10 @@ const TuitionFees = ({ fees }) => {
                 <div className={CourseStyle.credits}>{fee.totalcost}</div>
               )}
             </div>
-          </>
+          </div>
         ))}
       </div>
     </>
   );
 };
-export default TuitionFees
+export default TuitionFees;

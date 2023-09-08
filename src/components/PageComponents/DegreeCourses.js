@@ -1,7 +1,7 @@
-import React from "react";
-import CourseStyle from "../../styles/Course.module.scss";
+import React from 'react';
+import CourseStyle from '../../styles/Course.module.scss';
 
-import { Divider } from "@mui/material";
+import { Divider } from '@mui/material';
 
 const DegreeCourses = ({ courses }) => {
   let totalCredits = 0;
@@ -26,8 +26,8 @@ const DegreeCourses = ({ courses }) => {
               <div className={CourseStyle.courseheadings}>Credits</div>
             </div>
           </>
-          {courses.map((course) => (
-            <>
+          {courses.map((course, ind) => (
+            <div key={ind}>
               <div className={CourseStyle.coursesColGrid}>
                 {course.coursecode && (
                   <div className={CourseStyle.coursecode}>
@@ -48,7 +48,7 @@ const DegreeCourses = ({ courses }) => {
                   <div className={CourseStyle.credits}>{course.credits}</div>
                 )}
               </div>
-            </>
+            </div>
           ))}
 
           <div className={CourseStyle.coursesColGrid}>
