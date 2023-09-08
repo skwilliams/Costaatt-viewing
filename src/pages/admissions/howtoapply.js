@@ -21,9 +21,10 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material"
 import AddIcon from "@mui/icons-material/Add";
-import AddCircleTwoToneIcon from "@mui/icons-material/AddCircleTwoTone";
+import increase from "../../../public/images/admissions/increase.png";
 import ProgStyles from "../../styles/Programmes.module.scss";
-
+import admissionStyles from"@/styles/Admissions.module.scss"
+import AddCircleTwoToneIcon from"@mui/icons-material/AddCircleOutlineTwoTone"
 
 
 const howtoapply = () => {
@@ -39,10 +40,9 @@ const CustomHome = () => {
       </Head>
       <HeadImage text="" mainimage={headImg} />
       <p className={ProgStyles.headingprimarysub}>
-        <Link href="/"> COSTAATT </Link>
-        <Link href="/admissions/howtoapply">Admissions/ApplyNow</Link>
-        
-        
+        <Link href="/"> COSTAATT/ </Link>
+        <Link href="/admissions">Admissions/</Link>
+        <Link href="/admissions/howtoapply">How to Apply</Link>
       </p>
       <SideNavOnlyLayout>
         <section id="intro" className={AdmisStyles.sectionIntroReg}>
@@ -51,34 +51,189 @@ const CustomHome = () => {
             We are so excited that you have choosen COSTAATT to furthur your
             education.
             <br />
-            COSTAATT offers a unique learning experince.
+            COSTAATT offers a unique learning experience.
             <br />
-            To learn more about our programmes and why COSTAATT is the best
+            {/* To learn more about our programmes and why COSTAATT is the best
             place visit{" "}
             <Link className={AdmisStyles.anchortag} href="/programmes/">
               {" "}
               Overview of Programmes
-            </Link>
+            </Link> */}
           </p>
+          <p className={AdmisStyles.sectiontext}>
+            What impact will COSTAATT have on you{" "}
+          </p>
+          <div className={admissionStyles.iconsection}>
+            <div className={admissionStyles.threeColGridCon}>
+              <div className={admissionStyles.threeColGrid}>
+                {" "}
+                <Image
+                  className={admissionStyles.icon}
+                  src={increase}
+                  alt="increase"
+                />
+                <p className={admissionStyles.iconfontemp}> Marketabilty </p>
+              </div>
+
+              <div className={admissionStyles.threeColGrid}>
+                {" "}
+                <Image
+                  className={admissionStyles.icon}
+                  src={increase}
+                  alt="increase"
+                />
+                <p className={admissionStyles.iconfontemp}>Earnings</p>
+              </div>
+              <div className={admissionStyles.threeColGrid}>
+                <Image
+                  className={admissionStyles.icon}
+                  src={increase}
+                  alt="increase"
+                />
+                <p className={admissionStyles.iconfontemp}>Influence</p>
+              </div>
+            </div>
+          </div>
         </section>
-        <section id="visits" className={AdmisStyles.sectionVisit}>
-          <p className={AdmisStyles.sectiontextleft}>COSTAATT Wants you </p>
-          Costaatt is a unique place
-          <button> Explore Our Programmes </button>
+        <section id="firststeps" className={AdmisStyles.sectionVisit}>
+          <p className={AdmisStyles.sectiontextleft}>First Steps </p>
+          <div className={AdmisStyles.steps}>
+            <div className={AdmisStyles.stepstext}>
+              <span className={AdmisStyles.stepsnum}> 1. </span>{" "}
+              <Link
+                href="/programmes/allprogrammes"
+                className={AdmisStyles.anchortag}
+              >
+                {" "}
+                Find your programme{" "}
+              </Link>{" "}
+              and determine if it's right for you
+            </div>
+            <div className={AdmisStyles.stepstext}>
+              <span className={AdmisStyles.stepsnum}> 2. </span>{" "}
+              <Link
+                href="/admissions/requirements"
+                className={AdmisStyles.anchortag}
+              >
+                {" "}
+                 Explore the requirements
+              </Link>{" "}and whether you possess them{" "}
+            </div>
+
+            <div className={AdmisStyles.stepstext}>
+              <span className={AdmisStyles.stepsnum}> 3. </span>
+              Determine what type of applicant you are{" "}
+              <Accordion sx={{ mx: 7, my: 2 }}>
+                <AccordionSummary expandIcon={<CustomHome />}>
+                  <Typography fontWeight="bold" fontSize={"1.15rem"}>
+                    New Applicant
+                  </Typography>
+                </AccordionSummary>
+
+                <AccordionDetails>
+                  <p className={AdmisStyles.text}>
+                    A student who has not completed any college-level courses
+                    and who wishes to enrol in a degree programme at COSTAATT.
+                  </p>{" "}
+                </AccordionDetails>
+              </Accordion>
+              <Accordion sx={{ mx: 7, my: 2 }}>
+                <AccordionSummary expandIcon={<CustomHome />}>
+                  <Typography fontWeight="bold" fontSize={"1.15rem"}>
+                    Transfer Applicant
+                  </Typography>
+                </AccordionSummary>
+
+                <AccordionDetails>
+                  <p className={AdmisStyles.text}>
+                    A student who has completed college-level courses at a
+                    recognised higher education institution and who wishes to
+                    enrol in a degree programme at COSTAATT. The College
+                    evaluates the transcripts of transfer students to determine
+                    equivalency with its own programmes and requirements for
+                    graduation.
+                    {/* Please note that, depending on the programme of study, there
+                  is a limit to the number of credits that may be transferred or
+                  the number of exemptions that may be granted. Transfer
+                  applicants must be in good academic standing at the previous
+                  institution. Please contact the Admissions Office for further
+                  information. Applicants wishing to transfer to COSTAATT with
+                  advanced standing* must submit the following: *Advanced
+                  standing acknowledges prior study through the award of credit
+                  Official transcripts of all subjects previously completed at a
+                  tertiary level institution Copies of syllabus/course outlines
+                  for courses completed A completed Request for Transfer Credit
+                  form, which is available at the Admissions Office Download
+                  your paper application or apply online (only applicable to
+                  New, Transfer, CARICOM and International applicants) */}
+                  </p>{" "}
+                </AccordionDetails>
+              </Accordion>
+              <Accordion sx={{ mx: 7, my: 2 }}>
+                <AccordionSummary expandIcon={<CustomHome />}>
+                  <Typography fontWeight="bold" fontSize={"1.15rem"}>
+                    Returning Applicant
+                  </Typography>
+                </AccordionSummary>
+
+                <AccordionDetails>
+                  <p className={AdmisStyles.text}>
+                    A student who has previously started a programme with
+                    COSTAATT, but have been absent for three or more consecutive
+                    semesters; Previously completed a programme with COSTAATT
+                    and wish to apply for another.{" "}
+                  </p>{" "}
+                </AccordionDetails>
+              </Accordion>
+              <Accordion sx={{ mx: 7, my: 2 }}>
+                <AccordionSummary expandIcon={<CustomHome />}>
+                  <Typography fontWeight="bold" fontSize={"1.15rem"}>
+                    Non-Matriculated
+                  </Typography>
+                </AccordionSummary>
+
+                <AccordionDetails>
+                  <p className={AdmisStyles.text}>
+                    A student who is interested in earning credit for specific
+                    college-level courses without registering for a full diploma
+                    or degree programme. Such students enjoy the same privileges
+                    and responsibilities as other students and are also required
+                    to observe all college rules and regulations, including
+                    those governing student conduct.
+                  </p>{" "}
+                </AccordionDetails>
+              </Accordion>
+              <Accordion sx={{ mx: 7, my: 2 }}>
+                <AccordionSummary expandIcon={<CustomHome />}>
+                  <Typography fontWeight="bold" fontSize={"1.15rem"}>
+                    Audit
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <p className={AdmisStyles.text}>
+                    A student who wishes to pursue discrete courses for personal
+                    enrichment (no examinations or credit is awarded).
+                  </p>{" "}
+                </AccordionDetails>
+              </Accordion>
+            </div>
+          </div>
         </section>
         <section id="howtoapply" className={AdmisStyles.sectionHowtoapply}>
-          <p className={AdmisStyles.sectiontextleft}>Start Application </p>
+          <p className={AdmisStyles.sectiontextleft}>Before you Apply </p>
           Start Application send to *** How to Apply
         </section>
         <section id="timeline" className={AdmisStyles.sectionTimeline}>
-          <p className={AdmisStyles.sectiontextleft}>Timeline </p>
+          <p className={AdmisStyles.sectiontextleft}>When to Apply </p>
         </section>
         <section id="chooseyourpath">
           {" "}
           <p className={AdmisStyles.sectiontextleft}>Choose Your Path </p>
         </section>
         <section id="require" className={AdmisStyles.sectionRequired}>
-          <p className={AdmisStyles.sectiontextleft}>Requirements </p>{" "}
+          <p className={AdmisStyles.sectiontextleft}>
+            Application Requirements{" "}
+          </p>{" "}
           Requirements
         </section>
         <section id="checklist" className={AdmisStyles.sectionCheckList}>
@@ -361,7 +516,48 @@ const CustomHome = () => {
             <Divider />
           </div>
         </section>
-
+        <section id="contact" className={AdmisStyles.sectionContact}>
+          {" "}
+          <p className={AdmisStyles.sectiontextleft}> Contact Admissions</p>
+          <div className={AdmisStyles.threeColGridCon}>
+            <div className={AdmisStyles.threeColGrid}>
+              <Image
+                className={AdmisStyles.icon}
+                src={telephone}
+                alt="telephone icon"
+              />
+              <p className={AdmisStyles.icontext}> 625-5030 ext 5900</p>
+            </div>
+            <div className={AdmisStyles.threeColGrid}>
+              <Image
+                className={AdmisStyles.icon}
+                src={email}
+                alt="email icon"
+              />
+              <p className={AdmisStyles.icontext}>
+                {" "}
+                <a href="mailto:applications@costaatt.edu.tt">
+                  {" "}
+                  applications@costaatt.edu.tt{" "}
+                </a>{" "}
+              </p>
+            </div>
+            <div className={AdmisStyles.threeColGrid}>
+              <Image
+                className={AdmisStyles.icon}
+                src={counsellor}
+                alt="contact icon"
+              />
+              <p className={AdmisStyles.icontext}>
+                {" "}
+                <Link href="admissioncounsellors">
+                  {" "}
+                  Admissions Counsellor Directory{" "}
+                </Link>
+              </p>
+            </div>
+          </div>
+        </section>
         <section id="contact" className={AdmisStyles.sectionContact}>
           {" "}
           <p className={AdmisStyles.sectiontextleft}> Contact Admissions</p>

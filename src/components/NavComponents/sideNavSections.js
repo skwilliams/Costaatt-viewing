@@ -58,21 +58,29 @@ export const sideNavSections = {
   },
   howtoapply: {
     Welcome: "intro",
-    Visits: "visits",
+    "First Steps": "firststeps",
     "How to Apply": "howtoapply",
-    Timeline: "timeline",   
+    Timeline: "timeline",
     Requirements: "require",
     "Choose your path": "chooseyourpath",
- 
+
     Checklist: "checklist",
 
     Contact: "contact",
+  },
+  requirements: {
+    "Minimum Requirements": "minreq",
+    "Additional School Requirements": "minsSchreq",
+    "General Supporting Documents": "suppDocs",
+    "Additional Programmes Documents": "suppAddDocs",
+    "Alternative Entry Routes":"alterRoutes"
+
   },
   developmentcoursesApp: {
     Welcome: "intro",
     "Explore ALL courses": "explore",
     "Courses Being Offered": "currentofferings",
-    
+
     "How to Apply": "howtoapply",
     Contact: "contact",
   },
