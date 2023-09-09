@@ -41,9 +41,9 @@ const requirements = () => {
       </p>
       <SideNavOnlyLayout>
         <section id="minreq" className={admissionStyles.sectionforSideNav}>
-          <h1 className={admissionStyles.sectiontextleft}>
-            Mimimum Requirements
-          </h1>
+          <p className={admissionStyles.sectiontextleftfirst}>
+            Minimum Requirements
+          </p>
           <br />
           <div className={admissionStyles.entryreq}>
             <ul className={admissionStyles.list}>
@@ -189,71 +189,15 @@ const requirements = () => {
             </ul>
           </div>
           <br />
-          <div>
-            <TableContainer component={Paper}>
-              <Table aria-label="simple table">
-                <TableHead sx={{ backgroundColor: "royalblue" }}>
-                  <TableRow>
-                    <TableCell>
-                      Nationality - General Supporting Documents
-                    </TableCell>
-                    <TableCell>Valid TT ID card or Passport</TableCell>
-                    <TableCell>Valid Passport</TableCell>
-                    <TableCell>Birth Certificate</TableCell>
-                    <TableCell>Academic Certificates</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {supportDocA.map((row) => (
-                    <TableRow key={row.Natiionality}>
-                      <TableCell>{row.Natiionality}</TableCell>
-                      <TableCell>{row.Valid_ID}</TableCell>
-                      <TableCell>{row.Valid_PassPort}</TableCell>
-                      <TableCell>{row.Birth_Certificate}</TableCell>
-                      <TableCell>{row.Academic_Certificate}</TableCell>
-                    </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
-            </TableContainer>
-            <TableContainer component={Paper}>
-              <Table aria-label="simple table">
-                <TableHead sx={{ backgroundColor: "royalblue" }}>
-                  <TableRow>
-                    <TableCell>
-                      Programme - Specific Suporting Documents
-                    </TableCell>
-                    <TableCell>
-                      Two Written Confidential Character References
-                    </TableCell>
-                    <TableCell>Police Certificate of Character</TableCell>
-                    <TableCell>Nursing Council Permit</TableCell>
-                    <TableCell>Personal Statement</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {supportDocB.map((row) => (
-                    <TableRow key={row.Programme}>
-                      <TableCell>{row.Programme}</TableCell>
-                      <TableCell>{row.References}</TableCell>
-                      <TableCell>{row.Police_Cert}</TableCell>
-                      <TableCell>{row.Council}</TableCell>
-                      <TableCell>{row.Statement}</TableCell>
-                    </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
-            </TableContainer>
-          </div>
         </section>
         <section id="suppDocs" className={admissionStyles.sectionforSideNav}>
           <p className={admissionStyles.sectiontextleft}>
-            Supporting Documents
+            general supporting documents
           </p>
           <div>
             <TableContainer component={Paper}>
               <Table aria-label="simple table">
-                <TableHead sx={{ backgroundColor: "royalblue" }}>
+                <TableHead sx={{ backgroundColor: "orange" }}>
                   <TableRow>
                     <TableCell>
                       Nationality - General Supporting Documents
@@ -266,8 +210,8 @@ const requirements = () => {
                 </TableHead>
                 <TableBody>
                   {supportDocA.map((row) => (
-                    <TableRow key={row.Natiionality}>
-                      <TableCell>{row.Natiionality}</TableCell>
+                    <TableRow key={row.Nationality}>
+                      <TableCell>{row.Nationality}</TableCell>
                       <TableCell>{row.Valid_ID}</TableCell>
                       <TableCell>{row.Valid_PassPort}</TableCell>
                       <TableCell>{row.Birth_Certificate}</TableCell>
@@ -281,7 +225,7 @@ const requirements = () => {
         </section>
         <section id="suppAddDocs" className={admissionStyles.sectionforSideNav}>
           <p className={admissionStyles.sectiontextleft}>
-            Supporting Documents
+            Supporting Documents Specific To Programmes
           </p>
 
           <TableContainer component={Paper}>
@@ -313,106 +257,67 @@ const requirements = () => {
             </Table>
           </TableContainer>
         </section>
-        <section id="alterRoutes" className={admissionStyles.sectionforSideNav}> 
-          <h1>ALTERNATE ROUTES</h1>
-          <p>&nbsp;</p>
-          <p>
+        <section id="alterRoutes" className={admissionStyles.sectionforSideNav}>
+          <p className={admissionStyles.sectiontextleft}>alternative routes</p>
+          <p className={admissionStyles.text}>
             Applicants who do not possess the minimum requirements for entry
             into a degree programme may be eligible for admission via the
             following:
           </p>
-          <p>&nbsp;</p>
-          <p>
-            Mature applicants (25 years and over) with relevant experience, who
-            do not possess the minimum entry requirements, may be considered on
-            the basis of experience and demonstrable competence.
-          </p>
-          <p>
-            COMPASS is designed to help students gain the qualifications needed
-            to access the degree programme of their choice at COSTAATT. The
-            duration of study in COMPASS depends on students' entry-level
-            competencies; performance on the placement tests in English,
-            mathematics and, where relevant, science; and the admission
-            requirements of the programme they wish to pursue.
-          </p>
-          <p>&nbsp;</p>
-          <p>
-            To qualify for the COMPASS programme, applicants MUST have completed
-            five years of secondary school and:
-          </p>
-          <p>&nbsp;</p>
-          <ul>
-            <li>Possess 3-4 CSEC (CXC)/GCE passes</li>
-            <li>
-              Possess 5 CSEC (CXC)/GCE passes without mathematics or English or
-            </li>
-            <li>
-              Be 25 years or older (mature student) with academic literacy
-              acquired through work or life experiences.
-            </li>
-          </ul>
-          <p>&nbsp;</p>
-          <p>
-            Upon successful completion of the COMPASS programme, students may
-            apply to the college programme for which they would then have gained
-            the necessary entry requirements.
-          </p>
-          <p>&nbsp;</p>
-          <p>
-            Persons interested in pursuing the Nursing programme must be guided
-            by the registration requirements of the Nursing Council of Trinidad
-            and Tobago.
-          </p>
-        </section>
-        <br />
-        <section>
-          <h1>DEADLINES</h1>
-          <p>&nbsp;</p>
-          <p>
-            It's important to submit your application, test scores, and related
-            materials as soon as possible — ideally, before the deadline. Your
-            application materials will be reviewed once all of them have been
-            received. Although deadlines vary by semester, here are some general
-            deadlines to keep in mind:
-          </p>
-          <p>&nbsp;</p>
-          <p>
-            <strong>
-              SEMESTER I - SEPTEMBER <br /> Applications normally accepted:
-            </strong>
-            April -August
-          </p>
-          <p>&nbsp;</p>
-          <p>
-            <strong>
-              SEMESTER II - FEBRUARY <br /> Applications normally accepted:
-            </strong>
-            October - January
-          </p>
-          <p>&nbsp;</p>
-          <div style={{ padding: "15px", background: "orange" }}>
-            <p>
-              <strong>
-                APPLICATION DEADLINE FOR SEPTEMBER 2023 (Semester I)
-              </strong>
-            </p>
-            <p>&nbsp;</p>
-            <p>
-              Early deadline: <strong>30th June 2023 </strong>
-              <br /> Regular deadline (all programmes -
-              <strong>*final deadline for Nursing applications</strong>) 14th
-              July 2023 <br /> Late deadline (all programmes
-              <strong> EXCEPT NURSING</strong>) - 11th August, 2023
-            </p>
+          <div className={admissionStyles.entryreq}>
+            <ul className={admissionStyles.list}>
+              <li className={admissionStyles.items}>
+                Mature applicants (25 years and over) with relevant experience,
+                who do not possess the minimum entry requirements, may be
+                considered on the basis of experience and demonstrable
+                competence.
+              </li>
+              <li className={admissionStyles.items}>
+                COMPASS is designed to help students gain the qualifications
+                needed to access the degree programme of their choice at
+                COSTAATT. The duration of study in COMPASS depends on students'
+                entry-level competencies; performance on the placement tests in
+                English, mathematics and, where relevant, science; and the
+                admission requirements of the programme they wish to pursue.
+              </li>
+              <ul className={admissionStyles.list}>
+                <p className={admissionStyles.text}>
+                  To qualify for the COMPASS programme, applicants MUST have
+                  completed five years of secondary school and:
+                </p>
+                <li className={admissionStyles.items}>
+                  Possess 3-4 CSEC (CXC)/GCE passes
+                </li>
+
+                <li className={admissionStyles.items}>
+                  {" "}
+                  Possess 5 CSEC (CXC)/GCE passes without mathematics or English
+                  or
+                </li>
+                <li className={admissionStyles.items}>
+                  {" "}
+                  Be 25 years or older (mature student) with academic literacy
+                  acquired through work or life experiences.
+                </li>
+              </ul>
+                
+               {/* style differntly  */}
+              <p className={admissionStyles.text}>
+                {" "}
+                Upon successful completion of the COMPASS programme, students
+                may apply to the college programme for which they would then
+                have gained the necessary entry requirements.
+              </p>
+
+              <p className={admissionStyles.text}>
+                Persons interested in pursuing the Nursing programme must be
+                guided by the registration requirements of the Nursing Council
+                of Trinidad and Tobago.
+              </p>
+            </ul> {/*close of first list  */}
           </div>
-          <p>&nbsp;</p>
-          <p>
-            <strong>DISCLAIMER:</strong> COSTAATT reserves the right to cancel
-            or modify any programme advertised.
-          </p>
         </section>
-        <section></section>
-        {/* </div> */}{" "}
+
       </SideNavOnlyLayout>
     </>
   );
