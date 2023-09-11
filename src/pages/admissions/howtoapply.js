@@ -4,6 +4,7 @@ import React from "react";
 import Head from "next/head";
 import ButtonLink from "@/components/HomeComponents/ButtonLink";
 
+import standardStyles from '@/styles/main.module.scss'
 import AdmisStyles from "@/styles/Admissions.module.scss";
 import telephone from "../../../public/images/admissions/telephone.svg";
 import email from "../../../public/images/admissions/email.svg";
@@ -25,6 +26,7 @@ import increase from "../../../public/images/admissions/increase.png";
 import ProgStyles from "../../styles/Programmes.module.scss";
 import admissionStyles from"@/styles/Admissions.module.scss"
 import AddCircleTwoToneIcon from"@mui/icons-material/AddCircleOutlineTwoTone"
+
 
 
 const howtoapply = () => {
@@ -64,8 +66,8 @@ const CustomHome = () => {
             What impact will COSTAATT have on you{" "}
           </p>
           <div className={admissionStyles.iconsection}>
-            <div className={admissionStyles.threeColGridCon}>
-              <div className={admissionStyles.threeColGrid}>
+            <div className={standardStyles.row}>
+              <div className={standardStyles.col1of3}>
                 {" "}
                 <Image
                   className={admissionStyles.icon}
@@ -75,7 +77,7 @@ const CustomHome = () => {
                 <p className={admissionStyles.iconfontemp}> Marketabilty </p>
               </div>
 
-              <div className={admissionStyles.threeColGrid}>
+              <div className={standardStyles.col1of3}>
                 {" "}
                 <Image
                   className={admissionStyles.icon}
@@ -84,7 +86,7 @@ const CustomHome = () => {
                 />
                 <p className={admissionStyles.iconfontemp}>Earnings</p>
               </div>
-              <div className={admissionStyles.threeColGrid}>
+              <div className={standardStyles.pink}>
                 <Image
                   className={admissionStyles.icon}
                   src={increase}
@@ -96,7 +98,7 @@ const CustomHome = () => {
           </div>
         </section>
         <section id="firststeps" className={AdmisStyles.sectionVisit}>
-          <p className={AdmisStyles.sectiontextleft}>First Steps </p>
+          <h2 className={standardStyles.headingSecondary}>Before You Apply </h2>
           <div className={AdmisStyles.steps}>
             <div className={AdmisStyles.stepstext}>
               <span className={AdmisStyles.stepsnum}> 1. </span>{" "}
@@ -116,8 +118,9 @@ const CustomHome = () => {
                 className={AdmisStyles.anchortag}
               >
                 {" "}
-                 Explore the requirements
-              </Link>{" "}and whether you possess them{" "}
+                Explore the requirements
+              </Link>{" "}
+              and whether you possess them{" "}
             </div>
 
             <div className={AdmisStyles.stepstext}>
@@ -224,11 +227,24 @@ const CustomHome = () => {
           Start Application send to *** How to Apply
         </section>
         <section id="timeline" className={AdmisStyles.sectionTimeline}>
-          <p className={AdmisStyles.sectiontextleft}>When to Apply </p>
+          <h2 className={AdmisStyles.sectiontextleft}>When to Apply </h2>
         </section>
         <section id="chooseyourpath">
           {" "}
-          <p className={AdmisStyles.sectiontextleft}>Choose Your Path </p>
+          <h2 className={AdmisStyles.sectiontextleft}>Choose Your Path </h2>
+          {/* <div className={threeColGridCon}>
+            <div className={threeColGrid}>
+              <div className={AdmisStyles.choosepath}>
+                
+                   </div>
+              <Image>
+
+              </Image>
+              <p></p>
+            </div>
+            <div className={threeColGrid}></div>
+            <div className={threeColGrid}></div>
+          </div> */}
         </section>
         <section id="require" className={AdmisStyles.sectionRequired}>
           <p className={AdmisStyles.sectiontextleft}>
@@ -514,48 +530,6 @@ const CustomHome = () => {
               path="/admissions/howtoregister"
             />
             <Divider />
-          </div>
-        </section>
-        <section id="contact" className={AdmisStyles.sectionContact}>
-          {" "}
-          <p className={AdmisStyles.sectiontextleft}> Contact Admissions</p>
-          <div className={AdmisStyles.threeColGridCon}>
-            <div className={AdmisStyles.threeColGrid}>
-              <Image
-                className={AdmisStyles.icon}
-                src={telephone}
-                alt="telephone icon"
-              />
-              <p className={AdmisStyles.icontext}> 625-5030 ext 5900</p>
-            </div>
-            <div className={AdmisStyles.threeColGrid}>
-              <Image
-                className={AdmisStyles.icon}
-                src={email}
-                alt="email icon"
-              />
-              <p className={AdmisStyles.icontext}>
-                {" "}
-                <a href="mailto:applications@costaatt.edu.tt">
-                  {" "}
-                  applications@costaatt.edu.tt{" "}
-                </a>{" "}
-              </p>
-            </div>
-            <div className={AdmisStyles.threeColGrid}>
-              <Image
-                className={AdmisStyles.icon}
-                src={counsellor}
-                alt="contact icon"
-              />
-              <p className={AdmisStyles.icontext}>
-                {" "}
-                <Link href="admissioncounsellors">
-                  {" "}
-                  Admissions Counsellor Directory{" "}
-                </Link>
-              </p>
-            </div>
           </div>
         </section>
         <section id="contact" className={AdmisStyles.sectionContact}>

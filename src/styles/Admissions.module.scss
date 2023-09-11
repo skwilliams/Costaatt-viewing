@@ -1,4 +1,4 @@
-@import "./variable";
+@import "./abstracts/variables";
 
 //Styles used throughout Admissions pages
 
@@ -49,7 +49,7 @@
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: 0.4rem;
-  font-family: "Roboto", serif;
+  // font-family: "Roboto", serif;
   text-transform: capitalize;
   z-index: 2;
 }
@@ -898,4 +898,11 @@ margin:0 auto;
 
   }
   
+
+
 }
+
+
+//How to apply page
+
+

@@ -10,9 +10,7 @@ const HeaderNoImage = ({caption}) => {
   return (
     <>
       <div className={style.pageheader}>
-       
-            
-       <p className={style.pageheadertext}>{caption}</p>
+       <h1 className={style.pageheadertext}>{caption}</h1>
       </div>
     </>
   );

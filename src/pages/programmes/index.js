@@ -6,7 +6,7 @@ import Link from 'next/link';
 import HeadImage from '@/components/PageComponents/HeadImage';
 import imgwhy1 from '../../../images/Programmes/acttlogo.jpg';
 import headImg from '../../../images/Programmes/tester2.jpg';
-import Layout from '@/components/Layout';
+// import Layout from '@/components/Layout';
 import studyitems from '../../components/PageComponents/AreasStudyItems';
 import pageWithSideNavClasses from '../../styles/PageWithSideNav.module.scss';
 import SideNavOnlyLayout from '@/components/Layouts/SideNavOnly_NoTopOrDropdown';
@@ -17,6 +17,8 @@ import creditTransfer from "../../../public/images/schools/creditTransfers.png"
 import collegeCore from "../../../public/images/schools/collegeCore.png"
 import affiliations from "../../../public/images/schools/affiliationsMou.png"
 import accredited from "../../../public/images/schools/accreditedprog.png"
+import standardStyles from "@/styles/main.module.scss"
+
 const progoverview = () => {
   console.log(studyitems);
   return (
@@ -26,14 +28,14 @@ const progoverview = () => {
       </Head>
 
       <HeadImage imagetext="Programmes" mainimage={headImg} />
-      <SideNavOnlyLayout>
+      
         <p className={ProgStyles.headingprimarysub}>
           COSTAATT/Programmes/Overview{' '}
         </p>
 
         <section id="overview" className={ProgStyles.sectionoverview}>
           <div className={ProgStyles.umargintopsmall}>
-            <p className={ProgStyles.headingprimary}> Overview of Programmes</p>
+            <h2 className={standardStyles.headingSecondary}> Overview of Programmes</h2>
             <p className={ProgStyles.text}>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo
               sed quae repellat blanditiis corrupti rerum quia voluptatem
@@ -418,7 +420,7 @@ const progoverview = () => {
             <p />
           </div>
         </section>
-      </SideNavOnlyLayout>
+      
     </>
   );
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import standardStyles from "@/styles/main.module.scss"
 import admissionStyles from '../../styles/Admissions.module.scss';
 import Image from "next/image";
 import ProgStyles from "../../styles/Programmes.module.scss";
@@ -34,30 +35,31 @@ const requirements = () => {
         {" "}
         <title> Admissions Requirements</title>
       </Head>
-      <HeaderNoImage caption="Requirements" />
+      {/* <h1 className={typography.headingPrimarysub}> Requirements</h1> */}
+      {/* <HeaderNoImage caption="Requirements" /> */}
       <p className={admissionStyles.toplinksnav}>
         <Link href="/"> COSTAATT/ </Link>
         <Link href="/admissions">Admissions/</Link>
         <Link href="/admissions/requirements">Requirements</Link>
       </p>
       <SideNavOnlyLayout>
-        <section id="minreq" className={admissionStyles.sectionforSideNav}>
-          <p className={admissionStyles.sectiontextleftfirst}>
+        <section id="minreq" className={standardStyles.sectionfeatures}>
+          <h2 className={standardStyles.headingSecondary}>
             Minimum Requirements
-          </p>
+          </h2>
           <br />
-          <div className={admissionStyles.entryreq}>
-            <ul className={admissionStyles.list}>
-              <li className={admissionStyles.items}>
+          <div className={standardStyles.bullets}>
+            <ul className={standardStyles.list}>
+              <li className={standardStyles.items}>
                 Five (5) CSEC (CXC)/GCE O&#39;Level subjects, inclusive of
                 English A and Mathematics,
-                <p className={CourseStyle.footnote}>
+                <p className={standardStyles.footnote}>
                   Grades 1,2,3* or A, B, C. *Grade 3 accepted if attained in
                   June 1998 and beyond
                 </p>
               </li>
 
-              <li className={admissionStyles.items}>
+              <li className={standardStyles.items}>
                 Applicants who possess CAPE or A&#39;Level qualiﬁcations may be
                 considered for advanced standing (the award of credits towards
                 your degree programme). <Link href="">Find out more.</Link>
@@ -66,7 +68,7 @@ const requirements = () => {
           </div>
           <div></div>
         </section>
-        <section id="minsSchreq" className={admissionStyles.sectionforSideNav}>
+        <section id="minsSchreq" className={standardStyles.sectionbook}>
           <p className={admissionStyles.sectiontextleft}>
             School Specific Requirements
           </p>
@@ -301,8 +303,8 @@ const requirements = () => {
                   acquired through work or life experiences.
                 </li>
               </ul>
-                
-               {/* style differntly  */}
+
+              {/* style differntly  */}
               <p className={admissionStyles.text}>
                 {" "}
                 Upon successful completion of the COMPASS programme, students
@@ -315,14 +317,17 @@ const requirements = () => {
                 guided by the registration requirements of the Nursing Council
                 of Trinidad and Tobago.
               </p>
-            </ul> {/*close of first list  */}
+            </ul>{" "}
+            {/*close of first list  */}
           </div>
         </section>
-        <section id='contact' className={admissionStyles.sectionforSideNav}>
-        <p className={admissionStyles.sectiontextleft}> Contact Admissions </p>
-        <ContactAdmissions/>
+        <section id="contact" className={admissionStyles.sectionforSideNav}>
+          <p className={admissionStyles.sectiontextleft}>
+            {" "}
+            Contact Admissions{" "}
+          </p>
+          <ContactAdmissions />
         </section>
-
       </SideNavOnlyLayout>
     </>
   );
