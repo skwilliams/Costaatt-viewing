@@ -1,5 +1,5 @@
-import CourseStyle from "../../styles/Course.module.scss";
-import Image from "next/image";
+import CourseStyle from '../../styles/Course.module.scss';
+import Image from 'next/image';
 
 const ProgOfferingDetails = ({ txt, detailIcon, data }) => {
   return (
@@ -11,8 +11,8 @@ const ProgOfferingDetails = ({ txt, detailIcon, data }) => {
       />
       {data.map((value) => {
         return (
-          <p key="value" className={CourseStyle.iconfont}>
-            {" "}
+          <p key={value} className={CourseStyle.iconfont}>
+            {' '}
             &#10004; {value}
           </p>
         );

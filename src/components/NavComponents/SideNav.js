@@ -16,22 +16,26 @@ const SideNav = ({ show }) => {
     <header style={{ visibility: show ? 'visible' : 'hidden' }}>
       <div className={navStyles.sideNavContainer}>
         <div className={navStyles.sideNav}>
-          {sectionTitles.map((section) => (
-            <div className={navStyles.sideNavElement} key={section}>
-              <Progressbar position={'down'} section={sections[section]} />
-              <RSLink
-                className={navStyles.rslinkSideNav}
-                activeClass={navStyles.activeSideNavSubsection}
-                to={sections[section]}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                {section}
-              </RSLink>
-            </div>
-          ))}
+          {sectionTitles.length > 0 ? (
+            sectionTitles.map((section) => (
+              <div className={navStyles.sideNavElement} key={section}>
+                <Progressbar position={'down'} section={sections[section]} />
+                <RSLink
+                  className={navStyles.rslinkSideNav}
+                  activeClass={navStyles.activeSideNavSubsection}
+                  to={sections[section]}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  {section}
+                </RSLink>
+              </div>
+            ))
+          ) : (
+            <div>PLEASE ADD SIDENAV ITEMS TO sideNavSections.js</div>
+          )}
         </div>
       </div>
     </header>

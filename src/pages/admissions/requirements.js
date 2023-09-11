@@ -1,8 +1,11 @@
 import React from 'react';
 import admissionStyles from '../../styles/Admissions.module.scss';
-// import Image from "next/image";
-import home5 from '../../../images/Links/home5.png';
-import TopHeader from '@/components/TopHeader';
+import Image from "next/image";
+import ProgStyles from "../../styles/Programmes.module.scss";
+import SideNavOnlyLayout from "@/components/Layouts/SideNavOnly_NoTopOrDropdown";
+import TopNavOnlyLayout from "@/components/Layouts/TopNavOnly_NoDropdown";
+
+import CourseStyle from "@/styles/Course.module.scss";
 import Link from 'next/link';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -10,7 +13,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Typography from '@mui/material/Typography';
 import { supportDocA, supportDocB } from './admissionsData';
-
+import Head from "next/head"
 import {
   TableContainer,
   Table,
@@ -19,141 +22,177 @@ import {
   TableRow,
   TableCell,
   Paper,
+  Divider,
 } from '@mui/material';
 import { Padding } from '@mui/icons-material';
+import HeaderNoImage from '@/components/PageComponents/HeaderNoImage';
 const requirements = () => {
   return (
     <>
-      <section className={admissionStyles.topHeader}>
-        <TopHeader image={home5} color="royalblue" text="Requirements" />
-      </section>
-      <div className={admissionStyles.applicationInstructions}>
-        <section>
-          <div>
-            <h1> MINIMUM ENTRY REQUIREMENTS</h1>
-            <br />
-            <p>
-              Five (5) CSEC (CXC)/GCE O&#39;Level subjects, inclusive of English
-              A and Mathematics, Grades 1,2,3* or A,B,C.
-            </p>
-            <p>&nbsp;</p>
-            <p>*Grade 3 accepted if attained in June 1998 or beyond</p>
-            <p>&nbsp;</p>
-            <p>
-              Applicants who possess CAPE or A&#39;Level qualiﬁcations may be
-              considered for advanced standing (the award of credits towards
-              your degree programme). <Link href="">Find out more.</Link>
-            </p>
-          </div>
-          <div>IMAGE TO THE RIGHT HERE</div>
-        </section>
-        <br />
-        <section>
-          <div>
-            <h1> MINIMUM ENTRY REQUIREMENTS</h1>
-            <p>&nbsp;</p>
-            <p>
-              <strong>
-                School of Nursing, Health and Environmental Sciences:
-              </strong>
-            </p>
-            <p>&nbsp;</p>
-            <p>
-              Applicants to the BSc and AAS in Occupational Safety and Health
-              programmes must be 16 years or older.
-            </p>
-            <p>&nbsp;</p>
-            <p>
-              Applicants to the Nursing programme must be between 17½ and 45
-              years old.
-            </p>
-            <p>&nbsp;</p>
-            <p>
-              Applicants to programmes in the School of Nursing, Health and
-              Environmental Sciences must possess one or more science subjects.
-              See list below for more details.
-            </p>
-            <p>&nbsp;</p>
-            <p>
-              To be admitted to the following programmes, short-listed
-              applicants must be successful at an admissions interview: Nursing,
-              Medical Laboratory Technology, Radiography, Environmental Health.
-            </p>
-            <p>&nbsp;</p>
-          </div>
-          <div>
-            <Accordion>
-              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                <Typography fontWeight="bold">
-                  SUBJECT SPECIFIC PROGRAMMES
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <p>
-                  <strong> Nursing</strong>
-                </p>
-                <p>at least one science subject</p>
-                <p>
-                  <strong>Radiography</strong>
-                </p>
-                <p>Biology and Physics</p>
-                <p>
-                  <strong>Medical Laboratory Technology</strong>
-                </p>
-                <p>Biology and/or Human and Social Biology and Chemistry</p>
-                <p>
-                  <strong>Environmental Health</strong>
-                </p>
-                <p>Biology or Human and Social Biology</p>
-                <p>
-                  <strong>Environmental Management</strong>
-                </p>
-                <p>Biology and Chemistry</p>
-                <p>
-                  <strong>Occupational Safety and Health</strong>
-                </p>
-                <p> Biology or Human and Social Biology</p>
-                <p>
-                  <strong>
-                    Water and Wastewater Management, Services and Technology
-                  </strong>
-                </p>
-                <p>Chemistry and Physics</p>
-                <p>
-                  <strong>Biology</strong>
-                </p>
-                <p>Biology and Chemistry</p>
-                <p>
-                  <strong>Biology Pre-Med</strong>
-                </p>
-                <p>Biology, Chemistry and Physics</p>
-                <p></p>
-              </AccordionDetails>
-            </Accordion>
-          </div>
+      <Head>
+        {" "}
+        <title> Admissions Requirements</title>
+      </Head>
+      <HeaderNoImage caption="Requirements" />
+      <p className={admissionStyles.toplinksnav}>
+        <Link href="/"> COSTAATT/ </Link>
+        <Link href="/admissions">Admissions/</Link>
+        <Link href="/admissions/requirements">Requirements</Link>
+      </p>
+      <SideNavOnlyLayout>
+        <section id="minreq" className={admissionStyles.sectionforSideNav}>
+          <h1 className={admissionStyles.sectiontextleft}>
+            Mimimum Requirements
+          </h1>
           <br />
-          <div>
-            <p>
-              <strong>School of Liberal Arts and Human Services:</strong>
+          <div className={admissionStyles.entryreq}>
+            <ul className={admissionStyles.list}>
+              <li className={admissionStyles.items}>
+                Five (5) CSEC (CXC)/GCE O&#39;Level subjects, inclusive of
+                English A and Mathematics,
+                <p className={CourseStyle.footnote}>
+                  Grades 1,2,3* or A, B, C. *Grade 3 accepted if attained in
+                  June 1998 and beyond
+                </p>
+              </li>
+
+              <li className={admissionStyles.items}>
+                Applicants who possess CAPE or A&#39;Level qualiﬁcations may be
+                considered for advanced standing (the award of credits towards
+                your degree programme). <Link href="">Find out more.</Link>
+              </li>
+            </ul>
+          </div>
+          <div></div>
+        </section>
+        <section id="minsSchreq" className={admissionStyles.sectionforSideNav}>
+          <p className={admissionStyles.sectiontextleft}>
+            School Specific Requirements
+          </p>
+
+          <p className={admissionStyles.schoolheading}>
+            School of Nursing, Health and Medial Technologies
+          </p>
+          <div className={admissionStyles.entryreq}>
+            <ul className={admissionStyles.list}>
+              <li className={admissionStyles.items}>
+                Applicants to the BSc and AAS in Occupational Safety and Health
+                programmes must be 16 years or older.
+              </li>
+
+              <li className={admissionStyles.items}>
+                Applicants to the Nursing programme must be between 17½ and 45
+                years old.
+              </li>
+
+              <li className={admissionStyles.items}>
+                Applicants to programmes in the School of Nursing, Health and
+                Environmental Sciences must possess one or more science
+                subjects. See list below for more details.
+              </li>
+              <Accordion sx={{ my: 2 }}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                  <Typography fontWeight="bold" fontSize={"1.15rem"}>
+                    Sciences Required for specific programmes
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <div className={admissionStyles.entryreq}>
+                    <ul className={admissionStyles.list}>
+                      <li className={admissionStyles.items}>
+                        <span>
+                          <strong> Nursing </strong>{" "}
+                        </span>{" "}
+                        : at least one science subject
+                      </li>
+                      <li className={admissionStyles.items}>
+                        <span>
+                          <strong>Radiography</strong>
+                        </span>{" "}
+                        : Biology and Physics
+                      </li>
+
+                      <li className={admissionStyles.items}>
+                        <span>
+                          {" "}
+                          <strong>Medical Laboratory Technology</strong>{" "}
+                        </span>
+                        : Biology and/or Human and Social Biology and Chemistry
+                      </li>
+
+                      <li className={admissionStyles.items}>
+                        <span>
+                          {" "}
+                          <strong>Environmental Health</strong>{" "}
+                        </span>
+                        : Biology or Human and Social Biology
+                      </li>
+
+                      <li className={admissionStyles.items}>
+                        <span>
+                          {" "}
+                          <strong>Environmental Management</strong>
+                        </span>
+                        : Biology and Chemistry
+                      </li>
+                      <li className={admissionStyles.items}>
+                        <span>
+                          {" "}
+                          <strong>Occupational Safety and Health</strong>
+                        </span>
+                        :Biology or Human and Social Biology
+                      </li>
+                      <li className={admissionStyles.items}>
+                        <span>
+                          {" "}
+                          <strong>Biology</strong>{" "}
+                        </span>
+                        - Biology and Chemistry
+                      </li>
+                      <li className={admissionStyles.items}>
+                        <span>
+                          <strong>Biology Pre-Med</strong>{" "}
+                        </span>
+                        - Biology, Chemistry and Physics
+                      </li>
+                    </ul>
+                  </div>
+                </AccordionDetails>
+              </Accordion>
+
+              <li className={admissionStyles.items}>
+                To be admitted to the following programmes, short-listed
+                applicants must be successful at an admissions interview:
+                Nursing, Medical Laboratory Technology, Radiography,
+                Environmental Health.
+              </li>
+            </ul>
+          </div>
+
+          <div className={admissionStyles.entryreq}>
+            <p className={admissionStyles.schoolheading}>
+              School of Liberal Arts, Education and Digital Humanities
             </p>
-            <p>
-              To be admitted to the music programme (bachelor's and associate
-              degree), short-listed applicants will be required to successfully
-              complete the audition process.
-            </p>
-            <p>&nbsp;</p>
-            <p>
-              To be admitted to the following programmes, short-listed
-              applicants must be successful at an admissions interview: BSW
-              Social Work, Early Childhood Care and Education and BSc Applied
-              Psychology.
-            </p>
+            <ul className={admissionStyles.list}>
+              <li className={admissionStyles.items}>
+                To be admitted to the music programme (bachelor's and associate
+                degree), short-listed applicants will be required to
+                successfully complete the audition process.
+              </li>
+
+              <li className={admissionStyles.items}>
+                To be admitted to the following programmes, short-listed
+                applicants must be successful at an admissions interview: BSW
+                Social Work, Early Childhood Care and Education and BSc Applied
+                Psychology.
+              </li>
+            </ul>
           </div>
           <br />
           <div>
             <TableContainer component={Paper}>
               <Table aria-label="simple table">
-                <TableHead sx={{ backgroundColor: 'royalblue' }}>
+                <TableHead sx={{ backgroundColor: "royalblue" }}>
                   <TableRow>
                     <TableCell>
                       Nationality - General Supporting Documents
@@ -179,7 +218,7 @@ const requirements = () => {
             </TableContainer>
             <TableContainer component={Paper}>
               <Table aria-label="simple table">
-                <TableHead sx={{ backgroundColor: 'royalblue' }}>
+                <TableHead sx={{ backgroundColor: "royalblue" }}>
                   <TableRow>
                     <TableCell>
                       Programme - Specific Suporting Documents
@@ -207,9 +246,74 @@ const requirements = () => {
             </TableContainer>
           </div>
         </section>
-        <br />
-        <br />
-        <section>
+        <section id="suppDocs" className={admissionStyles.sectionforSideNav}>
+          <p className={admissionStyles.sectiontextleft}>
+            Supporting Documents
+          </p>
+          <div>
+            <TableContainer component={Paper}>
+              <Table aria-label="simple table">
+                <TableHead sx={{ backgroundColor: "royalblue" }}>
+                  <TableRow>
+                    <TableCell>
+                      Nationality - General Supporting Documents
+                    </TableCell>
+                    <TableCell>Valid TT ID card or Passport</TableCell>
+                    <TableCell>Valid Passport</TableCell>
+                    <TableCell>Birth Certificate</TableCell>
+                    <TableCell>Academic Certificates</TableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {supportDocA.map((row) => (
+                    <TableRow key={row.Natiionality}>
+                      <TableCell>{row.Natiionality}</TableCell>
+                      <TableCell>{row.Valid_ID}</TableCell>
+                      <TableCell>{row.Valid_PassPort}</TableCell>
+                      <TableCell>{row.Birth_Certificate}</TableCell>
+                      <TableCell>{row.Academic_Certificate}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </TableContainer>
+          </div>
+        </section>
+        <section id="suppAddDocs" className={admissionStyles.sectionforSideNav}>
+          <p className={admissionStyles.sectiontextleft}>
+            Supporting Documents
+          </p>
+
+          <TableContainer component={Paper}>
+            <Table aria-label="simple table">
+              <TableHead sx={{ backgroundColor: "orange" }}>
+                <TableRow>
+                  <TableCell>
+                    Programme - Specific Suporting Documents
+                  </TableCell>
+                  <TableCell>
+                    Two Written Confidential Character References
+                  </TableCell>
+                  <TableCell>Police Certificate of Character</TableCell>
+                  <TableCell>Nursing Council Permit</TableCell>
+                  <TableCell>Personal Statement</TableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {supportDocB.map((row) => (
+                  <TableRow key={row.Programme}>
+                    <TableCell>{row.Programme}</TableCell>
+                    <TableCell>{row.References}</TableCell>
+                    <TableCell>{row.Police_Cert}</TableCell>
+                    <TableCell>{row.Council}</TableCell>
+                    <TableCell>{row.Statement}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </TableContainer>
+        </section>
+        <section id="alterRoutes" className={admissionStyles.sectionforSideNav}> 
           <h1>ALTERNATE ROUTES</h1>
           <p>&nbsp;</p>
           <p>
@@ -286,7 +390,7 @@ const requirements = () => {
             October - January
           </p>
           <p>&nbsp;</p>
-          <div style={{ padding: '15px', background: 'orange' }}>
+          <div style={{ padding: "15px", background: "orange" }}>
             <p>
               <strong>
                 APPLICATION DEADLINE FOR SEPTEMBER 2023 (Semester I)
@@ -308,8 +412,14 @@ const requirements = () => {
           </p>
         </section>
         <section></section>
-      </div>
+        {/* </div> */}{" "}
+      </SideNavOnlyLayout>
     </>
   );
+
+};
+
+requirements.getLayout = function getLayout(page) {
+  return <TopNavOnlyLayout> {page} </TopNavOnlyLayout>;
 };
 export default requirements;

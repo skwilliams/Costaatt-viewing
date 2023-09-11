@@ -11,6 +11,7 @@ import telephone from "../../../public/images/admissions/telephone.svg";
 import email from "../../../public/images/admissions/email.svg";
 import counsellor from "../../../public/images/admissions/contact.svg";
 import Link from "next/link";
+import ContactAdmissions from '@/components/PageComponents/ContactAdmissions'
 
 const admissioncounsellors = () => {
     return (
@@ -30,18 +31,18 @@ const admissioncounsellors = () => {
             {" "}
             <p className={AdmisStyles.sectiontextleft}>Meet the Team </p>
             <div className={AdmisStyles.twoColGridCon}>
-              <div className={AdmisStyles.twoColGridCol}>
+              <div className={AdmisStyles.twoColGrid}>
                 <Image
                   src={awaitingFacultyStaff}
-                  width="75px"
+                  width="4em"
                   alt="staff image"
                 />
                 <p className={AdmisStyles.emphasis}> Faculty name</p>
               </div>
-              <div className={AdmisStyles.twoColGridCol}>
+              <div className={AdmisStyles.twoColGrid}>
                 <Image
                   src={awaitingFacultyStaff}
-                  width="75px"
+                  width="75em"
                   alt="staff image"
                 />
                 <p className={AdmisStyles.emphasis}> Faculty name</p>
@@ -50,6 +51,10 @@ const admissioncounsellors = () => {
           </section>
           <section id="contact" className={AdmisStyles.sectionContactAdm}>
             <p className={AdmisStyles.sectiontextleft}> Contact Admissions</p>
+
+            <ContactAdmissions />
+
+            {/* <p className={AdmisStyles.sectiontextleft}> Contact Admissions</p>
             <div className={AdmisStyles.threeColGridCon}>
               <div className={AdmisStyles.threeColGrid}>
                 <Image
@@ -87,7 +92,7 @@ const admissioncounsellors = () => {
                   </Link>
                 </p>
               </div>
-            </div>
+            </div> */}
           </section>
         </SideNavOnlyLayout>
       </>

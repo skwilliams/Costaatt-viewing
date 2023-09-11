@@ -1,5 +1,3 @@
-import admissioncounsellors from "@/pages/admissions/admissioncounsellors";
-import newstudent from "@/pages/admissions/newstudent";
 
 export const sideNavSections = {
   home: {
@@ -46,41 +44,57 @@ export const sideNavSections = {
     "Graduates Speak": "gradSpeak",
     Curriculum: "curriculum",
     "Fess and Financial Aid": "feesfinancial",
-    "Requriements": "requirements",
+    Requriements: "requirements",
     "COSTAATT wants you": "applylink",
   },
-  howtopay:{
-    "Before you Pay" :"beforepay",
-    "Visit the Cashier":"visitcashier",
-    "Banner Online Payment":"banneronline",
-    "Personal Online Banking":"personalonline",
-    "Inter-Bank Transfer":"interbank",
-    "Direct Deposit":"directdeposit",
-    "After you Pay":"afterpay"
+  howtopay: {
+    "Before you Pay": "beforepay",
+    "Visit the Cashier": "visitcashier",
+    "Banner Online Payment": "banneronline",
+    "Personal Online Banking": "personalonline",
+    "Inter-Bank Transfer": "interbank",
+    "Direct Deposit": "directdeposit",
+    "After you Pay": "afterpay",
+  },
+  howtoapply: {
+    Welcome: "intro",
+    "First Steps": "firststeps",
+    "How to Apply": "howtoapply",
+    Timeline: "timeline",
+    Requirements: "require",
+    "Choose your path": "chooseyourpath",
+
+    Checklist: "checklist",
+
+    Contact: "contact",
+  },
+  requirements: {
+    "Minimum Requirements": "minreq",
+    "Additional School Requirements": "minsSchreq",
+    "General Supporting Documents": "suppDocs",
+    "Additional Programmes Documents": "suppAddDocs",
+    "Alternative Entry Routes":"alterRoutes"
 
   },
-  newstudent:{
-    "Welcome":"intro",
-    "Visits":"visits",
-    "How to Apply":"howtoapply",
-    "Timeline":"timeline",
-    "Choose your path":"chooseyourpath",
-    "Requirements":"require",
-    "Checklist":"checklist",
-    "Contact":"contact",
-    "Next Step":"nextstep"
+  developmentcoursesApp: {
+    Welcome: "intro",
+    "Explore ALL courses": "explore",
+    "Courses Being Offered": "currentofferings",
 
+    "How to Apply": "howtoapply",
+    Contact: "contact",
   },
-  admissioncounsellors:{
-    "admissions@costaatt.edu.tt":"contact",
-    "625-5030 ext 5900":"contact"
+  admissioncounsellors: {
+    "admissions@costaatt.edu.tt": "contact",
+    "625-5030 ext 5900": "contact",
   },
-  howtoregister:{
-    "Academic Advisement" :"advising",
-    "Registration":"register",
-    "Gate Application":"gate",
-    "Online Payment":"payment",
-    "Student Id":"studentid"
-  }
-
+  howtoregister: {
+    "Registration Checklist": "checklist",
+    "Academic Advisement": "advising",
+    Registration: "register",
+    "Gate Application": "gate",
+    "Online Payment": "payment",
+    "Student Id Card": "studentid",
+    "Additional Information": "addinfo",
+  },
 };

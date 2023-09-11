@@ -3,7 +3,11 @@ import React from 'react';
 const index = () => {
   return (
     <>
-      <div>Admissions Test</div>
+      
+      <section>Heelo</section>
+      <section></section>
+      <section></section>
+
     </>
   );
 };

@@ -912,7 +912,21 @@
         "shortName": "Skills",
         "contacts": [],
         "dept_code": "UPSK",
-        "programmes": []
+         "programmes": [
+          {
+            "prog_code": "",
+            "prog_shortname": "",
+            "prog_name": "",
+            "prog_level": "Associate",
+            "prog_del_mode": "",
+            "dept_code": "",
+            "prog_major_credits": 4,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": ""
+          }
+        ]
       },
       {
         "name": "CollegeStarTT",
@@ -928,7 +942,7 @@
             "prog_code": "",
             "prog_shortname": "",
             "prog_name": "",
-            "prog_level": "",
+            "prog_level": "Associate",
             "prog_del_mode": "",
             "dept_code": "",
             "prog_major_credits": 4,
@@ -948,7 +962,21 @@
         "shortName": "Translation",
         "contacts": [],
         "dept_code": "CFTI",
-        "programmes": []
+           "programmes": [
+          {
+            "prog_code": "",
+            "prog_shortname": "",
+            "prog_name": "",
+            "prog_level": "Associate",
+            "prog_del_mode": "",
+            "dept_code": "",
+            "prog_major_credits": 4,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": ""
+          }
+        ]
       }
     ]
   }

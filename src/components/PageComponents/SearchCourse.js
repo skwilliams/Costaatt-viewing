@@ -4,37 +4,44 @@ import navBarStyles from '../../styles/Nav.module.scss';
 import { BiSearch } from 'react-icons/bi';
 import SCHOOLDATA from '../../../data/schooldata.json';
 
-const SearchCourse = ({ handleSearchSubmit }) => {
+const SearchCourse = ({ handleSearchSubmit, DATA }) => {
   const [name, setName] = useState('');
   const [hints, setHints] = useState([]);
-  const indexedCourses = SCHOOLDATA.reduce((acc, school) => {
-    school.departments.map((dept) => {
-      if (dept.programmes) {
-        dept.programmes.map((prg) => {
-          const program = {
-            school: school.name,
-            schoolStump: school.nameStump,
-            department: dept.name,
-            department_image: dept.image,
-            ...prg,
-          };
-          acc.push(program);
-        });
-      }
-    });
+  const indexedCourses =
+    DATA ||
+    SCHOOLDATA.reduce((acc, school) => {
+      school.departments.map((dept) => {
+        if (dept.programmes) {
+          dept.programmes.map((prg) => {
+            const program = {
+              school: school.name,
+              schoolStump: school.nameStump,
+              department: dept.name,
+              department_image: dept.image,
+              ...prg,
+            };
+            acc.push(program);
+          });
+        }
+      });
 
-    return acc;
-  }, []);
+      return acc;
+    }, []);
 
   const handleChange = (event) => {
     const value = event.target.value.toLowerCase();
-    const hintVals = indexedCourses.filter((course) => {
-      const prgName = course.prog_name.toLowerCase();
-      return course.prog_name && prgName.includes(value);
-    });
+    const hintVals = DATA
+      ? DATA.filter((data) => {
+          console.log(data);
+          const course = data.courseTitle.toLowerCase();
+          return data.courseTitle && course.includes(value);
+        })
+      : indexedCourses.filter((course) => {
+          const prgName = course.prog_name.toLowerCase();
+          return course.prog_name && prgName.includes(value);
+        });
     setName(value);
     setHints(hintVals);
-    console.log(hints);
   };
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -64,12 +71,17 @@ const SearchCourse = ({ handleSearchSubmit }) => {
       </form>
 
       <div className={styles.searchHints}>
-        {hints.map((hint) => {
-          return (
-            <p onClick={() => handleLinkSubmit([hint])} key={hint.prog_name}>
-              {hint.prog_name}
-            </p>
-          );
+        {hints.map((hint, ind) => {
+          if (ind < 4) {
+            return (
+              <p
+                onClick={() => handleLinkSubmit([hint])}
+                key={hint.prog_name || hint.courseTitle}
+              >
+                {hint.prog_name || hint.courseTitle}
+              </p>
+            );
+          }
         })}
       </div>
     </div>

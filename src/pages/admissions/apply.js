@@ -28,6 +28,7 @@ import time from "../../../images/Programmes/time.svg";
 import mode from "../../../images/Programmes/mode.svg";
 import location from "../../../images/Programmes/location.svg";
 import calendar from "../../../images/Programmes/calendar.svg";
+import ContactAdmissions from '@/components/PageComponents/ContactAdmissions';
 
 
 
@@ -517,8 +518,10 @@ const apply = () => {
       <section id="paperapp" className={admissionStyles.sectionPaperApp}>
         <p className={ProgStyles.headingprimary}>Paper Based Application</p>
       </section>
-      <section id="contactadmin" className={admissionStyles.sectionContactAdm}>
-        <p className={ProgStyles.headingprimary}>Contact Admission</p>
+      <section id="contact" className={admissionStyles.sectionContactAdm}>
+        <p className={admissionStyles.sectiontext}> Contact Admissions</p>
+
+        <ContactAdmissions />
       </section>
     </>
   );
