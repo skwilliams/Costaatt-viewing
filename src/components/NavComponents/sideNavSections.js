@@ -73,8 +73,8 @@ export const sideNavSections = {
     "Additional School Requirements": "minsSchreq",
     "General Supporting Documents": "suppDocs",
     "Additional Programmes Documents": "suppAddDocs",
-    "Alternative Entry Routes":"alterRoutes"
-
+    "Alternative Entry Routes":"alterRoutes",
+    "Contact Admissions" :'contact'
   },
   developmentcoursesApp: {
     Welcome: "intro",

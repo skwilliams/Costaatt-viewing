@@ -26,6 +26,7 @@ import {
 } from '@mui/material';
 import { Padding } from '@mui/icons-material';
 import HeaderNoImage from '@/components/PageComponents/HeaderNoImage';
+import ContactAdmissions from '@/components/PageComponents/ContactAdmissions';
 const requirements = () => {
   return (
     <>
@@ -316,6 +317,10 @@ const requirements = () => {
               </p>
             </ul> {/*close of first list  */}
           </div>
+        </section>
+        <section id='contact' className={admissionStyles.sectionforSideNav}>
+        <p className={admissionStyles.sectiontextleft}> Contact Admissions </p>
+        <ContactAdmissions/>
         </section>
 
       </SideNavOnlyLayout>
