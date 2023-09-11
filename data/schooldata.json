@@ -285,20 +285,20 @@
     "dean": {
       "name": "Neil Sylvester",
       "image": "/images/schools/deanavatar.jpg",
-      "message": "As the dean of School of Liberal Arts, Education and Digital Humanities...",
+      "message": "Welcome to the School of Liberal Arts, Education, and Digital Humanities. I wish to commend you on your decision to pursue a programme of study in this School. It is a decision I am certain, you have not taken lightly. This decision would have been based on where you wish to see yourself in the not too distant future. We view our role as facilitators who will help you fulfill your dream. The School of Liberal Arts, Education, and Digital Humanities produces a diverse range of graduates with varying skills and competencies in the disciplines of education, mathematics, psychology, social work, sociology, criminal justice, and in general, graduates who can make great contributions towards enhancing the social and behavioural development of the nation. To achieve this objective, we constantly scan the environment to ensure that our programmes are innovative and relevant to the needs of our society. Our experience shows, the main challenge faced by students is navigating the tertiary level landscape. It is sometimes difficult balancing your academic and non-academic life and for this reason, COSTAATT has implemented academic advising, the objective being to deal with all the intricacies attached to the balancing act. I urge you to take advantage of the personalized academic advising opportunity. If fully embraced, your college experience could be a happy and rewarding one. Good luck to you as you begin this fascinating and exciting journey.",
       "email": "nsylvester@costaatt.edu.tt",
-      "phone": "868-625-5030 ext 2222"
+      "phone": "868-625-5030 ext 5454"
     },
-    "overview": "School of Liberal Arts, Education and Digital Humanities overview...",
+    "overview": "The School of Liberal Arts, Education, and Digital Humanities comprises three (3) departments:Education, Social and Behavioural Sciences, Criminal Justice, Human Security, and Legal Studies. These departments provide students with a range of academic services to meet a growing number of careers and opportunities locally, regionally, and globally.",
     "departments": [
       {
         "name": "Education",
         "headImage": "/images/schools/departments/EDUCheader.png",
         "image": "/images/schools/departments/EDUCsmall.png",
-        "summary": "From language experts and mathematics professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
+        "summary": "The Department of Education is dedicated to ensuring quality education for all individuals, from early childhood through adulthood. Our mission is to promote educational excellence and equity, preparing students to be successful in a global society.",
         "coreValues": [],
         "shortName": "Education",
-        "contacts": [],
+        "contacts": ["lhospedales","jmoses"],
         "dept_code": "EDUC",
         "programmes": [
           {
@@ -346,10 +346,10 @@
         "name": "Criminal Justice, Human Security and Legal Studies",
         "headImage": "/images/schools/departments/CRIMheader.png",
         "image": "/images/schools/departments/CRIMsmall.png",
-        "summary": "From protective service professionals, paralegal professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
+        "summary": "The Department of Criminal Justice, Human Security, and Legal Studies is a multidisciplinary department that offers students a comprehensive education in the areas of crime, law, and society. The Department offers a variety of courses that cover criminological and victimological theories, criminal justice and law.",
         "coreValues": [],
         "shortName": "Criminal Justice",
-        "contacts": [],
+        "contacts": ["rlovelace"],
         "dept_code": "CRIM",
         "programmes": [
           {
@@ -398,10 +398,10 @@
         "name": "Social and Behavioural Sciences",
         "headImage": "/images/schools/departments/SABSheader.png",
         "image": "/images/schools/departments/SABSsmall.png",
-        "summary": "From Social workers, Therapists and Counselling professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
+        "summary": "Have you always been curious about the social world, the human brain function and understanding human development? Are you interested in promoting social change, and understanding how and why humans interact with their environment? Is your life goal empowering people and communities and working closely with varying individuals and groups? The Department of Social and Behavioural Sciences is for you! ",
         "coreValues": [],
         "shortName": "Social and Behavioural Sciences",
-        "contacts": [],
+        "contacts": ["shazelwood"],
         "dept_code": "SABS",
         "programmes": [
           {
@@ -476,12 +476,78 @@
         "name": "Health and Medical Science Technologies",
         "headImage": "/images/schools/departments/HMSTheader.png",
         "image": "/images/schools/departments/department without labels/Artboard 1.png",
-        "summary": "Health and Medical Science Technologies...",
+        "summary": "The Department of Health and Medical Technologies (HMT) is committed to producing graduates who are competent, entry-level, allied healthcare professionals in radiography, medical laboratory technology, pharmacy assisting, phlebotomy and sonography for midwives. These programmes are delivered by way of didactic, practical and internship or practicum courses primarily through competency-based teaching and learning strategies.",
         "shortName": "HMST",
         "coreValues": [],
-        "contacts": [],
+        "contacts": ["esookdeo", "mbahamad"],
         "dept_code": "HMST",
-        "programmes": []
+        "programmes": [
+          {
+            "prog_code": "CERT_PHAR",
+            "prog_shortname": "certPharm",
+            "prog_name": "Certificate in Pharmacy Assisting",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "HMST",
+            "prog_major_credits": 21,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "Our Certificate in Pharmacy Assisting prepares students to work as pharmacy assistants under the supervision of registered pharmacists. At the end of this programme, students will (1) fill prescriptions (under supervision) and manage inventory; (2) develop techniques in compounding for a variety of formulations; (3) adhere to best practices in pharmacy quality assurance and regulatory requirements; (4) maintain and operate a pharmacy, ensure safety are carefully observed; (5) conduct themselves professionally."
+          },
+                 {
+            "prog_code": "CERT_PHLE",
+            "prog_shortname": "certPhlebotomy",
+            "prog_name": "Certificate in Phlebotomy",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "HMST",
+            "prog_major_credits": 75,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 15,
+            "prog_supp_credits": 0,
+            "prog_description": "The Bachelor of Arts degree in Mass Communication is designed to create synergies among the various disciplines that comprise the field of mass communication, such as media studies, public relations and advertising. Students acquire an understanding of current communication theories and develop critical thinking, and analytical and research skills. Additionally, much needed practical experience is gained via internships in the industry."
+          },
+          {
+            "prog_code": "MDLT_AAS",
+            "prog_shortname": "aasMlt",
+            "prog_name": "Associate of Applied Science in Medical Laboratory Technology",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "HMST",
+            "prog_major_credits": 75,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 15,
+            "prog_supp_credits": 0,
+            "prog_description": "The Bachelor of Arts degree in Mass Communication is designed to create synergies among the various disciplines that comprise the field of mass communication, such as media studies, public relations and advertising. Students acquire an understanding of current communication theories and develop critical thinking, and analytical and research skills. Additionally, much needed practical experience is gained via internships in the industry."
+          },
+          {
+            "prog_code": "RADIO_BSc",
+            "prog_shortname": "bsRadiography",
+            "prog_name": "Bachelor of Science in Radiography",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "HMST",
+            "prog_major_credits": 75,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 15,
+            "prog_supp_credits": 0,
+            "prog_description": "The Bachelor of Arts degree in Mass Communication is designed to create synergies among the various disciplines that comprise the field of mass communication, such as media studies, public relations and advertising. Students acquire an understanding of current communication theories and develop critical thinking, and analytical and research skills. Additionally, much needed practical experience is gained via internships in the industry."
+          },
+          {
+            "prog_code": "MDLT_BSc",
+            "prog_shortname": "baMassComm",
+            "prog_name": "Bachelor of Science in Medical Laboratory Technology",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 75,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 15,
+            "prog_supp_credits": 0,
+            "prog_description": "The Bachelor of Arts degree in Mass Communication is designed to create synergies among the various disciplines that comprise the field of mass communication, such as media studies, public relations and advertising. Students acquire an understanding of current communication theories and develop critical thinking, and analytical and research skills. Additionally, much needed practical experience is gained via internships in the industry."
+          }
+        ]
       }
     ]
   },
@@ -544,7 +610,7 @@
         "summary": "The Department of Creative Industries and Culture offers degrees, diplomas and certificates in music, performing arts, film and video production, literature, creative writing, history, heritage and archival studies.",
         "coreValues": [],
         "shortName": "Arts, Music and Culture",
-        "contacts": [],
+        "contacts": ["alezama"],
         "dept_code": "CIAC",
         "programmes": [
           {
@@ -621,7 +687,7 @@
         "summary": "The Department of Digital Media and Communication offers degrees, diplomas and certificates in mass communication, graphic design, advertising and promotions, Spanish, Latin American Studies, photography, journalism and public relations.",
         "coreValues": [],
         "shortName": "Digital Media and Communication",
-        "contacts": [],
+        "contacts": ["jspringer"],
         "dept_code": "DMAC",
         "programmes": [
           {
