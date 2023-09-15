@@ -27,7 +27,7 @@ const EventsRow = ({ label, events, schoolcolor }) => {
         })}
       </div>
       <div className={ProgStyles.goto}>
-        <Link className={ProgStyles.goto} href="#">
+        <Link className={ProgStyles.goto} href="/events">
           {" "}
           View More..
         </Link>

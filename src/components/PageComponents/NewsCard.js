@@ -40,7 +40,7 @@ export default function NewsCard({
       </CardContent>
       <CardActions>
         <Button size="small">Share</Button>
-        <Button href={link} size="small">
+        <Button href={`/news/${link}`} size="small">
           Learn More
         </Button>
       </CardActions>

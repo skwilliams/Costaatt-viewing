@@ -9,7 +9,7 @@ import Image from 'next/image';
 import Head from 'next/head';
 import HeadImage from '@/components/PageComponents/HeadImage';
 import headImg from '../../../../images/Programmes/tester2.jpg';
-
+import standardStyles from "@/styles/main.module.scss";
 const schools = () => {
   return (
     <>

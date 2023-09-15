@@ -17,7 +17,7 @@
       {
         "name": "Management and Digital Entrepreneurship",
         "headImage": "/images/schools/departments/MGDEheader.png",
-        "image": "/images/schools/busIT.png",
+        "image": "/images/schools/departments/MGDEsmall.png",
         "summary": "From entrepreneurs and business professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
         "coreValues": [
           "Integrity",
@@ -32,6 +32,7 @@
         "programmes": [
           {
             "prog_code": "ACCT_BA",
+            "prog_shortname": "baAccounting",
             "prog_name": "BA Accounting",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -44,6 +45,7 @@
           },
           {
             "prog_code": "BSAD_AAS",
+            "prog_shortname": "aasBusAdmin",
             "prog_name": "AAS  Business Administration",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -57,6 +59,7 @@
 
           {
             "prog_code": "CERT_SMGT",
+            "prog_shortname": "certSupMgmt",
             "prog_name": "Certificate in Supervisory Management ",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -69,6 +72,7 @@
           },
           {
             "prog_code": "DIPL_SMGT",
+            "prog_shortname": "dipSupMgmt",
             "prog_name": "Diploma in Supervisory Management ",
             "prog_level": "Diploma",
             "prog_del_mode": "Blended",
@@ -81,6 +85,7 @@
           },
           {
             "prog_code": "ENTP_BBA",
+            "prog_shortname": "baMgmtEntrep",
             "prog_name": "BBA Management and Entrepreneurship",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -93,6 +98,7 @@
           },
           {
             "prog_code": "HURM_BBA",
+            "prog_shortname": "bbaHRMgmt",
             "prog_name": "BBA Human Resource Management ",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -105,6 +111,7 @@
           },
           {
             "prog_code": "MKTG_BBA",
+            "prog_shortname": "bbaMarketing",
             "prog_name": "BBA Marketing",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -120,7 +127,7 @@
       {
         "name": "ICTs and Digital Technologies",
         "headImage": "/images/schools/departments/ICTDheader.png",
-        "image": "/images/schools/departments/it.png",
+        "image": "/images/schools/departments/ICTDsmall.png",
         "mission": "The department of ICT's and Digital Technologies is the hub were technologies meet. It's an infusion of Library Science and Technology. If you desire to be exposed to technology that runs through the viens of the world, you have come to the right place. You can specialize in Databases,Networking, Library Science and Web Development. You will be exposed to the best and latest technologies all while learning the building blocks that makes up Information and Technology.",
         "summary": "If you are interested in Web Development (Internet Technologies), Information Technology, Networking, Databases, Information Systems, or Library Science then the programmes offered by the Department of Information Science and Technology are tailor-made for you. ",
         "coreValues": [
@@ -138,6 +145,7 @@
         "programmes": [
           {
             "prog_code": "CERT_WEB",
+            "prog_shortname": "certWebDev",
             "prog_name": "Diploma in IT - Web Development",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -150,6 +158,7 @@
           },
           {
             "prog_code": "CERT_CCNA",
+            "prog_shortname": "certCCNA",
             "prog_name": "Certificate in CISCO-CCNA",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -162,6 +171,7 @@
           },
           {
             "prog_code": "CERT_RECM",
+            "prog_shortname": "certRecMgmt",
             "prog_name": "Certificate in Records Management",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -174,6 +184,7 @@
           },
           {
             "prog_code": "ILSC_BS",
+            "prog_shortname": "bscLIS",
             "prog_name": "BSc Library and Information Science ",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -186,6 +197,7 @@
           },
           {
             "prog_code": "ITGN_AAS",
+            "prog_shortname": "aasITGen",
             "prog_name": "AAS Information Technology - General",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -198,6 +210,7 @@
           },
           {
             "prog_code": "ITWEB_AAS",
+            "prog_shortname": "aasWebDev",
             "prog_name": "AAS Information Technology - Web Development",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -210,6 +223,7 @@
           },
           {
             "prog_code": "ITGN_BS",
+            "prog_shortname": "bscITGen",
             "prog_name": "BSc Information Technology - General",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -222,6 +236,7 @@
           },
           {
             "prog_code": "ITWEB_BS",
+            "prog_shortname": "bscWebDev",
             "prog_name": "BSc Information Technology - Web Development",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -234,6 +249,7 @@
           },
           {
             "prog_code": "ITNT_BS",
+            "prog_shortname": "bscITNetworking",
             "prog_name": "BSc IT - Networking",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -246,6 +262,7 @@
           },
           {
             "prog_code": "LBIS_AAS",
+            "prog_shortname": "aasLIS",
             "prog_name": "AAS Library and Information Studies",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -268,24 +285,25 @@
     "dean": {
       "name": "Neil Sylvester",
       "image": "/images/schools/deanavatar.jpg",
-      "message": "As the dean of School of Liberal Arts, Education and Digital Humanities...",
+      "message": "Welcome to the School of Liberal Arts, Education, and Digital Humanities. I wish to commend you on your decision to pursue a programme of study in this School. It is a decision I am certain, you have not taken lightly. This decision would have been based on where you wish to see yourself in the not too distant future. We view our role as facilitators who will help you fulfill your dream. The School of Liberal Arts, Education, and Digital Humanities produces a diverse range of graduates with varying skills and competencies in the disciplines of education, mathematics, psychology, social work, sociology, criminal justice, and in general, graduates who can make great contributions towards enhancing the social and behavioural development of the nation. To achieve this objective, we constantly scan the environment to ensure that our programmes are innovative and relevant to the needs of our society. Our experience shows, the main challenge faced by students is navigating the tertiary level landscape. It is sometimes difficult balancing your academic and non-academic life and for this reason, COSTAATT has implemented academic advising, the objective being to deal with all the intricacies attached to the balancing act. I urge you to take advantage of the personalized academic advising opportunity. If fully embraced, your college experience could be a happy and rewarding one. Good luck to you as you begin this fascinating and exciting journey.",
       "email": "nsylvester@costaatt.edu.tt",
-      "phone": "868-625-5030 ext 2222"
+      "phone": "868-625-5030 ext 5454"
     },
-    "overview": "School of Liberal Arts, Education and Digital Humanities overview...",
+    "overview": "The School of Liberal Arts, Education, and Digital Humanities comprises three (3) departments:Education, Social and Behavioural Sciences, Criminal Justice, Human Security, and Legal Studies. These departments provide students with a range of academic services to meet a growing number of careers and opportunities locally, regionally, and globally.",
     "departments": [
       {
         "name": "Education",
         "headImage": "/images/schools/departments/EDUCheader.png",
-        "image": "/images/schools/liberal.png",
-        "summary": "From language experts and mathematics professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
+        "image": "/images/schools/departments/EDUCsmall.png",
+        "summary": "The Department of Education is dedicated to ensuring quality education for all individuals, from early childhood through adulthood. Our mission is to promote educational excellence and equity, preparing students to be successful in a global society.",
         "coreValues": [],
         "shortName": "Education",
-        "contacts": [],
+        "contacts": ["lhospedales","jmoses"],
         "dept_code": "EDUC",
         "programmes": [
           {
             "prog_code": "MATH_AS",
+            "prog_shortname": "aasMath",
             "prog_name": "AS Mathematics",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -298,6 +316,7 @@
           },
           {
             "prog_code": "ECCE_BA",
+            "prog_shortname": "baECCE",
             "prog_name": "BA in  Early Childhood Care and Education ",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -310,6 +329,7 @@
           },
           {
             "prog_code": "CERT_ECCE",
+            "prog_shortname": "certECCE",
             "prog_name": "Certificate in  Early Childhood Care and Education",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -325,15 +345,16 @@
       {
         "name": "Criminal Justice, Human Security and Legal Studies",
         "headImage": "/images/schools/departments/CRIMheader.png",
-        "image": "/images/schools/liberal.png",
-        "summary": "From protective service professionals, paralegal professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
+        "image": "/images/schools/departments/CRIMsmall.png",
+        "summary": "The Department of Criminal Justice, Human Security, and Legal Studies is a multidisciplinary department that offers students a comprehensive education in the areas of crime, law, and society. The Department offers a variety of courses that cover criminological and victimological theories, criminal justice and law.",
         "coreValues": [],
         "shortName": "Criminal Justice",
-        "contacts": [],
+        "contacts": ["rlovelace"],
         "dept_code": "CRIM",
         "programmes": [
           {
             "prog_code": "CRIM_BA",
+            "prog_shortname": "baCrimJustice",
             "prog_name": "BA - Criminal Justice  ",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -347,6 +368,7 @@
 
           {
             "prog_code": "CRIM_AAS",
+            "prog_shortname": "aasCrimJustice",
             "prog_name": "AAS in Criminal Justice",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -359,6 +381,7 @@
           },
           {
             "prog_code": "CERT_CRIM",
+            "prog_shortname": "certCrimJustice",
             "prog_name": "Certificate in Criminal Justice",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -373,28 +396,17 @@
       },
       {
         "name": "Social and Behavioural Sciences",
-        "headImage": "/images/schools/departments/istHeadSABSwl.png",
-        "image": "/images/schools/liberal.png",
-        "summary": "From Social workers, Therapists and Counselling professionals, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
+        "headImage": "/images/schools/departments/SABSheader.png",
+        "image": "/images/schools/departments/SABSsmall.png",
+        "summary": "Have you always been curious about the social world, the human brain function and understanding human development? Are you interested in promoting social change, and understanding how and why humans interact with their environment? Is your life goal empowering people and communities and working closely with varying individuals and groups? The Department of Social and Behavioural Sciences is for you! ",
         "coreValues": [],
         "shortName": "Social and Behavioural Sciences",
-        "contacts": [],
+        "contacts": ["shazelwood"],
         "dept_code": "SABS",
         "programmes": [
           {
             "prog_code": "SOWK_AAS",
-            "prog_name": "AAS Social Work",
-            "prog_level": "Associate",
-            "prog_del_mode": "Blended",
-            "dept_code": "SABS",
-            "prog_major_credits": 21,
-            "prog_core_credits": 21,
-            "prog_elect_credits": 3,
-            "prog_supp_credits": 15,
-            "prog_description": "This Associate in Applied Science degree in Social Work develops social work competencies which enables students to work immediately as paraprofessionals in the field. It also provides them with a solid foundation to pursue baccalaureate studies, if they so desire.  Graduates would have gained exposure to various service areas such as individual and group work, youth work, direct practice, community practice, and family and child issues."
-          },
-          {
-            "prog_code": "SOWK_AAS",
+            "prog_shortname": "aasSocialWork",
             "prog_name": "AAS Social Work",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -407,6 +419,7 @@
           },
           {
             "prog_code": "SOWK_BSW",
+            "prog_shortname": "bswSocialWork",
             "prog_name": "BSW Social Work ",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -420,6 +433,7 @@
 
           {
             "prog_code": "PSYC_AA",
+            "prog_shortname": "aaPsychology",
             "prog_name": "AA - Psychology",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -462,10 +476,78 @@
         "name": "Health and Medical Science Technologies",
         "headImage": "/images/schools/departments/HMSTheader.png",
         "image": "/images/schools/departments/department without labels/Artboard 1.png",
-        "summary": "Health and Medical Science Technologies...",
+        "summary": "The Department of Health and Medical Technologies (HMT) is committed to producing graduates who are competent, entry-level, allied healthcare professionals in radiography, medical laboratory technology, pharmacy assisting, phlebotomy and sonography for midwives. These programmes are delivered by way of didactic, practical and internship or practicum courses primarily through competency-based teaching and learning strategies.",
         "shortName": "HMST",
-        "contacts": [],
-        "dept_code": "HMST"
+        "coreValues": [],
+        "contacts": ["esookdeo", "mbahamad"],
+        "dept_code": "HMST",
+        "programmes": [
+          {
+            "prog_code": "CERT_PHAR",
+            "prog_shortname": "certPharm",
+            "prog_name": "Certificate in Pharmacy Assisting",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "HMST",
+            "prog_major_credits": 21,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": "Our Certificate in Pharmacy Assisting prepares students to work as pharmacy assistants under the supervision of registered pharmacists. At the end of this programme, students will (1) fill prescriptions (under supervision) and manage inventory; (2) develop techniques in compounding for a variety of formulations; (3) adhere to best practices in pharmacy quality assurance and regulatory requirements; (4) maintain and operate a pharmacy, ensure safety are carefully observed; (5) conduct themselves professionally."
+          },
+                 {
+            "prog_code": "CERT_PHLE",
+            "prog_shortname": "certPhlebotomy",
+            "prog_name": "Certificate in Phlebotomy",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "HMST",
+            "prog_major_credits": 75,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 15,
+            "prog_supp_credits": 0,
+            "prog_description": "The Bachelor of Arts degree in Mass Communication is designed to create synergies among the various disciplines that comprise the field of mass communication, such as media studies, public relations and advertising. Students acquire an understanding of current communication theories and develop critical thinking, and analytical and research skills. Additionally, much needed practical experience is gained via internships in the industry."
+          },
+          {
+            "prog_code": "MDLT_AAS",
+            "prog_shortname": "aasMlt",
+            "prog_name": "Associate of Applied Science in Medical Laboratory Technology",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "HMST",
+            "prog_major_credits": 75,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 15,
+            "prog_supp_credits": 0,
+            "prog_description": "The Bachelor of Arts degree in Mass Communication is designed to create synergies among the various disciplines that comprise the field of mass communication, such as media studies, public relations and advertising. Students acquire an understanding of current communication theories and develop critical thinking, and analytical and research skills. Additionally, much needed practical experience is gained via internships in the industry."
+          },
+          {
+            "prog_code": "RADIO_BSc",
+            "prog_shortname": "bsRadiography",
+            "prog_name": "Bachelor of Science in Radiography",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "HMST",
+            "prog_major_credits": 75,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 15,
+            "prog_supp_credits": 0,
+            "prog_description": "The Bachelor of Arts degree in Mass Communication is designed to create synergies among the various disciplines that comprise the field of mass communication, such as media studies, public relations and advertising. Students acquire an understanding of current communication theories and develop critical thinking, and analytical and research skills. Additionally, much needed practical experience is gained via internships in the industry."
+          },
+          {
+            "prog_code": "MDLT_BSc",
+            "prog_shortname": "baMassComm",
+            "prog_name": "Bachelor of Science in Medical Laboratory Technology",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "DMAC",
+            "prog_major_credits": 75,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 15,
+            "prog_supp_credits": 0,
+            "prog_description": "The Bachelor of Arts degree in Mass Communication is designed to create synergies among the various disciplines that comprise the field of mass communication, such as media studies, public relations and advertising. Students acquire an understanding of current communication theories and develop critical thinking, and analytical and research skills. Additionally, much needed practical experience is gained via internships in the industry."
+          }
+        ]
       }
     ]
   },
@@ -486,22 +568,24 @@
       {
         "name": "Environmental and Sustainability Studies",
         "headImage": "/images/schools/departments/ENVSheader.png",
-        "image": "/images/schools/ENVSsmall.png",
+        "image": "/images/schools/departments/ENVSsmall.png",
         "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
         "coreValues": [],
         "shortName": "Environmental and Sustainability Studies",
         "contacts": [],
-        "dept_code": "ENVS"
+        "dept_code": "ENVS",
+        "programmes": []
       },
       {
         "name": "Natural and Life Sciences",
         "headImage": "/images/schools/departments/NLSCheader.png",
-        "image": "/images/schools/NLSCsmall.png",
+        "image": "/images/schools/departments/NLSCsmall.png",
         "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
         "coreValues": [],
         "shortName": "Natural and Life Sciences",
         "contacts": [],
-        "dept_code": "NLSC"
+        "dept_code": "NLSC",
+        "programmes": []
       }
     ]
   },
@@ -526,11 +610,12 @@
         "summary": "The Department of Creative Industries and Culture offers degrees, diplomas and certificates in music, performing arts, film and video production, literature, creative writing, history, heritage and archival studies.",
         "coreValues": [],
         "shortName": "Arts, Music and Culture",
-        "contacts": [],
+        "contacts": ["alezama"],
         "dept_code": "CIAC",
         "programmes": [
           {
             "prog_code": "ELIT_AA",
+            "prog_shortname": "aaLitInEnglish",
             "prog_name": "AA Literatures in English",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -543,6 +628,7 @@
           },
           {
             "prog_code": "FAVP_AA",
+            "prog_shortname": "aaFilmVidProd",
             "prog_name": "AA Film and Video Production",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -555,6 +641,7 @@
           },
           {
             "prog_code": "PERM_AA",
+            "prog_shortname": "aaPerfArtMusic",
             "prog_name": "AA Performing Arts: Music",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -567,6 +654,7 @@
           },
           {
             "prog_code": "CERT_FVP",
+            "prog_shortname": "certFilmVidProd",
             "prog_name": "Certificate in Film and Video Production",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -579,6 +667,7 @@
           },
           {
             "prog_code": "CERT_MUP",
+            "prog_shortname": "certMusicPerf",
             "prog_name": "Certificate in Music Performance",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -593,16 +682,17 @@
       },
       {
         "name": "Digital Media and Communication",
-        "headImage": "/images/schools/departments/DMACwl.png",
-        "image": "/images/schools/liberal.png",
+        "headImage": "/images/schools/departments/DMACheader.png",
+        "image": "/images/schools/departments/DMACsmall.png",
         "summary": "The Department of Digital Media and Communication offers degrees, diplomas and certificates in mass communication, graphic design, advertising and promotions, Spanish, Latin American Studies, photography, journalism and public relations.",
         "coreValues": [],
         "shortName": "Digital Media and Communication",
-        "contacts": [],
+        "contacts": ["jspringer"],
         "dept_code": "DMAC",
         "programmes": [
           {
             "prog_code": "MCOM_BA",
+            "prog_shortname": "baMassComm",
             "prog_name": "BA Mass Communications",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -615,6 +705,7 @@
           },
           {
             "prog_code": "GRDS_BA",
+            "prog_shortname": "baGraphicDes",
             "prog_name": "BA Graphic Design",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
@@ -627,6 +718,7 @@
           },
           {
             "prog_code": "GRDS_AAS",
+            "prog_shortname": "aasGraphicDes",
             "prog_name": "AAS Graphic Design",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -639,6 +731,7 @@
           },
           {
             "prog_code": "ADVP_AAS",
+            "prog_shortname": "aasAdvertPromo",
             "prog_name": "AAS Advertising and Promotions",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -651,6 +744,7 @@
           },
           {
             "prog_code": "JOUR_AA",
+            "prog_shortname": "aaJournalism",
             "prog_name": "AA Journalism",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -663,6 +757,7 @@
           },
           {
             "prog_code": "JOPR_AAS",
+            "prog_shortname": "aasJourPubRel",
             "prog_name": "AAS Journalism and Public Relations",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -675,6 +770,7 @@
           },
           {
             "prog_code": "SPAN_AA",
+            "prog_shortname": "aaSpanish",
             "prog_name": "AA - Spanish",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -687,6 +783,7 @@
           },
           {
             "prog_code": "SPAN_AAS",
+            "prog_shortname": "aaSpanForBus",
             "prog_name": "AAS - Spanish for Business",
             "prog_level": "Associate",
             "prog_del_mode": "Blended",
@@ -699,6 +796,7 @@
           },
           {
             "prog_code": "DIPL_ADVT",
+            "prog_shortname": "dipAdvertPromo",
             "prog_name": "Diploma in Advertising and Promotions",
             "prog_level": "Diploma",
             "prog_del_mode": "Blended",
@@ -711,6 +809,7 @@
           },
           {
             "prog_code": "CERT_GRDS",
+            "prog_shortname": "certGraphicDes",
             "prog_name": "Certificate in Graphic Design",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -723,6 +822,7 @@
           },
           {
             "prog_code": "CERT_ESWP",
+            "prog_shortname": "certWkplaceSkills",
             "prog_name": "Essential Skills for the Workplace Certificate",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -735,6 +835,7 @@
           },
           {
             "prog_code": "CERT_JOUR",
+            "prog_shortname": "certJournalism",
             "prog_name": "Certificate in Journalism",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -747,6 +848,7 @@
           },
           {
             "prog_code": "CERT_PHVI",
+            "prog_shortname": "certPhotoVid",
             "prog_name": "Certificate in Photography and Video",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -759,6 +861,7 @@
           },
           {
             "prog_code": "CERT_ADVP",
+            "prog_shortname": "certAdvertPromo",
             "prog_name": "Certificate in Advertising and Promotions",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -771,6 +874,7 @@
           },
           {
             "prog_code": "CERT_PUBR",
+            "prog_shortname": "certPublicRel",
             "prog_name": "Certificate in Public Relations",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
@@ -802,26 +906,43 @@
       {
         "name": "Upskilling Academy",
         "headImage": "/images/schools/departments/UPSKheader.png",
-        "image": "/images/schools/UPSKsmall.png",
+        "image": "/images/schools/departments/UPSKsmall.png",
         "summary": "The Upskilling Academy provides a wide variety of educational content services, including certificate and diploma programmes, stand-alone short courses, professional development workshops, and customised training to support client needs and desired outcomes. ",
         "coreValues": [],
         "shortName": "Skills",
         "contacts": [],
-        "dept_code": "UPSK"
+        "dept_code": "UPSK",
+         "programmes": [
+          {
+            "prog_code": "",
+            "prog_shortname": "",
+            "prog_name": "",
+            "prog_level": "Associate",
+            "prog_del_mode": "",
+            "dept_code": "",
+            "prog_major_credits": 4,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": ""
+          }
+        ]
       },
       {
         "name": "CollegeStarTT",
         "headImage": "/images/schools/departments/CSTTheader.png",
-        "image": "/images/schools/CSTTsmall.png",
+        "image": "/images/schools/departments/CSTTsmall.png",
         "summary": "The CollegeStarTT Centre  is COSTAATT's flagship developmental education programme designed to assist students in obtaining the necessary qualifications to access degree programmes of their choice at COSTAATT. CollegeStarTT provides an alternative pathway to tertiary level education for those students who have the aptitude and the desire to pursue tertiary education but are currently academically under-prepared.",
         "coreValues": [],
         "shortName": "CollegeStarTT",
         "contacts": [],
+        "dept_code": "CSTT",
         "programmes": [
           {
             "prog_code": "",
+            "prog_shortname": "",
             "prog_name": "",
-            "prog_level": "",
+            "prog_level": "Associate",
             "prog_del_mode": "",
             "dept_code": "",
             "prog_major_credits": 4,
@@ -835,12 +956,27 @@
       {
         "name": "Translation and Interpreting Centre",
         "headImage": "/images/schools/departments/TAICheader.png",
-        "image": "/images/schools/liberal.png",
+        "image": "/images/schools/departments/TAICsmall.png",
         "summary": "As an official agent recognised by the Government of Trinidad and Tobago, the Translating and Interpreting Services (T&I) Centre provides a wide array of translation and interpretation services at local and regional levels. Our clients include corporate entities, government organisations and individuals. Official translation services include English, Dutch, French, German, Portuguese, and Spanish.",
         "coreValues": [],
         "shortName": "Translation",
         "contacts": [],
-        "dept_code": "CFTI"
+        "dept_code": "CFTI",
+           "programmes": [
+          {
+            "prog_code": "",
+            "prog_shortname": "",
+            "prog_name": "",
+            "prog_level": "Associate",
+            "prog_del_mode": "",
+            "dept_code": "",
+            "prog_major_credits": 4,
+            "prog_core_credits": 0,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 0,
+            "prog_description": ""
+          }
+        ]
       }
     ]
   }

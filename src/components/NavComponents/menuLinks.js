@@ -1,42 +1,42 @@
 export const topNavLinksLeft = [
+  
+    // title: "Schools",
+    // submenu: [
+    //   {
+    //     title: "The School Of Liberal Arts, Education And Digital Humanities",
+    //   }
+    //     ],
+    //   },
+    //   {
+    //     title:
+    //       "The Ken Gordon School of Communication Creative and Digital Media",
+    //     submenu: [
+    //       {
+    //         title: "Department One",
+    //       },
+    //     ],
+    //   },
+    //   {
+    //     title: "School of Workforce Enhancement and Development",
+    //     path: "programmes",
+    //   },
+    //   {
+    //     title: "School of Nursing, Health and Medical Technologies",
+    //     path: "programmes",
+    //   },
+    //   {
+    //     title: "School of Environment, Circular Economy and Sustainability",
+    //     path: "programmes",
+    //   },
+    //   {
+    //     title: "School of Business and Digital Technologies",
+    //     path: "programmes",
+    //   },
+    
+
   // {
-  //   title: "Schools",
-  //   submenu: [
-  //     {
-  //       title: "The School Of Liberal Arts, Education And Digital Humanities",
-  //       submenu: [
-  //         {
-  //           title: "Department One",
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       title:
-  //         "The Ken Gordon School of Communication Creative and Digital Media",
-  //       submenu: [
-  //         {
-  //           title: "Department One",
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       title: "School of Workforce Enhancement and Development",
-  //       path: "programmes",
-  //     },
-  //     {
-  //       title: "School of Nursing, Health and Medical Technologies",
-  //       path: "programmes",
-  //     },
-  //     {
-  //       title: "School of Environment, Circular Economy and Sustainability",
-  //       path: "programmes",
-  //     },
-  //     {
-  //       title: "School of Business and Digital Technologies",
-  //       path: "programmes",
-  //     },
-  //   ],
-  //   submenuImage: [],
+  //   title:"Schools,Departments",
+  //   path:"departments"
   // },
   {
     title: "Current Students",
@@ -132,8 +132,8 @@ export const mainNavLinks = [
         path: "/programmes/collegecore",
       },
       {
-        title: "Academic Advising",
-        path: "/programmes/advising",
+        title: "Professional Development Courses",
+        path: "/programmes/shortcourses",
       },
       {
         title: "School of Nursing, Health and Medical Technologies",
@@ -169,8 +169,8 @@ export const mainNavLinks = [
       },
       {
         img: require("../../../images/Links/dummyImg2.jpg"),
-        title: "Areas of Study",
-        path: "/programmes/areasofstudy",
+        title: "Academic Advising",
+        path: "/programmes/advising",
       },
     ],
   },
@@ -179,7 +179,7 @@ export const mainNavLinks = [
     submenu: [
       {
         title: "Apply Now",
-        path: "/admissions/apply",
+        path: "/admissions/howtoapply",
       },
       {
         title: "Admission Requirements",
@@ -194,19 +194,19 @@ export const mainNavLinks = [
         path: "/programmes/allprogrammes",
       },
       {
-        title: "Professional Development Courses",
-        path: "/admissions/developmentcourses",
+        title: "Professional Development Application",
+        path: "/admissions/developmentcoursesApp",
       },
       {
         title: "Transfer Credit and Exemptions ",
-        path: "/admissions/transfercredit",
+        path: "/admissions/transfercredits",
       },
     ],
     submenuImage: [
       {
         img: require("../../../images/Links/dummyImg1.jpg"),
-        title: "Get Oriented",
-        path: "/admissions/orientation",
+        title: "How to Register ",
+        path: "/admissions/howtoregister",
       },
       {
         img: require("../../../images/Links/dummyImg2.jpg"),

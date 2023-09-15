@@ -6,10 +6,18 @@ import Link from 'next/link';
 import HeadImage from '@/components/PageComponents/HeadImage';
 import imgwhy1 from '../../../images/Programmes/acttlogo.jpg';
 import headImg from '../../../images/Programmes/tester2.jpg';
-import Layout from '@/components/Layout';
+// import Layout from '@/components/Layout';
 import studyitems from '../../components/PageComponents/AreasStudyItems';
 import pageWithSideNavClasses from '../../styles/PageWithSideNav.module.scss';
 import SideNavOnlyLayout from '@/components/Layouts/SideNavOnly_NoTopOrDropdown';
+import topclass from "../../../public/images/schools/topclassLect.png"
+import onlinelearnig from "../../../public/images/schools/onlineLearning.png"
+import workReady from "../../../public/images/schools/workreadyGrads.png"
+import creditTransfer from "../../../public/images/schools/creditTransfers.png"
+import collegeCore from "../../../public/images/schools/collegeCore.png"
+import affiliations from "../../../public/images/schools/affiliationsMou.png"
+import accredited from "../../../public/images/schools/accreditedprog.png"
+import standardStyles from "@/styles/main.module.scss"
 
 const progoverview = () => {
   console.log(studyitems);
@@ -20,14 +28,14 @@ const progoverview = () => {
       </Head>
 
       <HeadImage imagetext="Programmes" mainimage={headImg} />
-      {/* <SideNavOnlyLayout> */}
+      
         <p className={ProgStyles.headingprimarysub}>
           COSTAATT/Programmes/Overview{' '}
         </p>
 
         <section id="overview" className={ProgStyles.sectionoverview}>
           <div className={ProgStyles.umargintopsmall}>
-            <p className={ProgStyles.headingprimary}> Overview of Programmes</p>
+            <h2 className={standardStyles.headingSecondary}> Overview of Programmes</h2>
             <p className={ProgStyles.text}>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo
               sed quae repellat blanditiis corrupti rerum quia voluptatem
@@ -110,7 +118,7 @@ const progoverview = () => {
               <div className={ProgStyles.progGrid}>
                 <Image
                   className={ProgStyles.whychooseimg}
-                  src={imgwhy1}
+                  src={topclass}
                   alt="page image"
                 />
                 <p className={ProgStyles.whychoosetext}>Top Class Lecturers</p>
@@ -118,7 +126,7 @@ const progoverview = () => {
               <div className={ProgStyles.progGrid}>
                 <Image
                   className={ProgStyles.whychooseimg}
-                  src={imgwhy1}
+                  src={accredited}
                   alt="page image"
                 />
                 <p className={ProgStyles.whychoosetext}>
@@ -128,7 +136,7 @@ const progoverview = () => {
               <div className={ProgStyles.progGrid}>
                 <Image
                   className={ProgStyles.whychooseimg}
-                  src={imgwhy1}
+                  src={workReady}
                   alt="page image"
                 />
                 <p className={ProgStyles.whychoosetext}>Work Ready Graduates</p>
@@ -136,7 +144,7 @@ const progoverview = () => {
               <div className={ProgStyles.progGrid}>
                 <Image
                   className={ProgStyles.whychooseimg}
-                  src={imgwhy1}
+                  src={creditTransfer}
                   alt="page image"
                 />
                 <p className={ProgStyles.whychoosetext}>Credit Transfers</p>
@@ -351,7 +359,7 @@ const progoverview = () => {
               <div className={ProgStyles.threeColGrid}>
                 <Image
                   className={ProgStyles.whychooseimg}
-                  src={imgwhy1}
+                  src={collegeCore}
                   alt="page image"
                 />
 
@@ -361,7 +369,7 @@ const progoverview = () => {
                 </p>
                 <Link
                   className={ProgStyles.explore}
-                  href="/programmes/undergrad"
+                  href="/programmes/allprogrammes"
                 >
                   {' '}
                   View Bachelor Degrees →
@@ -370,7 +378,7 @@ const progoverview = () => {
               <div className={ProgStyles.threeColGrid}>
                 <Image
                   className={ProgStyles.whychooseimg}
-                  src={imgwhy1}
+                  src={affiliations}
                   alt="page image"
                 />
 
@@ -382,7 +390,7 @@ const progoverview = () => {
                 </p>
                 <Link
                   className={ProgStyles.explore}
-                  href="/programmes/associate"
+                  href="/programmes/allprogrammes"
                 >
                   {' '}
                   View Associate Degrees →
@@ -391,7 +399,7 @@ const progoverview = () => {
               <div className={ProgStyles.threeColGrid}>
                 <Image
                   className={ProgStyles.whychooseimg}
-                  src={imgwhy1}
+                  src={onlinelearnig}
                   alt="page image"
                 />
 
@@ -402,7 +410,7 @@ const progoverview = () => {
                 </p>
                 <Link
                   className={ProgStyles.explore}
-                  href="/programmes/certificates"
+                  href="/programmes/allprogrammes"
                 >
                   {' '}
                   More Info →
@@ -412,7 +420,7 @@ const progoverview = () => {
             <p />
           </div>
         </section>
-      {/* </SideNavOnlyLayout> */}
+      
     </>
   );
 };

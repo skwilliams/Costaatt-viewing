@@ -1,8 +1,7 @@
-import React from 'react'
-import CourseStyle from "../../styles/Course.module.scss";
+import React from 'react';
+import CourseStyle from '../../styles/Course.module.scss';
 
-
-const InstutionFees = ({fees}) => {
+const InstutionFees = ({ fees }) => {
   return (
     <>
       <div className={CourseStyle.coursesGridCon}>
@@ -18,8 +17,8 @@ const InstutionFees = ({fees}) => {
             <div className={CourseStyle.courseheadings}>Frequency</div>
           </div>
         </>
-        {fees.map((fee) => (
-          <>
+        {fees.map((fee, ind) => (
+          <div key={ind}>
             <div className={CourseStyle.coursesColGrid}>
               {fee.Fees && (
                 <div className={CourseStyle.coursecode}>{fee.Fees}</div>
@@ -32,16 +31,13 @@ const InstutionFees = ({fees}) => {
               )}
             </div>
             <div className={CourseStyle.coursesColGrid}>
-              {fee.Per && (
-                <div className={CourseStyle.credits}>{fee.Per}</div>
-              )}
+              {fee.Per && <div className={CourseStyle.credits}>{fee.Per}</div>}
             </div>
-          </>
+          </div>
         ))}
-
       </div>
     </>
   );
-}
+};
 
-export default InstutionFees
+export default InstutionFees;

@@ -117,13 +117,13 @@ export const institutionFees = [
     International: "$80.00",
     Per: "Semester",
   },
-  // {
-  //   Fees: "Tuition",
-  //   Citizens: "$300.00",
-  //   Caricom: "$400.00",
-  //   International: "$750.00",
-  //   Per: "Credit",
-  // },
+  {
+    Fees: "Tuition",
+    Citizens: "$300.00",
+    Caricom: "$400.00",
+    International: "$750.00",
+    Per: "Credit",
+  },
   {
     Fees: "Administrative Fee",
     Citizens: "$100.00",
@@ -143,6 +143,13 @@ export const institutionFees = [
     Citizens: "$30.00",
     Caricom: "$30.00",
     International: "$30.00",
+    Per: "Annum",
+  },
+  {
+    Fees: "Student Guild",
+    Citizens: "$100.00",
+    Caricom: "$100.00",
+    International: "$100.00",
     Per: "Annum",
   },
 ];

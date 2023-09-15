@@ -1,63 +1,52 @@
-import React from "react";
-import Head from "next/head";
-import Headimagesmall from "../../../../../components/PageComponents/Headimagesmall";
-import headImg from "../../../../../../images/Programmes/tester2.jpg";
-import Layout from "../../../../../components/PageWithSideNavComponents/Layout"
-import SideNavWithTopNav_NoDropdown from '../../../../../components/Layouts/SideNavWithTopNav_NoDropdown'
+import React from 'react';
+import Head from 'next/head';
+import Headimagesmall from '../../../../../components/PageComponents/Headimagesmall';
+import headImg from '../../../../../../images/Programmes/tester2.jpg';
+import Layout from '../../../../../components/PageWithSideNavComponents/Layout';
+import SideNavWithTopNav_NoDropdown from '../../../../../components/Layouts/SideNavWithTopNav_NoDropdown';
 
-import CourseStyle from "../../../../../styles/Course.module.scss";
-import ProgStyles from "../../../../../styles/Programmes.module.scss";
-import time from "../../../../../../images/Programmes/time.svg";
-import mode from "../../../../../../images/Programmes/mode.svg";
-import location from "../../../../../../images/Programmes/location.svg";
-import calendar from "../../../../../../images/Programmes/calendar.svg";
-import gate from "../../../../../../images/Programmes/gate.png"
-import Image from "next/image";
-import ContactUs from "@/components/PageComponents/ContactUs";
-import Featured from '../../../../../components/PageComponents/Featured'
-import {featured} from '../../../../../components/PageComponents/featuresdata'
-import { gradspeak}  from "../../../../api/gradspeak";
+import CourseStyle from '../../../../../styles/Course.module.scss';
+import ProgStyles from '../../../../../styles/Programmes.module.scss';
+import time from '../../../../../../images/Programmes/time.svg';
+import mode from '../../../../../../images/Programmes/mode.svg';
+import location from '../../../../../../images/Programmes/location.svg';
+import calendar from '../../../../../../images/Programmes/calendar.svg';
+import gate from '../../../../../../images/Programmes/gate.png';
+import Image from 'next/image';
+import ContactUs from '@/components/PageComponents/ContactUs';
+import Featured from '../../../../../components/PageComponents/Featured';
+import { featured } from '../../../../../components/PageComponents/featuresdata';
+import { gradspeak } from '../../../../api/gradspeak';
 
-
-import GradStyle from "../../../../../styles/GradsSpeak.module.scss"
-import GradsSpeak from "@/components/PageComponents/GradsSpeak"
-import Divider from "@mui/material/Divider";
+import GradStyle from '../../../../../styles/GradsSpeak.module.scss';
+import GradsSpeak from '@/components/PageComponents/GradsSpeak';
+import Divider from '@mui/material/Divider';
 import {
-  supportingDoc,
-  supportDocA,
-  
-  minrequirements,
   bscLismajor,
   bscLissupport,
   bscLiscore,
-  salaries,
-  tuition,
-  totalcredits,
-  resources,
-} from "../../busIT/ist/bscLiscourses";
+} from '../../busIT/ist/bscLiscourses';
+import { institutionFees } from '../../../../admissions/admissionsData';
+import DegreeCourses from '@/components/PageComponents/DegreeCourses';
+
+import DeptStyles from '../../../../../styles/Department.module.scss';
+import StudentResources from '@/components/PageComponents/StudentResources';
+
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import InstitutionFees from '@/components/PageComponents/InstiutionFees';
 import {
-  institutionFees,
-  dptOfManagementFees,
-} from "../../../../admissions/admissionsData";
-import DegreeCourses from "@/components/PageComponents/DegreeCourses"
-import PossibleSalary from "@/components/PageComponents/PossibleSalary"
-import DeptStyles from "../../../../../styles/Department.module.scss"
-import StudentResources from "@/components/PageComponents/StudentResources";
-
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import InstitutionFees from '@/components/PageComponents/InstiutionFees'
-import image from "../../../../../../images/Programmes/visit-home-v2.jpg";
-import TuitionFees from "@/components/PageComponents/TuitionFees";
-import Requirements from "@/components/PageComponents/Requirements";
-import SupportDoc from "@/components/PageComponents/SupportDoc";
-
-
-
-
+  TableContainer,
+  Table,
+  TableHead,
+  TableBody,
+  TableRow,
+  TableCell,
+  Paper,
+} from '@mui/material';
 
 const bscLIS = () => {
   return (
@@ -81,28 +70,37 @@ const bscLIS = () => {
           activities. This degree prepares candidates who would like to pursue a
           masters' degree to easily transition to such a programme.
         </p>
-        <div className={CourseStyle.iconsection}>
-          <div className={CourseStyle.fiveColGridCon}>
-            <div className={CourseStyle.fiveColGrid}>
-              {" "}
-              <Image
-                className={CourseStyle.icon}
-                src={calendar}
-                alt="duration icon"
-              />
-              <p className={CourseStyle.iconfont}> &#10004; September</p>
-              <p className={CourseStyle.iconfont}> &#10004; January</p>
-            </div>
+        <div className={CourseStyle.entryreq}>
+          <p className={CourseStyle.headingsecondary}> Entry Requirements</p>
 
-            <div className={CourseStyle.fiveColGrid}>
-              {" "}
+          <ul className={CourseStyle.list}>
+            <li className={CourseStyle.items}>
+              Minimum five (5) CSEC/GCE O'Level subjects, inclusive of English A
+              and Mathematics.{' '}
+              <p className={CourseStyle.footnote}>
+                Grades 1,2,3* or A, B, C. *Grade 3 accepted if attained in June
+                1998 and beyond
+              </p>
+            </li>
+            <li className={CourseStyle.items}>
+              Prerequisites : College Matriculation requirements
+            </li>
+          </ul>
+        </div>{' '}
+        <div className={CourseStyle.iconsection}>
+          <div className={CourseStyle.threeColGridCon}>
+            <div className={CourseStyle.threeColGrid}>
+              {' '}
               <Image
                 className={CourseStyle.icon}
                 src={location}
                 alt="duration icon"
               />
               <p className={CourseStyle.iconfont}> &#10004; City Campus</p>
-              <p className={CourseStyle.iconfont}> &#10004; Online</p>
+              <p className={CourseStyle.iconfont}>
+                {' '}
+                &#10004; Part-time : 6 years
+              </p>
             </div>
             <div className={CourseStyle.fiveColGrid}>
               <Image
@@ -111,19 +109,19 @@ const bscLIS = () => {
                 alt="duration icon"
               />
               <p className={CourseStyle.iconfont}>
-                {" "}
+                {' '}
                 &#10004; Full-time : 4 years
               </p>
               <p className={CourseStyle.iconfont}>
-                {" "}
+                {' '}
                 &#10004; Part-time : 6 years
               </p>
-              {/* <p className={CourseStyle.footnote}>
+              <p className={CourseStyle.footnote}>
                 *Subject to change based on college Matriculation
-              </p>{" "} */}
+              </p>{' '}
             </div>
-            <div className={CourseStyle.fiveColGrid}>
-              {" "}
+            <div className={CourseStyle.threeColGrid}>
+              {' '}
               <Image
                 className={CourseStyle.icon}
                 src={mode}
@@ -133,7 +131,7 @@ const bscLIS = () => {
               <p className={CourseStyle.iconfont}> &#10004; Online</p>
             </div>
             <div className={CourseStyle.fiveColGrid}>
-              {" "}
+              {' '}
               <Image
                 className={CourseStyle.icon}
                 src={gate}
@@ -147,11 +145,11 @@ const bscLIS = () => {
       <Divider dark />
       <section id="careers" className={CourseStyle.sectionCareers}>
         <p className={ProgStyles.headingprimaryleft}> Possible Careers</p>
-        <PossibleSalary salaries={salaries} />
+        {/* <PossibleSalary salaries={salaries} /> */}
 
         <p className={CourseStyle.footnote}>
           * Salaries are subject to years of experience, projects and
-          professional certification{" "}
+          professional certification{' '}
         </p>
       </section>
       <Divider dark />
@@ -168,13 +166,11 @@ const bscLIS = () => {
           <GradsSpeak graduate={gradspeak} />
         </div>
       </section>
-      <Divider dark />
-
       <section id="curriculum" className={CourseStyle.sectionCurriculum}>
         <p className={ProgStyles.headingprimaryleft}>
-          {" "}
-          Curriculum{" "}
-          <a style={{ float: "right" }} className={ProgStyles.explore} href=" ">
+          {' '}
+          Curriculum{' '}
+          <a style={{ float: 'right' }} className={ProgStyles.explore} href=" ">
             View Printable Curriculum →
           </a>
         </p>
@@ -188,7 +184,7 @@ const bscLIS = () => {
             <DegreeCourses courses={bscLismajor} />
           </AccordionDetails>
         </Accordion>
-        <Accordion sx={{ margin: 2, color: "primary" }}>
+        <Accordion sx={{ margin: 2, color: 'primary' }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography fontSize={19}>Core Curriculum Courses</Typography>
           </AccordionSummary>
@@ -208,9 +204,9 @@ const bscLIS = () => {
           </AccordionDetails>
         </Accordion>
         <p className={CourseStyle.creditsummarytext}>
-          {" "}
-          Total Credits :{" "}
-          {/* <span className={CourseStyle.creditsummarynumber}> */}
+          {' '}
+          Total Credits :{' '}
+          {/* <span className={CourseStyle.creditsummarynumber}> }
           {totalcredits} {/* </span> */}
         </p>
       </section>
@@ -223,7 +219,7 @@ const bscLIS = () => {
             <Typography fontSize={18}>Tuition Fees</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <TuitionFees fees={tuition} />
+            {/* <TuitionFees fees={tuition} /> */}
             <br />
 
             <p className={CourseStyle.footnote}>
@@ -232,7 +228,7 @@ const bscLIS = () => {
             </p>
           </AccordionDetails>
         </Accordion>
-        <Accordion sx={{ margin: 2, color: "primary" }}>
+        <Accordion sx={{ margin: 2, color: 'primary' }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography fontSize={18}>College Fees</Typography>
           </AccordionSummary>
@@ -276,7 +272,7 @@ const bscLIS = () => {
                 Tobago pursuing approved programmes at public and private
                 tertiary level institutions. Information on eligibility and
                 conditions for accessing GATE funding is available at the
-                Ministry of Education website{" "}
+                Ministry of Education website{' '}
                 <a href="http://www.moe.gov.tt">www.moe.gov.tt</a>
               </p>
               <p>
@@ -296,7 +292,7 @@ const bscLIS = () => {
                 eligible to apply, and students must be registered in a course
                 of study leading to a tertiary level qualification. For further
                 information on the GATE programme please visit the website of
-                the{" "}
+                the{' '}
                 <a href="http://https://moe.gov.tt/"> Ministry of Education</a>.
                 <br /> The vast majority of the College's programmes are
                 eligible for GATE. For a full list of these programmes please
@@ -306,7 +302,7 @@ const bscLIS = () => {
               <div>
                 <strong>Higher Education Loan Programme (HELP)</strong>
                 <p>
-                  {" "}
+                  {' '}
                   The Higher Education Loan Programme (HELP) is a special loan
                   facility made available to citizens of Trinidad and Tobago who
                   are enrolled in an approved tertiary level programme at a
@@ -335,18 +331,18 @@ const bscLIS = () => {
               </div>
               <p>
                 For further information on the Higher Education Loan Programme
-                (HELP) students can visit the Ministry of Education website :{" "}
+                (HELP) students can visit the Ministry of Education website :{' '}
                 <a className={CourseStyle.goto} href="https.www.moe.gov.tt">
                   www.moe.gov.tt
                 </a>
-              </p>{" "}
+              </p>{' '}
               <br />
               <p>
                 <strong>Payment Plans</strong>
               </p>
               <p>
                 Payment plans are available, please contact the Office of the
-                Registrar for further details:{" "}
+                Registrar for further details:{' '}
                 <a
                   className={CourseStyle.goto}
                   href="mailto:registrar@costaatt.edu.tt"
@@ -367,10 +363,10 @@ const bscLIS = () => {
             <Typography fontSize={18}>Minimum Entry Requirements</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Requirements reqs={minrequirements} />
+            {/* <Requirements reqs={minrequirements} /> */}
           </AccordionDetails>
         </Accordion>
-        <Accordion sx={{ margin: 2, color: "primary" }}>
+        <Accordion sx={{ margin: 2, color: 'primary' }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography fontSize={18}>Alternative Routes</Typography>
           </AccordionSummary>
@@ -378,13 +374,13 @@ const bscLIS = () => {
             <div className={CourseStyle.text}>
               Applicants who do not possess the minimum requirements for entry
               into a degree programme may be eligible for admission via the
-              following: <br />{" "}
+              following: <br />{' '}
               <span className={CourseStyle.bold}> Mature applicants</span> (25
               years and over) with relevant experience, who do not possess the
               minimum entry requirements, may be considered on the basis of
               experience and demonstrable competence.
               <p>
-                {" "}
+                {' '}
                 <span className={CourseStyle.bold}> COMPASS </span> is designed
                 to help students gain the qualifications needed to access the
                 degree programme of their choice at COSTAATT. The duration of
@@ -395,31 +391,31 @@ const bscLIS = () => {
               </p>
               <br />
               <div className={CourseStyle.entryreq}>
-                {" "}
-                To qualify for the{" "}
+                {' '}
+                To qualify for the{' '}
                 <span className={CourseStyle.bold}>COMPASS programme </span>,
                 applicants MUST have completed five years of secondary school
                 and:
                 <ul className={CourseStyle.list}>
                   <li className={CourseStyle.items}>
-                    {" "}
+                    {' '}
                     Possess 3-4 CSEC (CXC)/GCE passes Possess
                   </li>
                   <li className={CourseStyle.items}>
-                    {" "}
-                    5 CSEC (CXC)/GCE passes without mathematics or English or{" "}
+                    {' '}
+                    5 CSEC (CXC)/GCE passes without mathematics or English or{' '}
                   </li>
                   <li className={CourseStyle.items}>
-                    {" "}
+                    {' '}
                     Be 25 years or older (mature student) with academic literacy
                     acquired through work or life experiences.
                   </li>
-                </ul>{" "}
+                </ul>{' '}
                 Upon successful completion of the COMPASS programme, students
                 may apply to the college programme for which they would then
-                have gained the necessary entry requirements.{" "}
+                have gained the necessary entry requirements.{' '}
               </div>
-            </div>{" "}
+            </div>{' '}
           </AccordionDetails>
         </Accordion>
         <Accordion sx={{ margin: 2 }}>
@@ -427,17 +423,17 @@ const bscLIS = () => {
             <Typography fontSize={18}>Resource Requirements</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Requirements reqs={resources} />
+            {/* <Requirements reqs={resources} /> */}
           </AccordionDetails>
         </Accordion>
         <Accordion sx={{ margin: 2 }}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography fontSize={18}>
-              Required Supporting Documents{" "}
+              Required Supporting Documents{' '}
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <SupportDoc docs={supportDocA} />
+            {/* <SupportDoc docs={supportDocA} /> */}
           </AccordionDetails>
         </Accordion>
       </section>
@@ -452,18 +448,18 @@ const bscLIS = () => {
 
           <div className={DeptStyles.threeGridCon}>
             <div className={DeptStyles.threeGridCol}>
-              <StudentResources image={image} imagetxt="Apply Now" />{" "}
+              {/* <StudentResources image={image} imagetxt="Apply Now" />{' '} */}
             </div>
             <div className={DeptStyles.threeGridCol}>
-              {" "}
+              {/* {' '}
               <StudentResources
                 image={image}
                 imagetxt="See Admissions Counsellor"
-              />
+              /> */}
             </div>
             <div className={DeptStyles.threeGridCol}>
-              {" "}
-              <StudentResources image={image} imagetxt="Visit Us" />
+              {/* {' '}
+              <StudentResources image={image} imagetxt="Visit Us" /> */}
             </div>
           </div>
         </>
@@ -475,6 +471,5 @@ const bscLIS = () => {
 bscLIS.getLayout = function getLayout(page) {
   return <SideNavWithTopNav_NoDropdown>{page}</SideNavWithTopNav_NoDropdown>;
 };
-
 
 export default bscLIS;
