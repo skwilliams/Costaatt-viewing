@@ -117,7 +117,6 @@ const Home = () => {
               ipsa illum ipsam minima! Ad Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Dolore vel reiciendis in delectus aliquid
               perspiciatis quidem mollitia officia praesentium optio repellat,
-              
             </p>{" "}
             {/* replace with flagship programmes */}
             {TILES_INFO.map((tile, index) => {

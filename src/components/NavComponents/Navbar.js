@@ -9,11 +9,11 @@ import { Button } from "@mui/material";
 import { BiSearch } from "react-icons/bi";
 import SearchBarModal from "../SearchBarModal";
 const Navbar = () => {
-  const [modal, setModal] = useState(false);
+  // const [modal, setModal] = useState(false);
 
-  const handleClick = () => {
-    setModal(!modal);
-  };
+  // const handleClick = () => {
+  //   setModal(!modal);
+  // };
   return (
     <>
       <div className={navStyles.navContainer}>
@@ -49,17 +49,15 @@ const Navbar = () => {
               <Image src={logo} alt="costaatt logo" height={100} />
             </Link>
           </div>
-          <div className={navStyles.navbarMenusCon}>
-            <ul className={navStyles.navbarMenus}>
-              {mainNavLinks.map((menu, index) => {
-                return (
-                  <li key={index}>
-                    <MenuItems items={menu} />
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
+          <ul className={navStyles.navbarMenus}>
+            {mainNavLinks.map((menu, index) => {
+              return (
+                <li key={index}>
+                  <MenuItems items={menu} />
+                </li>
+              );
+            })}
+          </ul>
           <div>
             {
               <BiSearch

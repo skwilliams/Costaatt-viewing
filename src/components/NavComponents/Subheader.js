@@ -20,8 +20,8 @@ const Subheader = ({ show }) => {
       className={navStyles.header}
       style={{ visibility: show ? "visible" : "hidden" }}
     >
-      <Progressbar />
       <div className={navStyles.subheaderContainer}>
+        <Progressbar />
         <Link href="/">
           <Image src={logo} alt="costaatt-logo" height={60} />
         </Link>

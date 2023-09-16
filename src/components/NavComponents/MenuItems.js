@@ -17,15 +17,18 @@ const MenuItems = ({ items, isLastItem }) => {
     : {};
 
   return (
-    <div onClick={() => setShowDropDown((prev) => !prev)}>
+    <div>
       {items.submenu ? (
-        <div className={navStyles.navBarLinks}>
-          {/* Need to put correct path link of submenu and searchbar */}
+        <div
+          className={navStyles.navBarLinks}
+          onMouseEnter={() => setShowDropDown((prev) => !prev)}
+          onMouseLeave={() => setShowDropDown((prev) => !prev)}
+        >
           {items.title}
           {showDropDown ? <FaAngleUp /> : <FaAngleDown />}
 
           {/* if showdropdown is true display dropdown */}
-          {showDropDown && <DropDown items={items} />}
+          {<DropDown items={items} />}
         </div>
       ) : (
         <div className={navStyles.navBarLinks} style={itemStyle}>

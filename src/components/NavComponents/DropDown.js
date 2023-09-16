@@ -7,15 +7,9 @@ import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import Image from "next/image";
 import { useState } from "react";
 const DropDown = ({ items }) => {
-  const [showDropDown, setShowDropDown] = useState(false);
-  console.log(items);
-
   return (
     <div className={navStyles.dropDownMain}>
-      <div
-        className={navStyles.dropDown}
-        onClick={() => setShowDropDown((prev) => !prev)}
-      >
+      <div className={navStyles.dropDown}>
         <div className={navStyles.dropDownLinksGrid}>
           {items.submenu.map((submenu, index) => (
             <div key={index} className={navStyles.dropDownLi}>

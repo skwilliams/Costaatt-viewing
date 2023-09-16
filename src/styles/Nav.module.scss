@@ -1,30 +1,29 @@
-@import './abstracts/variables';
+@import "./abstracts/variables";
 
-.header {
-  // position: sticky;
-  position: relative;
-  z-index: 40;
-  top: 0;
-}
+// // .header {
+// //   // position: sticky;
+// //   position: relative;
+// //   z-index: 40;
+// //   top: 0;
+// // }
 
-.headerStyles {
-  background-color: $purple-secondary;
-  display: flex;
-  width: 100%;
-  gap: 20px;
-  justify-content: space-between;
-  padding: 15px 15px;
-  // animation: navLoad 300ms ease-in;
-  animation: navScale 300ms ease-in;
-  transform: scale(0);
-  animation-fill-mode: forwards;
-}
+// .headerStyles {
+//   background-color: $purple-secondary;
+//   display: flex;
+//   width: 100%;
+//   gap: 20px;
+//   justify-content: space-between;
+//   padding: 15px 15px;
+//   // animation: navLoad 300ms ease-in;
+//   animation: navScale 300ms ease-in;
+//   transform: scale(0);
+//   animation-fill-mode: forwards;
+// }
 .subheaderContainer {
   position: fixed;
   z-index: 40;
   top: 0;
   //  background-color: $whiteback;
-   
 
   background-image: linear-gradient(to right, $orange, $purple-secondary);
   height: auto;
@@ -32,7 +31,7 @@
   width: 100%;
   justify-content: space-between;
   padding: 0 10rem 0 10rem;
-  color: #D5CABD;
+  color: #d5cabd;
 }
 .sideNavContainer {
   position: sticky;
@@ -44,7 +43,6 @@
   justify-content: center;
   align-items: center;
   padding: 0.5rem 0;
- 
 }
 
 .sideNav {
@@ -64,7 +62,6 @@
   padding: 0.5rem 1.5rem;
   position: relative;
   // border: black 1px solid;
- 
 }
 
 .subheader {
@@ -127,7 +124,7 @@
 // }
 .topNav {
   display: flex;
-  padding: .5em 2em;
+  padding: 0.5em 2em;
   justify-content: space-between;
   background-image: linear-gradient(
     to bottom right,
@@ -179,13 +176,6 @@
   font-size: 1.2rem;
 }
 
-.navbarMenusCon {
-  margin-left: 5rem;
-  margin-top: 1.5rem;
-  // padding:2rem;
-  justify-items: center;
-}
-
 .navbarMenus {
   display: flex;
   gap: 20px;
@@ -198,7 +188,9 @@
   text-decoration-color: $grey-light;
   cursor: pointer;
 }
-
+.navBarLinks a {
+  cursor: pointer;
+}
 .navBarLinks:hover {
   transition: all 0.8s ease;
   border-radius: 15px;
@@ -206,12 +198,17 @@
   text-decoration: underline solid $orange 4px !important;
 }
 
+.navBarLinks:hover .dropDownMain {
+  display: block;
+}
+
 .dropDownMain {
   left: 0;
-  top: 150px;
+  top: 120px;
   width: 100%;
   position: absolute;
   z-index: 40;
+  display: none;
 }
 
 .dropDown {
@@ -230,7 +227,7 @@
     height: fit-content;
     &:hover {
       transition: all 0.5s ease;
-      font-weight: 700;
+      // font-weight: 700;
       text-decoration: underline solid $orange 4px;
       text-underline-position: under;
     }
