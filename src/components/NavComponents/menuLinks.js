@@ -1,38 +1,36 @@
 export const topNavLinksLeft = [
-  
-    // title: "Schools",
-    // submenu: [
-    //   {
-    //     title: "The School Of Liberal Arts, Education And Digital Humanities",
-    //   }
-    //     ],
-    //   },
-    //   {
-    //     title:
-    //       "The Ken Gordon School of Communication Creative and Digital Media",
-    //     submenu: [
-    //       {
-    //         title: "Department One",
-    //       },
-    //     ],
-    //   },
-    //   {
-    //     title: "School of Workforce Enhancement and Development",
-    //     path: "programmes",
-    //   },
-    //   {
-    //     title: "School of Nursing, Health and Medical Technologies",
-    //     path: "programmes",
-    //   },
-    //   {
-    //     title: "School of Environment, Circular Economy and Sustainability",
-    //     path: "programmes",
-    //   },
-    //   {
-    //     title: "School of Business and Digital Technologies",
-    //     path: "programmes",
-    //   },
-    
+  // title: "Schools",
+  // submenu: [
+  //   {
+  //     title: "The School Of Liberal Arts, Education And Digital Humanities",
+  //   }
+  //     ],
+  //   },
+  //   {
+  //     title:
+  //       "The Ken Gordon School of Communication Creative and Digital Media",
+  //     submenu: [
+  //       {
+  //         title: "Department One",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     title: "School of Workforce Enhancement and Development",
+  //     path: "programmes",
+  //   },
+  //   {
+  //     title: "School of Nursing, Health and Medical Technologies",
+  //     path: "programmes",
+  //   },
+  //   {
+  //     title: "School of Environment, Circular Economy and Sustainability",
+  //     path: "programmes",
+  //   },
+  //   {
+  //     title: "School of Business and Digital Technologies",
+  //     path: "programmes",
+  //   },
 
   // {
   //   title:"Schools,Departments",
@@ -165,7 +163,7 @@ export const mainNavLinks = [
       {
         img: require("../../../images/Links/dummyImg1.jpg"),
         title: "Academic Calendar",
-        path: "/programmes/academiccalendar",
+        path: "https://www.google.com",
       },
       {
         img: require("../../../images/Links/dummyImg2.jpg"),

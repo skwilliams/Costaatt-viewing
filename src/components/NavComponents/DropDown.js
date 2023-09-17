@@ -1,11 +1,8 @@
-import Link from "next/link";
 import MenuItems from "./MenuItems";
 import navStyles from "../../styles/Nav.module.scss";
-import dummyImg1 from "../../../images/Links/dummyImg1.jpg";
-import dummyImg2 from "../../../images/Links/dummyImg2.jpg";
-import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import Image from "next/image";
-import { useState } from "react";
+import Link from "next/link";
+
 const DropDown = ({ items }) => {
   return (
     <div className={navStyles.dropDownMain}>
@@ -20,13 +17,14 @@ const DropDown = ({ items }) => {
         <div className={navStyles.dropDownPictures}>
           {items.submenuImage.map((submenu, index) => (
             <div key={index}>
-              <Image
-                src={submenu.img}
-                className={navStyles.dummyImage}
-                alt="dummyimg"
-              />
-
-              <p href={submenu.path}>{submenu.title}</p>
+              <Link href={submenu.path}>
+                <Image
+                  src={submenu.img}
+                  className={navStyles.dummyImage}
+                  alt="dummyimg"
+                />
+              </Link>
+              <MenuItems items={submenu} />
             </div>
           ))}
         </div>

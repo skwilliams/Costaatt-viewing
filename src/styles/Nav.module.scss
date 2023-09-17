@@ -186,11 +186,10 @@
   width: 100%;
   padding: 9px 5px;
   text-decoration-color: $grey-light;
+
   cursor: pointer;
 }
-.navBarLinks a {
-  cursor: pointer;
-}
+
 .navBarLinks:hover {
   transition: all 0.8s ease;
   border-radius: 15px;

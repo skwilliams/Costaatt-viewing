@@ -11,7 +11,7 @@ const MenuItems = ({ items, isLastItem }) => {
   const itemStyle = isLastItem
     ? {
         backgroundColor: "#F58220",
-        color: "white",
+        color: "blue",
         padding: "10px",
       }
     : {};
@@ -27,7 +27,6 @@ const MenuItems = ({ items, isLastItem }) => {
           {items.title}
           {showDropDown ? <FaAngleUp /> : <FaAngleDown />}
 
-          {/* if showdropdown is true display dropdown */}
           {<DropDown items={items} />}
         </div>
       ) : (
