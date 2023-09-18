@@ -1,8 +1,20 @@
 .sectionWithSideNav{
 
     padding:0;
+       margin-bottom: 8rem !important;
+
+    @include respond(tab-port) {
+        margin-bottom: 5rem !important;
+    }
+     margin-top: 8rem !important;
+
 }
 
 .sectionNoSidenav{
-    padding:0
+    padding:0;
+     margin-bottom: 8rem !important;
+
+    @include respond(tab-port) {
+        margin-bottom: 5rem !important;
+    }
 }

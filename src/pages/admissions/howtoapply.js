@@ -26,7 +26,7 @@ import increase from "../../../public/images/admissions/increase.png";
 import ProgStyles from "../../styles/Programmes.module.scss";
 import admissionStyles from "@/styles/Admissions.module.scss";
 import AddCircleTwoToneIcon from "@mui/icons-material/AddCircleOutlineTwoTone";
-import imagedummy from "../../../public/images/admissions/affiliationsMou.png"
+import imagedummy from "../../../public/images/schools/affiliationsMou.png"
 
 const howtoapply = () => {
   const CustomHome = () => {
@@ -307,10 +307,10 @@ const howtoapply = () => {
               </li>
             </ul>
           </div>
-          <p className={standardStyles.headingPrimarysub}>
+          <p className={standardStyles.headingSecondary}>
             School Specific Requirements
           </p>
-          <p className={admissionStyles.schoolheading}>
+          <p className={standardStyles.headingTertiary}>
             School of Nursing, Health and Medial Technologies
           </p>
           <div className={admissionStyles.entryreq}>
@@ -712,41 +712,44 @@ const howtoapply = () => {
           <div className={standardStyles.row}>
             <div className={standardStyles.col1of3}>
               Welcome to Change Makers Place an image here.
-              <Image
-               href={imagedummy}
-               width="200"
-              
-              ></Image>
+              <Image src={imagedummy} width="200"></Image>
             </div>
             <div className={standardStyles.col2of3}>
               <p className={standardStyles.paragraph}>
                 You've been accepted, now it's time to start your new adventure.
                 Here's what to do next..
               </p>
-
-              <ul className={AdmisStyles.list}>
-                <li className={AdmisStyles.items}>Receiving Advisement </li>
-                <li className={AdmisStyles.items}>Registering for Courses</li>
-                <li className={AdmisStyles.items}>
-                  Applying for Gate(if eligible)
-                </li>
-                <li className={AdmisStyles.items}>Paying Fees</li>
-                <li className={AdmisStyles.items}>Collecting Student Id</li>
-              </ul>
+              <div className={standardStyles.bullets}>
+                <ul className={standardStyles.list}>
+                  <li className={standardStyles.items}>
+                    Receiving Advisement{" "}
+                  </li>
+                  <li className={standardStyles.items}>
+                    Registering for Courses
+                  </li>
+                  <li className={standardStyles.items}>
+                    Applying for Gate(if eligible)
+                  </li>
+                  <li className={standardStyles.items}>Paying Fees</li>
+                  <li className={standardStyles.items}>
+                    Collecting Student Id
+                  </li>
+                </ul>
+              </div>
             </div>
-            <ButtonLink
+            {/* <ButtonLink
               text="Accepted Students"
               color="warning"
               size="large"
               path="/admissions/howtoregister"
-            />
+            /> */}
           </div>
         </section>
         <section id="contact" className={standardStyles.sectionWithSideNav}>
           {" "}
           <p className={AdmisStyles.sectiontextleft}> Contact Admissions</p>
-          <div className={AdmisStyles.threeColGridCon}>
-            <div className={AdmisStyles.threeColGrid}>
+          <div className={standardStyles.row}>
+            <div className={standardStyles.col1of3}>
               <Image
                 className={AdmisStyles.icon}
                 src={telephone}
@@ -754,7 +757,7 @@ const howtoapply = () => {
               />
               <p className={AdmisStyles.icontext}> 625-5030 ext 5900</p>
             </div>
-            <div className={AdmisStyles.threeColGrid}>
+            <div className={standardStyles.col1of3}>
               <Image
                 className={AdmisStyles.icon}
                 src={email}
@@ -768,7 +771,7 @@ const howtoapply = () => {
                 </a>{" "}
               </p>
             </div>
-            <div className={AdmisStyles.threeColGrid}>
+            <div className={standardStyles.col1of3}>
               <Image
                 className={AdmisStyles.icon}
                 src={counsellor}
