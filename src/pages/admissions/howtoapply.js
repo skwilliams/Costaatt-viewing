@@ -4,7 +4,7 @@ import React from "react";
 import Head from "next/head";
 import ButtonLink from "@/components/HomeComponents/ButtonLink";
 
-import standardStyles from '@/styles/main.module.scss'
+import standardStyles from "@/styles/main.module.scss";
 import AdmisStyles from "@/styles/Admissions.module.scss";
 import telephone from "../../../public/images/admissions/telephone.svg";
 import email from "../../../public/images/admissions/email.svg";
@@ -12,42 +12,40 @@ import counsellor from "../../../public/images/admissions/contact.svg";
 import Image from "next/image";
 import Link from "next/link";
 import HeadImage from "@/components/PageComponents/HeadImage";
-import headImg from"../../../public/images/admissions/applynow.jpg"
+import headImg from "../../../public/images/admissions/applynow.jpg";
 import SimpleCard from "@/components/PageComponents/SimpleCard";
-import tick from "../../../public/images/admissions/tick.svg"
+import tick from "../../../public/images/admissions/tick.svg";
 import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
-import { Accordion, Divider,Button } from "@mui/material/";
+import { Accordion, Divider, Button } from "@mui/material/";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material"
+import ExpandMoreIcon, { Stadium } from "@mui/icons-material";
 import AddIcon from "@mui/icons-material/Add";
 import increase from "../../../public/images/admissions/increase.png";
 import ProgStyles from "../../styles/Programmes.module.scss";
-import admissionStyles from"@/styles/Admissions.module.scss"
-import AddCircleTwoToneIcon from"@mui/icons-material/AddCircleOutlineTwoTone"
-
-
+import admissionStyles from "@/styles/Admissions.module.scss";
+import AddCircleTwoToneIcon from "@mui/icons-material/AddCircleOutlineTwoTone";
+import imagedummy from "../../../public/images/admissions/affiliationsMou.png"
 
 const howtoapply = () => {
-
-const CustomHome = () => {
-  return <AddCircleTwoToneIcon style={{ color: "rgb(245,130,32)" }} />
-};
+  const CustomHome = () => {
+    return <AddCircleTwoToneIcon style={{ color: "rgb(245,130,32)" }} />;
+  };
 
   return (
     <>
       <Head>
         <title>How to Apply</title>
       </Head>
-      <HeadImage text="" mainimage={headImg} />
+      <HeaderNoImage caption="How to apply" />
       <p className={ProgStyles.headingprimarysub}>
         <Link href="/"> COSTAATT/ </Link>
         <Link href="/admissions">Admissions/</Link>
         <Link href="/admissions/howtoapply">How to Apply</Link>
       </p>
       <SideNavOnlyLayout>
-        <section id="intro" className={AdmisStyles.sectionIntroReg}>
+        <section id="intro" className={standardStyles.secionWithSideNav}>
           {" "}
           <p className={AdmisStyles.introtext}>
             We are so excited that you have choosen COSTAATT to furthur your
@@ -55,12 +53,6 @@ const CustomHome = () => {
             <br />
             COSTAATT offers a unique learning experience.
             <br />
-            {/* To learn more about our programmes and why COSTAATT is the best
-            place visit{" "}
-            <Link className={AdmisStyles.anchortag} href="/programmes/">
-              {" "}
-              Overview of Programmes
-            </Link> */}
           </p>
           <p className={AdmisStyles.sectiontext}>
             What impact will COSTAATT have on you{" "}
@@ -97,8 +89,10 @@ const CustomHome = () => {
             </div>
           </div>
         </section>
-        <section id="firststeps" className={AdmisStyles.sectionVisit}>
-          <h2 className={standardStyles.headingSecondary}>Before You Apply </h2>
+        <section id="firststeps" className={standardStyles.secionWithSideNav}>
+          <h2 className={standardStyles.headingPrimarysub}>
+            Steps in Applying{" "}
+          </h2>
           <div className={AdmisStyles.steps}>
             <div className={AdmisStyles.stepstext}>
               <span className={AdmisStyles.stepsnum}> 1. </span>{" "}
@@ -113,10 +107,7 @@ const CustomHome = () => {
             </div>
             <div className={AdmisStyles.stepstext}>
               <span className={AdmisStyles.stepsnum}> 2. </span>{" "}
-              <Link
-                href="/admissions/requirements"
-                className={AdmisStyles.anchortag}
-              >
+              <Link href="#require" className={AdmisStyles.anchortag}>
                 {" "}
                 Explore the requirements
               </Link>{" "}
@@ -155,20 +146,12 @@ const CustomHome = () => {
                     evaluates the transcripts of transfer students to determine
                     equivalency with its own programmes and requirements for
                     graduation.
-                    {/* Please note that, depending on the programme of study, there
-                  is a limit to the number of credits that may be transferred or
-                  the number of exemptions that may be granted. Transfer
-                  applicants must be in good academic standing at the previous
-                  institution. Please contact the Admissions Office for further
-                  information. Applicants wishing to transfer to COSTAATT with
-                  advanced standing* must submit the following: *Advanced
-                  standing acknowledges prior study through the award of credit
-                  Official transcripts of all subjects previously completed at a
-                  tertiary level institution Copies of syllabus/course outlines
-                  for courses completed A completed Request for Transfer Credit
-                  form, which is available at the Admissions Office Download
-                  your paper application or apply online (only applicable to
-                  New, Transfer, CARICOM and International applicants) */}
+                    <Link
+                      href="./transfercredits"
+                      className={standardStyles.btnText}
+                    >
+                      Learn more →
+                    </Link>
                   </p>{" "}
                 </AccordionDetails>
               </Accordion>
@@ -220,46 +203,234 @@ const CustomHome = () => {
                 </AccordionDetails>
               </Accordion>
             </div>
+            <div className={AdmisStyles.stepstext}>
+              <span className={AdmisStyles.stepsnum}> 4. </span> Start
+              application <br />
+              Select which applicant you are and start your applicatoin
+              <div className={standardStyles.row}>
+                <div
+                  className={standardStyles.col1of3}
+                  New
+                  and
+                  Transfer
+                  Studetnts
+                >
+                  <SimpleCard
+                    text="New and Transfer Applicant"
+                    linkpage="admissions/apply"
+                  />
+                </div>
+                <div className={standardStyles.col1of3}>
+                  <SimpleCard
+                    text="Returning Student "
+                    linkpage="admissions/apply"
+                  />
+                </div>
+                <div className={standardStyles.col1of3}>
+                  <SimpleCard
+                    text="Non-matriculation and audit"
+                    linkpage="admissions/apply"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </section>
-        <section id="howtoapply" className={AdmisStyles.sectionHowtoapply}>
-          <p className={AdmisStyles.sectiontextleft}>Before you Apply </p>
-          Start Application send to *** How to Apply
-        </section>
-        <section id="timeline" className={AdmisStyles.sectionTimeline}>
-          <h2 className={AdmisStyles.sectiontextleft}>When to Apply </h2>
-        </section>
-        <section id="chooseyourpath">
-          {" "}
-          <h2 className={AdmisStyles.sectiontextleft}>Choose Your Path </h2>
-          {/* <div className={threeColGridCon}>
-            <div className={threeColGrid}>
-              <div className={AdmisStyles.choosepath}>
-                
-                   </div>
-              <Image>
 
-              </Image>
-              <p></p>
-            </div>
-            <div className={threeColGrid}></div>
-            <div className={threeColGrid}></div>
-          </div> */}
+        <section id="timeline" className={standardStyles.sectionWithSideNav}>
+          <h2 className={AdmisStyles.sectiontextleft}>Timeline </h2>
+
+          <table className={standardStyles.simple}>
+            <thead>
+              <tr>
+                <th className={standardStyles.paragraph}>Timeline</th>
+                <th className={standardStyles.paragraph}>
+                  Semester 1 September{" "}
+                </th>
+                <th className={standardStyles.paragraph}>
+                  Semester 2 February{" "}
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className={standardStyles.paragraph}>
+                  Application Accepted{" "}
+                </td>
+                <td className={standardStyles.paragraph}>April to August </td>{" "}
+                <td></td>
+              </tr>
+              <tr>
+                <td className={standardStyles.paragraph}> Early Deadline </td>
+                <td className={standardStyles.paragraph}> 30th June </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td className={standardStyles.paragraph}>Regular Deadline</td>
+                <td className={standardStyles.paragraph}> 14th July </td>
+                <td className={standardStyles.paragraph}> 20th August </td>
+              </tr>
+              <tr>
+                <td className={standardStyles.paragraph}> Late Deadline</td>
+                <td className={standardStyles.paragraph}> 20th August </td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <p className={standardStyles.footnote}>
+            There would be no late accptance for Nursing
+          </p>
         </section>
-        <section id="require" className={AdmisStyles.sectionRequired}>
+        <section id="require" className={standardStyles.sectionWithSideNav}>
           <p className={AdmisStyles.sectiontextleft}>
             Application Requirements{" "}
           </p>{" "}
-          Requirements
+          <div className={standardStyles.bullets}>
+            <p className={standardStyles.headingTertiary}>
+              Minimum Requirements{" "}
+            </p>
+            <ul className={standardStyles.list}>
+              <li className={standardStyles.items}>
+                Five (5) CSEC (CXC)/GCE O&#39;Level subjects, inclusive of
+                English A and Mathematics,
+                <p className={standardStyles.footnote}>
+                  Grades 1,2,3* or A, B, C. *Grade 3 accepted if attained in
+                  June 1998 and beyond
+                </p>
+              </li>
+
+              <li className={standardStyles.items}>
+                Applicants who possess CAPE or A&#39;Level qualiﬁcations may be
+                considered for advanced standing (the award of credits towards
+                your degree programme).{" "}
+                <Link href="/admissions/transftercredits">Find out more.</Link>
+              </li>
+            </ul>
+          </div>
+          <p className={standardStyles.headingPrimarysub}>
+            School Specific Requirements
+          </p>
+          <p className={admissionStyles.schoolheading}>
+            School of Nursing, Health and Medial Technologies
+          </p>
+          <div className={admissionStyles.entryreq}>
+            <ul className={admissionStyles.list}>
+              <li className={admissionStyles.items}>
+                Applicants to the BSc and AAS in Occupational Safety and Health
+                programmes must be 16 years or older.
+              </li>
+
+              <li className={admissionStyles.items}>
+                Applicants to the Nursing programme must be between 17½ and 45
+                years old.
+              </li>
+
+              <li className={admissionStyles.items}>
+                Applicants to programmes in the School of Nursing, Health and
+                Environmental Sciences must possess one or more science
+                subjects. See list below for more details.
+              </li>
+
+              <div className={admissionStyles.entryreq}>
+                <ul className={admissionStyles.list}>
+                  <li className={admissionStyles.items}>
+                    <span>
+                      <strong> Nursing </strong>{" "}
+                    </span>{" "}
+                    : at least one science subject
+                  </li>
+                  <li className={admissionStyles.items}>
+                    <span>
+                      <strong>Radiography</strong>
+                    </span>{" "}
+                    : Biology and Physics
+                  </li>
+
+                  <li className={admissionStyles.items}>
+                    <span>
+                      {" "}
+                      <strong>Medical Laboratory Technology</strong>{" "}
+                    </span>
+                    : Biology and/or Human and Social Biology and Chemistry
+                  </li>
+
+                  <li className={admissionStyles.items}>
+                    <span>
+                      {" "}
+                      <strong>Environmental Health</strong>{" "}
+                    </span>
+                    : Biology or Human and Social Biology
+                  </li>
+
+                  <li className={admissionStyles.items}>
+                    <span>
+                      {" "}
+                      <strong>Environmental Management</strong>
+                    </span>
+                    : Biology and Chemistry
+                  </li>
+                  <li className={admissionStyles.items}>
+                    <span>
+                      {" "}
+                      <strong>Occupational Safety and Health</strong>
+                    </span>
+                    :Biology or Human and Social Biology
+                  </li>
+                  <li className={admissionStyles.items}>
+                    <span>
+                      {" "}
+                      <strong>Biology</strong>{" "}
+                    </span>
+                    - Biology and Chemistry
+                  </li>
+                  <li className={admissionStyles.items}>
+                    <span>
+                      <strong>Biology Pre-Med</strong>{" "}
+                    </span>
+                    - Biology, Chemistry and Physics
+                  </li>
+                </ul>
+              </div>
+
+              <li className={admissionStyles.items}>
+                To be admitted to the following programmes, short-listed
+                applicants must be successful at an admissions interview:
+                Nursing, Medical Laboratory Technology, Radiography,
+                Environmental Health.
+              </li>
+            </ul>
+          </div>
+          <div className={standardStyles.bullets}>
+            <p className={standardStyles.headingTertiary}>
+              School of Liberal Arts, Education and Digital Humanities
+            </p>
+            <ul className={standardStyles.list}>
+              <li className={standardStyles.items}>
+                To be admitted to the music programme (bachelor's and associate
+                degree), short-listed applicants will be required to
+                successfully complete the audition process.
+              </li>
+
+              <li className={standardStyles.items}>
+                To be admitted to the following programmes, short-listed
+                applicants must be successful at an admissions interview: BSW
+                Social Work, Early Childhood Care and Education and BSc Applied
+                Psychology.
+              </li>
+            </ul>
+          </div>
         </section>
-        <section id="checklist" className={AdmisStyles.sectionCheckList}>
+        <section id="checklist" className={standardStyles.sectionWithSideNav}>
           {" "}
-          <p className={AdmisStyles.sectiontext}>
-            First Time Applicant Checklist{" "}
+          <p className={standardStyles.headingPrimarysub}>
+            Applicant Checklist{" "}
           </p>
           <div className={AdmisStyles.checklist}>
             <Image className={AdmisStyles.imgtick} src={tick} />
-            <span className={AdmisStyles.heading}> Apply Online </span>
+            <span className={standardStyles.headingTertiary}>
+              {" "}
+              Apply Online{" "}
+            </span>
             <p className={AdmisStyles.text}>
               You have choosen your programme and this is your first time
               applying to COSTAATT!!
@@ -272,7 +443,6 @@ const CustomHome = () => {
                 Online application &rarr;
               </Link>
             </p>
-            Change to button
             <ButtonLink
               text="Start Application"
               color="warning"
@@ -283,7 +453,7 @@ const CustomHome = () => {
           </div>
           <div className={AdmisStyles.checklist}>
             <Image className={AdmisStyles.imgtick} src={tick} />
-            <span className={AdmisStyles.heading}>
+            <span className={standardStyles.headingTertiary}>
               Submit supporting documents
             </span>{" "}
             <br />
@@ -311,7 +481,9 @@ const CustomHome = () => {
           </div>
           <div className={AdmisStyles.checklist}>
             <Image className={AdmisStyles.imgtick} src={tick} />
-            <span className={AdmisStyles.heading}>after you have applied</span>
+            <span className={standardStyles.headingTertiary}>
+              after you have applied
+            </span>
             <br />
             <p className={AdmisStyles.text}>
               {" "}
@@ -371,7 +543,7 @@ const CustomHome = () => {
 
               <AccordionDetails>
                 <p className={AdmisStyles.text}>
-                  To be admitted to the music programme (bachelor’s and
+                  To be admitted to the music programme (bachelor's and
                   associate degree), short-listed applicants will be required to
                   successfully complete the audition process.
                 </p>{" "}
@@ -382,7 +554,7 @@ const CustomHome = () => {
           </div>
           <div className={AdmisStyles.checklist}>
             <Image className={AdmisStyles.imgtick} src={tick} />
-            <span className={AdmisStyles.heading}>Offers</span>
+            <span className={standardStyles.headingTertiary}>Offers</span>
 
             {/* To Move arrow to the left */}
             <Accordion sx={{ margin: 2 }}>
@@ -517,7 +689,7 @@ const CustomHome = () => {
 
             <Divider />
           </div>
-          <div className={AdmisStyles.checklist}>
+          {/* <div className={AdmisStyles.checklist}>
             <Image className={AdmisStyles.imgtick} src={tick} />
             <span className={AdmisStyles.heading}> Registration </span>
             <p className={AdmisStyles.text}>
@@ -530,9 +702,47 @@ const CustomHome = () => {
               path="/admissions/howtoregister"
             />
             <Divider />
+          </div> */}
+        </section>
+        <section id="accepted" className={standardStyles.sectionWithSideNav}>
+          <h2 className={standardStyles.headingSecondary}>
+            {" "}
+            Accepted Students{" "}
+          </h2>
+          <div className={standardStyles.row}>
+            <div className={standardStyles.col1of3}>
+              Welcome to Change Makers Place an image here.
+              <Image
+               href={imagedummy}
+               width="200"
+              
+              ></Image>
+            </div>
+            <div className={standardStyles.col2of3}>
+              <p className={standardStyles.paragraph}>
+                You've been accepted, now it's time to start your new adventure.
+                Here's what to do next..
+              </p>
+
+              <ul className={AdmisStyles.list}>
+                <li className={AdmisStyles.items}>Receiving Advisement </li>
+                <li className={AdmisStyles.items}>Registering for Courses</li>
+                <li className={AdmisStyles.items}>
+                  Applying for Gate(if eligible)
+                </li>
+                <li className={AdmisStyles.items}>Paying Fees</li>
+                <li className={AdmisStyles.items}>Collecting Student Id</li>
+              </ul>
+            </div>
+            <ButtonLink
+              text="Accepted Students"
+              color="warning"
+              size="large"
+              path="/admissions/howtoregister"
+            />
           </div>
         </section>
-        <section id="contact" className={AdmisStyles.sectionContact}>
+        <section id="contact" className={standardStyles.sectionWithSideNav}>
           {" "}
           <p className={AdmisStyles.sectiontextleft}> Contact Admissions</p>
           <div className={AdmisStyles.threeColGridCon}>

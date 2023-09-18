@@ -1,8 +1,10 @@
 // all variables 
 @import "./abstracts/variables";
 
+// @import "./components/feature-box";
 
 @import "./abstracts/mixins";
+@import "./components/button";
 
 
 // all headings, paragraphs,
@@ -18,7 +20,11 @@
 // all grid layouts
 @import "./layout/grid";
 
+
+//section margins based on layout
+@import "./layout/pagelayout";
+
 //Includes tables, ul , li
-@import "./layout/structures.scss";
+@import "./layout/structures";
 
 

@@ -58,14 +58,11 @@ export const sideNavSections = {
   },
   howtoapply: {
     Welcome: "intro",
-    "First Steps": "firststeps",
-    "How to Apply": "howtoapply",
-    Timeline: "timeline",
+    "Before you Apply": "firststeps",
+    "When to Apply": "timeline",
     Requirements: "require",
-    "Choose your path": "chooseyourpath",
-
     Checklist: "checklist",
-
+    "Accepted Students":"accepted",
     Contact: "contact",
   },
   requirements: {
