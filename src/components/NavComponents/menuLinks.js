@@ -163,7 +163,7 @@ export const mainNavLinks = [
       {
         img: require("../../../images/Links/dummyImg1.jpg"),
         title: "Academic Calendar",
-        path: "https://www.google.com",
+        path: "/programmes/academiccalendar",
       },
       {
         img: require("../../../images/Links/dummyImg2.jpg"),
