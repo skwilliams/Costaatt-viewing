@@ -61,8 +61,12 @@ export const sideNavSections = {
     "Before you Apply": "firststeps",
     "When to Apply": "timeline",
     Requirements: "require",
+    "Alternative Entry Routes": "alterRoutes",
+
+    "Supporting Documents": "supportingDocs",
+
     Checklist: "checklist",
-    "Accepted Students":"accepted",
+    "Accepted Students": "accepted",
     Contact: "contact",
   },
   requirements: {
@@ -70,8 +74,8 @@ export const sideNavSections = {
     "Additional School Requirements": "minsSchreq",
     "General Supporting Documents": "suppDocs",
     "Additional Programmes Documents": "suppAddDocs",
-    "Alternative Entry Routes":"alterRoutes",
-    "Contact Admissions" :'contact'
+    "Alternative Entry Routes": "alterRoutes",
+    "Contact Admissions": "contact",
   },
   developmentcoursesApp: {
     Welcome: "intro",

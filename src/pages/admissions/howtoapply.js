@@ -113,9 +113,16 @@ const howtoapply = () => {
               </Link>{" "}
               and whether you possess them{" "}
             </div>
-
             <div className={AdmisStyles.stepstext}>
-              <span className={AdmisStyles.stepsnum}> 3. </span>
+              <span className={AdmisStyles.stepsnum}> 3. </span>{" "}
+              <Link href="#supportingDocs" className={AdmisStyles.anchortag}>
+                {" "}
+                Acquire Supporting Documents
+              </Link>{" "}
+              scan and have ready to upload{" "}
+            </div>
+            <div className={AdmisStyles.stepstext}>
+              <span className={AdmisStyles.stepsnum}> 4. </span>
               Determine what type of applicant you are{" "}
               <Accordion sx={{ mx: 7, my: 2 }}>
                 <AccordionSummary expandIcon={<CustomHome />}>
@@ -204,7 +211,7 @@ const howtoapply = () => {
               </Accordion>
             </div>
             <div className={AdmisStyles.stepstext}>
-              <span className={AdmisStyles.stepsnum}> 4. </span> Start
+              <span className={AdmisStyles.stepsnum}> 5. </span> Start
               application <br />
               Select which applicant you are and start your applicatoin
               <div className={standardStyles.row}>
@@ -307,11 +314,11 @@ const howtoapply = () => {
               </li>
             </ul>
           </div>
-          <p className={standardStyles.headingSecondary}>
+          {/* <p className={standardStyles.headingSecondary}>
             School Specific Requirements
-          </p>
+          </p> */}
           <p className={standardStyles.headingTertiary}>
-            School of Nursing, Health and Medial Technologies
+            School of Nursing, Health and Medial Technologies Requirements
           </p>
           <div className={admissionStyles.entryreq}>
             <ul className={admissionStyles.list}>
@@ -403,6 +410,7 @@ const howtoapply = () => {
           <div className={standardStyles.bullets}>
             <p className={standardStyles.headingTertiary}>
               School of Liberal Arts, Education and Digital Humanities
+              Requierments
             </p>
             <ul className={standardStyles.list}>
               <li className={standardStyles.items}>
@@ -420,6 +428,236 @@ const howtoapply = () => {
             </ul>
           </div>
         </section>
+        <section id="alterRoutes" className={standardStyles.sectionforSideNav}>
+          <h2 className={standardStyles.headingPrimarysub}>
+            Alternative Entry Routes{" "}
+          </h2>{" "}
+          <p className={standardStyles.paragraph}>
+            Applicants who do not possess the minimum requirements for entry
+            into a degree programme may be eligible for admission via the
+            following:
+          </p>
+          <div className={standardStyles.bullets}>
+            <ul className={standardStyles.list}>
+              <li className={standardStyles.items}>
+                Mature applicants (25 years and over) with relevant experience,
+                who do not possess the minimum entry requirements, may be
+                considered on the basis of experience and demonstrable
+                competence.
+              </li>
+              <li className={standardStyles.items}>
+                COMPASS is designed to help students gain the qualifications
+                needed to access the degree programme of their choice at
+                COSTAATT. The duration of study in COMPASS depends on students'
+                entry-level competencies; performance on the placement tests in
+                English, mathematics and, where relevant, science; and the
+                admission requirements of the programme they wish to pursue.
+              </li>
+              <ul className={standardStyles.list}>
+                <p className={standardStyles.text}>
+                  To qualify for the COMPASS programme, applicants MUST have
+                  completed five years of secondary school and:
+                </p>
+                <li className={standardStyles.items}>
+                  Possess 3-4 CSEC (CXC)/GCE passes
+                </li>
+
+                <li className={standardStyles.items}>
+                  {" "}
+                  Possess 5 CSEC (CXC)/GCE passes without mathematics or English
+                  or
+                </li>
+                <li className={standardStyles.items}>
+                  {" "}
+                  Be 25 years or older (mature student) with academic literacy
+                  acquired through work or life experiences.
+                </li>
+              </ul>
+
+              {/* style differntly  */}
+              <p className={standardStyles.paragraph}>
+                {" "}
+                Upon successful completion of the COMPASS programme, students
+                may apply to the college programme for which they would then
+                have gained the necessary entry requirements.
+              </p>
+
+              <p className={standardStyles.paragraph}>
+                Persons interested in pursuing the Nursing programme must be
+                guided by the registration requirements of the Nursing Council
+                of Trinidad and Tobago.
+              </p>
+            </ul>{" "}
+            {/*close of first list  */}
+          </div>
+        </section>
+        <section
+          id="supportingDocs"
+          className={standardStyles.secionWithSideNav}
+        >
+          <h2 className={standardStyles.headingPrimarysub}>
+            General Supporting Documents{" "}
+          </h2>
+          <table className={standardStyles.simple}>
+            <thead>
+              <tr>
+                <th className={standardStyles.paragraph}>Documents</th>
+                <th className={standardStyles.paragraph}>TT Nationals </th>
+                <th className={standardStyles.paragraph}>Non-Nationals</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className={standardStyles.paragraph}>Valid TT Id Card </td>
+                <td className={standardStyles.paragraph}>Yes </td>{" "}
+                <td className={standardStyles.paragraph}>N/A</td>
+              </tr>
+              <tr>
+                <td className={standardStyles.paragraph}> Valid Passport </td>
+                <td className={standardStyles.paragraph}> N/A </td>
+                <td className={standardStyles.paragraph}>Yes</td>
+              </tr>
+              <tr>
+                <td className={standardStyles.paragraph}>Birth Certificate</td>
+                <td className={standardStyles.paragraph}> Yes </td>
+                <td className={standardStyles.paragraph}> No </td>
+              </tr>
+              <tr>
+                <td className={standardStyles.paragraph}>
+                  {" "}
+                  Academic Certificates
+                </td>
+                <td className={standardStyles.paragraph}> Yes </td>
+                <td className={standardStyles.paragraph}>Yes</td>
+              </tr>
+            </tbody>
+          </table>
+          <div className={standardStyles.marginTopBig}></div>
+          <h2 className={standardStyles.headingPrimarysub}>
+            Nursing Supporting Documents{" "}
+          </h2>
+          <table className={standardStyles.simple}>
+            <thead>
+              <tr>
+                <th className={standardStyles.paragraph}>Programme</th>
+                <th className={standardStyles.paragraph}>
+                  Two Written Confidential Character References{" "}
+                </th>
+                <th className={standardStyles.paragraph}>
+                  Police Certificate of Character
+                </th>
+                <th className={standardStyles.paragraph}>
+                  Nursing Council Permit
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className={standardStyles.paragraph}>
+                  General Nursing (AAS, BSC){" "}
+                </td>
+                <td className={standardStyles.paragraph}>Yes </td>{" "}
+                <td className={standardStyles.paragraph}>Yes</td>
+                <td className={standardStyles.paragraph}>Yes</td>
+              </tr>
+              <tr>
+                <td className={standardStyles.paragraph}>
+                  {" "}
+                  Psychiatric Nursing(AAS, BSC){" "}
+                </td>
+                <td className={standardStyles.paragraph}>Yes </td>
+                <td className={standardStyles.paragraph}>Yes</td>
+                <td className={standardStyles.paragraph}>Yes</td>
+              </tr>
+              <tr>
+                <td className={standardStyles.paragraph}>Midwifery (BSC)</td>
+                <td className={standardStyles.paragraph}> Yes </td>
+                <td className={standardStyles.paragraph}> Yes </td>
+                <td className={standardStyles.paragraph}> Yes </td>
+              </tr>
+            </tbody>
+          </table>
+          <div className={standardStyles.marginTopBig}></div>
+          <h2 className={standardStyles.headingPrimarysub}>
+            Health and Medical Supporting Documents{" "}
+          </h2>
+          <table className={standardStyles.simple}>
+            <thead>
+              <tr>
+                <th className={standardStyles.paragraph}>Programme</th>
+                <th className={standardStyles.paragraph}>
+                  Two Written Confidential Character References{" "}
+                </th>
+                <th className={standardStyles.paragraph}>
+                  Personal Statements{" "}
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className={standardStyles.paragraph}>
+                  Medical Laboratory Technology (AAS, BSC){" "}
+                </td>
+                <td className={standardStyles.paragraph}>Yes </td>{" "}
+                <td className={standardStyles.paragraph}>No</td>
+              </tr>
+              <tr>
+                <td className={standardStyles.paragraph}>
+                  {" "}
+                  Medical Ultrasound (AdvDip){" "}
+                </td>
+                <td className={standardStyles.paragraph}> </td>
+                <td className={standardStyles.paragraph}>Yes</td>
+              </tr>
+              <tr>
+                <td className={standardStyles.paragraph}>Radiography (BSC)</td>
+                <td className={standardStyles.paragraph}> Yes </td>
+                <td className={standardStyles.paragraph}> </td>
+              </tr>
+              <tr>
+                <td className={standardStyles.paragraph}>
+                  Enviornmental Health (AAS,BSC)
+                </td>
+                <td className={standardStyles.paragraph}> Yes </td>
+                <td className={standardStyles.paragraph}> </td>
+              </tr>
+              <tr>
+                <td className={standardStyles.paragraph}>
+                  Occupational Safety and Health (AAS,BSC) (BSC)
+                </td>
+                <td className={standardStyles.paragraph}> Yes </td>
+                <td className={standardStyles.paragraph}> </td>
+              </tr>
+              <tr>
+                <td className={standardStyles.paragraph}>Social Work (BSC)</td>
+                <td className={standardStyles.paragraph}> Yes </td>
+                <td className={standardStyles.paragraph}> </td>
+              </tr>
+              <tr>
+                <td className={standardStyles.paragraph}>
+                  Early Childhood Care and Education(BA)
+                </td>
+                <td className={standardStyles.paragraph}> Yes </td>
+                <td className={standardStyles.paragraph}> Yes</td>
+              </tr>
+            </tbody>
+          </table>
+<div className={standardStyles.marginTopBig}></div>
+          <p className={standardStyles.headingTertiary}>  
+          DEADLINE FOR SUPPORTING DOCUMENTS  </p>
+          
+          <p className={standardStyles.paragraph}>
+
+          You must submit supporting documents
+          within 2 weeks of submitting your online application. If you are
+          unable to submit supporting documents within the stipulated time, you
+          must advise us via email to applications@costaatt.edu.tt. Please note
+          that we may not be able to process your application without required
+          evidence. 
+
+          </p>
+        </section>
+
         <section id="checklist" className={standardStyles.sectionWithSideNav}>
           {" "}
           <p className={standardStyles.headingPrimarysub}>
@@ -721,28 +959,22 @@ const howtoapply = () => {
               </p>
               <div className={standardStyles.bullets}>
                 <ul className={standardStyles.list}>
+                  <li className={standardStyles.items}>Receive Advisement </li>
+                  <li className={standardStyles.items}>Register for Courses</li>
                   <li className={standardStyles.items}>
-                    Receiving Advisement{" "}
-                  </li>
-                  <li className={standardStyles.items}>
-                    Registering for Courses
-                  </li>
-                  <li className={standardStyles.items}>
-                    Applying for Gate(if eligible)
+                    Apply for Gate (if eligible)
                   </li>
                   <li className={standardStyles.items}>Paying Fees</li>
-                  <li className={standardStyles.items}>
-                    Collecting Student Id
-                  </li>
+                  <li className={standardStyles.items}>Collect Student Id</li>
+                  <Link
+                    href="./howtoregister"
+                    className={standardStyles.btnText}
+                  >
+                    Learn more →
+                  </Link>
                 </ul>
               </div>
             </div>
-            {/* <ButtonLink
-              text="Accepted Students"
-              color="warning"
-              size="large"
-              path="/admissions/howtoregister"
-            /> */}
           </div>
         </section>
         <section id="contact" className={standardStyles.sectionWithSideNav}>
