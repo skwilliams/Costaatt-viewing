@@ -5,6 +5,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Costaatt | Home </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Landing />
     </div>
