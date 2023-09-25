@@ -10,15 +10,20 @@
         transition: all .2s;
         position: relative;
         font-size: $default-font-size;
+        margin-bottom:2em;
 
         //Change for the <button> element
         border: none;
         cursor: pointer;
+                background-color: $color-primary-dark;
+        color: $color-white;
     }
     
     &:hover {
         transform: translateY(-3px);
         box-shadow: 0 1rem 2rem rgba($color-black,.2);
+        background-color: $color-primary-light;
+        color:white;
 
         &::after {
             transform: scaleX(1.4) scaleY(1.6);
@@ -42,12 +47,12 @@
         }
     }
 
-    &orange {
-        background-color: $orange;
+    &purple {
+        background-color: $color-primary;
         color: $color-white;
 
         &::after {
-            background-color: $orange;
+            background-color: $color-primary;
         }
     }
     
@@ -74,12 +79,16 @@
     &:link,
     &:visited {
         font-size: $default-font-size;
-        color: $orange;
+        // color: $orange;
         display: inline-block;
         text-decoration: none;
         border-bottom: 1px solid $orange;
         padding: 3px;
         transition: all .2s;
+                background-color: $orange;
+                        color: $color-white;
+
+
     }
 
     &:hover {
@@ -93,4 +102,26 @@
         box-shadow: 0 .5rem 1rem rgba($color-black, .15);
         transform: translateY(0);
     }
+}
+
+.strongcall .btn {
+  position: relative;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  margin-bottom:5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  float:left;
+}
+
+.strongcall .btn:hover {
+  background-color: #222222;
 }

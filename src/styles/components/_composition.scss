@@ -1,7 +1,24 @@
 .composition {
-    position: relative;
+    // position: relative;
 
-    &__photo {
+    // &photo {
+    //     width: 55%;
+    //     box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+    //     border-radius: 2px;
+    //     position: absolute;
+    //     z-index: 10;
+    //     transition: all .2s;
+    //     outline-offset: 2rem;
+
+    //     @include respond(tab-port) {
+    //         float: left;
+    //         position: relative;
+    //         width: 33.33333333%;
+    //         box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+    //     }
+
+        p1 {
+              
         width: 55%;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
         border-radius: 2px;
@@ -17,7 +34,11 @@
             box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
         }
 
-        &--p1 {
+
+
+
+
+
             left: 0;
             top: -2rem;
 
@@ -27,7 +48,23 @@
             }
         }
 
-        &--p2 {
+        .p2 {
+              
+        width: 55%;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        border-radius: 2px;
+        position: absolute;
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 2rem;
+
+        @include respond(tab-port) {
+            float: left;
+            position: relative;
+            width: 33.33333333%;
+            box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+        }
+
             right: 0;
             top: 2rem;
 
@@ -38,7 +75,24 @@
             }
         }
 
-        &--p3 {
+        .p3 {
+
+             
+        width: 55%;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        border-radius: 2px;
+        position: absolute;
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 2rem;
+
+        @include respond(tab-port) {
+            float: left;
+            position: relative;
+            width: 33.33333333%;
+            box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+        }
+
             left: 20%;
             top: 10rem;
 
@@ -56,10 +110,10 @@
             z-index: 20;
         }
 
-    }
+    
 
-    &:hover &__photo:not(:hover) {
+    &:hover &photo:not(:hover) {
         transform: scale(.95);
     }
-    //composition:hover composition__photo:not(:hover) {
 }
+    //composition:hover composition__photo:not(:hover) {

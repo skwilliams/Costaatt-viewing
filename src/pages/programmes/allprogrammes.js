@@ -192,7 +192,7 @@ const allcourses = () => {
                       name="nursing"
                     />
                   }
-                  label=" Liberal Arts, Education and Digital Humanities Nursing, Health
+                  label=" Education and Digital Humanities Nursing, Health
                 and Medical Technologies"
                 />
               </div>

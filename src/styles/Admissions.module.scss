@@ -175,8 +175,10 @@
 .icon {
   width: 70px;
   height: 70px;
+  text-align: center;
 
 }
+
 
 .iconsection {
   // margin:  2rem 0;
@@ -201,7 +203,7 @@
 
 .stepsnum{
   font-size: 3rem;
-  color:$orange;
+  color:$color-comp1;
   // top: 10%;
   
 }
@@ -728,11 +730,13 @@
 .sectionCheckList {
   margin: 3rem 7rem;
   background-color: whitesmoke;
-
+}
   .checklist {
 
 
-    margin: 2rem 0 2rem 0;
+    margin: 3rem 0 3rem 0;
+    // padding:4rem 0;
+    // background-color: purple;
 
       .imgtick{
         // float:left;
@@ -753,14 +757,14 @@
       line-height: 2;
       font-family: "Lato";
       margin-top:1rem;
-          text-align: left;
+      text-align: left;
 
     
     }
 
   }
   
-}
+
 
 .sectionNextstep {
   margin: 3rem 7rem;
@@ -820,7 +824,7 @@
 }
 
 .bannerSub {
-  background-color: $purple-main;
+  background-color: $color-primary;
   color:white;
   font-size: 1.2rem;
   opacity: .7;
@@ -859,7 +863,7 @@ margin:0 auto;
   text-decoration: underline;
   text-underline-position: below;
   text-underline-offset: .3rem;
-  color: $orange;
+  color: $color-comp4;
 }
 
 //Start Application page

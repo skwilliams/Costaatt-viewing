@@ -11,10 +11,10 @@
 }
 
 .sectionNoSidenav{
-    padding:0;
-     margin-bottom: 8rem !important;
+    
+     margin: 0 8rem !important;
 
     @include respond(tab-port) {
-        margin-bottom: 5rem !important;
+        margin-bottom: 0 5rem !important;
     }
 }

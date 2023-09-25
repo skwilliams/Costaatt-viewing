@@ -224,19 +224,19 @@ const howtoapply = () => {
                 >
                   <SimpleCard
                     text="New and Transfer Applicant"
-                    linkpage="admissions/apply"
+                    linkpage="admissions/newtransferapplicant"
                   />
                 </div>
                 <div className={standardStyles.col1of3}>
                   <SimpleCard
                     text="Returning Student "
-                    linkpage="admissions/apply"
+                    linkpage="admissions/returningapplicant"
                   />
                 </div>
                 <div className={standardStyles.col1of3}>
                   <SimpleCard
                     text="Non-matriculation and audit"
-                    linkpage="admissions/apply"
+                    linkpage="admissions/auditNonmatapplicant"
                   />
                 </div>
               </div>
@@ -495,6 +495,8 @@ const howtoapply = () => {
           id="supportingDocs"
           className={standardStyles.secionWithSideNav}
         >
+          <div className={standardStyles.marginTopBig}></div>
+
           <h2 className={standardStyles.headingPrimarysub}>
             General Supporting Documents{" "}
           </h2>
@@ -642,19 +644,17 @@ const howtoapply = () => {
               </tr>
             </tbody>
           </table>
-<div className={standardStyles.marginTopBig}></div>
-          <p className={standardStyles.headingTertiary}>  
-          DEADLINE FOR SUPPORTING DOCUMENTS  </p>
-          
+          <div className={standardStyles.marginTopBig}></div>
+          <p className={standardStyles.headingTertiary}>
+            DEADLINE FOR SUPPORTING DOCUMENTS{" "}
+          </p>
+
           <p className={standardStyles.paragraph}>
-
-          You must submit supporting documents
-          within 2 weeks of submitting your online application. If you are
-          unable to submit supporting documents within the stipulated time, you
-          must advise us via email to applications@costaatt.edu.tt. Please note
-          that we may not be able to process your application without required
-          evidence. 
-
+            You must submit supporting documents within 2 weeks of submitting
+            your online application. If you are unable to submit supporting
+            documents within the stipulated time, you must advise us via email
+            to applications@costaatt.edu.tt. Please note that we may not be able
+            to process your application without required evidence.
           </p>
         </section>
 
@@ -676,19 +676,21 @@ const howtoapply = () => {
               You need to complete the online application form
             </p>{" "}
             <p className={AdmisStyles.text}>
-              <Link href="/admissions/applynow">
-                {" "}
+              <Link
+                href="/admissions/applynow"
+                className={standardStyles.btnText}
+              >
                 Online application &rarr;
               </Link>
             </p>
-            <ButtonLink
+            {/* <ButtonLink
               text="Start Application"
               color="warning"
               size="large"
               path="/admissions/applynow"
-            />
-            <Divider />
+            /> */}
           </div>
+          <Divider />
           <div className={AdmisStyles.checklist}>
             <Image className={AdmisStyles.imgtick} src={tick} />
             <span className={standardStyles.headingTertiary}>
@@ -715,8 +717,8 @@ const howtoapply = () => {
                 applications@costaatt.edu.tt.{" "}
               </a>{" "}
             </p>
-            <Divider />
           </div>
+          <Divider />
           <div className={AdmisStyles.checklist}>
             <Image className={AdmisStyles.imgtick} src={tick} />
             <span className={standardStyles.headingTertiary}>
@@ -787,9 +789,8 @@ const howtoapply = () => {
                 </p>{" "}
               </AccordionDetails>
             </Accordion>
-
-            <Divider />
           </div>
+          <Divider />
           <div className={AdmisStyles.checklist}>
             <Image className={AdmisStyles.imgtick} src={tick} />
             <span className={standardStyles.headingTertiary}>Offers</span>
@@ -924,23 +925,8 @@ const howtoapply = () => {
                 </p>
               </AccordionDetails>
             </Accordion>
-
-            <Divider />
           </div>
-          {/* <div className={AdmisStyles.checklist}>
-            <Image className={AdmisStyles.imgtick} src={tick} />
-            <span className={AdmisStyles.heading}> Registration </span>
-            <p className={AdmisStyles.text}>
-              You have been accepted, now it's time to Register !!
-            </p>{" "}
-            <ButtonLink
-              text="How to Register"
-              color="warning"
-              size="large"
-              path="/admissions/howtoregister"
-            />
-            <Divider />
-          </div> */}
+          <Divider />
         </section>
         <section id="accepted" className={standardStyles.sectionWithSideNav}>
           <h2 className={standardStyles.headingSecondary}>

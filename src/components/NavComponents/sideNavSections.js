@@ -98,4 +98,5 @@ export const sideNavSections = {
     "Student Id Card": "studentid",
     "Additional Information": "addinfo",
   },
+
 };

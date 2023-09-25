@@ -215,11 +215,11 @@ export const mainNavLinks = [
   },
   {
     title: "COSTAATT Life ",
-    path: "/",
+    // path: "/",
     submenu: [
       {
-        title: "Campus Activities",
-        path: "/",
+        title: "Student Clubs and Organizations",
+        path: "/costaattlife/studentorg",
       },
       {
         title: "Health and wellness",
@@ -249,13 +249,13 @@ export const mainNavLinks = [
     submenuImage: [
       {
         img: require("../../../images/Links/dummyImg1.jpg"),
-        title: "Academic Calendar",
-        path: "/programmes",
+        title: "Sports at COSTAATT",
+        path: "/costaattlife/sports",
       },
       {
         img: require("../../../images/Links/dummyImg2.jpg"),
         title: "Areas of Study",
-        path: "/programmes",
+        path: "/costaattlife/areasofstudy",
       },
     ],
   },

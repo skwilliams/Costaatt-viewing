@@ -85,4 +85,12 @@ export const subHeaderSections = {
   //   "meet the dean": "meetthedean",
   //   "school events and news": "schoolnews",
   // },
+  
+  studentorg :{
+    "Student Clubs " :"introtoclubs",
+    "Existing Clubs " :"existingclubs",
+    "Start or Join Club" :"startclub",
+    "Student Ambassadors":"ambassadors",
+    "Upcoming Events" :"events"
+  }
 };

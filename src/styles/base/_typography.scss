@@ -109,9 +109,18 @@
             margin-bottom:3rem;
 
 }
+.headingcards {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: capitalize;
+            margin-bottom:1rem;
+
+}
+
 
 .paragraph {
     font-size: $default-font-size;
+    line-height: 2;
 
     &:not(:last-child) {
         margin-bottom: 3rem;
@@ -128,4 +137,17 @@
     font-style: italic;
     margin:1rem 0;
     font-weight: bold;
+}
+
+//Links to the top of the pages
+.toplinksnav {
+  display: flex;
+  width: 50%;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #222222;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  text-align: left;
+  padding:  1em ;
 }

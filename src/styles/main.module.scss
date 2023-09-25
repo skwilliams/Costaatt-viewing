@@ -1,22 +1,24 @@
 // all variables 
 @import "./abstracts/variables";
-
-// @import "./components/feature-box";
-
 @import "./abstracts/mixins";
+
+//components
+
+@import "./components/featurebox";
 @import "./components/button";
+@import "./components/composition";
 
 
-// all headings, paragraphs,
+// all headings, paragraphs
 @import "./base/typography";
+
+
 
 @import "./base/utilities";
 
 
 @import "./pages/home";
-
-
-
+@import "./pages/costLife";
 
 
 // all grid layouts
