@@ -4,11 +4,12 @@
   display: flex;
   padding: 5px 30px;
   justify-content: space-between;
-  background-image: linear-gradient(
-    to bottom right,
-    $color-primary,
-    $color-primary-dark
-  );
+background-color: $color-primary-dark;
+//   background-image: linear-gradient(
+//     to bottom right,
+//     $color-primary,
+//     $color-primary-dark
+//   );
   color: white;
 }
 

@@ -77,7 +77,7 @@ export const subHeaderSections = {
     "CAPE Exemptions": "exemptionlistcape",
     "How to Apply": "howtoapply",
   },
-  
+
   // [deptName]: {
   //   "school overview": "overview",
   //   Departments: "depart",
@@ -85,12 +85,31 @@ export const subHeaderSections = {
   //   "meet the dean": "meetthedean",
   //   "school events and news": "schoolnews",
   // },
-  
-  studentorg :{
-    "Student Clubs " :"introtoclubs",
-    "Existing Clubs " :"existingclubs",
-    "Start or Join Club" :"startclub",
-    "Student Ambassadors":"ambassadors",
-    "Upcoming Events" :"events"
-  }
+
+  studentorg: {
+    "Student Clubs ": "introtoclubs",
+    "Existing Clubs ": "existingclubs",
+    "Start or Join Club": "startclub",
+    "Student Ambassadors": "ambassadors",
+    "Upcoming Events": "events",
+    Contact: "contact",
+  },
+  studentcouncil: {
+    "Studnet Council ": "introtoclubs",
+    "Serving Members": "presentteam",
+    "How to be a part": "joinus",
+    Activities: "activites",
+    "Upcoming Events": "events",
+
+    Contact: "contact",
+  },
+  sports: {
+    "Sports  ": "introsports",
+    "Costaatt Teams": "sportsteams",
+    Activities: "activites",
+    "Upcoming Events": "events",
+    "Athletics Department ": "thedepartment",
+
+    Contact: "contact",
+  },
 };

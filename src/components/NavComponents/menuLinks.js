@@ -223,39 +223,39 @@ export const mainNavLinks = [
       },
       {
         title: "Health and wellness",
-        path: "/",
+        path: "/costaattlife/healthwell",
       },
       {
         title: "Career Management",
-        path: "/",
+        path: "/costaattlife/careermgt",
       },
       {
         title: "College Library",
-        path: "/",
+        path: "/costaattlife/library",
       },
       {
         title: "I.T. Facilities",
-        path: "/",
+        path: "/costaattlife/itservices",
       },
       {
         title: "Compass Center",
-        path: "/",
+        path: "/costaattlife/compasscenter",
       },
       {
         title: "Events",
-        path: "/",
+        path: "/events",
       },
     ],
     submenuImage: [
       {
         img: require("../../../images/Links/dummyImg1.jpg"),
-        title: "Sports at COSTAATT",
+        title: "Sports",
         path: "/costaattlife/sports",
       },
       {
         img: require("../../../images/Links/dummyImg2.jpg"),
-        title: "Areas of Study",
-        path: "/costaattlife/areasofstudy",
+        title: "Studnet Council",
+        path: "/costaattlife/studentcouncil",
       },
     ],
   },

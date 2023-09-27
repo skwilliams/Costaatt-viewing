@@ -24,33 +24,6 @@
 
 
 
-.twoColGridCon {
-  display: grid;
-  gap: 8rem;
-  grid-gap: 2rem;
-  // width:min(95%,70rem);
-  // margin-inline:auto;
-
-  // //  align-items: flex-end;
-  
-  // //   box-sizing: border-box;
-  //   margin: 0 auto;
-  
-}
-
-@media (min-width:50em) {
-  .twoColGridCon{
-      grid-template-columns: 1fr 1fr ;
-  }
-}
-
-.twoColGrid {
-  text-align:  center;
-  padding: 1.25em 0;
-  font-size: 1.5rem;
-  padding: 1em;
-}
-
 .sectionstartclub{
     padding: 0 5rem 0 5rem;
 
@@ -90,6 +63,9 @@ text-align: center;
   
 
 }
+.imgstyles{
+  width: 1000px;
+}
 
 .startclub{
 
@@ -108,4 +84,34 @@ text-align: center;
 
 
 
+}
+.sectionevents{
+      padding: 0 5rem 0 5rem;
+
+  // background-color: $color-grey-dark;
+
+}
+.sectionambasadoor{
+     margin: 0 8rem !important;
+
+  padding: 12rem 0;
+    margin-top: -20vh;
+
+    @include respond(tab-port) {
+        padding: 8rem 0;
+    }
+}
+.sectionsports{
+  padding:1em;
+  //  background-image:         url(../../../public/images/costaattlife/caimans.png);
+
+text-align: left;
+    //   background-image: linear-gradient(
+    //     to right bottom,
+    //     // rgba($color-grey-light-1, 0.6),
+    //     // rgba($color-grey-dark, 0.6)),
+    // url(../../../public/images/costaattlife/caimans.png);
+    // background-position-x: right;
+        background-size: cover;
+        background-color: rgba($color-grey-light-1, 0.4);
 }

@@ -43,6 +43,39 @@ const events = [
     time: "09:30",
     image: "/images/events/extrovert-event.jpg",
   },
+  {
+    id: "e0005",
+    title: "Networking for extroverts",
+    dept_code: "MGDE",
+    description:
+      "You probably need no help with networking in general. But focusing your energy correctly - that is something where most people can improve.",
+    location: "My Street 12, 10115 Broke City",
+    date: "2023-09-10",
+    time: "09:30",
+    image: "/images/events/extrovert-event.jpg",
+  },
+  {
+    id: "e0006",
+    title: "Photography Field Trip",
+    dept_code: "CLUB",
+    description:
+      "You probably need no help with networking in general. But focusing your energy correctly - that is something where most people can improve.",
+    location: "My Street 12, 10115 Broke City",
+    date: "2023-09-10",
+    time: "09:30",
+    image: "/images/events/extrovert-event.jpg",
+  },
+  {
+    id: "e0007",
+    title: "Ambassador Orientation",
+    dept_code: "CLUB",
+    description:
+      "You probably need no help with networking in general. But focusing your energy correctly - that is something where most people can improve.",
+    location: "My Street 12, 10115 Broke City",
+    date: "2023-09-10",
+    time: "09:30",
+    image: "/images/events/extrovert-event.jpg",
+  },
 ];
 
 export function getAllEvents() {

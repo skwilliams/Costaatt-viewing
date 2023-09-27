@@ -8,7 +8,7 @@ import Link from "next/link"
 import Image from "next/image";
 
 
-const ContactAdmissions = () => {
+const ContactStudentLife = () => {
   return (
     <>
       <div className={standardStyles.row}>
@@ -18,15 +18,25 @@ const ContactAdmissions = () => {
             src={telephone}
             alt="telephone icon"
           />
-          <p className={AdmisStyles.iconfont}> 625-5030 ext 5900</p>
+          <p className={AdmisStyles.iconfont}> 625-5030 ext 5227,5236</p>
         </div>
         <div className={standardStyles.col1of3}>
           <Image className={AdmisStyles.icon} src={email} alt="email icon" />
           <p className={AdmisStyles.iconfont}>
             {" "}
-            <a href="mailto:applications@costaatt.edu.tt">
+            <a
+              className={AdmisStyles.iconfont}
+              href="mailto:icarter@costaatt.edu.tt"
+            >
               {" "}
-              applications@costaatt.edu.tt{" "}
+              icarter@costaatt.edu.tt{" "}
+            </a>{" "}
+            <a
+              className={AdmisStyles.iconfont}
+              href="mailto:studentlifeandathletics@costaatt.edu.tt"
+            >
+              {" "}
+              studentlifeandathletics@costaatt.edu.tt{" "}
             </a>{" "}
           </p>
         </div>
@@ -38,9 +48,9 @@ const ContactAdmissions = () => {
           />
           <p className={AdmisStyles.iconfont}>
             {" "}
-            <Link href="/admissions/admissioncounsellors">
+            <Link className={AdmisStyles.iconfont} href="/directory">
               {" "}
-              Admissions Counsellor Directory{" "}
+              Directory{" "}
             </Link>
           </p>
         </div>
@@ -49,4 +59,4 @@ const ContactAdmissions = () => {
   );
 }
 
-export default ContactAdmissions
+export default ContactStudentLife
