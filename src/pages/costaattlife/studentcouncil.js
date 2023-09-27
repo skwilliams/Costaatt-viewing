@@ -92,7 +92,7 @@ const studentcouncil = () => {
           </button> */}
         </div>
         <div className={standardStyles.row}>
-          <div className={standardStyles.col1of3}>
+          <div className={standardStyles.col1of2}>
             <div className={standardStyles.composition}>
               <Image
                 src={studentcouncil1}
@@ -121,7 +121,7 @@ const studentcouncil = () => {
             </div>
           </div>
 
-          <div className={standardStyles.col2of3}>
+          <div className={standardStyles.col1of2}>
             <div className={standardStyles.activities__content}>
               {/* <h3 className={standardStyles.headingPrimarysub}>Activities</h3> */}
               <h2>“Always good to give back”</h2>
