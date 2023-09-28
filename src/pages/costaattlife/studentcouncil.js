@@ -85,61 +85,17 @@ const studentcouncil = () => {
             How to be part of governace your impact will be great{" "}
           </h3>
 
-          {/* <button
+          <button
             className={`${standardStyles.btn} ${standardStyles.btn__purple}`}
           >
             How to become involved{" "}
-          </button> */}
+          </button>
         </div>
-        <div className={standardStyles.row}>
-          <div className={standardStyles.col1of2}>
-            <div className={standardStyles.composition}>
-              <Image
-                src={studentcouncil1}
-                alt="Cleaning up beach"
-                className={` ${standardStyles.composition__photo} ${standardStyles.composition__photo_p1}`}
-                width="200"
-              />
-              <Image
-                src={studentcouncil2}
-                alt="Cleaning up beach again"
-                className={` ${standardStyles.composition__photo} ${standardStyles.composition__photo_p2}`}
-                width="200"
-              />
-              <Image
-                src={studentcouncil1}
-                alt="Cleaning up beach"
-                className={` ${standardStyles.composition__photo} ${standardStyles.composition__photo_p3}`}
-                width="200"
-              />
-              {/* <Image
-                src={studentcouncil2}
-                alt="Cleaning up beach again"
-                className={` ${standardStyles.composition__photo} ${standardStyles.composition__photo_p2}`}
-                width="200"
-              /> */}
-            </div>
-          </div>
+      {/* </section>
 
-          <div className={standardStyles.col1of2}>
-            <div className={standardStyles.activities__content}>
-              {/* <h3 className={standardStyles.headingPrimarysub}>Activities</h3> */}
-              <h2>“Always good to give back”</h2>
-              <p className={standardStyles.activities__text}>
-                We are there to add value to others in whatever way possible.
-                Serving is one of our greatest joy.
-              </p>
-              <button className={standardStyles.btn}>
-                Join Student Council
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="activities">
+      <section id="activities"> */}
         {/* </section> */}
-        <h2 className={standardStyles.headingPrimarysub}> Activities </h2>
+        {/* <h2 className={standardStyles.headingPrimarysub}> Activities </h2> */}
         <div className={standardStyles.row}>
           <div className={standardStyles.col1of2}>
             <div className={standardStyles.activities__pictures}>
@@ -147,82 +103,35 @@ const studentcouncil = () => {
                 src={studentcouncil1}
                 alt="Cleaning up beach"
                 className={standardStyles.activities__img1}
-                width="200"
+                width="150"
+                height="200"
               />
               <Image
                 src={studentcouncil2}
                 alt="Cleaning up beach again"
                 className={standardStyles.activities__img2}
-                width="200"
+                width="150"
+                height="200"
               />
             </div>
           </div>
 
           <div className={standardStyles.col1of2}>
             <div className={standardStyles.activities__content}>
-              {/* <h3 className={standardStyles.headingPrimarysub}>Activities</h3> */}
-              <h2>“Always good to give back”</h2>
+              <h2 className={standardStyles.headingPrimarysub}>“Always good to give back”</h2>
               <p className={standardStyles.activities__text}>
                 We are there to add value to others in whatever way possible.
                 Serving is one of our greatest joy.
               </p>
-              <button className={standardStyles.btn}>
+              <button
+                className={`${standardStyles.btn} ${standardStyles.btn__purple}`}
+              >
                 Join Student Council
               </button>
             </div>
           </div>
         </div>
       </section>
-
-      {/* <div className={standardStyles.row}>
-          <div className={standardStyles.col1of2}>
-            <p className={standardStyles.paragraph}>
-              Ambassadors are frequently called upon to represent the college at
-              external engagements as well as plan and execute many campus
-              activities, including but not limited to Admissions Recruitment
-              Sessions, Registration, Student Orientation, Graduation and any
-              other campus activity that may be planned by the college.
-            </p>
-            {/* <Link href="./transfercredits" className={standardStyles.btnText}>
-              Learn more →
-            </Link> 
-          </div>
-          <div className={standardStyles.col1of2}>
-            <div className={standardStyles.composition}>
-              <>
-                <Image
-                  // srcSet="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
-                  // sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                  alt="Photo 1"
-                  width="250"
-                  height="0"
-                  className={`${standardStyles.composition__photo} ${standardStyles.composition__photo_p1} `}
-                  src={startclub}
-                />
-
-                <Image
-                  // srcSet="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
-                  // sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                  alt="Photo 2"
-                  width="250"
-                  height="0"
-                  className={` ${standardStyles.composition__photo} ${standardStyles.composition__photo_p2}`}
-                  src={joinclub}
-                />
-
-                <Image
-                  // srcSet="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
-                  // sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                  alt="Photo 3"
-                  width="250"
-                  height="0"
-                  className={`${standardStyles.composition__photo} ${standardStyles.composition__photo_p3}`}
-                  src={studentamb}
-                />
-              </>
-            </div>
-          </div>
-  </div>{" "} */}
 
       <section
         id="events"

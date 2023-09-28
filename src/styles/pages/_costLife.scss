@@ -62,10 +62,18 @@ text-align: center;
     // max-width: 1500px;
   
 
-}
+
+
+  }
+  }
+
+
+
 .imgstyles{
-  width: 1000px;
+  // width: 1000px;
 }
+
+
 
 .startclub{
 
@@ -78,13 +86,30 @@ text-align: center;
         rgba($color-primary-light, 0.6)),
     url(../../../public/images/costaattlife/startclub.jpg);
     background-position-x: right;
-        background-size: cover;
+        background-size:cover;
 }
 
 
 
+.sportsintro{
+ 
+  // margin: 0 5rem;
+  max-width: 1000px;
 
+text-align: left;
+// background-image:     url(../../../public/images/costaattlife/caimans.png);
+
+
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-grey-light-1, 0.6),
+        rgba($color-primary-light, 0.6)),
+    url(../../../public/images/costaattlife/caimans.png);
+    background-size:cover;
+    background-position-x:right;
+  
 }
+
 .sectionevents{
       padding: 0 5rem 0 5rem;
 

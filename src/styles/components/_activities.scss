@@ -1,8 +1,8 @@
 .activities{
     &__pictures {
-        background-color: $color-primary;
+        // background-color: $color-primary;
         grid-column: full-start / col-end 4;
-        background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary-dark, .5));
+        // background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary-dark, .5));
         //  url(../../../public/images/costaattlife/back.jpg);
         background-size: cover;
 
@@ -33,6 +33,18 @@
         width: 115%;
         grid-row: 4 / 6;
         grid-column: 4 / 7;
+        z-index: 20;
+        box-shadow: 0 2rem 5rem rgba(#000, .2);
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-row: 1 / -1;
+            width: 100%;
+        }
+    }
+    &__img3 {
+        width: 115%;
+        grid-row: 1 / 6;
+        grid-column: 1 / 7;
         z-index: 20;
         box-shadow: 0 2rem 5rem rgba(#000, .2);
 

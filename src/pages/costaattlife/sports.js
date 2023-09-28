@@ -23,6 +23,17 @@ import { stucouncildata } from "../costaattlife/studcouninfo";
 import StudentCouncilRep from "@/components/PageComponents/StudentCouncilRep";
 import ContactStudentLife from "@/components/PageComponents/ContactStudentLife";
 import {caimans} from"../../../public/images/costaattlife/caimans.png"
+import { basketball } from "../../../public/images/costaattlife/basketball.jpg";
+import {costaattteam } from "../../../public/images/costaattlife/costaatt team.jpg";
+import { cricket } from "../../../public/images/costaattlife/cricket.jpg";
+import { cricket2 } from "../../../public/images/costaattlife/cricket2.jpg";
+import { football } from "../../../public/images/costaattlife/football.jpg";
+import { netball } from "../../../public/images/costaattlife/netball.jpg";
+
+import { run4life } from "../../../public/images/costaattlife/run4life.jpg";
+
+
+
 
 const sports = () => {
   return (
@@ -39,14 +50,10 @@ const sports = () => {
         <Link href="/costaattlife/sports">Sports</Link>
       </p>
 
-      <section
-        id="introsports"
-        className={`${standardStyles.sectionNoSidenav} ${standardStyles.marginBottomBig}`}
-      >
+      <section id="introsports" className={standardStyles.sectionNoSidenav}>
         <h2 className={standardStyles.headingPrimarysub}>
           Sports at COSTAATT{" "}
         </h2>
-
         <p className={standardStyles.paragraph}>
           The Department of Athletics seeks to provide extracurricular support
           in the provision of a holistic education for all our students.
@@ -56,6 +63,68 @@ const sports = () => {
           recreational activities.
         </p>
       </section>
+
+      <section id="joinus" className={`${standardStyles.sectionstartclub} `}>
+        <div className={standardStyles.sportsintro}>
+          <h2> Represent your fellow students</h2>
+          <h3 className={standardStyles.paragraph}>
+            {" "}
+            How to be part of governace your impact will be great{" "}
+          </h3>
+
+          <button
+            className={`${standardStyles.btn} ${standardStyles.btn__purple}`}
+          >
+            How to become involved{" "}
+          </button>
+        </div>
+         </section> 
+
+      {/* <section id="activities"> 
+        {/* <h2 className={standardStyles.headingPrimarysub}> Activities </h2> */}
+        <div className={standardStyles.row}>
+          <div className={standardStyles.col1of2}>
+            <div className={standardStyles.activities__pictures}>
+              <Image
+                src={football}
+                alt="Football"
+                className={standardStyles.activities__img1}
+                width="300"
+                height="200"
+              />
+              <Image
+                src={netball}
+                alt="Cleaning up beach again"
+                className={standardStyles.activities__img2}
+                width="420"
+                height="200"
+              />
+              
+            </div>
+          </div>
+
+          <div className={standardStyles.col1of2}>
+            <div className={standardStyles.activities__content}>
+                We subscribe to the National Sports Policy by fostering a
+                “Sports-for- all” culture throughout the College. We subscribe
+                to the National Sports Policy by fostering a “Sports-for- all”
+                culture throughout the College. COSTAATT Teams:
+                <div className={standardStyles.bullets}>
+                  <ul className={standardStyles.list}>
+                    <li className={standardStyles.items}>Football </li>
+                    <li className={standardStyles.items}>Basketball</li>
+                    <li className={standardStyles.items}>Netball</li>
+                  </ul>
+                </div>{" "}
+                Our success in football, basketball, and netball in the UTT
+                Champions League is indicative of the College's potential to
+                perform at a high standard. The College has embarked on a
+                development programme that now includes cricket and volleyball.
+              </div>
+            </div>
+          </div>
+      </section> 
+
       <section id="sportsteams" className={standardStyles.sectionsports}>
         <h2 className={standardStyles.headingPrimarysub}>
           {" "}
@@ -63,37 +132,55 @@ const sports = () => {
         </h2>
         <div className={standardStyles.row}>
           <div className={standardStyles.col1of2}>
+            {/* <div className={standardStyles.sportsintro}> */}
             <Image
-              className={standardStyles.imgstyle}
+              // className={standardStyles.imgstyle}
               src={caimans}
               alt="Caimans Mascot"
-              width="3000"
-              height="0"
+              width="0"
+              height="250"
             />
+            Picture of Caiman costaatt Mascot
           </div>
+          {/* </div> */}
           <div className={standardStyles.col1of2}>
-            <p className={standardStyles.paragraph}>
+            <div className={standardStyles.paragraph}>
               We subscribe to the National Sports Policy by fostering a
-              “Sports-for- all” culture throughout the College. COSTAATT Teams:
-              • Football • Basketball • Netball Our success in football,
-              basketball, and netball in the UTT Champions League is indicative
-              of the College's potential to perform at a high standard. The
-              College has embarked on a development programme that now includes
-              cricket and volleyball.
-            </p>
-            <div className={standardStyles.startclub}>
-              <h2> Represent your fellow students</h2>
+              “Sports-for- all” culture throughout the College. We subscribe to
+              the National Sports Policy by fostering a “Sports-for- all”
+              culture throughout the College. COSTAATT Teams:
+              <div className={standardStyles.bullets}>
+                <ul className={standardStyles.list}>
+                  <li className={standardStyles.items}>Football </li>
+                  <li className={standardStyles.items}>Basketball</li>
+                  <li className={standardStyles.items}>Netball</li>
+                </ul>
+              </div>{" "}
+              Our success in football, basketball, and netball in the UTT
+              Champions League is indicative of the College's potential to
+              perform at a high standard. The College has embarked on a
+              development programme that now includes cricket and volleyball.
+            </div>
+
+            <div className={standardStyles.sportsintro}>
+              <h2> Do you want to be a Caiman ?</h2>
               <h3 className={standardStyles.paragraph}>
                 {" "}
-                Do you want to be a caiman{" "}
+                Come join our sports team{" "}
               </h3>
 
-              <a    Q
+              <a
+                Q
                 href="#contact"
                 className={`${standardStyles.btn} ${standardStyles.btn__purple}`}
               >
-                Contact us for More Information {" "}
+                Contact us for More Information{" "}
               </a>
+              <h2> Do you want to be a Caiman ?</h2>
+              <h3 className={standardStyles.paragraph}>
+                {" "}
+                Come join our sports team{" "}
+              </h3>
             </div>
           </div>
         </div>
