@@ -16,12 +16,15 @@ import {
   SuccessMainLinks,
   FEATURED_NEWS,
 } from "../HomeComponents/homeLinks";
+import { useRouter } from "next/router";
 
 import { useState } from "react";
 import Button from "../Button";
 import SuccessSlider from "../Slider";
 import CarouselSuccess from "../Carousel";
-
+import ButtonLink from "./ButtonLink";
+import { useEffect } from "react";
+import { useRef } from "react";
 /**This component renders the home page which is called <Landing /> in index.js
  *
  * It is seperated into sections with each Section givin its own className: Section One etc
@@ -33,21 +36,40 @@ const Home = () => {
   const [options, setoptions] = useState("");
   const [interested, setinterested] = useState([]);
   const [selectedSuccess, setSelectedSuccess] = useState(null);
+  const router = useRouter(); // Get the router object
+  const secondSelectRef = useRef(null);
 
   const handleSuccessSelect = (selectedItem) => {
     setSelectedSuccess(selectedItem);
   };
 
   const changeOption = (e) => {
-    const getName = e.target.name;
-    console.log(getName);
     setoptions(e.target.value);
-
     setinterested(
       schoolOptions.find((intr) => intr.name === e.target.value)
         .interestedChoice
     );
   };
+  const handleButtonClick = (e) => {
+    // Get the selected value from the second select
+    const selectedOption = secondSelectRef.current.value;
+
+    // Find the corresponding route for the selected option in the interestedChoice array
+    const selectedInterestObj = interested.find(
+      (option) => option.name === selectedOption
+    );
+
+    if (selectedInterestObj && selectedInterestObj.route) {
+      router.push(selectedInterestObj.route); // Use router.push() for navigation
+    }
+  };
+
+  useEffect(() => {
+    const defaultSchool = schoolOptions[0]; // Change this to the desired default option
+    const defaultInterest = defaultSchool.interestedChoice[0].name; // Get the first interest choice
+    setSelectedSuccess(defaultInterest);
+    setinterested(defaultSchool.interestedChoice);
+  }, []);
   return (
     <>
       <section className={HomeStyles.homeContainer}>
@@ -78,19 +100,21 @@ const Home = () => {
 
                 <h3>Interested in</h3>
                 <div className={HomeStyles.innerSelectContainer}>
-                  <select className={HomeStyles.selectDropDown}>
+                  <select
+                    ref={secondSelectRef}
+                    className={HomeStyles.selectDropDown}
+                  >
                     {interested.map((opt, index) => (
-                      <>
-                        <option key={index} value={opt.name}>
-                          {opt.name}
-                        </option>
-                      </>
+                      <option key={index} value={opt.name}>
+                        {opt.name}
+                      </option>
                     ))}
                   </select>
                   <FaAngleDown className={HomeStyles.Arrow} />
                 </div>
+
                 <Button
-                  href="news"
+                  click={handleButtonClick}
                   backgroundColor="rgb(67, 63, 64, 0.9)"
                   textcolor="white"
                   text="Submit"
@@ -197,7 +221,7 @@ const Home = () => {
             })}
           </div>
           <Button
-            href="news"
+            // href="news"
             backgroundColor="rgb(255, 109, 10)"
             textcolor="white"
             text={"More News..."}

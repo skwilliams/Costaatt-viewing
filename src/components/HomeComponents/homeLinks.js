@@ -273,48 +273,54 @@ export const schoolOptions = [
   {
     name: "A Potential Student",
     interestedChoice: [
-      { name: "Finding a course" },
-      { name: "Attending Open Day" },
-      { name: "Checking fees" },
-      { name: "Learning about accomodation" },
+      {
+        name: "Finding a course",
+        route: "/admissions/howtoapply",
+      }, // Add a route property for each option
+      { name: "Attending Open Day", route: "/admissions/visitus" },
+      { name: "Checking fees", route: "/admissions/fees1" },
+      {
+        name: "Learning about accommodation",
+        route: "/admissions/visitus",
+      },
     ],
   },
 
   {
     name: "Applying to Costaatt",
     interestedChoice: [
-      { name: "Accessing the Applicant Portal" },
-      { name: "Getting portfolio advice" },
-      { name: "Personal statment tips" },
-      { name: "Accommodation services" },
+      { name: "Accessing the Applicant Portal", route: "/admissions/fees1" },
+      { name: "Getting portfolio advice", route: "/admissions/fees1" },
+      { name: "Personal statment tips", route: "/admissions/requirements" },
+      { name: "Accommodation services", route: "/admissions/fees1" },
     ],
   },
 
   {
     name: "A parent",
     interestedChoice: [
-      { name: "Checking fees" },
-      { name: "Costaatt Campus" },
-      { name: "Accomodation Services" },
-      { name: "Term dates" },
+      { name: "Checking fees", route: "/admissions/fees1" },
+      { name: "Costaatt Campus", route: "/admissions/fees1" },
+      { name: "Accomodation Services", route: "/admissions/fees1" },
+      { name: "Term dates", route: "/admissions/fees1" },
     ],
   },
   {
     name: "A current student",
     interestedChoice: [
-      { name: "Going to Library Services" },
-      { name: "Accessing my email" },
-      { name: "Accessing student services" },
-      { name: "Campus registry" },
+      { name: "Going to Library Services", route: "/admissions/fees1" },
+      { name: "Accessing my email", route: "/admissions/fees1" },
+      { name: "Accessing student services", route: "/admissions/fees1" },
+      { name: "Campus registry", route: "/admissions/fees1" },
     ],
   },
 
   {
     name: "A teacher",
     interestedChoice: [
-      { name: "Schools and Outreach" },
-      { name: "Browsing events" },
-      { name: "Planning a group visit" },
+      { name: "Schools and Outreach", route: "/admissions/fees1" },
+      { name: "Browsing events", route: "/admissions/fees1" },
+      { name: "Planning a group visit", route: "/admissions/fees1" },
     ],
   },
 ];
