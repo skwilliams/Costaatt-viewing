@@ -112,4 +112,11 @@ export const subHeaderSections = {
 
     Contact: "contact",
   },
+
+  healthwell:{
+    "Overview" :"healthover",
+    "Counselling":"counsel",
+    "Disability":"disability",
+    "Sickbay":"sickbay",
+  }
 };

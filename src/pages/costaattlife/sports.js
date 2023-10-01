@@ -4,7 +4,7 @@ import Head from "next/head";
 import standardStyles from "@/styles/main.module.scss";
 import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
 import { Button, Divider } from "@mui/material";
-import Image from "next/image";
+import Image ,{StaticImageData} from "next/image";
 import { FiBookOpen } from "react-icons/fi";
 import {
   PhoneCallback,
@@ -22,7 +22,7 @@ import EventCardOrig from "@/components/PageComponents/EventCardOrig";
 import { stucouncildata } from "../costaattlife/studcouninfo";
 import StudentCouncilRep from "@/components/PageComponents/StudentCouncilRep";
 import ContactStudentLife from "@/components/PageComponents/ContactStudentLife";
-import {caimans} from"../../../public/images/costaattlife/caimans.png"
+import {caimans} from"../../../public/images/costaattlife/caiman.jpg"
 import { basketball } from "../../../public/images/costaattlife/basketball.jpg";
 import {costaattteam } from "../../../public/images/costaattlife/costaatt team.jpg";
 import { cricket } from "../../../public/images/costaattlife/cricket.jpg";
@@ -31,6 +31,21 @@ import { football } from "../../../public/images/costaattlife/football.jpg";
 import { netball } from "../../../public/images/costaattlife/netball.jpg";
 
 import { run4life } from "../../../public/images/costaattlife/run4life.jpg";
+import {gal1} from "../../../public/images/img/gal-1.jpeg";
+import { gal2 } from "../../../public/images/img/gal-2.jpeg";
+import { gal3 } from "../../../public/images/img/gal-3.jpeg";
+import { gal4 } from "../../../public/images/img/gal-4.jpeg";
+import { gal5 } from "../../../public/images/img/gal-5.jpeg";
+import { gal6 } from "../../../public/images/img/gal-6.jpeg";
+import { gal7 } from "../../../public/images/img/gal-7.jpeg";
+import { gal8 } from "../../../public/images/img/gal-8.jpeg";
+import { gal9 } from "../../../public/images/img/gal-9.jpeg";
+import { gal10 } from "../../../public/images/img/gal-10.jpeg";
+import { gal11 } from "../../../public/images/img/gal-11.jpeg";
+import { gal12 } from "../../../public/images/img/gal-12.jpeg";
+
+import { gal13 } from "../../../public/images/img/gal-13.jpeg";
+import { gal14 } from "../../../public/images/img/gal-14.jpeg";
 
 
 
@@ -64,124 +79,50 @@ const sports = () => {
         </p>
       </section>
 
-      <section id="joinus" className={`${standardStyles.sectionstartclub} `}>
-        <div className={standardStyles.sportsintro}>
-          <h2> Represent your fellow students</h2>
-          <h3 className={standardStyles.paragraph}>
-            {" "}
-            How to be part of governace your impact will be great{" "}
-          </h3>
+      <section
+        id="joinus"
+        className={`${standardStyles.sectionstartclub} `}
+      ></section>
 
-          <button
-            className={`${standardStyles.btn} ${standardStyles.btn__purple}`}
-          >
-            How to become involved{" "}
-          </button>
-        </div>
-         </section> 
-
-      {/* <section id="activities"> 
-        {/* <h2 className={standardStyles.headingPrimarysub}> Activities </h2> */}
-        <div className={standardStyles.row}>
-          <div className={standardStyles.col1of2}>
-            <div className={standardStyles.activities__pictures}>
-              <Image
-                src={football}
-                alt="Football"
-                className={standardStyles.activities__img1}
-                width="300"
-                height="200"
-              />
-              <Image
-                src={netball}
-                alt="Cleaning up beach again"
-                className={standardStyles.activities__img2}
-                width="420"
-                height="200"
-              />
-              
-            </div>
-          </div>
-
-          <div className={standardStyles.col1of2}>
-            <div className={standardStyles.activities__content}>
-                We subscribe to the National Sports Policy by fostering a
-                “Sports-for- all” culture throughout the College. We subscribe
-                to the National Sports Policy by fostering a “Sports-for- all”
-                culture throughout the College. COSTAATT Teams:
-                <div className={standardStyles.bullets}>
-                  <ul className={standardStyles.list}>
-                    <li className={standardStyles.items}>Football </li>
-                    <li className={standardStyles.items}>Basketball</li>
-                    <li className={standardStyles.items}>Netball</li>
-                  </ul>
-                </div>{" "}
-                Our success in football, basketball, and netball in the UTT
-                Champions League is indicative of the College's potential to
-                perform at a high standard. The College has embarked on a
-                development programme that now includes cricket and volleyball.
-              </div>
-            </div>
-          </div>
-      </section> 
-
-      <section id="sportsteams" className={standardStyles.sectionsports}>
+      <section id="sportsteams" className={standardStyles.sportsintro}>
         <h2 className={standardStyles.headingPrimarysub}>
           {" "}
           Our Teams Go Caimans
         </h2>
         <div className={standardStyles.row}>
           <div className={standardStyles.col1of2}>
-            {/* <div className={standardStyles.sportsintro}> */}
+        <div className={standardStyles.paragraph}>
+          We subscribe to the National Sports Policy by fostering a “Sports-for-
+          all” culture throughout the College. We subscribe to the National
+          Sports Policy by fostering a “Sports-for- all” culture throughout the
+          College. COSTAATT Teams:
+        </div>
+        <div className={standardStyles.bullets}>
+          <ul className={standardStyles.list}>
+            <li className={standardStyles.items}>Football </li>
+            <li className={standardStyles.items}>Basketball</li>
+            <li className={standardStyles.items}>Netball</li>
+          </ul>
+        </div>{" "}
+        <div className={standardStyles.paragraph}>
+          Our success in football, basketball, and netball in the UTT Champions
+          League is indicative of the College's potential to perform at a high
+          standard. The College has embarked on a development programme that now
+          includes cricket and volleyball. Become part of one of our dynamic
+          teams, you'll get fit, create new relationships, manage stress and
+          have fun. For more information contact our athletics department. We
+          can't wait to have you !!
+        </div>
+        </div>
+          <div className={standardStyles.col1of2}>
             <Image
-              // className={standardStyles.imgstyle}
+              className={standardStyles.imgstyle}
               src={caimans}
               alt="Caimans Mascot"
-              width="0"
+              width="250"
               height="250"
             />
             Picture of Caiman costaatt Mascot
-          </div>
-          {/* </div> */}
-          <div className={standardStyles.col1of2}>
-            <div className={standardStyles.paragraph}>
-              We subscribe to the National Sports Policy by fostering a
-              “Sports-for- all” culture throughout the College. We subscribe to
-              the National Sports Policy by fostering a “Sports-for- all”
-              culture throughout the College. COSTAATT Teams:
-              <div className={standardStyles.bullets}>
-                <ul className={standardStyles.list}>
-                  <li className={standardStyles.items}>Football </li>
-                  <li className={standardStyles.items}>Basketball</li>
-                  <li className={standardStyles.items}>Netball</li>
-                </ul>
-              </div>{" "}
-              Our success in football, basketball, and netball in the UTT
-              Champions League is indicative of the College's potential to
-              perform at a high standard. The College has embarked on a
-              development programme that now includes cricket and volleyball.
-            </div>
-
-            <div className={standardStyles.sportsintro}>
-              <h2> Do you want to be a Caiman ?</h2>
-              <h3 className={standardStyles.paragraph}>
-                {" "}
-                Come join our sports team{" "}
-              </h3>
-
-              <a
-                Q
-                href="#contact"
-                className={`${standardStyles.btn} ${standardStyles.btn__purple}`}
-              >
-                Contact us for More Information{" "}
-              </a>
-              <h2> Do you want to be a Caiman ?</h2>
-              <h3 className={standardStyles.paragraph}>
-                {" "}
-                Come join our sports team{" "}
-              </h3>
-            </div>
           </div>
         </div>
       </section>
@@ -210,37 +151,248 @@ const sports = () => {
                 <Image
                   // srcSet="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
                   // sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                  alt="Photo 1"
+                  alt="Football"
                   width="250"
-                  height="0"
+                  height="250"
                   className={`${standardStyles.composition__photo} ${standardStyles.composition__photo_p1} `}
-                  src={startclub}
+                  src={football}
                 />
 
                 <Image
                   // srcSet="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
                   // sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                  alt="Photo 2"
+                  alt="Cricket"
                   width="250"
-                  height="0"
+                  height="250"
                   className={` ${standardStyles.composition__photo} ${standardStyles.composition__photo_p2}`}
-                  src={joinclub}
+                  src={cricket}
                 />
 
                 <Image
                   // srcSet="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
-                  // sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                  alt="Photo 3"
+                  sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                  alt="Basketball"
                   width="250"
-                  height="0"
+                  height="250"
                   className={`${standardStyles.composition__photo} ${standardStyles.composition__photo_p3}`}
-                  src={studentamb}
+                  src={costaattteam}
                 />
               </>
             </div>
           </div>
         </div>{" "}
       </section>
+      <section>
+        <div className={standardStyles.row}>
+          <div className={standardStyles.col1of2}>
+            <div className={standardStyles.activities__pictures}>
+              <Image
+                src={caimans}
+                alt="Cleaning up beach"
+                className={standardStyles.activities__img1}
+                width="250"
+                height="250"
+              />
+              <Image
+                src={basketball}
+                alt="Cleaning up beach again"
+                className={standardStyles.activities__img2}
+                width="250"
+                height="200"
+              />
+            </div>
+          </div>
+
+          <div className={standardStyles.col1of2}>
+            <div className={standardStyles.activities__content}>
+              <h2 className={standardStyles.headingPrimarysub}>
+                “Always good to give back”
+              </h2>
+              <p className={standardStyles.activities__text}>
+                We are there to add value to others in whatever way possible.
+                Serving is one of our greatest joy.
+              </p>
+              <button
+                className={`${standardStyles.btn} ${standardStyles.btn__purple}`}
+              >
+                Join Student Council
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* <section className={`${standardStyles.gallery} ${standardStyles.marginTopBig}`}>
+        <div
+          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_1}`}
+        >
+          <Image
+            src={run4life}
+            alt="Gallery image 1"
+            className={standardStyles.gallery__img}
+                        sizes="100vw"
+            style={{ width: "100%", height: "100%" }} // optional
+          />
+        </div>
+        <div
+          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_2}`}
+        >
+          <Image
+            src={gal2}
+            alt="Netball"
+            className={standardStyles.gallery__img}
+            sizes="100vw"
+            style={{ width: "100%", height: "100%" }} // optional
+          />
+        </div>
+        <div
+          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_3}`}
+        >
+          <Image
+            src={gal3}
+            alt="Gallery image 3"
+            className={standardStyles.gallery__img}
+            sizes="100vw"
+            style={{ width: "100%", height: "100%" }} // optional
+          />
+        </div>
+        <div
+          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_4}`}
+        >
+          <Image
+            src={gal4}
+            alt="Gallery image 4"
+            className={standardStyles.gallery__img}
+            sizes="100vw"
+            style={{ width: "100%", height: "100%" }} // optional
+          />
+        </div>
+        <figure
+          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_5}`}
+        >
+          <Image
+            src={gal5}
+            alt="Gallery image 5"
+            className={standardStyles.gallery__img}
+            sizes="100vw"
+            style={{ width: "100%", height: "100%" }} // optional
+          />
+        </figure>
+        <figure
+          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_6}`}
+        >
+          <Image
+            src={gal6}
+            alt="Gallery image 6"
+            className={standardStyles.gallery__img}
+            sizes="100vw"
+            style={{ width: "100%", height: "100%" }} // optional
+          />
+        </figure>
+        <figure
+          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_7}`}
+        >
+          <Image
+            src={gal7}
+            alt="Gallery image 7"
+            className={standardStyles.gallery__img}
+            sizes="100vw"
+            style={{ width: "100%", height: "100%" }} // optional
+          />
+        </figure>
+        <figure
+          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_8}`}
+        >
+          <Image
+            src={gal8}
+            alt="Gallery image 8"
+            className={standardStyles.gallery__img}
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: "100%", height: "100%" }} // optional
+          />
+        </figure>
+        <figure
+          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_9}`}
+        >
+          <Image
+            src={gal9}
+            alt="Gallery image 9"
+            className={standardStyles.gallery__img}
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: "100%", height: "100%" }} // optional
+          />
+        </figure>
+        <figure
+          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_10}`}
+        >
+          <Image
+            src={gal10}
+            alt="Gallery image 10"
+            className={standardStyles.gallery__img}
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: "100%", height: "100%" }} // optional
+          />
+        </figure>
+        <figure
+          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_11}`}
+        >
+          <Image
+            src={gal11}
+            alt="Gallery image 11"
+            className={standardStyles.gallery__img}
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: "100%", height: "100%" }} // optional
+          />
+        </figure>
+        <figure
+          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_12}`}
+        >
+          <Image
+            src={gal12}
+            alt="Gallery image 12"
+            className={standardStyles.gallery__img}
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: "100%", height: "100%" }} // optional
+          />
+        </figure>
+        <figure
+          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_12}`}
+        >
+          {" "}
+          <Image
+            src={gal13}
+            alt="Gallery image 13"
+            className={standardStyles.gallery__img}
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: "100%", height: "100%" }} // optional
+          />
+        </figure>
+        <figure
+          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_13}`}
+        >
+          {" "}
+          <Image
+            src={gal14}
+            alt="Gallery image 14"
+            className={standardStyles.gallery__img}
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: "100%", height: "100%" }} // optional
+          />
+        </figure>{" "}
+      </section> */}
 
       <section
         id="events"
@@ -279,11 +431,11 @@ const sports = () => {
           <StudentCouncilRep stucouncil={stucouncildata} />
         </div>
 
-        <div className={standardStyles.row}>
+        {/* <div className={standardStyles.row}>
           <div className={standardStyles.col1of3}></div>
           <div className={standardStyles.col1of3}></div>
           <div className={standardStyles.col1of3}></div>
-        </div>
+        </div> */}
       </section>
 
       <section id="contact" className={standardStyles.sectionNoSidenav}>

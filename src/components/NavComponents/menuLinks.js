@@ -254,7 +254,7 @@ export const mainNavLinks = [
       },
       {
         img: require("../../../images/Links/dummyImg2.jpg"),
-        title: "Studnet Council",
+        title: "Student Council",
         path: "/costaattlife/studentcouncil",
       },
     ],

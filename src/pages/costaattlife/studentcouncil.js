@@ -103,14 +103,14 @@ const studentcouncil = () => {
                 src={studentcouncil1}
                 alt="Cleaning up beach"
                 className={standardStyles.activities__img1}
-                width="150"
+                width="250"
                 height="200"
               />
               <Image
                 src={studentcouncil2}
                 alt="Cleaning up beach again"
                 className={standardStyles.activities__img2}
-                width="150"
+                width="250"
                 height="200"
               />
             </div>
