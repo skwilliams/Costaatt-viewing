@@ -1,17 +1,18 @@
 import React from "react";
 import HomeStyles from "../styles/Home.module.scss";
+import Link from "next/link";
 
-const Button = ({ text, backgroundColor, textcolor, click }) => {
+const Button = ({ text, href, backgroundColor, textcolor, click }) => {
   return (
     <div
-      onClick={click}
+      //onClick={click}
       style={{
         backgroundColor: backgroundColor,
         color: textcolor,
       }}
       className={HomeStyles.submit}
     >
-      <div>{text}</div>
+      <Link href={href}>{text}</Link>
     </div>
   );
 };

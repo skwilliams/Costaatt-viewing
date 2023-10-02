@@ -67,7 +67,7 @@ const Home = () => {
   useEffect(() => {
     const defaultSchool = schoolOptions[0]; // Change this to the desired default option
     const defaultInterest = defaultSchool.interestedChoice[0].name; // Get the first interest choice
-    setSelectedSuccess(defaultInterest);
+    setSelectedSuccess(SuccessLinks[0]);
     setinterested(defaultSchool.interestedChoice);
   }, []);
   return (
@@ -113,12 +113,20 @@ const Home = () => {
                   <FaAngleDown className={HomeStyles.Arrow} />
                 </div>
 
-                <Button
+                <button
+                  className={HomeStyles.selectButton}
+                  onClick={handleButtonClick}
+                >
+                  {" "}
+                  Submit
+                </button>
+
+                {/* <Button
                   click={handleButtonClick}
                   backgroundColor="rgb(67, 63, 64, 0.9)"
                   textcolor="white"
                   text="Submit"
-                />
+                /> */}
               </div>
             </div>{" "}
             {/*end of left bottom */}
@@ -135,18 +143,20 @@ const Home = () => {
           </h1>
           <div className={HomeStyles.sectionTwoGrid}>
             <p className={HomeStyles.ourSchoolsText}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-              vel reiciendis in delectus aliquid perspiciatis quidem mollitia
-              officia praesentium optio repellat, nihil placeat! Labore tempore
-              ipsa illum ipsam minima! Ad Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Dolore vel reiciendis in delectus aliquid
-              perspiciatis quidem mollitia officia praesentium optio repellat,
+              Choosing COSTAATT is an excellent decision for your educational
+              journey. With a rich history of academic excellence and a
+              commitment to nurturing diverse talents, COSTAATT provides a
+              dynamic and inclusive learning environment that empowers students
+              to reach their full potential. Our institution offers a wide range
+              of programs and pathways tailored to meet the ever-evolving
+              demands of the job market, ensuring that graduates are
+              well-prepared for successful careers.
             </p>{" "}
             {/* replace with flagship programmes */}
             {TILES_INFO.map((tile, index) => {
               return (
                 <div key={index} className={HomeStyles.schoolTile}>
-                  <Link href={`${tile.url}`}>
+                  <Link href={`${tile.path}`}>
                     <SchoolTile
                       title={tile.title}
                       img={tile.img}
@@ -167,15 +177,17 @@ const Home = () => {
             {EVENTS.map((tile, index) => {
               return (
                 <div key={index}>
-                  <EventTile
-                    title={tile.title}
-                    img={tile.image}
-                    date={tile.date}
-                    desc={tile.desc}
-                    time={tile.time}
-                    topic={tile.topic}
-                    location={tile.location}
-                  />
+                  <Link href={`${tile.path}`}>
+                    <EventTile
+                      title={tile.title}
+                      img={tile.image}
+                      date={tile.date}
+                      desc={tile.desc}
+                      time={tile.time}
+                      topic={tile.topic}
+                      location={tile.location}
+                    />{" "}
+                  </Link>
                 </div>
               );
             })}
@@ -221,7 +233,7 @@ const Home = () => {
             })}
           </div>
           <Button
-            // href="news"
+            href="news"
             backgroundColor="rgb(255, 109, 10)"
             textcolor="white"
             text={"More News..."}

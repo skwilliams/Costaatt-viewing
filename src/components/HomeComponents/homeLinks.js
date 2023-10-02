@@ -153,6 +153,7 @@ export const EVENTS = [
     time: "12:00AM - 11:59PM",
     location: "Arima",
     topic: "Conferences and Talks. Research Events",
+    path: "https://www.costaatt.edu.tt/covid-19-update/",
   },
   {
     title: "Quantum Light - Beyond a Crisis of Perception",
@@ -162,6 +163,7 @@ export const EVENTS = [
     time: "12:00AM - 11:59PM",
     location: "Chaguanas Campus",
     topic: "Exibitions and Shows, Gallery Events",
+    path: "https://www.costaatt.edu.tt/new-online-appointment-system/",
   },
 
   {
@@ -172,6 +174,7 @@ export const EVENTS = [
     time: "12:00AM - 11:59PM",
     location: "Arima",
     topic: "Conferences and Talks. Research Events",
+    path: "https://www.costaatt.edu.tt/covid-19-update/",
   },
   {
     title: "Quantum Light - Beyond a Crisis of Perception",
@@ -181,6 +184,7 @@ export const EVENTS = [
     time: "12:00AM - 11:59PM",
     location: "Chaguanas Campus",
     topic: "Exibitions and Shows, Gallery Events",
+    path: "https://costaattappointments.setmore.com/",
   },
 ];
 
