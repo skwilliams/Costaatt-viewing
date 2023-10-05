@@ -1,41 +1,130 @@
 export const topNavLinksLeft = [
-  // title: "Schools",
-  // submenu: [
-  //   {
-  //     title: "The School Of Liberal Arts, Education And Digital Humanities",
-  //   }
-  //     ],
-  //   },
-  //   {
-  //     title:
-  //       "The Ken Gordon School of Communication Creative and Digital Media",
-  //     submenu: [
-  //       {
-  //         title: "Department One",
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     title: "School of Workforce Enhancement and Development",
-  //     path: "programmes",
-  //   },
-  //   {
-  //     title: "School of Nursing, Health and Medical Technologies",
-  //     path: "programmes",
-  //   },
-  //   {
-  //     title: "School of Environment, Circular Economy and Sustainability",
-  //     path: "programmes",
-  //   },
-  //   {
-  //     title: "School of Business and Digital Technologies",
-  //     path: "programmes",
-  //   },
+  {
+    title: "Schools",
+    submenu: [
+      {
+        title: "The School Of Liberal Arts, Education And Digital Humanities",
+        path: "programmes",
+        backgroundColor: "orange",
+        left: "100px",
+        width: "100%",
+        position: "absolute",
+        submenu: [
+          {
+            title: "Department of Social and Behavioural Sciences",
+            path: "programmes",
+          },
+          {
+            title:
+              "Department of Languages, Literature and Communication Studies",
+            path: "programmes",
+          },
+          {
+            title: "Department of Mathematics",
+            path: "programmes",
+          },
+          {
+            title: "Department of Fine and Performing Arts",
+            path: "programmes",
+          },
+          {
+            title: "Department of Criminal Justice and Legal Studies",
+            path: "programmes",
+          },
+          {
+            title: "Office of the Dean",
+            path: "programmes",
+          },
+        ],
+      },
 
-  // {
-  //   title:"Schools,Departments",
-  //   path:"departments"
-  // },
+      {
+        title: "School of Nursing, Health and Medical Technologies",
+        path: "programmes",
+        backgroundColor: "orange",
+        left: "200px",
+        position: "absolute",
+        submenu: [
+          {
+            title: "Department of Nursing",
+            path: "programmes",
+          },
+          {
+            title: "Department of Health Science Technologies",
+            path: "programmes",
+          },
+          {
+            title: "Department of Environmental Studies",
+            path: "programmes",
+          },
+          {
+            title: "Natural and Life Sciences",
+            path: "programmes",
+          },
+        ],
+      },
+      {
+        title: "School of Environment, Circular Economy and Sustainability",
+        path: "programmes",
+        backgroundColor: "orange",
+        left: "200px",
+        position: "absolute",
+        submenu: [
+          {
+            title: "Dept One",
+            path: "programmes",
+          },
+          {
+            title: "Dept One",
+            path: "programmes",
+          },
+          {
+            title: "Dept One",
+            path: "programmes",
+          },
+        ],
+      },
+      {
+        title: "School of Business and Digital Technologies",
+        path: "programmes",
+        backgroundColor: "orange",
+        left: "200px",
+        position: "absolute",
+        submenu: [
+          {
+            title: "Department of Management and Entrepreneurship",
+            path: "programmes",
+          },
+          {
+            title: "Department of Information Science and Technology",
+            path: "programmes",
+          },
+        ],
+      },
+      {
+        title: "School of Workforce Enhancement and Development",
+        path: "programmes",
+        backgroundColor: "orange",
+        left: "400px",
+        position: "absolute",
+        submenu: [
+          {
+            title: "Dept One",
+            path: "programmes",
+          },
+          {
+            title: "Dept One",
+            path: "programmes",
+          },
+          {
+            title: "Dept One",
+            path: "programmes",
+          },
+        ],
+      },
+    ],
+  },
+
   {
     title: "Current Students",
     path: "currentstudents",

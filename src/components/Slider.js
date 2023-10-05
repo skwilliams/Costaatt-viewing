@@ -11,20 +11,20 @@ const Slider = ({ slides }) => {
     return null;
   }
 
-  // const nextSlide = () => {
-  //   setCurrent(current === length - 1 ? 0 : current + 1);
-  // };
-  // const prevSlide = () => {
-  //   setCurrent(current === 0 ? length - 1 : current - 1);
-  // };
-  // function time() {
-  //   setTimeout(nextSlide, 15000);
-  // }
-  // time();
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+  function time() {
+    setTimeout(nextSlide, 15000);
+  }
+  time();
 
   return (
     <div className={HomeStyles.slider}>
-      {/* <div className={HomeStyles.sliderArrows}>
+      <div className={HomeStyles.sliderArrows}>
         <FaAngleLeft
           className={HomeStyles.leftSliderArrow}
           onClick={prevSlide}
@@ -33,7 +33,7 @@ const Slider = ({ slides }) => {
           className={HomeStyles.rightSliderArrow}
           onClick={nextSlide}
         />
-      </div> */}
+      </div>
       {slides.map((slide, index) => {
         return (
           <div key={index}>

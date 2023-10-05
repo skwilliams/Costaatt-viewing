@@ -1,13 +1,8 @@
 import React from "react";
 import TopNav from "./TopNav";
 import BottomNav from "./BottomNav";
-import navStyles from "../../styles/NavItems.module.scss";
-import SearchBarModal from "../SearchBarModal";
-import { useState } from "react";
 
 const Navbar = () => {
-  const [modal, setModal] = useState(false);
-
   return (
     <div>
       <div>
@@ -15,7 +10,7 @@ const Navbar = () => {
       </div>
       <div>
         <BottomNav />
-      </div>{" "}
+      </div>
     </div>
   );
 };
