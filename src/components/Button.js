@@ -1,10 +1,11 @@
-import Link from "next/link";
 import React from "react";
 import HomeStyles from "../styles/Home.module.scss";
+import Link from "next/link";
 
-const Button = ({ text, href, backgroundColor, textcolor }) => {
+const Button = ({ text, href, backgroundColor, textcolor, click }) => {
   return (
     <div
+      //onClick={click}
       style={{
         backgroundColor: backgroundColor,
         color: textcolor,

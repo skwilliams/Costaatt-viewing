@@ -5,6 +5,7 @@ import Head from "next/head";
 import ButtonLink from "@/components/HomeComponents/ButtonLink";
 
 import standardStyles from "@/styles/main.module.scss";
+import standardStyles from "@/styles/main.module.scss";
 import AdmisStyles from "@/styles/Admissions.module.scss";
 import telephone from "../../../public/images/admissions/telephone.svg";
 import email from "../../../public/images/admissions/email.svg";
@@ -13,22 +14,29 @@ import Image from "next/image";
 import Link from "next/link";
 import HeadImage from "@/components/PageComponents/HeadImage";
 import headImg from "../../../public/images/admissions/applynow.jpg";
+import headImg from "../../../public/images/admissions/applynow.jpg";
 import SimpleCard from "@/components/PageComponents/SimpleCard";
 import tick from "../../../public/images/admissions/tick.svg";
+import tick from "../../../public/images/admissions/tick.svg";
 import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
+import { Accordion, Divider, Button } from "@mui/material/";
 import { Accordion, Divider, Button } from "@mui/material/";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
-import ExpandMoreIcon, { Stadium } from "@mui/icons-material";
+
+import ExpandMoreIcon from "@mui/icons-material";
 import AddIcon from "@mui/icons-material/Add";
 import increase from "../../../public/images/admissions/increase.png";
 import ProgStyles from "../../styles/Programmes.module.scss";
 import admissionStyles from "@/styles/Admissions.module.scss";
 import AddCircleTwoToneIcon from "@mui/icons-material/AddCircleOutlineTwoTone";
-import imagedummy from "../../../public/images/schools/affiliationsMou.png"
+import imagedummy from "../../../public/images/schools/affiliationsMou.png";
 
 const howtoapply = () => {
+  const CustomHome = () => {
+    return <AddCircleTwoToneIcon style={{ color: "rgb(245,130,32)" }} />;
+  };
   const CustomHome = () => {
     return <AddCircleTwoToneIcon style={{ color: "rgb(245,130,32)" }} />;
   };

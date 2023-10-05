@@ -1,4 +1,4 @@
-@import './abstracts/variables';
+@import "./abstracts/variables";
 
 .topNavMain {
   display: flex;
@@ -24,7 +24,9 @@ background-color: $color-primary-dark;
   padding: 9px 5px;
   cursor: pointer;
 }
-
+.topBarLinks:hover .topNavDropDownMain {
+  display: block;
+}
 .topBarLinks:hover {
   transition: all 0.8s ease;
   border-radius: 15px;
@@ -33,12 +35,12 @@ background-color: $color-primary-dark;
 }
 
 .topNavDropDownMain {
-  top: 48px;
   width: fit-content;
   position: absolute;
   z-index: 40;
   background-color: $whiteback;
   padding: 10px;
+  display: none;
 }
 
 .topNavDropDown {
@@ -54,7 +56,7 @@ background-color: $color-primary-dark;
 .topNavdropDownLinks {
   //display: grid;
   grid-template-columns: repeat(6, 1fr);
-  color: $grey;
+  color: $purple-main;
   padding: 5px;
   align-items: baseline;
 }
