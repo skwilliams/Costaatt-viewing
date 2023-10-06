@@ -20,7 +20,7 @@ const Slider = ({ slides }) => {
   function time() {
     setTimeout(nextSlide, 15000);
   }
-  // time();
+  time();
 
   return (
     <div className={HomeStyles.slider}>

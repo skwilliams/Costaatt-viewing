@@ -1,15 +1,10 @@
-import {
-  mainNavLinks,
-  topNavLinksLeft,
-  topNavLinksRight,
-} from "../NavComponents/menuLinks";
+import { mainNavLinks } from "../NavComponents/menuLinks";
 import MenuItems from "../NavComponents/MenuItems";
 import navStyles from "../../styles/Nav.module.scss";
 import Link from "next/link";
 import logo from "../../../images/Links/costaattWhiteLogo.png";
 import Image from "next/image";
 import { useState } from "react";
-import { Button } from "@mui/material";
 import { BiSearch } from "react-icons/bi";
 import SearchBarModal from "../SearchBarModal";
 const BottomNav = () => {
@@ -35,7 +30,7 @@ const BottomNav = () => {
             );
           })}
         </ul>
-      </div>{" "}
+      </div>
       <div>
         {<BiSearch onClick={handleClick} className={navStyles.searchButton} />}
       </div>

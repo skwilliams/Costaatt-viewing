@@ -2,7 +2,6 @@ import React from "react";
 import { useRef, useImperativeHandle, forwardRef } from "react";
 import Navbar from "../NavItems/Navbar";
 
-
 const Header = forwardRef((props, ref) => {
   const navRef = useRef();
   useImperativeHandle(ref, () => ({

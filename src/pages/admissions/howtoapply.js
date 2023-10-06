@@ -20,7 +20,8 @@ import { Accordion, Divider, Button } from "@mui/material/";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
-import ExpandMoreIcon, { Stadium } from "@mui/icons-material";
+
+import ExpandMoreIcon from "@mui/icons-material";
 import AddIcon from "@mui/icons-material/Add";
 import increase from "../../../public/images/admissions/increase.png";
 import ProgStyles from "../../styles/Programmes.module.scss";
@@ -28,6 +29,7 @@ import admissionStyles from "@/styles/Admissions.module.scss";
 import AddCircleTwoToneIcon from "@mui/icons-material/AddCircleOutlineTwoTone";
 import imagedummy from "../../../public/images/schools/affiliationsMou.png";
 // import ContactSection from "@/components/PageComponents/ContactSection";
+
 const howtoapply = () => {
   const CustomHome = () => {
     return <AddCircleTwoToneIcon style={{ color: "rgb(245,130,32)" }} />;
