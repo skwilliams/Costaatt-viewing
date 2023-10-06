@@ -27,7 +27,7 @@ const FacultyStaffCard = ({ staff, dept }) => {
               {/* figure out mail to  */}
               {fe.email && (
                 <a className={StaffStyle.email} href={fe.email}>
-                  {" "}
+                  {"  "}
                   {fe.email}
                 </a>
               )}
