@@ -28,6 +28,12 @@ import EventCardOrig from "@/components/PageComponents/EventCardOrig";
 import {stucouncildata} from "../costaattlife/studcouninfo";
 import StudentCouncilRep from "@/components/PageComponents/StudentCouncilRep";
 import ContactStudentLife from "@/components/PageComponents/ContactStudentLife";
+import awaitingbanner from "../../../public/images/awaitingBanner.png";
+import HeadImage from "@/components/PageComponents/HeadImage";
+
+import awaitingNews from "../../../public/images/awaitingNewsEvent.png";
+
+
 
 const studentcouncil = () => {
   return (
@@ -35,7 +41,7 @@ const studentcouncil = () => {
       <Head>
         <title>Student Council</title>
       </Head>
-      <HeaderNoImage imagetext="Student Clubs and Organizations" />
+      <HeadImage mainimage={awaitingbanner} imagetext="Student Clubs and Organizations" />
       <p
         className={`${standardStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}
       >

@@ -3,8 +3,11 @@ import Link from 'next/link'
 import Head from 'next/head';
 import standardStyles from "@/styles/main.module.scss"
 import AdmisStyles from "@/styles/Admissions.module.scss"
+import HeadImage from "@/components/PageComponents/HeadImage";
+import awaitingbanner from "../../../public/images/awaitingBanner.png";
 
-import HeaderNoImage from '@/components/PageComponents/HeaderNoImage';
+import awaitingimage from "../../../public/images/awaitingNewsEvent.png";
+
 import { Button, Divider } from '@mui/material';
 import Image from 'next/image';
 import { FiBookOpen } from "react-icons/fi";
@@ -32,7 +35,7 @@ const studentorg = () => {
       <Head>
         <title>Clubs and Organizations </title>
       </Head>
-      <HeaderNoImage imagetext="Student Clubs and Organizations" />
+      <HeadImage mainimage={awaitingbanner} imagetext="Student Clubs and Organizations" />
       <p
         className={`${standardStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}
       >

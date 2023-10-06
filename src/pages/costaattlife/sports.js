@@ -4,6 +4,12 @@ import Head from "next/head";
 import standardStyles from "@/styles/main.module.scss";
 import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
 import { Button, Divider } from "@mui/material";
+import HeadImage from "@/components/PageComponents/HeadImage";
+import awaitingbanner from "../../../public/images/awaitingBanner.png";
+
+import awaitingimage from "../../../public/images/awaitingNewsEvent.png";
+
+
 import Image ,{StaticImageData} from "next/image";
 import { FiBookOpen } from "react-icons/fi";
 import {
@@ -44,19 +50,35 @@ import { gal10 } from "../../../public/images/img/gal-10.jpeg";
 import { gal11 } from "../../../public/images/img/gal-11.jpeg";
 import { gal12 } from "../../../public/images/img/gal-12.jpeg";
 
+
+
 import { gal13 } from "../../../public/images/img/gal-13.jpeg";
 import { gal14 } from "../../../public/images/img/gal-14.jpeg";
+import ReactPlayer from "react-player";
 
-
-
+import GradStyle from "../../styles/GradsSpeak.module.scss";
+import { useState } from "react";
+import { useEffect } from "react";
 
 const sports = () => {
+
+
+   const [hasWindow, setHasWindow] = useState(false);
+ useEffect(() => {
+   if (typeof window !== "undefined") {
+     setHasWindow(true);
+   }
+ }, []);
+ const video = ""
   return (
     <>
       <Head>
         <title>Sports at COSTAATT</title>
       </Head>
-      <HeaderNoImage imagetext="Student Clubs and Organizations" />
+      <HeadImage
+        mainimage={awaitingbanner}
+        imagetext="Student Clubs and Organizations"
+      />
       <p
         className={`${standardStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}
       >
@@ -84,66 +106,36 @@ const sports = () => {
         className={`${standardStyles.sectionstartclub} `}
       ></section>
 
-      <section id="sportsteams" className={standardStyles.sportsintro}>
-        <h2 className={standardStyles.headingPrimarysub}>
-          {" "}
-          Our Teams Go Caimans
-        </h2>
-        <div className={standardStyles.row}>
-          <div className={standardStyles.col1of2}>
-        <div className={standardStyles.paragraph}>
-          We subscribe to the National Sports Policy by fostering a “Sports-for-
-          all” culture throughout the College. We subscribe to the National
-          Sports Policy by fostering a “Sports-for- all” culture throughout the
-          College. COSTAATT Teams:
-        </div>
-        <div className={standardStyles.bullets}>
-          <ul className={standardStyles.list}>
-            <li className={standardStyles.items}>Football </li>
-            <li className={standardStyles.items}>Basketball</li>
-            <li className={standardStyles.items}>Netball</li>
-          </ul>
-        </div>{" "}
-        <div className={standardStyles.paragraph}>
-          Our success in football, basketball, and netball in the UTT Champions
-          League is indicative of the College's potential to perform at a high
-          standard. The College has embarked on a development programme that now
-          includes cricket and volleyball. Become part of one of our dynamic
-          teams, you'll get fit, create new relationships, manage stress and
-          have fun. For more information contact our athletics department. We
-          can't wait to have you !!
-        </div>
-        </div>
-          <div className={standardStyles.col1of2}>
-            <Image
-              className={standardStyles.imgstyle}
-              src={caimans}
-              alt="Caimans Mascot"
-              width="250"
-              height="250"
-            />
-            Picture of Caiman costaatt Mascot
-          </div>
-        </div>
-      </section>
-
       <section
-        id="activities"
+        id="sportsteams"
         className={`${standardStyles.sectionambasadoor} `}
       >
-        <h2 className={standardStyles.headingPrimarysub}> Activities </h2>
+        <h2 className={standardStyles.headingPrimarysub}> Our Teams </h2>
         <div className={standardStyles.row}>
           <div className={standardStyles.col1of2}>
-            <p className={standardStyles.paragraph}>
-              Ambassadors are frequently called upon to represent the college at
-              external engagements as well as plan and execute many campus
-              activities, including but not limited to Admissions Recruitment
-              Sessions, Registration, Student Orientation, Graduation and any
-              other campus activity that may be planned by the college.
-            </p>
-            {/* <Link href="./transfercredits" className={standardStyles.btnText}>
-              Learn more →
-            </Link> */}
+            <div className={standardStyles.paragraph}>
+              We subscribe to the National Sports Policy by fostering a
+              “Sports-for- all” culture throughout the College. We subscribe to
+              the National Sports Policy by fostering a “Sports-for- all”
+              culture throughout the College. COSTAATT Teams:
+            </div>
+            <div className={standardStyles.bullets}>
+              <ul className={standardStyles.list}>
+                <li className={standardStyles.items}>Football </li>
+                <li className={standardStyles.items}>Basketball</li>
+                <li className={standardStyles.items}>Netball</li>
+              </ul>
+            </div>{" "}
+            <div className={standardStyles.paragraph}>
+              Our success in football, basketball, and netball in the UTT
+              Champions League is indicative of the College's potential to
+              perform at a high standard. The College has embarked on a
+              development programme that now includes cricket and volleyball.
+              Become part of one of our dynamic teams, you'll get fit, create
+              new relationships, manage stress and have fun. For more
+              information contact our athletics department. We can't wait to
+              have you !!
+            </div>
           </div>
           <div className={standardStyles.col1of2}>
             <div className={standardStyles.composition}>
@@ -155,7 +147,7 @@ const sports = () => {
                   width="250"
                   height="250"
                   className={`${standardStyles.composition__photo} ${standardStyles.composition__photo_p1} `}
-                  src={football}
+                  src={awaitingimage}
                 />
 
                 <Image
@@ -165,7 +157,7 @@ const sports = () => {
                   width="250"
                   height="250"
                   className={` ${standardStyles.composition__photo} ${standardStyles.composition__photo_p2}`}
-                  src={cricket}
+                  src={awaitingimage}
                 />
 
                 <Image
@@ -175,52 +167,14 @@ const sports = () => {
                   width="250"
                   height="250"
                   className={`${standardStyles.composition__photo} ${standardStyles.composition__photo_p3}`}
-                  src={costaattteam}
+                  src={awaitingimage}
                 />
               </>
             </div>
           </div>
         </div>{" "}
       </section>
-      <section>
-        <div className={standardStyles.row}>
-          <div className={standardStyles.col1of2}>
-            <div className={standardStyles.activities__pictures}>
-              <Image
-                src={caimans}
-                alt="Cleaning up beach"
-                className={standardStyles.activities__img1}
-                width="250"
-                height="250"
-              />
-              <Image
-                src={basketball}
-                alt="Cleaning up beach again"
-                className={standardStyles.activities__img2}
-                width="250"
-                height="200"
-              />
-            </div>
-          </div>
 
-          <div className={standardStyles.col1of2}>
-            <div className={standardStyles.activities__content}>
-              <h2 className={standardStyles.headingPrimarysub}>
-                “Always good to give back”
-              </h2>
-              <p className={standardStyles.activities__text}>
-                We are there to add value to others in whatever way possible.
-                Serving is one of our greatest joy.
-              </p>
-              <button
-                className={`${standardStyles.btn} ${standardStyles.btn__purple}`}
-              >
-                Join Student Council
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
       {/* <section className={`${standardStyles.gallery} ${standardStyles.marginTopBig}`}>
         <div
           className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_1}`}
@@ -427,15 +381,16 @@ const sports = () => {
           Department of Athletics{" "}
         </h2>
 
-        <div className={standardStyles.row}>
-          <StudentCouncilRep stucouncil={stucouncildata} />
-        </div>
-
         {/* <div className={standardStyles.row}>
-          <div className={standardStyles.col1of3}></div>
-          <div className={standardStyles.col1of3}></div>
-          <div className={standardStyles.col1of3}></div>
         </div> */}
+
+        <div className={standardStyles.row}>
+          <div className={standardStyles.col1of4}> Ian </div>
+          <div className={standardStyles.col1of4}>Nigel</div>
+          <div className={standardStyles.col1of4}>Woker1</div>
+                  <div className={standardStyles.col1of4}>Worker2</div>
+
+        </div>
       </section>
 
       <section id="contact" className={standardStyles.sectionNoSidenav}>

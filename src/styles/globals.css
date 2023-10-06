@@ -44,7 +44,7 @@ a{
   color: inherit;
 }
 h1 , h2, h3, h4, h5, h6, span{
-    /* font-family: 'Libre Baskerville', sans-serif; */
-    font-family: 'Bodoni';
+    font-family: 'Libre Baskerville', sans-serif;
+    /* font-family: "Lato"; */
 
 }

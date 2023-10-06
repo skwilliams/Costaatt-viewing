@@ -2,7 +2,7 @@ import { mainNavLinks, topNavLinksLeft, topNavLinksRight } from "./menuLinks";
 import MenuItems from "./MenuItems";
 import navStyles from "../../styles/Nav.module.scss";
 import Link from "next/link";
-import logo from "../../../images/Links/costaattWhiteLogo.png";
+import logo from "../../../public/img/costaattWhiteLogo.png";
 import Image from "next/image";
 import { BiSearch } from "react-icons/bi";
 import SearchBarModal from "../SearchBarModal";
@@ -37,9 +37,9 @@ const Navbar = () => {
         <p className={navStyles.costaattwords}> The College of Science Technology and Applied Arts of Trinidad and Tobago</p>
       </nav> */}
         <nav className={navStyles.bottomNav}>
-          <div className={navStyles.logo}>
+          <div>
             <Link href="/">
-              <Image src={logo} alt="costaatt logo" height={100} />
+              <Image src={logo} alt="costaatt logo" width={50} />
             </Link>
           </div>
           <ul className={navStyles.navbarMenus}>

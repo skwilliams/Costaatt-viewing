@@ -26,8 +26,8 @@ import increase from "../../../public/images/admissions/increase.png";
 import ProgStyles from "../../styles/Programmes.module.scss";
 import admissionStyles from "@/styles/Admissions.module.scss";
 import AddCircleTwoToneIcon from "@mui/icons-material/AddCircleOutlineTwoTone";
-import imagedummy from "../../../public/images/schools/affiliationsMou.png"
-
+import imagedummy from "../../../public/images/schools/affiliationsMou.png";
+// import ContactSection from "@/components/PageComponents/ContactSection";
 const howtoapply = () => {
   const CustomHome = () => {
     return <AddCircleTwoToneIcon style={{ color: "rgb(245,130,32)" }} />;
@@ -966,14 +966,15 @@ const howtoapply = () => {
         <section id="contact" className={standardStyles.sectionWithSideNav}>
           {" "}
           <p className={AdmisStyles.sectiontextleft}> Contact Admissions</p>
-          <div className={standardStyles.row}>
+   
+      <div className={standardStyles.row}>
             <div className={standardStyles.col1of3}>
               <Image
                 className={AdmisStyles.icon}
                 src={telephone}
                 alt="telephone icon"
               />
-              <p className={AdmisStyles.icontext}> 625-5030 ext 5900</p>
+              <p className={AdmisStyles.icontext}> </p>
             </div>
             <div className={standardStyles.col1of3}>
               <Image
@@ -1003,7 +1004,7 @@ const howtoapply = () => {
                 </Link>
               </p>
             </div>
-          </div>
+          </div> 
         </section>
       </SideNavOnlyLayout>
     </>

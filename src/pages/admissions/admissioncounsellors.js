@@ -1,60 +1,56 @@
-import HeaderNoImage from '@/components/PageComponents/HeaderNoImage'
-import React from 'react'
-import Head from 'next/head'
-import Image from 'next/image'
-import AdmisStyles from '@/styles/Admissions.module.scss'
-import FacultyStaffCard from '@/components/PageComponents/FacultyStaffDepCard'
-import awaitingFacultyStaff from "../../../public/images/schools/awaitingFacultyStaff.png"
-import SideNavOnlyLayout from '@/components/Layouts/SideNavOnly_NoTopOrDropdown'
-import TopNavOnlyLayout from '@/components/Layouts/TopNavOnly_NoDropdown'
+import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
+import React from "react";
+import Head from "next/head";
+import Image from "next/image";
+import AdmisStyles from "@/styles/Admissions.module.scss";
+import FacultyStaffCard from "@/components/PageComponents/FacultyStaffDepCard";
+import awaitingFacultyStaff from "../../../public/images/schools/awaitingFacultyStaff.png";
+import SideNavOnlyLayout from "@/components/Layouts/SideNavOnly_NoTopOrDropdown";
+import TopNavOnlyLayout from "@/components/Layouts/TopNavOnly_NoDropdown";
 import telephone from "../../../public/images/admissions/telephone.svg";
 import email from "../../../public/images/admissions/email.svg";
 import counsellor from "../../../public/images/admissions/contact.svg";
 import Link from "next/link";
-import ContactAdmissions from '@/components/PageComponents/ContactAdmissions'
+import ContactAdmissions from "@/components/PageComponents/ContactSection";
 
 const admissioncounsellors = () => {
-    return (
-      <>
-        <Head>
-          <title>Admission Counsellors</title>
-        </Head>
-        <HeaderNoImage caption="Admissions Counsellor" />
+  return (
+    <>
+      <Head>
+        <title>Admission Counsellors</title>
+      </Head>
+      <HeaderNoImage caption="Admissions Counsellor" />
 
-        <SideNavOnlyLayout>
-          <section id="intro" className={AdmisStyles.introtext}>
-            Do yo have any questions about admissions <br /> We are here for you{" "}
-            <br /> Feel free to contact us
-          </section>
+      <SideNavOnlyLayout>
+        <section id="intro" className={AdmisStyles.introtext}>
+          Do yo have any questions about admissions <br /> We are here for you{" "}
+          <br /> Feel free to contact us
+        </section>
 
-          <section id="meet the team">
-            {" "}
-            <p className={AdmisStyles.sectiontextleft}>Meet the Team </p>
-            <div className={AdmisStyles.twoColGridCon}>
-              <div className={AdmisStyles.twoColGrid}>
-                <Image
-                  src={awaitingFacultyStaff}
-                  width="4em"
-                  alt="staff image"
-                />
-                <p className={AdmisStyles.emphasis}> Faculty name</p>
-              </div>
-              <div className={AdmisStyles.twoColGrid}>
-                <Image
-                  src={awaitingFacultyStaff}
-                  width="75em"
-                  alt="staff image"
-                />
-                <p className={AdmisStyles.emphasis}> Faculty name</p>
-              </div>
+        <section id="meet the team">
+          {" "}
+          <p className={AdmisStyles.sectiontextleft}>Meet the Team </p>
+          <div className={AdmisStyles.twoColGridCon}>
+            <div className={AdmisStyles.twoColGrid}>
+              <Image src={awaitingFacultyStaff} width="4em" alt="staff image" />
+              <p className={AdmisStyles.emphasis}> Faculty name</p>
             </div>
-          </section>
-          <section id="contact" className={AdmisStyles.sectionContactAdm}>
-            <p className={AdmisStyles.sectiontextleft}> Contact Admissions</p>
+            <div className={AdmisStyles.twoColGrid}>
+              <Image
+                src={awaitingFacultyStaff}
+                width="75em"
+                alt="staff image"
+              />
+              <p className={AdmisStyles.emphasis}> Faculty name</p>
+            </div>
+          </div>
+        </section>
+        <section id="contact" className={AdmisStyles.sectionContactAdm}>
+          <p className={AdmisStyles.sectiontextleft}> Contact Admissions</p>
 
-            <ContactAdmissions />
+          <ContactAdmissions />
 
-            {/* <p className={AdmisStyles.sectiontextleft}> Contact Admissions</p>
+          {/* <p className={AdmisStyles.sectiontextleft}> Contact Admissions</p>
             <div className={AdmisStyles.threeColGridCon}>
               <div className={AdmisStyles.threeColGrid}>
                 <Image
@@ -93,13 +89,13 @@ const admissioncounsellors = () => {
                 </p>
               </div>
             </div> */}
-          </section>
-        </SideNavOnlyLayout>
-      </>
-    );
-}
+        </section>
+      </SideNavOnlyLayout>
+    </>
+  );
+};
 
 admissioncounsellors.getLayout = function getLayout(page) {
   return <TopNavOnlyLayout> {page} </TopNavOnlyLayout>;
 };
-export default admissioncounsellors
+export default admissioncounsellors;

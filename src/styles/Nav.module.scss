@@ -127,6 +127,7 @@
   display: flex;
   padding: 0.5em 2em;
   justify-content: space-between;
+  
   background-image: linear-gradient(
     to bottom right,
     $color-primary,
@@ -152,6 +153,7 @@
 //costaatt logo on main page
 .logo {
   padding: 0;
+  width:20px;
   margin: 0;
   float: left;
   padding-left: 0;
@@ -168,8 +170,9 @@
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  padding: 0 65px;
-  background-color: $grey;
+  padding: 0 40px;
+  // background-color: $color-grey-dark-3;
+  background-color:$red;
   color: $whiteback;
 }
 .bottomNav li {

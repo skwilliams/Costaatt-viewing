@@ -78,13 +78,21 @@ export const subHeaderSections = {
     "How to Apply": "howtoapply",
   },
 
-  // [deptName]: {
-  //   "school overview": "overview",
-  //   Departments: "depart",
-  //   "find your Degree": "depcourses",
-  //   "meet the dean": "meetthedean",
-  //   "school events and news": "schoolnews",
-  // },
+  deptName: {
+    "school overview": "overview",
+    Departments: "depart",
+    "find your Degree": "depcourses",
+    "meet the dean": "meetthedean",
+    "school events and news": "schoolnews",
+  },
+
+  shortName: {
+    "school overview": "overview",
+    Departments: "depart",
+    "find your Degree": "depcourses",
+    "meet the dean": "meetthedean",
+    "school events and news": "schoolnews",
+  },
 
   studentorg: {
     "Student Clubs ": "introtoclubs",
@@ -106,17 +114,18 @@ export const subHeaderSections = {
   sports: {
     "Sports  ": "introsports",
     "Costaatt Teams": "sportsteams",
-    Activities: "activites",
     "Upcoming Events": "events",
     "Athletics Department ": "thedepartment",
 
     Contact: "contact",
   },
 
-  healthwell:{
-    "Overview" :"healthover",
-    "Counselling":"counsel",
-    "Disability":"disability",
-    "Sickbay":"sickbay",
-  }
+  healthwell: {
+    Overview: "healthover",
+    "Health & Wellness": "wellness",
+    Counselling: "counsel",
+    Disability: "disability",
+    Sickbay: "sickbay",
+    Contact: "contact",
+  },
 };

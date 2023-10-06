@@ -9,7 +9,7 @@ const FacultyStaffCard = ({ staff, dept }) => {
         .map((fe) => (
           <>
             <div className={StaffStyle.cardCont}>
-              {fe.photo && fe.altText && (
+              {/* {fe.photo && fe.altText && (
                 <Image
                   className={StaffStyle.imgstyle}
                   src={fe.photo}
@@ -17,7 +17,7 @@ const FacultyStaffCard = ({ staff, dept }) => {
                   width="200"
                   height="200"
                 />
-              )}
+              )} */}
 
               {fe.name && <p className={StaffStyle.name}>{fe.name}</p>}
               {fe.position && (

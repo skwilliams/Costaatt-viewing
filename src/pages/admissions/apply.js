@@ -1,19 +1,19 @@
-import React from 'react';
-import admissionStyles from '../../styles/Admissions.module.scss';
-import home5 from '../../../images/Links/home5.png';
-import TopHeader from '@/components/TopHeader';
+import React from "react";
+import admissionStyles from "../../styles/Admissions.module.scss";
+import home5 from "../../../images/Links/home5.png";
+import TopHeader from "@/components/TopHeader";
 import Image from "next/image";
-import ButtonLink from '@/components/HomeComponents/ButtonLink';
-import ProgStyles from '../../styles/Programmes.module.scss'
+import ButtonLink from "@/components/HomeComponents/ButtonLink";
+import ProgStyles from "../../styles/Programmes.module.scss";
 
 import CourseStyle from "../../styles/Course.module.scss";
 // import Button from "@/components/Button";
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { supportDocA, supportDocB } from './admissionsData';
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { supportDocA, supportDocB } from "./admissionsData";
 import {
   TableContainer,
   Table,
@@ -22,16 +22,13 @@ import {
   TableRow,
   TableCell,
   Paper,
-} from '@mui/material';
+} from "@mui/material";
 
 import time from "../../../images/Programmes/time.svg";
 import mode from "../../../images/Programmes/mode.svg";
 import location from "../../../images/Programmes/location.svg";
 import calendar from "../../../images/Programmes/calendar.svg";
-import ContactAdmissions from '@/components/PageComponents/ContactAdmissions';
-
-
-
+import ContactAdmissions from "@/components/PageComponents/ContactSection";
 
 const apply = () => {
   return (
