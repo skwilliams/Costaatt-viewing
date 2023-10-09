@@ -5,7 +5,7 @@
     -moz-perspective: 150rem;
     position: relative;
     height: 52rem;
-    
+
     &__side {
         height: 52rem;
         transition: all .8s ease;
@@ -39,7 +39,7 @@
             }
         }
     }
-  
+
 
     &:hover &sideFront {
         transform: rotateY(-180deg);
@@ -59,34 +59,49 @@
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
-        
+
         &1 {
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), 
-            url(../img/nat-5.jpg);
+            background-image: linear-gradient(to right bottom, $sobitCol, $sobitCol-dark),
+                url(../../../public/images/costaattlife/joinclub.png);
         }
 
         &2 {
-            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), 
-            url(../img/nat-6.jpg);
+            background-image: linear-gradient(to right bottom, $workFCol, $workFCol-dark),
+                url(../../../public/images/costaattlife/joinclub.png);
         }
 
         &3 {
-            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), 
-            url(../img/nat-7.jpg);
+            background-image: linear-gradient(to right bottom, $kenGor, $kenGor-dark),
+                url(../../../public/images/costaattlife/joinclub.png);
+        }
+
+        &4 {
+            background-image: linear-gradient(to right bottom, $liberalCol, $liberalCol-dark),
+                url(../../../public/images/costaattlife/joinclub.png);
+        }
+
+        &5 {
+            background-image: linear-gradient(to right bottom, $nursingCol, $nursingCol-dark),
+                url(../../../public/images/costaattlife/joinclub.png);
+        }
+
+        &6 {
+            background-image: linear-gradient(to right bottom, $cirEcom, $cirEcom-dark),
+                url(../../../public/images/costaattlife/joinclub.png);
         }
     }
 
     &__heading {
-        font-size: 2.8rem;
+        font-size: 1.85rem;
         font-weight: 300;
         text-transform: uppercase;
         text-align: right;
-        color: $color-white;
+        color: rgba($color-black, .95);
         position: absolute;
         top: 12rem;
         right: 2rem;
         width: 75%;
-    
+
     }
 
     &__headingSpan {
@@ -95,42 +110,105 @@
         box-decoration-break: clone;
 
         &1 {
-            background-image: linear-gradient(to right bottom, 
-            rgba($color-secondary-light, .85), 
-            rgba($color-secondary-dark, .85));
+            background-image: linear-gradient(to right bottom,
+                    rgba($sobitCol, .85),
+                    rgba($sobitCol-dark, .85));
         }
 
         &2 {
-            background-image: linear-gradient(to right bottom, 
-            rgba($color-primary-light, .85), 
-            rgba($color-primary-dark, .85));
+            background-image: linear-gradient(to right bottom,
+                    rgba($workFCol, .85),
+                    rgba($workFCol-dark, .85));
         }
 
         &3 {
-            background-image: linear-gradient(to right bottom, 
-            rgba($color-tertiary-light, .85), 
-            rgba($color-tertiary-dark, .85));
+            background-image: linear-gradient(to right bottom,
+                    rgba($kenGor, .85),
+                    rgba($kenGor-dark, .85));
         }
+
+        &4 {
+            background-image: linear-gradient(to right bottom,
+                    rgba($liberalCol, .85),
+                    rgba($liberalCol-dark, .85));
+        }
+
+        &5 {
+            background-image: linear-gradient(to right bottom,
+                    rgba($nursingCol, .85),
+                    rgba($nursingCol-dark, .85));
+        }
+
+        &6 {
+            background-image: linear-gradient(to right bottom,
+                    rgba($cirEcom, .85),
+                    rgba($cirEcom-dark, .85));
+        }
+
     }
 
     &__details {
-        padding: 3rem;
+        padding: 1.2rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        text-align: left;
 
-        ul {
-            list-style: none;
-            width: 80%;
-            margin: 0 auto;
+        &1 {
+            background-image: linear-gradient(to right bottom,
+                    rgba($sobitCol, .85),
+                    rgba($sobitCol-dark, .85));
 
-            li {
-                text-align: center;
-                font-size: 1.5rem;
-                padding: 1rem;
-
-                &:not(:last-child) {
-                    border-bottom: 1px solid $color-grey-light-2;
-                }
-            }
         }
+
+        &2 {
+
+            background-image: linear-gradient(to right bottom,
+                    rgba($workFCol, .85),
+                    rgba($workFCol-dark, .85));
+        }
+
+        &3 {
+            background-image: linear-gradient(to right bottom,
+                    rgba($kenGor, .85),
+                    rgba($kenGor-dark, .85));
+        }
+
+        &4 {
+            background-image: linear-gradient(to right bottom,
+                    rgba($liberalCol, .85),
+                    rgba($liberalCol-dark, .85));
+        }
+
+        &5 {
+            background-image: linear-gradient(to right bottom,
+                    rgba($nursingCol, .85),
+                    rgba($nursingCol-dark, .85));
+        }
+
+        &6 {
+            background-image: linear-gradient(to right bottom,
+                    rgba($cirEcom, .85),
+                    rgba($cirEcom-dark, .85));
+        }
+
+
+
+
+        // ul {
+        //     list-style: none;
+        //     width: 80%;
+        //     margin: 0 auto;
+
+        //     li {
+        //         text-align: center;
+        //         font-size: 1.5rem;
+        //         padding: 1rem;
+
+        //         &:not(:last-child) {
+        //             border-bottom: 1px solid $color-grey-light-2;
+        //         }
+        //     }
+        // }
     }
 
     // FRONT SIDE STYLING
@@ -165,13 +243,13 @@
 
     //@include respond(tab-port) {
     @media only screen and (max-width: 56.25em),
-            only screen and (hover: none) {
+    only screen and (hover: none) {
 
         height: auto;
         border-radius: 3px;
         background-color: $color-white;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-        
+
         &__side {
             height: auto;
             position: relative;
@@ -182,12 +260,12 @@
                 clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
             }
         }
-    
+
         &:hover &__sideFront {
             transform: rotateY(0);
         }
 
-    
+
         &__details {
             padding: 1rem 3rem;
         }

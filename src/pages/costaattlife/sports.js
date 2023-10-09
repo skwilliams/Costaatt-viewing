@@ -59,6 +59,8 @@ import ReactPlayer from "react-player";
 import GradStyle from "../../styles/GradsSpeak.module.scss";
 import { useState } from "react";
 import { useEffect } from "react";
+import FacultyStaffCard from "@/components/PageComponents/FacultyStaffDepCard";
+import StaffCard from "@/components/PageComponents/StaffCard";
 
 const sports = () => {
 
@@ -77,7 +79,7 @@ const sports = () => {
       </Head>
       <HeadImage
         mainimage={awaitingbanner}
-        imagetext="Student Clubs and Organizations"
+        imagetext={"COSTAATT Sports"}
       />
       <p
         className={`${standardStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}
@@ -175,12 +177,12 @@ const sports = () => {
         </div>{" "}
       </section>
 
-      {/* <section className={`${standardStyles.gallery} ${standardStyles.marginTopBig}`}>
+       <section className={standardStyles.gallery} >
         <div
           className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_1}`}
         >
           <Image
-            src={run4life}
+            src={awaitingimage}
             alt="Gallery image 1"
             className={standardStyles.gallery__img}
                         sizes="100vw"
@@ -191,7 +193,7 @@ const sports = () => {
           className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_2}`}
         >
           <Image
-            src={gal2}
+            src={awaitingimage}
             alt="Netball"
             className={standardStyles.gallery__img}
             sizes="100vw"
@@ -202,7 +204,7 @@ const sports = () => {
           className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_3}`}
         >
           <Image
-            src={gal3}
+            src={awaitingimage}
             alt="Gallery image 3"
             className={standardStyles.gallery__img}
             sizes="100vw"
@@ -213,7 +215,7 @@ const sports = () => {
           className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_4}`}
         >
           <Image
-            src={gal4}
+            src={awaitingimage}
             alt="Gallery image 4"
             className={standardStyles.gallery__img}
             sizes="100vw"
@@ -224,7 +226,7 @@ const sports = () => {
           className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_5}`}
         >
           <Image
-            src={gal5}
+            src={awaitingimage}
             alt="Gallery image 5"
             className={standardStyles.gallery__img}
             sizes="100vw"
@@ -235,7 +237,7 @@ const sports = () => {
           className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_6}`}
         >
           <Image
-            src={gal6}
+            src={awaitingimage}
             alt="Gallery image 6"
             className={standardStyles.gallery__img}
             sizes="100vw"
@@ -246,7 +248,7 @@ const sports = () => {
           className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_7}`}
         >
           <Image
-            src={gal7}
+            src={awaitingimage}
             alt="Gallery image 7"
             className={standardStyles.gallery__img}
             sizes="100vw"
@@ -257,7 +259,7 @@ const sports = () => {
           className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_8}`}
         >
           <Image
-            src={gal8}
+            src={awaitingimage}
             alt="Gallery image 8"
             className={standardStyles.gallery__img}
             width={0}
@@ -270,7 +272,7 @@ const sports = () => {
           className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_9}`}
         >
           <Image
-            src={gal9}
+            src={awaitingimage}
             alt="Gallery image 9"
             className={standardStyles.gallery__img}
             width={0}
@@ -283,7 +285,7 @@ const sports = () => {
           className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_10}`}
         >
           <Image
-            src={gal10}
+            src={awaitingimage}
             alt="Gallery image 10"
             className={standardStyles.gallery__img}
             width={0}
@@ -296,7 +298,7 @@ const sports = () => {
           className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_11}`}
         >
           <Image
-            src={gal11}
+            src={awaitingimage}
             alt="Gallery image 11"
             className={standardStyles.gallery__img}
             width={0}
@@ -309,7 +311,7 @@ const sports = () => {
           className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_12}`}
         >
           <Image
-            src={gal12}
+            src={awaitingimage}
             alt="Gallery image 12"
             className={standardStyles.gallery__img}
             width={0}
@@ -323,7 +325,7 @@ const sports = () => {
         >
           {" "}
           <Image
-            src={gal13}
+            src={awaitingimage}
             alt="Gallery image 13"
             className={standardStyles.gallery__img}
             width={0}
@@ -337,7 +339,7 @@ const sports = () => {
         >
           {" "}
           <Image
-            src={gal14}
+            src={awaitingimage}
             alt="Gallery image 14"
             className={standardStyles.gallery__img}
             width={0}
@@ -346,12 +348,9 @@ const sports = () => {
             style={{ width: "100%", height: "100%" }} // optional
           />
         </figure>{" "}
-      </section> */}
+      </section> 
 
-      <section
-        id="events"
-        className={`${standardStyles.sectionNoSidenav} ${standardStyles.marginTopBig}`}
-      >
+      <section id="events" className={standardStyles.sectionNoSidenav}>
         <h2 className={standardStyles.headingPrimarysub}>
           {" "}
           Upcoming Sporting Events
@@ -385,11 +384,39 @@ const sports = () => {
         </div> */}
 
         <div className={standardStyles.row}>
-          <div className={standardStyles.col1of4}> Ian </div>
-          <div className={standardStyles.col1of4}>Nigel</div>
-          <div className={standardStyles.col1of4}>Woker1</div>
-                  <div className={standardStyles.col1of4}>Worker2</div>
-
+          <div className={standardStyles.col1of4}>
+            <StaffCard
+              name="Ian Carter"
+              position={"Director of Athletics, Student Affairs"}
+              phone="625 5030 ext 5227"
+              email="icarter@costaatt.edu.tt"
+            />
+          </div>
+          <div className={standardStyles.col1of4}>
+            <StaffCard
+              name="Nigel Ramah"
+              position={"Coach"}
+              phone="625 5030 ext 5227"
+              email="nramah@costaatt.edu.tt"
+            />
+          </div>
+          <div className={standardStyles.col1of4}>
+            <StaffCard
+              name="Worker 2"
+              position={"Position 1"}
+              phone="625 5030 ext 5227"
+              email="worker2@costaatt.edu.tt"
+            />
+          </div>
+          <div className={standardStyles.col1of4}>
+            {" "}
+            <StaffCard
+              name="Worker 1"
+              position={"Position 2"}
+              phone="625 5030 ext 5227"
+              email="worker1@@costaatt.edu.tt"
+            />
+          </div>
         </div>
       </section>
 

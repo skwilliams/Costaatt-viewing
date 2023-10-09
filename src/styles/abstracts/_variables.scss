@@ -45,12 +45,27 @@ $light-orange:rgb(251, 176, 64);
 
 //School Colours
 $costtCol : rgb(104,91,199);
-$liberalCol :rgb(0,133,202);
+
+$liberalCol:rgb(0,133,202);
+$liberalCol-dark :rgb(0, 28, 47);
+
 $nursingCol :rgb(0,171,132);
+$nursingCol-dark :rgb(0,141,102);
+
+
 $sobitCol:rgb(187,41,187);
-$kenGoCol:rgb(164,52,58);
+$sobitCol-dark:rgb(93,20,93);
+
+$kenGor:rgb(164,52,58);
+$kenGor-dark:rgb(134,22,28);
+
+
 $workFCol:rgb(254,80,0);
+$workFCol-dark:rgb(224,50,0);
+
 $cirEcom:rgb(0,104,52);
+$cirEcom-dark:rgb(0,74,22);
+
 
 $color-primary:rgb(104,91,199);
 $color-primary-light:rgb( 159, 146, 223);
@@ -73,11 +88,11 @@ $neutral:rgb(150,150,150);
 // $color-primary-light: #7ed56f;
 // $color-primary-dark: #28b485;
 
-// $color-secondary-light: #ffb900;
-// $color-secondary-dark: #ff7730;
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
 
-// $color-tertiary-light: #2998ff;
-// $color-tertiary-dark: #5643fa;
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
 
 
 $color-grey-light-1: #f7f7f7;
@@ -94,7 +109,7 @@ $color-black: #000;
 
 
 // FONT
-$default-font-size: 1rem;
+$default-font-size: 1.2rem;
 
 
 // GRID

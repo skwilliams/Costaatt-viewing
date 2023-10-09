@@ -128,4 +128,9 @@ export const subHeaderSections = {
     Sickbay: "sickbay",
     Contact: "contact",
   },
+  careermgt:{
+    "Career Management" : "intro",
+    "Services":"services",
+    "Contact":"contact",
+  }
 };

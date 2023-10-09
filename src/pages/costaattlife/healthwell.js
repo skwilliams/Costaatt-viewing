@@ -1,26 +1,29 @@
 import React from "react";
 import Head from "next/head";
-import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
+import HeadImage from "@/components/PageComponents/HeadImage";
 import Link from "next/link";
 import Image from "next/image";
+import awaitingbanner from "../../../public/images/awaitingBanner.png";
+
+import awaitingimage from "../../../public/images/awaitingNewsEvent.png";
+
+import awaitingNews from "../../../public/images/awaitingNewsEvent.png";
+
 import ContactAdmissions from "@/components/PageComponents/ContactAdmissions";
 import standardStyles from "@/styles/main.module.scss";
+import AdmisStyles from "@/styles/Admissions.module.scss"
 import { StarSharp } from "@mui/icons-material";
 import joinclub from "../../../public/images/costaattlife/joinclub.png";
 import startclub from "../../../public/images/costaattlife/startclub.jpg";
-import campus2 from "../../../public/images/costaattlife/campus 2.jpg";
-import studentamb from "../../../public/images/costaattlife/ambas1.png";
 import studentamb2 from "../../../public/images/costaattlife/studentAmb.jpg";
-import studentcouncil2 from "../../../public/images/costaattlife/studentcouncil1.jpg";
-import studentcouncil1 from "../../../public/images/costaattlife/studentcouncil2.jpg";
-
+import ContactStudentLife from "@/components/PageComponents/ContactStudentLife";
 const healthwell = () => {
   return (
     <>
       <Head>
         <title>Health and Wellness</title>
       </Head>
-      <HeaderNoImage caption="Health and Wellness" />
+      <HeadImage mainimage={awaitingbanner} />
       <p
         className={`${standardStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}
       >
@@ -38,10 +41,13 @@ const healthwell = () => {
           psycho-social counselling, promotion of healthy lifestyles, sick bay
           facilities and services for the differently-abled.
         </div>
+        <hr className={standardStyles.centerunder} />
       </section>
 
       <section id="wellness" className={`${standardStyles.sectionambasadoor} `}>
-        <h2 className={standardStyles.headingPrimarysub}>
+        <h2
+          className={`${standardStyles.headingPrimarysub} ${standardStyles.centertext}`}
+        >
           {" "}
           Health and Wellness Promotion{" "}
         </h2>
@@ -122,7 +128,9 @@ const healthwell = () => {
       </section>
       <section id="counsel" className={standardStyles.sectionbackColor}>
         <div className={standardStyles.sectionNoSidenav}>
-          <h2 className={standardStyles.headingPrimarysub}>
+          <h2
+            className={`${standardStyles.headingPrimarysub} ${standardStyles.centertext}`}
+          >
             {" "}
             Counselling Services{" "}
           </h2>
@@ -198,9 +206,13 @@ const healthwell = () => {
           </div>
         </div>
       </section>
-      <section id="disability" className={standardStyles.sectionNoSideNav}>
+      <section id="disability" className={standardStyles.sectionNoSidenav}>
         <>
-          <h2> Disability</h2>
+          <h2
+            className={`${standardStyles.headingPrimarysub} ${standardStyles.centertext}`}
+          >
+            Disability
+          </h2>
           <p className={standardStyles.paragraph}>
             It is the policy of COSTAATT that discrimination against individuals
             with disabilities is prohibited. COSTAATT provides equal educational
@@ -217,104 +229,79 @@ const healthwell = () => {
           </p>
         </>
       </section>
-      <section id="sickbay" className={standardStyles.sectionNoSideNav}>
+      <section id="sickbay" className={standardStyles.sectionbackColor}>
         <>
-          <p>
-            Sick bay services are available to all students who may become ill
-            while at campus. The services offered are appropriate for short term
-            and minor emergencies (basic first aid). Where necessary,
-            arrangements would be made for the ill student to be transported to
-            a hospital or a preferred medical practitioner/ health care
-            provider. In such instances, parents, guardians or spouses will be
-            contacted immediately.
-          </p>
-          <p>
-            The College does not provide primary health care and therefore
-            cannot be considered as a substitute for physicians or other health
-            care providers. Any costs of the visits to a health
-            institution/medical practitioner would be borne by the student.
-          </p>
-
-          <div>
-            <p className="heading-primary--sub u-margin-top-medium">
+          <div
+            className={`${standardStyles.sectionNoSidenav} ${standardStyles.marginBottomSmall}`}
+          >
+            <h2
+              className={`${standardStyles.headingPrimarysub} ${standardStyles.centertext}`}
+            >
               {" "}
-              OTHER SERVICES OFFERED BY THE DEPARTMENT OF HEALTH AND COUNSELLING
-              SERVICES:
+              Sick Bay
+            </h2>
+            <p className={standardStyles.paragraph}>
+              Sick bay services are available to all students who may become ill
+              while at campus. The services offered are appropriate for short
+              term and minor emergencies (basic first aid). Where necessary,
+              arrangements would be made for the ill student to be transported
+              to a hospital or a preferred medical practitioner/ health care
+              provider. In such instances, parents, guardians or spouses will be
+              contacted immediately.
             </p>
-            <div className={standardStyles.bullets}>
-              <ul className={standardStyles.list}>
-                <li className={standardStyles.items}>
-                  {" "}
-                  Referral of students with Social Issues to Government Agencies
-                </li>
-                <li className={standardStyles.items}>
-                  {" "}
-                  Testing- Blood Pressure and Blood Sugar (for persons with
-                  Diabetes){" "}
-                </li>
-                <li className={standardStyles.items}>
-                  {" "}
-                  Facilitating students with class projects (health articles){" "}
-                </li>
-                <li className={standardStyles.items}>
-                  {" "}
-                  Distributing health related brochures{" "}
-                </li>
-                <li className={standardStyles.items}>
-                  {" "}
-                  Answering queries as it relates to health concerns{" "}
-                </li>
-                <li className={standardStyles.items}> Health Fair </li>
-              </ul>
+            <p className={standardStyles.paragraph}>
+              The College does not provide primary health care and therefore
+              cannot be considered as a substitute for physicians or other
+              health care providers. Any costs of the visits to a health
+              institution/medical practitioner would be borne by the student.
+            </p>
+            <div>
+              <p className={standardStyles.headingTertiary}>
+                {" "}
+                OTHER SERVICES OFFERED BY THE DEPARTMENT OF HEALTH AND
+                COUNSELLING SERVICES:
+              </p>
+              <div className={standardStyles.bullets}>
+                <ul className={standardStyles.list}>
+                  <li className={standardStyles.items}>
+                    {" "}
+                    Referral of students with Social Issues to Government
+                    Agencies
+                  </li>
+                  <li className={standardStyles.items}>
+                    {" "}
+                    Testing- Blood Pressure and Blood Sugar (for persons with
+                    Diabetes){" "}
+                  </li>
+                  <li className={standardStyles.items}>
+                    {" "}
+                    Facilitating students with class projects (health articles){" "}
+                  </li>
+                  <li className={standardStyles.items}>
+                    {" "}
+                    Distributing health related brochures{" "}
+                  </li>
+                  <li className={standardStyles.items}>
+                    {" "}
+                    Answering queries as it relates to health concerns{" "}
+                  </li>
+                  <li className={standardStyles.items}> Health Fair </li>
+                </ul>
+              </div>
             </div>
           </div>
         </>
       </section>
+
       <section id="contact" className={standardStyles.sectionNoSidenav}>
-        <h2 className={standardStyles.headingPrimarysub}>
+        <h2
+          className={`${standardStyles.headingPrimarysub} ${standardStyles.centertext}`}
+        >
           {" "}
           Contact Student Life{" "}
         </h2>
-       
-          <div className={standardStyles.row}>
-            <div className={standardStyles.col1of3}>
-              <Image
-                className={AdmisStyles.icon}
-                src={telephone}
-                alt="telephone icon"
-              />
-              <p className={AdmisStyles.icontext}> </p>
-            </div>
-            <div className={standardStyles.col1of3}>
-              <Image
-                className={AdmisStyles.icon}
-                src={email}
-                alt="email icon"
-              />
-              <p className={AdmisStyles.icontext}>
-                {" "}
-                <a href="mailto:applications@costaatt.edu.tt">
-                  {" "}
-                  applications@costaatt.edu.tt{" "}
-                </a>{" "}
-              </p>
-            </div>
-            <div className={standardStyles.col1of3}>
-              <Image
-                className={AdmisStyles.icon}
-                src={counsellor}
-                alt="contact icon"
-              />
-              <p className={AdmisStyles.icontext}>
-                {" "}
-                <Link href="admissioncounsellors">
-                  {" "}
-                  Admissions Counsellor Directory{" "}
-                </Link>
-              </p>
-            </div>
-          </div>
-        
+
+        <ContactStudentLife />
       </section>
     </>
   );

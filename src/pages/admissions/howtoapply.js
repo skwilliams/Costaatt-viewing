@@ -11,7 +11,12 @@ import email from "../../../public/images/admissions/email.svg";
 import counsellor from "../../../public/images/admissions/contact.svg";
 import Image from "next/image";
 import Link from "next/link";
+
 import HeadImage from "@/components/PageComponents/HeadImage";
+import awaitingbanner from "../../../public/images/awaitingBanner.png";
+
+import awaitingimage from "../../../public/images/awaitingNewsEvent.png";
+
 import headImg from "../../../public/images/admissions/applynow.jpg";
 import SimpleCard from "@/components/PageComponents/SimpleCard";
 import tick from "../../../public/images/admissions/tick.svg";
@@ -40,7 +45,7 @@ const howtoapply = () => {
       <Head>
         <title>How to Apply</title>
       </Head>
-      <HeaderNoImage caption="How to apply" />
+      <HeadImage mainimage={awaitingbanner} />
       <p className={ProgStyles.headingprimarysub}>
         <Link href="/"> COSTAATT/ </Link>
         <Link href="/admissions">Admissions/</Link>
