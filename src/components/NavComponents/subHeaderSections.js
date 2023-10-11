@@ -132,5 +132,11 @@ export const subHeaderSections = {
     "Career Management" : "intro",
     "Services":"services",
     "Contact":"contact",
+  },
+  compasscenter:{
+    "Compass ":"intro",
+    "Services " : "services",
+    "Frequently Asked Questions":"faq",
+    "Contact":"contact",
   }
 };
