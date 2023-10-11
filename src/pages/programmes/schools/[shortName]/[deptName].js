@@ -40,7 +40,7 @@ const index = (props) => {
         <title>{foundDept.shortName}</title>
       </Head>
       <HeadImage imagetext={foundDept.name} mainimage={foundDept.headImage} />
-      <SideNavOnlyLayout>
+      {/* <SideNavOnlyLayout> */}
         {/* Department Overview Section */}
         <section id="overview" className={DeptStyles.sectionOverview}>
           <div className={ProgStyles.umargintopsmall}>
@@ -174,13 +174,13 @@ const index = (props) => {
             </div>
           </div>
         </section>
-      </SideNavOnlyLayout>
+      {/* </SideNavOnlyLayout> */}
     </>
   );
 };
-index.getLayout = function getLayout(page) {
-  return <TopNavOnlyLayout>{page}</TopNavOnlyLayout>;
-};
+// index.getLayout = function getLayout(page) {
+//   return <TopNavOnlyLayout>{page}</TopNavOnlyLayout>;
+// };
 export default index;
 
 export async function getStaticPaths() {

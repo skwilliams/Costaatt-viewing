@@ -3,6 +3,7 @@ import Head from'next/head';
 import HeaderNoImage from '@/components/PageComponents/HeaderNoImage';
 import Link from "next/link";
 import Imagge from 'next/image';
+import joinclub from "../../../public/images/costaattlife/joinclub.png"
 import admissionsStyles from "@/styles/Admissions.module.scss"
 import SideNavOnlyLayout from "@/components/Layouts/SideNavOnly_NoTopOrDropdown";
 import TopNavOnlyLayout from '@/components/Layouts/TopNavOnly_NoDropdown';

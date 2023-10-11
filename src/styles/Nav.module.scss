@@ -24,14 +24,15 @@
   z-index: 40;
   top: 0;
   //  background-color: $whiteback;
+  background-color: $color-grey-dark-2;
 
-  background-image: linear-gradient(to right, $orange, $purple-secondary);
+  // background-image: linear-gradient(to right, $color-comp1, $color-comp2);
   height: auto;
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 0 10rem 0 10rem;
-  color: #d5cabd;
+  padding: 0 3rem 0 3rem;
+  color: black;
 }
 .sideNavContainer {
   position: sticky;
@@ -126,10 +127,11 @@
   display: flex;
   padding: 0.5em 2em;
   justify-content: space-between;
+  
   background-image: linear-gradient(
     to bottom right,
-    $purple-main,
-    $purple-secondary
+    $color-primary,
+    $color-primary-dark
   );
   color: white;
 }
@@ -151,6 +153,7 @@
 //costaatt logo on main page
 .logo {
   padding: 0;
+  width:20px;
   margin: 0;
   float: left;
   padding-left: 0;
@@ -167,9 +170,9 @@
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  padding: 0 65px;
-  background-color: $grey;
-  background-color: $grey;
+  padding: 0 40px;
+  // background-color: $color-grey-dark-3;
+  background-color:$red;
   color: $whiteback;
 }
 .bottomNav li {

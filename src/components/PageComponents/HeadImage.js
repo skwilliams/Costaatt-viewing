@@ -12,8 +12,8 @@ const HeadImage = ({ imagetext, mainimage }) => {
         alt={imagetext}
         priority={true}
         //sizes ="100vw"
-        //sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        sizes="100vw, 50vw, 33vw"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        // sizes="100vw, 50vw, 33vw"
         style= {{width:'100%',height:'50%',}}
         quality="100"
         
@@ -21,7 +21,7 @@ const HeadImage = ({ imagetext, mainimage }) => {
 />
             
       
-      {/* <div className={style.pageheadertext}>{imagetext}</div> */}
+      <div className={style.pageheadertext}>{imagetext}</div>
     </div>
   );
 };

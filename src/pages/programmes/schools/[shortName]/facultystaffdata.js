@@ -148,4 +148,22 @@ export const staffdata = [
     position: "Senior Lecturer",
     email: "cmccave@costaatt.edu.tt",
   },
+  {
+    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    dept_code: "ATHL",
+    handle: "icarter",
+    altText: " photo Ian Carter",
+    name: "Ian Carter",
+    position: "Director Athletics, Student Affairs",
+    email: "icarter@costaatt.edu.tt",
+  },
+  {
+    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    dept_code: "ATHL",
+    handle: "nramah",
+    altText: " photo Nigel Ramah",
+    name: "Nigel Ramah",
+    position: "Coach",
+    email: "nramah@costaatt.edu.tt",
+  },
 ];

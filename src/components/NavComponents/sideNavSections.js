@@ -58,14 +58,15 @@ export const sideNavSections = {
   },
   howtoapply: {
     Welcome: "intro",
-    "First Steps": "firststeps",
-    "How to Apply": "howtoapply",
-    Timeline: "timeline",
+    "Before you Apply": "firststeps",
+    "When to Apply": "timeline",
     Requirements: "require",
-    "Choose your path": "chooseyourpath",
+    "Alternative Entry Routes": "alterRoutes",
+
+    "Supporting Documents": "supportingDocs",
 
     Checklist: "checklist",
-
+    "Accepted Students": "accepted",
     Contact: "contact",
   },
   requirements: {
@@ -73,8 +74,8 @@ export const sideNavSections = {
     "Additional School Requirements": "minsSchreq",
     "General Supporting Documents": "suppDocs",
     "Additional Programmes Documents": "suppAddDocs",
-    "Alternative Entry Routes":"alterRoutes",
-    "Contact Admissions" :'contact'
+    "Alternative Entry Routes": "alterRoutes",
+    "Contact Admissions": "contact",
   },
   developmentcoursesApp: {
     Welcome: "intro",
@@ -97,4 +98,5 @@ export const sideNavSections = {
     "Student Id Card": "studentid",
     "Additional Information": "addinfo",
   },
+
 };

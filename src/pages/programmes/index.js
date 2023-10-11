@@ -4,12 +4,9 @@ import Image from 'next/image';
 import Head from 'next/head';
 import Link from 'next/link';
 import HeadImage from '@/components/PageComponents/HeadImage';
-import imgwhy1 from '../../../images/Programmes/acttlogo.jpg';
 import headImg from '../../../images/Programmes/tester2.jpg';
-// import Layout from '@/components/Layout';
 import studyitems from '../../components/PageComponents/AreasStudyItems';
-import pageWithSideNavClasses from '../../styles/PageWithSideNav.module.scss';
-import SideNavOnlyLayout from '@/components/Layouts/SideNavOnly_NoTopOrDropdown';
+
 import topclass from "../../../public/images/schools/topclassLect.png"
 import onlinelearnig from "../../../public/images/schools/onlineLearning.png"
 import workReady from "../../../public/images/schools/workreadyGrads.png"

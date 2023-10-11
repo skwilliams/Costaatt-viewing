@@ -24,17 +24,26 @@ const howtoregister = () => {
             <p className={AdmisStyles.sectiontextleft}> Registration Steps</p>
 
             <div className={AdmisStyles.entryreq}>
-              <p className={AdmisStyles.bannerSub}>
-                Registration invovles the following :{" "}
+              <p className={AdmisStyles.introtext}>
+                We are so excited that you have joined the COSTAATT family
+                <br />
+                We look forward to meeting and engaging with you <br />
               </p>
+              <p className={AdmisStyles.sectiontext}>
+                You are almost ready to start your journey{" "}
+              </p>
+              <p className={AdmisStyles.bannerSub}>
+                Here's what's left to be done{" "}
+              </p>
+
               <ul className={AdmisStyles.list}>
-                <li className={AdmisStyles.items}>Receiving Advisement </li>
-                <li className={AdmisStyles.items}>Registering for Courses</li>
+                <li className={AdmisStyles.items}>Receive Advisement </li>
+                <li className={AdmisStyles.items}>Register for Courses</li>
                 <li className={AdmisStyles.items}>
-                  Applying for Gate(if eligible)
+                  Apply for Gate(if eligible)
                 </li>
-                <li className={AdmisStyles.items}>Paying Fees</li>
-                <li className={AdmisStyles.items}>Collecting Student Id</li>
+                <li className={AdmisStyles.items}>Pay Fees</li>
+                <li className={AdmisStyles.items}>Collect Student Id</li>
               </ul>
             </div>
           </section>
@@ -373,7 +382,9 @@ const howtoregister = () => {
             </p>
           </section>
           <section id="addinfo" className={AdmisStyles.sectionAdditionalInfo}>
-          <p className={AdmisStyles.sectiontextleft}>Additional Information</p>
+            <p className={AdmisStyles.sectiontextleft}>
+              Additional Information
+            </p>
             <p className={AdmisStyles.bannerSub2}>On Campus Appointments</p>
             <p className={AdmisStyles.text}>
               Although we have resumed face-to-face interactions at our

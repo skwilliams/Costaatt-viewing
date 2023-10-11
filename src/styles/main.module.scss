@@ -1,24 +1,41 @@
 // all variables 
 @import "./abstracts/variables";
-
-
 @import "./abstracts/mixins";
 
+//components
 
-// all headings, paragraphs,
+@import "./components/featurebox";
+@import "./components/button";
+@import "./components/composition";
+@import "./components/eventcard";
+@import "./components/activities";
+@import "./components/gallery";
+@import "./components/popup";
+@import "./components/card";
+
+
+
+
+// all headings, paragraphs
 @import "./base/typography";
 
 
+
+@import "./base/utilities";
+
+
 @import "./pages/home";
-
-
-
+@import "./pages/costLife";
 
 
 // all grid layouts
 @import "./layout/grid";
 
+
+//section margins based on layout
+@import "./layout/pagelayout";
+
 //Includes tables, ul , li
-@import "./layout/structures.scss";
+@import "./layout/structures";
 
 

@@ -4,10 +4,11 @@
   display: flex;
   padding: 5px 30px;
   justify-content: space-between;
+
   background-image: linear-gradient(
     to bottom right,
-    $purple-main,
-    $purple-secondary
+    $color-primary,
+    $color-primary-dark
   );
   color: white;
 }
@@ -30,7 +31,7 @@
   transition: all 0.8s ease;
   border-radius: 15px;
   text-underline-position: under;
-  text-decoration: underline solid green 4px !important;
+  text-decoration: underline solid $color-comp3 4px !important;
 }
 
 .topNavDropDownMain {

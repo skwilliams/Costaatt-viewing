@@ -1,20 +1,20 @@
-import React from 'react';
-import standardStyles from "@/styles/main.module.scss"
-import admissionStyles from '../../styles/Admissions.module.scss';
+import React from "react";
+import standardStyles from "@/styles/main.module.scss";
+import admissionStyles from "../../styles/Admissions.module.scss";
 import Image from "next/image";
 import ProgStyles from "../../styles/Programmes.module.scss";
 import SideNavOnlyLayout from "@/components/Layouts/SideNavOnly_NoTopOrDropdown";
 import TopNavOnlyLayout from "@/components/Layouts/TopNavOnly_NoDropdown";
 
 import CourseStyle from "@/styles/Course.module.scss";
-import Link from 'next/link';
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Typography from '@mui/material/Typography';
-import { supportDocA, supportDocB } from './admissionsData';
-import Head from "next/head"
+import Link from "next/link";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Typography from "@mui/material/Typography";
+import { supportDocA, supportDocB } from "./admissionsData";
+import Head from "next/head";
 import {
   TableContainer,
   Table,
@@ -24,10 +24,10 @@ import {
   TableCell,
   Paper,
   Divider,
-} from '@mui/material';
-import { Padding } from '@mui/icons-material';
-import HeaderNoImage from '@/components/PageComponents/HeaderNoImage';
-import ContactAdmissions from '@/components/PageComponents/ContactAdmissions';
+} from "@mui/material";
+import { Padding } from "@mui/icons-material";
+import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
+import ContactAdmissions from "@/components/PageComponents/ContactAdmissions";
 const requirements = () => {
   return (
     <>
@@ -331,7 +331,6 @@ const requirements = () => {
       </SideNavOnlyLayout>
     </>
   );
-
 };
 
 requirements.getLayout = function getLayout(page) {

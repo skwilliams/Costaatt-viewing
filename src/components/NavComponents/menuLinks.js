@@ -304,47 +304,47 @@ export const mainNavLinks = [
   },
   {
     title: "COSTAATT Life ",
-    path: "/",
+    // path: "/",
     submenu: [
       {
-        title: "Campus Activities",
-        path: "/",
+        title: "Student Clubs and Organizations",
+        path: "/costaattlife/studentorg",
       },
       {
         title: "Health and wellness",
-        path: "/",
+        path: "/costaattlife/healthwell",
       },
       {
         title: "Career Management",
-        path: "/",
+        path: "/costaattlife/careermgt",
       },
       {
         title: "College Library",
-        path: "/",
+        path: "/costaattlife/library",
       },
       {
         title: "I.T. Facilities",
-        path: "/",
+        path: "/costaattlife/itservices",
       },
       {
         title: "Compass Center",
-        path: "/",
+        path: "/costaattlife/compasscenter",
       },
       {
         title: "Events",
-        path: "/",
+        path: "/events",
       },
     ],
     submenuImage: [
       {
         img: require("../../../images/Links/dummyImg1.jpg"),
-        title: "Academic Calendar",
-        path: "/programmes",
+        title: "Sports",
+        path: "/costaattlife/sports",
       },
       {
         img: require("../../../images/Links/dummyImg2.jpg"),
-        title: "Areas of Study",
-        path: "/programmes",
+        title: "Student Council",
+        path: "/costaattlife/studentcouncil",
       },
     ],
   },

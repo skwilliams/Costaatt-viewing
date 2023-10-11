@@ -27,7 +27,7 @@ const GradsSpeak = ({ graduate }) => {
           <>
               <div className={GradStyle.video}>
               {grad.video && (
-               hasWindow && <ReactPlayer height="320px" width="270px" url={grad.video} />
+                hasWindow && <ReactPlayer height="320px" width="270px" url={grad.video} />
               )}
             </div>  
 

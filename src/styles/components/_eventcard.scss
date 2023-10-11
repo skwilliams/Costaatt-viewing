@@ -1,0 +1,72 @@
+.eventscard{
+
+    background-color: rgba($color-grey-light-2, .8);
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: left;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-primary-light, .30);
+    transition: transform .3s;
+    margin-bottom : 5rem;
+
+    @include respond(tab-port) {
+        padding: 2rem;
+    } 
+    &__heading{
+        font-size: 1.25rem;
+        color:
+$color-comp4;
+ font-weight: 700;
+         padding-bottom: 2rem;
+        
+
+         &:hover {
+color:black;    }
+    }
+    &__date{
+        font-size:1.15rem ;
+        padding:1rem 0; 
+        color:black;
+        
+    }
+    &__time{
+             font-size:1.15rem ;
+        color:$color-grey-dark-2;
+   
+    }
+    &__venue{
+     font-size:1.15rem ;
+        color:$color-grey-dark-2;
+    }
+
+    &__text{
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+    &__icon {
+        font-size: 3rem;
+        margin-bottom: .5rem;
+        display: inline-block;
+        // background-color: $color-primary-dark;
+        background-image: linear-gradient(to right, black, $color-primary-dark);
+        background-clip: text;
+         color: $color-primary-dark;
+
+        @include respond(tab-port) {
+            margin-bottom: 0;
+        }  
+    }  
+    &__action{
+    font-size: 1rem;
+    text-align: right;
+
+    color:$color-comp3;
+}
+    
+
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+    }
+}
+

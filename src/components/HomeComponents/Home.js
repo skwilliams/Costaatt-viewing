@@ -1,5 +1,6 @@
 import logo from "../../../images/Links/costaattlogographic.png";
 import HomeStyles from "../../styles/Home.module.scss";
+import standardStyles from "@/styles/main.module.scss"
 import HomeSlider from "../Slider";
 import EventTile from "./EventTile";
 import SchoolTile from "./SchoolTile";
@@ -72,15 +73,18 @@ const Home = () => {
   }, []);
   return (
     <>
-      <section className={HomeStyles.homeContainer}>
+      {/* <section className={HomeStyles.homeContainer}> */}
         <section className={HomeStyles.sectionOne}>
-          <div className={HomeStyles.sectionOneLeft}>
+     
+      <div className={HomeStyles.sectionOneLeft}>
             <div className={HomeStyles.sectionLeftTop}>
-              <h2>
+               <h2>
                 The College of Science Technology and Applied Arts of Trinidad
                 and Tobago
-              </h2>
+              </h2> 
             </div>
+            
+            
             <div className={HomeStyles.sectionLeftBottom}>
               <div className={HomeStyles.selectContainer}>
                 <h3>I am</h3>
@@ -254,7 +258,7 @@ const Home = () => {
             />
           </div>
         </section>
-      </section>
+      {/* </section> */}
     </>
   );
 };

@@ -77,12 +77,60 @@ export const subHeaderSections = {
     "CAPE Exemptions": "exemptionlistcape",
     "How to Apply": "howtoapply",
   },
-  
-  // [deptName]: {
-  //   "school overview": "overview",
-  //   Departments: "depart",
-  //   "find your Degree": "depcourses",
-  //   "meet the dean": "meetthedean",
-  //   "school events and news": "schoolnews",
-  // },
+
+  deptName: {
+    "school overview": "overview",
+    Departments: "depart",
+    "find your Degree": "depcourses",
+    "meet the dean": "meetthedean",
+    "school events and news": "schoolnews",
+  },
+
+  shortName: {
+    "school overview": "overview",
+    Departments: "depart",
+    "find your Degree": "depcourses",
+    "meet the dean": "meetthedean",
+    "school events and news": "schoolnews",
+  },
+
+  studentorg: {
+    "Student Clubs ": "introtoclubs",
+    "Existing Clubs ": "existingclubs",
+    "Start or Join Club": "startclub",
+    "Student Ambassadors": "ambassadors",
+    "Upcoming Events": "events",
+    Contact: "contact",
+  },
+  studentcouncil: {
+    "Studnet Council ": "introtoclubs",
+    "Serving Members": "presentteam",
+    "How to be a part": "joinus",
+    Activities: "activites",
+    "Upcoming Events": "events",
+
+    Contact: "contact",
+  },
+  sports: {
+    "Sports  ": "introsports",
+    "Costaatt Teams": "sportsteams",
+    "Upcoming Events": "events",
+    "Athletics Department ": "thedepartment",
+
+    Contact: "contact",
+  },
+
+  healthwell: {
+    Overview: "healthover",
+    "Health & Wellness": "wellness",
+    Counselling: "counsel",
+    Disability: "disability",
+    Sickbay: "sickbay",
+    Contact: "contact",
+  },
+  careermgt:{
+    "Career Management" : "intro",
+    "Services":"services",
+    "Contact":"contact",
+  }
 };

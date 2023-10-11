@@ -15,8 +15,8 @@
     padding: 20rem 0;
     background-image: linear-gradient(
         to right bottom,
-        rgba($color-grey-light-1, 0.8),
-        rgba($color-grey-light-2, 0.8)),
+        rgba($color-grey-light-1, 0.7),
+        rgba($color-grey-light-2, 0.7)),
     url(../../../public/images/schools/departments/CIACsmall.png);
     background-size: cover;
     transform: skewY(-7deg);
@@ -35,7 +35,7 @@
 .sectiontours {
     background-color: $color-grey-light-1;
     padding: 25rem 0 15rem 0;
-    margin-top: -10rem;
+    // margin-top: -10rem;
 
     @include respond(tab-port) {
         padding: 20rem 0 10rem 0;
