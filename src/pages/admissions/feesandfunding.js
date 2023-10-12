@@ -36,7 +36,7 @@ const feesandfunding = () => {
         <title>Fees and Funding </title>
       </Head>
 
-      <HeadImage imagetext="Fees and Funding" mainimage={headImg} />
+      <HeadImage imagetext="" mainimage={headImg} />
 
       <section id="intro" className={AdminStyles.sectionfeesintro}>
         <div className={AdminStyles.introtext}>

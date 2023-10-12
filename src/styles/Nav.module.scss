@@ -1,24 +1,5 @@
 @import "./abstracts/variables";
 
-// // .header {
-// //   // position: sticky;
-// //   position: relative;
-// //   z-index: 40;
-// //   top: 0;
-// // }
-
-// .headerStyles {
-//   background-color: $purple-secondary;
-//   display: flex;
-//   width: 100%;
-//   gap: 20px;
-//   justify-content: space-between;
-//   padding: 15px 15px;
-//   // animation: navLoad 300ms ease-in;
-//   animation: navScale 300ms ease-in;
-//   transform: scale(0);
-//   animation-fill-mode: forwards;
-// }
 .subheaderContainer {
   position: fixed;
   z-index: 40;
@@ -143,7 +124,7 @@
   justify-content: space-between;
   padding: 10px 20px;
   align-items: left;
-  background-color: $grey;
+  background-color: white;
   // background-color: #D5CABD;
   margin: 0;
 }
@@ -155,12 +136,13 @@
   padding: 0;
   width:20px;
   margin: 0;
-  float: left;
+  // float: left;
   padding-left: 0;
 }
 .costaattwords {
-  font-family: "Lato", Helvetica, sans-serif;
+  font-family: "Arial", Helvetica, sans-serif;
   font-weight: 900;
+  line-height: 2;
   font-size: 1.25rem;
   color: black;
 }
@@ -170,10 +152,12 @@
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  padding: 0 40px;
+  height: 60px;
+  padding: 0 20px;
   // background-color: $color-grey-dark-3;
-  background-color:$red;
-  color: $whiteback;
+  background-color:black;
+  background-color: grey;
+  color: white;
 }
 .bottomNav li {
   font-size: 1.2rem;

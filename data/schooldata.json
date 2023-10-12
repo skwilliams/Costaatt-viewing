@@ -3,7 +3,7 @@
     "name": "School of Business and Digital Technologies",
     "shortName": "Business & Digital Technologies",
     "nameStump": "busIT",
-    "image": "/images/schools/busIT header.png",
+    "image": "/images/schools/busIT header.jpg",
     "overview": "The School of Business and Digital Technologies provides access to a world-class and work-relevant education, focused on achieving institutional and national goals of workforce development. The School of Business and Digital Technologies comprises two (2) schools, the Department of ICTs and Digital Technologies and the Department of Management and Digital Entrepreneurship. These departments provide the public with a range of academic services to meet a growing number of careers and opportunities locally, regionally, and globally.The School is devoted to the development and preparation of students who are able to confront the challenges of the fast-paced, dynamic work environment. The School produces graduates who are work ready, professional and ethical, adept at creative problem-solving, embrace technological advancement and able to adapt to a rapidly evolving world.",
     "dean": {
       "name": "Vacant",
@@ -281,7 +281,7 @@
     "name": "School of Liberal Arts, Education and Digital Humanities",
     "shortName": "Liberal Arts, Education and Digital Humanities",
     "nameStump": "liberal",
-    "image": "/images/schools/liberal header.png",
+    "image": "/images/schools/liberal header.jpg",
     "dean": {
       "name": "Neil Sylvester",
       "image": "/images/schools/deanavatar.jpg",
@@ -452,7 +452,7 @@
     "name": "School of Nursing, Health and Medical Technologies",
     "shortName": "Nursing, Health and Medical Technologies",
     "nameStump": "nursing",
-    "image": "/images/schools/nursing header.png",
+    "image": "/images/schools/nursing header.jpg",
     "dean": {
       "name": "Anjenney Boodoosingh-Dwarika",
       "image": "/images/schools/deanavatar.jpg",
@@ -555,7 +555,7 @@
     "name": "School of Environment, Circular Economy and Sustainability",
     "shortName": "Environment, Circular Economy and Sustainability",
     "nameStump": "enviro",
-    "image": "/images/schools/enviro header.png",
+    "image": "/images/schools/enviro header.jpg",
     "dean": {
       "name": "Anjenney Boodoosingh-Dwarika",
       "image": "/images/schools/deanavatar.jpg",
@@ -593,7 +593,7 @@
     "name": "Ken Gordon School of Communication, Creative and Digital Media",
     "shortName": "Communication, Creative and Digital Media",
     "nameStump": "kengord",
-    "image": "/images/schools/awaitingBanner.png",
+    "image": "/images/schools/ken gordon header.jpg",
     "dean": {
       "name": "Ms. Clarinda Jack",
       "image": "/images/schools/deanavatar.jpg",

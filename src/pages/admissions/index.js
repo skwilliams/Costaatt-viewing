@@ -4,7 +4,7 @@ const index = () => {
   return (
     <>
       
-      <section>Heelo</section>
+      <section>Overview of Admissions </section>
       <section></section>
       <section></section>
 

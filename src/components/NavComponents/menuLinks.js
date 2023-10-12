@@ -1,6 +1,6 @@
 export const topNavLinksLeft = [
   {
-    title: "Schools",
+    title: "School Departments",
     submenu: [
       {
         title: "The School Of Liberal Arts, Education And Digital Humanities",
@@ -256,14 +256,18 @@ export const mainNavLinks = [
       },
       {
         img: require("../../../images/Links/dummyImg2.jpg"),
-        title: "Academic Advising",
-        path: "/programmes/advising",
+        title: "Admission Counsellor",
+        path: "/programmes/admissioncounsellors",
       },
     ],
   },
   {
     title: "Admissions and Aid ",
     submenu: [
+      {
+        title: "Office of the Registrar",
+        path: "/admissions/",
+      },
       {
         title: "Apply Now",
         path: "/admissions/howtoapply",
@@ -279,10 +283,6 @@ export const mainNavLinks = [
       {
         title: "Our Programmes",
         path: "/programmes/allprogrammes",
-      },
-      {
-        title: "Professional Development Application",
-        path: "/admissions/developmentcoursesApp",
       },
       {
         title: "Transfer Credit and Exemptions ",
@@ -372,22 +372,18 @@ export const mainNavLinks = [
         title: "College Leadership",
         path: "/",
       },
-      {
-        title: "Careers",
-        path: "/",
-      },
     ],
     submenuImage: [
       {
         img: require("../../../images/Links/dummyImg1.jpg"),
-        title: "Academic Calendar",
-        path: "/programmes",
+        title: "Careers",
+        path: "/about",
       },
-      {
-        img: require("../../../images/Links/dummyImg2.jpg"),
-        title: "Areas of Study",
-        path: "/programmes",
-      },
+      // {
+      //   img: require("../../../images/Links/dummyImg2.jpg"),
+      //   title: "Areas of Study",
+      //   path: "/programmes",
+      // },
     ],
   },
 
