@@ -4,13 +4,13 @@
     "shortName": "Business & Digital Technologies",
     "nameStump": "busIT",
     "image": "/images/schools/busIT header.png",
-    "overview": "The School of Business and Digital Technologies provides access to a world-class and work-relevant education, focused on achieving institutional and national goals of workforce development. The School of Business and Digital Technologies comprises two (2) schools, the Department of ICTs and Digital Technologies and the Department of Management and Digital Entrepreneurship. These departments provide the public with a range of academic services to meet a growing number of careers and opportunities locally, regionally, and globally.The School is devoted to the development and preparation of students who are able to confront the challenges of the fast-paced, dynamic work environment. The School produces graduates who are work ready, professional and ethical, adept at creative problem-solving, embrace technological advancement and able to adapt to a rapidly evolving world.",
+    "overview": "The School of Business and Digital Technologies provides access to a world-class and work-relevant education, focused on achieving institutional and national goals of workforce development. The School of Business and Digital Technologies comprises two (2) schools, the Department of ICTs and Digital Technologies and the Department of Management and Digital Entrepreneurship. These departments provide the public with a range of academic services to meet a growing number of careers and opportunities locally, regionally, and globally.",
     "dean": {
-      "name": "Vacant",
+      "name": "Dr. Kyra Mc Gowan-Santana",
       "image": "/images/schools/deanavatar.jpg",
       "message": "Welcome to the School of Business and Digital Technologies at COSTAATT. The School offers courses of study that lead to the award of certificates, diplomas, associate and bachelor’s degrees. We are in the business of changing lives, a key component of which is preparing our students through hands-on skills development for future careers using technology. Faculty members incorporate the use of cutting-edge business techniques, digital technology and information science to prepare students for new innovative opportunities where others see challenges. We welcome you to our School and to a dynamic and promising future!",
-      "email": "info@costaatt.edu.tt",
-      "phone": "868-625-5030 ext 1111"
+      "email": "kmsantana@costaatt.edu.tt",
+      "phone": "868-625-5030"
     },
 
     "departments": [
@@ -18,7 +18,7 @@
         "name": "Management and Digital Entrepreneurship",
         "headImage": "/images/schools/departments/MGDEheader.png",
         "image": "/images/schools/departments/MGDEsmall.png",
-        "summary": "From entrepreneurs and business professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
+        "summary": "At the Department of Management and Digital Entrepreneurship, our mission is to nurture and develop entrepreneurs whose creative vision, innovative skills and knowledge gained through our programmes, will make them drivers of growth and development in Trinidad and Tobago.",
         "coreValues": [
           "Integrity",
           "Compassion",
