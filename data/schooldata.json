@@ -593,7 +593,7 @@
     "name": "Ken Gordon School of Communication, Creative and Digital Media",
     "shortName": "Communication, Creative and Digital Media",
     "nameStump": "kengord",
-    "image": "/images/schools/kengord header.png",
+    "image": "/images/schools/awaitingBanner.png",
     "dean": {
       "name": "Ms. Clarinda Jack",
       "image": "/images/schools/deanavatar.jpg",
@@ -606,7 +606,7 @@
       {
         "name": "Creative Industries and Culture",
         "headImage": "/images/schools/departments/CIACheader.png",
-        "image": "/images/schools/CIACsmall.png",
+        "image": "/images/schools/awaitingNewsEvent.png",
         "summary": "The Department of Creative Industries and Culture offers degrees, diplomas and certificates in music, performing arts, film and video production, literature, creative writing, history, heritage and archival studies.",
         "coreValues": [],
         "shortName": "Arts, Music and Culture",

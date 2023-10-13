@@ -1,9 +1,11 @@
 import React from 'react'
 import Head from'next/head';
-import HeaderNoImage from '@/components/PageComponents/HeaderNoImage';
+import HeadImage from '@/components/PageComponents/HeadImage';
 import Link from "next/link";
-import Imagge from 'next/image';
+import Image from 'next/image';
 import joinclub from "../../../public/images/costaattlife/joinclub.png"
+import headImg from "../../../public/images/awaitingBanner.png"
+import standardStyles from "@/styles/main.module.scss"
 import admissionsStyles from "@/styles/Admissions.module.scss"
 import SideNavOnlyLayout from "@/components/Layouts/SideNavOnly_NoTopOrDropdown";
 import TopNavOnlyLayout from '@/components/Layouts/TopNavOnly_NoDropdown';
@@ -15,8 +17,8 @@ const developmentcoursesApp = () => {
         <title> Professional Development </title>
       </Head>
 
-      <HeaderNoImage caption="Professional Development Application" />
-      <p className={ProgStyles.headingprimarysub}>
+      <HeadImage mainimage={headImg} />
+      <p className={standardStyles.headingPrimarysub}>
         COSTAATT/Admissions/Requirements{" "}
       </p>
       <SideNavOnlyLayout>

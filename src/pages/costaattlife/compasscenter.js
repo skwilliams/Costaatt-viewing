@@ -1,11 +1,11 @@
 
 
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 
 import ReactDom from "react-dom";
 
 import standardStyles from "@/styles/main.module.scss"
-import AdmisStyles from "@/styles/Admissions.module.scss";
+import AdminStyles from "@/styles/Admissions.module.scss";
 
 import HeadImage from "@/components/PageComponents/HeadImage";
 import awaitingbanner from "../../../public/images/awaitingBanner.png";
@@ -20,17 +20,23 @@ import { StickyNote2 } from '@mui/icons-material';
 import Image from 'next/image';
 import Popup from '@/components/PageComponents/Popup';
 import joinclub from "../../../public/images/costaattlife/joinclub.png"
+import { AccordionActions } from '@mui/material';
 
+import { Accordion, Divider } from "@mui/material/";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 
 const compasscenter = () => {
 
- 
+
 
   return (
     <>
       <Head>
-        <title>Health and Wellness</title>
+        <title>Compass Center</title>
       </Head>
 
       <HeadImage mainimage={awaitingbanner} />
@@ -39,16 +45,17 @@ const compasscenter = () => {
       >
         <Link href="/"> COSTAATT/ </Link>
         <Link href="/costaattlife"></Link>
-        <Link href="/costaattlife/sports">Sports</Link>
+        <Link href="/costaattlife/compasscenter">Sports</Link>
       </p>
 
       <section id="intro" className={standardStyles.sectionNoSidenav}>
         <h2 className={standardStyles.introtext}>
           {" "}
-          We are here to guide you as you navigate through this journey.
-          COSTAATT offers many service that will assist you in preparing for the
-          world of work. We teach you skills and opportunities to robatining
-          employment and{" "}
+          Students can access support services provided by the COMPASS Centre;
+          these include psychosocial support in the form of developmental
+          advising and counselling as well as academic support in the form of
+          tutorial services, study skills seminars and semester loans of
+          selected texts{" "}
         </h2>
         <hr class={standardStyles.centerunder} />
       </section>
@@ -63,7 +70,7 @@ const compasscenter = () => {
         </h2>
 
         <div className={standardStyles.row}>
-          <div className={standardStyles.col1of3}>
+          <div className={standardStyles.col1of2}>
             <div className={standardStyles.card}>
               <div
                 className={`${standardStyles.card__side} ${standardStyles.card__sidefront}`}
@@ -71,13 +78,13 @@ const compasscenter = () => {
                 <div
                   className={`${standardStyles.card__picture} ${standardStyles.card__picture1}`}
                 >
-                    &nbsp;
+                  &nbsp;
                 </div>
                 <h4 className={standardStyles.card__heading}>
                   <span
                     className={`${standardStyles.card__headingSpan}${standardStyles.card__headingSpan1}`}
                   >
-                    Career Management{" "}
+                    Advising {" "}
                   </span>
                 </h4>
                 <div
@@ -93,7 +100,7 @@ const compasscenter = () => {
             </div>
           </div>
 
-          <div className={standardStyles.col1of3}>
+          <div className={standardStyles.col1of2}>
             <div className={standardStyles.card}>
               <div
                 className={`${standardStyles.card__side} ${standardStyles.card__sidefront}`}
@@ -101,14 +108,13 @@ const compasscenter = () => {
                 <div
                   className={`${standardStyles.card__picture} ${standardStyles.card__picture2}`}
                 >
-                    &nbsp;
+                  &nbsp;
                 </div>
                 <h4 className={standardStyles.card__heading}>
                   <span
                     className={`${standardStyles.card__headingSpan}${standardStyles.card__headingSpan2}`}
                   >
-                    Internship
-                  </span>
+                    Study Skills                  </span>
                 </h4>
                 <div
                   className={`${standardStyles.card__details} ${standardStyles.card__details2}`}
@@ -123,8 +129,10 @@ const compasscenter = () => {
               </div>
             </div>
           </div>
+        </div>
 
-          <div className={standardStyles.col1of3}>
+        <div className={standardStyles.row}>
+          <div className={standardStyles.col1of2}>
             <div className={standardStyles.card}>
               <div
                 className={`${standardStyles.card__side} ${standardStyles.card__sidefront}`}
@@ -132,14 +140,13 @@ const compasscenter = () => {
                 <div
                   className={`${standardStyles.card__picture} ${standardStyles.card__picture3}`}
                 >
-                    &nbsp;
+                  &nbsp;
                 </div>
                 <h4 className={standardStyles.card__heading}>
                   <span
                     className={`${standardStyles.card__headingSpan}${standardStyles.card__headingSpan3}`}
                   >
-                    Career Preparation
-                  </span>
+                    Tutorial Services                  </span>
                 </h4>
                 <div
                   className={`${standardStyles.card__details} ${standardStyles.card__details3}`}
@@ -158,126 +165,95 @@ const compasscenter = () => {
               </div>
             </div>
           </div>
-        </div>
-
-        <div className={standardStyles.row}>
-          <div className={standardStyles.col1of3}>
+          <div className={standardStyles.col1of2}>
             <div className={standardStyles.card}>
               <div
                 className={`${standardStyles.card__side} ${standardStyles.card__sidefront}`}
               >
                 <div
-                  className={`${standardStyles.card__picture} ${standardStyles.card__picture4}`}
+                  className={`${standardStyles.card__picture} ${standardStyles.card__picture1}`}
                 >
-                    &nbsp;
+                  &nbsp;
                 </div>
                 <h4 className={standardStyles.card__heading}>
                   <span
                     className={`${standardStyles.card__headingSpan}${standardStyles.card__headingSpan4}`}
                   >
-                    Placement
+                    TextBook Loans{" "}
                   </span>
                 </h4>
                 <div
-                  className={`${standardStyles.card__details} ${standardStyles.card__details4}`}
+                  className={`${standardStyles.card__details} ${standardStyles.card__details4
+                    }`}
                 >
-                  As part of its commitment to supporting students’ transition
-                  to the world of work, the Department of Career Management
-                  Services will host an online recruitment service featuring
-                  registered student subscribers. In addition, it will offer
-                  on-campus recruitment and networking events, career
-                  explorations and job placement recruitment drives. Look out
-                  for our vacancy postings via student email, the web portal or
-                  you can visit your placement officer for information on job
-                  vacancies.
+                  Career management is applying/executing what was learnt in the
+                  career planning process to achieve career goals. Career
+                  management is not a singular event but a continuing process
+                  that is a necessity for adapting to the changing demands of a
+                  dynamic socioeconomic environment.
                 </div>
               </div>
             </div>
           </div>
 
-          <div className={standardStyles.col1of3}>
-            <div className={standardStyles.card}>
-              <div
-                className={`${standardStyles.card__side} ${standardStyles.card__sidefront}`}
-              >
-                <div
-                  className={`${standardStyles.card__picture} ${standardStyles.card__picture5}`}
-                >
-                    &nbsp;
-                </div>
-                <h4 className={standardStyles.card__heading}>
-                  <span
-                    className={`${standardStyles.card__headingSpan}${standardStyles.card__headingSpan5}`}
-                  >
-                    Workshops
-                  </span>
-                </h4>
-                <div
-                  className={`${standardStyles.card__details} ${standardStyles.card__details5}`}
-                >
-                  The Department of Career Management Services offers several
-                  workshops intended to assist you in developing the required
-                  competencies to obtain and maintain professional positions.
-                  These include: Résumé writing, time management, professional
-                  development, interviewing skills, job search strategies and
-                  conflict resolution. Workshop schedules will be sent via your
-                  student email. Additional information will also be posted on
-                  the web portal which can be easily accessed at any time.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className={standardStyles.col1of3}>
-            <div className={standardStyles.card}>
-              <div
-                className={`${standardStyles.card__side} ${standardStyles.card__sidefront}`}
-              >
-                <div
-                  className={`${standardStyles.card__picture} ${standardStyles.card__picture6}`}
-                >
-                    &nbsp;
-                </div>
-                <h4 className={standardStyles.card__heading}>
-                  <span
-                    className={`${standardStyles.card__headingSpan}${standardStyles.card__headingSpan6}`}
-                  >
-                    WorkStudy
-                  </span>
-                </h4>
-                <div
-                  className={`${standardStyles.card__details} ${standardStyles.card__details6}`}
-                >
-                  This programme is intended to allow you to develop through
-                  experiential learning opportunities while on campus. It
-                  consists of both the work-study trainee and the student
-                  ambassador. The Work-Study trainee is intended to provide
-                  students with the relevant experience in their field of study
-                  while working on campus. The Student Ambassador role allows
-                  students to act as college brand ambassadors and leaders. If
-                  you would like to receive work-study handbooks and application
-                  forms, make a request by visiting the Career Management
-                  Services section of the myCOSTAATT Student Portal.
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
-      <section id="contact" className={standardStyles.sectionNoSidenav}>
+      <section id="faq" className={standardStyles.sectionNoSidenav}>
         <h2
-          classname={`${standardStyles.headingPrimarysub} ${standardStyles.centertext}`}
+          className={`${standardStyles.headingPrimarysub} ${standardStyles.centertext}`}
         >
-          {" "}
-          Contact Student Life{" "}
+          Frequently Asked Questions{" "}
         </h2>
-        <p className={standardStyles.paragraph}>
-          To request further information on our services, or schedule an
-          appointment with a Career Advisor or a Placement Officer, you can log
-          on to the myCOSTAATT Student Portal, or contact us:
-        </p>
-        <ContactStudentLife />
+        <h2 className={standardStyles.introtext}>
+          {" "}
+          <Accordion>
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              <Typography fontWeight="bold" fontSize={"1.25rem"}>
+                What is Transfer Credit{" "}
+              </Typography>
+            </AccordionSummary>
+
+            <AccordionDetails>
+              <p className={AdminStyles.accordiantext}> </p>
+            </AccordionDetails>
+          </Accordion>
+        </h2>
+      </section>
+      <section id="contact" className={standardStyles.sectionColor2}>
+        <h2
+          className={`${standardStyles.headingPrimarysub} ${standardStyles.centertext}`}
+        >
+          Contact Compass{" "}
+        </h2>
+        <div className={standardStyles.paragraph}>
+          Requests for services (tutorials or seminars) may be e-mailed to
+          COMPASSCentre@costaatt.edu.tt or telephoned to:
+          <div className={standardStyles.bullets}>
+            <ul className={standardStyles.list}>
+              <li className={standardStyles.items}>
+                City Campus, COMPASS Centre - 625-5030 Ext. 5334/5
+              </li>
+              <li className={standardStyles.items}>
+                {" "}
+                South Campus, Administration Office - 625-5030 Ext. 5771{" "}
+              </li>
+              <li className={standardStyles.items}>
+                {" "}
+                Administration Office - 625-5030 Ext. 5650 Tobago Campus,
+              </li>
+              <li className={standardStyles.items}>
+                {" "}
+                Sangre Grande, Administration Office - 625-5030 Ext. 5600
+              </li>
+              <li className={standardStyles.items}>
+                You may also access tutorial support at City Campus by visiting
+                COMPASS Centre, Bretton Hall annex or the administrative desk at
+                the Tutorial Centre, Room 308.
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
     </>
   );
@@ -286,5 +262,5 @@ const compasscenter = () => {
 export default compasscenter
 
 
- 
+
 

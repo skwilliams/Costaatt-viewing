@@ -957,7 +957,7 @@ const howtoapply = () => {
                   <li className={standardStyles.items}>
                     Apply for Gate (if eligible)
                   </li>
-                  <li className={standardStyles.items}>Paying Fees</li>
+                  <li className={standardStyles.items}>Pay Fees</li>
                   <li className={standardStyles.items}>Collect Student Id</li>
                   <Link
                     href="./howtoregister"
