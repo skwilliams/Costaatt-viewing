@@ -5,15 +5,14 @@
   z-index: 40;
   top: 0;
   //  background-color: $whiteback;
-  background-color: $color-grey-dark-2;
-
+  background-color: rgb(67,63,64,0.8);
   // background-image: linear-gradient(to right, $color-comp1, $color-comp2);
   height: auto;
   display: flex;
   width: 100%;
   justify-content: space-between;
   padding: 0 3rem 0 3rem;
-  color: black;
+  color: white;
 }
 .sideNavContainer {
   position: sticky;
@@ -61,6 +60,7 @@
   // margin-bottom:.4rem;
   border-bottom: white 5px solid;
   font-weight: 900;
+  color:$color-primary;
 
   // text-decoration: underline solid white 4px;
 }
@@ -134,10 +134,11 @@
 //costaatt logo on main page
 .logo {
   padding: 0;
-  width:20px;
+  width:15px;
   margin: 0;
   // float: left;
   padding-left: 0;
+  padding-top:20px;
 }
 .costaattwords {
   font-family: "Arial", Helvetica, sans-serif;
@@ -153,10 +154,11 @@
   align-items: center;
   margin: 0;
   height: 60px;
-  padding: 0 20px;
+  padding: 25px 20px;
+  // padding-top:30px; 
   // background-color: $color-grey-dark-3;
   background-color:black;
-  background-color: grey;
+  background-color:$grey;
   color: white;
 }
 .bottomNav li {
@@ -172,7 +174,7 @@
 .navBarLinks {
   width: 100%;
   padding: 9px 5px;
-  text-decoration-color: $grey-light;
+  text-decoration-color: $grey;
 
   cursor: pointer;
 }
@@ -190,7 +192,7 @@
 
 .dropDownMain {
   left: 0;
-  top: 120px;
+  top: 100px;
   width: 100%;
   position: absolute;
   z-index: 40;
@@ -202,7 +204,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  background-color: $whiteback;
+  background-color: $lightgrey1;
   box-shadow: inset 0px 14px 15px rgba(0, 0, 0, 0.3);
   padding: 30px 120px;
   .dropDownLi {

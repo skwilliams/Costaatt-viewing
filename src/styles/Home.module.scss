@@ -10,39 +10,55 @@
 /*Section One, Slider and Select styles*/
 .sectionOne {
   display: flex;
-  height: 80vh;
+  height: 75vh;
   padding: 0;
-  background-color: $red;
-}
+background-image: linear-gradient(
+    to bottom right,
+    $color-primary,
+    $color-primary-dark
+  );}
 
 .sectionOneLeft {
   background-size: cover;
   padding: 0 20px;
   display: block;
   min-width: 30%;
-  height: 100%;
+  height: 80vh;
   margin: auto;
   // margin: 0;
   padding: 0;
 
-  // h2 {
-  //   font-size: 2rem;
-  //   font-weight: bolder;
-  //   // margin-top: 3rem;
-  // }
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    // margin-top: 3rem;
+  }
 }
 
 .sectionLeftTop {
-  background-color: $red;
+  background-color: $grey;
   // margin:2rem;
-  padding: 3rem;
+  // background-image: linear-gradient(
+  //   to bottom right,
+  //   $color-primary,
+  //   $color-primary-dark
+  // );
+  // padding-top: 2.5rem;
+  // padding-left:2.5rem;
+  // padding-bottom: 0;
+
+  padding: 2.5rem 0 0 0;
   border-top: 0 $whiteback solid;
   h2 {
-    font-size: $default-font-size * 1.25;
-    color: white;
     font-family: "Lato";
-    line-height: 1.95;
-    letter-spacing: 1px;
+       box-shadow: 2px 2px 5px $grey;
+
+    font-size: 1.15rem;
+    line-height:1.5;
+    color: white;
+    text-align: center;
+
+    // letter-spacing: 1px;
     text-align: center;
   }
   h3 {
@@ -51,16 +67,17 @@
   }
 }
 .sectionLeftBottom {
-  background-color: $red;
+  background-color: $grey;
   background-image: url("../../images/Links/colors.png");
   background-repeat: no-repeat;
-  background-position: bottom right;
-  margin: 0;
-  padding: 0;
+  background-position: bottom ;
+  // margin: 2rem 0  0  0;
+  padding: 3.25rem 2rem;
+  color:$color-primary;
 }
 
 .sectionOneRight {
-  height: 100%;
+  height: 90vh;
   min-width: 70%;
   overflow: hidden;
 }
@@ -76,7 +93,7 @@
   bottom: 82px;
   text-align: center;
   padding: 20px;
-  background-color: $brown;
+  background-color: $red-dark;
   opacity: 80%;
   font-size: xx-large;
   color: white;
@@ -84,11 +101,11 @@
 
 .sliderArrows {
   position: relative;
-  top: 500px;
+  top: 300px;
   font-size: 6rem;
   z-index: 10;
   cursor: pointer;
-  color: $orange;
+  color: $grey;
 }
 
 .rightSliderArrow {
@@ -103,16 +120,16 @@
 
 .selectContainer {
 
-  // margin-top: 40px;
+  margin-top: 40px;
   position: relative;
   width: auto;
-  padding: 20px;
+  padding: 30px;
 
   margin-bottom: 0;
   text-align: center;
   h3 {
-    font-size: 2rem;
-    color: white;
+    font-size: 1.5rem;
+    color:white;
   }
 }
 .innerSelectContainer {
@@ -129,7 +146,7 @@
   font: 2.5rem sans-serif;
   height: 100%;
   overflow: hidden;
-  color: $brown;
+  color: $grey;
   cursor: pointer;
 }
 
@@ -159,10 +176,10 @@
 
 .sectionTwo h1 {
   text-align: center;
-  font-size: 4rem;
+  font-size: 2.5rem;
   margin-bottom: 4rem;
   span {
-    color: $brown;
+    color: $color-primary-dark;
   }
 }
 
@@ -226,10 +243,11 @@
 
 .events {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin-bottom: 15px;
   margin-right: 30px;
   gap: 15px;
+  // background-color: $color-primary-dark;
   img {
     width: 100%;
     height: 300px;

@@ -47,11 +47,23 @@
     }
 
     &__purple {
-        background-color: $red;
+        background-color: $color-primary;
         color: $color-white;
 
         &::after {
             background-color: $color-primary-dark;
+        }
+    }
+    
+
+    &__red {
+        background-color: $red-dark;
+        color: $color-white;
+                padding: 1.25rem 3rem;
+
+
+        &::after {
+            background-color: $color-primary;
         }
     }
     

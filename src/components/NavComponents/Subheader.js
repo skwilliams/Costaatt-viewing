@@ -22,9 +22,9 @@ const Subheader = ({ show }) => {
     >
       <div className={navStyles.subheaderContainer}>
         <Progressbar />
-        {/* <Link href="/">
-          {/* <Image src={logo} alt="costaatt-logo" height={60} /> 
-        </Link> */}
+         <Link href="/">
+          <Image src={logo} alt="costaatt-logo" height={60} /> 
+        </Link> 
 
         <div className={navStyles.subheader}>
           {sectionTitles.map((section) => (

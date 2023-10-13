@@ -1,6 +1,7 @@
 export const subHeaderSections = {
   home: {
     schools: "schools",
+    "Uniquely Us":"unique",
     events: "events",
     news: "news",
     "success stories": "success-stories",
@@ -13,6 +14,14 @@ export const subHeaderSections = {
     "why choose us ": "whychoose",
     "Areas of Study": "areastudy",
     Highlights: "highlight",
+  },
+  liberal:{
+
+    "Overview":"overview",
+    "Departments":"departments",
+    "Find your Degree":"degree",
+    "Meet the Dean":"dean",
+    "School News":"news",
   },
   applynow: {
     "before you apply": "before-you-apply",
