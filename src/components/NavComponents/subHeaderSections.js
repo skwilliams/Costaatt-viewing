@@ -2,8 +2,9 @@ export const subHeaderSections = {
   home: {
     schools: 'schools',
     'Uniquely Us': 'unique',
-    events: 'events',
-    news: 'news',
+      news: 'news',
+      events: 'events',
+  
     'success stories': 'success-stories',
     // connect:'footer' see if you can get footer on the top nav
   },
@@ -137,17 +138,6 @@ export const subHeaderSections = {
     Contact: 'contact',
   },
   careermgt: {
-<<<<<<< HEAD
-    "Career Management": "intro",
-    Services: "services",
-    Contact: "contact",
-  },
-  compasscenter: {
-    "Compass ": "intro",
-    "Services ": "services",
-    "Frequently Asked Questions": "faq",
-    Contact: "contact",
-=======
     'Career Management': 'intro',
     Services: 'services',
     Contact: 'contact',
@@ -164,6 +154,5 @@ export const subHeaderSections = {
     'Find your Degree': 'degree',
     'Meet the Dean': 'dean',
     'School News': 'news',
->>>>>>> 1dcc534f56c0f2f813bc4b2a45ae62e31ab0422c
   },
 };

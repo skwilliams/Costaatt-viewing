@@ -204,6 +204,13 @@ const Home = () => {
               </IconContext.Provider>
               <h3 className={standardStyles.headingcards}>Unique Services</h3>
               <div className={standardStyles.featurebox__text}>
+                {/* <ul>
+                  <li>Computer Lab Rentals</li>
+                  <li>Science Lab Rentals</li>
+                  <li>Translation and Interpretation</li>
+                  <li>Training Spaces</li>
+                  <li>Customized Training</li>
+                </ul> */}
                 <ul>
                   <li>Computer Lab Rentals</li>
                   <li>Science Lab Rentals</li>
@@ -306,7 +313,7 @@ const Home = () => {
         <div className={HomeStyles.successStories}>
           <h1 className={HomeStyles.newsHeading}>We <span> Tranform  </span>Lives</h1>
         </div>
-        {/* <div className={HomeStyles.successSlider}>
+        <div className={HomeStyles.successSlider}>
           <SuccessSlider
             slides={selectedSuccess ? [selectedSuccess] : SuccessMainLinks}
           />
@@ -314,7 +321,7 @@ const Home = () => {
             story={SuccessLinks}
             onSelect={handleSuccessSelect}
           />
-        </div> */}
+        </div>
       </section>
       {/* </section> */}
     </>

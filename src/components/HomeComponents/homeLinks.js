@@ -279,56 +279,63 @@ export const FEATURED_NEWS = [
 
 export const schoolOptions = [
   {
-    name: "A Potential Student",
+    name: "A Prospective Student",
     interestedChoice: [
       {
-        name: "Finding a course",
-        route: "/admissions/howtoapply",
+        name: "Finding a Programme",
+        route: "/programmes/allprogrammes",
       }, // Add a route property for each option
-      { name: "Attending Open Day", route: "/admissions/visitus" },
-      { name: "Checking fees", route: "/admissions/fees1" },
-      {
-        name: "Learning about accommodation",
-        route: "/admissions/visitus",
-      },
+      { name: "How to Apply", route: "/admissions/howtoapply" },
+      { name: "Checking fees", route: "/admissions/feesandfunding" },
+      { name: "Student Clubs", route: "/admissions/costaattlife/studentorg" },
     ],
   },
 
   {
-    name: "Applying to Costaatt",
+    name: "Current Student ",
     interestedChoice: [
-      { name: "Accessing the Applicant Portal", route: "/admissions/fees1" },
-      { name: "Getting portfolio advice", route: "/admissions/fees1" },
-      { name: "Personal statment tips", route: "/admissions/requirements" },
-      { name: "Accommodation services", route: "/admissions/fees1" },
+      { name: "Studnet Life", route: "/costaattlife" },
+      { name: "Portal", route: "/currentstudents/portal" },
+      { name: "Library", route: "/costaattlife/library" },
+      { name: "Counselling Services", route: "/costaattlife/healthwell" },
+      { name: "Registry", route: "/costaattlife/" },
+      { name: "Academic Calendar", route: "/programmes/academiccalendar" },
     ],
   },
 
   {
-    name: "A parent",
+    name: "Parents and Families",
     interestedChoice: [
-      { name: "Checking fees", route: "/admissions/fees1" },
-      { name: "Costaatt Campus", route: "/admissions/fees1" },
-      { name: "Accomodation Services", route: "/admissions/fees1" },
-      { name: "Term dates", route: "/admissions/fees1" },
+      { name: "Schools and Departments", route: "programmes/" },
+      { name: "Registry", route: "/admissions/" },
+      { name: "Student Life", route: "/costaattlife/studentorg" },
     ],
   },
   {
-    name: "A current student",
+    name: "Faculty and Staff",
     interestedChoice: [
-      { name: "Going to Library Services", route: "/admissions/fees1" },
-      { name: "Accessing my email", route: "/admissions/fees1" },
-      { name: "Accessing student services", route: "/admissions/fees1" },
-      { name: "Campus registry", route: "/admissions/fees1" },
+      { name: "Portal", route: "/admissions/" },
+      { name: "News", route: "/news" },
+      { name: "Events", route: "/events" },
+      { name: "Staff Directory", route: "/directory" },
     ],
   },
 
   {
-    name: "A teacher",
+    name: "Alumni",
     interestedChoice: [
-      { name: "Schools and Outreach", route: "/admissions/fees1" },
-      { name: "Browsing events", route: "/admissions/fees1" },
-      { name: "Planning a group visit", route: "/admissions/fees1" },
+      { name: "Upgrading Skills", route: "/" },
+      { name: "Events", route: "/events" },
+      { name: "Alumni Page", route: "/alumni" },
+    ],
+  },
+  {
+    name: "Prospective Client",
+    interestedChoice: [
+      { name: "Customized Training", route: "/programmes/workF" },
+      { name: "Rent a meeting room", route: "/services/rentspace" },
+      { name: "Rent a lab", route: "/services/rentlab" },
+      { name: "Translation Services", route: "/services/translation" },
     ],
   },
 ];

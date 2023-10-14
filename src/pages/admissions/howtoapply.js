@@ -15,7 +15,7 @@ import Link from "next/link";
 import HeadImage from "@/components/PageComponents/HeadImage";
 import awaitingbanner from "../../../public/images/awaitingBanner.png";
 
-import awaitingimage from "../../../public/images/awaitingNewsEvent.png";
+import headerimg from "../../../public/images/admissions/applyNow header.jpg";
 
 import headImg from "../../../public/images/admissions/applynow.jpg";
 import SimpleCard from "@/components/PageComponents/SimpleCard";
@@ -45,7 +45,7 @@ const howtoapply = () => {
       <Head>
         <title>How to Apply</title>
       </Head>
-      <HeadImage mainimage={awaitingbanner} />
+      <HeadImage mainimage={headerimg} />
       <p className={ProgStyles.headingprimarysub}>
         <Link href="/"> COSTAATT/ </Link>
         <Link href="/admissions">Admissions/</Link>
@@ -64,7 +64,7 @@ const howtoapply = () => {
           <p className={AdmisStyles.sectiontext}>
             What impact will COSTAATT have on you{" "}
           </p>
-          <div className={admissionStyles.iconsection}>
+          <div className={AdmisStyles.iconsection}>
             <div className={standardStyles.row}>
               <div className={standardStyles.col1of3}>
                 {" "}
@@ -96,9 +96,9 @@ const howtoapply = () => {
             </div>
           </div>
         </section>
-        <section id="firststeps" className={standardStyles.secionWithSideNav}>
-          <h2 className={standardStyles.headingPrimarysub}>
-            Steps in Applying{" "}
+        <section id="firststeps" className={`${standardStyles.marginTopBig} ${standardStyles.leftalign} ${standardStyles.secionWithSideNav}`}>
+          <h2 className={standardStyles.newsHeading}>
+            <span>STEPS </span> in  Applying{" "}
           </h2>
           <div className={AdmisStyles.steps}>
             <div className={AdmisStyles.stepstext}>
