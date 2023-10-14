@@ -3,6 +3,10 @@ import Head from 'next/head';
 import HeadImage from '@/components/PageComponents/HeadImage';
 import alumniimage from '../../public/images/alumniHeader.jpg';
 import HomeStyles from '@/styles/Home.module.scss'
+
+
+
+
 import {
   SliderLinks,
   TILES_INFO,

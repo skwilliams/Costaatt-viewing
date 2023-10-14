@@ -14,11 +14,12 @@
   height: 75vh;
   padding: 0;
   margin-bottom: 40px;
-background-image: linear-gradient(
+  background-image: linear-gradient(
     to bottom right,
     $color-primary,
     $color-primary-dark
-  );}
+  );
+}
 
 .sectionOneLeft {
   background-size: cover;
@@ -53,10 +54,10 @@ background-image: linear-gradient(
   border-top: 0 $whiteback solid;
   h2 {
     font-family: "Lato";
-       box-shadow: 2px 2px 5px $grey;
+    box-shadow: 2px 2px 5px $grey;
 
     font-size: 2.15rem;
-    line-height:1.5;
+    line-height: 1.5;
     color: white;
     text-align: center;
 
@@ -72,14 +73,14 @@ background-image: linear-gradient(
   background-color: $grey;
   background-image: url("../../images/Links/colors.png");
   background-repeat: no-repeat;
-  background-position: bottom left ;
+  background-position: bottom left;
   // background-position: bottom 50px left ;
-  
-  margin: 0 0  0  0;
+
+  margin: 0 0 0 0;
   padding: 2rem 1rem;
   max-height: 75.5%;
-  color:$color-primary;
-    h3 {
+  color: $color-primary;
+  h3 {
     font-size: 1rem;
     color: $lime-green;
   }
@@ -128,7 +129,6 @@ background-image: linear-gradient(
 }
 
 .selectContainer {
-
   margin-top: 18px;
   position: relative;
   width: auto;
@@ -138,7 +138,7 @@ background-image: linear-gradient(
   text-align: center;
   h3 {
     font-size: 1.25rem;
-    color:white;
+    color: white;
   }
 }
 .innerSelectContainer {
@@ -155,7 +155,7 @@ background-image: linear-gradient(
   font: 1rem sans-serif;
   height: 100%;
   overflow: hidden;
-  color:$grey;
+  color: $grey;
   cursor: pointer;
 }
 
@@ -182,47 +182,44 @@ background-image: linear-gradient(
   margin-bottom: 8rem;
   height: 100%;
 
-
-
-  .row{
-    max-width:$grid-width;
+  .row {
+    max-width: $grid-width;
     margin: 0 auto;
 
     &:not(:last-child) {
-        margin-bottom: $gutter-vertical;
+      margin-bottom: $gutter-vertical;
 
-        @include respond(tab-port) {
-            margin-bottom: $gutter-vertical-small;
-        }
+      @include respond(tab-port) {
+        margin-bottom: $gutter-vertical-small;
+      }
     }
-    
+
     @include respond(tab-port) {
-        max-width: 50rem;
-        padding: 0 3rem;
+      max-width: 50rem;
+      padding: 0 3rem;
     }
 
     @include clearfix;
     .col1of4 {
       background-color: blue;
-        
+
       float: left;
 
-        &:not(:last-child) {
-            margin-right: $gutter-horizontal;
-
-            @include respond(tab-port) {
-                margin-right: 0;
-                margin-bottom: $gutter-vertical-small;
-            }
-        }
+      &:not(:last-child) {
+        margin-right: $gutter-horizontal;
 
         @include respond(tab-port) {
-            width: 100% !important;
+          margin-right: 0;
+          margin-bottom: $gutter-vertical-small;
         }
-        width: calc((100% - 3 * 8rem) / 4);
-    }
+      }
 
-}
+      @include respond(tab-port) {
+        width: 100% !important;
+      }
+      width: calc((100% - 3 * 8rem) / 4);
+    }
+  }
 }
 
 .sectionheadings {
@@ -273,23 +270,24 @@ background-image: linear-gradient(
   bottom: 0;
   text-align: center;
   padding: 8px;
-  background-color: $brown;
+  background-color: $color-primary;
   color: white;
   opacity: 90%;
   font-size: smaller;
 }
 
 /*Section Three styles*/
-.sectionThree {
+.sectionEvents {
   padding: 0 20px;
   margin-top: 8rem;
   margin-bottom: 8rem;
-  border-color: lightgray;
+  // border-color: lightgray;
+   background-color: rgba($color-grey-light-2, .5);
 }
 
 .sectionThreeTiles {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .events {
@@ -299,17 +297,17 @@ background-image: linear-gradient(
   margin-right: 30px;
   gap: 15px;
   // background-color: $color-primary-dark;
-  img {
-    width: 100%;
-    height: 300px;
-    border: 2px solid white;
-    box-shadow: 2px 2px 5px white;
-    object-fit: cover;
-  }
+  // img {
+  //   width: 100%;
+  //   height: 300px;
+  //   border: 2px solid white;
+  //   box-shadow: 2px 2px 5px white;
+  //   object-fit: cover;
+  // }
   h1 {
-    font-size: x-large;
+    font-size: large;
     font-weight: bolder;
-    text-transform: uppercase;
+    text-transform: capitalize;
   }
   p {
     padding-bottom: 10px;
@@ -320,7 +318,7 @@ background-image: linear-gradient(
   font-size: 4rem;
   margin-bottom: 4rem;
   span {
-    color: $brown;
+    color: $color-primary;
   }
 }
 
@@ -330,32 +328,64 @@ background-image: linear-gradient(
   margin-top: 8rem;
   margin-bottom: 8rem;
   height: 100%;
-  border-color: lightgray;
+  // border-color: lightgray;
+  border-color: rgba($color-grey-light-2, .5);
 }
 
 .sectionFourTiles {
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+
+
+ 
+
+} 
+
+.newsFeatureContent{
+  background-color: red;
+  // grid-column: 1 / span 2;
 }
+
+// .newsFeatureImage{
+// background-color: pink;
+ 
+
+// }
+.sectionNewsTitle{
+  grid-column: 1 / span 2;
+}
+
+
+
+
+
 
 .newsHeading {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 4rem;
+  color:$grey;
+   grid-column: 1 / span 2;
   span {
-    color: $brown;
+    color: $color-primary;
   }
 }
 
 .featuredNews {
   align-items: center;
   margin-bottom: 3px;
+
+
+
 }
 
 .featuredNews {
   width: auto;
   text-align: center;
   margin-bottom: 15px;
+
   img {
     width: 100%;
     height: 100%;
@@ -365,8 +395,45 @@ background-image: linear-gradient(
   h1 {
     font-size: large;
     font-weight: bolder;
+  }  
+}
+
+.newsFeatureHomepage {
+  position: relative;
+  margin-bottom: 15px;
+  justify-content: center;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  grid-column: 1 / span 2;
+
+  .imgFeature {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    object-fit: cover;
+  }
+  h1 {
+    font-size: large;
+    font-weight: bolder;
+  }
+  .newsDate {
+    background-color: white;
+    padding: 2rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  &:hover {
+    img {
+      opacity: 90%;
+      object-fit: cover;
+      border: 5px solid white;
+    }
   }
 }
+
+
 
 .newsTileHomepage {
   position: relative;
@@ -378,7 +445,7 @@ background-image: linear-gradient(
 
   img {
     width: 100%;
-    height: 300px;
+    height: 250px;
     margin-bottom: 15px;
     object-fit: cover;
   }
@@ -388,7 +455,7 @@ background-image: linear-gradient(
   }
   .newsDate {
     background-color: white;
-    padding: 5px;
+    padding: 2rem;
     position: absolute;
     top: 10px;
     left: 10px;
@@ -417,7 +484,7 @@ background-image: linear-gradient(
 .selectButton {
   text-align: center;
   width: 30%;
-  background-color: $brown;
+  background-color: $color-primary;
   color: white;
   padding: 10px;
   border: 2px solid white;
@@ -447,7 +514,7 @@ background-image: linear-gradient(
 .successStories {
   text-align: center;
   // background-color: $orange;
-  color: $orange;
+  color: $grey;
   padding: 1rem;
   margin-bottom: 8px;
   p {
@@ -497,6 +564,7 @@ background-image: linear-gradient(
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px 0px;
+ 
   }
 
   .events {

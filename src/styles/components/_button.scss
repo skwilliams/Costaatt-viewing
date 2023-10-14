@@ -54,6 +54,8 @@
             background-color: $color-primary-dark;
         }
     }
+
+    
     
       &__selecthome {
         background-color: $color-primary;
@@ -63,6 +65,11 @@
 
         &::after {
             background-color: $color-primary-dark;
+        }
+
+        &__center{
+            padding: 1rem 6rem;
+            align-items: center;
         }
     }
 

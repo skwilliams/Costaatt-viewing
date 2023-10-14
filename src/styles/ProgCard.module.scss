@@ -1,4 +1,4 @@
-@import './abstracts/variables';
+@import "./abstracts/variables";
 
 .container {
   display: flex;
@@ -18,7 +18,7 @@
   font-size: 4rem;
   color: $purple-main;
   text-align: center;
-  font-family: 'Bodoni';
+  font-family: "Bodoni";
   margin-left: 0;
 }
 
@@ -42,7 +42,7 @@
   overflow-y: scroll;
   // background-color: $grey-light;
   background-color: white;
-  font-family: 'Lato', 'sans serif';
+  font-family: "Lato", "sans serif";
 }
 .sidenav::-webkit-scrollbar {
   display: none;
@@ -60,7 +60,7 @@
 .sidenavlink:hover {
   color: darkgray;
   text-decoration: underline;
-  text-decoration-color: $brown;
+  text-decoration-color: $color-primary;
   text-decoration-thickness: 4px;
   text-underline-position: under;
 }
@@ -69,7 +69,7 @@
   color: $base-color;
   font-size: 2.5rem;
   text-align: center;
-  font-family: 'Libre Baskerville', sans-serif;
+  font-family: "Libre Baskerville", sans-serif;
 }
 .sidenavtitle {
   color: $purple-main;
@@ -98,7 +98,7 @@
 .main {
   flex-grow: 1;
   font-size: 1.2rem; /* Increased text to enable scrolling */
-  font-family: 'Lato', 'sans serif';
+  font-family: "Lato", "sans serif";
   color: $grey-light;
 }
 
@@ -150,7 +150,7 @@
   font-size: 1.5rem;
   font-weight: 600;
   margin-left: 0;
-  font-family: 'Lato';
+  font-family: "Lato";
   // margin-bottom:1rem;
   // padding-bottom: 2rem;
   // grid-column-start:2;
@@ -173,7 +173,7 @@
   color: black;
   line-height: 2;
   text-align: left;
-  font-family: 'Lato';
+  font-family: "Lato";
   padding-bottom: 1rem;
 }
 .cardtext {

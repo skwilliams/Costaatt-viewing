@@ -1,9 +1,10 @@
 export const subHeaderSections = {
   home: {
     "Uniquely Us": "unique",
-    events: "events",
-    news: "news",
-    "success stories": "success-stories",
+      news: "news",
+      events: "events",
+  
+    // "success stories": "success-stories",
     // connect:'footer' see if you can get footer on the top nav
   },
 

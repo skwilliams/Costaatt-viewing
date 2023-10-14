@@ -8,7 +8,9 @@ import SchoolTile from "./SchoolTile";
 import { FiBookOpen } from "react-icons/fi";
 import { IconContext } from "react-icons";
 import NewsTile from "./NewsTile";
+import Image from 'next/image'
 import Link from "next/link";
+import senior from "../../../images/Links/senior_lec.jpg"
 import { FaAngleDown } from "react-icons/fa";
 import {
   SliderLinks,
@@ -80,10 +82,7 @@ const Home = () => {
       <section className={HomeStyles.sectionOne}>
         <div className={HomeStyles.sectionOneLeft}>
           <div className={HomeStyles.sectionLeftTop}>
-            <h2 >
-              
-              The Preimer Undergraduate College
-            </h2>
+            <h2>The Preimer Undergraduate College</h2>
           </div>
           <div className={HomeStyles.sectionLeftBottom}>
             <div className={HomeStyles.selectContainer}>
@@ -135,7 +134,7 @@ const Home = () => {
       </section>
 
       <section id="unique" className={HomeStyles.sectionUniquelyUs}>
-        <h1 className={HomeStyles.sectionheadings}>
+        <h1 className={HomeStyles.newsHeading}>
           <span>Uniquely</span> COSTAATT
         </h1>
 
@@ -217,25 +216,30 @@ const Home = () => {
           </div>
         </div>
       </section>
-<section id="news" className={HomeStyles.sectionFour}>
-        <h1 className={HomeStyles.newsHeading}>
-          The amazing things We Do <span>News</span>
-        </h1>
-        {/* <div className={HomeStyles.featuredNews}>
-            {FEATURED_NEWS.map((tile, index) => {
-              return (
-                <div>
-                  <Link href="news">
-                    <NewsTile
-                      title={tile.title}
-                      img={tile.image}
-                      date={tile.date}
-                    />{" "}
-                  </Link>
-                </div>
-              );
-            })}
-          </div> */}
+      <section id="news" className={HomeStyles.sectionFour}>
+        {/* <h1 className={HomeStyles.newsHeading}>
+          The amazing things We Do <span>NEWS</span>
+        </h1> */}
+        <div className={HomeStyles.sectionFourTiles}>
+          <div className={HomeStyles.sectionNewsTitle}>
+            <h1 className={HomeStyles.newsHeading}>
+              The <span>Amazing </span> Things We Do <span>NEWS</span>
+            </h1>
+          </div>
+
+          <div
+            className={`${HomeStyles.newsFeatureImage} ${HomeStyles.newsTileHomepage}`}
+          >
+            <Link href="news">
+              <NewsTile
+                title="COSTAATT Lecturer Wins Film Awards"
+                img={senior}
+                date="24th April 2023"
+              />
+            </Link>
+          </div>
+        </div>
+
         <div className={HomeStyles.sectionFourTiles}>
           {NEWS.map((tile, index) => {
             return (
@@ -255,24 +259,28 @@ const Home = () => {
             );
           })}
         </div>
-        <Button
-          href="news"
-          backgroundColor="rgb(255, 109, 10)"
-          textcolor="white"
-          text={"More News..."}
-        />
-      </section>
-      
-      <section id="events" className={HomeStyles.sectionThree}>
-        <h2 className={HomeStyles.eventHeading}>
-          <span>Events </span> at COSTAATT
-        </h2>
-        <div className={standardStyles.row}>
-          <div className={standardStyles.col1of3}></div>
-          <div className={standardStyles.col2of3}></div>
+        <div className={HomeStyles.sectionFourTiles}>
+          <div> </div> <div> </div>
+          <div>
+            {" "}
+            <button
+              className={`${standardStyles.btn} ${standardStyles.btn__selecthome} ${standardStyles.btn__selecthome__center}`}
+              onClick={handleButtonClick}
+            >
+              {" "}
+              More News
+            </button>{" "}
+          </div>{" "}
         </div>
+      </section>
+
+      <section id="events" className={HomeStyles.sectionEvents}>
+        <h1 className={HomeStyles.newsHeading}>
+          <span>Events </span> at COSTAATT
+        </h1>
 
         <div className={HomeStyles.sectionThreeTiles}>
+          {/* <div className={standardStyles.row}> */}
           {EVENTS.map((tile, index) => {
             return (
               <div key={index}>
@@ -291,15 +299,14 @@ const Home = () => {
             );
           })}
         </div>
+        {/* </div> */}
       </section>
-
-      
 
       <section id="success-stories" className={HomeStyles.successSection}>
         <div className={HomeStyles.successStories}>
-          <h1>Success Stories</h1>
+          <h1 className={HomeStyles.newsHeading}>We <span> Tranform  </span>Lives</h1>
         </div>
-        <div className={HomeStyles.successSlider}>
+        {/* <div className={HomeStyles.successSlider}>
           <SuccessSlider
             slides={selectedSuccess ? [selectedSuccess] : SuccessMainLinks}
           />
@@ -307,7 +314,7 @@ const Home = () => {
             story={SuccessLinks}
             onSelect={handleSuccessSelect}
           />
-        </div>
+        </div> */}
       </section>
       {/* </section> */}
     </>

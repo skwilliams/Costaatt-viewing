@@ -45,7 +45,7 @@ const school = (props) => {
       <p className={ProgStyles.headingprimarysub}>
         COSTAATT/Programmes/{foundSchool.shortName}
       </p>
-      {/* <SideNavOnlyLayout> */}
+     
         {/* Section Overview */}
         <section id="overview" className={ProgStyles.sectionoverview}>
           <p className={ProgStyles.headingprimary}> Overview of School</p>
@@ -164,13 +164,10 @@ const school = (props) => {
         <section id="schoolnews" className={ProgStyles.sectionschoolnews}>
           <NewsRow label="School" news={news.slice(0, 3)} />
         </section>
-      {/* </SideNavOnlyLayout> */}
     </>
   );
 };
-// school.getLayout = function getLayout(page) {
-//   return <TopNavOnlyLayout>{page}</TopNavOnlyLayout>;
-// };
+
 export default school;
 
 export async function getStaticPaths() {
