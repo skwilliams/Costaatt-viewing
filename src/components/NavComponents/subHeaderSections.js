@@ -1,7 +1,6 @@
 export const subHeaderSections = {
   home: {
-    schools: "schools",
-    "Uniquely Us":"unique",
+    "Uniquely Us": "unique",
     events: "events",
     news: "news",
     "success stories": "success-stories",
@@ -15,13 +14,19 @@ export const subHeaderSections = {
     "Areas of Study": "areastudy",
     Highlights: "highlight",
   },
-  liberal:{
-
-    "Overview":"overview",
-    "Departments":"departments",
-    "Find your Degree":"degree",
-    "Meet the Dean":"dean",
-    "School News":"news",
+  liberal: {
+    Overview: "overview",
+    Departments: "departments",
+    "Find your Degree": "degree",
+    "Meet the Dean": "dean",
+    "School News": "news",
+  },
+  kengord: {
+    Overview: "overview",
+    Departments: "departments",
+    "Find your Degree": "degree",
+    "Meet the Dean": "dean",
+    "School News": "news",
   },
   applynow: {
     "before you apply": "before-you-apply",
@@ -137,15 +142,15 @@ export const subHeaderSections = {
     Sickbay: "sickbay",
     Contact: "contact",
   },
-  careermgt:{
-    "Career Management" : "intro",
-    "Services":"services",
-    "Contact":"contact",
+  careermgt: {
+    "Career Management": "intro",
+    Services: "services",
+    Contact: "contact",
   },
-  compasscenter:{
-    "Compass ":"intro",
-    "Services " : "services",
-    "Frequently Asked Questions":"faq",
-    "Contact":"contact",
-  }
+  compasscenter: {
+    "Compass ": "intro",
+    "Services ": "services",
+    "Frequently Asked Questions": "faq",
+    Contact: "contact",
+  },
 };

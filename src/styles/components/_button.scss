@@ -55,6 +55,16 @@
         }
     }
     
+      &__selecthome {
+        background-color: $color-primary;
+        color: $color-white;
+        padding: 1rem 2rem;
+        margin-bottom: 0;
+
+        &::after {
+            background-color: $color-primary-dark;
+        }
+    }
 
     &__red {
         background-color: $red-dark;

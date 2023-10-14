@@ -12,20 +12,24 @@ import draft from "../../../images/Links/SuccessDraft.jpg";
 export const SliderLinks = [
   {
     title: "Nursing",
-    image: require("../../../images/Links/courses nursing.jpg"),
+    image: require("../../../images/Links/Future me schools screens/Future me screens-03.jpg"),
     path: "https://www.costaatt.edu.tt/academics/school-of-nursing-health-and-environmental-sciences/",
   },
   {
     title: "Business",
-    image: require("../../../images/Links/news gate.jpg"),
+    image: require("../../../images/Links/Future me schools screens/Future me screens-04.jpg"),
   },
   {
     title: "Technology",
-    image: require("../../../images/Links/news bursary.jpg"),
+    image: require("../../../images/Links/Future me schools screens/Future me screens-05.jpg"),
   },
   {
     title: "Latest on GATE",
-    image: require("../../../images/Links/news awards.jpg"),
+    image: require("../../../images/Links/Future me schools screens/Future me screens-06.jpg"),
+  },
+  {
+    title: "Latest on GATE",
+    image: require("../../../images/Links/Future me schools screens/Future me screens-06.jpg"),
   },
 ];
 

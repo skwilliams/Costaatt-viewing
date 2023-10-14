@@ -5,7 +5,7 @@
   z-index: 40;
   top: 0;
   //  background-color: $whiteback;
-  background-color: rgb(67,63,64,0.8);
+  background-color: rgb(41,40,42,.9);
   // background-image: linear-gradient(to right, $color-comp1, $color-comp2);
   height: auto;
   display: flex;
@@ -53,14 +53,14 @@
   text-transform: capitalize;
   // animation: navLoad 300ms ease-in;
   animation: navScale 300ms ease-in;
-  transform: scale(0);
+  transform: scale(2);
   animation-fill-mode: forwards;
 }
 .activeSubsection {
-  // margin-bottom:.4rem;
+  margin-bottom:.2rem;
   border-bottom: white 5px solid;
   font-weight: 900;
-  color:$color-primary;
+  color:white;
 
   // text-decoration: underline solid white 4px;
 }

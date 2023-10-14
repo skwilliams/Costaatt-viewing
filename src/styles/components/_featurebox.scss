@@ -1,8 +1,8 @@
 .featurebox {
     background-color: rgba($color-grey-light-2, .5);
-    font-size: 2rem;
-    padding: 2rem;
-    text-align: center;
+    font-size: 1.5rem;   
+     padding: 2rem;
+    text-align:center;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
     transition: transform .3s;
@@ -14,7 +14,32 @@
     &__text{
             font-size: 1.1rem;
             line-height: 1.5;
-        }
+
+    ul {
+    margin-left: 2rem;
+    font-size: 1.20rem;
+
+    li {
+      list-style-type: square;
+      margin: .6rem 0;
+      line-height: 1.5 ;
+      text-align: left;
+    }
+
+
+    li::marker {
+
+      color: $color-primary;
+    }
+
+    li:last-child {
+      margin-bottom: 2rem;
+    }
+
+  }
+    }
+    
+   
 
     &__icon {
         font-size: 3rem;
@@ -35,8 +60,9 @@
     &:hover {
         transform: translateY(-1.5rem) scale(1.03);
     }
-}
+
 .arrowBig{
      font-size: 8rem;
             line-height: 1.5;
+}
 }

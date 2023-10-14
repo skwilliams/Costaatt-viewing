@@ -1,9 +1,12 @@
 import logo from "../../../images/Links/costaattlogographic.png";
 import HomeStyles from "../../styles/Home.module.scss";
+import AdminStyles from "../../styles/Admissions.module.scss"
 import standardStyles from "@/styles/main.module.scss"
 import HomeSlider from "../Slider";
 import EventTile from "./EventTile";
 import SchoolTile from "./SchoolTile";
+import { FiBookOpen } from "react-icons/fi";
+import { IconContext } from "react-icons";
 import NewsTile from "./NewsTile";
 import Link from "next/link";
 import { FaAngleDown } from "react-icons/fa";
@@ -77,7 +80,10 @@ const Home = () => {
       <section className={HomeStyles.sectionOne}>
         <div className={HomeStyles.sectionOneLeft}>
           <div className={HomeStyles.sectionLeftTop}>
-            <h2 className={HomeStyles.costName}>The College of Science Technology and Applied Arts of Trinidad and Tobago</h2>
+            <h2 >
+              
+              The Preimer Undergraduate College
+            </h2>
           </div>
           <div className={HomeStyles.sectionLeftBottom}>
             <div className={HomeStyles.selectContainer}>
@@ -112,7 +118,7 @@ const Home = () => {
               </div>
 
               <button
-                className={`${standardStyles.btn} ${standardStyles.btn__purple}`}
+                className={`${standardStyles.btn} ${standardStyles.btn__selecthome}`}
                 onClick={handleButtonClick}
               >
                 {" "}
@@ -128,155 +134,90 @@ const Home = () => {
         </div>
       </section>
 
-      <section id="unique" className={HomeStyles.sectionTwo}>
-        <h1>
-          <span>Why</span> US
+      <section id="unique" className={HomeStyles.sectionUniquelyUs}>
+        <h1 className={HomeStyles.sectionheadings}>
+          <span>Uniquely</span> COSTAATT
         </h1>
-        {/* <div className={HomeStyles.sectionTwoGrid}>
-          <p className={HomeStyles.ourSchoolsText}>
-            Choosing COSTAATT is an excellent decision for your educational
-            journey. With a rich history of academic excellence and a commitment
-            to nurturing diverse talents, COSTAATT provides a dynamic and
-            inclusive learning environment that empowers students to reach their
-            full potential. Our institution offers a wide range of programs and
-            pathways tailored to meet the ever-evolving demands of the job
-            market, ensuring that graduates are well-prepared for successful
-            careers.
-          </p>{" "}
-          {/* replace with flagship programmes */}
-        {/* {TILES_INFO.map((tile, index) => {
-            return (
-              <div key={index} className={HomeStyles.schoolTile}>
-                <Link href={`${tile.path}`}>
-                  <SchoolTile
-                    title={tile.title}
-                    img={tile.img}
-                    className={HomeStyles.schoolTileTitle}
-                  />
-                </Link>
-              </div> 
-            );
-          })}
-        </div> */}
-        <div className={standardStyles.row}>
-          <div className={standardStyles.col1of3}>
-            <div className={standardStyles.card}>
-              <div
-                className={`${standardStyles.card__side} ${standardStyles.card__sidefront}`}
-              >
-                <div
-                  className={`${standardStyles.card__picture} ${standardStyles.card__picturelabs}`}
-                >
-                  &nbsp;
-                </div>
-                <h4 className={standardStyles.card__heading}>
-                  <span
-                    className={`${standardStyles.card__headingSpan} ${standardStyles.card__headingSpan_mainColor}`}
-                  >
-                    Rental Facilities{" "}
-                  </span>
-                </h4>
-                <div className={standardStyles.card__details}>
-                  <ul>
-                    <li>Science Labs</li>
-                    <li>Board Room</li>
-                    <li>Training Rooms</li>
-                    <li>Roof Top Terrace</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className={standardStyles.col1of3}>
-            <div className={standardStyles.card}>
-              <div
-                className={`${standardStyles.card__side} ${standardStyles.card__sidefront}`}
-              >
-                <div
-                  className={`${standardStyles.card__picture} ${standardStyles.card__picturelabs}`}
-                >
-                  &nbsp;
-                </div>
-                <h4 className={standardStyles.card__heading}>
-                  <span
-                    className={`${standardStyles.card__headingSpan} ${standardStyles.card__headingSpan_mainColor}`}
-                  >
-                    Customized Training{" "}
-                  </span>
-                </h4>
-                <div className={standardStyles.card__details}>
-                  <ul>
-                    <li>Skill Based Training</li>
-                    <li>Life Long Learning</li>
-                    <li>Practical Courses</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div className={standardStyles.col1of3}>
-            <div className={standardStyles.card}>
-              <div
-                className={`${standardStyles.card__side} ${standardStyles.card__sidefront}`}
-              >
-                <div
-                  className={`${standardStyles.card__picture} ${standardStyles.card__picturelabs}`}
-                >
-                  &nbsp;
-                </div>
-                <h4 className={standardStyles.card__heading}>
-                  <span
-                    className={`${standardStyles.card__headingSpan} ${standardStyles.card__headingSpan_mainColor}`}
-                  >
-                    Customized Training{" "}
-                  </span>
-                </h4>
-                <div className={standardStyles.card__details}>
-                  <ul>
-                    <li>Skill Based Training</li>
-                    <li>Life Long Learning</li>
-                    <li>Practical Courses</li>
-                    <li>Real Life Experiences</li>
-                  </ul>
-                </div>
+        <div className={AdminStyles.fourColGridCon}>
+          <div className={AdminStyles.fourColGrid}>
+            <div className={standardStyles.featurebox}>
+              <IconContext.Provider value={standardStyles.featurebox__icon}>
+                {" "}
+                <FiBookOpen value={standardStyles.featurebox__icon} />
+              </IconContext.Provider>
+              <h3 className={standardStyles.headingcards}>UpSkilling</h3>
+              <div className={standardStyles.featurebox__text}>
+                {/* <div className={standardStyles.card__details}> */}
+                <ul>
+                  <li>Vocational Training</li>
+                  <li>Incubation</li>
+                  <li>Acceleration</li>
+                  <li>Business Coaching</li>
+                  <li>Mentorship</li>
+                  <li>Startup Finance</li>
+                </ul>
+                {/* </div> */}
+              </div>
+            </div>
+          </div>
+          <div className={AdminStyles.fourColGrid}>
+            <div className={standardStyles.featurebox}>
+              <IconContext.Provider value={standardStyles.featurebox__icon}>
+                {" "}
+                <FiBookOpen value={standardStyles.featurebox__icon} />
+              </IconContext.Provider>
+              <h3 className={standardStyles.headingcards}>Programmes</h3>
+              <div className={standardStyles.featurebox__text}>
+                <ul>
+                  <li>Top Class Lecturers</li>
+                  <li>Work Ready Graduates</li>
+                  <li>Accredited </li>
+                  <li>Skill Based Learning</li>
+                  <li>Small Class Sizes</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className={AdminStyles.fourColGrid}>
+            <div className={standardStyles.featurebox}>
+              <IconContext.Provider value={standardStyles.featurebox__icon}>
+                {" "}
+                <FiBookOpen value={standardStyles.featurebox__icon} />
+              </IconContext.Provider>
+              <h3 className={standardStyles.headingcards}>Tech Hub</h3>
+              <div className={standardStyles.featurebox__text}>
+                <ul>
+                  <li>Digital Training</li>
+                  <li>Digital Content</li>
+                  <li>Prototyping</li>
+                  <li>Product Commercialisation</li>
+                  <li>Business Coaching </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className={AdminStyles.fourColGrid}>
+            <div className={standardStyles.featurebox}>
+              <IconContext.Provider value={standardStyles.featurebox__icon}>
+                {" "}
+                <FiBookOpen value={standardStyles.featurebox__icon} />
+              </IconContext.Provider>
+              <h3 className={standardStyles.headingcards}>Unique Services</h3>
+              <div className={standardStyles.featurebox__text}>
+                <ul>
+                  <li>Computer Lab Rentals</li>
+                  <li>Science Lab Rentals</li>
+                  <li>Translation and Interpretation</li>
+                  <li>Training Spaces</li>
+                  <li>Customized Training</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <section id="events" className={HomeStyles.sectionThree}>
-        <h2 className={HomeStyles.eventHeading}>
-          <span>Events </span> at COSTAATT
-        </h2>
-        <div className={standardStyles.row}>
-          <div className={standardStyles.col1of3}></div>
-          <div className={standardStyles.col2of3}></div>
-        </div>
-
-        <div className={HomeStyles.sectionThreeTiles}>
-          {EVENTS.map((tile, index) => {
-            return (
-              <div key={index}>
-                <Link href={`${tile.path}`}>
-                  <EventTile
-                    title={tile.title}
-                    img={tile.image}
-                    date={tile.date}
-                    desc={tile.desc}
-                    time={tile.time}
-                    topic={tile.topic}
-                    location={tile.location}
-                  />{" "}
-                </Link>
-              </div>
-            );
-          })}
-        </div>
-      </section>
-
-      <section id="news" className={HomeStyles.sectionFour}>
+<section id="news" className={HomeStyles.sectionFour}>
         <h1 className={HomeStyles.newsHeading}>
           The amazing things We Do <span>News</span>
         </h1>
@@ -321,6 +262,38 @@ const Home = () => {
           text={"More News..."}
         />
       </section>
+      
+      <section id="events" className={HomeStyles.sectionThree}>
+        <h2 className={HomeStyles.eventHeading}>
+          <span>Events </span> at COSTAATT
+        </h2>
+        <div className={standardStyles.row}>
+          <div className={standardStyles.col1of3}></div>
+          <div className={standardStyles.col2of3}></div>
+        </div>
+
+        <div className={HomeStyles.sectionThreeTiles}>
+          {EVENTS.map((tile, index) => {
+            return (
+              <div key={index}>
+                <Link href={`${tile.path}`}>
+                  <EventTile
+                    title={tile.title}
+                    img={tile.image}
+                    date={tile.date}
+                    desc={tile.desc}
+                    time={tile.time}
+                    topic={tile.topic}
+                    location={tile.location}
+                  />{" "}
+                </Link>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      
 
       <section id="success-stories" className={HomeStyles.successSection}>
         <div className={HomeStyles.successStories}>
