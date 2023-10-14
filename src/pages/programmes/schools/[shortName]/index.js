@@ -46,124 +46,124 @@ const school = (props) => {
         COSTAATT/Programmes/{foundSchool.shortName}
       </p>
       {/* <SideNavOnlyLayout> */}
-        {/* Section Overview */}
-        <section id="overview" className={ProgStyles.sectionoverview}>
-          <p className={ProgStyles.headingprimary}> Overview of School</p>
-          <p className={ProgStyles.text}>{foundSchool.overview}</p>
-        </section>{' '}
-        <Divider light />
-        {/* Department Cards Section */}
-        <section id="depart" className={ProgStyles.sectiondepart}>
-          <p className={ProgStyles.headingprimary}> Departments </p>
-          <div className={deptLayout}>
-            {foundSchool.departments.map((dept, index) => {
-              return (
-                <div className={depcardLayout} key={index}>
-                  <DepartCard
-                    image={dept.image}
-                    departname={dept.name}
-                    intro={dept.summary}
-                    linkpage={`/programmes/schools/${foundSchool.nameStump}/${dept.dept_code}`}
-                    shortname={dept.shortName}
-                  />
-                </div>
-              );
-            })}
-          </div>
-        </section>
-        {/* Programme Accordion */}
-        <section id="depcourses" className={ProgStyles.sectiondeptcourses}>
-          <p className={ProgStyles.headingprimary}>Find your Degree</p>
-
-          <div className={ProgStyles.progGridCon}>
-            {/* Show accordion for only the type/level of programmes available.  return empty fragment otherwise*/}
-            {Object.entries(schoolProgrammes).map((level) => {
-              return (
-                <>
-                  {level[1].length > 0 ? (
-                    <>
-                      <div className={ProgStyles.progGrid} key={level[0]}>
-                        <Accordion className={ProgStyles.courseaccordion}>
-                          <AccordionSummary
-                            key={level[0]}
-                            expandIcon={<ExpandMoreIcon />}
-                          >
-                            <Typography className={ProgStyles.acoordiantext}>
-                              {level[0]}
-                            </Typography>
-                          </AccordionSummary>
-                          <AccordionDetails>
-                            <ul className={ProgStyles.degcourses}>
-                              {level[1].map((levelProgs) => {
-                                return (
-                                  <li
-                                    key={levelProgs.prog_code}
-                                    className={ProgStyles.degcoursesli}
-                                  >
-                                    <Link href={levelProgs.prog_shortname}>
-                                      {' '}
-                                      {levelProgs.prog_name}{' '}
-                                    </Link>
-                                  </li>
-                                );
-                              })}
-                            </ul>
-                          </AccordionDetails>
-                        </Accordion>
-                      </div>
-                    </>
-                  ) : (
-                    <></>
-                  )}
-                </>
-              );
-            })}
-          </div>
-        </section>
-        {/* Meet the Dean Section */}
-        <section id="meetthedean" className={DeanStyles.sectionmeetthedean}>
-          <div className={ProgStyles.umargintopsmall}>
-            <p className={ProgStyles.headingprimary}> Meet the Dean </p>
-            <div className={DeanStyles.deanColGridCon}>
-              <div className={DeanStyles.deanColGrid}>
-                <Image
-                  className={`${DeanStyles.deanimg}`}
-                  src={foundSchool.dean.image}
-                  alt={foundSchool.dean.name}
-                  width={300}
-                  height={200}
+      {/* Section Overview */}
+      <section id="overview" className={ProgStyles.sectionoverview}>
+        <p className={ProgStyles.headingprimary}> Overview of School</p>
+        <p className={ProgStyles.text}>{foundSchool.overview}</p>
+      </section>{' '}
+      <Divider light />
+      {/* Department Cards Section */}
+      <section id="departments" className={ProgStyles.sectiondepart}>
+        <p className={ProgStyles.headingprimary}> Departments </p>
+        <div className={deptLayout}>
+          {foundSchool.departments.map((dept, index) => {
+            return (
+              <div className={depcardLayout} key={index}>
+                <DepartCard
+                  image={dept.image}
+                  departname={dept.name}
+                  intro={dept.summary}
+                  linkpage={`/programmes/schools/${foundSchool.nameStump}/${dept.dept_code}`}
+                  shortname={dept.shortName}
                 />
               </div>
+            );
+          })}
+        </div>
+      </section>
+      {/* Programme Accordion */}
+      <section id="degree" className={ProgStyles.sectiondeptcourses}>
+        <p className={ProgStyles.headingprimary}>Find your Degree</p>
 
-              <div className={DeanStyles.deanColGrid}>
-                <p className={DeanStyles.deanwords}>
-                  <q> {foundSchool.dean.message}</q>
+        <div className={ProgStyles.progGridCon}>
+          {/* Show accordion for only the type/level of programmes available.  return empty fragment otherwise*/}
+          {Object.entries(schoolProgrammes).map((level) => {
+            return (
+              <>
+                {level[1].length > 0 ? (
+                  <>
+                    <div className={ProgStyles.progGrid} key={level[0]}>
+                      <Accordion className={ProgStyles.courseaccordion}>
+                        <AccordionSummary
+                          key={level[0]}
+                          expandIcon={<ExpandMoreIcon />}
+                        >
+                          <Typography className={ProgStyles.acoordiantext}>
+                            {level[0]}
+                          </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                          <ul className={ProgStyles.degcourses}>
+                            {level[1].map((levelProgs) => {
+                              return (
+                                <li
+                                  key={levelProgs.prog_code}
+                                  className={ProgStyles.degcoursesli}
+                                >
+                                  <Link href={levelProgs.prog_shortname}>
+                                    {' '}
+                                    {levelProgs.prog_name}{' '}
+                                  </Link>
+                                </li>
+                              );
+                            })}
+                          </ul>
+                        </AccordionDetails>
+                      </Accordion>
+                    </div>
+                  </>
+                ) : (
+                  <></>
+                )}
+              </>
+            );
+          })}
+        </div>
+      </section>
+      {/* Meet the Dean Section */}
+      <section id="dean" className={DeanStyles.sectionmeetthedean}>
+        <div className={ProgStyles.umargintopsmall}>
+          <p className={ProgStyles.headingprimary}> Meet the Dean </p>
+          <div className={DeanStyles.deanColGridCon}>
+            <div className={DeanStyles.deanColGrid}>
+              <Image
+                className={`${DeanStyles.deanimg}`}
+                src={foundSchool.dean.image}
+                alt={foundSchool.dean.name}
+                width={300}
+                height={200}
+              />
+            </div>
+
+            <div className={DeanStyles.deanColGrid}>
+              <p className={DeanStyles.deanwords}>
+                <q> {foundSchool.dean.message}</q>
+              </p>
+            </div>
+            <div className={DeanStyles.deanColGrid}>
+              <div className={DeanStyles.deancontact}>
+                <p>
+                  <span className={DeanStyles.standout}>
+                    {foundSchool.dean.name}
+                  </span>{' '}
+                  <br /> Dean, <br />
+                  {foundSchool.shortName} <br />
+                  <span className={DeanStyles.standout}>
+                    {foundSchool.dean.email}
+                  </span>{' '}
+                  <br />
+                  {foundSchool.dean.phone}
                 </p>
-              </div>
-              <div className={DeanStyles.deanColGrid}>
-                <div className={DeanStyles.deancontact}>
-                  <p>
-                    <span className={DeanStyles.standout}>
-                      {foundSchool.dean.name}
-                    </span>{' '}
-                    <br /> Dean, <br />
-                    {foundSchool.shortName} <br />
-                    <span className={DeanStyles.standout}>
-                      {foundSchool.dean.email}
-                    </span>{' '}
-                    <br />
-                    {foundSchool.dean.phone}
-                  </p>
-                </div>
               </div>
             </div>
           </div>
-        </section>
-        <Divider dark="dark" />
-        {/* School News Section */}
-        <section id="schoolnews" className={ProgStyles.sectionschoolnews}>
-          <NewsRow label="School" news={news.slice(0, 3)} />
-        </section>
+        </div>
+      </section>
+      <Divider dark="dark" />
+      {/* School News Section */}
+      <section id="news" className={ProgStyles.sectionschoolnews}>
+        <NewsRow label="School" news={news.slice(0, 3)} />
+      </section>
       {/* </SideNavOnlyLayout> */}
     </>
   );
