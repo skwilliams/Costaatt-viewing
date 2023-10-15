@@ -42,13 +42,13 @@ const howtoregister = () => {
               </p>
 
               <ul className={AdmisStyles.list}>
-                <li className={AdmisStyles.items}>Receive Advisement </li>
-                <li className={AdmisStyles.items}>Register for Courses</li>
-                <li className={AdmisStyles.items}>
+                <li className={AdmisStyles.itemstick}>Receive Advisement </li>
+                <li className={AdmisStyles.itemstick}>Register for Courses</li>
+                <li className={AdmisStyles.itemstick}>
                   Apply for Gate(if eligible)
                 </li>
-                <li className={AdmisStyles.items}>Pay Fees</li>
-                <li className={AdmisStyles.items}>Collect Student Id</li>
+                <li className={AdmisStyles.itemstick}>Pay Fees</li>
+                <li className={AdmisStyles.itemstick}>Collect Student Id</li>
               </ul>
             </div>
           </section>
