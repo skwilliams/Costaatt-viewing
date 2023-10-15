@@ -3,8 +3,10 @@ import React from 'react'
 import Head from 'next/head';
 import AdmisStyles from "@/styles/Admissions.module.scss"
 import SideNavOnlyLayout from '@/components/Layouts/SideNavOnly_NoTopOrDropdown';
+import standardStyles from "@/styles/main.module.scss";
+
 import TopNavOnlyLayout from "@/components/Layouts/TopNavOnly_NoDropdown";
-import { AdminPanelSettings } from '@mui/icons-material';
+import { AdminPanelSettings, StayCurrentLandscape } from '@mui/icons-material';
 import Image from "next/image"
 import downloadicon from "../../../public/images/admissions/downloadnoteicon.svg";
 
@@ -20,8 +22,11 @@ const howtoregister = () => {
         </Head>
         <HeaderNoImage caption={"How to register"} />
         <SideNavOnlyLayout>
-          <section id="checklist" className={AdmisStyles.sectionregChecklist}>
-            <p className={AdmisStyles.sectiontextleft}> Registration Steps</p>
+          <section
+            id="checklist"
+            className={`${AdmisStyles.sectionregChecklist}  ${standardStyles.marginBottomBig}`}
+          >
+            {/* <p className={AdmisStyles.sectiontextleft}> Registration Steps</p> */}
 
             <div className={AdmisStyles.entryreq}>
               <p className={AdmisStyles.introtext}>
@@ -47,8 +52,14 @@ const howtoregister = () => {
               </ul>
             </div>
           </section>
-          <seciton id="advising" className={AdmisStyles.sectionAdvising}>
-            <p className={AdmisStyles.sectiontextleft}>Academic Advisement</p>
+
+          <seciton
+            id="advising"
+            className={`${AdmisStyles.sectionAdvising} ${standardStyles.marginBottomBig}`}
+          >
+            <h2 className={standardStyles.newsHeading}>
+              <span> ACADEMIC</span> Advisement
+            </h2>
 
             <p className={AdmisStyles.bannerSub}>
               Meet your Academic Advisor Online{" "}
@@ -72,8 +83,13 @@ const howtoregister = () => {
               <a>department contacts</a>
             </p>
           </seciton>
-          <section id="register" className={AdmisStyles.sectionRegister}>
-            <p className={AdmisStyles.sectiontextleft}>Registration</p>
+          <section
+            id="register"
+            className={`${AdmisStyles.sectionRegister}   ${standardStyles.marginTopBig} ${standardStyles.marginBottomBig}`}
+          >
+            <h2 className={standardStyles.newsHeading}>
+              <span> REGISTRATION</span>
+            </h2>
 
             <p className={AdmisStyles.bannerSub}>
               Using Banner for Self-Registration Online
@@ -133,8 +149,13 @@ const howtoregister = () => {
               </ol>
             </div>
           </section>
-          <section id="gate" className={AdmisStyles.sectionGate}>
-            <p className={AdmisStyles.sectiontextleft}>Gate Application</p>
+          <section
+            id="gate"
+            className={`${AdmisStyles.sectionGate} ${standardStyles.marginBottomBig}`}
+          >
+            <h2 className={standardStyles.newsHeading}>
+              <span> GATE</span> Application
+            </h2>
             <p className={AdmisStyles.bannerSub}>
               {" "}
               <b> Trinidad and Tobago Nationals Only </b>
@@ -223,11 +244,14 @@ const howtoregister = () => {
               payment plan to assist with tuition fees.
             </p>
           </section>
-          <section id="payment" className={AdmisStyles.sectionPayment}>
-            <p className={AdmisStyles.sectiontextleft}>
+          <section
+            id="payment"
+            className={`${AdmisStyles.sectionPayment} ${standardStyles.marginBottomBig} `}
+          >
+            <h2 className={standardStyles.newsHeading}>
               {" "}
-              Online Payment and Payment Plan
-            </p>
+              Online <span> PAYMENT </span> and Payment Plan
+            </h2>
             <div className={AdmisStyles.entryreq}>
               <p className={AdmisStyles.bannerSub}>
                 Fees can now be paid via the following:{" "}
@@ -365,8 +389,13 @@ const howtoregister = () => {
               </div>
             </div>
           </section>
-          <section id="studentid" className={AdmisStyles.sectionStudentId}>
-            <p className={AdmisStyles.sectiontextleft}>Student Id Card</p>
+          <section
+            id="studentid"
+            className={`${AdmisStyles.sectionStudentId} ${standardStyles.marginBottomBig} `}
+          >
+            <h2 className={standardStyles.newsHeading}>
+              Student <span> ID </span> Card
+            </h2>
             <p className={AdmisStyles.text}>
               The Office of the Registrar will provide guidance on the procedure
               for obtaining your student ID card and validation sticker. A
@@ -381,10 +410,13 @@ const howtoregister = () => {
               .
             </p>
           </section>
-          <section id="addinfo" className={AdmisStyles.sectionAdditionalInfo}>
-            <p className={AdmisStyles.sectiontextleft}>
-              Additional Information
-            </p>
+          <section
+            id="addinfo"
+            className={`${AdmisStyles.sectionAdditionalInfo} ${standardStyles.marginBottomBig} `}
+          >
+            <h2 className={standardStyles.newsHeading}>
+              <span> ADDITIONAL </span> Information
+            </h2>
             <p className={AdmisStyles.bannerSub2}>On Campus Appointments</p>
             <p className={AdmisStyles.text}>
               Although we have resumed face-to-face interactions at our

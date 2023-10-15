@@ -311,7 +311,7 @@ const Home = () => {
 
       <section id="success-stories" className={HomeStyles.successSection}>
         <div className={HomeStyles.successStories}>
-          <h1 className={HomeStyles.newsHeading}>We <span> Tranform  </span>Lives</h1>
+          <h2 className={HomeStyles.newsHeading}>We <span> Tranform  </span>LIVES</h2>
         </div>
         <div className={HomeStyles.successSlider}>
           <SuccessSlider

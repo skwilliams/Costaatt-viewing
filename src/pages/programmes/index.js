@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Head from 'next/head';
 import Link from 'next/link';
 import HeadImage from '@/components/PageComponents/HeadImage';
-import headImg from '../../../images/Programmes/tester2.jpg';
+import headImg from "../../../public/images/schools/overviewProgrammes header.jpg";
 import studyitems from '../../components/PageComponents/AreasStudyItems';
 
 import topclass from "../../../public/images/schools/topclassLect.png"
@@ -24,7 +24,7 @@ const progoverview = () => {
         <title>Overview of Programmes </title>
       </Head>
 
-      <HeadImage imagetext="Programmes" mainimage={headImg} />
+      <HeadImage  mainimage={headImg} />
       
         <p className={ProgStyles.headingprimarysub}>
           COSTAATT/Programmes/Overview{' '}

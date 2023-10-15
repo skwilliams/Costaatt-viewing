@@ -13,7 +13,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import HeadImage from "@/components/PageComponents/HeadImage";
-import awaitingbanner from "../../../public/images/awaitingBanner.png";
+import envelope from "../../../public/images/admissions/envelope.svg";
 
 import headerimg from "../../../public/images/admissions/applyNow header.jpg";
 
@@ -96,9 +96,12 @@ const howtoapply = () => {
             </div>
           </div>
         </section>
-        <section id="firststeps" className={`${standardStyles.marginTopBig} ${standardStyles.leftalign} ${standardStyles.secionWithSideNav}`}>
+        <section
+          id="firststeps"
+          className={`${standardStyles.marginTopBig} ${standardStyles.leftalign} ${standardStyles.secionWithSideNav}`}
+        >
           <h2 className={standardStyles.newsHeading}>
-            <span>STEPS </span> in  Applying{" "}
+            <span>STEPS </span> in Applying{" "}
           </h2>
           <div className={AdmisStyles.steps}>
             <div className={AdmisStyles.stepstext}>
@@ -220,7 +223,10 @@ const howtoapply = () => {
             <div className={AdmisStyles.stepstext}>
               <span className={AdmisStyles.stepsnum}> 5. </span> Start
               application <br />
-              Select which applicant you are and start your applicatoin
+              <p className={standardStyles.paragraph}>
+                {" "}
+                Select the type of applicant you are and start your applicatoin{" "}
+              </p>
               <div className={standardStyles.row}>
                 <div
                   className={standardStyles.col1of3}
@@ -252,8 +258,13 @@ const howtoapply = () => {
         </section>
 
         <section id="timeline" className={standardStyles.sectionWithSideNav}>
-          <h2 className={AdmisStyles.sectiontextleft}>Timeline </h2>
+       
 
+          <h2 className= {standardStyles.newsHeading}  
+          >
+
+            <span> WHEN </span> to Apply{" "}
+          </h2>
           <table className={standardStyles.simple}>
             <thead>
               <tr>
@@ -296,9 +307,10 @@ const howtoapply = () => {
           </p>
         </section>
         <section id="require" className={standardStyles.sectionWithSideNav}>
-          <p className={AdmisStyles.sectiontextleft}>
-            Application Requirements{" "}
-          </p>{" "}
+          <h2 className={standardStyles
+            .newsHeading}>
+            Application <span> REQUIREMENTS </span>
+          </h2>{" "}
           <div className={standardStyles.bullets}>
             <p className={standardStyles.headingTertiary}>
               Minimum Requirements{" "}
@@ -436,8 +448,8 @@ const howtoapply = () => {
           </div>
         </section>
         <section id="alterRoutes" className={standardStyles.sectionforSideNav}>
-          <h2 className={standardStyles.headingPrimarysub}>
-            Alternative Entry Routes{" "}
+          <h2 className={standardStyles.newsHeading}>
+            Alternative <span>ENTRY </span>Routes{" "}
           </h2>{" "}
           <p className={standardStyles.paragraph}>
             Applicants who do not possess the minimum requirements for entry
@@ -504,8 +516,8 @@ const howtoapply = () => {
         >
           <div className={standardStyles.marginTopBig}></div>
 
-          <h2 className={standardStyles.headingPrimarysub}>
-            General Supporting Documents{" "}
+          <h2 className={standardStyles.newsHeading}>
+            GENERAL Supporting <span>Documents{" "} </span>
           </h2>
           <table className={standardStyles.simple}>
             <thead>
@@ -667,9 +679,9 @@ const howtoapply = () => {
 
         <section id="checklist" className={standardStyles.sectionWithSideNav}>
           {" "}
-          <p className={standardStyles.headingPrimarysub}>
-            Applicant Checklist{" "}
-          </p>
+          <h2 className={standardStyles.newsHeading}>
+            Applicant <span> CHECKLIST{" "}</span>
+          </h2>
           <div className={AdmisStyles.checklist}>
             <Image className={AdmisStyles.imgtick} src={tick} />
             <span className={standardStyles.headingTertiary}>
@@ -936,14 +948,14 @@ const howtoapply = () => {
           <Divider />
         </section>
         <section id="accepted" className={standardStyles.sectionWithSideNav}>
-          <h2 className={standardStyles.headingSecondary}>
+          <h2 className={standardStyles.newsHeading}>
             {" "}
-            Accepted Students{" "}
+           <span>ACCEPTED </span>  Students{" "}
           </h2>
           <div className={standardStyles.row}>
             <div className={standardStyles.col1of3}>
-              Welcome to Change Makers Place an image here.
-              <Image src={imagedummy} width="200"></Image>
+          
+              <Image src={envelope} width="300"></Image>
             </div>
             <div className={standardStyles.col2of3}>
               <p className={standardStyles.paragraph}>
@@ -972,16 +984,15 @@ const howtoapply = () => {
         </section>
         <section id="contact" className={standardStyles.sectionWithSideNav}>
           {" "}
-          <p className={AdmisStyles.sectiontextleft}> Contact Admissions</p>
-   
-      <div className={standardStyles.row}>
+          <h2 className={standardStyles.newsHeading}> <span> CONTACT</span> Admissions</h2>
+          <div className={standardStyles.row}>
             <div className={standardStyles.col1of3}>
               <Image
                 className={AdmisStyles.icon}
                 src={telephone}
                 alt="telephone icon"
               />
-              <p className={AdmisStyles.icontext}> </p>
+              <p className={AdmisStyles.iconfont}> 625-5030 ext 5900 </p>
             </div>
             <div className={standardStyles.col1of3}>
               <Image
@@ -989,7 +1000,7 @@ const howtoapply = () => {
                 src={email}
                 alt="email icon"
               />
-              <p className={AdmisStyles.icontext}>
+              <p className={AdmisStyles.iconfont}>
                 {" "}
                 <a href="mailto:applications@costaatt.edu.tt">
                   {" "}
@@ -1011,7 +1022,7 @@ const howtoapply = () => {
                 </Link>
               </p>
             </div>
-          </div> 
+          </div>
         </section>
       </SideNavOnlyLayout>
     </>
