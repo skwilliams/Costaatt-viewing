@@ -15,7 +15,7 @@ const Featured = ({ feat }) => {
                 src={fe.photo}
                 alt={fe.altText}
                 width="400"
-                height="300"
+                height="200"
               />
             </div>
             <div className={FeatStyle.gridtwo}>

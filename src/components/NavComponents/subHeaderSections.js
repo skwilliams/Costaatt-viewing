@@ -1,6 +1,6 @@
 export const subHeaderSections = {
   home: {
-    schools: 'schools',
+    "I am ": 'search',
     'Uniquely Us': 'unique',
       news: 'news',
       events: 'events',
@@ -49,7 +49,7 @@ export const subHeaderSections = {
   allcourses: {
     'All courses': 'all courses',
   },
-  ist: {
+  ICTD: {
     'Overveiw of Department': 'overview',
     'Department Contact': 'contact',
     'Happening Now': 'happening',
