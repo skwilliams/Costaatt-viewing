@@ -5,7 +5,7 @@
   z-index: 40;
   top: 0;
   //  background-color: $whiteback;
-  background-color: rgb(41,40,42,.9);
+  background-color: rgb(41, 40, 42, 0.9);
   // background-image: linear-gradient(to right, $color-comp1, $color-comp2);
   height: auto;
   display: flex;
@@ -57,10 +57,10 @@
   animation-fill-mode: forwards;
 }
 .activeSubsection {
-  margin-bottom:.2rem;
+  margin-bottom: 0.2rem;
   border-bottom: white 5px solid;
   font-weight: 900;
-  color:white;
+  color: white;
 
   // text-decoration: underline solid white 4px;
 }
@@ -106,9 +106,9 @@
 // }
 .topNav {
   display: flex;
-  padding: 0.5em 2em;
+  padding: 5px 30px;
   justify-content: space-between;
-  
+
   background-image: linear-gradient(
     to bottom right,
     $color-primary,
@@ -134,11 +134,11 @@
 //costaatt logo on main page
 .logo {
   padding: 0;
-  width:15px;
+  // width: 15px;
   margin: 0;
   // float: left;
   padding-left: 0;
-  padding-top:20px;
+  //  padding-top: 7px;
 }
 .costaattwords {
   font-family: "Arial", Helvetica, sans-serif;
@@ -153,11 +153,12 @@
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  height: 60px;
-  padding: 30px 20px 10px 20px;
-  // padding-top:30px; 
+  //height: 60px;
+  padding: 0px 65px;
+  // padding-top:30px;
   // background-color: $color-grey-dark-3;
-  background-color:$grey;
+  background-color: black;
+  background-color: $grey;
   color: white;
 }
 .bottomNav li {
@@ -191,7 +192,7 @@
 
 .dropDownMain {
   left: 0;
-  top: 110px;
+  top: 120px;
   width: 100%;
   position: absolute;
   z-index: 40;
