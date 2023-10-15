@@ -23,27 +23,28 @@ const ProgramCard = ({ program }) => {
               width="200"
               height="200"
             />
-            {/* <div className={CardStyle.bannerbottomBsc}> Bachelors</div> */}
           </div>
           <div className={CardStyle.progGridthree}>
             <div
               className={CardStyle.coursetitle}
-            >{`${program.prog_name} (${program.school})`}</div>{' '}
+            >{`${program.prog_name} (${program.school})`}
+            
+            </div>{" "}
             {/*dynamic content}*/}
             <div className={CardStyle.block}>
-              <p className={CardStyle.cardtext}> {program.prog_description}</p>{' '}
+              <p className={CardStyle.cardtext}> {program.prog_description}</p>{" "}
               {/* fixed */}
-              <p className={CardStyle.cardtextIn}>
+              <div className={CardStyle.cardyearsAll}>
+
+              <p> 
                 {fulltimeYears} years full time
-              </p>{' '}
-              {/*dynamic content}*/}
-              <p className={CardStyle.cardtextIn}>
+              </p>{" "}
+              <p>  
                 {parttimeYears} years part-time
-              </p>{' '}
-              {/*dynamic content}*/}
+              </p>{" "}
             </div>
-            {/* <div className={CardStyle.bannerbottomAas}> Associate</div> */}
           </div>
+          </div> 
         </>
       </div>
       <div className={CardStyle.progGridConthree}>

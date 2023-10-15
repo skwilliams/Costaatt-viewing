@@ -32,7 +32,7 @@ const progoverview = () => {
 
         <section id="overview" className={ProgStyles.sectionoverview}>
           <div className={ProgStyles.umargintopsmall}>
-            <h2 className={standardStyles.headingSecondary}> Overview of Programmes</h2>
+            <h2 className={standardStyles.newsHeading}> <span> Overview</span> of Programmes</h2>
             <p className={ProgStyles.text}>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo
               sed quae repellat blanditiis corrupti rerum quia voluptatem

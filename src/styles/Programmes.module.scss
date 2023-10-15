@@ -519,13 +519,15 @@ form.degreesearch input[type="text"] {
 /* section department courses IN SCHOOL PAGE */
 .sectiondeptcourses {
   margin: 2rem 0;
-  background-color: $grey-light;
+  background-color: $grey;
   min-height: 25rem;
   padding-top: 2rem;
   color: white;
 
   .headingprimary {
-    margin-top: 2rem;
+    margin-top: 2rem 1rem;
+    text-align: center;
+    color:$color-primary
   }
 }
 .courseaccordion {
@@ -570,12 +572,13 @@ form.degreesearch input[type="text"] {
   padding-left: 1rem;
 }
 .degcoursesli {
-  padding: 0rem 1rem;
+  padding: .5rem 1rem;
   color: white;
+  text-align: center;
 
   :hover {
     text-decoration: underline;
-    //color: $purple-main; //$orange;
+   color:$color-primary; //$orange;
     transform: scale3d(1);
   }
 }

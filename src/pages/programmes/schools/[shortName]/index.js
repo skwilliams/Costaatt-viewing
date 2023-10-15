@@ -3,6 +3,8 @@ import { getProgrammes } from '../../utilities';
 import HeadImage from '@/components/PageComponents/HeadImage';
 import ProgStyles from '../../../../styles/Programmes.module.scss';
 import DepartCard from '@/components/PageComponents/DepartCard';
+import standardStyles from "../../../../styles/main.module.scss";
+
 import DeanStyles from '../../../../styles/Dean.module.scss';
 import { Accordion } from '@mui/material';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -48,13 +50,21 @@ const school = (props) => {
       {/* <SideNavOnlyLayout> */}
       {/* Section Overview */}
       <section id="overview" className={ProgStyles.sectionoverview}>
-        <p className={ProgStyles.headingprimary}> Overview of School</p>
+        <h2
+          className={`${standardStyles.newsHeading} ${standardStyles.centertext}`}
+        >
+          <span>OVERVIEW </span> of School
+        </h2>
         <p className={ProgStyles.text}>{foundSchool.overview}</p>
-      </section>{' '}
+      </section>{" "}
       <Divider light />
       {/* Department Cards Section */}
       <section id="departments" className={ProgStyles.sectiondepart}>
-        <p className={ProgStyles.headingprimary}> Departments </p>
+        <h2
+          className={`${standardStyles.newsHeading} ${standardStyles.centertext}`}
+        >
+          Departments{" "}
+        </h2>
         <div className={deptLayout}>
           {foundSchool.departments.map((dept, index) => {
             return (
@@ -72,8 +82,12 @@ const school = (props) => {
         </div>
       </section>
       {/* Programme Accordion */}
-      <section id="degree" className={ProgStyles.sectiondeptcourses}>
-        <p className={ProgStyles.headingprimary}>Find your Degree</p>
+      <section id="depcourses" className={ProgStyles.sectiondeptcourses}>
+        <h2
+          className={`${standardStyles.newsHeading} ${standardStyles.centertext} ${standardStyles.whitefont}`}
+        >
+          <span> FIND </span>your Degree
+        </h2>
 
         <div className={ProgStyles.progGridCon}>
           {/* Show accordion for only the type/level of programmes available.  return empty fragment otherwise*/}
@@ -83,33 +97,25 @@ const school = (props) => {
                 {level[1].length > 0 ? (
                   <>
                     <div className={ProgStyles.progGrid} key={level[0]}>
-                      <Accordion className={ProgStyles.courseaccordion}>
-                        <AccordionSummary
-                          key={level[0]}
-                          expandIcon={<ExpandMoreIcon />}
-                        >
-                          <Typography className={ProgStyles.acoordiantext}>
-                            {level[0]}
-                          </Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                          <ul className={ProgStyles.degcourses}>
-                            {level[1].map((levelProgs) => {
-                              return (
-                                <li
-                                  key={levelProgs.prog_code}
-                                  className={ProgStyles.degcoursesli}
-                                >
-                                  <Link href={levelProgs.prog_shortname}>
-                                    {' '}
-                                    {levelProgs.prog_name}{' '}
-                                  </Link>
-                                </li>
-                              );
-                            })}
-                          </ul>
-                        </AccordionDetails>
-                      </Accordion>
+                
+                     <p className={ProgStyles.headingprimary}> {level[0]} </p>
+
+                      <ul className={ProgStyles.degcourses}>
+                        {level[1].map((levelProgs) => {
+                          return (
+                            <li
+                              key={levelProgs.prog_code}
+                              className={ProgStyles.degcoursesli}
+                            >
+                              <Link href={levelProgs.prog_shortname}>
+                                {" "}
+                                {levelProgs.prog_name}{" "}
+                              </Link>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                     
                     </div>
                   </>
                 ) : (
@@ -121,9 +127,9 @@ const school = (props) => {
         </div>
       </section>
       {/* Meet the Dean Section */}
-      <section id="dean" className={DeanStyles.sectionmeetthedean}>
+      <section id="meetthedean" className={DeanStyles.sectionmeetthedean}>
         <div className={ProgStyles.umargintopsmall}>
-          <p className={ProgStyles.headingprimary}> Meet the Dean </p>
+          <h2 className={`${standardStyles.newsHeading} ${standardStyles.centertext}`} > <span> MEET </span> the Dean </h2>
           <div className={DeanStyles.deanColGridCon}>
             <div className={DeanStyles.deanColGrid}>
               <Image
@@ -135,36 +141,35 @@ const school = (props) => {
               />
             </div>
 
-              <div className={DeanStyles.deanColGrid}>
-                <p className={DeanStyles.deanwords}>
-                  <q> {foundSchool.dean.message}</q>
+            <div className={DeanStyles.deanColGrid}>
+              <p className={DeanStyles.deanwords}>
+                <q> {foundSchool.dean.message}</q>
+              </p>
+            </div>
+            <div className={DeanStyles.deanColGrid}>
+              <div className={DeanStyles.deancontact}>
+                <p>
+                   <span className={DeanStyles.standout}>
+                    {foundSchool.dean.name}
+                  </span>{" "}
+                  <br /> Dean, <br />
+                  {foundSchool.shortName} <br />
+                  <span className={DeanStyles.standout}>
+                    {foundSchool.dean.email}
+                  </span>{" "}
+                  <br />
+                  {foundSchool.dean.phone}
                 </p>
-              </div>
-              <div className={DeanStyles.deanColGrid}>
-                <div className={DeanStyles.deancontact}>
-                  <p>
-                    <span className={DeanStyles.standout}>
-                      {foundSchool.dean.name}
-                    </span>{' '}
-                    <br /> Dean, <br />
-                    {foundSchool.shortName} <br />
-                    <span className={DeanStyles.standout}>
-                      {foundSchool.dean.email}
-                    </span>{' '}
-                    <br />
-                    {foundSchool.dean.phone}
-                  </p>
-                </div>
               </div>
             </div>
           </div>
-        </section>
-        <Divider dark="dark" />
-        {/* School News Section */}
-        <section id="schoolnews" className={ProgStyles.sectionschoolnews}>
-          <NewsRow label="School" news={news.slice(0, 3)} />
-        </section>
-      {/* </SideNavOnlyLayout> */}
+        </div>
+      </section>
+      <Divider dark="dark" />
+      {/* School News Section */}
+      <section id="schoolnews" className={ProgStyles.sectionschoolnews}>
+        <NewsRow label="School" news={news.slice(0, 3)} />
+      </section>
     </>
   );
 };

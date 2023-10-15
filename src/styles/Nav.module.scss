@@ -154,10 +154,9 @@
   align-items: center;
   margin: 0;
   height: 60px;
-  padding: 40px 20px;
+  padding: 30px 20px 10px 20px;
   // padding-top:30px; 
   // background-color: $color-grey-dark-3;
-  background-color:black;
   background-color:$grey;
   color: white;
 }
@@ -192,7 +191,7 @@
 
 .dropDownMain {
   left: 0;
-  top: 127px;
+  top: 110px;
   width: 100%;
   position: absolute;
   z-index: 40;

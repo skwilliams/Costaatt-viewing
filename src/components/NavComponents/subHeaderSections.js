@@ -41,7 +41,7 @@ export const subHeaderSections = {
   },
   busIT: {
     'school overview': 'overview',
-    Departments: 'depart',
+    Departments: 'departments',
     'find your Degree': 'depcourses',
     'meet the dean': 'meetthedean',
     'school events and news': 'schoolnews',
@@ -60,14 +60,14 @@ export const subHeaderSections = {
   },
   enviro: {
     'school overview': 'overview',
-    Departments: 'depart',
+    Departments: 'departments',
     'find your Degree': 'depcourses',
     'meet the dean': 'meetthedean',
     'school events and news': 'schoolnews',
   },
   nursing: {
     'school overview': 'overview',
-    Departments: 'depart',
+    Departments: 'departments',
     'find your Degree': 'depcourses',
     'meet the dean': 'meetthedean',
     'school events and news': 'schoolnews',

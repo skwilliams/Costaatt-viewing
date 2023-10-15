@@ -12,7 +12,7 @@
 
     font-weight: 900;
     font-size:1.25rem;
-    color:$sobitCol;
+    color:$color-primary;
     padding: 1rem 0  2rem 0;
     text-align: center;
     
@@ -22,6 +22,13 @@
     line-height: 1.5;
     text-align: justify;
     padding-bottom:2rem;
+
+    overflow: hidden;
+   
+  display: -webkit-box; 
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  margin-bottom:1.5rem;
    }
    .imgstyle{
   
