@@ -98,5 +98,13 @@ export const sideNavSections = {
     "Student Id Card": "studentid",
     "Additional Information": "addinfo",
   },
-
+  library: {
+    "Accessing Resources ": "accesslib",
+    "eLearning Resources ": "elearn",
+    "General Guidelines": "guidelines",
+    "Borrowing Materials": "borrow",
+    "Computer Usage": "usage",
+    "Opening Hours": "opening",
+    "Contact Us":"contact",
+  },
 };

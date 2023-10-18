@@ -43,6 +43,13 @@ const index = (props) => {
       </Head>
       {/* imagetext={foundDept.name}  */}
       <HeadImage mainimage={foundDept.headImage} />
+      <p
+        className={`${standardStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}
+      >
+        <Link href="/"> COSTAATT/ </Link>
+        <Link href="/"> Department/</Link>
+        <Link href="/">{foundDept.shortName}</Link>
+      </p>
       {/* <SideNavOnlyLayout> */}
       {/* Department Overview Section */}
       <section id="overview" className={DeptStyles.sectionOverview}>
@@ -51,32 +58,31 @@ const index = (props) => {
           {/* <p className={DeptStyles.subheading}> Vision</p> */}
           {/* {txtToPara(foundDept.summary, DeptStyles.subtext)} */}
           {/* Department's Core Values */}
-      </div>
-          <div className={DeptStyles.corevalues}>
-            <h2
-              className={`${standardStyles.newsHeading} ${standardStyles.centertext}`}
-            >
-              Core <span>VALUES</span>
-            </h2>
-            {foundDept.coreValues.length > 0 ? (
-              <div className={DeptStyles.corevalues}>
-                {foundDept.coreValues.map((value) => {
-                  return (
-                    <div key={value}>
-                      <ul>
-                        <li className={ProgStyles.degcoursesli}>
-                          <span> {value} </span> - {getCoreValues(value)}
-                        </li>
-                      </ul>
-                    </div>
-                  );
-                })}
-              </div>
-            ) : (
-              <></>
-            )}
-          </div>
-  
+        </div>
+        <div className={DeptStyles.corevalues}>
+          <h2
+            className={`${standardStyles.newsHeading} ${standardStyles.centertext}`}
+          >
+            Core <span>VALUES</span>
+          </h2>
+          {foundDept.coreValues.length > 0 ? (
+            <div className={DeptStyles.corevalues}>
+              {foundDept.coreValues.map((value) => {
+                return (
+                  <div key={value}>
+                    <ul>
+                      <li className={ProgStyles.degcoursesli}>
+                        <span> {value} </span> - {getCoreValues(value)}
+                      </li>
+                    </ul>
+                  </div>
+                );
+              })}
+            </div>
+          ) : (
+            <></>
+          )}
+        </div>
       </section>
       {/* Department Programmes Section */}
       {/* <h2
@@ -153,8 +159,11 @@ const index = (props) => {
                               key={levelProgs.prog_code}
                               className={ProgStyles.degcoursesli}
                             >
-                              <Link href={levelProgs.prog_shortname}>
+                              <Link
+                                href={`../../${levelProgs.prog_shortname}`}
+                              >
                                 {" "}
+                              
                                 {levelProgs.prog_name}{" "}
                               </Link>
                             </li>
@@ -198,9 +207,6 @@ const index = (props) => {
         />
       </section>{" "}
       {/* Department News Section */}
-      <section id="schoolnews" className={ProgStyles.sectionschoolnews}>
-        <NewsRow label="Latest" news={news.slice(0, 3)} />
-      </section>
       <section id="featuredwork" className={DeptStyles.sectionFeaturedwork}>
         <h2
           className={`${standardStyles.newsHeading} ${standardStyles.centertext}`}
@@ -209,6 +215,9 @@ const index = (props) => {
         </h2>
 
         <Featured feat={featured} />
+      </section>
+      <section id="schoolnews" className={ProgStyles.sectionschoolnews}>
+        <NewsRow label="Latest" news={news.slice(0, 3)} />
       </section>
       {/* Department Faculty and Staff Section */}
       <section id="facultystaff" className={DeptStyles.sectionFaculty}>
@@ -222,7 +231,7 @@ const index = (props) => {
         </div>
       </section>
       {/* Shoutout Section- COSTAATT wants YOU!!! */}
-      <section id="sturesource" className={DeptStyles.sectionStuResources}>
+      {/* <section id="sturesource" className={DeptStyles.sectionStuResources}>
         <h2
           className={`${standardStyles.newsHeading} ${standardStyles.centertext}`}
         >
@@ -241,7 +250,7 @@ const index = (props) => {
             <StudentResources image={imagevisitUS} imagetxt="" />
           </div>
         </div>
-      </section>
+      </section> */}
       {/* </SideNavOnlyLayout> */}
     </>
   );

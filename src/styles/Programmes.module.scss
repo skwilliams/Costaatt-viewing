@@ -193,7 +193,7 @@
 
 /*Academics by the numbers */
 .sectionbythenumbers {
-  background-color: black;
+  background-color: $grey;
   color: aliceblue;
   padding: 5rem 10rem 10rem 10rem;
   font-family: "Lato", "sans serif";
@@ -251,7 +251,7 @@
 }
 /*Areas of Study */
 .sectionareasofstudy {
-  background-color: black;
+  background-color: $grey;
 
   color: whitesmoke;
   /* margin-top:-10 rem; */
@@ -277,7 +277,7 @@
 
 .areasofstudyli:hover {
   text-decoration: underline;
-  color: $base-color;
+  color: $orange;
   padding-bottom: 0.5rem;
 }
 /*6  columns */

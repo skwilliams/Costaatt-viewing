@@ -126,7 +126,7 @@
       },
       {
         "name": "ICTs and Digital Technologies",
-        "headImage": "/images/schools/departments/ICTDheader.png",
+        "headImage": "/images/schools/departments/ICTDheader.jpg",
         "image": "/images/schools/departments/ICTDsmall.png",
         "mission": "The department of ICT's and Digital Technologies is the hub were technologies meet. It's an infusion of Library Science and Technology. If you desire to be exposed to technology that runs through the viens of the world, you have come to the right place. You can specialize in Databases,Networking, Library Science and Web Development. You will be exposed to the best and latest technologies all while learning the building blocks that makes up Information and Technology.",
         "summary": "If you are interested in Web Development (Internet Technologies), Information Technology, Networking, Databases, Information Systems, or Library Science then the programmes offered by the Department of Information Science and Technology are tailor-made for you. ",
@@ -185,7 +185,7 @@
           {
             "prog_code": "ILSC_BS",
             "prog_shortname": "bscLIS",
-            "prog_name": "BSc Library and Information Science ",
+            "prog_name": "BSc Information and Library  Science ",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
             "dept_code": "ICTD",
@@ -863,8 +863,7 @@
             "prog_code": "CERT_ADVP",
             "prog_shortname": "certAdvertPromo",
             "prog_name": "Certificate in Advertising and Promotions",
-            "prog_level": "Certificate",
-            "prog_del_mode": "Blended",
+            "prog_level": "Certificate",            "prog_del_mode": "Blended",
             "dept_code": "DMAC",
             "prog_major_credits": 15,
             "prog_core_credits": 0,

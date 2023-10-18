@@ -82,7 +82,7 @@ const Home = () => {
       <section id="search" className={HomeStyles.sectionOne}>
         <div className={HomeStyles.sectionOneLeft}>
           <div className={HomeStyles.sectionLeftTop}>
-            <h2>The Preimer Undergraduate College</h2>
+            <h2>The Premier Undergraduate College</h2>
           </div>
           <div className={HomeStyles.sectionLeftBottom}>
             <div className={HomeStyles.selectContainer}>

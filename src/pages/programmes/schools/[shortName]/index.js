@@ -107,7 +107,7 @@ const school = (props) => {
                               key={levelProgs.prog_code}
                               className={ProgStyles.degcoursesli}
                             >
-                              <Link href={levelProgs.prog_shortname}>
+                              <Link href={`../${levelProgs.prog_shortname}`}>
                                 {" "}
                                 {levelProgs.prog_name}{" "}
                               </Link>

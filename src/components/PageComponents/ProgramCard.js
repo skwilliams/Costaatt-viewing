@@ -1,6 +1,8 @@
 import React from 'react';
 import CardStyle from '../../styles/ProgCard.module.scss';
 import Image from 'next/image';
+import Link from "next/link";
+
 
 const ProgramCard = ({ program }) => {
   const totalCredits =
@@ -25,26 +27,23 @@ const ProgramCard = ({ program }) => {
             />
           </div>
           <div className={CardStyle.progGridthree}>
-            <div
-              className={CardStyle.coursetitle}
-            >{`${program.prog_name} (${program.school})`}
-            
+            <div className={CardStyle.coursetitle}>
+              <Link href="/programmes/bscLIS">
+                                {`${program.prog_name} (${program.school}`}
+              </Link>
+              {program.shortname}
             </div>{" "}
             {/*dynamic content}*/}
             <div className={CardStyle.block}>
               <p className={CardStyle.cardtext}> {program.prog_description}</p>{" "}
               {/* fixed */}
               <div className={CardStyle.cardyearsAll}>
-
-              <p> 
-                {fulltimeYears} years full time
-              </p>{" "}
-              <p>  
-                {parttimeYears} years part-time
-              </p>{" "}
+                <p>{fulltimeYears} years full time</p>{" "}
+                <p>{parttimeYears} years part-time</p>{" "}
+              </div>
+            
             </div>
           </div>
-          </div> 
         </>
       </div>
       <div className={CardStyle.progGridConthree}>

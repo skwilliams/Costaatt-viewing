@@ -294,7 +294,7 @@ export const schoolOptions = [
   {
     name: "Current Student ",
     interestedChoice: [
-      { name: "Studnet Life", route: "/costaattlife" },
+      { name: "Studnet Life", route: "/costaattlife/studentorg" },
       { name: "Portal", route: "/currentstudents/portal" },
       { name: "Library", route: "/costaattlife/library" },
       { name: "Counselling Services", route: "/costaattlife/healthwell" },
