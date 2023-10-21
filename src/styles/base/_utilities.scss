@@ -1,6 +1,10 @@
 .centertext { text-align: center !important; }
 .leftalign { text-align: left !important;}
 
+.boldtext{
+  font-weight: bold;
+}
+
 .whitefont{color:white;}
 .centerbutton { margin: auto;}
 
@@ -24,6 +28,7 @@
     }
 }
 
+.marginTopSmall { margin-top: 5rem !important; }
 .marginTopBig { margin-top: 8rem !important; }
 .marginTopHuge { margin-top: 10rem !important; }
 

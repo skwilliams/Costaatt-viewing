@@ -28,25 +28,31 @@
 }
 
 .deantext {
-  font-size: 1.75rem;
+  font-size: 1.65rem;
   padding-left: 2rem;
 }
 
 .deanwords {
   color: #060607;
-  font-size: 1.75rem;
+  font-size: 1.65rem;
   padding: 0;
   margin-left: 2rem;
   text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 10; /* number of lines to show */
+  line-clamp: 10;
+  -webkit-box-orient: vertical;
 }
 
 .deancontact {
-  color: #060607;
-  font-size: 1.25rem;
+  color: black;
+  font-size: 1.15rem;
   padding: 3rem;
   margin-left: 2rem;
+  margin-bottom: 1rem;
 }
-
-.standout {
-  color: rgb(245, 130, 32);
+.deancontact .standout {
+  color: #cc6330;
 }/*# sourceMappingURL=Dean.module.css.map */

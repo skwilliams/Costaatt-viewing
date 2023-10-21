@@ -55,26 +55,22 @@ export const subHeaderSections = {
     "Department Contact": "contact",
     "Upcoming Events": "happening",
     "Featured Work": "featuredwork",
-
     "Latest News": "schoolnews",
-
     "Faculty and Staff": "facultystaff",
-
-    // 'Student Resources': 'sturesource',
   },
   enviro: {
-    "school overview": "overview",
-    Departments: "departments",
-    "find your Degree": "depcourses",
-    "meet the dean": "meetthedean",
-    "school events and news": "schoolnews",
+    "School overview": "overview",
+     Departments: "departments",
+    "Find your Degree": "depcourses",
+    "Meet the dean": "meetthedean",
+    "School events and news": "schoolnews",
   },
   nursing: {
-    "school overview": "overview",
-    Departments: "departments",
-    "find your Degree": "depcourses",
-    "meet the dean": "meetthedean",
-    "school events and news": "schoolnews",
+    "School overview": "overview",
+     Departments: "departments",
+    "Find your Degree": "depcourses",
+    "Meet the dean": "meetthedean",
+    "School events and news": "schoolnews",
   },
   apply: {
     Apply: "intro",
@@ -92,10 +88,10 @@ export const subHeaderSections = {
   },
 
   deptName: {
-    "school overview": "overview",
+    "School overview": "overview",
     Departments: "depart",
-    "find your Degree": "depcourses",
-    "meet the dean": "meetthedean",
+    "Find your Degree": "depcourses",
+    "Meet the dean": "meetthedean",
     "school events and news": "schoolnews",
   },
 
@@ -116,7 +112,7 @@ export const subHeaderSections = {
     Contact: "contact",
   },
   studentcouncil: {
-    "Studnet Council ": "introtoclubs",
+    "Student Council ": "introtoclubs",
     "Serving Members": "presentteam",
     "How to be a part": "joinus",
     Activities: "activites",
@@ -132,14 +128,13 @@ export const subHeaderSections = {
 
     Contact: "contact",
   },
-  itservices: {
-    "Computer Labs": "sportsteams",
-    "Computer Labs  ": "introsports",
-    
-    "Upcoming Events": "events",
-    "Athletics Department ": "thedepartment",
+  itfacilities: {
+    "Computer Labs": "labs",
+    "IT Services ": "services",
+    "Locations": "locations",
+    "Contact": "contact",
 
-    Contact: "contact",
+   
   },
 
   healthwell: {
@@ -175,4 +170,12 @@ export const subHeaderSections = {
     "Meet Our Staff": "staff",
     Contact: "contact",
   },
+  
+  about:{
+    "At a Glance":"glance",
+    Schools :"schools",
+    President :"president",
+    "By the Numbers":"bythenumbers",
+
+  }
 };

@@ -4,7 +4,7 @@
 
 .mainTitle {
   font-size: 6rem;
-  color: rgb(255, 109, 10);
+  color: rgb(104, 91, 199);
 }
 
 .newsTop {
@@ -14,7 +14,7 @@
 .newsSlider {
   width: auto;
   height: 100%;
-  border-right: 8px solid rgb(255, 109, 10);
+  border-right: 8px solid rgb(104, 91, 199);
 }
 
 .featuredNews {
@@ -23,7 +23,7 @@
 
 .featuredNews h1 {
   padding: 0 20px;
-  color: rgb(239, 65, 41);
+  color: rgb(139, 3, 4);
 }
 
 .featuredNewsLinks {
@@ -32,7 +32,7 @@
   transition: 400ms;
 }
 .featuredNewsLinks:hover {
-  background-color: rgb(255, 109, 10);
+  background-color: rgb(104, 91, 199);
   color: white;
 }
 

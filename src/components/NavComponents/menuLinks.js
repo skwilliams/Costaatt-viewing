@@ -193,15 +193,15 @@ export const footerLinks = [
   },
   {
     title: "COSTAATT Life",
-    path: "/",
+    path: "/costaattlife",
   },
   {
     title: "About",
-    path: "/",
+    path: "/about",
   },
   {
     title: "Directory",
-    path: "/",
+    path: "/directory",
   },
   {
     title: "Current Students",
@@ -347,7 +347,7 @@ export const mainNavLinks = [
       },
       {
         title: "I.T. Facilities",
-        path: "/costaattlife/itservices",
+        path: "/costaattlife/itfacilities",
       },
       {
         title: "Events",
@@ -369,34 +369,34 @@ export const mainNavLinks = [
   },
   {
     title: "About",
-    path: "/",
+    // path: "/",
     submenu: [
       {
-        title: "Overview of Costaatt",
-        path: "/",
+        title: "Profile at a Glance",
+        path: "/about",
       },
       {
         title: "History",
-        path: "/",
+        path: "/about/history",
       },
       {
         title: "Institutional Profile",
-        path: "/",
+        path: "/about/profile",
       },
       {
         title: "Accreditation",
-        path: "/",
+        path: "/about/accreditation",
       },
       {
         title: "College Leadership",
-        path: "/",
+        path: "/about/leadership",
       },
     ],
     submenuImage: [
       {
         img: require("../../../images/Links/dummyImg1.jpg"),
         title: "Careers",
-        path: "/about",
+        path: "/about/careers",
       },
       // {
       //   img: require("../../../images/Links/dummyImg2.jpg"),

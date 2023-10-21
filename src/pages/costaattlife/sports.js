@@ -28,32 +28,15 @@ import EventCardOrig from "@/components/PageComponents/EventCardOrig";
 import { stucouncildata } from "../costaattlife/studcouninfo";
 import StudentCouncilRep from "@/components/PageComponents/StudentCouncilRep";
 import ContactStudentLife from "@/components/PageComponents/ContactStudentLife";
-import {caimans} from"../../../public/images/costaattlife/caiman.jpg"
-import { basketball } from "../../../public/images/costaattlife/basketball.jpg";
-import {costaattteam } from "../../../public/images/costaattlife/costaatt team.jpg";
-import { cricket } from "../../../public/images/costaattlife/cricket.jpg";
-import { cricket2 } from "../../../public/images/costaattlife/cricket2.jpg";
-import { football } from "../../../public/images/costaattlife/football.jpg";
-import { netball } from "../../../public/images/costaattlife/netball.jpg";
+import caimans from"../../../public/images/costaattlife/caiman.jpg"
+import basketball  from "../../../public/images/costaattlife/basketball.jpg";
+import costaattteam  from "../../../public/images/costaattlife/costaatt team.jpg";
+import  cricket  from "../../../public/images/costaattlife/cricket.jpg";
+import cricket2  from "../../../public/images/costaattlife/cricket2.jpg";
+import  football  from "../../../public/images/costaattlife/football.jpg";
+import  netball  from "../../../public/images/costaattlife/netball.jpg";
 
-import { run4life } from "../../../public/images/costaattlife/run4life.jpg";
-import {gal1} from "../../../public/images/img/gal-1.jpeg";
-import { gal2 } from "../../../public/images/img/gal-2.jpeg";
-import { gal3 } from "../../../public/images/img/gal-3.jpeg";
-import { gal4 } from "../../../public/images/img/gal-4.jpeg";
-import { gal5 } from "../../../public/images/img/gal-5.jpeg";
-import { gal6 } from "../../../public/images/img/gal-6.jpeg";
-import { gal7 } from "../../../public/images/img/gal-7.jpeg";
-import { gal8 } from "../../../public/images/img/gal-8.jpeg";
-import { gal9 } from "../../../public/images/img/gal-9.jpeg";
-import { gal10 } from "../../../public/images/img/gal-10.jpeg";
-import { gal11 } from "../../../public/images/img/gal-11.jpeg";
-import { gal12 } from "../../../public/images/img/gal-12.jpeg";
-
-
-
-import { gal13 } from "../../../public/images/img/gal-13.jpeg";
-import { gal14 } from "../../../public/images/img/gal-14.jpeg";
+import  run4life  from "../../../public/images/costaattlife/run4life.jpg";
 import ReactPlayer from "react-player";
 
 import GradStyle from "../../styles/GradsSpeak.module.scss";
@@ -106,7 +89,9 @@ const sports = () => {
       <section
         id="joinus"
         className={`${standardStyles.sectionstartclub} `}
-      ></section>
+      >
+        
+      </section>
 
       <section
         id="sportsteams"
@@ -149,7 +134,7 @@ const sports = () => {
                   width="250"
                   height="250"
                   className={`${standardStyles.composition__photo} ${standardStyles.composition__photo_p1} `}
-                  src={awaitingimage}
+                  src={football}
                 />
 
                 <Image
@@ -159,7 +144,7 @@ const sports = () => {
                   width="250"
                   height="250"
                   className={` ${standardStyles.composition__photo} ${standardStyles.composition__photo_p2}`}
-                  src={awaitingimage}
+                  src={cricket}
                 />
 
                 <Image
@@ -169,7 +154,7 @@ const sports = () => {
                   width="250"
                   height="250"
                   className={`${standardStyles.composition__photo} ${standardStyles.composition__photo_p3}`}
-                  src={awaitingimage}
+                  src={netball}
                 />
               </>
             </div>
@@ -177,178 +162,7 @@ const sports = () => {
         </div>{" "}
       </section>
 
-       <section className={standardStyles.gallery} >
-        <div
-          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_1}`}
-        >
-          <Image
-            src={awaitingimage}
-            alt="Gallery image 1"
-            className={standardStyles.gallery__img}
-                        sizes="100vw"
-            style={{ width: "100%", height: "100%" }} // optional
-          />
-        </div>
-        <div
-          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_2}`}
-        >
-          <Image
-            src={awaitingimage}
-            alt="Netball"
-            className={standardStyles.gallery__img}
-            sizes="100vw"
-            style={{ width: "100%", height: "100%" }} // optional
-          />
-        </div>
-        <div
-          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_3}`}
-        >
-          <Image
-            src={awaitingimage}
-            alt="Gallery image 3"
-            className={standardStyles.gallery__img}
-            sizes="100vw"
-            style={{ width: "100%", height: "100%" }} // optional
-          />
-        </div>
-        <div
-          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_4}`}
-        >
-          <Image
-            src={awaitingimage}
-            alt="Gallery image 4"
-            className={standardStyles.gallery__img}
-            sizes="100vw"
-            style={{ width: "100%", height: "100%" }} // optional
-          />
-        </div>
-        <figure
-          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_5}`}
-        >
-          <Image
-            src={awaitingimage}
-            alt="Gallery image 5"
-            className={standardStyles.gallery__img}
-            sizes="100vw"
-            style={{ width: "100%", height: "100%" }} // optional
-          />
-        </figure>
-        <figure
-          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_6}`}
-        >
-          <Image
-            src={awaitingimage}
-            alt="Gallery image 6"
-            className={standardStyles.gallery__img}
-            sizes="100vw"
-            style={{ width: "100%", height: "100%" }} // optional
-          />
-        </figure>
-        <figure
-          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_7}`}
-        >
-          <Image
-            src={awaitingimage}
-            alt="Gallery image 7"
-            className={standardStyles.gallery__img}
-            sizes="100vw"
-            style={{ width: "100%", height: "100%" }} // optional
-          />
-        </figure>
-        <figure
-          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_8}`}
-        >
-          <Image
-            src={awaitingimage}
-            alt="Gallery image 8"
-            className={standardStyles.gallery__img}
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: "100%", height: "100%" }} // optional
-          />
-        </figure>
-        <figure
-          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_9}`}
-        >
-          <Image
-            src={awaitingimage}
-            alt="Gallery image 9"
-            className={standardStyles.gallery__img}
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: "100%", height: "100%" }} // optional
-          />
-        </figure>
-        <figure
-          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_10}`}
-        >
-          <Image
-            src={awaitingimage}
-            alt="Gallery image 10"
-            className={standardStyles.gallery__img}
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: "100%", height: "100%" }} // optional
-          />
-        </figure>
-        <figure
-          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_11}`}
-        >
-          <Image
-            src={awaitingimage}
-            alt="Gallery image 11"
-            className={standardStyles.gallery__img}
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: "100%", height: "100%" }} // optional
-          />
-        </figure>
-        <figure
-          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_12}`}
-        >
-          <Image
-            src={awaitingimage}
-            alt="Gallery image 12"
-            className={standardStyles.gallery__img}
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: "100%", height: "100%" }} // optional
-          />
-        </figure>
-        <figure
-          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_12}`}
-        >
-          {" "}
-          <Image
-            src={awaitingimage}
-            alt="Gallery image 13"
-            className={standardStyles.gallery__img}
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: "100%", height: "100%" }} // optional
-          />
-        </figure>
-        <figure
-          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_13}`}
-        >
-          {" "}
-          <Image
-            src={awaitingimage}
-            alt="Gallery image 14"
-            className={standardStyles.gallery__img}
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: "100%", height: "100%" }} // optional
-          />
-        </figure>{" "}
-      </section> 
+ 
 
       <section id="events" className={standardStyles.sectionNoSidenav}>
         <h2 className={standardStyles.headingPrimarysub}>

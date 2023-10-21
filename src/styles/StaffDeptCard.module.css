@@ -10,7 +10,7 @@
 }
 .cardCont .name {
   font-size: 1rem;
-  color: rgb(245, 130, 32);
+  color: #cc6330;
   margin-bottom: 1rem;
   font-weight: 700;
 }
@@ -18,7 +18,7 @@
   margin: 0.5rem 0;
 }
 .cardCont .email {
-  color: rgb(245, 130, 32);
+  color: #cc6330;
   margin: 0;
   padding: 0;
 }

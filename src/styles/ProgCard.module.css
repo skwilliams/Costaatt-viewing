@@ -1,3 +1,10 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  padding: 0 1.5rem;
+}
+
 .imgstyle {
   width: 300px;
   height: 200px;
@@ -21,18 +28,22 @@
   background-color: lightgrey;
 }
 
-.sidenav {
-  height: auto;
-  width: 20%;
-  z-index: -1;
-  float: left;
-  top: 0;
+.sidenavContainer {
+  top: 60px;
   position: sticky;
-  background-color: rgba(67, 63, 64, 0.9);
-  overflow-x: hidden;
+  align-self: flex-start;
+}
+
+.sidenav {
+  width: 18rem;
+  height: calc(100vh - 60px);
+  overflow-y: scroll;
   background-color: white;
-  margin-left: 5rem;
   font-family: "Lato", "sans serif";
+}
+
+.sidenav::-webkit-scrollbar {
+  display: none;
 }
 
 .sidenavlink {
@@ -40,15 +51,15 @@
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 1rem;
-  color: #818181;
+  color: rgb(41, 40, 42);
   /* top:5rem; */
 }
 
 .sidenavlink:hover {
-  color: darkgray;
+  color: rgb(72, 63, 138);
   text-decoration: underline;
-  text-decoration-color: rgb(255, 109, 10);
-  text-decoration-thickness: 4px;
+  text-decoration-color: rgb(104, 91, 199);
+  text-decoration-thickness: 6px;
   text-underline-position: under;
 }
 
@@ -85,13 +96,9 @@
 }
 
 .main {
-  margin-left: 5rem; /* Same as the width of the sidenav */
+  flex-grow: 1;
   font-size: 1.2rem; /* Increased text to enable scrolling */
-  padding-left: 2rem;
-  padding-right: 3rem;
-  max-width: 80%;
   font-family: "Lato", "sans serif";
-  margin-left: 25rem;
   color: rgba(67, 63, 64, 0.9);
 }
 
@@ -108,7 +115,7 @@
 }
 
 .searchIcon {
-  width: 3%;
+  width: 10%;
   height: 5%;
   margin-left: 0.5rem;
   margin-top: 1.5rem;
@@ -122,7 +129,6 @@
   grid-gap: 2rem;
   grid-template-columns: auto auto auto;
   margin: 0 auto;
-  margin-right: 5rem;
   margin-bottom: 0;
   padding: 0;
 }
@@ -142,9 +148,9 @@
   font-weight: 600;
   margin-left: 0;
   font-family: "Lato";
+  color: #cc6330;
   grid-column-end: span 2;
   text-align: left;
-  color: rgb(62, 19, 83);
 }
 
 .block {
@@ -157,22 +163,40 @@
   margin-left: 0;
 }
 
-.cardtext {
-  color: rgb(245, 130, 32);
-  font-weight: 800;
+.courseDescript {
   font-size: 1rem;
+  color: black;
+  line-height: 2;
   text-align: left;
+  font-family: "Lato";
+  padding-bottom: 1rem;
+}
+
+.cardtext {
+  color: rgb(41, 40, 42);
+  font-size: 1.15rem;
+  text-align: left;
+  line-height: 2em;
+}
+
+.cardyearsAll {
+  color: #cc6330;
+  font-weight: 800;
+  font-size: 1.1rem;
+  text-align: left;
+  padding: 1rem 0;
   line-height: 2em;
 }
 
 .cardtextIn {
   line-height: 2em;
-  font-size: 1rem;
+  font-size: 1.15rem;
   text-align: left;
 }
 
 .bannerbottom {
-  background-color: rgb(245, 130, 32);
+  background-image: linear-gradient(to right, rgb(72, 63, 138), rgb(41, 40, 42));
+  opacity: 0.7;
   color: white;
   height: 3rem;
   font-size: 1.25rem;
@@ -180,4 +204,27 @@
   padding: 0.5rem;
   text-align: right;
   grid-column-end: span 3;
+}
+
+.bannerbottomleft {
+  background-image: linear-gradient(to right, rgb(72, 63, 138), rgb(41, 40, 42));
+  color: white;
+  height: 3rem;
+  font-size: 1.25rem;
+  margin-top: 0;
+  padding: 0.5rem;
+  text-align: left;
+  grid-column-end: span 3;
+}
+
+.searchContainer {
+  position: relative;
+}
+
+.searchHints {
+  position: absolute;
+  background-color: white;
+  top: 50px;
+  font-size: 1rem;
+  cursor: pointer;
 }/*# sourceMappingURL=ProgCard.module.css.map */
