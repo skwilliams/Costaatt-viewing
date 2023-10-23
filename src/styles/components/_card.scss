@@ -53,7 +53,7 @@
     // FRONT SIDE STYLING
     &__picture {
         background-size: cover;
-        height: 23rem;
+        height: 18rem;
         background-blend-mode: screen;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -89,18 +89,36 @@
             background-image: linear-gradient(to right bottom, $cirEcom, $cirEcom-dark),
                 url(../../../public/images/costaattlife/joinclub.png);
         }
+
+        // workforce
+        &workforce {
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
+                url(../../../public/images/costaattlife/joinclub.png);
+        }
+        // unique areas of study
+        &areas {
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
+                url(../../../public/images/costaattlife/joinclub.png);
+        }
+        // state of art labs
+        &labs {
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
+                url(../../../public/images/costaattlife/joinclub.png);
+        }
+        
     }
 
     &__heading {
-        font-size: 1.85rem;
+        font-size: 1.5rem;
         font-weight: 300;
         text-transform: uppercase;
         text-align: right;
-        color: rgba($color-black, .95);
+        color: rgba(white, .95);
         position: absolute;
-        top: 12rem;
-        right: 2rem;
-        width: 75%;
+        top: 10rem;
+        right: 1.5rem;
+        width: 85%;
+        padding:2rem ;
 
     }
 
@@ -144,6 +162,11 @@
                     rgba($cirEcom, .85),
                     rgba($cirEcom-dark, .85));
         }
+        &_mainColor {
+            background-image: linear-gradient(to right bottom,
+                    rgba($color-primary-light, .85),
+                    rgba($color-primary-dark, .85));
+        }
 
     }
 
@@ -152,6 +175,7 @@
         font-size: 1.25rem;
         line-height: 1.5;
         text-align: left;
+        font-family: "Lato";
 
         &1 {
             background-image: linear-gradient(to right bottom,
@@ -190,25 +214,34 @@
                     rgba($cirEcom, .85),
                     rgba($cirEcom-dark, .85));
         }
+        
+        &_mainColor {
+            background-image: linear-gradient(to right bottom,
+                    rgba($color-primary-light, .85),
+                    rgba($color-primary-dark, .85));
+        }
 
 
 
 
-        // ul {
-        //     list-style: none;
-        //     width: 80%;
-        //     margin: 0 auto;
 
-        //     li {
-        //         text-align: center;
-        //         font-size: 1.5rem;
-        //         padding: 1rem;
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
 
-        //         &:not(:last-child) {
-        //             border-bottom: 1px solid $color-grey-light-2;
-        //         }
-        //     }
-        // }
+            li {
+                text-align: center;
+                font-size: 1.25rem;
+                padding: 1rem;
+                      list-style-type:square;
+
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-light-2;
+                }
+            }
+        }
     }
 
     // FRONT SIDE STYLING

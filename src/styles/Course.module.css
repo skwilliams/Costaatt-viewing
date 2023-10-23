@@ -1,9 +1,9 @@
 .courseName {
   font-family: "Bodoni", Helvitica;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: white;
   margin: 0 0 2rem 0;
-  background-image: linear-gradient(to right, rgb(245, 130, 32), rgb(121, 47, 142));
+  background-image: linear-gradient(to right, #cc6330, rgb(121, 47, 142));
 }
 
 .headingsecondary {
@@ -19,6 +19,13 @@
   margin: 1rem 0;
 }
 
+.footnote2 {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
 .threeColGridCon {
   display: grid;
   gap: 5rem;
@@ -28,6 +35,31 @@
 
 .threeColGrid {
   text-align: center;
+  font-size: 1.5rem;
+}
+
+.fiveColGridCon {
+  display: grid;
+  gap: 5rem;
+  grid-gap: 2rem;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.fiveColGrid {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.fourColGridCon {
+  display: grid;
+  gap: 5rem;
+  grid-gap: 2rem;
+  grid-template-columns: auto auto auto auto;
+}
+
+.fourColGrid {
+  text-align: center;
+  padding: 20px;
   font-size: 1.5rem;
 }
 
@@ -41,16 +73,6 @@
   text-align: justify;
   font-family: "Lato", Arial, Helvetica, sans-serif;
   margin: 3rem 0;
-}
-.sectionOverview .entryreq .list {
-  margin-left: 2rem;
-}
-.sectionOverview .entryreq .list .items {
-  list-style-type: square;
-  margin: 0.5rem 0;
-}
-.sectionOverview .entryreq .list .items::marker {
-  color: rgb(245, 130, 32);
 }
 .sectionOverview .icon {
   width: 70px;
@@ -111,13 +133,28 @@
 }
 
 .sectionCurriculum {
-  margin: 6rem 0;
+  margin-right: 2rem;
+  padding: 0;
+  margin-bottom: 6rem;
+  margin-top: 6rem;
 }
 
 .coursecode {
   font-size: 1.15rem;
   margin: 0;
   text-align: left;
+}
+
+.bold {
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+
+.tableheadings {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: left;
+  color: #cc6330;
 }
 
 .courseheadings {
@@ -127,7 +164,7 @@
 }
 
 .coursename {
-  color: rgb(245, 130, 32);
+  color: #cc6330;
   font-size: 1.15rem;
   text-align: left;
 }
@@ -136,6 +173,13 @@
   margin-left: 1rem;
   font-size: 1.15rem;
   text-align: left;
+}
+
+.creditstotal {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  text-align: left;
+  font-weight: 800;
 }
 
 .accdetails {
@@ -163,18 +207,111 @@
 }
 
 .sectionFinancial {
-  margin: 6rem 0;
   font-size: 1.15rem;
+  margin-right: 2rem;
+  padding: 0;
+  margin-bottom: 6rem;
+  margin-top: 6rem;
 }
 .sectionFinancial .coursesGridCon {
   display: grid;
   gap: 2rem;
   grid-gap: 1rem;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr;
   margin: 0;
   padding: 0;
 }
 .sectionFinancial .coursesColGrid {
   text-align: center;
+  padding: 20px;
+  font-size: 1.25rem;
+}
+.sectionFinancial .credits {
+  font-size: 1.15rem;
+  text-align: justify;
+}
+
+.sectionRequirements {
+  font-size: 1.15rem;
+  font-family: "Lato";
+  margin-right: 2rem;
+  padding: 0;
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+}
+.sectionRequirements .text {
+  font-size: 1.15rem;
+  text-align: justify;
+  font-family: "Lato";
+  line-height: 2;
+}
+
+.careerstable {
+  font-family: "Lato";
+  font-size: 2rem;
+  border-collapse: collapse;
+  width: 100%;
+}
+.careerstable .careerstable td,
+.careerstable th {
+  padding: 10px;
+  text-align: left;
+  margin: 0;
+}
+.careerstable .careerstable tbody tr:nth-child(2n) {
+  background-color: #eee;
+}
+.careerstable .careerstable th {
+  color: #222222;
+  font-family: "Bodoni";
+  text-transform: capitalize;
+  backface-visibility: hidden;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.entryreq .list {
+  margin-left: 2rem;
+}
+.entryreq .list .items {
+  list-style-type: square;
+  margin: 0.5rem 0;
+}
+.entryreq .list .items::marker {
+  color: #cc6330;
+}
+
+.text {
+  font-size: 1.1rem;
+  text-align: justify;
+  font-family: "Lato";
+  line-height: 2;
+}
+
+.goto {
+  color: #cc6330;
+  font-size: 1.1rem;
+  float: center;
+}
+
+.sectionStuResources {
+  margin: 6rem 0;
+  font-size: 1.15rem;
+}
+
+.courseheadings {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.creditsummarytext {
+  font-size: 1.25rem;
+  text-align: right;
+  margin: 2rem;
+}
+
+.creditsummarynumber {
   font-size: 1.5rem;
+  text-align: right;
 }/*# sourceMappingURL=Course.module.css.map */

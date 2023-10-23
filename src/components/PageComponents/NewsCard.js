@@ -30,7 +30,7 @@ export default function NewsCard({
           variant="h5"
           component="div"
           fontWeight="bold"
-          color={schoolcolor}
+          color="rgb(104, 91, 199)"
         >
           {title}
         </Typography>

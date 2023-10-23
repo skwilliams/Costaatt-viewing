@@ -1,10 +1,10 @@
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: rgb(67, 63, 64);
+  background-color: rgb(41, 40, 42);
   white-space: nowrap;
   color: white;
-  border-top: 6px solid rgb(245, 130, 32);
+  border-top: 6px solid rgb(72, 63, 138);
 }
 
 .mainFooter {
@@ -92,7 +92,7 @@
 .socialsIcons a:hover {
   cursor: pointer;
   color: white;
-  border-bottom: 1px solid rgb(245, 130, 32);
+  border-bottom: 1px solid #cc6330;
 }
 
 .copyRight {

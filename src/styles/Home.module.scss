@@ -1,4 +1,5 @@
 @import "./abstracts/variables";
+@import "./abstracts//mixins";
 
 .homeContainer {
   background-size: cover;
@@ -10,9 +11,14 @@
 /*Section One, Slider and Select styles*/
 .sectionOne {
   display: flex;
-  height: 80vh;
+  height: 75vh;
   padding: 0;
-  background-color: $red;
+  margin-bottom: 40px;
+  background-image: linear-gradient(
+    to bottom right,
+    $color-primary,
+    $color-primary-dark
+  );
 }
 
 .sectionOneLeft {
@@ -20,29 +26,42 @@
   padding: 0 20px;
   display: block;
   min-width: 30%;
-  height: 100%;
+  height: 80vh;
   margin: auto;
   // margin: 0;
   padding: 0;
 
-  // h2 {
-  //   font-size: 2rem;
-  //   font-weight: bolder;
-  //   // margin-top: 3rem;
-  // }
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    // margin-top: 3rem;
+  }
 }
 
 .sectionLeftTop {
-  background-color: $red;
+  background-color: $grey;
   // margin:2rem;
-  padding: 3rem;
+  // background-image: linear-gradient(
+  //   to bottom right,
+  //   $color-primary,
+  //   $color-primary-dark
+  // );
+  // padding-top: 2.5rem;
+  // padding-left:2.5rem;
+  // padding-bottom: 0;
+
+  padding: 2.5rem 0 0 0;
   border-top: 0 $whiteback solid;
   h2 {
-    font-size: $default-font-size * 1.25;
-    color: white;
     font-family: "Lato";
-    line-height: 1.95;
-    letter-spacing: 1px;
+    box-shadow: 2px 2px 5px $grey;
+
+    font-size: 2.15rem;
+    line-height: 1.5;
+    color: white;
+    text-align: center;
+
+    // letter-spacing: 1px;
     text-align: center;
   }
   h3 {
@@ -51,16 +70,24 @@
   }
 }
 .sectionLeftBottom {
-  background-color: $red;
+  background-color: $grey;
   background-image: url("../../images/Links/colors.png");
   background-repeat: no-repeat;
-  background-position: bottom right;
-  margin: 0;
-  padding: 0;
+  background-position: bottom left;
+  // background-position: bottom 50px left ;
+
+  margin: 0 0 0 0;
+  padding: 2rem 1rem;
+  max-height: 75.5%;
+  color: $color-primary;
+  h3 {
+    font-size: 1rem;
+    color: $lime-green;
+  }
 }
 
 .sectionOneRight {
-  height: 100%;
+  height: 90vh;
   min-width: 70%;
   overflow: hidden;
 }
@@ -76,7 +103,7 @@
   bottom: 82px;
   text-align: center;
   padding: 20px;
-  background-color: $brown;
+  background-color: $red-dark;
   opacity: 80%;
   font-size: xx-large;
   color: white;
@@ -84,11 +111,11 @@
 
 .sliderArrows {
   position: relative;
-  top: 500px;
+  top: 300px;
   font-size: 6rem;
   z-index: 10;
   cursor: pointer;
-  color: $orange;
+  color: white;
 }
 
 .rightSliderArrow {
@@ -102,16 +129,15 @@
 }
 
 .selectContainer {
-
-  // margin-top: 40px;
+  margin-top: 18px;
   position: relative;
   width: auto;
-  padding: 20px;
+  padding: 30px;
 
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   text-align: center;
   h3 {
-    font-size: 2rem;
+    font-size: 1.25rem;
     color: white;
   }
 }
@@ -125,11 +151,11 @@
 
 .Arrow {
   position: absolute;
-  right: 60px;
-  font: 2.5rem sans-serif;
+  right: 40px;
+  font: 1rem sans-serif;
   height: 100%;
   overflow: hidden;
-  color: $brown;
+  color: $grey;
   cursor: pointer;
 }
 
@@ -150,19 +176,58 @@
 }
 
 /*Section Two styles*/
-.sectionTwo {
-  padding: 0 80px;
-  margin-top: 8rem;
+.sectionUniquelyUs {
+  padding: 20px 10px;
+  margin-top: 10rem;
   margin-bottom: 8rem;
   height: 100%;
+
+  .row {
+    max-width: $grid-width;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+      margin-bottom: $gutter-vertical;
+
+      @include respond(tab-port) {
+        margin-bottom: $gutter-vertical-small;
+      }
+    }
+
+    @include respond(tab-port) {
+      max-width: 50rem;
+      padding: 0 3rem;
+    }
+
+    @include clearfix;
+    .col1of4 {
+      background-color: blue;
+
+      float: left;
+
+      &:not(:last-child) {
+        margin-right: $gutter-horizontal;
+
+        @include respond(tab-port) {
+          margin-right: 0;
+          margin-bottom: $gutter-vertical-small;
+        }
+      }
+
+      @include respond(tab-port) {
+        width: 100% !important;
+      }
+      width: calc((100% - 3 * 8rem) / 4);
+    }
+  }
 }
 
-.sectionTwo h1 {
+.sectionheadings {
   text-align: center;
-  font-size: 4rem;
+  font-size: 2.5rem;
   margin-bottom: 4rem;
   span {
-    color: $brown;
+    color: $color-primary-dark;
   }
 }
 
@@ -205,42 +270,44 @@
   bottom: 0;
   text-align: center;
   padding: 8px;
-  background-color: $brown;
+  background-color: $color-primary;
   color: white;
   opacity: 90%;
   font-size: smaller;
 }
 
 /*Section Three styles*/
-.sectionThree {
+.sectionEvents {
   padding: 0 20px;
   margin-top: 8rem;
   margin-bottom: 8rem;
-  border-color: lightgray;
+  // border-color: lightgray;
+   background-color: rgba($color-grey-light-2, .5);
 }
 
 .sectionThreeTiles {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .events {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin-bottom: 15px;
   margin-right: 30px;
   gap: 15px;
-  img {
-    width: 100%;
-    height: 300px;
-    border: 2px solid white;
-    box-shadow: 2px 2px 5px white;
-    object-fit: cover;
-  }
+  // background-color: $color-primary-dark;
+  // img {
+  //   width: 100%;
+  //   height: 300px;
+  //   border: 2px solid white;
+  //   box-shadow: 2px 2px 5px white;
+  //   object-fit: cover;
+  // }
   h1 {
-    font-size: x-large;
+    font-size: large;
     font-weight: bolder;
-    text-transform: uppercase;
+    text-transform: capitalize;
   }
   p {
     padding-bottom: 10px;
@@ -251,7 +318,7 @@
   font-size: 4rem;
   margin-bottom: 4rem;
   span {
-    color: $brown;
+    color: $color-primary;
   }
 }
 
@@ -261,32 +328,64 @@
   margin-top: 8rem;
   margin-bottom: 8rem;
   height: 100%;
-  border-color: lightgray;
+  // border-color: lightgray;
+  border-color: rgba($color-grey-light-2, .5);
 }
 
 .sectionFourTiles {
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+
+
+ 
+
+} 
+
+.newsFeatureContent{
+  background-color: red;
+  // grid-column: 1 / span 2;
 }
+
+// .newsFeatureImage{
+// background-color: pink;
+ 
+
+// }
+.sectionNewsTitle{
+  grid-column: 1 / span 2;
+}
+
+
+
+
+
 
 .newsHeading {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 4rem;
+  color:$grey;
+   grid-column: 1 / span 2;
   span {
-    color: $brown;
+    color: $color-primary;
   }
 }
 
 .featuredNews {
   align-items: center;
   margin-bottom: 3px;
+
+
+
 }
 
 .featuredNews {
   width: auto;
   text-align: center;
   margin-bottom: 15px;
+
   img {
     width: 100%;
     height: 100%;
@@ -296,8 +395,45 @@
   h1 {
     font-size: large;
     font-weight: bolder;
+  }  
+}
+
+.newsFeatureHomepage {
+  position: relative;
+  margin-bottom: 15px;
+  justify-content: center;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  grid-column: 1 / span 2;
+
+  .imgFeature {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    object-fit: cover;
+  }
+  h1 {
+    font-size: large;
+    font-weight: bolder;
+  }
+  .newsDate {
+    background-color: white;
+    padding: 2rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  &:hover {
+    img {
+      opacity: 90%;
+      object-fit: cover;
+      border: 5px solid white;
+    }
   }
 }
+
+
 
 .newsTileHomepage {
   position: relative;
@@ -309,7 +445,7 @@
 
   img {
     width: 100%;
-    height: 300px;
+    height: 250px;
     margin-bottom: 15px;
     object-fit: cover;
   }
@@ -319,7 +455,7 @@
   }
   .newsDate {
     background-color: white;
-    padding: 5px;
+    padding: 2rem;
     position: absolute;
     top: 10px;
     left: 10px;
@@ -348,7 +484,7 @@
 .selectButton {
   text-align: center;
   width: 30%;
-  background-color: $brown;
+  background-color: $color-primary;
   color: white;
   padding: 10px;
   border: 2px solid white;
@@ -378,7 +514,7 @@
 .successStories {
   text-align: center;
   // background-color: $orange;
-  color: $orange;
+  color: $grey;
   padding: 1rem;
   margin-bottom: 8px;
   p {
@@ -428,6 +564,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px 0px;
+ 
   }
 
   .events {

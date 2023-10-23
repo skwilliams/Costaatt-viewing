@@ -1,4 +1,4 @@
-@import './abstracts/variables';
+@import "./abstracts/variables";
 
 .logo {
   width: 150px;
@@ -73,14 +73,14 @@
   margin-top: 0.5rem;
   margin-bottom: 0;
   text-align: left;
-  padding:  2em ;
+  padding: 2em;
 }
 
 .headingprimarysubleft {
   display: block;
   font-size: 1.3rem;
   font-weight: 700;
-  color: $brown;
+  color: $color-primary;
 
   margin: 0;
   padding: 0;
@@ -160,7 +160,7 @@
 }
 .navtoplink :hover {
   text-decoration: underline;
-  text-decoration-color: $brown;
+  text-decoration-color: $color-primary;
   text-decoration-thickness: 4px;
   text-underline-position: under;
 }
@@ -188,12 +188,12 @@
 }
 .whychoosetext {
   font-size: 1.5rem;
-  color: $brown;
+  color: $color-primary;
 }
 
 /*Academics by the numbers */
 .sectionbythenumbers {
-  background-color: black;
+  background-color: $grey;
   color: aliceblue;
   padding: 5rem 10rem 10rem 10rem;
   font-family: "Lato", "sans serif";
@@ -226,7 +226,7 @@
   float: right;
 }
 .highlight {
-  color: $brown;
+  color: $color-primary;
   font-size: 1.45rem;
 }
 .urllayout {
@@ -248,11 +248,10 @@
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
-
 }
 /*Areas of Study */
 .sectionareasofstudy {
-  background-color: black;
+  background-color: $grey;
 
   color: whitesmoke;
   /* margin-top:-10 rem; */
@@ -272,13 +271,13 @@
 
 .areasofstudyli {
   text-decoration: none;
-  color: $brown;
+  color: $color-primary;
   padding-bottom: 0.5rem;
 }
 
 .areasofstudyli:hover {
   text-decoration: underline;
-  color: $base-color;
+  color: $orange;
   padding-bottom: 0.5rem;
 }
 /*6  columns */
@@ -369,7 +368,7 @@ form.degreesearch button {
   width: 10%;
   height: 4rem;
   padding: 0.5rem 1rem;
-  background: $brown;
+  background: $color-primary;
   color: white;
   font-size: 1.5rem;
   border: 1px solid grey;
@@ -520,13 +519,15 @@ form.degreesearch input[type="text"] {
 /* section department courses IN SCHOOL PAGE */
 .sectiondeptcourses {
   margin: 2rem 0;
-  background-color: $grey-light;
+  background-color: $grey;
   min-height: 25rem;
   padding-top: 2rem;
   color: white;
 
   .headingprimary {
-    margin-top: 2rem;
+    margin-top: 2rem 1rem;
+    text-align: center;
+    color:$color-primary
   }
 }
 .courseaccordion {
@@ -571,12 +572,13 @@ form.degreesearch input[type="text"] {
   padding-left: 1rem;
 }
 .degcoursesli {
-  padding: 0rem 1rem;
+  padding: .5rem 1rem;
   color: white;
+  text-align: center;
 
   :hover {
     text-decoration: underline;
-    //color: $purple-main; //$orange;
+   color:$color-primary; //$orange;
     transform: scale3d(1);
   }
 }
@@ -608,51 +610,50 @@ form.degreesearch input[type="text"] {
   color: #222222;
   margin: 5rem;
 }
-  table.academiccalendar {
-    font-family: "Lato";
-    font-size: 1.25rem;
-    border-collapse: collapse;
-    width: 700px;
-  }
-  .publicholidays-table {
-    margin: 0;
-    padding: 0;
-  }
-  .publicholidays-table td {
-    padding-left: 0;
-    margin-left: 0;
-    padding-left: 0.3rem;
-  }
+table.academiccalendar {
+  font-family: "Lato";
+  font-size: 1.25rem;
+  border-collapse: collapse;
+  width: 700px;
+}
+.publicholidays-table {
+  margin: 0;
+  padding: 0;
+}
+.publicholidays-table td {
+  padding-left: 0;
+  margin-left: 0;
+  padding-left: 0.3rem;
+}
 
-  .academiccalendar td
-   {
-    padding: 10px;
-    text-align: left;
-    margin: 0;
-  }
-  .academiccalendar th{
-     padding: 10px;
-    text-align: left;
-    margin: 0;
-  }
+.academiccalendar td {
+  padding: 10px;
+  text-align: left;
+  margin: 0;
+}
+.academiccalendar th {
+  padding: 10px;
+  text-align: left;
+  margin: 0;
+}
 
-  .academiccalendar tbody tr:nth-child(2n) {
-    background-color: #eee;
-  }
+.academiccalendar tbody tr:nth-child(2n) {
+  background-color: #eee;
+}
 
-  .academiccalendar th {
-    position: sticky;
-    top: 0;
-    background-color: $orange;
-    color: white;
+.academiccalendar th {
+  position: sticky;
+  top: 0;
+  background-color: $orange;
+  color: white;
 
-    font-family: "Bodoni";
-    text-transform: capitalize;
+  font-family: "Bodoni";
+  text-transform: capitalize;
 
-    backface-visibility: hidden;
-    /* determines if the back part is visible to the */
-    /* margin-bottom: 6rem; */
-    /* display: block; */
-    font-size: 1.5rem;
-    font-weight: 900;
-  }
+  backface-visibility: hidden;
+  /* determines if the back part is visible to the */
+  /* margin-bottom: 6rem; */
+  /* display: block; */
+  font-size: 1.5rem;
+  font-weight: 900;
+}

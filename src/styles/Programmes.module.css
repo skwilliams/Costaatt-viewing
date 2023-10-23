@@ -21,20 +21,21 @@
 }
 
 .sectionmainheader {
-  background-color: blue;
+  background-color: white;
 }
-.sectionmainheader .pageheader {
+
+.pageheader {
   margin-bottom: 0;
   overflow: hidden;
   max-width: 100vw;
 }
-.sectionmainheader .pageheaderimg {
-  height: 75vw;
+
+.pageheaderimg {
+  height: 60vw;
   width: 100vw;
   background-position: center;
   background-size: cover;
   margin: 0;
-  position: relative;
 }
 
 .sectionoverview {
@@ -61,19 +62,20 @@
 
 .headingprimarysub {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #222222;
   margin-top: 0.5rem;
   margin-bottom: 0;
   text-align: left;
+  padding: 2em;
 }
 
 .headingprimarysubleft {
   display: block;
   font-size: 1.3rem;
   font-weight: 700;
-  color: rgb(255, 109, 10);
+  color: rgb(104, 91, 199);
   margin: 0;
   padding: 0;
   text-align: left;
@@ -107,12 +109,12 @@
   position: absolute;
   top: 80%;
   left: 10%;
-  color: rgb(239, 65, 41);
+  color: white;
   font-size: 2.5rem;
   font-weight: 700;
   letter-spacing: 0.4rem;
   font-family: "Roboto", serif;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 /*Utility classes */
@@ -154,7 +156,7 @@
 
 .navtoplink :hover {
   text-decoration: underline;
-  text-decoration-color: rgb(255, 109, 10);
+  text-decoration-color: rgb(104, 91, 199);
   text-decoration-thickness: 4px;
   text-underline-position: under;
 }
@@ -175,16 +177,18 @@
 
 .whychooseimg {
   margin-bottom: 1.5rem;
+  width: 200px;
+  height: 200px;
 }
 
 .whychoosetext {
   font-size: 1.5rem;
-  color: rgb(255, 109, 10);
+  color: rgb(104, 91, 199);
 }
 
 /*Academics by the numbers */
 .sectionbythenumbers {
-  background-color: black;
+  background-color: rgb(41, 40, 42);
   color: aliceblue;
   padding: 5rem 10rem 10rem 10rem;
   font-family: "Lato", "sans serif";
@@ -214,13 +218,13 @@
 }
 
 .explore {
-  color: rgb(255, 109, 10);
+  color: #cc6330;
   font-size: 1.2rem;
   float: right;
 }
 
 .highlight {
-  color: rgb(255, 109, 10);
+  color: rgb(104, 91, 199);
   font-size: 1.45rem;
 }
 
@@ -247,7 +251,7 @@
 
 /*Areas of Study */
 .sectionareasofstudy {
-  background-color: black;
+  background-color: rgb(41, 40, 42);
   color: whitesmoke;
   /* margin-top:-10 rem; */
   padding: 2rem;
@@ -266,13 +270,13 @@
 
 .areasofstudyli {
   text-decoration: none;
-  color: rgb(255, 109, 10);
+  color: rgb(104, 91, 199);
   padding-bottom: 0.5rem;
 }
 
 .areasofstudyli:hover {
   text-decoration: underline;
-  color: rgb(58, 168, 199);
+  color: #cc6330;
   padding-bottom: 0.5rem;
 }
 
@@ -362,7 +366,7 @@ form.degreesearch button {
   width: 10%;
   height: 4rem;
   padding: 0.5rem 1rem;
-  background: rgb(255, 109, 10);
+  background: rgb(104, 91, 199);
   color: white;
   font-size: 1.5rem;
   border: 1px solid grey;
@@ -462,6 +466,21 @@ form.degreesearch input[type=text] {
   font-size: 1.5rem;
 }
 
+.twoColGridCon {
+  display: grid;
+  gap: 8rem;
+  grid-gap: 2rem;
+  grid-template-columns: auto auto;
+  margin: 0 auto;
+}
+
+.twoColGrid {
+  text-align: left;
+  padding: 1.5rem 0 0 0;
+  font-size: 30px;
+  margin: 1.5rem 0 0 0;
+}
+
 .applyheading {
   font-weight: 900;
   padding: 2rem;
@@ -499,24 +518,27 @@ form.degreesearch input[type=text] {
 
 /*section depart in SCHOOL PAGE */
 .sectiondepart {
-  margin: 2rem 0;
+  margin: 3rem 5rem;
 }
 
 /* section department courses IN SCHOOL PAGE */
 .sectiondeptcourses {
   margin: 2rem 0;
-  background-color: black;
+  background-color: rgb(41, 40, 42);
   min-height: 25rem;
   padding-top: 2rem;
   color: white;
 }
 .sectiondeptcourses .headingprimary {
-  margin-top: 2rem;
+  margin-top: 2rem 1rem;
+  text-align: center;
+  color: rgb(104, 91, 199);
 }
 
 .courseaccordion {
   text-align: center;
-  background-color: rgb(187, 41, 187);
+  background-image: linear-gradient(to right, #cc6330, #cc6330);
+  background-image: -o-linear-gradient(right, rgb(62, 19, 83), rgb(239, 65, 41));
 }
 
 .courseaccordion:first-child {
@@ -534,7 +556,7 @@ form.degreesearch input[type=text] {
   color: white;
   margin-top: 0.5rem;
   margin-bottom: 0;
-  text-align: center;
+  text-align: left;
 }
 
 .arrow {
@@ -556,12 +578,13 @@ form.degreesearch input[type=text] {
 }
 
 .degcoursesli {
-  padding: 0.3rem 1rem;
+  padding: 0.5rem 1rem;
   color: white;
+  text-align: center;
 }
 .degcoursesli :hover {
   text-decoration: underline;
-  color: rgb(245, 130, 32);
+  color: rgb(104, 91, 199);
   transform: scale3d(1);
 }
 
@@ -571,15 +594,71 @@ form.degreesearch input[type=text] {
 }
 
 .sectionschoolnews {
-  margin: 5rem;
+  margin: 2rem 5rem;
 }
 .sectionschoolnews .goto {
   text-align: center;
-  color: rgb(245, 130, 32);
+  color: #cc6330;
   padding: 2rem;
   font-weight: 800;
   font-size: 1.25rem;
 }
 .sectionschoolnews .goto .newsCardimg {
   margin: 2rem;
+}
+
+/* Academic Calendar Page*/
+.sectionacademiccalendar {
+  background-color: white;
+  color: #222222;
+  margin: 5rem;
+}
+
+table.academiccalendar {
+  font-family: "Lato";
+  font-size: 1.25rem;
+  border-collapse: collapse;
+  width: 700px;
+}
+
+.publicholidays-table {
+  margin: 0;
+  padding: 0;
+}
+
+.publicholidays-table td {
+  padding-left: 0;
+  margin-left: 0;
+  padding-left: 0.3rem;
+}
+
+.academiccalendar td {
+  padding: 10px;
+  text-align: left;
+  margin: 0;
+}
+
+.academiccalendar th {
+  padding: 10px;
+  text-align: left;
+  margin: 0;
+}
+
+.academiccalendar tbody tr:nth-child(2n) {
+  background-color: #eee;
+}
+
+.academiccalendar th {
+  position: sticky;
+  top: 0;
+  background-color: #cc6330;
+  color: white;
+  font-family: "Bodoni";
+  text-transform: capitalize;
+  backface-visibility: hidden;
+  /* determines if the back part is visible to the */
+  /* margin-bottom: 6rem; */
+  /* display: block; */
+  font-size: 1.5rem;
+  font-weight: 900;
 }/*# sourceMappingURL=Programmes.module.css.map */

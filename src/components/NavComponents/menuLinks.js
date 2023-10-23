@@ -1,6 +1,6 @@
 export const topNavLinksLeft = [
   {
-    title: "Schools",
+    title: "School Departments",
     submenu: [
       {
         title: "The School Of Liberal Arts, Education And Digital Humanities",
@@ -123,7 +123,7 @@ export const topNavLinksLeft = [
         ],
       },
     ],
-  },
+ },
 
   {
     title: "Current Students",
@@ -142,9 +142,32 @@ export const topNavLinksLeft = [
     path: "alumni",
   },
   {
-    title: "Facilities",
-    path: "facilities",
-  },
+    title: "Services",
+
+      submenu: [
+      {
+        title: "Customized Training",
+        path: "/programmes/schools/workF",
+      },
+      
+      {
+        title: "Rent a Meeting Room ",
+        path: "/services/rentspace",
+      },
+      
+      {
+        title: "Rent a Lab",
+        path: "/services/rentlab",
+      },
+      
+      {
+        title: "Translation and Interpretation",
+        path: "/services/translation",
+      },
+    ]
+
+    
+  }
 ];
 
 export const topNavLinksRight = [
@@ -170,15 +193,15 @@ export const footerLinks = [
   },
   {
     title: "COSTAATT Life",
-    path: "/",
+    path: "/costaattlife",
   },
   {
     title: "About",
-    path: "/",
+    path: "/about",
   },
   {
     title: "Directory",
-    path: "/",
+    path: "/directory",
   },
   {
     title: "Current Students",
@@ -256,14 +279,18 @@ export const mainNavLinks = [
       },
       {
         img: require("../../../images/Links/dummyImg2.jpg"),
-        title: "Academic Advising",
-        path: "/programmes/advising",
+        title: "Admission Counsellor",
+        path: "/programmes/admissioncounsellors",
       },
     ],
   },
   {
     title: "Admissions and Aid ",
     submenu: [
+      {
+        title: "Office of the Registrar",
+        path: "/admissions/",
+      },
       {
         title: "Apply Now",
         path: "/admissions/howtoapply",
@@ -279,10 +306,6 @@ export const mainNavLinks = [
       {
         title: "Our Programmes",
         path: "/programmes/allprogrammes",
-      },
-      {
-        title: "Professional Development Application",
-        path: "/admissions/developmentcoursesApp",
       },
       {
         title: "Transfer Credit and Exemptions ",
@@ -324,11 +347,7 @@ export const mainNavLinks = [
       },
       {
         title: "I.T. Facilities",
-        path: "/costaattlife/itservices",
-      },
-      {
-        title: "Compass Center",
-        path: "/costaattlife/compasscenter",
+        path: "/costaattlife/itfacilities",
       },
       {
         title: "Events",
@@ -350,44 +369,40 @@ export const mainNavLinks = [
   },
   {
     title: "About",
-    path: "/",
+    // path: "/",
     submenu: [
       {
-        title: "Overview of Costaatt",
-        path: "/",
+        title: "Profile at a Glance",
+        path: "/about",
       },
       {
         title: "History",
-        path: "/",
+        path: "/about/history",
       },
       {
         title: "Institutional Profile",
-        path: "/",
+        path: "/about/profile",
       },
       {
         title: "Accreditation",
-        path: "/",
+        path: "/about/accreditation",
       },
       {
         title: "College Leadership",
-        path: "/",
-      },
-      {
-        title: "Careers",
-        path: "/",
+        path: "/about/leadership",
       },
     ],
     submenuImage: [
       {
         img: require("../../../images/Links/dummyImg1.jpg"),
-        title: "Academic Calendar",
-        path: "/programmes",
+        title: "Careers",
+        path: "/about/careers",
       },
-      {
-        img: require("../../../images/Links/dummyImg2.jpg"),
-        title: "Areas of Study",
-        path: "/programmes",
-      },
+      // {
+      //   img: require("../../../images/Links/dummyImg2.jpg"),
+      //   title: "Areas of Study",
+      //   path: "/programmes",
+      // },
     ],
   },
 

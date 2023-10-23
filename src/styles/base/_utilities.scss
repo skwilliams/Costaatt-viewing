@@ -1,4 +1,15 @@
 .centertext { text-align: center !important; }
+.leftalign { text-align: left !important;}
+
+.boldtext{
+  font-weight: bold;
+}
+
+.whitefont{color:white;}
+.centerbutton { margin: auto;}
+
+.paddingTopBig { padding-top: 5rem !important; }
+.paddingBottomBig { padding-bottom: 5rem !important; }
 
 .marginBottomSmall { margin-bottom: 1.5rem !important; }
 .marginBottomMedium {
@@ -17,6 +28,7 @@
     }
 }
 
+.marginTopSmall { margin-top: 5rem !important; }
 .marginTopBig { margin-top: 8rem !important; }
 .marginTopHuge { margin-top: 10rem !important; }
 

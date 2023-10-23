@@ -4,6 +4,20 @@
 
 /*Department Styles Has Side nav */
 
+
+.newsHeading {
+    font-family: 'Libre Baskerville', sans-serif;
+  text-align: left;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 4rem;
+  color:$grey;
+  // grid-column: 1 / span 2;
+  span {
+    color:$color-primary;
+  }
+}
+
 .primaryheading {
   font-family: "Bodoni";
   font-size: 2rem;
@@ -22,8 +36,13 @@
   box-sizing: inherit;
 }
 
+.degreecategory {
+  font-size: 2rem;
+  padding-left: 1rem;
+  color:$color-primary;
+}
 .sectionOverview {
-  color: $grey;
+  // color: $grey;
   // box-sizing: inherit;
   padding: 5rem 5rem 8rem 0;
   margin: 0 10rem;
@@ -33,11 +52,12 @@
   text-align: center;
 
   .maintext {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     color: $grey;
-    line-height: 1.75;
+    font-weight: 500;
+    line-height: 1.7;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
   .subtext {
     text-align: center;
@@ -48,15 +68,51 @@
     margin-bottom: 2rem;
   }
 
+
+  .corevalues{
+
+    text-align: left;
+    background-color: $color-grey-light-1;
+    color:$grey;
+    margin-bottom: 2rem;
+
+
+ul {
+  color: $grey;
+  padding: 1rem 0 2rem 0;
+
+  font-size: 1.25rem;
+  font-weight: bold;
+  list-style: none;
+  text-align: left;
+}
+
+li {
+  padding: .5rem 1rem;
+  color: $grey;
+  text-align:left;
+  span{
+    color:$color-primary;
+  }
+
+  :hover {
+    text-decoration: underline;
+   color:$color-primary; 
+    transform: scale3d(1);
+  }
+}
+}
+
   .accordion {
     text-align: center;
-    background-image: linear-gradient(to right, $purple-secondary, $orange);
-    // //   /* For older browsers */
+    background-image: linear-gradient(to right, $color-primary, $orange);
+    //   /* For older browsers */
     background-image: -webkit-linear-gradient(
       right,
       $purple-secondary,
       $orange
     );
+    color:$grey;
     background-image: -moz-linear-gradient(right, $purple-secondary, $orange);
     background-image: -o-linear-gradient(right, $purple-secondary, $orange);
     margin-bottom: 2rem;
@@ -82,7 +138,10 @@
 }
 .sectionContact {
   background-color: $lightgrey1;
-  margin: 0 10rem;
+  margin: 0 ;
+  .contactcard{
+    margin: 5rem;
+  }
 }
 
 .sectionWhatsup {
@@ -131,10 +190,14 @@
   }
 }
 
-.sectionProgrammes {
-  margin: 0 10rem;
-  padding: 5rem 5rem 8rem 0;
 
+
+
+.sectionProgrammes {
+  margin: 0 ;
+  padding: 5rem 5rem 8rem 0;
+  background-color: $grey;
+  
   .courseaccordion {
     text-align: center;
     font-size: 1.5rem;

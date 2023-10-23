@@ -1,4 +1,4 @@
-@import './abstracts/variables';
+@import "./abstracts/variables";
 
 .mainPageContainer {
   padding: 0 80px;
@@ -6,7 +6,7 @@
 
 .mainTitle {
   font-size: 6rem;
-  color: $brown;
+  color: $color-primary;
 }
 .newsTop {
   display: flex;
@@ -14,7 +14,7 @@
 .newsSlider {
   width: auto;
   height: 100%;
-  border-right: 8px solid $brown;
+  border-right: 8px solid $color-primary;
 }
 
 .featuredNews {
@@ -22,14 +22,14 @@
 }
 .featuredNews h1 {
   padding: 0 20px;
-  color: $orange2;
+  color: $red-dark;
 }
 .featuredNewsLinks {
   border-bottom: 1px solid black;
   padding: 3px 20px;
   transition: 400ms;
   &:hover {
-    background-color: $brown;
+    background-color: $color-primary;
     color: white;
   }
 }

@@ -22,7 +22,7 @@
 
 .searchModalHeading h1 {
   font-size: 5rem;
-  color: $brown;
+  color: $color-primary;
 }
 .closeButton {
   display: flex;
@@ -42,7 +42,7 @@
   margin-bottom: 50px;
 }
 .searchModalInput ::placeholder {
-  color: $brown;
+  color: $color-primary;
 }
 .searchModalInput input {
   font-size: 2rem;

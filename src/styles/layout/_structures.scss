@@ -25,6 +25,34 @@
   }
 }
 
+.bullet{
+  font-size: 1.25rem;
+//   font-family: Arial, Helvetica, sans-serif;
+
+  ul {
+    margin-left: 2rem;
+    font-size:$default-font-size;
+
+    li {
+      list-style-type: square;
+      margin: .6rem 0;
+      line-height: 1.7 ;
+    }
+
+
+ li::marker {
+
+      color: $orange;
+    }
+
+    li:last-child {
+      margin-bottom: 2rem;
+    }
+
+  }
+}
+
+
 div .bullets2 {
   font-size:$default-font-size;
   line-height: 1.3;

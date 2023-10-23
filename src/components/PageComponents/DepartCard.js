@@ -16,9 +16,9 @@ const DepartCard = ({ image, departname, intro, linkpage, shortname }) => {
         />
 
         <p className={DepartStyles.departname}> {departname}</p>
-        <p className={DepartStyles.text}>{intro} </p>
+        <p className={DepartStyles.text}>{intro}  </p> 
         <Link className={DepartStyles.linkpage} href={linkpage}>
-          Visit {shortname}...{" "}
+          More About  {shortname}...{" "}
         </Link>
       </div>
     </>

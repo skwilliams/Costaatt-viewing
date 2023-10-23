@@ -1,38 +1,18 @@
 @import "./abstracts/variables";
 
-// // .header {
-// //   // position: sticky;
-// //   position: relative;
-// //   z-index: 40;
-// //   top: 0;
-// // }
-
-// .headerStyles {
-//   background-color: $purple-secondary;
-//   display: flex;
-//   width: 100%;
-//   gap: 20px;
-//   justify-content: space-between;
-//   padding: 15px 15px;
-//   // animation: navLoad 300ms ease-in;
-//   animation: navScale 300ms ease-in;
-//   transform: scale(0);
-//   animation-fill-mode: forwards;
-// }
 .subheaderContainer {
   position: fixed;
   z-index: 40;
   top: 0;
   //  background-color: $whiteback;
-  background-color: $color-grey-dark-2;
-
+  background-color: rgb(41, 40, 42, 0.9);
   // background-image: linear-gradient(to right, $color-comp1, $color-comp2);
   height: auto;
   display: flex;
   width: 100%;
   justify-content: space-between;
   padding: 0 3rem 0 3rem;
-  color: black;
+  color: white;
 }
 .sideNavContainer {
   position: sticky;
@@ -73,13 +53,14 @@
   text-transform: capitalize;
   // animation: navLoad 300ms ease-in;
   animation: navScale 300ms ease-in;
-  transform: scale(0);
+  transform: scale(2);
   animation-fill-mode: forwards;
 }
 .activeSubsection {
-  // margin-bottom:.4rem;
+  margin-bottom: 0.2rem;
   border-bottom: white 5px solid;
   font-weight: 900;
+  color: white;
 
   // text-decoration: underline solid white 4px;
 }
@@ -125,9 +106,9 @@
 // }
 .topNav {
   display: flex;
-  padding: 0.5em 2em;
+  padding: 5px 30px;
   justify-content: space-between;
-  
+
   background-image: linear-gradient(
     to bottom right,
     $color-primary,
@@ -143,7 +124,7 @@
   justify-content: space-between;
   padding: 10px 20px;
   align-items: left;
-  background-color: $grey;
+  background-color: white;
   // background-color: #D5CABD;
   margin: 0;
 }
@@ -153,14 +134,16 @@
 //costaatt logo on main page
 .logo {
   padding: 0;
-  width:20px;
+  // width: 15px;
   margin: 0;
-  float: left;
+  // float: left;
   padding-left: 0;
+  //  padding-top: 7px;
 }
 .costaattwords {
-  font-family: "Lato", Helvetica, sans-serif;
+  font-family: "Arial", Helvetica, sans-serif;
   font-weight: 900;
+  line-height: 2;
   font-size: 1.25rem;
   color: black;
 }
@@ -170,10 +153,13 @@
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  padding: 0 40px;
+  //height: 60px;
+  padding: 0px 65px;
+  // padding-top:30px;
   // background-color: $color-grey-dark-3;
-  background-color:$red;
-  color: $whiteback;
+  background-color: black;
+  background-color: $grey;
+  color: white;
 }
 .bottomNav li {
   font-size: 1.2rem;
@@ -188,7 +174,7 @@
 .navBarLinks {
   width: 100%;
   padding: 9px 5px;
-  text-decoration-color: $grey-light;
+  text-decoration-color: $grey;
 
   cursor: pointer;
 }
@@ -218,7 +204,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  background-color: $whiteback;
+  background-color: $lightgrey1;
   box-shadow: inset 0px 14px 15px rgba(0, 0, 0, 0.3);
   padding: 30px 120px;
   .dropDownLi {

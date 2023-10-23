@@ -12,20 +12,24 @@ import draft from "../../../images/Links/SuccessDraft.jpg";
 export const SliderLinks = [
   {
     title: "Nursing",
-    image: require("../../../images/Links/courses nursing.jpg"),
+    image: require("../../../images/Links/Future me schools screens/Future me screens-03.jpg"),
     path: "https://www.costaatt.edu.tt/academics/school-of-nursing-health-and-environmental-sciences/",
   },
   {
     title: "Business",
-    image: require("../../../images/Links/news gate.jpg"),
+    image: require("../../../images/Links/Future me schools screens/Future me screens-04.jpg"),
   },
   {
     title: "Technology",
-    image: require("../../../images/Links/news bursary.jpg"),
+    image: require("../../../images/Links/Future me schools screens/Future me screens-05.jpg"),
   },
   {
     title: "Latest on GATE",
-    image: require("../../../images/Links/news awards.jpg"),
+    image: require("../../../images/Links/Future me schools screens/Future me screens-06.jpg"),
+  },
+  {
+    title: "Latest on GATE",
+    image: require("../../../images/Links/Future me schools screens/Future me screens-06.jpg"),
   },
 ];
 
@@ -149,43 +153,43 @@ export const EVENTS = [
     title: "Sustainable Innovation 2023",
     image: events1,
     desc: "24th International Conference , Accelerating Sustainability in the Creative Economy and Creativve Industries",
-    date: "20 March 2023 - 26 Mar 2023",
+    date: "20 Nov - 26 Nov 2023",
     time: "12:00AM - 11:59PM",
     location: "Arima",
     topic: "Conferences and Talks. Research Events",
     path: "https://www.costaatt.edu.tt/covid-19-update/",
   },
   {
-    title: "Quantum Light - Beyond a Crisis of Perception",
+    title: "The Impact of AI on Education ",
     image: events2,
     desc: "The playful, illusory artworks and installations in Quantum Light - Beyond a Crisis of Perception are the material, investigations and outcomes of Petra Jacobs PhD research into the quantum nature of light.",
-    date: "14 Nov 2022 - 19 Dec 2022",
-    time: "12:00AM - 11:59PM",
-    location: "Chaguanas Campus",
+    date: "23 Dec 2023 ",
+    time: "2:00PM - 3:00PM",
+    location: "Kapok Conference Room",
     topic: "Exibitions and Shows, Gallery Events",
     path: "https://www.costaatt.edu.tt/new-online-appointment-system/",
   },
 
   {
-    title: "Sustainable Innovation 2023",
+    title: "Graduation Ceremony",
     image: home1,
     desc: "24th International Conference , Accelerating Sustainability in the Creative Economy and Creativve Industries",
-    date: "20 March 2023 - 26 Mar 2023",
-    time: "12:00AM - 11:59PM",
+    date: "25th November 2023 ",
+    time: "4:30 pm",
     location: "Arima",
     topic: "Conferences and Talks. Research Events",
     path: "https://www.costaatt.edu.tt/covid-19-update/",
   },
-  {
-    title: "Quantum Light - Beyond a Crisis of Perception",
-    image: home2,
-    desc: "The playful, illusory artworks and installations in Quantum Light - Beyond a Crisis of Perception are the material, investigations and outcomes of Petra Jacobs PhD research into the quantum nature of light.",
-    date: "14 Nov 2022 - 19 Dec 2022",
-    time: "12:00AM - 11:59PM",
-    location: "Chaguanas Campus",
-    topic: "Exibitions and Shows, Gallery Events",
-    path: "https://costaattappointments.setmore.com/",
-  },
+  // {
+  //   title: "Quantum Light - Beyond a Crisis of Perception",
+  //   image: home2,
+  //   desc: "The playful, illusory artworks and installations in Quantum Light - Beyond a Crisis of Perception are the material, investigations and outcomes of Petra Jacobs PhD research into the quantum nature of light.",
+  //   date: "14 Nov 2022 - 19 Dec 2022",
+  //   time: "12:00AM - 11:59PM",
+  //   location: "Chaguanas Campus",
+  //   topic: "Exibitions and Shows, Gallery Events",
+  //   path: "https://costaattappointments.setmore.com/",
+  // },
 ];
 
 export const NEWS = [
@@ -202,7 +206,7 @@ export const NEWS = [
     title: "COSTAATT President Visits U.S. Tertiary Institutions",
     image: require("../../../images/Links/presi_visits.jpg"),
     desc: "Dr Keith Nurse, President of the College of Science, Technology and Applied Arts of Trinidad and Tobago (COSTAATT), recently visited the United States between late February and early March 2023.",
-    date: "14/04/2023",
+    date: "14 April 2023",
   },
 
   {
@@ -275,56 +279,63 @@ export const FEATURED_NEWS = [
 
 export const schoolOptions = [
   {
-    name: "A Potential Student",
+    name: "A Prospective Student",
     interestedChoice: [
       {
-        name: "Finding a course",
-        route: "/admissions/howtoapply",
+        name: "Finding a Programme",
+        route: "/programmes/allprogrammes",
       }, // Add a route property for each option
-      { name: "Attending Open Day", route: "/admissions/visitus" },
-      { name: "Checking fees", route: "/admissions/fees1" },
-      {
-        name: "Learning about accommodation",
-        route: "/admissions/visitus",
-      },
+      { name: "How to Apply", route: "/admissions/howtoapply" },
+      { name: "Checking fees", route: "/admissions/feesandfunding" },
+      { name: "Student Clubs", route: "/admissions/costaattlife/studentorg" },
     ],
   },
 
   {
-    name: "Applying to Costaatt",
+    name: "Current Student ",
     interestedChoice: [
-      { name: "Accessing the Applicant Portal", route: "/admissions/fees1" },
-      { name: "Getting portfolio advice", route: "/admissions/fees1" },
-      { name: "Personal statment tips", route: "/admissions/requirements" },
-      { name: "Accommodation services", route: "/admissions/fees1" },
+      { name: "Studnet Life", route: "/costaattlife/studentorg" },
+      { name: "Portal", route: "/currentstudents/portal" },
+      { name: "Library", route: "/costaattlife/library" },
+      { name: "Counselling Services", route: "/costaattlife/healthwell" },
+      { name: "Registry", route: "/costaattlife/" },
+      { name: "Academic Calendar", route: "/programmes/academiccalendar" },
     ],
   },
 
   {
-    name: "A parent",
+    name: "Parents and Families",
     interestedChoice: [
-      { name: "Checking fees", route: "/admissions/fees1" },
-      { name: "Costaatt Campus", route: "/admissions/fees1" },
-      { name: "Accomodation Services", route: "/admissions/fees1" },
-      { name: "Term dates", route: "/admissions/fees1" },
+      { name: "Schools and Departments", route: "programmes/" },
+      { name: "Registry", route: "/admissions/" },
+      { name: "Student Life", route: "/costaattlife/studentorg" },
     ],
   },
   {
-    name: "A current student",
+    name: "Faculty and Staff",
     interestedChoice: [
-      { name: "Going to Library Services", route: "/admissions/fees1" },
-      { name: "Accessing my email", route: "/admissions/fees1" },
-      { name: "Accessing student services", route: "/admissions/fees1" },
-      { name: "Campus registry", route: "/admissions/fees1" },
+      { name: "Portal", route: "/admissions/" },
+      { name: "News", route: "/news" },
+      { name: "Events", route: "/events" },
+      { name: "Staff Directory", route: "/directory" },
     ],
   },
 
   {
-    name: "A teacher",
+    name: "Alumni",
     interestedChoice: [
-      { name: "Schools and Outreach", route: "/admissions/fees1" },
-      { name: "Browsing events", route: "/admissions/fees1" },
-      { name: "Planning a group visit", route: "/admissions/fees1" },
+      { name: "Upgrading Skills", route: "/" },
+      { name: "Events", route: "/events" },
+      { name: "Alumni Page", route: "/alumni" },
+    ],
+  },
+  {
+    name: "Prospective Client",
+    interestedChoice: [
+      { name: "Customized Training", route: "/programmes/workF" },
+      { name: "Rent a meeting room", route: "/services/rentspace" },
+      { name: "Rent a lab", route: "/services/rentlab" },
+      { name: "Translation Services", route: "/services/translation" },
     ],
   },
 ];

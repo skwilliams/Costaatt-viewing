@@ -1,11 +1,16 @@
 import logo from "../../../images/Links/costaattlogographic.png";
 import HomeStyles from "../../styles/Home.module.scss";
+import AdminStyles from "../../styles/Admissions.module.scss"
 import standardStyles from "@/styles/main.module.scss"
 import HomeSlider from "../Slider";
 import EventTile from "./EventTile";
 import SchoolTile from "./SchoolTile";
+import { FiBookOpen } from "react-icons/fi";
+import { IconContext } from "react-icons";
 import NewsTile from "./NewsTile";
+import Image from 'next/image'
 import Link from "next/link";
+import senior from "../../../images/Links/senior_lec.jpg"
 import { FaAngleDown } from "react-icons/fa";
 import {
   SliderLinks,
@@ -74,190 +79,250 @@ const Home = () => {
   return (
     <>
       {/* <section className={HomeStyles.homeContainer}> */}
-        <section className={HomeStyles.sectionOne}>
-     
-      <div className={HomeStyles.sectionOneLeft}>
-            <div className={HomeStyles.sectionLeftTop}>
-               <h2>
-                The College of Science Technology and Applied Arts of Trinidad
-                and Tobago
-              </h2> 
-            </div>
-            
-            
-            <div className={HomeStyles.sectionLeftBottom}>
-              <div className={HomeStyles.selectContainer}>
-                <h3>I am</h3>
-                <div className={HomeStyles.innerSelectContainer}>
-                  <select
-                    onChange={changeOption}
-                    className={HomeStyles.selectDropDown}
-                  >
-                    {schoolOptions.map((opt, index) => (
-                      <option key={index} value={opt.name}>
-                        {opt.name}
-                      </option>
-                    ))}
-                  </select>
-                  <FaAngleDown className={HomeStyles.Arrow} />
-                </div>
-
-                <h3>Interested in</h3>
-                <div className={HomeStyles.innerSelectContainer}>
-                  <select
-                    ref={secondSelectRef}
-                    className={HomeStyles.selectDropDown}
-                  >
-                    {interested.map((opt, index) => (
-                      <option key={index} value={opt.name}>
-                        {opt.name}
-                      </option>
-                    ))}
-                  </select>
-                  <FaAngleDown className={HomeStyles.Arrow} />
-                </div>
-
-                <button
-                  className={HomeStyles.selectButton}
-                  onClick={handleButtonClick}
+      <section id="search" className={HomeStyles.sectionOne}>
+        <div className={HomeStyles.sectionOneLeft}>
+          <div className={HomeStyles.sectionLeftTop}>
+            <h2>The Premier Undergraduate College</h2>
+          </div>
+          <div className={HomeStyles.sectionLeftBottom}>
+            <div className={HomeStyles.selectContainer}>
+              <h3>I am</h3>
+              <div className={HomeStyles.innerSelectContainer}>
+                <select
+                  onChange={changeOption}
+                  className={HomeStyles.selectDropDown}
                 >
-                  {" "}
-                  Submit
-                </button>
-
-                {/* <Button
-                  click={handleButtonClick}
-                  backgroundColor="rgb(67, 63, 64, 0.9)"
-                  textcolor="white"
-                  text="Submit"
-                /> */}
+                  {schoolOptions.map((opt, index) => (
+                    <option key={index} value={opt.name}>
+                      {opt.name}
+                    </option>
+                  ))}
+                </select>
+                <FaAngleDown className={HomeStyles.Arrow} />
               </div>
-            </div>{" "}
-            {/*end of left bottom */}
+
+              <h3>Interested in</h3>
+              <div className={HomeStyles.innerSelectContainer}>
+                <select
+                  ref={secondSelectRef}
+                  className={HomeStyles.selectDropDown}
+                >
+                  {interested.map((opt, index) => (
+                    <option key={index} value={opt.name}>
+                      {opt.name}
+                    </option>
+                  ))}
+                </select>
+                <FaAngleDown className={HomeStyles.Arrow} />
+              </div>
+
+              <button
+                className={`${standardStyles.btn} ${standardStyles.btn__selecthome}`}
+                onClick={handleButtonClick}
+              >
+                {" "}
+                Submit
+              </button>
+            </div>
           </div>{" "}
-          {/*end of left container */}
-          <div className={HomeStyles.sectionOneRight}>
-            <HomeSlider slides={SliderLinks} />
-          </div>
-        </section>
+          {/*end of left bottom */}
+        </div>{" "}
+        {/*end of left container */}
+        <div className={HomeStyles.sectionOneRight}>
+          <HomeSlider slides={SliderLinks} />
+        </div>
+      </section>
 
-        <section id="schools" className={HomeStyles.sectionTwo}>
-          <h1>
-            <span>Why</span> COSTAATT ?
-          </h1>
-          <div className={HomeStyles.sectionTwoGrid}>
-            <p className={HomeStyles.ourSchoolsText}>
-              Choosing COSTAATT is an excellent decision for your educational
-              journey. With a rich history of academic excellence and a
-              commitment to nurturing diverse talents, COSTAATT provides a
-              dynamic and inclusive learning environment that empowers students
-              to reach their full potential. Our institution offers a wide range
-              of programs and pathways tailored to meet the ever-evolving
-              demands of the job market, ensuring that graduates are
-              well-prepared for successful careers.
-            </p>{" "}
-            {/* replace with flagship programmes */}
-            {TILES_INFO.map((tile, index) => {
-              return (
-                <div key={index} className={HomeStyles.schoolTile}>
-                  <Link href={`${tile.path}`}>
-                    <SchoolTile
-                      title={tile.title}
-                      img={tile.img}
-                      className={HomeStyles.schoolTileTitle}
-                    />
-                  </Link>
-                </div>
-              );
-            })}
-          </div>
-        </section>
+      <section id="unique" className={HomeStyles.sectionUniquelyUs}>
+        <h1 className={HomeStyles.newsHeading}>
+          <span>Uniquely</span> COSTAATT
+        </h1>
 
-        <section id="events" className={HomeStyles.sectionThree}>
-          <h1 className={HomeStyles.eventHeading}>
-            <span>Events </span> at COSTAATT
-          </h1>
-          <div className={HomeStyles.sectionThreeTiles}>
-            {EVENTS.map((tile, index) => {
-              return (
-                <div key={index}>
-                  <Link href={`${tile.path}`}>
-                    <EventTile
-                      title={tile.title}
-                      img={tile.image}
-                      date={tile.date}
-                      desc={tile.desc}
-                      time={tile.time}
-                      topic={tile.topic}
-                      location={tile.location}
-                    />{" "}
-                  </Link>
-                </div>
-              );
-            })}
+        <div className={AdminStyles.fourColGridCon}>
+          <div className={AdminStyles.fourColGrid}>
+            <div className={standardStyles.featurebox}>
+              <IconContext.Provider value={standardStyles.featurebox__icon}>
+                {" "}
+                <FiBookOpen value={standardStyles.featurebox__icon} />
+              </IconContext.Provider>
+              <h3 className={standardStyles.headingcards}>UpSkilling</h3>
+              <div className={standardStyles.featurebox__text}>
+                {/* <div className={standardStyles.card__details}> */}
+                <ul>
+                  <li>Vocational Training</li>
+                  <li>Incubation</li>
+                  <li>Acceleration</li>
+                  <li>Business Coaching</li>
+                  <li>Mentorship</li>
+                  <li>Startup Finance</li>
+                </ul>
+                {/* </div> */}
+              </div>
+            </div>
           </div>
-        </section>
+          <div className={AdminStyles.fourColGrid}>
+            <div className={standardStyles.featurebox}>
+              <IconContext.Provider value={standardStyles.featurebox__icon}>
+                {" "}
+                <FiBookOpen value={standardStyles.featurebox__icon} />
+              </IconContext.Provider>
+              <h3 className={standardStyles.headingcards}>Programmes</h3>
+              <div className={standardStyles.featurebox__text}>
+                <ul>
+                  <li>Top Class Lecturers</li>
+                  <li>Work Ready Graduates</li>
+                  <li>Accredited </li>
+                  <li>Skill Based Learning</li>
+                  <li>Small Class Sizes</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className={AdminStyles.fourColGrid}>
+            <div className={standardStyles.featurebox}>
+              <IconContext.Provider value={standardStyles.featurebox__icon}>
+                {" "}
+                <FiBookOpen value={standardStyles.featurebox__icon} />
+              </IconContext.Provider>
+              <h3 className={standardStyles.headingcards}>Tech Hub</h3>
+              <div className={standardStyles.featurebox__text}>
+                <ul>
+                  <li>Digital Training</li>
+                  <li>Digital Content</li>
+                  <li>Prototyping</li>
+                  <li>Product Commercialisation</li>
+                  <li>Business Coaching </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className={AdminStyles.fourColGrid}>
+            <div className={standardStyles.featurebox}>
+              <IconContext.Provider value={standardStyles.featurebox__icon}>
+                {" "}
+                <FiBookOpen value={standardStyles.featurebox__icon} />
+              </IconContext.Provider>
+              <h3 className={standardStyles.headingcards}>Unique Services</h3>
+              <div className={standardStyles.featurebox__text}>
+                {/* <ul>
+                  <li>Computer Lab Rentals</li>
+                  <li>Science Lab Rentals</li>
+                  <li>Translation and Interpretation</li>
+                  <li>Training Spaces</li>
+                  <li>Customized Training</li>
+                </ul> */}
+                <ul>
+                  <li>Computer Lab Rentals</li>
+                  <li>Science Lab Rentals</li>
+                  <li>Translation and Interpretation</li>
+                  <li>Training Spaces</li>
+                  <li>Customized Training</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="news" className={HomeStyles.sectionFour}>
+        {/* <h1 className={HomeStyles.newsHeading}>
+          The amazing things We Do <span>NEWS</span>
+        </h1> */}
+        <div className={HomeStyles.sectionFourTiles}>
+          <div className={HomeStyles.sectionNewsTitle}>
+            <h1 className={HomeStyles.newsHeading}>
+              The <span>Amazing </span> Things We Do <span>NEWS</span>
+            </h1>
+          </div>
 
-        <section id="news" className={HomeStyles.sectionFour}>
-          <h1 className={HomeStyles.newsHeading}>
-            The amazing things We Do <span>News</span>
-          </h1>
-          {/* <div className={HomeStyles.featuredNews}>
-            {FEATURED_NEWS.map((tile, index) => {
-              return (
-                <div>
-                  <Link href="news">
-                    <NewsTile
-                      title={tile.title}
-                      img={tile.image}
-                      date={tile.date}
-                    />{" "}
-                  </Link>
-                </div>
-              );
-            })}
-          </div> */}
-          <div className={HomeStyles.sectionFourTiles}>
-            {NEWS.map((tile, index) => {
-              return (
-                <div key={index} className={HomeStyles.newsTileHomepage}>
-                  <Link href="news">
-                    <NewsTile
-                      title={tile.title}
-                      img={tile.image}
-                      date={tile.date}
-                      desc={tile.desc}
-                      time={tile.time}
-                      topic={tile.topic}
-                      location={tile.location}
-                    />
-                  </Link>
-                </div>
-              );
-            })}
+          <div
+            className={`${HomeStyles.newsFeatureImage} ${HomeStyles.newsTileHomepage}`}
+          >
+            <Link href="news">
+              <NewsTile
+                title="COSTAATT Lecturer Wins Film Awards"
+                img={senior}
+                date="24th April 2023"
+              />
+            </Link>
           </div>
-          <Button
-            href="news"
-            backgroundColor="rgb(255, 109, 10)"
-            textcolor="white"
-            text={"More News..."}
+        </div>
+
+        <div className={HomeStyles.sectionFourTiles}>
+          {NEWS.map((tile, index) => {
+            return (
+              <div key={index} className={HomeStyles.newsTileHomepage}>
+                <Link href="news">
+                  <NewsTile
+                    title={tile.title}
+                    img={tile.image}
+                    date={tile.date}
+                    desc={tile.desc}
+                    time={tile.time}
+                    topic={tile.topic}
+                    location={tile.location}
+                  />
+                </Link>
+              </div>
+            );
+          })}
+        </div>
+        <div className={HomeStyles.sectionFourTiles}>
+          <div> </div> <div> </div>
+          <div>
+            {" "}
+            <button
+              className={`${standardStyles.btn} ${standardStyles.btn__selecthome} ${standardStyles.btn__selecthome__center}`}
+              onClick={handleButtonClick}
+            >
+              {" "}
+              More News
+            </button>{" "}
+          </div>{" "}
+        </div>
+      </section>
+
+      <section id="events" className={HomeStyles.sectionEvents}>
+        <h1 className={HomeStyles.newsHeading}>
+          <span>Events </span> at COSTAATT
+        </h1>
+
+        <div className={HomeStyles.sectionThreeTiles}>
+          {/* <div className={standardStyles.row}> */}
+          {EVENTS.map((tile, index) => {
+            return (
+              <div key={index}>
+                <Link href={`${tile.path}`}>
+                  <EventTile
+                    title={tile.title}
+                    img={tile.image}
+                    date={tile.date}
+                    desc={tile.desc}
+                    time={tile.time}
+                    topic={tile.topic}
+                    location={tile.location}
+                  />{" "}
+                </Link>
+              </div>
+            );
+          })}
+        </div>
+        {/* </div> */}
+      </section>
+
+      <section id="success-stories" className={HomeStyles.successSection}>
+        <div className={HomeStyles.successStories}>
+          <h2 className={HomeStyles.newsHeading}>We <span> Tranform  </span>LIVES</h2>
+        </div>
+        <div className={HomeStyles.successSlider}>
+          <SuccessSlider
+            slides={selectedSuccess ? [selectedSuccess] : SuccessMainLinks}
           />
-        </section>
-
-        <section id="success-stories" className={HomeStyles.successSection}>
-          <div className={HomeStyles.successStories}>
-            <h1>Success Stories</h1>
-          </div>
-          <div className={HomeStyles.successSlider}>
-            <SuccessSlider
-              slides={selectedSuccess ? [selectedSuccess] : SuccessMainLinks}
-            />
-            <CarouselSuccess
-              story={SuccessLinks}
-              onSelect={handleSuccessSelect}
-            />
-          </div>
-        </section>
+          <CarouselSuccess
+            story={SuccessLinks}
+            onSelect={handleSuccessSelect}
+          />
+        </div>
+      </section>
       {/* </section> */}
     </>
   );

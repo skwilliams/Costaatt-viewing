@@ -1,6 +1,8 @@
 import React from 'react';
 import CardStyle from '../../styles/ProgCard.module.scss';
 import Image from 'next/image';
+import Link from "next/link";
+
 
 const ProgramCard = ({ program }) => {
   const totalCredits =
@@ -23,26 +25,24 @@ const ProgramCard = ({ program }) => {
               width="200"
               height="200"
             />
-            {/* <div className={CardStyle.bannerbottomBsc}> Bachelors</div> */}
           </div>
           <div className={CardStyle.progGridthree}>
-            <div
-              className={CardStyle.coursetitle}
-            >{`${program.prog_name} (${program.school})`}</div>{' '}
+            <div className={CardStyle.coursetitle}>
+              <Link href="/programmes/bscLIS">
+                                {`${program.prog_name} (${program.school}`}
+              </Link>
+              {program.shortname}
+            </div>{" "}
             {/*dynamic content}*/}
             <div className={CardStyle.block}>
-              <p className={CardStyle.cardtext}> {program.prog_description}</p>{' '}
+              <p className={CardStyle.cardtext}> {program.prog_description}</p>{" "}
               {/* fixed */}
-              <p className={CardStyle.cardtextIn}>
-                {fulltimeYears} years full time
-              </p>{' '}
-              {/*dynamic content}*/}
-              <p className={CardStyle.cardtextIn}>
-                {parttimeYears} years part-time
-              </p>{' '}
-              {/*dynamic content}*/}
+              <div className={CardStyle.cardyearsAll}>
+                <p>{fulltimeYears} years full time</p>{" "}
+                <p>{parttimeYears} years part-time</p>{" "}
+              </div>
+            
             </div>
-            {/* <div className={CardStyle.bannerbottomAas}> Associate</div> */}
           </div>
         </>
       </div>

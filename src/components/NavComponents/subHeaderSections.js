@@ -1,8 +1,10 @@
 export const subHeaderSections = {
   home: {
-    schools: "schools",
-    events: "events",
+    "I am ": "search",
+    "Uniquely Us": "unique",
     news: "news",
+    events: "events",
+
     "success stories": "success-stories",
     // connect:'footer' see if you can get footer on the top nav
   },
@@ -13,6 +15,13 @@ export const subHeaderSections = {
     "why choose us ": "whychoose",
     "Areas of Study": "areastudy",
     Highlights: "highlight",
+  },
+  liberal: {
+    Overview: "overview",
+    Departments: "departments",
+    "Find your Degree": "degree",
+    "Meet the Dean": "dean",
+    "School News": "news",
   },
   applynow: {
     "before you apply": "before-you-apply",
@@ -32,7 +41,7 @@ export const subHeaderSections = {
   },
   busIT: {
     "school overview": "overview",
-    Departments: "depart",
+    Departments: "departments",
     "find your Degree": "depcourses",
     "meet the dean": "meetthedean",
     "school events and news": "schoolnews",
@@ -40,28 +49,28 @@ export const subHeaderSections = {
   allcourses: {
     "All courses": "all courses",
   },
-  ist: {
+  ICTD: {
     "Overveiw of Department": "overview",
-    "Department Contact": "contact",
-    "Happening Now": "happening",
-    "Featured Work": "featuredwork",
-    "Faculty and Staff": "facultystaff",
     "Programmes in Department": "programmes",
-    "Student Resources": "sturesource",
+    "Department Contact": "contact",
+    "Upcoming Events": "happening",
+    "Featured Work": "featuredwork",
+    "Latest News": "schoolnews",
+    "Faculty and Staff": "facultystaff",
   },
   enviro: {
-    "school overview": "overview",
-    Departments: "depart",
-    "find your Degree": "depcourses",
-    "meet the dean": "meetthedean",
-    "school events and news": "schoolnews",
+    "School overview": "overview",
+     Departments: "departments",
+    "Find your Degree": "depcourses",
+    "Meet the dean": "meetthedean",
+    "School events and news": "schoolnews",
   },
   nursing: {
-    "school overview": "overview",
-    Departments: "depart",
-    "find your Degree": "depcourses",
-    "meet the dean": "meetthedean",
-    "school events and news": "schoolnews",
+    "School overview": "overview",
+     Departments: "departments",
+    "Find your Degree": "depcourses",
+    "Meet the dean": "meetthedean",
+    "School events and news": "schoolnews",
   },
   apply: {
     Apply: "intro",
@@ -79,10 +88,10 @@ export const subHeaderSections = {
   },
 
   deptName: {
-    "school overview": "overview",
+    "School overview": "overview",
     Departments: "depart",
-    "find your Degree": "depcourses",
-    "meet the dean": "meetthedean",
+    "Find your Degree": "depcourses",
+    "Meet the dean": "meetthedean",
     "school events and news": "schoolnews",
   },
 
@@ -103,7 +112,7 @@ export const subHeaderSections = {
     Contact: "contact",
   },
   studentcouncil: {
-    "Studnet Council ": "introtoclubs",
+    "Student Council ": "introtoclubs",
     "Serving Members": "presentteam",
     "How to be a part": "joinus",
     Activities: "activites",
@@ -119,6 +128,14 @@ export const subHeaderSections = {
 
     Contact: "contact",
   },
+  itfacilities: {
+    "Computer Labs": "labs",
+    "IT Services ": "services",
+    "Locations": "locations",
+    "Contact": "contact",
+
+   
+  },
 
   healthwell: {
     Overview: "healthover",
@@ -128,9 +145,37 @@ export const subHeaderSections = {
     Sickbay: "sickbay",
     Contact: "contact",
   },
-  careermgt:{
-    "Career Management" : "intro",
-    "Services":"services",
-    "Contact":"contact",
+  careermgt: {
+    "Career Management": "intro",
+    Services: "services",
+    Contact: "contact",
+  },
+  compasscenter: {
+    "Compass ": "intro",
+    "Services ": "services",
+    "Frequently Asked Questions": "faq",
+    Contact: "contact",
+  },
+  kengord: {
+    Overview: "overview",
+    Departments: "departments",
+    "Find your Degree": "degree",
+    "Meet the Dean": "dean",
+    "School News": "news",
+  },
+  costaattlife: {
+    "Overview ": "intro",
+    Services: "services",
+    Events: "events",
+    "Meet Our Staff": "staff",
+    Contact: "contact",
+  },
+  
+  about:{
+    "At a Glance":"glance",
+    Schools :"schools",
+    President :"president",
+    "By the Numbers":"bythenumbers",
+
   }
 };

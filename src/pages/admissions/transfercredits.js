@@ -1,7 +1,7 @@
 import React from 'react'
 import HeadImage from '@/components/PageComponents/HeadImage'
 import Head from 'next/head'
-import headImg from "../../../public/images/admissions/transfercredits.jpg"
+import headImg from "../../../public/images/admissions/transferExemption header.jpg"
 import ProgStyles from "../../styles/Programmes.module.scss"
 
 import SideNavOnlyLayout from "@/components/Layouts/SideNavOnly_NoTopOrDropdown";
@@ -55,7 +55,7 @@ const transfercredits = () => {
         <title>Transfer Credit and Exemptions</title>
       </Head>
 
-      <HeadImage imagetext="Fees and Funding" mainimage={headImg} />
+      <HeadImage mainimage={headImg} />
       <section id="intro" className={AdminStyles.sectionIntrotransfer}>
         <p className={AdminStyles.introtext}>
           We are excited that you have chosen COSTAATT to continue your studies!

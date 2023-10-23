@@ -3,6 +3,8 @@ import Head from 'next/head';
 import HeadImage from '../../../../components/PageComponents/HeadImage';
 import ProgStyles from '../../../../styles/Programmes.module.scss';
 import { Accordion } from '@mui/material';
+import standardStyles from "../../../../styles/main.module.scss";
+
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
@@ -15,7 +17,7 @@ import NewsRow from '@/components/PageComponents/NewsRow';
 import EventsRow from '@/components/PageComponents/EventsRow';
 import Link from 'next/link';
 import Featured from '@/components/PageComponents/Featured';
-import { features } from '@/components/PageComponents/featuresdata';
+import { featured } from '@/components/PageComponents/featuresdata';
 import { getEventsByDept } from '../../../../../public/data/eventsdata';
 import { staffdata } from './facultystaffdata';
 import FacultyStaffCard from '../../../../components/PageComponents/FacultyStaffDepCard';
@@ -39,141 +41,216 @@ const index = (props) => {
       <Head>
         <title>{foundDept.shortName}</title>
       </Head>
-      <HeadImage imagetext={foundDept.name} mainimage={foundDept.headImage} />
+      {/* imagetext={foundDept.name}  */}
+      <HeadImage mainimage={foundDept.headImage} />
+      <p
+        className={`${standardStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}
+      >
+        <Link href="/"> COSTAATT/ </Link>
+        <Link href="/"> Department/</Link>
+        <Link href="/">{foundDept.shortName}</Link>
+      </p>
       {/* <SideNavOnlyLayout> */}
-        {/* Department Overview Section */}
-        <section id="overview" className={DeptStyles.sectionOverview}>
-          <div className={ProgStyles.umargintopsmall}>
-            <p className={DeptStyles.maintext}>{foundDept.mission}</p>
-            {/* <p className={DeptStyles.subheading}> Vision</p> */}
-            {txtToPara(foundDept.summary, DeptStyles.subtext)}
-            {/* Department's Core Values */}
-            {foundDept.coreValues.length > 0 ? (
-              <Accordion className={DeptStyles.accordion}>
-                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                  <Typography className={DeptStyles.acoordiantext}>
-                    Core Values
-                  </Typography>
-                </AccordionSummary>
-                {foundDept.coreValues.map((value) => {
-                  return (
-                    <AccordionDetails key={value}>
-                      <ul className={ProgStyles.degcourses}>
-                        <li className={ProgStyles.degcoursesli}>
-                          {value} - {getCoreValues(value)}
-                        </li>
-                      </ul>
-                    </AccordionDetails>
-                  );
-                })}
-              </Accordion>
-            ) : (
-              <></>
-            )}
-          </div>
-        </section>
-        {/* Department Programmes Section */}
-        <section id="programmes" className={DeptStyles.sectionProgrammes}>
-          <p className={ProgStyles.headingprimary}>
-            {' '}
-            {foundDept.shortName} Programmes
-          </p>
-          <div className={ProgStyles.threeGridRowCon}>
-            {/* Show accordion for only the type/level of programmes available in this department.  return empty fragment otherwise*/}
-            {Object.entries(deptProgrammes).map((level) => {
-              return (
-                <>
-                  {level[1].length > 0 ? (
-                    <>
-                      <div className={ProgStyles.threeGridRow} key={level[0]}>
-                        <Accordion className={DeptStyles.courseaccordion}>
-                          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                            <Typography className={ProgStyles.acoordiantext}>
-                              {level[0]}
-                            </Typography>
-                          </AccordionSummary>
-                          <AccordionDetails>
-                            <ul className={ProgStyles.degcourses}>
-                              {level[1].map((levelProgs) => {
-                                return (
-                                  <li
-                                    key={levelProgs.prog_code}
-                                    className={ProgStyles.degcoursesli}
-                                  >
-                                    <Link
-                                      href={`/programmes/${levelProgs.prog_shortname}`}
-                                    >
-                                      {' '}
-                                      {levelProgs.prog_name}{' '}
-                                    </Link>
-                                  </li>
-                                );
-                              })}
-                            </ul>
-                          </AccordionDetails>
-                        </Accordion>
-                      </div>
-                    </>
-                  ) : (
-                    <></>
-                  )}
-                </>
-              );
-            })}
-          </div>
-        </section>
-        {/* Dept Contact Section */}
-        <section id="contact" className={DeptStyles.sectionContact}>
-          <div className={DeptStyles.contactcard}>
-            <ContactSideNav
-              btn1txt="Visit"
-              btn2txt="Apply"
-              btn3txt="Request Info"
-              contacttype="Department Contacts"
-              contactArr={getDeptContacts()}
-            />
-          </div>
-        </section>
-        {/* Department events Section */}
-        <section id="happening" className={DeptStyles.sectionWhatsup}>
-          <EventsRow
-            label="Upcoming"
-            events={getEventsByDept(foundDept.dept_code)}
-          />
-        </section>{' '}
-        {/* Department News Section */}
-        <section id="schoolnews" className={ProgStyles.sectionschoolnews}>
-          <NewsRow label="Latest" news={news.slice(0, 3)} />
-        </section>
-        <section id="featuredwork" className={DeptStyles.sectionFeaturedwork}>
-          {/* <p className={ProgStyles.headingprimary}> Featured Work</p>
+      {/* Department Overview Section */}
+      <section id="overview" className={DeptStyles.sectionOverview}>
+        <div className={ProgStyles.umargintopsmall}>
+          <p className={DeptStyles.maintext}>{foundDept.mission}</p>
+          {/* <p className={DeptStyles.subheading}> Vision</p> */}
+          {/* {txtToPara(foundDept.summary, DeptStyles.subtext)} */}
+          {/* Department's Core Values */}
+        </div>
+        <div className={DeptStyles.corevalues}>
+          <h2
+            className={`${standardStyles.newsHeading} ${standardStyles.centertext}`}
+          >
+            Core <span>VALUES</span>
+          </h2>
+          {foundDept.coreValues.length > 0 ? (
+            <div className={DeptStyles.corevalues}>
+              {foundDept.coreValues.map((value) => {
+                return (
+                  <div key={value}>
+                    <ul>
+                      <li className={ProgStyles.degcoursesli}>
+                        <span> {value} </span> - {getCoreValues(value)}
+                      </li>
+                    </ul>
+                  </div>
+                );
+              })}
+            </div>
+          ) : (
+            <></>
+          )}
+        </div>
+      </section>
+      {/* Department Programmes Section */}
+      {/* <h2
+        classname={`${standardStyles.newsHeading} ${standardStyles.centertext} ${standardStyles.whitefont}`}
+      >
+        <span> FIND </span>your Degree
+      </h2> */}
+      <section id="programmes" className={DeptStyles.sectionProgrammes}>
+        <h2
+          className={`${standardStyles.newsHeading} ${standardStyles.centertext} ${standardStyles.whitefont}`}
+        >
+          {" "}
+          <span> {foundDept.dept_code} </span> PROGRAMMES
+        </h2>
 
-        <Featured feat={features} /> */}
-        </section>
-        {/* Department Faculty and Staff Section */}
-        <section id="facultystaff" className={DeptStyles.sectionFaculty}>
-          <p className={ProgStyles.headingprimary}>Our Faculty and Staff</p>
-          <div className={DeptStyles.fourGridCon}>
-            <FacultyStaffCard staff={staffdata} dept={foundDept.dept_code} />
+        {/* <div className={ProgStyles.threeGridRowCon}>
+          {/* Show accordion for only the type/level of programmes available in this department.  return empty fragment otherwise
+          {Object.entries(deptProgrammes).map((level) => {
+            return (
+              <>
+                {level[1].length > 0 ? (
+                  <>
+                    <div className={ProgStyles.threeGridRow} key={level[0]}>
+                      <Accordion className={DeptStyles.courseaccordion}>
+                        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                          <Typography className={ProgStyles.acoordiantext}>
+                            {level[0]}
+                          </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                          <ul className={ProgStyles.degcourses}>
+                            {level[1].map((levelProgs) => {
+                              return (
+                                <li
+                                  key={levelProgs.prog_code}
+                                  className={ProgStyles.degcoursesli}
+                                >
+                                  <Link
+                                    href={`/programmes/${levelProgs.prog_shortname}`}
+                                  >
+                                    {" "}
+                                    {levelProgs.prog_name}{" "}
+                                  </Link>
+                                </li>
+                              );
+                            })}
+                          </ul>
+                        </AccordionDetails>
+                      </Accordion>
+                    </div>
+                  </>
+                ) : (
+                  <></>
+                )}
+              </>
+            );
+          })}
+        {/* </div> */}
+
+        <div className={ProgStyles.progGridCon}>
+          {/* Show accordion for only the type/level of programmes available.  return empty fragment otherwise*/}
+          {Object.entries(deptProgrammes).map((level) => {
+            return (
+              <>
+                {level[1].length > 0 ? (
+                  <>
+                    <div className={ProgStyles.progGrid} key={level[0]}>
+                      <p className={DeptStyles.degreecategory}> {level[0]} </p>
+
+                      <ul className={ProgStyles.degcourses}>
+                        {level[1].map((levelProgs) => {
+                          return (
+                            <li
+                              key={levelProgs.prog_code}
+                              className={ProgStyles.degcoursesli}
+                            >
+                              <Link
+                                href={`../../${levelProgs.prog_shortname}`}
+                              >
+                                {" "}
+                              
+                                {levelProgs.prog_name}{" "}
+                              </Link>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                  </>
+                ) : (
+                  <></>
+                )}
+              </>
+            );
+          })}
+        </div>
+      </section>
+      {/* Dept Contact Section */}
+      <section id="contact" className={DeptStyles.sectionContact}>
+        <h2
+          className={`${standardStyles.newsHeading} ${standardStyles.centertext} ${standardStyles.paddingTopBig}`}
+        >
+          Department <span> CONTACT </span>
+        </h2>
+        <div
+          className={`${DeptStyles.contactcard} ${standardStyles.paddingBottomBig}`}
+        >
+          <ContactSideNav
+            btn1txt="Visit"
+            btn2txt="Apply"
+            btn3txt="Request Info"
+            // contacttype="Department Contacts"
+            contactArr={getDeptContacts()}
+          />
+        </div>
+      </section>
+      {/* Department events Section */}
+      <section id="happening" className={DeptStyles.sectionWhatsup}>
+        <EventsRow
+          label="Upcoming"
+          events={getEventsByDept(foundDept.dept_code)}
+        />
+      </section>{" "}
+      {/* Department News Section */}
+      <section id="featuredwork" className={DeptStyles.sectionFeaturedwork}>
+        <h2
+          className={`${standardStyles.newsHeading} ${standardStyles.centertext}`}
+        >
+          <span>FEATURED </span> Work
+        </h2>
+
+        <Featured feat={featured} />
+      </section>
+      <section id="schoolnews" className={ProgStyles.sectionschoolnews}>
+        <NewsRow label="Latest" news={news.slice(0, 3)} />
+      </section>
+      {/* Department Faculty and Staff Section */}
+      <section id="facultystaff" className={DeptStyles.sectionFaculty}>
+        <h2
+          className={`${standardStyles.newsHeading} ${standardStyles.centertext}`}
+        >
+          <span>OUR</span> Faculty and Staff
+        </h2>
+        <div className={DeptStyles.fourGridCon}>
+          <FacultyStaffCard staff={staffdata} dept={foundDept.dept_code} />
+        </div>
+      </section>
+      {/* Shoutout Section- COSTAATT wants YOU!!! */}
+      {/* <section id="sturesource" className={DeptStyles.sectionStuResources}>
+        <h2
+          className={`${standardStyles.newsHeading} ${standardStyles.centertext}`}
+        >
+          Costaatt <span>WANTS</span> You
+        </h2>{" "}
+        <div className={standardStyles.row}>
+          <div className={standardStyles.col1of3}>
+            <StudentResources image={imageapplyNow} imagetxt="" />{" "}
           </div>
-        </section>
-        {/* Shoutout Section- COSTAATT wants YOU!!! */}
-        <section id="sturesource" className={DeptStyles.sectionStuResources}>
-          <p className={ProgStyles.headingprimary}> COSTAATT WANTS YOU </p>
-          <div className={DeptStyles.threeGridCon}>
-            <div className={DeptStyles.threeGridCol}>
-              <StudentResources image={imageapplyNow} imagetxt="" />{' '}
-            </div>
-            <div className={DeptStyles.threeGridCol}>
-              {' '}
-              <StudentResources image={imagecounsellor} imagetxt="" />
-            </div>
-            <div className={DeptStyles.threeGridCol}>
-              {' '}
-              <StudentResources image={imagevisitUS} imagetxt="" />
-            </div>
+          <div className={standardStyles.col1of3}>
+            {" "}
+            <StudentResources image={imagecounsellor} imagetxt="" />
           </div>
-        </section>
+          <div className={standardStyles.col1of3}>
+            {" "}
+            <StudentResources image={imagevisitUS} imagetxt="" />
+          </div>
+        </div>
+      </section> */}
       {/* </SideNavOnlyLayout> */}
     </>
   );

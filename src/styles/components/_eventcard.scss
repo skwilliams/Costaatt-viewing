@@ -2,12 +2,20 @@
 
     background-color: rgba($color-grey-light-2, .8);
     font-size: 2rem;
+    // width: 100%;
     padding: 2rem;
     text-align: left;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-primary-light, .30);
     transition: transform .3s;
     margin-bottom : 5rem;
+    text-align: right;
+    width:300px;
+    height: 300px;
+   
+    &__colored{
+        // background-image: linear-gradient(to bottom right, $color-primary,$color-primary-dark);
+    }
 
     @include respond(tab-port) {
         padding: 2rem;
@@ -18,10 +26,11 @@
 $color-comp4;
  font-weight: 700;
          padding-bottom: 2rem;
+         text-align: center;
         
 
          &:hover {
-color:black;    }
+color:$grey;    }
     }
     &__date{
         font-size:1.15rem ;
@@ -31,12 +40,15 @@ color:black;    }
     }
     &__time{
              font-size:1.15rem ;
-        color:$color-grey-dark-2;
+        color:$grey;
    
     }
     &__venue{
-     font-size:1.15rem ;
-        color:$color-grey-dark-2;
+     font-size:1.2rem ;
+     padding-top:1rem;
+     
+        color:$grey
+        ;
     }
 
     &__text{

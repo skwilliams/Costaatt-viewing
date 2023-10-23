@@ -1,6 +1,8 @@
 import EventCard from "@/components/PageComponents/EventCard";
 import ProgStyles from "../../styles/Programmes.module.scss";
 import Link from "next/link";
+import standardStyles from "../../styles/main.module.scss";
+
 import { getEventDate, getEventTime } from "../../../public/data/eventsdata";
 
 const EventsRow = ({ label, events, schoolcolor }) => {
@@ -8,7 +10,7 @@ const EventsRow = ({ label, events, schoolcolor }) => {
 
   return (
     <>
-      <p className={ProgStyles.headingprimary}>{label} Events</p>
+      <h2 className={`${standardStyles.newsHeading} ${standardStyles.centertext}`} >{label} <span> Events</span></h2>
       <div className={ProgStyles.threeColGridCon}>
         {events.map((event, index) => {
           return (

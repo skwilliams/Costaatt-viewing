@@ -1398,7 +1398,7 @@ const programmes = [
     specialMatricReqs: [],
   },
   {
-    prog_shortname: "aasITGen",
+    prog_shortname: "",
     majorcourses: [
       "ITEC 120",
       "ITEC 122",

@@ -4,13 +4,13 @@
     "shortName": "Business & Digital Technologies",
     "nameStump": "busIT",
     "image": "/images/schools/busIT header.png",
-    "overview": "The School of Business and Digital Technologies provides access to a world-class and work-relevant education, focused on achieving institutional and national goals of workforce development. The School of Business and Digital Technologies comprises two (2) schools, the Department of ICTs and Digital Technologies and the Department of Management and Digital Entrepreneurship. These departments provide the public with a range of academic services to meet a growing number of careers and opportunities locally, regionally, and globally.The School is devoted to the development and preparation of students who are able to confront the challenges of the fast-paced, dynamic work environment. The School produces graduates who are work ready, professional and ethical, adept at creative problem-solving, embrace technological advancement and able to adapt to a rapidly evolving world.",
+    "overview": "The School of Business and Digital Technologies provides access to a world-class and work-relevant education, focused on achieving institutional and national goals of workforce development. The School of Business and Digital Technologies comprises two (2) schools, the Department of ICTs and Digital Technologies and the Department of Management and Digital Entrepreneurship. These departments provide the public with a range of academic services to meet a growing number of careers and opportunities locally, regionally, and globally.",
     "dean": {
-      "name": "Vacant",
+      "name": "Dr. Kyra Mc Gowan-Santana",
       "image": "/images/schools/deanavatar.jpg",
       "message": "Welcome to the School of Business and Digital Technologies at COSTAATT. The School offers courses of study that lead to the award of certificates, diplomas, associate and bachelor’s degrees. We are in the business of changing lives, a key component of which is preparing our students through hands-on skills development for future careers using technology. Faculty members incorporate the use of cutting-edge business techniques, digital technology and information science to prepare students for new innovative opportunities where others see challenges. We welcome you to our School and to a dynamic and promising future!",
-      "email": "info@costaatt.edu.tt",
-      "phone": "868-625-5030 ext 1111"
+      "email": "kmsantana@costaatt.edu.tt",
+      "phone": "868-625-5030"
     },
 
     "departments": [
@@ -18,7 +18,7 @@
         "name": "Management and Digital Entrepreneurship",
         "headImage": "/images/schools/departments/MGDEheader.png",
         "image": "/images/schools/departments/MGDEsmall.png",
-        "summary": "From entrepreneurs and business professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
+        "summary": "At the Department of Management and Digital Entrepreneurship, our mission is to nurture and develop entrepreneurs whose creative vision, innovative skills and knowledge gained through our programmes, will make them drivers of growth and development in Trinidad and Tobago.",
         "coreValues": [
           "Integrity",
           "Compassion",
@@ -126,7 +126,7 @@
       },
       {
         "name": "ICTs and Digital Technologies",
-        "headImage": "/images/schools/departments/ICTDheader.png",
+        "headImage": "/images/schools/departments/ICTDheader.jpg",
         "image": "/images/schools/departments/ICTDsmall.png",
         "mission": "The department of ICT's and Digital Technologies is the hub were technologies meet. It's an infusion of Library Science and Technology. If you desire to be exposed to technology that runs through the viens of the world, you have come to the right place. You can specialize in Databases,Networking, Library Science and Web Development. You will be exposed to the best and latest technologies all while learning the building blocks that makes up Information and Technology.",
         "summary": "If you are interested in Web Development (Internet Technologies), Information Technology, Networking, Databases, Information Systems, or Library Science then the programmes offered by the Department of Information Science and Technology are tailor-made for you. ",
@@ -185,7 +185,7 @@
           {
             "prog_code": "ILSC_BS",
             "prog_shortname": "bscLIS",
-            "prog_name": "BSc Library and Information Science ",
+            "prog_name": "BSc Information and Library  Science ",
             "prog_level": "Bachelor",
             "prog_del_mode": "Blended",
             "dept_code": "ICTD",
@@ -281,7 +281,7 @@
     "name": "School of Liberal Arts, Education and Digital Humanities",
     "shortName": "Liberal Arts, Education and Digital Humanities",
     "nameStump": "liberal",
-    "image": "/images/schools/liberal header.png",
+    "image": "/images/schools/liberal header.jpg",
     "dean": {
       "name": "Neil Sylvester",
       "image": "/images/schools/deanavatar.jpg",
@@ -452,7 +452,7 @@
     "name": "School of Nursing, Health and Medical Technologies",
     "shortName": "Nursing, Health and Medical Technologies",
     "nameStump": "nursing",
-    "image": "/images/schools/nursing header.png",
+    "image": "/images/schools/nursing header.jpg",
     "dean": {
       "name": "Anjenney Boodoosingh-Dwarika",
       "image": "/images/schools/deanavatar.jpg",
@@ -555,7 +555,7 @@
     "name": "School of Environment, Circular Economy and Sustainability",
     "shortName": "Environment, Circular Economy and Sustainability",
     "nameStump": "enviro",
-    "image": "/images/schools/enviro header.png",
+    "image": "/images/schools/enviro header.jpg",
     "dean": {
       "name": "Anjenney Boodoosingh-Dwarika",
       "image": "/images/schools/deanavatar.jpg",
@@ -593,7 +593,7 @@
     "name": "Ken Gordon School of Communication, Creative and Digital Media",
     "shortName": "Communication, Creative and Digital Media",
     "nameStump": "kengord",
-    "image": "/images/schools/kengord header.png",
+    "image": "/images/schools/ken gordon header.jpg",
     "dean": {
       "name": "Ms. Clarinda Jack",
       "image": "/images/schools/deanavatar.jpg",
@@ -606,7 +606,7 @@
       {
         "name": "Creative Industries and Culture",
         "headImage": "/images/schools/departments/CIACheader.png",
-        "image": "/images/schools/CIACsmall.png",
+        "image": "/images/schools/awaitingNewsEvent.png",
         "summary": "The Department of Creative Industries and Culture offers degrees, diplomas and certificates in music, performing arts, film and video production, literature, creative writing, history, heritage and archival studies.",
         "coreValues": [],
         "shortName": "Arts, Music and Culture",
@@ -863,8 +863,7 @@
             "prog_code": "CERT_ADVP",
             "prog_shortname": "certAdvertPromo",
             "prog_name": "Certificate in Advertising and Promotions",
-            "prog_level": "Certificate",
-            "prog_del_mode": "Blended",
+            "prog_level": "Certificate",            "prog_del_mode": "Blended",
             "dept_code": "DMAC",
             "prog_major_credits": 15,
             "prog_core_credits": 0,

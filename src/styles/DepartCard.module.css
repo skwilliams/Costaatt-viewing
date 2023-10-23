@@ -1,8 +1,17 @@
+.container {
+  width: 300px;
+  max-height: 600px;
+  display: grid;
+  align-items: left;
+  margin: 0 3rem;
+}
+
 .departname {
   font-weight: 900;
   font-size: 1.25rem;
-  color: rgb(187, 41, 187);
+  color: rgb(104, 91, 199);
   padding: 1rem 0 2rem 0;
+  text-align: center;
 }
 
 .text {
@@ -10,7 +19,11 @@
   line-height: 1.5;
   text-align: justify;
   padding-bottom: 2rem;
-  margin: 0 8rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  margin-bottom: 1.5rem;
 }
 
 .imgstyle {
@@ -19,9 +32,9 @@
 }
 
 .linkpage {
-  font-size: 1.25rem;
-  float: center;
-  color: rgb(187, 41, 187);
+  font-size: 1rem;
+  text-align: left;
+  color: #cc6330;
   font-weight: 800;
 }
 
@@ -34,6 +47,7 @@
   display: grid;
   gap: 8rem;
   grid-gap: 2rem;
+  margin-left: 3rem;
   grid-template-columns: auto auto auto;
 }
 
@@ -41,4 +55,19 @@
   text-align: center;
   padding: 20px 0;
   font-size: 1.5rem;
+}
+
+.twoColGridCon {
+  display: grid;
+  gap: 4rem;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+}
+
+.twoColGrid {
+  text-align: left;
+  padding: 1.5rem 0 0 0;
+  font-size: 30px;
+  margin: 4rem 0 0 0;
 }/*# sourceMappingURL=DepartCard.module.css.map */

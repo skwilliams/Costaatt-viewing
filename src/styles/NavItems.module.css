@@ -1,0 +1,76 @@
+.topNavMain {
+  display: flex;
+  padding: 5px 30px;
+  justify-content: space-between;
+  background-image: linear-gradient(to bottom right, rgb(104, 91, 199), rgb(72, 63, 138));
+  color: white;
+}
+
+.topNavMain ul {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topBarLinks {
+  padding: 9px 5px;
+  cursor: pointer;
+}
+
+.topBarLinks:hover .topNavDropDownMain {
+  display: block;
+}
+
+.topBarLinks:hover {
+  transition: all 0.8s ease;
+  border-radius: 15px;
+  text-underline-position: under;
+  -webkit-text-decoration: underline solid rgb(199, 91, 104) 4px !important;
+          text-decoration: underline solid rgb(199, 91, 104) 4px !important;
+}
+
+.topNavDropDownMain {
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  z-index: 40;
+  background-color: rgb(230, 231, 200);
+  padding: 10px;
+  display: none;
+}
+
+.topNavDropDown {
+  box-shadow: inset 0px 14px 15px rgba(0, 0, 0, 0.3);
+  padding: 20px 10px;
+}
+
+.topNavDropDownTest {
+  padding: 12px;
+  margin-bottom: 20px;
+}
+
+.topNavdropDownLinks {
+  grid-template-columns: repeat(6, 1fr);
+  color: rgb(62, 19, 83);
+  padding: 5px;
+  align-items: baseline;
+}
+
+.dropDownLi {
+  color: aqua;
+}
+
+.dropDownPictures {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  text-align: center;
+  color: rgb(41, 40, 42);
+}
+
+.dummyImage {
+  margin-bottom: 20px;
+  width: 250px;
+  height: auto;
+}/*# sourceMappingURL=NavItems.module.css.map */
