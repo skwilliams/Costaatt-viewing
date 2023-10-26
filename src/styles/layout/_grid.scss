@@ -23,23 +23,7 @@
 
     @include clearfix;
 
-    // [class^="col"] {
-    //     float: left;
-
-    //     &:not(:last-child) {
-    //         margin-right: $gutter-horizontal;
-
-    //         @include respond(tab-port) {
-    //             margin-right: 0;
-    //             margin-bottom: $gutter-vertical-small;
-    //         }
-    //     }
-
-    //     @include respond(tab-port) {
-    //         width: 100% !important;
-    //     }
-    // }
-
+    
     .col1of2 {
 
         
@@ -185,7 +169,7 @@
 
 
 
-.threeColGridCon {
+.threeColGridCon1 {
   display: grid;
   gap: 8rem;
   grid-gap: 2rem;
@@ -194,15 +178,87 @@
 }
 
 
-  @media (min-width:50em) {
+  @media (max-width:600px) {
   .threeColGridCon{
-     grid-template-columns: 1fr 1fr 1fr; 
+     grid-template-columns: 1fr; 
   }
    
 
 }
 
 .threeColGrid {
+  text-align: left;
+  padding: 1.5em 0;
+  font-size: $default-font-size;
+  // padding: 10px;
+}
+
+.fourColGridCon {
+  display: grid;
+  gap: 8rem;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+ 
+}
+
+
+  @media (max-width:600px) {
+  .fourColGridCon{
+     grid-template-columns: 1fr ; 
+  }
+   
+
+}
+
+.fourColGrid {
+  text-align: left;
+  padding: 1.5em 0;
+  font-size: $default-font-size;
+  // padding: 10px;
+}
+
+.twoGridCon {
+  display: grid;
+  gap: 8rem;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr ;
+ 
+}
+
+
+  @media (min-width:50em) {
+  .twoGridCon{
+     grid-template-columns: 1fr 1fr ; 
+  }
+   
+
+}
+
+.twoGridCol {
+  text-align: left;
+  padding: 1.5em 0;
+  font-size: $default-font-size;
+  // padding: 10px;
+}
+
+.sixColGridCon {
+  display: grid;
+  gap: 8rem;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+ 
+}
+
+
+  @media (min-width:50em) {
+  .sixColGridCon{
+     grid-template-columns: 1fr 1fr 1fr; 
+  }
+   
+
+}
+
+.sixColGrid {
   text-align: left;
   padding: 1.5em 0;
   font-size: $default-font-size;

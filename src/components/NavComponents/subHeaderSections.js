@@ -173,9 +173,17 @@ export const subHeaderSections = {
   
   about:{
     "At a Glance":"glance",
+    "Misson and Vision":"vision",
     Schools :"schools",
     President :"president",
     "By the Numbers":"bythenumbers",
 
-  }
+  },
+  
+  profile :{
+    "Vission and Mission ":"mission",
+    "National Community":"national",
+    "Milestones & Achievements":"achieve",
+    "Learning and Teaching": "enhance"
+  },
 };
