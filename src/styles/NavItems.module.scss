@@ -23,24 +23,31 @@
 .topBarLinks {
   padding: 9px 5px;
   cursor: pointer;
+  padding: 20px;
 }
 .topBarLinks:hover .topNavDropDownMain {
   display: block;
 }
 .topBarLinks:hover {
   transition: all 0.8s ease;
-  border-radius: 15px;
+  //  border-radius: 15px;
   text-underline-position: under;
-  text-decoration: underline solid $color-comp3 4px !important;
+  background-color: $purple-main;
+  color: white;
+  padding: 20px;
+
+  // text-decoration: underline solid $color-comp3 4px !important;
 }
 
 .topNavDropDownMain {
-  width: fit-content;
+  //width: 100%;
   position: absolute;
   z-index: 40;
-  background-color: $whiteback;
-  padding: 10px;
+  background-color: #ffffff; /* Change the background color */
+  padding: 20px;
   display: none;
+  border-radius: 10px; /* Add border-radius for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
 }
 
 .topNavDropDown {
@@ -55,20 +62,25 @@
 
 .topNavdropDownLinks {
   //display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  color: $purple-main;
-  padding: 5px;
-  align-items: baseline;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  text-align: center;
+  gap: 20px;
+  color: $purple-main; /* Change text color */
+  padding: 10px;
+  align-items: center;
 }
 .dropDownLi {
-  color: aqua;
+  color: #0077b6; /* Change link color */
+  text-align: center;
+  font-weight: bold;
 }
 .dropDownPictures {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   text-align: center;
-  color: $grey;
+  color: #666; /* Change image caption color */
 }
 
 .dummyImage {

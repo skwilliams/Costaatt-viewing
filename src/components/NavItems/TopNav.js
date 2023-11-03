@@ -7,9 +7,13 @@ const TopNav = ({ onDropDownLink }) => {
     <nav className={navStyles.topNavMain}>
       <ul>
         {topNavLinksLeft.map((menu, index) => {
+          //  const depthlevel = 0;
           return (
             <li key={index} onClick={onDropDownLink}>
-              <TopNavItems items={menu} key={index} />
+              <TopNavItems
+                items={menu}
+                // depthlevel={depthlevel}
+              />
             </li>
           );
         })}

@@ -21,10 +21,10 @@ const TopNavItems = ({ items }) => {
             {dropdown && (
               <TopNavDropDown
                 items={items}
-                backgroundColor={items.backgroundColor}
-                left={items.left}
-                position={items.position}
-                width={items.width} // Pass the background color here
+                // backgroundColor={items.backgroundColor}
+                // left={items.left}
+                // position={items.position}
+                // width={items.width} // Pass the background color here
               />
             )}
           </div>
