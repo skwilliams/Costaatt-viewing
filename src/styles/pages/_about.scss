@@ -1,14 +1,29 @@
+@import"../abstracts/variables";
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
 .sectiontimeline{
 
- font-family: 'K2D', sans-serif;
-    background: $body-bg;
-    letter-spacing: 1px;
+  background: linear-gradient(55deg,$color-primary 30%,$color-primary-dark 90%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 12vh 200px;
+  font-family: 'Source Sans Pro', arial, sans-serif;
+  font-weight: 300;
+  color: #333;
+  box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+  }
 
 
-    p {
-    font-weight: 300;
-    line-height: 1.5;
-    font-size: 14px;
-    opacity: .8;
-}
+
+
+
+
+
+
 }

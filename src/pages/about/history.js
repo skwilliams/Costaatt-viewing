@@ -43,6 +43,22 @@ const history = () => {
       setHasWindow(true);
     }
   }, []);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   return (
     <>
       <Head>
@@ -157,7 +173,6 @@ const history = () => {
           </div>
         </div>
       </section>
-
       <section id="national">
         <div className={standardStyles.sectionNoSidenavMar}>
           {" "}
@@ -276,28 +291,48 @@ const history = () => {
           </div>
         </div>
       </section>
-      <section id="achieve">
-        <div className="container">
-          <div className="timeline">
-            <div className="timeline-container primary">
-              <div className="timeline-icon">
-                <i className="far fa-grin-wink" />
-              </div>
-              <div className="timeline-body">
-                <h4 className="timeline-title">
-                  <span className="badge">Primary</span>
+      {/* <section id="achieve">
+        <div className={standardStyles.container}>
+          <div className={standardStyles.timeline}>
+            <div
+              className={`${standardStyles.timeline_container} ${standardStyles.primary} `}
+            >
+              <div className={standardStyles.timeline_icon}></div>
+              <div className={standardStyles.timeline_body}>
+                <h4 className={standardStyles.timeline_title}>
+                  <span className={standardStyles.badge}>Primary</span>
                 </h4>
-                <p>
+                <div className={standardStyles.bullet}>
+                  <ul>
+                    <li>
+                      {" "}
+                      COSTAATT focused on aligning its programs with the North
+                      American credit-based system to facilitate horizontal
+                      transfer among the institutions.
+                    </li>
+                    <li>
+                      Introduced the associate degree with a general education
+                      component to enhance the quality of the existing technical
+                      diplomas.{" "}
+                    </li>
+                    <li>
+                      {" "}
+                      Launched the College Prep program for students needing
+                      academic support in Mathematics and English in order to
+                      pursue tertiary level education.
+                    </li>
+                    <li> </li>
+                  </ul>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Aliquam necessitatibus numquam earum ipsa fugiat veniam
                   suscipit, officiis repudiandae, eum recusandae neque
                   dignissimos. Cum fugit laboriosam culpa, repellendus esse
                   commodi deserunt.
-                </p>
-                <p className="timeline-subtitle">1 Hours Ago</p>
+                </div>
+                <p className={standardStyles.timeline_subtitle}>1 Hours Ago</p>
               </div>
             </div>
-            <div className="timeline-container danger">
+            {/* <div className={`${standardStyles.timeline-container} ${standardStyles.danger}`}>
               <div className="timeline-icon">
                 <i className="far fa-grin-hearts" />
               </div>
@@ -389,144 +424,129 @@ const history = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {/* <section id="achieve" className={standardStyles.sectionbackColor}>
-        <div className={standardStyles.marginTopSmall}>
-          <h2
-            className={`${standardStyles.newsHeading} ${standardStyles.centertext}`}
-          >
-            {" "}
-            MILESTONE & <span> ACHIEVEMENTS</span>
-          </h2>
-
-          <div className={AboutStyles.timeline}>
-            <div className={`${AboutStyles.container} ${AboutStyles.left}`}>
-              <div className={AboutStyles.content}>
-                <h2>1998 : The Early Years</h2>
-                <div className={standardStyles.bullet}>
-                  <ul>
-                    <li>
-                      COSTAATT focused on aligning its programs with the North
-                      American credit-based system to facilitate horizontal
-                      transfer among the institutions.
-                    </li>
-                    <li>
-                      Introduced the associate degree with a general education
-                      component to enhance the quality of the existing technical
-                      diplomas.
-                    </li>
-                    <li>
-                      Launched the College Prep program for students needing
-                      academic support in Mathematics and English in order to
-                      pursue tertiary level education.
-                    </li>
-
-                    <li>
-                      COSTAATT was established on October 27th 2000 by an Act of
-                      Parliament (Act No. 77 of 2000) as a multi-campus
-                      community college, based on the amalgamation of seven
-                      tertiary level institutions,
-                    </li>
-                    <li> First Board of Trustees was appointed in 2002. </li>
-                  </ul>
-                </div>
-              </div>
+      <secton id="achieve" className={standardStyles.sectiontimeline}>
+        <div className={standardStyles.timeline}>
+          <div className={standardStyles.entry}>
+            <div className={standardStyles.title}>
+              <h3>1998-2000</h3>
+              <p>The Early Years </p>
             </div>
-            <div className={`${AboutStyles.container} ${AboutStyles.right}`}>
-              <div className={AboutStyles.content}>
-                <h2>2000</h2>
-                <p>
+            <div className={`${standardStyles.bullet} ${standardStyles.body}`}>
+              <ul>
+                <li>
+                  COSTAATT focused on aligning its programs with the North
+                  American credit-based system to facilitate horizontal transfer
+                  among the institutions.
+                </li>
+                <li>
+                  Introduced the associate degree with a general education
+                  component to enhance the quality of the existing technical
+                  diplomas
+                </li>
+                <li>
+                  Launched the College Prep program for students needing
+                  academic support in Mathematics and English in order to pursue
+                  tertiary level education
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className={standardStyles.entry}>
+            <div className={standardStyles.title}>
+              <h3>2000-2002</h3>
+              <p>COSTAATT was born </p>
+            </div>
+            <div className={`${standardStyles.bullet} ${standardStyles.body}`}>
+              <ul>
+                <li>
+                  COSTAATT was established on October 27th 2000 by an Act of
+                  Parliament (Act No. 77 of 2000) as a multi-campus community
+                  college, based on the amalgamation of seven tertiary level
+                  institutions.{" "}
+                </li>
+                <li> First Board of Trustees was appointed in 2002.</li>
+              </ul>
+            </div>
+          </div>
+          <div className={standardStyles.entry}>
+            <div className={standardStyles.title}>
+              <h3>2002-2004</h3>
+              <p>Restructuring of The Tertiary Education Sector </p>
+            </div>
+            <div className={`${standardStyles.bullet} ${standardStyles.body}`}>
+              <ul>
+                <li>
+                  A new vision led to the establishment of the University of
+                  Trinidad and Tobago (UTT).
+                </li>
+                <li>
+                  Several institutes were transferred from COSTAATT to UTT.
+                </li>
+                <li>COSTAATT had a reduced range of program offerings.</li>
+              </ul>
+            </div>
+          </div>
+          <div className={standardStyles.entry}>
+            <div className={standardStyles.title}>
+              <h3>2004-2008</h3>
+              <p>Additional Sector Reforms </p>
+            </div>
+            <div className={`${standardStyles.bullet} ${standardStyles.body}`}>
+              <ul>
+                <li>
+                  The Government Assistance for Tuition Expenses (GATE) program
+                  removed financial barriers for post-secondary and university
+                  education.
+                </li>
+                <li>
+                  The Accreditation Council of Trinidad and Tobago (ACTT) was
+                  established to regulate post-secondary and tertiary education
+                  institutions.{" "}
+                </li>
+                <li>
+                  National Training Agency (NTA) retained responsibility for
+                  quality assurance of technical-vocational education.
+                </li>
+                <li>
                   {" "}
-                  When COSTAATT was formally established in 2000, its programmes
-                  reflected the full spectrum of a comprehensive community
-                  college, including engineering, agriculture, nursing and
-                  allied health sciences, business and information technologies,
-                  foreign languages, environmental studies, criminal justice,
-                  social and behavioural sciences, and the performing arts.
-                  Through the College Prep programme, the College had also
-                  established a mechanism for the seamless movement from
-                  vocational training in the trades to
-                  technical/technologist/para-professional training at the
-                  associate degree level. This mechanism was critical to
-                  empowering the national education system to deliver on one of
-                  its primary functions: to facilitate socio-economic mobility
-                  for its citizens, a key recommendation of the Ministry of
-                  Education's White Paper (1993-2003).
-                </p>
-              </div>
+                  COSTAATT adjusted to changes while emphasizing its role as the
+                  national community college.
+                </li>
+              </ul>
             </div>
-            <div className={`${AboutStyles.container} ${AboutStyles.left}`}>
-              <div className={AboutStyles.content}>
-                <h2>2002</h2>
-
-                <p>
+          </div>
+          <div className={standardStyles.entry}>
+            <div className={standardStyles.title}>
+              <h3>2008-2012</h3>
+              <p> A Period of Growth and Expansion</p>
+            </div>
+            <div className={`${standardStyles.bullet} ${standardStyles.body}`}>
+              <ul>
+                <li>
+                  Rapid growth in program offerings, student population, and
+                  funding due to GATE
+                </li>
+                <li>
+                  Introduction of the Compensatory Programmes and Academic
+                  Support Services (COMPASS) program for academically
+                  underprepared students.{" "}
+                </li>
+                <li>
+                  Achieved institutional accreditation status from ACTT in 2010;
+                  the first institution in the country to achieve this status
+                </li>
+                <li>
                   {" "}
-                  Although the College had been legally established as a body
-                  corporate in October 2000, no Board of Trustees was appointed
-                  to govern the College until September 2002. From 2000-2002
-                  therefore, the nascent community college sought to maintain
-                  its momentum in an environment of uncertainty. The CCIT,
-                  continued its work in planning for the ongoing development of
-                  the College, as several studies conducted then reflected the
-                  need for the region to significantly expand its capacity to
-                  produce graduates at the technician/para-professional
-                  /technologist /mid-managerial level to drive economic
-                  diversification and development.
-                </p>
-              </div>
-            </div>
-            <div className={`${AboutStyles.container} ${AboutStyles.right}`}>
-              <div className={AboutStyles.content}>
-                <h2>2004</h2>
-                <p>
-                  In the period following 2002 – early 2004, a new vision for
-                  the development of the tertiary education sector in Trinidad
-                  and Tobago resulted in the establishment of the University of
-                  Trinidad and Tobago (UTT). In support of this initiative, the
-                  John S. Donaldson Technical Institute, the San Fernando
-                  Technical Institute and the Eastern Caribbean Institute of
-                  Agriculture and Forestry (ECIAF) were transferred from
-                  COSTAATT to the UTT. The Metal Industries Company Limited
-                  (MIC) was not absorbed by either COSTAATT or UTT and therefore
-                  operated independently, and the Government Vocational Centre
-                  (GVC) was placed under the jurisdiction of MIC.
-                </p>{" "}
-                <p>
-                  {" "}
-                  COSTAATT was left with a reduced range of programme offerings,
-                  drawn from the six NIHERST teaching colleges (Information
-                  Technology College, College of Nursing, College of Health
-                  Sciences, School of Languages, Business Management and General
-                  Education Divisions) and the Joint Services Staff College.
-                </p>
-              </div>
-            </div>
-            <div className={`${AboutStyles.container} ${AboutStyles.left}`}>
-              <div className={AboutStyles.content}>
-                <h2>2011</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-                  admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
-                  quis iuvaret expetendis his, te elit voluptua dignissim per,
-                  habeo iusto primis ea eam.
-                </p>
-              </div>
-            </div>
-            <div className={`${AboutStyles.container} ${AboutStyles.right}`}>
-              <div className={AboutStyles.content}>
-                <h2>2007</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-                  admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
-                  quis iuvaret expetendis his, te elit voluptua dignissim per,
-                  habeo iusto primis ea eam.
-                </p>
-              </div>
+                  Government approved funding for COSTAATT's first purpose-built
+                  campus in Chaguanas in 2011.{" "}
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </section> */}
+      </secton>
       <section id="enhance" className={standardStyles.sectionNoSidenav}>
         <h2
           className={`${standardStyles.newsHeading} ${standardStyles.centertext}`}

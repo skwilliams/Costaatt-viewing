@@ -47,11 +47,11 @@ $timeline-body-shadow: 1px 3px 9px rgba(0,0,0, .1);
         background: $timeline-body-bg;
     }
 
-    .timeline-container {
+    .timeline_container {
         position: relative;
         margin-bottom: 2.5rem;;
 
-        .timeline-icon {
+        .timeline_icon {
             position: absolute;
             left: -88px;
             top: 4px;
@@ -76,7 +76,7 @@ $timeline-body-shadow: 1px 3px 9px rgba(0,0,0, .1);
             }
         }
 
-        .timeline-body {
+        .timeline_body {
             background: $timeline-body-bg;
             border-radius: $timeline-body-round;
             padding: 20px 20px 15px;
@@ -94,7 +94,7 @@ $timeline-body-shadow: 1px 3px 9px rgba(0,0,0, .1);
                 border-radius: 0 0 0 2px;
             }
 
-            .timeline-title {
+            .timeline_title {
                 margin-bottom: 1.4rem;
 
                 .badge {
@@ -106,7 +106,7 @@ $timeline-body-shadow: 1px 3px 9px rgba(0,0,0, .1);
                 }
             }
 
-            .timeline-subtitle {
+            .timeline_subtitle {
                 font-weight: 300;
                 font-style: italic;
                 opacity: .4;

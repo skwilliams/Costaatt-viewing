@@ -170,6 +170,12 @@ export const subHeaderSections = {
     "Meet Our Staff": "staff",
     Contact: "contact",
   },
+  history:{
+    "Mission":"mission",
+    "National":"national",
+    "History":"achieve",
+    "Enhance Teaching ":"enhance",
+  },
   
   about:{
     "At a Glance":"glance",
