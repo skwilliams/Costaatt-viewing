@@ -31,7 +31,7 @@
   transition: all 0.8s ease;
   border-radius: 15px;
   text-underline-position: under;
-  text-decoration: underline solid $color-comp3 4px !important;
+  text-decoration: underline solid $color-primary-dark 4px !important;
 }
 
 .topNavDropDownMain {
@@ -54,11 +54,12 @@
 }
 
 .topNavdropDownLinks {
-  //display: grid;
+  display: grid;
   grid-template-columns: repeat(6, 1fr);
   color: $purple-main;
   padding: 5px;
   align-items: baseline;
+  height:400px;
 }
 .dropDownLi {
   color: aqua;

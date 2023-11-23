@@ -43,7 +43,6 @@ const profile = () => {
       setHasWindow(true);
     }
   }, []);
-  const video = "";
   return (
     <>
       <Head>
