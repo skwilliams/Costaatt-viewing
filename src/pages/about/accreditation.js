@@ -27,13 +27,13 @@ const accreditation = () => {
       <Head>
         <title>Accrediation |{""} COSTAATT</title>
       </Head>
-      <HeaderNoImage caption="Instiutional Profile" />
+      <HeaderNoImage caption="Accrediation" />
       <p
         className={`${standardStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}
       >
         <Link href="/"> COSTAATT/ </Link>
         <Link href="/about">About/</Link>
-        <Link href="/about/accreditation">Profile</Link>
+        <Link href="/about/accreditation">Accrediation</Link>
       </p>
 
       <section id></section>

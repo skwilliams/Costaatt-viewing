@@ -1,17 +1,17 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
-import CardStyles from '../../styles/ProgCard.module.scss';
-import Head from 'next/head';
-import { FormGroup, FormControlLabel, Checkbox } from '@mui/material';
+import React from "react";
+import { useState, useEffect } from "react";
+import CardStyles from "../../styles/ProgCard.module.scss";
+import Head from "next/head";
+import { FormGroup, FormControlLabel, Checkbox } from "@mui/material";
 
-import Link from 'next/link';
-import Layout from '../../components/PageWithSideNavComponents/Layout';
-import SearchCourse from '@/components/PageComponents/SearchCourse';
-import ProgCard from '../../components/PageComponents/ProgCard';
-import ProgramCard from '@/components/PageComponents/ProgramCard';
+import Link from "next/link";
+import Layout1 from "../../components/Layouts/TopNavOnly_NoDropdown";
+import SearchCourse from "@/components/PageComponents/SearchCourse";
+import ProgCard from "../../components/PageComponents/ProgCard";
+import ProgramCard from "@/components/PageComponents/ProgramCard";
 //import { coursedata } from './allprogrammedata';
-import SCHOOLDATA from '../../../data/schooldata.json';
-import HeaderNoImage from '@/components/PageComponents/HeaderNoImage';
+import SCHOOLDATA from "../../../data/schooldata.json";
+import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
 
 const allcourses = () => {
   // const stumpNames = SCHOOLDATA.map((school) => school.nameStump);
@@ -99,14 +99,14 @@ const allcourses = () => {
   const { Bachelor, Associate, Diploma, Certificate } = levelFilters;
 
   const handleSchoolFilter = (event) => {
-    console.log('Event', event.target.name, event.target.checked);
+    console.log("Event", event.target.name, event.target.checked);
     setSchoolFilters({
       ...schoolFilters,
       [event.target.name]: event.target.checked,
     });
   };
   const handleLevelFilter = (event) => {
-    console.log('Event', event.target.name, event.target.checked);
+    console.log("Event", event.target.name, event.target.checked);
     setLevelFilters({
       ...levelFilters,
       [event.target.name]: event.target.checked,
@@ -133,7 +133,7 @@ const allcourses = () => {
             <div>
               <SearchCourse handleSearchSubmit={handleSearchSubmit} />
             </div>
-            <p className={CardStyles.sidenavtitle}> by Schools</p>{' '}
+            <p className={CardStyles.sidenavtitle}> by Schools</p>{" "}
             <FormGroup>
               <div className={CardStyles.sidenavlink}>
                 <FormControlLabel
@@ -264,8 +264,8 @@ const allcourses = () => {
     </>
   );
 };
-// allcourses.getLayout = function getLayout(page) {
-//   return <Layout>{page}</Layout>;
-// };
+allcourses.getLayout = function getLayout(page) {
+  return <Layout1>{page}</Layout1>;
+};
 
 export default allcourses;

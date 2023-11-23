@@ -10,8 +10,6 @@ export const topNavLinksLeft = [
         width: "100%",
         position: "absolute",
 
-      
-
         // submenu: [
         //   {
         //     title: "Criminal Justice, Human Security and Legal Studies",
@@ -85,20 +83,20 @@ export const topNavLinksLeft = [
         backgroundColor: "orange",
         left: "400px",
         position: "absolute",
-        submenu: [
-          {
-            title: "Upskilling Academy",
-            path: "programmes",
-          },
-          {
-            title: "CollegeStarTT",
-            path: "programmes",
-          },
-          {
-            title: "Translation and Interpretation",
-            path: "programmes",
-          },
-        ],
+        // submenu: [
+        //   {
+        //     title: "Upskilling Academy",
+        //     path: "programmes",
+        //   },
+        //   {
+        //     title: "CollegeStarTT",
+        //     path: "programmes",
+        //   },
+        //   {
+        //     title: "Translation and Interpretation",
+        //     path: "programmes",
+        //   },
+        // ],
       },
       {
         title: "Ken Gordon School of Communication,Creative and Digital Media",
@@ -106,17 +104,19 @@ export const topNavLinksLeft = [
         backgroundColor: "orange",
         left: "400px",
         position: "absolute",
-        submenu: [
-          {
-            title: "Creative Industries and Culture ",
-            path: "programmes",
-          },
-          {
-            title: "Digital Media",
-            path: "programmes",
-          },
-          
-        ],
+
+       
+       
+        // submenu: [
+        //   {
+        //     title: "Creative Industries and Culture ",
+        //     path: "programmes",
+        //   },
+        //   {
+        //     title: "Digital Media",
+        //     path: "programmes",
+        //   },
+        // ],
       },
     ],
   },
@@ -282,7 +282,7 @@ export const mainNavLinks = [
     title: "Admissions and Aid ",
     submenu: [
       {
-        title: "Office of the Registrar",
+        title: "Registry Services",
         path: "/admissions/",
       },
       {
@@ -362,20 +362,17 @@ export const mainNavLinks = [
     ],
   },
   {
-    title: "About",
+    title: "About Us",
     // path: "/",
     submenu: [
       {
         title: "Profile at a Glance",
-        path: "/about",
+        path: "/about/",
       },
-      // {
-      //   title: "History",
-      //   path: "/about/history",
-      // },
+   
       {
-        title: "Institutional Profile",
-        path: "/about/profile",
+        title: "History",
+        path: "/about/history",
       },
       {
         title: "Accreditation And Quality Assurance",
@@ -394,12 +391,10 @@ export const mainNavLinks = [
       },
       // {
       //    img: require("../../../images/Links/dummyImg2.jpg"),
-      
+
       //   title: "Accreditation And Quality Assurance",
       //   path: "/about/accreditation",
       // },
-
-
 
       // },
     ],
