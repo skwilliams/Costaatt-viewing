@@ -74,11 +74,7 @@ const history = () => {
       </p>
 
       <section id="mission" className={standardStyles.sectionNoSidenavFirst}>
-        {/* <h2
-          className={`${standardStyles.newsHeading} ${standardStyles.centertext}`}
-        >
-          <span> VISION</span> & Mission{" "}
-        </h2> */}
+   
         <div className={standardStyles.twoGridCon}>
           <div className={standardStyles.twoGridCol}>
             <h3 className={standardStyles.headingSecondary}>Vision</h3>
@@ -291,140 +287,7 @@ const history = () => {
           </div>
         </div>
       </section>
-      {/* <section id="achieve">
-        <div className={standardStyles.container}>
-          <div className={standardStyles.timeline}>
-            <div
-              className={`${standardStyles.timeline_container} ${standardStyles.primary} `}
-            >
-              <div className={standardStyles.timeline_icon}></div>
-              <div className={standardStyles.timeline_body}>
-                <h4 className={standardStyles.timeline_title}>
-                  <span className={standardStyles.badge}>Primary</span>
-                </h4>
-                <div className={standardStyles.bullet}>
-                  <ul>
-                    <li>
-                      {" "}
-                      COSTAATT focused on aligning its programs with the North
-                      American credit-based system to facilitate horizontal
-                      transfer among the institutions.
-                    </li>
-                    <li>
-                      Introduced the associate degree with a general education
-                      component to enhance the quality of the existing technical
-                      diplomas.{" "}
-                    </li>
-                    <li>
-                      {" "}
-                      Launched the College Prep program for students needing
-                      academic support in Mathematics and English in order to
-                      pursue tertiary level education.
-                    </li>
-                    <li> </li>
-                  </ul>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Aliquam necessitatibus numquam earum ipsa fugiat veniam
-                  suscipit, officiis repudiandae, eum recusandae neque
-                  dignissimos. Cum fugit laboriosam culpa, repellendus esse
-                  commodi deserunt.
-                </div>
-                <p className={standardStyles.timeline_subtitle}>1 Hours Ago</p>
-              </div>
-            </div>
-            {/* <div className={`${standardStyles.timeline-container} ${standardStyles.danger}`}>
-              <div className="timeline-icon">
-                <i className="far fa-grin-hearts" />
-              </div>
-              <div className="timeline-body">
-                <h4 className="timeline-title">
-                  <span className="badge">Danger</span>
-                </h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Aliquam necessitatibus numquam earum ipsa fugiat veniam
-                  suscipit, officiis repudiandae, eum recusandae neque
-                  dignissimos. Cum fugit laboriosam culpa, repellendus esse
-                  commodi deserunt.
-                </p>
-                <p className="timeline-subtitle">2 Hours Ago</p>
-              </div>
-            </div>
-            <div className="timeline-container success">
-              <div className="timeline-icon">
-                <i className="far fa-grin-tears" />
-              </div>
-              <div className="timeline-body">
-                <h4 className="timeline-title">
-                  <span className="badge">Success</span>
-                </h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Aliquam necessitatibus numquam earum ipsa fugiat veniam
-                  suscipit, officiis repudiandae, eum recusandae neque
-                  dignissimos. Cum fugit laboriosam culpa, repellendus esse
-                  commodi deserunt.
-                </p>
-                <p className="timeline-subtitle">6 Hours Ago</p>
-              </div>
-            </div>
-            <div className="timeline-container warning">
-              <div className="timeline-icon">
-                <i className="far fa-grimace" />
-              </div>
-              <div className="timeline-body">
-                <h4 className="timeline-title">
-                  <span className="badge">Warning</span>
-                </h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Aliquam necessitatibus numquam earum ipsa fugiat veniam
-                  suscipit, officiis repudiandae, eum recusandae neque
-                  dignissimos. Cum fugit laboriosam culpa, repellendus esse
-                  commodi deserunt.
-                </p>
-                <p className="timeline-subtitle">1 Day Ago</p>
-              </div>
-            </div>
-            <div className="timeline-container">
-              <div className="timeline-icon">
-                <i className="far fa-grin-beam-sweat" />
-              </div>
-              <div className="timeline-body">
-                <h4 className="timeline-title">
-                  <span className="badge">Secondary</span>
-                </h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Aliquam necessitatibus numquam earum ipsa fugiat veniam
-                  suscipit, officiis repudiandae, eum recusandae neque
-                  dignissimos. Cum fugit laboriosam culpa, repellendus esse
-                  commodi deserunt.
-                </p>
-                <p className="timeline-subtitle">3 Days Ago</p>
-              </div>
-            </div>
-            <div className="timeline-container info">
-              <div className="timeline-icon">
-                <i className="far fa-grin" />
-              </div>
-              <div className="timeline-body">
-                <h4 className="timeline-title">
-                  <span className="badge">Info</span>
-                </h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Aliquam necessitatibus numquam earum ipsa fugiat veniam
-                  suscipit, officiis repudiandae, eum recusandae neque
-                  dignissimos. Cum fugit laboriosam culpa, repellendus esse
-                  commodi deserunt.
-                </p>
-                <p className="timeline-subtitle">4 Days Ago</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
+     
 
       <secton id="achieve" className={standardStyles.sectiontimeline}>
         <div className={standardStyles.timeline}>
@@ -551,7 +414,7 @@ const history = () => {
         <h2
           className={`${standardStyles.newsHeading} ${standardStyles.centertext}`}
         >
-          <span>ENHANCE</span> Teaching and Learning
+          <span>Our</span> NUMBERS
         </h2>
         <div className={AboutStyles.bythenumbers}>
           <p
@@ -561,21 +424,18 @@ const history = () => {
           </p>
           <table>
             <tbody>
-              {/* <tr>
-                <td>Undergraduates</td>
-                <td>2000 </td>
-              </tr> */}
+           
               <tr>
-                <td className="studnet__type"> Male</td>
-                <td className="cost">1500 </td>
+                <td > Male</td>
+                <td > 1500 </td>
               </tr>
               <tr>
-                <td className="studnet__type">Female</td>
-                <td className="cost">2500</td>
+                <td >Female</td>
+                <td >2500</td>
               </tr>
               <tr>
                 <td className={AboutStyles.total}>Total from 2022-2023</td>
-                <td className="cost">4000</td>
+                <td>4000</td>
               </tr>
             </tbody>
           </table>
@@ -585,23 +445,23 @@ const history = () => {
           >
             <span>Faculty and Staff </span>
           </p>
-          <table className="about">
+          <table >
             <tbody>
               <tr>
                 <td>Faculty (Full-time)</td>
                 <td>2000 </td>
               </tr>
               <tr>
-                <td className="studnet__type"> Faculty ( Part-time)</td>
-                <td className="cost">1500 </td>
+                <td> Faculty ( Part-time)</td>
+                <td >500 </td>
               </tr>
               <tr>
-                <td className="studnet__type">Adjunct</td>
-                <td className="cost">500</td>
+                <td >Adjunct</td>
+                <td >250</td>
               </tr>
               <tr>
                 <td className={AboutStyles.total}>Total from 2022-2023</td>
-                <td className="cost">300</td>
+                <td>750</td>
               </tr>
             </tbody>
           </table>
@@ -610,27 +470,27 @@ const history = () => {
           >
             <span>Degrees Awarded</span>
           </p>
-          <table className="about">
+          <table>
             <tbody>
               <tr>
                 <td>Undergraduate</td>
                 <td>2000 </td>
               </tr>
               <tr>
-                <td className="studnet__type"> Associates</td>
-                <td className="cost">1500 </td>
+                <td > Associates</td>
+                <td >1500 </td>
               </tr>
               <tr>
-                <td className="studnet__type">Diploma</td>
-                <td className="cost">500</td>
+                <td >Diploma</td>
+                <td >500</td>
               </tr>
               <tr>
-                <td className="studnet__type">Certificates</td>
-                <td className="cost">500</td>
+                <td >Certificates</td>
+                <td >500</td>
               </tr>
               <tr className={AboutStyles.total}>
                 <td> Total as of 2022-2023</td>
-                <td className="cost">300</td>
+                <td >300</td>
               </tr>
             </tbody>
           </table>

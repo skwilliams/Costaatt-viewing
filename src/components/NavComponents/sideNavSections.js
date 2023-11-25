@@ -107,4 +107,11 @@ export const sideNavSections = {
     "Opening Hours": "opening",
     "Contact Us":"contact",
   },
+  president: {
+    "Message ":"message",
+    "Biography":"bio",
+    "In the News":'news',
+    "Staff in the Office of President":'officers',
+    "Contact":'contact'
+  },
 };

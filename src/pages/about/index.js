@@ -39,7 +39,6 @@ const index = () => {
       setHasWindow(true);
     }
   }, []);
-  const video = "";
   return (
     <>
       <Head>
@@ -87,7 +86,6 @@ const index = () => {
           its identity, propel growth and impact student lives, namely, Digital
           Transformation, Sustainable Futures and Global Pathways.
         </p>
-        {/* </div> */}
       </section>
       <section id="vision" className={AboutStyles.aboutbackColor}>
         <div className={standardStyles.sectionNoSidenav}>

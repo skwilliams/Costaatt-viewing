@@ -27,3 +27,26 @@
 
 
 }
+.linkhovercolor{
+  background-color:white;
+   &:hover{
+     background-color:$color-primary-light;
+     
+   }
+}
+
+.president{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+// display: grid;
+float:right;
+.name{
+  text-align: center;
+  font-size:1.5rem;
+  color:$color-primary-dark;
+}
+.presidentimg{
+  
+  padding:1rem;
+}
+
+}

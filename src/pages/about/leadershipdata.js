@@ -1,0 +1,228 @@
+export const officeofpresident = [
+//   {
+//     photo: require("../../../public/images/Leadership photos/Keith-Nurse.jpeg"),
+//     handle: "knurse",
+//     altText: " photo Keith Nurse",
+//     name: "Keith Nurse",
+//     position: "President",
+//     email: "knurse@costaatt.edu.tt",
+//     phone: "1-868-625-5030 ext 0000",
+//   },
+  {
+    photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
+    handle: "ccharles",
+    altText: " photo Carlene Charles",
+    name: "Carlene Charles",
+    position: "Executive Assistant",
+    email: "c@costaatt.edu.tt",
+    phone: "1-868-625-5030 ext 1111",
+  },
+
+  {
+    photo: require("../../../public/images/Leadership photos/Rodney-Amar.jpg"),
+    handle: "ramar",
+    altText: " photo Rodney Amar",
+    name: "Rodney Amar",
+    position: "Senior Project Officer",
+    email: "ramar@costaatt.edu.tt",
+    phone: "1-868-625-5030 ext 0000",
+  },
+  {
+    photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
+    handle: "mheadly",
+    altText: " photo Melissa Headley",
+    name: "Melissa Headley",
+    position: "Senior Project Officer",
+    email: "mheadley@costaatt.edu.tt",
+    phone: "1-868-625-5030 ext 0000",
+  },
+  {
+    photo: require("../../../public/images/Leadership photos/Lisa-Solomon.jpg"),
+    handle: "rsolomon",
+    altText: " photo Lisa Solomon",
+    name: "Lisa Solomon",
+    position: "Corporate Secretary",
+    email: "lsolomond@costaatt.edu.tt",
+    phone: "1-868-625-5030 ext 3333 ",
+  },
+
+  {
+    photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
+    handle: "kmaharaj",
+    altText: " photo Kavita Maharaj",
+    name: "Kavita Maharaj",
+    position: "Chief Internal Auditor ",
+    email: "kmaharaj@costaatt.edu.tt",
+    phone: "1-868-625-5030 ext 3333 ",
+  },
+];
+export const vps = [
+    {
+      photo: require("../../../public/images/Leadership photos/Keith-Nurse.jpeg"),
+      handle: "knurse",
+      altText: " photo Keith Nurse",
+      name: "Keith Nurse",
+      position: "President",
+      email: "knurse@costaatt.edu.tt",
+      phone: "1-868-625-5030 ext 0000",
+    },
+  {
+    photo: require("../../../public/images/Leadership photos/Naseem-Koylass.jpg"),
+    handle: "ccharles",
+    altText: " photo Naseem Koylass",
+    name: "Naseem Koylass",
+    position: "Vice President, Academic Affairs",
+    email: "nkoylass@costaatt.edu.tt",
+    phone: "1-868-625-5030 ext 1111",
+  },
+
+  {
+    photo: require("../../../public/images/Leadership photos/HelenWC_small.jpg"),
+    handle: "hcumberbatch",
+    altText: " photo Helen Cumberbatch",
+    name: "Helen Williams-Cumberbatch",
+    position: "Vice President, Student Affairs",
+    email: "hcumberbatch@costaatt.edu.tt",
+    phone: "1-868-625-5030 ext 0000",
+  },
+  {
+    photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
+    handle: "amatthew",
+    altText: " photo Avenille Matthew",
+    name: "Avenille Matthew",
+    position: "Vice Presient,Human Resources ",
+    email: "amatthew@costaatt.edu.tt",
+    phone: "1-868-625-5030 ext 0000",
+  },
+  {
+    photo: require("../../../public/images/Leadership photos/Lisa-Solomon.jpg"),
+    handle: "rsolomon",
+    altText: " photo Lisa Solomon",
+    name: "Lisa Solomon",
+    position: "Corporate Secretary",
+    email: "lsolomond@costaatt.edu.tt",
+    phone: "1-868-625-5030 ext 3333 ",
+  },
+
+  {
+    photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
+    handle: "kmaharaj",
+    altText: " photo Kavita Maharaj",
+    name: "Kavita Maharaj",
+    position: "Chief Internal Auditor ",
+    email: "kmaharaj@costaatt.edu.tt",
+    phone: "1-868-625-5030 ext 3333 ",
+  },
+];
+
+export const management = [
+
+  {
+    photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
+    handle: "ccharles",
+    altText: " photo Carlene Charles",
+    name: "Carlene Charles",
+    position: "Executive Assistant",
+    email: "c@costaatt.edu.tt",
+    phone: "1-868-625-5030 ext 1111",
+  },
+
+  {
+    photo: require("../../../public/images/Leadership photos/Rodney-Amar.jpg"),
+    handle: "ramar",
+    altText: " photo Rodney Amar",
+    name: "Rodney Amar",
+    position: "Senior Project Officer",
+    email: "ramar@costaatt.edu.tt",
+    phone: "1-868-625-5030 ext 0000",
+  },
+  {
+    photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
+    handle: "mheadly",
+    altText: " photo Melissa Headley",
+    name: "Melissa Headley",
+    position: "Senior Project Officer",
+    email: "mheadley@costaatt.edu.tt",
+    phone: "1-868-625-5030 ext 0000",
+  },
+  {
+    photo: require("../../../public/images/Leadership photos/Lisa-Solomon.jpg"),
+    handle: "rsolomon",
+    altText: " photo Lisa Solomon",
+    name: "Lisa Solomon",
+    position: "Corporate Secretary",
+    email: "lsolomond@costaatt.edu.tt",
+    phone: "1-868-625-5030 ext 3333 ",
+  },
+
+  {
+    photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
+    handle: "kmaharaj",
+    altText: " photo Kavita Maharaj",
+    name: "Kavita Maharaj",
+    position: "Chief Internal Auditor ",
+    email: "kmaharaj@costaatt.edu.tt",
+    phone: "1-868-625-5030 ext 3333 ",
+  },
+];
+
+export const deans = [
+  //   {
+  //     photo: require("../../../public/images/Leadership photos/Keith-Nurse.jpeg"),
+  //     handle: "knurse",
+  //     altText: " photo Keith Nurse",
+  //     name: "Keith Nurse",
+  //     position: "President",
+  //     email: "knurse@costaatt.edu.tt",
+  //     phone: "1-868-625-5030 ext 0000",
+  //   },
+  {
+    photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
+    handle: "ccharles",
+    altText: " photo Carlene Charles",
+    name: "Carlene Charles",
+    position: "Executive Assistant",
+    email: "c@costaatt.edu.tt",
+    phone: "1-868-625-5030 ext 1111",
+  },
+
+  {
+    photo: require("../../../public/images/Leadership photos/Rodney-Amar.jpg"),
+    handle: "ramar",
+    altText: " photo Rodney Amar",
+    name: "Rodney Amar",
+    position: "Senior Project Officer",
+    email: "ramar@costaatt.edu.tt",
+    phone: "1-868-625-5030 ext 0000",
+  },
+  {
+    photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
+    handle: "mheadly",
+    altText: " photo Melissa Headley",
+    name: "Melissa Headley",
+    position: "Senior Project Officer",
+    email: "mheadley@costaatt.edu.tt",
+    phone: "1-868-625-5030 ext 0000",
+  },
+  {
+    photo: require("../../../public/images/Leadership photos/Lisa-Solomon.jpg"),
+    handle: "rsolomon",
+    altText: " photo Lisa Solomon",
+    name: "Lisa Solomon",
+    position: "Corporate Secretary",
+    email: "lsolomond@costaatt.edu.tt",
+    phone: "1-868-625-5030 ext 3333 ",
+  },
+
+  {
+    photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
+    handle: "kmaharaj",
+    altText: " photo Kavita Maharaj",
+    name: "Kavita Maharaj",
+    position: "Chief Internal Auditor ",
+    email: "kmaharaj@costaatt.edu.tt",
+    phone: "1-868-625-5030 ext 3333 ",
+  },
+];
+
+

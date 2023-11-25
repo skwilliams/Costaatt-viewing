@@ -283,7 +283,7 @@ export const mainNavLinks = [
     submenu: [
       {
         title: "Registry Services",
-        path: "/admissions/",
+        path: "/admissions",
       },
       {
         title: "Apply Now",
@@ -321,7 +321,7 @@ export const mainNavLinks = [
   },
   {
     title: "COSTAATT Life ",
-    // path: "/",
+ 
     submenu: [
       {
         title: "Student Clubs and Organizations",
@@ -363,11 +363,10 @@ export const mainNavLinks = [
   },
   {
     title: "About Us",
-    // path: "/",
     submenu: [
       {
         title: "Profile at a Glance",
-        path: "/about/",
+        path: "/about",
       },
    
       {

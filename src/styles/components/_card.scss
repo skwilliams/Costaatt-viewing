@@ -26,26 +26,26 @@
         &back {
             transform: rotateY(180deg);
 
-            &-1 {
+            &1 {
                 background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
             }
 
-            &-2 {
+            &2 {
                 background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
             }
 
-            &-3 {
+            &3 {
                 background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
             }
         }
     }
 
 
-    &:hover &sideFront {
+    &:hover &__sidefront {
         transform: rotateY(-180deg);
     }
 
-    &:hover &sideBack {
+    &:hover &__sideback {
         transform: rotateY(0);
     }
 

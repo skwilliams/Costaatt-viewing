@@ -174,7 +174,7 @@ export const subHeaderSections = {
     "Mission":"mission",
     "National":"national",
     "History":"achieve",
-    "Enhance Teaching ":"enhance",
+    "Our Numbers ":"enhance",
   },
   
   about:{
@@ -192,4 +192,12 @@ export const subHeaderSections = {
     "Milestones & Achievements":"achieve",
     "Learning and Teaching": "enhance"
   },
+  executiveleaders :{
+    "Vice Presidents" :"vps",
+    "Management Team":"mgmt",
+    "Deans":"deans",
+
+  }
+  
+
 };
