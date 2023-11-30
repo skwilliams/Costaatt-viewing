@@ -146,7 +146,7 @@
 }
 
 .applicationInstructions h3 {
-  color: #cc6330;
+  color: rgb(255, 88, 0);
 }
 
 .icon {
@@ -167,7 +167,7 @@
 
 .iconfontemp {
   font-size: 1.5rem;
-  color: #cc6330;
+  color: rgb(255, 88, 0);
 }
 
 .steps {
@@ -176,7 +176,7 @@
 
 .stepsnum {
   font-size: 3rem;
-  color: #cc6330;
+  color: rgb(255, 88, 0);
 }
 
 .stepstext {
@@ -257,7 +257,7 @@
   }
   .cardCon:hover {
     color: white;
-    background-image: linear-gradient(to right, #cc6330, rgb(254, 80, 0));
+    background-image: linear-gradient(to right, rgb(255, 88, 0), rgb(254, 80, 0));
     background-color: rgb(41, 40, 42);
   }
   .cardCon .cardtext {
@@ -320,7 +320,7 @@
     line-height: 1.5;
   }
   .entryreq .list .items::marker {
-    color: #cc6330;
+    color: rgb(255, 88, 0);
   }
   .entryreq .list .items:last-child {
     margin-bottom: 2rem;
@@ -385,7 +385,7 @@
     text-decoration: underline;
     text-underline-position: under;
     padding: 1rem 2rem 0 1rem;
-    color: #cc6330;
+    color: rgb(255, 88, 0);
     float: right;
   }
   .downloadicon {
@@ -416,7 +416,7 @@
     text-align: left;
   }
   .feesreq .feeslist .feesitems::marker {
-    color: #cc6330;
+    color: rgb(255, 88, 0);
   }
   .feesreq .feeslist .feesitems:last-child {
     margin-bottom: 2rem;
@@ -453,7 +453,7 @@
     font-size: 1.1rem;
     line-height: 1.75;
     font-family: "Lato";
-    color: #cc6330;
+    color: rgb(255, 88, 0);
     text-align: left;
   }
   .sectionExemptionListCape .twoColGridCon {

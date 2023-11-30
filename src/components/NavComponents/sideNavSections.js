@@ -114,4 +114,11 @@ export const sideNavSections = {
     "Staff in the Office of President":'officers',
     "Contact":'contact'
   },
+  trustees :{
+    "Overview":'overview',
+    "Responsibilites":"resp",
+    "Vision":"vision",
+    "Trustees":"trustees",
+
+  }
 };

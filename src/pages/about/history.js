@@ -7,7 +7,7 @@ import DeanStyles from "@/styles/Dean.module.scss";
 import AboutStyles from "@/styles/About.module.scss";
 import { IconContext } from "react-icons";
 
-
+import Core from "@/components/PageComponents/Core"
 
 import telephone from "../../../public/images/admissions/telephone.svg";
 import email from "../../../public/images/admissions/email.svg";
@@ -74,19 +74,19 @@ const history = () => {
       </p>
 
       <section id="mission" className={standardStyles.sectionNoSidenavFirst}>
-   
+        <div className={standardStyles.centertext}>
+          <h3 className={standardStyles.headingSecondary}>
+            {" "}
+            <span>Our Motto </span>
+          </h3>
+          <p className={standardStyles.paragraph}>
+            Transforming lives, Transforming communities,Transforming the
+            Nation, One studnet at a time
+          </p>
+        </div>
         <div className={standardStyles.twoGridCon}>
           <div className={standardStyles.twoGridCol}>
-            <h3 className={standardStyles.headingSecondary}>Vision</h3>
-            <p className={standardStyles.paragraph}>
-              To be a student-cantered, dynamic and innovative, world-class
-              multi-campus college, promoting excellence in teaching and
-              learning, serving diverse communities and producing lifelong
-              learners who can compete globally.
-            </p>
-          </div>
-          <div className={standardStyles.twoGridCol}>
-            <h3 className={standardStyles.headingSecondary}>Mission</h3>
+            <h3 className={standardStyles.headingSecondary}> Our Mission</h3>
             <p className={standardStyles.paragraph}>
               To be the premier educational institution in providing
               high-quality, affordable and accessible educational programmes
@@ -95,7 +95,52 @@ const history = () => {
               development of its students, faculty and staff.
             </p>
           </div>
+          <div className={standardStyles.twoGridCol}>
+            <h3 className={standardStyles.headingSecondary}> Our Vision</h3>
+            <p className={standardStyles.paragraph}>
+              To be a student-cantered, dynamic and innovative, world-class
+              multi-campus college, promoting excellence in teaching and
+              learning, serving diverse communities and producing lifelong
+              learners who can compete globally.
+            </p>
+          </div>
         </div>{" "}
+      </section>
+      <section id="core" className={standardStyles.sectionNoSidenavFirst}>
+        <div className={standardStyles.centertext}>
+          <h3 className={standardStyles.headingSecondary}>Our Core Values</h3>
+        </div>
+
+        <div className={standardStyles.threeColGridCon}>
+          <div className={standardStyles.threeColGrid}>
+            <div className={standardStyles.bullet}>
+              <ul>
+                <li>Student-centerdness</li>
+                <li>Excellence in teaching and learning</li>
+                <li>Commitment to service excellence and customer care</li>
+              </ul>
+            </div>
+          </div>
+          <div className={standardStyles.threeColGrid}>
+            <div className={standardStyles.bullet}>
+              <ul>
+                <li>Innovation and creativity</li>
+                <li>Respect for others,teamwork and partnership</li>
+                <li>Integrity,ethics and professionalism</li>
+              </ul>
+            </div>
+          </div>
+          <div className={standardStyles.threeColGrid}>
+            <div className={standardStyles.bullet}>
+              <ul>
+                <li>Transparency and fairness in college operations</li>
+                <li>Continuous learning and improvement</li>
+                <li>Responsibility and Accountability</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <p className={standardStyles.paragraph}>
           {" "}
           <b> The primary mandate of the College is to deliver: </b>
@@ -235,7 +280,7 @@ const history = () => {
           </p>
         </div>
 
-        <div className={standardStyles.sectionNoSidenav}>
+        {/* <div className={standardStyles.sectionNoSidenav}>
           <p className={standardStyles.paragraph}>
             From 1998 to 2000, a Community College Implementation Team (CCIT)
             established under the jurisdiction of NIHERST, was assigned the
@@ -285,9 +330,8 @@ const history = () => {
               </li>
             </ul>
           </div>
-        </div>
+        </div> */}
       </section>
-     
 
       <secton id="achieve" className={standardStyles.sectiontimeline}>
         <div className={standardStyles.timeline}>
@@ -424,14 +468,13 @@ const history = () => {
           </p>
           <table>
             <tbody>
-           
               <tr>
-                <td > Male</td>
-                <td > 1500 </td>
+                <td> Male</td>
+                <td> 1500 </td>
               </tr>
               <tr>
-                <td >Female</td>
-                <td >2500</td>
+                <td>Female</td>
+                <td>2500</td>
               </tr>
               <tr>
                 <td className={AboutStyles.total}>Total from 2022-2023</td>
@@ -445,7 +488,7 @@ const history = () => {
           >
             <span>Faculty and Staff </span>
           </p>
-          <table >
+          <table>
             <tbody>
               <tr>
                 <td>Faculty (Full-time)</td>
@@ -453,11 +496,11 @@ const history = () => {
               </tr>
               <tr>
                 <td> Faculty ( Part-time)</td>
-                <td >500 </td>
+                <td>500 </td>
               </tr>
               <tr>
-                <td >Adjunct</td>
-                <td >250</td>
+                <td>Adjunct</td>
+                <td>250</td>
               </tr>
               <tr>
                 <td className={AboutStyles.total}>Total from 2022-2023</td>
@@ -477,20 +520,20 @@ const history = () => {
                 <td>2000 </td>
               </tr>
               <tr>
-                <td > Associates</td>
-                <td >1500 </td>
+                <td> Associates</td>
+                <td>1500 </td>
               </tr>
               <tr>
-                <td >Diploma</td>
-                <td >500</td>
+                <td>Diploma</td>
+                <td>500</td>
               </tr>
               <tr>
-                <td >Certificates</td>
-                <td >500</td>
+                <td>Certificates</td>
+                <td>500</td>
               </tr>
               <tr className={AboutStyles.total}>
                 <td> Total as of 2022-2023</td>
-                <td >300</td>
+                <td>300</td>
               </tr>
             </tbody>
           </table>

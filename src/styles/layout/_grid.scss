@@ -169,7 +169,7 @@
 
 
 
-.threeColGridCon1 {
+.threeColGridCon {
   display: grid;
   gap: 8rem;
   grid-gap: 2rem;
@@ -226,9 +226,9 @@
 }
 
 
-  @media (min-width:50em) {
+  @media (max-width:600px) {
   .twoGridCon{
-     grid-template-columns: 1fr 1fr ; 
+     grid-template-columns: 1fr ; 
   }
    
 
@@ -250,9 +250,9 @@
 }
 
 
-  @media (min-width:50em) {
+  @media (max-width:50em) {
   .sixColGridCon{
-     grid-template-columns: 1fr 1fr 1fr; 
+     grid-template-columns: 1fr ; 
   }
    
 

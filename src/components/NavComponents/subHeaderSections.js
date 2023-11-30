@@ -196,8 +196,10 @@ export const subHeaderSections = {
     "Vice Presidents" :"vps",
     "Management Team":"mgmt",
     "Deans":"deans",
+    "Academic Heads of Departments":"head"
 
   }
+  
   
 
 };

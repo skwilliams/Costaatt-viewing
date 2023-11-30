@@ -218,7 +218,7 @@
 }
 
 .explore {
-  color: #cc6330;
+  color: rgb(255, 88, 0);
   font-size: 1.2rem;
   float: right;
 }
@@ -276,7 +276,7 @@
 
 .areasofstudyli:hover {
   text-decoration: underline;
-  color: #cc6330;
+  color: rgb(255, 88, 0);
   padding-bottom: 0.5rem;
 }
 
@@ -537,7 +537,7 @@ form.degreesearch input[type=text] {
 
 .courseaccordion {
   text-align: center;
-  background-image: linear-gradient(to right, #cc6330, #cc6330);
+  background-image: linear-gradient(to right, rgb(255, 88, 0), rgb(255, 88, 0));
   background-image: -o-linear-gradient(right, rgb(62, 19, 83), rgb(239, 65, 41));
 }
 
@@ -598,7 +598,7 @@ form.degreesearch input[type=text] {
 }
 .sectionschoolnews .goto {
   text-align: center;
-  color: #cc6330;
+  color: rgb(255, 88, 0);
   padding: 2rem;
   font-weight: 800;
   font-size: 1.25rem;
@@ -651,7 +651,7 @@ table.academiccalendar {
 .academiccalendar th {
   position: sticky;
   top: 0;
-  background-color: #cc6330;
+  background-color: rgb(255, 88, 0);
   color: white;
   font-family: "Bodoni";
   text-transform: capitalize;

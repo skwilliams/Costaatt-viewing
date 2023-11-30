@@ -62,7 +62,9 @@ const president = () => {
               width="363"
               height="422"
             />
-            <p className={standardStyles.name}><span> Dr. Keith Nurse</span>  </p>
+            <p className={standardStyles.name}>
+              <span> Dr. Keith Nurse</span>{" "}
+            </p>
 
             {/* <StaffCard
               name="Keith Nurse"
@@ -99,22 +101,35 @@ const president = () => {
             <span> Biography </span>
           </h2>
           <p className={standardStyles.paragraph}>
-            Fugiat qui nulla voluptate magna sunt deserunt aliquip ipsum cillum.
-            Proident dolor reprehenderit cupidatat mollit minim. Aliqua id enim
-            officia minim sunt nulla ex. Et id fugiat velit adipisicing. Amet do
-            minim ad enim voluptate laborum reprehenderit magna. Pariatur
-            proident eu sint laboris reprehenderit. Pariatur proident eu et
-            veniam qui enim sunt. Consectetur veniam aliqua sint velit culpa
-            exercitation proident adipisicing. Irure labore mollit duis labore.
-            Aliquip fugiat reprehenderit ipsum anim ad adipisicing laboris est
-            nulla velit voluptate officia est veniam. Magna velit dolor ut
-            officia ipsum esse Lorem dolore consequat ut et sit aliquip. Velit
-            do exercitation anim officia nostrud et nisi eiusmod ipsum aliqua
-            incididunt. Et duis do laborum quis. Ullamco in amet sit minim
-            consectetur. Sunt sit enim mollit commodo nostrud. Nulla laboris
-            deserunt ullamco dolore laboris incididunt. Elit consectetur
-            excepteur voluptate excepteur adipisicing anim ipsum irure ad.
-            Ullamco non officia qui sit aute anim ea non veniam.
+            Dr. Keith Nurse was appointed to the position of President of the
+            College of Science, Technology and Applied Arts of Trinidad and
+            Tobago (COSTAATT), with effect from November 01, 2022. 
+            
+            </p>
+            <p className={standardStyles.paragraph}>
+
+            Dr. Nurse is the former Principal/CEO of the Sir Arthur Lewis Community College
+            in Saint Lucia and has worked as a Senior Economist and Advisor on
+            Structural Policies and Innovation at the OECD Development Centre in
+            Paris. He is the former World Trade Organization Chair at The
+            University of the West Indies, where he also served as the Director
+            of the Shridath Ramphal Trade Policy Centre, Executive Director of
+            UWI Consulting Inc., Senior Fellow at the Sir Arthur Lewis Institute
+            for Social and Economic Studies and Senior Lecturer at the Institute
+            of International Relations.
+
+            </p> 
+            <p className={standardStyles.paragraph}>
+               Throughout his career, Dr. Nurse has
+            published extensively on a wide array of issues such as trade policy
+            and services, industrial policy and innovation governance, creative
+            industries and the digital economy, tourism industries, migration
+            and diasporas, gender and economic restructuring, climate action and
+            sustainable development and disaster risk reduction. Dr. Nurse has
+            also worked as a consultant and advisor to various governments,
+            regional and international agencies, including the UN Committee for
+            Development Policy, the OAS, the IDB, and the Commonwealth and
+            CARICOM Secretariats.
           </p>
         </section>
         <section id="news" className={standardStyles.sectionWithSideNav}>

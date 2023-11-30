@@ -14,8 +14,8 @@ const FacultyStaffCard = ({ staff, dept }) => {
                   className={StaffStyle.imgstyle}
                   src={fe.photo}
                   alt={fe.altText}
-                  width="200"
-                  height="200"
+                  width="250"
+                  height="250"
                 />
               )}
 

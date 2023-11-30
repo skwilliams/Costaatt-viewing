@@ -108,11 +108,15 @@
     font-weight: 700;
     display: inline-block;
     background-image: linear-gradient(to right, $red, $orange);
-   background-clip: text;
+    background-clip: text;
     color: transparent;
     letter-spacing: .2rem;
     margin: 2rem 0;
     // transition: all .2s;
+    span {
+
+        text-align: center;
+    }
 
     @include respond(tab-port) {
         font-size: 3rem;
