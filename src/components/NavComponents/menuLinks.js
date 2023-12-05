@@ -9,22 +9,22 @@ export const topNavLinksLeft = [
         left: "100px",
         width: "100%",
         position: "absolute",
-
-        // submenu: [
-        //   {
-        //     title: "Criminal Justice, Human Security and Legal Studies",
-        //     path: "programmes",
-        //   },
-        //   {
-        //     title: "Social and Behavioural Sciences Department ",
-        //     path: "programmes",
-        //   },
-        //   {
-        //     title: "Education",
-        //     path: "programmes",
-        //   },
-        // ],
       },
+        // submenu: [
+          {
+            title: "Criminal Justice, Human Security and Legal Studies",
+            path: "programmes",
+          },
+          {
+            title: "Social and Behavioural Sciences Department ",
+            path: "programmes",
+          },
+          {
+            title: "Education",
+            path: "programmes",
+          },
+        // ],
+      
 
       {
         title: "School of Nursing, Health and Medical Technologies",
