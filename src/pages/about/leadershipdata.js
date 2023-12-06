@@ -57,15 +57,15 @@ export const officeofpresident = [
   },
 ];
 export const vps = [
-    {
-      photo: require("../../../public/images/Leadership photos/Keith-Nurse.jpeg"),
-      handle: "knurse",
-      altText: " photo Keith Nurse",
-      name: "Keith Nurse",
-      position: "President",
-      email: "knurse@costaatt.edu.tt",
-      phone: "1-868-625-5030 ext 0000",
-    },
+  // {
+  //   photo: require("../../../public/images/Leadership photos/Keith-Nurse.jpeg"),
+  //   handle: "knurse",
+  //   altText: " photo Keith Nurse",
+  //   name: "Keith Nurse",
+  //   position: "President",
+  //   email: "knurse@costaatt.edu.tt",
+  //   phone: "1-868-625-5030 ext 0000",
+  // },
   {
     photo: require("../../../public/images/Leadership photos/Naseem-Koylass.jpg"),
     handle: "ccharles",
@@ -74,6 +74,8 @@ export const vps = [
     position: "Vice President, Academic Affairs",
     email: "nkoylass@costaatt.edu.tt",
     phone: "1-868-625-5030 ext 1111",
+    bio: "Dr. Naseem Koylass was appointed to the position of Vice President, Academic Affairs effective July 1, 2022.Dr. Koylass is a long-standing member of the COSTAATT community and has held a wide range of leadership positions over the last 20 years, including department chair, campus dean and more recently, Associate Vice President, Academic Affairs.Dr Koylass has played a critical role in the College's accreditation and quality assurance activities since COSTAATT was first established in October 2000, and brings to her new position a wealth of knowledge and experience in academic and administrative leadership",
+    
   },
 
   {
@@ -84,6 +86,7 @@ export const vps = [
     position: "Vice President, Student Affairs",
     email: "hcumberbatch@costaatt.edu.tt",
     phone: "1-868-625-5030 ext 0000",
+    bio: " Dr. Helen Williams-Cumberbatch was appointed to the position of Vice President, Student Affairs effective July 1, 2022. Prior to this appointment, she served in a range of positions at COSTAATT for over 20 years. In the last decade, she has led the College's marketing and public relations and enrolment management departments Dr. Williams-Cumberbatch is a Fulbright scholar who completed doctoral studies at Ohio University, USA. She holds a Ph.D. in Higher Education and Student Affairs, and a MSc. in Higher Education (Enrolment Management specialization) and a BSc. in Management Studies"
   },
   {
     photo: require("../../../public/images/Leadership photos/Avenille-Matthew.jpg"),
@@ -93,9 +96,18 @@ export const vps = [
     position: "Vice Presient,Human Resources ",
     email: "amatthew@costaatt.edu.tt",
     phone: "1-868-625-5030 ext 0000",
+    bio: "Dr. Alvinelle Matthew was appointed Vice President, Human Resources Division at the College of Science, Technology and Applied Arts of the Trinidad and Tobago (COSTAATT) in January 2018.She possess a wealth of experience in developing and administering strategic human resource functions within the tertiary level sector and in various private organisations. She is passionate about human resource development and on a part-time basis engages in teaching ",
   },
-
-
+  {
+    photo: require("../../../public/images/Leadership photos/Lisa-Solomon.jpg"),
+    handle: "rsolomon",
+    altText: " photo Lisa Solomon",
+    name: "Lisa Solomon",
+    position: "Corporate Secretary",
+    email: "lsolomond@costaatt.edu.tt",
+    phone: "1-868-625-5030 ext 3333 ",
+    bio: "Lisa Solomon is an Attorney-at-Law with close to 20 years experience, having worked as a member of various firms, in public institutions and in her own private practice. She is knowledgeable in company law and corporate governance and has worked closely with various boards of directors in the capacity of Assistant Corporate Secretary and Corporate Secretary.Ms. Solomon obtained her Bachelor of Laws degree from the University of the West Indies and the Legal Education Certificate from the Hugh Wooding Law School",
+  },
 ];
 
 export const management = [

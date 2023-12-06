@@ -11,7 +11,7 @@ const FacultyStaffCard = ({ staff, dept }) => {
             <div className={StaffStyle.cardCont}>
               {fe.photo && fe.altText && (
                 <Image
-                  className={StaffStyle.imgstyle}
+                  className={StaffStyle.photo}
                   src={fe.photo}
                   alt={fe.altText}
                   width="250"

@@ -1,18 +1,34 @@
-import React,{useState} from "react";
+import React,{useState, useEffect,useRef} from "react";
 import Link from "next/link";
 import Head from "next/head";
 import standardStyles from "@/styles/main.module.scss";
 
 import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
 
+const paragraphStyles={
+  webkitLineClamp:3,
+  webkitBoxOrient: 'vertical',
+  overflow:"hidden",
+  display:"-webkit-box",
 
-import Popup from "@/components/PageComponents/Popup";
+}
+
 
 
 
 const accreditation = () => {
 
-  const [showModal,setShowModal]=useState(false);
+  const [isOpen, setIsOpen]=useState(false);
+  const [showReadMoreButton,setShowReadMoreButton] = useState(false);
+const ref = useRef(null)
+
+useEffect(() => {
+  if(ref.current){
+    console.log(ref.current.scrollHeight, ref.current.clientHeight)
+    setShowReadMoreButton(ref.current.scrollHeight !== ref.current.clientHeight)
+  }
+
+})
 
   return (
     <>
@@ -33,7 +49,7 @@ const accreditation = () => {
           {" "}
           Implementing a modal
         </h2>
-        <p className={standardStyles.paragraph}>
+        <p  style ={(isOpen ? null : paragraphStyles) ref ={ref} }>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed sed
           risus pretium quam. Aliquam sem et tortor consequat id. Volutpat odio
@@ -49,9 +65,10 @@ const accreditation = () => {
           etiam. Imperdiet sed euismod nisi p
         </p>
         <a
-          onClick={() => setShowModal(true)}
-          className={standardStyles.btnText}
-        >
+          onClick={() => setisOpen(!isOpen)}
+
+          className={standardStyles.btnText}>
+        
           Read More &rarr;
         </a>
 

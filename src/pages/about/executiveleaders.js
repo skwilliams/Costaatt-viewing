@@ -8,6 +8,8 @@ import Link from "next/link";
 import { deans,vps,management,heads } from "./leadershipdata";
 import FacultyStaffCard from "@/components/PageComponents/FacultyStaffDepCard";
 import DeptStyles from "../../styles/DepartCard.module.scss";
+import BioCard from "@/components/PageComponents/BioCard";
+
 
 
 const executiveleaders = () => {
@@ -24,11 +26,10 @@ const executiveleaders = () => {
         <Link href="/about">About/</Link>
         <Link href="/about/executive">Executive</Link>
       </p>
- 
 
       <section
         id="vps"
-        className={`${standardStyles.sectionNoSidenavFirst} ${standardStyles.centertext}`}
+        className={`${standardStyles.sectionNoSidenavMar} ${standardStyles.centertext}`}
       >
         <p className={standardStyles.paragraph}>
           Our Executive Leadership Team of highly experienced, motivated and
@@ -36,8 +37,9 @@ const executiveleaders = () => {
           levels of quality, service standards and global recognition.
         </p>
         <h2 className={standardStyles.newsHeading}>Executive Leaders</h2>
-        <div className={DeptStyles.threeColGridCon}>
-          <FacultyStaffCard staff={vps} />
+        <div className={standardStyles.row}>
+        
+          <BioCard staff={vps} />
         </div>
       </section>
       <section
