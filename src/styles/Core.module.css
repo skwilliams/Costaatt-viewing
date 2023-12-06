@@ -1,0 +1,11 @@
+.container {
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(to right, rgb(104, 91, 199), rgb(41, 40, 42));
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  min-height: 6rem;
+  margin: auto;
+  font-size: 1.1rem;
+  justify-content: center;
+}/*# sourceMappingURL=Core.module.css.map */

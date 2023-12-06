@@ -72,13 +72,13 @@
 }
 
 .activeSideNavSubsection {
-  color: #cc6330;
+  color: rgb(255, 88, 0);
 }
 
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: #cc6330;
+  color: rgb(255, 88, 0);
 }
 
 .hover-underline-animation::after {
@@ -169,8 +169,8 @@
   transition: all 0.8s ease;
   border-radius: 15px;
   text-underline-position: under;
-  -webkit-text-decoration: underline solid #cc6330 4px !important;
-          text-decoration: underline solid #cc6330 4px !important;
+  -webkit-text-decoration: underline solid rgb(255, 88, 0) 4px !important;
+          text-decoration: underline solid rgb(255, 88, 0) 4px !important;
 }
 
 .navBarLinks:hover .dropDownMain {
@@ -205,8 +205,8 @@
 }
 .dropDown .dropDownLi:hover {
   transition: all 0.5s ease;
-  -webkit-text-decoration: underline solid #cc6330 4px;
-          text-decoration: underline solid #cc6330 4px;
+  -webkit-text-decoration: underline solid rgb(255, 88, 0) 4px;
+          text-decoration: underline solid rgb(255, 88, 0) 4px;
   text-underline-position: under;
 }
 

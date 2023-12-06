@@ -5,9 +5,7 @@ const NewsTile = ({ title, img, date, desc, time, topic, location }) => {
   return (
     <>
       <div>
-        <Image src={img} alt={title} 
-        
-        />
+        <Image src={img} alt={title} />
         <div>
           <h1>{title} </h1>
           <p> {date}</p>

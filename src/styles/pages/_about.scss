@@ -1,0 +1,52 @@
+@import"../abstracts/variables";
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+.sectiontimeline{
+
+  background: linear-gradient(55deg,$color-primary 30%,$color-primary-dark 90%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 12vh 200px;
+  font-family: 'Source Sans Pro', arial, sans-serif;
+  font-weight: 300;
+  color: #333;
+  box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+  }
+
+
+
+
+
+
+
+
+}
+.linkhovercolor{
+  background-color:white;
+   &:hover{
+     background-color:$color-primary-light;
+     
+   }
+}
+
+.president{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+// display: grid;
+float:right;
+.name{
+  text-align: center;
+  font-size:1.5rem;
+  color:$color-primary-dark;
+}
+.presidentimg{
+  
+  padding:1rem;
+}
+
+}

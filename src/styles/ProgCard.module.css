@@ -148,7 +148,7 @@
   font-weight: 600;
   margin-left: 0;
   font-family: "Lato";
-  color: #cc6330;
+  color: rgb(255, 88, 0);
   grid-column-end: span 2;
   text-align: left;
 }
@@ -180,7 +180,7 @@
 }
 
 .cardyearsAll {
-  color: #cc6330;
+  color: rgb(255, 88, 0);
   font-weight: 800;
   font-size: 1.1rem;
   text-align: left;

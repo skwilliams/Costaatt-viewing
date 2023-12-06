@@ -21,24 +21,11 @@ import EventCardOrig from "@/components/PageComponents/EventCardOrig";
 
 import StudentCouncilRep from "@/components/PageComponents/StudentCouncilRep";
 import ContactStudentLife from "@/components/PageComponents/ContactStudentLife";
-import gal1 from "../../../public/images/costaattlife/lab1.jpg";
-import gal2 from "../../../public/images/costaattlife/lab2.jpg";
-import gal3 from "../../../public/images/costaattlife/lab3.jpg";
-import gal4 from "../../../public/images/costaattlife/lab4.jpg";
-import gal5 from "../../../public/images/costaattlife/lab5.jpg";
-import gal6 from "../../../public/images/costaattlife/lab6.jpg";
-import gal7 from "../../../public/images/costaattlife/lab7.jpg";
-import gal8 from "../../../public/images/costaattlife/lab8.jpg";
-import gal9 from "../../../public/images/costaattlife/lab9.jpg";
-import gal10 from "../../../public/images/costaattlife/lab10.jpg";
-import gal11 from "../../../public/images/costaattlife/lab11.jpg";
-import gal12 from "../../../public/images/costaattlife/lab12.jpg";
+import home2 from "../../../public/images/about/home2.png";
+import home3 from "../../../public/images/about/home3.png";
+import home5 from "../../../public/images/about/home5.png";
+import home6 from "../../../public/images/about/home6.png";
 
-import gal13 from "../../../public/images/costaattlife/lab13.jpg";
-import gal14 from "../../../public/images/costaattlife/lab14.jpg";
-import ReactPlayer from "react-player";
-
-import GradStyle from "../../styles/GradsSpeak.module.scss";
 import { useState } from "react";
 import { useEffect } from "react";
 import FacultyStaffCard from "@/components/PageComponents/FacultyStaffDepCard";
@@ -52,7 +39,6 @@ const index = () => {
       setHasWindow(true);
     }
   }, []);
-  const video = "";
   return (
     <>
       <Head>
@@ -68,89 +54,297 @@ const index = () => {
       </p>
 
       <section id="glance" className={standardStyles.sectionNoSidenavFirst}>
-       <div className={AboutStyles.aboutbackColor}>
-
- <h2 className={`${standardStyles.newsHeadingwhite} ${standardStyles.newsHeading}`}>
-          
+        {/* <div className={AboutStyles.aboutbackColor}> */}
+        <h2
+          className={`${standardStyles.newsHeading} ${standardStyles.centertext}`}
+        >
           <span> The Premier</span> Undergraduate College{" "}
         </h2>
-        <p className={`${standardStyles.paragraph} ${standardStyles.text2columns}`}>
+        <p
+          className={`${standardStyles.paragraph} ${AboutStyles.text2columns}`}
+        >
           {" "}
-          COSTTAATT was established in October 2000 by an Acto of Parliament(Act No. 77 of 2000) with the purpose of contrib
-
+          COSTAATT was established in October 2000 by an Act of Parliament (ACT
+          No. 77 of 2000) with the purpose of contributing to national and
+          regional development , social equity and the development of civil
+          society by providing broad-based access to socially responsive and
+          innovative educational programmes and by engaging in scholarly work
+          and applied research. <br />
+          COSTAATT is an accredited, multi-campus, undergraduate college with
+          six academic schools. We have proudly graduated over 20,000 students
+          in over 100 programmes ranging from bachelor's and associate degrees
+          to diplomas and certificates.
+          <br /> Approximately 66% of our programmes offering focus on applied
+          and skills-based learning in contemporary disciplines. <br />
+          The College has recently established an Upskilling Academy to boost
+          entrepreneurial growth through specialized training, business
+          incubation and acceleration services. The Tech Hub is also a new
+          service area catering to prototyping, product commercialization,
+          digital content creation and business coaching.
+          <br /> Underpinning the College's commitment to excellence, innovation
+          and global relevance are three key strategic imperatives, which shape
+          its identity, propel growth and impact student lives, namely, Digital
+          Transformation, Sustainable Futures and Global Pathways.
         </p>
-
-
-       </div>
-       
-       
-       
-
-  
       </section>
-      <section id="schools" className={`${standardStyles.sectionNoSidenav}`}>
-        <h2 className={standardStyles.newsHeading}>
+      <section id="vision" className={AboutStyles.aboutbackColor}>
+        <div className={standardStyles.sectionNoSidenav}>
           {" "}
-          IT <span> Services</span>
-        </h2>
-        <div className={standardStyles.row}>
-          <div className={standardStyles.col1of2}>
-            <h3 className={standardStyles.headingTertiary}>
-              {" "}
-              E <span> CLASSROOM</span>{" "}
-            </h3>
-
-            <p className={standardStyles.paragraph}>
-              COSTAATT is committed to embracing the best in technology in order
-              to aid and improve classroom interaction and learning, and to
-              expand access to students who may not be able to attend classes at
-              one of our campuses or sites. The College's e-classroom allows
-              lecturers to deliver instruction, manage student discussions,
-              administer quizzes and examinations, and provide immediate
-              feedback on performance to students in a secure internet-based
-              environment.
-              <br />
-              Some faculty utilise the e-classroom to facilitate online class
-              discussions or to post class notes to enhance face-to-face
-              courses. Others use the environment to offer fully online or
-              blended courses
-            </p>
-
-            <button
-              className={`${standardStyles.btn} ${standardStyles.btn__purple}`}
-              href="https://id.quicklaunch.io/authenticationendpoint/login.do?RelayState=https%3A%2F%2Fneo.costaatt.edu.tt%2Fmoodle%2Fauth%2Fsaml2%2Flogin.php%3Fwants%3Dhttps%253A%252F%252Fneo.costaatt.edu.tt%252Fmoodle%252F%26idp%3Db18b43740bff764c3f6d498fa8478bf8%26passive%3Doff&SigAlg=http%3A%2F%2Fwww.w3.org%2F2000%2F09%2Fxmldsig%23rsa-sha1&Signature=DslEDwRkOPfUoXi9kd5jk6d2vrSGY2hlB3B%2Fw1L6K13YH35gfdMIOns9t0h1EEUVc3z4LegTSPD%2F04f9lX5lLeNIt9c2uz%2B3kZfYdsqQf2Ooac69qG42%2FYIx9c%2FcUd6RY9b5l4y86auqGRFHtDQMCT9b0qXiPIMAN%2B%2FCqJLBja%2BFOr%2FPOJ8bHaPAx2pjRyUESgv7UxcbMBhIVZA7dEjBH5JFw0N62kVZDo8a2loOFxkEsQaAoa5npx2coFx5bEBEbNm0HwjyAjHfNPbPpiLoUonH7L6OAA6TfmzgbimyuyB%2BdxCRmzPKdaGSm%2FTShAKqZbAs3Kz7adWen8EYkObZhQ%3D%3D&commonAuthCallerPath=%2Fsamlsso&forceAuth=false&passiveAuth=false&tenantDomain=costaatt.edu.tt&sessionDataKey=5baa01b1-09ef-4fc9-9e06-a7cc2a9c6e4a&relyingParty=https%3A%2F%2Fneo.costaatt.edu.tt%2Fmoodle%2Fauth%2Fsaml2%2Fsp%2Fmetadata.php&type=samlsso&sp=Moodle+Prod&isSaaSApp=false&authenticators=BasicAuthenticator:LOCAL"
-            >
-              Access E-ClassRoom
-            </button>
-          </div>
-          <div className={standardStyles.col1of2}>
-            <h3 className={standardStyles.headingTertiary}>
-              Help<span>DESK</span>
-            </h3>
-            <div
-              className={`${standardStyles.featurebox__text} ${standardStyles.bullet}`}
-            >
+          <h2
+            className={` ${standardStyles.newsHeading} ${standardStyles.newsHeadingWhite} ${standardStyles.centertext}`}
+          >
+            {" "}
+            <span> Mission</span> and VISION{" "}
+          </h2>
+          <div className={standardStyles.twoGridCon}>
+            <div className={standardStyles.twoGridCol}>
+              <h3 className={standardStyles.headingSecondary}>Vision</h3>
               <p className={standardStyles.paragraph}>
-                As a student, the Information Technology Help Desk is the single
-                point of contact for all enquiries and requests for assistance
-                related to:
+                To be a student-cantered, dynamic and innovative, world-class
+                multi-campus college, promoting excellence in teaching and
+                learning, serving diverse communities and producing lifelong
+                learners who can compete globally.
               </p>
-              <ul>
-                <li>
-                  Password resets for Windows login (lab PC's) and the
-                  myCOSTAATT web portal
-                </li>
-                <li>Lab and application support</li>
-                <li>Printing support and maintenance</li>
-                <li>Internet access</li>
-                <li>Email accounts and access</li>
-                <li>Scanning services</li>
-                <li>Hardware and software installation</li>
-              </ul>
             </div>
-          </div>{" "}
-          {/*close col 1 of 2 */}
+            <div className={standardStyles.twoGridCol}>
+              <h3 className={standardStyles.headingSecondary}>Mission</h3>
+              <p className={standardStyles.paragraph}>
+                To be the premier educational institution in providing
+                high-quality, affordable and accessible educational programmes
+                serving the needs of business, industry and the diverse campus
+                communities and facilitating the personal and professional
+                development of its students, faculty and staff.
+              </p>
+            </div>
+          </div>
+          <div className={AboutStyles.gallery}>
+            <>
+              <figure className={AboutStyles.gallery__item}>
+                <Image
+                  src={home6}
+                  width={300}
+                  height={300}
+                  alt="Photo of  Home6"
+                  className={AboutStyles.gallery__photo}
+                />
+              </figure>
+              <figure className={AboutStyles.gallery__item}>
+                <Image
+                  src={home3}
+                  width={300}
+                  height={300}
+                  alt="Photo of hotel 2"
+                  className={AboutStyles.gallery__photo}
+                />
+              </figure>
+              <figure className={AboutStyles.gallery__item}>
+                <Image
+                  src={home5}
+                  width={300}
+                  height={300}
+                  alt="Photo of hotel 3"
+                  className={AboutStyles.gallery__photo}
+                />
+              </figure>
+              <figure className={AboutStyles.gallery__item}>
+                <Image
+                  src={home2}
+                  width={300}
+                  height={300}
+                  alt="Photo of hotel 3"
+                  className={AboutStyles.gallery__photo}
+                />
+              </figure>
+            </>
+          </div>
+          <div className={standardStyles.threeColGridCon1}>
+            <div className={standardStyles.threeColGrid}>
+              <div className={standardStyles.featurebox}>
+                <h3 className={standardStyles.headingTertiary}>
+                  Digital
+                  <br /> Transformation{" "}
+                </h3>
+                <p
+                  className={`${standardStyles.featurebox__text} ${standardStyles.leftalign}`}
+                >
+                  Adapting to the digital era is imperative to staying relevant
+                  and competitive. COSTAATT's commitment to cutting-edge
+                  technology enhances learning experiences, fosters innovative
+                  teaching methods, and prepares our students for tech-driven
+                  careers. Through this transformation, we empower learners to
+                  navigate the digital landscape confidently and contribute to a
+                  tech-savvy workforce.
+                </p>
+              </div>
+            </div>
+            <div className={standardStyles.threeColGrid}>
+              <div className={standardStyles.featurebox}>
+                <h3 className={standardStyles.headingTertiary}>
+                  Sustainable <br /> Futures
+                </h3>
+                <p
+                  className={`${standardStyles.featurebox__text} ${standardStyles.leftalign}`}
+                >
+                  Embracing sustainable practices in vital for COSTAATT's
+                  enduring impact. By integrating eco-friendly initiatives into
+                  curricula and operations, we cultivate environmentally
+                  conscious graduates. This imperative ensures resource
+                  efficiency, aligns with the United Nations Sustainable
+                  Development Goals (SDGs), and equips our students to drive
+                  positive change, securing a greener, more resilient future
+                </p>
+              </div>{" "}
+            </div>
+            <div className={standardStyles.threeColGrid}>
+              <div className={standardStyles.featurebox}>
+                <h3 className={standardStyles.headingTertiary}>
+                  Global
+                  <br /> Pathways
+                </h3>
+                <p
+                  className={`${standardStyles.featurebox__text} ${standardStyles.leftalign}`}
+                >
+                  Enabling diverse global opportunities enriches the educational
+                  journey for COSTAATT students. By continually fostering
+                  international collaborations, cultural exchanges, and mobility
+                  programmes, at COSTAATT, we equip students with broader
+                  perspective and vital cross-cultural skills. This imperative
+                  opens doors to varied career pathways and exclusively equips
+                  our graduates to thrive in an interconnected, multicultural
+                  world.
+                </p>
+              </div>{" "}
+            </div>
+          </div>
         </div>{" "}
+        {/*end of sidenav} */}
+      </section>
+      <section id="schools" className={`${standardStyles.sectionbackColor}`}>
+        <h2
+          className={`${AboutStyles.schoolHeading} ${standardStyles.centertext}`}
+        >
+          {" "}
+          ACADEMIC <span> Schools</span>
+        </h2>
+        <p
+          className={`${standardStyles.headingTertiary} ${standardStyles.centertext}`}
+        >
+          {" "}
+          Bachelors Degrees | Associate Degrees | Diplomas | Certificates{" "}
+        </p>
+        <div className={AboutStyles.schoolflex}>
+          <div className={AboutStyles.schoolflex__item}>
+            <div
+              className={`${AboutStyles.schools} ${AboutStyles.schoolsliberal}`}
+            >
+              <Link href="/programmes/schools/liberal">
+                School of Liberal Arts, Education and Digital Humanities
+              </Link>
+            </div>
+          </div>
+          <div className={AboutStyles.schoolflex__item}>
+            <div
+              className={`${AboutStyles.schools} ${AboutStyles.schoolskengord}`}
+            >
+              <Link href="/programmes/schools/kengord">
+                Ken Gordon School of Communication, Creative and Digital Media{" "}
+              </Link>
+            </div>
+          </div>
+          <div className={AboutStyles.schoolflex__item}>
+            <div
+              className={`${AboutStyles.schools} ${AboutStyles.schoolsnursing}`}
+            >
+              <Link href="/programmes/schools/nursing">
+                School of Nursing, Health and Medical Technologies{" "}
+              </Link>
+            </div>
+          </div>
+          <div className={AboutStyles.schoolflex__item}>
+            <div
+              className={`${AboutStyles.schools} ${AboutStyles.schoolsbusIT}`}
+            >
+              <Link href="/programmes/schools/busIT">
+                School of Business and Digital Technologies{" "}
+              </Link>
+            </div>
+          </div>
+
+          <div className={AboutStyles.schoolflex__item}>
+            <div
+              className={`${AboutStyles.schools} ${AboutStyles.schoolsenviro}`}
+            >
+              <Link href="/programmes/schools/enviro">
+                School of Environment, Circular Economy and Sustainability{" "}
+              </Link>
+            </div>
+          </div>
+          <div className={AboutStyles.schoolflex__item}>
+            <div
+              className={`${AboutStyles.schools} ${AboutStyles.schoolsworkF}`}
+            >
+              <Link href="/programmes/schools/workF">
+                School of Workforce, Enhancement and Development{" "}
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <h2
+          className={`${AboutStyles.schoolHeading} ${standardStyles.centertext}`}
+        >
+          {" "}
+          UPSKILLING <span> Academy</span>
+        </h2>
+        <p
+          className={`${standardStyles.headingTertiary} ${standardStyles.centertext}`}
+        >
+          {" "}
+          Vocational Training | Incubation | Acceleration | Business Coaching |
+          Mentorship | Start-ups Financing
+        </p>
+        <div className={AboutStyles.schoolflex}>
+          <div className={AboutStyles.schoolflex__item}>
+            <p
+              className={`${AboutStyles.upskill} ${AboutStyles.schoolsliberal}`}
+            >
+              Tourism, Hospitality and Destination Management
+            </p>
+          </div>
+          <div className={AboutStyles.schoolflex__item}>
+            <p
+              className={`${AboutStyles.upskill} ${AboutStyles.schoolskengord}`}
+            >
+              Creative Industries and New Media
+            </p>
+          </div>
+          <div className={AboutStyles.schoolflex__item}>
+            <p
+              className={`${AboutStyles.upskill} ${AboutStyles.schoolsnursing}`}
+            >
+              Health and Med Tech{" "}
+            </p>
+          </div>
+
+          <div className={AboutStyles.schoolflex__item}>
+            <p className={`${AboutStyles.upskill} ${AboutStyles.schoolsbusIT}`}>
+              Digital and Cyber Entrepreneurship
+            </p>
+          </div>
+
+          <div className={AboutStyles.schoolflex__item}>
+            <p
+              className={`${AboutStyles.upskill} ${AboutStyles.schoolsenviro}`}
+            >
+              Sustainability and Climate Change
+            </p>
+          </div>
+          <div className={AboutStyles.schoolflex__item}>
+            <p className={`${AboutStyles.upskill} ${AboutStyles.schoolsworkF}`}>
+              Food and Agri Entrepreneurship
+            </p>
+          </div>
+        </div>
         {/* close row */}
       </section>
 
@@ -289,7 +483,7 @@ const index = () => {
                 <td className="cost">500</td>
               </tr>
               <tr className={AboutStyles.total}>
-                <td > Total as of 2022-2023</td>
+                <td> Total as of 2022-2023</td>
                 <td className="cost">300</td>
               </tr>
             </tbody>

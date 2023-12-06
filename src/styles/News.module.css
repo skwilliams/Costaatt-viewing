@@ -36,6 +36,30 @@
   color: white;
 }
 
+.newscard {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.newstitle {
+  font-size: 1.3rem;
+  color: #ff7730;
+  text-align: left;
+  padding: 1rem;
+}
+
+.newsdate {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem 0;
+  font-family: "Bodoni";
+}
+
+.newsdesc {
+  text-align: left;
+  padding: 1rem;
+  line-height: 1.75;
+}
+
 .latestNews {
   text-align: center;
   margin-top: 20px;
