@@ -74,8 +74,7 @@ export const vps = [
     position: "Vice President, Academic Affairs",
     email: "nkoylass@costaatt.edu.tt",
     phone: "1-868-625-5030 ext 1111",
-    bio: "Dr. Naseem Koylass was appointed to the position of Vice President, Academic Affairs effective July 1, 2022.Dr. Koylass is a long-standing member of the COSTAATT community and has held a wide range of leadership positions over the last 20 years, including department chair, campus dean and more recently, Associate Vice President, Academic Affairs.Dr Koylass has played a critical role in the College's accreditation and quality assurance activities since COSTAATT was first established in October 2000, and brings to her new position a wealth of knowledge and experience in academic and administrative leadership",
-    
+    bio: "Dr. Naseem Koylass was appointed to the position of Vice President, Academic Affairs effective July 1, 2022.Dr. Koylass is a long-standing member of the COSTAATT community and has held a wide range of leadership positions over the last 20 years, including department chair, campus dean and more recently, Associate Vice President, Academic Affairs.Dr Koylass has played a critical role in the College’s accreditation and quality assurance activities since COSTAATT was first established in October 2000, and brings to her new position a wealth of knowledge and experience in academic and administrative leadership. As the chief administrator in the Division of Academic Affairs, she has guided and mentored the school deans, department chairs, faculty and staff and inspired them to continuously strive to achieve the institution’s goals and objectives.Dr. Koylass’ qualifications, which include a doctorate in Educational Leadership/Curriculum and Instruction, a Master of Science in Economics, a diploma in Educational Administration and a Bachelor of Science in Economics, ably position her to lead the Division of Academic Affairs in this next leg of COSTAATT’s transformational journey to become a centre of excellence in teaching, research and service to the benefit of our diverse communities and the wider nation.",
   },
 
   {
@@ -86,7 +85,7 @@ export const vps = [
     position: "Vice President, Student Affairs",
     email: "hcumberbatch@costaatt.edu.tt",
     phone: "1-868-625-5030 ext 0000",
-    bio: " Dr. Helen Williams-Cumberbatch was appointed to the position of Vice President, Student Affairs effective July 1, 2022. Prior to this appointment, she served in a range of positions at COSTAATT for over 20 years. In the last decade, she has led the College's marketing and public relations and enrolment management departments Dr. Williams-Cumberbatch is a Fulbright scholar who completed doctoral studies at Ohio University, USA. She holds a Ph.D. in Higher Education and Student Affairs, and a MSc. in Higher Education (Enrolment Management specialization) and a BSc. in Management Studies"
+    bio: " Dr. Helen Williams-Cumberbatch was appointed to the position of Vice President, Student Affairs effective July 1, 2022. Prior to this appointment, she served in a range of positions at COSTAATT for over 20 years. In the last decade, she has led the College's marketing and public relations and enrolment management departments Dr. Williams-Cumberbatch is a Fulbright scholar who completed doctoral studies at Ohio University, USA. She holds a Ph.D. in Higher Education and Student Affairs, and a MSc. in Higher Education (Enrolment Management specialization) and a BSc. in Management Studies",
   },
   {
     photo: require("../../../public/images/Leadership photos/Avenille-Matthew.jpg"),

@@ -157,7 +157,7 @@ const index = () => {
               </figure>
             </>
           </div>
-          <div className={standardStyles.threeColGridCon1}>
+          <div className={standardStyles.threeColGridCon}>
             <div className={standardStyles.threeColGrid}>
               <div className={standardStyles.featurebox}>
                 <h3 className={standardStyles.headingTertiary}>
