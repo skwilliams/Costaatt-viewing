@@ -15,7 +15,7 @@ export const officeofpresident = [
     name: "Carlene Charles",
     position: "Executive Assistant",
     email: "c@costaatt.edu.tt",
-    phone: "1-868-625-5030 ext 1111",
+    phone: "1-868-625-5030",
   },
 
   {
@@ -25,7 +25,7 @@ export const officeofpresident = [
     name: "Rodney Amar",
     position: "Senior Project Officer",
     email: "ramar@costaatt.edu.tt",
-    phone: "1-868-625-5030 ext 0000",
+    phone: "1-868-625-5030",
   },
   {
     photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
@@ -34,7 +34,7 @@ export const officeofpresident = [
     name: "Melissa Headley",
     position: "Senior Project Officer",
     email: "mheadley@costaatt.edu.tt",
-    phone: "1-868-625-5030 ext 0000",
+    phone: "1-868-625-5030",
   },
   {
     photo: require("../../../public/images/Leadership photos/Lisa-Solomon.jpg"),
@@ -43,7 +43,7 @@ export const officeofpresident = [
     name: "Lisa Solomon",
     position: "Corporate Secretary",
     email: "lsolomond@costaatt.edu.tt",
-    phone: "1-868-625-5030 ext 3333 ",
+    phone: "1-868-625-5030",
   },
 
   {
@@ -53,7 +53,7 @@ export const officeofpresident = [
     name: "Kavita Maharaj",
     position: "Chief Internal Auditor ",
     email: "kmaharaj@costaatt.edu.tt",
-    phone: "1-868-625-5030 ext 3333 ",
+    phone: "1-868-625-5030",
   },
 ];
 export const vps = [
@@ -73,7 +73,7 @@ export const vps = [
     name: "Naseem Koylass",
     position: "Vice President, Academic Affairs",
     email: "nkoylass@costaatt.edu.tt",
-    phone: "1-868-625-5030 ext 1111",
+    phone: "1-868-625-5030",
     bio: "Dr. Naseem Koylass was appointed to the position of Vice President, Academic Affairs effective July 1, 2022.Dr. Koylass is a long-standing member of the COSTAATT community and has held a wide range of leadership positions over the last 20 years, including department chair, campus dean and more recently, Associate Vice President, Academic Affairs.Dr Koylass has played a critical role in the College's accreditation and quality assurance activities since COSTAATT was first established in October 2000, and brings to her new position a wealth of knowledge and experience in academic and administrative leadership",
     
   },
@@ -85,7 +85,7 @@ export const vps = [
     name: "Helen Williams-Cumberbatch",
     position: "Vice President, Student Affairs",
     email: "hcumberbatch@costaatt.edu.tt",
-    phone: "1-868-625-5030 ext 0000",
+    phone: "1-868-625-5030",
     bio: " Dr. Helen Williams-Cumberbatch was appointed to the position of Vice President, Student Affairs effective July 1, 2022. Prior to this appointment, she served in a range of positions at COSTAATT for over 20 years. In the last decade, she has led the College's marketing and public relations and enrolment management departments Dr. Williams-Cumberbatch is a Fulbright scholar who completed doctoral studies at Ohio University, USA. She holds a Ph.D. in Higher Education and Student Affairs, and a MSc. in Higher Education (Enrolment Management specialization) and a BSc. in Management Studies"
   },
   {
@@ -95,7 +95,7 @@ export const vps = [
     name: "Avenille Matthew",
     position: "Vice Presient,Human Resources ",
     email: "amatthew@costaatt.edu.tt",
-    phone: "1-868-625-5030 ext 0000",
+    phone: "1-868-625-5030",
     bio: "Dr. Alvinelle Matthew was appointed Vice President, Human Resources Division at the College of Science, Technology and Applied Arts of the Trinidad and Tobago (COSTAATT) in January 2018.She possess a wealth of experience in developing and administering strategic human resource functions within the tertiary level sector and in various private organisations. She is passionate about human resource development and on a part-time basis engages in teaching ",
   },
   {
@@ -105,7 +105,7 @@ export const vps = [
     name: "Lisa Solomon",
     position: "Corporate Secretary",
     email: "lsolomond@costaatt.edu.tt",
-    phone: "1-868-625-5030 ext 3333 ",
+    phone: "1-868-625-5030",
     bio: "Lisa Solomon is an Attorney-at-Law with close to 20 years experience, having worked as a member of various firms, in public institutions and in her own private practice. She is knowledgeable in company law and corporate governance and has worked closely with various boards of directors in the capacity of Assistant Corporate Secretary and Corporate Secretary.Ms. Solomon obtained her Bachelor of Laws degree from the University of the West Indies and the Legal Education Certificate from the Hugh Wooding Law School",
   },
 ];
@@ -118,7 +118,7 @@ export const management = [
     name: "Rhonda Cumberbatch",
     position: "College Registrar",
     email: "rcumberbatch@costaatt.edu.tt",
-    phone: "1-868-625-5030 ext 1111",
+    phone: "1-868-625-5030",
   },
 
   {
@@ -128,7 +128,7 @@ export const management = [
     name: "Liesel Gransuall-Brown",
     position: "Director,Education Technologies & Distance Education",
     email: "lbrown@costaatt.edu.tt",
-    phone: "1-868-625-5030 ext 0000",
+    phone: "1-868-625-5030",
   },
   {
     photo: require("../../../public/images/Leadership photos/Dawn-Dookie.jpg"),
@@ -137,7 +137,7 @@ export const management = [
     name: "Dwan Dookie",
     position: "Director, Finance",
     email: "ddookie@costaatt.edu.tt",
-    phone: "1-868-625-5030 ext 0000",
+    phone: "1-868-625-5030",
   },
   {
     photo: require("../../../public/images/Leadership photos/Doodnath-Persad.jpg"),
@@ -146,7 +146,7 @@ export const management = [
     name: "Dr Doodnath Persad",
     position: "Director,Quality Assurance and Institutional Research",
     email: "dpersad@costaatt.edu.tt",
-    phone: "1-868-625-5030 ext 3333 ",
+    phone: "1-868-625-5030",
   },
 
   {
@@ -156,16 +156,16 @@ export const management = [
     name: "Marcia Stanisclaus",
     position: "Director, Planning and Employment",
     email: "mstanisclaus@costaatt.edu.tt",
-    phone: "1-868-625-5030 ext 3333 ",
+    phone: "1-868-625-5030",
   },
   {
-    photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
+    photo: require("../../../public/images/Leadership photos/Ian-Carter.jpg"),
     handle: "icarter",
     altText: " photo Ian Carter",
     name: "Ian Carter",
     position: "Director, Student Life & Athletics ",
     email: "kmaharaj@costaatt.edu.tt",
-    phone: "1-868-625-5030 ext 3333 ",
+    phone: "1-868-625-5030",
   },
   {
     photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
@@ -174,7 +174,16 @@ export const management = [
     name: "Soonita ???",
     position: "Director, Library Services",
     email: "soon@costaatt.edu.tt",
-    phone: "1-868-625-5030 ext 3333 ",
+    phone: "1-868-625-5030",
+  },
+  {
+    photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
+    handle: "kherbert",
+    altText: " photo of Kristed Herbert",
+    name: "Kristed Herbert",
+    position: "Director, Campus Services",
+    email: "kherbert@costaatt.edu.tt",
+    phone: "1-868-625-5030",
   },
 ];
 
@@ -200,7 +209,7 @@ export const deans = [
     phone: "1-868-625-5030 ext 0000",
   },
   {
-    photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
+    photo: require("../../../public/images/Leadership photos/Clarinda-Jack.jpg"),
     handle: "cjack",
     altText: " photo Clarinda Jack",
     name: "Clarinda Jack",
