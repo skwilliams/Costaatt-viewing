@@ -93,7 +93,7 @@ export const vps = [
     handle: "amatthew",
     altText: " photo Avenille Matthew",
     name: "Avenille Matthew",
-    position: "Vice Presient,Human Resources ",
+    position: "Vice President,Human Resources ",
     email: "amatthew@costaatt.edu.tt",
     phone: "1-868-625-5030",
     bio: "Dr. Alvinelle Matthew was appointed Vice President, Human Resources Division at the College of Science, Technology and Applied Arts of the Trinidad and Tobago (COSTAATT) in January 2018.She possess a wealth of experience in developing and administering strategic human resource functions within the tertiary level sector and in various private organisations. She is passionate about human resource development and on a part-time basis engages in teaching ",
@@ -107,6 +107,16 @@ export const vps = [
     email: "lsolomond@costaatt.edu.tt",
     phone: "1-868-625-5030",
     bio: "Lisa Solomon is an Attorney-at-Law with close to 20 years experience, having worked as a member of various firms, in public institutions and in her own private practice. She is knowledgeable in company law and corporate governance and has worked closely with various boards of directors in the capacity of Assistant Corporate Secretary and Corporate Secretary.Ms. Solomon obtained her Bachelor of Laws degree from the University of the West Indies and the Legal Education Certificate from the Hugh Wooding Law School",
+  },
+  {
+    photo: require("../../../public/images/Leadership photos/Davis-Ragoonanan.jpg"),
+    handle: "dragoonanan",
+    altText: " photo Davis Ragoonanan",
+    name: "Davis Ragoonanan",
+    position: "Vice President,Human Resources ",
+    email: "dRagoonanan@costaatt.edu.tt",
+    phone: "1-868-625-5030",
+    bio: "Davis Ragoonanan... ",
   },
 ];
 
@@ -126,7 +136,7 @@ export const management = [
     handle: "lbrown",
     altText: " photo Liesel Gransaull-Brown",
     name: "Liesel Gransuall-Brown",
-    position: "Director,Education Technologies & Distance Education",
+    position: "Director, Education Technologies & Distance Education",
     email: "lbrown@costaatt.edu.tt",
     phone: "1-868-625-5030",
   },
@@ -144,7 +154,7 @@ export const management = [
     handle: "dpersad",
     altText: " photo Doodnath Persad",
     name: "Dr Doodnath Persad",
-    position: "Director,Quality Assurance and Institutional Research",
+    position: "Director, Quality Assurance and Institutional Research",
     email: "dpersad@costaatt.edu.tt",
     phone: "1-868-625-5030",
   },
@@ -185,6 +195,16 @@ export const management = [
     email: "kherbert@costaatt.edu.tt",
     phone: "1-868-625-5030",
   },
+  {
+    photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
+    handle: "lboodoo",
+    altText: " photo of Lindsay Boodoo",
+    name: "Lindsay Boodoo",
+    position: "Director, Marketing and Public Relations",
+    email: "lboodoo@costaatt.edu.tt",
+    phone: "1-868-625-5030",
+  },
+  
 ];
 
 export const deans = [
