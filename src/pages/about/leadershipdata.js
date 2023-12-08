@@ -187,7 +187,7 @@ export const management = [
     phone: "1-868-625-5030",
   },
   {
-    photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
+    photo: require("../../../public/images/Leadership photos/Kristed J-Herbert.jpg"),
     handle: "kherbert",
     altText: " photo of Kristed Herbert",
     name: "Kristed Herbert",
