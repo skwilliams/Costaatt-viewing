@@ -198,8 +198,17 @@ export const subHeaderSections = {
     "Deans":"deans",
     "Academic Heads of Departments":"head"
 
-  }
-  
+  },
+    rentspace:{
+
+    "Overview":"intro",
+    "Package":"package",
+    "Why Rent":"why",
+
+    "Features":"features",
+    "Spaces":"spaces",
+    "Contact":"contact"
+  },
   
 
 };

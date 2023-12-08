@@ -120,5 +120,6 @@ export const sideNavSections = {
     "Vision":"vision",
     "Trustees":"trustees",
 
-  }
+  },
+
 };

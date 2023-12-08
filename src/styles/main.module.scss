@@ -20,6 +20,7 @@
 
 // all headings, paragraphs
 @import "./base/typography";
+@import "./base/base";
 
 
 
@@ -29,6 +30,7 @@
 @import "./pages/home";
 @import "./pages/costLife";
 @import "./pages/about";
+@import "./pages/services";
 
 
 // all grid layouts
@@ -44,5 +46,8 @@
 
 //Includes tables, ul , li
 @import "./layout/structures";
+
+//header 
+@import "./layout//header";
 
 

@@ -32,16 +32,16 @@ export const topNavLinksLeft = [
         backgroundColor: "orange",
         left: "200px",
         position: "absolute",
-        // submenu: [
-        //   {
-        //     title: "Department of Nursing",
-        //     path: "programmes",
-        //   },
-        //   {
-        //     title: "Department of Health Science Technologies",
-        //     path: "programmes",
-        //   },
-        // ],
+        submenu: [
+          {
+            title: "Department of Nursing",
+            path: "programmes",
+          },
+          {
+            title: "Department of Health Science Technologies",
+            path: "programmes",
+          },
+        ],
       },
       {
         title: "School of Environment, Circular Economy and Sustainability",
@@ -49,16 +49,16 @@ export const topNavLinksLeft = [
         backgroundColor: "orange",
         left: "200px",
         position: "absolute",
-        // submenu: [
-        //   {
-        //     title: "Criminal Justice, Human Security and Legal Studies",
-        //     path: "programmes",
-        //   },
-        //   {
-        //     title: "Natural and Life Sciences",
-        //     path: "programmes",
-        //   },
-        // ],
+        submenu: [
+          {
+            title: "Criminal Justice, Human Security and Legal Studies",
+            path: "programmes",
+          },
+          {
+            title: "Natural and Life Sciences",
+            path: "programmes",
+          },
+        ],
       },
       {
         title: "School of Business and Digital Technologies",
@@ -66,16 +66,16 @@ export const topNavLinksLeft = [
         backgroundColor: "orange",
         left: "200px",
         position: "absolute",
-        // submenu: [
-        //   {
-        //     title: "Management and Digital Entrepreneurship",
-        //     path: "programmes",
-        //   },
-        //   {
-        //     title: "ICTs and Digital Technologies",
-        //     path: "programmes",
-        //   },
-        // ],
+        submenu: [
+          {
+            title: "Management and Digital Entrepreneurship",
+            path: "programmes",
+          },
+          {
+            title: "ICTs and Digital Technologies",
+            path: "programmes",
+          },
+        ],
       },
       {
         title: "School of Workforce Enhancement and Development",
@@ -83,20 +83,20 @@ export const topNavLinksLeft = [
         backgroundColor: "orange",
         left: "400px",
         position: "absolute",
-        // submenu: [
-        //   {
-        //     title: "Upskilling Academy",
-        //     path: "programmes",
-        //   },
-        //   {
-        //     title: "CollegeStarTT",
-        //     path: "programmes",
-        //   },
-        //   {
-        //     title: "Translation and Interpretation",
-        //     path: "programmes",
-        //   },
-        // ],
+        submenu: [
+          {
+            title: "Upskilling Academy",
+            path: "programmes",
+          },
+          {
+            title: "CollegeStarTT",
+            path: "programmes",
+          },
+          {
+            title: "Translation and Interpretation",
+            path: "programmes",
+          },
+        ],
       },
       {
         title: "Ken Gordon School of Communication,Creative and Digital Media",
@@ -106,17 +106,16 @@ export const topNavLinksLeft = [
         position: "absolute",
 
        
-       
-        // submenu: [
-        //   {
-        //     title: "Creative Industries and Culture ",
-        //     path: "programmes",
-        //   },
-        //   {
-        //     title: "Digital Media",
-        //     path: "programmes",
-        //   },
-        // ],
+        submenu: [
+          {
+            title: "Creative Industries and Culture ",
+            path: "programmes",
+          },
+          {
+            title: "Digital Media",
+            path: "programmes",
+          },
+        ],
       },
     ],
   },
@@ -143,20 +142,14 @@ export const topNavLinksLeft = [
     submenu: [
       {
         title: "Customized Training",
-        path: "/programmes/schools/workF",
+        path: "/programmes/training",
       },
 
       {
-        title: "Rent a Meeting Room ",
+        title: "Rent A Space ",
         path: "/services/rentspace",
       },
-
-      {
-        title: "Rent a Lab",
-        path: "/services/rentlab",
-      },
-
-      {
+     {
         title: "Translation and Interpretation",
         path: "/services/translation",
       },

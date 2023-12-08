@@ -1,0 +1,70 @@
+@import "../../styles/abstracts/variables";
+
+.sectionRent{
+    background-color: $color-primary;
+     display: grid;
+    grid-template-rows: 80vh min-content min-content 40vw repeat(2, min-content);
+
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+
+    // @media only screen and (max-width: $bp-large) {
+    //     grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
+    //     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+    // }
+    // @media only screen and (max-width: $bp-medium) {
+    //     grid-template-rows: 6rem calc(100vh - 6rem);
+    // }
+
+    & > * {
+
+        padding:40px;
+        font-size:4rem;
+
+
+    }
+
+}
+.rentHeader{
+    background-color: aqua;
+    grid-column: full-start / full-end;
+}
+.rentIntro{
+    background-color: red;
+    grid-column: center-start / center-end;
+
+}
+
+.rentPackage{
+
+    background-color: $workFCol;
+    grid-column: center-start / center-end ; 
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+
+
+}
+
+.rentWhy{
+
+    &__pictures{
+            background-color: $nursingCol;
+         grid-column: center-start / col-end 4;
+
+    }
+    &__content{
+        background-color: pink;
+        grid-column: col-start 5 / center-end;
+    }
+
+}
+.rentSpaces{
+    background-color: $sobitCol;
+             grid-column: center-start / center-end;
+
+}
+.rentContact{
+    background-color: $costtCol;
+             grid-column: full-start / full-end;
+
+}
+
