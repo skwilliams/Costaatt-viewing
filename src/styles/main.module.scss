@@ -12,12 +12,15 @@
 @import "./components/gallery";
 @import "./components/popup";
 @import "./components/card";
+@import "./components/story";
+
 
 
 
 
 // all headings, paragraphs
 @import "./base/typography";
+@import "./base/base";
 
 
 
@@ -26,10 +29,16 @@
 
 @import "./pages/home";
 @import "./pages/costLife";
+@import "./pages/about";
+@import "./pages/services";
 
 
 // all grid layouts
 @import "./layout/grid";
+
+//timeline for history 
+// @import "./layout/timeline";
+@import "./layout/timeline2";
 
 
 //section margins based on layout
@@ -37,5 +46,8 @@
 
 //Includes tables, ul , li
 @import "./layout/structures";
+
+//header 
+@import "./layout/header";
 
 

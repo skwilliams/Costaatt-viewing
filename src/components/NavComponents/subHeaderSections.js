@@ -170,12 +170,45 @@ export const subHeaderSections = {
     "Meet Our Staff": "staff",
     Contact: "contact",
   },
+  history:{
+    "Mission":"mission",
+    "National":"national",
+    "History":"achieve",
+    "Our Numbers ":"enhance",
+  },
   
   about:{
     "At a Glance":"glance",
+    "Misson and Vision":"vision",
     Schools :"schools",
     President :"president",
     "By the Numbers":"bythenumbers",
 
-  }
+  },
+  
+  profile :{
+    "Vission and Mission ":"mission",
+    "National Community":"national",
+    "Milestones & Achievements":"achieve",
+    "Learning and Teaching": "enhance"
+  },
+  executiveleaders :{
+    "Vice Presidents" :"vps",
+    "Management Team":"mgmt",
+    "Deans":"deans",
+    "Academic Heads of Departments":"head"
+
+  },
+    rentspace:{
+
+    "Overview":"intro",
+    "Package":"package",
+    "Why Rent":"why",
+
+    "Features":"features",
+    "Spaces":"spaces",
+    "Contact":"contact"
+  },
+  
+
 };

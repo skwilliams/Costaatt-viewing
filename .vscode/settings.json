@@ -8,5 +8,8 @@
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "terminal.integrated.cwd": ""
+  "terminal.integrated.cwd": "",
+  "githubPullRequests.ignoredPullRequestBranches": [
+    "main"
+  ]
 }

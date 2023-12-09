@@ -88,10 +88,10 @@
 }
 .sectionOverview .accordion {
   text-align: center;
-  background-image: linear-gradient(to right, rgb(104, 91, 199), #cc6330);
-  background-image: -webkit-linear-gradient(right, rgb(121, 47, 142), #cc6330);
+  background-image: linear-gradient(to right, rgb(104, 91, 199), rgb(255, 88, 0));
+  background-image: -webkit-linear-gradient(right, rgb(121, 47, 142), rgb(255, 88, 0));
   color: rgb(41, 40, 42);
-  background-image: -o-linear-gradient(right, rgb(121, 47, 142), #cc6330);
+  background-image: -o-linear-gradient(right, rgb(121, 47, 142), rgb(255, 88, 0));
   margin-bottom: 2rem;
 }
 .sectionOverview .accordion:first-child {
@@ -158,8 +158,8 @@
 .sectionProgrammes .courseaccordion {
   text-align: center;
   font-size: 1.5rem;
-  background-image: linear-gradient(to right, rgb(121, 47, 142), #cc6330);
-  background-image: -o-linear-gradient(right, rgb(121, 47, 142), #cc6330);
+  background-image: linear-gradient(to right, rgb(121, 47, 142), rgb(255, 88, 0));
+  background-image: -o-linear-gradient(right, rgb(121, 47, 142), rgb(255, 88, 0));
   margin: 2rem 0;
 }
 

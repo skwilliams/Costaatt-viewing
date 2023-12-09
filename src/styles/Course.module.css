@@ -3,7 +3,7 @@
   font-size: 2.5rem;
   color: white;
   margin: 0 0 2rem 0;
-  background-image: linear-gradient(to right, #cc6330, rgb(121, 47, 142));
+  background-image: linear-gradient(to right, rgb(255, 88, 0), rgb(121, 47, 142));
 }
 
 .headingsecondary {
@@ -154,7 +154,7 @@
   font-size: 1.2rem;
   font-weight: 700;
   text-align: left;
-  color: #cc6330;
+  color: rgb(255, 88, 0);
 }
 
 .courseheadings {
@@ -164,7 +164,7 @@
 }
 
 .coursename {
-  color: #cc6330;
+  color: rgb(255, 88, 0);
   font-size: 1.15rem;
   text-align: left;
 }
@@ -278,7 +278,7 @@
   margin: 0.5rem 0;
 }
 .entryreq .list .items::marker {
-  color: #cc6330;
+  color: rgb(255, 88, 0);
 }
 
 .text {
@@ -289,7 +289,7 @@
 }
 
 .goto {
-  color: #cc6330;
+  color: rgb(255, 88, 0);
   font-size: 1.1rem;
   float: center;
 }

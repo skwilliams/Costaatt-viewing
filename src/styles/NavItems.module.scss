@@ -61,14 +61,12 @@
 }
 
 .topNavdropDownLinks {
-  //display: grid;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  text-align: center;
-  gap: 20px;
-  color: $purple-main; /* Change text color */
-  padding: 10px;
-  align-items: center;
+  grid-template-columns: repeat(6, 1fr);
+  color: $purple-main;
+  padding: 5px;
+  align-items: baseline;
+  height: 400px;
 }
 .dropDownLi {
   color: #0077b6; /* Change link color */

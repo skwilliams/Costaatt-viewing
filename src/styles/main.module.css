@@ -15,6 +15,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 .featurebox {
   background-color: rgba(238, 238, 238, 0.5);
   font-size: 1.5rem;
@@ -151,7 +153,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   color: #fff;
 }
 .btnText:hover {
-  background-color: #cc6330;
+  background-color: rgb(255, 88, 0);
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
@@ -538,19 +540,19 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .card__sideback {
   transform: rotateY(180deg);
 }
-.card__sideback-1 {
+.card__sideback1 {
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
 }
-.card__sideback-2 {
+.card__sideback2 {
   background-image: linear-gradient(to right bottom, rgb(159, 146, 223), rgb(72, 63, 138));
 }
-.card__sideback-3 {
+.card__sideback3 {
   background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
 }
-.card:hover .cardsideFront {
+.card:hover .card__sidefront {
   transform: rotateY(-180deg);
 }
-.card:hover .cardsideBack {
+.card:hover .card__sideback {
   transform: rotateY(0);
 }
 .card__picture {
@@ -572,7 +574,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   background-image: linear-gradient(to right bottom, rgb(164, 52, 58), rgb(134, 22, 28)), url(../../../public/images/costaattlife/joinclub.png);
 }
 .card__picture4 {
-  background-image: linear-gradient(to right bottom, rgb(0, 133, 202), rgb(0, 28, 47)), url(../../../public/images/costaattlife/joinclub.png);
+  background-image: linear-gradient(to right bottom, rgb(0, 133, 202), rgb(0, 103, 172)), url(../../../public/images/costaattlife/joinclub.png);
 }
 .card__picture5 {
   background-image: linear-gradient(to right bottom, rgb(0, 171, 132), rgb(0, 141, 102)), url(../../../public/images/costaattlife/joinclub.png);
@@ -616,7 +618,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   background-image: linear-gradient(to right bottom, rgba(164, 52, 58, 0.85), rgba(134, 22, 28, 0.85));
 }
 .card__headingSpan4 {
-  background-image: linear-gradient(to right bottom, rgba(0, 133, 202, 0.85), rgba(0, 28, 47, 0.85));
+  background-image: linear-gradient(to right bottom, rgba(0, 133, 202, 0.85), rgba(0, 103, 172, 0.85));
 }
 .card__headingSpan5 {
   background-image: linear-gradient(to right bottom, rgba(0, 171, 132, 0.85), rgba(0, 141, 102, 0.85));
@@ -644,7 +646,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   background-image: linear-gradient(to right bottom, rgba(164, 52, 58, 0.85), rgba(134, 22, 28, 0.85));
 }
 .card__details4 {
-  background-image: linear-gradient(to right bottom, rgba(0, 133, 202, 0.85), rgba(0, 28, 47, 0.85));
+  background-image: linear-gradient(to right bottom, rgba(0, 133, 202, 0.85), rgba(0, 103, 172, 0.85));
 }
 .card__details5 {
   background-image: linear-gradient(to right bottom, rgba(0, 171, 132, 0.85), rgba(0, 141, 102, 0.85));
@@ -732,11 +734,19 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .sectiontext {
   font-size: 2.5rem;
   font-family: "Bodoni";
-  font-weight: 500;
   text-align: center;
   margin: 2em;
   text-transform: capitalize;
-  font-weight: 900;
+  font-weight: 1000;
+}
+
+.subintrotext {
+  font-size: 1.25rem;
+  font-family: "Bodoni", arial, sans-serif;
+  text-align: center;
+  margin: 5em;
+  line-height: 1.5;
+  text-transform: capitalize;
 }
 
 .sectiontextleft {
@@ -758,10 +768,16 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .newsHeading span {
   color: rgb(104, 91, 199);
 }
+.newsHeadingWhite {
+  color: white;
+}
+.newsHeadingWhite span {
+  color: rgb(41, 40, 42);
+}
 
 .headingPrimary {
   font-weight: 600;
-  color: #cc6330;
+  color: rgb(255, 88, 0);
   text-transform: capitalize;
   backface-visibility: hidden;
   margin-bottom: 6rem;
@@ -809,20 +825,20 @@ ORDER: Base + typography > general layout + grid > page layout > components
   text-transform: capitalize;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #cc6330, rgba(196, 22, 28, 0.9));
+  background-image: linear-gradient(to right, rgba(196, 22, 28, 0.9), rgb(255, 88, 0));
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
   letter-spacing: 0.2rem;
+  margin: 2rem 0;
+}
+.headingSecondary span {
+  text-align: center;
 }
 @media only screen and (max-width: 37.5em) {
   .headingSecondary {
     font-size: 2.5rem;
   }
-}
-.headingSecondary:hover {
-  transform: skewY(2deg) skewX(15deg) scale(1.1);
-  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .headingTertiary {
@@ -833,6 +849,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 .headingTertiary span {
   color: rgb(104, 91, 199);
+  float: left;
+  font-size: 1.5rem;
 }
 
 .headingcards {
@@ -899,6 +917,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
   text-align: left !important;
 }
 
+.boldtext {
+  font-weight: bold;
+}
+
 .whitefont {
   color: white;
 }
@@ -925,6 +947,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 .marginBottomBig {
   margin-bottom: 8rem !important;
+}
+
+.marginTopSmall {
+  margin-top: 5rem !important;
 }
 
 .marginTopBig {
@@ -1064,6 +1090,44 @@ ORDER: Base + typography > general layout + grid > page layout > components
   background-color: rgba(247, 247, 247, 0.4);
 }
 
+.sectiontimeline {
+  background: linear-gradient(55deg, rgb(104, 91, 199) 30%, rgb(72, 63, 138) 90%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 12vh 200px;
+  font-family: "Source Sans Pro", arial, sans-serif;
+  font-weight: 300;
+  color: #333;
+  box-sizing: border-box;
+}
+.sectiontimeline * {
+  box-sizing: border-box;
+}
+
+.linkhovercolor {
+  background-color: white;
+}
+.linkhovercolor:hover {
+  background-color: rgb(159, 146, 223);
+}
+
+.president {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  float: right;
+}
+.president .name {
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(72, 63, 138);
+}
+.president .presidentimg {
+  padding: 1rem;
+}
+
 /*
 0 - 600px:      Phone
 600 - 900px:    Tablet portrait
@@ -1109,7 +1173,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 .row .col2of3 {
   float: left;
-  width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem);
+  width: calc(2 * (100% - 2 * 6rem) / 3 + 6rem);
 }
 .row .col2of3:not(:last-child) {
   margin-right: 6rem;
@@ -1123,14 +1187,14 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 .row .col2of4 {
   float: left;
-  width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem);
+  width: calc(2 * (100% - 3 * 6rem) / 4 + 6rem);
 }
 .row .col2of4:not(:last-child) {
   margin-right: 6rem;
 }
 .row .col3of4 {
   float: left;
-  width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
+  width: calc(3 * (100% - 3 * 6rem) / 4 + 2 * 6rem);
 }
 .row .col3of4:not(:last-child) {
   margin-right: 6rem;
@@ -1150,9 +1214,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-@media (min-width: 50em) {
+@media (max-width: 600px) {
   .threeColGridCon {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 .threeColGrid {
@@ -1161,8 +1225,140 @@ ORDER: Base + typography > general layout + grid > page layout > components
   font-size: 1.2rem;
 }
 
+.fourColGridCon {
+  display: grid;
+  gap: 8rem;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 600px) {
+  .fourColGridCon {
+    grid-template-columns: 1fr;
+  }
+}
+.fourColGrid {
+  text-align: left;
+  padding: 1.5em 0;
+  font-size: 1.2rem;
+}
+
+.twoGridCon {
+  display: grid;
+  gap: 8rem;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 600px) {
+  .twoGridCon {
+    grid-template-columns: 1fr;
+  }
+}
+.twoGridCol {
+  text-align: left;
+  padding: 1.5em 0;
+  font-size: 1.2rem;
+}
+
+.sixColGridCon {
+  display: grid;
+  gap: 8rem;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 50em) {
+  .sixColGridCon {
+    grid-template-columns: 1fr;
+  }
+}
+.sixColGrid {
+  text-align: left;
+  padding: 1.5em 0;
+  font-size: 1.2rem;
+}
+
+.timeline {
+  width: 100%;
+  max-width: 800px;
+  background: #fff;
+  padding: 100px 50px;
+  position: relative;
+  box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
+}
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: calc(24% + 15px);
+  bottom: 0px;
+  width: 8px;
+  background: #ddd;
+}
+.timeline:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.entry {
+  clear: both;
+  text-align: left;
+  position: relative;
+}
+.entry .title {
+  margin-bottom: 0.5em;
+  float: left;
+  width: 20%;
+  padding-right: 32px;
+  text-align: right;
+  position: relative;
+}
+.entry .title:before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 8px solid rgb(72, 63, 138);
+  background-color: #fff;
+  border-radius: 100%;
+  top: 15%;
+  right: -40px;
+  z-index: 99;
+}
+.entry .title h3 {
+  margin: 0;
+  font-size: 120%;
+}
+.entry .title p {
+  margin: 0;
+  font-size: 100%;
+}
+.entry .body {
+  margin: 0 0 3em;
+  float: right;
+  width: 80%;
+  padding-left: 32px;
+}
+.entry .body p {
+  line-height: 1.4em;
+}
+.entry .body p:first-child {
+  margin-top: 0;
+  font-weight: 400;
+}
+.entry .body ul {
+  color: black;
+  padding-left: 0;
+  list-style-type: none;
+}
+.entry .body ul li:before {
+  margin-right: 0.5em;
+}
+
 .sectionWithSideNav {
-  padding: 0;
+  padding-right: 2rem;
   margin-bottom: 8rem !important;
   margin-top: 8rem !important;
 }
@@ -1171,12 +1367,22 @@ ORDER: Base + typography > general layout + grid > page layout > components
   margin: 8rem 8rem !important;
 }
 
+.sectionNoSidenavMar {
+  margin: 1rem 2rem !important;
+}
+
 .sectionNoSidenavFirst {
   margin: 0 8rem 5rem 8rem !important;
 }
 
 .sectionbackColor {
   background-color: #f7f7f7;
+  margin: 0;
+}
+
+.sectionbackGreyColor {
+  background-color: rgb(41, 40, 42);
+  margin: 0;
 }
 
 .sectionColor2 {
@@ -1217,7 +1423,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   line-height: 1.7;
 }
 .bullet ul li::marker {
-  color: #cc6330;
+  color: rgb(255, 88, 0);
 }
 .bullet ul li:last-child {
   margin-bottom: 2rem;
@@ -1237,7 +1443,7 @@ div .bullets2 .ul .li {
   line-height: 1.5;
 }
 div .bullets2 .ul .li::marker {
-  color: #cc6330;
+  color: rgb(255, 88, 0);
 }
 div .bullets2 .ul .li:last-child {
   margin-bottom: 2rem;
