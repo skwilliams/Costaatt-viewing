@@ -1,22 +1,34 @@
 import React from 'react'
-import Image from 'next/image'
+import Image from "next/image";
+
 import Head from 'next/head'
 import HeadImage from '@/components/PageComponents/HeadImage'
 import standardStyles from "@/styles/main.module.scss"
 import Link from 'next/link'
 import awaitingbanner from "../../../public/images/awaitingBanner.png";
-import projector from "../../../public/images/Services/projector.svg"
-import wifi from "../../../public/images/Services/wifi.svg"
 
-import parking from "../../../public/images/Services/parking.svg";
 
-import speakers from "../../../public/images/Services/speakers.svg";
-import techsupport from "../../../public/images/Services/techsupport.svg";
+// Icons for standard features 
+import projector from "../../../public/images/services/projector.svg"
+import wifi from "../../../public/images/services/wifi.svg"
+import parking from "../../../public/images/services/parking.svg";
+import rooftop1 from "../../../public/images/services/rooftop1.jpg";
+import speakers from "../../../public/images/services/speakers.svg";
+import techsupport from "../../../public/images/services/techsupport.svg";
+
+// Photos for why costaatt 
 import whyback from "../../../public/images/services/whybackground.jpg";
+import parkingFeature from "../../../public/images/services/parkingFeature.jpg";
 
-import whyimage1 from "../../../public/images/Services/whyimage1.jpg";
+import whyimage1 from "../../../public/images/services/whyimage1.jpg";
 
-import whyimage2 from "../../../public/images/Services/whyimage2.jpg";
+import whyimage2 from "../../../public/images/services/whyimage2.jpg";
+
+// svg's for card
+import price from "../../../public/images/services/price.svg";
+import location from "../../../public/images/services/location.svg";
+import layout from "../../../public/images/services/layout.svg";
+import size from "../../../public/images/services/size.svg";
 
 
 const rentspace = () => {
@@ -27,7 +39,7 @@ const rentspace = () => {
             <Head>
               <title>Rental Spaces </title>
             </Head>{" "}
-            {/* <HeadImage mainimage={awaitingbanner} /> */}
+            <HeadImage mainimage={awaitingbanner} />
             <p
               className={`${standardStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}
             >
@@ -106,31 +118,27 @@ const rentspace = () => {
             </div>
           </section>
 
-          <div className={standardStyles.rentWhy__pictures}>
+          {/* <section id="why" className={standardStyles.rentWhy}> */}
+          {/* <div
+            style={{ maxWidth: "100%", height: "400px", position: "relative0" }}
+          > */}
+          <div id="why" className={standardStyles.rentWhy__pictures}>
             <Image
-              src={whyback}
-              alt="Icon"
-            //   className={standardStyles.rentWhy__pictures}
-              width={3936}
-              height={2624}
-            // fill
-             
-            />
-            {/* <Image
-              src={whyimage1}
-              alt="Icon"
+              src={rooftop1}
+              alt="Space for rent"
               className={standardStyles.rentWhy__img1}
-              width="250"
-              height="250"
+              sizes="100vw"
+              fill={true}
             />
             <Image
-              src={whyimage2}
-              alt="Icon"
+              src={parkingFeature}
+              alt="Space for rent"
               className={standardStyles.rentWhy__img2}
-              width="293"
-              height="322"
-            /> */}
+              sizes="100vw"
+              fill={true}
+            />
           </div>
+          {/* </div> */}
           <div className={standardStyles.rentWhy__content}>
             <h2
               className={`${standardStyles.heading_2} ${standardStyles.heading_2_dark} ${standardStyles.mb_md}`}
@@ -148,10 +156,45 @@ const rentspace = () => {
               </ul>
             </div>
           </div>
+          {/* </section> */}
 
           <section id="spaces" className={standardStyles.rentSpaces}>
-            Spaces
+            <div className="home">
+              <img src="img/house-2.jpeg" alt="House 2" className="home__img" />
+              <svg className="home__like">
+                <use href="img/sprite.svg#icon-heart-full" />
+              </svg>
+              <h5 className="home__name">Modern Glass Villa</h5>
+              <div className="home__location">
+                <svg>
+                  <use href="img/sprite.svg#icon-map-pin" />
+                </svg>
+                <p>Canada</p>
+              </div>
+              <div className="home__rooms">
+                <svg>
+                  <use href="img/sprite.svg#icon-profile-male" />
+                </svg>
+                <p>6 rooms</p>
+              </div>
+              <div className="home__area">
+                <svg>
+                  <use href="img/sprite.svg#icon-expand" />
+                </svg>
+                <p>
+                  450 m<sup>2</sup>
+                </p>
+              </div>
+              <div className="home__price">
+                <svg>
+                  <use href="img/sprite.svg#icon-key" />
+                </svg>
+                <p>$2,750,000</p>
+              </div>
+              <button className="btn home__btn">Contact realtor</button>
+            </div>
           </section>
+
           <div id="contact" className={standardStyles.rentContact}>
             <div className={standardStyles.paragraph}>
               {/* Contact us today to reserve these or other available spaces at the
