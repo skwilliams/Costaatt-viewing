@@ -219,14 +219,14 @@ span{
     line-height: 1;
 }
 
-.heading-2 {
+.heading_2 {
     @extend %heading;
-    font-size: 4rem;
+    font-size: 2rem;
     font-style: italic;
     line-height: 1;
 
-    &--light { color: $color-grey-light-1; }
-    &--dark { color: $color-grey-dark-1; }
+    &_light { color: $color-grey-light-1; }
+    &_dark { color: $color-primary-dark; }
 }
 
 .heading-3 {
@@ -240,8 +240,8 @@ span{
     @extend %heading;
     font-size: 1.9rem;
 
-    &--light { color: $color-grey-light-1; }
-    &--dark { color: $color-grey-dark-1; }
+    &-light { color: $color-grey-light-1; }
+    &-dark { color: $color-grey-dark-1; }
 }
 
 .btn {
@@ -261,7 +261,7 @@ span{
     }
 }
 
-.mb-sm { margin-bottom: 2rem; }
-.mb-md { margin-bottom: 3rem; }
-.mb-lg { margin-bottom: 4rem; }
-.mb-hg { margin-bottom: 8rem; }
+.mb_sm { margin-bottom: 2rem; }
+.mb_md { margin-bottom: 3rem; }
+.mb_lg { margin-bottom: 4rem; }
+.mb_hg { margin-bottom: 8rem; }
