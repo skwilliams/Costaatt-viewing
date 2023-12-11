@@ -68,7 +68,7 @@ const leadership = () => {
                   <FiBookOpen value={standardStyles.featurebox__icon} />
                 </IconContext.Provider>
                 <h3 className={standardStyles.headingcards}>
-                  Borad of Trustees{" "}
+                  Board of Trustees{" "}
                 </h3>
               </div>
             </Link>
