@@ -178,7 +178,7 @@ export const management = [
   },
   {
     photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
-    handle: "library",
+    handle: "clstclair",
     altText: " photo of Chantale Leonard-St Clair",
     name: "Chantale Leonard-St Clair",
     position: "Director, Translation and Interpretation Services",
@@ -203,7 +203,23 @@ export const management = [
     email: "lboodoo@costaatt.edu.tt",
     phone: "1-868-625-5030",
   },
-  
+  {
+    photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
+    handle: "dheadley",
+    altText: " photo of Darren Headley",
+    name: "Darren Headley",
+    position: "Director, Technology Services",
+    email: "dheadley@costaatt.edu.tt",
+    phone: "1-868-625-5030",
+  },
+  {
+    photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
+    handle: "tjoseph",
+    altText: " photo of Dr. Tricia Joseph",
+    position: "Director, Health and Counselling Services",
+    email: "tjoseph@costaatt.edu.tt",
+    phone: "1-868-625-5030",
+  },
 ];
 
 export const deans = [
