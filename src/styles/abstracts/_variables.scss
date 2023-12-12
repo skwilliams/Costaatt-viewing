@@ -34,7 +34,7 @@ $blue: rgb(39, 189, 190);
 $lime-green: rgb(203, 219, 42);
 // $orange: rgb(245, 130, 32);
 // $orange:#E8D5B5;
-$orange: #cc6330;
+$orange: rgb(255, 88, 0);
 $pink: rgb(239, 64, 80);
 $blue2: rgb(37, 117, 174);
 $orange2: rgb(239, 65, 41);
@@ -45,7 +45,7 @@ $light-orange: rgb(251, 176, 64);
 $costtCol: rgb(104, 91, 199);
 
 $liberalCol: rgb(0, 133, 202);
-$liberalCol-dark: rgb(0, 28, 47);
+$liberalCol-dark: rgb(0, 103, 172);
 
 $nursingCol: rgb(0, 171, 132);
 $nursingCol-dark: rgb(0, 141, 102);
@@ -79,7 +79,6 @@ $neutral: rgb(150, 150, 150);
 //COLOR GENERAL
 
 
-
 $color-secondary-light: #ffb900;
 $color-secondary-dark: #ff7730;
 
@@ -97,7 +96,16 @@ $color-white: #fff;
 $color-black: #000;
 
 // FONT
-$default-font-size: 1.2rem;
+$default-font-size: 75%;
+
+
+//Testing for Services Pages
+$font-display: 'Josefin Sans', sans-serif;
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483A;
+$color-grey-dark-2: #6D5D4B;
 
 // GRID
 $grid-width: 114rem;
@@ -106,6 +114,7 @@ $gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;
 $gutter-horizontal-small: 1rem;
 
+// RESPONSIVE BREAKPOINTS
 $bp-largest: 75em; // 1200px
 $bp-large: 62.5em; // 1000px
 $bp-medium: 50em; // 800px;

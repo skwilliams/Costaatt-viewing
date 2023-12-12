@@ -1,15 +1,25 @@
 @import '../abstracts/variables';
 
-
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 .sectiontext {
   font-size: 2.5rem;
-  font-family: "Bodoni";
-  font-weight: 500;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
   text-align: center;
   margin: 2em;
   text-transform:capitalize;
-  font-weight: 900;
+  font-weight: 1000;
+
 }
+.subintrotext{
+    font-size:1.25rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin: 5em;
+    line-height: 1.5;
+    text-transform:capitalize;
+
+  }
 
 .sectiontextleft {
   font-size: 2.5rem;
@@ -32,8 +42,11 @@
     color: $color-primary;
   }
 
-  &white{
+  &White{
     color: white;
+    span{
+        color:$grey;
+    }
   }
 }
 
@@ -94,11 +107,16 @@
     text-transform: capitalize;
     font-weight: 700;
     display: inline-block;
-    background-image: linear-gradient(to right, $orange, $red);
-   background-clip: text;
+    background-image: linear-gradient(to right, $red, $orange);
+    background-clip: text;
     color: transparent;
     letter-spacing: .2rem;
+    margin: 2rem 0;
     // transition: all .2s;
+    span {
+
+        text-align: center;
+    }
 
     @include respond(tab-port) {
         font-size: 3rem;
@@ -108,10 +126,10 @@
         font-size: 2.5rem;
     }
 
-    &:hover {
-        transform: skewY(2deg) skewX(15deg) scale(1.1);
-        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
-    }
+    // &:hover {
+    //     transform: skewY(2deg) skewX(15deg) scale(1.1);
+    //     text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    // }
 }
 
 .headingTertiary {
@@ -121,6 +139,8 @@
     margin-bottom:3rem;
 span{
     color:$color-primary;
+    float:left;
+    font-size: 1.5rem;
 }
 }
 .headingcards {
@@ -133,7 +153,7 @@ span{
 
 
 .paragraph {
-    font-size: $default-font-size;
+    font-size: 1.25rem;
     line-height: 2;
 
     &:not(:last-child) {
@@ -183,3 +203,65 @@ span{
   margin: 0 25% 0 25%
 
 }
+
+
+//For Services Page
+
+%heading {
+    font-family: $font-display;
+    font-weight: 400;
+}
+
+.heading-1 {
+    @extend %heading;
+    font-size: 4.5rem;
+    color: $color-grey-light-1;
+    line-height: 1;
+}
+
+.heading_2 {
+    @extend %heading;
+    font-size: 2rem;
+    font-style: italic;
+    line-height: 1;
+
+    &_light { color: $color-grey-light-1; }
+    &_dark { color: $color-primary-dark; }
+}
+
+.heading-3 {
+    @extend %heading;
+    font-size: 1.6rem;
+    color: $color-primary;
+    text-transform: uppercase;
+}
+
+.heading-4 {
+    @extend %heading;
+    font-size: 1.9rem;
+
+    &-light { color: $color-grey-light-1; }
+    &-dark { color: $color-grey-dark-1; }
+}
+
+.btn {
+    background-color: $color-primary;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-family: $font-display;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1.8rem 3rem;
+    cursor: pointer;
+    transition: all .2s;
+    
+    &:hover {
+        background-color: $color-primary-dark;
+    }
+}
+
+.mb_sm { margin-bottom: 2rem; }
+.mb_md { margin-bottom: 3rem; }
+.mb_lg { margin-bottom: 4rem; }
+.mb_hg { margin-bottom: 8rem; }

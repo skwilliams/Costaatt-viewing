@@ -70,20 +70,70 @@ const itfacilities = () => {
           {" "}
           Computer <span>LABS </span>{" "}
         </h2>
-        <p className={standardStyles.paragraph}>
-          {" "}
-          State-of-the-art computer lab facilities (MAC and PC) are available to
-          students at all of the College's campuses and sites, for both
-          instructional and open access purposes. All computer labs have
-          Internet connectivity and are installed with the latest computer
-          software. COSTAATT is currently a Microsoft Academic licensed
-          institution and students may purchase Microsoft software from the
-          College for their personal use, at a minimal fee. In addition, the
-          College has outfitted several special purpose labs which are designed
-          to ensure that students acquire the necessary discipline-specific
-          practical skills for the workplace.
-        </p>
 
+
+        <div className={costlifeStyles.gallery}>
+<div className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_2}`}
+        >
+          
+          <Image
+            src={gal1}
+            alt="Gallery image 1"
+            className={standardStyles.gallery__img}
+            sizes="100vw"
+            style={{ width: "100%", height: "100%" }} // optional
+          />
+        </div>
+        <div
+          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_2}`}
+        >
+
+          <Image
+            src={gal2}
+            alt="Netball"
+            className={standardStyles.gallery__img}
+            sizes="100vw"
+            style={{ width: "100%", height: "100%" }} // optional
+          />
+        </div>
+        <div
+          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_3}`}
+        >
+          <Image
+            src={gal3}
+            alt="Gallery image 3"
+            className={standardStyles.gallery__img}
+            sizes="100vw"
+            style={{ width: "100%", height: "100%" }} // optional
+          />
+        </div>
+        <div
+          className={`${standardStyles.gallery__item} ${costlifeStyles.gallery__item_4}`}
+        >
+          <Image
+            src={gal4}
+            alt="Gallery image 4"
+            className={standardStyles.gallery__img}
+            sizes="100vw"
+            style={{ width: "100%", height: "100%" }} // optional
+          />
+        </div>
+      
+    </div >
+      <p className={standardStyles.paragraph}>
+        {" "}
+        State-of-the-art computer lab facilities (MAC and PC) are available to
+        students at all of the College's campuses and sites, for both
+        instructional and open access purposes. All computer labs have
+        Internet connectivity and are installed with the latest computer
+        software. COSTAATT is currently a Microsoft Academic licensed
+        institution and students may purchase Microsoft software from the
+        College for their personal use, at a minimal fee. In addition, the
+        College has outfitted several special purpose labs which are designed
+        to ensure that students acquire the necessary discipline-specific
+        practical skills for the workplace.
+      </p>
+  {/* 
         <section className={standardStyles.gallery}>
           <div
             className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_1}`}
@@ -255,8 +305,8 @@ const itfacilities = () => {
               style={{ width: "100%", height: "100%" }} // optional
             />
           </figure>{" "}
-        </section>
-      </section>
+        </section> */}
+      </section >
       <section id="services" className={`${standardStyles.sectionNoSidenav}`}>
         <h2 className={standardStyles.newsHeading}>
           {" "}
@@ -489,4 +539,4 @@ const itfacilities = () => {
       );
 };
 
-      export default itfacilities;
+export default itfacilities;

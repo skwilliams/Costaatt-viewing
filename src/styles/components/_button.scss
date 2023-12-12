@@ -56,7 +56,6 @@
     }
 
     
-    
       &__selecthome {
         background-color: $color-primary;
         color: $color-white;
@@ -102,25 +101,28 @@
         animation-fill-mode: backwards;
     }
 }
-
 .btnText {
-    &:link,
+
+           color: $color-primary;
+           margin:3rem;
+           font-size: 1.5rem;
+                   border-bottom: 1px solid $color-primary;
+
+   &:link,
     &:visited {
-        font-size: $default-font-size;
-        // color: $orange;
+        font-size: 1.5rem;
+        color: $color-primary;
         display: inline-block;
         text-decoration: none;
-        border-bottom: 1px solid $color-primary-dark;
-        padding: 3px;
+        border-bottom: 1px solid $color-primary;
+        padding: 3rem;
+ 
         transition: all .2s;
-                background-color: $color-primary;
-                        color: $color-white;
-
-
+        
     }
 
     &:hover {
-        background-color: $orange;
+        background-color: $color-primary;
         color: $color-white;
         box-shadow: 0 1rem 2rem rgba($color-black, .15);
         transform: translateY(-2px);
@@ -131,7 +133,6 @@
         transform: translateY(0);
     }
 }
-
 .strongcall .btn {
   position: relative;
   top: 0%;

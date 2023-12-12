@@ -3,40 +3,27 @@ export const topNavLinksLeft = [
     title: "School Departments",
     submenu: [
       {
-        title: "The School Of Liberal Arts, Education And Digital Humanities",
+        title: "School Of Liberal Arts, Education And Digital Humanities",
         path: "programmes",
         backgroundColor: "orange",
         left: "100px",
         width: "100%",
         position: "absolute",
-        submenu: [
-          {
-            title: "Department of Social and Behavioural Sciences",
-            path: "programmes",
-          },
-          {
-            title:
-              "Department of Languages, Literature and Communication Studies",
-            path: "programmes",
-          },
-          {
-            title: "Department of Mathematics",
-            path: "programmes",
-          },
-          {
-            title: "Department of Fine and Performing Arts",
-            path: "programmes",
-          },
-          {
-            title: "Department of Criminal Justice and Legal Studies",
-            path: "programmes",
-          },
-          {
-            title: "Office of the Dean",
-            path: "programmes",
-          },
-        ],
       },
+      // submenu: [
+      {
+        title: "Criminal Justice, Human Security and Legal Studies",
+        path: "programmes",
+      },
+      {
+        title: "Social and Behavioural Sciences Department ",
+        path: "programmes",
+      },
+      {
+        title: "Education",
+        path: "programmes",
+      },
+      // ],
 
       {
         title: "School of Nursing, Health and Medical Technologies",
@@ -53,14 +40,6 @@ export const topNavLinksLeft = [
             title: "Department of Health Science Technologies",
             path: "programmes",
           },
-          {
-            title: "Department of Environmental Studies",
-            path: "programmes",
-          },
-          {
-            title: "Natural and Life Sciences",
-            path: "programmes",
-          },
         ],
       },
       {
@@ -71,15 +50,11 @@ export const topNavLinksLeft = [
         position: "absolute",
         submenu: [
           {
-            title: "Dept One",
+            title: "Criminal Justice, Human Security and Legal Studies",
             path: "programmes",
           },
           {
-            title: "Dept One",
-            path: "programmes",
-          },
-          {
-            title: "Dept One",
+            title: "Natural and Life Sciences",
             path: "programmes",
           },
         ],
@@ -92,11 +67,11 @@ export const topNavLinksLeft = [
         position: "absolute",
         submenu: [
           {
-            title: "Department of Management and Entrepreneurship",
+            title: "Management and Digital Entrepreneurship",
             path: "programmes",
           },
           {
-            title: "Department of Information Science and Technology",
+            title: "ICTs and Digital Technologies",
             path: "programmes",
           },
         ],
@@ -109,77 +84,72 @@ export const topNavLinksLeft = [
         position: "absolute",
         submenu: [
           {
-            title: "Dept One",
+            title: "Upskilling Academy",
             path: "programmes",
           },
           {
-            title: "Dept One",
+            title: "CollegeStarTT",
             path: "programmes",
           },
           {
-            title: "Dept One",
+            title: "Translation and Interpretation",
+            path: "programmes",
+          },
+        ],
+      },
+      {
+        title: "Ken Gordon School of Communication,Creative and Digital Media",
+        path: "programmes",
+        backgroundColor: "orange",
+        left: "400px",
+        position: "absolute",
+
+        submenu: [
+          {
+            title: "Creative Industries and Culture ",
+            path: "programmes",
+          },
+          {
+            title: "Digital Media",
             path: "programmes",
           },
         ],
       },
     ],
- },
-
-  {
-    title: "Current Students",
-    path: "currentstudents",
   },
+
+  // {
+  //   title: "Current Students",
+  //   path: "currentstudents",
+  // },
   {
     title: "Faculty & Staff",
     path: "facultystaff",
   },
   {
     title: "MY COSTAATT",
-    path: "programmes",
+    path: "https://id.quicklaunch.io/authenticationendpoint/login.do?commonAuthCallerPath=%2Fpassivests&forceAuth=false&passiveAuth=false&tenantDomain=costaatt.edu.tt&wa=wsignin1.0&wct=2023-12-12T18%3A53%3A00Z&wctx=rm%3D0%26id%3Dpassive%26ru%3D%252fcas%252flogin%253fservice%253dhttps%25253A%25252F%25252Fmy.costaatt.edu.tt%25252Fpaf%25252Fauthorize&wtrealm=https%3A%2F%2Fcas-costaatt.quicklaunch.io%2F&sessionDataKey=e15b0fcf-9c94-4f15-9f66-2eb65f1db66a&relyingParty=https%3A%2F%2Fcas-costaatt.quicklaunch.io%2F&type=passivests&sp=costaattedutt&isSaaSApp=false&authenticators=BasicAuthenticator:LOCAL",
   },
   {
     title: "Alumni",
     path: "alumni",
   },
-  {
-    title: "Services",
-
-      submenu: [
-      {
-        title: "Customized Training",
-        path: "/programmes/schools/workF",
-      },
-      
-      {
-        title: "Rent a Meeting Room ",
-        path: "/services/rentspace",
-      },
-      
-      {
-        title: "Rent a Lab",
-        path: "/services/rentlab",
-      },
-      
-      {
-        title: "Translation and Interpretation",
-        path: "/services/translation",
-      },
-    ]
-
-    
-  }
 ];
 
 export const topNavLinksRight = [
-  {
-    title: "Request Info",
-    path: "/requestinfo",
-  },
+  // {
+  //   title: "Request Info",
+  //   path: "/requestinfo",
+  // },
 
   {
     id: "apply",
     title: "Apply",
     path: "/apply",
+  },
+  {
+    title: "Directory",
+    path: "/",
   },
 ];
 export const footerLinks = [
@@ -288,8 +258,8 @@ export const mainNavLinks = [
     title: "Admissions and Aid ",
     submenu: [
       {
-        title: "Office of the Registrar",
-        path: "/admissions/",
+        title: "Registry Services",
+        path: "/admissions",
       },
       {
         title: "Apply Now",
@@ -326,8 +296,33 @@ export const mainNavLinks = [
     ],
   },
   {
+    title: "Services",
+
+    submenu: [
+      {
+        title: "Customized Training",
+        path: "/programmes/training",
+      },
+
+     
+      {
+        title: "Translation and Interpretation",
+        path: "/services/translation",
+      },
+    ],
+    submenuImage: [
+      {
+        img: require("../../../public/images/services/RoofTop-Terrace-2.jpg"),
+        
+        title: "Rent A Space ",
+        path: "/services/rentspace",
+      
+      },
+    ],
+  },
+  {
     title: "COSTAATT Life ",
-    // path: "/",
+
     submenu: [
       {
         title: "Student Clubs and Organizations",
@@ -367,24 +362,21 @@ export const mainNavLinks = [
       },
     ],
   },
+
   {
-    title: "About",
-    // path: "/",
+    title: "About Us",
     submenu: [
       {
         title: "Profile at a Glance",
         path: "/about",
       },
+
       {
         title: "History",
         path: "/about/history",
       },
       {
-        title: "Institutional Profile",
-        path: "/about/profile",
-      },
-      {
-        title: "Accreditation",
+        title: "Accreditation And Quality Assurance",
         path: "/about/accreditation",
       },
       {
@@ -399,15 +391,18 @@ export const mainNavLinks = [
         path: "/about/careers",
       },
       // {
-      //   img: require("../../../images/Links/dummyImg2.jpg"),
-      //   title: "Areas of Study",
-      //   path: "/programmes",
+      //    img: require("../../../images/Links/dummyImg2.jpg"),
+
+      //   title: "Accreditation And Quality Assurance",
+      //   path: "/about/accreditation",
+      // },
+
       // },
     ],
   },
 
-  {
-    title: "Directory",
-    path: "/",
-  },
+  // {
+  //   title: "Directory",
+  //   path: "/",
+  // },
 ];

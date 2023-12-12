@@ -13,9 +13,9 @@
     width:300px;
     height: 300px;
    
-    &__colored{
-        // background-image: linear-gradient(to bottom right, $color-primary,$color-primary-dark);
-    }
+    // &__colored{
+    //     // background-image: linear-gradient(to bottom right, $color-primary,$color-primary-dark);
+    // }
 
     @include respond(tab-port) {
         padding: 2rem;

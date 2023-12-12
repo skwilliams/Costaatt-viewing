@@ -1,0 +1,17 @@
+@import "abstracts/variables";
+
+
+
+.container{
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    background-image: linear-gradient(to right, $color-primary, $grey);
+    // background-color: $grey;    
+    color: white;
+        padding: 1rem;
+        border-radius: .5rem;
+        min-height: 6rem;
+        // text-align: center;
+           margin: auto;
+           font-size: 1.1rem;
+                    justify-content: center;
+}
