@@ -42,12 +42,12 @@
 
 
 .gallery {
-        --g: 8px;   /* the gap */
+        --g: .8rem;   /* the gap */
         --s: 400px; /* the size */
       
         display: grid;
         border-radius: 50%;
-      }
+  }
       .gallery > Image {
         grid-area: 1/1;
         width: var(--s);

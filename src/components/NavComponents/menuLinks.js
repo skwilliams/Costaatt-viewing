@@ -136,37 +136,23 @@ export const topNavLinksLeft = [
     title: "Alumni",
     path: "alumni",
   },
-  {
-    title: "Services",
 
-    submenu: [
-      {
-        title: "Customized Training",
-        path: "/programmes/training",
-      },
-
-      {
-        title: "Rent A Space ",
-        path: "/services/rentspace",
-      },
-     {
-        title: "Translation and Interpretation",
-        path: "/services/translation",
-      },
-    ],
-  },
 ];
 
 export const topNavLinksRight = [
-  {
-    title: "Request Info",
-    path: "/requestinfo",
-  },
+  // {
+  //   title: "Request Info",
+  //   path: "/requestinfo",
+  // },
 
   {
     id: "apply",
     title: "Apply",
     path: "/apply",
+  },
+  {
+    title: "Directory",
+    path: "/",
   },
 ];
 export const footerLinks = [
@@ -313,8 +299,33 @@ export const mainNavLinks = [
     ],
   },
   {
+    title: "Services",
+
+    submenu: [
+      {
+        title: "Customized Training",
+        path: "/programmes/training",
+      },
+
+     
+      {
+        title: "Translation and Interpretation",
+        path: "/services/translation",
+      },
+    ],
+    submenuImage: [
+      {
+        img: require("../../../public/images/services/RoofTop-Terrace-2.jpg"),
+        
+        title: "Rent A Space ",
+        path: "/services/rentspace",
+      
+      },
+    ],
+  },
+  {
     title: "COSTAATT Life ",
- 
+
     submenu: [
       {
         title: "Student Clubs and Organizations",
@@ -354,6 +365,7 @@ export const mainNavLinks = [
       },
     ],
   },
+
   {
     title: "About Us",
     submenu: [
@@ -361,7 +373,7 @@ export const mainNavLinks = [
         title: "Profile at a Glance",
         path: "/about",
       },
-   
+
       {
         title: "History",
         path: "/about/history",
@@ -392,8 +404,8 @@ export const mainNavLinks = [
     ],
   },
 
-  {
-    title: "Directory",
-    path: "/",
-  },
+  // {
+  //   title: "Directory",
+  //   path: "/",
+  // },
 ];
