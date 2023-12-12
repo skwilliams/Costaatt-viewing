@@ -200,7 +200,7 @@ export const management = [
    
   },
   {
-    photo: require("../../../public/images/Leadership photos/darren-headley.jpg"),
+    photo: require("../../../public/images/Leadership photos/darren-headley.jpeg"),
     handle: "dheadley",
     altText: " photo of Darren Headley",
     name: "Darren Headley",
@@ -363,7 +363,7 @@ export const heads = [
     
   },
 {
-    photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
+    photo: require("../../../public/images/Leadership photos/Nneka-St Rose.jpg"),
     handle: "nstrose",
     altText: " photo of Dr. Nneka St Rose",
     name: "Dr. Nneka St Rose",
