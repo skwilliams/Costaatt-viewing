@@ -120,10 +120,10 @@ export const topNavLinksLeft = [
     ],
   },
 
-  {
-    title: "Current Students",
-    path: "currentstudents",
-  },
+  // {
+  //   title: "Current Students",
+  //   path: "currentstudents",
+  // },
   {
     title: "Faculty & Staff",
     path: "facultystaff",

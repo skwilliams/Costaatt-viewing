@@ -652,27 +652,33 @@ const rentspace = () => {
             </p>
             <div className={standardStyles.telephone}>
               <Image
-                className={standardStyles.package__icon}
+                className={standardStyles.contact__icon}
                 src={telephone}
                 alt="telephone icon"
               />
-              <p className={standardStyles.paragraph}>868-625-5030 EXT 5363</p>
+              <p className={standardStyles.space_downloads}>868-625-5030 EXT 5363</p>
             </div>
             <div className={standardStyles.email}>
               <Image
-                className={standardStyles.package__icon}
+                className={standardStyles.contact__icon}
                 src={email}
                 alt="email icon"
               />
 
-              <p className={standardStyles.paragraph}>
+              <a
+                className={standardStyles.space__downloads}
+                href="mailto:fschelpdesk@costaatt.edu.tt"
+              > fschelpdesk@costaatt.edu.tt
                 {" "}
-                fschelpdesk@costaatt.edu.tt
-              </p>
+              </a>
+              {/* <p className={standardStyles.paragraph}>
+                {" "}
+               
+              </p> */}
             </div>
             <div className={standardStyles.email}>
               <Image
-                className={standardStyles.package__icon}
+                className={standardStyles.contact__icon}
                 src={bookOnline}
                 alt="book online icon"
               />
@@ -683,13 +689,13 @@ const rentspace = () => {
                 className={standardStyles.space__downloads}
               >
                 {" "}
-                Book Online
+                 Book Online
               </a>
             </div>
 
-            <div className={standardStyles.paragraph}>
+            <div className={standardStyles.email}>
               <Image
-                className={standardStyles.package__icon}
+                className={standardStyles.contact__icon}
                 src={downloadicon}
                 alt="download icon"
               />
@@ -703,6 +709,7 @@ const rentspace = () => {
                 {" "}
                 Lab Rentals
               </Link>
+              <br />
               <Link
                 href="/pdfs/Rental Spaces.pdf"
                 target="_blank"
