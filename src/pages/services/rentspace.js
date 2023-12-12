@@ -40,6 +40,8 @@ import hours from "../../../public/images/admissions/businesshours.svg";
 import downloadicon from "../../../public/images/admissions/downloadnoteicon.svg";
 import bookOnline from "../../../public/images/services/bookOnline.svg";
 
+import rentalSpacesHeader from "../../../public/images/rentalSpaceHeader.jpg";
+
 
 //images for cards
 import auditorium from "../../../public/images/services/Auditorium.jpg";
@@ -58,7 +60,7 @@ const rentspace = () => {
           <Head>
             <title>Rental Spaces </title>
           </Head>{" "}
-          <HeadImage mainimage={awaitingbanner} />
+          <HeadImage mainimage={rentalSpacesHeader} />
           <div
           // className={`${standardStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}
           >
@@ -656,7 +658,9 @@ const rentspace = () => {
                 src={telephone}
                 alt="telephone icon"
               />
-              <p className={standardStyles.space_downloads}>868-625-5030 EXT 5363</p>
+              <p className={standardStyles.space_downloads}>
+                868-625-5030 EXT 5363
+              </p>
             </div>
             <div className={standardStyles.email}>
               <Image
@@ -668,8 +672,9 @@ const rentspace = () => {
               <a
                 className={standardStyles.space__downloads}
                 href="mailto:fschelpdesk@costaatt.edu.tt"
-              > fschelpdesk@costaatt.edu.tt
+              >
                 {" "}
+                fschelpdesk@costaatt.edu.tt{" "}
               </a>
               {/* <p className={standardStyles.paragraph}>
                 {" "}
@@ -689,7 +694,7 @@ const rentspace = () => {
                 className={standardStyles.space__downloads}
               >
                 {" "}
-                 Book Online
+                Book Online
               </a>
             </div>
 
@@ -707,9 +712,17 @@ const rentspace = () => {
                 className={standardStyles.space__downloads}
               >
                 {" "}
-                Lab Rentals
+                <div>Lab Rentals </div>
               </Link>
-              <br />
+              
+            </div>
+            <div className={standardStyles.email}>
+              <Image
+                className={standardStyles.contact__icon}
+                src={downloadicon}
+                alt="download icon"
+              />
+             
               <Link
                 href="/pdfs/Rental Spaces.pdf"
                 target="_blank"

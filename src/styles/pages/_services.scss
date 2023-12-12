@@ -3,7 +3,7 @@
 
 .sectionRent {
   display: grid;
-  grid-template-rows: 80vh min-content min-content 40vw repeat(3, min-content);
+  grid-template-rows: 40vh min-content min-content 40vw repeat(3, min-content);
 
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(
       8,
@@ -28,7 +28,7 @@
 .rentHeader {
   grid-column: full-start / full-end;
   // grid-row:1/-1;
-  background-color: blue;
+
 }
 .rentIntro {
   grid-column: center-start / center-end;
@@ -120,7 +120,7 @@
     //    justify-content: center;
     //    align-items: flex-start;
     display: grid;
-    align-content: center;
+    align-items: center;
     justify-items: start;
   }
 }
@@ -208,8 +208,9 @@
   
 
 &__downloads{
-    margin: 1rem 0;
+    margin: 1rem auto;
     font-size: 1.15rem;
+   align-content: center;
     
 
 &:hover{
@@ -364,32 +365,38 @@
   margin: 3rem 0 ;
 
 
+
   .contact{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-gap: 2rem;
-    align-items: center;
+    align-content: center;
 
 
     &__info{
         grid-column: 1 / -1;
         text-align: center;
         font-size: 1.25rem;
-        margin: 1.2rem 0;
+        margin: 1rem auto;
+        align-content: center;
+      
 
         span{
             color:$color-primary;
             font-size:1.3rem;
         }
+
     }
 
-     &__icon {
+    &__icon {
+                grid-column: 1 /span 2;
+
     fill: white;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-
+// align-items: center;
 
     // grid-row: 1 / span 2;
   }
