@@ -26,15 +26,15 @@ const leadership = () => {
 
       <section id="intro" className={standardStyles.sectionWithSidenav}>
         <div className={standardStyles.introtext}>
-          The university is governed by a Board of Trustees and shared
-          governance, and administratively led by the president, deans, and vice
-          presidents.
+          The College is governed by a Board of Trustees and shared
+          governance, and administratively led by the President, Deans, and Vice
+          Presidents.
         </div>
-        <p className={standardStyles.subintrotext}>
-          Together, they ensure the fulfillment of COSTAATT's vision and
-          mission, uphold its core values, and manage its operations and
+        <p className={standardStyles.introtext}>
+          Together, they ensure the fulfillment of COSTAATT's Vision and
+          Mission, uphold its Core Values, and manage its operations and
           academic affairs to assure the viability and strategic direction of
-          the university.{" "}
+          the College.{" "}
         </p>
       </section>
       <section
@@ -68,7 +68,7 @@ const leadership = () => {
                   <FiBookOpen value={standardStyles.featurebox__icon} />
                 </IconContext.Provider>
                 <h3 className={standardStyles.headingcards}>
-                  Borad of Trustees{" "}
+                  Board of Trustees{" "}
                 </h3>
               </div>
             </Link>

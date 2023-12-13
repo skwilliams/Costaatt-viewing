@@ -10,21 +10,20 @@ export const topNavLinksLeft = [
         width: "100%",
         position: "absolute",
       },
-        // submenu: [
-          {
-            title: "Criminal Justice, Human Security and Legal Studies",
-            path: "programmes",
-          },
-          {
-            title: "Social and Behavioural Sciences Department ",
-            path: "programmes",
-          },
-          {
-            title: "Education",
-            path: "programmes",
-          },
-        // ],
-      
+      // submenu: [
+      {
+        title: "Criminal Justice, Human Security and Legal Studies",
+        path: "programmes",
+      },
+      {
+        title: "Social and Behavioural Sciences Department ",
+        path: "programmes",
+      },
+      {
+        title: "Education",
+        path: "programmes",
+      },
+      // ],
 
       {
         title: "School of Nursing, Health and Medical Technologies",
@@ -105,7 +104,6 @@ export const topNavLinksLeft = [
         left: "400px",
         position: "absolute",
 
-       
         submenu: [
           {
             title: "Creative Industries and Culture ",
@@ -120,53 +118,38 @@ export const topNavLinksLeft = [
     ],
   },
 
-  {
-    title: "Current Students",
-    path: "currentstudents",
-  },
+  // {
+  //   title: "Current Students",
+  //   path: "currentstudents",
+  // },
   {
     title: "Faculty & Staff",
     path: "facultystaff",
   },
   {
     title: "MY COSTAATT",
-    path: "programmes",
+    path: "https://id.quicklaunch.io/authenticationendpoint/login.do?commonAuthCallerPath=%2Fpassivests&forceAuth=false&passiveAuth=false&tenantDomain=costaatt.edu.tt&wa=wsignin1.0&wct=2023-12-12T18%3A53%3A00Z&wctx=rm%3D0%26id%3Dpassive%26ru%3D%252fcas%252flogin%253fservice%253dhttps%25253A%25252F%25252Fmy.costaatt.edu.tt%25252Fpaf%25252Fauthorize&wtrealm=https%3A%2F%2Fcas-costaatt.quicklaunch.io%2F&sessionDataKey=e15b0fcf-9c94-4f15-9f66-2eb65f1db66a&relyingParty=https%3A%2F%2Fcas-costaatt.quicklaunch.io%2F&type=passivests&sp=costaattedutt&isSaaSApp=false&authenticators=BasicAuthenticator:LOCAL",
   },
   {
     title: "Alumni",
     path: "alumni",
   },
-  {
-    title: "Services",
-
-    submenu: [
-      {
-        title: "Customized Training",
-        path: "/programmes/training",
-      },
-
-      {
-        title: "Rent A Space ",
-        path: "/services/rentspace",
-      },
-     {
-        title: "Translation and Interpretation",
-        path: "/services/translation",
-      },
-    ],
-  },
 ];
 
 export const topNavLinksRight = [
-  {
-    title: "Request Info",
-    path: "/requestinfo",
-  },
+  // {
+  //   title: "Request Info",
+  //   path: "/requestinfo",
+  // },
 
   {
     id: "apply",
     title: "Apply",
     path: "/apply",
+  },
+  {
+    title: "Directory",
+    path: "/",
   },
 ];
 export const footerLinks = [
@@ -313,8 +296,33 @@ export const mainNavLinks = [
     ],
   },
   {
+    title: "Services",
+
+    submenu: [
+      {
+        title: "Customized Training",
+        path: "/programmes/training",
+      },
+
+     
+      {
+        title: "Translation and Interpretation",
+        path: "/services/translation",
+      },
+    ],
+    submenuImage: [
+      {
+        img: require("../../../public/images/services/RoofTop-Terrace-2.jpg"),
+        
+        title: "Rent A Space ",
+        path: "/services/rentspace",
+      
+      },
+    ],
+  },
+  {
     title: "COSTAATT Life ",
- 
+
     submenu: [
       {
         title: "Student Clubs and Organizations",
@@ -354,6 +362,7 @@ export const mainNavLinks = [
       },
     ],
   },
+
   {
     title: "About Us",
     submenu: [
@@ -361,7 +370,7 @@ export const mainNavLinks = [
         title: "Profile at a Glance",
         path: "/about",
       },
-   
+
       {
         title: "History",
         path: "/about/history",
@@ -392,8 +401,8 @@ export const mainNavLinks = [
     ],
   },
 
-  {
-    title: "Directory",
-    path: "/",
-  },
+  // {
+  //   title: "Directory",
+  //   path: "/",
+  // },
 ];

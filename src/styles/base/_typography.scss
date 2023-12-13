@@ -3,7 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 .sectiontext {
   font-size: 2.5rem;
-  font-family: "Bodoni";
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   text-align: center;
   margin: 2em;
@@ -13,7 +13,7 @@
 }
 .subintrotext{
     font-size:1.25rem;
-    font-family: 'Bodoni', arial, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     margin: 5em;
     line-height: 1.5;
@@ -153,7 +153,7 @@ span{
 
 
 .paragraph {
-    font-size: $default-font-size;
+    font-size: 1.25rem;
     line-height: 2;
 
     &:not(:last-child) {
@@ -255,7 +255,7 @@ span{
     padding: 1.8rem 3rem;
     cursor: pointer;
     transition: all .2s;
-
+    
     &:hover {
         background-color: $color-primary-dark;
     }

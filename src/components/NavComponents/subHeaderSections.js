@@ -204,9 +204,8 @@ export const subHeaderSections = {
     "Overview":"intro",
     "Package":"package",
     "Why Rent":"why",
-
-    "Features":"features",
-    "Spaces":"spaces",
+    "Spaces":"spaces", 
+    "More Spaces":"morespaces",
     "Contact":"contact"
   },
   
