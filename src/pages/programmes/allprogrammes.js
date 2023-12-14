@@ -122,7 +122,7 @@ const allcourses = () => {
       <Head>
         <title>All Programmes </title>
       </Head>
-      <HeaderNoImage caption="All Porgrammes" />
+      <HeaderNoImage caption="All Programmes" />
       <p className={CardStyles.urllayout}>
         COSTAATT Programmes/ All Programmes
       </p>
@@ -192,8 +192,7 @@ const allcourses = () => {
                       name="nursing"
                     />
                   }
-                  label=" Education and Digital Humanities Nursing, Health
-                and Medical Technologies"
+                  label=" Education and Digital Humanities Nursing, Health and Medical Technologies"
                 />
               </div>
               <p className={CardStyles.sidenavtitle}> by Levels</p>

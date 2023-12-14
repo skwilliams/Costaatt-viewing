@@ -175,13 +175,13 @@ const programme = (props) => {
               <DegreeCourses courses={getCourses(progStruct.supportcourses)} />
             </AccordionDetails>
           </Accordion>
-          <p className={CourseStyle.creditsummarytext}>
+          { <p className={CourseStyle.creditsummarytext}>
             {' '}
             Total Credits :{' '}
             <span className={CourseStyle.creditsummarynumber}>
               {progStruct.totalcredits}{' '}
             </span>
-          </p>
+          </p>}
         </section>
         <Divider />
         <section id="feesfinancial" className={CourseStyle.sectionFinancial}>
