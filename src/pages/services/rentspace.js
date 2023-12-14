@@ -18,7 +18,6 @@ import chagoutside from "../../../public/images/services/ChaguanasOutside.jpeg";
 import speakers from "../../../public/images/services/speakers.svg";
 import techsupport from "../../../public/images/services/techsupport.svg";
 
-
 // Photos for why costaatt
 import whyback from "../../../public/images/services/whybackground.jpg";
 
@@ -42,7 +41,6 @@ import bookOnline from "../../../public/images/services/bookOnline.svg";
 
 import rentalSpacesHeader from "../../../public/images/rentalSpaceHeader.jpg";
 
-
 //images for cards
 import auditorium from "../../../public/images/services/Auditorium.jpg";
 
@@ -53,6 +51,16 @@ import trainingRoom127 from "../../../public/images/services/Training-Room-127.j
 import trainingRoom128 from "../../../public/images/services/Training-Room-128.jpg";
 
 const rentspace = () => {
+
+  // // const dbdata = fetch(
+  // //   "https://costaattcms.san-sol.com/api/core/campuses/"
+  // // ).then((data) => {
+  // //   data.json().then( data2 => {
+  // //     console.log(data2)
+
+  // //   });
+  // });
+
   return (
     <>
       <div className={standardStyles.sectionRent}>
@@ -78,7 +86,6 @@ const rentspace = () => {
             industry panels and much more.
           </p>
         </div>
-
         <section id="package" className={standardStyles.rentPackage}>
           <div className={standardStyles.package}>
             <Image
@@ -138,7 +145,6 @@ const rentspace = () => {
             </h3>
           </div>
         </section>
-
         <div id="why" className={standardStyles.rentWhy__pictures}>
           {/* <Image
             src={chagoutside}
@@ -155,7 +161,6 @@ const rentspace = () => {
             fill={true}
           /> */}
         </div>
-
         <div className={standardStyles.rentWhy__content}>
           <h2
             className={`${standardStyles.heading_2} ${standardStyles.heading_2_dark} ${standardStyles.mb_md}`}
@@ -173,7 +178,6 @@ const rentspace = () => {
             </ul>
           </div>
         </div>
-
         <section id="spaces" className={standardStyles.rentSpaces}>
           <div className={standardStyles.space}>
             <Image
@@ -644,101 +648,96 @@ const rentspace = () => {
             </div>
           </div>
         </section>
-
-        <div id="contact" className={standardStyles.rentContact}>
-          <div className={standardStyles.contact}>
-            <p className={standardStyles.contact__info}>
-              {" "}
-              Contact <span> Haniffa Ali Parris </span> today to reserve these
-              or other available spaces at the COSTAATT
-            </p>
-            <div className={standardStyles.telephone}>
-              <Image
-                className={standardStyles.contact__icon}
-                src={telephone}
-                alt="telephone icon"
-              />
-              <p className={standardStyles.space_downloads}>
-                868-625-5030 EXT 5363
-              </p>
-            </div>
-            <div className={standardStyles.email}>
-              <Image
-                className={standardStyles.contact__icon}
-                src={email}
-                alt="email icon"
-              />
-
-              <a
-                className={standardStyles.space__downloads}
-                href="mailto:fschelpdesk@costaatt.edu.tt"
-              >
-                {" "}
-                fschelpdesk@costaatt.edu.tt{" "}
-              </a>
-              {/* <p className={standardStyles.paragraph}>
-                {" "}
-               
-              </p> */}
-            </div>
-            <div className={standardStyles.email}>
-              <Image
-                className={standardStyles.contact__icon}
-                src={bookOnline}
-                alt="book online icon"
-              />
-              <a
-                href="https://bit.ly/42oZdfL"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={standardStyles.space__downloads}
-              >
-                {" "}
-                Book Online
-              </a>
-            </div>
-
-            <div className={standardStyles.email}>
-              <Image
-                className={standardStyles.contact__icon}
-                src={downloadicon}
-                alt="download icon"
-              />
-              {/* Download brochures */}
-              <Link
-                href="/pdfs/Rental Spaces Lab.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={standardStyles.space__downloads}
-              >
-                {" "}
-                <div>Lab Rentals </div>
-              </Link>
-              
-            </div>
-            <div className={standardStyles.email}>
-              <Image
-                className={standardStyles.contact__icon}
-                src={downloadicon}
-                alt="download icon"
-              />
-             
-              <Link
-                href="/pdfs/Rental Spaces.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={standardStyles.space__downloads}
-              >
-                {" "}
-                Spaces Rentals
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>{" "}
-      {/* end of container */}
+         
+      </div>
     </>
   );
 };
 
 export default rentspace;
+
+<section id="contact" className={standardStyles.rentContact}>
+  {/* Contact Text */}
+  <h3 className={standardStyles.rentContact__text}>
+    {" "}
+    Contact <span> Haniffa Ali Parris </span> today to reserve these or other
+    available spaces at the COSTAATT
+  </h3>
+  {/* Contact options */}
+  <div className={standardStyles.rentContact__contact}>
+    <Image
+      className={standardStyles.rentContact__icon}
+      src={telephone}
+      alt="telephone icon"
+    />
+    <div className={standardStyles.rentContact__details}>
+      868-625-5030 Ext 5363
+    </div>
+
+    <Image
+      className={standardStyles.rentContact__icon}
+      src={email}
+      alt="email icon"
+    />
+    <div className={standardStyles.rentContact__details}>
+      <a href="mailto:fschelpdesk@costaatt.edu.tt">
+        {" "}
+        fschelpdesk@costaatt.edu.tt{" "}
+      </a>
+    </div>
+
+    <Image
+      className={standardStyles.rentContact__icon}
+      src={bookOnline}
+      alt="book online icon"
+    />
+    <div className={standardStyles.rentContact__details}>
+      <a
+        href="https://bit.ly/42oZdfL"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {" "}
+        Book Online
+      </a>
+    </div>
+  </div>
+
+  {/* Brochures Row */}
+
+  <div className={standardStyles.brochures}>
+    <Image
+      className={standardStyles.rentContact__icon}
+      src={downloadicon}
+      alt="download icon"
+    />
+    {/* Download brochures */}
+    <Link
+      href="/pdfs/Rental Spaces Lab.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      className={standardStyles.space__downloads}
+    >
+      {" "}
+      <div>Lab Rentals </div>
+    </Link>
+
+    <Image
+      className={standardStyles.rentContact__icon}
+      src={downloadicon}
+      alt="download icon"
+    />
+
+    <Link
+      href="/pdfs/Rental Spaces.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      className={standardStyles.space__downloads}
+    >
+      {" "}
+      Spaces Rentals
+    </Link>
+  </div>
+  {/* end of contact */}
+</section>;
+         
