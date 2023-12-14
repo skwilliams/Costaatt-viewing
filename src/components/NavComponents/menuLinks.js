@@ -5,32 +5,24 @@ export const topNavLinksLeft = [
       {
         title: "School Of Liberal Arts, Education And Digital Humanities",
         path: "programmes",
-        backgroundColor: "orange",
-        left: "100px",
-        width: "100%",
-        position: "absolute",
+        submenu: [
+          {
+            title: "Criminal Justice, Human Security and Legal Studies",
+            path: "programmes",
+          },
+          {
+            title: "Social and Behavioural Sciences Department ",
+            path: "programmes",
+          },
+          {
+            title: "Education",
+            path: "programmes",
+          },
+        ],
       },
-      // submenu: [
-      {
-        title: "Criminal Justice, Human Security and Legal Studies",
-        path: "programmes",
-      },
-      {
-        title: "Social and Behavioural Sciences Department ",
-        path: "programmes",
-      },
-      {
-        title: "Education",
-        path: "programmes",
-      },
-      // ],
-
       {
         title: "School of Nursing, Health and Medical Technologies",
         path: "programmes",
-        backgroundColor: "orange",
-        left: "200px",
-        position: "absolute",
         submenu: [
           {
             title: "Department of Nursing",
@@ -45,9 +37,6 @@ export const topNavLinksLeft = [
       {
         title: "School of Environment, Circular Economy and Sustainability",
         path: "programmes",
-        backgroundColor: "orange",
-        left: "200px",
-        position: "absolute",
         submenu: [
           {
             title: "Criminal Justice, Human Security and Legal Studies",
@@ -62,9 +51,6 @@ export const topNavLinksLeft = [
       {
         title: "School of Business and Digital Technologies",
         path: "programmes",
-        backgroundColor: "orange",
-        left: "200px",
-        position: "absolute",
         submenu: [
           {
             title: "Management and Digital Entrepreneurship",
@@ -304,7 +290,6 @@ export const mainNavLinks = [
         path: "/programmes/training",
       },
 
-     
       {
         title: "Translation and Interpretation",
         path: "/services/translation",
@@ -313,10 +298,9 @@ export const mainNavLinks = [
     submenuImage: [
       {
         img: require("../../../public/images/services/RoofTop-Terrace-2.jpg"),
-        
+
         title: "Rent A Space ",
         path: "/services/rentspace",
-      
       },
     ],
   },

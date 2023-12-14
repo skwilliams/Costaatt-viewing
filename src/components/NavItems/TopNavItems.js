@@ -13,20 +13,14 @@ const TopNavItems = ({ items }) => {
       {items.submenu ? (
         <>
           <div
-            onMouseEnter={() => setDropdown((prev) => !prev)}
-            onMouseLeave={() => setDropdown((prev) => !prev)}
+            onClick={() => setDropdown((prev) => !prev)}
+            // onMouseEnter={() => setDropdown((prev) => !prev)}
+            // onMouseLeave={() => setDropdown((prev) => !prev)}
           >
             {items.title}
             {dropdown ? <FaAngleUp /> : <FaAngleDown />}
-            {dropdown && (
-              <TopNavDropDown
-                items={items}
-                // backgroundColor={items.backgroundColor}
-                // left={items.left}
-                // position={items.position}
-                // width={items.width} // Pass the background color here
-              />
-            )}
+
+            {dropdown && <TopNavDropDown items={items} />}
           </div>
         </>
       ) : (

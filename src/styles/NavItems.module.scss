@@ -22,31 +22,34 @@
 
 .topBarLinks {
   padding: 9px 5px;
-  cursor: pointer;
   padding: 20px;
 }
-.topBarLinks:hover .topNavDropDownMain {
-  display: block;
-}
-.topBarLinks:hover {
-  transition: all 0.8s ease;
-  //  border-radius: 15px;
-  text-underline-position: under;
-  background-color: $purple-main;
-  color: white;
-  padding: 20px;
+// .topBarLinks:hover .topNavDropDownMain {
+//   display: block;
+// }
+// .topBarLinks:hover {
+//   transition: all 0.8s ease;
+//   //  border-radius: 15px;
+//   text-underline-position: under;
+//   background-color: $purple-main;
+//   color: white;
+//   padding: 20px;
 
-  // text-decoration: underline solid $color-comp3 4px !important;
-}
+//   // text-decoration: underline solid $color-comp3 4px !important;
+// }
 
 .topNavDropDownMain {
-  //width: 100%;
+  height: 100%;
   position: absolute;
+  left: 0;
+  top: 70px;
   z-index: 40;
-  background-color: #ffffff; /* Change the background color */
-  padding: 20px;
-  display: none;
-  border-radius: 10px; /* Add border-radius for a modern look */
+  background: linear-gradient(
+    to bottom right,
+    $color-primary,
+    $color-primary-dark
+  );
+  color: white; /* Change the background color */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
 }
 
@@ -55,19 +58,68 @@
   padding: 20px 10px;
 }
 
-.topNavDropDownTest {
-  padding: 12px;
-  margin-bottom: 20px;
+.dropDownHeading {
+  text-align: center;
+  padding: 20px;
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
-.topNavdropDownLinks {
+.topNavdropDownMenu {
+  gap: 20px;
+  padding: 25px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  color: $purple-main;
-  padding: 5px;
-  align-items: baseline;
-  height: 400px;
+  text-align: center;
 }
+.topNavdropDownSchoolLink {
+  font-size: 1.2rem;
+  cursor: pointer;
+
+  font-weight: 900;
+  text-transform: uppercase;
+  transition: all 0.9s;
+  //border: 3px solid yellowgreen;
+}
+
+.topNavdropDownSchoolLink:hover {
+  color: yellow;
+  //border: 3px solid yellowgreen;
+}
+
+.topNavdropDownSchoolMenu {
+  display: flex;
+  flex-direction: column;
+
+  // border: 2px solid red;
+  gap: 15px;
+}
+.topNavdropDownDeptLink a {
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.9s;
+  border-radius: 15px;
+}
+
+.topNavdropDownDeptLink a:hover {
+  cursor: pointer;
+  background-color: white;
+  color: $color-primary;
+  padding: 5px;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.topNavdropDownDeptLink {
+  display: flex;
+  flex-direction: column;
+  // border: 2px solid blue;
+  gap: 20px;
+  justify-content: center; /* Align items vertically in the center */
+  overflow-x: auto;
+}
+
 .dropDownLi {
   color: #0077b6; /* Change link color */
   text-align: center;
