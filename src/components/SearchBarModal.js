@@ -46,8 +46,8 @@ export default function SearchBarModal({ handleClose }) {
         <h1>Popular Links</h1>
         <br />{" "}
         <div className={searchBarStyles.popularLinks}>
-          {schoolOptions.map((menu) => (
-            <p>{menu.name}</p>
+          {schoolOptions.map((menu, index) => (
+            <p key={index}>{menu.name}</p>
           ))}
         </div>
         <br />

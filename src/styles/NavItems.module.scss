@@ -42,8 +42,8 @@
   height: 100%;
   position: absolute;
   left: 0;
-  top: 70px;
   z-index: 40;
+
   background: linear-gradient(
     to bottom right,
     $color-primary,
@@ -51,8 +51,34 @@
   );
   color: white; /* Change the background color */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+  animation: slideInFromTop 1s forwards ease;
+}
+@keyframes slideInFromTop {
+  from {
+    top: -100%; /* Start from outside the viewport */
+  }
+  to {
+    top: 0; /* Reach the top of the viewport */
+  }
 }
 
+@keyframes slideUp {
+  from {
+    top: -100%; /* Start from outside the viewport */
+  }
+  to {
+    top: 0; /* Reach the top of the viewport */
+  }
+}
+.dropDownClose {
+  position: relative;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  right: -80px;
+  color: aliceblue;
+  font-size: large;
+}
 .topNavDropDown {
   box-shadow: inset 0px 14px 15px rgba(0, 0, 0, 0.3);
   padding: 20px 10px;
@@ -72,6 +98,7 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   text-align: center;
+  transform: translate3d(0, 0, 0);
 }
 .topNavdropDownSchoolLink {
   font-size: 1.2rem;

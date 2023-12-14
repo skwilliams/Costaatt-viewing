@@ -104,42 +104,9 @@
 // .navContainer {
 //   align-items: center;
 // }
-.topNav {
-  display: flex;
-  padding: 5px 30px;
-  justify-content: space-between;
 
-  background-image: linear-gradient(
-    to bottom right,
-    $color-primary,
-    $color-primary-dark
-  );
-  color: white;
-}
-
-.centerNav {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  justify-content: space-between;
-  padding: 10px 20px;
-  align-items: left;
-  background-color: white;
-  // background-color: #D5CABD;
-  margin: 0;
-}
-.centerNav h2 {
-  font-size: 1.7rem;
-}
 //costaatt logo on main page
-.logo {
-  padding: 0;
-  // width: 15px;
-  margin: 0;
-  // float: left;
-  padding-left: 0;
-  //  padding-top: 7px;
-}
+
 .costaattwords {
   font-family: "Arial", Helvetica, sans-serif;
   font-weight: 900;
@@ -203,6 +170,7 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  top: 50px;
   gap: 20px;
   background-color: $lightgrey1;
   box-shadow: inset 0px 14px 15px rgba(0, 0, 0, 0.3);
@@ -215,7 +183,6 @@
     height: fit-content;
     &:hover {
       transition: all 0.5s ease;
-      // font-weight: 700;
       text-decoration: underline solid $orange 4px;
       text-underline-position: under;
     }
