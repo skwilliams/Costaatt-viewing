@@ -10,13 +10,13 @@
     $color-primary-dark
   );
   color: rgb(256, 256, 256, 0.9);
-  padding: 1rem 0;
+  padding: 1.25rem 0;
 }
 
 .text2columns {
   column-count: 2;
   text-align: justify;
-  column-gap: 5rem;
+  column-gap: 5.25rem;
   height: 100%;
 }
 
@@ -24,7 +24,7 @@
   //   margin-left:   25rem;
   font-size: $default-font-size;
   //   font-weight: bold;
-  margin-top: 4rem;
+  margin-top: 4.25rem;
   width: 65%;
   margin: 0 auto;
 

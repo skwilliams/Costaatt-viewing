@@ -65,13 +65,13 @@
   // text-decoration: underline solid white 4px;
 }
 .rslink {
-  padding: 0 2rem 1rem 2rem;
+  padding: 0 3.2rem 1.6rem 3.2rem;
   cursor: pointer;
 }
 .rslinkSideNav {
   cursor: pointer;
   color: rgba(0, 0, 0, 0.6);
-  font-size: 1.1rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 .activeSideNavSubsection {
@@ -129,7 +129,7 @@
   margin: 0;
 }
 .centerNav h2 {
-  font-size: 1.7rem;
+  font-size: 2.72rem;
 }
 //costaatt logo on main page
 .logo {
@@ -162,7 +162,7 @@
   color: white;
 }
 .bottomNav li {
-  font-size: 1.2rem;
+  font-size: 1.92rem;
 }
 
 .navbarMenus {
@@ -203,7 +203,7 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 1.25rem;
   background-color: $lightgrey1;
   box-shadow: inset 0px 14px 15px rgba(0, 0, 0, 0.3);
   padding: 30px 120px;
@@ -277,10 +277,10 @@
   background-color: rgb(135, 145, 163);
   color: white;
   width: 15%;
-  height: 123px;
+  height: 12.3rem;
   font-size: xx-large;
   cursor: pointer;
-  padding: 15px;
+  padding: .15em;
   &:hover {
     background-color: green;
   }
@@ -324,7 +324,7 @@
     padding: 15px 5px;
     img {
       display: block;
-      height: 130px;
+      height: 13rem;
       width: auto;
     }
   }
@@ -339,11 +339,11 @@
   }
 
   .dropDownMain {
-    top: 210px;
+    top: 21rem;
   }
 
   .searchInput {
-    top: 210px;
+    top: 21rem;
     input {
       padding: 15px;
       width: 60%;
@@ -359,11 +359,11 @@
   .magnifyingGlass {
     position: absolute;
     width: auto;
-    height: 40px;
+    height: 4rem;
     padding: 4px;
     margin-top: 2rem;
-    top: 20px;
-    right: 30px;
+    top: 2rem;
+    right: 3rem;
   }
 }
 

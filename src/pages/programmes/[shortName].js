@@ -461,11 +461,19 @@ export async function getStaticPaths() {
   };
 }
 export async function getStaticProps(context) {
+
+  
+
   const { params } = context;
   const { shortName } = params;
 
   // retrieve the entire programme object
   const data = await getProgData(shortName);
+  const dbdata = await fetch("https://costaattcms.san-sol.com/api/core/campuses/")
+  console.log(dbdata);
+
+  
+
   const struct = getProgStruct(shortName);
 
   if (!(data && struct)) {

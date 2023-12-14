@@ -122,7 +122,7 @@ const allcourses = () => {
       <Head>
         <title>All Programmes </title>
       </Head>
-      <HeaderNoImage caption="All Porgrammes" />
+      <HeaderNoImage caption="All Programmes" />
       <p className={CardStyles.urllayout}>
         COSTAATT Programmes/ All Programmes
       </p>
