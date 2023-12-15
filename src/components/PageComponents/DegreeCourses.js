@@ -62,7 +62,7 @@ const DegreeCourses = ({ courses }) => {
             <div className={CourseStyle.creditstotal}>{totalCredits}</div>
           </div>
         </div>
-      )}
+      )} 
     </>
   );
 };
