@@ -2142,40 +2142,40 @@ const programmes = [
     salaries: [
       {
         position:
-          "NA",
-        figure: "NA",
+          "Not Available",
+        figure: "Not Available",
       },
       {
-        position: "NA",
-        figure: "NA",
+        position: "Not Available",
+        figure: "Not Available",
       },
       {
-        position: "NA",
-        figure: "NA",
+        position: "Not Available",
+        figure: "Not Available",
       },
       {
-        position: "NA",
-        figure: "NA",
+        position: "Not Available",
+        figure: "Not Available",
       },
       {
-      position: "NA",
-        figure: "NA",
+      position: "Not Available",
+        figure: "Not Available",
       },
       {
-        position: "NA",
-        figure: "NA",
+        position: "Not Available",
+        figure: "Not Available",
       },
       {
-        position: "NA",
-        figure: "NA",
+        position: "Not Available",
+        figure: "Not Available",
       },
       {
-        position: "NA",
-        figure: "NA",
+        position: "Not Available",
+        figure: "Not Available",
       },
       {
-        position: "NA",
-        figure: "NA",
+        position: "Not Available",
+        figure: "Not Available",
       },
     ],
     semester: ["September", "January"],
