@@ -4,20 +4,20 @@ import CourseStyle from '../../styles/Course.module.scss';
 import { Divider } from '@mui/material';
 
 const DegreeCourses = ({ courses }) => {
-  // let totalCredits = 0;
-  // courses.length > 0 &&
-  //   (totalCredits = courses.reduce((total, item) => {
-  //     return total + item.credits;
-  //   }, 0));
+  let totalCredits = 0;
+  courses.length > 0 &&
+    (totalCredits = courses.reduce((total, item) => {
+      return total + item.credits;
+    }, 0));
 
   return (
     <>
-      {/* {totalCredits > 0 && ( */}
-      <div className={CourseStyle.coursesGridCon}>
-        <>
-          <div className={CourseStyle.coursesColGrid}>
-            <div className={CourseStyle.courseheadings}>Course Code</div>
-          </div>
+      {totalCredits > 0 && (
+        <div className={CourseStyle.coursesGridCon}>
+          <>
+            <div className={CourseStyle.coursesColGrid}>
+              <div className={CourseStyle.courseheadings}>Course Code</div>
+            </div>
 
           <div className={CourseStyle.coursesColGrid}>
             <div className={CourseStyle.courseheadings}>Course Name</div>
@@ -36,46 +36,33 @@ const DegreeCourses = ({ courses }) => {
               )}
             </div>
 
-            <div className={CourseStyle.coursesColGrid}>
-              {course.coursename && (
-                <div className={CourseStyle.coursename}>
-                  {course.coursename}
-                </div>
-              )}
+              <div className={CourseStyle.coursesColGrid}>
+                {course.coursename && (
+                  <div className={CourseStyle.coursename}>
+                    {course.coursename}
+                  </div>
+                )}
+              </div>
+              <div className={CourseStyle.coursesColGrid}>
+                {course.credits && (
+                  <div className={CourseStyle.credits}>{course.credits}</div>
+                )}
+              </div>
             </div>
-            <div className={CourseStyle.coursesColGrid}>
-              {course.credits && (
-                <div className={CourseStyle.credits}>{course.credits}</div>
-              )}
-            </div>
-            <div className={CourseStyle.coursesColGrid}>
-              <div className={CourseStyle.courseheadings}></div>
-            </div>
+          ))}
 
-            <div className={CourseStyle.coursesColGrid}>
-              <div className={CourseStyle.courseheadings}>Total Credits</div>
-            </div>
-            <div className={CourseStyle.coursesColGrid}>
-             {course.totalcredits && 
-            ( <div className={CourseStyle.creditstotal}>{course.totalcredits}
-             </div>
-            )}
-            </div>
+          <div className={CourseStyle.coursesColGrid}>
+            <div className={CourseStyle.courseheadings}></div>
           </div>
-        ))}
 
-        {/* <div className={CourseStyle.coursesColGrid}>
-          <div className={CourseStyle.courseheadings}></div>
+          <div className={CourseStyle.coursesColGrid}>
+            <div className={CourseStyle.courseheadings}>Total Credits</div>
+          </div>
+          <div className={CourseStyle.coursesColGrid}>
+            <div className={CourseStyle.creditstotal}>{totalCredits}</div>
+          </div>
         </div>
-
-        <div className={CourseStyle.coursesColGrid}>
-          <div className={CourseStyle.courseheadings}>Total Credits</div>
-        </div>
-        <div className={CourseStyle.coursesColGrid}>
-          <div className={CourseStyle.creditstotal}>{course.totalcredits}</div>
-        </div> */}
-      </div>
-      {/* )} */}
+      )}
     </>
   );
 };
