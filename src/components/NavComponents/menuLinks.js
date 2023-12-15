@@ -118,13 +118,9 @@ export const topNavLinksLeft = [
     ],
   },
 
-  // {
-  //   title: "Current Students",
-  //   path: "currentstudents",
-  // },
   {
     title: "Faculty & Staff",
-    path: "facultystaff",
+    path: "/facultystaff",
   },
   {
     title: "MY COSTAATT",
@@ -132,7 +128,7 @@ export const topNavLinksLeft = [
   },
   {
     title: "Alumni",
-    path: "alumni",
+    path: "/alumni",
   },
 ];
 
