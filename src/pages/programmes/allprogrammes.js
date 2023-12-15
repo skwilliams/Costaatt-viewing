@@ -192,8 +192,7 @@ const allcourses = () => {
                       name="nursing"
                     />
                   }
-                  label=" Education and Digital Humanities Nursing, Health
-                and Medical Technologies"
+                  label=" Education and Digital Humanities Nursing, Health and Medical Technologies"
                 />
               </div>
               <p className={CardStyles.sidenavtitle}> by Levels</p>

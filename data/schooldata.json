@@ -7,7 +7,7 @@
     "overview": "The School of Business and Digital Technologies provides access to a world-class and work-relevant education, focused on achieving institutional and national goals of workforce development. The School of Business and Digital Technologies comprises two (2) schools, the Department of ICTs and Digital Technologies and the Department of Management and Digital Entrepreneurship. These departments provide the public with a range of academic services to meet a growing number of careers and opportunities locally, regionally, and globally.",
     "dean": {
       "name": "Dr. Kyra Mc Gowan-Santana",
-      "image": "/images/schools/deanavatar.jpg",
+      "image": "/images/schools/deans/Kyra Mc Gowan-Santana.jpg",
       "message": "Welcome to the School of Business and Digital Technologies at COSTAATT. The School offers courses of study that lead to the award of certificates, diplomas, associate and bachelor’s degrees. We are in the business of changing lives, a key component of which is preparing our students through hands-on skills development for future careers using technology. Faculty members incorporate the use of cutting-edge business techniques, digital technology and information science to prepare students for new innovative opportunities where others see challenges. We welcome you to our School and to a dynamic and promising future!",
       "email": "kmsantana@costaatt.edu.tt",
       "phone": "868-625-5030"
@@ -26,7 +26,7 @@
           "Student-Centeredness",
           "Lifelong-Learning"
         ],
-        "shortName": "Business",
+        "shortName": "Department",
         "dept_code": "MGDE",
         "contacts": [],
         "programmes": [
@@ -139,14 +139,14 @@
           "Student-Centeredness",
           "Lifelong-Learning"
         ],
-        "shortName": "IST",
+        "shortName": "ICTs and Digital Technologies",
         "contacts": ["mcharles", "rdavid"],
         "dept_code": "ICTD",
         "programmes": [
           {
             "prog_code": "CERT_WEB",
             "prog_shortname": "certWebDev",
-            "prog_name": "Diploma in IT - Web Development",
+            "prog_name": "Certificate in IT - Web Development",
             "prog_level": "Certificate",
             "prog_del_mode": "Blended",
             "dept_code": "ICTD",
@@ -167,7 +167,7 @@
             "prog_core_credits": 0,
             "prog_elect_credits": 0,
             "prog_supp_credits": 0,
-            "prog_description": "The CISCO-CCNA (Cisco Certified Network Associate) Certificate is designed for CISCO Networking Academy students.  The CCNA programme provides an integrated and comprehensive coverage of networking topics, from fundamentals to advanced applications and services and offers students the hands-on practical experience required for industry.  Upon completion of this curriculum, students will be prepared to sit CISCO-CCNA examinations leading to a professional certification in networking. This programme normally fulfills matriculation requirements for networking engineering degree programmes."
+            "prog_description": "The CISCO Certified Network Associate Certificate is designed for CISCO Networking Academy students.  The programme provides an integrated and comprehensive coverage of networking topics, from fundamentals to advanced applications and services and offers students the hands-on practical experience required for industry.  Upon completion of this curriculum, students will be prepared to sit CISCO Certified Network Associate examinations leading to a professional certification in networking. This programme normally fulfills matriculation requirements for networking engineering degree programmes."
           },
           {
             "prog_code": "CERT_RECM",
@@ -284,12 +284,12 @@
     "image": "/images/schools/liberal header.jpg",
     "dean": {
       "name": "Neil Sylvester",
-      "image": "/images/schools/deanavatar.jpg",
+      "image": "/images/schools/deans/Neil-Sylvester.jpg",
       "message": "Welcome to the School of Liberal Arts, Education, and Digital Humanities. I wish to commend you on your decision to pursue a programme of study in this School. It is a decision I am certain, you have not taken lightly. This decision would have been based on where you wish to see yourself in the not too distant future. We view our role as facilitators who will help you fulfill your dream. The School of Liberal Arts, Education, and Digital Humanities produces a diverse range of graduates with varying skills and competencies in the disciplines of education, mathematics, psychology, social work, sociology, criminal justice, and in general, graduates who can make great contributions towards enhancing the social and behavioural development of the nation. To achieve this objective, we constantly scan the environment to ensure that our programmes are innovative and relevant to the needs of our society. Our experience shows, the main challenge faced by students is navigating the tertiary level landscape. It is sometimes difficult balancing your academic and non-academic life and for this reason, COSTAATT has implemented academic advising, the objective being to deal with all the intricacies attached to the balancing act. I urge you to take advantage of the personalized academic advising opportunity. If fully embraced, your college experience could be a happy and rewarding one. Good luck to you as you begin this fascinating and exciting journey.",
       "email": "nsylvester@costaatt.edu.tt",
       "phone": "868-625-5030 ext 5454"
     },
-    "overview": "The School of Liberal Arts, Education, and Digital Humanities comprises three (3) departments:Education, Social and Behavioural Sciences, Criminal Justice, Human Security, and Legal Studies. These departments provide students with a range of academic services to meet a growing number of careers and opportunities locally, regionally, and globally.",
+    "overview": "The School of Liberal Arts, Education, and Digital Humanities comprises three (3) departments: Education, Social and Behavioural Sciences, Criminal Justice, Human Security, and Legal Studies. These departments provide students with a range of academic services to meet a growing number of careers and opportunities locally, regionally, and globally.",
     "departments": [
       {
         "name": "Education",
@@ -455,12 +455,12 @@
     "image": "/images/schools/nursing header.jpg",
     "dean": {
       "name": "Anjenney Boodoosingh-Dwarika",
-      "image": "/images/schools/deanavatar.jpg",
-      "message": "As the dean of School of Nursing, Health and Medical Technologies...",
+      "image": "/images/schools/deans/anjenney-Dwarika.jpg",
+      "message": "At the 69th World Health Assembly, a draft global strategy on human resources for the health sector workforce to 2030 was conceptualized to develop a cadre of healthcare professionals, with the capability to provide equitable health services to all - or as we say “all access” to the health services. Since COSTAATT’s inception, more than 23 years ago and its continued commitment to producing qualified and competent health care professionals, this global strategy further supports and gives impetus to widening the nursing and allied health training at the College. Through continuous feedback form stakeholders, the School is able to revise its curricula to ensure that its graduates meet the needs of the employers and users of the health care system. We can achieve the above through collaboration as a team. The School’s team consists of past and current practitioners in the fields of nursing and allied health. The COSTAATT team exposes you to the course material, the laboratory sessions, the simulation sessions, and internship sessions, and at the same time developing soft skills and general education through our core curriculum. My role as Dean is to ensure that your experience at the COSTAATT is a rewarding one and that you successfully achieve your educational goals. As your Dean, I commit to the equitable treatment of each student, staff and faculty. I am here to serve and ensure the necessary standards of quality service within the bounds of ethical conduct. You have chosen to pursue a caring and noble profession and I take this opportunity to welcome you to the School of Nursing, Health and Medical Technolgies.",
       "email": "adwarika@costaatt.edu.tt",
-      "phone": "868-625-5030 ext 3333"
+      "phone": "868-625-5030 Ext. 5490 / 5448"
     },
-    "overview": "School of Nursing, Health and Medical Technologies overview...",
+    "overview": "The School of Nursing, Health and Medical Technologies, through continuous revisions and updates of the curricula and feedback from all stakeholders, strives to transform and equip each student with the required knowledge and the demonstrably competent skills that are necessary for the workplace, in the respective discipline areas.",
     "departments": [
       {
         "name": "Nursing",
@@ -476,7 +476,7 @@
         "name": "Health and Medical Science Technologies",
         "headImage": "/images/schools/departments/HMSTheader.png",
         "image": "/images/schools/departments/department without labels/Artboard 1.png",
-        "summary": "The Department of Health and Medical Technologies (HMT) is committed to producing graduates who are competent, entry-level, allied healthcare professionals in radiography, medical laboratory technology, pharmacy assisting, phlebotomy and sonography for midwives. These programmes are delivered by way of didactic, practical and internship or practicum courses primarily through competency-based teaching and learning strategies.",
+        "summary": "The Department of Health and Medical Technologies is committed to producing graduates who are competent, entry-level, allied healthcare professionals in radiography, medical laboratory technology, pharmacy assisting, phlebotomy and sonography for midwives. These programmes are delivered by way of didactic, practical and internship or practicum courses primarily through competency-based teaching and learning strategies.",
         "shortName": "HMST",
         "coreValues": [],
         "contacts": ["esookdeo", "mbahamad"],
@@ -557,13 +557,13 @@
     "nameStump": "enviro",
     "image": "/images/schools/enviro header.jpg",
     "dean": {
-      "name": "Anjenney Boodoosingh-Dwarika",
-      "image": "/images/schools/deanavatar.jpg",
-      "message": "As the dean of School of Liberal Arts, Education and Digital Humanities...",
-      "email": "adwarika@costaatt.edu.tt",
-      "phone": "868-625-5030 ext 2222"
+      "name": "Delamae Wilson",
+      "image": "/images/schools/deans/delamae-wilson.jpg",
+      "message": "Welcome to the School of Environment, Circular Economy, and Sustainability at the College of Science, Technology, and Applied Arts of Trinidad and Tobago! It is my privilege to introduce you to an educational experience that will engage your curiosity, expand your boundaries of knowledge, and develop your critical thinking to help you positively impact our world. At our school, we strive to inspire individuals through education. Our programmes are carefully designed to blend the realms of science, environmental studies, and sustainable practices so that our graduates can help grow a circular economy and bring resilience to our communities. What truly sets us apart is our commitment to experiential learning. Hands-on experiences like internships, field and lab work, research projects, and community involvement are pivotal in shaping informed, well-rounded individuals ready to confront real-world challenges. As you embark on this academic journey, remember that choosing our school is more than just a decision about your education; it's a pledge to be an agent of positive change in our ever-evolving world. Please take the time to explore our website and connect with our dedicated admissions team. Discover the many opportunities that await you and envision the remarkable contributions you can make as part of our family. Thank you for considering the School of Environment, Circular Economy and Sustainability. I look forward to the opportunity to welcome you into our community—a community of passionate students, dedicated faculty, and compassionate staff, all united by a shared commitment to building a sustainable future for all. With warm regards,",
+      "email": "dwilson@costaatt.edu.tt",
+      "phone": "868-625-5030"
     },
-    "overview": "School of Environment, Circular Economy and Sustainability overview...",
+    "overview": "Established in early 2023, the School of Environment, Circular Economy and Sustainability was created in response to the global necessity to prepare graduates to support a circular economy and be dynamic advocates of sustainability principles. Our students are equipped with the knowledge and skills to tackle climate change, conserve biodiversity, and foster economic resilience. With the collaborative efforts of our two departments, the Department of Environmental and Sustainability Studies and the Department of Natural and Life Sciences, we provide programmes, opportunities for research, and practical community experience that emphasize sustainable practices to reduce waste, optimize resource utilization and restore natural systems.",
     "departments": [
       {
         "name": "Environmental and Sustainability Studies",
@@ -596,7 +596,7 @@
     "image": "/images/schools/ken gordon header.jpg",
     "dean": {
       "name": "Ms. Clarinda Jack",
-      "image": "/images/schools/deanavatar.jpg",
+      "image": "/images/schools/deans/clarinda-jack.jpg",
       "message": "At the core of The Ken Gordon School of Communication, Creative and Digital Media remains the vision to produce graduates who are excellent communicators and story tellers of the past, present and future in written, oral, visual and musical forms.  We will continue to prepare students to hit the ground running in their respective disciplines on completion of their studies, and to be responsible, ethical and creative consumers and producers of content in this rapidly evolving digital world.",
       "email": "cjack@costaatt.edu.tt",
       "phone": "868-625-5030 ext 5061"
@@ -895,7 +895,7 @@
     "image": "/images/schools/workforce header.jpg",
     "dean": {
       "name": "Lalita Ramlal-Chirkoot",
-      "image": "/images/schools/deanavatar.jpg",
+      "image": "/images/schools/deans/lalita.jpg",
       "message": "The School of Workforce Enhancement and Development (SWED)  of COSTAATT is supported by the other five (5) academic schools of the college.  As one of the six (6) schools within the College, SWED provides credit and non-credit, micro-credentials and continuing education courses as well as professional development programmes.  Our year round operations and multiple modes of delivery provides the gateway to lifelong learning for those from ages 14 years to 70 years. SWED is committed to leading change and transformation in Trinidad and Tobago and within the Caribbean through workforce development in many disciplinary areas, encouraging persons to stay current with their workplace needs, thereby improving workplace knowledge, competence and performance. Through the School of Workforce Enhancement and Development, students can earn PDUs, certificates, diplomas, graduate diplomas, and professional re-licensure.  The main focus of the School is to broaden access to opportunities for continuing education and professional development and open the doors of COSTAATT to a diverse range of learners. ",
       "email": "lrchirkoot@costaatt.edu.tt",
       "phone": "868-625-5030 ext 5431"

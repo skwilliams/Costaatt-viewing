@@ -119,7 +119,7 @@ export const areasstudyitems = [
         id:5,
         areas: [
             {
-                title: 'Corporate adn Upskilling Training'
+                title: 'Corporate and Upskilling Training'
             },
             {
                 title: 'Customized Workshops and Short Courses',
@@ -131,7 +131,7 @@ export const areasstudyitems = [
                 title: 'Translation and Interpretation Services',
             },
             {
-                title: 'CollegeStartTT Progrqamme',
+                title: 'CollegeStartTT Programme',
             },
 
 

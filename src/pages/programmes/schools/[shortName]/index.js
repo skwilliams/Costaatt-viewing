@@ -53,7 +53,7 @@ const school = (props) => {
         <h2
           className={`${standardStyles.newsHeading} ${standardStyles.centertext}`}
         >
-          <span>OVERVIEW </span> of School
+          <span>OVERVIEW </span> 
         </h2>
         <p className={ProgStyles.text}>{foundSchool.overview}</p>
       </section>{" "}
@@ -63,7 +63,7 @@ const school = (props) => {
         <h2
           className={`${standardStyles.newsHeading} ${standardStyles.centertext}`}
         >
-          Departments{" "}
+          DEPARTMENTS{" "}
         </h2>
         <div className={deptLayout}>
           {foundSchool.departments.map((dept, index) => {
@@ -74,7 +74,7 @@ const school = (props) => {
                   departname={dept.name}
                   intro={dept.summary}
                   linkpage={`/programmes/schools/${foundSchool.nameStump}/${dept.dept_code}`}
-                  shortname={dept.shortName}
+                  shortname={dept.name}
                 />
               </div>
             );
@@ -86,7 +86,7 @@ const school = (props) => {
         <h2
           className={`${standardStyles.newsHeading} ${standardStyles.centertext} ${standardStyles.whitefont}`}
         >
-          <span> FIND </span>your Degree
+          <span> FIND your Degree HERE! </span>
         </h2>
 
         <div className={ProgStyles.progGridCon}>
