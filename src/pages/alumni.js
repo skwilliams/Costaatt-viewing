@@ -2,13 +2,15 @@ import React from 'react';
 import Head from 'next/head';
 import HeadImage from '@/components/PageComponents/HeadImage';
 import alumniimage from '../../public/images/alumniHeader.jpg';
-import HomeStyles from '@/styles/Home.module.scss'
-
+import HomeStyles from '../styles/Home.module.scss'
+import standardStyles from "@/styles/main.module.css"
 
 
 
 import {
   SliderLinks,
+  SuccessSlider,
+  CarouselSuccess,
   TILES_INFO,
   EVENTS,
   NEWS,
@@ -16,21 +18,24 @@ import {
   SuccessLinks,
   SuccessMainLinks,
   FEATURED_NEWS,
-} from "../HomeComponents/homeLinks";
+} from "../components/HomeComponents/homeLinks";
 
 const alumni = () => {
   return (
     <>
-      <Head>
-        <title>Alumni </title>
-      </Head>
-      <HeadImage mainimage={alumniimage}/>
+      <header className={standardStyles.rentHeader}>
+
+        <Head>
+          <title>Alumni </title>
+        </Head>
+        <HeadImage mainimage={alumniimage} />
+      </header>
 
       <section id="success-stories" className={HomeStyles.successSection}>
         <div className={HomeStyles.successStories}>
           <h1>Success Stories</h1>
         </div>
-        <div className={HomeStyles.successSlider}>
+        {/* <div className={HomeStyles.successSlider}>
           <SuccessSlider
             slides={selectedSuccess ? [selectedSuccess] : SuccessMainLinks}
           />
@@ -38,7 +43,7 @@ const alumni = () => {
             story={SuccessLinks}
             onSelect={handleSuccessSelect}
           />
-        </div>
+        </div> */}
       </section>
 
       <div>alumni</div>
