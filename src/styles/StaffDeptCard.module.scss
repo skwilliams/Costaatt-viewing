@@ -3,22 +3,21 @@
 
 .cardCont{
    color:  #060607;
-    font-size: 1rem;
+    font-size: 1.25rem;
   border-radius: 75%;
   text-align: center;
 
 .photo{
-    width:12.5rem;
-    height:12.5rem;
-    //  border-radius: 50%;
+    width:15rem;
+    height:15rem;
    
-   
+  
     
     }
     .name{
-      font-size: 1rem;
+      font-size: 1.25rem;
       color:$orange;
-      margin-bottom: 1rem ;
+      margin: 1.25rem 0 ;
       font-weight: 700;
     
     }
@@ -34,7 +33,7 @@
       padding: 0;
     } 
     .tel{
-      
+
       margin: 0;
     }
 

@@ -16,6 +16,8 @@ const FacultyStaffCard = ({ staff, dept }) => {
                   alt={fe.altText}
                   width="250"
                   height="250"
+                  // fill
+                  // sizes="100vw"
                 />
               )}
 
