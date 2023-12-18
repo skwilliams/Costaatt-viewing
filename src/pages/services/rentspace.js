@@ -228,8 +228,11 @@ const rentspace = () => {
               <p>TT $4,000 </p>
             </div>
 
-            <Link href="#contact" className={standardStyles.space__btn}>
-              Contact Us
+            <Link
+              href="https://bit.ly/42oZdfL"
+              className={standardStyles.space__btn}
+            >
+              Book Now
             </Link>
           </div>
           <div className={standardStyles.space}>
@@ -277,8 +280,11 @@ const rentspace = () => {
 
               <p>TT $3500</p>
             </div>
-            <Link href="#contact" className={standardStyles.space__btn}>
-              Contact Us
+            <Link
+              href="https://bit.ly/42oZdfL"
+              className={standardStyles.space__btn}
+            >
+              Book Now
             </Link>
           </div>
           <div className={standardStyles.space}>
@@ -326,8 +332,11 @@ const rentspace = () => {
 
               <p>TT $6,000</p>
             </div>
-            <Link href="#contact" className={standardStyles.space__btn}>
-              Contact Us
+            <Link
+              href="https://bit.ly/42oZdfL"
+              className={standardStyles.space__btn}
+            >
+              Book Now
             </Link>
           </div>
 
@@ -376,8 +385,11 @@ const rentspace = () => {
 
               <p>TT$ 3,500</p>
             </div>
-            <Link href="#contact" className={standardStyles.space__btn}>
-              Contact Us
+            <Link
+              href="https://bit.ly/42oZdfL"
+              className={standardStyles.space__btn}
+            >
+              Book Now
             </Link>
           </div>
           <div className={standardStyles.space}>
@@ -425,8 +437,11 @@ const rentspace = () => {
 
               <p>TT$ 3,500</p>
             </div>
-            <Link href="#contact" className={standardStyles.space__btn}>
-              Contact Us
+            <Link
+              href="https://bit.ly/42oZdfL"
+              className={standardStyles.space__btn}
+            >
+              Book Now
             </Link>
           </div>
           <div className={standardStyles.space}>
@@ -474,8 +489,11 @@ const rentspace = () => {
 
               <p>TT$ 3,500</p>
             </div>
-            <Link href="#contact" className={standardStyles.space__btn}>
-              Contact Us
+            <Link
+              href="https://bit.ly/42oZdfL"
+              className={standardStyles.space__btn}
+            >
+              Book Now
             </Link>
           </div>
         </section>
@@ -648,8 +666,97 @@ const rentspace = () => {
             </div>
           </div>
         </section>
-         
+        <section id="contact" className={standardStyles.rentContact}>
+          {/* Contact Text */}
+          <h3 className={standardStyles.rentContact__text}>
+            {" "}
+            Contact <span> Haniffa Ali Parris </span> today to reserve these or
+            other available spaces at the COSTAATT
+          </h3>
+
+          <div className={standardStyles.contact}>
+            <Image
+              className={standardStyles.contact__icon}
+              src={telephone}
+              alt="telephone icon"
+            />
+            <p className={standardStyles.contact__text}>
+              868-625-5030 Ext 5363{" "}
+            </p>
+          </div>
+          <div className={standardStyles.contact}>
+            <Image
+              className={standardStyles.contact__icon}
+              src={email}
+              alt="email icon"
+            />
+            <a
+              className={standardStyles.contact__text}
+              href="mailto:fschelpdesk@costaatt.edu.tt"
+            >
+              {" "}
+              fschelpdesk@costaatt.edu.tt
+            </a>
+            {/* </div> */}
+          </div>
+          <div className={standardStyles.contact}>
+            <Image
+              className={standardStyles.contact__icon}
+              src={bookOnline}
+              alt="book online icon"
+            />
+            <a
+              href="https://bit.ly/42oZdfL"
+              target="_blank"
+              className={standardStyles.contact__text}
+              rel="noopener noreferrer"
+            >
+              {" "}
+              Book Online
+            </a>
+          </div>
+
+          <div className={standardStyles.brochure}>
+            <h3 className={standardStyles.heading_2}> Download Brochures</h3>
+            <div className={standardStyles.contact}>
+              <Image
+                className={standardStyles.contact__icon}
+                src={downloadicon}
+                alt="download icon"
+              />
+              {/* Download brochures */}
+              <Link
+                href="/pdfs/Rental Spaces Lab.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={standardStyles.contact__text}
+              >
+                {" "}
+                <h4>Lab Rentals </h4>
+              </Link>
+            </div>
+            
+            <div className={standardStyles.contact}>
+              <Image
+                className={standardStyles.contact__icon}
+                src={downloadicon}
+                alt="download icon"
+              />
+
+              <Link
+                href="/pdfs/Rental Spaces.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={standardStyles.contact__text}
+              >
+                {" "}
+                <h3> Spaces Rentals </h3>
+              </Link>
+            </div>
+          </div>
+        </section>
       </div>
+      {/*end section Rent */}
     </>
   );
 };

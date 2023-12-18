@@ -42,6 +42,7 @@
 
   grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
   grid-gap: 6rem;
+
 }
 
 .package {
@@ -354,50 +355,80 @@
 .rentContact {
 
   grid-column: center-start / center-end;
-grid-template-columns: 1fr 1fr 1fr ;
-   &__text{
-    font-size: 1.44rem;
-    text-align: center;
-        margin: 1rem auto;
-        align-content: center;
-      background-color: gold;
+  display: grid;
+  padding: 4rem;
+  align-items: center;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(35rem, 1fr));
+  // grid-gap: 2rem;
+// align-content: center;
+
+    // @media only screen and (max-width: $bp-medium) {
+    //     grid-column: 1 / -1;
+    // }
+
+
+  &__text{
+    grid-column: 1/ -1;
+    font-size: 1.8rem;
+    height: 2rem;
+    // text-align: center;
+        margin: 3rem auto;
+        // align-content: center;
+      padding:4em;
+
+      
    
      span{
             color:$color-primary;
-            font-size:1.3rem;
+            font-size:1.9rem;
         }
     }
+  }
+  
+.contact {
+
+  margin: auto;
 
 
-    &__contact{
-
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-        // grid-template-rows: min-content max-content;
-//  row-gap: 2rem;
-      // 3col 3 grid
-      background-color: grey;
-
-
-    }
-
-    &__details{
-      font-size: 1.6rem;
-
-    }
-    &__icon{
-    max-height: 3.5rem ;
+  a{
     display: block;
-   }
+  }
+  &__icon {
+    fill: white;
+    width: 4.5rem;
+    height: 4.5rem;
+    grid-row: 1 / span 2;
+    margin:2rem 0;
+    // display: block;
+  }
+  &__text {
+    font-size: 1.8rem;
+    text-align: center;
+      // margin:3rem 0;
+  }
+}
 
+
+
+
+      
+      .brochure{
+        grid-column: 1 / -1;
+          display: grid;
+  grid-template-columns: repeat(max-content, minmax(25rem, 1fr));
+  align-content: right;
+  margin: 4rem auto;
+      
+
+      }
+     
+
+        
     
-   &__brochures{
-    background-color: brown;
-    //2 col 2 rows
 
-   }
-
-   }
+   
 
 
    

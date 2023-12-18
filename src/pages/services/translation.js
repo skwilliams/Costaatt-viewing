@@ -21,6 +21,7 @@ const translation = () => {
           <Link href="/services/rentspace">Rental Spaces</Link>
         </div>
       </header>
+      <section className={standardStyles.r}
     </>
   );
 }
