@@ -32,9 +32,9 @@ const customtraining = () => {
       <section id="offerings">
         Short Courses 
       </section>
-      <sectio id="our customers">
+      <section id="our customers">
         
-      </sectio>
+      </section>
     </>
  )
 }

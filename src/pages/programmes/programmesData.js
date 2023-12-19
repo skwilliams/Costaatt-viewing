@@ -222,7 +222,7 @@ const allCourses = [
   },
   {
     coursecode: "COMM 499",
-    coursename: "Senior Project – Mass Communication",
+    coursename: "Senior Project - Mass Communication",
     credits: 4,
   },
   {

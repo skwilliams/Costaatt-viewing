@@ -297,7 +297,7 @@ export const mainNavLinks = [
     submenu: [
       {
         title: "Customized Training",
-        path: "/programmes/training",
+        path: "/services/customtraining",
       },
 
      
