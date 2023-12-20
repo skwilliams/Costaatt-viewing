@@ -281,8 +281,18 @@ const allCourses = [
     credits: 3,
   },
   {
+    coursecode: "ENTP 377",
+    coursename: "Cases in Entrepreneurship",
+    credits: 2,
+  },
+  {
     coursecode: "ENTP 410",
     coursename: "Social Entrepreneurship",
+    credits: 3,
+  },
+  {
+    coursecode: "ENTP 420",
+    coursename: "New Venture Management",
     credits: 3,
   },
   {
@@ -1056,6 +1066,11 @@ const allCourses = [
     credits: 3,
   },
   {
+    coursecode: "MKTG 385",
+    coursename: "Market Research",
+    credits: 3,
+  },
+  {
     coursecode: "MKTG 405",
     coursename: "Customer Relationship Management",
     credits: 3,
@@ -1063,6 +1078,16 @@ const allCourses = [
   {
     coursecode: "MKTG 410",
     coursename: "Brand Management",
+    credits: 3,
+  },
+  {
+    coursecode: "MKTG 450",
+    coursename: "Marketing Management",
+    credits: 3,
+  },
+  {
+    coursecode: "MKTG 455",
+    coursename: "Marketing Practicum",
     credits: 3,
   },
   {
@@ -2107,7 +2132,6 @@ const programmes = [
     majorcourses: [
       "ACCT 126",
       "ACCT 210",
-      "BUSI 120",
       "BUSI 203",
       "ECON 120",
       "ECON 125",
@@ -2119,7 +2143,7 @@ const programmes = [
       "MGMT 210",
       "MGMT 300",
       "MKTG 205",
-      "STAT 122",
+      "STAT 120",
          
     ],
     specialcourses: [
@@ -2136,8 +2160,8 @@ const programmes = [
       "ENTP 420",
       ],
     electivecourses: ["XXXX ###","XXXX ###","XXXX ###", "XXXX ###",],
-    corecourses: ["FYEC 100", "LIBS 130", "WRIT 117", "MATH 119", "COMM 118","FYEC 400", "XXXX ###","XXXX ###","XXXX ###","XXXX ###",],
-    supportcourses: ["NA",],
+    corecourses: ["FYEC 100", "LIBS 130", "WRIT 117", "MATH 119", "COMM 118","FYEC 400", "PSYC 103","XXXX ###","XXXX ###","XXXX ###",],
+    supportcourses: [],
     totalcredits: 120,
     salaries: [
       {
@@ -2181,6 +2205,122 @@ const programmes = [
     semester: ["September", "January"],
     campus: ["City Campus", "South Campus"],
     duration: ["Full-time: 8 semesters", "Part-time: 13  semesters"],
+    mode: ["Blended"],
+    GATE: ["Approved"],
+    specialMatricReqs: [],
+  },
+  
+  {
+    prog_shortname: "aasBusAdmin",
+    majorcourses: [
+      "ACCT 126",
+      "ACCT 210",
+      "MKTG 125",
+      "BUSI 203",
+      "ECON 120",
+      "ECON 125",
+      "ENTP 205",
+      "FINC 205",
+      "ENTP 215",
+      "MGMT 125",
+      "MGMT 205",
+      "MGMT 210",
+      "MKTG 205",
+      "STAT 120",
+      "MKTG 290",
+         
+    ],
+    specialcourses: [],
+    electivecourses: [],
+    corecourses: ["FYEC 100", "LIBS 130", "WRIT 117", "MATH 119", "COMM 118","FYEC 400", "PSYC 103","XXXX ###","XXXX ###","XXXX ###",],
+    supportcourses: [],
+    totalcredits: 61,
+    salaries: [
+      {
+        position:
+          "Business Operations Assistant II",
+        figure: "$8200.00 - $9300.00",
+      },
+      {
+        position: "Officer Assistant",
+        figure: "$4963.00 - $6123.00",
+      },
+      {
+        position: "Administrative Clerk",
+        figure: "$5045.00 - $6266.00",
+      },
+      {
+        position: "Entry Level Administrative Assistant",
+        figure: "$9448.00 - $10298.00",
+      },
+      {
+      position: "Executive Secretary",
+        figure: "$9448.00 - $10298.00",
+      },
+            
+    ],
+    semester: ["September", "January"],
+    campus: ["City Campus", "South Campus"],
+    duration: ["Full-time: 4 semesters", "Part-time: 8 semesters"],
+    mode: ["Blended"],
+    GATE: ["Approved"],
+    specialMatricReqs: [],
+  },
+  {
+    prog_shortname: "ASMangStuProServ",
+    majorcourses: [
+      "ACCT 126",
+      "ACCT 210",
+      "MKTG 125",
+      "BUSI 203",
+      "ECON 120",
+      "ECON 125",
+      "ENTP 205",
+      "FINC 205",
+      "ENTP 215",
+      "MGMT 125",
+      "MGMT 205",
+      "MGMT 210",
+      "MKTG 205",
+      "STAT 120",
+      "MKTG 290",
+         
+    ],
+    specialcourses: [
+          ],
+    electivecourses: [],
+    corecourses: ["FYEC 100", "LIBS 130", "WRIT 117", "MATH 119", "COMM 118","FYEC 400", "PSYC 103","XXXX ###","XXXX ###","XXXX ###",],
+    supportcourses: [],
+    totalcredits: 61,
+    salaries: [
+      {
+        position:
+          "Business Operations Assistant II",
+        figure: "$8200.00 – $9300.00",
+      },
+      {
+        position: "Officer Assistant",
+        figure: "$4963.00 - $6123.00",
+      },
+      {
+        position: "Administrative Clerk",
+        figure: "$5045.00 – $6266.00",
+      },
+      {
+        position: "Entry Level Administrative Assistant",
+        figure: "$9448.00 - $10298.00",
+      },
+      {
+      position: "Executive Secretary",
+        figure: "$9448.00 - $10298.00",
+      },
+      
+      
+      
+    ],
+    semester: ["September", "January"],
+    campus: ["City Campus", "South Campus"],
+    duration: ["Full-time: 4 semesters", "Part-time: 8 semesters"],
     mode: ["Blended"],
     GATE: ["Approved"],
     specialMatricReqs: [],
