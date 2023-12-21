@@ -41,7 +41,7 @@
             "prog_core_credits": 30,
             "prog_elect_credits": 0,
             "prog_supp_credits": 4,
-            "prog_description": "The Bachelor of Arts in Accounting degree provides students with technical financial accounting skills which are complemented with a solid foundation in business management and general education competencies that enhance workplace performance.  The programme is relevant to individuals seeking careers in financial services in a variety of related fields in the public and private sector. Students enrolled in the Bachelor of Arts degree in Accounting will earn the Associate in Applied Science – Management with Accounting after the first 61 credits."
+            "prog_description": "The Bachelor of Arts in Accounting degree provides students with technical financial accounting skills which are complemented with a solid foundation in business management and general education competencies that enhance workplace performance. The programme is relevant to individuals seeking careers in financial services in a variety of related fields in the public and private sector. Students enrolled in the Bachelor of Arts degree in Accounting will earn the Associate in Applied Science - Management with Accounting after the first 61 credits."
           },
           {
             "prog_code": "BSAD_AAS",
@@ -81,7 +81,7 @@
             "prog_core_credits": 0,
             "prog_elect_credits": 0,
             "prog_supp_credits": 0,
-            "prog_description": "This two year part-time programme is specially designed for persons who have been assigned supervisory responsibilities without formal training. Students learn practical skills in supervision, effective communication, conflict management and resolution, industrial relations, financial procedures and budgeting. Applicants with significant supervisory experience can apply for exemption from selected Year 1 courses through the College’s Prior Learning Assessment and Recognition (PLAR) Services"
+            "prog_description": "This two year part-time programme is specially designed for persons who have been assigned supervisory responsibilities without formal training. Students learn practical skills in supervision, effective communication, conflict management and resolution, industrial relations, financial procedures and budgeting. Applicants with significant supervisory experience can apply for exemption from selected Year 1 courses through the College's Prior Learning Assessment and Recognition (PLAR) Services"
           },
           {
             "prog_code": "ENTP_BBA",
@@ -94,7 +94,7 @@
             "prog_core_credits": 30,
             "prog_elect_credits": 3,
             "prog_supp_credits": 0,
-            "prog_description": "The Bachelor of Business Administration in Management and Entrepreneurship provides provides students with the foundations for functioning in and managing 21st century business.  It addresses important issues in management and leadership within organisations and develops key entrepreneurship and business development competencies needed to drive a modern economy. Students will be exposed to a course of study that spans the major managerial functions thereby equipping them to undertake a variety of roles within organisations.  In addition, the programme fosters the development of skills and values considered fundamental to the formation of educated citizens and community leaders, such as independent and critical thinking, creative problem-solving and lifelong learning."
+            "prog_description": "The Bachelor of Business Administration in Management and Entrepreneurship provides provides students with the foundations for functioning in and managing 21st century business. It addresses important issues in management and leadership within organisations and develops key entrepreneurship and business development competencies needed to drive a modern economy. Students will be exposed to a course of study that spans the major managerial functions thereby equipping them to undertake a variety of roles within organisations. In addition, the programme fosters the development of skills and values considered fundamental to the formation of educated citizens and community leaders, such as independent and critical thinking, creative problem-solving and lifelong learning."
           },
           {
             "prog_code": "HURM_BBA",
@@ -107,7 +107,7 @@
             "prog_core_credits": 30,
             "prog_elect_credits": 3,
             "prog_supp_credits": 3,
-            "prog_description": "The Bachelor of Business Administration degree in Human Resource Management prepares students to function as HRM professionals within public and private sector organizations, locally and internationally. Students gain insight into cutting edge practices in HR for the 21st century organization and acquire a wide range of skills in core HR competencies such as training and development, industrial relations, strategic human resource management, compensation and human resource management information systems. Specific attention is paid to HR as a key strategy in public sector reform."
+            "prog_description": "The Bachelor of Business Administration degree in Human Resource Management prepares students to function as HRM professionals within public and private sector organizations, locally and internationally. Students gain insight into cutting edge practices in HR for the 21st century organization and acquire a wide range of skills in core HR competencies such as training and development, industrial relations, strategic human resource management, compensation and human resource management information systems. Specific attention is paid to HR as a key strategy in public sector reform."
           },
           {
             "prog_code": "MKTG_BBA",
@@ -121,6 +121,19 @@
             "prog_elect_credits": 12,
             "prog_supp_credits": 0,
             "prog_description": "Effective marketing is a key requirement for every successful business and industry. The Bachelor of Business Administration in Marketing is designed to provide graduates with a broad foundation in business administration and specialized competencies in marketing and marketing management."
+          },
+           {
+            "prog_code": "MSPS_AAS",
+            "prog_shortname": "ASMangStuProServ",
+            "prog_name": "AAS  Management Studies for the Protective Services",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "MGDE",
+            "prog_major_credits": 30,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 18,
+            "prog_supp_credits": 0,
+            "prog_description": "This programme is designed to provide participants from the Protective Services with the needed competencies to improve efficiencies in their supervisory roles and to prepare them to be change agents in the various services. Participants are exposed to managerial concepts as well as practical aspects of managing resources in an efficient and effective manner.  This programme will allow participants to access the BA degree in Public Sector Management."
           }
         ]
       },
@@ -456,7 +469,7 @@
     "dean": {
       "name": "Anjenney Boodoosingh-Dwarika",
       "image": "/images/schools/deans/anjenney-Dwarika.jpg",
-      "message": "At the 69th World Health Assembly, a draft global strategy on human resources for the health sector workforce to 2030 was conceptualized to develop a cadre of healthcare professionals, with the capability to provide equitable health services to all - or as we say “all access” to the health services. Since COSTAATT’s inception, more than 23 years ago and its continued commitment to producing qualified and competent health care professionals, this global strategy further supports and gives impetus to widening the nursing and allied health training at the College. Through continuous feedback form stakeholders, the School is able to revise its curricula to ensure that its graduates meet the needs of the employers and users of the health care system. We can achieve the above through collaboration as a team. The School’s team consists of past and current practitioners in the fields of nursing and allied health. The COSTAATT team exposes you to the course material, the laboratory sessions, the simulation sessions, and internship sessions, and at the same time developing soft skills and general education through our core curriculum. My role as Dean is to ensure that your experience at the COSTAATT is a rewarding one and that you successfully achieve your educational goals. As your Dean, I commit to the equitable treatment of each student, staff and faculty. I am here to serve and ensure the necessary standards of quality service within the bounds of ethical conduct. You have chosen to pursue a caring and noble profession and I take this opportunity to welcome you to the School of Nursing, Health and Medical Technolgies.",
+      "message": "At the 69th World Health Assembly, a draft global strategy on human resources for the health sector workforce to 2030 was conceptualized to develop a cadre of healthcare professionals, with the capability to provide equitable health services to all - or as we say “all access” to the health services. Since COSTAATT's inception, more than 23 years ago and its continued commitment to producing qualified and competent health care professionals, this global strategy further supports and gives impetus to widening the nursing and allied health training at the College. Through continuous feedback form stakeholders, the School is able to revise its curricula to ensure that its graduates meet the needs of the employers and users of the health care system. We can achieve the above through collaboration as a team. The School's team consists of past and current practitioners in the fields of nursing and allied health. The COSTAATT team exposes you to the course material, the laboratory sessions, the simulation sessions, and internship sessions, and at the same time developing soft skills and general education through our core curriculum. My role as Dean is to ensure that your experience at the COSTAATT is a rewarding one and that you successfully achieve your educational goals. As your Dean, I commit to the equitable treatment of each student, staff and faculty. I am here to serve and ensure the necessary standards of quality service within the bounds of ethical conduct. You have chosen to pursue a caring and noble profession and I take this opportunity to welcome you to the School of Nursing, Health and Medical Technolgies.",
       "email": "adwarika@costaatt.edu.tt",
       "phone": "868-625-5030 Ext. 5490 / 5448"
     },
@@ -569,18 +582,83 @@
         "name": "Environmental and Sustainability Studies",
         "headImage": "/images/schools/departments/ENVSheader.png",
         "image": "/images/schools/departments/ENVSsmall.png",
-        "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+        "summary": "Graduates from the Department of Environmental and Sustainability Studies have used a variety of degrees to find careers in Geographic Information Systems, environmental health and management, occupational safety and health, and water and wastewater management. Alums from our programmes can be found working in local and governmental environmental agencies, regulatory bodies, and testing sites. Let us open the doors to your career in environmental and sustainable practices.",
         "coreValues": [],
         "shortName": "Environmental and Sustainability Studies",
         "contacts": [],
         "dept_code": "ENVS",
-        "programmes": []
+        "programmes": [
+          {
+            "prog_code": "OSHE_BSC",
+            "prog_shortname": "bscOSHE",
+            "prog_name": "BSc Occupational Safety and Health",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "ENVS",
+            "prog_major_credits": 72,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 9,
+            "prog_supp_credits": 10,
+            "prog_description": "The working environment contains many hazards that threatens the health, safety and well-being of workers on a daily basis. Such hazards can lead to injury, sickness, disease and even death. The Occupational Health and Safety discipline was created to effectively manage these hazard using elements from chemistry, physics, engineering, biology and even psychology. The multi-disciplinary nature of health and safety is a reflection of the complexities in understanding and effectively addressing occupational hazards. Students pursuing the Bachelor of Science degree in Occupational Safety and Health will acquire the necessary skills to identify, evaluate and control typical occupational hazards found in the working environment."
+          },
+           {
+            "prog_code": "OSHE_AAS",
+            "prog_shortname": "aasOSHE",
+            "prog_name": "AAS Occupational Safety and Health",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "ENVS",
+            "prog_major_credits": 39,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 10,
+            "prog_description": "This programme is designed to meet the local needs in occupational safety and health and to keep abreast the changing industrial environment. Students will learn the various methods used in the identification of potential hazards and other major issues associated with challenges in the workplace and develop the necessary skills for the necessary corrective/preventive measures."
+          },
+        {
+            "prog_code": "ENVH_BSC",
+            "prog_shortname": "bscENVH",
+            "prog_name": "BSc Environmental Health",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "ENVS",
+            "prog_major_credits": 64,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 6,
+            "prog_supp_credits": 22,
+            "prog_description": "This programme is designed to equip students with the knowledge and skills to identify and control environmental hazards that adversely affect the health of communities. Graduates of this programme are equipped to be part of the global initiative to protect the human population from threats to our health and well-being in our living, working or recreational environments."
+          },
+        {
+            "prog_code": "ENVH_AAS",
+            "prog_shortname": "aasENVH",
+            "prog_name": "AAS Environmental Health",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "ENVS",
+            "prog_major_credits": 42,
+            "prog_core_credits": 15,
+            "prog_elect_credits": 3,
+            "prog_supp_credits": 7,
+            "prog_description": "This programme is designed to equip students with the knowledge and skills to identify and find solutions for environmental problems that adversely affect the health of communities. Students learn about the operations of efficient health management systems and are kept up to date on scientific advances in the field. In addition, they are made aware of current regional developments in the management of environmental health systems."
+          },
+        {
+            "prog_code": "ENVH_CERT",
+            "prog_shortname": "certEmerCare",
+            "prog_name": "Certificate in Emergency Care",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "ENVS",
+            "prog_major_credits": 16,
+            "prog_core_credits": 6,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 7,
+            "prog_description": "The aim of this programme is to increase the scope and effectiveness of emergency care management and transportation of the ill and injured. The programme is designed to equip the participants with the skills to enable them to quickly assess any emergency situation for potential danger, appropriate access, triage and safe transportation, and to arouse a greater awareness of the important priorities on which the survival of a patient may depend. The focus of the programme is to instruct paramedic personnel in the techniques of immediate care of the ill/injured in such emergencies as: fractured limbs, head injuries, cardiac arrest, haemorrhage, near drowning, emergency childbirth and mental disturbances among other medical emergency situations."
+          }]
       },
       {
         "name": "Natural and Life Sciences",
         "headImage": "/images/schools/departments/NLSCheader.png",
         "image": "/images/schools/departments/NLSCsmall.png",
-        "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
+        "summary": "Graduates from the Department of Natural and Life Sciences have used the Associate of Science and the Bachelor of Science in Biology as foundations for careers in environmental science, marine biology, microbiology, medicine, dentistry, and so much more. Come, Let us open the doors of science for you.",
         "coreValues": [],
         "shortName": "Natural and Life Sciences",
         "contacts": [],
