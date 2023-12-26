@@ -12,7 +12,7 @@ import draft from "../../../images/Links/SuccessDraft.jpg";
 export const SliderLinks = [
   {
     title: "Nursing",
-    image: require("../../../images/Links/Future me schools screens/Future me screens-03.jpg"),
+    image: require("../../../public/images/awaitingNewsEvent.png"),
     path: "https://www.costaatt.edu.tt/academics/school-of-nursing-health-and-environmental-sciences/",
   },
   {
