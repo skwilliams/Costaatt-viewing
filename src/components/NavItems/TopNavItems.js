@@ -3,24 +3,27 @@ import React, { useState } from "react";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import navStyles from "../../styles/NavItems.module.scss";
 import Link from "next/link";
-import TopNavDropDown from "./TopNavDropDown";
 
-const TopNavItems = ({ items }) => {
+const TopNavItems = ({ items, toggleClick }) => {
   const [dropdown, setDropdown] = useState(false);
-
+  const handleClick = () => {
+    // setDropdown(!dropdown);
+    toggleClick(items.title); // Toggle the dropdown in TopNav
+  };
   return (
-    <div className={navStyles.topBarLinks}>
+    <div
+      onClick={handleClick}
+      className={navStyles.topBarLinks}
+      // className={`${navStyles.topBarLinks} ${
+      //   dropdown ? navStyles.topBarLinks : navStyles.topBarLinksActive
+      // } `}
+    >
       {items.submenu ? (
         <>
-          <div
-            onClick={() => setDropdown((prev) => !prev)}
-            // onMouseEnter={() => setDropdown((prev) => !prev)}
-            // onMouseLeave={() => setDropdown((prev) => !prev)}
-          >
+          {" "}
+          <div>
             {items.title}
-            {dropdown ? <FaAngleUp /> : <FaAngleDown />}
-
-            {dropdown && <TopNavDropDown items={items} />}
+            {dropdown ? <FaAngleUp /> : <FaAngleDown />}{" "}
           </div>
         </>
       ) : (

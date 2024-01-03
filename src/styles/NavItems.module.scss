@@ -1,10 +1,12 @@
 @import "./abstracts/variables";
 
 .topNavMain {
+  position: relative;
   display: flex;
+  flex-direction: column;
   padding: 5px 30px;
   justify-content: space-between;
-
+  width: 100%;
   background-image: linear-gradient(
     to bottom right,
     $color-primary,
@@ -13,92 +15,66 @@
   color: white;
 }
 
+.topNavMainActive {
+  animation: slideInFromTop 1.5s ease forwards;
+}
+
 .topNavMain ul {
   display: flex;
   gap: 20px;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .topBarLinks {
-  padding: 9px 5px;
-  padding: 20px;
+  position: relative;
+  padding: 20px 5px;
 }
-// .topBarLinks:hover .topNavDropDownMain {
-//   display: block;
-// }
-// .topBarLinks:hover {
-//   transition: all 0.8s ease;
-//   //  border-radius: 15px;
-//   text-underline-position: under;
-//   background-color: $purple-main;
-//   color: white;
-//   padding: 20px;
-
-//   // text-decoration: underline solid $color-comp3 4px !important;
-// }
-
-.topNavDropDownMain {
-  height: 100%;
-  position: absolute;
-  left: 0;
-  z-index: 40;
-
-  background: linear-gradient(
-    to bottom right,
-    $color-primary,
-    $color-primary-dark
-  );
-  color: white; /* Change the background color */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
-  animation: slideInFromTop 1s forwards ease;
+.topBarLinksActive {
+  background-color: yellow;
 }
+
+.topBarLinks:hover {
+  transition: all 0.1s ease;
+  //  border-radius: 15px;
+  text-underline-position: under;
+
+  text-decoration: underline solid $color-comp3 4px !important;
+}
+
+.test2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+
 @keyframes slideInFromTop {
   from {
-    top: -100%; /* Start from outside the viewport */
+    transform: translateY(-100%);
+    //   opacity: 0;
   }
   to {
-    top: 0; /* Reach the top of the viewport */
+    transform: translateY(0);
+    //  opacity: 1;
   }
 }
 
-@keyframes slideUp {
-  from {
-    top: -100%; /* Start from outside the viewport */
-  }
-  to {
-    top: 0; /* Reach the top of the viewport */
-  }
-}
-.dropDownClose {
-  position: relative;
-  top: 0;
-  width: 40px;
-  height: 40px;
-  right: -80px;
-  color: aliceblue;
-  font-size: large;
-}
-.topNavDropDown {
-  box-shadow: inset 0px 14px 15px rgba(0, 0, 0, 0.3);
+.topNavDropDownMain {
+  box-shadow: inset 0px 14px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
   padding: 20px 10px;
-}
-
-.dropDownHeading {
-  text-align: center;
-  padding: 20px;
-  font-size: 4rem;
-  font-weight: 900;
-  text-transform: uppercase;
+  //animation: slideInFromTop 0.8s ease forwards;
 }
 
 .topNavdropDownMenu {
+  position: relative;
   gap: 20px;
   padding: 25px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   text-align: center;
-  transform: translate3d(0, 0, 0);
+  width: 100%;
+  margin: 0;
+  list-style: none;
 }
 .topNavdropDownSchoolLink {
   font-size: 1.2rem;
@@ -106,45 +82,36 @@
 
   font-weight: 900;
   text-transform: uppercase;
-  transition: all 0.9s;
-  //border: 3px solid yellowgreen;
 }
 
 .topNavdropDownSchoolLink:hover {
   color: yellow;
-  //border: 3px solid yellowgreen;
 }
 
 .topNavdropDownSchoolMenu {
   display: flex;
   flex-direction: column;
-
-  // border: 2px solid red;
+  margin: 0;
   gap: 15px;
 }
 .topNavdropDownDeptLink a {
-  cursor: pointer;
   padding: 10px;
   transition: all 0.9s;
   border-radius: 15px;
 }
 
 .topNavdropDownDeptLink a:hover {
-  cursor: pointer;
   background-color: white;
   color: $color-primary;
-  padding: 5px;
-  border-radius: 15px;
-  padding: 10px;
 }
 
 .topNavdropDownDeptLink {
   display: flex;
+  width: 100%;
   flex-direction: column;
-  // border: 2px solid blue;
   gap: 20px;
-  justify-content: center; /* Align items vertically in the center */
-  overflow-x: auto;
+  width: 100%;
+  list-style: none;
 }
 
 .dropDownLi {

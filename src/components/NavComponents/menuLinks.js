@@ -65,9 +65,7 @@ export const topNavLinksLeft = [
       {
         title: "School of Workforce Enhancement and Development",
         path: "programmes",
-        backgroundColor: "orange",
-        left: "400px",
-        position: "absolute",
+
         submenu: [
           {
             title: "Upskilling Academy",
@@ -86,9 +84,6 @@ export const topNavLinksLeft = [
       {
         title: "Ken Gordon School of Communication,Creative and Digital Media",
         path: "programmes",
-        backgroundColor: "orange",
-        left: "400px",
-        position: "absolute",
 
         submenu: [
           {
@@ -103,11 +98,6 @@ export const topNavLinksLeft = [
       },
     ],
   },
-
-  // {
-  //   title: "Current Students",
-  //   path: "currentstudents",
-  // },
   {
     title: "Faculty & Staff",
     path: "facultystaff",
