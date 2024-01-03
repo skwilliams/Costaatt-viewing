@@ -1,6 +1,6 @@
 @import "./abstracts/variables";
 
-.topNavMain {
+.topNavContainer {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -15,8 +15,14 @@
   color: white;
 }
 
+.topNavMain {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .topNavMainActive {
-  animation: slideInFromTop 1.5s ease forwards;
+  animation: slideInFromTop 0.8s ease forwards;
 }
 
 .topNavMain ul {
