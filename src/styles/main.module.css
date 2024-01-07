@@ -565,31 +565,33 @@ ORDER: Base + typography > general layout + grid > page layout > components
   border-top-right-radius: 3px;
 }
 .card__picture1 {
-  background-image: linear-gradient(to right bottom, rgb(187, 41, 187), rgb(93, 20, 93)), url(../../../public/images/costaattlife/joinclub.png);
+  background-image: linear-gradient(to right bottom, rgb(187, 41, 187), rgb(93, 20, 93)), url(../../public/images/costaattlife/joinclub.png);
+    
+  
 }
 .card__picture2 {
-  background-image: linear-gradient(to right bottom, rgb(254, 80, 0), rgb(224, 50, 0)), url(../../../public/images/costaattlife/joinclub.png);
+  background-image: linear-gradient(to right bottom, rgb(254, 80, 0), rgb(224, 50, 0)), url(../../public/images/costaattlife/joinclub.png);
 }
 .card__picture3 {
-  background-image: linear-gradient(to right bottom, rgb(164, 52, 58), rgb(134, 22, 28)), url(../../../public/images/costaattlife/joinclub.png);
+  background-image: linear-gradient(to right bottom, rgb(164, 52, 58), rgb(134, 22, 28)), url(../../public/images/costaattlife/joinclub.png);
 }
 .card__picture4 {
-  background-image: linear-gradient(to right bottom, rgb(0, 133, 202), rgb(0, 103, 172)), url(../../../public/images/costaattlife/joinclub.png);
+  background-image: linear-gradient(to right bottom, rgb(0, 133, 202), rgb(0, 103, 172)), url(../../public/images/costaattlife/joinclub.png);
 }
 .card__picture5 {
-  background-image: linear-gradient(to right bottom, rgb(0, 171, 132), rgb(0, 141, 102)), url(../../../public/images/costaattlife/joinclub.png);
+  background-image: linear-gradient(to right bottom, rgb(0, 171, 132), rgb(0, 141, 102)), url(../../public/images/costaattlife/joinclub.png);
 }
 .card__picture6 {
-  background-image: linear-gradient(to right bottom, rgb(0, 104, 52), rgb(0, 74, 22)), url(../../../public/images/costaattlife/joinclub.png);
+  background-image: linear-gradient(to right bottom, rgb(0, 104, 52), rgb(0, 74, 22)), url(../../public/images/costaattlife/joinclub.png);
 }
 .card__pictureworkforce {
-  background-image: linear-gradient(to right bottom, rgb(159, 146, 223), rgb(72, 63, 138)), url(../../../public/images/costaattlife/joinclub.png);
+  background-image: linear-gradient(to right bottom, rgb(159, 146, 223), rgb(72, 63, 138)), url(../../public/images/costaattlife/joinclub.png);
 }
 .card__pictureareas {
-  background-image: linear-gradient(to right bottom, rgb(159, 146, 223), rgb(72, 63, 138)), url(../../../public/images/costaattlife/joinclub.png);
+  background-image: linear-gradient(to right bottom, rgb(159, 146, 223), rgb(72, 63, 138)), url(../../public/images/costaattlife/joinclub.png);
 }
 .card__picturelabs {
-  background-image: linear-gradient(to right bottom, rgb(159, 146, 223), rgb(72, 63, 138)), url(../../../public/images/costaattlife/joinclub.png);
+  background-image: linear-gradient(to right bottom, rgb(159, 146, 223), rgb(72, 63, 138)), url(../../public/images/costaattlife/joinclub.png);
 }
 .card__heading {
   font-size: 1.5rem;
@@ -986,7 +988,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 .sectionfeatures {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.7), rgba(238, 238, 238, 0.7)), url(../../../public/images/schools/departments/CIACsmall.png);
+  background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.7), rgba(238, 238, 238, 0.7)), url(../../public/images/schools/departments/CIACsmall.png);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem;
@@ -1056,7 +1058,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .startclub {
   padding: 1em;
   text-align: center;
-  background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.6), rgba(159, 146, 223, 0.6)), url(../../../public/images/costaattlife/startclub.jpg);
+  background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.6), rgba(159, 146, 223, 0.6)), url(../../public/images/costaattlife/startclub.jpg);
   background-position-x: right;
   background-size: cover;
 }
@@ -1083,7 +1085,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .sectionsports {
   padding: 1em;
   text-align: left;
-  background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.6), rgba(119, 119, 119, 0.6), url(../../../public/images/costaattlife/caiman.jpg));
+  background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.6), rgba(119, 119, 119, 0.6), url(../../public/images/costaattlife/caiman.jpg));
   background-position-x: right;
   background-size: cover;
   background-position: bottom 50px right 100px;

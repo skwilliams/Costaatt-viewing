@@ -5,7 +5,7 @@ export const schools = [
     nameStump: "busIT",
     dean: {
       name: "Kyra Mc Gowan-Santana, EdD",
-      image: require("../../../../../images/Links/home1.png"),
+      image: require("../../../../public/images/schools/deans/Kyra Mc Gowan-Santana.jpg"),
       message:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat possimus, at iure soluta sequi eaque doloribus ex fugit aliquid quidem dolores non nisi optio adipisci dolore numquam laudantium quis.",
       email: "kmsantana@costaatt.edu.tt",

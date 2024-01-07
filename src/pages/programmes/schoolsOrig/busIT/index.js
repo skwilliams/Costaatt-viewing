@@ -8,7 +8,7 @@ import ProgStyles from "../../../../styles/Programmes.module.scss";
 import DepartCard from "@/components/PageComponents/DepartCard";
 import DeanStyles from "../../../../styles/Dean.module.scss";
 import BusImg from "../../../../../public/images/schools/departments/department without labels/bus.png";
-import ItImg from "../../../../../public/images/schools/departments/department without labels/it.png";
+import ItImg from "../../../../../public/images/schools/departments/ICTDsmall.png";
 
 import { Accordion } from "@mui/material";
 import AccordionSummary from "@mui/material/AccordionSummary";

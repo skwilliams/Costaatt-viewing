@@ -22,7 +22,7 @@ import Divider from "@mui/material/Divider";
 
 //School of Business and Digital Technologies
 const Sbdt = () => {
-  const pathname = usePathname();
+  // const pathname = usePathname();
   const { sobdt } = schools[0];
   console.log(sobdt);
   console.log(schools);

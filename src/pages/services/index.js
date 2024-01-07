@@ -1,7 +1,9 @@
 import React from 'react'
 import Link from "next/link"
+import Head from 'next/head';
+import HeadImage from '@/components/PageComponents/HeadImage';
 
-import awaitingbanner from "../../../public/images/awaitingBanner.png";
+import Image from 'next/image'
 
 const index = () => {
   return (

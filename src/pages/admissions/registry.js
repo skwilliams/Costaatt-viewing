@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import HeadImage from '@/components/PageComponents/HeadImage'
-import headerimg from "../../../public/images/awaitingBanner.jpg"
+import headerimg from "../../../public/images/awaitingBanner.png"
 
 const registry = () => {
   return (

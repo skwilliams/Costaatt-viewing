@@ -1,6 +1,6 @@
 export const staffdata = [
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../../public/images/deanavatar.jpg"),
     handle: "rchung",
     altText: " photo Roger Chung",
     name: "Roger Chung",
@@ -9,7 +9,7 @@ export const staffdata = [
     phone: "1-868-625-5030 ext 5480",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../../public/images/deanavatar.jpg"),
     handle: "mcharles",
     altText: " photo Maurisa Charles",
     name: "Maruisa Charles",
@@ -18,7 +18,7 @@ export const staffdata = [
     phone: "1-868-625-5030 ext 5463",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../../public/images/deanavatar.jpg"),
     handle: "cbernard",
     altText: " photo Cindy Bernard",
     name: "Cindy Bernard",
@@ -27,7 +27,7 @@ export const staffdata = [
     phone: "1-868-625-5030 ext 5418",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../../public/images/deanavatar.jpg"),
     handle: "rdavid",
     altText: " photo Raechelle David",
     name: "Rachelle David",
@@ -37,7 +37,7 @@ export const staffdata = [
   },
 
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../../public/images/deanavatar.jpg"),
     handle: "dabsalom",
     altText: " photo Dexter Absalom",
     name: "Dexter Absalom",
@@ -45,7 +45,7 @@ export const staffdata = [
     email: "dabsalom@costaatt.edu.tt",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../../public/images/deanavatar.jpg"),
     handle: "nalexander",
     altText: " photo Nicole Alexander",
     name: "Nicole Alexander",
@@ -53,7 +53,7 @@ export const staffdata = [
     email: "nalexander@costaatt.edu.tt",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../../public/images/deanavatar.jpg"),
     handle: "aandrews",
     altText: " photo Adrian Andrews",
     name: "Adrian Andrews",
@@ -61,7 +61,7 @@ export const staffdata = [
     email: "aandrews@costaatt.edu.tt",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../../public/images/deanavatar.jpg"),
     handle: "acadogan",
     altText: " photo Andre Cadogan",
     name: "Andre Cadogan",
@@ -69,7 +69,7 @@ export const staffdata = [
     email: "acadogan@costaatt.edu.tt",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../../public/images/deanavatar.jpg"),
     handle: "adnagee",
     altText: " photo Alicia Dennis-Nagee",
     name: "Alicia Dennis-Nagee",
@@ -77,7 +77,7 @@ export const staffdata = [
     email: "adnagee@costaatt.edu.tt",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../../public/images/deanavatar.jpg"),
     handle: "mgokool",
     altText: " photo Maneka Gokool",
     name: "Maneka Gokool",
@@ -85,7 +85,7 @@ export const staffdata = [
     email: "mgokool@costaatt.edu.tt",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../../public/images/deanavatar.jpg"),
     handle: "jjpatrick",
     altText: " photo Joanne Jarvis-Patrick",
     name: "Joanne Jarvis-Patrick",
@@ -93,7 +93,7 @@ export const staffdata = [
     email: "jjpatrick@costaatt.edu.tt",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../../public/images/deanavatar.jpg"),
     handle: "jsterling",
     altText: " photo Job Sterling",
     name: "Job Sterling",
@@ -101,7 +101,7 @@ export const staffdata = [
     email: "jsterling@costaatt.edu.tt",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../../public/images/deanavatar.jpg"),
     handle: "skwilliams",
     altText: " photo Stacy Williams",
     name: "Stacy Williams",
