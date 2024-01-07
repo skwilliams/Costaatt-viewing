@@ -21,7 +21,7 @@ import joinclub from "../../../public/images/costaattlife/joinclub.png"
 
 
 
-const careermgt = () => {
+const Careermgt = () => {
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -287,4 +287,5 @@ const careermgt = () => {
   );
 }
 
-export default careermgt
+export default 
+Careermgt

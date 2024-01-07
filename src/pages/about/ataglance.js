@@ -36,7 +36,7 @@ const Ataglance = () => {
     if (typeof window !== "undefined") {
       setHasWindow(true);
     }
-  }, []);
+  }, [setHasWindow]);
 
 
  

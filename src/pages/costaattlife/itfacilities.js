@@ -10,46 +10,32 @@ import email from "../../../public/images/admissions/email.svg";
 import hours from "../../../public/images/admissions/businesshours.svg";
 
 import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
-import { Button, Divider } from "@mui/material";
 
-import Image, { StaticImageData } from "next/image";
-import { FiBookOpen } from "react-icons/fi";
+import Image from "next/image";
 
-import { getEventsByDept } from "../../../public/data/eventsdata";
-import EventCardOrig from "@/components/PageComponents/EventCardOrig";
-import { stucouncildata } from "./studcouninfo";
-import StudentCouncilRep from "@/components/PageComponents/StudentCouncilRep";
-import ContactStudentLife from "@/components/PageComponents/ContactStudentLife";
+
+
+
+
 import gal1 from "../../../public/images/costaattlife/lab1.jpg";
 import gal2 from "../../../public/images/costaattlife/lab2.jpg";
 import gal3 from "../../../public/images/costaattlife/lab3.jpg";
 import gal4 from "../../../public/images/costaattlife/lab4.jpg";
-import gal5 from "../../../public/images/costaattlife/lab5.jpg";
-import gal6 from "../../../public/images/costaattlife/lab6.jpg";
-import gal7 from "../../../public/images/costaattlife/lab7.jpg";
-import gal8 from "../../../public/images/costaattlife/lab8.jpg";
-import gal9 from "../../../public/images/costaattlife/lab9.jpg";
-import gal10 from "../../../public/images/costaattlife/lab10.jpg";
-import gal11 from "../../../public/images/costaattlife/lab11.jpg";
-import gal12 from "../../../public/images/costaattlife/lab12.jpg";
 
-import gal13 from "../../../public/images/costaattlife/lab13.jpg";
-import gal14 from "../../../public/images/costaattlife/lab14.jpg";
-import ReactPlayer from "react-player";
 
-import GradStyle from "../../styles/GradsSpeak.module.scss";
+
+
+
 import { useState } from "react";
 import { useEffect } from "react";
-import FacultyStaffCard from "@/components/PageComponents/FacultyStaffDepCard";
-import StaffCard from "@/components/PageComponents/StaffCard";
 
-const itfacilities = () => {
-  const [hasWindow, setHasWindow] = useState(false);
+const Itfacilities = () => {
+  const [ setHasWindow] = useState(false);
   useEffect(() => {
     if (typeof window !== "undefined") {
       setHasWindow(true);
     }
-  }, []);
+  }, [setHasWindow]);
   const video = "";
   return (
     <>
@@ -539,4 +525,4 @@ const itfacilities = () => {
       );
 };
 
-export default itfacilities;
+export default Itfacilities;

@@ -13,7 +13,7 @@ import ProgramCard from "@/components/PageComponents/ProgramCard";
 import SCHOOLDATA from "../../../data/schooldata.json";
 import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
 
-const allcourses = () => {
+const Allprogrammes = () => {
   // const stumpNames = SCHOOLDATA.map((school) => school.nameStump);
   // console.log(stumpNames);
   const [schoolFilters, setSchoolFilters] = useState({
@@ -93,7 +93,7 @@ const allcourses = () => {
       finalResult = formattedPrograms;
     }
     setAllPrograms(finalResult);
-  }, [schoolFilters, levelFilters]);
+  }, [schoolFilters, levelFilters,allPrograms,formattedPrograms]);
 
   const { busIT, liberal, nursing, enviro, kengord, workF } = schoolFilters;
   const { Bachelor, Associate, Diploma, Certificate } = levelFilters;
@@ -267,4 +267,4 @@ allcourses.getLayout = function getLayout(page) {
   return <Layout1>{page}</Layout1>;
 };
 
-export default allcourses;
+export default Allprogrammes;

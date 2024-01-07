@@ -683,7 +683,8 @@ const howtoapply = () => {
             Applicant <span> CHECKLIST{" "}</span>
           </h2>
           <div className={AdmisStyles.checklist}>
-            <Image className={AdmisStyles.imgtick} src={tick} />
+            <Image className={AdmisStyles.imgtick} src={tick}
+            alt="tick picture " />
             <span className={standardStyles.headingTertiary}>
               {" "}
               Apply Online{" "}
@@ -711,7 +712,8 @@ const howtoapply = () => {
           </div>
           <Divider />
           <div className={AdmisStyles.checklist}>
-            <Image className={AdmisStyles.imgtick} src={tick} />
+            <Image className={AdmisStyles.imgtick} src={tick}
+            alt="tick picture" />
             <span className={standardStyles.headingTertiary}>
               Submit supporting documents
             </span>{" "}
@@ -739,7 +741,7 @@ const howtoapply = () => {
           </div>
           <Divider />
           <div className={AdmisStyles.checklist}>
-            <Image className={AdmisStyles.imgtick} src={tick} />
+            <Image className={AdmisStyles.imgtick} src={tick} alt="picture of a tick mark" />
             <span className={standardStyles.headingTertiary}>
               after you have applied
             </span>
@@ -802,8 +804,8 @@ const howtoapply = () => {
 
               <AccordionDetails>
                 <p className={AdmisStyles.text}>
-                  To be admitted to the music programme (bachelor's and
-                  associate degree), short-listed applicants will be required to
+                  To be admitted to the music programme (Bachelor's and
+                  Associate degree), short-listed applicants will be required to
                   successfully complete the audition process.
                 </p>{" "}
               </AccordionDetails>
@@ -811,7 +813,7 @@ const howtoapply = () => {
           </div>
           <Divider />
           <div className={AdmisStyles.checklist}>
-            <Image className={AdmisStyles.imgtick} src={tick} />
+            <Image className={AdmisStyles.imgtick} src={tick} alt="image of a tick mark"/>
             <span className={standardStyles.headingTertiary}>Offers</span>
 
             {/* To Move arrow to the left */}
@@ -955,7 +957,7 @@ const howtoapply = () => {
           <div className={standardStyles.row}>
             <div className={standardStyles.col1of3}>
           
-              <Image src={envelope} width="300"></Image>
+              <Image src={envelope} width="300" alt ="image of an envelope"></Image>
             </div>
             <div className={standardStyles.col2of3}>
               <p className={standardStyles.paragraph}>

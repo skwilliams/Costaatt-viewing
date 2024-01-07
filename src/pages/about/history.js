@@ -8,14 +8,13 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 
-
 const History = () => {
   const [ setHasWindow] = useState(false);
   useEffect(() => {
     if (typeof window !== "undefined") {
       setHasWindow(true);
     }
-  }, []);
+  }, [setHasWindow]);
 
   return (
     <>

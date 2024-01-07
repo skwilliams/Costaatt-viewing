@@ -7,7 +7,7 @@ import Link from "next/link";
 
 
 
-const administration = () => {
+const Administration = () => {
   return (
     <>
       <Head>
@@ -25,4 +25,4 @@ const administration = () => {
   );
 }
 
-export default administration
+export default Administration
