@@ -13,7 +13,7 @@ const Header = forwardRef((props, ref) => {
     </header>
   );
 });
-
+Header.displayName = "Header";
 export default Header;
 
 // import React from "react";

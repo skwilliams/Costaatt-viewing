@@ -17,7 +17,6 @@ const TopNavDropDown = ({ items, closeDropdown }) => {
               <div key={index} className={navStyles.topNavdropDownSchoolMenu}>
                 <div className={navStyles.topNavdropDownSchoolLink}>
                   <Link href={submenu.path} passHref>
-                    {/* Attach an onClick event to close the dropdown */}
                     <div onClick={handleLinkClick}>{submenu.title}</div>
                   </Link>
                 </div>

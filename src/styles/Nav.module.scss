@@ -119,12 +119,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
   //height: 60px;
   padding: 0px 65px;
-  // padding-top:30px;
-  // background-color: $color-grey-dark-3;
-  background-color: black;
   background-color: $grey;
   color: white;
 }
@@ -140,32 +136,55 @@
 }
 .navBarLinks {
   width: 100%;
-  padding: 9px 5px;
+  padding: 9px 10px;
   text-decoration-color: $grey;
-
+}
+.navBarLinks {
   cursor: pointer;
 }
-
 .navBarLinks:hover {
   transition: all 0.8s ease;
-  border-radius: 15px;
   text-underline-position: under;
   text-decoration: underline solid $orange 4px !important;
+  cursor: pointer;
 }
 
 .navBarLinks:hover .dropDownMain {
   display: block;
 }
+.topNavMain {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.topNavMainActive {
+  animation: slideInFromTop 0.8s ease forwards;
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+    //   opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    //  opacity: 1;
+  }
+}
 
 .dropDownMain {
   left: 0;
-  top: 120px;
+  top: 220px;
   width: 100%;
   position: absolute;
   z-index: 40;
-  display: none;
+  transition: all 0.3s ease-in-out;
 }
-
+.dropDownMain.show {
+  display: block;
+  background-color: aliceblue;
+}
 .dropDown {
   position: relative;
   display: grid;
@@ -215,7 +234,7 @@
 }
 
 .searchButton:hover {
-  color: white;
+  color: blue;
 }
 .searchInput {
   background-color: white;
