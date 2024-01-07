@@ -11,7 +11,7 @@ import AboutStyles from "@/styles/About.module.scss";
 import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
 
 
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 
 
 import Layout from "../../components/Layouts/TopNavOnly_NoDropdown";
