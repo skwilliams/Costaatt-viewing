@@ -1,16 +1,29 @@
 @import "./abstracts/variables";
 
-.topNavMain {
+.topNavContainer {
+  position: relative;
   display: flex;
-  padding: .5rem 3rem;
-  justify-content: space-between;
 
+  flex-direction: column;
+  padding: 5px 30px;
+  justify-content: space-between;
+  width: 100%;
   background-image: linear-gradient(
     to bottom right,
     $color-primary,
     $color-primary-dark
   );
   color: white;
+}
+
+.topNavMain {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.topNavMainActive {
+  animation: slideInFromTop 0.8s ease forwards;
 }
 
 .topNavMain ul {
@@ -20,19 +33,22 @@
   align-items: center;
 }
 
+
 .topBarLinks {
-  padding: .9rem .5rem;
-  cursor: pointer;
-  font-size:1.8rem;
+  position: relative;
+  padding: 20px 5px;
 }
-.topBarLinks:hover .topNavDropDownMain {
-  display: block;
+.topBarLinksActive {
+  background-color: yellow;
 }
+
 .topBarLinks:hover {
-  transition: all 0.8s ease;
-  border-radius: 1.5;
+
+  transition: all 0.1s ease;
+  //  border-radius: 15px;
   text-underline-position: under;
-  text-decoration: underline solid $color-primary-dark 4px !important;
+
+  text-decoration: underline solid $color-comp3 4px !important;
 }
 
 .topNavDropDownMain {
@@ -52,25 +68,97 @@
 .topNavDropDownTest {
   padding: 1.2em;
   margin-bottom: 2.0em;
+.test2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
 }
 
-.topNavdropDownLinks {
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+    //   opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    //  opacity: 1;
+  }
+}
+
+.topNavDropDownMain {
+  box-shadow: inset 0px 14px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  padding: 20px 10px;
+  //animation: slideInFromTop 0.8s ease forwards;
+}
+
+.topNavdropDownMenu {
+  position: relative;
+  gap: 20px;
+  padding: 25px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   color: $purple-main;
   padding: .5em;
   align-items: baseline;
   height:40rem;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  list-style: none;
 }
+.topNavdropDownSchoolLink {
+  font-size: 1.2rem;
+  cursor: pointer;
+
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.topNavdropDownSchoolLink:hover {
+  color: yellow;
+}
+
+.topNavdropDownSchoolMenu {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  gap: 15px;
+}
+.topNavdropDownDeptLink a {
+  padding: 10px;
+  transition: all 0.9s;
+  border-radius: 15px;
+}
+
+.topNavdropDownDeptLink a:hover {
+  background-color: white;
+  color: $color-primary;
+}
+
+.topNavdropDownDeptLink {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  list-style: none;
+}
+
 .dropDownLi {
-  color: aqua;
+  cursor: pointer;
+
+  color: #0077b6; /* Change link color */
+  text-align: center;
+  font-weight: bold;
 }
 .dropDownPictures {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   text-align: center;
-  color: $grey;
+  color: #666; /* Change image caption color */
 }
 
 .dummyImage {
