@@ -34,7 +34,7 @@ export default function Progressbar({ position, section }) {
     return () => {
       window.removeEventListener("scroll", updateProgressBar);
     };
-  }, []);
+  }, [position, section]);
 
   return (
     <div

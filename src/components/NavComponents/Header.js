@@ -2,7 +2,8 @@ import React from "react";
 import { useRef, useImperativeHandle, forwardRef } from "react";
 import Navbar from "../NavItems/Navbar";
 
-const Header = forwardRef((props, ref) => {
+  const Header = forwardRef((ref) => {
+
   const navRef = useRef();
   useImperativeHandle(ref, () => ({
     getNavHeight: () => navRef.current.getBoundingClientRect().height,

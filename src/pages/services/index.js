@@ -1,4 +1,6 @@
 import React from 'react'
+import Link from "next/link"
+
 import awaitingbanner from "../../../public/images/awaitingBanner.png";
 
 const index = () => {

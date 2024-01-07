@@ -13,6 +13,7 @@ import {
 } from "../components/HomeComponents/homeLinks";
 import { useState } from "react";
 import { Padding } from "@mui/icons-material";
+
 export default function SearchBarModal({ handleClose }) {
   return (
     <div className={searchBarStyles.searchModal}>
@@ -47,7 +48,9 @@ export default function SearchBarModal({ handleClose }) {
         <br />{" "}
         <div className={searchBarStyles.popularLinks}>
           {schoolOptions.map((menu) => (
+            <div key ={menu.id}>
             <p>{menu.name}</p>
+            </div>
           ))}
         </div>
         <br />

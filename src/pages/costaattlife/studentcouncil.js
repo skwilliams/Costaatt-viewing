@@ -31,7 +31,6 @@ import ContactStudentLife from "@/components/PageComponents/ContactStudentLife";
 import awaitingbanner from "../../../public/images/awaitingBanner.png";
 import HeadImage from "@/components/PageComponents/HeadImage";
 
-import awaitingNews from "../../../public/images/awaitingNewsEvent.png";
 
 
 

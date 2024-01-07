@@ -1,5 +1,8 @@
 import React from 'react'
 import standardStyles from "../../styles/main.module.scss"
+import { FiBookOpen } from "react-icons/fi";
+import { IconContext } from "react-icons";
+
 
 const featurebox = ({icon},{heading},{text}) => {
   return (
