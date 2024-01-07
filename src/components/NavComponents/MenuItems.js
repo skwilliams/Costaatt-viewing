@@ -10,7 +10,6 @@ const MenuItems = ({ items, isLastItem, toggleClick }) => {
     setDropdown(!dropdown);
     toggleClick();
   };
-  //pass this itemStyle to component
   const itemStyle = isLastItem
     ? {
         backgroundColor: "#F58220",
