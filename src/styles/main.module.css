@@ -1046,7 +1046,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .sectionstartclub .joinclub {
   padding: 1em;
   text-align: center;
-  background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.6), rgba(159, 146, 223, 0.6)), url(../../../public/images/costaattlife/joinclub.png);
+  background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.6), rgba(159, 146, 223, 0.6)), url(../../public/images/costaattlife/joinclub.png);
   background-size: cover;
   background-position-x: right;
 }

@@ -263,7 +263,7 @@ const Allprogrammes = () => {
     </>
   );
 };
-allcourses.getLayout = function getLayout(page) {
+Allprogrammes.getLayout = function getLayout(page) {
   return <Layout1>{page}</Layout1>;
 };
 

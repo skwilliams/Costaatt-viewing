@@ -181,12 +181,12 @@ export const mainNavLinks = [
       },
       {
         title: "All Programmes",
-        path: "/programmes/allprogrammes",
+        path: "/programmes/Allprogrammes",
       },
 
       {
         title: "College Core",
-        path: "/programmes/collegecore",
+        path: "/programmes/Collegecore",
       },
       {
         title: "Professional Development Courses",
