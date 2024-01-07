@@ -209,7 +209,7 @@ export const management = [
    
   },
   {
-    photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
+    photo: require("../../../public/images/Leadership photos/tricia-joseph.jpg"),
     handle: "tjoseph",
     altText: " photo of Dr. Tricia Joseph",
     name: "Dr. Tricia Joseph",
