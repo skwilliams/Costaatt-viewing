@@ -3,7 +3,10 @@ import navStyles from "../../styles/Nav.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 
-const DropDown = ({ items }) => {
+const DropDown = ({ items, closeDropDown }) => {
+  const handleLinkClick = () => {
+    closeDropDown();
+  };
   return (
     <div className={navStyles.dropDownMain}>
       <div className={navStyles.dropDown}>
@@ -12,7 +15,7 @@ const DropDown = ({ items }) => {
             items.submenu.map((sub, index) => (
               <div key={index} className={navStyles.dropDownLi}>
                 <Link href={sub.path} passHref>
-                  <div>{sub.title}</div>
+                  <div onClick={handleLinkClick}>{sub.title}</div>
                 </Link>
               </div>
             ))}
@@ -29,7 +32,7 @@ const DropDown = ({ items }) => {
                   />
                 </Link>
                 <Link href={sub.path} passHref>
-                  <div>{sub.title}</div>
+                  <div onClick={handleLinkClick}>{sub.title}</div>
                 </Link>
               </div>
             ))}

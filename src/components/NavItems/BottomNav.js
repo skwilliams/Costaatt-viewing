@@ -21,6 +21,10 @@ const BottomNav = () => {
     setDropdownIndex(index === dropdownIndex ? null : index);
   };
 
+  const closeDropDown = () => {
+    setDropdownIndex(null);
+  };
+
   return (
     <nav className={navStyles.bottomNav}>
       <div className={navStyles.logo}>
@@ -35,6 +39,7 @@ const BottomNav = () => {
               <MenuItems
                 items={menu}
                 toggleClick={() => toggleDropdown(index)}
+                closeDropdown={closeDropDown}
               />
             </li>
           ))}
@@ -49,7 +54,10 @@ const BottomNav = () => {
         </div>
       )}
       {dropdownIndex !== null && (
-        <DropDown items={mainNavLinks[dropdownIndex]} />
+        <DropDown
+          items={mainNavLinks[dropdownIndex]}
+          closeDropDown={closeDropDown}
+        />
       )}
     </nav>
   );

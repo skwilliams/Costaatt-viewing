@@ -25,7 +25,6 @@ const MenuItems = ({ items, isLastItem, toggleClick }) => {
         <div className={navStyles.navBarLinks} onClick={handleClick}>
           <Link href={"#"}>{items.title}</Link>
           {dropdown ? <FaAngleUp /> : <FaAngleDown />}
-          {/* {<DropDown items={items} />} */}
         </div>
       ) : (
         <div style={itemStyle}>
