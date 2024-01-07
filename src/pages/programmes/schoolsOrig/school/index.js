@@ -1,11 +1,9 @@
 import React from "react";
 import Head from "next/head";
-import HeadImage from "@/components/PageComponents/HeadImage";
 import deanimg from "../../../../../images/Links/home1.png";
-import headImg from "../../../../../images/Programmes/sobdt header.jpg";
-import Layout from "../../../../components/Layout";
+
 import ProgStyles from "../../../../styles/Programmes.module.scss";
-import DepartCard from "@/components/PageComponents/DepartCard";
+
 import DeanStyles from "../../../../styles/Dean.module.scss";
 import BusImg from "../../../../../images/Links/home2.png";
 
@@ -23,7 +21,7 @@ import NewsCard from "@/components/PageComponents/NewsCard";
 import Divider from "@mui/material/Divider";
 
 //School of Business and Digital Technologies
-const sbdt = () => {
+const Sbdt = () => {
   const pathname = usePathname();
   const { sobdt } = schools[0];
   console.log(sobdt);
@@ -235,4 +233,4 @@ const sbdt = () => {
   );
 };
 
-export default sbdt;
+export default Sbdt;

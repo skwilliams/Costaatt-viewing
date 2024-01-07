@@ -1,6 +1,8 @@
 export function txtToPara(data, style) {
-  return data.split("\n").map((para) => {
-    return <p className={style}>{para}</p>;
+  return data.split("\n").map((para) =>
+   {
+    return 
+    <p className={style}>{para}</p>;
   });
 }
 
