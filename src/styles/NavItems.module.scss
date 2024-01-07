@@ -33,7 +33,6 @@
   align-items: center;
 }
 
-
 .topBarLinks {
   position: relative;
   padding: 20px 5px;
@@ -43,7 +42,6 @@
 }
 
 .topBarLinks:hover {
-
   transition: all 0.1s ease;
   //  border-radius: 15px;
   text-underline-position: under;
@@ -67,7 +65,8 @@
 
 .topNavDropDownTest {
   padding: 1.2em;
-  margin-bottom: 2.0em;
+  margin-bottom: 2em;
+}
 .test2 {
   display: flex;
   justify-content: space-between;
@@ -100,9 +99,9 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   color: $purple-main;
-  padding: .5em;
+  padding: 0.5em;
   align-items: baseline;
-  height:40rem;
+  height: 40rem;
   text-align: center;
   width: 100%;
   margin: 0;
