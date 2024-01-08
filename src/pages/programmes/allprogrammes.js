@@ -47,7 +47,7 @@ const Allprogrammes = () => {
     });
 
     return acc;
-  }, [schoolFilters,levelFilters,formattedPrograms]);
+  }, []);
 
   const [allPrograms, setAllPrograms] = useState(formattedPrograms);
 

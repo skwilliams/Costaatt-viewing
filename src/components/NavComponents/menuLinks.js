@@ -3,96 +3,98 @@ export const topNavLinksLeft = [
     title: "School Departments",
     submenu: [
       {
-        title: "School Of Liberal Arts, Education And Digital Humanities",
-        path: "programmes",
+        title: "School of Liberal Arts, Education and Digital Humanities",
+        path: "/programmes/schools/liberal",
         submenu: [
           {
             title: "Criminal Justice, Human Security and Legal Studies",
-            path: "programmes",
+            path: "/programmes/schools/liberal/CRIM",
           },
           {
             title: "Social and Behavioural Sciences Department ",
-            path: "programmes",
+            path: "/programmes/schools/liberal/SABS",
           },
           {
             title: "Education",
-            path: "programmes",
+            path: "/programmes/schools/liberal/EDUC",
           },
         ],
       },
       {
         title: "School of Nursing, Health and Medical Technologies",
-        path: "programmes",
+        path: "/programmes/schools/nursing",
         submenu: [
           {
             title: "Department of Nursing",
-            path: "programmes",
+            path: "/programmes/schools/nursing/NURS",
           },
+
           {
             title: "Department of Health Science Technologies",
-            path: "programmes",
+            path: "/programmes/schools/nursing/HMST",
           },
         ],
       },
       {
         title: "School of Environment, Circular Economy and Sustainability",
-        path: "programmes",
+        path: "/programmes/schools/enviro",
         submenu: [
           {
-            title: "Criminal Justice, Human Security and Legal Studies",
-            path: "programmes",
+            title: "Environmental and Sustainability Studiess",
+            path: "/programmes/schools/enviro/ENVS",
           },
           {
             title: "Natural and Life Sciences",
-            path: "programmes",
+            path: "/programmes/schools/enviro/NLSC",
           },
         ],
       },
       {
         title: "School of Business and Digital Technologies",
-        path: "programmes",
+        path: "/programmes/schools/busIT",
+
         submenu: [
           {
             title: "Management and Digital Entrepreneurship",
-            path: "programmes",
+            path: "/programmes/schools/busIT/MGDE",
           },
           {
             title: "ICTs and Digital Technologies",
-            path: "programmes",
+            path: "/programmes/schools/busIT/ICTD",
           },
         ],
       },
       {
         title: "School of Workforce Enhancement and Development",
-        path: "programmes",
+        path: "/programmes/schools/workF",
 
         submenu: [
           {
             title: "Upskilling Academy",
-            path: "programmes",
+            path: "/programmes/schools/workF/UPSK",
           },
           {
             title: "CollegeStarTT",
-            path: "programmes",
+            path: "/programmes/schools/workF/CSTT",
           },
           {
             title: "Translation and Interpretation",
-            path: "programmes",
+            path: "/programmes/schools/workF/CFTI",
           },
         ],
       },
       {
         title: "Ken Gordon School of Communication,Creative and Digital Media",
-        path: "programmes",
+        path: "/programmes/schools/kengord",
 
         submenu: [
           {
             title: "Creative Industries and Culture ",
-            path: "programmes",
+            path: "/programmes/schools/kengord/CIAC",
           },
           {
             title: "Digital Media",
-            path: "programmes",
+            path: "/programmes/schools/kengord/DMAC",
           },
         ],
       },
@@ -192,31 +194,9 @@ export const mainNavLinks = [
         title: "Professional Development Courses",
         path: "/programmes/shortcourses",
       },
-      {
-        title: "School of Nursing, Health and Medical Technologies",
-        path: "/programmes/schools/nursing",
-      },
-      {
-        title: "School of Liberal Arts, Education and Digital Humanities",
-        path: "/programmes/schools/liberal",
-      },
-      {
-        title: "School of Environment, Circular Economy and Sustainability",
-        path: "/programmes/schools/enviro",
-      },
-      {
-        title:
-          "The Ken Gordon School of Communication Creative and Digital Media",
-        path: "/programmes/schools/kengord",
-      },
-      {
-        title: "School of Business and Digital Technologies",
-        path: "/programmes/schools/busIT",
-      },
-      {
-        title: "School of Workforce Enhancement and Development",
-        path: "/programmes/schools/workF",
-      },
+    
+   
+     
     ],
     submenuImage: [
       {
