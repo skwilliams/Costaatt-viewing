@@ -28,7 +28,7 @@ const TopNav = () => {
             closeDropdown={closeDropdown}
           />
         )}
-        <div className={navStyles.test2}>
+        <div className={navStyles.topNavItems}>
           <ul>
             {topNavLinksLeft.map((menu, index) => (
               <li key={index}>
