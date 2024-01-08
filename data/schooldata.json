@@ -663,7 +663,19 @@
         "shortName": "Natural and Life Sciences",
         "contacts": [],
         "dept_code": "NLSC",
-        "programmes": []
+        "programmes": [{
+            "prog_code": "BIOL_BSC",
+            "prog_shortname": "bscBIOL",
+            "prog_name": "BSc Biology",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "NLSC",
+            "prog_major_credits": 72,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 9,
+            "prog_supp_credits": 10,
+            "prog_description": "The working environment contains many hazards that threatens the health, safety and well-being of workers on a daily basis. Such hazards can lead to injury, sickness, disease and even death. The Occupational Health and Safety discipline was created to effectively manage these hazard using elements from chemistry, physics, engineering, biology and even psychology. The multi-disciplinary nature of health and safety is a reflection of the complexities in understanding and effectively addressing occupational hazards. Students pursuing the Bachelor of Science degree in Occupational Safety and Health will acquire the necessary skills to identify, evaluate and control typical occupational hazards found in the working environment."
+          }]
       }
     ]
   },
