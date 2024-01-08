@@ -3,7 +3,6 @@
 .topNavContainer {
   position: relative;
   display: flex;
-
   flex-direction: column;
   padding: 5px 30px;
   justify-content: space-between;
@@ -28,11 +27,8 @@
 
 .topNavMain ul {
   display: flex;
-  gap: 2rem;
-  justify-content: space-between;
-  align-items: center;
+  gap: 20px;
 }
-
 
 .topBarLinks {
   position: relative;
@@ -48,25 +44,6 @@
   text-underline-position: under;
 
   text-decoration: underline solid $color-comp3 4px !important;
-}
-
-.topNavDropDownMain {
-  width: fit-content;
-  position: absolute;
-  z-index: 40;
-  background-color: $whiteback;
-  padding: 1.2rem;
-  display: none;
-}
-
-.topNavDropDown {
-  box-shadow: inset 0px 14px 15px rgba(0, 0, 0, 0.3);
-  padding: 2rem 1rem;
-}
-
-.topNavDropDownTest {
-  padding: 1.2em;
-  margin-bottom: 2em;
 }
 
 .test2 {
@@ -100,10 +77,6 @@
   padding: 25px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  color: $purple-main;
-  padding: 0.5em;
-  align-items: baseline;
-  height: 40rem;
   text-align: center;
   width: 100%;
   margin: 0;
@@ -157,13 +130,13 @@
 .dropDownPictures {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 20px;
   text-align: center;
   color: #666; /* Change image caption color */
 }
 
 .dummyImage {
-  margin-bottom: 2rem;
-  width: 25rem;
+  margin-bottom: 20px;
+  width: 250px;
   height: auto;
 }
