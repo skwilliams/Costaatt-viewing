@@ -352,7 +352,7 @@ export const mainNavLinks = [
       },
       {
         title: "Accreditation And Quality Assurance",
-        path: "/about/accreditation",
+        path: "/about/Accreditation",
       },
       {
         title: "College Leadership",
