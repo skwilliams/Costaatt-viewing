@@ -13,7 +13,7 @@ import ProgramCard from "@/components/PageComponents/ProgramCard";
 import SCHOOLDATA from "../../../data/schooldata.json";
 import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
 
-const Allprogrammes = () => {
+const allprogrammes = () => {
   // const stumpNames = SCHOOLDATA.map((school) => school.nameStump);
   // console.log(stumpNames);
   const [schoolFilters, setSchoolFilters] = useState({
@@ -47,7 +47,7 @@ const Allprogrammes = () => {
     });
 
     return acc;
-  }, []);
+  }, [schoolFilters,levelFilters,formattedPrograms]);
 
   const [allPrograms, setAllPrograms] = useState(formattedPrograms);
 
@@ -267,4 +267,4 @@ Allprogrammes.getLayout = function getLayout(page) {
   return <Layout1>{page}</Layout1>;
 };
 
-export default Allprogrammes;
+export default allprogrammes;

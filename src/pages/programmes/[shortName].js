@@ -55,36 +55,36 @@ const programme = (props) => {
   return (
     <>
       <Head>
-        <title>{prog.prog_name}</title>
+        <title>{prog.prog_name && prog.prog_name} </title>
       </Head>
-      <HeaderNoImage caption={prog.prog_name} />
+      <HeaderNoImage caption={prog.prog_name && prog.prog_name} />
       <SideNavOnlyLayout>
         <section id="courseoverview" className={CourseStyle.sectionOverview}>
           <p className={CourseStyle.desc}>{prog.prog_description}</p>
           <div className={CourseStyle.iconsection}>
             <div className={CourseStyle.fiveColGridCon}>
               <ProgOfferingDetails
-                txt={'duration'}
+                txt={"duration"}
                 detailIcon={calendar}
                 data={progStruct.semester}
               />
               <ProgOfferingDetails
-                txt={'location'}
+                txt={"location"}
                 detailIcon={location}
                 data={progStruct.campus}
               />
               <ProgOfferingDetails
-                txt={'time'}
+                txt={"time"}
                 detailIcon={time}
                 data={progStruct.duration}
               />
               <ProgOfferingDetails
-                txt={'mode'}
+                txt={"mode"}
                 detailIcon={mode}
                 data={progStruct.mode}
               />
               <ProgOfferingDetails
-                txt={'GATE'}
+                txt={"GATE"}
                 detailIcon={gate}
                 data={progStruct.GATE}
               />
@@ -98,7 +98,7 @@ const programme = (props) => {
 
           <p className={CourseStyle.footnote}>
             * Salaries are subject to years of experience, projects and
-            professional certification{' '}
+            professional certification{" "}
           </p>
         </section>
         <Divider />
@@ -126,10 +126,10 @@ const programme = (props) => {
         <Divider />
         <section id="curriculum" className={CourseStyle.sectionCurriculum}>
           <p className={ProgStyles.headingprimaryleft}>
-            {' '}
-            Curriculum{' '}
+            {" "}
+            Curriculum{" "}
             <a
-              style={{ float: 'right' }}
+              style={{ float: "right" }}
               className={ProgStyles.explore}
               href=" "
             >
@@ -156,7 +156,7 @@ const programme = (props) => {
               <DegreeCourses courses={getCourses(progStruct.specialcourses)} />
             </AccordionDetails>
           </Accordion>
-          <Accordion sx={{ margin: 2, color: 'primary' }}>
+          <Accordion sx={{ margin: 2, color: "primary" }}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <Typography fontSize={19}>Core Curriculum Courses</Typography>
             </AccordionSummary>
@@ -175,18 +175,20 @@ const programme = (props) => {
               <DegreeCourses courses={getCourses(progStruct.supportcourses)} />
             </AccordionDetails>
           </Accordion>
-          { <p className={CourseStyle.creditsummarytext}>
-            {' '}
-            Total Credits :{' '}
-            <span className={CourseStyle.creditsummarynumber}>
-              {progStruct.totalcredits}{' '}
-            </span>
-          </p>}
+          {
+            <p className={CourseStyle.creditsummarytext}>
+              {" "}
+              Total Credits :{" "}
+              <span className={CourseStyle.creditsummarynumber}>
+                {progStruct.totalcredits}{" "}
+              </span>
+            </p>
+          }
         </section>
         <Divider />
         <section id="feesfinancial" className={CourseStyle.sectionFinancial}>
           <p className={ProgStyles.headingprimaryleft}>
-            {' '}
+            {" "}
             Fees and Financial Aid
           </p>
           <Accordion sx={{ margin: 2 }}>
@@ -203,7 +205,7 @@ const programme = (props) => {
               </p>
             </AccordionDetails>
           </Accordion>
-          <Accordion sx={{ margin: 2, color: 'primary' }}>
+          <Accordion sx={{ margin: 2, color: "primary" }}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <Typography fontSize={18}>College Fees</Typography>
             </AccordionSummary>
@@ -247,7 +249,7 @@ const programme = (props) => {
                   Trinidad and Tobago pursuing approved programmes at public and
                   private tertiary level institutions. Information on
                   eligibility and conditions for accessing GATE funding is
-                  available at the Ministry of Education website{' '}
+                  available at the Ministry of Education website{" "}
                   <a href="http://www.moe.gov.tt">www.moe.gov.tt</a>
                 </p>
                 <p>
@@ -267,9 +269,9 @@ const programme = (props) => {
                   and Tobago are eligible to apply, and students must be
                   registered in a course of study leading to a tertiary level
                   qualification. For further information on the GATE programme
-                  please visit the website of the{' '}
+                  please visit the website of the{" "}
                   <a href="http://https://moe.gov.tt/">
-                    {' '}
+                    {" "}
                     Ministry of Education
                   </a>
                   .
@@ -281,7 +283,7 @@ const programme = (props) => {
                 <div>
                   <strong>Higher Education Loan Programme (HELP)</strong>
                   <p>
-                    {' '}
+                    {" "}
                     The Higher Education Loan Programme (HELP) is a special loan
                     facility made available to citizens of Trinidad and Tobago
                     who are enrolled in an approved tertiary level programme at
@@ -310,18 +312,18 @@ const programme = (props) => {
                 </div>
                 <p>
                   For further information on the Higher Education Loan Programme
-                  (HELP) students can visit the Ministry of Education website :{' '}
+                  (HELP) students can visit the Ministry of Education website :{" "}
                   <a className={CourseStyle.goto} href="https.www.moe.gov.tt">
                     www.moe.gov.tt
                   </a>
-                </p>{' '}
+                </p>{" "}
                 <br />
                 <p>
                   <strong>Payment Plans</strong>
                 </p>
                 <p>
                   Payment plans are available, please contact the Office of the
-                  Registrar for further details:{' '}
+                  Registrar for further details:{" "}
                   <a
                     className={CourseStyle.goto}
                     href="mailto:registrar@costaatt.edu.tt"
@@ -332,7 +334,7 @@ const programme = (props) => {
               </div>
             </AccordionDetails>
           </Accordion>
-        </section>{' '}
+        </section>{" "}
         <Divider />
         <section id="requirements" className={CourseStyle.sectionRequirements}>
           <p className={ProgStyles.headingprimaryleft}> Requirements</p>
@@ -346,7 +348,7 @@ const programme = (props) => {
               />
             </AccordionDetails>
           </Accordion>
-          <Accordion sx={{ margin: 2, color: 'primary' }}>
+          <Accordion sx={{ margin: 2, color: "primary" }}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <Typography fontSize={18}>Alternative Routes</Typography>
             </AccordionSummary>
@@ -354,13 +356,13 @@ const programme = (props) => {
               <div className={CourseStyle.text}>
                 Applicants who do not possess the minimum requirements for entry
                 into a degree programme may be eligible for admission via the
-                following: <br />{' '}
+                following: <br />{" "}
                 <span className={CourseStyle.bold}> Mature applicants</span> (25
                 years and over) with relevant experience, who do not possess the
                 minimum entry requirements, may be considered on the basis of
                 experience and demonstrable competence.
                 <p>
-                  {' '}
+                  {" "}
                   <span className={CourseStyle.bold}> COMPASS </span> is
                   designed to help students gain the qualifications needed to
                   access the degree programme of their choice at COSTAATT. The
@@ -371,31 +373,31 @@ const programme = (props) => {
                 </p>
                 <br />
                 <div className={CourseStyle.entryreq}>
-                  {' '}
-                  To qualify for the{' '}
+                  {" "}
+                  To qualify for the{" "}
                   <span className={CourseStyle.bold}>COMPASS programme </span>,
                   applicants MUST have completed five years of secondary school
                   and:
                   <ul className={CourseStyle.list}>
                     <li className={CourseStyle.items}>
-                      {' '}
+                      {" "}
                       Possess 3-4 CSEC (CXC)/GCE passes Possess
                     </li>
                     <li className={CourseStyle.items}>
-                      {' '}
-                      5 CSEC (CXC)/GCE passes without mathematics or English or{' '}
+                      {" "}
+                      5 CSEC (CXC)/GCE passes without mathematics or English or{" "}
                     </li>
                     <li className={CourseStyle.items}>
-                      {' '}
+                      {" "}
                       Be 25 years or older (mature student) with academic
                       literacy acquired through work or life experiences.
                     </li>
-                  </ul>{' '}
+                  </ul>{" "}
                   Upon successful completion of the COMPASS programme, students
                   may apply to the college programme for which they would then
-                  have gained the necessary entry requirements.{' '}
+                  have gained the necessary entry requirements.{" "}
                 </div>
-              </div>{' '}
+              </div>{" "}
             </AccordionDetails>
           </Accordion>
           <Accordion sx={{ margin: 2 }}>
@@ -409,7 +411,7 @@ const programme = (props) => {
           <Accordion sx={{ margin: 2 }}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <Typography fontSize={18}>
-                Required Supporting Documents{' '}
+                Required Supporting Documents{" "}
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
@@ -427,17 +429,17 @@ const programme = (props) => {
 
             <div className={DeptStyles.threeGridCon}>
               <div className={DeptStyles.threeGridCol}>
-                <StudentResources image={image} imagetxt="Apply Now" />{' '}
+                <StudentResources image={image} imagetxt="Apply Now" />{" "}
               </div>
               <div className={DeptStyles.threeGridCol}>
-                {' '}
+                {" "}
                 <StudentResources
                   image={image}
                   imagetxt="See Admissions Counsellor"
                 />
               </div>
               <div className={DeptStyles.threeGridCol}>
-                {' '}
+                {" "}
                 <StudentResources image={image} imagetxt="Visit Us" />
               </div>
             </div>
