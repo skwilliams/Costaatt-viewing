@@ -1,6 +1,6 @@
 import Image from "next/image";
 import CarouselStyles from "../styles/Carousel.module.scss";
-import Link from "next/link";
+
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -36,6 +36,7 @@ const CarouselSlider = ({ story, onSelect }) => {
           <div key={index}>
             <Image
               src={slide.image}
+              alt="carousel for images"
               className={CarouselStyles.sliderImage}
               onClick={(e) => handleSelect(slide, e)}
             />

@@ -3,6 +3,8 @@ import React from 'react'
 import Link from 'next/link'
 import AdmisStyles from "@/styles/Admissions.module.scss"
 import Head from 'next/head'
+import Image from 'next/image'
+import { Divider } from '@mui/material'
 
 const startapplication = () => {
   return (
@@ -18,7 +20,7 @@ const startapplication = () => {
             Before you apply, ensure you have{" "}
           </p>
           <div className={AdmisStyles.checklist}>
-            <Image className={AdmisStyles.imgtick} src={tick} />
+            <Image className={AdmisStyles.imgtick} src={tick} alt ="image of tick"/>
             <span className={AdmisStyles.heading}> Programme Details and Requirements </span>
             <p className={AdmisStyles.text}>
               You have choosen your programme and this is your first time

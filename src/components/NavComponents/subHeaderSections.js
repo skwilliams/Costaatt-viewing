@@ -205,9 +205,15 @@ export const subHeaderSections = {
     "Package":"package",
     "Why Rent":"why",
     "Spaces":"spaces", 
-    "More Spaces":"morespaces",
+    // "More Spaces":"morespaces",
     "Contact":"contact"
   },
+  translation:{
+    "Overview":"intro",
+    "Translation ":"translate",
+    "Interpretation Services":"interpret",
+    "Contact ":"contact"
+  }
   
 
 };

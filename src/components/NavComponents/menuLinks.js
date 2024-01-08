@@ -5,32 +5,24 @@ export const topNavLinksLeft = [
       {
         title: "School Of Liberal Arts, Education And Digital Humanities",
         path: "programmes",
-        backgroundColor: "orange",
-        left: "100px",
-        width: "100%",
-        position: "absolute",
+        submenu: [
+          {
+            title: "Criminal Justice, Human Security and Legal Studies",
+            path: "programmes",
+          },
+          {
+            title: "Social and Behavioural Sciences Department ",
+            path: "programmes",
+          },
+          {
+            title: "Education",
+            path: "programmes",
+          },
+        ],
       },
-      // submenu: [
-      {
-        title: "Criminal Justice, Human Security and Legal Studies",
-        path: "programmes",
-      },
-      {
-        title: "Social and Behavioural Sciences Department ",
-        path: "programmes",
-      },
-      {
-        title: "Education",
-        path: "programmes",
-      },
-      // ],
-
       {
         title: "School of Nursing, Health and Medical Technologies",
         path: "programmes",
-        backgroundColor: "orange",
-        left: "200px",
-        position: "absolute",
         submenu: [
           {
             title: "Department of Nursing",
@@ -45,9 +37,6 @@ export const topNavLinksLeft = [
       {
         title: "School of Environment, Circular Economy and Sustainability",
         path: "programmes",
-        backgroundColor: "orange",
-        left: "200px",
-        position: "absolute",
         submenu: [
           {
             title: "Criminal Justice, Human Security and Legal Studies",
@@ -62,9 +51,6 @@ export const topNavLinksLeft = [
       {
         title: "School of Business and Digital Technologies",
         path: "programmes",
-        backgroundColor: "orange",
-        left: "200px",
-        position: "absolute",
         submenu: [
           {
             title: "Management and Digital Entrepreneurship",
@@ -79,9 +65,7 @@ export const topNavLinksLeft = [
       {
         title: "School of Workforce Enhancement and Development",
         path: "programmes",
-        backgroundColor: "orange",
-        left: "400px",
-        position: "absolute",
+
         submenu: [
           {
             title: "Upskilling Academy",
@@ -100,9 +84,6 @@ export const topNavLinksLeft = [
       {
         title: "Ken Gordon School of Communication,Creative and Digital Media",
         path: "programmes",
-        backgroundColor: "orange",
-        left: "400px",
-        position: "absolute",
 
         submenu: [
           {
@@ -200,12 +181,12 @@ export const mainNavLinks = [
       },
       {
         title: "All Programmes",
-        path: "/programmes/allprogrammes",
+        path: "/programmes/Allprogrammes",
       },
 
       {
         title: "College Core",
-        path: "/programmes/collegecore",
+        path: "/programmes/Collegecore",
       },
       {
         title: "Professional Development Courses",
@@ -300,7 +281,6 @@ export const mainNavLinks = [
         path: "/services/customtraining",
       },
 
-     
       {
         title: "Translation and Interpretation",
         path: "/services/translation",
@@ -309,10 +289,9 @@ export const mainNavLinks = [
     submenuImage: [
       {
         img: require("../../../public/images/services/RoofTop-Terrace-2.jpg"),
-        
+
         title: "Rent A Space ",
         path: "/services/rentspace",
-      
       },
     ],
   },
@@ -364,7 +343,7 @@ export const mainNavLinks = [
     submenu: [
       {
         title: "Profile at a Glance",
-        path: "/about",
+        path: "/about/Ataglance",
       },
 
       {
@@ -373,7 +352,7 @@ export const mainNavLinks = [
       },
       {
         title: "Accreditation And Quality Assurance",
-        path: "/about/accreditation",
+        path: "/about/Accreditation",
       },
       {
         title: "College Leadership",

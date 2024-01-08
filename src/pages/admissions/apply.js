@@ -28,7 +28,7 @@ import time from "../../../images/Programmes/time.svg";
 import mode from "../../../images/Programmes/mode.svg";
 import location from "../../../images/Programmes/location.svg";
 import calendar from "../../../images/Programmes/calendar.svg";
-import ContactAdmissions from "@/components/PageComponents/ContactSection";
+import ContactAdmissions from "@/components/PageComponents/ContactAdmissions";
 
 const apply = () => {
   return (

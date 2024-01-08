@@ -35,15 +35,7 @@ const alumni = () => {
         <div className={HomeStyles.successStories}>
           <h1>Success Stories</h1>
         </div>
-        {/* <div className={HomeStyles.successSlider}>
-          <SuccessSlider
-            slides={selectedSuccess ? [selectedSuccess] : SuccessMainLinks}
-          />
-          <CarouselSuccess
-            story={SuccessLinks}
-            onSelect={handleSuccessSelect}
-          />
-        </div> */}
+  
       </section>
 
       <div>alumni</div>

@@ -1,5 +1,6 @@
 export const stucouncildata = [
   {
+    id: 1,
     name: "Stacy Williams",
 
     position: "President Sangre Grande",
@@ -9,58 +10,62 @@ export const stucouncildata = [
     email: "skwilliams@my.costaatt.edu.tt",
   },
   {
-     name: "Peter ",
+    id: 2,
+    name: "Peter ",
 
-     position: "President Sangre Grande",
+    position: "President Sangre Grande",
     photo: require("../../../images/Programmes/ken2.jpg"),
-     alt: "image of Peter",
-     phone: "6255030",
-     email: "skwilliams@my.costaatt.edu.tt",
-   },
-   {
-     name: "Jayson",
-
-     position: "President Sangre Grande",
+    alt: "image of Peter",
+    phone: "6255030",
+    email: "skwilliams@my.costaatt.edu.tt",
+  },
+  {
+    id: 3,
+    name: "Jayson",
+    position: "President Sangre Grande",
     photo: require("../../../images/Programmes/deanavatar.jpg"),
-     alt: "image of Jayson",
-     phone: "6255030",
-     email: "skwilliams@my.costaatt.edu.tt",
-   },
-   {
-     name: "Kizzy",
+    alt: "image of Jayson",
+    phone: "6255030",
+    email: "skwilliams@my.costaatt.edu.tt",
+  },
+  {
+    id: 4,
+    name: "Kizzy",
 
-     position: "President Sangre Grande",
-     photo: require("../../../images/Programmes/deanavatar.jpg"),
-     alt: "image of Stacy",
-     phone: "6255030",
-     email: "skwilliams@my.costaatt.edu.tt",
-   },
-   {
+    position: "President Sangre Grande",
+    photo: require("../../../images/Programmes/deanavatar.jpg"),
+    alt: "image of Stacy",
+    phone: "6255030",
+    email: "skwilliams@my.costaatt.edu.tt",
+  },
+  {
+    id: 5,
     name: "Yudister",
 
     position: "President Sangre Grande",
-    photo: require("../../../images/Programmes/deanavatar.jpg"),   
-    alt: "image of Stacy",
-   phone: "6255030",
-     email: "skwilliams@my.costaatt.edu.tt",
- },
-   {
-     name: "Nicole",
-
-     position: "President Sangre Grande",
     photo: require("../../../images/Programmes/deanavatar.jpg"),
     alt: "image of Stacy",
-     phone: "6255030",
-   email: "skwilliams@my.costaatt.edu.tt",
-   },
-   {
-     name: "Laurence",
+    phone: "6255030",
+    email: "skwilliams@my.costaatt.edu.tt",
+  },
+  {
+    id: 6,
+    name: "Nicole",
 
-     position: "President Sangre Grande",
+    position: "President Sangre Grande",
     photo: require("../../../images/Programmes/deanavatar.jpg"),
-     alt: "image of Stacy",
-     phone: "6255030",
-     email: "skwilliams@my.costaatt.edu.tt",
-   },
+    alt: "image of Stacy",
+    phone: "6255030",
+    email: "skwilliams@my.costaatt.edu.tt",
+  },
+  {
+    id: 7,
+    name: "Laurence",
+    position: "President Sangre Grande",
+    photo: require("../../../images/Programmes/deanavatar.jpg"),
+    alt: "image of Stacy",
+    phone: "6255030",
+    email: "skwilliams@my.costaatt.edu.tt",
+  },
 ];
   

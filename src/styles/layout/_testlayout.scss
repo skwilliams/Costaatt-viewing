@@ -9,6 +9,7 @@
 
   display: grid;
   grid-template-columns:
+  
     [full-width-start] minmax(var(--padding-inline), 1fr)
     [breakout-start] minmax(0, var(--breakout-size))
     [content-start] min(

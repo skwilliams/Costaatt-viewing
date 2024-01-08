@@ -1,28 +1,26 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
-import { FormGroup, FormControlLabel, Checkbox } from '@mui/material';
-import CardStyles from '../../styles/ProgCard.module.scss';
-import Head from 'next/head';
+import React from "react";
+import { useState, useEffect } from "react";
+import { FormGroup, FormControlLabel, Checkbox } from "@mui/material";
+import CardStyles from "../../styles/ProgCard.module.scss";
+import Head from "next/head";
 
-import Link from 'next/link';
-import Layout from '../../components/PageWithSideNavComponents/Layout';
-import SearchCourse from '@/components/PageComponents/SearchCourse';
-import ProgCard from '../../components/PageComponents/ProgCard';
-import { collegecoredata } from './collegecoredata';
-import CollegeCoreCard from '@/components/PageComponents/CollegeCoreCard';
-import HeaderNoImage from '@/components/PageComponents/HeaderNoImage';
+import Link from "next/link";
+import SearchCourse from "@/components/PageComponents/SearchCourse";
+import { collegecoredata } from "./collegecoredata";
+import CollegeCoreCard from "@/components/PageComponents/CollegeCoreCard";
+import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
 
 const ShortNameToLongName = {
-  ContEd: 'Continued Education',
-  SocialSc: 'Social Sciences',
-  Science: 'Science',
-  Music: 'Music',
-  BehavSc: 'Behavioral Science',
-  Math: 'Mathematics',
-  Humanities: 'Humanities',
+  ContEd: "Continued Education",
+  SocialSc: "Social Sciences",
+  Science: "Science",
+  Music: "Music",
+  BehavSc: "Behavioral Science",
+  Math: "Mathematics",
+  Humanities: "Humanities",
 };
 
-const collegecore = () => {
+const Collegecore = () => {
   const [disciplineFilters, setDisciplineFilters] = useState({
     ContEd: false,
     SocialSc: false,
@@ -39,9 +37,9 @@ const collegecore = () => {
       (filter) => disciplineFilters[filter] === true
     );
     let finalResult = collegecoredata;
-    console.log('Final Results', finalResult);
+    console.log("Final Results", finalResult);
     if (hasFiltersChanged) {
-      console.log('Filter has changed');
+      console.log("Filter has changed");
       const filteredDisciplines = Object.keys(disciplineFilters).reduce(
         (acc, filter) => {
           const results = finalResult.filter(
@@ -49,7 +47,7 @@ const collegecore = () => {
               disciplineFilters[filter] === true &&
               disc.discipline.trim() === ShortNameToLongName[filter]
           );
-          console.log('Results', results);
+          console.log("Results", results);
           acc = acc.length ? [...acc, ...results] : results;
           return acc;
         },
@@ -205,4 +203,4 @@ const collegecore = () => {
 //   return <Layout>{page}</Layout>;
 // };
 
-export default collegecore;
+export default Collegecore;

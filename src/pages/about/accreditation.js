@@ -16,10 +16,10 @@ const paragraphStyles={
 
 
 
-const accreditation = () => {
+const Accreditation = () => {
 
 
 
 }
 
-export default accreditation
+export default Accreditation

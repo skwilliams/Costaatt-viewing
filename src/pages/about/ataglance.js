@@ -2,26 +2,20 @@ import React from "react";
 import Link from "next/link";
 import Head from "next/head";
 import standardStyles from "@/styles/main.module.scss";
-import costlifeStyles from "@/styles/CostaattLife.module.css";
-import DeanStyles from "@/styles/Dean.module.scss";
+
+
 import AboutStyles from "@/styles/About.module.scss";
 
-import telephone from "../../../public/images/admissions/telephone.svg";
-import email from "../../../public/images/admissions/email.svg";
-import hours from "../../../public/images/admissions/businesshours.svg";
+
 
 import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
-import { Button, Divider } from "@mui/material";
 
-import Image, { StaticImageData } from "next/image";
-import { FiBookOpen } from "react-icons/fi";
 
-import { getEventsByDept } from "../../../public/data/eventsdata";
-import EventCardOrig from "@/components/PageComponents/EventCardOrig";
+import Image from "next/image";
+
+
 import Layout from "../../components/Layouts/TopNavOnly_NoDropdown";
 
-import StudentCouncilRep from "@/components/PageComponents/StudentCouncilRep";
-import ContactStudentLife from "@/components/PageComponents/ContactStudentLife";
 import home2 from "../../../public/images/about/home2.png";
 import home3 from "../../../public/images/about/home3.png";
 import home5 from "../../../public/images/about/home5.png";
@@ -29,23 +23,23 @@ import home6 from "../../../public/images/about/home6.png";
 
 import { useState } from "react";
 import { useEffect } from "react";
-import FacultyStaffCard from "@/components/PageComponents/FacultyStaffDepCard";
-import DeanCard from "@/components/PageComponents/StaffCard";
-import president from "../../../public/images/about/president.jpg"
 
 
-const ataglance = () => {
 
 
-  const [hasWindow, setHasWindow] = useState(false);
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setHasWindow(true);
-    }
-  }, []);
+const Ataglance = () => {
 
 
-  const video = "";
+  // const [setHasWindow] = useState(false);
+
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     setHasWindow(true);
+  //   }
+  // }, [setHasWindow]);
+
+
+ 
   return (
     <>
       <Head>
@@ -368,4 +362,4 @@ ataglance.getLayout = function getLayout(page) {
 
 
 
-export default ataglance
+export default Ataglance

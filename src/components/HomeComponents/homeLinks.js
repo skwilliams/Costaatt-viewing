@@ -11,23 +11,28 @@ import draft from "../../../images/Links/SuccessDraft.jpg";
 
 export const SliderLinks = [
   {
+    id:1,
     title: "Nursing",
-    image: require("../../../images/Links/Future me schools screens/Future me screens-03.jpg"),
+    image: require("../../../public/images/awaitingNewsEvent.png"),
     path: "https://www.costaatt.edu.tt/academics/school-of-nursing-health-and-environmental-sciences/",
   },
   {
+    id:2,
     title: "Business",
     image: require("../../../images/Links/Future me schools screens/Future me screens-04.jpg"),
   },
   {
+    id:3,
     title: "Technology",
     image: require("../../../images/Links/Future me schools screens/Future me screens-05.jpg"),
   },
   {
+    id:4,
     title: "Latest on GATE",
     image: require("../../../images/Links/Future me schools screens/Future me screens-06.jpg"),
   },
   {
+    id:5,
     title: "Latest on GATE",
     image: require("../../../images/Links/Future me schools screens/Future me screens-06.jpg"),
   },
@@ -35,52 +40,64 @@ export const SliderLinks = [
 
 export const SuccessMainLinks = [
   {
+    id:1,
     title: "Anthony",
     image: require("../../../images/Links/SuccessDraft.jpg"),
   },
   {
+    id:2,
     title: "Anthony",
     image: require("../../../images/Links/SuccessDraft2.jpg"),
   },
   {
+    id:3,
     title: "Anthony",
     image: require("../../../images/Links/SuccessDraft.jpg"),
   },
   {
+    id:4,
     title: "Anthony",
     image: require("../../../images/Links/SuccessDraft2.jpg"),
   },
 ];
 export const SuccessLinks = [
   {
+    id:1,
     title: "Anthony",
     image: require("../../../images/Links/SuccessDraft.jpg"),
   },
   {
+    id:2,
     title: "Anthony",
     image: require("../../../images/Links/SuccessDraft2.jpg"),
   },
   {
+    id:3,
     title: "Anthony",
     image: require("../../../images/Links/SuccessDraft.jpg"),
   },
   {
+    id:4,
     title: "Anthony",
     image: require("../../../images/Links/SuccessDraft2.jpg"),
   },
   {
+    id:5,
     title: "Anthony",
     image: require("../../../images/Links/SuccessDraft.jpg"),
   },
   {
+    id:6,
     title: "Anthony",
     image: require("../../../images/Links/SuccessDraft2.jpg"),
   },
   {
+    id:7,
     title: "Anthony",
     image: require("../../../images/Links/SuccessDraft.jpg"),
   },
   {
+    id:8,
     title: "Anthony",
     image: require("../../../images/Links/SuccessDraft2.jpg"),
   },
@@ -117,31 +134,37 @@ export const SuccessLinks = [
 
 export const TILES_INFO = [
   {
+    id:1,
     title: "School of Nursing, Health and Medical Technologies",
     img: home1,
     path: "https://www.costaatt.edu.tt/academics/school-of-nursing-health-and-environmental-sciences/",
   },
   {
+    id:2,
     title: "School of Business and Digital Technologies",
     img: home2,
     path: "https://www.costaatt.edu.tt/academics/school-of-business-and-information-technologies/",
   },
   {
+    id:3,
     title: "School of Liberal Arts, Education and Digital Humanities",
     img: home3,
     path: "https://www.costaatt.edu.tt/academics/school-of-liberal-arts-and-human-services/",
   },
   {
+    id:4,
     title: "Ken Gordon School of Creative and Digital Media",
     img: home4,
     path: "https://www.costaatt.edu.tt/academics/ken-gordon-school-of-journalism-and-communication-studies/",
   },
   {
+    id:5,
     title: "School of Environment, Circular Economy and Sustainablity",
     img: home5,
     path: "http://www.go.com",
   },
   {
+    id:6,
     title: "School of Workforce Enhancement and Development",
     img: home7,
     path: "https://www.costaatt.edu.tt/academics/school-of-continuing-education-and-lifelong-learning/",
@@ -150,6 +173,7 @@ export const TILES_INFO = [
 
 export const EVENTS = [
   {
+    id:1,
     title: "Sustainable Innovation 2023",
     image: events1,
     desc: "24th International Conference , Accelerating Sustainability in the Creative Economy and Creativve Industries",
@@ -160,6 +184,7 @@ export const EVENTS = [
     path: "https://www.costaatt.edu.tt/covid-19-update/",
   },
   {
+    id:2,
     title: "The Impact of AI on Education ",
     image: events2,
     desc: "The playful, illusory artworks and installations in Quantum Light - Beyond a Crisis of Perception are the material, investigations and outcomes of Petra Jacobs PhD research into the quantum nature of light.",
@@ -171,6 +196,7 @@ export const EVENTS = [
   },
 
   {
+    id:3,
     title: "Graduation Ceremony",
     image: home1,
     desc: "24th International Conference , Accelerating Sustainability in the Creative Economy and Creativve Industries",
@@ -279,6 +305,7 @@ export const FEATURED_NEWS = [
 
 export const schoolOptions = [
   {
+    id:1,
     name: "A Prospective Student",
     interestedChoice: [
       {
@@ -292,6 +319,7 @@ export const schoolOptions = [
   },
 
   {
+    id:2,
     name: "Current Student ",
     interestedChoice: [
       { name: "Studnet Life", route: "/costaattlife/studentorg" },
@@ -304,6 +332,7 @@ export const schoolOptions = [
   },
 
   {
+    id:3,
     name: "Parents and Families",
     interestedChoice: [
       { name: "Schools and Departments", route: "programmes/" },
@@ -312,6 +341,7 @@ export const schoolOptions = [
     ],
   },
   {
+    id:4,
     name: "Faculty and Staff",
     interestedChoice: [
       { name: "Portal", route: "/admissions/" },
@@ -322,6 +352,7 @@ export const schoolOptions = [
   },
 
   {
+    id:5,
     name: "Alumni",
     interestedChoice: [
       { name: "Upgrading Skills", route: "/" },
@@ -330,6 +361,7 @@ export const schoolOptions = [
     ],
   },
   {
+    id:6,
     name: "Prospective Client",
     interestedChoice: [
       { name: "Customized Training", route: "/programmes/workF" },

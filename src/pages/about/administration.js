@@ -1,15 +1,13 @@
 import React from 'react'
-import React from "react";
-import Layout from "../../components/Layouts/TopNavOnly_NoDropdown";
+
 import Head from "next/head";
 import standardStyles from "@/styles/main.module.scss";
 import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
 import Link from "next/link";
-import { FiBookOpen } from "react-icons/fi";
-import { IconContext } from "react-icons";
 
 
-const administration = () => {
+
+const Administration = () => {
   return (
     <>
       <Head>
@@ -27,4 +25,4 @@ const administration = () => {
   );
 }
 
-export default administration
+export default Administration

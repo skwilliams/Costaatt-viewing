@@ -2,7 +2,6 @@ import React from "react";
 import Head from "next/head";
 import HeadImage from "../../../../../components/PageComponents/HeadImage";
 import headImg from "../../../../../../images/Programmes/tester2.jpg";
-import Layout from "../../../../../components/PageWithSideNavComponents/Layout";
 import ProgStyles from "../../../../../styles/Programmes.module.scss";
 import { Accordion } from "@mui/material";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -24,7 +23,6 @@ import { staffdata } from "@/pages/programmes/schoolsOrig/busIT/ist/facultystaff
 import FacultyStaffCard from "../../../../../components/PageComponents/FacultyStaffDepCard";
 import image from "../../../../../../images/Programmes/visit-home-v2.jpg";
 import StudentResources from "@/components/PageComponents/StudentResources";
-import LoadPdf from 'src\components\PageComponents\LoadPdf.js';
 
 const index = () => {
   return (

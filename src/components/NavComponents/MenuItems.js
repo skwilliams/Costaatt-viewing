@@ -4,10 +4,12 @@ import navStyles from "../../styles/Nav.module.scss";
 import { useState } from "react";
 import Link from "next/link";
 
-const MenuItems = ({ items, isLastItem }) => {
-  const [showDropDown, setShowDropDown] = useState(false);
-
-  //pass this itemStyle to component
+const MenuItems = ({ items, isLastItem, toggleClick }) => {
+  const [dropdown, setDropdown] = useState(false);
+  const handleClick = () => {
+    setDropdown(!dropdown);
+    toggleClick();
+  };
   const itemStyle = isLastItem
     ? {
         backgroundColor: "#F58220",
@@ -19,18 +21,12 @@ const MenuItems = ({ items, isLastItem }) => {
   return (
     <div>
       {items.submenu ? (
-        <div
-          className={navStyles.navBarLinks}
-          onMouseEnter={() => setShowDropDown((prev) => !prev)}
-          onMouseLeave={() => setShowDropDown((prev) => !prev)}
-        >
-          {items.title}
-          {showDropDown ? <FaAngleUp /> : <FaAngleDown />}
-
-          {<DropDown items={items} />}
+        <div className={navStyles.navBarLinks} onClick={handleClick}>
+          <Link href={"#"}>{items.title}</Link>
+          {dropdown ? <FaAngleUp /> : <FaAngleDown />}
         </div>
       ) : (
-        <div className={navStyles.navBarLinks} style={itemStyle}>
+        <div style={itemStyle}>
           <Link href={items.path}> {items.title} </Link>
         </div>
       )}

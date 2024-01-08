@@ -23,6 +23,7 @@ const GradsSpeak = ({ graduate }) => {
   return (
     <>
       {graduate.map((grad) => (
+        <div key={grad.id} >
         <div className={GradStyle.gradcont}>
           <>
               <div className={GradStyle.video}>
@@ -37,6 +38,7 @@ const GradsSpeak = ({ graduate }) => {
             )}
             {grad.words && <div className={GradStyle.says}>{grad.words} </div>}
           </>
+        </div>
         </div>
       ))}
     </>

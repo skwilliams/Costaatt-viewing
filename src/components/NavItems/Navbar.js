@@ -1,16 +1,13 @@
-import React from "react";
+// Navbar.js
+import React, { useState } from "react";
 import TopNav from "./TopNav";
 import BottomNav from "./BottomNav";
 
 const Navbar = () => {
   return (
     <div>
-      <div>
-        <TopNav />
-      </div>
-      <div>
-        <BottomNav />
-      </div>
+      <TopNav />
+      <BottomNav />
     </div>
   );
 };

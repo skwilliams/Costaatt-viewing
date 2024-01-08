@@ -3,15 +3,17 @@ import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 import AdmisStyles from "@/styles/Admissions.module.scss";
-import FacultyStaffCard from "@/components/PageComponents/FacultyStaffDepCard";
+
+
 import awaitingFacultyStaff from "../../../public/images/schools/awaitingFacultyStaff.png";
 import SideNavOnlyLayout from "@/components/Layouts/SideNavOnly_NoTopOrDropdown";
 import TopNavOnlyLayout from "@/components/Layouts/TopNavOnly_NoDropdown";
-import telephone from "../../../public/images/admissions/telephone.svg";
-import email from "../../../public/images/admissions/email.svg";
-import counsellor from "../../../public/images/admissions/contact.svg";
-import Link from "next/link";
-import ContactAdmissions from "@/components/PageComponents/ContactSection";
+
+
+
+
+
+import ContactAdmissions from "@/components/PageComponents/ContactAdmissions";
 
 const admissioncounsellors = () => {
   return (

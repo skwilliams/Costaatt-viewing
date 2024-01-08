@@ -12,48 +12,36 @@ import awaitingimage from "../../../public/images/awaitingNewsEvent.png";
 
 import Image ,{StaticImageData} from "next/image";
 import { FiBookOpen } from "react-icons/fi";
-import {
-  PhoneCallback,
-  Sanitizer,
-  SignalCellularConnectedNoInternet4BarTwoTone,
-} from "@mui/icons-material";
-import { IconContext } from "react-icons";
-import { BsFileEarmarkArrowDown } from "react-icons/bs";
-import joinclub from "../../../public/images/costaattlife/joinclub.png";
-import startclub from "../../../public/images/costaattlife/startclub.jpg";
-import campus2 from "../../../public/images/costaattlife/campus 2.jpg";
-import studentamb from "../../../public/images/costaattlife/studentAmb.jpg";
-import { getEventsByDept } from "../../../public/data/eventsdata";
+
+
+
+
 import EventCardOrig from "@/components/PageComponents/EventCardOrig";
-import { stucouncildata } from "../costaattlife/studcouninfo";
-import StudentCouncilRep from "@/components/PageComponents/StudentCouncilRep";
+
 import ContactStudentLife from "@/components/PageComponents/ContactStudentLife";
-import caimans from"../../../public/images/costaattlife/caiman.jpg"
-import basketball  from "../../../public/images/costaattlife/basketball.jpg";
-import costaattteam  from "../../../public/images/costaattlife/costaatt team.jpg";
+
 import  cricket  from "../../../public/images/costaattlife/cricket.jpg";
-import cricket2  from "../../../public/images/costaattlife/cricket2.jpg";
+
 import  football  from "../../../public/images/costaattlife/football.jpg";
 import  netball  from "../../../public/images/costaattlife/netball.jpg";
 
-import  run4life  from "../../../public/images/costaattlife/run4life.jpg";
-import ReactPlayer from "react-player";
 
-import GradStyle from "../../styles/GradsSpeak.module.scss";
+
+
 import { useState } from "react";
 import { useEffect } from "react";
-import FacultyStaffCard from "@/components/PageComponents/FacultyStaffDepCard";
+
 import StaffCard from "@/components/PageComponents/StaffCard";
 
-const sports = () => {
+const Sports = () => {
 
 
-   const [hasWindow, setHasWindow] = useState(false);
+   const [ setHasWindow] = useState(false);
  useEffect(() => {
    if (typeof window !== "undefined") {
      setHasWindow(true);
    }
- }, []);
+ }, [setHasWindow]);
  const video = ""
   return (
     <>
@@ -246,4 +234,4 @@ const sports = () => {
   );
 };
 
-export default sports
+export default Sports
