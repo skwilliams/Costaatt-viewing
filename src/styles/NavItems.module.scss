@@ -46,7 +46,8 @@
   text-decoration: underline solid $color-comp3 4px !important;
 }
 
-.test2 {
+.topNavItems {
+  font-size: 1.78rem;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -83,7 +84,7 @@
   list-style: none;
 }
 .topNavdropDownSchoolLink {
-  font-size: 1.2rem;
+  font-size: 2rem;
   cursor: pointer;
 
   font-weight: 900;
@@ -101,6 +102,7 @@
   gap: 15px;
 }
 .topNavdropDownDeptLink a {
+  font-size: 1.5rem;
   padding: 10px;
   transition: all 0.9s;
   border-radius: 15px;
