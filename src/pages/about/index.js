@@ -22,13 +22,13 @@ import { useEffect } from "react";
 
 import president from "../../../public/images/about/president.jpg"
 
-const Index = () => {
-  const [ setHasWindow] = useState(false);
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setHasWindow(true);
-    }
-  }, [setHasWindow]);
+const index = () => {
+  // const [ setHasWindow] = useState(false);
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     setHasWindow(true);
+  //   }
+  // }, [setHasWindow]);
   return (
     <>
       <Head>
@@ -484,4 +484,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default index;

@@ -30,13 +30,13 @@ import { useEffect } from "react";
 const Ataglance = () => {
 
 
-  const [setHasWindow] = useState(false);
+  // const [setHasWindow] = useState(false);
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setHasWindow(true);
-    }
-  }, [setHasWindow]);
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     setHasWindow(true);
+  //   }
+  // }, [setHasWindow]);
 
 
  

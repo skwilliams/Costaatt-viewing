@@ -3,7 +3,9 @@ import Link from "next/link";
 import Head from "next/head";
 import HeadImage from "@/components/PageComponents/HeadImage";
 
-import  facultyStaffheader from "public/images/facultyStaffheader.jpg";
+import  facultyStaffheader from "../../public/images/facultyStaffheader.jpg"
+
+
 import standardStyles from "@/styles/main.module.scss";
 
 

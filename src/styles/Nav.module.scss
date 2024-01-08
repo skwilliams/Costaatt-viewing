@@ -99,13 +99,27 @@
   display: flex;
   padding: 5px 30px;
   justify-content: space-between;
-  background-image: linear-gradient(
+  // background-image: linear-gradient(
+  //   to bottom right,
+  //   rgb(104, 91, 199),
+  //   rgb(72, 63, 138)
+  // );
+  // color: white;
+
+
+
+    background-image: linear-gradient(
     to bottom right,
-    rgb(104, 91, 199),
-    rgb(72, 63, 138)
+    $color-primary,
+    $color-primary-dark
   );
   color: white;
+
+
+
 }
+
+
 
 .centerNav {
   display: flex;
@@ -118,6 +132,11 @@
   // background-color: #D5CABD;
   margin: 0;
 }
+
+
+
+
+
 .centerNav h2 {
   font-size: 4rem;
 }

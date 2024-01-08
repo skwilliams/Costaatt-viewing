@@ -1,5 +1,5 @@
 import React from 'react';
-import LoadPdf from 'src/components/PageComponents/LoadPdf.js';
+import LoadPdf from '../components/PageComponents/LoadPdf'
 
 const PdfPage = () => {
   return (
