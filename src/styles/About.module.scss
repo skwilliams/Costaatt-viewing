@@ -63,8 +63,9 @@
   clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
   width: 200px;
   height: 200px;
-  padding: 3rem 3rem;
-  font-size: $default-font-size;
+  padding: 7rem 3rem 3rem 3rem;
+  
+  font-size:1.6rem;
   color: white;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
   transition: transform 0.3s;
@@ -122,6 +123,8 @@
       background-color: $cirEcom-dark;
     }
   }
+
+
 
 }
 
