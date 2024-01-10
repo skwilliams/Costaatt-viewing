@@ -4,17 +4,11 @@ import Head from "next/head";
 import standardStyles from "@/styles/main.module.scss";
 import AboutStyles from "@/styles/About.module.scss";
 import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
-import { useState } from "react";
-import { useEffect } from "react";
+// import { useState } from "react";
+// import { useEffect } from "react";
 
 
 const History = () => {
-  const [ setHasWindow] = useState(false);
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setHasWindow(true);
-    }
-  }, [setHasWindow]);
 
   return (
     <>
