@@ -1,6 +1,7 @@
 import Head
  from "next/head";
  import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
+ import AdminStyles from "@/styles/Admissions.module.scss"
 
  import React from 'react'
  

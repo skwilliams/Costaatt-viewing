@@ -7,6 +7,7 @@ const schooldata = () => {
 }
 
 export default schooldata
+
 export const schools = [
   {
     name: "School of Business and Digital Technologies",

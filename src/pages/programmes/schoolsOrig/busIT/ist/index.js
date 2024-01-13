@@ -112,7 +112,7 @@ const index = () => {
       </section>
       <section id="contact" className={DeptStyles.sectionContact}>
         <div className={DeptStyles.contactcard}>
-          <ContactSideNav
+          {/* <ContactSideNav
             btn1txt="Visit"
             btn2txt="Apply"
             btn3txt="Request Info"
@@ -121,7 +121,7 @@ const index = () => {
             tel="625-5030 ext 2222"
             // mailto="mcharles@costaatt.edu.tt "
             email="mcharles@costtatt.edu.tt"
-          />
+          /> */}
         </div>
       </section>
       <section id="happening" className={DeptStyles.sectionWhatsup}>

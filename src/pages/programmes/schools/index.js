@@ -99,7 +99,8 @@ The Ken Gordon School of Communication Creative and Digital Media’s dedicated,
               <ul className={ProgStyles.areasofstudyul}>
                 <li className={ProgStyles.areasofstudyli}>
                   {" "}
-                  <Link href="#">District Health Visiting</Link>
+                  <Link href="#" 
+                  >District Health Visiting</Link>
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
                   {" "}
@@ -315,7 +316,7 @@ The Ken Gordon School of Communication Creative and Digital Media’s dedicated,
               <p className={ProgStyles.applytext}>
                 Speak to an Admission Councillor
               </p>
-              <Link className={ProgStyles.goto} href="/admissions/contactcoun">
+              <Link className={ProgStyles.goto} href="/">
                 {" "}
                 Book an appointment with a councillor →
               </Link>

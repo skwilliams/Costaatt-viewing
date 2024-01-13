@@ -30,7 +30,7 @@ const Collegecore = () => {
     Math: false,
     Humanities: false,
   });
-  const [disciplines, setDisciplines] = useState(collegecoredata);
+  const [disciplines, setDisciplines] = useState(collegecore);
 
   useEffect(() => {
     const hasFiltersChanged = Object.keys(disciplineFilters).some(
@@ -55,7 +55,7 @@ const Collegecore = () => {
       );
       finalResult = filteredDisciplines;
     } else {
-      finalResult = collegecoredata;
+      finalResult = collegecore;
     }
     setDisciplines(finalResult);
   }, [disciplineFilters]);
@@ -93,7 +93,7 @@ const Collegecore = () => {
             <div>
               <SearchCourse
                 handleSearchSubmit={handleSearchSubmit}
-                DATA={collegecoredata}
+                DATA={collegecore}
               />
             </div>
             <p className={CardStyles.sidenavtitle}> by Discipline</p>
