@@ -1,12 +1,13 @@
 import React from 'react'
 
-const schooldata = () => {
+const dataforschools = () => {
   return (
     <div>schooldata</div>
+    <p>Changed schooldata to dataforschools</p>
   )
 }
 
-export default schooldata
+export default dataforschools;
 export const schools = [
   {
     sobdt: {

@@ -1,3 +1,12 @@
+import React from 'react'
+
+const facultystaffdata = () => {
+  return (
+    <div>facultystaffdata</div>
+  )
+}
+
+export default facultystaffdata
 export const staffdata = [
   {
     photo: require("../../../../../images/Programmes/deanavatar.jpg"),

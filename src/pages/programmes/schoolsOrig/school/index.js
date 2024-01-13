@@ -8,7 +8,7 @@ import DeanStyles from "../../../../styles/Dean.module.scss";
 import BusImg from "../../../../../images/Links/home2.png";
 
 import { usePathname } from "next/navigation";
-import { schools } from "./schooldata.js"; //*******/
+import { schools } from "./dataforschools.js"; //*******/
 
 import { Accordion } from "@mui/material";
 import AccordionSummary from "@mui/material/AccordionSummary";

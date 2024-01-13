@@ -1,3 +1,12 @@
+import React from 'react'
+
+const allprogrammedata = () => {
+  return (
+    <div>allprogrammedata</div>
+  )
+}
+
+export default allprogrammedata
 export const coursedata = [
   {
     photo: require("../../../images/Links/courses nursing.jpg"),

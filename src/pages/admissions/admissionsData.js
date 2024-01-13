@@ -1,3 +1,12 @@
+import React from 'react'
+
+const admissionsData = () => {
+  return (
+    <div>admissionsData</div>
+  )
+}
+
+export default admissionsData
 export const supportDocA = [
   {
     Nationality: "TT Nationals",
