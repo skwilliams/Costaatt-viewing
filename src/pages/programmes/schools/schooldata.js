@@ -1,3 +1,12 @@
+import React from 'react'
+
+const schooldata = () => {
+  return (
+    <div>schooldata</div>
+  )
+}
+
+export default schooldata
 export const schools = [
   {
     name: "School of Business and Digital Technologies",
