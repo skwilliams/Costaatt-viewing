@@ -658,10 +658,11 @@
         "name": "Natural and Life Sciences",
         "headImage": "/images/schools/departments/NLSCheader.png",
         "image": "/images/schools/departments/NLSCsmall.png",
+        "mission":"Welcome to the Department of Natural and Life Sciences at COSTAATT! We are here to provide the foundational knowledge for students curious about careers in biological, medical, and environmental sciences. Through dynamic learning experiences, we cultivate scientific exploration of sustainable and nature-inspired solutions that enhance our community's health, strengthen ecosystems, and promote a thriving circular economy. Our experienced faculty and well-equipped laboratories are here to guide you through an educational journey as you discover your place in the world of science and sustainability. Prepare to get your hands dirty as we step beyond the classroom to explore real-world problems and scenarios as you gain the skills and knowledge to be a driver for change in the world of science and sustainability. Whether your aspirations involve research, healthcare, environmental advocacy, or other aspects of science, the Department of Natural and Life Sciences is committed to helping you realise your potential as you carve a brighter future for yourself, your family and your community. Let us embark on this scientific adventure together and shape a brighter, greener future for all.",
         "summary": "Graduates from the Department of Natural and Life Sciences have used the Associate of Science and the Bachelor of Science in Biology as foundations for careers in environmental science, marine biology, microbiology, medicine, dentistry, and so much more. Come, Let us open the doors of science for you.",
-        "coreValues": [],
+        "coreValues": ["Scientific Excellence","Accessible Education", "Community Engagement", "Ecosystem Harmony", "Student-Cetered Learning", "Circular Economy", "Innovative Technology Integration"],
         "shortName": "Natural and Life Sciences",
-        "contacts": [],
+        "contacts": ["jdurham", "njoseph", "sgeorge"],
         "dept_code": "NLSC",
         "programmes": [{
             "prog_code": "BIOL_BSC",
@@ -675,7 +676,35 @@
             "prog_elect_credits": 9,
             "prog_supp_credits": 10,
             "prog_description": "The working environment contains many hazards that threatens the health, safety and well-being of workers on a daily basis. Such hazards can lead to injury, sickness, disease and even death. The Occupational Health and Safety discipline was created to effectively manage these hazard using elements from chemistry, physics, engineering, biology and even psychology. The multi-disciplinary nature of health and safety is a reflection of the complexities in understanding and effectively addressing occupational hazards. Students pursuing the Bachelor of Science degree in Occupational Safety and Health will acquire the necessary skills to identify, evaluate and control typical occupational hazards found in the working environment."
-          }]
+          },
+          {
+            "prog_code": "BIOL_ASC",
+            "prog_shortname": "ascBIOL",
+            "prog_name": "ASc Biology",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "NLSC",
+            "prog_major_credits": 33,
+            "prog_core_credits": 15,
+            "prog_elect_credits":6,
+            "prog_supp_credits": 8,
+            "prog_description": "The working environment contains many hazards that threatens the health, safety and well-being of workers on a daily basis. Such hazards can lead to injury, sickness, disease and even death. The Occupational Health and Safety discipline was created to effectively manage these hazard using elements from chemistry, physics, engineering, biology and even psychology. The multi-disciplinary nature of health and safety is a reflection of the complexities in understanding and effectively addressing occupational hazards. Students pursuing the Bachelor of Science degree in Occupational Safety and Health will acquire the necessary skills to identify, evaluate and control typical occupational hazards found in the working environment."
+          },
+           {
+            "prog_code": "CERT_PREMED",
+            "prog_shortname": "certPreMed",
+            "prog_name": "Certificate in Premedical Sciences",
+            "prog_level": "Certificate",
+            "prog_del_mode": "Blended",
+            "dept_code": "NLSC",
+            "prog_major_credits": 39,
+            "prog_core_credits": 0,
+            "prog_elect_credits":0,
+            "prog_supp_credits": 0,
+            "prog_description": "The working environment contains many hazards that threatens the health, safety and well-being of workers on a daily basis. Such hazards can lead to injury, sickness, disease and even death. The Occupational Health and Safety discipline was created to effectively manage these hazard using elements from chemistry, physics, engineering, biology and even psychology. The multi-disciplinary nature of health and safety is a reflection of the complexities in understanding and effectively addressing occupational hazards. Students pursuing the Bachelor of Science degree in Occupational Safety and Health will acquire the necessary skills to identify, evaluate and control typical occupational hazards found in the working environment."
+          }
+          
+        ]
       }
     ]
   },

@@ -1,17 +1,17 @@
-import React from "react";
-import { useState, useEffect } from "react";
-import CardStyles from "../../styles/ProgCard.module.scss";
-import Head from "next/head";
-import { FormGroup, FormControlLabel, Checkbox } from "@mui/material";
+import React from 'react';
+import { useState, useEffect } from 'react';
+import CardStyles from '../../styles/ProgCard.module.scss';
+import Head from 'next/head';
+import { FormGroup, FormControlLabel, Checkbox } from '@mui/material';
 
-import Link from "next/link";
-import Layout1 from "../../components/Layouts/TopNavOnly_NoDropdown";
-import SearchCourse from "@/components/PageComponents/SearchCourse";
-import ProgCard from "../../components/PageComponents/ProgCard";
-import ProgramCard from "@/components/PageComponents/ProgramCard";
+import Link from 'next/link';
+import Layout1 from '../../components/Layouts/TopNavOnly_NoDropdown';
+import SearchCourse from '@/components/PageComponents/SearchCourse';
+import ProgCard from '../../components/PageComponents/ProgCard';
+import ProgramCard from '@/components/PageComponents/ProgramCard';
 //import { coursedata } from './allprogrammedata';
-import SCHOOLDATA from "../../../data/schooldata.json";
-import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
+import SCHOOLDATA from '../../../data/schooldata.json';
+import HeaderNoImage from '@/components/PageComponents/HeaderNoImage';
 
 const Allprogrammes = () => {
   // const stumpNames = SCHOOLDATA.map((school) => school.nameStump);
@@ -93,20 +93,20 @@ const Allprogrammes = () => {
       finalResult = formattedPrograms;
     }
     setAllPrograms(finalResult);
-  }, [schoolFilters, levelFilters,allPrograms,formattedPrograms]);
+  }, [schoolFilters, levelFilters, allPrograms, formattedPrograms]);
 
   const { busIT, liberal, nursing, enviro, kengord, workF } = schoolFilters;
   const { Bachelor, Associate, Diploma, Certificate } = levelFilters;
 
   const handleSchoolFilter = (event) => {
-    console.log("Event", event.target.name, event.target.checked);
+    console.log('Event', event.target.name, event.target.checked);
     setSchoolFilters({
       ...schoolFilters,
       [event.target.name]: event.target.checked,
     });
   };
   const handleLevelFilter = (event) => {
-    console.log("Event", event.target.name, event.target.checked);
+    console.log('Event', event.target.name, event.target.checked);
     setLevelFilters({
       ...levelFilters,
       [event.target.name]: event.target.checked,
@@ -116,6 +116,13 @@ const Allprogrammes = () => {
   const handleSearchSubmit = (result) => {
     setAllPrograms(result);
   };
+
+  const isBrowser = () => typeof window !== 'undefined'; //The approach recommended by Next.js
+
+  function scrollToTop() {
+    if (!isBrowser()) return;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 
   return (
     <>
@@ -133,7 +140,7 @@ const Allprogrammes = () => {
             <div>
               <SearchCourse handleSearchSubmit={handleSearchSubmit} />
             </div>
-            <p className={CardStyles.sidenavtitle}> by Schools</p>{" "}
+            <p className={CardStyles.sidenavtitle}> by Schools</p>{' '}
             <FormGroup>
               <div className={CardStyles.sidenavlink}>
                 <FormControlLabel
@@ -259,6 +266,9 @@ const Allprogrammes = () => {
             );
           })}
         </section>
+        <button className="fixed bottom-0 right-0 p-10" onClick={scrollToTop}>
+          <FaArrowUp />
+        </button>
       </div>
     </>
   );

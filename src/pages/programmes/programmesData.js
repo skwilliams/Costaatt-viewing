@@ -355,24 +355,30 @@ const allCourses = [
     credits: "3"
   },
   {
+    coursecode: "CHEM 214",
+    coursename: "Organic Chemistry I - Lab",
+    credits: "1"
+  },
+  {
     coursecode: "CHEM 205",
     coursename: "Organic Chemsitry II",
     credits: "3"
   },
   {
     coursecode: "CHEM 215",
-    coursename: "Organic Chemistry I- Lab",
-    credits: "1"
-  },
-  {
-    coursecode: "CHEM 216",
     coursename: "Organic Chemistry II- Lab",
     credits: "1"
   },
+  
   {
     coursecode: "CLTR 120",
     coursename: "Introduction to the Culture of Trinidad and Tobago",
     credits: "1"
+  },
+  {
+    coursecode: "COMM 104",
+    coursename: "Language and Communication Skills",
+    credits: "3"
   },
   {
     coursecode: "COMM 105",
@@ -2356,6 +2362,7 @@ const allCourses = [
     coursename: "Clinical Biochemistry II",
     credits: "4"
   },
+  
   {
     coursecode: "MDLT 340",
     coursename: "Immunology / Serology",
@@ -5446,21 +5453,124 @@ const programmes = [
       {
         position: "Not Available",
         figure: "Not Available",
+      }
+      
+    ],
+    semester: ["September", "January"],
+    campus: ["City Campus", "South Campus"],
+    duration: ["Full-time: 3 semesters", "Part-time: 3 semesters"],
+    mode: ["Blended"],
+    GATE: ["Approved"],
+    specialMatricReqs: [],
+  },
+  {
+    prog_shortname: "ascBiol",
+    majorcourses: [
+      "BIOL 121",
+      "BIOL 122",
+      "BIOL 198",
+      "BIOL 231",
+      "BIOL 241",
+      "BIOL 244",
+      "BIOL 256",
+      "BIOL 281",
+      "BIOL 291",
+      "SCIE 199",
+      "SCIE 299",
+                         
+    ],
+    specialcourses: [],
+    electivecourses: ["XXXX ###", "XXXX ###"],
+    corecourses: ["FYEC 100", "LIBS 130", "WRIT 117", "MATH 117", "COMM 118"],
+    supportcourses: ["CHEM 131", "CHEM 132"],
+    totalcredits: 62,
+    salaries: [
+      {
+        position:"School Laboratory Technician/Assistant",
+        figure: "$6,000.00",
       },
       {
-        position: "Not Available",
-        figure: "Not Available",
+        position: "Secondary or Primary School Teacher",
+        figure: "$8,000.00",
+      }
+      
+    ],
+    semester: ["September", "January"],
+    campus: ["City Campus", "South Campus", "Chaguanas Campus"],
+    duration: ["Full-time: 5 semesters", "Part-time: 9 semesters"],
+    mode: ["Blended"],
+    GATE: ["Approved"],
+    specialMatricReqs: [],
+  },
+     {
+    prog_shortname: "bscBIOL",
+    majorcourses: [
+      "BIOL 121",
+      "BIOL 122",
+      "BIOL 198",
+      "BIOL 231",
+      "BIOL 241",
+      "BIOL 244",
+      "BIOL 256",
+      "BIOL 281",
+      "BIOL 291",
+      "BIOL 433",
+      "BIOL 455",
+      "BIOL 473",
+      "SCIE 199",
+      "SCIE 299",
+      "SCIE 399",
+      "SCIE 499",
+                    
+    ],
+    specialcourses: [],
+    electivecourses: ["XXXX ###","XXXX ###", "XXXX ###", "XXXX ###","XXXX ###"],
+    corecourses: ["FYEC 100", "LIBS 130", "WRIT 117", "MATH 117", "COMM 118","FYEC 400", "SCIE 201", "XXXX ###","XXXX ###","XXXX ###","XXXX ###",],
+    supportcourses: ["CHEM 131", "CHEM 132", "CHEM 208", "CHEM 204", "CHEM 205", "CHEM 215", "CHEM 214", "PHYS 121","PHYS 122", "MATH 118", "MATH 160", "XXXX ###"],
+    totalcredits: 120,
+    salaries: [
+      {
+        position:"School Laboratory Technician/Assistant",
+        figure: "$6,000.00",
       },
       {
-      position: "Not Available",
-        figure: "Not Available",
-      },
+        position: "Secondary or Primary School Teacher",
+        figure: "$8,000.00",
+      }
+      
+    ],
+    semester: ["September", "January"],
+    campus: ["City Campus", "South Campus", "Chaguanas Campus"],
+    duration: ["Full-time: 11 semesters", "Part-time: 17 semesters"],
+    mode: ["Blended"],
+    GATE: ["Approved"],
+    specialMatricReqs: [],
+  },
+  {
+    prog_shortname: "certPreMed",
+    majorcourses: [
+      "BIOL 121",
+      "CHEM 131",
+      "MATH 118",
+      "BIOL 122",
+      "CHEM 132",
+      "MATH 160",
+      "CHEM 204",
+      "CHEM 214",
+      "PHYS 121",
+      "CHEM 205",
+      "CHEM 215",
+      "PHYS 122",
+                        
+    ],
+    specialcourses: [],
+    electivecourses: [],
+    corecourses: [],
+    supportcourses: [],
+    totalcredits: 39,
+    salaries: [
       {
-        position: "Not Available",
-        figure: "Not Available",
-      },
-      {
-        position: "Not Available",
+        position:"Not Available",
         figure: "Not Available",
       },
       {
@@ -5471,14 +5581,138 @@ const programmes = [
         position: "Not Available",
         figure: "Not Available",
       }
+     
     ],
     semester: ["September", "January"],
     campus: ["City Campus", "South Campus"],
-    duration: ["Full-time: 3 semesters", "Part-time: 3 semesters"],
+    duration: ["Full-time: 4 semesters", "Part-time: 4 semesters"],
     mode: ["Blended"],
     GATE: ["Approved"],
     specialMatricReqs: [],
-  }
+  },
+  {
+    prog_shortname: "certPharm",
+    majorcourses: [
+      "PHAR 113",
+      "PHAR 121",
+      "PHAR 110",
+      "PHAR 138",
+      "PHAR 123",
+      "PHAR 133",
+                        
+    ],
+    specialcourses: [],
+    electivecourses: [],
+    corecourses: ["COMM 104", "MATH 108", "MKTG 125"],
+    supportcourses: [],
+    totalcredits: 27,
+    salaries: [
+      {
+        position:"Pharmacy Assistant",
+        figure: "Not Available",
+      }
+            
+    ],
+    semester: ["September", "January"],
+    campus: ["Chaguanas Campus"],
+    duration: ["Full-time: N/A", "Part-time: 18 months"],
+    mode: ["Blended"],
+    GATE: ["Approved"],
+    specialMatricReqs: [],
+  },
+  {
+    prog_shortname: "certPhlebotomy",
+    majorcourses: [
+      "PHLEB 101",
+      "PHLEB 102",
+      "PHLEB 103",
+      "PHLEB 104",
+      "PHLEB 105",
+      "PHLEB 106",
+                        
+    ],
+    specialcourses: [],
+    electivecourses: [],
+    corecourses: [],
+    supportcourses: [],
+    totalcredits: 18,
+    salaries: [
+      {
+        position:"Phlebotomist",
+        figure: "Not Available",
+      },
+      {
+        position:"Point of Care Tester",
+        figure: "Not Available",
+      }
+            
+    ],
+    semester: ["September", "January"],
+    campus: ["Chaguanas Campus"],
+    duration: ["Full-time: N/A", "Part-time: 2 Semesters"],
+    mode: ["Blended"],
+    GATE: ["Approved"],
+    specialMatricReqs: [],
+  },
+  {
+    prog_shortname: "aasMlt",
+    majorcourses: [
+      "MDLT 120",
+      "MDLT 121",
+      "MDLT 125",
+      "MDLT 134",
+      "MDLT 297",
+      "MDLT 298",
+      "HLED 320",
+      "MDLT 340",
+      "MDLT 341",
+      "MDLT 350",
+      "MDLT 353",
+      "MDLT 441",
+      "MDLT 344",
+      "MDLT 345",
+      "MDLT 346",
+      "MDLT 444",
+      "MDLT 445",
+      "MDLT 446",
+                              
+    ],
+    specialcourses: [],
+    electivecourses: [],
+    corecourses: ["FYEC 100", "LIBS 130", "WRIT 117", "MATH 117", "COMM 118"],
+    supportcourses: ["HLED 100", "MATH 121", "BIOL 241", "BIOL 242", "BIOL 173", "BIOL 174"],
+    totalcredits: 73,
+    salaries: [
+      {
+        position:"Laboratory Assistant",
+        figure: "",
+      },
+      {
+        position: "Medical Laboratory Technician",
+        figure: "",
+      },
+      {
+        position: "Sales/ Technical Representative",
+        figure: "",
+      },
+      {
+        position: "Laboratory Administration",
+        figure: "",
+      },
+      {
+        position: "Medical Laboratory Educator",
+        figure: "",
+      }
+      
+    ],
+    semester: ["September", "January"],
+    campus: ["Chaguanas Campus", "South Campus"],
+    duration: ["Full-time: 5 semesters", "Part-time: 8 semesters"],
+    mode: ["Blended"],
+    GATE: ["Approved"],
+    specialMatricReqs: [],
+  },
+  
 ];
 
 export const getCourses = function (courseList) {
