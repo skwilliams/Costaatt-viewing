@@ -1,6 +1,6 @@
 import React from 'react'
 
-const dataforschools = () => {
+const schooldata = () => {
   return (
     <>
      <div>schooldata</div>
@@ -12,7 +12,8 @@ const dataforschools = () => {
   )
 }
 
-export default dataforschools;
+export default schooldata;
+
 export const schools = [
   {
     sobdt: {
