@@ -1,8 +1,8 @@
-@import "./abstracts/variables";
+@import "abstracts/variables";
 
 
 .courseName{
-    font-family:"Bodoni", Helvitica;
+    font-family:$default-font-family;;
     font-size:2.5rem;
     color:white;
     margin: 0 0 2rem 0 ;
@@ -143,7 +143,7 @@ th {
   /* background-color: red; */
   color: #222222;
 
-  font-family: "Bodoni";
+  font-family: $default-font-family;
   text-transform: capitalize;
 
   backface-visibility: hidden;
@@ -324,7 +324,7 @@ th {
 
   color: #222222;
 
-  font-family: "Bodoni";
+  font-family: $default-font-family;
   text-transform: capitalize;
 
   backface-visibility: hidden;

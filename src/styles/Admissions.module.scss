@@ -54,7 +54,7 @@
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: 0.4rem;
-  // font-family: "Roboto", serif;
+  font-family: $default-font-family;
   text-transform: capitalize;
   z-index: 2;
   span{
@@ -74,7 +74,7 @@
 
 .sectiontext {
   font-size: 2.5rem;
-  font-family: "Bodoni";
+  font-family: $default-font-family;
   font-weight: 500;
   text-align: center;
   margin: 2em;
@@ -94,7 +94,7 @@
 }
 .sectiontextleftfirst {
   font-size: 2.5rem;
-  font-family: "Bodoni";
+  font-family: $default-font-family;;
   font-weight: 700;
   text-align: left;
     text-transform:capitalize;
@@ -451,7 +451,7 @@
 
 .entryreq {
   font-size: 1.25rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $default-font-family;
 
   .list {
     margin-left: 2rem;
