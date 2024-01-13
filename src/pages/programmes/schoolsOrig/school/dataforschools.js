@@ -2,8 +2,13 @@ import React from 'react'
 
 const dataforschools = () => {
   return (
-    <div>schooldata</div>
+    <>
+     <div>schooldata</div>
     <p>Changed schooldata to dataforschools</p>
+    
+    
+    </>
+   
   )
 }
 
