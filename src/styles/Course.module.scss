@@ -10,7 +10,7 @@
 }
 .headingsecondary{
     font-size: 1.5rem;
-    font:"Lato",Arial;
+    font-family: $default-font-family;
     margin:1.5rem 0;
     font-weight: bold;
 }
@@ -83,7 +83,7 @@
     .desc{
         font-size:1.25rem;
         text-align: justify;
-        font-family: "Lato" ,Arial, Helvetica, sans-serif;
+        font-family:$default-font-family;
         margin: 3rem 0;
        
     }
@@ -121,7 +121,7 @@
 
 
 .careerstable {
-  font-family: Lato;
+  font-family:  $default-font-family;
   font-size: 1.25rem;
   border-collapse: collapse;
   width:100%;
@@ -282,7 +282,7 @@ th {
 
 .sectionRequirements{
   font-size:1.15rem;
-  font-family: "Lato";
+  font-family: $default-font-family;
    margin-right:2rem;
      padding:0;
      margin-bottom:6rem;
@@ -292,7 +292,7 @@ th {
   .text{
     font-size:1.15rem;
     text-align: justify;
-      font-family: "Lato";
+      font-family: $default-font-family;
       line-height: 2;
       
   }
@@ -303,7 +303,7 @@ th {
 
  
 .careerstable {
-  font-family: "Lato";
+  font-family: $default-font-family;
   font-size: 2rem;
   border-collapse: collapse;
   width:100%;
@@ -359,7 +359,7 @@ th {
   .text{
     font-size:1.1rem;
     text-align: justify;
-      font-family: "Lato";
+      font-family: $default-font-family;
       line-height: 2;
       
 

@@ -42,7 +42,7 @@
   overflow-y: scroll;
   // background-color: $grey-light;
   background-color: white;
-  font-family: "Lato", "sans serif";
+  font-family: $default-font-family;
 }
 .sidenav::-webkit-scrollbar {
   display: none;
@@ -98,7 +98,7 @@
 .main {
   flex-grow: 1;
   font-size: 1.2rem; /* Increased text to enable scrolling */
-  font-family: "Lato", "sans serif";
+  font-family: $default-font-family;
   color: $grey-light;
 }
 
@@ -150,7 +150,7 @@
   font-size: 1.5rem;
   font-weight: 600;
   margin-left: 0;
-  font-family: "Lato";
+  font-family: $default-font-family;
   color: $orange;
   // margin-bottom:1rem;
   // padding-bottom: 2rem;
@@ -173,7 +173,7 @@
   color: black;
   line-height: 2;
   text-align: left;
-  font-family: "Lato";
+  font-family: $default-font-family;
   padding-bottom: 1rem;
 }
 .cardtext {

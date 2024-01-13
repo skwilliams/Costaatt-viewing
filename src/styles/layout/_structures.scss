@@ -31,12 +31,13 @@
 
   ul {
     margin-left: 2em;
-    font-size:1.75rem;
+    font-size:1.8rem;
 
     li {
       list-style-type: square;
       margin: .6em 0;
       line-height: 1.7 ;
+       font-size:1.8rem;
     }
 
 
@@ -97,7 +98,7 @@ div .bullets2 {
 
 
   table.academiccalendar {
-    font-family: "Lato";
+    font-family: $default-font-family;
     font-size: 1.25rem;
     border-collapse: collapse;
     width: 700px;

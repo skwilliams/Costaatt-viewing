@@ -53,7 +53,7 @@
   padding: 2.5rem 0 0 0;
   border-top: 0 $whiteback solid;
   h2 {
-    font-family: "Lato";
+    font-family: $default-font-family;
     box-shadow: 2px 2px 5px $grey;
 
     font-size: 3.44rem;
@@ -237,7 +237,7 @@
 }
 
 .ourSchoolsText {
-  font-family: "Lato", sans-serif;
+  font-family: $default-font-family;
   font-size: 21.76rem;
   line-height: 2.5;
   text-align: justify;
