@@ -10,7 +10,7 @@ import Head
   <Head>
     <title> GATE </title>
   </Head>
-  <HeaderNoImage caption="How to Pay " />
+  <HeaderNoImage caption="GATE" />
   <section id="intro" className={AdminStyles.sectionIntro}>
     <p className={AdminStyles.text}>
       {" "}
