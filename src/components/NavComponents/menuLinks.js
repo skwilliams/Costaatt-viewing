@@ -328,7 +328,7 @@ export const mainNavLinks = [
 
       {
         title: "History",
-        path: "/about/history",
+        path: "/about/History",
       },
       {
         title: "Accreditation And Quality Assurance",

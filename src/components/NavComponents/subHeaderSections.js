@@ -170,7 +170,7 @@ export const subHeaderSections = {
     "Meet Our Staff": "staff",
     Contact: "contact",
   },
-  history:{
+  History:{
     "Mission":"mission",
     "National":"national",
     "History":"achieve",
@@ -213,7 +213,16 @@ export const subHeaderSections = {
     "Translation ":"translate",
     "Interpretation Services":"interpret",
     "Contact ":"contact"
+  },
+  facultystaff :{
+    "Popular Resources":"resources",
+    "Spotlight":"spotlight",
+    "In the News":"news",
+    "Upcoming Events":"upevents",
+    "Careers":"careers",
+
   }
+  
   
 
 };
