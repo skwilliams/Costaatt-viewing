@@ -6,7 +6,7 @@ import Head from "next/head";
 
 import Link from "next/link";
 import SearchCourse from "@/components/PageComponents/SearchCourse";
-import { collegecoredata } from "./collegecoredata";
+import { collegecore } from "./collegecoredata";
 import CollegeCoreCard from "@/components/PageComponents/CollegeCoreCard";
 import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
 
@@ -36,7 +36,7 @@ const Collegecore = () => {
     const hasFiltersChanged = Object.keys(disciplineFilters).some(
       (filter) => disciplineFilters[filter] === true
     );
-    let finalResult = collegecoredata;
+    let finalResult = collegecore;
     console.log("Final Results", finalResult);
     if (hasFiltersChanged) {
       console.log("Filter has changed");

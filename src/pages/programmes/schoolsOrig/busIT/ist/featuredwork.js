@@ -1,3 +1,12 @@
+import React from 'react'
+
+const featuredwork = () => {
+  return (
+    <div>featuredwork</div>
+  )
+}
+
+export default featuredwork
 export const features = [
   {
     id: 1,

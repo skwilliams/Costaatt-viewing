@@ -1,4 +1,14 @@
-export const collegecoredata = [
+import React from 'react'
+
+const collegecoredata = () => {
+  return (
+    <div>collegecoredata</div>
+  )
+}
+
+export default collegecoredata
+
+export const collegecore = [
   {
     discipline: 'Humanities ',
     courseCode: 'ANTH 250',

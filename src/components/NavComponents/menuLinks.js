@@ -289,7 +289,7 @@ export const mainNavLinks = [
       },
       {
         title: "Career Management",
-        path: "/costaattlife/careermgt",
+        path: "/costaattlife/Careermgt",
       },
       {
         title: "College Library",

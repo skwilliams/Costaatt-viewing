@@ -5,6 +5,15 @@
 //     <p className={style}>{para}</p>;
 //   });
 // }
+import React from 'react'
+
+const utilities = () => {
+  return (
+    <div>utilities</div>
+  )
+}
+
+export default utilities
 
 export function getProgrammes(level, data) {
   const _programmes = {
