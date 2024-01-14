@@ -316,7 +316,7 @@ The Ken Gordon School of Communication Creative and Digital Media's dedicated, q
               <p className={ProgStyles.applytext}>
                 Speak to an Admission Councillor
               </p>
-              <Link className={ProgStyles.goto} href="/">
+              <Link className={ProgStyles.goto} href="#">
                 {" "}
                 Book an appointment with a councillor →
               </Link>
@@ -333,7 +333,7 @@ The Ken Gordon School of Communication Creative and Digital Media's dedicated, q
                 {" "}
                 Ready to start your journey.
               </p>
-              <Link className={ProgStyles.goto} href="/admissions/applynow">
+              <Link className={ProgStyles.goto} href="/admissions/apply">
                 {" "}
                 Apply Now →
               </Link>

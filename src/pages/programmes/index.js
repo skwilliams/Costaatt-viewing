@@ -1,20 +1,20 @@
-import React from 'react';
-import ProgStyles from '../../styles/Programmes.module.scss';
-import Image from 'next/image';
-import Head from 'next/head';
-import Link from 'next/link';
-import HeadImage from '@/components/PageComponents/HeadImage';
+import React from "react";
+import ProgStyles from "../../styles/Programmes.module.scss";
+import Image from "next/image";
+import Head from "next/head";
+import Link from "next/link";
+import HeadImage from "@/components/PageComponents/HeadImage";
 import headImg from "../../../public/images/schools/overviewProgrammes header.jpg";
-import studyitems from '../../components/PageComponents/AreasStudyItems';
+import studyitems from "../../components/PageComponents/AreasStudyItems";
 
-import topclass from "../../../public/images/schools/topclassLect.png"
-import onlinelearnig from "../../../public/images/schools/onlineLearning.png"
-import workReady from "../../../public/images/schools/workreadyGrads.png"
-import creditTransfer from "../../../public/images/schools/creditTransfers.png"
-import collegeCore from "../../../public/images/schools/collegeCore.png"
-import affiliations from "../../../public/images/schools/affiliationsMou.png"
-import accredited from "../../../public/images/schools/accreditedprog.png"
-import standardStyles from "@/styles/main.module.scss"
+import topclass from "../../../public/images/schools/topclassLect.png";
+import onlinelearnig from "../../../public/images/schools/onlineLearning.png";
+import workReady from "../../../public/images/schools/workreadyGrads.png";
+import creditTransfer from "../../../public/images/schools/creditTransfers.png";
+import collegeCore from "../../../public/images/schools/collegeCore.png";
+import affiliations from "../../../public/images/schools/affiliationsMou.png";
+import accredited from "../../../public/images/schools/accreditedprog.png";
+import standardStyles from "@/styles/main.module.scss";
 
 const progoverview = () => {
   console.log(studyitems);
@@ -32,9 +32,8 @@ const progoverview = () => {
 
       <section id="overview" className={ProgStyles.sectionoverview}>
         <div className={ProgStyles.umargintopsmall}>
-          <h2 
-          
-             className={`${standardStyles.newsHeading} ${standardStyles.centertext} `}
+          <h2
+            className={`${standardStyles.newsHeading} ${standardStyles.centertext} `}
           >
             {" "}
             <span> Overview</span> of Programmes
@@ -64,7 +63,10 @@ const progoverview = () => {
               <p className={ProgStyles.bythenumberstext}>
                 In a wide range of areas
               </p>
-              <Link className={ProgStyles.explore} href="/programmes/undergrad">
+              <Link
+                className={ProgStyles.explore}
+                href="/programmes/allprogrammes"
+              >
                 {" "}
                 View Bachelor Degrees →
               </Link>
@@ -75,7 +77,10 @@ const progoverview = () => {
               <p className={ProgStyles.bythenumberstext}>
                 Prepare you for Bachelor Degrees
               </p>
-              <Link className={ProgStyles.explore} href="/programmes/associate">
+              <Link
+                className={ProgStyles.explore}
+                href="/programmes/allprogrammes"
+              >
                 {" "}
                 View Associate Degrees →
               </Link>
@@ -102,7 +107,10 @@ const progoverview = () => {
                 {" "}
                 knowledge packed & Quick
               </p>
-              <Link className={ProgStyles.explore} href="/programmes/diploma">
+              <Link
+                className={ProgStyles.explore}
+                href=" /programmes/allprogrammes"
+              >
                 {" "}
                 View All Diploma →
               </Link>
@@ -113,8 +121,9 @@ const progoverview = () => {
       </section>
       <section id="whychoose" className={ProgStyles.sectionwhychoose}>
         <div className={ProgStyles.umargintopsmall}>
-          <h2  className={`${standardStyles.newsHeading} ${standardStyles.centertext}`} 
-            >
+          <h2
+            className={`${standardStyles.newsHeading} ${standardStyles.centertext}`}
+          >
             <span> WHY </span> Choose Us{" "}
           </h2>
           <div className={ProgStyles.progGridCon}>
