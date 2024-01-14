@@ -1,14 +1,14 @@
-import React from 'react';
-import ProgStyles from '../../../styles/Programmes.module.scss';
-import visitus from '../../../../images/Programmes/visit-home-v2.jpg';
-import SchoolCard from '../../../components/PageComponents/SchoolCard';
-import SchoolImage from '../../../../images/Links/campus 1.jpg';
+import React from "react";
+import ProgStyles from "../../../styles/Programmes.module.scss";
+import visitus from "../../../../images/Programmes/visit-home-v2.jpg";
+import SchoolCard from "../../../components/PageComponents/SchoolCard";
+import SchoolImage from "../../../../images/Links/campus 1.jpg";
 
-import Link from 'next/link';
-import Image from 'next/image';
-import Head from 'next/head';
-import HeadImage from '@/components/PageComponents/HeadImage';
-import headImg from '../../../../images/Programmes/tester2.jpg';
+import Link from "next/link";
+import Image from "next/image";
+import Head from "next/head";
+import HeadImage from "@/components/PageComponents/HeadImage";
+import headImg from "../../../../images/Programmes/tester2.jpg";
 
 const schools = () => {
   return (
@@ -94,13 +94,12 @@ The Ken Gordon School of Communication Creative and Digital Media's dedicated, q
         <div className={ProgStyles.umargintopsmall}>
           <p className={ProgStyles.headingprimary}> Areas of Study </p>
           <p className={ProgStyles.umargintopsmall}></p>
-          <div className={ProgStyles.areasofSGridCon}>
+          {/* <div className={ProgStyles.areasofSGridCon}>
             <div className={ProgStyles.areasofSGrid}>
               <ul className={ProgStyles.areasofstudyul}>
                 <li className={ProgStyles.areasofstudyli}>
                   {" "}
-                  <Link href="#" 
-                  >District Health Visiting</Link>
+                  <Link href="#">District Health Visiting</Link>
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
                   {" "}
@@ -283,7 +282,7 @@ The Ken Gordon School of Communication Creative and Digital Media's dedicated, q
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -300,7 +299,7 @@ The Ken Gordon School of Communication Creative and Digital Media's dedicated, q
 
               <p className={ProgStyles.applyheading}>Visit us </p>
               <p className={ProgStyles.applytext}>Schedule a tour</p>
-              <Link className={ProgStyles.goto} href="/admissions/visitus">
+              <Link className={ProgStyles.goto} href="#">
                 {" "}
                 Make an appointment
               </Link>
@@ -333,7 +332,7 @@ The Ken Gordon School of Communication Creative and Digital Media's dedicated, q
                 {" "}
                 Ready to start your journey.
               </p>
-              <Link className={ProgStyles.goto} href="/admissions/apply">
+              <Link className={ProgStyles.goto} href="#">
                 {" "}
                 Apply Now →
               </Link>
