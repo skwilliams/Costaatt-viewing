@@ -5,19 +5,19 @@ import LayoutNone from "../../../../components/Layouts/TopNavOnly_NoDropdown"
 
 
 
-// const facultystaffdata = () => {
+const facultystaffdata = () => {
 
-//   return (
+  return (
 
-//     <div>facultystaffdata</div>
-//   )
-// }
-// export default facultystaffdata;
+    <div>facultystaffdata</div>
+  )
+}
+export default facultystaffdata;
 
 
-// facultystaffdata.getLayout = function getLayout(page) {
-//   return <LayoutNone>{page}</LayoutNone>;
-// };
+facultystaffdata.getLayout = function getLayout(page) {
+  return <LayoutNone>{page}</LayoutNone>;
+};
 
 
 export const staffdata = [

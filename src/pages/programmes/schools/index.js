@@ -49,6 +49,7 @@ const schools = () => {
           image={SchoolImage}
           schoolname=" School of Liberal Arts, Education and Digital Humanities "
           intro="The School of Liberal Arts, Education, and Digital Humanities produces a diverse range of graduates with varying skills and competencies in the disciplines of education, mathematics, psychology, social work, sociology, criminal justice, and in general, graduates who can make great contributions towards enhancing the social and behavioural development of the nation. To achieve this objective, we constantly scan the environment to ensure that our programmes are innovative and relevant to the needs of our society."
+          linkpage="/programmes/schools/liberal"
           shortname="SLAEDH"
         />
         <SchoolCard
@@ -94,7 +95,7 @@ The Ken Gordon School of Communication Creative and Digital Media's dedicated, q
         <div className={ProgStyles.umargintopsmall}>
           <p className={ProgStyles.headingprimary}> Areas of Study </p>
           <p className={ProgStyles.umargintopsmall}></p>
-          {/* <div className={ProgStyles.areasofSGridCon}>
+          <div className={ProgStyles.areasofSGridCon}>
             <div className={ProgStyles.areasofSGrid}>
               <ul className={ProgStyles.areasofstudyul}>
                 <li className={ProgStyles.areasofstudyli}>
@@ -282,7 +283,7 @@ The Ken Gordon School of Communication Creative and Digital Media's dedicated, q
                 </li>
               </ul>
             </div>
-          </div> */}
+          </div>
         </div>
       </section>
 
@@ -332,7 +333,7 @@ The Ken Gordon School of Communication Creative and Digital Media's dedicated, q
                 {" "}
                 Ready to start your journey.
               </p>
-              <Link className={ProgStyles.goto} href="#">
+              <Link className={ProgStyles.goto} href="/admissions/howtoapply">
                 {" "}
                 Apply Now →
               </Link>
