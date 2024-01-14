@@ -11,14 +11,10 @@
 /*Section One, Slider and Select styles*/
 .sectionOne {
   display: flex;
-  height: 75vh;
+
   padding: 0;
   margin-bottom: 40px;
-  background-image: linear-gradient(
-    to bottom right,
-    $color-primary,
-    $color-primary-dark
-  );
+  background-color: $grey;
 }
 
 .sectionOneLeft {
@@ -26,7 +22,7 @@
   padding: 0 20px;
   display: block;
   min-width: 30%;
-  height: 80vh;
+  height: 100%;
   margin: auto;
   // margin: 0;
   padding: 0;
@@ -71,7 +67,7 @@
 }
 .sectionLeftBottom {
   background-color: $grey;
-  background-image: url("../../images/Links/colors.png");
+  background-image: url("../../images/Links/colorsNew.png");
   background-repeat: no-repeat;
   background-position: bottom left;
   // background-position: bottom 50px left ;
@@ -87,9 +83,7 @@
 }
 
 .sectionOneRight {
-  height: 90vh;
-  min-width: 70%;
-  overflow: hidden;
+  height: 100%;
 }
 
 .sliderImage {
@@ -120,7 +114,7 @@
 
 .rightSliderArrow {
   position: absolute;
-  right: .2rem;
+  right: 0.2rem;
 }
 
 .leftSliderArrow {
@@ -217,7 +211,8 @@
       @include respond(tab-port) {
         width: 100% !important;
       }
-      width: calc((100% - 3 * 12.8rem) / 4);    }
+      width: calc((100% - 3 * 12.8rem) / 4);
+    }
   }
 }
 
@@ -281,7 +276,7 @@
   margin-top: 12.8em;
   margin-bottom: 12.8em;
   // border-color: lightgray;
-   background-color: rgba($color-grey-light-2, .5);
+  background-color: rgba($color-grey-light-2, 0.5);
 }
 
 .sectionThreeTiles {
@@ -328,45 +323,34 @@
   margin-bottom: 12.8em;
   height: 100%;
   // border-color: lightgray;
-  border-color: rgba($color-grey-light-2, .5);
+  border-color: rgba($color-grey-light-2, 0.5);
 }
 
 .sectionFourTiles {
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
+}
 
-
- 
-
-} 
-
-.newsFeatureContent{
+.newsFeatureContent {
   background-color: red;
   // grid-column: 1 / span 2;
 }
 
 // .newsFeatureImage{
 // background-color: pink;
- 
 
 // }
-.sectionNewsTitle{
+.sectionNewsTitle {
   grid-column: 1 / span 2;
 }
-
-
-
-
-
 
 .newsHeading {
   text-align: center;
   font-size: 4.8rem;
   margin-bottom: 2.4em;
-  color:$grey;
-   grid-column: 1 / span 2;
+  color: $grey;
+  grid-column: 1 / span 2;
   span {
     color: $color-primary;
   }
@@ -374,18 +358,14 @@
 
 .featuredNews {
   align-items: center;
-  margin-bottom: .19em;
-
-
-
+  margin-bottom: 0.19em;
 }
 
 .featuredNews {
   width: auto;
   text-align: center;
   margin-bottom: 1.5em;
-x
-  img {
+  x img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -394,7 +374,7 @@ x
   h1 {
     font-size: large;
     font-weight: bolder;
-  }  
+  }
 }
 
 .newsFeatureHomepage {
@@ -431,8 +411,6 @@ x
     }
   }
 }
-
-
 
 .newsTileHomepage {
   position: relative;
@@ -563,7 +541,6 @@ x
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px 0px;
- 
   }
 
   .events {

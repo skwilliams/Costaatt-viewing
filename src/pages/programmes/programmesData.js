@@ -174,8 +174,23 @@ const allCourses = [
     credits: "4"
   },
   {
+    coursecode: "BIOL 171",
+    coursename: "Structure and Function I",
+    credits: "4"
+  },
+  {
+    coursecode: "BIOL 172",
+    coursename: "Structure and Function II",
+    credits: "4"
+  },
+  {
     coursecode: "BIOL 176",
     coursename: "Anatomy and Physiology I - Rad Sci",
+    credits: "4"
+  },
+  {
+    coursecode: "BIOL 221",
+    coursename: "Microbiology",
     credits: "4"
   },
   {
@@ -425,6 +440,11 @@ const allCourses = [
     credits: "3"
   },
   {
+    coursecode: "COMM 123",
+    coursename: "Sign Language for Health Professionals",
+    credits: "3"
+  },
+  {
     coursecode: "COMM 125",
     coursename: "English for Court Transcription",
     credits: "3"
@@ -442,6 +462,11 @@ const allCourses = [
   {
     coursecode: "COMM 140",
     coursename: "Speech Writing",
+    credits: "3"
+  },
+  {
+    coursecode: "COMM 151",
+    coursename: "Communication in Nursing",
     credits: "3"
   },
   {
@@ -2237,6 +2262,11 @@ const allCourses = [
     credits: "3"
   },
   {
+    coursecode: "MATH 235 ",
+    coursename: "Discrete Mathematics ",
+    credits: "3"
+  },
+  {
     coursecode: "MATH 245 ",
     coursename: "Methods of Mathematical Proofs OR",
     credits: "3"
@@ -2262,6 +2292,11 @@ const allCourses = [
     credits: "3"
   },
   {
+    coursecode: "MATH 276 ",
+    coursename: "Introduction to Financial Mathematics ",
+    credits: "3"
+  },
+  {
     coursecode: "MATH 257 ",
     coursename: "Ordinary Differential Equations I ",
     credits: "3"
@@ -2272,6 +2307,16 @@ const allCourses = [
     credits: "3"
   },
   {
+    coursecode: "MATH 275 ",
+    coursename: "Linear Algebra I",
+    credits: "3"
+  },
+  {
+    coursecode: "MATH 277 ",
+    coursename: "Linear Algebra II ",
+    credits: "3"
+  },
+  {
     coursecode: "MATH 330 ",
     coursename: "Introduction to Combinatorics ",
     credits: "3"
@@ -2279,6 +2324,11 @@ const allCourses = [
   {
     coursecode: "MATH 347 ",
     coursename: "Abstract Algebra II ",
+    credits: "3"
+  },
+  {
+    coursecode: "MATH 340 ",
+    coursename: "Abstract Algebra I",
     credits: "3"
   },
   {
@@ -2319,6 +2369,11 @@ const allCourses = [
   {
     coursecode: "MATH 474",
     coursename: "Partial Differential Equations I",
+    credits: "3"
+  },
+  {
+    coursecode: "MATH 475 ",
+    coursename: "Mathematical Modelling",
     credits: "3"
   },
   {
@@ -3043,6 +3098,12 @@ const allCourses = [
     credits: "3"
   },
   {
+    coursecode: "NURS 123",
+    coursename: "Sign Language",
+    credits: "3"
+  },
+
+  {
     coursecode: "NURS 141",
     coursename: "Emergency Care Nursing",
     credits: "2"
@@ -3050,6 +3111,11 @@ const allCourses = [
   {
     coursecode: "NURS 150",
     coursename: "Introduction to the Profession of Nursing ",
+    credits: "3"
+  },
+  {
+    coursecode: "NURS 151",
+    coursename: "Communication in Nursing",
     credits: "3"
   },
   {
@@ -3083,13 +3149,24 @@ const allCourses = [
     credits: "2"
   },
   {
-    coursecode: "NURS 201",
-    coursename: "Epidemiology",
+    coursecode: "NURS 182",
+    coursename: "Clinical Practicum I and Examination Admission of a Patient (Psychiatric)",
+    credits: "2"
+  },
+  {
+    coursecode: "NURS 202",
+    coursename: "Intro to Epidemiology and Research",
     credits: "3"
   },
+  
   {
     coursecode: "NURS 211",
     coursename: "Nursing Science",
+    credits: "3"
+  },
+  {
+    coursecode: "NURS 212",
+    coursename: "Mental Health and Psychiatric Nursing",
     credits: "3"
   },
   {
@@ -3123,6 +3200,26 @@ const allCourses = [
     credits: "3"
   },
   {
+    coursecode: "NURS 224",
+    coursename: "Pediatric & Adolescent Care (Psychiatric)",
+    credits: "3"
+  },
+  {
+    coursecode: "NURS 230",
+    coursename: "Pathophysiology 2",
+    credits: "3"
+  },
+   {
+    coursecode: "NURS 231",
+    coursename: "Psycho-Pathophysiology",
+    credits: "3"
+  },
+  {
+    coursecode: "NURS 335",
+    coursename: "Care of the Mentally Ill Adult",
+    credits: "3"
+  },
+  {
     coursecode: "NURS 250",
     coursename: "Psycho-Pathophysiology ",
     credits: "3"
@@ -3143,7 +3240,7 @@ const allCourses = [
     credits: "3"
   },
   {
-    coursecode: "NURS 276  ",
+    coursecode: "NURS 276",
     coursename: "Psycho-Pharmacology",
     credits: "3"
   },
@@ -3154,6 +3251,11 @@ const allCourses = [
   },
   {
     coursecode: "NURS 306",
+    coursename: "Health Assessment",
+    credits: "4"
+  },
+  {
+    coursecode: "NURS 311",
     coursename: "Health Assessment",
     credits: "4"
   },
@@ -3188,13 +3290,19 @@ const allCourses = [
     credits: "3"
   },
   {
-    coursecode: "NURS 335",
+    coursecode: "NURS 336",
     coursename: "Care of the Mentally Ill Adult",
     credits: "3"
   },
+  
   {
     coursecode: "NURS 337",
     coursename: "Nursing Informatics",
+    credits: "3"
+  },
+  {
+    coursecode: "NURS 347",
+    coursename: "Gerontology Nursing",
     credits: "3"
   },
   {
@@ -3204,12 +3312,12 @@ const allCourses = [
   },
   {
     coursecode: "NURS 372",
-    coursename: "Level two exam",
+    coursename: "Clinical Practicum II and Examination",
     credits: "3"
   },
   {
     coursecode: "NURS 373",
-    coursename: "Level three exam ",
+    coursename: "Clinical Practicum III and Examination",
     credits: "2"
   },
   {
@@ -3633,6 +3741,126 @@ const allCourses = [
     credits: "2"
   },
   {
+    coursecode: "RADG 101",
+    coursename: "Fundamentals of Radiological Sciences",
+    credits: "4"
+  },
+  {
+    coursecode: "RADG 313",
+    coursename: "Basic Anatomic Pathology",
+    credits: "3"
+  },{
+    coursecode: "RADG 245",
+    coursename: "Science and Instrumentation I",
+    credits: "4"
+  },{
+    coursecode: "RADG 246",
+    coursename: "Science and Instrumentation II",
+    credits: "4"
+  },{
+    coursecode: "RADG 253",
+    coursename: "Imaging Procedures I",
+    credits: "3"
+  },{
+    coursecode: "RADG 254",
+    coursename: "Imaging Procedures II",
+    credits: "3"
+  },{
+    coursecode: "RADG 275",
+    coursename: "Professional Skills I",
+    credits: "3"
+  },{
+    coursecode: "RADG 312",
+    coursename: "Imaging Correlations with Sectional Anatomy",
+    credits: "3"
+  },{
+    coursecode: "RADG 441",
+    coursename: "Quality Assurance in Medical Imaging",
+    credits: "3"
+  },{
+    coursecode: "RADG 343",
+    coursename: "Science and Instrumentation III",
+    credits: "4"
+  },{
+    coursecode: "RADG 344",
+    coursename: "Science and Instrumentation IV",
+    credits: "4"
+  },{
+    coursecode: "RADG 353",
+    coursename: "Imaging Procedures III",
+    credits: "3"
+  },{
+    coursecode: "RADG 354",
+    coursename: "Imaging Procedures IV",
+    credits: "3"
+  },{
+    coursecode: "RADG 371",
+    coursename: "Professional Skills II",
+    credits: "3"
+  },{
+    coursecode: "RADG 318",
+    coursename: "Medical Digital Imaging",
+    credits: "3"
+  },{
+    coursecode: "RADG 455",
+    coursename: "Imaging Procedures V",
+    credits: "3"
+  },{
+    coursecode: "RADG 471",
+    coursename: "Change Strategies for Health Professionals",
+    credits: "4"
+  },{
+    coursecode: "RADG 481",
+    coursename: "Research Methodology",
+    credits: "3"
+  },{
+    coursecode: "RADG 482",
+    coursename: "Research Methodology II",
+    credits: "3"
+  },{
+    coursecode: "RADG 483",
+    coursename: "Research Submission",
+    credits: "2"
+  },{
+    coursecode: "RADG 222",
+    coursename: "Radiation Sciences",
+    credits: "3"
+  },{
+    coursecode: "RADG 351",
+    coursename: "Introduction of Pharmacology for Radiographers",
+    credits: "3"
+  },{
+    coursecode: "RADG 486",
+    coursename: "Computed Tomography",
+    credits: "3"
+  },{
+    coursecode: "RADG 260",
+    coursename: "Clinical Practicum I",
+    credits: "3"
+  },
+  {
+    coursecode: "RADG 261",
+    coursename: "Clinical Practicum II",
+    credits: "3"
+  },
+  {
+    coursecode: "RADG 363",
+    coursename: "Clinical Practicum III",
+    credits: "3"
+  },{
+    coursecode: "RADG 364",
+    coursename: "Clinical Practicum IV",
+    credits: "5"
+  },{
+    coursecode: "RADG 465",
+    coursename: "Clinical Practicum V",
+    credits: "4"
+  },{
+    coursecode: "RADG 466",
+    coursename: "Clinical Practicum VI",
+    credits: "3"
+  },
+  {
     coursecode: "RCMT 150",
     coursename: "Introduction to Records Management",
     credits: "3"
@@ -3998,8 +4226,33 @@ const allCourses = [
     credits: "3"
   },
   {
+    coursecode: "STAT 121 ",
+    coursename: "Introduction to Inferential Statistics ",
+    credits: "3"
+  },
+  {
+    coursecode: "STAT 200 ",
+    coursename: "Mathematical Probability and Statistics",
+    credits: "3"
+  },
+  {
+    coursecode: "STAT 161 ",
+    coursename: "Calculus and Analytical Geometry II ",
+    credits: "3"
+  },
+  {
     coursecode: "STAT 122",
     coursename: "Business Statistics",
+    credits: "3"
+  },
+  {
+    coursecode: "STAT 300 ",
+    coursename: "Mathematical Probability and Statistics II",
+    credits: "3"
+  },
+  {
+    coursecode: "STAT 401 ",
+    coursename: "Multivariate Statistical Analysis",
     credits: "3"
   },
   {
@@ -5511,7 +5764,7 @@ const programmes = [
     GATE: ["Approved"],
     specialMatricReqs: [],
   },
-     {
+  {
     prog_shortname: "bscBIOL",
     majorcourses: [
       "BIOL 121",
@@ -5717,6 +5970,742 @@ const programmes = [
     semester: ["September", "January"],
     campus: ["Chaguanas Campus", "South Campus"],
     duration: ["Full-time: 5 semesters", "Part-time: 8 semesters"],
+    mode: ["Blended"],
+    GATE: ["Approved"],
+    specialMatricReqs: [],
+  },
+   {
+    prog_shortname: "bsRadiography",
+    majorcourses: [
+      "RADG 101",
+      "RADG 313",
+      "RADG 245",
+      "RADG 246",
+      "RADG 253",
+      "RADG 254",
+      "RADG 275",
+      "RADG 312",
+      "RADG 441",
+      "RADG 343",
+      "RADG 344",
+      "RADG 353",
+      "RADG 354",
+      "RADG 371",
+      "RADG 318",
+      "RADG 455",
+      "RADG 471",
+      "RADG 481",
+      "RADG 482",
+      "RADG 483",
+      "RADG 222",
+      "RADG 351",
+      "RADG 486"
+                    
+    ],
+    specialcourses: ["RADG 260", "RADG 261", "RADG 363", "RADG 364", "RADG 465", "RADG 466"],
+    electivecourses: [],
+    corecourses: ["FYEC 100", "LIBS 130", "WRIT 117", "MATH 117", "COMM 108","ENVH 102", "SCIE 201", "PSYC 106","STAT 120", "BUSI 203","MATH 121","ENVS 121"],
+    supportcourses: ["PHYS 102", "BIOL 114", "BIOL 176", "BIOL 276"],
+    totalcredits: 144,
+    salaries: [
+      {
+        position:"Radiographer",
+        figure: "",
+      },
+      {
+        position: "Sales Representative  ",
+        figure: "",
+      }
+      
+    ],
+    semester: ["September"],
+    campus: ["Chaguanas Campus"],
+    duration: ["Full-time: 8 semesters", "Part-time: N/A"],
+    mode: ["Blended"],
+    GATE: ["Approved"],
+    specialMatricReqs: [],
+  },
+  {
+    prog_shortname: "bsMlt",
+    majorcourses: [
+      "MDLT 120",
+      "MDLT 121",
+      "MDLT 125",
+      "MDLT 134",
+      "MDLT 297",
+      "MDLT 298",
+      "HLED 320",
+      "MDLT 340",
+      "MDLT 341",
+      "MDLT 350",
+      "MDLT 353",
+      "MDLT 441",
+      "MDLT 329",
+      "MDLT 360",
+      "MDLT 397",
+      "MDLT 499",
+      "HLED 410",
+      "MDLT 411",
+      "MDLT 452",
+      "MDLT 371",
+      "MDLT 299",
+      "MDLT 235",
+      "BIOL 465",
+      "MDLT 344",
+      "MDLT 345",
+      "MDLT 346",
+      "MDLT 444",
+      "MDLT 445",
+      "MDLT 446"
+                    
+    ],
+    specialcourses: ["RADG 260", "RADG 261", "RADG 363", "RADG 364", "RADG 465", "RADG 466"],
+    electivecourses: [],
+    corecourses: ["FYEC 100", "LIBS 130", "WRIT 117", "MATH 117", "SPAN 100","HIST 210", "PSYC 106","STAT 120", "RELI 205", "COMM 108"],
+    supportcourses: ["HLED 100", "MATH 121", "BIOL 241", "BIOL 242", "BIOL 173", "BIOL 174"],
+    totalcredits: 120,
+    salaries: [
+      {
+        position:"Medical Laboratory Technician",
+        figure: "",
+      },
+      {
+        position: "Research Laboratory Technician",
+        figure: "",
+      },
+      {
+        position: "Sales / Technical representative",
+        figure: "",
+      },
+      {
+        position: "Laboratory Administrator/Manager",
+        figure: "",
+      },
+      {
+        position: "Medical Technology Educator",
+        figure: "",
+      },
+      {
+        position: "Clinical Coordinator",
+        figure: "",
+      }
+      
+    ],
+    semester: ["September", "January"],
+    campus: ["Chaguanas Campus", "South Campus"],
+    duration: ["Full-time: 8 semesters", "Part-time: 12 semesters"],
+    mode: ["Blended"],
+    GATE: ["Approved"],
+    specialMatricReqs: [],
+  },
+
+  {
+    prog_shortname: "bscNursing",
+    majorcourses: [
+      "NURS 150",
+      "NURS 115",
+      "NURS 156",
+      "COMM 151",
+      "NURS 223",
+      "NURS 165",
+      "NURS 220",
+      "NURS 211",
+      "NURS 275",
+      "NURS 260",
+      "NURS 301",
+      "NURS 306" ,
+      "NURS 320",
+      "NURS 324",
+      "NURS 334",
+      "NURS 337",
+      "NURS 312",
+      "NURS 401",
+      "NURS 411",
+      "NURS 445",
+      "NURS 447",
+      "NURS 499",
+      "NURS 181",
+      "NURS 372",
+      "NURS 373",
+                         
+    ],
+    specialcourses: [],
+    electivecourses: ["SOBE 335"],
+    corecourses: ["FYEC 100", "LIBS 130", "WRIT 117", "MATH 116", "SPAN 100", "HIST 210", "PSYC 103", "STAT 120", "COMM 108", "ENTP 210", "SOCI 102", "SCIE 121"],
+    supportcourses: ["BIOL 171", "BIOL 172", "COMM 123", "MATH 108", "BIOL 221", "CHEM 121"],
+    totalcredits: 136,
+    salaries: [
+      {
+        position:"",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      }
+      
+    ],
+    semester: [],
+    campus: [],
+    duration: [],
+    mode: ["Blended"],
+    GATE: ["Approved"],
+    specialMatricReqs: [],
+  },
+  {
+    prog_shortname: "bscPsyNursing",
+    majorcourses: [
+      "NURS 150",
+      "NURS 115",
+      "NURS 156",
+      "COMM 151",
+      "NURS 223",
+      "NURS 165",
+      "NURS 220",
+      "NURS 211",
+      "NURS 276",
+      "NURS 250",
+      "NURS 301",
+      "NURS 261",
+      "NURS 306" ,
+      "NURS 320",
+      "NURS 325",
+      "NURS 336",
+      "NURS 337",
+      "NURS 116",
+      "NURS 401",
+      "NURS 411",
+      "NURS 441",
+      "NURS 448",
+      "NURS 499",
+      "NURS 181",
+      "NURS 382",
+      "NURS 383",
+                         
+    ],
+    specialcourses: [],
+    electivecourses: ["SOBE 335"],
+    corecourses: ["FYEC 100", "LIBS 130", "WRIT 117", "MATH 116", "SPAN 100", "HIST 210", "PSYC 103", "STAT 120", "COMM 108", "ENTP 210", "SOCI 102", "SCIE 121"],
+    supportcourses: ["BIOL 171", "BIOL 172", "COMM 123", "MATH 108", "BIOL 221", "CHEM 121"],
+    totalcredits: 136,
+    salaries: [
+      {
+        position:"",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      }
+      
+    ],
+    semester: [],
+    campus: [],
+    duration: [],
+    mode: ["Blended"],
+    GATE: ["Approved"],
+    specialMatricReqs: [],
+  },
+  {
+    prog_shortname: "aasNursing",
+    majorcourses: [
+      "NURS 150",
+      "NURS 171",
+      "NURS 172",
+      "NURS 115",
+      "NURS 165",
+      "NURS 156",
+      "NURS 220",
+      "NURS 260",
+      "NURS 215",
+      "COMM 151",
+      "NURS 223",
+      "NURS 141",
+      "NURS 181" ,
+      "NURS 202",
+      "NURS 212",
+      "NURS 221",
+      "NURS 123",
+      "NURS 224",
+      "NURS 230",
+      "NURS 275",
+      "NURS 311",
+      "NURS 333",
+      "NURS 334",
+      "NURS 347",
+      "NURS 399",
+      "NURS 372",
+      "NURS 373",
+                         
+    ],
+    specialcourses: [],
+    electivecourses: [],
+    corecourses: ["FYEC 100", "LIBS 130", "WRIT 117", "COMM 108", "SOCI 102", "PSYC 103"],
+    supportcourses: [],
+    totalcredits: 96,
+    salaries: [
+      {
+        position:"",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      }
+      
+    ],
+    semester: [],
+    campus: [],
+    duration: [],
+    mode: ["Blended"],
+    GATE: ["Approved"],
+    specialMatricReqs: [],
+  },
+   {
+    prog_shortname: "aasPsyNursing",
+    majorcourses: [
+      "NURS 150",
+      "NURS 171",
+      "NURS 156",
+      "NURS 115",
+      "COMM 151",
+      "NURS 172",
+      "NURS 165",
+      "NURS 175",
+      "NURS 116",
+      "NURS 141",
+      "NURS 220",
+      "NURS 276" ,
+      "NURS 225",
+      "NURS 261",
+      "NURS 231",
+      "NURS 182",
+      "NURS 201",
+      "COMM 123",
+      "NURS 213",
+      "NURS 221",
+      "NURS 216",
+      "NURS 335",
+      "NURS 311",
+      "NURS 348",
+      "NURS 398",
+      "NURS 382",
+      "NURS 383"
+                         
+    ],
+    specialcourses: [],
+    electivecourses: [],
+    corecourses: ["FYEC 100", "LIBS 130", "WRIT 117", "COMM 108", "SOCI 102", "PSYC 103"],
+    supportcourses: [],
+    totalcredits: 96,
+    salaries: [
+      {
+        position:"",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      }
+      
+    ],
+    semester: [],
+    campus: [],
+    duration: [],
+    mode: ["Blended"],
+    GATE: ["Approved"],
+    specialMatricReqs: [],
+  },
+   {
+    prog_shortname: "dipDHVis",
+    majorcourses: [
+      "DHVI 405",
+      "DHVI 415",
+      "DHVI 420",
+      "DHVI 435",
+      "DHVI 450",
+      "DHVI 505",
+      "DHVI 515",
+      "DHVI 525",
+      "DHVI 530",
+      "DHVI 545",
+      "DHVI 550"
+                              
+    ],
+    specialcourses: [],
+    electivecourses: [],
+    corecourses: [],
+    supportcourses: [],
+    totalcredits: 38,
+    salaries: [
+      {
+        position:"",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      }
+      
+    ],
+    semester: [],
+    campus: [],
+    duration: [],
+    mode: ["Blended"],
+    GATE: ["Approved"],
+    specialMatricReqs: [],
+  },
+  {
+    prog_shortname: "adipMWif",
+    majorcourses: [
+      "MIDW 101",
+      "MIDW 201",
+      "MIDW 202",
+      "MIDW 203",
+      "MIDW 301",
+      "MIDW 401",
+      "MIDW 302",
+      "MIDW 402",
+      "MIDW 403",
+      "MIDW 303",
+      "MIDW 404"
+                              
+    ],
+    specialcourses: [],
+    electivecourses: [],
+    corecourses: [],
+    supportcourses: [],
+    totalcredits: 34,
+    salaries: [
+      {
+        position:"",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      }
+      
+    ],
+    semester: [],
+    campus: [],
+    duration: [],
+    mode: ["Blended"],
+    GATE: ["Approved"],
+    specialMatricReqs: [],
+  },
+  {
+  prog_shortname: "certECCE",
+    majorcourses: [
+      "ECCE 125",
+      "ECCE 130",
+      "ECCE 135",
+      "ECCE 140",
+      "ECCE 145",
+      "ECCE 302",
+      "ECCE 480",
+      "COMM 119"
+                         
+    ],
+    specialcourses: [],
+    electivecourses: [],
+    corecourses: [],
+    supportcourses: [],
+    totalcredits: 25,
+    salaries: [
+      {
+        position:"Early Childhood Care and Education Teaching Assistant ",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      }
+      
+    ],
+    semester: ["September", "January"],
+    campus: [],
+    duration: ["Part-time - 3 semesters"],
+    mode: ["Blended"],
+    GATE: ["Approved"],
+    specialMatricReqs: [],
+  },
+   {
+  prog_shortname: "ascMath",
+    majorcourses: [
+      "MATH 114",
+      "MATH 118",
+      "MATH 235",
+      "MATH 160",
+      "MATH 161",
+      "MATH 260",
+      "MATH 261",
+      "MATH 275",
+      "MATH 277",
+      "MATH 257",
+      "MATH 258",
+      "STAT 121",
+      "STAT 200"
+                         
+    ],
+    specialcourses: [],
+    electivecourses: ["XXXX ###",],
+    corecourses: ["WRIT 117", "LIBS 130", "COMM 108","MATH 117", "STAT 120", "FYEC 100"],
+    supportcourses: [],
+    totalcredits: 60,
+    salaries: [
+      {
+        position:"Secondary Level Mathematics Teacher via On-The-Job (OJT) Programme",
+        figure: "$4,800.00 - $5,400.00",
+      },
+      {
+        position: "Engineering Assistant ",
+        figure: "$6,000.00 - $7,000.00",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      }
+      
+    ],
+    semester: ["September", "January"],
+    campus: ["City Campus"],
+    duration: ["Full-time: 4 semesters", "Part-time: 6 semesters"],
+    mode: ["Blended"],
+    GATE: ["Approved"],
+    specialMatricReqs: [],
+  },
+  {
+  prog_shortname: "bscMath",
+    majorcourses: [
+      "MATH 114",
+      "MATH 118",
+      "MATH 235",
+      "MATH 160",
+      "MATH 161",
+      "MATH 260",
+      "MATH 261",
+      "MATH 275",
+      "MATH 277",
+      "MATH 257",
+      "MATH 258",
+      "MATH 330",
+      "MATH 354",
+      "MATH 355",
+      "MATH 340",
+      "MATH 474",
+      "MATH 450",
+      "MATH 475",
+      "STAT 121",
+      "STAT 200",
+      "STAT 300",
+      "STAT 401"
+                         
+    ],
+    specialcourses: [],
+    electivecourses: ["XXXX ###", "XXXX ###", "XXXX ###", "XXXX ###", "XXXX ###", "XXXX ###"],
+    corecourses: ["WRIT 117", "LIBS 130", "COMM 108","MATH 117", "STAT 120", "FYEC 100", "FYEC 400", "XXXX ###", "XXXX ###", "XXXX ###"],
+    supportcourses: ["ITEC 133", "XXXX ###"],
+    totalcredits: 120,
+    salaries: [
+      {
+        position:"",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      }
+      
+    ],
+    semester: ["September", "January"],
+    campus: ["NOT AVAILABLE"],
+    duration: ["NOT AVAILABLE"],
+    mode: ["Blended"],
+    GATE: ["Approved"],
+    specialMatricReqs: [],
+  },
+  {
+  prog_shortname: "baECCE",
+    majorcourses: [
+      "ECCE "
+                         
+    ],
+    specialcourses: [],
+    electivecourses: ["XXXX ###", "XXXX ###", "XXXX ###", "XXXX ###", "XXXX ###", "XXXX ###"],
+    corecourses: ["WRIT 117", "LIBS 130", "COMM 108","MATH 117", "STAT 120", "FYEC 100", "FYEC 400", "XXXX ###", "XXXX ###", "XXXX ###"],
+    supportcourses: ["ITEC 133", "XXXX ###"],
+    totalcredits: 120,
+    salaries: [
+      {
+        position:"",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      },
+      {
+        position: "",
+        figure: "",
+      }
+      
+    ],
+    semester: ["September", "January"],
+    campus: ["NOT AVAILABLE"],
+    duration: ["NOT AVAILABLE"],
     mode: ["Blended"],
     GATE: ["Approved"],
     specialMatricReqs: [],
