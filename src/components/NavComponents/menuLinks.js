@@ -308,7 +308,7 @@ export const mainNavLinks = [
         path: "/costaattlife/sports",
       },
       {
-        img: require("../../../images/Links/dummyImg2.jpg"),
+        img: require("../../../images/Links/dummyImg1.jpg"),
         title: "Student Council",
         path: "/costaattlife/studentcouncil",
       },
