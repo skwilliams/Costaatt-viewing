@@ -33,12 +33,55 @@ export const subHeaderSections = {
     "methods of payment": "methodsofpayment",
     "financial support": "finsupport",
   },
-  schools: {
-    overveiw: "overview",
-    "all schools": "allschools",
-    "areas of study": "areastudy",
-    "apply now": "apply",
+
+  //School index.js
+  // schools: {
+  //   overveiw: "overview",
+  //   "all schools": "allschools",
+  //   "areas of study": "areastudy",
+  //   "apply now": "apply",
+  // },
+
+  //Individual Schools
+
+  // enviro: {
+  //   "School overview": "overview",
+  //   Departments: "departments",
+  //   "Find your Degree": "depcourses",
+  //   "Meet the dean": "meetthedean",
+  //   "School events and news": "schoolnews",
+  // },
+  // nursing: {
+  //   "School overview": "overview",
+  //   Departments: "departments",
+  //   "Find your Degree": "depcourses",
+  //   "Meet the dean": "meetthedean",
+  //   "School events and news": "schoolnews",
+  // },
+  // kengord: {
+  //   "school overview": "overview",
+  //   Departments: "departments",
+  //   "Find your Degree": "degreecourses",
+  //   "Meet the Dean": "meetthedean",
+  //   "School News": " schoolnews",
+  // },
+
+  deptName: {
+    "School overview": "overview",
+    Departments: "depart",
+    "Find your Degree": "depcourses",
+    "Meet the dean": "meetthedean",
+    "school events and news": "schoolnews",
   },
+
+  schools: {
+    "school overview": "overview",
+    Departments: "depart",
+    "find your Degree": "depcourses",
+    "meet the dean": "meetthedean",
+    "school events and news": "schoolnews",
+  },
+  //Individual departments
   busIT: {
     "school overview": "overview",
     Departments: "departments",
@@ -46,10 +89,8 @@ export const subHeaderSections = {
     "meet the dean": "meetthedean",
     "school events and news": "schoolnews",
   },
-  allcourses: {
-    "All courses": "all courses",
-  },
-  ICTD: {
+
+    ICTD: {
     "Overveiw of Department": "overview",
     "Programmes in Department": "programmes",
     "Department Contact": "contact",
@@ -58,20 +99,8 @@ export const subHeaderSections = {
     "Latest News": "schoolnews",
     "Faculty and Staff": "facultystaff",
   },
-  enviro: {
-    "School overview": "overview",
-     Departments: "departments",
-    "Find your Degree": "depcourses",
-    "Meet the dean": "meetthedean",
-    "School events and news": "schoolnews",
-  },
-  nursing: {
-    "School overview": "overview",
-     Departments: "departments",
-    "Find your Degree": "depcourses",
-    "Meet the dean": "meetthedean",
-    "School events and news": "schoolnews",
-  },
+ 
+
   apply: {
     Apply: "intro",
     "Online Application": "onlineapp",
@@ -87,21 +116,8 @@ export const subHeaderSections = {
     "How to Apply": "howtoapply",
   },
 
-  deptName: {
-    "School overview": "overview",
-    Departments: "depart",
-    "Find your Degree": "depcourses",
-    "Meet the dean": "meetthedean",
-    "school events and news": "schoolnews",
-  },
 
-  shortName: {
-    "school overview": "overview",
-    Departments: "depart",
-    "find your Degree": "depcourses",
-    "meet the dean": "meetthedean",
-    "school events and news": "schoolnews",
-  },
+// COSTAATT Life Sections 
 
   studentorg: {
     "Student Clubs ": "introtoclubs",
@@ -131,10 +147,8 @@ export const subHeaderSections = {
   itfacilities: {
     "Computer Labs": "labs",
     "IT Services ": "services",
-    "Locations": "locations",
-    "Contact": "contact",
-
-   
+    Locations: "locations",
+    Contact: "contact",
   },
 
   healthwell: {
@@ -156,13 +170,7 @@ export const subHeaderSections = {
     "Frequently Asked Questions": "faq",
     Contact: "contact",
   },
-  kengord: {
-    Overview: "overview",
-    Departments: "departments",
-    "Find your Degree": "degree",
-    "Meet the Dean": "dean",
-    "School News": "news",
-  },
+
   costaattlife: {
     "Overview ": "intro",
     Services: "services",
@@ -170,50 +178,53 @@ export const subHeaderSections = {
     "Meet Our Staff": "staff",
     Contact: "contact",
   },
-  history:{
-    "Mission":"mission",
-    "National":"national",
-    "History":"achieve",
-    "Our Numbers ":"enhance",
-  },
   
-  about:{
-    "At a Glance":"glance",
-    "Misson and Vision":"vision",
-    Schools :"schools",
-    President :"president",
-    "By the Numbers":"bythenumbers",
-
+  History: {
+    Mission: "mission",
+    National: "national",
+    History: "achieve",
+    "Our Numbers ": "enhance",
   },
-  
-  profile :{
-    "Vission and Mission ":"mission",
-    "National Community":"national",
-    "Milestones & Achievements":"achieve",
-    "Learning and Teaching": "enhance"
-  },
-  executiveleaders :{
-    "Vice Presidents" :"vps",
-    "Management Team":"mgmt",
-    "Deans":"deans",
-    "Academic Heads of Departments":"head"
 
+  about: {
+    "At a Glance": "glance",
+    "Misson and Vision": "vision",
+    Schools: "schools",
+    President: "president",
+    "By the Numbers": "bythenumbers",
   },
-    rentspace:{
 
-    "Overview":"intro",
-    "Package":"package",
-    "Why Rent":"why",
-    "Spaces":"spaces", 
+  profile: {
+    "Vission and Mission ": "mission",
+    "National Community": "national",
+    "Milestones & Achievements": "achieve",
+    "Learning and Teaching": "enhance",
+  },
+  executiveleaders: {
+    "Vice Presidents": "vps",
+    "Management Team": "mgmt",
+    Deans: "deans",
+    "Academic Heads of Departments": "head",
+  },
+  rentspace: {
+    Overview: "intro",
+    Package: "package",
+    "Why Rent": "why",
+    Spaces: "spaces",
     // "More Spaces":"morespaces",
-    "Contact":"contact"
+    Contact: "contact",
   },
-  translation:{
-    "Overview":"intro",
-    "Translation ":"translate",
-    "Interpretation Services":"interpret",
-    "Contact ":"contact"
-  }
-  
-
+  translation: {
+    Overview: "intro",
+    "Translation ": "translate",
+    "Interpretation Services": "interpret",
+    "Contact ": "contact",
+  },
+  facultystaff: {
+    "Popular Resources": "resources",
+    Spotlight: "spotlight",
+    "In the News": "news",
+    "Upcoming Events": "upevents",
+    Careers: "careers",
+  },
 };

@@ -2,7 +2,7 @@ import SideNavOnlyLayout from "@/components/Layouts/SideNavOnly_NoTopOrDropdown"
 import TopNavOnlyLayout from "@/components/Layouts/TopNavOnly_NoDropdown";
 import React from "react";
 import Head from "next/head";
-import ButtonLink from "@/components/HomeComponents/ButtonLink";
+
 
 import standardStyles from "@/styles/main.module.scss";
 import AdmisStyles from "@/styles/Admissions.module.scss";
@@ -17,17 +17,18 @@ import envelope from "../../../public/images/admissions/envelope.svg";
 
 import headerimg from "../../../public/images/admissions/applyNow header.jpg";
 
-import headImg from "../../../public/images/admissions/applynow.jpg";
+
 import SimpleCard from "@/components/PageComponents/SimpleCard";
 import tick from "../../../public/images/admissions/tick.svg";
 import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
-import { Accordion, Divider, Button } from "@mui/material/";
+
+
+
+import { Accordion, Divider} from "@mui/material/";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 
-import ExpandMoreIcon from "@mui/icons-material";
-import AddIcon from "@mui/icons-material/Add";
 import increase from "../../../public/images/admissions/increase.png";
 import ProgStyles from "../../styles/Programmes.module.scss";
 import admissionStyles from "@/styles/Admissions.module.scss";

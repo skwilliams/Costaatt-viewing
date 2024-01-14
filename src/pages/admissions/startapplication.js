@@ -5,6 +5,7 @@ import AdmisStyles from "@/styles/Admissions.module.scss"
 import Head from 'next/head'
 import Image from 'next/image'
 import { Divider } from '@mui/material'
+import tick from "../../../public/images/admissions/tick.svg"
 
 const startapplication = () => {
   return (

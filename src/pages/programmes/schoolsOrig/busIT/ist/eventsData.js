@@ -1,3 +1,12 @@
+import React from 'react'
+
+const eventsData = () => {
+  return (
+    <div>eventsData</div>
+  )
+}
+
+export default eventsData
 export const deptEventData = [
   {
     //    image="../../"

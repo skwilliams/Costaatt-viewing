@@ -6,7 +6,7 @@ import Head from "next/head";
 
 import Link from "next/link";
 import SearchCourse from "@/components/PageComponents/SearchCourse";
-import { collegecoredata } from "./collegecoredata";
+import { collegecore } from "./collegecoredata";
 import CollegeCoreCard from "@/components/PageComponents/CollegeCoreCard";
 import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
 
@@ -30,13 +30,13 @@ const Collegecore = () => {
     Math: false,
     Humanities: false,
   });
-  const [disciplines, setDisciplines] = useState(collegecoredata);
+  const [disciplines, setDisciplines] = useState(collegecore);
 
   useEffect(() => {
     const hasFiltersChanged = Object.keys(disciplineFilters).some(
       (filter) => disciplineFilters[filter] === true
     );
-    let finalResult = collegecoredata;
+    let finalResult = collegecore;
     console.log("Final Results", finalResult);
     if (hasFiltersChanged) {
       console.log("Filter has changed");
@@ -55,7 +55,7 @@ const Collegecore = () => {
       );
       finalResult = filteredDisciplines;
     } else {
-      finalResult = collegecoredata;
+      finalResult = collegecore;
     }
     setDisciplines(finalResult);
   }, [disciplineFilters]);
@@ -93,7 +93,7 @@ const Collegecore = () => {
             <div>
               <SearchCourse
                 handleSearchSubmit={handleSearchSubmit}
-                DATA={collegecoredata}
+                DATA={collegecore}
               />
             </div>
             <p className={CardStyles.sidenavtitle}> by Discipline</p>

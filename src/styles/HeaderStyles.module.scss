@@ -1,0 +1,30 @@
+@import "./abstracts/variables";
+
+.imageWithText{
+    display: grid;
+    grid-template-columns: [start1st] 60vw[ endfirst][start2nd] 40vw[end2nd];
+
+  
+
+}
+.textArea{
+grid-column:60% ;
+}
+.imageArea{
+grid-column: 40%;
+}
+.textHeding{
+    
+    font-weight: 800;
+    color: white;
+    font-size: 2.4rem;
+   
+}
+.textWords{
+      color: white;
+    font-size: 1.8rem;
+}
+.words{
+    font-size: 1.4rem;
+
+}

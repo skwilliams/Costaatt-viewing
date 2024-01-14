@@ -74,8 +74,8 @@ const schools = () => {
           image={SchoolImage}
           schoolname="The Ken Gordon School of Communication, Creative and Digital Media "
           intro="Are you interested in journalism, corporate communications or public relations? Is graphic design,
-photography, advertising and promotions, or film and video production your passion? Do you want to become fluent in a foreign language, understand Latin American culture, communicate via music, play an instrument, write short stories or have a better understanding of our heritage and oral history?
-The Ken Gordon School of Communication Creative and Digital Media’s dedicated, qualified and experienced faculty will enlighten you and provide you with every opportunity to realise your dream or ambition. We train students to be innovative, responsible and knowledgeable consumers and creators of content.
+            photography, advertising and promotions, or film and video production your passion? Do you want to become fluent in a foreign language, understand Latin American culture, communicate via music, play an instrument, write short stories or have a better understanding of our heritage and oral history?
+The Ken Gordon School of Communication Creative and Digital Media's dedicated, qualified and experienced faculty will enlighten you and provide you with every opportunity to realise your dream or ambition. We train students to be innovative, responsible and knowledgeable consumers and creators of content.
 
    "
           linkpage="/programmes/schools/kengord"
@@ -99,7 +99,8 @@ The Ken Gordon School of Communication Creative and Digital Media’s dedicated,
               <ul className={ProgStyles.areasofstudyul}>
                 <li className={ProgStyles.areasofstudyli}>
                   {" "}
-                  <Link href="#">District Health Visiting</Link>
+                  <Link href="#" 
+                  >District Health Visiting</Link>
                 </li>
                 <li className={ProgStyles.areasofstudyli}>
                   {" "}
@@ -315,7 +316,7 @@ The Ken Gordon School of Communication Creative and Digital Media’s dedicated,
               <p className={ProgStyles.applytext}>
                 Speak to an Admission Councillor
               </p>
-              <Link className={ProgStyles.goto} href="/admissions/contactcoun">
+              <Link className={ProgStyles.goto} href="/">
                 {" "}
                 Book an appointment with a councillor →
               </Link>

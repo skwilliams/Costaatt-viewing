@@ -1,3 +1,13 @@
+import React from 'react'
+
+const bscLiscourses = () => {
+  return (
+    <div>bscLiscourses</div>
+  )
+}
+
+export default bscLiscourses
+
 export const bscLismajor = [
   {
     credittype: "Major Courses",

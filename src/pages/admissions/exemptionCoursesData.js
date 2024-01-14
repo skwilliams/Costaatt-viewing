@@ -1,3 +1,13 @@
+import React from 'react'
+
+const exemptionCoursesData = () => {
+  return (
+    <div>exemptionCoursesData</div>
+  )
+}
+
+export default exemptionCoursesData
+
 export const gce_Accounting = [
   {
     coursecode: "ACCT 126",

@@ -12,6 +12,7 @@ import ProgramCard from '@/components/PageComponents/ProgramCard';
 //import { coursedata } from './allprogrammedata';
 import SCHOOLDATA from '../../../data/schooldata.json';
 import HeaderNoImage from '@/components/PageComponents/HeaderNoImage';
+import { FaArrowUp } from "react-icons/fa";
 
 const Allprogrammes = () => {
   // const stumpNames = SCHOOLDATA.map((school) => school.nameStump);

@@ -4,17 +4,11 @@ import Head from "next/head";
 import standardStyles from "@/styles/main.module.scss";
 import AboutStyles from "@/styles/About.module.scss";
 import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
-import { useState } from "react";
-import { useEffect } from "react";
+// import { useState } from "react";
+// import { useEffect } from "react";
 
 
 const History = () => {
-  const [ setHasWindow] = useState(false);
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setHasWindow(true);
-    }
-  }, [setHasWindow]);
 
   return (
     <>
@@ -237,57 +231,7 @@ const History = () => {
           </p>
         </div>
 
-        {/* <div className={standardStyles.sectionNoSidenav}>
-          <p className={standardStyles.paragraph}>
-            From 1998 to 2000, a Community College Implementation Team (CCIT)
-            established under the jurisdiction of NIHERST, was assigned the
-            primary responsibility of planning the establishment of the national
-            community college. Given that the constituent campuses of the
-            proposed community college had diverse and different educational
-            mandates, programmes, systems and resources; the focus of the CCIT
-            and the six technical teams which comprised representatives from all
-            of the campuses, included assessment, rationalisation, harmonisation
-            and planned upgrade of the academic programming, as well as, the
-            physical, technological, and human resources of the constituent
-            campuses.
-          </p>
-          <div className={standardStyles.bullet}>
-            When the College was established in October 2000, its enabling
-            legislation set out the following objects:
-            <ul>
-              <li>
-                {" "}
-                To contribute to national and regional development, social
-                equity and the development of civil society by providing
-                broad-based access to socially responsive and innovative
-                educational programmes and by encouraging scholarly work and
-                applied research;
-              </li>
-              <li>
-                {" "}
-                To provide programmes that meet internationally acceptable
-                standards, to foster professional and personal development, to
-                prepare students for careers and for advanced study in the areas
-                of science, technology and applied arts;{" "}
-              </li>
-              <li>
-                To promote a culture of excellence by creating and maintaining
-                an academic climate that fosters innovation, discipline,
-                tolerance of diversity, criticism, self-evaluation and peer
-                assessment;{" "}
-              </li>
-              <li>
-                {" "}
-                To promote cross-cultural understanding and mutual respect among
-                peoples; and{" "}
-              </li>
-              <li>
-                To strive to be a centre of excellence for scholarly work and
-                applied research.{" "}
-              </li>
-            </ul>
-          </div>
-        </div> */}
+    
       </section>
 
       <secton id="achieve" className={standardStyles.sectiontimeline}>
@@ -423,6 +367,9 @@ const History = () => {
           >
             <span>Student Body </span>{" "}
           </p>
+
+
+          
           <table>
             <tbody>
               <tr>
@@ -470,7 +417,7 @@ const History = () => {
           >
             <span>Degrees Awarded</span>
           </p>
-          <table>
+          <table className={AboutStyles.numberstable}>
             <tbody>
               <tr>
                 <td>Undergraduate</td>

@@ -6,7 +6,7 @@
 
 
 .newsHeading {
-    font-family: 'Libre Baskerville', sans-serif;
+    font-family: $default-font-family;
   text-align: left;
   font-size: 2.5rem;
   font-weight: 800;
@@ -19,7 +19,7 @@
 }
 
 .primaryheading {
-  font-family: "Bodoni";
+  font-family: $default-font-family;
   font-size: 2rem;
   font-weight: 700;
   text-align: left;
@@ -47,7 +47,7 @@
   padding: 5rem 5rem 8rem 0;
   margin: 0 10rem;
 
-  font-family: "Lato", sans-serif;
+  font-family: $default-font-family;
   font-size: 1.5rem;
   text-align: center;
 

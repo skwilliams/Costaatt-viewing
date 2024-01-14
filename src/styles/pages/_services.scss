@@ -92,10 +92,6 @@
     }
 }
 
-
-
-
-
 .interpret{
 
     grid-column: center-start / center-end;
@@ -313,7 +309,7 @@ display: grid;
     z-index: 3;
 
     width: 80%;
-    font-family: $font-display;
+    font-family: $default-font-family;
     font-size: 1.8rem;
     text-align: center;
     padding: 1.2rem;
@@ -370,7 +366,7 @@ display: grid;
     color: #fff;
     border: none;
     border-radius: 0;
-    font-family: $font-display;
+    font-family: $default-font-family;
     font-size: 1.6rem;
     text-transform: uppercase;
     padding: 1.2rem 2.4rem;

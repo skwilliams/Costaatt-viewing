@@ -1,3 +1,25 @@
+
+import React from 'react'
+import LayoutNone from "../../../../components/Layouts/TopNavOnly_NoDropdown"
+
+
+
+
+const facultystaffdata = () => {
+
+  return (
+
+    <div>facultystaffdata</div>
+  )
+}
+export default facultystaffdata;
+
+
+// facultystaffdata.getLayout = function getLayout(page) {
+//   return <LayoutNone>{page}</LayoutNone>;
+// };
+
+
 export const staffdata = [
   {
     photo: require("../../../../../images/Programmes/deanavatar.jpg"),
@@ -167,3 +189,7 @@ export const staffdata = [
     email: "nramah@costaatt.edu.tt",
   },
 ];
+
+
+
+

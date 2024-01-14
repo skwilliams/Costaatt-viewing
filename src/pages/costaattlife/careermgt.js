@@ -48,7 +48,7 @@ const Careermgt = () => {
       >
         <Link href="/"> COSTAATT/ </Link>
         <Link href="/costaattlife"></Link>
-        <Link href="/costaattlife/sports">Sports</Link>
+        <Link href="/costaattlife/Careermgt">Sports</Link>
       </p>
 
       <section id="intro" className={standardStyles.sectionNoSidenav}>

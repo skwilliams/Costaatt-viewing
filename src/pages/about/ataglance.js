@@ -239,7 +239,7 @@ const Ataglance = () => {
             <div
               className={`${AboutStyles.schools} ${AboutStyles.schoolsliberal}`}
             >
-              <Link href="/programmes/schools/liberal">
+              <Link  href="/programmes/schools/liberal">
                 School of Liberal Arts, Education and Digital Humanities
               </Link>
             </div>
@@ -356,7 +356,7 @@ const Ataglance = () => {
   );
 };
 
-ataglance.getLayout = function getLayout(page) {
+Ataglance.getLayout = function getLayout(page) {
   return <Layout>{page}</Layout>;
 };
 

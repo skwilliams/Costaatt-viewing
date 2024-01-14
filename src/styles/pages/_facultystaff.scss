@@ -1,0 +1,62 @@
+@import "../../styles/abstracts/variables";
+
+// Rental Service Page 
+
+.sectionFacultyStaff {
+  display: grid;
+  grid-template-rows: 60vh min-content min-content 40vw repeat(2, min-content);
+
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 14rem) [col-end]
+    ) [center-end] minmax(6rem, 1fr) [full-end];
+
+  // @media only screen and (max-width: $bp-large) {
+  //     grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
+  //     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  // }
+  // @media only screen and (max-width: $bp-medium) {
+  //     grid-template-rows: 6rem calc(100vh - 6rem);
+  // }
+
+  // & > * {
+
+  //     padding:40px;
+  //     font-size:4rem;
+
+  // }
+}
+.faculty{
+
+
+    &_header{
+        grid-column: full-start / full-end;
+        display: grid;
+        grid-template-columns: [start1st] 60vw[ end1st] [start2nd] 40vw[end2nd];
+
+        font-weight: bold;
+        background-color: $color-primary-dark;
+
+      
+    
+        &text{
+                grid-column: start1st / end1st;
+             background-color: red;
+                font-weight: 800;
+        color: white;
+            font-size: 1.2rem;
+        }
+        &image{
+              grid-column: start2nd / end2nd;
+            background-color: white;
+        }
+}
+
+    &links{
+
+         grid-column: full-start / full-end;
+         font-size: 1.5rem;
+        font-family: $default-font-family;
+
+    }
+}

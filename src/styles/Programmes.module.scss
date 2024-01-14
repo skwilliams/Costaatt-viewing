@@ -49,7 +49,7 @@
 }
 
 .headingprimary {
-  font-family: "Bodoni";
+  font-family: $default-font-family;
   font-size: 2rem;
   font-weight: 700;
 
@@ -58,7 +58,7 @@
 }
 
 .headingprimaryleft {
-  font-family: "Bodoni";
+  font-family: $default-font-family;
   font-size: 2rem;
   font-weight: 700;
   text-align: left;
@@ -118,7 +118,7 @@
   font-size: 2.5rem;
   font-weight: 700;
   letter-spacing: 0.4rem;
-  font-family: "Roboto", serif;
+  font-family:$default-font-family;
   text-transform: uppercase;
 }
 
@@ -196,13 +196,13 @@
   background-color: $grey;
   color: aliceblue;
   padding: 5rem 10rem 10rem 10rem;
-  font-family: "Lato", "sans serif";
+  font-family: $default-font-family;
 }
 .bythenumbers {
   font-size: 6rem;
   transition: all 0.2s;
   padding: 2rem;
-  font-family: "Lato", "sans serif";
+  font-family: $default-font-family;
 }
 .bythenumbers:hover {
   transform: scaleX(1.4) scaleY(1.6);
@@ -261,7 +261,7 @@
 .areasofstudyul {
   list-style-type: none;
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: $default-font-family;
   // padding-left: 10rem;
   padding-bottom: 1rem;
   overflow: hidden;
@@ -338,7 +338,7 @@
 .sectionacademicssearch {
   color: #222831;
   padding: 5rem 5rem 0 5rem;
-  font-family: "Lato", "sans serif";
+  font-family: $default-font-family;
 }
 
 .formacademics {
@@ -611,7 +611,7 @@ form.degreesearch input[type="text"] {
   margin: 5rem;
 }
 table.academiccalendar {
-  font-family: "Lato";
+  font-family: $default-font-family;
   font-size: 1.25rem;
   border-collapse: collapse;
   width: 700px;
@@ -647,7 +647,7 @@ table.academiccalendar {
   background-color: $orange;
   color: white;
 
-  font-family: "Bodoni";
+  font-family: $default-font-family;
   text-transform: capitalize;
 
   backface-visibility: hidden;

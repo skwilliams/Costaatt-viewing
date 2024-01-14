@@ -1,3 +1,12 @@
+import React from 'react'
+
+const programmesData = () => {
+  return (
+    <div>programmesData</div>
+  )
+}
+
+export default programmesData
 const allCourses = [
   {
     coursecode: "ACCT 126",

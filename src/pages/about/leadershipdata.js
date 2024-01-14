@@ -1,4 +1,16 @@
+import React from 'react'
+
+const leadershipdata = () => {
+  return (
+    <div>leadershipdata</div>
+  )
+}
+
+export default leadershipdata
+
+
 export const officeofpresident = [
+
 //   {
 //     photo: require("../../../public/images/Leadership photos/Keith-Nurse.jpeg"),
 //     handle: "knurse",

@@ -1,3 +1,12 @@
+import React from 'react'
+
+const shortcoursedata = () => {
+  return (
+    <div>shortcoursedata</div>
+  )
+}
+
+export default shortcoursedata
 export const allshortcourses = [
   {
     courseTitle: "Copywriting",

@@ -65,6 +65,7 @@ const rentspace = () => {
             <title>Rental Spaces </title>
           </Head>{" "}
           <HeadImage mainimage={rentalSpacesHeader} />
+          
           <div
           className={standardStyles.linksTop}
           >

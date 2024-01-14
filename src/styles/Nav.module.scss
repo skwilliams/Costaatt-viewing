@@ -139,7 +139,7 @@
   //  padding-top: 7px;
 }
 .costaattwords {
-  font-family: "Arial", Helvetica, sans-serif;
+  font-family: $default-font-family;
   font-weight: 900;
   line-height: 2;
   font-size: 1.25rem;
@@ -257,6 +257,8 @@
   display: grid;
   gap: 0 40px;
   grid-template-columns: repeat(2, 1fr);
+    text-underline-position: under;
+    text-underline-offset: .3rem;
 }
 
 .searchButton {

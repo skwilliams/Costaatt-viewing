@@ -1,3 +1,12 @@
+import React from 'react'
+
+const studcouninfo = () => {
+  return (
+    <div>studcouninfo</div>
+  )
+}
+
+export default studcouninfo
 export const stucouncildata = [
   {
     id: 1,

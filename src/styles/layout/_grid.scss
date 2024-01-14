@@ -173,7 +173,7 @@
   display: grid;
   gap: 8rem;
   grid-gap: 2rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: auto(minmax(23rem,1fr));
  
 }
 
