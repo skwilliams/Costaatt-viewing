@@ -1,19 +1,17 @@
-import React from 'react'
-import Link from "next/link"
-import Head from 'next/head';
-import HeadImage from '@/components/PageComponents/HeadImage';
-import standardStyles from '@/styles/main.module.scss'
-import rentalSpacesHeader from '../../../public/images/rentalSpaceHeader.jpg'
+import React from "react";
+import Link from "next/link";
+import Head from "next/head";
+import HeadImage from "@/components/PageComponents/HeadImage";
+import standardStyles from "@/styles/main.module.scss";
+import rentalSpacesHeader from "../../../public/images/rentalSpaceHeader.jpg";
 
 // Icons for standard features
 import projector from "../../../public/images/services/projector.svg";
 import wifi from "../../../public/images/services/wifi.svg";
 import parking from "../../../public/images/services/parking.svg";
 
-
 import speakers from "../../../public/images/services/speakers.svg";
-import techsupport from "../../../public/images/services/techsupport.svg"
-
+import techsupport from "../../../public/images/services/techsupport.svg";
 
 // svg's for card
 import price from "../../../public/images/services/price.svg";
@@ -26,8 +24,6 @@ import email from "../../../public/images/admissions/email.svg";
 import downloadicon from "../../../public/images/admissions/downloadnoteicon.svg";
 import bookOnline from "../../../public/images/services/bookOnline.svg";
 
-
-
 //images for cards
 import auditorium from "../../../public/images/services/Auditorium.jpg";
 
@@ -37,8 +33,7 @@ import trainingRoom93 from "../../../public/images/services/Training-Room-93.jpg
 import trainingRoom127 from "../../../public/images/services/Training-Room-127.jpg";
 import trainingRoom128 from "../../../public/images/services/Training-Room-128.jpg";
 
-
-import Image from 'next/image'
+import Image from "next/image";
 
 const index = () => {
   return (
@@ -741,6 +736,6 @@ const index = () => {
       </div>
     </>
   );
-}
+};
 
-export default index
+export default index;
