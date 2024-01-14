@@ -52,6 +52,7 @@ import rooftopTerrace from "../../../public/images/services/RoofTop-Terrace-1.jp
 import trainingRoom93 from "../../../public/images/services/Training-Room-93.jpg";
 import trainingRoom127 from "../../../public/images/services/Training-Room-127.jpg";
 import trainingRoom128 from "../../../public/images/services/Training-Room-128.jpg";
+import LanguageStyles from '@/components/PageComponents/LanguageCard';
 
 
 
@@ -82,14 +83,108 @@ const translation = () => {
             entities, government organisations and individuals.
           </p>
         </div>
-        <section id="translate" className={standardStyles.translate}>
+        <section id="translate" className={LanaguageStyles.languageCard}>
           <h3 className={standardStyles.translateHeading}>
             COSTAATT <span> Translates </span> services
           </h3>
-          <p className={standardStyles.paragraph}>
+
+          <ul>
+            <li style={{ backgroundColor: "#6710F5" }}>
+              <div className={LanguageStyles.icon}>
+                <Image
+                  src={German}
+                  alt="Icon"
+                  className={standardStyles.language__icon}
+                  width="100"
+                  height="100"
+                />{" "}
+              </div>
+              <div className={LanguageStyles.title}>German</div>
+              <div className={LanguageStyles.descr}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+                impedit?
+              </div>
+            </li>
+            <li style={{ backgroundColor: "#6710F5" }}>
+              <div className="icon">
+                <Image
+                  src={Dutch}
+                  alt="Icon"
+                  className={standardStyles.language__icon}
+                  width="100"
+                  height="100"
+                />
+              </div>
+              <div className={LanguageStyles.title}>HTML 5</div>
+              <div className={LanguageStyles.descr}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+            </li>
+            <li style={{ backgroundColor: "#6F42C1" }}>
+              <div className={LanguageStyles.icon}>
+                <Image
+                  src={Dutch}
+                  alt="Icon"
+                  className={standardStyles.language__icon}
+                  width="100"
+                  height="100"
+                />
+              </div>
+              <div className={LanguageStyles.title}>CSS 3</div>
+              <div className={LanguageStyles.descr}>Lorem ipsum dolor sit.</div>
+            </li>
+            <li style={{ backgroundColor: "#D63384" }}>
+              <div className={LanguageStyles.icon}>
+                <Image
+                  src={Dutch}
+                  alt="Icon"
+                  className={standardStyles.language__icon}
+                  width="100"
+                  height="100"
+                />
+              </div>
+              <div className={LanguageStyles.title}>Englisht</div>
+              <div className={LanguageStyles.descr}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                laboriosam odio alias.
+              </div>
+            </li>
+            <li style={{ backgroundColor: "#DC3545" }}>
+              <div className={LanguageStyles.icon}>
+                <Image
+                  src={Dutch}
+                  alt="Icon"
+                  className={standardStyles.language__icon}
+                  width="100"
+                  height="100"
+                />
+              </div>
+              <div className={LanguageStyles.title}>German</div>
+              <div className={LanguageStyles.descr}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+            </li>
+            <li style={{ backgroundColor: "#DC3545" }}>
+              <div className={LanguageStyles.icon}>
+                <Image
+                  src={Dutch}
+                  alt="Icon"
+                  className={standardStyles.language__icon}
+                  width="100"
+                  height="100"
+                />
+              </div>
+              <div className={LanguageStyles.title}>French</div>
+              <div className={LanguageStyles.descr}>Translate </div>
+            </li>
+          </ul>
+        </section>
+
+        {/* <p className={standardStyles.paragraph}>
             Official and certified translation services are offered in{" "}
-          </p>
-          <div className={standardStyles.language}>
+          </p> */}
+
+        {/* <div className={standardStyles.language}>
             <Image
               src={German}
               alt="Icon"
@@ -148,8 +243,7 @@ const translation = () => {
               height="100"
             />
             <h3 className={standardStyles.language__text}> French</h3>
-          </div>
-        </section>
+          </div> */}
 
         <section id="interpret" className={standardStyles.interpret}>
           <h3 className={standardStyles.interpretHeading}>

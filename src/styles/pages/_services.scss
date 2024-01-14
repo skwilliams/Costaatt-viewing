@@ -1,6 +1,11 @@
 @import "../../styles/abstracts/variables";
 @import "../../styles/base/typography";
 
+@import "../../styles/abstracts/mixins";
+@import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+
 
 //Index Services Page
 
@@ -42,14 +47,177 @@
 
   // }
 }
-.languageCard{
-  grid-column: center-start / center-end;
-  display: grid;
-  padding: 4rem;
-  align-items: start;
 
-  grid-template-columns: repeat(3, minmax(35rem, 1fr));
-  grid-gap: 6rem;
+
+
+
+.languageCard{
+  // grid-column: center-start / center-end;
+
+
+  $frontColor: white;
+  $width: 20rem;
+  $inlineP: 1rem;
+  $borderR: 8rem;
+  $arrowW: 4rem;
+  $arrowH: 3rem;
+  $accent-color:"#6710F5";
+
+
+ $color: rgba(30, 30, 30);
+  $bgColor: rgb(215, 215, 215);
+  min-height: 100vh;
+
+  display: grid;
+  align-content: center;
+  gap: 4rem;
+  padding: 2rem;
+
+  font-family: $default-font-family;
+  color: v$color;
+  background:$bgColor;
+
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  width: min(60rem, 90%);
+  margin-inline: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+
+  list-style: none;
+  counter-reset: cardnr;
+  justify-content: center;
+}
+
+li {
+  
+  counter-increment: cardnr;
+  width: calc($width) - ($inlineP) * 2;
+  display: grid;
+  grid-template:
+    "icon" $borderR
+    "title"
+    "descr" 1fr;
+  margin-inline: $inlineP;
+  margin-bottom: calc(($borderR));
+  position: relative;
+}
+ .icon,
+ .title,
+ .descr {
+  background: $frontColor;
+  padding-inline: 1.8rem;
+  padding-bottom: 1.8rem;
+  font-size:1.5rem ;
+}
+.icon,
+.title {
+  color: ($accent-color);
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.title,
+ .descr {
+  filter: drop-shadow(0.125rem 0.125rem 0.075rem rgba(0, 0, 0, 0.25));
+}
+ .icon {
+  grid-area: icon;
+  font-size: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: ($borderR) 0 0 0;
+  position: relative;
+}
+
+ .title {
+  grid-area: title;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+ .descr {
+  grid-area: descr;
+  font-size: 0.85rem;
+  text-align: center;
+}
+ .descr::before {
+  content: "";
+  width: ($arrowW);
+  height: ($arrowH);
+  position: absolute;
+  right: 1.5rem;
+  top: 100%;
+  background: inherit;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+::after {
+  content: counter(cardnr, decimal-leading-zero);
+  position: absolute;
+  z-index: -1;
+
+  left: calc(($inlineP) * -1);
+  right: calc(($inlineP) * -1);
+  top: ($borderR);
+  bottom: calc(($borderR) * -1);
+
+  display: flex;
+  align-items: flex-end;
+  // background: var($accent-color);
+  background-image: linear-gradient(
+    160deg,
+    rgba(255, 255, 255, 0.25),
+    transparent 25% 75%,
+    rgba(0, 0, 0, 0.25)
+  );
+  border-radius: 0 0 ($borderR) 0;
+
+  $pad: 1rem;
+  padding: $pad;
+  font-size: calc($borderR) - ($pad) * 2;
+  color: white;
+}
+::before {
+  content: "";
+  position: absolute;
+  height: ($borderR);
+  top: calc(100% + ($borderR) - 2px);
+  left: calc(($inlineP) * -1);
+  right: calc(($inlineP) * -1);
+  border-radius: 0 ($borderR) 0 0;
+
+  background-image: linear-gradient(($color-grey-light-1), transparent 60%);
+  opacity: 0.5;
+  filter: blur(2px);
+}
+
+.credits {
+  margin-top: 2rem;
+  text-align: right;
+}
+.credits a {
+  color: ($color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 }
 
