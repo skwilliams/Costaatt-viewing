@@ -1,58 +1,53 @@
 @import "abstracts/variables";
 
-
-
-.contactform{
+.contactform {
   /* border: .5rem solid red; */
   display: grid;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr;
 
-  .headerform{
-  font-size: 1.65rem;
-  font-family: $default-font-family;;
-  color: #222222;margin-left:1rem;
-    }
-    
+  .headerform {
+    font-size: 1.65rem;
+    font-family: $default-font-family;
+    color: #222222;
+    margin-left: 1rem;
+  }
 
+  form.prospective {
+    margin: 5rem 0;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    background-color: hsl(0, 0%, 100%);
+    border: 4px solid $orange;
 
-form.prospective {
-  margin: 5rem 0;
-  box-sizing: border-box;
-  padding: 1.5rem;
-  background-color: hsl(0, 0%, 100%);
-  border: 4px solid $orange;
-
-  grid-gap: .75em;
-  /* display: grid;
+    grid-gap: 0.75em;
+    /* display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr; */
-
-}
-.items{
+  }
+  .items {
     // display:inline-block;
-  width:20rem;
-  height:3rem;
-  align-items: left;
-  margin:2rem;
-  grid-gap: .75em;
-}
+    width: 20rem;
+    height: 3rem;
+    align-items: left;
+    margin: 2rem;
+    grid-gap: 0.75em;
+  }
 
-.prospective input, select{
-display:inline-block;
-  width:20rem;
-  height:3rem;
-  align-items: left;
-}
+  .prospective input,
+  select {
+    display: inline-block;
+    width: 20rem;
+    height: 3rem;
+    align-items: left;
+  }
 
-.prospective label{
-  font-size:1.5rem;
-  color:#222222;
-}
-.text{
+  .prospective label {
+    font-size: 1.5rem;
+    color: #222222;
+  }
+  .text {
     font-size: 1.75rem;
     font-weight: 800;
+  }
 }
-
-}
-

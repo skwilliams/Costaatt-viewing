@@ -8,7 +8,7 @@ import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
 // import { useEffect } from "react";
 
 
-const History = () => {
+const history = () => {
 
   return (
     <>
@@ -447,4 +447,4 @@ const History = () => {
   );
 };
 
-export default History;
+export default history;

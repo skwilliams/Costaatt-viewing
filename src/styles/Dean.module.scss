@@ -40,23 +40,21 @@
   padding: 0;
   margin-left: 2rem;
   text-align: center;
- overflow: hidden;
-   text-overflow: ellipsis;
-   display: -webkit-box;
-   -webkit-line-clamp: 10; /* number of lines to show */
-           line-clamp: 10;
-   -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 10; /* number of lines to show */
+  line-clamp: 10;
+  -webkit-box-orient: vertical;
 }
 .deancontact {
   color: black;
   font-size: 1.15rem;
   padding: 3rem;
   margin-left: 2rem;
-  margin-bottom:1rem;
-  
+  margin-bottom: 1rem;
+
   .standout {
-  color: $orange;
+    color: $orange;
+  }
 }
-}
-
-

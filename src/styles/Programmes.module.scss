@@ -118,7 +118,7 @@
   font-size: 2.5rem;
   font-weight: 700;
   letter-spacing: 0.4rem;
-  font-family:$default-font-family;
+  font-family: $default-font-family;
   text-transform: uppercase;
 }
 
@@ -377,7 +377,7 @@ form.degreesearch button {
 }
 
 form.degreesearch button:hover {
-  background: $base-color;
+  background: $color-primary-dark;
 }
 form.degreesearch ::placeholder {
   font-size: 1.2rem;
@@ -527,7 +527,7 @@ form.degreesearch input[type="text"] {
   .headingprimary {
     margin-top: 2rem 1rem;
     text-align: center;
-    color:$color-primary
+    color: $color-primary;
   }
 }
 .courseaccordion {
@@ -572,13 +572,13 @@ form.degreesearch input[type="text"] {
   padding-left: 1rem;
 }
 .degcoursesli {
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   color: white;
   text-align: center;
 
   :hover {
     text-decoration: underline;
-   color:$color-primary; //$orange;
+    color: $color-primary; //$orange;
     transform: scale3d(1);
   }
 }

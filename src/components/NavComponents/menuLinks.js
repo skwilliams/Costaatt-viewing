@@ -188,7 +188,7 @@ export const mainNavLinks = [
 
       {
         title: "College Core",
-        path: "/programmes/Collegecore",
+        path: "/programmes/collegecore",
       },
       {
         title: "Professional Development Courses",
@@ -328,7 +328,7 @@ export const mainNavLinks = [
 
       {
         title: "History",
-        path: "/about/History",
+        path: "/about/history",
       },
       {
         title: "Accreditation And Quality Assurance",

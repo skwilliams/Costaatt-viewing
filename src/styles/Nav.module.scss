@@ -257,8 +257,8 @@
   display: grid;
   gap: 0 40px;
   grid-template-columns: repeat(2, 1fr);
-    text-underline-position: under;
-    text-underline-offset: .3rem;
+  text-underline-position: under;
+  text-underline-offset: 0.3rem;
 }
 
 .searchButton {

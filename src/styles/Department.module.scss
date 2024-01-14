@@ -1,20 +1,19 @@
-@import './abstracts/variables';
+@import "./abstracts/variables";
 
 /* Department */
 
 /*Department Styles Has Side nav */
 
-
 .newsHeading {
-    font-family: $default-font-family;
+  font-family: $default-font-family;
   text-align: left;
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 4rem;
-  color:$grey;
+  color: $grey;
   // grid-column: 1 / span 2;
   span {
-    color:$color-primary;
+    color: $color-primary;
   }
 }
 
@@ -39,7 +38,7 @@
 .degreecategory {
   font-size: 2rem;
   padding-left: 1rem;
-  color:$color-primary;
+  color: $color-primary;
 }
 .sectionOverview {
   // color: $grey;
@@ -68,40 +67,37 @@
     margin-bottom: 2rem;
   }
 
-
-  .corevalues{
-
+  .corevalues {
     text-align: left;
     background-color: $color-grey-light-1;
-    color:$grey;
+    color: $grey;
     margin-bottom: 2rem;
 
+    ul {
+      color: $grey;
+      padding: 1rem 0 2rem 0;
 
-ul {
-  color: $grey;
-  padding: 1rem 0 2rem 0;
+      font-size: 1.25rem;
+      font-weight: bold;
+      list-style: none;
+      text-align: left;
+    }
 
-  font-size: 1.25rem;
-  font-weight: bold;
-  list-style: none;
-  text-align: left;
-}
+    li {
+      padding: 0.5rem 1rem;
+      color: $grey;
+      text-align: left;
+      span {
+        color: $color-primary;
+      }
 
-li {
-  padding: .5rem 1rem;
-  color: $grey;
-  text-align:left;
-  span{
-    color:$color-primary;
+      :hover {
+        text-decoration: underline;
+        color: $color-primary;
+        transform: scale3d(1);
+      }
+    }
   }
-
-  :hover {
-    text-decoration: underline;
-   color:$color-primary; 
-    transform: scale3d(1);
-  }
-}
-}
 
   .accordion {
     text-align: center;
@@ -112,7 +108,7 @@ li {
       $purple-secondary,
       $orange
     );
-    color:$grey;
+    color: $grey;
     background-image: -moz-linear-gradient(right, $purple-secondary, $orange);
     background-image: -o-linear-gradient(right, $purple-secondary, $orange);
     margin-bottom: 2rem;
@@ -138,8 +134,8 @@ li {
 }
 .sectionContact {
   background-color: $lightgrey1;
-  margin: 0 ;
-  .contactcard{
+  margin: 0;
+  .contactcard {
     margin: 5rem;
   }
 }
@@ -190,14 +186,11 @@ li {
   }
 }
 
-
-
-
 .sectionProgrammes {
-  margin: 0 ;
+  margin: 0;
   padding: 5rem 5rem 8rem 0;
   background-color: $grey;
-  
+
   .courseaccordion {
     text-align: center;
     font-size: 1.5rem;

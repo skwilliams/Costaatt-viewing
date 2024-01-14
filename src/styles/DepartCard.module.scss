@@ -1,62 +1,56 @@
-@import './abstracts/variables';
+@import "./abstracts/variables";
 
-.container{
+.container {
   width: 300px;
   max-height: 600px;
   display: grid;
   align-items: left;
   // overflow: hidden;
-  margin: 0 3rem ;
+  margin: 0 3rem;
 }
-.departname{
+.departname {
+  font-weight: 900;
+  font-size: 1.25rem;
+  color: $color-primary;
+  padding: 1rem 0 2rem 0;
+  text-align: center;
+}
+.text {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: justify;
+  padding-bottom: 2rem;
 
-    font-weight: 900;
-    font-size:1.25rem;
-    color:$color-primary;
-    padding: 1rem 0  2rem 0;
-    text-align: center;
-    
-   }
-   .text{
-    font-size:1.1rem;
-    line-height: 1.5;
-    text-align: justify;
-    padding-bottom:2rem;
+  overflow: hidden;
 
-    overflow: hidden;
-   
-  display: -webkit-box; 
+  display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 6;
-  margin-bottom:1.5rem;
-   }
-   
-   .imgstyle{
-  
-    width:300px;
-    height:200px;
-    
-    
-   }
-   .linkpage{
-    font-size:1rem;
-    text-align: left;
-    color:$orange;
-    font-weight: 800;
-   }
-   
-   .shortname{
-    color:$sobitCol;
-   }
+  margin-bottom: 1.5rem;
+}
 
-   /*3 columns change name*/
+.imgstyle {
+  width: 300px;
+  height: 200px;
+}
+.linkpage {
+  font-size: 1rem;
+  text-align: left;
+  color: $orange;
+  font-weight: 800;
+}
+
+.shortname {
+  color: $sobitCol;
+}
+
+/*3 columns change name*/
 .threeColGridCon {
   display: grid;
   gap: 8rem;
   grid-gap: 2rem;
-  margin-left:3rem;
+  margin-left: 3rem;
   grid-template-columns: auto auto auto;
-
 }
 .threeColGrid {
   text-align: center;
@@ -67,7 +61,7 @@
 }
 .twoColGridCon {
   display: grid;
-  gap:4rem;
+  gap: 4rem;
   grid-gap: 2rem;
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
@@ -76,8 +70,7 @@
   text-align: left;
   padding: 1.5rem 0 0 0;
   font-size: 30px;
-  margin:4rem 0 0 0;
+  margin: 4rem 0 0 0;
 
   // padding: 10px;
 }
-

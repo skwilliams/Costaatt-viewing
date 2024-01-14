@@ -12,7 +12,9 @@
     $color-primary,
     $color-primary-dark
   );
-  color: white;
+  // background-color: $color-primary;
+  color: $grey;
+  z-index: 1000;
 }
 
 .topNavMain {
@@ -35,7 +37,7 @@
   padding: 20px 5px;
 }
 .topBarLinksActive {
-  background-color: yellow;
+  background-color: $orange;
 }
 
 .topBarLinks:hover {
@@ -43,7 +45,7 @@
   //  border-radius: 15px;
   text-underline-position: under;
 
-  text-decoration: underline solid $color-comp3 4px !important;
+  text-decoration: underline solid $orange 4px !important;
 }
 
 .topNavItems {
@@ -66,7 +68,7 @@
 }
 
 .topNavDropDownMain {
-  box-shadow: inset 0px 14px 35px rgba(0, 0, 0, 0.2);
+  // box-shadow: inset 0px 14px 35px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
   padding: 20px 10px;
   //animation: slideInFromTop 0.8s ease forwards;
@@ -87,12 +89,12 @@
   font-size: 2rem;
   cursor: pointer;
 
-  font-weight: 900;
-  text-transform: uppercase;
+  font-weight: 500;
+  text-transform: capitalize;
 }
 
 .topNavdropDownSchoolLink:hover {
-  color: yellow;
+  color: $orange;
 }
 
 .topNavdropDownSchoolMenu {
@@ -109,8 +111,8 @@
 }
 
 .topNavdropDownDeptLink a:hover {
-  background-color: white;
-  color: $color-primary;
+  background-color: $orange;
+  color: white;
 }
 
 .topNavdropDownDeptLink {
@@ -125,7 +127,7 @@
 .dropDownLi {
   cursor: pointer;
 
-  color: #0077b6; /* Change link color */
+  color: $orange;
   text-align: center;
   font-weight: bold;
 }

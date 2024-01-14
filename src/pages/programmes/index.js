@@ -63,13 +63,13 @@ const progoverview = () => {
               <p className={ProgStyles.bythenumberstext}>
                 In a wide range of areas
               </p>
-              <Link
+              {/* <Link
                 className={ProgStyles.explore}
                 href="/programmes/allprogrammes"
               >
                 {" "}
                 View Bachelor Degrees →
-              </Link>
+              </Link> */}
             </div>
             <div className={ProgStyles.progGrid}>
               <h2 className={ProgStyles.bythenumbers}>24</h2>
@@ -77,13 +77,13 @@ const progoverview = () => {
               <p className={ProgStyles.bythenumberstext}>
                 Prepare you for Bachelor Degrees
               </p>
-              <Link
+              {/* <Link
                 className={ProgStyles.explore}
                 href="/programmes/allprogrammes"
               >
                 {" "}
                 View Associate Degrees →
-              </Link>
+              </Link> */}
             </div>
             <div className={ProgStyles.progGrid}>
               <h2 className={ProgStyles.bythenumbers}>19</h2>
@@ -92,13 +92,13 @@ const progoverview = () => {
                 {" "}
                 A wide range available
               </p>
-              <Link
+              {/* <Link
                 className={ProgStyles.explore}
                 href="/programmes/certificates"
               >
                 {" "}
                 View All Certificates →
-              </Link>
+              </Link> */}
             </div>
             <div className={ProgStyles.progGrid}>
               <h2 className={ProgStyles.bythenumbers}>7</h2>
@@ -107,16 +107,17 @@ const progoverview = () => {
                 {" "}
                 knowledge packed & Quick
               </p>
-              <Link
+              {/* <Link
                 className={ProgStyles.explore}
                 href=" /programmes/allprogrammes"
               >
                 {" "}
                 View All Diploma →
-              </Link>
+              </Link> */}
             </div>
           </div>
           <p />
+          
         </div>
       </section>
       <section id="whychoose" className={ProgStyles.sectionwhychoose}>
@@ -383,7 +384,7 @@ const progoverview = () => {
                 href="/programmes/allprogrammes"
               >
                 {" "}
-                View Bachelor Degrees →
+                View All Programmes
               </Link>
             </div>
             <div className={ProgStyles.threeColGrid}>
@@ -419,13 +420,13 @@ const progoverview = () => {
                 {" "}
                 A wide range available
               </p>
-              <Link
+              {/* <Link
                 className={ProgStyles.explore}
                 href="/programmes/allprogrammes"
               >
                 {" "}
                 More Info →
-              </Link>
+              </Link> */}
             </div>
           </div>
           <p />

@@ -36,13 +36,13 @@ import StaffCard from "@/components/PageComponents/StaffCard";
 const Sports = () => {
 
 
-   const [ setHasWindow] = useState(false);
+   const [window, setHasWindow] = useState(false);
  useEffect(() => {
    if (typeof window !== "undefined") {
      setHasWindow(true);
    }
- }, [setHasWindow]);
- const video = ""
+ }, [window]);
+
   return (
     <>
       <Head>
@@ -50,7 +50,7 @@ const Sports = () => {
       </Head>
       <HeadImage
         mainimage={awaitingbanner}
-        imagetext={"COSTAATT Sports"}
+        imagetext=""
       />
       <p
         className={`${standardStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}

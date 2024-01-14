@@ -1,395 +1,337 @@
 @import "abstracts/variables";
 
-
-.courseName{
-    font-family:$default-font-family;;
-    font-size:2.5rem;
-    color:white;
-    margin: 0 0 2rem 0 ;
-    background-image: linear-gradient(to right, $orange,$purple-secondary);
+.courseName {
+  font-family: $default-font-family;
+  font-size: 2.5rem;
+  color: white;
+  margin: 0 0 2rem 0;
+  background-image: linear-gradient(to right, $orange, $purple-secondary);
 }
-.headingsecondary{
-    font-size: 1.5rem;
-    font-family: $default-font-family;
-    margin:1.5rem 0;
-    font-weight: bold;
+.headingsecondary {
+  font-size: 1.5rem;
+  font-family: $default-font-family;
+  margin: 1.5rem 0;
+  font-weight: bold;
 }
-.footnote{
-    font-size: 1.1rem;
-    font-style: italic;
-    margin:1rem 0;
+.footnote {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin: 1rem 0;
 }
-.footnote2{
-    font-size: 1.25rem;
-    font-style: italic;
-    margin:1rem 0;
-    font-weight: bold;
+.footnote2 {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin: 1rem 0;
+  font-weight: bold;
 }
-.threeColGridCon{  
+.threeColGridCon {
   display: grid;
-   gap: 5rem;
-   grid-gap:2rem ;
+  gap: 5rem;
+  grid-gap: 2rem;
   grid-template-columns: auto auto auto;
- 
- }
- .threeColGrid {  
-   text-align: center;
-//    padding: 20px ;
-   font-size: 1.5rem;
-   
- 
-   // padding: 10px;
- }
- 
- .fiveColGridCon{  
-    display: grid;
-    gap: 5rem;
-    grid-gap:2rem ;
-    grid-template-columns: auto auto auto auto auto;
- }
- 
- .fiveColGrid {  
-   text-align: center;
-  //  padding: 20px ;
-   font-size: 1.5rem;
-   
- 
-   // padding: 10px;
- }
-
- .fourColGridCon{  
-    display: grid;
-    gap: 5rem;
-    grid-gap:2rem ;
-    grid-template-columns: auto auto auto auto;
- }
-
- .fourColGrid {  
-   text-align: center;
-   padding: 20px ;
-   font-size: 1.5rem;
-   
- 
-   // padding: 10px;
- }
-
-.sectionOverview{
-
-  
-    margin-right:3rem;
-    font-size:1.25rem;
-     line-height: 2;
-    //  margin-left:5rem;
-    .desc{
-        font-size:1.25rem;
-        text-align: justify;
-        font-family:$default-font-family;
-        margin: 3rem 0;
-       
-    }
-    
-    .icon{
-        width:70px;
-        height:70px;
-        
-    }
-    .iconsection{
-        // margin:  2rem 0;
-        margin:3rem 0;
-    }
-    .iconfont{
-        font-size: 1.1rem;
-       
-        
-    }
-    .inquiryform{
-    text-align: left;
-    margin-left:1rem;
-    font-size:2rem;
-    }
-  
-    
-
 }
-.sectionCareers{
- margin:6rem 3rem 6rem 0;
- margin-top:6rem;
+.threeColGrid {
+  text-align: center;
+  //    padding: 20px ;
+  font-size: 1.5rem;
+
+  // padding: 10px;
+}
+
+.fiveColGridCon {
+  display: grid;
+  gap: 5rem;
+  grid-gap: 2rem;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.fiveColGrid {
+  text-align: center;
+  //  padding: 20px ;
+  font-size: 1.5rem;
+
+  // padding: 10px;
+}
+
+.fourColGridCon {
+  display: grid;
+  gap: 5rem;
+  grid-gap: 2rem;
+  grid-template-columns: auto auto auto auto;
+}
+
+.fourColGrid {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.5rem;
+
+  // padding: 10px;
+}
+
+.sectionOverview {
+  margin-right: 3rem;
+  font-size: 1.25rem;
+  line-height: 2;
+  //  margin-left:5rem;
+  .desc {
+    font-size: 1.25rem;
+    text-align: justify;
+    font-family: $default-font-family;
+    margin: 3rem 0;
+  }
+
+  .icon {
+    width: 70px;
+    height: 70px;
+  }
+  .iconsection {
+    // margin:  2rem 0;
+    margin: 3rem 0;
+  }
+  .iconfont {
+    font-size: 1.1rem;
+  }
+  .inquiryform {
+    text-align: left;
+    margin-left: 1rem;
+    font-size: 2rem;
+  }
+}
+.sectionCareers {
+  margin: 6rem 3rem 6rem 0;
+  margin-top: 6rem;
   background-color: white;
   color: #222222;
   // margin: 6rem 3rem;
 
-
-
-.careerstable {
-  font-family:  $default-font-family;
-  font-size: 1.25rem;
-  border-collapse: collapse;
-  width:100%;
-}
-
-.careerstable td,
-th {
-  padding: 10px;
-  text-align: left;
-  margin: 0;
-}
-
-.careerstable tbody tr:nth-child(2n) {
-  background-color: #eee;
-}
-
-.careerstable th {
-
-  /* background-color: red; */
-  color: #222222;
-
-  font-family: $default-font-family;
-  text-transform: capitalize;
-
-  backface-visibility: hidden;
- 
-  font-size: 1.25rem;
-  font-weight: 900;
-}
-
-}
-
-.sectionPortfolio{
-     margin-right:2rem;
-     padding:0;
-     margin-bottom:6rem;
-     margin-top:6rem;
-    
-
-
-}
-.sectionGradSpeak{
-  margin: 6rem 0;
-    //  margin-top:6rem;
-
-}
-.sectionCurriculum{
- 
-  margin-right:2rem;
-     padding:0;
-     margin-bottom:6rem;
-     margin-top:6rem;
-//  margin:6rem 0;
-
-}
-  .coursecode{
-    font-size: 1.15rem; 
-    margin:0;
-    text-align: left;
-  }
- 
-  .bold{
-    font-weight: 800;
+  .careerstable {
+    font-family: $default-font-family;
     font-size: 1.25rem;
+    border-collapse: collapse;
+    width: 100%;
   }
-   .tableheadings{
-    font-size: 1.2rem;
-    font-weight: 700;
+
+  .careerstable td,
+  th {
+    padding: 10px;
     text-align: left;
-    color:$orange;
+    margin: 0;
   }
- .courseheadings{
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-align: left;
+
+  .careerstable tbody tr:nth-child(2n) {
+    background-color: #eee;
   }
-  .coursename{
-    color:$orange;
-     font-size: 1.15rem; 
-     text-align: left;
-  }
-  .credits{
-    margin-left:1rem;
-    font-size: 1.15rem;
-     text-align: left;
-    
-  }
-  .creditstotal{
-    margin-left:1rem;
-    font-size: 1.2rem;
-     text-align: left;
-     font-weight: 800;
-    
-  }
-  .accdetails{
-    margin-bottom:2rem;
-  }
-  .total{
-    font-size:1.2rem;
+
+  .careerstable th {
+    /* background-color: red; */
+    color: #222222;
+
+    font-family: $default-font-family;
+    text-transform: capitalize;
+
+    backface-visibility: hidden;
+
+    font-size: 1.25rem;
     font-weight: 900;
-    text-align:right;
   }
+}
 
+.sectionPortfolio {
+  margin-right: 2rem;
+  padding: 0;
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+}
+.sectionGradSpeak {
+  margin: 6rem 0;
+  //  margin-top:6rem;
+}
+.sectionCurriculum {
+  margin-right: 2rem;
+  padding: 0;
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+  //  margin:6rem 0;
+}
+.coursecode {
+  font-size: 1.15rem;
+  margin: 0;
+  text-align: left;
+}
 
-  .coursesGridCon{  
+.bold {
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+.tableheadings {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: left;
+  color: $orange;
+}
+.courseheadings {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: left;
+}
+.coursename {
+  color: $orange;
+  font-size: 1.15rem;
+  text-align: left;
+}
+.credits {
+  margin-left: 1rem;
+  font-size: 1.15rem;
+  text-align: left;
+}
+.creditstotal {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  text-align: left;
+  font-weight: 800;
+}
+.accdetails {
+  margin-bottom: 2rem;
+}
+.total {
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-align: right;
+}
+
+.coursesGridCon {
   display: grid;
-   gap: 2rem;
-   grid-gap:1rem ;
-   grid-template-columns: 1fr 2fr 1fr;
-   margin:0;
-   padding:0
-  
- 
- }
- .coursesColGrid {  
-   text-align: center;
-//    padding: 20px ;
-   font-size: 1.5rem;
-   
- 
-   // padding: 10px;
- }
-.sectionFinancial{
+  gap: 2rem;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin: 0;
+  padding: 0;
+}
+.coursesColGrid {
+  text-align: center;
+  //    padding: 20px ;
+  font-size: 1.5rem;
+
+  // padding: 10px;
+}
+.sectionFinancial {
   // margin:6rem 0;
   font-size: 1.15rem;
-   margin-right:2rem;
-     padding:0;
-     margin-bottom:6rem;
-     margin-top:6rem;
+  margin-right: 2rem;
+  padding: 0;
+  margin-bottom: 6rem;
+  margin-top: 6rem;
 
+  .coursesGridCon {
+    display: grid;
+    gap: 2rem;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 4fr 1fr;
+    margin: 0;
+    padding: 0;
+  }
+  .coursesColGrid {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.25rem;
 
-  .coursesGridCon{  
-   display: grid;
-   gap: 2rem;
-   grid-gap:1rem ;
-   grid-template-columns: 1fr 4fr 1fr;
-   margin:0;
-   padding:0;
-
-  
- 
- }
- .coursesColGrid {  
-   text-align: center;
-   padding: 20px ;
-   font-size: 1.25rem;
-      
- 
-   // padding: 10px;
- }
- .credits{
+    // padding: 10px;
+  }
+  .credits {
     // margin-left:1rem;
     font-size: 1.15rem;
-     text-align: justify;
- }
-    
-}
-
-.sectionRequirements{
-  font-size:1.15rem;
-  font-family: $default-font-family;
-   margin-right:2rem;
-     padding:0;
-     margin-bottom:6rem;
-     margin-top:6rem;
-
-
-  .text{
-    font-size:1.15rem;
     text-align: justify;
-      font-family: $default-font-family;
-      line-height: 2;
-      
   }
- 
-
-
 }
 
- 
+.sectionRequirements {
+  font-size: 1.15rem;
+  font-family: $default-font-family;
+  margin-right: 2rem;
+  padding: 0;
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+
+  .text {
+    font-size: 1.15rem;
+    text-align: justify;
+    font-family: $default-font-family;
+    line-height: 2;
+  }
+}
+
 .careerstable {
   font-family: $default-font-family;
   font-size: 2rem;
   border-collapse: collapse;
-  width:100%;
+  width: 100%;
 
-
-.careerstable td,
-th {
-  padding: 10px;
-  text-align: left;
-  margin: 0;
-}
-
-.careerstable tbody tr:nth-child(2n) {
-  background-color: #eee;
-}
-
-.careerstable th {
-
-  color: #222222;
-
-  font-family: $default-font-family;
-  text-transform: capitalize;
-
-  backface-visibility: hidden;
- 
-  font-size: 1.25rem;
-  font-weight: 900;
-}
-
-
-
-}
-
-.entryreq{
-        .list{
-           margin-left:2rem;
-        .items{
-         list-style-type: square;
-         margin:.5rem 0;
-         
-            }
-             .items::marker{
-         
-             color:$orange;
-               }        
-
-        }
-
-    }
-
-
-
-  .text{
-    font-size:1.1rem;
-    text-align: justify;
-      font-family: $default-font-family;
-      line-height: 2;
-      
-
+  .careerstable td,
+  th {
+    padding: 10px;
+    text-align: left;
+    margin: 0;
   }
-  .goto {
+
+  .careerstable tbody tr:nth-child(2n) {
+    background-color: #eee;
+  }
+
+  .careerstable th {
+    color: #222222;
+
+    font-family: $default-font-family;
+    text-transform: capitalize;
+
+    backface-visibility: hidden;
+
+    font-size: 1.25rem;
+    font-weight: 900;
+  }
+}
+
+.entryreq {
+  .list {
+    margin-left: 2rem;
+    .items {
+      list-style-type: square;
+      margin: 0.5rem 0;
+    }
+    .items::marker {
+      color: $orange;
+    }
+  }
+}
+
+.text {
+  font-size: 1.1rem;
+  text-align: justify;
+  font-family: $default-font-family;
+  line-height: 2;
+}
+.goto {
   color: $orange;
   font-size: 1.1rem;
   float: center;
 }
 
-
-.sectionStuResources{
-  margin:6rem 0;
+.sectionStuResources {
+  margin: 6rem 0;
   font-size: 1.15rem;
-
 }
 
-.courseheadings{
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-align: left;
-  }
+.courseheadings {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: left;
+}
 
-  .creditsummarytext{
-    font-size: 1.25rem;
-    text-align:right;
-    margin:2rem;
-    
-  }
-  .creditsummarynumber{
-    font-size: 1.5rem;
-    text-align:right;
-  }
+.creditsummarytext {
+  font-size: 1.25rem;
+  text-align: right;
+  margin: 2rem;
+}
+.creditsummarynumber {
+  font-size: 1.5rem;
+  text-align: right;
+}
