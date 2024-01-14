@@ -7,44 +7,44 @@ import standardStyles from "@/styles/main.module.scss";
 import Link from "next/link";
 
 // Icons for standard features
-import projector from "../../../public/images/services/projector.svg";
-import wifi from "../../../public/images/services/wifi.svg";
-import parking from "../../../public/images/services/parking.svg";
+import projector from "../../../public/images/servicesPhoto/projector.svg";
+import wifi from "../../../public/images/servicesPhoto/wifi.svg";
+import parking from "../../../public/images/servicesPhoto/parking.svg";
 
 
-import speakers from "../../../public/images/services/speakers.svg";
-import techsupport from "../../../public/images/services/techsupport.svg";
+import speakers from "../../../public/images/servicesPhoto/speakers.svg";
+import techsupport from "../../../public/images/servicesPhoto/techsupport.svg";
 
 // Photos for why costaatt
-import whyback from "../../../public/images/services/whybackground.jpg";
+import whyback from "../../../public/images/servicesPhoto/whybackground.jpg";
 
-import parkingFeature from "../../../public/images/services/parkingFeature.jpg";
+import parkingFeature from "../../../public/images/servicesPhoto/parkingFeature.jpg";
 
-import whyimage1 from "../../../public/images/services/whyimage1.jpg";
+import whyimage1 from "../../../public/images/servicesPhoto/whyimage1.jpg";
 
-import whyimage2 from "../../../public/images/services/whyimage2.jpg";
+import whyimage2 from "../../../public/images/servicesPhoto/whyimage2.jpg";
 
 // svg's for card
-import price from "../../../public/images/services/price.svg";
-import location from "../../../public/images/services/location.svg";
-import layout from "../../../public/images/services/layout.svg";
-import size from "../../../public/images/services/size.svg";
+import price from "../../../public/images/servicesPhoto/price.svg";
+import location from "../../../public/images/servicesPhoto/location.svg";
+import layout from "../../../public/images/servicesPhoto/layout.svg";
+import size from "../../../public/images/servicesPhoto/size.svg";
 
 import telephone from "../../../public/images/admissions/telephone.svg";
 import email from "../../../public/images/admissions/email.svg";
 import downloadicon from "../../../public/images/admissions/downloadnoteicon.svg";
-import bookOnline from "../../../public/images/services/bookOnline.svg";
+import bookOnline from "../../../public/images/servicesPhoto/bookOnline.svg";
 
 import rentalSpacesHeader from "../../../public/images/rentalSpaceHeader.jpg";
 
 //images for cards
-import auditorium from "../../../public/images/services/Auditorium.jpg";
+import auditorium from "../../../public/images/servicesPhoto/Auditorium.jpg";
 
-import boardRoomChag from "../../../public/images/services/BoardRoom-Pos.jpg";
-import rooftopTerrace from "../../../public/images/services/RoofTop-Terrace-1.jpg";
-import trainingRoom93 from "../../../public/images/services/Training-Room-93.jpg";
-import trainingRoom127 from "../../../public/images/services/Training-Room-127.jpg";
-import trainingRoom128 from "../../../public/images/services/Training-Room-128.jpg";
+import boardRoomChag from "../../../public/images/servicesPhoto/BoardRoom-Pos.jpg";
+import rooftopTerrace from "../../../public/images/servicesPhoto/RoofTop-Terrace-1.jpg";
+import trainingRoom93 from "../../../public/images/servicesPhoto/Training-Room-93.jpg";
+import trainingRoom127 from "../../../public/images/servicesPhoto/Training-Room-127.jpg";
+import trainingRoom128 from "../../../public/images/servicesPhoto/Training-Room-128.jpg";
 
 const rentspace = () => {
 

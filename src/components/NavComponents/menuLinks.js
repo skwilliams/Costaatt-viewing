@@ -116,10 +116,6 @@ export const topNavLinksLeft = [
 ];
 
 export const topNavLinksRight = [
-  // {
-  //   title: "Request Info",
-  //   path: "/requestinfo",
-  // },
 
   {
     id: "apply",
@@ -342,19 +338,7 @@ export const mainNavLinks = [
         title: "Careers",
         path: "/about/careers",
       },
-      // {
-      //    img: require("../../../images/Links/dummyImg2.jpg"),
-
-      //   title: "Accreditation And Quality Assurance",
-      //   path: "/about/accreditation",
-      // },
-
-      // },
+     
     ],
   },
-
-  // {
-  //   title: "Directory",
-  //   path: "/",
-  // },
 ];

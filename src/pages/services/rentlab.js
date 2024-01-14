@@ -2,16 +2,16 @@ import React from 'react'
 import Image
  from 'next/image';
  // Icons for Flags
-import English from "../../../public/images/services/flagEngland.svg";
+import English from "../../../public/images/servicesPhoto/flagEngland.svg";
 
-import Spanish from "../../../public/images/services/flagSpain.svg";
+import Spanish from "../../../public/images/servicesPhoto/flagSpain.svg";
 
-import German from "../../../public/images/services/flagGermany.svg";
+import German from "../../../public/images/servicesPhotoPhoto/flagGermany.svg";
 
-import Dutch from "../../../public/images/services/flagDutch.svg";
+import Dutch from "../../../public/images/servicesPhotoPhoto/flagDutch.svg";
 
-import French from "../../../public/images/services/flagFrance.svg";
-import Portugues from "../../../public/images/services/flagPortugal.svg";
+import French from "../../../public/images/servicesPhoto/flagFrance.svg";
+import Portugues from "../../../public/images/servicesPhoto/flagPortugal.svg";
 
 
 import standardStyles from "@/styles/main.module.scss";
