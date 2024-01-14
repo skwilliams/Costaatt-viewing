@@ -202,7 +202,7 @@ export const mainNavLinks = [
         path: "/programmes/academiccalendar",
       },
       {
-        img: require("../../../images/Links/dummyImg2.jpg"),
+        img: require("../../../images/Links/dummyImg1.jpg"),
         title: "Admission Counsellor",
         path: "/programmes/admissioncounsellors",
       },
@@ -243,7 +243,7 @@ export const mainNavLinks = [
         path: "/admissions/howtoregister",
       },
       {
-        img: require("../../../images/Links/dummyImg2.jpg"),
+        img: require("../../../images/Links/dummyImg1.jpg"),
         title: "Visit us",
         path: "/admissions/visitus",
       },
@@ -265,7 +265,7 @@ export const mainNavLinks = [
     ],
     submenuImage: [
       {
-        img: require("../../../public/images/services/Auditorium.jpg"),
+        img: require("../../../images/Links/dummyImg1.jpg"),
 
         title: "Rent A Space ",
         path: "/services/rentspace",

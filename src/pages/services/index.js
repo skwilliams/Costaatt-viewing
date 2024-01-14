@@ -6,10 +6,10 @@ import standardStyles from "@/styles/main.module.scss";
 import rentalSpacesHeader from "../../../public/images/rentalSpaceHeader.jpg";
 
 // Icons for standard features
+
 import projector from "../../../public/images/services/projector.svg";
 import wifi from "../../../public/images/services/wifi.svg";
 import parking from "../../../public/images/services/parking.svg";
-
 import speakers from "../../../public/images/services/speakers.svg";
 import techsupport from "../../../public/images/services/techsupport.svg";
 
