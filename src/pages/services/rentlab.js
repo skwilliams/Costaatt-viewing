@@ -1,18 +1,16 @@
-import React from 'react'
-import Image
- from 'next/image';
- // Icons for Flags
+import React from "react";
+import Image from "next/image";
+// Icons for Flags
 import English from "../../../public/images/servicesPhoto/flagEngland.svg";
 
 import Spanish from "../../../public/images/servicesPhoto/flagSpain.svg";
 
-import German from "../../../public/images/servicesPhotoPhoto/flagGermany.svg";
+import German from "../../../public/images/servicesPhoto/flagGermany.svg";
 
-import Dutch from "../../../public/images/servicesPhotoPhoto/flagDutch.svg";
+import Dutch from "../../../public/images/servicesPhoto/flagDutch.svg";
 
 import French from "../../../public/images/servicesPhoto/flagFrance.svg";
 import Portugues from "../../../public/images/servicesPhoto/flagPortugal.svg";
-
 
 import standardStyles from "@/styles/main.module.scss";
 
@@ -41,10 +39,10 @@ const rentlab = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
             impedit?
           </div>
-        </li>  
+        </li>
       </ul>
     </section>
   );
-}
+};
 
-export default rentlab
+export default rentlab;

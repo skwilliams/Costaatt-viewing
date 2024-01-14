@@ -10,8 +10,8 @@ import rentalSpacesHeader from "../../../public/images/rentalSpaceHeader.jpg";
 import projector from "../../../public/images/servicesPhoto/projector.svg";
 import wifi from "../../../public/images/servicesPhoto/wifi.svg";
 import parking from "../../../public/images/servicesPhoto/parking.svg";
-import speakers from "../../../public/images/servicesPhotoPhoto/speakers.svg";
-import techsupport from "../../../public/images/servicesPhotoPhoto/techsupport.svg";
+import speakers from "../../../public/images/servicesPhoto/speakers.svg";
+import techsupport from "../../../public/images/servicesPhoto/techsupport.svg";
 
 // svg's for card
 import price from "../../../public/images/servicesPhoto/price.svg";
