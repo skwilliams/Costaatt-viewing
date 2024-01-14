@@ -194,9 +194,6 @@ export const mainNavLinks = [
         title: "Professional Development Courses",
         path: "/programmes/shortcourses",
       },
-    
-   
-     
     ],
     submenuImage: [
       {
@@ -268,7 +265,7 @@ export const mainNavLinks = [
     ],
     submenuImage: [
       {
-        img: require("../../../public/images/services/RoofTop-Terrace-2.jpg"),
+        img: require("../../../public/images/services/Auditorium.jpg"),
 
         title: "Rent A Space ",
         path: "/services/rentspace",

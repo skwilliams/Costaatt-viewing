@@ -1,25 +1,21 @@
-import React from 'react'
+import React from "react";
 
 const leadershipdata = () => {
-  return (
-    <div>leadershipdata</div>
-  )
-}
+  return <div>leadershipdata</div>;
+};
 
-export default leadershipdata
-
+export default leadershipdata;
 
 export const officeofpresident = [
-
-//   {
-//     photo: require("../../../public/images/Leadership photos/Keith-Nurse.jpeg"),
-//     handle: "knurse",
-//     altText: " photo Keith Nurse",
-//     name: "Keith Nurse",
-//     position: "President",
-//     email: "knurse@costaatt.edu.tt",
-//     phone: "1-868-625-5030 ext 0000",
-//   },
+  //   {
+  //     photo: require("../../../public/images/Leadership photos/Keith-Nurse.jpeg"),
+  //     handle: "knurse",
+  //     altText: " photo Keith Nurse",
+  //     name: "Keith Nurse",
+  //     position: "President",
+  //     email: "knurse@costaatt.edu.tt",
+  //     phone: "1-868-625-5030 ext 0000",
+  //   },
   {
     photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
     handle: "ccharles",
@@ -27,7 +23,6 @@ export const officeofpresident = [
     name: "Carlene Charles",
     position: "Executive Assistant",
     email: "ccharles@costaatt.edu.tt",
-    
   },
 
   {
@@ -37,7 +32,6 @@ export const officeofpresident = [
     name: "Rodney Amar",
     position: "Senior Project Officer",
     email: "rramar@costaatt.edu.tt",
-    
   },
   {
     photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
@@ -46,7 +40,6 @@ export const officeofpresident = [
     name: "Melissa Headley",
     position: "Senior Project Officer",
     email: "mheadley@costaatt.edu.tt",
-    
   },
   {
     photo: require("../../../public/images/Leadership photos/Lisa-Solomon.jpg"),
@@ -55,7 +48,6 @@ export const officeofpresident = [
     name: "Lisa Solomon",
     position: "Corporate Secretary",
     email: "lsolomon@costaatt.edu.tt",
-   
   },
 
   {
@@ -65,7 +57,6 @@ export const officeofpresident = [
     name: "Kavita Maharaj",
     position: "Chief Internal Auditor ",
     email: "kmaharaj@costaatt.edu.tt",
-    
   },
 ];
 export const vps = [
@@ -134,9 +125,8 @@ export const management = [
     name: "Rhonda Cumberbatch",
     position: "College Registrar",
     email: "rcumberbatch@costaatt.edu.tt",
-    },
+  },
 
-  
   {
     photo: require("../../../public/images/Leadership photos/Dawn-Dookie.jpg"),
     handle: "ddookie",
@@ -152,7 +142,6 @@ export const management = [
     name: "Ian Carter",
     position: "Director, Student Life & Athletics ",
     email: "icarter@costaatt.edu.tt",
-    
   },
   {
     photo: require("../../../public/images/Leadership photos/Liesel-Gransaull.jpg"),
@@ -161,7 +150,6 @@ export const management = [
     name: "Liesel Gransuall-Brown",
     position: "Director, Education Technologies & Distance Education",
     email: "lbrown@costaatt.edu.tt",
-    
   },
   {
     photo: require("../../../public/images/Leadership photos/Doodnath-Persad.jpg"),
@@ -170,7 +158,6 @@ export const management = [
     name: "Dr. Doodnath Persad",
     position: "Director, Quality Assurance and Institutional Research",
     email: "dpersad@costaatt.edu.tt",
-    
   },
   {
     photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
@@ -179,7 +166,6 @@ export const management = [
     name: "Chantale Leonard-St Clair",
     position: "Director, Translation and Interpretation Services",
     email: "cstclair@costaatt.edu.tt",
-   
   },
 
   {
@@ -189,10 +175,8 @@ export const management = [
     name: "Marcia Stanisclaus",
     position: "Director, Planning and Employment",
     email: "mstanisclaus@costaatt.edu.tt",
-    
   },
-  
-  
+
   {
     photo: require("../../../public/images/Leadership photos/Kristed J-Herbert.jpg"),
     handle: "kherbert",
@@ -200,7 +184,6 @@ export const management = [
     name: "Kristed Herbert",
     position: "Director, Campus Services",
     email: "kherbert@costaatt.edu.tt",
-    
   },
   {
     photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
@@ -209,7 +192,6 @@ export const management = [
     name: "Lindsay Boodoo",
     position: "Director, Marketing and Public Relations",
     email: "lboodoo@costaatt.edu.tt",
-   
   },
   {
     photo: require("../../../public/images/Leadership photos/darren-headley.jpeg"),
@@ -218,25 +200,22 @@ export const management = [
     name: "Darren Headley",
     position: "Director, Technology Services",
     email: "dheadley@costaatt.edu.tt",
-   
   },
   {
-    photo: require("../../../public/images/Leadership photos/tricia-joseph.jpg"),
+    photo: require("../../../public/images/Leadership photos/Tricia-Joseph.jpg"),
     handle: "tjoseph",
     altText: " photo of Dr. Tricia Joseph",
     name: "Dr. Tricia Joseph",
     position: "Director, Health and Counselling Services",
     email: "tjoseph@costaatt.edu.tt",
-    
   },
-   {
+  {
     photo: require("../../../public/images/Leadership photos/Permilla-Farrell.jpg"),
     handle: "pfarrell",
     altText: " photo of Permilla Farrell",
     name: "Permilla Farrell",
     position: "Director, CollegeStarTT",
     email: "pfarrell@costaatt.edu.tt",
-    
   },
   {
     photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
@@ -245,12 +224,10 @@ export const management = [
     name: "Sabrina Julien-Budhram",
     position: "Director, Procurement",
     email: "SJulienBudhram@costaatt.edu.tt",
-    
   },
 ];
 
 export const deans = [
-  
   {
     photo: require("../../../public/images/Leadership photos/Lalita.jpg"),
     handle: "lramlal",
@@ -258,7 +235,6 @@ export const deans = [
     name: "Lalita Ramlal-Chirkoot",
     position: "Dean, Workforce Enhancement and Development",
     email: "lrchirkoot@costaatt.edu.tt",
-    
   },
 
   {
@@ -268,16 +244,15 @@ export const deans = [
     name: "Dr. Kyra Santana",
     position: "Dean, School of Business and Digital Technologies",
     email: "kmsantana@costaatt.edu.tt",
-   
   },
   {
     photo: require("../../../public/images/Leadership photos/Clarinda-Jack.jpg"),
     handle: "cjack",
     altText: " photo of Clarinda Jack",
     name: "Clarinda Jack",
-    position: "Dean, Ken Gordon School of Communication, Creative and Digital Media",
+    position:
+      "Dean, Ken Gordon School of Communication, Creative and Digital Media",
     email: "cjack@costaatt.edu.tt",
-    
   },
   {
     photo: require("../../../public/images/Leadership photos/Anjenney-Dwarika.jpg"),
@@ -286,7 +261,6 @@ export const deans = [
     name: "Anjenny Boodoosingh-Dwarika",
     position: "Dean, School of Nursing, Health and Medical Technologies",
     email: "adwarika@costaatt.edu.tt",
-    
   },
 
   {
@@ -294,9 +268,9 @@ export const deans = [
     handle: "Delamae Wilson",
     altText: " photo of Delamae Wilson",
     name: "Delamae Wilson",
-    position: "Dean, School of Enviornment, Circular Ecomonmy and Sustainability ",
+    position:
+      "Dean, School of Enviornment, Circular Ecomonmy and Sustainability ",
     email: "dwilson@costaatt.edu.tt",
-   
   },
   {
     photo: require("../../../public/images/Leadership photos/Neil-Sylvester.jpg"),
@@ -305,29 +279,25 @@ export const deans = [
     name: "Neil Sylvester",
     position: "Dean, Liberal Arts, Education and Digital Humanities",
     email: "nsylvester@costaatt.edu.tt",
-    
   },
 ];
 export const heads = [
- 
   {
-  photo: require("../../../public/images/Leadership photos/Roger-Chung.jpg"),
+    photo: require("../../../public/images/Leadership photos/Roger-Chung.jpg"),
     handle: "rchung",
     altText: " photo of Roger Chung",
     name: "Roger Chung",
     position: "ICTs and Digital Technologies",
     email: "rchung@costaatt.edu.tt",
-    
   },
-{
-  photo: require("../../../public/images/Leadership photos/Heather-Dawn.jpg"),
+  {
+    photo: require("../../../public/images/Leadership photos/Heather-Dawn.jpg"),
     handle: "hdsealey",
     altText: " photo of Heather-Dawn Sealey",
     name: "Heather-Dawn Sealey",
     position: "Management and Digital Entrepreneurship",
     email: "hsealey@costaatt.edu.tt",
-    
-},
+  },
   {
     photo: require("../../../public/images/Leadership photos/Nadine-Gonzales.jpg"),
     handle: "ngonzales",
@@ -335,7 +305,6 @@ export const heads = [
     name: "Nadine Gonzales",
     position: "Creative Industries and Culture",
     email: "ngonzales@costaatt.edu.tt",
-   
   },
   {
     photo: require("../../../public/images/Leadership photos/Kirwin-Pyle.jpg"),
@@ -344,7 +313,6 @@ export const heads = [
     name: "Kerwin Pyle-Williams",
     position: "Criminal Justice, Human Security and Legal Studies",
     email: "kpwilliams@costaatt.edu.tt",
-    
   },
   {
     photo: require("../../../public/images/Leadership photos/Sophia-Edwards.jpg"),
@@ -353,17 +321,15 @@ export const heads = [
     name: "Sophia Edwards-Knox",
     position: "Digital Media and Communication",
     email: "sedwards@costaatt.edu.tt",
-    
   },
 
-    {
+  {
     photo: require("../../../public/images/Leadership photos/Karen-Paul.jpg"),
     handle: "kpaul",
     altText: " photo Karen-Paul",
     name: "Karen Paul",
     position: "Enviornmental and Sustainability Studies",
     email: "kpaul@costaatt.edu.tt",
-   
   },
   {
     photo: require("../../../public/images/Leadership photos/Anthony-Lalla.jpg"),
@@ -372,16 +338,14 @@ export const heads = [
     name: "Dr. Anthony Lalla",
     position: "Health and Medical Science Technologies",
     email: "alalla@costaatt.edu.tt",
-    
   },
-{
-    photo: require("../../../public/images/Leadership photos/Nneka-St Rose.jpg"),
+  {
+    photo: require("../../../public/images/Leadership photos/Nneka-StRose.jpg"),
     handle: "nstrose",
     altText: " photo of Dr. Nneka St Rose",
     name: "Dr. Nneka St Rose",
     position: "Social and Behavioural Sciences",
     email: "nsrose@costaatt.edu.tt",
-   
   },
   {
     photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
@@ -390,10 +354,5 @@ export const heads = [
     name: "Jacinta Tobas",
     position: "Nursing",
     email: "jtobas@costaatt.edu.tt",
-   
   },
-  
-
-  ];
-
-
+];
