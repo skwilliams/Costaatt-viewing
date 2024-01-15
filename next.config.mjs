@@ -35,6 +35,6 @@ const nextConfig = {
   }
 
 };
-// import :export
+
 
 export default nextConfig;
