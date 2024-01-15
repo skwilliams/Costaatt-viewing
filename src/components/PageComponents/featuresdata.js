@@ -1,3 +1,21 @@
+import React from 'react'
+import LayoutNone from "../../../../components/Layouts/TopNavOnly_NoDropdown";
+
+
+const featuresdata = () => {
+  return (
+    <div>featuresdata</div>
+  )
+}
+
+export default featuresdata
+
+ featuresdata.getLayout = function getLayout(page) {
+   return <LayoutNone>{page}</LayoutNone>;
+ };
+
+
+
 export const featured = [
   {
     id: 1,

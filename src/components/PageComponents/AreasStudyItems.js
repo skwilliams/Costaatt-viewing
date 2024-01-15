@@ -1,3 +1,18 @@
+import React from 'react'
+import LayoutNone from "../../../../components/Layouts/TopNavOnly_NoDropdown";
+
+const AreasStudyItems = () => {
+  return (
+    <div>AreasStudyItems</div>
+  )
+}
+
+export default AreasStudyItems
+
+AreasStudyItems.getLayout = function getLayout(page) {
+  return <LayoutNone>{page}</LayoutNone>;
+};
+
 export const areasstudyitems = [
     {
         school: 'sbdt',
