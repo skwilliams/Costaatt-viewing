@@ -38,8 +38,8 @@ const ProgramCard = ({ program }) => {
               <p className={CardStyle.cardtext}> {program.prog_description}</p>{" "}
               {/* fixed */}
               <div className={CardStyle.cardyearsAll}>
-                <p>{fulltimeYears} years full time</p>{" "}
-                <p>{parttimeYears} years part-time</p>{" "}
+                {/* <p>{fulltimeYears} years full time</p>{" "}
+                <p>{parttimeYears} years part-time</p>{" "} */}
               </div>
             
             </div>
