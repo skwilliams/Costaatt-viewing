@@ -1,5 +1,7 @@
 import React from 'react'
-import LayoutNone from "../../../../components/Layouts/TopNavOnly_NoDropdown";
+import LayoutNone from "../Layouts/TopNavOnly_NoDropdown"
+
+
 
 const AreasStudyItems = () => {
   return (
