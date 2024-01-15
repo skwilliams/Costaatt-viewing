@@ -26,14 +26,14 @@ export const schools = [
     departments: [
       {
         name: "Department of Management and Digital Entrepreneurship ",
-        image: "../../../../../images/Links/home2.png",
+        image: "../../../../../images/Links/dummyImg1.png",
         summary:
           "The Department of Management and Digital Entrepreneurship is one of the two departments that constitute the School of Business and Digital Technologies. We deliver programmes in the area of business studies.  Our distinction though is that all our programmes incorporate an entrepreneurial focus. At the department of Management and Digital Entrepreneurship, our mission is to nurture and develop entrepreneurs whose creative vision, innovative skills and knowledge gained through our programmes, will make them drivers of growth and development in Trinidad and Tobago. Our mission is to convert our students into futurepreneurs whose entrepreneurial skills will help transform traditional occupations and will lead to the creation of business opportunities, not only for themselves but also for others.",
         shortName: "Business",
       },
       {
         name: "Department of ICTs and Digital Technologies ",
-        image: "../../../../../images/Links/home2.png",
+        image: "../../../../../images/Links/dummyImg1.png",
         summary:
           "If you are interested in Web Development (Internet Technologies), Information Technology, Networking, Databases, Information Systems, or Library Science then the programmes offered by the Department of Information Science and Technology are tailor-made for you. Students will undertake courses in Systems Administration, Data Management, Voice over Internet Protocols (VoIP), Wireless Systems, Wired Systems, Routers, Switches, CCNA, Oracle, Microsoft certifications and Systems Analysis and Design, e-commerce, Cyber Security, Database Administration, Database Programming, Human Computer Interface Design, Internships and Senior Projects. These will prepare students to fulfil what ACM/IEEE considers as the five pillars of IT Essentials. The pillars are web development, programming, networking, databases and interface design (ACM/IEEE 2017). Our Information and Library Science students will learn cataloguing, and classification, Caribbeana, records management, schools’ librarianship, information technology, management of libraries, digital libraries, and curricula development. In addition, you will be encouraged to engage with a broad range of contemporary issues in philosophy, politics, social sciences and economics to develop your analytical and critical thinking skills.   ",
         shortName: "IST",
@@ -57,14 +57,14 @@ export const schools = [
     departments: [
       {
         name: "Business",
-        image: "../../../../../images/Links/home2.png",
+        image: "../../../../../images/Links/dummyImg1.png",
         summary:
           "From entrepreneurs and business professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
         shortName: "Business",
       },
       {
         name: "Digital Technologies",
-        image: "../../../../../images/Links/home2.png",
+        image: "../../../../../images/Links/dummyImg1.png",
         summary:
           "From entrepreneurs and business professionals to information technology enthusiasts, this school is for you! Students at this school will be able to connect classroom content, to real world application. You will be equipped with the skills and support for success.",
         shortName: "ISDT",

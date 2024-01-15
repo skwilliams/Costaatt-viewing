@@ -1,5 +1,5 @@
 import home1 from "../../../images/Links/home1.png";
-import home2 from "../../../images/Links/home2.png";
+import home2 from "../../../images/Links/dummyImg1.png";
 import home3 from "../../..//images/Links/home3.png";
 import home4 from "../../../images/Links/home4.png";
 import home5 from "../../../images/Links/home5.png";

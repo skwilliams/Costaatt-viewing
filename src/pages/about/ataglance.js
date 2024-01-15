@@ -16,7 +16,7 @@ import Image from "next/image";
 
 import Layout from "../../components/Layouts/TopNavOnly_NoDropdown";
 
-import home2 from "../../../public/images/about/home2.png";
+import home2 from "../../../public/images/about/dummyImg1.png";
 import home3 from "../../../public/images/about/home3.png";
 import home5 from "../../../public/images/about/home5.png";
 import home6 from "../../../public/images/about/home6.png";
