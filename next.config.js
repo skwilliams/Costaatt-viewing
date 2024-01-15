@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+
+
   reactStrictMode: true,
 
   webpack: (config) => {
@@ -31,11 +33,8 @@ const nextConfig = {
       ],
     },
   }
+
 };
+// import :export
 
-
-
-
-
-
-module.exports = nextConfig;
+export default nextConfig;
