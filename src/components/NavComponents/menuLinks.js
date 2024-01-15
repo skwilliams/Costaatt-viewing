@@ -179,7 +179,7 @@ export const mainNavLinks = [
       },
       {
         title: "All Programmes",
-        path: "/programmes/Allprogrammes",
+        path: "/programmes/allprogrammes",
       },
 
       {
