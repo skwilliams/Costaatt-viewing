@@ -3,6 +3,8 @@ const nextConfig = {
 
 
   reactStrictMode: true,
+  // output:'export',
+  
 
   webpack: (config) => {
     config.resolve.fallback = {

@@ -6,6 +6,8 @@ import Link from "next/link";
 
 const MenuItems = ({ items, isLastItem, toggleClick }) => {
   const [dropdown, setDropdown] = useState(false);
+
+  
   const handleClick = () => {
     setDropdown(!dropdown);
     toggleClick();

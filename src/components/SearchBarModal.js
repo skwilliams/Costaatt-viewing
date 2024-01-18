@@ -3,16 +3,11 @@ import Button from "@mui/material/Button";
 import searchBarStyles from "../styles/SearchBar.module.scss";
 import { GrClose } from "react-icons/gr";
 import {
-  SliderLinks,
-  TILES_INFO,
-  EVENTS,
-  NEWS,
+
   schoolOptions,
-  SuccessLinks,
-  FEATURED_NEWS,
+
 } from "../components/HomeComponents/homeLinks";
-import { useState } from "react";
-import { Padding } from "@mui/icons-material";
+
 
 export default function SearchBarModal({ handleClose }) {
   return (

@@ -6,7 +6,6 @@ import standardStyles from "@/styles/main.module.scss";
 
 import AboutStyles from "@/styles/About.module.scss";
 
-import Dialog from "@/components/PageComponents/Dialog";
 
 import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
 
@@ -66,14 +65,14 @@ const Ataglance = () => {
           <span> The Premier</span> Undergraduate College{" "}
         </h2>
 
-        <Dialog title="Example Modal" onClose={onClose} onOk={onOk}>
+        {/* <Dialog title="Example Modal" onClose={onClose} onOk={onOk}>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
             eligendi odio ipsa nostrum dolores voluptas architecto tempore nulla
             voluptatibus vel, placeat explicabo exercitationem id officia
             laborum doloremque blanditiis earum accusamus.
           </p>
-        </Dialog>
+        </Dialog> */}
         <p
           className={`${standardStyles.paragraph} ${AboutStyles.text2columns}`}
         >

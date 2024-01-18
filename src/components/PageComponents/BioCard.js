@@ -10,8 +10,9 @@ const BioCard = ({ staff, dept }) => {
         .map((fe) => (
           <>
             <div className={standardStyles.row}>
-              <div className={standardStyles.story}>
-                <figure className={standardStyles.story__shape}>
+              <div >
+                {/* <figure className={standardStyles.story__shape}> */}
+                  <figure >
                   {fe.photo && fe.altText && (
                     <Image
                       src={fe.photo}
@@ -29,10 +30,10 @@ const BioCard = ({ staff, dept }) => {
                   >
                     {fe.position}
                   </h3>
-                  <p className={standardStyles.story__cut}>{fe.bio}</p>
+                  {/* <p className={standardStyles.story__cut}>{fe.bio}</p> */}
                 </div>
               </div>
-              {/* <div className={standardStyles.popup} id="popup">
+              <div className={standardStyles.popup} id="popup">
                 <div className={standardStyles.popup__content}>
                   <div className={standardStyles.popup__left}>
                     <Image
@@ -54,7 +55,7 @@ const BioCard = ({ staff, dept }) => {
                     <p className={standardStyles.popup__text}>{fe.bio}</p>
                   </div>
                 </div>
-              </div> */}
+              </div>
             </div>
           </>
         ))}

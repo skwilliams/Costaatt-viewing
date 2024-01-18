@@ -1,5 +1,5 @@
 
-import React from "react";
+import React , {useState} from "react";
 import Head from "next/head";
 import standardStyles from "@/styles/main.module.scss";
 import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
@@ -8,11 +8,21 @@ import { deans,vps,management,heads } from "./leadershipdata";
 import FacultyStaffCard from "@/components/PageComponents/FacultyStaffDepCard";
 import DeptStyles from "../../styles/DepartCard.module.scss";
 import BioCard from "@/components/PageComponents/BioCard";
-import Popup from "@/components/PageComponents/Popup";
+
+import SearchBarModal from "@/components/SearchBarModal";
+import BioModal from "@/components/PageComponents/BioModal";
 
 
 
 const executiveleaders = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const [openBioModal, setopenBioModal] = useState(false);
+  
+  
+  const handleClick = () => {
+     setopenBioModal(true)
+  };
+
   return (
     <>
       <Head>
@@ -38,10 +48,17 @@ const executiveleaders = () => {
         </p>
         <h2 className={standardStyles.newsHeading}>Executive Leaders</h2>
         <div className={standardStyles.row}>
-        
-          <BioCard staff={vps} />
-          <h1>Popup is here</h1>
-          <Popup > </Popup>
+          {/* <BioCard staff={vps} /> */}
+
+          <button
+            type="submit"
+            onClick= {handleClick}
+           
+          >
+            Read Bio
+          </button>
+      
+          <BioModal open={openBioModal} />
         </div>
       </section>
       <section
