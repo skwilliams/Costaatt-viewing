@@ -316,7 +316,7 @@ export const mainNavLinks = [
     submenu: [
       {
         title: "Profile at a Glance",
-        path: "/about/Ataglance",
+        path: "/about/ataglance",
       },
 
       {

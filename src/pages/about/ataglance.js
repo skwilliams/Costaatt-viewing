@@ -6,7 +6,7 @@ import standardStyles from "@/styles/main.module.scss";
 
 import AboutStyles from "@/styles/About.module.scss";
 
-
+import Dialog from "@/components/PageComponents/Dialog";
 
 import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
 
@@ -16,13 +16,11 @@ import Image from "next/image";
 
 import Layout from "../../components/Layouts/TopNavOnly_NoDropdown";
 
-import home2 from "../../../public/images/about/dummyImg1.png";
+import home2 from "../../../public/images/about/dummyImg1.jpg";
 import home3 from "../../../public/images/about/home3.png";
 import home5 from "../../../public/images/about/home5.png";
 import home6 from "../../../public/images/about/home6.png";
 
-import { useState } from "react";
-import { useEffect } from "react";
 
 
 
@@ -38,7 +36,13 @@ const Ataglance = () => {
   //   }
   // }, [setHasWindow]);
 
+ async function onClose() {
+   console.log("Modal has closed");
+ }
 
+ async function onOk() {
+   console.log("Ok was clicked");
+ }
  
   return (
     <>
@@ -61,6 +65,15 @@ const Ataglance = () => {
         >
           <span> The Premier</span> Undergraduate College{" "}
         </h2>
+
+        <Dialog title="Example Modal" onClose={onClose} onOk={onOk}>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            eligendi odio ipsa nostrum dolores voluptas architecto tempore nulla
+            voluptatibus vel, placeat explicabo exercitationem id officia
+            laborum doloremque blanditiis earum accusamus.
+          </p>
+        </Dialog>
         <p
           className={`${standardStyles.paragraph} ${AboutStyles.text2columns}`}
         >
@@ -239,7 +252,7 @@ const Ataglance = () => {
             <div
               className={`${AboutStyles.schools} ${AboutStyles.schoolsliberal}`}
             >
-              <Link  href="/programmes/schools/liberal">
+              <Link href="/programmes/schools/liberal">
                 School of Liberal Arts, Education and Digital Humanities
               </Link>
             </div>
@@ -349,9 +362,6 @@ const Ataglance = () => {
         </div>
         {/* close row */}
       </section>
-
-    
-      
     </>
   );
 };

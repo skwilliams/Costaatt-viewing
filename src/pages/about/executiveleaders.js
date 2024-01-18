@@ -8,6 +8,7 @@ import { deans,vps,management,heads } from "./leadershipdata";
 import FacultyStaffCard from "@/components/PageComponents/FacultyStaffDepCard";
 import DeptStyles from "../../styles/DepartCard.module.scss";
 import BioCard from "@/components/PageComponents/BioCard";
+import Popup from "@/components/PageComponents/Popup";
 
 
 
@@ -39,6 +40,8 @@ const executiveleaders = () => {
         <div className={standardStyles.row}>
         
           <BioCard staff={vps} />
+          <h1>Popup is here</h1>
+          <Popup > </Popup>
         </div>
       </section>
       <section

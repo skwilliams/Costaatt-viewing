@@ -1,5 +1,5 @@
 import home1 from "../../../images/Links/home1.png";
-import home2 from "../../../images/Links/dummyImg1.png";
+import home2 from "../../../images/Links/dummyImg1.jpg";
 import home3 from "../../..//images/Links/home3.png";
 import home4 from "../../../images/Links/home4.png";
 import home5 from "../../../images/Links/home5.png";
@@ -8,6 +8,7 @@ import home7 from "../../../images/Links/home7.png";
 import events1 from "../../../images/Links/events 1.png";
 import events2 from "../../../images/Links/events 2.png";
 import draft from "../../../images/Links/SuccessDraft.jpg";
+
 
 export const SliderLinks = [
   // {
