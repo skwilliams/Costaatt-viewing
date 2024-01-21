@@ -14,7 +14,8 @@ import { FiBookOpen } from "react-icons/fi";
 import { PhoneCallback, Sanitizer, SignalCellularConnectedNoInternet4BarTwoTone } from '@mui/icons-material';
 import { IconContext } from "react-icons";
 import { BsFileEarmarkArrowDown } from "react-icons/bs";
-import joinclub from "../../../public/images/costaattlife/joinclub.png";
+import joinclub from "../../../public/images/costaattlife/joinclub.png"
+
 import startclub from "../../../public/images/costaattlife/startclub.jpg";
 import campus2 from "../../../public/images/costaattlife/campus 2.jpg";
 import studentamb from "../../../public/images/costaattlife/ambas1.png";

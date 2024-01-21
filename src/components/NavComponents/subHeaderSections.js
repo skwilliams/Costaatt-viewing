@@ -200,7 +200,7 @@ export const subHeaderSections = {
     "Milestones & Achievements": "achieve",
     "Learning and Teaching": "enhance",
   },
-  executiveleaders: {
+  Executiveleaders: {
     "Vice Presidents": "vps",
     "Management Team": "mgmt",
     Deans: "deans",

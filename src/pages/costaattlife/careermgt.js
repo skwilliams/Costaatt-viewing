@@ -17,7 +17,6 @@ import Link from 'next/link';
 import { StickyNote2 } from '@mui/icons-material';
 import Image from 'next/image';
 import Popup from '@/components/PageComponents/Popup';
-import joinclub from "../../../public/images/costaattlife/joinclub.png"
 
 
 

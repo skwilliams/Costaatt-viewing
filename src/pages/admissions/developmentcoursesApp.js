@@ -3,7 +3,6 @@ import Head from'next/head';
 import HeadImage from '@/components/PageComponents/HeadImage';
 import Link from "next/link";
 import Image from 'next/image';
-import joinclub from "../../../public/images/costaattlife/joinclub.png"
 import headImg from "../../../public/images/awaitingBanner.png"
 import standardStyles from "@/styles/main.module.scss"
 import admissionsStyles from "@/styles/Admissions.module.scss"

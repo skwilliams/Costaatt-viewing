@@ -74,7 +74,7 @@ const leadership = () => {
             </Link>
           </div>
           <div className={standardStyles.col1of3}>
-            <Link className={standardStyles.linkhovercolor} href="./executiveleaders">
+            <Link className={standardStyles.linkhovercolor} href="./Executiveleaders">
               <div
                 className={`${standardStyles.featurebox}
                 ${standardStyles.linkhovercolor}`}

@@ -26,8 +26,8 @@ background-color: $color-grey-light-1;
  background-image: linear-gradient(
         to right bottom,
        rgba($color-grey-light-1, 0.4),
-       rgba($color-primary-light, 0.4));
-    // url(../../../public/images/costaattlife/joinclub.png);
+       rgba($color-primary-light, 0.4),
+    url(../../../public/images/costaattlife/joinclub.png));
    
 
 // text-align: center;
@@ -50,8 +50,8 @@ text-align: center;
     background-image: linear-gradient(
         to right bottom,
         rgba($color-grey-light-1, 0.6),
-        rgba($color-primary-light, 0.6)),
-    url(../../../public/images/costaattlife/joinclub.png);
+        rgba($color-primary-light, 0.6),
+    url(../../../public/images/costaattlife/joinclub.png));
     background-size: cover;
     background-position-x:right;
     // max-width: 1500px;

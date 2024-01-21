@@ -1,0 +1,155 @@
+
+      @import "../styles/abstracts/variables";
+        @import "../styles/abstracts/mixins";
+
+        .modal {
+
+//Contents of modal 
+
+          background-image: linear-gradient(to right, $color-primary-dark,$color-primary);
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+          width: 60%;
+          height: 70%;
+
+
+        &__overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 9999;
+        
+        
+              
+    
+        &__content {
+            display: flex;
+            grid-template-columns: min-content,max-content;
+        // // @include absCenter;
+
+        // width: 75%;
+        // background-color: $color-white;
+        box-shadow: 0 2rem 4rem rgba($color-black, .2);
+        // border-radius: 3px;
+        // display:grid;
+        // grid-template-columns: 1fr 1fr;
+        // overflow: hidden;
+        // // opacity: 0;
+        // transform: translate(-50%, -50%) scale(.25);
+        // transition: all .5s .2s;
+    }
+
+    &__left {
+        width: 33.333333%;
+        display: grid;
+    }
+
+    &__right {
+        width: 66.6666667%;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 3rem 5rem;
+    }
+
+    &__img {
+        display: block;
+     
+        top:50%;
+   
+        border-radius: 70%;
+    }
+
+      &__name {
+        font-size: 2rem;
+        color:$orange;
+
+    }
+       &__position {
+        font-size: 1.8rem;
+        color: blue;
+     
+    }
+
+    &__text {
+        font-size: 1.8rem;
+ text-align: left;
+ overflow: scroll;
+     
+    }
+
+
+//    &__closeButton {
+//         &:link,
+//         &:visited {
+//             color: purple;
+//             position: absolute;
+//             top: 2.5rem;
+//             right: 2.5rem;
+//             font-size: 25rem;
+//             text-decoration: none;
+//             display: inline-block;
+//             transition: all .2s;
+//             line-height: 1;
+//             // text-align: right;
+//         }
+
+//         &:hover {
+//             color: $color-primary;
+//         }
+//     }
+
+
+&__closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #333; /* Adjust color as needed */
+  transition: transform 0.3s ease; /* Transition for smooth animation */
+
+  /* Hover state */
+  &:hover {
+    transform: rotate(45deg);
+  }
+
+  /* Diagonal lines of X */
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: #333; /* Adjust color as needed */
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 50%;
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}
+
+
+
+
+}
+
+        
+
+        }
+        

@@ -61,49 +61,50 @@
         border-top-right-radius: 3px;
 
         &1 {
-            background-image: linear-gradient(to right bottom, $sobitCol, $sobitCol-dark),
-                url(../../../public/images/costaattlife/joinclub.png);
-        }
+            background-image: linear-gradient(to right bottom, $sobitCol, $sobitCol-dark);
+                // url(../../../public/images/costaattlife/joinclub.png);
+                }
 
         &2 {
-            background-image: linear-gradient(to right bottom, $workFCol, $workFCol-dark),
-                url(../../../public/images/costaattlife/joinclub.png);
+            background-image: linear-gradient(to right bottom, $workFCol, $workFCol-dark);
+                // url(../../../public/images/costaattlife/joinclub.png);
         }
 
         &3 {
-            background-image: linear-gradient(to right bottom, $kenGor, $kenGor-dark),
-                url(../../../public/images/costaattlife/joinclub.png);
+            background-image: linear-gradient(to right bottom, $kenGor, $kenGor-dark);
+                // url(../../../public/images/costaattlife/joinclub.png);
         }
 
         &4 {
-            background-image: linear-gradient(to right bottom, $liberalCol, $liberalCol-dark),
-                url(../../../public/images/costaattlife/joinclub.png);
+            background-image: linear-gradient(to right bottom, $liberalCol, $liberalCol-dark);
+                // url(../../../public/images/costaattlife/joinclub.png);
         }
 
         &5 {
-            background-image: linear-gradient(to right bottom, $nursingCol, $nursingCol-dark),
-                url(../../../public/images/costaattlife/joinclub.png);
+            background-image: linear-gradient(to right bottom, $nursingCol, $nursingCol-dark);
+                // url(../../../public/images/costaattlife/joinclub.png);
         }
 
         &6 {
-            background-image: linear-gradient(to right bottom, $cirEcom, $cirEcom-dark),
-                url(../../../public/images/costaattlife/joinclub.png);
+            background-image: linear-gradient(to right bottom, $cirEcom, $cirEcom-dark);
+                // url(../../../public/images/costaattlife/joinclub.png);
+                
         }
 
         // workforce
         &workforce {
-            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
-                url(../../../public/images/costaattlife/joinclub.png);
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+                // url(../../../public/images/costaattlife/joinclub.png);
         }
         // unique areas of study
         &areas {
-            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
-                url(../../../public/images/costaattlife/joinclub.png);
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+                // url(../../../public/images/costaattlife/joinclub.png);
         }
         // state of art labs
         &labs {
-            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
-                url(../../../public/images/costaattlife/joinclub.png);
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+                // url(../../../public/images/costaattlife/joinclub.png));
         }
         
     }

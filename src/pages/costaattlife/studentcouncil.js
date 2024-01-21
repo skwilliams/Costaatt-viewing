@@ -5,25 +5,12 @@ import standardStyles from "@/styles/main.module.scss";
 import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
 import { Button, Divider } from "@mui/material";
 import Image from "next/image";
-import { FiBookOpen } from "react-icons/fi";
-import {
-  PhoneCallback,
-  Sanitizer,
-  SignalCellularConnectedNoInternet4BarTwoTone,
-} from "@mui/icons-material";
-import { IconContext } from "react-icons";
-import { BsFileEarmarkArrowDown } from "react-icons/bs";
-import joinclub from "../../../public/images/costaattlife/joinclub.png";
-import startclub from "../../../public/images/costaattlife/startclub.jpg";
-import campus2 from "../../../public/images/costaattlife/campus 2.jpg";
 
 import studentcouncil2 from "../../../public/images/costaattlife/studentcouncil1.jpg";
 import studentcouncil1 from "../../../public/images/costaattlife/studentcouncil2.jpg";
 
 
-import studentamb from "../../../public/images/costaattlife/studentAmb.jpg";
-import EventsRow from "@/components/PageComponents/EventsRow";
-import { getEventsByDept } from "../../../public/data/eventsdata";
+
 import EventCardOrig from "@/components/PageComponents/EventCardOrig";
 import {stucouncildata} from "../costaattlife/studcouninfo";
 import StudentCouncilRep from "@/components/PageComponents/StudentCouncilRep";
