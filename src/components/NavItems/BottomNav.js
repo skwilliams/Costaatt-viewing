@@ -4,7 +4,7 @@ import Image from "next/image";
 import { mainNavLinks } from "../NavComponents/menuLinks";
 import MenuItems from "../NavComponents/MenuItems";
 import navStyles from "../../styles/Nav.module.scss";
-import logo from "../../../images/Links/costaattWhiteLogo.png";
+import logo from "../../../public/images/logos/costaattWhiteLogo.png";
 import { BiSearch } from "react-icons/bi";
 import SearchBarModal from "../SearchBarModal";
 import DropDown from "../NavComponents/DropDown";

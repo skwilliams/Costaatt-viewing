@@ -1,4 +1,4 @@
-import logo from "../../../images/Links/costaattlogographic.png";
+import logo from "../../../public/images/logos/costaattlogographic.png";
 import HomeStyles from "../../styles/Home.module.scss";
 import AdminStyles from "../../styles/Admissions.module.scss";
 import standardStyles from "@/styles/main.module.scss";
@@ -10,7 +10,7 @@ import { IconContext } from "react-icons";
 import NewsTile from "./NewsTile";
 import Image from "next/image";
 import Link from "next/link";
-import senior from "../../../images/Links/senior_lec.jpg";
+import senior from "../../../public/images/senior_lec.jpg";
 import { FaAngleDown } from "react-icons/fa";
 import {
   SliderLinks,

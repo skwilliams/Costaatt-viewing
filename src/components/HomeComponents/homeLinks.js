@@ -1,13 +1,13 @@
-import home1 from "../../../images/Links/home1.png";
-import home2 from "../../../images/Links/dummyImg1.jpg";
-import home3 from "../../..//images/Links/home3.png";
-import home4 from "../../../images/Links/home4.png";
-import home5 from "../../../images/Links/home5.png";
-//import home6 from "../../../images/Links/home6.png";
-import home7 from "../../../images/Links/home7.png";
-import events1 from "../../../images/Links/events 1.png";
-import events2 from "../../../images/Links/events 2.png";
-import draft from "../../../images/Links/SuccessDraft.jpg";
+import home1 from "../../../public/images/schools/nursing.png";
+import home2 from "../../../public/images/dummyImg1.jpg";
+import home3 from "../../../public/images/schools/liberal.png";
+import home4 from "../../../public/images/schools/kengord.png";
+import home5 from "../../../public/images/schools/enviro.png";
+//import home6 from "../../../public/images/schools/liberal.png";
+import home7 from "../../../public/images/schools/workF.png";
+import events1 from "../../../public/images/events/events 1.png";
+import events2 from "../../../public/images/events/events 2.png";
+import draft from "../../../public/images/successStories/SuccessDraft.jpg";
 
 
 export const SliderLinks = [
@@ -40,12 +40,12 @@ export const SliderLinks = [
   {
     id: 6,
     title: "ACCA",
-    image: require("../../../images/Links/Future me schools screens/ACCA.jpg"),
+    image: require("../../../public/images/Future me schools screens/ACCA.jpg"),
   },
   {
     id: 7,
     title: "Stay the Course",
-    image: require("../../../images/Links/Future me schools screens/Stay-the-Course.jpg"),
+    image: require("../../../public/images/Future me schools screens/Stay-the-Course.jpg"),
   },
 ];
 
@@ -53,64 +53,64 @@ export const SuccessMainLinks = [
   {
     id: 1,
     title: "Anthony",
-    image: require("../../../images/Links/SuccessDraft.jpg"),
+    image: require("../../../public/images/successStories/SuccessDraft.jpg"),
   },
   {
     id: 2,
     title: "Anthony",
-    image: require("../../../images/Links/SuccessDraft2.jpg"),
+    image: require("../../../public/images/successStories/SuccessDraft2.jpg"),
   },
   {
     id: 3,
     title: "Anthony",
-    image: require("../../../images/Links/SuccessDraft.jpg"),
+    image: require("../../../public/images/successStories/SuccessDraft.jpg"),
   },
   {
     id: 4,
     title: "Anthony",
-    image: require("../../../images/Links/SuccessDraft2.jpg"),
+    image: require("../../../public/images/successStories/SuccessDraft2.jpg"),
   },
 ];
 export const SuccessLinks = [
   {
     id: 1,
     title: "Anthony",
-    image: require("../../../images/Links/SuccessDraft.jpg"),
+    image: require("../../../public/images/successStories/SuccessDraft.jpg"),
   },
   {
     id: 2,
     title: "Anthony",
-    image: require("../../../images/Links/SuccessDraft2.jpg"),
+    image: require("../../../public/images/successStories/SuccessDraft2.jpg"),
   },
   {
     id: 3,
     title: "Anthony",
-    image: require("../../../images/Links/SuccessDraft.jpg"),
+    image: require("../../../public/images/successStories/SuccessDraft.jpg"),
   },
   {
     id: 4,
     title: "Anthony",
-    image: require("../../../images/Links/SuccessDraft2.jpg"),
+    image: require("../../../public/images/successStories/SuccessDraft2.jpg"),
   },
   {
     id: 5,
     title: "Anthony",
-    image: require("../../../images/Links/SuccessDraft.jpg"),
+    image: require("../../../public/images/successStories/SuccessDraft.jpg"),
   },
   {
     id: 6,
     title: "Anthony",
-    image: require("../../../images/Links/SuccessDraft2.jpg"),
+    image: require("../../../public/images/successStories/SuccessDraft2.jpg"),
   },
   {
     id: 7,
     title: "Anthony",
-    image: require("../../../images/Links/SuccessDraft.jpg"),
+    image: require("../../../public/images/successStories/SuccessDraft.jpg"),
   },
   {
     id: 8,
     title: "Anthony",
-    image: require("../../../images/Links/SuccessDraft2.jpg"),
+    image: require("../../../public/images/successStories/SuccessDraft2.jpg"),
   },
 
   // {
@@ -187,7 +187,7 @@ export const EVENTS = [
     id: 1,
     title: "Sustainable Innovation 2023",
     image: events1,
-    desc: "24th International Conference , Accelerating Sustainability in the Creative Economy and Creativve Industries",
+    desc: "24th International Conference , Accelerating Sustainability in the Creative Economy and Creative Industries",
     date: "20 Nov - 26 Nov 2023",
     time: "12:00AM - 11:59PM",
     location: "Arima",
@@ -233,7 +233,7 @@ export const NEWS = [
   {
     id: 1,
     title: "PAHO and Partners Join COSTAATT",
-    image: require("../../../images/Links/news_paho.jpg"),
+    image: require("../../../public/images/news/news_paho.jpg"),
     desc: "On April 20th, COSTAATT hosted a COVID-19 testing initiative funded by the Pan American Health Organization (PAHO) in collaboration with Caribbean Med Labs Foundation (CMLF), Medical Research Foundation of Trinidad and Tobago (MRFTT), and other partners.",
     date: "24 April 2023",
   },
@@ -241,7 +241,7 @@ export const NEWS = [
     id: 2,
 
     title: "COSTAATT President Visits U.S. Tertiary Institutions",
-    image: require("../../../images/Links/presi_visits.jpg"),
+    image: require("../../../public/images/news/presi_visits.jpg"),
     desc: "Dr Keith Nurse, President of the College of Science, Technology and Applied Arts of Trinidad and Tobago (COSTAATT), recently visited the United States between late February and early March 2023.",
     date: "14 April 2023",
   },
@@ -250,7 +250,7 @@ export const NEWS = [
     id: 3,
 
     title: "COSTAATT and Monroe College Sign MOU",
-    image: require("../../../images/Links/mou.jpg"),
+    image: require("../../../public/images/news/mou.jpg"),
     desc: "The College of Science, Technology and Applied Arts of Trinidad and Tobago (COSTAATT) and Monroe College signed a Memorandum of Understanding (MoU) on February 24, 2023,",
     date: "20 March 2023 - 26 Mar 2023",
   },
@@ -258,7 +258,7 @@ export const NEWS = [
   //   id: 4,
 
   //   title: "COSTAATT’s Senior Lecturer Co-Authors Text Book",
-  //   image: require("../../../images/Links/senior_lec.jpg"),
+  //   image: require("../../../public/images/senior_lec.jpg"),
   //   desc: "Speaking at the launch of the textbook, Chief Executive Officer of ALJGSB, Mariano Browne, in bringing greetings, congratulated the authors on the publication, observing the need for more publications grounded in the Caribbean context. ",
   //   date: "14 Nov 2022 - 19 Dec 2022",
   // },
@@ -266,7 +266,7 @@ export const NEWS = [
   //   id: 5,
 
   //   title: "COSTAATT President Builds Strategic Partnerships",
-  //   image: require("../../../images/Links/partnership.jpg"),
+  //   image: require("../../../public/images/news/partnership.jpg"),
   //   desc: "In his capacity as President of COSTAATT, Dr Nurse also visited a few other international organizations during his trip to tap into potential sources of funding for the College ",
   //   date: "14 Nov 2022 - 19 Dec 2022",
   // },
@@ -274,7 +274,7 @@ export const NEWS = [
   //   id: 6,
 
   //   title: "Triumphantly Forward: Carina Cockburn Encourages COSTAATT",
-  //   image: require("../../../images/Links/triump.jpg"),
+  //   image: require("../../../public/images/triump.jpg"),
   //   desc: "The atmosphere was one of excitement and anticipation as the graduates filed into the hall. Family members and friends cheered as each graduand was called to cross the stage and receive their hard-earned diplomas. ",
   //   date: "14 Nov 2022 - 19 Dec 2022",
   // },
@@ -282,7 +282,7 @@ export const NEWS = [
   //   id: 5,
 
   //   title: "COSTAATT’s Senior Lecturer Co-Authors Text Book",
-  //   image: require("../../../images/Links/senior_lec.jpg"),
+  //   image: require("../../../public/images/senior_lec.jpg"),
   //   desc: "Speaking at the launch of the textbook, Chief Executive Officer of ALJGSB, Mariano Browne, in bringing greetings, congratulated the authors on the publication, observing the need for more publications grounded in the Caribbean context. ",
   //   date: "14 Nov 2022 - 19 Dec 2022",
   // },
@@ -290,7 +290,7 @@ export const NEWS = [
   //   id: 6,
 
   //   title: "COSTAATT President Builds Strategic Partnerships",
-  //   image: require("../../../images/Links/partnership.jpg"),
+  //   image: require("../../../public/images/news/partnership.jpg"),
   //   desc: "In his capacity as President of COSTAATT, Dr Nurse also visited a few other international organizations during his trip to tap into potential sources of funding for the College ",
   //   date: "14 Nov 2022 - 19 Dec 2022",
   // },
@@ -298,7 +298,7 @@ export const NEWS = [
   //   id: 7,
 
   //   title: "Triumphantly Forward: Carina Cockburn Encourages COSTAATT",
-  //   image: require("../../../images/Links/triump.jpg"),
+  //   image: require("../../../public/images/triump.jpg"),
   //   desc: "The atmosphere was one of excitement and anticipation as the graduates filed into the hall. Family members and friends cheered as each graduand was called to cross the stage and receive their hard-earned diplomas. ",
   //   date: "14 Nov 2022 - 19 Dec 2022",
   // },
@@ -308,7 +308,7 @@ export const FEATURED_NEWS = [
   {
     id: 1,
     title: "PAHO and Partners Join COSTAATT",
-    image: require("../../../images/Links/news_paho.jpg"),
+    image: require("../../../public/images/news/news_paho.jpg"),
     desc: "On April 20th, COSTAATT hosted a COVID-19 testing initiative funded by the Pan American Health Organization (PAHO) in collaboration with Caribbean Med Labs Foundation (CMLF), Medical Research Foundation of Trinidad and Tobago (MRFTT), and other partners.",
     date: "24 April 2023",
   },

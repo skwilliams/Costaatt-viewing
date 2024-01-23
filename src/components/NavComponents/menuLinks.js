@@ -193,12 +193,12 @@ export const mainNavLinks = [
     ],
     submenuImage: [
       {
-        img: require("../../../images/Links/dummyImg1.jpg"),
+        img: require("../../../public/images/dummyImg1.jpg"),
         title: "Academic Calendar",
         path: "/programmes/academiccalendar",
       },
       {
-        img: require("../../../images/Links/dummyImg1.jpg"),
+        img: require("../../../public/images/dummyImg1.jpg"),
         title: "Admission Counsellor",
         path: "/programmes/admissioncounsellors",
       },
@@ -234,12 +234,12 @@ export const mainNavLinks = [
     ],
     submenuImage: [
       {
-        img: require("../../../images/Links/dummyImg1.jpg"),
+        img: require("../../../public/images/dummyImg1.jpg"),
         title: "How to Register ",
         path: "/admissions/howtoregister",
       },
       {
-        img: require("../../../images/Links/dummyImg1.jpg"),
+        img: require("../../../public/images/dummyImg1.jpg"),
         title: "Visit us",
         path: "/admissions/visitus",
       },
@@ -261,7 +261,7 @@ export const mainNavLinks = [
     ],
     submenuImage: [
       {
-        img: require("../../../images/Links/dummyImg1.jpg"),
+        img: require("../../../public/images/dummyImg1.jpg"),
 
         title: "Rent A Space ",
         path: "/services/rentspace",
@@ -299,12 +299,12 @@ export const mainNavLinks = [
     ],
     submenuImage: [
       {
-        img: require("../../../images/Links/dummyImg1.jpg"),
+        img: require("../../../public/images/dummyImg1.jpg"),
         title: "Sports",
         path: "/costaattlife/sports",
       },
       {
-        img: require("../../../images/Links/dummyImg1.jpg"),
+        img: require("../../../public/images/dummyImg1.jpg"),
         title: "Student Council",
         path: "/costaattlife/studentcouncil",
       },
@@ -334,7 +334,7 @@ export const mainNavLinks = [
     ],
     submenuImage: [
       {
-        img: require("../../../images/Links/dummyImg1.jpg"),
+        img: require("../../../public/images/dummyImg1.jpg"),
         title: "Careers",
         path: "/about/careers",
       },
