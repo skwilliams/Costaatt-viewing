@@ -59,6 +59,7 @@
 
     &:hover {
         transform: translateY(-1.5rem) scale(1.03);
+        transition: all 1s;
     }
 
 .arrowBig{

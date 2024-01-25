@@ -37,7 +37,7 @@ export const featured = [
   {
     id: 3,
     tags: ["ICTD", "bscITGen", "aasITGen"],
-    photo: require("../../../images/Links/ctrlaltfixtechlogobanner.png"),
+    photo:require("../../../public/images/successStories/ctrlaltfixtechlogobanner.png"),
     altText: "ctrl-alt-fix Tech",
     title: "COSTAATT graduates launches UPLift App",
     text: "Recent graduates of COSTAATT launched their Health App UPLIFT",

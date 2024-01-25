@@ -1,9 +1,10 @@
 @import "../styles/abstracts/variables";
 @import "../styles/base/typography";
 
+@import "../styles/base/utilities";
 @import "../styles/abstracts/mixins";
-
 @import "../styles/layout/pagelayout";
+@import "../styles/layout/structures";
 // @import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
 // @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 
@@ -367,200 +368,195 @@
   display: grid;
   grid-template-columns: min-content 1fr;
   gap: 1.6rem;
+ 
 
   &__icon {
     fill: $color-primary;
     width: 4.5rem;
     height: 4.5rem;
-    grid-row: 1 / span 2;
+    // grid-row: 1 / span 2;
+ 
+  //   &:hover {
+  //           transform: scale(1.05) translateY(-.5rem);
+  //           box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+  //           transition: all .8s;
+  //           z-index: 20;
+  //  }
+ 
   }
   &__text {
     font-size: 1.8rem;
+
+  
+ 
+
+  }  &:hover {
+            transform: scale(1.05) translateY(-.5rem);
+            // box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            transition: all .8s;
+            //  background-color: $color-grey-light-1;
+            z-index: 20;
+   }
+}
+.rentWhy {
+  
+  &__img1 {
+
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        border-radius: 2px;
+       
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 2rem;
+
+
+
+   &:hover {
+         outline: 1.25rem solid $color-primary;
+            transform: scale(1.05) translateY(-.5rem);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            transition: all .8s;
+            z-index: 20;
+   }
+  
+  }
+
+
+
+
+  &__content {
+    background-color: $color-grey-light-1;
+    grid-column: col-start 6 / center-end;
+    padding: 2.4rem 4vw;
+
+    //     display: flex;
+    //    flex-direction: column;
+    //    justify-content: center;
+    //    align-items: flex-start;
+    display: grid;
+    align-items: center;
+    justify-items: start;
   }
 }
-// .rentWhy {
-//   &__pictures {
-//     position: relative;
-//     height: 100%;
 
-//     background-color: $nursingCol;
-//     grid-column: center-start / col-end 5;
-//     background-image: linear-gradient(
-//         rgba($color-primary, 0.4),
-//         rgba($color-primary, 0.4)
-//       ),
-//       url("../../../public/images/servicesPhoto/whybackground.jpg");
-//     background-size: cover;
-//     object-fit: cover;
+.rentSpaces {
 
-//     display: grid;
-//     grid-template-rows: repeat(6, 1fr);
-//     grid-template-columns: repeat(6, 1fr);
-//     align-items: center;
-//     @media only screen and (max-width: $bp-medium) {
-//       // grid-column: 1 / -1;
-//       padding: 9.6rem;
-//     }
-//   }
-//   &__img1 {
-//     width: 95%;
+  grid-column: center-start / center-end;
+  margin: 10rem 0;
 
-//     grid-row: 2 / 5;
-//     grid-column: 2 / 6;
-//     box-shadow: 0 2rem 5rem rgba(#000, 0.1);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+//   grid-template-rows: 1fr 1fr;
+  grid-gap: 4rem;
+}
 
-//     @media only screen and (max-width: $bp-medium) {
-//       grid-column: 1 / 5;
-//       grid-row: 1 / -1;
-//     }
-//   }
+.space {
+  background-color: $color-grey-light-1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 7.2rem;
 
-//   &__img2 {
-//     width: 115%;
-//     grid-row: 4 / 6;
-//     grid-column: 4 / 7;
-//     z-index: 20;
-//     box-shadow: 0 2rem 5rem rgba(#000, 0.2);
-//     background-color: black;
-//     transform: translateY(50&);
-//     @media only screen and (max-width: $bp-medium) {
-//       grid-row: 1 / -1;
-//       width: 100%;
-//     }
-//   }
+  &__img {
+    width: 100%;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    z-index: 1;
+  }
 
-//   &__content {
-//     background-color: $color-grey-light-1;
-//     grid-column: col-start 6 / center-end;
-//     padding: 2.4rem 4vw;
+  // &__like {
+  //   grid-row: 1 / 2;
+  //   grid-column: 2 / 3;
+  //   fill: $color-primary;
+  //   height: 3rem;
+  //   width: 3rem;
+  //   z-index: 2;
+  //   justify-self: end;
+  //   margin: 1rem;
+  // }
 
-//     //     display: flex;
-//     //    flex-direction: column;
-//     //    justify-content: center;
-//     //    align-items: flex-start;
-//     display: grid;
-//     align-items: center;
-//     justify-items: start;
-//   }
-// }
-// .rentSpaces {
+  &__name {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: end;
+    z-index: 3;
 
-//   grid-column: center-start / center-end;
-//   margin: 10rem 0;
+    width: 80%;
+    font-family: $default-font-family;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 1.2rem;
+    background-color: $color-primary-dark;
+    color: #fff;
+    font-weight: 400;
+    transform: translateY(50%);
+  }
 
-//   display: grid;
-//   grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
-// //   grid-template-rows: 1fr 1fr;
-//   grid-gap: 4rem;
-// }
+  &__location,
+  &__layout,
+  &__size,
+  &__price {
+    font-size: 1.6rem;
+    margin-left: 2.8em;
 
-// .space {
-//   background-color: $color-grey-light-1;
-//   display: grid;
-//   grid-template-columns: repeat(2, 1fr);
-//   grid-row-gap: 7.2rem;
-
-//   &__img {
-//     width: 100%;
-//     grid-row: 1 / 2;
-//     grid-column: 1 / -1;
-//     z-index: 1;
-//   }
-
-//   // &__like {
-//   //   grid-row: 1 / 2;
-//   //   grid-column: 2 / 3;
-//   //   fill: $color-primary;
-//   //   height: 3rem;
-//   //   width: 3rem;
-//   //   z-index: 2;
-//   //   justify-self: end;
-//   //   margin: 1rem;
-//   // }
-
-//   &__name {
-//     grid-row: 1 / 2;
-//     grid-column: 1 / -1;
-//     justify-self: center;
-//     align-self: end;
-//     z-index: 3;
-
-//     width: 80%;
-//     font-family: $default-font-family;
-//     font-size: 1.8rem;
-//     text-align: center;
-//     padding: 1.2rem;
-//     background-color: $color-primary-dark;
-//     color: #fff;
-//     font-weight: 400;
-//     transform: translateY(50%);
-//   }
-
-//   &__location,
-//   &__layout,
-//   &__size,
-//   &__price {
-//     font-size: 1.6rem;
-//     margin-left: 2.8em;
-
-//     display: flex;
-//     align-items: center;
-//   }
-//   &__svg {
-//     fill: $color-primary;
-//     height: 2.4rem;
-//     width: 2.4rem;
-//     margin-right: 1.2rem;
-//   }
-// //   p{color:red;}
+    display: flex;
+    align-items: center;
+  }
+  &__svg {
+    fill: $color-primary;
+    height: 2.4rem;
+    width: 2.4rem;
+    margin-right: 1.2rem;
+  }
+//   p{color:red;}
     
   
 
-// &__downloads{
-//     margin: 1.2rem auto;
-//     font-size: 1.38rem;
-//    align-content: center;
+&__downloads{
+    margin: 1.2rem auto;
+    font-size: 1.38rem;
+   align-content: center;
     
 
-// &:hover{
-//     color: $color-primary;
-// }
-// }
+&:hover{
+    color: $color-primary;
+}
+}
 
 
-//   &__btn {
+  &__btn {
 
 
-//     grid-column: 1 / -1;
-//        align-self: end;
-//     margin-bottom: 0;
-//     background-color: $grey;
-//     opacity: .8;
+    grid-column: 1 / -1;
+       align-self: end;
+    margin-bottom: 0;
+    background-color: $grey;
+    opacity: .8;
 
 
 
   
-//     color: #fff;
-//     border: none;
-//     border-radius: 0;
-//     font-family: $default-font-family;
-//     font-size: 1.6rem;
-//     text-transform: uppercase;
-//     padding: 1.2rem 2.4rem;
-//     cursor: pointer;
-//     transition: all .2s; 
-//     text-align: center;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-family: $default-font-family;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding: 1.2rem 2.4rem;
+    cursor: pointer;
+    transition: all .2s; 
+    text-align: center;
     
 
-//     &:hover {
-//         background-color: $color-primary-dark;
-//     }
+    &:hover {
+        background-color: $color-primary-dark;
+    }
 
 
 
-//   }
+  }
 
-// }
+}
 
 // .rentCollage{
 //       grid-column: center-start / center-end;

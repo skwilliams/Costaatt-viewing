@@ -22,7 +22,7 @@ facultystaffdata.getLayout = function getLayout(page) {
 
 export const staffdata = [
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../public/images/schools/deanavatar.jpg"),
     dept_code: "ICTD",
     handle: "rchung",
     altText: " photo Roger Chung",
@@ -32,7 +32,7 @@ export const staffdata = [
     phone: "1-868-625-5030 ext 5480",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../public/images/schools/deanavatar.jpg"),
     dept_code: "ICTD",
     handle: "mcharles",
     altText: " photo Maurisa Charles",
@@ -42,7 +42,7 @@ export const staffdata = [
     phone: "1-868-625-5030 ext 5463",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../public/images/schools/deanavatar.jpg"),
     dept_code: "ICTD",
     handle: "cbernard",
     altText: " photo Cindy Bernard",
@@ -52,7 +52,7 @@ export const staffdata = [
     phone: "1-868-625-5030 ext 5418",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../public/images/schools/deanavatar.jpg"),
     dept_code: "ICTD",
     handle: "rdavid",
     altText: " photo Raechelle David",
@@ -63,7 +63,7 @@ export const staffdata = [
   },
 
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../public/images/schools/deanavatar.jpg"),
     dept_code: "ICTD",
     handle: "dabsalom",
     altText: " photo Dexter Absalom",
@@ -72,7 +72,7 @@ export const staffdata = [
     email: "dabsalom@costaatt.edu.tt",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../public/images/schools/deanavatar.jpg"),
     dept_code: "ICTD",
     handle: "nalexander",
     altText: " photo Nicole Alexander",
@@ -81,7 +81,7 @@ export const staffdata = [
     email: "nalexander@costaatt.edu.tt",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../public/images/schools/deanavatar.jpg"),
     dept_code: "ICTD",
     handle: "aandrews",
     altText: " photo Adrian Andrews",
@@ -90,7 +90,7 @@ export const staffdata = [
     email: "aandrews@costaatt.edu.tt",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../public/images/schools/deanavatar.jpg"),
     dept_code: "ICTD",
     handle: "acadogan",
     altText: " photo Andre Cadogan",
@@ -99,7 +99,7 @@ export const staffdata = [
     email: "acadogan@costaatt.edu.tt",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../public/images/schools/deanavatar.jpg"),
     dept_code: "ICTD",
     handle: "adnagee",
     altText: " photo Alicia Dennis-Nagee",
@@ -108,7 +108,7 @@ export const staffdata = [
     email: "adnagee@costaatt.edu.tt",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../public/images/schools/deanavatar.jpg"),
     dept_code: "ICTD",
     handle: "mgokool",
     altText: " photo Maneka Gokool",
@@ -117,7 +117,7 @@ export const staffdata = [
     email: "mgokool@costaatt.edu.tt",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../public/images/schools/deanavatar.jpg"),
     dept_code: "ICTD",
     handle: "jjpatrick",
     altText: " photo Joanne Jarvis-Patrick",
@@ -126,7 +126,8 @@ export const staffdata = [
     email: "jjpatrick@costaatt.edu.tt",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../public/images/schools/deanavatar.jpg"),
+
     dept_code: "ICTD",
     handle: "jsterling",
     altText: " photo Job Sterling",
@@ -135,7 +136,7 @@ export const staffdata = [
     email: "jsterling@costaatt.edu.tt",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../public/images/schools/deanavatar.jpg"),
     dept_code: "ICTD",
     handle: "skwilliams",
     altText: " photo Stacy Williams",
@@ -144,7 +145,7 @@ export const staffdata = [
     email: "skwilliams@costaatt.edu.tt",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../public/images/schools/deanavatar.jpg"),
     dept_code: "EDUC",
     handle: "klacoa",
     altText: " photo Kizzi La Coa ",
@@ -153,7 +154,7 @@ export const staffdata = [
     email: "klacoa@costaatt.edu.tt",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../public/images/schools/deanavatar.jpg"),
     dept_code: "CRIM",
     handle: "kking",
     altText: " photo Keron King",
@@ -162,7 +163,7 @@ export const staffdata = [
     email: "kking@costaatt.edu.tt",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../public/images/schools/deanavatar.jpg"),
     dept_code: "NURS",
     handle: "cmccave",
     altText: " photo Carolyn Bascombe Mc Cave",
@@ -171,7 +172,7 @@ export const staffdata = [
     email: "cmccave@costaatt.edu.tt",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../public/images/schools/deanavatar.jpg"),
     dept_code: "ATHL",
     handle: "icarter",
     altText: " photo Ian Carter",
@@ -180,7 +181,7 @@ export const staffdata = [
     email: "icarter@costaatt.edu.tt",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../public/images/schools/deanavatar.jpg"),
     dept_code: "ATHL",
     handle: "nramah",
     altText: " photo Nigel Ramah",

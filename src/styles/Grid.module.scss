@@ -239,7 +239,8 @@ $gutter-horizontal: 4rem;
         }
         width: calc((100% - 4 * #{$gutter-horizontal}) / 5);
     }
-     .col1of6 {
+    
+    .col1of6 {
         
       float: left;
 
@@ -250,13 +251,13 @@ $gutter-horizontal: 4rem;
                 margin-right: 0;
                 margin-bottom: $gutter-vertical-small;
             }
-        }
+         }
 
-       @media only screen and (max-width: 56.25em){
-            width: 100% !important;
-        }
-        width: calc((100% - 5 * #{$gutter-horizontal}) / 6);
-    }
+            @media only screen and (max-width: 56.25em){
+                    width: 100% !important;
+                }
+                width: calc((100% - 5 * #{$gutter-horizontal}) / 6);
+            }
 
 }
 

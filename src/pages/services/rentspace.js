@@ -13,7 +13,6 @@ import projector from "../../../public/images/servicesPhoto/projector.svg";
 import wifi from "../../../public/images/servicesPhoto/wifi.svg";
 import parking from "../../../public/images/servicesPhoto/parking.svg";
 
-
 import speakers from "../../../public/images/servicesPhoto/speakers.svg";
 import techsupport from "../../../public/images/servicesPhoto/techsupport.svg";
 
@@ -37,7 +36,7 @@ import email from "../../../public/images/admissions/email.svg";
 import downloadicon from "../../../public/images/admissions/downloadnoteicon.svg";
 import bookOnline from "../../../public/images/servicesPhoto/bookOnline.svg";
 
-import rentalSpacesHeader from "../../../public/images/rentalSpaceHeader.jpg";
+import rentalSpacesHeader from "../../../public/images/headers/rentalSpaceHeader.jpg";
 
 //images for cards
 import auditorium from "../../../public/images/servicesPhoto/Auditorium.jpg";
@@ -47,11 +46,9 @@ import rooftopTerrace from "../../../public/images/servicesPhoto/RoofTop-Terrace
 import trainingRoom93 from "../../../public/images/servicesPhoto/Training-Room-93.jpg";
 import trainingRoom127 from "../../../public/images/servicesPhoto/Training-Room-127.jpg";
 import trainingRoom128 from "../../../public/images/servicesPhoto/Training-Room-128.jpg";
+import { Grid } from "lucide-react";
 
 const rentspace = () => {
-
-
-
   return (
     <>
       {/* <header className={servicesStyles.headerRent} /> */}
@@ -86,419 +83,445 @@ const rentspace = () => {
         </p>
       </div>
       <section id="package" className={servicesStyles.sectionNoSidenavMar}>
-        {/* <section id="package" className={servicesStyles.rentPackage}> */}
-
         <div className={GridStyles.row}>
           <div className={GridStyles.col1of5}>
-            <Image
-              src={projector}
-              alt="Icon"
-              className={servicesStyles.package__icon}
-              width="100"
-              height="100"
-            /> 
-          
-            <h3 className={servicesStyles.package__text}>
-              {" "}
-              Projector Screen or Smartboard
-            </h3>
+            <div className={servicesStyles.package}>
+              <Image
+                src={projector}
+                alt="Icon"
+                className={servicesStyles.package__icon}
+                width="100"
+                height="100"
+              />
+
+              <h3 className={servicesStyles.package__text}>
+                {" "}
+                Projector Screen or Smartboard
+              </h3>
+            </div>
           </div>
           <div className={GridStyles.col1of5}>
-            <Image
-              src={wifi}
-              alt="Icon"
-              className={servicesStyles.package__icon}
-              width="100"
-              height="100"
-            />
-            <h3 className={servicesStyles.package__text}> Hi Speed WiFI</h3>
+            <div className={servicesStyles.package}>
+              <Image
+                src={wifi}
+                alt="Icon"
+                className={servicesStyles.package__icon}
+                width="100"
+                height="100"
+              />
+              <h3 className={servicesStyles.package__text}> Hi Speed WiFI</h3>
+            </div>
           </div>
           <div className={GridStyles.col1of5}>
-            <Image
-              src={parking}
-              alt="Icon"
-              className={servicesStyles.package__icon}
-              width="100"
-              height="100"
-            />
-            <h3 className={servicesStyles.package__text}> Secured Parking</h3>
+            <div className={servicesStyles.package}>
+              <Image
+                src={parking}
+                alt="Icon"
+                className={servicesStyles.package__icon}
+                width="100"
+                height="100"
+              />
+              <h3 className={servicesStyles.package__text}> Secured Parking</h3>
+            </div>
           </div>
           <div className={GridStyles.col1of5}>
-            <Image
-              src={speakers}
-              alt="Icon"
-              className={servicesStyles.package__icon}
-              width="100"
-              height="100"
-            />
-            <h3 className={servicesStyles.package__text}> Speakers</h3>
+            <div className={servicesStyles.package}>
+              <Image
+                src={speakers}
+                alt="Icon"
+                className={servicesStyles.package__icon}
+                width="100"
+                height="100"
+              />
+              <h3 className={servicesStyles.package__text}> Speakers</h3>
+            </div>
           </div>
 
           <div className={GridStyles.col1of5}>
-            <Image
-              src={techsupport}
-              alt="Icon"
-              className={servicesStyles.feature__icon}
-              width="100"
-              height="100"
-            />
-            <h3 className={servicesStyles.package__text}>
-              {" "}
-              Technical Support{" "}
-            </h3>
+            <div className={servicesStyles.package}>
+              <Image
+                src={techsupport}
+                alt="Icon"
+                className={servicesStyles.package__icon}
+                width="100"
+                height="100"
+              />
+              <h3 className={servicesStyles.package__text}>
+                {" "}
+                Technical Support{" "}
+              </h3>
+            </div>
           </div>
         </div>
       </section>
-      <div id="why" className={servicesStyles.rentWhy__pictures}>
-        {/* <Image
-            src={chagoutside}
-            alt="Space for rent"
-            className={servicesStyles.rentWhy__img1}
-            sizes="100vw"
-            fill={true}
-          />
-          <Image
-            src={parkingFeature}
-            alt="Space for rent"
-            className={servicesStyles.rentWhy__img2}
-            sizes="100vw"
-            fill={true}
-          /> */}
-      </div>
-      <div className={servicesStyles.rentWhy__content}>
+
+      <section id="why" className={servicesStyles.sectionNoSidenavMar}>
         <h2
-          className={`${standardStyles.heading_2} ${standardStyles.heading_2_dark} ${standardStyles.mb_md}`}
+          className={`${servicesStyles.heading_2} ${servicesStyles.centertext} ${servicesStyles.marginTopBig}  ${servicesStyles.marginBottomBig} ${servicesStyles.heading_2_dark} ${servicesStyles.mb_md}`}
         >
-          &ldquo;Why Choose COSTAATT for your next Event&ldquo;
+          <span> Why Choose COSTAATT </span>
         </h2>
-
-        <div className={standardStyles.bullet}>
-          <ul>
-            <li> Convenient locations</li>
-            <li>State-of-the-art facilities</li>
-            <li>Flexible pricing options</li>
-            <li>Catering available on demand</li>
-            <li>PC and laptop day rentals avaliable</li>
-          </ul>
+        <div className={GridStyles.row}>
+          <div className={GridStyles.col1of2}>
+            <Image
+              src={parkingFeature}
+              alt="Space for rent"
+              className={servicesStyles.rentWhy__img1}
+              sizes="100vw"
+              width="400"
+            />
+          </div>
+          <div className={GridStyles.col1of2}>
+            <div className={servicesStyles.bullet}>
+              <ul>
+                <li> Convenient locations</li>
+                <li>State-of-the-art facilities</li>
+                <li>Flexible pricing options</li>
+                <li>Catering available on demand</li>
+                <li>PC and laptop day rentals avaliable</li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-      <section id="spaces" className={standardStyles.rentSpaces}>
-        <div className={standardStyles.space}>
-          <Image
-            src={auditorium}
-            alt="Auditiorian"
-            sizes="100vw"
-            height={200}
-            className={standardStyles.space__img}
-          />
+      </section>
 
-          <h5 className={standardStyles.space__name}>Auditiorium</h5>
-          <div className={standardStyles.space__location}>
-            <Image
-              src={location}
-              alt="Sppace Size icon"
-              className={standardStyles.space__svg}
-            />
-            <p>Chaguanas</p>
-          </div>
-          <div className={standardStyles.space__layout}>
-            <Image
-              src={layout}
-              alt="Space Size icon"
-              className={standardStyles.space__svg}
-            />
-            <p>Theatre </p>
-          </div>
-          <div className={standardStyles.space__size}>
-            {/* <svg></svg> */}
-            <Image
-              src={size}
-              alt="Space Size icon"
-              className={standardStyles.space__svg}
-              sizes="100vw"
-              //   fill={true}
-            />
-            <p>99 persons</p>
-          </div>
-          <div className={standardStyles.space__price}>
-            <Image
-              src={price}
-              alt=" Price icon"
-              className={standardStyles.space__svg}
-              sizes="100vw"
-              //   fill={true}
-            />
+      <section id="spaces" className={servicesStyles.rentSpaces}>
+        <div className={GridStyles.row}>
+          <div className={GridStyles.col1of3}>
+            <div className={servicesStyles.space}>
+              <Image
+                src={auditorium}
+                alt="Auditiorian"
+                sizes="100vw"
+                height={200}
+                className={servicesStyles.space__img}
+              />
 
-            <p>TT $4,000 </p>
-          </div>
+              <h5 className={standardStyles.space__name}>Auditiorium</h5>
+              <div className={standardStyles.space__location}>
+                <Image
+                  src={location}
+                  alt="Sppace Size icon"
+                  className={standardStyles.space__svg}
+                />
+                <p>Chaguanas</p>
+              </div>
+              <div className={standardStyles.space__layout}>
+                <Image
+                  src={layout}
+                  alt="Space Size icon"
+                  className={standardStyles.space__svg}
+                />
+                <p>Theatre </p>
+              </div>
+              <div className={standardStyles.space__size}>
+                {/* <svg></svg> */}
+                <Image
+                  src={size}
+                  alt="Space Size icon"
+                  className={standardStyles.space__svg}
+                  sizes="100vw"
+                  //   fill={true}
+                />
+                <p>99 persons</p>
+              </div>
+              <div className={standardStyles.space__price}>
+                <Image
+                  src={price}
+                  alt=" Price icon"
+                  className={standardStyles.space__svg}
+                  sizes="100vw"
+                  //   fill={true}
+                />
 
-          <Link
-            href="https://bit.ly/42oZdfL"
-            className={standardStyles.space__btn}
-          >
-            Book Now
-          </Link>
+                <p>TT $4,000 </p>
+              </div>
+
+              <Link
+                href="https://bit.ly/42oZdfL"
+                className={standardStyles.space__btn}
+              >
+                Book Now
+              </Link>
+            </div>
+          </div>
+          <div className={GridStyles.col1of3}>
+            <div className={servicesStyles.space}>
+              <Image
+                src={auditorium}
+                alt="Auditiorian"
+                sizes="100vw"
+                height={200}
+                className={servicesStyles.space__img}
+              />
+
+              <h5 className={standardStyles.space__name}>Auditiorium</h5>
+              <div className={standardStyles.space__location}>
+                <Image
+                  src={location}
+                  alt="Sppace Size icon"
+                  className={standardStyles.space__svg}
+                />
+                <p>Chaguanas</p>
+              </div>
+              <div className={standardStyles.space__layout}>
+                <Image
+                  src={layout}
+                  alt="Space Size icon"
+                  className={standardStyles.space__svg}
+                />
+                <p>Theatre </p>
+              </div>
+              <div className={standardStyles.space__size}>
+                {/* <svg></svg> */}
+                <Image
+                  src={size}
+                  alt="Space Size icon"
+                  className={standardStyles.space__svg}
+                  sizes="100vw"
+                  //   fill={true}
+                />
+                <p>99 persons</p>
+              </div>
+              <div className={standardStyles.space__price}>
+                <Image
+                  src={price}
+                  alt=" Price icon"
+                  className={standardStyles.space__svg}
+                  sizes="100vw"
+                  //   fill={true}
+                />
+
+                <p>TT $4,000 </p>
+              </div>
+
+              <Link
+                href="https://bit.ly/42oZdfL"
+                className={standardStyles.space__btn}
+              >
+                Book Now
+              </Link>
+            </div>
+          </div>
+          <div className={GridStyles.col1of3}>
+            <div className={standardStyles.space}>
+              <Image
+                src={boardRoomChag}
+                alt="BoardRoom"
+                sizes="100vw"
+                height={200}
+                className={standardStyles.space__img}
+              />
+
+              <h5 className={standardStyles.space__name}>Board Room</h5>
+              <div className={standardStyles.space__location}>
+                <Image
+                  src={location}
+                  alt="Location icon"
+                  className={standardStyles.space__svg}
+                />
+                <p>Chaguanas</p>
+              </div>
+              <div className={standardStyles.space__layout}>
+                <Image
+                  src={layout}
+                  alt="Layout icon"
+                  className={standardStyles.space__svg}
+                />
+                <p>Conference</p>
+              </div>
+              <div className={standardStyles.space__size}>
+                <Image
+                  src={size}
+                  alt="Capacity icon"
+                  className={standardStyles.space__svg}
+                  sizes="100vw"
+                />
+                <p>20 persons</p>
+              </div>
+              <div className={standardStyles.space__price}>
+                <Image
+                  src={price}
+                  alt=" Price icon"
+                  className={standardStyles.space__svg}
+                  sizes="100vw"
+                />
+
+                <p>TT $3500</p>
+              </div>
+              <Link
+                href="https://bit.ly/42oZdfL"
+                className={standardStyles.space__btn}
+              >
+                Book Now
+              </Link>
+            </div>
+          </div>
         </div>
-        <div className={standardStyles.space}>
-          <Image
-            src={boardRoomChag}
-            alt="BoardRoom"
-            sizes="100vw"
-            height={200}
-            className={standardStyles.space__img}
-          />
 
-          <h5 className={standardStyles.space__name}>Board Room</h5>
-          <div className={standardStyles.space__location}>
-            <Image
-              src={location}
-              alt="Location icon"
-              className={standardStyles.space__svg}
-            />
-            <p>Chaguanas</p>
-          </div>
-          <div className={standardStyles.space__layout}>
-            <Image
-              src={layout}
-              alt="Layout icon"
-              className={standardStyles.space__svg}
-            />
-            <p>Conference</p>
-          </div>
-          <div className={standardStyles.space__size}>
-            <Image
-              src={size}
-              alt="Capacity icon"
-              className={standardStyles.space__svg}
-              sizes="100vw"
-            />
-            <p>20 persons</p>
-          </div>
-          <div className={standardStyles.space__price}>
-            <Image
-              src={price}
-              alt=" Price icon"
-              className={standardStyles.space__svg}
-              sizes="100vw"
-            />
+        <div className={GridStyles.row}>
+          <div className={GridStyles.col1of3}>
+            <div className={standardStyles.space}>
+              <Image
+                src={trainingRoom127}
+                alt="Training Room"
+                sizes="100vw"
+                height={200}
+                className={standardStyles.space__img}
+              />
 
-            <p>TT $3500</p>
-          </div>
-          <Link
-            href="https://bit.ly/42oZdfL"
-            className={standardStyles.space__btn}
-          >
-            Book Now
-          </Link>
-        </div>
-        <div className={standardStyles.space}>
-          <Image
-            src={rooftopTerrace}
-            alt="Rooftop"
-            sizes="100vw"
-            height={200}
-            className={standardStyles.space__img}
-          />
+              <h5 className={standardStyles.space__name}>Training Room 127</h5>
+              <div className={standardStyles.space__location}>
+                <Image
+                  src={location}
+                  alt="Location icon"
+                  className={standardStyles.space__svg}
+                />
+                <p>Chaguanas</p>
+              </div>
+              <div className={standardStyles.space__layout}>
+                <Image
+                  src={layout}
+                  alt="Layout icon"
+                  className={standardStyles.space__svg}
+                />
+                <p>Classroom</p>
+              </div>
+              <div className={standardStyles.space__size}>
+                <Image
+                  src={size}
+                  alt="Capacity icon"
+                  className={standardStyles.space__svg}
+                  sizes="100vw"
+                />
+                <p>30 persons</p>
+              </div>
+              <div className={standardStyles.space__price}>
+                <Image
+                  src={price}
+                  alt="Sppace Price icon"
+                  className={standardStyles.space__svg}
+                  sizes="100vw"
+                />
 
-          <h5 className={standardStyles.space__name}>Roof Top Terrace</h5>
-          <div className={standardStyles.space__location}>
-            <Image
-              src={location}
-              alt="Sppace Size icon"
-              className={standardStyles.space__svg}
-            />
-            <p>Chaguanas</p>
+                <p>TT$ 3,500</p>
+              </div>
+              <Link
+                href="https://bit.ly/42oZdfL"
+                className={standardStyles.space__btn}
+              >
+                Book Now
+              </Link>
+            </div>
           </div>
-          <div className={standardStyles.space__layout}>
-            <Image
-              src={layout}
-              alt="Layout icon"
-              className={standardStyles.space__svg}
-            />
-            <p>Cocktail</p>
-          </div>
-          <div className={standardStyles.space__size}>
-            <Image
-              src={size}
-              alt="Sppace Size icon"
-              className={standardStyles.space__svg}
-              sizes="100vw"
-            />
-            <p>100 persons</p>
-          </div>
-          <div className={standardStyles.space__price}>
-            <Image
-              src={price}
-              alt="Price icon"
-              className={standardStyles.space__svg}
-              sizes="100vw"
-            />
+          <div className={GridStyles.col1of3}>
+            <div className={standardStyles.space}>
+              <Image
+                src={trainingRoom93}
+                alt="Training Room"
+                sizes="100vw"
+                height={200}
+                className={standardStyles.space__img}
+              />
 
-            <p>TT $6,000</p>
-          </div>
-          <Link
-            href="https://bit.ly/42oZdfL"
-            className={standardStyles.space__btn}
-          >
-            Book Now
-          </Link>
-        </div>
+              <h5 className={standardStyles.space__name}>Training Room 93</h5>
+              <div className={standardStyles.space__location}>
+                <Image
+                  src={location}
+                  alt="Location icon"
+                  className={standardStyles.space__svg}
+                />
+                <p>Chaguanas</p>
+              </div>
+              <div className={standardStyles.space__layout}>
+                <Image
+                  src={layout}
+                  alt="Layout icon"
+                  className={standardStyles.space__svg}
+                />
+                <p>Classroom</p>
+              </div>
+              <div className={standardStyles.space__size}>
+                <Image
+                  src={size}
+                  alt="Capacity icon"
+                  className={standardStyles.space__svg}
+                  sizes="100vw"
+                />
+                <p>30 persons</p>
+              </div>
+              <div className={standardStyles.space__price}>
+                <Image
+                  src={price}
+                  alt="Sppace Price icon"
+                  className={standardStyles.space__svg}
+                  sizes="100vw"
+                />
 
-        <div className={standardStyles.space}>
-          <Image
-            src={trainingRoom127}
-            alt="Training Room"
-            sizes="100vw"
-            height={200}
-            className={standardStyles.space__img}
-          />
+                <p>TT$ 3,500</p>
+              </div>
+              <Link
+                href="https://bit.ly/42oZdfL"
+                className={standardStyles.space__btn}
+              >
+                Book Now
+              </Link>
+            </div>
+          </div>
+          <div className={GridStyles.col1of3}>
+            <div className={standardStyles.space}>
+              <Image
+                src={trainingRoom128}
+                alt="Training Room"
+                sizes="100vw"
+                height={200}
+                className={standardStyles.space__img}
+              />
 
-          <h5 className={standardStyles.space__name}>Training Room 127</h5>
-          <div className={standardStyles.space__location}>
-            <Image
-              src={location}
-              alt="Location icon"
-              className={standardStyles.space__svg}
-            />
-            <p>Chaguanas</p>
-          </div>
-          <div className={standardStyles.space__layout}>
-            <Image
-              src={layout}
-              alt="Layout icon"
-              className={standardStyles.space__svg}
-            />
-            <p>Classroom</p>
-          </div>
-          <div className={standardStyles.space__size}>
-            <Image
-              src={size}
-              alt="Capacity icon"
-              className={standardStyles.space__svg}
-              sizes="100vw"
-            />
-            <p>30 persons</p>
-          </div>
-          <div className={standardStyles.space__price}>
-            <Image
-              src={price}
-              alt="Sppace Price icon"
-              className={standardStyles.space__svg}
-              sizes="100vw"
-            />
+              <h5 className={standardStyles.space__name}>Training Room 128</h5>
+              <div className={standardStyles.space__location}>
+                <Image
+                  src={location}
+                  alt="Location icon"
+                  className={standardStyles.space__svg}
+                />
+                <p>Chaguanas</p>
+              </div>
+              <div className={standardStyles.space__layout}>
+                <Image
+                  src={layout}
+                  alt="Layout icon"
+                  className={standardStyles.space__svg}
+                />
+                <p>Classroom</p>
+              </div>
+              <div className={standardStyles.space__size}>
+                <Image
+                  src={size}
+                  alt="Capacity icon"
+                  className={standardStyles.space__svg}
+                  sizes="100vw"
+                />
+                <p>30 persons</p>
+              </div>
+              <div className={standardStyles.space__price}>
+                <Image
+                  src={price}
+                  alt="Sppace Price icon"
+                  className={standardStyles.space__svg}
+                  sizes="100vw"
+                />
 
-            <p>TT$ 3,500</p>
+                <p>TT$ 3,500</p>
+              </div>
+              <Link
+                href="https://bit.ly/42oZdfL"
+                className={standardStyles.space__btn}
+              >
+                Book Now
+              </Link>
+            </div>
           </div>
-          <Link
-            href="https://bit.ly/42oZdfL"
-            className={standardStyles.space__btn}
-          >
-            Book Now
-          </Link>
-        </div>
-        <div className={standardStyles.space}>
-          <Image
-            src={trainingRoom93}
-            alt="Training Room"
-            sizes="100vw"
-            height={200}
-            className={standardStyles.space__img}
-          />
-
-          <h5 className={standardStyles.space__name}>Training Room 93</h5>
-          <div className={standardStyles.space__location}>
-            <Image
-              src={location}
-              alt="Location icon"
-              className={standardStyles.space__svg}
-            />
-            <p>Chaguanas</p>
-          </div>
-          <div className={standardStyles.space__layout}>
-            <Image
-              src={layout}
-              alt="Layout icon"
-              className={standardStyles.space__svg}
-            />
-            <p>Classroom</p>
-          </div>
-          <div className={standardStyles.space__size}>
-            <Image
-              src={size}
-              alt="Capacity icon"
-              className={standardStyles.space__svg}
-              sizes="100vw"
-            />
-            <p>30 persons</p>
-          </div>
-          <div className={standardStyles.space__price}>
-            <Image
-              src={price}
-              alt="Sppace Price icon"
-              className={standardStyles.space__svg}
-              sizes="100vw"
-            />
-
-            <p>TT$ 3,500</p>
-          </div>
-          <Link
-            href="https://bit.ly/42oZdfL"
-            className={standardStyles.space__btn}
-          >
-            Book Now
-          </Link>
-        </div>
-        <div className={standardStyles.space}>
-          <Image
-            src={trainingRoom128}
-            alt="Training Room"
-            sizes="100vw"
-            height={200}
-            className={standardStyles.space__img}
-          />
-
-          <h5 className={standardStyles.space__name}>Training Room 128</h5>
-          <div className={standardStyles.space__location}>
-            <Image
-              src={location}
-              alt="Location icon"
-              className={standardStyles.space__svg}
-            />
-            <p>Chaguanas</p>
-          </div>
-          <div className={standardStyles.space__layout}>
-            <Image
-              src={layout}
-              alt="Layout icon"
-              className={standardStyles.space__svg}
-            />
-            <p>Classroom</p>
-          </div>
-          <div className={standardStyles.space__size}>
-            <Image
-              src={size}
-              alt="Capacity icon"
-              className={standardStyles.space__svg}
-              sizes="100vw"
-            />
-            <p>30 persons</p>
-          </div>
-          <div className={standardStyles.space__price}>
-            <Image
-              src={price}
-              alt="Sppace Price icon"
-              className={standardStyles.space__svg}
-              sizes="100vw"
-            />
-
-            <p>TT$ 3,500</p>
-          </div>
-          <Link
-            href="https://bit.ly/42oZdfL"
-            className={standardStyles.space__btn}
-          >
-            Book Now
-          </Link>
         </div>
       </section>
       {/* <section id="morespaces" className={standardStyles.rentCollage}>
@@ -769,6 +792,3 @@ const rentspace = () => {
 };
 
 export default rentspace;
-
-
-         
