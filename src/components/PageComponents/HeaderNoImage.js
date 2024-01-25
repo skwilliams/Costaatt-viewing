@@ -1,6 +1,6 @@
 import React from 'react'
 import style from "../../styles/Admissions.module.scss";
-import home5 from "../../../images/Links/colors.png";
+import home5 from "../../../public/images/colors.png";
 
 
 

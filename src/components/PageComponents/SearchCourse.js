@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from '../../styles/ProgCard.module.scss';
 import navBarStyles from '../../styles/Nav.module.scss';
 import { BiSearch } from 'react-icons/bi';
-import SCHOOLDATA from '../../../data/schooldata.json';
+import SCHOOLDATA from '../../../public/data/schooldata.json';
 
 const SearchCourse = ({ handleSearchSubmit, DATA }) => {
   const [name, setName] = useState('');

@@ -10,7 +10,7 @@ import SearchCourse from '@/components/PageComponents/SearchCourse';
 import ProgCard from '../../components/PageComponents/ProgCard';
 import ProgramCard from '@/components/PageComponents/ProgramCard';
 //import { coursedata } from './allprogrammedata';
-import SCHOOLDATA from '../../../data/schooldata.json';
+import SCHOOLDATA from '../../../public/data/schooldata.json';
 import HeaderNoImage from '@/components/PageComponents/HeaderNoImage';
 import { FaArrowUp } from "react-icons/fa";
 
