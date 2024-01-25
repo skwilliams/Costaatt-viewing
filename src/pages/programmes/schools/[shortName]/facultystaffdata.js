@@ -22,7 +22,7 @@ facultystaffdata.getLayout = function getLayout(page) {
 
 export const staffdata = [
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../public/images/schools/deanavatar.jpg"),
     dept_code: "ICTD",
     handle: "rchung",
     altText: " photo Roger Chung",
@@ -42,7 +42,7 @@ export const staffdata = [
     phone: "1-868-625-5030 ext 5463",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../public/images/schools/deanavatar.jpg"),
     dept_code: "ICTD",
     handle: "cbernard",
     altText: " photo Cindy Bernard",
@@ -52,7 +52,7 @@ export const staffdata = [
     phone: "1-868-625-5030 ext 5418",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../public/images/schools/deanavatar.jpg"),
     dept_code: "ICTD",
     handle: "rdavid",
     altText: " photo Raechelle David",
@@ -126,7 +126,7 @@ export const staffdata = [
     email: "jjpatrick@costaatt.edu.tt",
   },
   {
-    photo: require("../../../../../images/Programmes/deanavatar.jpg"),
+    photo: require("../../../../../public/images/schools/deanavatar.jpg"),
     dept_code: "ICTD",
     handle: "jsterling",
     altText: " photo Job Sterling",

@@ -196,7 +196,7 @@ export async function getStaticProps(context) {
   return {
     props: {
       foundSchool: await getData(
-        'data',
+        'public/data',
         'schooldata.json',
         schName,
         'nameStump'
