@@ -16,12 +16,15 @@ const Modal = ({ isOpen, onClose, children }) => {
       {isOpen && (
         <div className={ModalStyles.modal__overlay}>
           <div className={ModalStyles.modal}>
-            <div className={ModalStyles.modal__overlay__closeButton}
-            >
-            <button onClick={handleClose} >Close</button></div>
+           
+            <button 
+            className={ModalStyles.modal__overlay__closeButton}
+            onClick={handleClose}> Close</button>
+            {/* &times; */}
+          
             <div className={ModalStyles.modal__content}>{children}</div>
           </div>
-        </div>
+         </div> 
       )}
     </>
   );

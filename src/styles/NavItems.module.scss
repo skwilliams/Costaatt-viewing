@@ -4,16 +4,18 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 5px 30px;
+  padding: 0 5rem;
   justify-content: space-between;
   width: 100%;
   background-image: linear-gradient(
     to bottom right,
+    $color-primary-dark,
     $color-primary,
-    $color-primary-dark
   );
   // background-color: $color-primary;
-  color: $grey;
+  color: white;
+
+  // height: 5rem;
   z-index: 1000;
 }
 
@@ -34,7 +36,7 @@
 
 .topBarLinks {
   position: relative;
-  padding: 20px 5px;
+  padding: 1.2rem .5rem;
 }
 .topBarLinksActive {
   background-color: $orange;
@@ -45,15 +47,18 @@
   //  border-radius: 15px;
   text-underline-position: under;
 
-  text-decoration: underline solid $orange 4px !important;
+  text-decoration: underline solid $orange 0.3rem !important;
+  text-underline-offset: 0.2rem;
 }
 
 .topNavItems {
-  font-size: 1.78rem;
+  font-size: 1.6rem;
   display: flex;
   justify-content: space-between;
   width: 100%;
   position: relative;
+  color:black;
+  font-weight: 500;
 }
 
 @keyframes slideInFromTop {
@@ -68,9 +73,9 @@
 }
 
 .topNavDropDownMain {
-  // box-shadow: inset 0px 14px 35px rgba(0, 0, 0, 0.2);
-  border-radius: 30px;
-  padding: 20px 10px;
+  box-shadow: inset 0px 14px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 3rem;
+  padding: 2rem 1rem;
   //animation: slideInFromTop 0.8s ease forwards;
 }
 
@@ -94,7 +99,10 @@
 }
 
 .topNavdropDownSchoolLink:hover {
-  color: $orange;
+ color:$orange;
+
+  transition: all 1s ;
+   
 }
 
 .topNavdropDownSchoolMenu {

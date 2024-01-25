@@ -1,10 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-
-
   reactStrictMode: true,
   // output:'export',
-  
 
   webpack: (config) => {
     config.resolve.fallback = {
@@ -34,8 +31,11 @@ const nextConfig = {
         "node_modules/@esbuild/linux-x64",
       ],
     },
-  }
-
+  },
+  sassOptions: {
+    // includePaths: [path.join(__dirname, "styles")],
+    prependData: `@use "~/styles/abstracts/mixins.scss";`,
+  },
 };
 
 

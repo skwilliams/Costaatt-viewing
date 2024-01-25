@@ -15,7 +15,6 @@ export default featuresdata
  };
 
 
-
 export const featured = [
   {
     id: 1,

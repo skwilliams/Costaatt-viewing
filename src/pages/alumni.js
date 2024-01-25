@@ -24,7 +24,6 @@ const alumni = () => {
   return (
     <>
       <header className={standardStyles.rentHeader}>
-
         <Head>
           <title>Alumni </title>
         </Head>
@@ -35,9 +34,9 @@ const alumni = () => {
         <div className={HomeStyles.successStories}>
           <h1>Success Stories</h1>
         </div>
-  
       </section>
 
+     
       <div>alumni</div>
     </>
   );

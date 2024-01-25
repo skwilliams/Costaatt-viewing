@@ -40,6 +40,13 @@
   background-size: cover;
   margin: 0;
   // position: relative;
+
+  background-image: linear-gradient(
+      to right,
+      rgba($color-white, 0.25),
+      rgba($color-primary-light, 0.25),
+      rgba($color-primary-light, 0.5)
+    ),
 }
 .sectionoverview {
   color: #161716;

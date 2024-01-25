@@ -29,7 +29,7 @@ const BottomNav = () => {
     <nav className={navStyles.bottomNav}>
       <div className={navStyles.logo}>
         <Link href="/">
-          <Image src={logo} alt="costaatt logo" height={100} />
+          <Image src={logo} alt="costaatt logo" height={70} />
         </Link>
       </div>
       <div className={navStyles.navbarMenusCon}>

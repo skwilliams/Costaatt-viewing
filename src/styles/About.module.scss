@@ -1,4 +1,6 @@
 @import "./abstracts/variables";
+@import '../styles/abstracts/mixins';
+
 
 //////////////// Overview of Costaatt index page
 
@@ -479,5 +481,107 @@
   /* Make all right containers behave like the left ones */
   .right {
     left: 0%;
+  }
+}
+
+//// Accreditaion Page
+/// 
+.header {
+  height: 50vh;
+  //  height: 60vw;
+  // width: 100vw;
+  background-image: linear-gradient(
+      to right,
+      rgba($color-white, 0.25),
+      rgba($color-primary-light, 0.25),
+      rgba($color-primary-light, 0.5)
+    ),
+    url("../../public/images/about/qualitycontrol1.jpg");
+  // Source: https://www.freepik.com/free-photo/standard-quality-control-collage-concept_30589253.htm#query=quality%20assurance&position=44&from_view=keyword&track=ais&uuid=11090649-220d-41aa-874a-c89449145375
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+
+
+  
+}
+
+.section_accreditation {
+  padding: 3rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  &__text_box {
+    font-size: 1.8rem;
+    line-height: 2;
+    text-align: justify;
+    margin-bottom: 3rem;
+
+
+      @media only screen and (max-width: 37.5em) {
+      font-size:1.2rem;
+       
+      margin-bottom: 1rem;
+    }
+
+   @media only screen and (max-width: 56.25em){
+    font-size: 1.4rem;
+     
+      margin-bottom: 1rem;
+    }
+
+  }
+
+  &__text_box1 {
+    font-size: 1.8rem;
+       line-height: 1.5;
+    text-align: justify;
+
+     @media only screen and (max-width: 37.5em) {
+      font-size:1.2rem;
+    
+      margin-bottom: -2rem;
+    }
+
+   @media only screen and (max-width: 56.25em){
+    font-size: 1.4rem;
+      
+      margin-bottom: -2rem;
+    }
+  }
+
+  &__image {
+    width: 60%;
+    height: 75%;
+    top:2rem;
+   
+    border: 0.5rem solid;
+    border-image: linear-gradient($color-primary-light, $color-primary-dark) 30;
+ 
+   @media only screen and (max-width: 37.5em) {
+      width: 60%;
+    }
+     @media only screen and (max-width: 56.25em){
+      width: 75%;
+    }
+  }
+
+  &__image2 {
+    width: 60%;
+
+     @media only screen and (max-width: 37.5em) {
+      display: none;
+    }
+
+ @media only screen and (max-width: 56.25em){
+      display: none;
+    }
+
+    &:hover {
+      content: url("../../public/images/about/ACTT-Logo.png");
+    }
   }
 }

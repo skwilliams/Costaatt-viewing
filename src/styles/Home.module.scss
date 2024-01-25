@@ -36,15 +36,7 @@
 
 .sectionLeftTop {
   background-color: $grey;
-  // margin:2rem;
-  // background-image: linear-gradient(
-  //   to bottom right,
-  //   $color-primary,
-  //   $color-primary-dark
-  // );
-  // padding-top: 2.5rem;
-  // padding-left:2.5rem;
-  // padding-bottom: 0;
+  
 
   padding: 2.5rem 0 0 0;
   border-top: 0 $whiteback solid;
@@ -106,7 +98,7 @@
 .sliderArrows {
   position: relative;
   top: 300px;
-  font-size: 9.6rem;
+  font-size: 9rem;
   z-index: 10;
   cursor: pointer;
   color: white;

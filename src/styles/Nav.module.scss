@@ -97,7 +97,7 @@
 
 .topNav {
   display: flex;
-  padding: 5px 30px;
+  padding: .5rem 10rem;
   justify-content: space-between;
   // background-image: linear-gradient(
   //   to bottom right,
@@ -131,12 +131,11 @@
 }
 //costaatt logo on main page
 .logo {
-  padding: 0;
-  // width: 15px;
-  margin: 0;
-  // float: left;
-  padding-left: 0;
-  //  padding-top: 7px;
+  padding:1rem;
+  // padding: 0;
+  // margin: 0;
+  // padding-left: 0;
+ 
 }
 .costaattwords {
   font-family: $default-font-family;
@@ -150,13 +149,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 65px;
+  padding: 0 2rem;
   background-color: $grey;
   color: white;
   position: relative;
 }
 .bottomNav li {
-  font-size: 1.92rem;
+  font-size: 2rem;
 }
 
 .navbarMenus {
@@ -167,16 +166,18 @@
 }
 .navBarLinks {
   width: 100%;
-  padding: 9px 10px;
+  padding: .5rem .75rem;
   text-decoration-color: $grey;
+  font-size: 1.7rem;
 }
 .navBarLinks {
   cursor: pointer;
 }
 .navBarLinks:hover {
   transition: all 0.8s ease;
-  text-underline-position: under;
-  text-decoration: underline solid $orange 4px !important;
+  text-underline-position: under ;
+  text-underline-offset: .5rem;
+  text-decoration: underline solid $orange 0.3rem !important;
   cursor: pointer;
 }
 
@@ -206,7 +207,7 @@
 
 .dropDownMain {
   left: 0;
-  top: 85px;
+  top: 65px;
   width: 100%;
   position: absolute;
   z-index: 40;
@@ -221,7 +222,7 @@
   gap: 1.25rem;
   background-color: $lightgrey1;
   box-shadow: inset 0px 14px 15px rgba(0, 0, 0, 0.3);
-  padding: 30px 30px;
+  padding: 3rem 3rem;
   font-size: 1.6rem;
 
   .dropDownLi {
@@ -233,8 +234,9 @@
 
     &:hover {
       transition: all 0.5s ease;
-      text-decoration: underline solid $orange 4px;
+      text-decoration: underline solid $orange 0.3rem !important;;
       text-underline-position: under;
+       text-underline-offset: 0.5rem;
     }
   }
 }
@@ -245,12 +247,21 @@
   gap: 20px;
   text-align: center;
   color: $grey;
+  
 }
 
 .dummyImage {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   width: 250px;
   height: auto;
+
+
+  &:hover{
+          transition: all 0.5s ease;
+      text-decoration: underline solid $orange 0.3rem !important;;
+      text-underline-position: under;
+       text-underline-offset: 0.5rem;
+  }
 }
 
 .dropDownLinksGrid {
@@ -258,7 +269,7 @@
   gap: 0 40px;
   grid-template-columns: repeat(2, 1fr);
   text-underline-position: under;
-  text-underline-offset: 0.3rem;
+  text-underline-offset: 0.2rem;
 }
 
 .searchButton {

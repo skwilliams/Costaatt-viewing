@@ -324,8 +324,12 @@ export const mainNavLinks = [
         path: "/about/history",
       },
       {
-        title: "Accreditation And Quality Assurance",
-        path: "/about/Accreditation",
+        title: "Accreditation",
+        path: "/about/accreditation",
+      },
+      {
+        title: "Quality Assurance",
+        path: "/about/qualityassurance",
       },
       {
         title: "College Leadership",
@@ -338,7 +342,6 @@ export const mainNavLinks = [
         title: "Careers",
         path: "/about/careers",
       },
-     
     ],
   },
 ];

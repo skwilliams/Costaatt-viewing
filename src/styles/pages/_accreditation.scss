@@ -1,0 +1,63 @@
+.header {
+  height: 60vh;
+  background-image: linear-gradient(
+      to right,
+      rgba($color-white, 0.25),
+      rgba($color-primary-light, 0.25),
+      rgba($color-primary-light, 0.5)
+    ),
+    url("../img/qualitycontrol1.jpg");
+  // Source: https://www.freepik.com/free-photo/standard-quality-control-collage-concept_30589253.htm#query=quality%20assurance&position=44&from_view=keyword&track=ais&uuid=11090649-220d-41aa-874a-c89449145375
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.section_accreditation {
+  padding: 3rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  &__text_box {
+    font-size: 1.25rem;
+    text-align: justify;
+    margin-bottom: 3rem;
+  }
+
+  &__text_box1 {
+    font-size: 1.25rem;
+    text-align: justify;
+
+    @include respond(phone) {
+      margin-bottom: -3rem;
+    }
+
+    @include respond(tab-port) {
+      margin-bottom: -3rem;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    border: 0.5rem solid;
+    border-image: linear-gradient($color-primary-light, $color-primary-dark) 30;
+  }
+
+  &__image2 {
+    width: 45%;
+
+    @include respond(phone) {
+      display: none;
+    }
+
+    @include respond(tab-port) {
+      display: none;
+    }
+
+    &:hover {
+      content: url("../img/ACTT-Logo.png");
+    }
+  }
+}

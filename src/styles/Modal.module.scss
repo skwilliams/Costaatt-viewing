@@ -10,8 +10,14 @@
           padding: 20px;
           border-radius: 8px;
           box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-          width: 60%;
-          height: 70%;
+          width: 90vw;
+          height: 90%;
+          overflow: scroll;
+          z-index: 5;
+       
+          padding: 4rem 4rem 5rem 4rem;
+          scrollbar-color: $orange white;
+        
 
 
         &__overlay {
@@ -27,33 +33,35 @@
           z-index: 9999;
         
         
-              
-    
+
         &__content {
-            display: flex;
-            grid-template-columns: min-content,max-content;
+          
+            // grid-template-columns: min-content,max-content;
         // // @include absCenter;
 
         // width: 75%;
-        // background-color: $color-white;
+        background-color: $color-white;
+        color: black;
+
         box-shadow: 0 2rem 4rem rgba($color-black, .2);
-        // border-radius: 3px;
-        // display:grid;
-        // grid-template-columns: 1fr 1fr;
-        // overflow: hidden;
-        // // opacity: 0;
-        // transform: translate(-50%, -50%) scale(.25);
-        // transition: all .5s .2s;
+        border-radius: 3px;
+        display:grid;
+        // grid-template-rows: min-content,max-content;
+        grid-template-columns: 1fr, 3fr;
+        // gap: 5px;
+    //    overflow: scroll;
+        
+     
     }
 
     &__left {
         width: 33.333333%;
-        display: grid;
+        // display: grid;
     }
 
     &__right {
         width: 66.6666667%;
-        display: table-cell;
+        // display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
     }
@@ -62,87 +70,108 @@
         display: block;
      
         top:50%;
-   
+     
         border-radius: 70%;
     }
 
       &__name {
         font-size: 2rem;
-        color:$orange;
+        color:white
 
     }
        &__position {
         font-size: 1.8rem;
-        color: blue;
-     
+        // color:white;
+        
     }
 
     &__text {
         font-size: 1.8rem;
- text-align: left;
- overflow: scroll;
+        text-align: left;
+        // color: white;
+          
      
     }
 
 
-//    &__closeButton {
-//         &:link,
-//         &:visited {
-//             color: purple;
-//             position: absolute;
-//             top: 2.5rem;
-//             right: 2.5rem;
-//             font-size: 25rem;
-//             text-decoration: none;
-//             display: inline-block;
-//             transition: all .2s;
-//             line-height: 1;
-//             // text-align: right;
-//         }
+   &__closeButton {
+        &:link,
+        &:visited {
 
-//         &:hover {
-//             color: $color-primary;
-//         }
-//     }
+// //  color:white;
+//  background-color: white;
+//  font-size:large;
+ 
+ 
+ 
+ display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      border: 2px solid #3498db; /* Border color */
+      color: #3498db; /* Text color */
+      background-color: #fff; /* Background color */
+      border-radius: 5px; /* Rounded corners */
+      transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+            // color: white;
+            // position: absolute;
+            // top: 2.5rem;
+            // right: 2.5rem;
+            // font-size: 25rem;
+            // padding: 3rem;
+            // text-decoration: none;
+            // display: inline-block;
+            // transition: all .2s;
+            // line-height: 1;
+            // // text-align: right;
+        }
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
 
 
-&__closeButton {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 20px;
-  cursor: pointer;
-  background: none;
-  border: none;
-  color: #333; /* Adjust color as needed */
-  transition: transform 0.3s ease; /* Transition for smooth animation */
+// &__closeButton {
+//   position: absolute;
+//   top: 10px;
+//   right: 10px;
+//   font-size: 20px;
+//   cursor: pointer;
+//   background: none;
+//   border: none;
+//   color: #333; /* Adjust color as needed */
+//   transition: transform 0.3s ease; /* Transition for smooth animation */
 
-  /* Hover state */
-  &:hover {
-    transform: rotate(45deg);
-  }
+//   /* Hover state */
+//   &:hover {
+//     transform: rotate(45deg);
+//   }
 
-  /* Diagonal lines of X */
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 20px;
-    background-color: #333; /* Adjust color as needed */
-    top: 50%;
-    left: 50%;
-    transform-origin: 50% 50%;
-  }
+//   /* Diagonal lines of X */
+//   &::before,
+//   &::after {
+//     content: '';
+//     position: absolute;
+//     height: 2px;
+//     width: 20px;
+//     background-color: #333; /* Adjust color as needed */
+//     top: 50%;
+//     left: 50%;
+//     transform-origin: 50% 50%;
+//   }
 
-  &::before {
-    transform: translate(-50%, -50%) rotate(-45deg);
-  }
+//   &::before {
+//     transform: translate(-50%, -50%) rotate(-45deg);
+//   }
 
-  &::after {
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-}
+//   &::after {
+//     transform: translate(-50%, -50%) rotate(45deg);
+//   }
+// }
 
 
 

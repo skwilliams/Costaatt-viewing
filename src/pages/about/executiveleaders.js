@@ -81,19 +81,6 @@ const closeModal = () => {
                 width="200"
                 className={ModalStyles.modal__overlay__img}
               />
-              <h2 className={ModalStyles.modal__overlay__name}>
-                {" "}
-                Naseem Koylass
-              </h2>
-
-              {/* position */}
-              <h3 className={ModalStyles.modal__overlay__position}>
-                {" "}
-                Vice President, Academic Affairs
-              </h3>
-            </div>
-            <div className={ModalStyles.modal__overlay__right}>
-              {/* Name  */}
               {/* <h2 className={ModalStyles.modal__overlay__name}>
                 {" "}
                 Naseem Koylass
@@ -104,6 +91,19 @@ const closeModal = () => {
                 {" "}
                 Vice President, Academic Affairs
               </h3> */}
+            </div>
+            <div className={ModalStyles.modal__overlay__right}>
+              {/* Name  */}
+              <h2 className={ModalStyles.modal__overlay__name}>
+                {" "}
+                Naseem Koylass
+              </h2>
+
+              {/* position */}
+              <h3 className={ModalStyles.modal__overlay__position}>
+                {" "}
+                Vice President, Academic Affairs
+              </h3>
               <p className={ModalStyles.modal__overlay__text}>
                 Dr. Naseem Koylass was appointed to the position of Vice
                 President, Academic Affairs effective July 1, 2022.Dr. Koylass
