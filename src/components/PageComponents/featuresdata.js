@@ -19,7 +19,7 @@ export const featured = [
   {
     id: 1,
     tags: ["aasLIS", "bscLIS", "ICTD"],
-    photo: require("../../../images/Links/ai.jpg"),
+    photo: require("../../../public/images/ai.jpg"),
     altText: "Maneka and Joanne",
     title: "Library Science talks in AI Conference",
     text: "Maneka Gookool, Joanne Jarvis-Patrick presented at first AI Congerence hosted by UWI Jamaica",
@@ -62,7 +62,7 @@ export const gradspeak = [
     name: "Keith Harry",
     placeofwork: "Jaimano IT Solutions",
     words:
-      "I had the option of going anywhere but I chose COSTAATT, and i made the right the decision. Not only did COSTAATT exceed my expectation but the value I received is priceless",
+      "I had the option of going anywhere but I chose COSTAATT, and I made the right the decision. Not only did COSTAATT exceed my expectation but the value I received is priceless",
   },
   {
     id: 2,
@@ -71,7 +71,7 @@ export const gradspeak = [
     name: "Nicholas Mohammed",
     placeofwork: "Jaimano IT Solutions",
     words:
-      "I had the option of going anywhere but I chose COSTAATT, and i made the right the decision. Not only did COSTAATT exceed my expectation but the value I received is priceless",
+      "I had the option of going anywhere but I chose COSTAATT, and I made the right the decision. Not only did COSTAATT exceed my expectation but the value I received is priceless",
   },
   {
     id: 3,
@@ -80,6 +80,6 @@ export const gradspeak = [
     name: "Kafra Morris",
     placeofwork: "CTRL-ALT-Fix Solutions",
     words:
-      "I had the option of going anywhere but I chose COSTAATT, and i made the right the decision. Not only did COSTAATT exceed my expectation but the value I received is priceless",
+      "I had the option of going anywhere but I chose COSTAATT, and I made the right the decision. Not only did COSTAATT exceed my expectation but the value I received is priceless",
   },
 ];
