@@ -28,7 +28,7 @@ export const featured = [
   // {
   //   id: 2,
   //   tags: ["ICTD", "bscWebDev", "aasWebDev"],
-  //   photo: require("../../../images/Links/courses business.jpg"),
+  //   photo: require("../../../public/images/courses business.jpg"),
   //   altText: "ICPC Students",
   //   title: "Programmers of tomorrow!",
   //   text: "COSTAATT students participate in Regional ICPC programming competition in Cuba.",
@@ -37,7 +37,7 @@ export const featured = [
   {
     id: 3,
     tags: ["ICTD", "bscITGen", "aasITGen"],
-    photo:require("../../../public/images/successStories/ctrlaltfixtechlogobanner.png"),
+    photo: require("../../../public/images/successStories/ctrlaltfixtechlogobanner.png"),
     altText: "ctrl-alt-fix Tech",
     title: "COSTAATT graduates launches UPLift App",
     text: "Recent graduates of COSTAATT launched their Health App UPLIFT",
@@ -46,7 +46,7 @@ export const featured = [
   // {
   //   id: 4,
   //   tags: ["ICTD", "aasLIS", "bscLIS"],
-  //   photo: require("../../../images/Links/courses business.jpg"),
+  //   photo: require("../../../public/images/courses business.jpg"),
   //   altText: "Students",
   //   title: "Huawei Seeds of Tomorrow",
   //   text: "ACPIC conference taking place at...., Joanne Jarvis-Patrick presentedat first AI Congerence hosted by UWI Jamaica",
