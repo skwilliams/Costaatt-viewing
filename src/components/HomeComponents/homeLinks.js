@@ -40,12 +40,12 @@ export const SliderLinks = [
   {
     id: 6,
     title: "ACCA",
-    image: require("../../../public/images/Future me schools screens/ACCA.jpg"),
+    image: require("../../../public/images/about/qualitycontrol1.jpg"),
   },
   {
     id: 7,
     title: "Stay the Course",
-    image: require("../../../public/images/Future me schools screens/Stay-the-Course.jpg"),
+    image: require("../../../public/images/about/qualitycontrol2.jpg"),
   },
 ];
 

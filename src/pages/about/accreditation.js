@@ -25,6 +25,7 @@ import Image from "next/image";
 const accreditation = () => {
 return (
   <>
+  
     <header className={AboutStyles.header} />
     <section className={AboutStyles.section_accreditation}>
       <header>

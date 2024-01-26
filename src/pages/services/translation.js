@@ -1,10 +1,10 @@
 import React from 'react'
 
  import HeadImage from '@/components/PageComponents/HeadImage';
- import translationHeader from '../../../public/images/translationHeader.jpg'
+ import translationHeader from '../../../public/images/headers/translationHeader.jpg'
 import standardStyles from '@/styles/main.module.scss'
 
-import LanaguageStyles from "@/styles/LanguageCard.module.scss";
+// import LanaguageStyles from "@/styles/LanguageCard.module.scss";
 
 import Image from "next/image";
 import Head from "next/head";
@@ -42,16 +42,9 @@ import email from "../../../public/images/admissions/email.svg";
 import downloadicon from "../../../public/images/admissions/downloadnoteicon.svg";
 import bookOnline from "../../../public/images/servicesPhoto/bookOnline.svg";
 
-import rentalSpacesHeader from "../../../public/images/rentalSpaceHeader.jpg";
+import rentalSpacesHeader from "../../../public/images/headers/rentalSpaceHeader.jpg";
 
 //images for cards
-import auditorium from "../../../public/images/servicesPhoto/Auditorium.jpg";
-
-import boardRoomChag from "../../../public/images/servicesPhoto/BoardRoom-Pos.jpg";
-import rooftopTerrace from "../../../public/images/servicesPhoto/RoofTop-Terrace-1.jpg";
-import trainingRoom93 from "../../../public/images/servicesPhoto/Training-Room-93.jpg";
-import trainingRoom127 from "../../../public/images/servicesPhoto/Training-Room-127.jpg";
-import trainingRoom128 from "../../../public/images/servicesPhoto/Training-Room-128.jpg";
 import LanguageStyles from '@/components/PageComponents/LanguageCard';
 
 
