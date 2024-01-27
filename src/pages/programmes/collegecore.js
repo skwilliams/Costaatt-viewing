@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { FormGroup, FormControlLabel, Checkbox } from "@mui/material";
 import CardStyles from "../../styles/ProgCard.module.scss";
 import Head from "next/head";
+import Layout from "../../components/Layouts/TopNavOnly_NoDropdown";
 
 import Link from "next/link";
 import SearchCourse from "@/components/PageComponents/SearchCourse";
@@ -202,5 +203,8 @@ const Collegecore = () => {
 // allcourses.getLayout = function getLayout(page) {
 //   return <Layout>{page}</Layout>;
 // };
+Collegecore.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};
 
 export default Collegecore;

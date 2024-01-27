@@ -3,7 +3,7 @@
     "name": "School of Business and Digital Technologies",
     "shortName": "Business & Digital Technologies",
     "nameStump": "busIT",
-    "image": "/images/schools/ICTDheader.png",
+    "image": "/images/about/qualitycontrol1.jpg",
     "overview": "The School of Business and Digital Technologies provides access to a world-class and work-relevant education, focused on achieving institutional and national goals of workforce development. The School of Business and Digital Technologies comprises two (2) schools, the Department of ICTs and Digital Technologies and the Department of Management and Digital Entrepreneurship. These departments provide the public with a range of academic services to meet a growing number of careers and opportunities locally, regionally, and globally.",
     "dean": {
       "name": "Dr. Kyra Mc Gowan-Santana",
@@ -12,6 +12,20 @@
       "email": "kmsantana@costaatt.edu.tt",
       "phone": "868-625-5030"
     },
+    "areasofStudy": [
+            "Accounting",
+            "Business Administration",
+            "Entrepreneurship",
+            "Human Resources",
+            "Information Technology",
+            "Library Studies",
+            "Marketing",
+            "Networking",
+            "Supervisory Management",
+            "Records Management",
+            "Web Development"
+
+    ],
 
     "departments": [
       {
@@ -122,7 +136,7 @@
             "prog_supp_credits": 0,
             "prog_description": "Effective marketing is a key requirement for every successful business and industry. The Bachelor of Business Administration in Marketing is designed to provide graduates with a broad foundation in business administration and specialized competencies in marketing and marketing management."
           },
-           {
+          {
             "prog_code": "MSPS_AAS",
             "prog_shortname": "ASMangStuProServ",
             "prog_name": "AAS  Management Studies for the Protective Services",
@@ -139,7 +153,7 @@
       },
       {
         "name": "ICTs and Digital Technologies",
-        "headImage": "/images/schools/departments/ICTDheader.jpg",
+        "headImage": "/images/about/qualitycontrol1.jpg",
         "image": "/images/schools/departments/ICTDsmall.png",
         "mission": "The department of ICT's and Digital Technologies is the hub were technologies meet. It's an infusion of Library Science and Technology. If you desire to be exposed to technology that runs through the viens of the world, you have come to the right place. You can specialize in Databases,Networking, Library Science and Web Development. You will be exposed to the best and latest technologies all while learning the building blocks that makes up Information and Technology.",
         "summary": "If you are interested in Web Development (Internet Technologies), Information Technology, Networking, Databases, Information Systems, or Library Science then the programmes offered by the Department of Information Science and Technology are tailor-made for you. ",
@@ -183,7 +197,7 @@
             "prog_description": "The CISCO Certified Network Associate Certificate is designed for CISCO Networking Academy students.  The programme provides an integrated and comprehensive coverage of networking topics, from fundamentals to advanced applications and services and offers students the hands-on practical experience required for industry.  Upon completion of this curriculum, students will be prepared to sit CISCO Certified Network Associate examinations leading to a professional certification in networking. This programme normally fulfills matriculation requirements for networking engineering degree programmes."
           },
           {
-             "prog_code": "CERT_RECM",
+            "prog_code": "CERT_RECM",
             "prog_shortname": "certRecMgmt",
             "prog_name": "Certificate in Records Management",
             "prog_level": "Certificate",

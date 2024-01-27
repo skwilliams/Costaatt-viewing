@@ -184,7 +184,7 @@ export const mainNavLinks = [
 
       {
         title: "College Core",
-        path: "/programmes/collegecore",
+        path: "/programmes/Collegecore",
       },
       {
         title: "Professional Development Courses",

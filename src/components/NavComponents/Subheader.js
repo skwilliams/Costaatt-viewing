@@ -2,7 +2,7 @@ import React from 'react';
 import { usePathname } from 'next/navigation';
 import navStyles from '../../styles/Nav.module.scss';
 import Image from 'next/image';
-import logo from '../../../public/images/logos/costaattWhiteLogo.png';
+import logo from '../../../public/images/logos/purpleLogo.jpg';
 import Link from 'next/link';
 import { subHeaderSections } from './subHeaderSections';
 import Progressbar from './progressBar';

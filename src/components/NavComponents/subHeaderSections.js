@@ -13,7 +13,8 @@ export const subHeaderSections = {
     "overview of programmes": "overview",
     "by the numbers ": "bynumbers",
     "why choose us ": "whychoose",
-    "Areas of Study": "areastudy",
+    "Schools":"allschools",
+
     Highlights: "highlight",
   },
   liberal: {

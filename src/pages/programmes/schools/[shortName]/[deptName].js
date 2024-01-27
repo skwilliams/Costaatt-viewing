@@ -50,6 +50,27 @@ const index = (props) => {
         <Link href="/"> Department/</Link>
         <Link href="/">{foundDept.shortName}</Link>
       </p>
+      <header>
+        <span className={standardStyles.heading_primary__main}>
+          {foundDept.name}
+        </span>
+        <span className={standardStyles.heading_primary__sub}>
+          {foundDept.coreValues[0]} | {foundDept.coreValues[1]} |{" "}
+          {foundDept.coreValues[2]} | {foundDept.coreValues[3]}
+          {/* {foundDept.coreValues.map((value[]) => {
+            return (
+              <div key={value}>
+                <ul>
+                  <li className={ProgStyles.degcoursesli}> 
+                 
+                    <span> {value} </span> - {getCoreValues(value)}
+                  </li>
+                </ul>
+              </div>
+            );
+          })} */}
+        </span>
+      </header>
       {/* <SideNavOnlyLayout> */}
       {/* Department Overview Section */}
       <section id="overview" className={DeptStyles.sectionOverview}>
@@ -159,11 +180,8 @@ const index = (props) => {
                               key={levelProgs.prog_code}
                               className={ProgStyles.degcoursesli}
                             >
-                              <Link
-                                href={`../../${levelProgs.prog_shortname}`}
-                              >
+                              <Link href={`../../${levelProgs.prog_shortname}`}>
                                 {" "}
-                              
                                 {levelProgs.prog_name}{" "}
                               </Link>
                             </li>
@@ -299,7 +317,7 @@ const getDeptNewsData = async function (deptName, deptKey) {
 };
 
 const getDeptData = async function (schName, key, deptName) {
-  const filepath = path.join(process.cwd(), 'data', 'schooldata.json');
+  const filepath = path.join(process.cwd(), 'public/data', 'schooldata.json');
   const jsonData = await fs.readFile(filepath);
   const data = JSON.parse(jsonData);
   const finalData = data

@@ -23,7 +23,7 @@
 }
 
 .sectionSideNav {
-  width: 200px;
+  width: 30rem;
   float: left;
   z-index: -1;
   // height: 500px;
@@ -34,7 +34,7 @@
   position: sticky;
   //flex-basis: 18rem;
   align-self: flex-start;
-  //overflow: hidden;
+  margin: 0 2rem;
 }
 .sidenav {
   width: 18rem;
@@ -52,7 +52,7 @@
   display: block;
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.4rem;
   color: $grey;
   /* top:5rem; */
 }

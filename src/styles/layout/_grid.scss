@@ -1,8 +1,14 @@
-@import "../abstracts/mixins";
-@import "../abstracts/variables";
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
 
+// GRID
+$grid-width: 100rem;
+$gutter-vertical: 4rem;
+$gutter-horizontal: 4rem;
 
-
+.u_center_text {
+    text-align: center !important;
+}
 
 .row{
     max-width: $grid-width;
@@ -11,12 +17,12 @@
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
 
-        @include respond(tab-port) {
+      @media only screen and (max-width: 56.25em){
             margin-bottom: $gutter-vertical-small;
         }
     }
     
-    @include respond(tab-port) {
+      @media only screen and (max-width: 56.25em){
         max-width: 50rem;
         padding: 0 3rem;
     }
@@ -32,14 +38,17 @@
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
 
-            @include respond(tab-port) {
+                   @media only screen and (max-width: 56.25em){
                 margin-right: 0;
                 margin-bottom: $gutter-vertical-small;
             }
         }
 
-        @include respond(tab-port) {
-            width: 100% !important;
+            @media only screen and (max-width: 56.25em){
+
+
+
+                        width: 100% !important;
         }
         width: calc((100% - #{$gutter-horizontal}) / 2);
         
@@ -52,15 +61,15 @@
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
 
-            @include respond(tab-port) {
+               @media only screen and (max-width: 56.25em) {
                 margin-right: 0;
                 margin-bottom: $gutter-vertical-small;
             }
         }
 
-        @include respond(tab-port) {
-            width: 100% !important;
-        }
+
+        @media only screen and (max-width: 56.25em) {width: 100% !important; }; 
+      
 
         width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
 
@@ -76,13 +85,13 @@
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
 
-            @include respond(tab-port) {
+            @media only screen and (max-width: 56.25em){
                 margin-right: 0;
                 margin-bottom: $gutter-vertical-small;
             }
         }
 
-        @include respond(tab-port) {
+          @media only screen and (max-width: 56.25em){
             width: 100% !important;
         }
         width: calc(2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal});
@@ -95,13 +104,13 @@
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
 
-            @include respond(tab-port) {
+             @media only screen and (max-width: 56.25em){
                 margin-right: 0;
                 margin-bottom: $gutter-vertical-small;
             }
         }
 
-        @include respond(tab-port) {
+     @media only screen and (max-width: 56.25em){
             width: 100% !important;
         }
         width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
@@ -114,13 +123,13 @@
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
 
-            @include respond(tab-port) {
+             @media only screen and (max-width: 56.25em){
                 margin-right: 0;
                 margin-bottom: $gutter-vertical-small;
             }
         }
 
-        @include respond(tab-port) {
+       @media only screen and (max-width: 56.25em){
             width: 100% !important;
         }
         width: calc(2 * ((100% - 3 * #{$gutter-horizontal}) / 4) + #{$gutter-horizontal});
@@ -133,13 +142,13 @@
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
 
-            @include respond(tab-port) {
+              @media only screen and (max-width: 56.25em){
                 margin-right: 0;
                 margin-bottom: $gutter-vertical-small;
             }
         }
 
-        @include respond(tab-port) {
+       @media only screen and (max-width: 56.25em){
             width: 100% !important;
         }
         width: calc(3 * ((100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal});
@@ -153,19 +162,42 @@
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
 
-            @include respond(tab-port) {
+            @media only screen and (max-width: 56.25em){
                 margin-right: 0;
                 margin-bottom: $gutter-vertical-small;
             }
         }
 
-        @include respond(tab-port) {
+       @media only screen and (max-width: 56.25em){
             width: 100% !important;
         }
         width: calc((100% - 4 * #{$gutter-horizontal}) / 5);
     }
+    
+    .col1of6 {
+        
+      float: left;
+
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal;
+
+            @media only screen and (max-width: 56.25em){
+                margin-right: 0;
+                margin-bottom: $gutter-vertical-small;
+            }
+         }
+
+            @media only screen and (max-width: 56.25em){
+                    width: 100% !important;
+                }
+                width: calc((100% - 5 * #{$gutter-horizontal}) / 6);
+            }
 
 }
+
+
+
+
 
 
 

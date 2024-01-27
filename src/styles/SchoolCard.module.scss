@@ -1,4 +1,6 @@
 @import './abstracts/variables';
+@import './layout/grid';
+@import './base/typography';
 
 /* Grid layout 2 for prog serachcolumns */
 .schGridContwo{
@@ -32,6 +34,12 @@
     text-align: justify;
     padding-bottom:2rem;
    }
+   .studyareas{
+    font-size: 1.2rem;
+    color: $color-primary-dark;
+   }
+
+
    .imgstyle{
   
     width:300px;

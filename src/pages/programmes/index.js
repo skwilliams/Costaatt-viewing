@@ -4,7 +4,11 @@ import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
 import HeadImage from "@/components/PageComponents/HeadImage";
-import headImg from "../../../public/images/schools/overviewProgrammes header.jpg";
+
+import schoolImg from "../../../public/images/about/qualitycontrol1.jpg";
+import headImg from "../../../public/images/about/qualitycontrol1.jpg";
+
+
 import studyitems from "../../components/PageComponents/AreasStudyItems";
 
 import topclass from "../../../public/images/schools/topclassLect.png";
@@ -15,6 +19,8 @@ import collegeCore from "../../../public/images/schools/collegeCore.png";
 import affiliations from "../../../public/images/schools/affiliationsMou.png";
 import accredited from "../../../public/images/schools/accreditedprog.png";
 import standardStyles from "@/styles/main.module.scss";
+import SchoolCard from "../../components/PageComponents/SchoolCard"
+
 
 const progoverview = () => {
   console.log(studyitems);
@@ -117,7 +123,6 @@ const progoverview = () => {
             </div>
           </div>
           <p />
-          
         </div>
       </section>
       <section id="whychoose" className={ProgStyles.sectionwhychoose}>
@@ -164,7 +169,64 @@ const progoverview = () => {
           <p />
         </div>
       </section>
-      <section id="areastudy" className={ProgStyles.sectionareasofstudy}>
+      <section id="allschools" className={ProgStyles.sectionallschools}>
+        <p className={ProgStyles.headingprimary}> All Schools</p>
+
+        <SchoolCard
+          image={schoolImg}
+          schoolname="School of Business and Digital Technologies"
+          intro="The School of Business and Digital Technologies provides access to a world-class and work-relevant education, focused on achieving institutional and national goals of workforce development. The School of Business and Digital Technologies comprises two (2) schools, the Department of ICTs and Digital Technologies and the Department of Management and Digital Entrepreneurship. These departments provide the public with a range of academic services to meet a growing number of careers and opportunities locally, regionally, and globally. 
+                "
+          linkpage="/programmes/schools/busIT"
+          shortname="SBDT"
+        />
+        <SchoolCard
+          image={schoolImg}
+          schoolname=" School of Liberal Arts, Education and Digital Humanities "
+          intro="The School of Liberal Arts, Education, and Digital Humanities produces a diverse range of graduates with varying skills and competencies in the disciplines of education, mathematics, psychology, social work, sociology, criminal justice, and in general, graduates who can make great contributions towards enhancing the social and behavioural development of the nation. To achieve this objective, we constantly scan the environment to ensure that our programmes are innovative and relevant to the needs of our society."
+          linkpage="/programmes/schools/liberal"
+          shortname="SLAEDH"
+        />
+        <SchoolCard
+          image={schoolImg}
+          schoolname="The School of Workforce Enhancement and Development  "
+          intro="The School of Workforce Enhancement and Development (SWED) is committed to opening doors by providing expanded access to educational opportunities and experiences at COSTAATT.  With both credit and non-credit based options, SWED delivers a variety of short term, flexible programming focused on skill and professional development, academic preparation, and foreign language services.  The School serves a diverse population ranging from individuals seeking alternative paths to tertiary education, to individuals seeking to upskill themselves personally or professionally, and business enterprises seeking to support and develop their human resources. 
+   "
+          linkpage="/programmes/schools/workF"
+          shortname="SWED"
+        />
+        <SchoolCard
+          image={schoolImg}
+          schoolname="School of Nursing, Health and Medical Technologies "
+          intro="lorem ispsum isdf Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo sed
+    quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo
+    eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde.
+    We are here for you Lorem ipsum dolor sit amet consectetur adipisicing
+   "
+          linkpage="/programmes/schools/nursing"
+          shortname="SNHM"
+        />
+        <SchoolCard
+          image={schoolImg}
+          schoolname="The Ken Gordon School of Communication, Creative and Digital Media "
+          intro="Are you interested in journalism, corporate communications or public relations? Is graphic design,
+            photography, advertising and promotions, or film and video production your passion? Do you want to become fluent in a foreign language, understand Latin American culture, communicate via music, play an instrument, write short stories or have a better understanding of our heritage and oral history?
+The Ken Gordon School of Communication Creative and Digital Media's dedicated, qualified and experienced faculty will enlighten you and provide you with every opportunity to realise your dream or ambition. We train students to be innovative, responsible and knowledgeable consumers and creators of content.
+
+   "
+          linkpage="/programmes/schools/kengord"
+          shortname="KGSC"
+        />
+        <SchoolCard
+          image={schoolImg}
+          schoolname="School of Environment, Circular Economy and Sustainability  "
+          intro="Established in early 2023, the School of Environment, Circular Economy and Sustainability was created in response to the global necessity to prepare graduates to support a circular economy and be dynamic advocates of sustainability principles. Our students are equipped with the knowledge and skills to tackle climate change, conserve biodiversity, and foster economic resilience. With the collaborative efforts of our two departments, the Department of Environmental and Sustainability Studies and the Department of Natural and Life Sciences, we provide programmes, opportunities for research, and practical community experience that emphasize sustainable practices to reduce waste, optimize resource utilization and restore natural systems.
+   "
+          linkpage="/programmes/schools/enviro"
+          shortname="SECE"
+        />
+      </section>
+      {/* <section id="areastudy" className={ProgStyles.sectionareasofstudy}>
         <div className={ProgStyles.umargintopsmall}>
           <h2
             className={`${standardStyles.newsHeading} ${standardStyles.centertext} ${standardStyles.whitefont}`}
@@ -173,8 +235,12 @@ const progoverview = () => {
             Areas of <span> STUDY </span>{" "}
           </h2>
           <p className={ProgStyles.umargintopsmall}></p>
-          <div className={ProgStyles.areasofSGridCon}>
-            <div className={ProgStyles.areasofSGrid}>
+          <div className={ProgStyles.row}>
+            <div className={ProgStyles.col1of6}>
+              <Link href="#">
+                School of Nursing, Health and Medical Technologies
+              </Link>
+
               <ul className={ProgStyles.areasofstudyul}>
                 <li className={ProgStyles.areasofstudyli}>
                   {" "}
@@ -208,7 +274,7 @@ const progoverview = () => {
                 </li>
               </ul>
             </div>
-            <div className={ProgStyles.areasofSGrid}>
+            <div className={ProgStyles.col1of6}>
               <ul className={ProgStyles.areasofstudyul}>
                 <li className={ProgStyles.areasofstudyli}>
                   {" "}
@@ -231,7 +297,7 @@ const progoverview = () => {
                 </li>
               </ul>
             </div>
-            <div className={ProgStyles.areasofSGrid}>
+            <div className={ProgStyles.col1of6}>
               <ul className={ProgStyles.areasofstudyul}>
                 <li className={ProgStyles.areasofstudyli}>
                   {" "}
@@ -255,7 +321,7 @@ const progoverview = () => {
                 </li>
               </ul>
             </div>
-            <div className={ProgStyles.areasofSGrid}>
+            <div className={ProgStyles.col1of6}>
               <ul className={ProgStyles.areasofstudyul}>
                 <li className={ProgStyles.areasofstudyli}>
                   {" "}
@@ -289,7 +355,7 @@ const progoverview = () => {
                 </li>
               </ul>
             </div>
-            <div className={ProgStyles.areasofSGrid}>
+            <div className={ProgStyles.col1of6}>
               <ul className={ProgStyles.areasofstudyul}>
                 <li className={ProgStyles.areasofstudyli}>
                   {" "}
@@ -335,7 +401,7 @@ const progoverview = () => {
                 </li>
               </ul>
             </div>
-            <div className={ProgStyles.areasofSGrid}>
+            <div className={ProgStyles.col1of6}>
               <ul className={ProgStyles.areasofstudyul}>
                 <li className={ProgStyles.areasofstudyli}>
                   {" "}
@@ -363,7 +429,7 @@ const progoverview = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section id="highlight" className={ProgStyles.sectionhighlights}>
         <div className={ProgStyles.umargintopsmall}>
           <h2 className={standardStyles.newsHeading}> Highlights </h2>
