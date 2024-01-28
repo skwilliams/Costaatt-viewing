@@ -15,7 +15,7 @@ import EventCardOrig from "@/components/PageComponents/EventCardOrig";
 import {stucouncildata} from "../costaattlife/studcouninfo";
 import StudentCouncilRep from "@/components/PageComponents/StudentCouncilRep";
 import ContactStudentLife from "@/components/PageComponents/ContactStudentLife";
-import awaitingbanner from "../../../public/images/awaitingBanner.png";
+import awaitingbanner from "../../../public/images/about/qualitycontrol1.jpg";
 import HeadImage from "@/components/PageComponents/HeadImage";
 
 
@@ -27,7 +27,7 @@ const studentcouncil = () => {
       <Head>
         <title>Student Council</title>
       </Head>
-      <HeadImage mainimage={awaitingbanner} imagetext="Student Clubs and Organizations" />
+      <HeadImage mainimage={awaitingbanner} imagetext="Student Council" />
       <p
         className={`${standardStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}
       >
@@ -35,12 +35,18 @@ const studentcouncil = () => {
         <Link href="/costaattlife"></Link>
         <Link href="/costaattlife/studentcouncil">Studnet Council</Link>
       </p>
+      <h2 className={standardStyles.heading_primary__main}>
+        Student Council{" "}
+      </h2>
 
+     
       <section
         id="introcouncil"
         className={`${standardStyles.sectionNoSidenav} ${standardStyles.marginBottomBig}`}
       >
-        <h2 className={standardStyles.headingPrimarysub}>Student Council </h2>
+        <h2 className={standardStyles.headingprimary__main}>
+          Student Council{" "}
+        </h2>
 
         <p className={standardStyles.paragraph}>
           Joining our student council provides an opportunity for students to
@@ -83,7 +89,7 @@ const studentcouncil = () => {
             How to become involved{" "}
           </button>
         </div>
-      {/* </section>
+        {/* </section>
 
       <section id="activities"> */}
         {/* </section> */}
@@ -110,7 +116,9 @@ const studentcouncil = () => {
 
           <div className={standardStyles.col1of2}>
             <div className={standardStyles.activities__content}>
-              <h2 className={standardStyles.headingPrimarysub}>“Always good to give back”</h2>
+              <h2 className={standardStyles.headingPrimarysub}>
+                “Always good to give back”
+              </h2>
               <p className={standardStyles.activities__text}>
                 We are there to add value to others in whatever way possible.
                 Serving is one of our greatest joy.

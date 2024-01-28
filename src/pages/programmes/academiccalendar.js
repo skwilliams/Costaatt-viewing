@@ -2,6 +2,8 @@ import HeaderNoImage from '@/components/PageComponents/HeaderNoImage'
 import React from 'react'
 import Head from 'next/head'
 import ProgStyles from "../../styles/Programmes.module.scss"
+import Layout1 from  '../../components/Layouts/TopNavOnly_NoDropdown';
+ 
 const academiccalendar = () => {
   return (
     <>
@@ -188,5 +190,7 @@ const academiccalendar = () => {
     </>
   );
 }
-
+academiccalendar.getLayout = function getLayout(page) {
+  return <Layout1>{page}</Layout1>;
+};
 export default academiccalendar

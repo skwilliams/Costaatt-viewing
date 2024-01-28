@@ -1,5 +1,5 @@
 import React from 'react'
-import style from "../../styles/Admissions.module.scss";
+import style from "../../styles/About.module.scss";
 import home5 from "../../../public/images/colors.png";
 
 
@@ -9,9 +9,8 @@ const HeaderNoImage = ({caption}) => {
 
   return (
     <>
-      <div className={style.pageheader}>
-       <h1 className={style.pageheadertext}>{caption}</h1>
-      </div>
+      {/* <div className={style.noheader}></div> */}
+      <h1 className={style.heading_primary__main}>{caption}</h1>
     </>
   );
 }

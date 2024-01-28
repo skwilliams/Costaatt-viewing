@@ -3,6 +3,8 @@ import Layout from "../../components/Layouts/TopNavOnly_NoDropdown";
 import Head from 'next/head'
 import standardStyles from '@/styles/main.module.scss'
 import HeaderNoImage from '@/components/PageComponents/HeaderNoImage';
+import HeadImage from "@/components/PageComponents/HeadImage";
+
 import Link from 'next/link'
 import { FiBookOpen } from "react-icons/fi";
 import { IconContext } from "react-icons";
@@ -15,7 +17,7 @@ const leadership = () => {
       <Head>
         <title>Leadership |{""} COSTAATT</title>
       </Head>
-      <HeaderNoImage caption="College Leadership" />
+      <HeadImage caption="College Leadership" />
       <p
         className={`${standardStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}
       >
@@ -23,12 +25,18 @@ const leadership = () => {
         <Link href="/about">About/</Link>
         <Link href="/about/leadership">Leadership</Link>
       </p>
-
+      <header>
+        <span className={standardStyles.heading_primary__main}>
+          College Leadership{" "}
+        </span>
+        <span className={standardStyles.heading_primary__sub}>
+          assure the viability and strategic direction of the College
+        </span>
+      </header>
       <section id="intro" className={standardStyles.sectionWithSidenav}>
         <div className={standardStyles.introtext}>
-          The College is governed by a Board of Trustees and shared
-          governance, and administratively led by the President, Deans, and Vice
-          Presidents.
+          The College is governed by a Board of Trustees and shared governance,
+          and administratively led by the President, Deans, and Vice Presidents.
         </div>
         <p className={standardStyles.introtext}>
           Together, they ensure the fulfillment of COSTAATT's Vision and
@@ -74,7 +82,10 @@ const leadership = () => {
             </Link>
           </div>
           <div className={standardStyles.col1of3}>
-            <Link className={standardStyles.linkhovercolor} href="./Executiveleaders">
+            <Link
+              className={standardStyles.linkhovercolor}
+              href="./Executiveleaders"
+            >
               <div
                 className={`${standardStyles.featurebox}
                 ${standardStyles.linkhovercolor}`}
@@ -90,7 +101,6 @@ const leadership = () => {
               </div>
             </Link>
           </div>
-        
         </div>
       </section>
     </>

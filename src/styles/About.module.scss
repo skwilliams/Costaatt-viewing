@@ -1,5 +1,6 @@
 @import "./abstracts/variables";
 @import '../styles/abstracts/mixins';
+@import "./base/typography";
 
 
 //////////////// Overview of Costaatt index page
@@ -488,8 +489,7 @@
 /// 
 .header {
   height: 50vh;
-  //  height: 60vw;
-  // width: 100vw;
+
   background-image: linear-gradient(
       to right,
       rgba($color-white, 0.25),
@@ -501,10 +501,26 @@
   background-size: cover;
   background-position: top;
   position: relative;
-
-
-
   
+}
+
+//For pages without a photo 
+.noheader{
+
+  height: 30vh;
+
+  background-image: linear-gradient(
+      to right,
+      rgba($color-white, 0.25),
+      rgba($color-primary-light, 0.5),
+      rgba($color-primary-light, 0.75)
+    );
+  // Source: https://www.freepik.com/free-photo/standard-quality-control-collage-concept_30589253.htm#query=quality%20assurance&position=44&from_view=keyword&track=ais&uuid=11090649-220d-41aa-874a-c89449145375
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  margin:0;
+
 }
 
 .section_accreditation {

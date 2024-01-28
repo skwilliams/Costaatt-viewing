@@ -30,14 +30,9 @@
   padding: 5em;
   background-color: $grey;
 
-  background-image: linear-gradient(to right, $orange, $color-primary-dark);
+  background-image: linear-gradient(to right, $color-primary-dark, $color-primary-dark);
 
-  // background-image: url(../../images/Links/colors.png);
-  // background-blend-mode:lighten;
-  // background-repeat: repeat-x;
-  // background-position: right;
-  // background-position-x: 40%;
-  // background-position: right bottom
+
 }
 
 .pageheadertext {

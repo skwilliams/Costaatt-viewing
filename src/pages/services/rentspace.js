@@ -155,7 +155,7 @@ const rentspace = () => {
         </div>
       </section>
 
-      <section id="why" className={servicesStyles.sectionNoSidenavMar}>
+      <section id="why" className={servicesStyles.sectionbackColor}>
         <h2
           className={`${servicesStyles.heading_2} ${servicesStyles.centertext} ${servicesStyles.marginTopBig}  ${servicesStyles.marginBottomBig} ${servicesStyles.heading_2_dark} ${servicesStyles.mb_md}`}
         >
@@ -185,7 +185,12 @@ const rentspace = () => {
         </div>
       </section>
 
-      <section id="spaces" className={servicesStyles.rentSpaces}>
+      <section id="spaces" className={servicesStyles.sectionNoSidenavMar}>
+        <h2
+          className={`${servicesStyles.centertext}  ${servicesStyles.marginTopBig} ${servicesStyles.newsHeading}`}
+        >
+          Spaces for <span>Rent </span>{" "}
+        </h2>
         <div className={GridStyles.row}>
           <div className={GridStyles.col1of3}>
             <div className={servicesStyles.space}>
@@ -197,39 +202,39 @@ const rentspace = () => {
                 className={servicesStyles.space__img}
               />
 
-              <h5 className={standardStyles.space__name}>Auditiorium</h5>
-              <div className={standardStyles.space__location}>
+              <h5 className={servicesStyles.space__name}>Auditiorium</h5>
+              <div className={servicesStyles.space__location}>
                 <Image
                   src={location}
-                  alt="Sppace Size icon"
-                  className={standardStyles.space__svg}
+                  alt="Space Size icon"
+                  className={servicesStyles.space__svg}
                 />
                 <p>Chaguanas</p>
               </div>
-              <div className={standardStyles.space__layout}>
+              <div className={servicesStyles.space__layout}>
                 <Image
                   src={layout}
                   alt="Space Size icon"
-                  className={standardStyles.space__svg}
+                  className={servicesStyles.space__svg}
                 />
                 <p>Theatre </p>
               </div>
-              <div className={standardStyles.space__size}>
+              <div className={servicesStyles.space__size}>
                 {/* <svg></svg> */}
                 <Image
                   src={size}
                   alt="Space Size icon"
-                  className={standardStyles.space__svg}
+                  className={servicesStyles.space__svg}
                   sizes="100vw"
                   //   fill={true}
                 />
                 <p>99 persons</p>
               </div>
-              <div className={standardStyles.space__price}>
+              <div className={servicesStyles.space__price}>
                 <Image
                   src={price}
                   alt=" Price icon"
-                  className={standardStyles.space__svg}
+                  className={servicesStyles.space__svg}
                   sizes="100vw"
                   //   fill={true}
                 />
@@ -239,7 +244,7 @@ const rentspace = () => {
 
               <Link
                 href="https://bit.ly/42oZdfL"
-                className={standardStyles.space__btn}
+                className={servicesStyles.space__btn}
               >
                 Book Now
               </Link>
@@ -255,39 +260,39 @@ const rentspace = () => {
                 className={servicesStyles.space__img}
               />
 
-              <h5 className={standardStyles.space__name}>Auditiorium</h5>
-              <div className={standardStyles.space__location}>
+              <h5 className={servicesStyles.space__name}>Auditiorium</h5>
+              <div className={servicesStyles.space__location}>
                 <Image
                   src={location}
                   alt="Sppace Size icon"
-                  className={standardStyles.space__svg}
+                  className={servicesStyles.space__svg}
                 />
                 <p>Chaguanas</p>
               </div>
-              <div className={standardStyles.space__layout}>
+              <div className={servicesStyles.space__layout}>
                 <Image
                   src={layout}
                   alt="Space Size icon"
-                  className={standardStyles.space__svg}
+                  className={servicesStyles.space__svg}
                 />
                 <p>Theatre </p>
               </div>
-              <div className={standardStyles.space__size}>
+              <div className={servicesStyles.space__size}>
                 {/* <svg></svg> */}
                 <Image
                   src={size}
                   alt="Space Size icon"
-                  className={standardStyles.space__svg}
+                  className={servicesStyles.space__svg}
                   sizes="100vw"
                   //   fill={true}
                 />
                 <p>99 persons</p>
               </div>
-              <div className={standardStyles.space__price}>
+              <div className={servicesStyles.space__price}>
                 <Image
                   src={price}
                   alt=" Price icon"
-                  className={standardStyles.space__svg}
+                  className={servicesStyles.space__svg}
                   sizes="100vw"
                   //   fill={true}
                 />
@@ -297,53 +302,53 @@ const rentspace = () => {
 
               <Link
                 href="https://bit.ly/42oZdfL"
-                className={standardStyles.space__btn}
+                className={servicesStyles.space__btn}
               >
                 Book Now
               </Link>
             </div>
           </div>
           <div className={GridStyles.col1of3}>
-            <div className={standardStyles.space}>
+            <div className={servicesStyles.space}>
               <Image
                 src={boardRoomChag}
                 alt="BoardRoom"
                 sizes="100vw"
                 height={200}
-                className={standardStyles.space__img}
+                className={servicesStyles.space__img}
               />
 
-              <h5 className={standardStyles.space__name}>Board Room</h5>
-              <div className={standardStyles.space__location}>
+              <h5 className={servicesStyles.space__name}>Board Room</h5>
+              <div className={servicesStyles.space__location}>
                 <Image
                   src={location}
                   alt="Location icon"
-                  className={standardStyles.space__svg}
+                  className={servicesStyles.space__svg}
                 />
                 <p>Chaguanas</p>
               </div>
-              <div className={standardStyles.space__layout}>
+              <div className={servicesStyles.space__layout}>
                 <Image
                   src={layout}
                   alt="Layout icon"
-                  className={standardStyles.space__svg}
+                  className={servicesStyles.space__svg}
                 />
                 <p>Conference</p>
               </div>
-              <div className={standardStyles.space__size}>
+              <div className={servicesStyles.space__size}>
                 <Image
                   src={size}
                   alt="Capacity icon"
-                  className={standardStyles.space__svg}
+                  className={servicesStyles.space__svg}
                   sizes="100vw"
                 />
                 <p>20 persons</p>
               </div>
-              <div className={standardStyles.space__price}>
+              <div className={servicesStyles.space__price}>
                 <Image
                   src={price}
                   alt=" Price icon"
-                  className={standardStyles.space__svg}
+                  className={servicesStyles.space__svg}
                   sizes="100vw"
                 />
 
@@ -351,7 +356,7 @@ const rentspace = () => {
               </div>
               <Link
                 href="https://bit.ly/42oZdfL"
-                className={standardStyles.space__btn}
+                className={servicesStyles.space__btn}
               >
                 Book Now
               </Link>
@@ -361,46 +366,46 @@ const rentspace = () => {
 
         <div className={GridStyles.row}>
           <div className={GridStyles.col1of3}>
-            <div className={standardStyles.space}>
+            <div className={servicesStyles.space}>
               <Image
                 src={trainingRoom127}
                 alt="Training Room"
                 sizes="100vw"
                 height={200}
-                className={standardStyles.space__img}
+                className={servicesStyles.space__img}
               />
 
-              <h5 className={standardStyles.space__name}>Training Room 127</h5>
-              <div className={standardStyles.space__location}>
+              <h5 className={servicesStyles.space__name}>Training Room 127</h5>
+              <div className={servicesStyles.space__location}>
                 <Image
                   src={location}
                   alt="Location icon"
-                  className={standardStyles.space__svg}
+                  className={servicesStyles.space__svg}
                 />
                 <p>Chaguanas</p>
               </div>
-              <div className={standardStyles.space__layout}>
+              <div className={servicesStyles.space__layout}>
                 <Image
                   src={layout}
                   alt="Layout icon"
-                  className={standardStyles.space__svg}
+                  className={servicesStyles.space__svg}
                 />
                 <p>Classroom</p>
               </div>
-              <div className={standardStyles.space__size}>
+              <div className={servicesStyles.space__size}>
                 <Image
                   src={size}
                   alt="Capacity icon"
-                  className={standardStyles.space__svg}
+                  className={servicesStyles.space__svg}
                   sizes="100vw"
                 />
                 <p>30 persons</p>
               </div>
-              <div className={standardStyles.space__price}>
+              <div className={servicesStyles.space__price}>
                 <Image
                   src={price}
                   alt="Sppace Price icon"
-                  className={standardStyles.space__svg}
+                  className={servicesStyles.space__svg}
                   sizes="100vw"
                 />
 
@@ -408,53 +413,53 @@ const rentspace = () => {
               </div>
               <Link
                 href="https://bit.ly/42oZdfL"
-                className={standardStyles.space__btn}
+                className={servicesStyles.space__btn}
               >
                 Book Now
               </Link>
             </div>
           </div>
           <div className={GridStyles.col1of3}>
-            <div className={standardStyles.space}>
+            <div className={servicesStyles.space}>
               <Image
                 src={trainingRoom93}
                 alt="Training Room"
                 sizes="100vw"
                 height={200}
-                className={standardStyles.space__img}
+                className={servicesStyles.space__img}
               />
 
-              <h5 className={standardStyles.space__name}>Training Room 93</h5>
-              <div className={standardStyles.space__location}>
+              <h5 className={servicesStyles.space__name}>Training Room 93</h5>
+              <div className={servicesStyles.space__location}>
                 <Image
                   src={location}
                   alt="Location icon"
-                  className={standardStyles.space__svg}
+                  className={servicesStyles.space__svg}
                 />
                 <p>Chaguanas</p>
               </div>
-              <div className={standardStyles.space__layout}>
+              <div className={servicesStyles.space__layout}>
                 <Image
                   src={layout}
                   alt="Layout icon"
-                  className={standardStyles.space__svg}
+                  className={servicesStyles.space__svg}
                 />
                 <p>Classroom</p>
               </div>
-              <div className={standardStyles.space__size}>
+              <div className={servicesStyles.space__size}>
                 <Image
                   src={size}
                   alt="Capacity icon"
-                  className={standardStyles.space__svg}
+                  className={servicesStyles.space__svg}
                   sizes="100vw"
                 />
                 <p>30 persons</p>
               </div>
-              <div className={standardStyles.space__price}>
+              <div className={servicesStyles.space__price}>
                 <Image
                   src={price}
                   alt="Sppace Price icon"
-                  className={standardStyles.space__svg}
+                  className={servicesStyles.space__svg}
                   sizes="100vw"
                 />
 
@@ -462,53 +467,53 @@ const rentspace = () => {
               </div>
               <Link
                 href="https://bit.ly/42oZdfL"
-                className={standardStyles.space__btn}
+                className={servicesStyles.space__btn}
               >
                 Book Now
               </Link>
             </div>
           </div>
           <div className={GridStyles.col1of3}>
-            <div className={standardStyles.space}>
+            <div className={servicesStyles.space}>
               <Image
                 src={trainingRoom128}
                 alt="Training Room"
                 sizes="100vw"
                 height={200}
-                className={standardStyles.space__img}
+                className={servicesStyles.space__img}
               />
 
-              <h5 className={standardStyles.space__name}>Training Room 128</h5>
-              <div className={standardStyles.space__location}>
+              <h5 className={servicesStyles.space__name}>Training Room 128</h5>
+              <div className={servicesStyles.space__location}>
                 <Image
                   src={location}
                   alt="Location icon"
-                  className={standardStyles.space__svg}
+                  className={servicesStyles.space__svg}
                 />
                 <p>Chaguanas</p>
               </div>
-              <div className={standardStyles.space__layout}>
+              <div className={servicesStyles.space__layout}>
                 <Image
                   src={layout}
                   alt="Layout icon"
-                  className={standardStyles.space__svg}
+                  className={servicesStyles.space__svg}
                 />
                 <p>Classroom</p>
               </div>
-              <div className={standardStyles.space__size}>
+              <div className={servicesStyles.space__size}>
                 <Image
                   src={size}
                   alt="Capacity icon"
-                  className={standardStyles.space__svg}
+                  className={servicesStyles.space__svg}
                   sizes="100vw"
                 />
                 <p>30 persons</p>
               </div>
-              <div className={standardStyles.space__price}>
+              <div className={servicesStyles.space__price}>
                 <Image
                   src={price}
                   alt="Sppace Price icon"
-                  className={standardStyles.space__svg}
+                  className={servicesStyles.space__svg}
                   sizes="100vw"
                 />
 
@@ -516,7 +521,7 @@ const rentspace = () => {
               </div>
               <Link
                 href="https://bit.ly/42oZdfL"
-                className={standardStyles.space__btn}
+                className={servicesStyles.space__btn}
               >
                 Book Now
               </Link>
@@ -524,21 +529,21 @@ const rentspace = () => {
           </div>
         </div>
       </section>
-      {/* <section id="morespaces" className={standardStyles.rentCollage}>
-          <div className={standardStyles.gallery}>
+      {/* <section id="morespaces" className={servicesStyles.rentCollage}>
+          <div className={servicesStyles.gallery}>
             <div
-              className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_1}`}
+              className={`${servicesStyles.gallery__item} ${servicesStyles.gallery__item_1}`}
             >
               <Image
                 src={trainingRoom128}
                 alt="Gallery image 1"
-                className={standardStyles.gallery__img}
+                className={servicesStyles.gallery__img}
                 sizes="100vw"
                 style={{ width: "100%", height: "100%" }} // optional
               />
             </div>
             <div
-              className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_2}`}
+              className={`${servicesStyles.gallery__item} ${servicesStyles.gallery__item_2}`}
             >
               <Image
                 src={chagoutside}
@@ -693,30 +698,30 @@ const rentspace = () => {
             </div>
           </div>
         </section>  */}
-      <section id="contact" className={standardStyles.rentContact}>
+      <section id="contact" className={servicesStyles.rentContact}>
         {/* Contact Text */}
-        <h3 className={standardStyles.rentContact__text}>
+        <h3 className={servicesStyles.rentContact__text}>
           {" "}
           Contact <span> Haniffa Ali Parris </span> today to reserve these or
           other available spaces at the COSTAATT
         </h3>
 
-        <div className={standardStyles.contact}>
+        <div className={servicesStyles.contact}>
           <Image
-            className={standardStyles.contact__icon}
+            className={servicesStyles.package__icon}
             src={telephone}
             alt="telephone icon"
           />
-          <p className={standardStyles.contact__text}>868-625-5030 Ext 5363 </p>
+          <p className={servicesStyles.contact__text}>868-625-5030 Ext 5363 </p>
         </div>
-        <div className={standardStyles.contact}>
+        <div className={servicesStyles.contact}>
           <Image
-            className={standardStyles.contact__icon}
+            className={servicesStyles.package__icon}
             src={email}
             alt="email icon"
           />
           <a
-            className={standardStyles.contact__text}
+            className={servicesStyles.contact__text}
             href="mailto:fschelpdesk@costaatt.edu.tt"
           >
             {" "}
@@ -724,16 +729,16 @@ const rentspace = () => {
           </a>
           {/* </div> */}
         </div>
-        <div className={standardStyles.contact}>
+        <div className={servicesStyles.contact}>
           <Image
-            className={standardStyles.contact__icon}
+            className={servicesStyles.package__icon}
             src={bookOnline}
             alt="book online icon"
           />
           <a
             href="https://bit.ly/42oZdfL"
             target="_blank"
-            className={standardStyles.contact__text}
+            className={servicesStyles.contact__text}
             rel="noopener noreferrer"
           >
             {" "}
@@ -741,16 +746,16 @@ const rentspace = () => {
           </a>
         </div>
 
-        {/* <div className={standardStyles.brochure}> */}
-        <h3 className={standardStyles.rentContact__text}>
+        {/* <div className={servicesStyles.brochure}> */}
+        <h3 className={servicesStyles.rentContact__text}>
           <span> Download </span> Brochures
         </h3>
-        <div className={standardStyles.brochure}>
+        <div className={servicesStyles.brochure}>
           {/* <h2>Hello</h2>
             <h2>Bye</h2> */}
-          <div className={standardStyles.brochure__text}>
+          <div className={servicesStyles.brochure__text}>
             <Image
-              className={standardStyles.contact__icon}
+              className={servicesStyles.package__icon}
               src={downloadicon}
               alt="download icon"
             />
@@ -759,16 +764,16 @@ const rentspace = () => {
               href="/pdfs/Rental Spaces Lab.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className={standardStyles.contact__text}
+              className={servicesStyles.contact__text}
             >
               {" "}
-              <h5 className={standardStyles.highlight}>Lab Rentals </h5>
+              <h5 className={servicesStyles.highlight}>Lab Rentals </h5>
             </Link>
           </div>
 
-          <div className={standardStyles.brochure__text}>
+          <div className={servicesStyles.brochure__text}>
             <Image
-              className={standardStyles.contact__icon}
+              className={servicesStyles.package__icon}
               src={downloadicon}
               alt="download icon"
             />
@@ -777,10 +782,10 @@ const rentspace = () => {
               href="/pdfs/Rental Spaces.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className={standardStyles.contact__text}
+              className={servicesStyles.contact__text}
             >
               {" "}
-              <h5 className={standardStyles.highlight}> Spaces Rentals </h5>
+              <h5 className={servicesStyles.highlight}> Spaces Rentals </h5>
             </Link>
           </div>
         </div>

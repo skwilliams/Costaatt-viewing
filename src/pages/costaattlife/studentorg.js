@@ -4,9 +4,8 @@ import Head from 'next/head';
 import standardStyles from "@/styles/main.module.scss"
 import AdmisStyles from "@/styles/Admissions.module.scss"
 import HeadImage from "@/components/PageComponents/HeadImage";
-import awaitingbanner from "../../../public/images/awaitingBanner.png";
+import awaitingbanner from "../../../public/images/about/qualitycontrol1.jpg";
 
-import awaitingimage from "../../../public/images/awaitingNewsEvent.png";
 
 import { Button, Divider } from '@mui/material';
 import Image from 'next/image';
@@ -36,22 +35,26 @@ const studentorg = () => {
       <Head>
         <title>Clubs and Organizations </title>
       </Head>
-      <HeadImage mainimage={awaitingbanner} imagetext="Student Clubs and Organizations" />
+      <HeadImage mainimage={awaitingbanner} imagetext="" />
       <p
         className={`${standardStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}
       >
         <Link href="/"> COSTAATT/ </Link>
-        <Link href="/costaattlife"></Link>
-        <Link href="/costaattlife/studentorg">Clubs and Organizations</Link>
+        <Link href="/costaattlife">COSTAATTLIFE / </Link>
+        <Link href="/costaattlife/studentorg"> Student Clubs </Link>
       </p>
-
+      <header>
+        <span className={standardStyles.heading_primary__main}>
+          STUDENT CLUBS
+        </span>
+        <span className={standardStyles.heading_primary__sub}>
+          Commitment To Holistic Student Development
+        </span>
+      </header>
       <section
         id="introtoclubs"
         className={`${standardStyles.sectionNoSidenav} ${standardStyles.marginBottomBig}`}
       >
-        <h2 className={standardStyles.headingPrimarysub}>
-          Registered Student Organisations{" "}
-        </h2>
 
         <p className={standardStyles.paragraph}>
           Registered Student Organisations (RSOs) are student clubs formed by
@@ -266,18 +269,18 @@ const studentorg = () => {
               activities, including but not limited to Admissions Recruitment
               Sessions, Registration, Student Orientation, Graduation and any
               other campus activity that may be planned by the college.
-              <br/>
+              <br />
             </p>
-            
-            <p className={standardStyles.paragraph}
-          > 
-                            To become a Student Ambassador...
 
-              <Link href="#contact"
-                 className={`${standardStyles.btn} ${standardStyles.btn__purple}`}>
+            <p className={standardStyles.paragraph}>
+              To become a Student Ambassador...
+              <Link
+                href="#contact"
+                className={`${standardStyles.btn} ${standardStyles.btn__purple}`}
+              >
                 {" "}
- contact student life           </Link>{" "}
-
+                contact student life{" "}
+              </Link>{" "}
             </p>
             {/* <Link href="./transfercredits" className={standardStyles.btnText}>
               Learn more →
@@ -322,10 +325,7 @@ const studentorg = () => {
       </section>
       <div className={standardStyles.marginTopBig}></div>
 
-      <section
-        id="events"
-        className={`${standardStyles.sectionNoSidenav} `}
-      >
+      <section id="events" className={`${standardStyles.sectionNoSidenav} `}>
         <h2 className={standardStyles.headingPrimarysub}>
           {" "}
           Upcoming Club Events
@@ -353,10 +353,7 @@ const studentorg = () => {
       </section>
       {/* <div className={standardStyles.marginTopBig}></div> */}
       {/* sectionSideNav overriding  with marginBottomBig */}
-      <section
-        id="contact"
-        className={standardStyles.sectionNoSidenav} 
-      >
+      <section id="contact" className={standardStyles.sectionNoSidenav}>
         <h2 className={standardStyles.headingPrimarysub}>
           {" "}
           Contact Student Life{" "}

@@ -13,6 +13,7 @@ import ProgramCard from '@/components/PageComponents/ProgramCard';
 import SCHOOLDATA from '../../../public/data/schooldata.json';
 import HeaderNoImage from '@/components/PageComponents/HeaderNoImage';
 import { FaArrowUp } from "react-icons/fa";
+import BackToTopButton from '@/components/NavComponents/BackToTopButton ';
 
 const Allprogrammes = () => {
   // const stumpNames = SCHOOLDATA.map((school) => school.nameStump);
@@ -118,12 +119,12 @@ const Allprogrammes = () => {
     setAllPrograms(result);
   };
 
-  const isBrowser = () => typeof window !== 'undefined'; //The approach recommended by Next.js
+  // const isBrowser = () => typeof window !== 'undefined'; //The approach recommended by Next.js
 
-  function scrollToTop() {
-    if (!isBrowser()) return;
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+  // function scrollToTop() {
+  //   if (!isBrowser()) return;
+  //   window.scrollTo({ top: 0, behavior: 'smooth' });
+  // }
 
   return (
     <>
@@ -141,7 +142,7 @@ const Allprogrammes = () => {
             <div>
               <SearchCourse handleSearchSubmit={handleSearchSubmit} />
             </div>
-            <p className={CardStyles.sidenavtitle}> by Schools</p>{' '}
+            <p className={CardStyles.sidenavtitle}> by Schools</p>{" "}
             <FormGroup>
               <div className={CardStyles.sidenavlink}>
                 <FormControlLabel
@@ -271,6 +272,7 @@ const Allprogrammes = () => {
           <FaArrowUp />
         </button>
       </div>
+      <BackToTopButton />
     </>
   );
 };

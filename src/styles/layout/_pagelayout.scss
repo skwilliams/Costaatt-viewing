@@ -4,7 +4,7 @@
 
        margin-bottom: 8rem !important;
 
-    @include respond(tab-port) {
+     @media only screen and (max-width: 56.25em){
         margin-bottom: 5rem !important;
     }
      margin-top: 8rem !important;
@@ -15,7 +15,7 @@
     
      margin: 8rem 8rem !important;
 
-    @include respond(tab-port) {
+     @media only screen and (max-width: 56.25em){
         margin-bottom: 5rem !important;
         margin-top:5rem !important;
     }
@@ -28,9 +28,9 @@
   
      
 
-    @include respond(tab-port) {
-        margin-bottom: 5rem !important;
-        margin-top:5rem !important;
+     @media only screen and (max-width: 56.25em){
+        margin-bottom: 0 !important;
+        margin-top:0 !important;
     }
 }
 
@@ -39,7 +39,7 @@
      margin: 0 8rem 5rem 8rem !important;
      
 
-    @include respond(tab-port) {
+     @media only screen and (max-width: 56.25em){
         margin-bottom: 5rem !important;
         margin-top:5rem !important;
     }
@@ -48,9 +48,9 @@
 .sectionbackColor{
     
         background-color: $color-grey-light-1;
-margin:0;
+        margin:0;
             //  margin: 8rem 8rem !important;
-@include respond(tab-port) {
+     @media only screen and (max-width: 56.25em){
         margin-bottom: 5rem !important;
         margin-top:5rem !important;
     }
@@ -60,9 +60,11 @@ margin:0;
 .sectionbackGreyColor{
     
         background-color: $grey;
-margin:0;
+        color:white;
+             margin:0 ;
+
             //  margin: 8rem 8rem !important;
-@include respond(tab-port) {
+     @media only screen and (max-width: 56.25em){
         margin-bottom: 5rem !important;
         margin-top:5rem !important;
     }
@@ -81,14 +83,14 @@ margin:0;
 
 
 
-    @include respond(tab-port) {
+     @media only screen and (max-width: 56.25em){
         padding: 20rem 0 10rem 0;
         margin: 0 5rem !important;
     }
 
 
 
-    @include respond(tab-port) {
+     @media only screen and (max-width: 56.25em){
         padding: 20rem 0 10rem 0;
     }
 }
