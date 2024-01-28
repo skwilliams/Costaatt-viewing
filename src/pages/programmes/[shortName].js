@@ -2,11 +2,12 @@ import Head from 'next/head';
 import SideNavWithTopNav_NoDropdown from '../../components/Layouts/SideNavWithTopNav_NoDropdown';
 import CourseStyle from '../../styles/Course.module.scss';
 import ProgStyles from '../../styles/Programmes.module.scss';
-import time from '../../../images/Programmes/time.svg';
-import mode from '../../../images/Programmes/mode.svg';
-import location from '../../../images/Programmes/location.svg';
-import calendar from '../../../images/Programmes/calendar.svg';
-import gate from '../../../images/Programmes/gate.png';
+import time from "../../../public/images/schools/Programmes/time.svg"
+
+import mode from "../../../public/images/schools/Programmes/mode.svg";
+import location from "../../../public/images/schools/Programmes/location.svg";
+import calendar from "../../../public/images/schools/Programmes/calendar.svg";
+import gate from '../../../public/images/schools/Programmes/gate.png';
 import ContactUs from '@/components/PageComponents/ContactUs';
 import Featured from '../../components/PageComponents/Featured';
 import {
@@ -30,7 +31,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import InstitutionFees from '@/components/PageComponents/InstiutionFees';
-import image from '../../../images/Programmes/visit-home-v2.jpg';
+import image from '../../../public/images/schools/Programmes/ken.png';
 import TuitionFees from '@/components/PageComponents/TuitionFees';
 import Requirements from '@/components/PageComponents/Requirements';
 import SupportDoc from '@/components/PageComponents/SupportDoc';
@@ -493,7 +494,7 @@ export async function getStaticProps(context) {
 }
 
 const getProgData = async function (progKey) {
-  const filepath = path.join(process.cwd(), 'data', 'schooldata.json');
+  const filepath = path.join(process.cwd(), 'public/data', 'schooldata.json');
   const jsonData = await fs.readFile(filepath);
   const data = JSON.parse(jsonData);
 
