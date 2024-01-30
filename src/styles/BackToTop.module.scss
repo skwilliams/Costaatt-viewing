@@ -1,5 +1,5 @@
 
-@use './abstracts/variables';
+
 
 .backToTopButton {
   position: fixed;
@@ -15,17 +15,7 @@
   transition: opacity 0.3s, visibility 0.3s;
 
 
-/* 
-    position: fixed;
-    display: none;
-    right: 20px;
-    bottom: 20px;
-    background-color: #17a43b; */
-    // background-color: $color-primary-dark ;
-/* } */
-/* a.scroll-top {
-    
-} */
+
 
 
 
