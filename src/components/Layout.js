@@ -3,6 +3,7 @@ import { useState, useRef, useEffect } from 'react'
 import Header from './NavComponents/Header'
 import Footer from './Footer'
 import Subheader from './NavComponents/Subheader'
+import ScrollToTopButton from './PageComponents/ScrollToTopButton'
 
 const Layout = ({ children }) => {
   const navRef = useRef()
@@ -28,9 +29,10 @@ const Layout = ({ children }) => {
       <Header ref={navRef} />
       <Subheader show={showSubNav} />
       {children}
+      <ScrollToTopButton />
       <Footer />
     </div>
-  )
+  );
 }
 
 export default Layout

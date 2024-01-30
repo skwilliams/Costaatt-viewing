@@ -1,19 +1,21 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
-import CardStyles from '../../styles/ProgCard.module.scss';
-import Head from 'next/head';
-import { FormGroup, FormControlLabel, Checkbox } from '@mui/material';
+import React from "react";
+import { useState, useEffect } from "react";
+import CardStyles from "../../styles/ProgCard.module.scss";
+import Head from "next/head";
+import { FormGroup, FormControlLabel, Checkbox } from "@mui/material";
 
-import Link from 'next/link';
-import Layout1 from '../../components/Layouts/TopNavOnly_NoDropdown';
-import SearchCourse from '@/components/PageComponents/SearchCourse';
-import ProgCard from '../../components/PageComponents/ProgCard';
-import ProgramCard from '@/components/PageComponents/ProgramCard';
+import Link from "next/link";
+import Layout1 from "../../components/Layouts/TopNavOnly_NoDropdown";
+import SearchCourse from "@/components/PageComponents/SearchCourse";
+import ProgCard from "../../components/PageComponents/ProgCard";
+import ProgramCard from "@/components/PageComponents/ProgramCard";
 //import { coursedata } from './allprogrammedata';
-import SCHOOLDATA from '../../../public/data/schooldata.json';
-import HeaderNoImage from '@/components/PageComponents/HeaderNoImage';
+import SCHOOLDATA from "../../../public/data/schooldata.json";
+import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
 import { FaArrowUp } from "react-icons/fa";
-import BackToTopButton from '@/components/NavComponents/BackToTopButton ';
+import BackToTopButton from "@/components/NavComponents/BackToTopButton";
+import ScrollToTopButton from "@/components/PageComponents/ScrollToTopButton";
+
 
 const Allprogrammes = () => {
   // const stumpNames = SCHOOLDATA.map((school) => school.nameStump);
@@ -101,14 +103,14 @@ const Allprogrammes = () => {
   const { Bachelor, Associate, Diploma, Certificate } = levelFilters;
 
   const handleSchoolFilter = (event) => {
-    console.log('Event', event.target.name, event.target.checked);
+    console.log("Event", event.target.name, event.target.checked);
     setSchoolFilters({
       ...schoolFilters,
       [event.target.name]: event.target.checked,
     });
   };
   const handleLevelFilter = (event) => {
-    console.log('Event', event.target.name, event.target.checked);
+    console.log("Event", event.target.name, event.target.checked);
     setLevelFilters({
       ...levelFilters,
       [event.target.name]: event.target.checked,
@@ -268,11 +270,16 @@ const Allprogrammes = () => {
             );
           })}
         </section>
-        <button className="fixed bottom-0 right-0 p-10" onClick={scrollToTop}>
-          <FaArrowUp />
-        </button>
+        {/* <button 
+       className="fixed bottom-0 right-0 p-10" 
+       
+       onClick={scrollToTop}>
+          {/* <FaArrowUp /> 
+        
+        </button>  */}
+        {/* <BackToTopButton /> */}
+        <ScrollToTopButton />
       </div>
-      <BackToTopButton />
     </>
   );
 };

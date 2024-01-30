@@ -1,11 +1,13 @@
 // components/BackToTopButton.js
+import Image from "next/image";
+import arrow from "../../../public/images/scrollarrow.svg"
 
 import { useEffect, useState } from "react";
 
-
-import styles from "../NavComponents/BackToTopButton"
+import styles from "../../styles/BackToTop.module.scss";
 
 const BackToTopButton = () => {
+
   const [isVisible, setIsVisible] = useState(false);
 
   const handleScroll = () => {
@@ -35,7 +37,8 @@ const BackToTopButton = () => {
       className={`${styles.backToTopButton} ${isVisible ? styles.visible : ""}`}
       onClick={scrollToTop}
     >
-      Back to Top
+      <Image href={arrow}  width= "50" alt="Arrow for scroll to top"
+      />
     </button>
   );
 };

@@ -1,6 +1,12 @@
-@import "./abstracts/variables";
-@import '../styles/abstracts/mixins';
+
+
+
+@use "~/styles/abstracts/variables " as v ;
+
+// @import '../abstracts/mixins';
 @import "./base/typography";
+
+
 
 
 //////////////// Overview of Costaatt index page
@@ -8,9 +14,9 @@
 .aboutbackColor {
   background-image: linear-gradient(
     to bottom,
-    $color-primary-light,
-    $color-primary,
-    $color-primary-dark
+    v.$color-primary-light,
+    v.$color-primary,
+    v.$color-primary-dark
   );
   color: rgb(256, 256, 256, 0.9);
   padding: 1.25rem 0;

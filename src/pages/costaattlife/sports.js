@@ -5,9 +5,9 @@ import standardStyles from "@/styles/main.module.scss";
 import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
 import { Button, Divider } from "@mui/material";
 import HeadImage from "@/components/PageComponents/HeadImage";
-import awaitingbanner from "../../../public/images/awaitingBanner.png";
+import awaitingbanner from "../../../public/images/about/qualitycontrol1.jpg";
 
-import awaitingimage from "../../../public/images/awaitingNewsEvent.png";
+import awaitingimage from "../../../public/images/about/qualitycontrol1.jpg";
 
 
 import Image ,{StaticImageData} from "next/image";
