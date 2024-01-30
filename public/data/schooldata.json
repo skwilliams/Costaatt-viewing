@@ -1,1 +1,97 @@
+[
+  {
+    "name": "School of Business and Digital Technologies",
+    "shortName": "Business & Digital Technologies",
+    "nameStump": "busIT",
+    "image": "/images/about/qualitycontrol1.jpg",
+    "overview": "The School of Business and Digital Technologies provides access to a world-class and work-relevant education, focused on achieving institutional and national goals of workforce development. The School of Business and Digital Technologies comprises two (2) schools, the Department of ICTs and Digital Technologies and the Department of Management and Digital Entrepreneurship. These departments provide the public with a range of academic services to meet a growing number of careers and opportunities locally, regionally, and globally.",
+    "dean": {
+      "name": "Dr. Kyra Mc Gowan-Santana",
+      "image": "/images/schools/deans/Kyra Mc Gowan-Santana.jpg",
+      "message": "Welcome to the School of Business and Digital Technologies at COSTAATT. The School offers courses of study that lead to the award of certificates, diplomas, associate and bachelor’s degrees. We are in the business of changing lives, a key component of which is preparing our students through hands-on skills development for future careers using technology. Faculty members incorporate the use of cutting-edge business techniques, digital technology and information science to prepare students for new innovative opportunities where others see challenges. We welcome you to our School and to a dynamic and promising future!",
+      "email": "kmsantana@costaatt.edu.tt",
+      "phone": "868-625-5030"
+    },
+    "areasofStudy": [
+      "Accounting",
+      "Business Administration",
+      "Entrepreneurship",
+      "Human Resources",
+      "Information Technology",
+      "Library Studies",
+      "Marketing",
+      "Networking",
+      "Supervisory Management",
+      "Records Management",
+      "Web Development"
+    ],
 
+    "departments": [
+      {
+        "name": "Management and Digital Entrepreneurship",
+        "headImage": "/images/schools/departments/MGDEheader.png",
+        "image": "/images/schools/departments/MGDEsmall.png",
+        "summary": "At the Department of Management and Digital Entrepreneurship, our mission is to nurture and develop entrepreneurs whose creative vision, innovative skills and knowledge gained through our programmes, will make them drivers of growth and development in Trinidad and Tobago.",
+        "coreValues": [
+          "Integrity",
+          "Compassion",
+          "Innovation",
+          "Student-Centeredness",
+          "Lifelong-Learning"
+        ],
+        "shortName": "Department",
+        "dept_code": "MGDE",
+        "contacts": [],
+        "programmes": [
+          {
+            "prog_code": "ACCT_BA",
+            "prog_shortname": "baAccounting",
+            "prog_name": "BA Accounting",
+            "prog_level": "Bachelor",
+            "prog_del_mode": "Blended",
+            "dept_code": "MGDE",
+            "prog_major_credits": 86,
+            "prog_core_credits": 30,
+            "prog_elect_credits": 0,
+            "prog_supp_credits": 4,
+            "prog_description": "The Bachelor of Arts in Accounting degree provides students with technical financial accounting skills which are complemented with a solid foundation in business management and general education competencies that enhance workplace performance. The programme is relevant to individuals seeking careers in financial services in a variety of related fields in the public and private sector. Students enrolled in the Bachelor of Arts degree in Accounting will earn the Associate in Applied Science - Management with Accounting after the first 61 credits."
+          }
+        ]
+      },
+      {
+        "name": "ICTs and Digital Technologies",
+        "headImage": "/images/about/qualitycontrol1.jpg",
+        "image": "/images/schools/departments/ICTDsmall.png",
+        "mission": "The department of ICT's and Digital Technologies is the hub were technologies meet. It's an infusion of Library Science and Technology. If you desire to be exposed to technology that runs through the viens of the world, you have come to the right place. You can specialize in Databases,Networking, Library Science and Web Development. You will be exposed to the best and latest technologies all while learning the building blocks that makes up Information and Technology.",
+        "summary": "If you are interested in Web Development (Internet Technologies), Information Technology, Networking, Databases, Information Systems, or Library Science then the programmes offered by the Department of Information Science and Technology are tailor-made for you. ",
+        "coreValues": [
+          "Dedication",
+          "Teamwork",
+          "Integrity",
+          "Compassion",
+          "Innovation",
+          "Student-Centeredness",
+          "Lifelong-Learning"
+        ],
+        "shortName": "ICTs and Digital Technologies",
+        "contacts": ["mcharles", "rdavid"],
+        "dept_code": "ICTD",
+        "programmes": [
+          {
+            "prog_code": "LBIS_AAS",
+            "prog_shortname": "aasLIS",
+            "prog_name": "AAS Library and Information Studies",
+            "prog_level": "Associate",
+            "prog_del_mode": "Blended",
+            "dept_code": "ICTD",
+            "prog_major_credits": 30,
+            "prog_core_credits": 18,
+            "prog_elect_credits": 9,
+            "prog_supp_credits": 3,
+            "prog_description": "Graduates of this programme qualify for employment in a variety of para-professional positions in schools, public, academic and special libraries or in any other organization engaged in library-related and information management activities."
+          }
+        ]
+      }
+    ]
+  }
+]
