@@ -55,7 +55,8 @@ const schools = () => {
                   quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo
                   eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde.
                   We are here for you Lorem ipsum dolor sit amet consectetur adipisicing"
-          linkpage="/programmes/schools/liberal"
+          // linkpage="/programmes/schools/liberal"
+          linkpage="#"
           shortname="SLAEDH"
         />
         <SchoolCard
@@ -65,8 +66,9 @@ const schools = () => {
     quae repellat blanditiis corrupti rerum quia voluptatem dolores, explicabo
     eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde.
     We are here for you Lorem ipsum dolor sit amet consectetur adipisicing
-   "
-          linkpage="/programmes/schools/workF"
+  //  "
+          //         linkpage="/programmes/schools/workF"
+          linkpage="#"
           shortname="SWED"
         />
         <SchoolCard
@@ -77,7 +79,8 @@ const schools = () => {
     eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde.
     We are here for you Lorem ipsum dolor sit amet consectetur adipisicing
    "
-          linkpage="/programmes/schools/nursing"
+          // linkpage="/programmes/schools/nursing"
+          linkpage="#"
           shortname="SNHM"
         />
         <SchoolCard
@@ -88,7 +91,7 @@ const schools = () => {
     eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde.
     We are here for you Lorem ipsum dolor sit amet consectetur adipisicing
    "
-          linkpage="/programmes/schools/kengord"
+          // linkpage="/programmes/schools/kengord"
           shortname="KGSC"
         />
         <SchoolCard
@@ -99,7 +102,8 @@ const schools = () => {
     eius numquam, dolore incidunt reprehenderit aperiam, ad eos veniam unde.
     We are here for you Lorem ipsum dolor sit amet consectetur adipisicing
    "
-          linkpage="/programmes/schools/enviro"
+          // linkpage="/programmes/schools/enviro"
+          linkpage="#"
           shortname="SECE"
         />
       </section>

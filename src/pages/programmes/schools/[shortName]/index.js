@@ -6,20 +6,17 @@ import DepartCard from '@/components/PageComponents/DepartCard';
 import standardStyles from "../../../../styles/main.module.scss";
 
 import DeanStyles from '../../../../styles/Dean.module.scss';
-import { Accordion } from '@mui/material';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+
 import Link from 'next/link';
 import Image from 'next/image';
 import NewsRow from '@/components/PageComponents/NewsRow';
 import Divider from '@mui/material/Divider';
 import path from 'path';
 import fs from 'fs/promises';
-import SideNavOnlyLayout from '@/components/Layouts/SideNavOnly_NoTopOrDropdown';
-import TopNavOnlyLayout from '@/components/Layouts/TopNavOnly_NoDropdown';
-import index from './[deptName]';
+// import SideNavOnlyLayout from '@/components/Layouts/SideNavOnly_NoTopOrDropdown';
+// import TopNavOnlyLayout from '@/components/Layouts/TopNavOnly_NoDropdown';
+// import index from './[deptName]';
 
 //School of Business and Digital Technologies
 const school = (props) => {

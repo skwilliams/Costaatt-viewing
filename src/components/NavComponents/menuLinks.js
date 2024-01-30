@@ -22,30 +22,30 @@ export const topNavLinksLeft = [
       },
       {
         title: "School of Nursing, Health and Medical Technologies",
-        path: "/programmes/schools/nursing",
+        // path: "/programmes/schools/nursing",
         submenu: [
           {
             title: "Department of Nursing",
-            path: "/programmes/schools/nursing/NURS",
+            // path: "/programmes/schools/nursing/NURS",
           },
 
           {
             title: "Department of Health Science Technologies",
-            path: "/programmes/schools/nursing/HMST",
+            // path: "/programmes/schools/nursing/HMST",
           },
         ],
       },
       {
         title: "School of Environment, Circular Economy and Sustainability",
-        path: "/programmes/schools/enviro",
+        // path: "/programmes/schools/enviro",
         submenu: [
           {
             title: "Environmental and Sustainability Studiess",
-            path: "/programmes/schools/enviro/ENVS",
+            // path: "/programmes/schools/enviro/ENVS",
           },
           {
             title: "Natural and Life Sciences",
-            path: "/programmes/schools/enviro/NLSC",
+            // path: "/programmes/schools/enviro/NLSC",
           },
         ],
       },
@@ -66,35 +66,35 @@ export const topNavLinksLeft = [
       },
       {
         title: "School of Workforce Enhancement and Development",
-        path: "/programmes/schools/workF",
+        // path: "/programmes/schools/workF",
 
         submenu: [
           {
             title: "Upskilling Academy",
-            path: "/programmes/schools/workF/UPSK",
+            // path: "/programmes/schools/workF/UPSK",
           },
           {
             title: "CollegeStarTT",
-            path: "/programmes/schools/workF/CSTT",
+            // path: "/programmes/schools/workF/CSTT",
           },
           {
             title: "Translation and Interpretation",
-            path: "/programmes/schools/workF/CFTI",
+            // path: "/programmes/schools/workF/CFTI",
           },
         ],
       },
       {
         title: "Ken Gordon School of Communication,Creative and Digital Media",
-        path: "/programmes/schools/kengord",
+        // path: "/programmes/schools/kengord",
 
         submenu: [
           {
             title: "Creative Industries and Culture ",
-            path: "/programmes/schools/kengord/CIAC",
+            // path: "/programmes/schools/kengord/CIAC",
           },
           {
             title: "Digital Media",
-            path: "/programmes/schools/kengord/DMAC",
+            // path: "/programmes/schools/kengord/DMAC",
           },
         ],
       },
