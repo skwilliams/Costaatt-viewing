@@ -176,7 +176,7 @@ export default school;
 export async function getStaticPaths() {
   return {
     paths: [
-      { params: { shortName: 'busIT' } },
+      // { params: { shortName: 'busIT' } },
       // { params: { shortName: 'liberal' } },
       // { params: { shortName: 'enviro' } },
       // { params: { shortName: 'kengord' } },
