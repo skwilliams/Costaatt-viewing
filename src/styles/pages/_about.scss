@@ -63,11 +63,11 @@ float:right;
         font-size: 1.25rem;
         text-align: justify;
 
-        @include respond(phone) {
+         @media only screen and (max-width: 37.5em) {
             margin-bottom: -3rem;
         }
 
-        @include respond(tab-port) {
+       @media only screen and (max-width: 56.25em) {
             margin-bottom: -3rem;
         }
     }
@@ -81,11 +81,11 @@ float:right;
     &__image2 {
         width: 45%;
 
-        @include respond (phone) {
+         @media only screen and (max-width: 37.5em){
             display: none;
         }
 
-        @include respond (tab-port) {
+         @media only screen and (max-width: 56.25em){
             display: none;
         }
 
@@ -112,11 +112,11 @@ float:right;
         font-size: 1.25rem;
         text-align: justify;
 
-        @include respond(phone) {
+        @media only screen and (max-width: 37.5em) {
             margin-bottom: -3rem;
         }
 
-        @include respond(tab-port) {
+        @media only screen and (max-width: 56.25em){
             margin-bottom: -3rem;
         }
     }
@@ -130,11 +130,11 @@ float:right;
     &__image2 {
         width: 45%;
 
-        @include respond (phone) {
+        @media only screen and (max-width: 37.5em)  {
             display: none;
         }
 
-        @include respond (tab-port) {
+       @media only screen and (max-width: 56.25em) {
             display: none;
         }
 

@@ -25,11 +25,11 @@ $gutter-horizontal: 4rem;
       margin-right: $gutter-horizontal;
     }
 
-    @include respond(phone) {
+     @media only screen and (max-width: 37.5em){
       width: 100% !important;
     }
 
-    @include respond(tabPort) {
+     @media only screen and (max-width: 56.25em)  {
       width: 100% !important;
     }
   }
