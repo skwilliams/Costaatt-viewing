@@ -2,13 +2,12 @@ import { txtToPara, getCoreValues, getProgrammes } from '../../utilities';
 import Head from 'next/head';
 import HeadImage from '../../../../components/PageComponents/HeadImage';
 import ProgStyles from '../../../../styles/Programmes.module.scss';
-import { Accordion } from '@mui/material';
+
+
 import standardStyles from "../../../../styles/main.module.scss";
 
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+
 import path from 'path';
 import fs from 'fs/promises';
 import ContactSideNav from '../../../../components/PageComponents/ContactSideNav';
@@ -21,12 +20,9 @@ import { featured } from '@/components/PageComponents/featuresdata';
 import { getEventsByDept } from '../../../../../public/data/eventsdata';
 import { staffdata } from './facultystaffdata';
 import FacultyStaffCard from '../../../../components/PageComponents/FacultyStaffDepCard';
-import imagevisitUS from '../../../../../public/images/schools/departments/costaatt wants you images/visitUs.png';
-import imageapplyNow from '../../../../../public/images/schools/departments/costaatt wants you images/applyNow.png';
-import imagecounsellor from '../../../../../public/images/schools/departments/costaatt wants you images/counsellor.png';
-import StudentResources from '@/components/PageComponents/StudentResources';
-import SideNavOnlyLayout from '@/components/Layouts/SideNavOnly_NoTopOrDropdown';
-import TopNavOnlyLayout from '@/components/Layouts/TopNavOnly_NoDropdown';
+
+
+
 const index = (props) => {
   const { foundDept, news } = props;
   const deptProgrammes = getProgrammes('department', foundDept);

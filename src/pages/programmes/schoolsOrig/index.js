@@ -10,7 +10,7 @@ import Head from 'next/head';
 import HeadImage from '@/components/PageComponents/HeadImage';
 import headImg from '../../../../public/images/about/qualitycontrol1.jpg';
 
-const schools = () => {
+const schoolsOrig = () => {
   return (
     <>
       <Head>
@@ -365,4 +365,4 @@ const schools = () => {
 // schools.getLayout = function getLayout(page) {
 //   return <Layout>{page}</Layout>
 // }
-export default schools;
+export default schoolsOrig;

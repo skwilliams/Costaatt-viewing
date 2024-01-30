@@ -227,36 +227,36 @@ const index = () => {
             <div
               className={`${AboutStyles.schools} ${AboutStyles.schoolsliberal}`}
             >
-              <Link href="/programmes/schools/liberal">
+              {/* <Link href="/programmes/schools/liberal">
                 School of Liberal Arts, Education and Digital Humanities
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className={AboutStyles.schoolflex__item}>
             <div
               className={`${AboutStyles.schools} ${AboutStyles.schoolskengord}`}
             >
-              <Link href="/programmes/schools/kengord">
+              {/* <Link href="/programmes/schools/kengord">
                 Ken Gordon School of Communication, Creative and Digital Media{" "}
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className={AboutStyles.schoolflex__item}>
             <div
               className={`${AboutStyles.schools} ${AboutStyles.schoolsnursing}`}
             >
-              <Link href="/programmes/schools/nursing">
+              {/* <Link href="/programmes/schools/nursing">
                 School of Nursing, Health and Medical Technologies{" "}
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className={AboutStyles.schoolflex__item}>
             <div
               className={`${AboutStyles.schools} ${AboutStyles.schoolsbusIT}`}
             >
-              <Link href="/programmes/schools/busIT">
+              {/* <Link href="/programmes/schools/busIT">
                 School of Business and Digital Technologies{" "}
-              </Link>
+              </Link> */}
             </div>
           </div>
 
@@ -264,18 +264,18 @@ const index = () => {
             <div
               className={`${AboutStyles.schools} ${AboutStyles.schoolsenviro}`}
             >
-              <Link href="/programmes/schools/enviro">
+              {/* <Link href="/programmes/schools/enviro">
                 School of Environment, Circular Economy and Sustainability{" "}
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className={AboutStyles.schoolflex__item}>
             <div
               className={`${AboutStyles.schools} ${AboutStyles.schoolsworkF}`}
             >
-              <Link href="/programmes/schools/workF">
+              {/* <Link href="/programmes/schools/workF">
                 School of Workforce, Enhancement and Development{" "}
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

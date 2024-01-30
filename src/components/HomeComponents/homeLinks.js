@@ -375,7 +375,7 @@ export const schoolOptions = [
     id: 6,
     name: "Prospective Client",
     interestedChoice: [
-      { name: "Customized Training", route: "/programmes/workF" },
+      // { name: "Customized Training", route: "/programmes/workF" },
       { name: "Rent a meeting room", route: "/services/rentspace" },
       { name: "Rent a lab", route: "/services/rentlab" },
       { name: "Translation Services", route: "/services/translation" },

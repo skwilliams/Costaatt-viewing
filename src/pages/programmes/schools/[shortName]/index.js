@@ -177,11 +177,11 @@ export async function getStaticPaths() {
   return {
     paths: [
       { params: { shortName: 'busIT' } },
-      { params: { shortName: 'liberal' } },
-      { params: { shortName: 'enviro' } },
-      { params: { shortName: 'kengord' } },
-      { params: { shortName: 'nursing' } },
-      { params: { shortName: 'workF' } },
+      // { params: { shortName: 'liberal' } },
+      // { params: { shortName: 'enviro' } },
+      // { params: { shortName: 'kengord' } },
+      // { params: { shortName: 'nursing' } },
+      // { params: { shortName: 'workF' } },
     ],
     fallback: false,
   };

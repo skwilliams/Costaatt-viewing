@@ -4,48 +4,58 @@ export const topNavLinksLeft = [
     submenu: [
       {
         title: "School of Liberal Arts, Education and Digital Humanities",
-        path: "/programmes/schools/liberal",
+        // path: "/programmes/schools/liberal",
+        path: "#",
         submenu: [
           {
             title: "Criminal Justice, Human Security and Legal Studies",
-            path: "/programmes/schools/liberal/CRIM",
+            // path: "/programmes/schools/liberal/CRIM",
+            path: "#",
           },
           {
             title: "Social and Behavioural Sciences Department ",
-            path: "/programmes/schools/liberal/SABS",
+            // path: "/programmes/schools/liberal/SABS",
+            path: "#",
           },
           {
             title: "Education",
-            path: "/programmes/schools/liberal/EDUC",
+            // path: "/programmes/schools/liberal/EDUC",
+            path: "#",
           },
         ],
       },
       {
         title: "School of Nursing, Health and Medical Technologies",
         // path: "/programmes/schools/nursing",
+        path: "#",
         submenu: [
           {
             title: "Department of Nursing",
             // path: "/programmes/schools/nursing/NURS",
+            path: "#",
           },
 
           {
             title: "Department of Health Science Technologies",
             // path: "/programmes/schools/nursing/HMST",
+            path: "#",
           },
         ],
       },
       {
         title: "School of Environment, Circular Economy and Sustainability",
         // path: "/programmes/schools/enviro",
+        path: "#",
         submenu: [
           {
             title: "Environmental and Sustainability Studiess",
             // path: "/programmes/schools/enviro/ENVS",
+            path: "#",
           },
           {
             title: "Natural and Life Sciences",
             // path: "/programmes/schools/enviro/NLSC",
+            path: "#",
           },
         ],
       },
@@ -67,34 +77,41 @@ export const topNavLinksLeft = [
       {
         title: "School of Workforce Enhancement and Development",
         // path: "/programmes/schools/workF",
+        path: "#",
 
         submenu: [
           {
             title: "Upskilling Academy",
             // path: "/programmes/schools/workF/UPSK",
+            path: "#",
           },
           {
             title: "CollegeStarTT",
             // path: "/programmes/schools/workF/CSTT",
+            path: "#",
           },
           {
             title: "Translation and Interpretation",
             // path: "/programmes/schools/workF/CFTI",
+            path: "#",
           },
         ],
       },
       {
         title: "Ken Gordon School of Communication,Creative and Digital Media",
         // path: "/programmes/schools/kengord",
+        path: "#",
 
         submenu: [
           {
             title: "Creative Industries and Culture ",
             // path: "/programmes/schools/kengord/CIAC",
+            path: "#",
           },
           {
             title: "Digital Media",
             // path: "/programmes/schools/kengord/DMAC",
+            path: "#",
           },
         ],
       },

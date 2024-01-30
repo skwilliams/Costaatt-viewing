@@ -10,13 +10,7 @@ import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
 
-// Icons for standard features
-import projector from "../../../public/images/servicesPhoto/projector.svg";
-import wifi from "../../../public/images/servicesPhoto/wifi.svg";
-import parking from "../../../public/images/servicesPhoto/parking.svg";
 
-import speakers from "../../../public/images/servicesPhoto/speakers.svg";
-import techsupport from "../../../public/images/servicesPhoto/techsupport.svg";
 
 // Icons for Flags
 import English from "../../../public/images/servicesPhoto/flagEngland.svg";
@@ -31,21 +25,14 @@ import French from "../../../public/images/servicesPhoto/flagFrance.svg";
 import Portugues from "../../../public/images/servicesPhoto/flagPortugal.svg";
 
 
-// svg's for card
-import price from "../../../public/images/servicesPhoto/price.svg";
-import location from "../../../public/images/servicesPhoto/location.svg";
-import layout from "../../../public/images/servicesPhoto/layout.svg";
-import size from "../../../public/images/servicesPhoto/size.svg";
 
 import telephone from "../../../public/images/admissions/telephone.svg";
 import email from "../../../public/images/admissions/email.svg";
-import downloadicon from "../../../public/images/admissions/downloadnoteicon.svg";
-import bookOnline from "../../../public/images/servicesPhoto/bookOnline.svg";
 
-import rentalSpacesHeader from "../../../public/images/headers/rentalSpaceHeader.jpg";
+
 
 //images for cards
-import LanguageStyles from '@/components/PageComponents/LanguageCard';
+import LanguageStyles from '@/styles/LanguageCard.module.scss';
 
 
 
@@ -76,7 +63,7 @@ const translation = () => {
             entities, government organisations and individuals.
           </p>
         </div>
-        <section id="translate" className={LanaguageStyles.languageCard}>
+        <section id="translate" className={LanguageStyles.languageCard}>
           <h3 className={standardStyles.translateHeading}>
             COSTAATT <span> Translates </span> services
           </h3>

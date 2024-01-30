@@ -21,7 +21,7 @@ import NewsCard from "@/components/PageComponents/NewsCard";
 import Divider from "@mui/material/Divider";
 
 //School of Business and Digital Technologies
-const Sbdt = () => {
+const school = () => {
   // const pathname = usePathname();
   const { sobdt } = schools[0];
   console.log(sobdt);
@@ -233,4 +233,4 @@ const Sbdt = () => {
   );
 };
 
-export default Sbdt;
+export default school;
