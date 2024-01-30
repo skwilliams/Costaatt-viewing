@@ -1,5 +1,5 @@
 @use "./abstracts/variables" as v;
-@use "./abstracts/mixins" as m;
+
 
 
 //Styles used throughout Admissions pages
@@ -8,14 +8,15 @@
   display: grid;
   gap: 8rem;
   grid-gap: 2rem;
-  // grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   width: min(95%, 70rem);
   margin-inline: auto;
-}
+
 @media (max-width: 50em) {
   .twoColGridCon {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr ;
   }
+}
 }
 
 .twoColGrid {

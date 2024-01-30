@@ -1,5 +1,3 @@
-@import '../styles/abstracts/mixins';
-@import '../styles/abstracts/variables';
 
 // GRID
 $grid-width: 100rem;
@@ -27,7 +25,11 @@ $gutter-horizontal: 4rem;
         padding: 0 3rem;
     }
 
-    @include clearfix;
+  &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 
     
     .col1of2 {

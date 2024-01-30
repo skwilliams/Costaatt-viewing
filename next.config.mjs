@@ -22,10 +22,10 @@ const nextConfig = {
   //     ],
   //   },
   // },
-  sassOptions: {
-    // includePaths: [path.join(__dirname, "styles")],
-    prependData: `@use "~/styles/abstracts/mixins.scss";`,
-  },
+  // sassOptions: {
+  //   // includePaths: [path.join(__dirname, "styles")],
+  //   prependData: `@use "~/styles/abstracts/mixins.scss";`,
+  // },
 };
 
 

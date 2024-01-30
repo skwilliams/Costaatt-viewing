@@ -1,11 +1,11 @@
-@import "./abstracts/variables";
-@import "./abstracts/mixins";
+@use "./abstracts/variables" as v;
+
 
 
 .sidenavcontact {
-  // background-color: $lightgrey1;
+  // background-color: v.$lightgrey1;
   margin-top: 0.5rem;
-  font-family: $default-font-family;
+  font-family: v.$default-font-family;
   font-size: 1.25rem;
   // margin-left:2rem;
   color: #1d1d1f;
@@ -26,12 +26,12 @@
   margin: 0;
 }
 .email {
-  color: $orange;
+  color: v.$orange;
   margin: 0;
   padding: 0;
 }
 .sidenavbutton {
-  background-color: $color-primary-dark;
+  background-color: v.$color-primary-dark;
   border: 0.25em;
 
   color: whitesmoke;
