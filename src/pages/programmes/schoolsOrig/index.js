@@ -1,15 +1,15 @@
 import React from 'react';
 import ProgStyles from '../../../styles/Programmes.module.scss';
-import visitus from '../../../../images/Programmes/visit-home-v2.jpg';
+import visitus from '../../../../public/images/visit-home-v2.jpg';
 import SchoolCard from '../../../components/PageComponents/SchoolCard';
-import SchoolImage from '../../../../images/Links/campus 1.jpg';
+import SchoolImage from '../../../../public/images/about/qualitycontrol1.jpg';
 
 import Link from 'next/link';
 import Image from 'next/image';
 import Head from 'next/head';
 import HeadImage from '@/components/PageComponents/HeadImage';
-import headImg from '../../../../images/Programmes/tester2.jpg';
-import standardStyles from "@/styles/main.module.scss";
+import headImg from '../../../../public/images/about/qualitycontrol1.jpg';
+
 const schools = () => {
   return (
     <>

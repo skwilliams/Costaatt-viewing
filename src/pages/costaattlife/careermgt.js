@@ -3,19 +3,16 @@ import React, {useState} from 'react'
 import ReactDom from "react-dom";
 
 import standardStyles from "@/styles/main.module.scss"
-import AdmisStyles from "@/styles/Admissions.module.scss";
+
 
 import HeadImage from "@/components/PageComponents/HeadImage";
-import awaitingbanner from "../../../public/images/awaitingBanner.png";
+import awaitingbanner from "../../../public/images/about/qualitycontrol1.jpg";
 
-import awaitingimage from "../../../public/images/awaitingNewsEvent.png";
 
 import ContactStudentLife from '@/components/PageComponents/ContactStudentLife';
-import awaitingNews from "../../../public/images/awaitingNewsEvent.png";
 import Head from 'next/head';
 import Link from 'next/link';
-import { StickyNote2 } from '@mui/icons-material';
-import Image from 'next/image';
+
 import Popup from '@/components/PageComponents/Popup';
 
 

@@ -3,13 +3,10 @@ import Link from "next/link";
 import Head from "next/head";
 import Image from 'next/image';
 import HeadImage from "@/components/PageComponents/HeadImage";
-import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
 
-import  facultyStaffheader from "../../public/images/facultyStaffheader.jpg"
 import headerimage from '../../public/images/costaattlife/startclub.jpg'
 
 import facultyStyles from "@/styles/main.module.scss";
-import standardStyles from "@/styles/main.module.scss";
 
 const facultystaff = () => {
   return (

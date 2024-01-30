@@ -9,7 +9,7 @@ const allprogrammedata = () => {
 export default allprogrammedata
 export const coursedata = [
   {
-    photo: require("../../../images/Links/courses nursing.jpg"),
+    photo: require("../../../public/images/courses nursing.jpg"),
     alttext: "nursing image",
     degreeTitle: "Nursing",
     campus: "City ",
@@ -20,7 +20,7 @@ export const coursedata = [
     level: "Bachelors | Associate ",
   },
   {
-    photo: require("../../../images/Links/courses business.jpg"),
+    photo: require("../../../public/images/courses business.jpg"),
     alttext: "nursing image",
     degreeTitle: "Music",
     campus: "City ",
@@ -31,7 +31,7 @@ export const coursedata = [
     level: "Bachelors | Associate ",
   },
   {
-    photo: require("../../../images/Links/courses music.jpg"),
+    photo: require("../../../public/images/courses music.jpg"),
     alttext: "nursing image",
     degreeTitle: "Music",
     campus: "City ",
@@ -42,7 +42,7 @@ export const coursedata = [
     level: "Bachelors | Associate ",
   },
   {
-    photo: require("../../../images/Links/courses nursing.jpg"),
+    photo: require("../../../public/images/courses nursing.jpg"),
     alttext: "nursing image",
     degreeTitle: "Nursing",
     campus: "City ",
@@ -53,7 +53,7 @@ export const coursedata = [
     level: "Bachelors | Associate ",
   },
   {
-    photo: require("../../../images/Links/courses business.jpg"),
+    photo: require("../../../public/images/courses business.jpg"),
     alttext: "nursing image",
     degreeTitle: "Nursing",
     campus: "City ",
@@ -64,7 +64,7 @@ export const coursedata = [
     level: "Bachelors | Associate ",
   },
   {
-    photo: require("../../../images/Links/courses music.jpg"),
+    photo: require("../../../public/images/courses music.jpg"),
     alttext: "nursing image",
     degreeTitle: "Music",
     campus: "City ",
@@ -75,7 +75,7 @@ export const coursedata = [
     level: "Bachelors | Associate ",
   },
   {
-    photo: require("../../../images/Links/courses nursing.jpg"),
+    photo: require("../../../public/images/courses nursing.jpg"),
     alttext: "nursing image",
     degreeTitle: "Nursing",
     campus: "City ",
@@ -86,7 +86,7 @@ export const coursedata = [
     level: "Bachelors | Associate ",
   },
   {
-    photo: require("../../../images/Links/courses business.jpg"),
+    photo: require("../../../public/images/courses business.jpg"),
     alttext: "nursing image",
     degreeTitle: "Nursing",
     campus: "City ",
@@ -97,7 +97,7 @@ export const coursedata = [
     level: "Bachelors | Associate ",
   },
   {
-    photo: require("../../../images/Links/courses music.jpg"),
+    photo: require("../../../public/images/courses music.jpg"),
     alttext: "nursing image",
     degreeTitle: "Music",
     campus: "City ",

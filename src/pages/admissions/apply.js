@@ -1,13 +1,10 @@
 import React from "react";
 import admissionStyles from "../../styles/Admissions.module.scss";
-import home5 from "../../../images/Links/home5.png";
-import TopHeader from "@/components/TopHeader";
 import Image from "next/image";
 import ButtonLink from "@/components/HomeComponents/ButtonLink";
 import ProgStyles from "../../styles/Programmes.module.scss";
 
-import CourseStyle from "../../styles/Course.module.scss";
-// import Button from "@/components/Button";
+
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -24,10 +21,10 @@ import {
   Paper,
 } from "@mui/material";
 
-import time from "../../../images/Programmes/time.svg";
-import mode from "../../../images/Programmes/mode.svg";
-import location from "../../../images/Programmes/location.svg";
-import calendar from "../../../images/Programmes/calendar.svg";
+import time from "../../../public/images/time.svg";
+import mode from "../../../public/images/mode.svg";
+import location from "../../../public/images/location.svg";
+import calendar from "../../../public/images/calendar.svg";
 import ContactAdmissions from "@/components/PageComponents/ContactAdmissions";
 
 const apply = () => {

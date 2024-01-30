@@ -3,16 +3,10 @@ import Head from "next/head";
 import HeadImage from "@/components/PageComponents/HeadImage";
 import Link from "next/link";
 import Image from "next/image";
-import awaitingbanner from "../../../public/images/awaitingBanner.png";
+import awaitingbanner from "../../../public/images/about/qualitycontrol1.jpg";
 
-import awaitingimage from "../../../public/images/awaitingNewsEvent.png";
 
-import awaitingNews from "../../../public/images/awaitingNewsEvent.png";
-
-import ContactAdmissions from "@/components/PageComponents/ContactAdmissions";
 import standardStyles from "@/styles/main.module.scss";
-import AdmisStyles from "@/styles/Admissions.module.scss"
-import { StarSharp } from "@mui/icons-material";
 import joinclub from "../../../public/images/costaattlife/joinclub.png";
 import startclub from "../../../public/images/costaattlife/startclub.jpg";
 import studentamb2 from "../../../public/images/costaattlife/studentAmb.jpg";

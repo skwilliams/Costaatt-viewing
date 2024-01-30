@@ -1,6 +1,5 @@
 import React from 'react';
 import admissionStyles from '../../styles/Admissions.module.scss';
-import home5 from '../../../images/Links/home5.png';
 import TopHeader from '@/components/TopHeader';
 import CardStyles from '../../styles/ProgCard.module.scss'
 import ButtonLink from '@/components/HomeComponents/ButtonLink';

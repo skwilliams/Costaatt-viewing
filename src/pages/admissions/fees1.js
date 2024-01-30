@@ -1,8 +1,6 @@
 import React from 'react';
 import admissionStyles from '../../styles/Admissions.module.scss';
-import home5 from '../../../images/Links/home5.png';
-import TopHeader from '@/components/TopHeader';
-import ButtonLink from '@/components/HomeComponents/ButtonLink';
+
 // import Button from "@/components/Button";
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';

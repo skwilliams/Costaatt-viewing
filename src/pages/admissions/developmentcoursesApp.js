@@ -3,7 +3,7 @@ import Head from'next/head';
 import HeadImage from '@/components/PageComponents/HeadImage';
 import Link from "next/link";
 import Image from 'next/image';
-import headImg from "../../../public/images/awaitingBanner.png"
+import headImg from "../../../public/images/about/qualitycontrol1.jpg"
 import standardStyles from "@/styles/main.module.scss"
 import admissionsStyles from "@/styles/Admissions.module.scss"
 import SideNavOnlyLayout from "@/components/Layouts/SideNavOnly_NoTopOrDropdown";

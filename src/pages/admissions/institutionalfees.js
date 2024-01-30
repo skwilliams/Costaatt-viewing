@@ -2,34 +2,11 @@ import React from 'react';
 import admissionStyles from '../../styles/Admissions.module.scss';
 import TopNavOnly_NoDropdown from '../../components/Layouts/TopNavOnly_NoDropdown'
 
-import home5 from '../../../images/Links/home5.png';
-import TopHeader from '@/components/TopHeader';
-import ButtonLink from '@/components/HomeComponents/ButtonLink';
-// import Button from "@/components/Button";
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 
 import {
   institutionFees,
-  deptOfInformation,
-  deptOfNursingFees,
-  deptOfHealth,
-  dptOfManagementFees,
-  dptOfNatSci,
-  dptOfEnvStud,
-  schoolOfCrimJus,
-  dptOfMath,
-  officeOfDean,
-  dptOfSocBehSci,
-  deptOfLang,
-  dptofFineArts,
-  comensentoryProg,
-  continuingEduc,
-  deptOFJour,
-  deptOfComm,
+  
   
 } from './admissionsData';
 import {
@@ -42,7 +19,7 @@ import {
   Paper,
 } from '@mui/material';
 import HeaderNoImage from '@/components/PageComponents/HeaderNoImage';
-import FeesAndFunding from '@/components/FeesAndFunding';
+
 const institutionalfees = () => {
   return (
     <>

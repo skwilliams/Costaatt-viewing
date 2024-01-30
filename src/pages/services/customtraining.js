@@ -2,7 +2,7 @@ import React from 'react'
 import Link from "next/link";
 import Head from "next/head";
 import HeadImage from "@/components/PageComponents/HeadImage";
-import  customHeader from "../../../public/images/customizedTrainingHeader.jpg";
+import  customHeader from "../../../public/images/headers/customizedTrainingHeader.jpg";
 import standardStyles from "@/styles/main.module.scss";
 
 

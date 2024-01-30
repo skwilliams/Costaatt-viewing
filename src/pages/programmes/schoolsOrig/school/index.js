@@ -1,13 +1,13 @@
 import React from "react";
 import Head from "next/head";
-import deanimg from "../../../../../images/Links/home1.png";
+import deanimg from "../../../../../public/images/about/qualitycontrol1.jpg";
 
 import ProgStyles from "../../../../styles/Programmes.module.scss";
 
 import DeanStyles from "../../../../styles/Dean.module.scss";
-import BusImg from "../../../../../images/Links/home2.png";
+import BusImg from "../../../../../public/images/about/qualitycontrol1.jpg";
 
-import { usePathname } from "next/navigation";
+
 import { schools } from "./schooldata.js"; //*******/
 
 import { Accordion } from "@mui/material";
