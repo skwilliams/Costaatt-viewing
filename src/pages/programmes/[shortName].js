@@ -60,6 +60,7 @@ const programme = (props) => {
       </Head>
       <HeaderNoImage caption={prog.prog_name && prog.prog_name} />
       <SideNavOnlyLayout>
+      
         <section id="courseoverview" className={CourseStyle.sectionOverview}>
           <p className={CourseStyle.desc}>{prog.prog_description}</p>
           <div className={CourseStyle.iconsection}>
@@ -472,9 +473,6 @@ export async function getStaticProps(context) {
 
   // retrieve the entire programme object
   const data = await getProgData(shortName);
-  const dbdata = await fetch("https://costaattcms.san-sol.com/api/core/campuses/")
-  console.log(dbdata);
-
   
 
   const struct = getProgStruct(shortName);
@@ -488,6 +486,7 @@ export async function getStaticProps(context) {
       props: {
         prog: data,
         progStruct: struct,
+
       },
     };
   }

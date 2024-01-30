@@ -61,19 +61,19 @@ export const topNavLinksLeft = [
       },
       {
         title: "School of Business and Digital Technologies",
-        // path: "/programmes/schools/busIT",
-        path: "#",
+        path: "/programmes/schools/busIT",
+        // path: "#",
 
         submenu: [
           {
             title: "Management and Digital Entrepreneurship",
-            // path: "/programmes/schools/busIT/MGDE",
-            path: "#",
+            path: "/programmes/schools/busIT/MGDE",
+            // path: "#",
           },
           {
             title: "ICTs and Digital Technologies",
-            // path: "/programmes/schools/busIT/ICTD",
-            path: "#",
+            path: "/programmes/schools/busIT/ICTD",
+            // path: "#",
           },
         ],
       },

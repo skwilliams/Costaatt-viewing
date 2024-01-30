@@ -14,6 +14,7 @@ import NewsRow from '@/components/PageComponents/NewsRow';
 import Divider from '@mui/material/Divider';
 import path from 'path';
 import fs from 'fs/promises';
+import { get,fetch } from 'https';
 // import SideNavOnlyLayout from '@/components/Layouts/SideNavOnly_NoTopOrDropdown';
 // import TopNavOnlyLayout from '@/components/Layouts/TopNavOnly_NoDropdown';
 // import index from './[deptName]';
@@ -45,12 +46,30 @@ const school = (props) => {
         COSTAATT/Programmes/{foundSchool.shortName}
       </p>
       {/* <SideNavOnlyLayout> */}
-      {/* Section Overview */}
+   
+    {/* Testing reading data from rodrigo api */}
+      {/* <section>
+        <ul>
+          {results.map((result) => {
+            return (
+              <li key="{result.id}">
+                <p>
+                  {" "}
+                  {result.campus_name} <br /> {result.address} <br />{" "}
+                  {result.phone}
+                </p>
+              </li>
+            );
+          })}
+        </ul>
+      </section> */}  
+      
+       {/* Section Overview */}
       <section id="overview" className={ProgStyles.sectionoverview}>
         <h2
           className={`${standardStyles.newsHeading} ${standardStyles.centertext}`}
         >
-          <span>OVERVIEW </span> 
+          <span>OVERVIEW </span>
         </h2>
         <p className={ProgStyles.text}>{foundSchool.overview}</p>
       </section>{" "}
@@ -94,8 +113,7 @@ const school = (props) => {
                 {level[1].length > 0 ? (
                   <>
                     <div className={ProgStyles.progGrid} key={level[0]}>
-                
-                     <p className={ProgStyles.headingprimary}> {level[0]} </p>
+                      <p className={ProgStyles.headingprimary}> {level[0]} </p>
 
                       <ul className={ProgStyles.degcourses}>
                         {level[1].map((levelProgs) => {
@@ -112,7 +130,6 @@ const school = (props) => {
                           );
                         })}
                       </ul>
-                     
                     </div>
                   </>
                 ) : (
@@ -126,7 +143,12 @@ const school = (props) => {
       {/* Meet the Dean Section */}
       <section id="meetthedean" className={DeanStyles.sectionmeetthedean}>
         <div className={ProgStyles.umargintopsmall}>
-          <h2 className={`${standardStyles.newsHeading} ${standardStyles.centertext}`} > <span> MEET </span> the Dean </h2>
+          <h2
+            className={`${standardStyles.newsHeading} ${standardStyles.centertext}`}
+          >
+            {" "}
+            <span> MEET </span> the Dean{" "}
+          </h2>
           <div className={DeanStyles.deanColGridCon}>
             <div className={DeanStyles.deanColGrid}>
               <Image
@@ -146,7 +168,7 @@ const school = (props) => {
             <div className={DeanStyles.deanColGrid}>
               <div className={DeanStyles.deancontact}>
                 <p>
-                   <span className={DeanStyles.standout}>
+                  <span className={DeanStyles.standout}>
                     {foundSchool.dean.name}
                   </span>{" "}
                   <br /> Dean, <br />
@@ -176,7 +198,7 @@ export default school;
 export async function getStaticPaths() {
   return {
     paths: [
-      // { params: { shortName: 'busIT' } },
+      { params: { shortName: 'busIT' } },
       // { params: { shortName: 'liberal' } },
       // { params: { shortName: 'enviro' } },
       // { params: { shortName: 'kengord' } },
@@ -186,24 +208,37 @@ export async function getStaticPaths() {
     fallback: false,
   };
 }
+// export async function getServerSideProps(){
+// const dbdata = fetch("https://costaattcms.san-sol.com/api/core/campuses/");
+
+// // const datatester = await dbdata.json();
+
+// console.log(dbdata);
+//  return {
+//   results: dbdata.results;
+//  } 
+
 
 export async function getStaticProps(context) {
   const { params } = context;
   const schName = params.shortName;
+
+
   return {
     props: {
       foundSchool: await getData(
-        'public/data',
-        'schooldata.json',
+        "public/data",
+        "schooldata.json",
         schName,
-        'nameStump'
+        "nameStump"
       ),
       news: await getData(
-        'public/data',
-        'newsdata.json',
+        "public/data",
+        "newsdata.json",
         schName,
-        'schoolDivision'
+        "schoolDivision"
       ),
+    
     },
   };
 }

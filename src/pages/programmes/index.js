@@ -177,8 +177,8 @@ const progoverview = () => {
           schoolname="School of Business and Digital Technologies"
           intro="The School of Business and Digital Technologies provides access to a world-class and work-relevant education, focused on achieving institutional and national goals of workforce development. The School of Business and Digital Technologies comprises two (2) schools, the Department of ICTs and Digital Technologies and the Department of Management and Digital Entrepreneurship. These departments provide the public with a range of academic services to meet a growing number of careers and opportunities locally, regionally, and globally. 
                 "
-          // linkpage="/programmes/schools/busIT"
-          linkpage="#"
+          linkpage="/programmes/schools/busIT"
+         
           shortname="SBDT"
         />
         <SchoolCard

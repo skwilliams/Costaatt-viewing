@@ -1,0 +1,148 @@
+@use "./abstracts/variables" as v;
+
+.header {
+  height: 80vh;
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(v.$color-primary, 0.5),
+      rgba(v.$color-white, 0.05),
+      rgba(v.$color-black, 1)
+    ),
+    url("../../public/images/errorPage/Broken_Tracks.png");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%, 0 60vh);
+
+
+  &__pagePeel {
+    position: absolute;
+    top: 55%;
+    width: 26.25%;
+    left: -6.25%;
+    z-index: 3;
+  }
+
+  &__hole {
+    position: absolute;
+    right: 20%;
+    bottom: 2%;
+    height: 38%;
+    z-index: 1;
+  }
+
+  &__person {
+    position: absolute;
+    height: 60%;
+    left: 40%;
+    top: 10.5%;
+    z-index: 2;
+  }
+
+  &__buttonBox {
+    position: absolute;
+    text-align: center;
+    top: 67%;
+    left: 7.7%;
+    z-index: 4;
+  }
+
+  &__404Box {
+    left: 50%;
+    top: 68%;
+    z-index: 5;
+    animation: moveInBottom 0.5s ease-out 0.2s;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+  }
+
+  &__404 {
+    font-size: 14rem;
+    color: rgba(v.$color-white, 1);
+    position: absolute;
+  }
+
+  &__textBox {
+    position: absolute;
+    top: 15%;
+    left: 70%;
+    transform: translate(-25%, -25%);
+    text-align: center;
+  }
+}
+
+
+.heading_primary {
+    color:v.$color-black;
+    text-transform: capitalize;
+    backface-visibility: hidden;
+
+    &__main {
+        display: block;
+        font-size: 10rem;
+        font-weight: 400;
+        letter-spacing: .2rem;
+        animation: moveInRight 1s ease-in-out;
+    }
+
+    &__sub {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 200;
+        letter-spacing: .5rem;
+        animation: moveInRight 1s ease-in-out;
+    }
+}
+
+.btn{
+
+    &:link,
+    &:visited {
+        text-transform: capitalize;
+        text-decoration: none;
+        padding: 1rem 3rem;
+        display: inline-block;
+        border-radius: 3rem;
+        transition: all .2s;
+        position: relative;
+        font-size: 2rem;
+        color: v.$color-black;
+    }
+
+    &:hover {
+        transform: translateY(-1rem);
+        box-shadow: .5rem 2rem rgb(v.$color-black, 0.05);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+
+    &:active {
+        transform: translateY(-1rem);
+        box-shadow: 0 .5rem 2rem rgb(v.$color-black, 0.05);
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 3rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .4s;
+        z-index: -1;
+    }
+
+    &_click {
+        transform: translateY(-.5rem);
+    }
+
+    &__animated {
+        animation: moveInLeft .7s ease-in .10s;
+        animation-fill-mode: backwards;
+    }
+}
