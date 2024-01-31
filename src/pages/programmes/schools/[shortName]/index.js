@@ -14,7 +14,7 @@ import NewsRow from '@/components/PageComponents/NewsRow';
 import Divider from '@mui/material/Divider';
 import path from 'path';
 import fs from 'fs/promises';
-import { get,fetch } from 'https';
+import { fetch } from 'https';
 // import SideNavOnlyLayout from '@/components/Layouts/SideNavOnly_NoTopOrDropdown';
 // import TopNavOnlyLayout from '@/components/Layouts/TopNavOnly_NoDropdown';
 // import index from './[deptName]';
@@ -211,7 +211,7 @@ export async function getStaticPaths() {
 // export async function getServerSideProps(){
 // const dbdata = fetch("https://costaattcms.san-sol.com/api/core/campuses/");
 
-// // const datatester = await dbdata.json();
+// const datatester = await dbdata.json();
 
 // console.log(dbdata);
 //  return {
@@ -223,6 +223,17 @@ export async function getStaticProps(context) {
   const { params } = context;
   const schName = params.shortName;
 
+  // const dbdata = fetch(
+  //   "https://costaattcms.san-sol.com/api/core/campuses/?format=api"
+  // );
+
+  //  const campus = await dbdata.json();
+
+
+  // console.log(dbdata);
+  //  return {
+  //   results: ;
+  //  }
 
   return {
     props: {
@@ -238,7 +249,7 @@ export async function getStaticProps(context) {
         schName,
         "schoolDivision"
       ),
-    
+      // campus:campus
     },
   };
 }

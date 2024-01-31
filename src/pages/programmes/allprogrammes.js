@@ -22,11 +22,11 @@ const Allprogrammes = () => {
   // console.log(stumpNames);
   const [schoolFilters, setSchoolFilters] = useState({
     busIT: false,
-    liberal: false,
-    nursing: false,
-    enviro: false,
-    kengord: false,
-    workF: false,
+    // liberal: false,
+    // nursing: false,
+    // enviro: false,
+    // kengord: false,
+    // workF: false,
   });
   const [levelFilters, setLevelFilters] = useState({
     Bachelor: false,
@@ -121,12 +121,12 @@ const Allprogrammes = () => {
     setAllPrograms(result);
   };
 
-  // const isBrowser = () => typeof window !== 'undefined'; //The approach recommended by Next.js
+  const isBrowser = () => typeof window !== 'undefined'; //The approach recommended by Next.js
 
-  // function scrollToTop() {
-  //   if (!isBrowser()) return;
-  //   window.scrollTo({ top: 0, behavior: 'smooth' });
-  // }
+  function scrollToTop() {
+    if (!isBrowser()) return;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 
   return (
     <>
