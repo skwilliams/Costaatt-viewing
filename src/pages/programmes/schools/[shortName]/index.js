@@ -14,14 +14,14 @@ import NewsRow from '@/components/PageComponents/NewsRow';
 import Divider from '@mui/material/Divider';
 import path from 'path';
 import fs from 'fs/promises';
-import { fetch } from 'https';
+import axios from 'axios';
 // import SideNavOnlyLayout from '@/components/Layouts/SideNavOnly_NoTopOrDropdown';
 // import TopNavOnlyLayout from '@/components/Layouts/TopNavOnly_NoDropdown';
 // import index from './[deptName]';
 
 //School of Business and Digital Technologies
 const school = (props) => {
-  const { foundSchool, news } = props;
+  const { foundSchool, news,campuses } = props;
   // retrieve all programmes in the school and restructure data for Accordion
   const schoolProgrammes = getProgrammes('school', foundSchool);
 
@@ -46,25 +46,21 @@ const school = (props) => {
         COSTAATT/Programmes/{foundSchool.shortName}
       </p>
       {/* <SideNavOnlyLayout> */}
-   
-    {/* Testing reading data from rodrigo api */}
-      {/* <section>
-        <ul>
-          {results.map((result) => {
+      {/* Testing reading data from rodrigo api */}
+      <section>
+        <div >
+          {campuses.map((dept, index) => {
             return (
-              <li key="{result.id}">
-                <p>
-                  {" "}
-                  {result.campus_name} <br /> {result.address} <br />{" "}
-                  {result.phone}
-                </p>
-              </li>
+              <div  key={index}>
+                 {dept.campus_name} <br/>
+                  {dept.address}
+                  {dept.phone}
+              </div>
             );
           })}
-        </ul>
-      </section> */}  
-      
-       {/* Section Overview */}
+        </div>
+      </section>
+      {/* Section Overview */}
       <section id="overview" className={ProgStyles.sectionoverview}>
         <h2
           className={`${standardStyles.newsHeading} ${standardStyles.centertext}`}
@@ -208,35 +204,31 @@ export async function getStaticPaths() {
     fallback: false,
   };
 }
-// export async function getServerSideProps(){
-// const dbdata = fetch("https://costaattcms.san-sol.com/api/core/campuses/");
 
-// const datatester = await dbdata.json();
-
-// console.log(dbdata);
-//  return {
-//   results: dbdata.results;
-//  } 
 
 
 export async function getStaticProps(context) {
   const { params } = context;
   const schName = params.shortName;
+ const   foundSchool= await getData(
+        "public/data",
+        "schooldata.json",
+        schName,
+        "nameStump"
+      );
+      
+      
 
-  // const dbdata = fetch(
-  //   "https://costaattcms.san-sol.com/api/core/campuses/?format=api"
-  // );
+  const response = await axios.get(
+    "https://costaattcms.san-sol.com/api/core/campuses/"
+  );
+   const campuses =  response.data
+  console.log(campuses);
 
-  //  const campus = await dbdata.json();
-
-
-  // console.log(dbdata);
-  //  return {
-  //   results: ;
-  //  }
 
   return {
     props: {
+    
       foundSchool: await getData(
         "public/data",
         "schooldata.json",
@@ -249,7 +241,7 @@ export async function getStaticProps(context) {
         schName,
         "schoolDivision"
       ),
-      // campus:campus
+      campuses:campuses
     },
   };
 }
