@@ -2,8 +2,12 @@ import React from 'react'
 import Layout from "../../components/Layouts/TopNavOnly_NoDropdown";
 import Head from 'next/head'
 import standardStyles from '@/styles/main.module.scss'
+import AboutStyles from "@/styles/About.module.scss"
 import HeaderNoImage from '@/components/PageComponents/HeaderNoImage';
 import HeadImage from "@/components/PageComponents/HeadImage";
+
+
+import headimg from "../../../public/images/about/qualitycontrol1.jpg"
 
 import Link from 'next/link'
 import { FiBookOpen } from "react-icons/fi";
@@ -17,22 +21,24 @@ const leadership = () => {
       <Head>
         <title>Leadership |{""} COSTAATT</title>
       </Head>
-      <HeadImage caption="College Leadership" />
-      <p
-        className={`${standardStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}
-      >
-        <Link href="/"> COSTAATT/ </Link>
-        <Link href="/about">About/</Link>
-        <Link href="/about/leadership">Leadership</Link>
-      </p>
-      <header>
-        <span className={standardStyles.heading_primary__main}>
-          College Leadership{" "}
-        </span>
-        <span className={standardStyles.heading_primary__sub}>
-          assure the viability and strategic direction of the College
-        </span>
-      </header>
+      <section className={AboutStyles.sectionPageHeader}>
+        <header >
+          <HeadImage mainimage={headimg} caption="College Leadership" />
+          <p
+            className={`${standardStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}
+          >
+            <Link href="/"> COSTAATT/ </Link>
+            <Link href="/about">About/</Link>
+            <Link href="/about/leadership">Leadership</Link>
+          </p>
+          <span className={standardStyles.heading_primary__main}>
+            College Leadership{" "}
+          </span>
+          <span className={standardStyles.heading_primary__sub}>
+            assures the viability and strategic direction of the College
+          </span>
+        </header>
+      </section>
       <section id="intro" className={standardStyles.sectionWithSidenav}>
         <div className={standardStyles.introtext}>
           The College is governed by a Board of Trustees and shared governance,
@@ -102,6 +108,9 @@ const leadership = () => {
             </Link>
           </div>
         </div>
+      </section>
+      <section>
+        <p> Lorem ipsum </p>
       </section>
     </>
   );

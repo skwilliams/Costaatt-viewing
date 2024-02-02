@@ -6,35 +6,16 @@ import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
 import Link from "next/link";
 import { deans,vps,management,heads } from "./leadershipdata";
 import FacultyStaffCard from "@/components/PageComponents/FacultyStaffDepCard";
+import ExecutiveCard from "@/components/PageComponents/ExecutiveCard";
+
+
 import DeptStyles from "../../styles/DepartCard.module.scss";
-import ModalStyles from "../../styles/Modal.module.scss";
-import Image from "next/image";
 
-import photo from "../../../public/images/Leadership photos/Naseem-Koylass.jpg";
 
-import BioCard from "@/components/PageComponents/BioCard";
-
-import SearchBarModal from "@/components/SearchBarModal";
-import BioModal from "@/components/PageComponents/BioModal";
-import Modal from "@/components/PageComponents/Modal";
-import HomeStyles from "../../styles/Home.module.scss";
 
 
 
  const Executiveleaders = () => {
-
-
-const [isModalOpen, setIsModalOpen] = useState(false);
-
-const openModal = () => {
-  setIsModalOpen(true);
-};
-
-const closeModal = () => {
-  setIsModalOpen(false);
-};
-
-
 
 
   return (
@@ -62,79 +43,25 @@ const closeModal = () => {
         </p>
         <h2 className={standardStyles.newsHeading}>Executive Leaders</h2>
 
-        <button
-          // className={standardStyles.btn}
-          className={`${standardStyles.btn} ${standardStyles.btn__purple}`}
-          onClick={openModal}
-        >
-          Read Bio
-        </button>
+        {vps.map((fe) => (
+          <>
+            <div className={standardStyles.row}>
+              {/* Naseem Koylass */}
 
-        {/* <div  className={ModalStyles.modal__overlay}> */}
-        <Modal isOpen={isModalOpen} onClose={closeModal}>
-          <div className={ModalStyles.modal__overlay__content}>
-            <div className={ModalStyles.modal__overlay__left}>
-              <Image
-                src={photo}
-                alt="Naseem photo"
-                height="200"
-                width="200"
-                className={ModalStyles.modal__overlay__img}
-              />
-              {/* <h2 className={ModalStyles.modal__overlay__name}>
-                {" "}
-                Naseem Koylass
-              </h2> */}
+              {/* <div className={standardStyles.col1of2}> */}
+                <ExecutiveCard exec={fe} />
 
-              {/* position */}
-              {/* <h3 className={ModalStyles.modal__overlay__position}>
-                {" "}
-                Vice President, Academic Affairs
-              </h3> */}
+               
+       
+              {/* </div> */}
+           
             </div>
-            <div className={ModalStyles.modal__overlay__right}>
-              {/* Name  */}
-              <h2 className={ModalStyles.modal__overlay__name}>
-                {" "}
-                Naseem Koylass
-              </h2>
+          </>
+        ))}
 
-              {/* position */}
-              <h3 className={ModalStyles.modal__overlay__position}>
-                {" "}
-                Vice President, Academic Affairs
-              </h3>
-              <p className={ModalStyles.modal__overlay__text}>
-                Dr. Naseem Koylass was appointed to the position of Vice
-                President, Academic Affairs effective July 1, 2022.Dr. Koylass
-                is a long-standing member of the COSTAATT community and has held
-                a wide range of leadership positions over the last 20 years,
-                including department chair, campus dean and more recently,
-                Associate Vice President, Academic Affairs.Dr Koylass has played
-                a critical role in the College's accreditation and quality
-                assurance activities since COSTAATT was first established in
-                October 2000, and brings to her new position a wealth of
-                knowledge and experience in academic and administrative
-                leadership . Dr. Naseem Koylass was appointed to the position of
-                Vice President, Academic Affairs effective July 1, 2022.Dr.
-                Koylass is a long-standing member of the COSTAATT community and
-                has held a wide range of leadership positions over the last 20
-                years, including department chair, campus dean and more
-                recently, Associate Vice President, Academic Affairs.Dr Koylass
-                has played a critical role in the College's accreditation and
-                quality assurance activities since COSTAATT was first
-                established in October 2000, and brings to her new position a
-                wealth of knowledge and experience in academic and
-                administrative leadership
-              </p>
-            </div>
-            {/* close content area */}
-          </div>
-        </Modal>
-        {/* </div> */}
-        <div className={standardStyles.row}>
-          {/* <BioCard staff={vps} /> */}
-        </div>
+        {/* <div className={standardStyles.row}>
+          <BioCard staff={vps} />
+        </div> */}
       </section>
       <section
         id="mgmt"

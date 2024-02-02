@@ -1,184 +1,197 @@
+@use "../styles/abstracts/variables" as v;
+@use "./components/story";
 
-      @import "../styles/abstracts/variables";
-        @import "../styles/abstracts/mixins";
+.modal {
+  //Contents of modal
 
-        .modal {
+  //   background-color: v.$color-primary-dark;
 
-//Contents of modal 
+  background-image: linear-gradient(
+    to right,
+    (v.$color-primary-dark),
+    (v.$color-primary)
+  );
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  width: 90vw;
+  height: 90%;
+  //   overflow: scroll;
+  z-index: 5;
 
-          background-image: linear-gradient(to right, $color-primary-dark,$color-primary);
-          padding: 20px;
-          border-radius: 8px;
-          box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-          width: 90vw;
-          height: 90%;
-          overflow: scroll;
-          z-index: 5;
-       
-          padding: 4rem 4rem 5rem 4rem;
-          scrollbar-color: $orange white;
-        
+  padding: 4rem 4rem 5rem 4rem;
+  scrollbar-color: v.$color-primary-dark white;
 
+  &__overlay {
+    display: grid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
 
-        &__overlay {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: rgba(0, 0, 0, 0.5);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          z-index: 9999;
-        
-        
+    &__content {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      position: absolute;
+      top: 53%;
+      left: 50%;
+      transform: translate(-50%, -50%);
 
-        &__content {
-          
-            // grid-template-columns: min-content,max-content;
-        // // @include absCenter;
+      width: 85%;
+      height: 75%;
+      //   background-color: orangered;
+      color: black;
 
-        // width: 75%;
-        background-color: $color-white;
-        color: black;
+      //   border-radius: 3px;
 
-        box-shadow: 0 2rem 4rem rgba($color-black, .2);
-        border-radius: 3px;
-        display:grid;
-        // grid-template-rows: min-content,max-content;
-        grid-template-columns: 1fr, 3fr;
-        // gap: 5px;
-    //    overflow: scroll;
-        
-     
-    }
+      margin-top: 1rem;
+      padding: 2rem;
 
-    &__left {
-        width: 33.333333%;
+      &__left {
         // display: grid;
-    }
+        //   background-color:v.$color-white;
+        font-size: 1.6rem;
+        color: v.$color-white;
+      }
 
-    &__right {
-        width: 66.6666667%;
+      &__right {
         // display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+        //   background-color: blue;
+      }
+
+      &__img {
+        justify-content: center;
+        top: 50%;
+        left: 50%;
+        //   text-align: center;
+
+        border-radius: 50%;
+        box-shadow: 0 3rem 6rem rgba(v.$color-black, 0.1);
+        padding: 2rem;
+      }
     }
 
-    &__img {
-        display: block;
-     
-        top:50%;
-     
-        border-radius: 70%;
+    &__name {
+      font-size: 1.8rem;
+      // padding:2rem 0;
     }
-
-      &__name {
-        font-size: 2rem;
-        color:white
-
-    }
-       &__position {
-        font-size: 1.8rem;
-        // color:white;
-        
+    &__position {
+      font-size: 1.6rem;
+      // color:white;
+      padding: 2rem 0 0 0;
+      font-style: italic;
     }
 
     &__text {
-        font-size: 1.8rem;
-        text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 8px 0;
+      color: whitesmoke;
+      font-size: 1.7rem;
+
+      //   font-size: 1.8rem;
+      //   text-align: left;
+      //   color: white;
+
+      //  font-size: 1.6rem;
+      //         margin-bottom: 4rem;
+
+      //         -moz-column-count: 2;
+      //         -moz-column-gap: 4rem; //1em = 14px;
+      //         -moz-column-rule: 1px solid v.$color-grey-light-2;
+
+      //         column-count: 2;
+      //         column-gap: 4rem; //1em = 14px;
+      //         column-rule: 1px solid v.$color-grey-light-2;
+
+      // -moz-hyphens: auto;
+      // -ms-hyphens: auto;
+      // -webkit-hyphens: auto;
+      // hyphens: auto;
+    }
+
+    &__closeButton {
+      &:link,
+      &:visited {
+        // //  color:white;
+        //  background-color: white;
+        //  font-size:large;
+
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        border: 2px solid #3498db; /* Border color */
+        color: #3498db; /* Text color */
+        background-color: #fff; /* Background color */
+        border-radius: 5px; /* Rounded corners */
+        transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
         // color: white;
-          
-     
+        // position: absolute;
+        // top: 2.5rem;
+        // right: 2.5rem;
+        // font-size: 25rem;
+        // padding: 3rem;
+        // text-decoration: none;
+        // display: inline-block;
+        // transition: all .2s;
+        // line-height: 1;
+        // // text-align: right;
+      }
+
+      &:hover {
+        color: v.$color-primary;
+      }
     }
 
+    // &__closeButton {
+    //   position: absolute;
+    //   top: 10px;
+    //   right: 10px;
+    //   font-size: 20px;
+    //   cursor: pointer;
+    //   background: none;
+    //   border: none;
+    //   color: #333; /* Adjust color as needed */
+    //   transition: transform 0.3s ease; /* Transition for smooth animation */
 
-   &__closeButton {
-        &:link,
-        &:visited {
+    //   /* Hover state */
+    //   &:hover {
+    //     transform: rotate(45deg);
+    //   }
 
-// //  color:white;
-//  background-color: white;
-//  font-size:large;
- 
- 
- 
- display: inline-block;
-      padding: 10px 20px;
-      font-size: 16px;
-      font-weight: bold;
-      text-align: center;
-      text-decoration: none;
-      cursor: pointer;
-      border: 2px solid #3498db; /* Border color */
-      color: #3498db; /* Text color */
-      background-color: #fff; /* Background color */
-      border-radius: 5px; /* Rounded corners */
-      transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
-            // color: white;
-            // position: absolute;
-            // top: 2.5rem;
-            // right: 2.5rem;
-            // font-size: 25rem;
-            // padding: 3rem;
-            // text-decoration: none;
-            // display: inline-block;
-            // transition: all .2s;
-            // line-height: 1;
-            // // text-align: right;
-        }
+    //   /* Diagonal lines of X */
+    //   &::before,
+    //   &::after {
+    //     content: '';
+    //     position: absolute;
+    //     height: 2px;
+    //     width: 20px;
+    //     background-color: #333; /* Adjust color as needed */
+    //     top: 50%;
+    //     left: 50%;
+    //     transform-origin: 50% 50%;
+    //   }
 
-        &:hover {
-            color: $color-primary;
-        }
-    }
+    //   &::before {
+    //     transform: translate(-50%, -50%) rotate(-45deg);
+    //   }
 
-
-// &__closeButton {
-//   position: absolute;
-//   top: 10px;
-//   right: 10px;
-//   font-size: 20px;
-//   cursor: pointer;
-//   background: none;
-//   border: none;
-//   color: #333; /* Adjust color as needed */
-//   transition: transform 0.3s ease; /* Transition for smooth animation */
-
-//   /* Hover state */
-//   &:hover {
-//     transform: rotate(45deg);
-//   }
-
-//   /* Diagonal lines of X */
-//   &::before,
-//   &::after {
-//     content: '';
-//     position: absolute;
-//     height: 2px;
-//     width: 20px;
-//     background-color: #333; /* Adjust color as needed */
-//     top: 50%;
-//     left: 50%;
-//     transform-origin: 50% 50%;
-//   }
-
-//   &::before {
-//     transform: translate(-50%, -50%) rotate(-45deg);
-//   }
-
-//   &::after {
-//     transform: translate(-50%, -50%) rotate(45deg);
-//   }
-// }
-
-
-
-
+    //   &::after {
+    //     transform: translate(-50%, -50%) rotate(45deg);
+    //   }
+    // }
+  }
 }
-
-        
-
-        }
-        

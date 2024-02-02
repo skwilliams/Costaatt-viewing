@@ -47,7 +47,7 @@ const school = (props) => {
       </p>
       {/* <SideNavOnlyLayout> */}
       {/* Testing reading data from rodrigo api */}
-      <section>
+      {/* <section>
         <div >
           {campuses.map((dept, index) => {
             return (
@@ -59,7 +59,7 @@ const school = (props) => {
             );
           })}
         </div>
-      </section>
+      </section> */}
       {/* Section Overview */}
       <section id="overview" className={ProgStyles.sectionoverview}>
         <h2
