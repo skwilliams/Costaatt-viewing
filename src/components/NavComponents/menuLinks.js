@@ -61,19 +61,19 @@ export const topNavLinksLeft = [
       },
       {
         title: "School of Business and Digital Technologies",
-        path: "/programmes/schools/busIT",
-        // path: "#",
+        // path: "/programmes/schools/busIT",
+        path: "#",
 
         submenu: [
           {
             title: "Management and Digital Entrepreneurship",
-            path: "/programmes/schools/busIT/MGDE",
-            // path: "#",
+            // path: "/programmes/schools/busIT/MGDE",
+            path: "#",
           },
           {
             title: "ICTs and Digital Technologies",
-            path: "/programmes/schools/busIT/ICTD",
-            // path: "#",
+            // path: "/programmes/schools/busIT/ICTD",
+            path: "#",
           },
         ],
       },
@@ -178,7 +178,8 @@ export const footerLinks = [
   },
   {
     title: "MY COSTAATT",
-    path: "/programmes",
+    // path: "/programmes",
+    path:"#",
   },
   {
     title: "Alumni",
@@ -195,32 +196,38 @@ export const mainNavLinks = [
     submenu: [
       {
         title: "Overview",
-        path: "/programmes",
+        path: "#",
+        // path: "/programmes",
       },
       {
         title: "All Programmes",
-        path: "/programmes/allprogrammes",
+        path: "#",
+        // path: "/programmes/allprogrammes",
       },
 
       {
         title: "College Core",
-        path: "/programmes/Collegecore",
+        path: "#",
+        // path: "/programmes/Collegecore",
       },
       {
         title: "Professional Development Courses",
-        path: "/programmes/shortcourses",
+        path: "#",
+        // path: "/programmes/shortcourses",
       },
     ],
     submenuImage: [
       {
         img: require("../../../public/images/dummyImg1.jpg"),
         title: "Academic Calendar",
-        path: "/programmes/academiccalendar",
+        path: "#",
+        // path: "/programmes/academiccalendar",
       },
       {
         img: require("../../../public/images/dummyImg1.jpg"),
         title: "Admission Counsellor",
-        path: "/programmes/admissioncounsellors",
+        path: "#",
+        // path: "/programmes/admissioncounsellors",
       },
     ],
   },
