@@ -1,9 +1,9 @@
-import TopNavOnlyLayout from "@/components/Layouts/TopNavOnly_NoDropdown";
+import TopNavOnlyLayout from "../../components/Layouts/TopNavOnly_NoDropdown";
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import ProgStyles from "@/styles/Programmes.module.scss"
-import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
+import ProgStyles from "../../styles/Programmes.module.scss"
+import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
 
 const visitus = () => {
   return (
