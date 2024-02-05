@@ -1,43 +1,53 @@
-import HeaderNoImage from '@/components/PageComponents/HeaderNoImage'
-import React from 'react'
-import Link from 'next/link'
-import AdmisStyles from "@/styles/Admissions.module.scss"
-import Head from 'next/head'
-import Image from 'next/image'
-import { Divider } from '@mui/material'
-import tick from "../../../public/images/admissions/tick.svg"
+import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
+import React from "react";
+import Link from "next/link";
+import AdmisStyles from "../../styles/Admissions.module.scss";
+import Head from "next/head";
+import Image from "next/image";
+import { Divider } from "@mui/material";
+import tick from "../../../public/images/admissions/tick.svg";
 
 const startapplication = () => {
   return (
     <>
-    <Head>
+      <Head>
         <title>Start Application</title>
-    </Head>
-    <HeaderNoImage caption="Start Application"/>
+      </Head>
+      <HeaderNoImage caption="Start Application" />
 
-    <section className={AdmisStyles.sectionStartappList}> Application checklist 
-     
-          <p className={AdmisStyles.sectiontext}>
-            Before you apply, ensure you have{" "}
+      <section className={AdmisStyles.sectionStartappList}>
+        {" "}
+        Application checklist
+        <p className={AdmisStyles.sectiontext}>
+          Before you apply, ensure you have{" "}
+        </p>
+        <div className={AdmisStyles.checklist}>
+          <Image
+            className={AdmisStyles.imgtick}
+            src={tick}
+            alt="image of tick"
+          />
+          <span className={AdmisStyles.heading}>
+            {" "}
+            Programme Details and Requirements{" "}
+          </span>
+          <p className={AdmisStyles.text}>
+            You have choosen your programme and this is your first time applying
+            to COSTAATT!!
+            <br />
+            You need to complete the online application form
+          </p>{" "}
+          <p className={AdmisStyles.text}>
+            <Link href="/programmes/allprogrammes">
+              {" "}
+              List of all programmes &rarr;
+            </Link>
           </p>
-          <div className={AdmisStyles.checklist}>
-            <Image className={AdmisStyles.imgtick} src={tick} alt ="image of tick"/>
-            <span className={AdmisStyles.heading}> Programme Details and Requirements </span>
-            <p className={AdmisStyles.text}>
-              You have choosen your programme and this is your first time
-              applying to COSTAATT!!
-              <br />
-              You need to complete the online application form
-            </p>{" "}
-            <p className={AdmisStyles.text}>
-              <Link href="/programmes/allprogrammes"> List of all programmes &rarr;</Link>
-            </p>
-            <Divider />
-            </div>
-    </section>
+          <Divider />
+        </div>
+      </section>
     </>
-   
-  )
-}
+  );
+};
 
-export default startapplication
+export default startapplication;

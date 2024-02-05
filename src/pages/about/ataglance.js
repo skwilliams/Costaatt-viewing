@@ -1,17 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import Head from "next/head";
-import standardStyles from "@/styles/main.module.scss";
+import standardStyles from "../../styles/main.module.scss";
 
+import AboutStyles from "../../styles/About.module.scss";
 
-import AboutStyles from "@/styles/About.module.scss";
-
-
-import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
-
+import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
 
 import Image from "next/image";
-
 
 import Layout from "../../components/Layouts/TopNavOnly_NoDropdown";
 
@@ -20,13 +16,7 @@ import home3 from "../../../public/images/about/home3.png";
 import home5 from "../../../public/images/about/home5.png";
 import home6 from "../../../public/images/about/home6.png";
 
-
-
-
-
 const Ataglance = () => {
-
-
   // const [setHasWindow] = useState(false);
 
   // useEffect(() => {
@@ -35,14 +25,14 @@ const Ataglance = () => {
   //   }
   // }, [setHasWindow]);
 
- async function onClose() {
-   console.log("Modal has closed");
- }
+  async function onClose() {
+    console.log("Modal has closed");
+  }
 
- async function onOk() {
-   console.log("Ok was clicked");
- }
- 
+  async function onOk() {
+    console.log("Ok was clicked");
+  }
+
   return (
     <>
       <Head>
@@ -369,6 +359,4 @@ Ataglance.getLayout = function getLayout(page) {
   return <Layout>{page}</Layout>;
 };
 
-
-
-export default Ataglance
+export default Ataglance;

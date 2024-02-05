@@ -1,22 +1,16 @@
+import React from "react";
 
+import standardStyles from "../../styles/main.module.scss";
+import AdminStyles from "../../styles/Admissions.module.scss";
 
-import React from 'react'
-
-
-
-import standardStyles from "@/styles/main.module.scss"
-import AdminStyles from "@/styles/Admissions.module.scss";
-
-import HeadImage from "@/components/PageComponents/HeadImage";
+import HeadImage from "../../components/PageComponents/HeadImage";
 import awaitingbanner from "../../../public/images/about/qualitycontrol1.jpg";
 
-
-import Head from 'next/head';
-import Link from 'next/link';
-import { StickyNote2 } from '@mui/icons-material';
-import Image from 'next/image';
-import Popup from '@/components/PageComponents/Popup';
-
+import Head from "next/head";
+import Link from "next/link";
+import { StickyNote2 } from "@mui/icons-material";
+import Image from "next/image";
+import Popup from "../../components/PageComponents/Popup";
 
 import { Accordion, Divider } from "@mui/material/";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -24,11 +18,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-
 const compasscenter = () => {
-
-
-
   return (
     <>
       <Head>
@@ -80,7 +70,7 @@ const compasscenter = () => {
                   <span
                     className={`${standardStyles.card__headingSpan}${standardStyles.card__headingSpan1}`}
                   >
-                    Advising {" "}
+                    Advising{" "}
                   </span>
                 </h4>
                 <div
@@ -110,7 +100,8 @@ const compasscenter = () => {
                   <span
                     className={`${standardStyles.card__headingSpan}${standardStyles.card__headingSpan2}`}
                   >
-                    Study Skills                  </span>
+                    Study Skills{" "}
+                  </span>
                 </h4>
                 <div
                   className={`${standardStyles.card__details} ${standardStyles.card__details2}`}
@@ -142,7 +133,8 @@ const compasscenter = () => {
                   <span
                     className={`${standardStyles.card__headingSpan}${standardStyles.card__headingSpan3}`}
                   >
-                    Tutorial Services                  </span>
+                    Tutorial Services{" "}
+                  </span>
                 </h4>
                 <div
                   className={`${standardStyles.card__details} ${standardStyles.card__details3}`}
@@ -179,8 +171,7 @@ const compasscenter = () => {
                   </span>
                 </h4>
                 <div
-                  className={`${standardStyles.card__details} ${standardStyles.card__details4
-                    }`}
+                  className={`${standardStyles.card__details} ${standardStyles.card__details4}`}
                 >
                   Career management is applying/executing what was learnt in the
                   career planning process to achieve career goals. Career
@@ -191,7 +182,6 @@ const compasscenter = () => {
               </div>
             </div>
           </div>
-
         </div>
       </section>
 
@@ -255,8 +245,4 @@ const compasscenter = () => {
   );
 };
 
-export default compasscenter
-
-
-
-
+export default compasscenter;

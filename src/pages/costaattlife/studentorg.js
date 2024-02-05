@@ -1,35 +1,34 @@
-import React from 'react'
-import Link from 'next/link'
-import Head from 'next/head';
-import standardStyles from "@/styles/main.module.scss"
-import AdmisStyles from "@/styles/Admissions.module.scss"
-import HeadImage from "@/components/PageComponents/HeadImage";
+import React from "react";
+import Link from "next/link";
+import Head from "next/head";
+import standardStyles from "../../styles/main.module.scss";
+import AdmisStyles from "../../styles/Admissions.module.scss";
+import HeadImage from "../../components/PageComponents/HeadImage";
 import awaitingbanner from "../../../public/images/about/qualitycontrol1.jpg";
 
-
-import { Button, Divider } from '@mui/material';
-import Image from 'next/image';
+import { Button, Divider } from "@mui/material";
+import Image from "next/image";
 import { FiBookOpen } from "react-icons/fi";
-import { PhoneCallback, Sanitizer, SignalCellularConnectedNoInternet4BarTwoTone } from '@mui/icons-material';
+import {
+  PhoneCallback,
+  Sanitizer,
+  SignalCellularConnectedNoInternet4BarTwoTone,
+} from "@mui/icons-material";
 import { IconContext } from "react-icons";
 import { BsFileEarmarkArrowDown } from "react-icons/bs";
-import joinclub from "../../../public/images/costaattlife/joinclub.png"
+import joinclub from "../../../public/images/costaattlife/joinclub.png";
 
 import startclub from "../../../public/images/costaattlife/startclub.jpg";
 import campus2 from "../../../public/images/costaattlife/campus 2.jpg";
 import studentamb from "../../../public/images/costaattlife/ambas1.png";
 import studentamb2 from "../../../public/images/costaattlife/studentAmb.jpg";
 
-import EventsRow from "@/components/PageComponents/EventsRow";
+import EventsRow from "../../components/PageComponents/EventsRow";
 import { getEventsByDept } from "../../../public/data/eventsdata";
-import EventCardOrig from '@/components/PageComponents/EventCardOrig';
-import ContactStudentLife from '@/components/PageComponents/ContactStudentLife';
+import EventCardOrig from "../../components/PageComponents/EventCardOrig";
+import ContactStudentLife from "../../components/PageComponents/ContactStudentLife";
 
 const studentorg = () => {
-
-
-
-
   return (
     <>
       <Head>
@@ -55,7 +54,6 @@ const studentorg = () => {
         id="introtoclubs"
         className={`${standardStyles.sectionNoSidenav} ${standardStyles.marginBottomBig}`}
       >
-
         <p className={standardStyles.paragraph}>
           Registered Student Organisations (RSOs) are student clubs formed by
           students to assist in their holistic development and the development
@@ -363,8 +361,6 @@ const studentorg = () => {
       </section>
     </>
   );
+};
 
-
-}
-
-export default studentorg 
+export default studentorg;

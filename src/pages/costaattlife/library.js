@@ -1,20 +1,19 @@
-import React from 'react'
-import Head from 'next/head'
-import HeadImage from '@/components/PageComponents/HeadImage'
-import SideNavOnlyLayout from "@/components/Layouts/SideNavOnly_NoTopOrDropdown";
-import TopNavOnlyLayout from "@/components/Layouts/TopNavOnly_NoDropdown";
-import standardStyles from '@/styles/main.module.scss'
-import costlifeStyles from "@/styles/CostaattLife.module.scss";
-import AdmisStyles from "@/styles/Admissions.module.scss"
-import HeaderNoImage from '@/components/PageComponents/HeaderNoImage'
-import Image from 'next/image';
+import React from "react";
+import Head from "next/head";
+import HeadImage from "../../components/PageComponents/HeadImage";
+import SideNavOnlyLayout from "../../components/Layouts/SideNavOnly_NoTopOrDropdown";
+import TopNavOnlyLayout from "../../components/Layouts/TopNavOnly_NoDropdown";
+import standardStyles from "../../styles/main.module.scss";
+import costlifeStyles from "../../styles/CostaattLife.module.scss";
+import AdmisStyles from "../../styles/Admissions.module.scss";
+import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
+import Image from "next/image";
 import telephone from "../../../public/images/admissions/telephone.svg";
 import email from "../../../public/images/admissions/email.svg";
 import counsellor from "../../../public/images/admissions/contact.svg";
 
-
 import Accordion from "@mui/material/Accordion";
-import ProgStyles from '@/styles/Programmes.module.scss'
+import ProgStyles from "../../styles/Programmes.module.scss";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
@@ -591,9 +590,9 @@ const library = () => {
       </SideNavOnlyLayout>
     </>
   );
-}
+};
 
-        library.getLayout = function getLayout(page) {
+library.getLayout = function getLayout(page) {
   return <TopNavOnlyLayout> {page} </TopNavOnlyLayout>;
 };
-        export default library
+export default library;

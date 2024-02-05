@@ -1,23 +1,15 @@
-
-import React , {useState} from "react";
+import React, { useState } from "react";
 import Head from "next/head";
-import standardStyles from "@/styles/main.module.scss";
-import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
+import standardStyles from "../../styles/main.module.scss";
+import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
 import Link from "next/link";
-import { deans,vps,management,heads } from "./leadershipdata";
-import FacultyStaffCard from "@/components/PageComponents/FacultyStaffDepCard";
-import ExecutiveCard from "@/components/PageComponents/ExecutiveCard";
-
+import { deans, vps, management, heads } from "./leadershipdata";
+import FacultyStaffCard from "../../components/PageComponents/FacultyStaffDepCard";
+import ExecutiveCard from "../../components/PageComponents/ExecutiveCard";
 
 import DeptStyles from "../../styles/DepartCard.module.scss";
 
-
-
-
-
- const Executiveleaders = () => {
-
-
+const Executiveleaders = () => {
   return (
     <>
       <Head>
@@ -49,12 +41,9 @@ import DeptStyles from "../../styles/DepartCard.module.scss";
               {/* Naseem Koylass */}
 
               {/* <div className={standardStyles.col1of2}> */}
-                <ExecutiveCard exec={fe} />
+              <ExecutiveCard exec={fe} />
 
-               
-       
               {/* </div> */}
-           
             </div>
           </>
         ))}
@@ -92,6 +81,6 @@ import DeptStyles from "../../styles/DepartCard.module.scss";
       </section>
     </>
   );
-}
+};
 
-export default Executiveleaders
+export default Executiveleaders;

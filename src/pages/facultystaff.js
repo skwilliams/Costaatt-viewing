@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 import Link from "next/link";
 import Head from "next/head";
-import Image from 'next/image';
-import HeadImage from "@/components/PageComponents/HeadImage";
+import Image from "next/image";
+import HeadImage from "../components/PageComponents/HeadImage";
 
-import headerimage from '../../public/images/costaattlife/startclub.jpg'
+import headerimage from "../../public/images/costaattlife/startclub.jpg";
 
-import facultyStyles from "@/styles/main.module.scss";
+import facultyStyles from "../styles/main.module.scss";
 
 const facultystaff = () => {
   return (
@@ -54,8 +54,6 @@ const facultystaff = () => {
       </div>
     </>
   );
-      
-      }
-
+};
 
 export default facultystaff;

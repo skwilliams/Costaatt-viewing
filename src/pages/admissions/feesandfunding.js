@@ -1,13 +1,13 @@
-import React from 'react'
-import Head from 'next/head'
-import AdminStyles from '../../styles/Admissions.module.scss'
+import React from "react";
+import Head from "next/head";
+import AdminStyles from "../../styles/Admissions.module.scss";
 
-import HeadImage from '@/components/PageComponents/HeadImage';
-import headImg from '../../../public/images/admissions/feesandfunding.jpg'
-import SchoolTile from '@/components/HomeComponents/SchoolTile';
-import Link from "next/link"
-import CourseStyles from '../../styles/Course.module.scss'
-import SimpleCard from '../../components/PageComponents/SimpleCard'
+import HeadImage from "../../components/PageComponents/HeadImage";
+import headImg from "../../../public/images/admissions/feesandfunding.jpg";
+import SchoolTile from "../../components/HomeComponents/SchoolTile";
+import Link from "next/link";
+import CourseStyles from "../../styles/Course.module.scss";
+import SimpleCard from "../../components/PageComponents/SimpleCard";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -15,19 +15,7 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 // import paymentplanpdf from "../../../public/lib/paymentplan.pdf"
 
-
-import {
-
-  TILES_INFO,
-
-} from "../../components/HomeComponents/homeLinks"
-
-
-
-
-
-
-
+import { TILES_INFO } from "../../components/HomeComponents/homeLinks";
 
 const feesandfunding = () => {
   return (
@@ -201,9 +189,12 @@ const feesandfunding = () => {
           </AccordionSummary>
 
           <AccordionDetails>
-           <p className={AdminStyles.accordiantext}>  Payment Plan Details Payment plans are available, please contact the
-            Office of the Registrar for further details:
-            registrar@costaatt.edu.tt </p>
+            <p className={AdminStyles.accordiantext}>
+              {" "}
+              Payment Plan Details Payment plans are available, please contact
+              the Office of the Registrar for further details:
+              registrar@costaatt.edu.tt{" "}
+            </p>
             <div className={AdminStyles.entryreq}>
               <ul className={AdminStyles.list}>
                 <li className={AdminStyles.items}>
@@ -279,10 +270,6 @@ const feesandfunding = () => {
       </section>
     </>
   );
-}
+};
 
-
-
-
-
-export default feesandfunding
+export default feesandfunding;

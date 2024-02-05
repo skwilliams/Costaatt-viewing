@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
 import Head from "next/head";
-import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
+import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
 import Link from "next/link";
-import standardStyles from "@/styles/main.module.scss";
-
+import standardStyles from "../../styles/main.module.scss";
 
 const auditNonmatapplicant = () => {
   return (
@@ -25,6 +24,6 @@ const auditNonmatapplicant = () => {
       </section>
     </>
   );
-}
+};
 
-export default auditNonmatapplicant
+export default auditNonmatapplicant;

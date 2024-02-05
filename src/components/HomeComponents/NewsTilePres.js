@@ -1,5 +1,5 @@
-import Home from "@/pages";
-import HomeStyles from "../../styles/News.module.scss";
+import Home from "../../pages";
+import HomeStyles from    "../../styles/News.module.scss";
 import Image from "next/image";
 
 const NewsTilePres = ({ title, img, date, desc, time, topic, location }) => {

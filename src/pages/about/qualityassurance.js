@@ -4,13 +4,13 @@ import Link from "next/link";
 import Head from "next/head";
 import Layout from "../../components/Layouts/TopNavOnly_NoDropdown";
 
-import standardStyles from "@/styles/main.module.scss";
-import AboutStyles from "@/styles/About.module.scss";
-import GridStyles from "@/styles/Grid.module.scss";
+import standardStyles from "../../styles/main.module.scss";
+import AboutStyles from "../../styles/About.module.scss";
+import GridStyles from "../../styles/Grid.module.scss";
 import accreditImage from "../../../public/images/about/Accreditation.jpg";
 import partner from "../../../public/images/about/partner.png";
 
-import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
+import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
 import Image from "next/image";
 
 const qualityassurance = () => {
@@ -20,7 +20,7 @@ const qualityassurance = () => {
       <section className={AboutStyles.section_accreditation}>
         <header>
           <span className={standardStyles.heading_primary__main}>
-            QUALITY ASSURANCE 
+            QUALITY ASSURANCE
           </span>
           <span className={standardStyles.heading_primary__sub}>
             Commitment to the External Quality Evaluation Process

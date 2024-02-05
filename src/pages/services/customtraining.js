@@ -1,17 +1,12 @@
-import React from 'react'
+import React from "react";
 import Link from "next/link";
 import Head from "next/head";
-import HeadImage from "@/components/PageComponents/HeadImage";
-import  customHeader from "../../../public/images/headers/customizedTrainingHeader.jpg";
-import standardStyles from "@/styles/main.module.scss";
-
+import HeadImage from "../../components/PageComponents/HeadImage";
+import customHeader from "../../../public/images/headers/customizedTrainingHeader.jpg";
+import standardStyles from "../../styles/main.module.scss";
 
 const customtraining = () => {
   return (
-
-
-
-    
     <>
       <header className={standardStyles.rentHeader}>
         <Head>
@@ -19,24 +14,18 @@ const customtraining = () => {
         </Head>{" "}
         <HeadImage mainimage={customHeader} />
         <div
-        className={`${standardStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}
+          className={`${standardStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}
         >
           <Link href="/"> COSTAATT/ </Link>
           <Link href="/services">Services/</Link>
           <Link href="/services/customtrainig">Customized Training</Link>
         </div>
       </header>
-      <section id ='intro'>
-    We can train you in anything...
-      </section>
-      <section id="offerings">
-        Short Courses 
-      </section>
-      <section id="our customers">
-        
-      </section>
+      <section id="intro">We can train you in anything...</section>
+      <section id="offerings">Short Courses</section>
+      <section id="our customers"></section>
     </>
- )
-}
+  );
+};
 
-export default customtraining
+export default customtraining;

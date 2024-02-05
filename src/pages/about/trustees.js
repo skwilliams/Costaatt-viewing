@@ -1,18 +1,15 @@
 import React from "react";
 import Layout from "../../components/Layouts/TopNavOnly_NoDropdown";
-import SideNavOnlyLayout from "@/components/Layouts/SideNavOnly_NoTopOrDropdown";
-import TopNavOnlyLayout from "@/components/Layouts/TopNavOnly_NoDropdown";
+import SideNavOnlyLayout from "../../components/Layouts/SideNavOnly_NoTopOrDropdown";
+import TopNavOnlyLayout from "../../components/Layouts/TopNavOnly_NoDropdown";
 import Head from "next/head";
-import standardStyles from "@/styles/main.module.scss";
-import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
+import standardStyles from "../../styles/main.module.scss";
+import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
 import Link from "next/link";
 import DeptStyles from "../../styles/DepartCard.module.scss";
 
-
-import FacultyStaffCard from "@/components/PageComponents/FacultyStaffDepCard";
-import { officeofpresident } from "./leadershipdata"
-
-
+import FacultyStaffCard from "../../components/PageComponents/FacultyStaffDepCard";
+import { officeofpresident } from "./leadershipdata";
 
 const trustees = () => {
   return (
@@ -51,31 +48,24 @@ const trustees = () => {
           <h2 className={standardStyles.newsHeading}>
             <span> Responsiblities </span>
           </h2>
-        
+
           <div className={standardStyles.bullet}>
             <ul>
               <li>
                 {" "}
-                Approves The assumptions, principles, and
-                values which guide the College;</li>
-            
-              <li>
-                Approves The vision, mission, and
-                strategic foci of the College;
-              </li>
-              <li>
-                Approves  Broad policy affecting the entire
+                Approves The assumptions, principles, and values which guide the
                 College;
               </li>
+
               <li>
-                Approves  The annual operating and capital budgets
+                Approves The vision, mission, and strategic foci of the College;
               </li>
+              <li>Approves Broad policy affecting the entire College;</li>
+              <li>Approves The annual operating and capital budgets</li>
 
+              <li>Assures The financial viability of the College</li>
 
-              <li>
-                Assures The financial viability of the College</li>
-
-              <li>Assures The fiduciary conduct of the College.</li> 
+              <li>Assures The fiduciary conduct of the College.</li>
 
               <li>
                 {" "}
@@ -125,7 +115,10 @@ const trustees = () => {
             <span> Trustees </span>
           </h2>
           <p className={standardStyles.paragraph}>
-            The RIT Board of Trustees consists of 6 number active trustees (including the President of the College and representatives of the COSTAATT ...... Currently, the total number of active and emeriti trustees is ?.
+            The RIT Board of Trustees consists of 6 number active trustees
+            (including the President of the College and representatives of the
+            COSTAATT ...... Currently, the total number of active and emeriti
+            trustees is ?.
           </p>
           <div className={DeptStyles.threeColGridCon}>
             <FacultyStaffCard staff={officeofpresident} />
@@ -139,17 +132,4 @@ trustees.getLayout = function getLayout(page) {
   return <TopNavOnlyLayout> {page} </TopNavOnlyLayout>;
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-export default trustees
+export default trustees;

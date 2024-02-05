@@ -1,40 +1,36 @@
-import SideNavOnlyLayout from "@/components/Layouts/SideNavOnly_NoTopOrDropdown";
-import TopNavOnlyLayout from "@/components/Layouts/TopNavOnly_NoDropdown";
+import SideNavOnlyLayout from "../../components/Layouts/SideNavOnly_NoTopOrDropdown";
+import TopNavOnlyLayout from "../../components/Layouts/TopNavOnly_NoDropdown";
 import React from "react";
 import Head from "next/head";
 
-
-import standardStyles from "@/styles/main.module.scss";
-import AdmisStyles from "@/styles/Admissions.module.scss";
+import standardStyles from "../../styles/main.module.scss";
+import AdmisStyles from "../../styles/Admissions.module.scss";
 import telephone from "../../../public/images/admissions/telephone.svg";
 import email from "../../../public/images/admissions/email.svg";
 import counsellor from "../../../public/images/admissions/contact.svg";
 import Image from "next/image";
 import Link from "next/link";
 
-import HeadImage from "@/components/PageComponents/HeadImage";
+import HeadImage from "../../components/PageComponents/HeadImage";
 import envelope from "../../../public/images/admissions/envelope.svg";
 
 import headerimg from "../../../public/images/admissions/applyNow header.jpg";
 
-
-import SimpleCard from "@/components/PageComponents/SimpleCard";
+import SimpleCard from "../../components/PageComponents/SimpleCard";
 import tick from "../../../public/images/admissions/tick.svg";
-import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
+import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
 
-
-
-import { Accordion, Divider} from "@mui/material/";
+import { Accordion, Divider } from "@mui/material/";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 
 import increase from "../../../public/images/admissions/increase.png";
 import ProgStyles from "../../styles/Programmes.module.scss";
-import admissionStyles from "@/styles/Admissions.module.scss";
+import admissionStyles from "../../styles/Admissions.module.scss";
 import AddCircleTwoToneIcon from "@mui/icons-material/AddCircleOutlineTwoTone";
 import imagedummy from "../../../public/images/schools/affiliationsMou.png";
-// import ContactSection from "@/components/PageComponents/ContactSection";
+// import ContactSection from "../../components/PageComponents/ContactSection";
 
 const howtoapply = () => {
   const CustomHome = () => {
@@ -259,11 +255,7 @@ const howtoapply = () => {
         </section>
 
         <section id="timeline" className={standardStyles.sectionWithSideNav}>
-       
-
-          <h2 className= {standardStyles.newsHeading}  
-          >
-
+          <h2 className={standardStyles.newsHeading}>
             <span> WHEN </span> to Apply{" "}
           </h2>
           <table className={standardStyles.simple}>
@@ -308,8 +300,7 @@ const howtoapply = () => {
           </p>
         </section>
         <section id="require" className={standardStyles.sectionWithSideNav}>
-          <h2 className={standardStyles
-            .newsHeading}>
+          <h2 className={standardStyles.newsHeading}>
             Application <span> REQUIREMENTS </span>
           </h2>{" "}
           <div className={standardStyles.bullets}>
@@ -518,7 +509,7 @@ const howtoapply = () => {
           <div className={standardStyles.marginTopBig}></div>
 
           <h2 className={standardStyles.newsHeading}>
-            GENERAL Supporting <span>Documents{" "} </span>
+            GENERAL Supporting <span>Documents </span>
           </h2>
           <table className={standardStyles.simple}>
             <thead>
@@ -681,11 +672,14 @@ const howtoapply = () => {
         <section id="checklist" className={standardStyles.sectionWithSideNav}>
           {" "}
           <h2 className={standardStyles.newsHeading}>
-            Applicant <span> CHECKLIST{" "}</span>
+            Applicant <span> CHECKLIST </span>
           </h2>
           <div className={AdmisStyles.checklist}>
-            <Image className={AdmisStyles.imgtick} src={tick}
-            alt="tick picture " />
+            <Image
+              className={AdmisStyles.imgtick}
+              src={tick}
+              alt="tick picture "
+            />
             <span className={standardStyles.headingTertiary}>
               {" "}
               Apply Online{" "}
@@ -713,8 +707,11 @@ const howtoapply = () => {
           </div>
           <Divider />
           <div className={AdmisStyles.checklist}>
-            <Image className={AdmisStyles.imgtick} src={tick}
-            alt="tick picture" />
+            <Image
+              className={AdmisStyles.imgtick}
+              src={tick}
+              alt="tick picture"
+            />
             <span className={standardStyles.headingTertiary}>
               Submit supporting documents
             </span>{" "}
@@ -742,7 +739,11 @@ const howtoapply = () => {
           </div>
           <Divider />
           <div className={AdmisStyles.checklist}>
-            <Image className={AdmisStyles.imgtick} src={tick} alt="picture of a tick mark" />
+            <Image
+              className={AdmisStyles.imgtick}
+              src={tick}
+              alt="picture of a tick mark"
+            />
             <span className={standardStyles.headingTertiary}>
               after you have applied
             </span>
@@ -814,7 +815,11 @@ const howtoapply = () => {
           </div>
           <Divider />
           <div className={AdmisStyles.checklist}>
-            <Image className={AdmisStyles.imgtick} src={tick} alt="image of a tick mark"/>
+            <Image
+              className={AdmisStyles.imgtick}
+              src={tick}
+              alt="image of a tick mark"
+            />
             <span className={standardStyles.headingTertiary}>Offers</span>
 
             {/* To Move arrow to the left */}
@@ -953,12 +958,15 @@ const howtoapply = () => {
         <section id="accepted" className={standardStyles.sectionWithSideNav}>
           <h2 className={standardStyles.newsHeading}>
             {" "}
-           <span>ACCEPTED </span>  Students{" "}
+            <span>ACCEPTED </span> Students{" "}
           </h2>
           <div className={standardStyles.row}>
             <div className={standardStyles.col1of3}>
-          
-              <Image src={envelope} width="300" alt ="image of an envelope"></Image>
+              <Image
+                src={envelope}
+                width="300"
+                alt="image of an envelope"
+              ></Image>
             </div>
             <div className={standardStyles.col2of3}>
               <p className={standardStyles.paragraph}>
@@ -987,7 +995,10 @@ const howtoapply = () => {
         </section>
         <section id="contact" className={standardStyles.sectionWithSideNav}>
           {" "}
-          <h2 className={standardStyles.newsHeading}> <span> CONTACT</span> Admissions</h2>
+          <h2 className={standardStyles.newsHeading}>
+            {" "}
+            <span> CONTACT</span> Admissions
+          </h2>
           <div className={standardStyles.row}>
             <div className={standardStyles.col1of3}>
               <Image

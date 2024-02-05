@@ -1,11 +1,11 @@
-import NewsTile from "@/components/HomeComponents/NewsTile";
+import NewsTile from "../../components/HomeComponents/NewsTile";
 import NewsStyle from "../../styles/News.module.scss";
 
 import Link from "next/link";
 import React from "react";
 import NewsSlider from "../../components/Slider";
-import { NEWS } from "@/components/HomeComponents/homeLinks";
-import Button from "@/components/Button";
+import { NEWS } from "../../components/HomeComponents/homeLinks";
+import Button from "../../components/Button";
 const News = () => {
   return (
     <div className={NewsStyle.mainPageContainer}>

@@ -1,15 +1,11 @@
-
-import React
- from "react";
- import Link from "next/link";
- import Image from "next/image";
- import errorStyles from "@/styles/Error404.module.scss"
- import pagepeel from "../../public/images/errorPage/Page_Peel.png"
- import hole from "../../public/images/errorPage/Hole.png";
- import scaredman from "../../public/images/errorPage/Scared_Man.png";
- import Layout1 from "../components/Layouts/TopNavOnly_NoDropdown";
-
-
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import errorStyles from "../styles/Error404.module.scss";
+import pagepeel from "../../public/images/errorPage/Page_Peel.png";
+import hole from "../../public/images/errorPage/Hole.png";
+import scaredman from "../../public/images/errorPage/Scared_Man.png";
+import Layout1 from "../components/Layouts/TopNavOnly_NoDropdown";
 
 export default function NotFound() {
   return (
@@ -61,7 +57,6 @@ export default function NotFound() {
       </section>
     </>
   );
-  
 }
 NotFound.getLayout = function getLayout(page) {
   return <Layout1>{page}</Layout1>;

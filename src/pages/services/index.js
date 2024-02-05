@@ -1,8 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import Head from "next/head";
-import HeadImage from "@/components/PageComponents/HeadImage";
-import standardStyles from "@/styles/main.module.scss";
+import HeadImage from "../../components/PageComponents/HeadImage";
+import standardStyles from "../../styles/main.module.scss";
 import rentalSpacesHeader from "../../../public/images/headers/rentalSpaceHeader.jpg";
 
 // Icons for standard features

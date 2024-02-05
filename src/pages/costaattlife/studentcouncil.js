@@ -1,25 +1,20 @@
 import React from "react";
 import Link from "next/link";
 import Head from "next/head";
-import standardStyles from "@/styles/main.module.scss";
-import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
+import standardStyles from "../../styles/main.module.scss";
+import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
 import { Button, Divider } from "@mui/material";
 import Image from "next/image";
 
 import studentcouncil2 from "../../../public/images/costaattlife/studentcouncil1.jpg";
 import studentcouncil1 from "../../../public/images/costaattlife/studentcouncil2.jpg";
 
-
-
-import EventCardOrig from "@/components/PageComponents/EventCardOrig";
-import {stucouncildata} from "../costaattlife/studcouninfo";
-import StudentCouncilRep from "@/components/PageComponents/StudentCouncilRep";
-import ContactStudentLife from "@/components/PageComponents/ContactStudentLife";
+import EventCardOrig from "../../components/PageComponents/EventCardOrig";
+import { stucouncildata } from "../costaattlife/studcouninfo";
+import StudentCouncilRep from "../../components/PageComponents/StudentCouncilRep";
+import ContactStudentLife from "../../components/PageComponents/ContactStudentLife";
 import awaitingbanner from "../../../public/images/about/qualitycontrol1.jpg";
-import HeadImage from "@/components/PageComponents/HeadImage";
-
-
-
+import HeadImage from "../../components/PageComponents/HeadImage";
 
 const studentcouncil = () => {
   return (
@@ -35,11 +30,8 @@ const studentcouncil = () => {
         <Link href="/costaattlife"></Link>
         <Link href="/costaattlife/studentcouncil">Studnet Council</Link>
       </p>
-      <h2 className={standardStyles.heading_primary__main}>
-        Student Council{" "}
-      </h2>
+      <h2 className={standardStyles.heading_primary__main}>Student Council </h2>
 
-     
       <section
         id="introcouncil"
         className={`${standardStyles.sectionNoSidenav} ${standardStyles.marginBottomBig}`}

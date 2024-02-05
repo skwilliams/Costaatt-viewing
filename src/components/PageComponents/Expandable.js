@@ -1,5 +1,5 @@
 import React, { startTransition, useState } from 'react'
-import standardStyles from "@/styles/main.module.scss"
+import standardStyles from "../../styles/main.module.scss"
 
 
 const Expandable = ({children,maxChars=150}) => {

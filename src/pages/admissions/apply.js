@@ -1,9 +1,8 @@
 import React from "react";
 import admissionStyles from "../../styles/Admissions.module.scss";
 import Image from "next/image";
-import ButtonLink from "@/components/HomeComponents/ButtonLink";
+import ButtonLink from "../../components/HomeComponents/ButtonLink";
 import ProgStyles from "../../styles/Programmes.module.scss";
-
 
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -25,7 +24,7 @@ import time from "../../../public/images/time.svg";
 import mode from "../../../public/images/mode.svg";
 import location from "../../../public/images/location.svg";
 import calendar from "../../../public/images/calendar.svg";
-import ContactAdmissions from "@/components/PageComponents/ContactAdmissions";
+import ContactAdmissions from "../../components/PageComponents/ContactAdmissions";
 
 const apply = () => {
   return (

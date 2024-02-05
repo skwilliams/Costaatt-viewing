@@ -1,57 +1,45 @@
 import React from "react";
 import Link from "next/link";
 import Head from "next/head";
-import standardStyles from "@/styles/main.module.scss";
-import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
+import standardStyles from "../../styles/main.module.scss";
+import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
 import { Button, Divider } from "@mui/material";
-import HeadImage from "@/components/PageComponents/HeadImage";
+import HeadImage from "../../components/PageComponents/HeadImage";
 import awaitingbanner from "../../../public/images/about/qualitycontrol1.jpg";
 
 import awaitingimage from "../../../public/images/about/qualitycontrol1.jpg";
 
-
-import Image ,{StaticImageData} from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { FiBookOpen } from "react-icons/fi";
 
+import EventCardOrig from "../../components/PageComponents/EventCardOrig";
 
+import ContactStudentLife from "../../components/PageComponents/ContactStudentLife";
 
+import cricket from "../../../public/images/costaattlife/cricket.jpg";
 
-import EventCardOrig from "@/components/PageComponents/EventCardOrig";
-
-import ContactStudentLife from "@/components/PageComponents/ContactStudentLife";
-
-import  cricket  from "../../../public/images/costaattlife/cricket.jpg";
-
-import  football  from "../../../public/images/costaattlife/football.jpg";
-import  netball  from "../../../public/images/costaattlife/netball.jpg";
-
-
-
+import football from "../../../public/images/costaattlife/football.jpg";
+import netball from "../../../public/images/costaattlife/netball.jpg";
 
 import { useState } from "react";
 import { useEffect } from "react";
 
-import StaffCard from "@/components/PageComponents/StaffCard";
+import StaffCard from "../../components/PageComponents/StaffCard";
 
 const Sports = () => {
-
-
-   const [window, setHasWindow] = useState(false);
- useEffect(() => {
-   if (typeof window !== "undefined") {
-     setHasWindow(true);
-   }
- }, [window]);
+  const [window, setHasWindow] = useState(false);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setHasWindow(true);
+    }
+  }, [window]);
 
   return (
     <>
       <Head>
         <title>Sports at COSTAATT</title>
       </Head>
-      <HeadImage
-        mainimage={awaitingbanner}
-        imagetext=""
-      />
+      <HeadImage mainimage={awaitingbanner} imagetext="" />
       <p
         className={`${standardStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}
       >
@@ -77,9 +65,7 @@ const Sports = () => {
       <section
         id="joinus"
         className={`${standardStyles.sectionstartclub} `}
-      >
-        
-      </section>
+      ></section>
 
       <section
         id="sportsteams"
@@ -149,8 +135,6 @@ const Sports = () => {
           </div>
         </div>{" "}
       </section>
-
- 
 
       <section id="events" className={standardStyles.sectionNoSidenav}>
         <h2 className={standardStyles.headingPrimarysub}>
@@ -234,4 +218,4 @@ const Sports = () => {
   );
 };
 
-export default Sports
+export default Sports;

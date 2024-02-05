@@ -1,11 +1,9 @@
-import React from 'react'
+import React from "react";
 
 import Head from "next/head";
-import standardStyles from "@/styles/main.module.scss";
-import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
+import standardStyles from "../../styles/main.module.scss";
+import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
 import Link from "next/link";
-
-
 
 const Administration = () => {
   return (
@@ -23,6 +21,6 @@ const Administration = () => {
       </p>
     </>
   );
-}
+};
 
-export default Administration
+export default Administration;

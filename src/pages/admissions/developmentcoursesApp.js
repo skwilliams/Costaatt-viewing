@@ -1,13 +1,13 @@
-import React from 'react'
-import Head from'next/head';
-import HeadImage from '@/components/PageComponents/HeadImage';
+import React from "react";
+import Head from "next/head";
+import HeadImage from "../../components/PageComponents/HeadImage";
 import Link from "next/link";
-import Image from 'next/image';
-import headImg from "../../../public/images/about/qualitycontrol1.jpg"
-import standardStyles from "@/styles/main.module.scss"
-import admissionsStyles from "@/styles/Admissions.module.scss"
-import SideNavOnlyLayout from "@/components/Layouts/SideNavOnly_NoTopOrDropdown";
-import TopNavOnlyLayout from '@/components/Layouts/TopNavOnly_NoDropdown';
+import Image from "next/image";
+import headImg from "../../../public/images/about/qualitycontrol1.jpg";
+import standardStyles from "../../styles/main.module.scss";
+import admissionsStyles from "../../styles/Admissions.module.scss";
+import SideNavOnlyLayout from "../../components/Layouts/SideNavOnly_NoTopOrDropdown";
+import TopNavOnlyLayout from "../../components/Layouts/TopNavOnly_NoDropdown";
 
 const developmentcoursesApp = () => {
   return (
@@ -40,11 +40,10 @@ const developmentcoursesApp = () => {
         </section>
       </SideNavOnlyLayout>
     </>
-  ); 
-}
+  );
+};
 developmentcoursesApp.getLayout = function getLayout(page) {
   return <TopNavOnlyLayout> {page} </TopNavOnlyLayout>;
 };
-
 
 export default developmentcoursesApp;

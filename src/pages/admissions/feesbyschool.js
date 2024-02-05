@@ -1,14 +1,14 @@
-import React from 'react';
-import admissionStyles from '../../styles/Admissions.module.scss';
-import TopHeader from '@/components/TopHeader';
-import CardStyles from '../../styles/ProgCard.module.scss'
-import ButtonLink from '@/components/HomeComponents/ButtonLink';
-// import Button from "@/components/Button";
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import React from "react";
+import admissionStyles from "../../styles/Admissions.module.scss";
+import TopHeader from "../../components/TopHeader";
+import CardStyles from "../../styles/ProgCard.module.scss";
+import ButtonLink from "../../components/HomeComponents/ButtonLink";
+// import Button from "../../components/Button";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import {
   institutionFees,
@@ -28,7 +28,7 @@ import {
   continuingEduc,
   deptOFJour,
   deptOfComm,
-} from './admissionsData';
+} from "./admissionsData";
 import {
   TableContainer,
   Table,
@@ -37,10 +37,10 @@ import {
   TableRow,
   TableCell,
   Paper,
-} from '@mui/material';
-import HeaderNoImage from '@/components/PageComponents/HeaderNoImage';
-import FeesAndFunding from '@/components/FeesAndFunding';
-import { AdminPanelSettings } from '@mui/icons-material';
+} from "@mui/material";
+import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
+import FeesAndFunding from "../../components/FeesAndFunding";
+import { AdminPanelSettings } from "@mui/icons-material";
 const feesandfunding = () => {
   return (
     <>

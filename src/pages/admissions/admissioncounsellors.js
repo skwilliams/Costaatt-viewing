@@ -1,19 +1,14 @@
-import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
+import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
-import AdmisStyles from "@/styles/Admissions.module.scss";
-
+import AdmisStyles from "../../styles/Admissions.module.scss";
 
 import awaitingFacultyStaff from "../../../public/images/schools/awaitingFacultyStaff.png";
-import SideNavOnlyLayout from "@/components/Layouts/SideNavOnly_NoTopOrDropdown";
-import TopNavOnlyLayout from "@/components/Layouts/TopNavOnly_NoDropdown";
+import SideNavOnlyLayout from "../../components/Layouts/SideNavOnly_NoTopOrDropdown";
+import TopNavOnlyLayout from "../../components/Layouts/TopNavOnly_NoDropdown";
 
-
-
-
-
-import ContactAdmissions from "@/components/PageComponents/ContactAdmissions";
+import ContactAdmissions from "../../components/PageComponents/ContactAdmissions";
 
 const admissioncounsellors = () => {
   return (

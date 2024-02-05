@@ -1,12 +1,12 @@
 import React from "react";
-import standardStyles from "@/styles/main.module.scss";
+import standardStyles from "../../styles/main.module.scss";
 import admissionStyles from "../../styles/Admissions.module.scss";
 import Image from "next/image";
 import ProgStyles from "../../styles/Programmes.module.scss";
-import SideNavOnlyLayout from "@/components/Layouts/SideNavOnly_NoTopOrDropdown";
-import TopNavOnlyLayout from "@/components/Layouts/TopNavOnly_NoDropdown";
+import SideNavOnlyLayout from "../../components/Layouts/SideNavOnly_NoTopOrDropdown";
+import TopNavOnlyLayout from "../../components/Layouts/TopNavOnly_NoDropdown";
 
-import CourseStyle from "@/styles/Course.module.scss";
+import CourseStyle from "../../styles/Course.module.scss";
 import Link from "next/link";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -26,8 +26,8 @@ import {
   Divider,
 } from "@mui/material";
 import { Padding } from "@mui/icons-material";
-import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
-import ContactAdmissions from "@/components/PageComponents/ContactAdmissions";
+import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
+import ContactAdmissions from "../../components/PageComponents/ContactAdmissions";
 const requirements = () => {
   return (
     <>

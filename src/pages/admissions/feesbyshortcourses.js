@@ -1,26 +1,26 @@
-import React from 'react';
-import admissionStyles from '../../styles/Admissions.module.scss';
+import React from "react";
+import admissionStyles from "../../styles/Admissions.module.scss";
 
-// import Button from "@/components/Button";
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+// import Button from "../../components/Button";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import {
- communication,
+  communication,
   independent,
   advertising,
   film,
   it,
   journalism,
-} from "../../../src/pages/programmes/shortcoursedata" 
+} from "../../../src/pages/programmes/shortcoursedata";
 
-"../admissions/shortcoursesdata";
+("../admissions/shortcoursesdata");
 
-import HeaderNoImage from '@/components/PageComponents/HeaderNoImage';
-import FeesShortCourses from '@/components/PageWithSideNavComponents/FeesShortCourses';
+import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
+import FeesShortCourses from "../../components/PageWithSideNavComponents/FeesShortCourses";
 const feesandfunding = () => {
   return (
     <>

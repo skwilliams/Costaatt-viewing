@@ -1,19 +1,16 @@
-import React from 'react'
+import React from "react";
 import Layout from "../../components/Layouts/TopNavOnly_NoDropdown";
-import Head from 'next/head'
-import standardStyles from '@/styles/main.module.scss'
-import AboutStyles from "@/styles/About.module.scss"
-import HeaderNoImage from '@/components/PageComponents/HeaderNoImage';
-import HeadImage from "@/components/PageComponents/HeadImage";
+import Head from "next/head";
+import standardStyles from "../../styles/main.module.scss";
+import AboutStyles from "../../styles/About.module.scss";
+import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
+import HeadImage from "../../components/PageComponents/HeadImage";
 
+import headimg from "../../../public/images/about/qualitycontrol1.jpg";
 
-import headimg from "../../../public/images/about/qualitycontrol1.jpg"
-
-import Link from 'next/link'
+import Link from "next/link";
 import { FiBookOpen } from "react-icons/fi";
 import { IconContext } from "react-icons";
-
-
 
 const leadership = () => {
   return (
@@ -22,7 +19,7 @@ const leadership = () => {
         <title>Leadership |{""} COSTAATT</title>
       </Head>
       <section className={AboutStyles.sectionPageHeader}>
-        <header >
+        <header>
           <HeadImage mainimage={headimg} caption="College Leadership" />
           <p
             className={`${standardStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}
@@ -114,9 +111,9 @@ const leadership = () => {
       </section>
     </>
   );
-}
+};
 
 leadership.getLayout = function getLayout(page) {
   return <Layout>{page}</Layout>;
 };
-export default leadership
+export default leadership;

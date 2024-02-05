@@ -1,14 +1,8 @@
-import React from 'react';
-import admissionStyles from '../../styles/Admissions.module.scss';
-import TopNavOnly_NoDropdown from '../../components/Layouts/TopNavOnly_NoDropdown'
+import React from "react";
+import admissionStyles from "../../styles/Admissions.module.scss";
+import TopNavOnly_NoDropdown from "../../components/Layouts/TopNavOnly_NoDropdown";
 
-
-
-import {
-  institutionFees,
-  
-  
-} from './admissionsData';
+import { institutionFees } from "./admissionsData";
 import {
   TableContainer,
   Table,
@@ -17,8 +11,8 @@ import {
   TableRow,
   TableCell,
   Paper,
-} from '@mui/material';
-import HeaderNoImage from '@/components/PageComponents/HeaderNoImage';
+} from "@mui/material";
+import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
 
 const institutionalfees = () => {
   return (
@@ -109,7 +103,6 @@ const institutionalfees = () => {
             </p>
           </div>
         </section>
-        
       </div>
     </>
   );

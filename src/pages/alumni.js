@@ -1,12 +1,11 @@
-import React from 'react';
-import Head from 'next/head';
-import HeadImage from '@/components/PageComponents/HeadImage';
-import alumniimage from '../../public/images/headers/alumniHeader.jpg';
-import HomeStyles from '../styles/Home.module.scss'
-import standardStyles from "@/styles/main.module.css"
+import React from "react";
+import Head from "next/head";
+import HeadImage from 
 
-
-
+"../components/PageComponents/HeadImage";
+import alumniimage from "../../public/images/headers/alumniHeader.jpg";
+import HomeStyles from "../styles/Home.module.scss";
+import standardStyles from "../styles/main.module.css";
 
 const alumni = () => {
   return (
@@ -24,7 +23,6 @@ const alumni = () => {
         </div>
       </section>
 
-     
       <div>alumni</div>
     </>
   );

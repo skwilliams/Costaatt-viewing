@@ -1,15 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import Head from "next/head";
-import standardStyles from "@/styles/main.module.scss";
-import AboutStyles from "@/styles/About.module.scss";
-import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
+import standardStyles from "../../styles/main.module.scss";
+import AboutStyles from "../../styles/About.module.scss";
+import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
 // import { useState } from "react";
 // import { useEffect } from "react";
 
-
 const history = () => {
-
   return (
     <>
       <Head>
@@ -230,8 +228,6 @@ const history = () => {
             Divisions )
           </p>
         </div>
-
-    
       </section>
 
       <secton id="achieve" className={standardStyles.sectiontimeline}>
@@ -368,8 +364,6 @@ const history = () => {
             <span>Student Body </span>{" "}
           </p>
 
-
-          
           <table>
             <tbody>
               <tr>

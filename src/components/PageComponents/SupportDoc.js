@@ -1,5 +1,5 @@
-import React from 'react';
-import CourseStyle from '@/styles/Course.module.scss';
+import React from "react";
+import CourseStyle from "../../styles/Course.module.scss";
 
 const SupportDoc = ({ docs }) => {
   return (

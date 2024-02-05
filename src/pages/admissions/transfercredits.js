@@ -1,27 +1,32 @@
-import React from 'react'
-import HeadImage from '@/components/PageComponents/HeadImage'
-import Head from 'next/head'
-import headImg from "../../../public/images/admissions/transferExemption header.jpg"
-import ProgStyles from "../../styles/Programmes.module.scss"
+import React from "react";
+import HeadImage from "../../components/PageComponents/HeadImage";
+import Head from "next/head";
+import headImg from "../../../public/images/admissions/transferExemption header.jpg";
+import ProgStyles from "../../styles/Programmes.module.scss";
 
-import SideNavOnlyLayout from "@/components/Layouts/SideNavOnly_NoTopOrDropdown";
-import TopNavOnlyLayout from "@/components/Layouts/TopNavOnly_NoDropdown";
+import SideNavOnlyLayout from "../../components/Layouts/SideNavOnly_NoTopOrDropdown";
+import TopNavOnlyLayout from "../../components/Layouts/TopNavOnly_NoDropdown";
 import AdminStyles from "../../styles/Admissions.module.scss";
-import {Accordion, Divider} from "@mui/material/";
+import { Accordion, Divider } from "@mui/material/";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-import DegreeCourses from '@/components/PageComponents/DegreeCourses'
-import SimpleStep from '@/components/PageComponents/SimpleStep'
+import DegreeCourses from "../../components/PageComponents/DegreeCourses";
+import SimpleStep from "../../components/PageComponents/SimpleStep";
 
 import {
-
-  gce_Economics,gce_Geography,gce_Biology,gce_Accounting,
-  gce_ICT,gce_MOB,gce_Physics,gce_Chemistry,
+  gce_Economics,
+  gce_Geography,
+  gce_Biology,
+  gce_Accounting,
+  gce_ICT,
+  gce_MOB,
+  gce_Physics,
+  gce_Chemistry,
   cape_Accounting_Unit1,
-cape_Economics_Unit1,
+  cape_Economics_Unit1,
   cape_Accounting_Unit2,
   cape_AppliedMath_Unit1,
   cape_AppliedMath_Unit2,
@@ -34,19 +39,24 @@ cape_Economics_Unit1,
   cape_puremath_Unit2,
   cape_spanish_Unit1_2,
   cape_spanish_Unit2,
-  cape_socio_Unit2,cape_EntrepUnit1_2,cape_Economics_Unit2,
+  cape_socio_Unit2,
+  cape_EntrepUnit1_2,
+  cape_Economics_Unit2,
   cape_spanish_Unit1,
-  cape_puremath_Unit1,cape_law_Unit1,
-  cape_phy_Unit2,cape_mob_1,ca,pe_law_Unit1or2,
-  cape_phy_Unit1,cape_ITUnit2,
-  cape_ITUnit1,cape_HistoryUnit1,cape_Geography1_2,
-
+  cape_puremath_Unit1,
+  cape_law_Unit1,
+  cape_phy_Unit2,
+  cape_mob_1,
+  ca,
+  pe_law_Unit1or2,
+  cape_phy_Unit1,
+  cape_ITUnit2,
+  cape_ITUnit1,
+  cape_HistoryUnit1,
+  cape_Geography1_2,
   cape_lit_Unit1_2,
   cape_performArts_drama_Unit2,
-
 } from "./exemptionCoursesData";
-
-
 
 const transfercredits = () => {
   return (
@@ -805,12 +815,10 @@ const transfercredits = () => {
 
       <section id="howtoapply" className={AdminStyles.sectionHowTo}>
         <p className={ProgStyles.headingprimary}>How to apply for Exemptions</p>
-        <SimpleStep/>
+        <SimpleStep />
       </section>
     </>
   );
-}
+};
 
-
-
-export default transfercredits
+export default transfercredits;

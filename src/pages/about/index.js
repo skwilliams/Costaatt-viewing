@@ -1,14 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import Head from "next/head";
-import standardStyles from "@/styles/main.module.scss";
+import standardStyles from "../../styles/main.module.scss";
 
-import DeanStyles from "@/styles/Dean.module.scss";
-import AboutStyles from "@/styles/About.module.scss";
+import DeanStyles from "../../styles/Dean.module.scss";
+import AboutStyles from "../../styles/About.module.scss";
 
-
-import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
-
+import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
 
 import Image from "next/image";
 
@@ -20,7 +18,7 @@ import home6 from "../../../public/images/about/home6.png";
 import { useState } from "react";
 import { useEffect } from "react";
 
-import president from "../../../public/images/about/president.jpg"
+import president from "../../../public/images/about/president.jpg";
 
 const index = () => {
   // const [ setHasWindow] = useState(false);

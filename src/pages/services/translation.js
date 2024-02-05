@@ -1,16 +1,14 @@
-import React from 'react'
+import React from "react";
 
- import HeadImage from '@/components/PageComponents/HeadImage';
- import translationHeader from '../../../public/images/headers/translationHeader.jpg'
-import standardStyles from '@/styles/main.module.scss'
+import HeadImage from "../../components/PageComponents/HeadImage";
+import translationHeader from "../../../public/images/headers/translationHeader.jpg";
+import standardStyles from "../../styles/main.module.scss";
 
-// import LanaguageStyles from "@/styles/LanguageCard.module.scss";
+// import LanaguageStyles from "../../styles/LanguageCard.module.scss";
 
 import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
-
-
 
 // Icons for Flags
 import English from "../../../public/images/servicesPhoto/flagEngland.svg";
@@ -24,17 +22,11 @@ import Dutch from "../../../public/images/servicesPhoto/flagDutch.svg";
 import French from "../../../public/images/servicesPhoto/flagFrance.svg";
 import Portugues from "../../../public/images/servicesPhoto/flagPortugal.svg";
 
-
-
 import telephone from "../../../public/images/admissions/telephone.svg";
 import email from "../../../public/images/admissions/email.svg";
 
-
-
 //images for cards
-import LanguageStyles from '@/styles/LanguageCard.module.scss';
-
-
+import LanguageStyles from "../../styles/LanguageCard.module.scss";
 
 const translation = () => {
   return (
@@ -307,6 +299,6 @@ const translation = () => {
       </div>
     </>
   );
-}
+};
 
-export default translation
+export default translation;

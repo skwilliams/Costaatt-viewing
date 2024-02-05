@@ -1,36 +1,29 @@
-import React, {useState} from 'react'
+import React, { useState } from "react";
 
 import ReactDom from "react-dom";
 
-import standardStyles from "@/styles/main.module.scss"
+import standardStyles from "../../styles/main.module.scss";
 
-
-import HeadImage from "@/components/PageComponents/HeadImage";
+import HeadImage from "../../components/PageComponents/HeadImage";
 import awaitingbanner from "../../../public/images/about/qualitycontrol1.jpg";
 
+import ContactStudentLife from "../../components/PageComponents/ContactStudentLife";
+import Head from "next/head";
+import Link from "next/link";
 
-import ContactStudentLife from '@/components/PageComponents/ContactStudentLife';
-import Head from 'next/head';
-import Link from 'next/link';
-
-import Popup from '@/components/PageComponents/Popup';
-
-
+import Popup from "../../components/PageComponents/Popup";
 
 const Careermgt = () => {
-
   const [isOpen, setIsOpen] = useState(false);
 
   function toggle() {
     setIsOpen((isOpen) => !isOpen);
   }
 
-
-    <div className={standardStyles.popup}>
-      {isOpen && <Popup />}
-      <button onClick={toggle}>Toggle show</button>
-    </div>
- 
+  <div className={standardStyles.popup}>
+    {isOpen && <Popup />}
+    <button onClick={toggle}>Toggle show</button>
+  </div>;
 
   return (
     <>
@@ -55,13 +48,17 @@ const Careermgt = () => {
           world of work. We teach you skills and opportunities to robatining
           employment and{" "}
         </h2>
-        <hr class={standardStyles.centerunder}/>
+        <hr class={standardStyles.centerunder} />
       </section>
       <section
         className={`${standardStyles.sectionColor2} ${standardStyles.centertext}`}
         id="services"
       >
-        <h2 className={`${standardStyles.headingPrimarysub} ${standardStyles.centertext}`}>Available Services</h2>
+        <h2
+          className={`${standardStyles.headingPrimarysub} ${standardStyles.centertext}`}
+        >
+          Available Services
+        </h2>
 
         <div className={standardStyles.row}>
           <div className={standardStyles.col1of3}>
@@ -267,8 +264,9 @@ const Careermgt = () => {
       </section>
 
       <section id="contact" className={standardStyles.sectionNoSidenav}>
-<h2 classname={`${standardStyles.headingPrimarysub} ${standardStyles.centertext}`} >
-
+        <h2
+          classname={`${standardStyles.headingPrimarysub} ${standardStyles.centertext}`}
+        >
           {" "}
           Contact Student Life{" "}
         </h2>
@@ -281,7 +279,6 @@ const Careermgt = () => {
       </section>
     </>
   );
-}
+};
 
-export default 
-Careermgt
+export default Careermgt;

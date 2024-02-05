@@ -2,10 +2,10 @@ import React from "react";
 import Image from "next/image";
 
 import Head from "next/head";
-import HeadImage from "@/components/PageComponents/HeadImage";
-import servicesStyles from "@/styles/Services.module.scss";
-import GridStyles from "@/styles/Grid.module.scss";
-import standardStyles from "@/styles/main.module.scss";
+import HeadImage from "../../components/PageComponents/HeadImage";
+import servicesStyles from "../../styles/Services.module.scss";
+import GridStyles from "../../styles/Grid.module.scss";
+import standardStyles from "../../styles/main.module.scss";
 import Link from "next/link";
 
 // Icons for standard features

@@ -1,36 +1,28 @@
 import React from "react";
 import Link from "next/link";
 import Head from "next/head";
-import standardStyles from "@/styles/main.module.scss";
-import costlifeStyles from "@/styles/CostaattLife.module.css"
-import AdmisStyles from "@/styles/Admissions.module.scss";
+import standardStyles from "../../styles/main.module.scss";
+import costlifeStyles from "../../styles/CostaattLife.module.css";
+import AdmisStyles from "../../styles/Admissions.module.scss";
 
 import telephone from "../../../public/images/admissions/telephone.svg";
 import email from "../../../public/images/admissions/email.svg";
 import hours from "../../../public/images/admissions/businesshours.svg";
 
-import HeaderNoImage from "@/components/PageComponents/HeaderNoImage";
+import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
 
 import Image from "next/image";
-
-
-
-
 
 import gal1 from "../../../public/images/costaattlife/lab1.jpg";
 import gal2 from "../../../public/images/costaattlife/lab2.jpg";
 import gal3 from "../../../public/images/costaattlife/lab3.jpg";
 import gal4 from "../../../public/images/costaattlife/lab4.jpg";
 
-
-
-
-
 import { useState } from "react";
 import { useEffect } from "react";
 
 const Itfacilities = () => {
-  const [ setHasWindow] = useState(false);
+  const [setHasWindow] = useState(false);
   useEffect(() => {
     if (typeof window !== "undefined") {
       setHasWindow(true);
@@ -57,69 +49,66 @@ const Itfacilities = () => {
           Computer <span>LABS </span>{" "}
         </h2>
 
-
         <div className={costlifeStyles.gallery}>
-<div className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_2}`}
-        >
-          
-          <Image
-            src={gal1}
-            alt="Gallery image 1"
-            className={standardStyles.gallery__img}
-            sizes="100vw"
-            style={{ width: "100%", height: "100%" }} // optional
-          />
+          <div
+            className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_2}`}
+          >
+            <Image
+              src={gal1}
+              alt="Gallery image 1"
+              className={standardStyles.gallery__img}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }} // optional
+            />
+          </div>
+          <div
+            className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_2}`}
+          >
+            <Image
+              src={gal2}
+              alt="Netball"
+              className={standardStyles.gallery__img}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }} // optional
+            />
+          </div>
+          <div
+            className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_3}`}
+          >
+            <Image
+              src={gal3}
+              alt="Gallery image 3"
+              className={standardStyles.gallery__img}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }} // optional
+            />
+          </div>
+          <div
+            className={`${standardStyles.gallery__item} ${costlifeStyles.gallery__item_4}`}
+          >
+            <Image
+              src={gal4}
+              alt="Gallery image 4"
+              className={standardStyles.gallery__img}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }} // optional
+            />
+          </div>
         </div>
-        <div
-          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_2}`}
-        >
-
-          <Image
-            src={gal2}
-            alt="Netball"
-            className={standardStyles.gallery__img}
-            sizes="100vw"
-            style={{ width: "100%", height: "100%" }} // optional
-          />
-        </div>
-        <div
-          className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_3}`}
-        >
-          <Image
-            src={gal3}
-            alt="Gallery image 3"
-            className={standardStyles.gallery__img}
-            sizes="100vw"
-            style={{ width: "100%", height: "100%" }} // optional
-          />
-        </div>
-        <div
-          className={`${standardStyles.gallery__item} ${costlifeStyles.gallery__item_4}`}
-        >
-          <Image
-            src={gal4}
-            alt="Gallery image 4"
-            className={standardStyles.gallery__img}
-            sizes="100vw"
-            style={{ width: "100%", height: "100%" }} // optional
-          />
-        </div>
-      
-    </div >
-      <p className={standardStyles.paragraph}>
-        {" "}
-        State-of-the-art computer lab facilities (MAC and PC) are available to
-        students at all of the College's campuses and sites, for both
-        instructional and open access purposes. All computer labs have
-        Internet connectivity and are installed with the latest computer
-        software. COSTAATT is currently a Microsoft Academic licensed
-        institution and students may purchase Microsoft software from the
-        College for their personal use, at a minimal fee. In addition, the
-        College has outfitted several special purpose labs which are designed
-        to ensure that students acquire the necessary discipline-specific
-        practical skills for the workplace.
-      </p>
-  {/* 
+        <p className={standardStyles.paragraph}>
+          {" "}
+          State-of-the-art computer lab facilities (MAC and PC) are available to
+          students at all of the College's campuses and sites, for both
+          instructional and open access purposes. All computer labs have
+          Internet connectivity and are installed with the latest computer
+          software. COSTAATT is currently a Microsoft Academic licensed
+          institution and students may purchase Microsoft software from the
+          College for their personal use, at a minimal fee. In addition, the
+          College has outfitted several special purpose labs which are designed
+          to ensure that students acquire the necessary discipline-specific
+          practical skills for the workplace.
+        </p>
+        {/* 
         <section className={standardStyles.gallery}>
           <div
             className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_1}`}
@@ -292,7 +281,7 @@ const Itfacilities = () => {
             />
           </figure>{" "}
         </section> */}
-      </section >
+      </section>
       <section id="services" className={`${standardStyles.sectionNoSidenav}`}>
         <h2 className={standardStyles.newsHeading}>
           {" "}
@@ -359,13 +348,11 @@ const Itfacilities = () => {
         {/* close row */}
       </section>
 
-      <section id="locations" className={standardStyles.sectionbackColor }>
-      
-     
-        <div className={`${standardStyles.sectionNoSidenav} ${standardStyles.marginBottomBig} ${standardStyles.marginTopBig}`}>
-        <h2 className={standardStyles.newsHeading}> Locations </h2>
-
-     
+      <section id="locations" className={standardStyles.sectionbackColor}>
+        <div
+          className={`${standardStyles.sectionNoSidenav} ${standardStyles.marginBottomBig} ${standardStyles.marginTopBig}`}
+        >
+          <h2 className={standardStyles.newsHeading}> Locations </h2>
           <div className={standardStyles.row}>
             <div className={standardStyles.col1of4}>
               <h3 className={costlifeStyles.opening__campus}>
@@ -437,42 +424,33 @@ const Itfacilities = () => {
             </div>
           </div>{" "}
           {/*end of row*/}
-          </div>
-   
+        </div>
       </section>
 
-      <section
-        id="contact"
-        className =  {standardStyles.sectionNoSidenav}>
-
-
-
+      <section id="contact" className={standardStyles.sectionNoSidenav}>
         <h2 className={standardStyles.newsHeading}>
           {" "}
           <span> CONTACT</span> IT
         </h2>
-       
-          <div className={standardStyles.row}>
-            <div className={standardStyles.col1of3}>
-              <h3 className={costlifeStyles.opening__campus}>
-                <span> Telephone Contact </span>
-              </h3>
+        <div className={standardStyles.row}>
+          <div className={standardStyles.col1of3}>
+            <h3 className={costlifeStyles.opening__campus}>
+              <span> Telephone Contact </span>
+            </h3>
 
-              <div className={costlifeStyles.opening__contact}>
-                <Image
-                  className={AdmisStyles.icon}
-                  src={telephone}
-                  alt="telephone icon"
-                />
-                <p className={AdmisStyles.iconfont}>
-                  {" "}
-                  (1-868) 625-5030 ext. 5288 /  5788 /5688 / 5888 / 5088 / 5388{" "}
-                </p>
-              </div>
-
-
-            </div> {/*close col */}
-          
+            <div className={costlifeStyles.opening__contact}>
+              <Image
+                className={AdmisStyles.icon}
+                src={telephone}
+                alt="telephone icon"
+              />
+              <p className={AdmisStyles.iconfont}>
+                {" "}
+                (1-868) 625-5030 ext. 5288 / 5788 /5688 / 5888 / 5088 / 5388{" "}
+              </p>
+            </div>
+          </div>{" "}
+          {/*close col */}
           <div className={standardStyles.col1of3}>
             <h3 className={costlifeStyles.opening__campus}>
               <span> Business Hours </span>
@@ -485,15 +463,13 @@ const Itfacilities = () => {
                 alt="hours icon"
               />
               <p className={AdmisStyles.iconfont}>
-                Monday - Friday - Fri. 7:00 am to 9:00 pm  <br/>
-                Saturday - 7:00 am to 5:00 pm <br/>
+                Monday - Friday - Fri. 7:00 am to 9:00 pm <br />
+                Saturday - 7:00 am to 5:00 pm <br />
                 Sunday. 7:00 am to 5:00 pm
               </p>
             </div>
-
-         
-          </div> {/*close col */}
-
+          </div>{" "}
+          {/*close col */}
           <div className={standardStyles.col1of3}>
             <h3 className={costlifeStyles.opening__campus}>
               <span> Email </span>
@@ -513,16 +489,13 @@ const Itfacilities = () => {
                 </a>{" "}
               </p>
             </div>
-          </div> {/*close col */}
-       </div> {/*close row */}
-
-        </section>
-
-     
-
-    
-      </>
-      );
+          </div>{" "}
+          {/*close col */}
+        </div>{" "}
+        {/*close row */}
+      </section>
+    </>
+  );
 };
 
 export default Itfacilities;

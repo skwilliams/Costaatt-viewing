@@ -1,33 +1,33 @@
-import React, {useState,useEffect} from 'react'
-import  ReactDOM  from 'react-dom'
-import standardStyles from "@/styles/main.module.scss"
- 
+import React, { useState, useEffect } from "react";
+import ReactDOM from "react-dom";
+import standardStyles from "../../styles/main.module.scss";
 
- import Link from "next/link"
+import Link from "next/link";
 
+const Popup = (show, onClose, children) => {
+  const [isBrowser, setIsBrowser] = useState(false);
 
-const Popup = ( show, onClose ,children ) => {
-
-  const [isBrowser,setIsBrowser] = useState(false);
-  
-  useEffect ( ()=>{
+  useEffect(() => {
     setIsBrowser(true);
-  },[] );
+  }, []);
 
-  const handleClose= (e) => {
+  const handleClose = (e) => {
     e.preventDefault();
     onClose();
   };
 
-
   const modalContent = show ? (
-      <div className={standardStyles.overlay}>
-        <div className={standardStyles.modal}>
-          <div className={standardStyles.header}>
-            <a href="/accreditation" onClick={handleClose} className={standardStyles.popup__close}>
-              x
-            </a>
-            {/* <h2
+    <div className={standardStyles.overlay}>
+      <div className={standardStyles.modal}>
+        <div className={standardStyles.header}>
+          <a
+            href="/accreditation"
+            onClick={handleClose}
+            className={standardStyles.popup__close}
+          >
+            x
+          </a>
+          {/* <h2
               className={`${standardStyles.headingprimary} ${standardStyles.marginBottomSmall}`}
             >
               Contact
@@ -59,23 +59,20 @@ const Popup = ( show, onClose ,children ) => {
             >
               Book now
             </a> */}
-          </div>
-          <div className={standardStyles.body} >{children}</div>
         </div>
+        <div className={standardStyles.body}>{children}</div>
       </div>
+    </div>
   ) : null;
 
-  if(isBrowser)
-  {
+  if (isBrowser) {
     return ReactDOM.createPortal(
       modalContent,
       document.getElementById("modalroot")
-    )
+    );
+  } else {
+    return null;
   }
-  else {
-    return null
-  };
+};
 
-}
-
-export default Popup
+export default Popup;

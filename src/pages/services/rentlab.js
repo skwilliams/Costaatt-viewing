@@ -12,9 +12,9 @@ import Dutch from "../../../public/images/servicesPhoto/flagDutch.svg";
 import French from "../../../public/images/servicesPhoto/flagFrance.svg";
 import Portugues from "../../../public/images/servicesPhoto/flagPortugal.svg";
 
-import standardStyles from "@/styles/main.module.scss";
+import standardStyles from "../../styles/main.module.scss";
 
-import LanguageStyles from "@/styles/LanguageCard.module.scss";
+import LanguageStyles from "../../styles/LanguageCard.module.scss";
 
 const rentlab = () => {
   return (
