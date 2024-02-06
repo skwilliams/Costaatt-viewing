@@ -33,7 +33,8 @@ import { useEffect } from "react";
 import { useRef } from "react";
 
 
-import videoFeature from "../../../videos/students.mp4";
+import videoFeature from    "../../../public/videos/students.mp4";
+
 import { Carousel } from "react-responsive-carousel";
 /**This component renders the home page which is called <Landing /> in index.js
  *
