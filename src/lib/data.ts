@@ -20,7 +20,7 @@ export async function fetchCampus() {
 
     // console.log('Data fetch completed after 3 seconds.');
 
-    return data;
+    return data.rows;
   } catch (error) {
     console.error('Database Error:', error);
     throw new Error('Failed to fetch campus data.');
