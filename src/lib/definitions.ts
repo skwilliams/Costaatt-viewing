@@ -11,15 +11,7 @@ export type Campus = {
   image:string;
   extension:string;
 };
-export type formattedCampus = {
-  campus_id: number;
-  campus_name: string;
-  address: string;
-  city: string;
-  phone: string;
-  image: string;
-  extension: string;
-};
+
 
 // export type Customer = {
 //   id: string;

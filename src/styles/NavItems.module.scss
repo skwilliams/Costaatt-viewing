@@ -7,11 +7,12 @@
   padding: 0 5rem;
   justify-content: space-between;
   width: 100%;
-  background-image: linear-gradient(
-    to bottom right,
-    $color-primary-dark,
-    $color-primary,
-  );
+  background-color: $color-primary-dark;
+  // background-image: linear-gradient(
+  //   to bottom right,
+  //   $color-primary-dark,
+  //   $color-primary,
+  // );
   // background-color: $color-primary;
   color: white;
 
@@ -57,7 +58,8 @@
   justify-content: space-between;
   width: 100%;
   position: relative;
-  color:black;
+  color:white;
+
   // font-weight: 500;
 }
 

@@ -4,8 +4,12 @@ import Head from "next/head";
 import Link from "next/link";
 import ProgStyles from "../../styles/Programmes.module.scss";
 import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
+import { fetchCampus } from "../../lib/dataquery";
 
-const visitus = () => {
+const  visitus = () => {
+
+
+
   return (
     <>
       <Head>

@@ -1,7 +1,24 @@
 /** @type {import('next').NextConfig} */
+  import withVideos from "next-videos";
+
+
+// next.config.js
+
+
+
+
 const nextConfig = {
+
+
+
+  // next.config.js
+
+
   reactStrictMode: true,
   // output:'export',
+
+  
+  // experimental: {
 
   webpack: (config) => {
     config.resolve.fallback = {
@@ -13,7 +30,10 @@ const nextConfig = {
     return config;
   },
 
-  // experimental: {
+
+
+
+
   //   outputFileTracingExcludes: {
   //     "*": [
   //       "node_modules/@swc/core-linux-x64-gnu",
@@ -29,4 +49,6 @@ const nextConfig = {
 };
 
 
-export default nextConfig;
+
+
+export default withVideos(nextConfig);
