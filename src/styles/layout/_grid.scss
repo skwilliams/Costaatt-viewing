@@ -1,9 +1,12 @@
-@use "../abstracts/variables";
+@use "../abstracts/variables" as v;
 
 // GRID
 $grid-width: 100rem;
 $gutter-vertical: 4rem;
 $gutter-horizontal: 4rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
+$gutter-horizontal-small: 1rem;
 
 .u_center_text {
     text-align: center !important;
@@ -224,7 +227,7 @@ $gutter-horizontal: 4rem;
 .threeColGrid {
   text-align: left;
   padding: 1.5em 0;
-  font-size: $default-font-size;
+  font-size: v.$default-font-size;
   // padding: 10px;
 }
 
@@ -248,7 +251,7 @@ $gutter-horizontal: 4rem;
 .fourColGrid {
   text-align: left;
   padding: 1.5em 0;
-  font-size: $default-font-size;
+  font-size: v.$default-font-size;
   // padding: 10px;
 }
 
@@ -272,7 +275,7 @@ $gutter-horizontal: 4rem;
 .twoGridCol {
   text-align: left;
   padding: 1.5em 0;
-  font-size: $default-font-size;
+  font-size: v.$default-font-size;
   // padding: 10px;
 }
 
@@ -296,6 +299,6 @@ $gutter-horizontal: 4rem;
 .sixColGrid {
   text-align: left;
   padding: 1.5em 0;
-  font-size: $default-font-size;
+  font-size: v.$default-font-size;
   // padding: 10px;
 }

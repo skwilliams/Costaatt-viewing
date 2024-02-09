@@ -1,0 +1,72 @@
+@use "./abstracts/variables" as v;
+@import "./layout/grid";
+
+.events_calendar {
+  background-color: v.$grey;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  height: 50rem;
+}
+
+.event {
+  display: flex;
+  align-items: center;
+  //   border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: inset;
+  width: max-content;
+}
+
+.date {
+  display: grid;
+  grid-template-rows: 1fr, 1fr;
+  border: 1px solid #ccc;
+
+  margin-right: 10px;
+  font-size: 2rem;
+box-shadow: 12px 12px 2px 1px rgba(v.$color-primary-light, .2);
+//   box-shadow: 10px 5px 5px v.$grey;
+
+  .day {
+    // background-color: red;
+    padding: 1rem;
+    // margin: 2rem;
+        text-align: center;
+          font-size: 3rem;
+  
+  }
+  .month {
+    background-color: v.$color-primary-dark;
+    width: 8rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: v.$color-white;
+    text-align: center;
+      text-transform: capitalize;
+      font-weight: 400;
+  }
+}
+
+.details {
+  padding: 2rem;
+
+  .name {
+    font-size: 1.8rem;
+    color: v.$grey;
+    font-weight: 600;
+    padding-bottom: 1.2rem;
+  }
+  .time {
+    font-size: 1.5rem;
+    color: v.$color-primary;
+  }
+  .location {
+    font-size: 1.5rem;
+    color: v.$color-primary-dark;
+    width: max-content;
+  }
+  .img {
+    margin-right: 10px;
+  }
+}

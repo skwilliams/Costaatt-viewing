@@ -12,6 +12,9 @@ import Image from "next/image";
 import Link from "next/link";
 import senior from "../../../public/images/senior_lec.jpg";
 import { FaAngleDown } from "react-icons/fa";
+import EventsCalendar from "../PageComponents/EventsCalendar";
+import Testimonial from '../PageComponents/Testimonial'; // Adjust the import path as necessary
+
 import {
   SliderLinks,
   TILES_INFO,
@@ -329,7 +332,7 @@ const Home = () => {
         </button>
       </section>
 
-      <section id="news" className={HomeStyles.sectionFour}>
+       <section id="news" className={HomeStyles.sectionFour}>
         {/* <h1 className={HomeStyles.newsHeading}>
           The amazing things We Do <span>NEWS</span>
         </h1> */}
@@ -385,15 +388,15 @@ const Home = () => {
             </button>{" "}
           </div>{" "}
         </div>
-      </section>
+      </section> 
 
       <section id="events" className={HomeStyles.sectionEvents}>
-        <h1 className={HomeStyles.newsHeading}>
-          <span>Events </span> at COSTAATT
-        </h1>
-
-        <div className={HomeStyles.sectionThreeTiles}>
-          {/* <div className={standardStyles.row}> */}
+              
+ <EventsCalendar />
+       
+ 
+        {/* <div className={HomeStyles.sectionThreeTiles}>
+       
           {EVENTS.map((tile, index) => {
             return (
               <div key={index}>
@@ -411,17 +414,13 @@ const Home = () => {
               </div>
             );
           })}
-        </div>
-        {/* </div> */}
+        </div> */}
       </section>
 
       <section id="success-stories" className={HomeStyles.successSection}>
         <div className={HomeStyles.successStories}>
-          <h2 className={HomeStyles.newsHeading}>
-            We <span> Tranform </span>LIVES
-          </h2>
+          <Testimonial/>
         </div>
-       
       </section>
     </>
   );
