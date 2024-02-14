@@ -1,0 +1,68 @@
+@use "./abstracts/variables" as v;
+
+// Replace with the primary color from the design
+
+.educationSection {
+  // display: flex;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15rem 15rem 15rem 15rem;
+
+}
+
+.textContent {
+  // flex-grow: 1;
+  grid-column: 1/2;
+  padding: 20px;
+
+  .header {
+    font-size: 5rem;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+  }
+
+  .description {
+    font-size: 2rem;
+    margin-bottom: 1em;
+  }
+
+  .linkList {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.5em;
+      cursor: pointer;
+      font-weight: normal;
+      color: black;
+      font-size: 1.8rem;
+
+      &:hover,
+      &.activeLink {
+        font-weight: bold;
+        color: v.$color-primary;
+      }
+    }
+  }
+}
+
+.imageContent {
+  flex-shrink: 0;
+  padding: 20px;
+  text-align: right;
+  border-width: 5rem;
+  border-style: solid;
+  border-color: v.$color-primary; /* Adjust color as needed */
+  border-top-width: 3rem; /* No border on top */
+  border-right-width: 5rem; /* Border on right */
+  border-bottom-width: 3rem; /* Border on bottom */
+  border-left-width: 0; /* Border on left */
+
+  .img {
+    max-width: 100%;
+  
+    height: auto;
+  }
+}

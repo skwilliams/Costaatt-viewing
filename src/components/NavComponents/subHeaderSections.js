@@ -1,7 +1,9 @@
 export const subHeaderSections = {
   home: {
-    "I am ": "search",
+    "I am ": "video",
     "Uniquely Us": "unique",
+    "Notices": "notices",
+    "Education for All": "education",
     news: "news",
     events: "events",
 
@@ -13,7 +15,7 @@ export const subHeaderSections = {
     "overview of programmes": "overview",
     "by the numbers ": "bynumbers",
     "why choose us ": "whychoose",
-    "Schools":"allschools",
+    Schools: "allschools",
 
     Highlights: "highlight",
   },
@@ -91,7 +93,7 @@ export const subHeaderSections = {
     "school events and news": "schoolnews",
   },
 
-    ICTD: {
+  ICTD: {
     "Overveiw of Department": "overview",
     "Programmes in Department": "programmes",
     "Department Contact": "contact",
@@ -100,7 +102,6 @@ export const subHeaderSections = {
     "Latest News": "schoolnews",
     "Faculty and Staff": "facultystaff",
   },
- 
 
   apply: {
     Apply: "intro",
@@ -117,8 +118,7 @@ export const subHeaderSections = {
     "How to Apply": "howtoapply",
   },
 
-
-// COSTAATT Life Sections 
+  // COSTAATT Life Sections
 
   studentorg: {
     "Student Clubs ": "introtoclubs",
@@ -179,7 +179,7 @@ export const subHeaderSections = {
     "Meet Our Staff": "staff",
     Contact: "contact",
   },
-  
+
   History: {
     Mission: "mission",
     National: "national",

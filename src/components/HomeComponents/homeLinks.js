@@ -49,27 +49,46 @@ export const SliderLinks = [
   },
 ];
 
-export const SuccessMainLinks = [
+export const testimonials = [
   {
     id: 1,
-    title: "Anthony",
-    image: require("../../../public/images/successStories/SuccessDraft.jpg"),
+    major: "Bsc Networking",
+    firstname: "Joe",
+    surname: "Biden",
+    image: require("../../../public/images/successStories/person2.jpg"),
+    story:
+      "lorem ispsumlorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum  ",
+  },
+  {  
+  id: 2,
+    major: "Bsc Networking",
+    firstname: "Joe",
+    surname: "Biden",
+    image: require("../../../public/images/successStories/person2.jpg"),
+    story:
+      "lorem ispsumlorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum  ",
+  },
+  { 
+   id: 3,
+    major: "Bsc Networking",
+    firstname: "Joe",
+    surname: "Biden",
+    image: require("../../../public/images/successStories/person2.jpg"),
+    story:
+      "lorem ispsumlorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum  ",
   },
   {
-    id: 2,
-    title: "Anthony",
-    image: require("../../../public/images/successStories/SuccessDraft2.jpg"),
+
+  
+   id: 4,
+    major: "Bsc Networking",
+    firstname: "Joe",
+    surname: "Biden",
+    image: require("../../../public/images/successStories/person2.jpg"),
+    story:
+      "lorem ispsumlorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum lorem ispsum  ",
   },
-  {
-    id: 3,
-    title: "Anthony",
-    image: require("../../../public/images/successStories/SuccessDraft.jpg"),
-  },
-  {
-    id: 4,
-    title: "Anthony",
-    image: require("../../../public/images/successStories/SuccessDraft2.jpg"),
-  },
+ 
 ];
 export const SuccessLinks = [
   {

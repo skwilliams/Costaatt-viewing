@@ -1,145 +1,136 @@
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
 
-
-
 .btn {
-    &,
-    &:link,
-    &:visited {
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 1.5rem 4rem;
-        display: inline-block;
-        border-radius: 10rem;
-        transition: all .2s;
-        position: relative;
-        font-size: $default-font-size;
-        margin-bottom:2em;
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: $default-font-size;
+    margin-bottom: 2em;
 
-        //Change for the <button> element
-        border: none;
-        cursor: pointer;
+    //Change for the <button> element
+    border: none;
+    cursor: pointer;
+  }
 
-    }
-    
-    &:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 1rem 2rem rgba($color-black,.2);
-        background-color: $color-primary-dark;
-        color:white;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    background-color: $color-primary-dark;
+    color: white;
 
-        &::after {
-            transform: scaleX(1.4) scaleY(1.6);
-            opacity: 0;
-        }
-    }
-    
-    &:active,
-    &:focus {
-        outline: none;
-        transform: translateY(-1px);
-        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
-    }
-    
-    &__white {
-        background-color: $color-white;
-        color: $color-grey-dark;
-
-        &::after {
-            background-color: $color-white;
-        }
-    }
-
-    &__purple {
-        background-color: $color-primary;
-        color: $color-white;
-
-        &::after {
-            background-color: $color-primary-dark;
-        }
-    }
-
-    
-      &__selecthome {
-        background-color: $color-primary;
-        color: $color-white;
-        padding: 1rem 2rem;
-        margin-bottom: 0;
-
-        &::after {
-            background-color: $color-primary-dark;
-        }
-
-        &__center{
-            padding: 1rem 6rem;
-            align-items: center;
-        }
-    }
-
-    &__red {
-        background-color: $red-dark;
-        color: $color-white;
-                padding: 1.25rem 3rem;
-
-
-        &::after {
-            background-color: $color-primary;
-        }
-    }
-    
     &::after {
-        content: "";
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        border-radius: 10rem;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        transition: all .4s;
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
     }
-    
-    &--animated {
-        animation: moveInBottom .5s ease-out .75s;
-        animation-fill-mode: backwards;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+
+  &__white {
+    background-color: $color-white;
+    color: $color-grey-dark;
+
+    &::after {
+      background-color: $color-white;
     }
-    
+  }
 
-}    .btnText {
+  &__purple {
+    background-color: $color-primary;
+    color: $color-white;
 
-           color: $color-primary;
-           margin:3.6rem;
-           font-size: 1.8rem;
-                   border-bottom: 1px solid $color-primary;
-
-   &:link,
-    &:visited {
-        font-size: 1.8rem;
-        color: $color-primary;
-        display: inline-block;
-        text-decoration: none;
-        border-bottom: 1px solid $color-primary;
-        padding: 3.6rem;
- 
-        transition: all .2s;
-        
+    &::after {
+      background-color: $color-primary-dark;
     }
+  }
 
-    &:hover {
-        background-color: $color-primary;
-        color: $color-white;
-        box-shadow: 0 1.2rem 2.4rem rgba($color-black, .15);
-        transform: translateY(-2px);
+  &__selecthome {
+    background-color: $color-primary;
+    color: $color-white;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+
+    &::after {
+      background-color: $color-primary-dark;
     }
 
-    &:active {
-        box-shadow: 0 .6rem 1.2rem rgba($color-black, .15);
-        transform: translateY(0);
+    &__center {
+      padding: 1rem 6rem;
+      align-items: center;
     }
+  }
+
+  &__red {
+    background-color: $red-dark;
+    color: $color-white;
+    padding: 1.25rem 3rem;
+
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
 }
+.btnText {
+  color: $color-primary;
+  margin: 3.6rem;
+  font-size: 1.8rem;
+  border-bottom: 1px solid $color-primary;
 
+  &:link,
+  &:visited {
+    font-size: 1.8rem;
+    color: $color-primary;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $color-primary;
+    padding: 3.6rem;
+
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    box-shadow: 0 1.2rem 2.4rem rgba($color-black, 0.15);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 0.6rem 1.2rem rgba($color-black, 0.15);
+    transform: translateY(0);
+  }
+}
 
 .bg_video {
   position: absolute;
@@ -360,17 +351,19 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
+  display: grid;
+  // grid-template-columns: repeat(4,1fr);
   // border: 1px solid rgba($grey,0.4);
 }
 .threeone {
   display: inline-block;
+  
   width: 25%;
   height: 100%;
   background-color: rgba($grey, 0.4);
   border-bottom: 15px solid $color-primary-dark;
   text-align: center;
   transition: all 0.25s;
-
 
   @media only screen and (max-width: 56.25em) {
     width: 100%;
@@ -386,7 +379,6 @@
   background-color: rgba($grey, 0.4);
   // border: 1px solid white;
 
-;
   @media only screen and (max-width: 56.25em) {
     width: 100%;
   }
@@ -418,7 +410,9 @@
     width: 100%;
   }
 }
-.centerbutton { margin: auto;}
+.centerbutton {
+  margin: auto;
+}
 
 .threeone:hover {
   background: $color-primary-dark;
@@ -432,6 +426,7 @@
 }
 .threeone:hover svg {
   fill: $color-primary-dark;
+  font-size:1.5rem;
 }
 .threeholder h4 {
   width: 200px;
@@ -571,27 +566,32 @@
   }
 }
 
-
-
 /*Section Notices */
 
-.sectionNotices{
+.sectionNotices {
   height: 30rem;
-  width: 100%;
+  // width: 100%;
+  margin:10rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
   background-color: $color-primary-dark;
 
-  
-  h2{
-    padding:1rem 2rem;
+  background-image: linear-gradient(
+    to right,
+    rgba($color-white, 0.25),
+    rgba($color-primary-light, 0.25),
+    rgba($color-primary-light, 0.5)
+  );
+
+  h2 {
+    padding: 1rem 2rem;
     font-size: 5rem;
     color: $color-white;
-
   }
-  p{
+  p {
     font-size: 3rem;
-    padding:2rem 4rem;
-    color:$color-white;
-
+    padding: 2rem 4rem;
+    color: $color-white;
   }
 }
 .sectionheadings {
@@ -655,7 +655,6 @@
   margin-bottom: 12.8em;
   // border-color: lightgray;
   // background-color: rgba($color-grey-light-2, 0.5);
- 
 }
 
 .sectionThreeTiles {
@@ -712,8 +711,6 @@
   height: 100%;
   // border-color: lightgray;
   border-color: rgba($color-grey-light-2, 0.5);
-
-  
 }
 
 .sectionFourTiles {
@@ -731,6 +728,44 @@
 // background-color: pink;
 
 // }
+
+.sectioncallAction{
+
+margin:0;
+display: grid;
+grid-template-columns: 70% 30%;
+
+  // height: 50vh;
+  // //  height: 60vw;
+  // // width: 100vw;
+  // background-image: linear-gradient(
+  //     to right,
+  //     rgba($color-white, 0.25),
+  //     rgba($color-primary-light, 0.25),
+  //     rgba($color-primary-light, 0.5)
+  //   ),
+  //   url("../../public/images/servicesPhoto/ChaguanasOutside.jpeg");
+    // background-image:     url("../../public/images/servicesPhoto/ChaguanasOutside.jpeg");
+
+  // Source: https://www.freepik.com/free-photo/standard-quality-control-collage-concept_30589253.htm#query=quality%20assurance&position=44&from_view=keyword&track=ais&uuid=11090649-220d-41aa-874a-c89449145375
+  // background-size: cover;
+  // background-position:center;
+  // position: relative;
+  // width: '100%';
+  //   height: 40vh;
+
+  .costaattImage{
+
+      background-size: cover;
+      background-position:center;
+      position: relative;
+      width: '100%';
+      height: 40vh;
+
+
+    }
+
+}
 .sectionNewsTitle {
   grid-column: 1 / span 2;
 }
@@ -871,9 +906,12 @@
 }
 .successSection {
   //background-image: url("../../images/Links/campus 2.jpg");
+  // background-color: $color-grey-light-1;
+
   background-size: cover;
   height: 100%;
   width: auto;
+  margin: 3rem 0;
   // border: 2px solid red;
   //  padding: 20px;
 }

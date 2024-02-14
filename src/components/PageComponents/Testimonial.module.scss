@@ -3,23 +3,27 @@
 // Adjust the color to match the design
 
 .testimonialContainer {
-  display: flex;
-  background-color: teal;
-  padding: 20px;
-  margin: 10rem;
-  z-index:-2;
+  margin-left: 8rem;
+
+  height: 70vh;
+
+  display: grid;
+  // background-color: v.$color-grey-light-1;
+
+  // grid-template-columns: minmax(60%, 1fr) 30% minmax(20%, 1fr);
+  grid-template-columns: minmax(60%, 1fr) 40%;
 }
 
 .testimonialContent {
-  flex-basis: 60%;
+  grid-column: 1/2;
   padding: 2rem;
-  background-color: red;
-  margin: 4rem;
-  z-index: 0;
+   height: fit-content;
+    margin-right:10rem;
 
   .header {
-    font-size: 1.2rem;
+    font-size: 3rem;
     margin-bottom: 0.5em;
+    line-height: 1.5;
   }
 
   .subHeader {
@@ -45,12 +49,14 @@
   .cite {
     font-size: 1.5em;
     font-weight: bold;
+    color: v.$color-primary;
     padding: 3em;
   }
 
   .readMore {
     background-color: v.$color-primary;
     display: block;
+    margin: 4rem 5rem;
     text-align: right;
     color: white;
     border: none;
@@ -61,39 +67,70 @@
 }
 
 .testimonialImage {
-  flex-basis: 40%;
+  grid-column: 2/3; // in 2 column of testimonialContainer
+
   position: relative;
+  display: grid; // to align the image and the list items.
+
+  background-color: v.$color-primary-dark;
+  grid-template-columns: repeat(2, 1fr);
+  // gap: 20px;
 
   .imgDetails {
-    width: 100%;
-    display: block;
-    z-index: 17500;
+    // width: fit-content;
+
+    position: absolute;
+  top: 10%;
+  left: -40%;
+  width: 100%;
+  z-index: 1; /* Ensure image appears above the columns */
   }
 
   .testimonialList {
+
+    // position: relative; /* Ensure z-index works */
+  z-index: 0; /* Ensure the columns are below the image */
     position: absolute;
     top: 0;
     right: 0;
-    background-color: v.$color-primary;
+    background-color: v.$color-primary-dark;
+    width: 30rem;
     padding: 20px;
     list-style: none;
 
     li {
-      margin-bottom: 10px;
+      //  width: fit-content;
+
+      margin-bottom: 1rem;
       color: white;
-      padding: 2rem;
+      padding: 1.5rem 0.5rem 1.5rem 1.5rem;
       border-radius: 0 50%;
       font-size: 1.5rem;
+      display: flex;
+      align-items: center;
 
       &:last-child {
         margin-bottom: 0;
       }
 
       &:hover {
-        background-color: v.$color-primary-dark;
+        background-color: v.$color-primary;
         color: v.$color-white;
         border-radius: 100px;
       }
+
+      .imgSmall {
+        width: 20%;
+        height: 25%;
+        border-radius: 50%;
+
+        margin-right: 2rem;
+      }
+    }
+
+    p {
+      text-transform: capitalize;
+      font-size: 1.6rem;
     }
   }
 }

@@ -1,19 +1,21 @@
 import logo from "../../../public/images/logos/costaattlogographic.png";
 import HomeStyles from "../../styles/Home.module.scss";
-import AdminStyles from "../../styles/Admissions.module.scss";
-import standardStyles from "../..//styles/main.module.scss";
-import HomeSlider from "../Slider";
-import EventTile from "./EventTile";
-import SchoolTile from "./SchoolTile";
-import { FiBookOpen } from "react-icons/fi";
-import { IconContext } from "react-icons";
-import NewsTile from "./NewsTile";
+
+import CarouselSlider from "../Carousel";
 import Image from "next/image";
 import Link from "next/link";
-import senior from "../../../public/images/senior_lec.jpg";
 import { FaAngleDown } from "react-icons/fa";
 import EventsCalendar from "../PageComponents/EventsCalendar";
 import Testimonial from '../PageComponents/Testimonial'; // Adjust the import path as necessary
+import circularimage from"../../../public/images/homepage/pitch2.jpg";
+import costaattimage from "../../../public/images/servicesPhoto/ChaguanasOutside.jpeg";
+import person1 from "../../../public/images/successStories/person1.jpg";
+import person2 from "../../../public/images/successStories/person2.jpg";
+import person3 from "../../../public/images/successStories/person3.jpg";
+import professional from "../../../public/images/homepage/professional.jpg";
+import EducationSection from "./EducationSection";
+
+
 
 import {
   SliderLinks,
@@ -39,6 +41,7 @@ import { useRef } from "react";
 import videoFeature from    "../../../public/videos/students.mp4";
 
 import { Carousel } from "react-responsive-carousel";
+
 /**This component renders the home page which is called <Landing /> in index.js
  *
  * It is seperated into sections with each Section givin its own className: Section One etc
@@ -147,7 +150,9 @@ const Home = () => {
 
       <section> */}
         <div id="unique" className={HomeStyles.containerunique}>
-          <div className={HomeStyles.threeholder}>
+          4
+          <div className={HomeStyles.row}>
+            {/* <div className={HomeStyles.threeholder}> */}
             <div className={HomeStyles.threeone}>
               <div className={HomeStyles.circlepic}></div>
               <div className={HomeStyles.circleborder}>
@@ -322,20 +327,64 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section id="notices" className={HomeStyles.sectionNotices}>
-        <h2>Full Circle Challenge </h2>
-        <p> A Circular Economy Rich Competition </p>
-        <button
-          className={`${HomeStyles.btn} ${HomeStyles.btn__white} ${HomeStyles.btnText}`}
-        >
-          Register Now
-        </button>
-      </section>
 
-       <section id="news" className={HomeStyles.sectionFour}>
-        {/* <h1 className={HomeStyles.newsHeading}>
-          The amazing things We Do <span>NEWS</span>
-        </h1> */}
+      <section id="notices" className={HomeStyles.sectionNotices}>
+        <div>
+          <Image
+            src={circularimage}
+            width="500"
+            height="300"
+            alt="Circular image"
+          />
+        </div>{" "}
+        <div>
+          <h2>Full Circle Challenge </h2>
+          <p> A Circular Economy Rich Pitch Competition </p>
+          <button
+            className={`${HomeStyles.btn} ${HomeStyles.btn__white} ${HomeStyles.btnText}`}
+          >
+            Register Now
+          </button>
+        </div>
+      </section>
+      <section id="education" className={HomeStyles.sectioneducation}>
+        <EducationSection image={professional} />
+      </section>
+      <section id="success-stories" className={HomeStyles.successSection}>
+        <div className={HomeStyles.successStories}>
+          <Testimonial />
+        </div>
+      </section>
+      <section id="events" className={HomeStyles.sectionEvents}>
+        <EventsCalendar />
+
+        {/* <div className={HomeStyles.sectionThreeTiles}>
+       
+          {EVENTS.map((tile, index) => {
+            return (
+              <div key={index}>
+                <Link href={`${tile.path}`}>
+                  <EventTile
+                    title={tile.title}
+                    img={tile.image}
+                    date={tile.date}
+                    desc={tile.desc}
+                    time={tile.time}
+                    topic={tile.topic}
+                    location={tile.location}
+                  />{" "}
+                </Link>
+              </div>
+            );
+          })}
+        </div> */}
+      </section>
+      <section id="news">
+    
+        </section>
+
+      {/* <section id="news" className={HomeStyles.sectionFour}>
+        // /
         <div className={HomeStyles.sectionFourTiles}>
           <div className={HomeStyles.sectionNewsTitle}>
             <h1 className={HomeStyles.newsHeading}>
@@ -388,42 +437,12 @@ const Home = () => {
             </button>{" "}
           </div>{" "}
         </div>
-      </section> 
-
-      <section id="events" className={HomeStyles.sectionEvents}>
-              
- <EventsCalendar />
-       
- 
-        {/* <div className={HomeStyles.sectionThreeTiles}>
-       
-          {EVENTS.map((tile, index) => {
-            return (
-              <div key={index}>
-                <Link href={`${tile.path}`}>
-                  <EventTile
-                    title={tile.title}
-                    img={tile.image}
-                    date={tile.date}
-                    desc={tile.desc}
-                    time={tile.time}
-                    topic={tile.topic}
-                    location={tile.location}
-                  />{" "}
-                </Link>
-              </div>
-            );
-          })}
-        </div> */}
-      </section>
-
-      <section id="success-stories" className={HomeStyles.successSection}>
-        <div className={HomeStyles.successStories}>
-          <Testimonial/>
-        </div>
-      </section>
+      </section> */}
     </>
   );
 };
+
+
+
 
 export default Home;
