@@ -12,6 +12,7 @@ const SchoolCard = ({image,schoolname,intro,linkpage,shortname,foundSchool}) => 
           <Image
             className={SchoolStyles.imgstyle}
             src={image}
+            width={4000}
             alt="School Image"
           />
         </div>

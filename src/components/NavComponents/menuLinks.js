@@ -72,8 +72,8 @@ export const topNavLinksLeft = [
           },
           {
             title: "ICTs and Digital Technologies",
-            path: "/programmes/schools/busIT/ICTD",
-            // path: "#",
+            // path: "/programmes/schools/busIT/ICTD",
+            path: "#",
           },
         ],
       },
