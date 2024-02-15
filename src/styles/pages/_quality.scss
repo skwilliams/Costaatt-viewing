@@ -1,0 +1,112 @@
+
+@use "../../styles/abstracts/variables" as v;
+
+
+.quality_header {
+        height: 50dvh;
+      
+        background-image: linear-gradient(
+            to right,
+            rgba(v.$color-white, 0.25),
+            rgba(v.$color-primary-light, 0.25),
+            rgba(v.$color-primary-light, 0.5)
+          ,url("../../../public/images/about/Standard.jpg"));
+        // Source: https://www.freepik.com/free-photo/standard-quality-control-collage-concept_30589253.htm#query=quality%20assurance&position=44&from_view=keyword&track=ais&uuid=11090649-220d-41aa-874a-c89449145375
+        background-size: cover;
+        background-position: top;
+        position: relative;
+        
+      }
+.section_quality {
+    padding: 4rem;
+
+    p {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+        line-height: 2;
+        text-align: justify;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    ul {
+        list-style-type: none;
+        margin:0;
+
+    }
+
+    li {
+        
+        
+        padding: 1rem 2rem 1rem 1rem;
+        overflow: auto;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        text-align: left;
+        clip-path: polygon(0 0,
+                calc(100% - 2rem) 0,
+                100% 50%,
+                calc(100% - 2rem) 100%,
+                calc(100% - 2rem) calc(100% + 1rem),
+                0 calc(100% + 1rem));
+    }
+
+    li:hover {
+        background: v.$color-primary-dark;
+        color: v.$color-white;
+     transform: scale(1.2); 
+        transition: all .5s;
+        cursor: pointer;
+    }
+
+    li img {
+        float: left;
+        vertical-align: top;
+        height: 5.5rem;
+        width: 5.5rem;
+        margin-right: 1rem;
+
+           @media only screen and (max-width: 37.5em) {
+        
+            display: none;
+        }
+    }
+
+    &__container {
+        background: linear-gradient(180deg, rgba(104, 91, 199, .25) 0%, rgba(72, 63, 138, .15) 50%, rgba(159, 146, 223, .8) 100%);
+        padding: 3rem;
+        margin-top: 5rem;
+
+        &__heading {
+            color: v.$color-primary-dark;
+            text-transform: uppercase;
+            font-size: 2rem;
+            letter-spacing: 1rem;
+            text-align: center;
+        }
+    }
+
+    &__data {
+        background-color: v.$color-primary-dark;
+        color: v.$color-white;
+        text-align: center;
+        border-radius: 1rem;
+        height: 10rem;
+        margin: 5rem 0 3rem 0;
+        padding-top: 2.5rem !important;
+    }
+
+    &__parallax {
+        background-image: url('../../../public/images/about/council.png');
+        height: 60vh;
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 5rem;
+
+          @media only screen and (max-width: 37.5em) {
+            height: 50vh;
+            background-size: auto;
+        }
+    }
+}

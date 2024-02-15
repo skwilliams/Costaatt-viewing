@@ -1,0 +1,141 @@
+@use "../abstracts/variables" as v;
+
+.section_translation {
+  font-family: v.$default-font-family;
+  padding: 5rem;
+
+  p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+    line-height: 1.5;
+  }
+
+  h2 {
+    // margin:2rem;
+    font-size: 2.5rem;
+    background-image: linear-gradient(
+      to bottom,
+      $color-white,
+      $color-primary-light
+    );
+    display: inline-block;
+    background-clip: inherit;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    white-space: nowrap;
+    padding: 0 2rem;
+    letter-spacing: 1px;
+    animation: moveRight 8000ms linear infinite;
+  }
+
+  &__intro {
+    margin-top: 5rem;
+  }
+}
+
+// .wrapper {
+//   display: flex;
+//   justify-content: flex-start;
+//   overflow: hidden;
+//   background-color: $color-primary-dark;
+//   margin: 10rem 0 5rem 0;
+// }
+
+.content {
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-white, 1) 0%,
+      rgba($color-white, 0.95) 50%,
+      transparent 50%
+    ),
+    url("../../../public/images/about/language.jpg");
+  //   Source: https://www.freepik.com/free-vector/welcome-different-languages_3326034.htm#page=2&query=translate&position=15&from_view=search&track=sph&uuid=51341793-409a-4ca3-a555-225500aff876
+  background-size: 100%;
+  height: auto;
+  border-radius: 3px;
+  box-shadow: 0 1rem 2rem rgba($color-primary, 0.3);
+
+  &__text {
+    // width: 50%;
+    padding: 2rem;
+    font-size: 1.8rem;
+  }
+}
+
+.arrow {
+  width: 2rem;
+  height: 1rem;
+  border-left: 20px solid transparent; /* Width and color of the left side of the arrow */
+  border-top: 20px solid transparent; /* Width and color of the right side of the arrow */
+  border-bottom: 20px solid orangered; /* Width and color of the bottom side of the arrow */
+}
+
+.section__interpretation {
+  margin: 3rem;
+  position: relative;
+  // box-shadow: 0 1rem 2rem rgba($color-primary, 0.3);
+
+  padding: 5rem 10rem;
+
+  p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    line-height: 2;
+    text-align: justify;
+  }
+
+  @media only screen and (max-width: 56.25em) {
+    padding: 10rem 0;
+  }
+}
+
+
+//Translation 
+.educationSection {
+  // display: flex;
+  display: grid;
+  grid-template-columns: 0% 50%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15rem 15rem 15rem 15rem;
+
+}
+
+.textContent {
+  // flex-grow: 1;
+  grid-column: 1/2;
+  padding: 20px;
+
+  .header {
+    font-size: 5rem;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+  }
+
+  .description {
+    font-size: 2rem;
+    margin-bottom: 1em;
+  }
+
+
+}
+
+.imageContent {
+  flex-shrink: 0;
+  padding: 20px;
+  text-align: right;
+  border-width: 5rem;
+  border-style: solid;
+  border-color: v.$color-primary; /* Adjust color as needed */
+  border-top-width: 3rem; /* No border on top */
+  border-right-width: 5rem; /* Border on right */
+  border-bottom-width: 3rem; /* Border on bottom */
+  border-left-width: 0; /* Border on left */
+
+  .img {
+    max-width: 100%;
+  
+    height: auto;
+  }
+}

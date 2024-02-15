@@ -1,0 +1,52 @@
+@use "./abstracts/variables" as v;
+//Scrolling text across page
+
+.marquee {
+  width: 100%;
+
+  overflow: hidden;
+  background-color: v.$color-primary-dark;
+
+  //     display: flex;
+  // justify-content: flex-start;
+  // overflow: hidden;
+  // background-color: v.$color-primary-dark;
+  // margin: 10rem 0 5rem 0;
+}
+
+.inner {
+
+
+  font-size: 4rem;
+  background-image: linear-gradient(
+    to bottom,
+    v.$color-white,
+    v.$color-primary-light
+  );
+
+  display: inline-block;
+  background-clip: inherit;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  white-space: nowrap;
+  padding: 0 3rem;
+  letter-spacing: 1rem;
+  word-spacing: 3rem;
+  animation: marquee 70s linear infinite;
+
+}
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+ 
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.inner span {
+  margin-right: 50px; /* Adjust the space between duplicated text for smoother scrolling */
+}

@@ -11,11 +11,21 @@ import partner from "../../../public/images/about/partner.png";
 
 import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
 import Image from "next/image";
+import HeadImage from "../../components/PageComponents/HeadImage";
 
 const accreditation = () => {
   return (
     <>
+      <Head>
+        <title> AccreditationOSTAATT</title>
+      </Head>
       <header className={AboutStyles.header} />
+      <p className={standardStyles.toplinksnav}>
+        <Link href="/"> COSTAATT/ </Link>
+        <Link href="/about">About/</Link>
+        <Link href="/about/accreditation">Accreditation</Link>
+      </p>
+      
       <section className={AboutStyles.section_accreditation}>
         <header>
           <span className={standardStyles.heading_primary__main}>

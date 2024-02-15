@@ -151,8 +151,8 @@ const Home = () => {
       <section> */}
         <div id="unique" className={HomeStyles.containerunique}>
           4
-          <div className={HomeStyles.row}>
-            {/* <div className={HomeStyles.threeholder}> */}
+          {/* <div className={HomeStyles.row}> */}
+            <div className={HomeStyles.threeholder}>
             <div className={HomeStyles.threeone}>
               <div className={HomeStyles.circlepic}></div>
               <div className={HomeStyles.circleborder}>

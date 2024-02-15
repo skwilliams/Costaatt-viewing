@@ -1,5 +1,4 @@
-@import "../abstracts/variables";
-@import "../abstracts/mixins";
+@use "../abstracts/variables" as v;
 
 .sectiontext {
   font-size: 2.5rem;
@@ -13,7 +12,7 @@
 }
 .subintrotext {
   font-size: 1.5rem;
-  font-family: $default-font-family;
+  font-family: v.$default-font-family;
   text-align: center;
   margin: 5em;
   line-height: 1.5;
@@ -22,7 +21,7 @@
 
 .sectiontextleft {
   font-size: 2.5rem;
-  font-family: $default-font-family;
+  font-family: v.$default-font-family;
   font-weight: 700;
   text-align: left;
   margin: 2em 0;
@@ -33,31 +32,31 @@
   text-align: left;
   font-size: 2.5rem;
   margin-bottom: 4rem;
-  color: $grey;
+  color: v.$grey;
 
   grid-column: 1 / span 2;
 
   span {
-    color: $color-primary;
+    color: v.$color-primary;
   }
 
   &White {
-    color: white;
+    color: v.$color-white;
     span {
-      color: $grey;
+      color: v.$grey;
     }
   }
 }
 
 .headingPrimary {
   font-weight: 600;
-  color: $orange;
+  color: v.$orange;
   text-transform: capitalize;
 
   backface-visibility: hidden;
   margin-bottom: 6rem;
 
-  &main {
+  &__main {
     display: block;
     font-size: 3rem;
     font-weight: 400;
@@ -70,7 +69,7 @@
 
    @media only screen and (max-width: 37.5em)  {
       letter-spacing: 1rem;
-      font-family: $default-font-family;
+      font-family: v.$default-font-family;
     }
     /*
         animation-delay: 3s;
@@ -78,7 +77,7 @@
         */
   }
 
-  &sub {
+  &__sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
@@ -92,9 +91,10 @@
       margin-bottom: 1rem;
     }
     span {
-      color: $color-primary;
+      color: v.$color-primary;
     }
   }
+
 }
 
 // Style for links at top of each page
@@ -104,7 +104,7 @@
   margin: 3rem 0.5rem;
 
   :hover {
-    color: $orange;
+    color: v.$orange;
   }
 }
 
@@ -113,7 +113,7 @@
   text-transform: capitalize;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, $red, $orange);
+  background-image: linear-gradient(to right, v.$red, v.$orange);
   background-clip: text;
   color: transparent;
   letter-spacing: 0.2rem;
@@ -143,7 +143,7 @@
   text-transform: capitalize;
   margin-bottom: 3rem;
   span {
-    color: $color-primary;
+    color: v.$color-primary;
     float: left;
     font-size: 1.5rem;
   }
@@ -158,7 +158,7 @@
 .paragraph {
   font-size: 1.6rem;
   line-height: 2;
-  font-family: $default-font-family;
+  font-family: v.$default-font-family;
 
   &:not(:last-child) {
     margin-bottom: 3rem;
@@ -180,18 +180,19 @@
 //Links to the top of the pages
 .toplinksnav {
   display: flex;
-  width: 50%;
-  font-size: 1.25rem;
-  font-weight: 700;
+  width: 100%;
+  font-size: .7rem;
+  font-weight: 500;
   color: #222222;
-  margin-top: 0.5rem;
+  // color:red;
+  margin-top: 0.3rem;
   margin-bottom: 0;
   text-align: left;
-  padding: 1em;
+  padding: 0 1rem;
 }
 
 .introtext {
-  font-family: $default-font-family;
+  font-family: v.$default-font-family;
   font-size: 1.65rem;
   line-height: 2;
   text-align: center;
@@ -200,7 +201,7 @@
 }
 
 .centerunder {
-  border: 0.15rem solid $color-primary;
+  border: 0.15rem solid v.$color-primary;
   border-radius: 0.5rem;
   width: 50%;
   margin: 0 25% 0 25%;
@@ -209,14 +210,14 @@
 //For Services Page
 
 %heading {
-  font-family: $font-display;
+  font-family: v.$font-display;
   font-weight: 400;
 }
 
 .heading-1 {
   @extend %heading;
   font-size: 4.75rem;
-  color: $color-grey-light-1;
+  color: v.$color-grey-light-1;
   line-height: 1;
 }
 
@@ -227,17 +228,17 @@
   line-height: 1;
 
   &_light {
-    color: $color-grey-light-1;
+    color: v.$color-grey-light-1;
   }
   &_dark {
-    color: $color-primary-dark;
+    color: v.$color-primary-dark;
   }
 }
 
 .heading-3 {
   @extend %heading;
   font-size: 1.85rem;
-  color: $color-primary;
+  color: v.$color-primary;
   text-transform: uppercase;
 }
 
@@ -246,19 +247,19 @@
   font-size: 2.15rem;
 
   &-light {
-    color: $color-grey-light-1;
+    color: v.$color-grey-light-1;
   }
   &-dark {
-    color: $color-grey-dark-1;
+    color: v.$color-grey-dark-1;
   }
 }
 
 .btn {
-  background-color: $color-primary;
+  background-color: v.$color-primary;
   color: #fff;
   border: none;
   border-radius: 0;
-  font-family: $font-display;
+  font-family: v.$font-display;
   font-size: 2.1rem;
   text-transform: uppercase;
   padding: 1.8rem 3rem;
@@ -266,7 +267,7 @@
   transition: all 0.2s;
 
   &:hover {
-    background-color: $color-primary-dark;
+    background-color: v.$color-primary-dark;
   }
 }
 
@@ -285,25 +286,26 @@
 
 //For accreditation 
 .heading_primary {
+  
     backface-visibility: hidden;
 
     &__main {
         text-align: center;
         text-transform: uppercase;
-        color: $color-primary;
+        color: v.$color-primary;
         display: block;
         font-size: 5rem;
         font-weight: 500;
         letter-spacing: 2rem;
         animation: moveInTop 1s ease-in-out;
-        margin-top: 3rem; // shift up 
+        margin-top: 0; // shift up 
 
- @media only screen and (max-width: 37.5em) {
+ @media only screen and (max-width: 37.5em) { //phone
             font-size: 2.5rem !important;
             letter-spacing: .5rem !important;
             margin-top: 3rem !important;
         }
- @media only screen and (max-width: 56.25em){
+ @media only screen and (max-width: 56.25em){  //tab-port
             font-size: 3rem;
             letter-spacing: 1rem;
             margin-top: 3rem !important;
@@ -329,51 +331,16 @@
             font-size: 1.25rem;
         }
     }
-}
 
-.heading_Noprimary {
-    backface-visibility: hidden;
 
-    &__main {
-        text-align: center;
-        text-transform: uppercase;
-        color: $color-primary;
-        display: block;
-        font-size: 5rem;
-        font-weight: 500;
-        letter-spacing: 2rem;
-        animation: moveInTop 1s ease-in-out;
-        // margin-top: 3rem; // shift up 
-
- @media only screen and (max-width: 37.5em) {
-            font-size: 2.5rem !important;
-            letter-spacing: .5rem !important;
-            // margin-top: 3rem !important;
-        }
- @media only screen and (max-width: 56.25em){
-            font-size: 3rem;
-            letter-spacing: 1rem;
-            // margin-top: 3rem !important;
-        }
-
-    }
-
-    &__sub {
-        text-align: center;
-        display: block;
+    &__tertiary {
         font-size: 1.5rem;
-        font-weight: 400;
+        color: v.$color-primary;
+        font-weight: 600;
         letter-spacing: .5rem;
-        animation: moveInRight 1s ease-in-out;
-        margin-bottom: 5rem;
-           text-transform:capitalize;
-
-     @media only screen and (max-width: 37.5em) {
-            font-size: 1rem;
-        }
-
-     @media only screen and (max-width: 56.25em){
-            font-size: 1.25rem;
-        }
+        animation: moveInLeft 1s ease-in-out;
+        margin-bottom: .5rem;
+        padding-bottom: 2rem;
     }
 }
+

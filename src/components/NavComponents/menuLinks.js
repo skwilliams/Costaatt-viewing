@@ -72,8 +72,8 @@ export const topNavLinksLeft = [
           },
           {
             title: "ICTs and Digital Technologies",
-            // path: "/programmes/schools/busIT/ICTD",
-            path: "#",
+            path: "/programmes/schools/busIT/ICTD",
+            // path: "#",
           },
         ],
       },
@@ -196,38 +196,38 @@ export const mainNavLinks = [
     submenu: [
       {
         title: "Overview",
-        path: "#",
-        // path: "/programmes",
+        // path: "#",
+        path: "/programmes",
       },
       {
         title: "All Programmes",
-        path: "#",
-        // path: "/programmes/allprogrammes",
+        // path: "#",
+        path: "/programmes/allprogrammes",
       },
 
       {
         title: "College Core",
-        path: "#",
-        // path: "/programmes/Collegecore",
+        // path: "#",
+        path: "/programmes/Collegecore",
       },
       {
         title: "Professional Development Courses",
-        path: "#",
-        // path: "/programmes/shortcourses",
+        // path: "#",
+        path: "/programmes/shortcourses",
       },
     ],
     submenuImage: [
       {
         img: require("../../../public/images/dummyImg1.jpg"),
         title: "Academic Calendar",
-        path: "#",
-        // path: "/programmes/academiccalendar",
+        // path: "#",
+        path: "/programmes/academiccalendar",
       },
       {
         img: require("../../../public/images/dummyImg1.jpg"),
         title: "Admission Counsellor",
-        path: "#",
-        // path: "/programmes/admissioncounsellors",
+        // path: "#",
+        path: "/programmes/admissioncounsellors",
       },
     ],
   },

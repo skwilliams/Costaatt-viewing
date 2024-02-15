@@ -20,7 +20,7 @@ const leadership = () => {
       </Head>
       <section className={AboutStyles.sectionPageHeader}>
         <header>
-          <HeadImage mainimage={headimg} caption="College Leadership" />
+          <HeadImage mainimage={headimg}  />
           <p
             className={`${standardStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}
           >

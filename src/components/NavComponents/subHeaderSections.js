@@ -216,7 +216,7 @@ export const subHeaderSections = {
     Contact: "contact",
   },
   translation: {
-    Overview: "intro",
+   
     "Translation ": "translate",
     "Interpretation Services": "interpret",
     "Contact ": "contact",
