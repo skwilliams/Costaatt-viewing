@@ -90,8 +90,7 @@ const Home = () => {
   return (
     <>
       <section id="video">
-        {/* <h2 className={HomeStyles.heading}>The Premier Undergraduate College</h2>*/}
-        {/* <div className={HomeStyles.sectionLeftTop}>  */}
+        
         <div className={HomeStyles.sectionLeftBottom}>
           <div className={HomeStyles.selectContainer}>
             <h2 className={HomeStyles.heading}>
@@ -150,7 +149,7 @@ const Home = () => {
 
       <section> */}
         <div id="unique" className={HomeStyles.containerunique}>
-          4
+          
           {/* <div className={HomeStyles.row}> */}
             <div className={HomeStyles.threeholder}>
             <div className={HomeStyles.threeone}>
@@ -267,7 +266,7 @@ const Home = () => {
                     <li>Digital Training</li>
                     <li>Digital Content</li>
                     <li>Prototyping</li>
-                    <li>Product Commercialisation</li>
+                    {/* <li>Product Commercialisation</li> */}
                     <li>Business Coaching </li>
                   </ul>
                 </div>

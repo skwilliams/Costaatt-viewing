@@ -134,9 +134,9 @@
 
 .bg_video {
   position: absolute;
-  top: 0;
+  top: 5%;
   left: 0%;
-  height: 155vh;
+  height: 100%;
   width: 100%;
   z-index: -1;
   // opacity: .05;
@@ -351,16 +351,17 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
+
   // display: grid;
   // grid-template-columns: repeat(4,1fr);
   // border: 1px solid rgba($grey,0.4);
 }
 .threeone {
   display: inline-block;
-  
+
   width: 25%;
   height: 100%;
-  background-color: rgba($grey, 0.4);
+  background-color: $grey;
   border-bottom: 15px solid $color-primary-dark;
   text-align: center;
   transition: all 0.25s;
@@ -376,7 +377,7 @@
   // background: transparent;
   border-bottom: 15px solid $color-primary-dark;
   transition: all 0.25s;
-  background-color: rgba($grey, 0.4);
+  background-color: $grey;
   // border: 1px solid white;
 
   @media only screen and (max-width: 56.25em) {
@@ -390,7 +391,7 @@
 
   border-bottom: 15px solid $color-primary-dark;
   transition: all 0.25s;
-  background-color: rgba($grey, 0.4);
+  background-color: $grey;
   // border: 1px solid white;
 
   @media only screen and (max-width: 56.25em) {
@@ -401,7 +402,8 @@
   display: inline-block;
   width: 25%;
   height: 100%;
-  background-color: rgba($grey, 0.4);
+  background-color: $grey;
+
   // border: 1px solid white;
   border-bottom: 15px solid $color-primary-dark;
   transition: all 0.25s;
@@ -419,14 +421,14 @@
   transform: move;
 }
 .threeone:hover .circlepic {
-  background: #5c5c5c;
+  background: $grey;
 }
 .threeone:hover .circleborder {
   background: #333333;
 }
 .threeone:hover svg {
   fill: $color-primary-dark;
-  font-size:1.5rem;
+  font-size: 1.5rem;
 }
 .threeholder h4 {
   width: 200px;
@@ -434,6 +436,7 @@
   text-transform: uppercase;
   font-size: 2rem;
   margin-left: -55px;
+  margin-bottom: 0;
   font-weight: bold;
   margin-top: 40px;
   text-align: center;
@@ -447,11 +450,23 @@
   margin-left: -55px;
   margin-top: 20px;
   font-size: 1.6rem;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   color: $color-white;
   font-weight: 600;
+}
 
-  line-height: 1.5;
+.threeholder li {
+  // display: inline-block;
+  // width: 200px;
+  // text-align: center;
+  // margin-left: -55px;
+  // margin-top: 20px;
+  // font-size: 1.6rem;
+  // padding: 1rem 0;
+  // color: $color-white;
+  // font-weight: 600;
+
+  // line-height: 1.5;
 }
 .threeone:hover h4 {
   color: black;
@@ -571,7 +586,7 @@
 .sectionNotices {
   height: 30rem;
   // width: 100%;
-  margin:10rem;
+  margin: 10rem;
   display: grid;
   grid-template-columns: 50% 50%;
   background-color: $color-primary-dark;
@@ -583,16 +598,39 @@
     rgba($color-primary-light, 0.5)
   );
 
+  @media screen and (max-width: 768px) {
+  .sectionNotices {
+    grid-template-columns: 100%; /* Adjusted to single column for smaller screens */
+    padding: 5rem; /* Adjusted padding for better spacing on smaller screens */
+ 
+ 
+  }
+
+}
+
   h2 {
     padding: 1rem 2rem;
     font-size: 5rem;
     color: $color-white;
+
+    @media screen and (max-width: 768px) {
+ h2 {
+    font-size: 4rem; /* Decreased font size for better readability on smaller screens */
+  }
+}
+
   }
   p {
     font-size: 3rem;
     padding: 2rem 4rem;
     color: $color-white;
-  }
+     @media screen and (max-width: 768px) {
+        p {
+          font-size: 2.5rem; /* Decreased font size for better readability on smaller screens */
+        }
+ 
+      }
+}
 }
 .sectionheadings {
   text-align: center;
@@ -602,6 +640,9 @@
     color: $color-primary-dark;
   }
 }
+
+/* Media Query for smaller screens */
+
 
 .sectionTwoGrid {
   display: grid;
@@ -729,11 +770,10 @@
 
 // }
 
-.sectioncallAction{
-
-margin:0;
-display: grid;
-grid-template-columns: 70% 30%;
+.sectioncallAction {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 70% 30%;
 
   // height: 50vh;
   // //  height: 60vw;
@@ -745,7 +785,7 @@ grid-template-columns: 70% 30%;
   //     rgba($color-primary-light, 0.5)
   //   ),
   //   url("../../public/images/servicesPhoto/ChaguanasOutside.jpeg");
-    // background-image:     url("../../public/images/servicesPhoto/ChaguanasOutside.jpeg");
+  // background-image:     url("../../public/images/servicesPhoto/ChaguanasOutside.jpeg");
 
   // Source: https://www.freepik.com/free-photo/standard-quality-control-collage-concept_30589253.htm#query=quality%20assurance&position=44&from_view=keyword&track=ais&uuid=11090649-220d-41aa-874a-c89449145375
   // background-size: cover;
@@ -754,17 +794,13 @@ grid-template-columns: 70% 30%;
   // width: '100%';
   //   height: 40vh;
 
-  .costaattImage{
-
-      background-size: cover;
-      background-position:center;
-      position: relative;
-      width: '100%';
-      height: 40vh;
-
-
-    }
-
+  .costaattImage {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: "100%";
+    height: 40vh;
+  }
 }
 .sectionNewsTitle {
   grid-column: 1 / span 2;
@@ -1142,3 +1178,55 @@ grid-template-columns: 70% 30%;
     transform: translateX(0);
   }
 }
+/* General styles */
+.btn {
+  /* Existing styles */
+
+  @media only screen and (max-width: 960px) {
+    /* Adjust button padding for smaller screens */
+    padding: 1rem 2rem;
+    margin-bottom: 1em;
+  }
+
+  /* Add more responsive adjustments as needed */
+}
+
+.sectionOneLeft {
+  /* Existing styles */
+
+  @media only screen and (max-width: 960px) {
+    /* Adjust section width for smaller screens */
+    width: 100%;
+  }
+
+  /* Add more responsive adjustments as needed */
+}
+
+.selectContainer {
+  /* Existing styles */
+
+  @media only screen and (max-width: 960px) {
+    /* Adjust container width for smaller screens */
+    width: 100%;
+  }
+
+  /* Add more responsive adjustments as needed */
+}
+
+.threeholder {
+  /* Existing styles */
+
+  @media only screen and (max-width: 960px) {
+    /* Adjust container height for smaller screens */
+    height: auto;
+  }
+
+  /* Add more responsive adjustments as needed */
+}
+
+/* Add more media queries and responsive adjustments as needed */
+
+@media only screen and (max-width: 480px) {
+  /* Additional styles for screens up to 480px width */
+}
+

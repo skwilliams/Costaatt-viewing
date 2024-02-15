@@ -134,3 +134,17 @@
     }
   }
 }
+@media screen and (max-width: 1024px) {
+  .testimonialContainer {
+    margin-left: 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  .testimonialContent {
+    margin-right: 0;
+  }
+
+  .testimonialImage {
+    display: none;
+  }
+}

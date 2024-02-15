@@ -154,3 +154,25 @@
   width: 250px;
   height: auto;
 }
+
+
+//responsive
+/* Media Query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .topNavContainer {
+    padding: 0 1rem; /* Further adjust padding for smaller screens */
+  }
+
+  .topNavdropDownMenu {
+    grid-template-columns: repeat(2, 1fr); /* Adjust grid for smaller screens */
+  }
+
+  .topNavdropDownSchoolLink {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .topNavdropDownDeptLink a {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+    padding: 6px; /* Adjust padding for smaller screens */
+  }
+}

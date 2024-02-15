@@ -231,6 +231,18 @@
   z-index: 40;
   transition: all 0.3s ease-in-out;
   animation: slideInFromTop 0.8s ease forwards;
+
+
+}
+
+@media only screen and (max-width: 1200px) {
+  /* Adjust styles for screens up to 1200px width */
+  .dropDownMain {
+    top: 75px;
+  }
+  .searchInput {
+    top: 85px;
+  }
 }
 
 .dropDown {
@@ -492,5 +504,89 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+
+//responsive from chat
+@media only screen and (max-width: 960px) {
+  /* Adjust styles for screens up to 960px width */
+  .headerStyles {
+    img {
+      display: block;
+      height: 13rem;
+      width: auto;
+    }
+  }
+  .navbar {
+    gap: 0;
+    align-items: center;
+  }
+  .navbarMenus {
+    gap: 0;
+  }
+  .dropDownMain {
+    top: 21rem;
+  }
+  .searchInput {
+    top: 21rem;
+    input {
+      padding: 15px;
+      width: 60%;
+    }
+  }
+  .homeSearchButton {
+    width: 25%;
+    height: fit-content;
+    padding: 17px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  /* Adjust styles for screens up to 760px width */
+  .headerStyles {
+    align-items: start;
+    padding: 12px 20px;
+    img {
+      height: 60px;
+    }
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    height: 36px;
+    width: 35px;
+    top: 18px;
+    right: 20px;
+  }
+  .navbar {
+    gap: 0;
+    align-items: center;
+  }
+  .navbarMenus {
+    display: none;
+    gap: 0;
+  }
+  .dropDownMain {
+    top: 210px;
+  }
+  .searchInput {
+    top: 120px;
+    input {
+      padding: 15px;
+      width: 60%;
+    }
+  }
+  .homeSearchButton {
+    width: 25%;
+    height: fit-content;
+    padding: 17px;
+  }
+  .magnifyingGlass {
+    position: absolute;
+    height: 30px;
+    padding: 4px;
+    top: 20px;
+    right: 80px;
   }
 }
