@@ -5,6 +5,7 @@ import standardStyles from "../../styles/main.module.scss";
 import AdmisStyles from "../../styles/Admissions.module.scss";
 import HeadImage from "../../components/PageComponents/HeadImage";
 import awaitingbanner from "../../../public/images/about/qualitycontrol1.jpg";
+import EventsCalendar from "../../components/PageComponents/EventsCalendar";
 
 import { Button, Divider } from "@mui/material";
 import Image from "next/image";
@@ -72,7 +73,7 @@ const studentorg = () => {
         id="existingclubs"
         className={`${standardStyles.sectionclubs} ${standardStyles.marginTopBig}`}
       >
-        <h2 className={standardStyles.headingPrimarysub}> Exisitng Clubs</h2>
+        <h2 className={standardStyles.heading_primary__secondary}> Exisitng Clubs</h2>
 
         <div className={standardStyles.row}>
           <div className={standardStyles.col1of3}>
@@ -220,18 +221,18 @@ const studentorg = () => {
           </div>
         </div>
       </section>
-      <section id="startclub" className={`${standardStyles.sectionstartclub} `}>
+      <section id="startclub" className={`${standardStyles.sectionstartclub}`}>
         <div className={standardStyles.row}>
           <div className={standardStyles.col1of2}>
             <div className={standardStyles.startclub}>
               <h2> Start a New Club</h2>
-              <h3 className={standardStyles.paragraph}>
+              <h3 className={standardStyles.paragraphclub}>
                 {" "}
                 Are you passionate about anything, you can create a club{" "}
               </h3>
 
               <button
-                className={`${standardStyles.btn} ${standardStyles.btn__purple}`}
+                className={`${standardStyles.btn} `}
               >
                 Start a Club
               </button>
@@ -240,7 +241,7 @@ const studentorg = () => {
           <div className={standardStyles.col1of2}>
             <div className={standardStyles.joinclub}>
               <h2> Join an Existing Club</h2>
-              <h3 className={standardStyles.paragraph}>
+              <h3 className={standardStyles.paragraphclub}>
                 {" "}
                 We are so exciting for you to join us{" "}
               </h3>
@@ -253,10 +254,11 @@ const studentorg = () => {
 
       <section
         id="ambassadors"
-        className={`${standardStyles.sectionambasadoor} `}
+        className={`${standardStyles.sectionambasadoor}   ${standardStyles.marginTopHuge}  ${standardStyles.marginBottomBig}`}
       >
-        <h2 className={standardStyles.headingPrimarysub}>
-          {" "}
+        <h2
+          className={`${standardStyles.heading_primary__secondary} ${standardStyles.centertext}`}
+        >
           Student Ambassadors
         </h2>
         <div className={standardStyles.row}>
@@ -270,16 +272,17 @@ const studentorg = () => {
               <br />
             </p>
 
-            <p className={standardStyles.paragraph}>
-              To become a Student Ambassador...
-              <Link
+            {/* <p className={standardStyles.paragraph}>
+              To become a Student Ambassador... </p>
+              <div>   
+              <button
                 href="#contact"
                 className={`${standardStyles.btn} ${standardStyles.btn__purple}`}
               >
                 {" "}
                 contact student life{" "}
-              </Link>{" "}
-            </p>
+              </button>{" "}</div> */}
+           
             {/* <Link href="./transfercredits" className={standardStyles.btnText}>
               Learn more →
             </Link> */}
@@ -324,24 +327,29 @@ const studentorg = () => {
       <div className={standardStyles.marginTopBig}></div>
 
       <section id="events" className={`${standardStyles.sectionNoSidenav} `}>
-        <h2 className={standardStyles.headingPrimarysub}>
-          {" "}
-          Upcoming Club Events
-        </h2>
-        <div className={standardStyles.marginTopBig}></div>
+        <div className={standardStyles.marginTopHuge}>
+          <h2
+            className={`${standardStyles.heading_primary__secondary} ${standardStyles.centertext}`}
+          >
+            {" "}
+            Upcoming Club Events
+          </h2>
 
-        <div className={`${standardStyles.row}`}>
-          <div className={standardStyles.col1of3}>
-            <EventCardOrig />
-          </div>
-          <div className={standardStyles.col1of3}>
-            <EventCardOrig />
-          </div>
-
-          <div className={standardStyles.col1of3}>
-            <EventCardOrig />
-          </div>
+          <EventsCalendar />
         </div>
+
+        {/* <div className={`${standardStyles.row}`}>
+          <div className={standardStyles.col1of3}>
+            <EventCardOrig />
+          </div>
+          <div className={standardStyles.col1of3}>
+            <EventCardOrig />
+          </div>
+
+          <div className={standardStyles.col1of3}>
+            <EventCardOrig />
+          </div>
+        </div> */}
 
         {/* <EventsRow
           label="Upcoming"
@@ -352,7 +360,9 @@ const studentorg = () => {
       {/* <div className={standardStyles.marginTopBig}></div> */}
       {/* sectionSideNav overriding  with marginBottomBig */}
       <section id="contact" className={standardStyles.sectionNoSidenav}>
-        <h2 className={standardStyles.headingPrimarysub}>
+        <h2
+          className={`   ${standardStyles.marginTopHuge} ${standardStyles.heading_primary__secondary} ${standardStyles.centertext}`}
+        >
           {" "}
           Contact Student Life{" "}
         </h2>

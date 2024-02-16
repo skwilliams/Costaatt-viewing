@@ -67,7 +67,7 @@
     animation-timing-function: ease-out;
     margin-bottom: 3rem;
 
-   @media only screen and (max-width: 37.5em)  {
+    @media only screen and (max-width: 37.5em) {
       letter-spacing: 1rem;
       font-family: v.$default-font-family;
     }
@@ -86,7 +86,7 @@
     margin-bottom: 3rem;
     margin-top: 3rem;
 
-   @media only screen and (max-width: 37.5em)  {
+    @media only screen and (max-width: 37.5em) {
       letter-spacing: 0.5rem;
       margin-bottom: 1rem;
     }
@@ -94,7 +94,6 @@
       color: v.$color-primary;
     }
   }
-
 }
 
 // Style for links at top of each page
@@ -123,7 +122,7 @@
     text-align: center;
   }
 
-    @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 56.25em) {
     font-size: 3rem;
   }
 
@@ -181,7 +180,7 @@
 .toplinksnav {
   display: flex;
   width: 100%;
-  font-size: .7rem;
+  font-size: 0.7rem;
   font-weight: 500;
   color: #222222;
   // color:red;
@@ -284,63 +283,71 @@
   margin-bottom: 9.6rem;
 }
 
-//For accreditation 
+//For accreditation
 .heading_primary {
-  
-    backface-visibility: hidden;
+  backface-visibility: hidden;
 
-    &__main {
-        text-align: center;
-        text-transform: uppercase;
-        color: v.$color-primary;
-        display: block;
-        font-size: 5rem;
-        font-weight: 500;
-        letter-spacing: 2rem;
-        animation: moveInTop 1s ease-in-out;
-        margin-top: 0; // shift up 
+  &__main {
+    text-align: center;
+    text-transform: uppercase;
+    color: v.$color-primary;
+    display: block;
+    font-size: 5rem;
+    font-weight: 500;
+    letter-spacing: 2rem;
+    animation: moveInTop 1s ease-in-out;
+    margin-top: 0; // shift up
 
- @media only screen and (max-width: 37.5em) { //phone
-            font-size: 2.5rem !important;
-            letter-spacing: .5rem !important;
-            margin-top: 3rem !important;
-        }
- @media only screen and (max-width: 56.25em){  //tab-port
-            font-size: 3rem;
-            letter-spacing: 1rem;
-            margin-top: 3rem !important;
-        }
+    @media only screen and (max-width: 37.5em) {
+      //phone
+      font-size: 2.5rem !important;
+      letter-spacing: 0.5rem !important;
+      margin-top: 3rem !important;
+    }
+    @media only screen and (max-width: 56.25em) {
+      //tab-port
+      font-size: 3rem;
+      letter-spacing: 1rem;
+      margin-top: 3rem !important;
+    }
+  }
 
+  &__sub {
+    text-align: center;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+    animation: moveInRight 1s ease-in-out;
+    margin-bottom: 5rem;
+    text-transform: capitalize;
+
+    @media only screen and (max-width: 37.5em) {
+      font-size: 1rem;
     }
 
-    &__sub {
-        text-align: center;
-        display: block;
-        font-size: 1.5rem;
-        font-weight: 400;
-        letter-spacing: .5rem;
-        animation: moveInRight 1s ease-in-out;
-        margin-bottom: 5rem;
-           text-transform:capitalize;
-
-     @media only screen and (max-width: 37.5em) {
-            font-size: 1rem;
-        }
-
-     @media only screen and (max-width: 56.25em){
-            font-size: 1.25rem;
-        }
+    @media only screen and (max-width: 56.25em) {
+      font-size: 1.25rem;
     }
+  }
 
+  &__tertiary {
+    font-size: 1.5rem;
+    color: v.$color-primary;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+    animation: moveInLeft 1s ease-in-out;
+    margin-bottom: 0.5rem;
+    padding-bottom: 2rem;
+  }
 
-    &__tertiary {
-        font-size: 1.5rem;
-        color: v.$color-primary;
-        font-weight: 600;
-        letter-spacing: .5rem;
-        animation: moveInLeft 1s ease-in-out;
-        margin-bottom: .5rem;
-        padding-bottom: 2rem;
-    }
+  &__secondary {
+    font-size: 2rem;
+    color: v.$color-primary;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+    animation: moveInLeft 1s ease-in-out;
+    margin-bottom: 5rem;
+    padding-bottom: 3rem;
+  }
 }
-

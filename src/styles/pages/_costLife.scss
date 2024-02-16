@@ -1,137 +1,137 @@
-
 .sectionclubs {
-    background-color: $color-primary-dark;
-    padding: 5rem 5rem 3rem 8rem;
+  background-color: $color-primary-dark;
+  padding: 5rem 5rem 3rem 8rem;
 
+  @media only screen and (max-width: 56.25em) {
+    padding: 20rem 0 10rem 0;
+    margin: 0 5rem !important;
+  }
 
-
-    @media only screen and (max-width: 56.25em) {
-        padding: 20rem 0 10rem 0;
-        margin: 0 5rem !important;
-    }
-
-    
   // .col1of2:nth-child(2n) {
   //   background-color: #eee;
   // }
 }
 
+.sectionstartclub {
+  padding: 0 5rem 0 5rem;
 
+  // background-color: $color-grey-light-1;
+  //  background-image: linear-gradient(
+  //         to right bottom,
+  //        rgba($color-grey-light-1, 0.4),
+  //        rgba($color-primary-light, 0.4),
 
+  //        url(../../../public/images/costaattlife/joinclub.png));
 
-.sectionstartclub{
-    padding: 0 5rem 0 5rem;
+  // text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: top;
+  position: relative;
 
-background-color: $color-grey-light-1;
- background-image: linear-gradient(
-        to right bottom,
-       rgba($color-grey-light-1, 0.4),
-       rgba($color-primary-light, 0.4),
-    url(../../../public/images/costaattlife/joinclub.png));
-   
-
-// text-align: center;
-width:100%;
-margin:0 auto;
-
-  h2{
+  h2 {
     font-size: 6vmin;
-    padding: 1em  0 1em 0;
+    padding: 1em 0 1em 0;
   }
-  h3{
+  h3 {
     font-size: 4vh;
-    padding:1em 0 2em 0 ;
+    padding: 1em 0 2em 0;
   }
-.joinclub{
-  padding:1em;
 
-text-align: center;
+  .joinclub {
+    padding: 1em;
+
+    text-align: center;
 
     background-image: linear-gradient(
-        to right bottom,
-        rgba($color-grey-light-1, 0.6),
-        rgba($color-primary-light, 0.6),
-    url(../../../public/images/costaattlife/joinclub.png));
+      to right bottom,
+      rgba($color-grey-light-1, 0.6),
+      rgba($color-primary-light, 0.6)
+    ),
+       url(../../../public/images/costaattlife/joinclub.png);
+    
     background-size: cover;
-    background-position-x:right;
+    // background-position-x: right;
+
+  background-position: top;
+  // position: relative;
     // max-width: 1500px;
-  
-
-
-
   }
-  }
+}
 
-
-
-.imgstyles{
+.imgstyles {
   width: 100%;
 }
 
-
-
-.startclub{
-
-  padding:1em;
+.startclub {
+  padding: 1em;
   // background-image:     url(../../../public/images/costaattlife/joinclub.png);
-text-align: center;
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($color-grey-light-1, 0.6),
-        rgba($color-primary-light, 0.6)),
+  text-align: center;
+  width: 100%;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-dark, 0.4),
+      rgba($color-primary-light, 0.4)
+    ),
     url(../../../public/images/costaattlife/startclub.jpg);
-    background-position-x: right;
-        background-size:cover;
+  background-position-x: right;
+  background-size: cover;
+}
+.paragraphclub {
+  // position: relative;
+  // top:60%;
+
+  position: relative;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-
-
-.sportsintro{
- 
+.sportsintro {
   margin: 0 2rem;
   max-width: 1000px;
 
-text-align: left;
-// background-image:     url(../../../public/images/costaattlife/caimans.png);
+  text-align: left;
+  // background-image:     url(../../../public/images/costaattlife/caimans.png);
 
-
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-grey-light-1, 0.8),
-        rgba($color-primary-light, 0.8));
-    // url(../../../public/images/costaattlife/caimans.png);
-    background-size:cover;
-    background-position:top;
-  
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-grey-light-1, 0.8),
+    rgba($color-primary-light, 0.8)
+  );
+  // url(../../../public/images/costaattlife/caimans.png);
+  background-size: cover;
+  background-position: top;
 }
-.sectionevents{
-      padding: 0 5rem 0 5rem;
+.sectionevents {
+  padding: 0 5rem 0 5rem;
 
   // background-color: $color-grey-dark;
-
 }
-.sectionambasadoor{
-     margin: 0 8rem !important;
+.sectionambasadoor {
+  margin: 0 8rem !important;
 
   padding: 12rem 0;
-    margin-top: -20vh;
+  margin-top: -20vh;
 
-     @media only screen and (max-width: 56.25em){
-        padding: 8rem 0;
-    }
+  @media only screen and (max-width: 56.25em) {
+    padding: 8rem 0;
+  }
 }
-.sectionsports{
-  padding:1em;
+.sectionsports {
+  padding: 1em;
   //  background-image:         url(../../../public/images/costaattlife/caiman.jpg);
 
-text-align: left;
-      background-image: linear-gradient(
-        to right bottom,
-         rgba($color-grey-light-1, 0.6),
-        rgba($color-grey-dark, 0.6),
-    url(../../../public/images/costaattlife/caiman.jpg));
-    background-position-x: right;
-        background-size: cover;
-        background-position: bottom 50px right 100px;
-        background-color: rgba($color-grey-light-1, 0.4);
+  text-align: left;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-grey-light-1, 0.6),
+    rgba($color-grey-dark, 0.6),
+    url(../../../public/images/costaattlife/caiman.jpg)
+  );
+  background-position-x: right;
+  background-size: cover;
+  background-position: bottom 50px right 100px;
+  background-color: rgba($color-grey-light-1, 0.4);
 }
