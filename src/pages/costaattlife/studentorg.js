@@ -73,7 +73,12 @@ const studentorg = () => {
         id="existingclubs"
         className={`${standardStyles.sectionclubs} ${standardStyles.marginTopBig}`}
       >
-        <h2 className={standardStyles.heading_primary__secondary}> Exisitng Clubs</h2>
+        <h2
+          className={`${standardStyles.heading_primary__secondary} ${standardStyles.centertext} ${standardStyles.whitefont}`}
+        >
+          {" "}
+          Exisitng Clubs
+        </h2>
 
         <div className={standardStyles.row}>
           <div className={standardStyles.col1of3}>
@@ -231,11 +236,7 @@ const studentorg = () => {
                 Are you passionate about anything, you can create a club{" "}
               </h3>
 
-              <button
-                className={`${standardStyles.btn} `}
-              >
-                Start a Club
-              </button>
+              <button className={`${standardStyles.btn} `}>Start a Club</button>
             </div>
           </div>
           <div className={standardStyles.col1of2}>
@@ -282,7 +283,7 @@ const studentorg = () => {
                 {" "}
                 contact student life{" "}
               </button>{" "}</div> */}
-           
+
             {/* <Link href="./transfercredits" className={standardStyles.btnText}>
               Learn more →
             </Link> */}
