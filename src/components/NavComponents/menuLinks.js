@@ -317,7 +317,7 @@ export const mainNavLinks = [
       },
       {
         title: "I.T. Facilities",
-        path: "/costaattlife/itfacilities",
+        path: "/costaattlife/Itfacilities",
       },
       {
         title: "Events",

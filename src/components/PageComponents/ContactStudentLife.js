@@ -18,7 +18,10 @@ const ContactStudentLife = () => {
             src={telephone}
             alt="telephone icon"
           />
-          <p className={AdmisStyles.iconfont}> 625-5030 ext 5227,5236</p>
+          <p className={`${AdmisStyles.iconfont} ${standardStyles.paragraph}`}>
+            {" "}
+            625-5030 ext 5227,5236
+          </p>
         </div>
         <div className={standardStyles.col1of3}>
           <Image className={AdmisStyles.icon} src={email} alt="email icon" />

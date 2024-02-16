@@ -145,7 +145,7 @@ export const subHeaderSections = {
 
     Contact: "contact",
   },
-  itfacilities: {
+  Itfacilities: {
     "Computer Labs": "labs",
     "IT Services ": "services",
     Locations: "locations",
@@ -160,7 +160,7 @@ export const subHeaderSections = {
     Sickbay: "sickbay",
     Contact: "contact",
   },
-  careermgt: {
+  Careermgt: {
     "Career Management": "intro",
     Services: "services",
     Contact: "contact",

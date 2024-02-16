@@ -2,6 +2,8 @@ import React from "react";
 import Link from "next/link";
 import Head from "next/head";
 import standardStyles from "../../styles/main.module.scss";
+import costaattStyles from "../../styles/CostaattLife.module.scss";
+
 import AdmisStyles from "../../styles/Admissions.module.scss";
 import HeadImage from "../../components/PageComponents/HeadImage";
 import awaitingbanner from "../../../public/images/about/qualitycontrol1.jpg";
@@ -53,7 +55,7 @@ const studentorg = () => {
       </header>
       <section
         id="introtoclubs"
-        className={`${standardStyles.sectionNoSidenav} ${standardStyles.marginBottomBig}`}
+        className={`${costaattStyles.sectionNoSidenav} ${standardStyles.marginBottomBig}`}
       >
         <p className={standardStyles.paragraph}>
           Registered Student Organisations (RSOs) are student clubs formed by
@@ -71,7 +73,7 @@ const studentorg = () => {
       </section>
       <section
         id="existingclubs"
-        className={`${standardStyles.sectionclubs} ${standardStyles.marginTopBig}`}
+        className={`${costaattStyles.sectionclubs} ${standardStyles.marginTopBig}`}
       >
         <h2
           className={`${standardStyles.heading_primary__secondary} ${standardStyles.centertext} ${standardStyles.whitefont}`}
@@ -226,10 +228,10 @@ const studentorg = () => {
           </div>
         </div>
       </section>
-      <section id="startclub" className={`${standardStyles.sectionstartclub}`}>
+      <section id="startclub" className={`${costaattStyles.sectionstartclub}`}>
         <div className={standardStyles.row}>
           <div className={standardStyles.col1of2}>
-            <div className={standardStyles.startclub}>
+            <div className={costaattStyles.startclub}>
               <h2> Start a New Club</h2>
               <h3 className={standardStyles.paragraphclub}>
                 {" "}
@@ -240,9 +242,9 @@ const studentorg = () => {
             </div>
           </div>
           <div className={standardStyles.col1of2}>
-            <div className={standardStyles.joinclub}>
+            <div className={costaattStyles.joinclub}>
               <h2> Join an Existing Club</h2>
-              <h3 className={standardStyles.paragraphclub}>
+              <h3 className={costaattStyles.paragraphclub}>
                 {" "}
                 We are so exciting for you to join us{" "}
               </h3>
@@ -255,7 +257,7 @@ const studentorg = () => {
 
       <section
         id="ambassadors"
-        className={`${standardStyles.sectionambasadoor}   ${standardStyles.marginTopHuge}  ${standardStyles.marginBottomBig}`}
+        className={`${costaattStyles.sectionambasadoor}   ${standardStyles.marginTopHuge}  ${standardStyles.marginBottomBig}`}
       >
         <h2
           className={`${standardStyles.heading_primary__secondary} ${standardStyles.centertext}`}
@@ -327,7 +329,7 @@ const studentorg = () => {
       </section>
       <div className={standardStyles.marginTopBig}></div>
 
-      <section id="events" className={`${standardStyles.sectionNoSidenav} `}>
+      <section id="events" className={`${costaattStyles.sectionNoSidenav} `}>
         <div className={standardStyles.marginTopHuge}>
           <h2
             className={`${standardStyles.heading_primary__secondary} ${standardStyles.centertext}`}

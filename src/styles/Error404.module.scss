@@ -45,6 +45,7 @@
     top: 67%;
     left: 7.7%;
     z-index: 4;
+    
   }
 
   &__404Box {
@@ -107,6 +108,7 @@
         position: relative;
         font-size: 2rem;
         color: v.$color-black;
+        background-color:v.$color-primary-dark;
     }
 
     &:hover {
@@ -144,5 +146,6 @@
     &__animated {
         animation: moveInLeft .7s ease-in .10s;
         animation-fill-mode: backwards;
+      
     }
 }

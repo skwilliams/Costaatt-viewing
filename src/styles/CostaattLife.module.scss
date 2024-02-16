@@ -1,4 +1,8 @@
 @import "./abstracts/variables";
+@import "./layout/pagelayout";
+@import "./pages/costLife";
+
+@import "./components/card";
 
 .opening {
   font-size: $default-font-size;

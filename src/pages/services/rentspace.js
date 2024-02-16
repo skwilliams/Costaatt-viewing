@@ -65,12 +65,12 @@ const rentspace = () => {
           <Link href="/services">Services/</Link>
           <Link href="/services/rentspace">Rental Spaces</Link>
         </div>
-        {/* <span className={servicesStyles.heading_primary__main}>
+        <span className={servicesStyles.heading_primary__main}>
             RENTAL SPACES
           </span>
           <span className={servicesStyles.heading_primary__sub}>
             Modern and Attractive Locations
-          </span> */}
+          </span>
       </header>
       {/* <div id="intro" > */}
       <div id="intro" className={servicesStyles.sectionNoSidenav}>
@@ -530,174 +530,174 @@ const rentspace = () => {
         </div>
       </section>
       {/* <section id="morespaces" className={servicesStyles.rentCollage}>
-          <div className={servicesStyles.gallery}>
-            <div
-              className={`${servicesStyles.gallery__item} ${servicesStyles.gallery__item_1}`}
-            >
-              <Image
-                src={trainingRoom128}
-                alt="Gallery image 1"
-                className={servicesStyles.gallery__img}
-                sizes="100vw"
-                style={{ width: "100%", height: "100%" }} // optional
-              />
-            </div>
-            <div
-              className={`${servicesStyles.gallery__item} ${servicesStyles.gallery__item_2}`}
-            >
-              <Image
-                src={chagoutside}
-                alt="Netball"
-                className={standardStyles.gallery__img}
-                sizes="100vw"
-                style={{ width: "100%", height: "100%" }} // optional
-              />
-            </div>
-            <div
-              className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_3}`}
-            >
-              <Image
-                src={parkingFeature}
-                alt="Gallery image 3"
-                className={standardStyles.gallery__img}
-                sizes="100vw"
-                style={{ width: "100%", height: "100%" }} // optional
-              />
-            </div>
-            <div
-              className={`${standardStyles.gallery__item} ${costlifeStyles.gallery__item_4}`}
-            >
-              <Image
-                src={whyimage1}
-                alt="Gallery image 4"
-                className={standardStyles.gallery__img}
-                sizes="100vw"
-                style={{ width: "100%", height: "100%" }} // optional
-              />
-            </div>
-            <div
-              className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_5}`}
-            >
-              <Image
-                src={trainingRoom128}
-                alt="Gallery image 1"
-                className={standardStyles.gallery__img}
-                sizes="100vw"
-                style={{ width: "100%", height: "100%" }} // optional
-              />
-            </div>
-            <div
-              className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_6}`}
-            >
-              <Image
-                src={chagoutside}
-                alt="Netball"
-                className={standardStyles.gallery__img}
-                sizes="100vw"
-                style={{ width: "100%", height: "100%" }} // optional
-              />
-            </div>
-            <div
-              className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_7}`}
-            >
-              <Image
-                src={parkingFeature}
-                alt="Gallery image 3"
-                className={standardStyles.gallery__img}
-                sizes="100vw"
-                style={{ width: "100%", height: "100%" }} // optional
-              />
-            </div>
-            <div
-              className={`${standardStyles.gallery__item} ${costlifeStyles.gallery__item_8}`}
-            >
-              <Image
-                src={rooftop1}
-                alt="Gallery image 4"
-                className={standardStyles.gallery__img}
-                sizes="100vw"
-                style={{ width: "100%", height: "100%" }} // optional
-              />
-            </div>
-            <div
-              className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_9}`}
-            >
-              <Image
-                src={trainingRoom128}
-                alt="Gallery image 1"
-                className={standardStyles.gallery__img}
-                sizes="100vw"
-                style={{ width: "100%", height: "100%" }} // optional
-              />
-            </div>
-            <div
-              className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_10}`}
-            >
-              <Image
-                src={chagoutside}
-                alt="Netball"
-                className={standardStyles.gallery__img}
-                sizes="100vw"
-                style={{ width: "100%", height: "100%" }} // optional
-              />
-            </div>
-            <div
-              className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_11}`}
-            >
-              <Image
-                src={parkingFeature}
-                alt="Gallery image 3"
-                className={standardStyles.gallery__img}
-                sizes="100vw"
-                style={{ width: "100%", height: "100%" }} // optional
-              />
-            </div>
-            <div
-              className={`${standardStyles.gallery__item} ${costlifeStyles.gallery__item_12}`}
-            >
-              <Image
-                src={rooftop1}
-                alt="Gallery image 4"
-                className={standardStyles.gallery__img}
-                sizes="100vw"
-                style={{ width: "100%", height: "100%" }} // optional
-              />
-            </div>
-            <div
-              className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_13}`}
-            >
-              <Image
-                src={trainingRoom128}
-                alt="Gallery image 1"
-                className={standardStyles.gallery__img}
-                sizes="100vw"
-                style={{ width: "100%", height: "100%" }} // optional
-              />
-            </div>
-            <div
-              className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_14}`}
-            >
-              <Image
-                src={chagoutside}
-                alt="Netball"
-                className={standardStyles.gallery__img}
-                sizes="100vw"
-                style={{ width: "100%", height: "100%" }} // optional
-              />
-            </div>
-            <div
-              className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_3}`}
-            >
-              <Image
-                src={parkingFeature}
-                alt="Gallery image 3"
-                className={standardStyles.gallery__img}
-                sizes="100vw"
-                // style={{ width: "100%", height: "100%" }} // optional
-              />
-            </div>
+        <div className={servicesStyles.gallery}>
+          <div
+            className={`${servicesStyles.gallery__item} ${servicesStyles.gallery__item_1}`}
+          >
+            <Image
+              src={trainingRoom128}
+              alt="Gallery image 1"
+              className={servicesStyles.gallery__img}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }} // optional
+            />
           </div>
-        </section>  */}
+          <div
+            className={`${servicesStyles.gallery__item} ${servicesStyles.gallery__item_2}`}
+          >
+            <Image
+              src={boardRoomChag}
+              alt="Netball"
+              className={standardStyles.gallery__img}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }} // optional
+            />
+          </div>
+          <div
+            className={`${servicesStyles.gallery__item} ${servicesStyles.gallery__item_3}`}
+          >
+            <Image
+              src={parkingFeature}
+              alt="Gallery image 3"
+              className={servicesStyles.gallery__img}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }} // optional
+            />
+          </div>
+          <div
+            className={`${servicesStyles.gallery__item} ${servicesStyles.gallery__item_4}`}
+          >
+            <Image
+              src={whyimage1}
+              alt="Gallery image 4"
+              className={servicesStyles.gallery__img}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }} // optional
+            />
+          </div>
+          <div
+            className={`${servicesStyles.gallery__item} ${servicesStyles.gallery__item_5}`}
+          >
+            <Image
+              src={trainingRoom128}
+              alt="Gallery image 1"
+              className={servicesStyles.gallery__img}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }} // optional
+            />
+          </div>
+          <div
+            className={`${servicesStyles.gallery__item} ${servicesStyles.gallery__item_6}`}
+          >
+            <Image
+              src={rooftopTerrace}
+              alt="Netball"
+              className={servicesStyles.gallery__img}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }} // optional
+            />
+          </div>
+          <div
+            className={`${servicesStyles.gallery__item} ${servicesStyles.gallery__item_7}`}
+          >
+            <Image
+              src={parkingFeature}
+              alt="Gallery image 3"
+              className={servicesStyles.gallery__img}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }} // optional
+            />
+          </div>
+          <div
+            className={`${servicesStyles.gallery__item} ${servicesStyles.gallery__item_8}`}
+          >
+            <Image
+              src={boardRoomChag}
+              alt="Gallery image 4"
+              className={servicesStyles.gallery__img}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }} // optional
+            />
+          </div>
+          <div
+            className={`${servicesStyles.gallery__item} ${servicesStyles.gallery__item_9}`}
+          >
+            <Image
+              src={trainingRoom128}
+              alt="Gallery image 1"
+              className={servicesStyles.gallery__img}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }} // optional
+            />
+          </div>
+          <div
+            className={`${servicesStyles.gallery__item} ${servicesStyles.gallery__item_10}`}
+          >
+            <Image
+              src={boardRoomChag}
+              alt="Netball"
+              className={servicesStyles.gallery__img}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }} // optional
+            />
+          </div>
+          <div
+            className={`${servicesStyles.gallery__item} ${servicesStyles.gallery__item_11}`}
+          >
+            <Image
+              src={parkingFeature}
+              alt="Gallery image 3"
+              className={servicesStyles.gallery__img}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }} // optional
+            />
+          </div>
+          <div
+            className={`${servicesStyles.gallery__item} ${servicesStyles.gallery__item_12}`}
+          >
+            <Image
+              src={boardRoomChag}
+              alt="Gallery image 4"
+              className={servicesStyles.gallery__img}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }} // optional
+            />
+          </div>
+          <div
+            className={`${servicesStyles.gallery__item} ${servicesStyles.gallery__item_13}`}
+          >
+            <Image
+              src={trainingRoom128}
+              alt="Gallery image 1"
+              className={servicesStyles.gallery__img}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }} // optional
+            />
+          </div>
+          <div
+            className={`${servicesStyles.gallery__item} ${servicesStyles.gallery__item_14}`}
+          >
+            <Image
+              src={boardRoomChag}
+              alt="Netball"
+              className={servicesStyles.gallery__img}
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }} // optional
+            />
+          </div>
+          <div
+            className={`${servicesStyles.gallery__item} ${servicesStyles.gallery__item_3}`}
+          >
+            <Image
+              src={parkingFeature}
+              alt="Gallery image 3"
+              className={servicesStyles.gallery__img}
+              sizes="100vw"
+              // style={{ width: "100%", height: "100%" }} // optional
+            />
+          </div>
+        </div>
+      </section> */}
       <section id="contact" className={servicesStyles.rentContact}>
         {/* Contact Text */}
         <h3 className={servicesStyles.rentContact__text}>

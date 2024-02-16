@@ -9,7 +9,8 @@ import telephone from "../../../public/images/admissions/telephone.svg";
 import email from "../../../public/images/admissions/email.svg";
 import hours from "../../../public/images/admissions/businesshours.svg";
 
-import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
+import HeadImage from "../../components/PageComponents/HeadImage";
+import awaitingbanner from "../../../public/images/about/qualitycontrol1.jpg";
 
 import Image from "next/image";
 
@@ -25,273 +26,128 @@ const Itfacilities = () => {
   const [setHasWindow] = useState(false);
   useEffect(() => {
     if (typeof window !== "undefined") {
-      setHasWindow(true);
+      setHasWindow;
     }
   }, [setHasWindow]);
-  const video = "";
+  // const video = "";
   return (
     <>
       <Head>
         <title>IT Facilities</title>
       </Head>
-      <HeaderNoImage caption="IT Services" />
+      <HeadImage mainimage={awaitingbanner} imagetext="" />
       <p
         className={`${standardStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}
       >
         <Link href="/"> COSTAATT/ </Link>
-        <Link href="/costaattlife"></Link>
-        <Link href="/costaattlife/itservices">IT Facilites</Link>
+        <Link href="/costaattlife">COSTAATTLIFE/</Link>
+        <Link href="/costaattlife/Itfacilities">IT Facilites</Link>
       </p>
 
-      <section id="labs" className={standardStyles.sectionNoSidenavFirst}>
-        <h2 className={standardStyles.newsHeading}>
-          {" "}
-          Computer <span>LABS </span>{" "}
-        </h2>
-
-        <div className={costlifeStyles.gallery}>
-          <div
-            className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_2}`}
-          >
-            <Image
-              src={gal1}
-              alt="Gallery image 1"
-              className={standardStyles.gallery__img}
-              sizes="100vw"
-              style={{ width: "100%", height: "100%" }} // optional
-            />
-          </div>
-          <div
-            className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_2}`}
-          >
-            <Image
-              src={gal2}
-              alt="Netball"
-              className={standardStyles.gallery__img}
-              sizes="100vw"
-              style={{ width: "100%", height: "100%" }} // optional
-            />
-          </div>
-          <div
-            className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_3}`}
-          >
-            <Image
-              src={gal3}
-              alt="Gallery image 3"
-              className={standardStyles.gallery__img}
-              sizes="100vw"
-              style={{ width: "100%", height: "100%" }} // optional
-            />
-          </div>
-          <div
-            className={`${standardStyles.gallery__item} ${costlifeStyles.gallery__item_4}`}
-          >
-            <Image
-              src={gal4}
-              alt="Gallery image 4"
-              className={standardStyles.gallery__img}
-              sizes="100vw"
-              style={{ width: "100%", height: "100%" }} // optional
-            />
-          </div>
-        </div>
-        <p className={standardStyles.paragraph}>
-          {" "}
+      <header>
+        <span className={standardStyles.heading_primary__main}>
+          IT Facilities
+        </span>
+        <span className={standardStyles.heading_primary__sub}>
           State-of-the-art computer lab facilities (MAC and PC) are available to
-          students at all of the College's campuses and sites, for both
-          instructional and open access purposes. All computer labs have
-          Internet connectivity and are installed with the latest computer
-          software. COSTAATT is currently a Microsoft Academic licensed
-          institution and students may purchase Microsoft software from the
-          College for their personal use, at a minimal fee. In addition, the
-          College has outfitted several special purpose labs which are designed
-          to ensure that students acquire the necessary discipline-specific
-          practical skills for the workplace.
-        </p>
-        {/* 
-        <section className={standardStyles.gallery}>
-          <div
-            className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_1}`}
-          >
-            <Image
-              src={gal1}
-              alt="Gallery image 1"
-              className={standardStyles.gallery__img}
-              sizes="100vw"
-              style={{ width: "100%", height: "100%" }} // optional
-            />
-          </div>
-          <div
-            className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_2}`}
-          >
-            <Image
-              src={gal2}
-              alt="Netball"
-              className={standardStyles.gallery__img}
-              sizes="100vw"
-              style={{ width: "100%", height: "100%" }} // optional
-            />
-          </div>
-          <div
-            className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_3}`}
-          >
-            <Image
-              src={gal3}
-              alt="Gallery image 3"
-              className={standardStyles.gallery__img}
-              sizes="100vw"
-              style={{ width: "100%", height: "100%" }} // optional
-            />
-          </div>
-          <div
-            className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_4}`}
-          >
-            <Image
-              src={gal4}
-              alt="Gallery image 4"
-              className={standardStyles.gallery__img}
-              sizes="100vw"
-              style={{ width: "100%", height: "100%" }} // optional
-            />
-          </div>
-          <figure
-            className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_5}`}
-          >
-            <Image
-              src={gal5}
-              alt="Gallery image 5"
-              className={standardStyles.gallery__img}
-              sizes="100vw"
-              style={{ width: "100%", height: "100%" }} // optional
-            />
-          </figure>
-          <figure
-            className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_6}`}
-          >
-            <Image
-              src={gal6}
-              alt="Gallery image 6"
-              className={standardStyles.gallery__img}
-              sizes="100vw"
-              style={{ width: "100%", height: "100%" }} // optional
-            />
-          </figure>
-          <figure
-            className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_7}`}
-          >
-            <Image
-              src={gal7}
-              alt="Gallery image 7"
-              className={standardStyles.gallery__img}
-              sizes="100vw"
-              style={{ width: "100%", height: "100%" }} // optional
-            />
-          </figure>
-          <figure
-            className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_8}`}
-          >
-            <Image
-              src={gal8}
-              alt="Gallery image 8"
-              className={standardStyles.gallery__img}
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "100%" }} // optional
-            />
-          </figure>
-          <figure
-            className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_9}`}
-          >
-            <Image
-              src={gal9}
-              alt="Gallery image 9"
-              className={standardStyles.gallery__img}
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "100%" }} // optional
-            />
-          </figure>
-          <figure
-            className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_10}`}
-          >
-            <Image
-              src={gal10}
-              alt="Gallery image 10"
-              className={standardStyles.gallery__img}
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "100%" }} // optional
-            />
-          </figure>
-          <figure
-            className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_11}`}
-          >
-            <Image
-              src={gal11}
-              alt="Gallery image 11"
-              className={standardStyles.gallery__img}
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "100%" }} // optional
-            />
-          </figure>
-          <figure
-            className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_12}`}
-          >
-            <Image
-              src={gal12}
-              alt="Gallery image 12"
-              className={standardStyles.gallery__img}
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "100%" }} // optional
-            />
-          </figure>
-          <figure
-            className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_12}`}
-          >
-            {" "}
-            <Image
-              src={gal13}
-              alt="Gallery image 13"
-              className={standardStyles.gallery__img}
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "100%" }} // optional
-            />
-          </figure>
-          <figure
-            className={`${standardStyles.gallery__item} ${standardStyles.gallery__item_13}`}
-          >
-            {" "}
-            <Image
-              src={gal14}
-              alt="Gallery image 14"
-              className={standardStyles.gallery__img}
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "100%" }} // optional
-            />
-          </figure>{" "}
-        </section> */}
-      </section>
-      <section id="services" className={`${standardStyles.sectionNoSidenav}`}>
-        <h2 className={standardStyles.newsHeading}>
-          {" "}
-          IT <span> Services</span>
+          students
+        </span>
+      </header>
+
+      <section
+        id="labs"
+        className={`${costlifeStyles.sectionambasadoor}   ${standardStyles.marginTopHuge}  ${standardStyles.marginBottomBig}`}
+      >
+        {" "}
+        <h2
+          className={`${standardStyles.heading_primary__secondary} ${standardStyles.centertext}`}
+        >
+          Computer Labs
         </h2>
         <div className={standardStyles.row}>
           <div className={standardStyles.col1of2}>
-            <h3 className={standardStyles.headingTertiary}>
+            <p className={standardStyles.paragraph}>
+              State-of-the-art computer lab facilities (MAC and PC) are
+              available to students at all of the College's campuses and sites,
+              for both instructional and open access purposes. All computer labs
+              have Internet connectivity and are installed with the latest
+              computer software. COSTAATT is currently a Microsoft Academic
+              licensed institution and students may purchase Microsoft software
+              from the College for their personal use, at a minimal fee. In
+              addition, the College has outfitted several special purpose labs
+              which are designed to ensure that students acquire the necessary
+              discipline-specific practical skills for the workplace.
+              <br />
+            </p>
+
+            {/* <p className={standardStyles.paragraph}>
+              To become a Student Ambassador... </p>
+              <div>   
+              <button
+                href="#contact"
+                className={`${standardStyles.btn} ${standardStyles.btn__purple}`}
+              >
+                {" "}
+                contact student life{" "}
+              </button>{" "}</div> */}
+
+            {/* <Link href="./transfercredits" className={standardStyles.btnText}>
+              Learn more →
+            </Link> */}
+          </div>
+          <div className={standardStyles.col1of2}>
+            <div className={standardStyles.composition}>
+              <>
+                <Image
+                  // srcSet="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                  // sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                  alt="Photo 1"
+                  width="250"
+                  height="0"
+                  className={`${standardStyles.composition__photo} ${standardStyles.composition__photo_p1} `}
+                  src={gal1}
+                />
+
+                <Image
+                  // srcSet="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                  // sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                  alt="Photo 2"
+                  width="250"
+                  height="0"
+                  className={` ${standardStyles.composition__photo} ${standardStyles.composition__photo_p2}`}
+                  src={gal2}
+                />
+
+                <Image
+                  // srcSet="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                  // sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                  alt="Photo 3"
+                  width="250"
+                  height="0"
+                  className={`${standardStyles.composition__photo} ${standardStyles.composition__photo_p3}`}
+                  src={gal3}
+                />
+              </>
+            </div>
+          </div>
+        </div>{" "}
+      </section>
+
+      <section
+        id="services"
+        className={`${costlifeStyles.sectionbackGreyColor}`}
+      >
+       
+        <h2
+          className={`${standardStyles.heading_primary__secondary} ${standardStyles.centertext}`}
+        >
+          IT Services
+        </h2>
+        <div className={standardStyles.row}>
+          <div className={standardStyles.col1of2}>
+            <h3 className={standardStyles.heading_primary__tertiary}>
               {" "}
-              E <span> CLASSROOM</span>{" "}
+              E Classroom
             </h3>
 
             <p className={standardStyles.paragraph}>
@@ -318,8 +174,9 @@ const Itfacilities = () => {
             </button>
           </div>
           <div className={standardStyles.col1of2}>
-            <h3 className={standardStyles.headingTertiary}>
-              Help<span>DESK</span>
+            <h3 className={standardStyles.heading_primary__tertiary}>
+              {" "}
+              Help Desk
             </h3>
             <div
               className={`${standardStyles.featurebox__text} ${standardStyles.bullet}`}
@@ -348,11 +205,15 @@ const Itfacilities = () => {
         {/* close row */}
       </section>
 
-      <section id="locations" className={standardStyles.sectionbackColor}>
+      <section id="locations" className={standardStyles.sectionbackGreyColor}>
         <div
-          className={`${standardStyles.sectionNoSidenav} ${standardStyles.marginBottomBig} ${standardStyles.marginTopBig}`}
+          className={`${standardStyles.sectionbackGreyColor} ${standardStyles.marginBottomBig} ${standardStyles.marginTopBig}`}
         >
-          <h2 className={standardStyles.newsHeading}> Locations </h2>
+          <h2
+            className={`${standardStyles.heading_primary__secondary} ${standardStyles.centertext}`}
+          >
+            Locations
+          </h2>{" "}
           <div className={standardStyles.row}>
             <div className={standardStyles.col1of4}>
               <h3 className={costlifeStyles.opening__campus}>
@@ -428,9 +289,10 @@ const Itfacilities = () => {
       </section>
 
       <section id="contact" className={standardStyles.sectionNoSidenav}>
-        <h2 className={standardStyles.newsHeading}>
-          {" "}
-          <span> CONTACT</span> IT
+        <h2
+          className={`${standardStyles.heading_primary__secondary} ${standardStyles.centertext}`}
+        >
+          Contact IT Services
         </h2>
         <div className={standardStyles.row}>
           <div className={standardStyles.col1of3}>
