@@ -4,6 +4,8 @@ import HeadImage from "../../components/PageComponents/HeadImage";
 import Link from "next/link";
 import Image from "next/image";
 import awaitingbanner from "../../../public/images/about/qualitycontrol1.jpg";
+import costlifeStyles from "../../styles/CostaattLife.module.scss";
+
 
 import standardStyles from "../../styles/main.module.scss";
 import joinclub from "../../../public/images/costaattlife/joinclub.png";
@@ -24,8 +26,16 @@ const healthwell = () => {
         <Link href="/costaattlife"></Link>
         <Link href="/costaattlife/healthwell">Health and Wellness</Link>
       </p>
-
-      <section id="healthover" className={standardStyles.sectionNoSidenav}>
+      <header>
+        <span className={standardStyles.heading_primary__main}>
+          Health and Wellness
+        </span>
+        <span className={standardStyles.heading_primary__sub}>
+          Auccess is also based on positive social and emotional adjustment of
+          the individual
+        </span>
+      </header>
+      <section id="healthover" className={costlifeStyles.sectionNoSidenav}>
         <div className={standardStyles.introtext}>
           The College recognises that student success is premised not only on
           academic ability and application but on the positive social and
@@ -37,18 +47,23 @@ const healthwell = () => {
         <hr className={standardStyles.centerunder} />
       </section>
 
-      <section id="wellness" className={`${standardStyles.sectionambasadoor} `}>
+      {/* className={`${costlifeStyles.sectionambasadoor} `}>
+        className= */}
+      <section
+        id="wellness"
+        className={`${costlifeStyles.sectionambasadoor}   ${standardStyles.marginTopHuge}  ${standardStyles.marginBottomBig}`}
+      >
         <h2
-          className={`${standardStyles.headingPrimarysub} ${standardStyles.centertext}`}
+          className={`${standardStyles.heading_primary__secondary} ${standardStyles.centertext}`}
         >
           {" "}
           Health and Wellness Promotion{" "}
         </h2>
         <div className={standardStyles.row}>
           <div className={standardStyles.col1of2}>
-            <div className={standardStyles.activities__text}>
+            <div>
               {" "}
-              <p>
+              <p className={standardStyles.paragraph}>
                 During the academic year, health and wellness promotional
                 activities can be offered at each campus site. These are
                 facilitated by the Ministry of Health and other trained
@@ -73,13 +88,6 @@ const healthwell = () => {
                 </ul>
               </div>
             </div>
-            <Link
-              href="#contact"
-              className={`${standardStyles.btn} ${standardStyles.btn__purple}`}
-            >
-              {" "}
-              contact student life{" "}
-            </Link>{" "}
           </div>{" "}
           {/* end of row 1*/}
           <div className={standardStyles.col1of2}>
@@ -119,10 +127,10 @@ const healthwell = () => {
           </div>
         </div>{" "}
       </section>
-      <section id="counsel" className={standardStyles.sectionbackColor}>
-        <div className={standardStyles.sectionNoSidenav}>
+      <section id="counsel" className={costlifeStyles.sectionNoSidenav}>
+        <div className={costlifeStyles.sectionNoSidenav}>
           <h2
-            className={`${standardStyles.headingPrimarysub} ${standardStyles.centertext}`}
+            className={`${standardStyles.heading_primary__secondary} ${standardStyles.centertext}`}
           >
             {" "}
             Counselling Services{" "}
@@ -190,45 +198,46 @@ const healthwell = () => {
                 </div>
               </div>
 
-              <button
-                className={`${standardStyles.btn} ${standardStyles.btn__purple}`}
-              >
+              <button className={`${standardStyles.btn} `}>
                 Make a request{" "}
               </button>
             </div>
           </div>
         </div>
       </section>
-      <section id="disability" className={standardStyles.sectionNoSidenav}>
-        <>
-          <h2
-            className={`${standardStyles.headingPrimarysub} ${standardStyles.centertext}`}
-          >
-            Disability
-          </h2>
-          <p className={standardStyles.paragraph}>
-            It is the policy of COSTAATT that discrimination against individuals
-            with disabilities is prohibited. COSTAATT provides equal educational
-            opportunities with reasonable accommodations for qualified
-            individuals who are differently -abled.
-          </p>
-          <p className={standardStyles.paragraph}>
-            Students with physical, mental or learning disabilities should
-            contact the Department of Health & Counselling Services for
-            assistance if any special accommodation is needed. The College can
-            provide enhanced access to the educational process for students who
-            disclose and can document their disabilities. We offer appropriate
-            accommodations to facilitate success
-          </p>
-        </>
+      <section id="disability" className={costlifeStyles.sectionNoSidenav}>
+        <h2
+          className={`${standardStyles.heading_primary__secondary} ${standardStyles.marginTopBig} ${standardStyles.centertext}`}
+        >
+          Disability
+        </h2>
+        <p className={standardStyles.paragraph}>
+          It is the policy of COSTAATT that discrimination against individuals
+          with disabilities is prohibited. COSTAATT provides equal educational
+          opportunities with reasonable accommodations for qualified individuals
+          who are differently -abled.
+        </p>
+        <p className={standardStyles.paragraph}>
+          Students with physical, mental or learning disabilities should contact
+          the Department of Health & Counselling Services for assistance if any
+          special accommodation is needed. The College can provide enhanced
+          access to the educational process for students who disclose and can
+          document their disabilities. We offer appropriate accommodations to
+          facilitate success
+        </p>
       </section>
-      <section id="sickbay" className={standardStyles.sectionbackColor}>
-        <>
+     
+
+      <section id="sickbay" className= {`${costlifeStyles.sectionbackColor} ${standardStyles.marginBottomSmall}`}>
+
+      
+      
+       
           <div
-            className={`${standardStyles.sectionNoSidenav} ${standardStyles.marginBottomSmall}`}
+            className={`${costlifeStyles.sectionNoSidenav} ${standardStyles.marginBottomSmall}`}
           >
             <h2
-              className={`${standardStyles.headingPrimarysub} ${standardStyles.centertext}`}
+              className={`${standardStyles.heading_primary__secondary} ${standardStyles.marginTopBig} ${standardStyles.centertext}`}
             >
               {" "}
               Sick Bay
@@ -283,12 +292,11 @@ const healthwell = () => {
               </div>
             </div>
           </div>
-        </>
+    
       </section>
-
-      <section id="contact" className={standardStyles.sectionNoSidenav}>
+      <section id="contact" className={costlifeStyles.sectionNoSidenav}>
         <h2
-          className={`${standardStyles.headingPrimarysub} ${standardStyles.centertext}`}
+          className={`${standardStyles.heading_primary__secondary} ${standardStyles.centertext}`}
         >
           {" "}
           Contact Student Life{" "}

@@ -1,4 +1,4 @@
-@import "./abstracts/variables";
+@use "./abstracts/variables" as v;
 
 .cardCont {
   color: #060607;
@@ -11,18 +11,20 @@
     height: 15rem;
   }
   .name {
-    font-size: 1.25rem;
-    color: $orange;
+    // font-size: 1.5rem;
+    color: v.$color-primary-dark;
     margin: 1.25rem 0;
     font-weight: 700;
   }
   .position {
-    //  color:$orange;
+    // color: v.$color-primary-dark;
+    font-weight: bold;
     margin: 0.5rem 0;
   }
 
   .email {
-    color: $orange;
+    color: v.$color-primary-dark;
+    font-weight: bold;
     margin: 0;
     padding: 0;
   }

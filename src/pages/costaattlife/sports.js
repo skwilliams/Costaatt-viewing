@@ -2,17 +2,14 @@ import React from "react";
 import Link from "next/link";
 import Head from "next/head";
 import standardStyles from "../../styles/main.module.scss";
-import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
-import { Button, Divider } from "@mui/material";
 import HeadImage from "../../components/PageComponents/HeadImage";
 import awaitingbanner from "../../../public/images/about/qualitycontrol1.jpg";
+import costlifeStyles from "../../styles/CostaattLife.module.scss";
 
-import awaitingimage from "../../../public/images/about/qualitycontrol1.jpg";
-
-import Image, { StaticImageData } from "next/image";
-import { FiBookOpen } from "react-icons/fi";
+import Image from "next/image";
 
 import EventCardOrig from "../../components/PageComponents/EventCardOrig";
+import EventsCalendar from "../../components/PageComponents/EventsCalendar";
 
 import ContactStudentLife from "../../components/PageComponents/ContactStudentLife";
 
@@ -47,11 +44,15 @@ const Sports = () => {
         <Link href="/costaattlife"></Link>
         <Link href="/costaattlife/sports">Sports</Link>
       </p>
+      <header>
+        <span className={standardStyles.heading_primary__main}>Sports</span>
+        <span className={standardStyles.heading_primary__sub}>
+          Seeks to provide extracurricular support in the provision of a
+          holistic education{" "}
+        </span>
+      </header>
 
-      <section id="introsports" className={standardStyles.sectionNoSidenav}>
-        <h2 className={standardStyles.headingPrimarysub}>
-          Sports at COSTAATT{" "}
-        </h2>
+      <section id="introsports" className={costlifeStyles.sectionNoSidenav}>
         <p className={standardStyles.paragraph}>
           The Department of Athletics seeks to provide extracurricular support
           in the provision of a holistic education for all our students.
@@ -63,15 +64,13 @@ const Sports = () => {
       </section>
 
       <section
-        id="joinus"
-        className={`${standardStyles.sectionstartclub} `}
-      ></section>
-
-      <section
         id="sportsteams"
-        className={`${standardStyles.sectionambasadoor} `}
+        className={`${costlifeStyles.sectionambasadoor} `}
       >
-        <h2 className={standardStyles.headingPrimarysub}> Our Teams </h2>
+        <h2 className={standardStyles.heading_primary__secondary}>
+          {" "}
+          Our Teams{" "}
+        </h2>
         <div className={standardStyles.row}>
           <div className={standardStyles.col1of2}>
             <div className={standardStyles.paragraph}>
@@ -137,37 +136,25 @@ const Sports = () => {
       </section>
 
       <section id="events" className={standardStyles.sectionNoSidenav}>
-        <h2 className={standardStyles.headingPrimarysub}>
-          {" "}
-          Upcoming Sporting Events
-        </h2>
-        <div className={`${standardStyles.row}`}>
-          <div className={standardStyles.col1of3}>
-            <EventCardOrig />
-          </div>
-          <div className={standardStyles.col1of3}>
-            <EventCardOrig />
-          </div>
+        <div>
+          <h2
+            className={`${standardStyles.heading_primary__secondary} ${standardStyles.centertext}`}
+          >
+            {" "}
+            Upcoming Sporting Events
+          </h2>
 
-          <div className={standardStyles.col1of3}>
-            <EventCardOrig />
-          </div>
+          <EventsCalendar />
         </div>
-
-        {/* <EventsRow
-          label="Upcoming"
-          events={getEventsByDept(foundDept.dept_code)}
-        />{" "} */}
-        {/* pull events */}
       </section>
       <section id="thedepartment" className={standardStyles.sectionNoSidenav}>
-        <h2 className={standardStyles.headingPrimarysub}>
-          {" "}
+        <h2
+          className={`${standardStyles.heading_primary__secondary} ${standardStyles.marginTopBig}  ${standardStyles.centertext}`}
+        >
           Department of Athletics{" "}
         </h2>
 
-        {/* <div className={standardStyles.row}>
-        </div> */}
+   
 
         <div className={standardStyles.row}>
           <div className={standardStyles.col1of4}>
@@ -207,8 +194,9 @@ const Sports = () => {
       </section>
 
       <section id="contact" className={standardStyles.sectionNoSidenav}>
-        <h2 className={standardStyles.headingPrimarysub}>
-          {" "}
+        <h2
+          className={`${standardStyles.heading_primary__secondary}  ${standardStyles.marginTopBig} ${standardStyles.centertext}`}
+        >
           Contact Student Life{" "}
         </h2>
 

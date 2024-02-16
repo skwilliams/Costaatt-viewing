@@ -2,14 +2,13 @@ import React from "react";
 import Link from "next/link";
 import Head from "next/head";
 import standardStyles from "../../styles/main.module.scss";
-import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
-import { Button, Divider } from "@mui/material";
 import Image from "next/image";
+import costlifeStyles from "../../styles/CostaattLife.module.scss";
 
 import studentcouncil2 from "../../../public/images/costaattlife/studentcouncil1.jpg";
 import studentcouncil1 from "../../../public/images/costaattlife/studentcouncil2.jpg";
+import EventsCalendar from "../../components/PageComponents/EventsCalendar";
 
-import EventCardOrig from "../../components/PageComponents/EventCardOrig";
 import { stucouncildata } from "../costaattlife/studcouninfo";
 import StudentCouncilRep from "../../components/PageComponents/StudentCouncilRep";
 import ContactStudentLife from "../../components/PageComponents/ContactStudentLife";
@@ -27,16 +26,27 @@ const studentcouncil = () => {
         className={`${standardStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}
       >
         <Link href="/"> COSTAATT/ </Link>
-        <Link href="/costaattlife"></Link>
+        <Link href="/costaattlife">COSTAATTLIFE / </Link>
         <Link href="/costaattlife/studentcouncil">Studnet Council</Link>
       </p>
-      <h2 className={standardStyles.heading_primary__main}>Student Council </h2>
+
+      <header>
+        <span className={standardStyles.heading_primary__main}>
+          Student Council
+        </span>
+        <span className={standardStyles.heading_primary__sub}>
+          Providing an opportunity for students to present their views to
+          college administration
+        </span>
+      </header>
 
       <section
         id="introcouncil"
-        className={`${standardStyles.sectionNoSidenav} ${standardStyles.marginBottomBig}`}
+        className={`${costlifeStyles.sectionNoSidenav} ${standardStyles.marginBottomBig}`}
       >
-        <h2 className={standardStyles.headingprimary__main}>
+        <h2
+          className={`${standardStyles.heading_primary__secondary} ${standardStyles.centertext}`}
+        >
           Student Council{" "}
         </h2>
 
@@ -51,8 +61,10 @@ const studentcouncil = () => {
           skills and develop positive relationships with their peers.
         </p>
       </section>
-      <section id="presentteam" className={standardStyles.sectionNoSidenav}>
-        <h2 className={standardStyles.headingPrimarysub}>
+      <section id="presentteam" className={costlifeStyles.sectionNoSidenav}>
+        <h2
+          className={`${standardStyles.heading_primary__secondary} ${standardStyles.centertext}`}
+        >
           {" "}
           Student Council Memebers
         </h2>
@@ -60,15 +72,9 @@ const studentcouncil = () => {
         <div className={standardStyles.row}>
           <StudentCouncilRep stucouncil={stucouncildata} />
         </div>
-
-        <div className={standardStyles.row}>
-          <div className={standardStyles.col1of3}></div>
-          <div className={standardStyles.col1of3}></div>
-          <div className={standardStyles.col1of3}></div>
-        </div>
       </section>
-      <section id="joinus" className={`${standardStyles.sectionstartclub} `}>
-        <div className={standardStyles.startclub}>
+      <section id="joinus" className={`${costlifeStyles.sectionstartclub} `}>
+        <div className={costlifeStyles.startclub}>
           <h2> Represent your fellow students</h2>
           <h3 className={standardStyles.paragraph}>
             {" "}
@@ -76,7 +82,7 @@ const studentcouncil = () => {
           </h3>
 
           <button
-            className={`${standardStyles.btn} ${standardStyles.btn__purple}`}
+            className={standardStyles.btn}
           >
             How to become involved{" "}
           </button>
@@ -125,36 +131,22 @@ const studentcouncil = () => {
         </div>
       </section>
 
-      <section
-        id="events"
-        className={`${standardStyles.sectionNoSidenav} ${standardStyles.marginTopBig}`}
-      >
-        <h2 className={standardStyles.headingPrimarysub}>
-          {" "}
-          Upcoming Club Events
-        </h2>
-        <div className={`${standardStyles.row}`}>
-          <div className={standardStyles.col1of3}>
-            <EventCardOrig />
-          </div>
-          <div className={standardStyles.col1of3}>
-            <EventCardOrig />
-          </div>
+      <section id="events" className={standardStyles.sectionNoSidenav}>
+        <div>
+          <h2
+            className={`${standardStyles.heading_primary__secondary} ${standardStyles.centertext}`}
+          >
+            {" "}
+            Upcoming Sporting Events
+          </h2>
 
-          <div className={standardStyles.col1of3}>
-            <EventCardOrig />
-          </div>
+          <EventsCalendar />
         </div>
-
-        {/* <EventsRow
-          label="Upcoming"
-          events={getEventsByDept(foundDept.dept_code)}
-        />{" "} */}
-        {/* pull events */}
       </section>
       <section id="contact" className={standardStyles.sectionNoSidenav}>
-        <h2 className={standardStyles.headingPrimarysub}>
-          {" "}
+        <h2
+          className={`${standardStyles.heading_primary__secondary}  ${standardStyles.marginTopBig} ${standardStyles.centertext}`}
+        >
           Contact Student Life{" "}
         </h2>
 

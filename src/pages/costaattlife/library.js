@@ -6,11 +6,12 @@ import TopNavOnlyLayout from "../../components/Layouts/TopNavOnly_NoDropdown";
 import standardStyles from "../../styles/main.module.scss";
 import costlifeStyles from "../../styles/CostaattLife.module.scss";
 import AdmisStyles from "../../styles/Admissions.module.scss";
-import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
 import Image from "next/image";
 import telephone from "../../../public/images/admissions/telephone.svg";
 import email from "../../../public/images/admissions/email.svg";
-import counsellor from "../../../public/images/admissions/contact.svg";
+
+import Link from "next/link";
+import awaitingbanner from "../../../public/images/about/qualitycontrol1.jpg";
 
 import Accordion from "@mui/material/Accordion";
 import ProgStyles from "../../styles/Programmes.module.scss";
@@ -26,26 +27,51 @@ const library = () => {
         {" "}
         <title> Library </title>{" "}
       </Head>
-      <HeaderNoImage caption="Library Services" />
 
+      <HeadImage mainimage={awaitingbanner} />
+      <p
+        className={`${standardStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}
+      >
+        <Link href="/"> COSTAATT/ </Link>
+        <Link href="/costaattlife">COSTAATTLIFE /</Link>
+        <Link href="/costaattlife/library">Library</Link>
+      </p>
+      <header>
+        <span className={standardStyles.heading_primary__main}>
+          College Library
+        </span>
+        <span className={standardStyles.heading_primary__sub}>
+          Combined book collection of more than 50,000 volumes
+        </span>
+      </header>
       <SideNavOnlyLayout>
         <section id="accesslib" className={standardStyles.sectionWithSideNav}>
-          <h2 className={standardStyles.newsHeading}>
-            <span> Accessing </span>LIBRARY Services
+          <h2
+            className={`${standardStyles.heading_primary__secondary} ${standardStyles.marginTopHuge}`}
+          >
+            Accessing Library Services
           </h2>
 
           <p className={standardStyles.paragraph}>
             Libraries at the College's campuses and learning centres have a
             combined book collection of more than 50,000 volumes.
           </p>
-          <h3 className={standardStyles.headingPrimarysub}>Registration</h3>
+          <h3
+            className={`${standardStyles.heading_primary__sub}    ${standardStyles.heading_primary__sub}   ${standardStyles.boldtext}   ${standardStyles.leftalign}        `}
+          >
+            Registration
+          </h3>
 
           <p className={standardStyles.paragraph}>
             The institutional ID card must be presented for registration and all
             library transactions. Pre-register online only if applying for the
             first time.
           </p>
-          <h3 className={standardStyles.headingPrimarySub}>Loans</h3>
+          <h3
+            classname={`${standardStyles.heading_primary__sub} ${standardStyles.boldtext} ${standardStyles.leftalign} `}
+          >
+            Loans
+          </h3>
           <p className={standardStyles.paragraph}>
             Users, depending on the patron group to which they belong, have been
             allocated a maximum number of items, which they may have on loan at
@@ -141,8 +167,10 @@ const library = () => {
           </Accordion>
 
           <>
-            <h3 className={standardStyles.headingPrimarysub}>
-              <span> FEES</span> & Fines{" "}
+            <h3
+              className={`${standardStyles.heading_primary__sub}    ${standardStyles.heading_primary__sub}   ${standardStyles.boldtext}   ${standardStyles.leftalign}        `}
+            >
+              FEES & Fines{" "}
             </h3>
             <p>
               {" "}
@@ -205,53 +233,49 @@ const library = () => {
         </section>
 
         <section id="elearn" className={standardStyles.sectionWithSideNav}>
-          <h2 className={standardStyles.newsHeading}>
-            <span> eLearning </span>RESOURCES
+          <h2
+            className={`${standardStyles.heading_primary__secondary} ${standardStyles.marginTopHuge}`}
+          >
+            ELearning Resources
           </h2>
-          <>
-            <p className={standardStyles.paragraph}>
-              The COSTAATT libraries' electronic resources network includes an
-              online catalogue (COSPAC), access to over 21,000 full text
-              journals from EBSCOHost as well as a small collection of 198
-              e-books.
-            </p>
-            <p className={standardStyles.paragraph}>
-              Registered users can access the EBSCO databases 24 hours per day,
-              seven days per week from any computer that has an internet
-              connection.
-            </p>
-            <p className={standardStyles.paragraph}>
-              The online catalogue, COSPAC, provides easy access to the
-              collections. All new students are required to attend a library
-              orientation session during orientation week and must consult the
-              Library Services Guide for information on circulation and reserve
-              materials
-            </p>
 
-            <div className={standardStyles.row}>
-              <div className={standardStyles.col1of2}>
-                <button
-                  className={`${standardStyles.btn} ${standardStyles.btn__selecthome}`}
-                  href="#"
-                >
-                  COSPAC Library Search
-                </button>
-              </div>
-              <div className={standardStyles.col1of2}>
-                <button
-                  href="#"
-                  className={`${standardStyles.btn} ${standardStyles.btn__selecthome}`}
-                >
-                  EBSCO Discovery Service
-                </button>
-              </div>
+          <p className={standardStyles.paragraph}>
+            The COSTAATT libraries' electronic resources network includes an
+            online catalogue (COSPAC), access to over 21,000 full text journals
+            from EBSCOHost as well as a small collection of 198 e-books.
+          </p>
+          <p className={standardStyles.paragraph}>
+            Registered users can access the EBSCO databases 24 hours per day,
+            seven days per week from any computer that has an internet
+            connection.
+          </p>
+          <p className={standardStyles.paragraph}>
+            The online catalogue, COSPAC, provides easy access to the
+            collections. All new students are required to attend a library
+            orientation session during orientation week and must consult the
+            Library Services Guide for information on circulation and reserve
+            materials
+          </p>
+
+          <div className={standardStyles.row}>
+            <div className={standardStyles.col1of2}>
+              <button className={`${standardStyles.btn} `} href="#">
+                COSPAC Library Search
+              </button>
             </div>
-          </>
+            <div className={standardStyles.col1of2}>
+              <button href="#" className={`${standardStyles.btn} `}>
+                EBSCO Discovery Service
+              </button>
+            </div>
+          </div>
         </section>
 
         <section id="guidelines" className={standardStyles.sectionWithSideNav}>
-          <h2 className={standardStyles.newsHeading}>
-            GENERAL <span>Guidelines</span>
+          <h2
+            className={`${standardStyles.heading_primary__secondary} ${standardStyles.marginTopHuge}`}
+          >
+            General Guidelines
           </h2>
           <p className={standardStyles.paragraph}>
             Students must be mindful that the library is provided for the
@@ -336,8 +360,10 @@ const library = () => {
         </section>
 
         <section id="borrow" className={standardStyles.sectionWithSideNav}>
-          <h2 className={standardStyles.newsHeading}>
-            Borrowing <span>MATERIALS</span>
+          <h2
+            className={`${standardStyles.heading_primary__secondary} ${standardStyles.marginTopHuge}`}
+          >
+            Borrowing materials{" "}
           </h2>
           <div className={standardStyles.bullet}>
             <ul>
@@ -378,7 +404,9 @@ const library = () => {
           id="usage"
           className={`${standardStyles.sectionWithSideNav} ${standardStyles.sectionbackColor}`}
         >
-          <h2 className={standardStyles.newsHeading}>
+          <h2
+            className={`${standardStyles.heading_primary__secondary} ${standardStyles.marginTopHuge}`}
+          >
             Computer <span>USAGE</span>
           </h2>
 
@@ -406,9 +434,11 @@ const library = () => {
           </div>
         </section>
         <section id="opening" className={standardStyles.sectionWithSideNav}>
-          <h2 className={standardStyles.newsHeading}>
+          <h2
+            className={`${standardStyles.heading_primary__secondary} ${standardStyles.marginTopHuge}`}
+          >
             {" "}
-            Opening <span> HOURS </span>{" "}
+            Opening Hours
           </h2>
 
           <>
@@ -513,9 +543,10 @@ const library = () => {
           id="contact"
           className={`${standardStyles.sectionWithSideNav} ${standardStyles.sectionbackColor}`}
         >
-          <h2 className={standardStyles.newsHeading}>
-            {" "}
-            <span> CONTACT</span> Library
+          <h2
+            className={`${standardStyles.heading_primary__secondary} ${standardStyles.marginTopHuge}`}
+          >
+            Contact Library
           </h2>
           <div className={standardStyles.row}>
             <div className={standardStyles.col1of3}>
