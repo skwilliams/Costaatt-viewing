@@ -216,13 +216,13 @@ $gutter-horizontal-small: 1rem;
 }
 
 
-  @media (min-width:600px) {
-  .threeColGridCon{
-     grid-template-columns: 1fr; 
-  }
+  // @media (min-width:600px) {
+  // .threeColGridCon{
+  //    grid-template-columns: 1fr; 
+  // }
    
 
-}
+// }
 
 .threeColGrid {
   text-align: left;

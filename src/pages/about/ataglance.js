@@ -2,10 +2,11 @@ import React from "react";
 import Link from "next/link";
 import Head from "next/head";
 import standardStyles from "../../styles/main.module.scss";
+import awaitingbanner from "../../../public/images/about/qualitycontrol1.jpg";
 
 import AboutStyles from "../../styles/About.module.scss";
+import HeadImage from "../../components/PageComponents/HeadImage";
 
-import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
 
 import Image from "next/image";
 
@@ -38,31 +39,28 @@ const Ataglance = () => {
       <Head>
         <title>About |{""} COSTAATT</title>
       </Head>
-      <HeaderNoImage caption="Profile at a Glance" />
+      <HeadImage mainimage={awaitingbanner} imagetext="Student Council" />
+
       <p
-        className={`${standardStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}
+        className={`${AboutStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}
       >
         <Link href="/"> COSTAATT/ </Link>
-        <Link href="/about"></Link>
-        <Link href="/about">About</Link>
+        <Link href="/about">About / </Link>
+        <Link href="/about">At A Glance</Link>
       </p>
-
-      <section id="glance" className={standardStyles.sectionNoSidenavFirst}>
-        {/* <div className={AboutStyles.aboutbackColor}> */}
+      <header>
+        <span className={standardStyles.heading_primary__main}>
+          Profile At A Glance
+        </span>
+        <span className={standardStyles.heading_primary__sub}>
+          The Premier Undergraduate College
+        </span>
+      </header>
+      <section id="glance" className={AboutStyles.sectionNoSidenavFirst}>
         <h2
-          className={`${standardStyles.newsHeading} ${standardStyles.centertext}`}
-        >
-          <span> The Premier</span> Undergraduate College{" "}
-        </h2>
+          className={`${standardStyles.heading_primary_secondary} ${standardStyles.centertext}`}
+        ></h2>
 
-        {/* <Dialog title="Example Modal" onClose={onClose} onOk={onOk}>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            eligendi odio ipsa nostrum dolores voluptas architecto tempore nulla
-            voluptatibus vel, placeat explicabo exercitationem id officia
-            laborum doloremque blanditiis earum accusamus.
-          </p>
-        </Dialog> */}
         <p
           className={`${standardStyles.paragraph} ${AboutStyles.text2columns}`}
         >
@@ -91,18 +89,20 @@ const Ataglance = () => {
         </p>
         {/* </div> */}
       </section>
-      <section id="vision" className={AboutStyles.aboutbackColor}>
-        <div className={standardStyles.sectionNoSidenav}>
+      <section id="vision" className={AboutStyles.sectionbackGreyColor}>
+        <div className={AboutStyles.sectionNoSidenav}>
           {" "}
           <h2
-            className={` ${standardStyles.newsHeading} ${standardStyles.newsHeadingWhite} ${standardStyles.centertext}`}
+            className={` ${standardStyles.heading_primary__secondary} ${standardStyles.newsHeadingWhite} ${standardStyles.centertext}`}
           >
             {" "}
-            <span> Mission</span> and VISION{" "}
+            Mission and Vision
           </h2>
-          <div className={standardStyles.twoGridCon}>
-            <div className={standardStyles.twoGridCol}>
-              <h3 className={standardStyles.headingSecondary}>Vision</h3>
+          <div className={AboutStyles.twoGridCon}>
+            <div className={AboutStyles.twoGridCol}>
+              <h3 className={standardStyles.heading_primary__secondary}>
+                Vision
+              </h3>
               <p className={standardStyles.paragraph}>
                 To be a student-cantered, dynamic and innovative, world-class
                 multi-campus college, promoting excellence in teaching and
@@ -110,8 +110,10 @@ const Ataglance = () => {
                 learners who can compete globally.
               </p>
             </div>
-            <div className={standardStyles.twoGridCol}>
-              <h3 className={standardStyles.headingSecondary}>Mission</h3>
+            <div className={AboutStyles.twoGridCol}>
+              <h3 className={standardStyles.heading_primary__secondary}>
+                Mission
+              </h3>
               <p className={standardStyles.paragraph}>
                 To be the premier educational institution in providing
                 high-quality, affordable and accessible educational programmes
@@ -150,7 +152,7 @@ const Ataglance = () => {
                   className={AboutStyles.gallery__photo}
                 />
               </figure>
-              <figure className={AboutStyles.gallery__item}>
+              {/* <figure className={AboutStyles.gallery__item}>
                 <Image
                   src={home2}
                   width={300}
@@ -158,13 +160,13 @@ const Ataglance = () => {
                   alt="Photo of hotel 3"
                   className={AboutStyles.gallery__photo}
                 />
-              </figure>
+              </figure> */}
             </>
           </div>
-          <div className={standardStyles.threeColGridCon1}>
-            <div className={standardStyles.threeColGrid}>
+          <div className={AboutStyles.threeColGridCon}>
+            <div className={AboutStyles.threeColGrid}>
               <div className={standardStyles.featurebox}>
-                <h3 className={standardStyles.headingTertiary}>
+                <h3 className={standardStyles.heading_primary_secondary}>
                   Digital
                   <br /> Transformation{" "}
                 </h3>
@@ -181,9 +183,9 @@ const Ataglance = () => {
                 </p>
               </div>
             </div>
-            <div className={standardStyles.threeColGrid}>
+            <div className={AboutStyles.threeColGrid}>
               <div className={standardStyles.featurebox}>
-                <h3 className={standardStyles.headingTertiary}>
+                <h3 className={standardStyles.heading_primary_secondary}>
                   Sustainable <br /> Futures
                 </h3>
                 <p
@@ -201,7 +203,7 @@ const Ataglance = () => {
             </div>
             <div className={standardStyles.threeColGrid}>
               <div className={standardStyles.featurebox}>
-                <h3 className={standardStyles.headingTertiary}>
+                <h3 className={standardStyles.heading_primary_secondary}>
                   Global
                   <br /> Pathways
                 </h3>
@@ -223,15 +225,15 @@ const Ataglance = () => {
         </div>{" "}
         {/*end of sidenav} */}
       </section>
-      <section id="schools" className={`${standardStyles.sectionbackColor}`}>
+      <section id="schools" className={`${AboutStyles.sectionbackColor}`}>
         <h2
-          className={`${AboutStyles.schoolHeading} ${standardStyles.centertext}`}
+          className={`${standardStyles.heading_primary__secondary} ${standardStyles.centertext}`}
         >
           {" "}
-          ACADEMIC <span> Schools</span>
+          Academic Schools
         </h2>
         <p
-          className={`${standardStyles.headingTertiary} ${standardStyles.centertext}`}
+          className={`${standardStyles.heading_primary__sub} ${standardStyles.centertext}`}
         >
           {" "}
           Bachelors Degrees | Associate Degrees | Diplomas | Certificates{" "}
@@ -241,35 +243,36 @@ const Ataglance = () => {
             <div
               className={`${AboutStyles.schools} ${AboutStyles.schoolsliberal}`}
             >
+              School of Liberal Arts, Education and Digital Humanities
               {/* <Link href="/programmes/schools/liberal">
-                School of Liberal Arts, Education and Digital Humanities
+                
               </Link> */}
             </div>
           </div>
           <div className={AboutStyles.schoolflex__item}>
             <div
               className={`${AboutStyles.schools} ${AboutStyles.schoolskengord}`}
-            >
+            > Ken Gordon School of Communication, Creative and Digital Media{" "}
               {/* <Link href="/programmes/schools/kengord">
-                Ken Gordon School of Communication, Creative and Digital Media{" "}
+               
               </Link> */}
             </div>
           </div>
           <div className={AboutStyles.schoolflex__item}>
             <div
               className={`${AboutStyles.schools} ${AboutStyles.schoolsnursing}`}
-            >
+            >    School of Nursing, Health and Medical Technologies{" "}
               {/* <Link href="/programmes/schools/nursing">
-                School of Nursing, Health and Medical Technologies{" "}
+            
               </Link> */}
             </div>
           </div>
           <div className={AboutStyles.schoolflex__item}>
             <div
               className={`${AboutStyles.schools} ${AboutStyles.schoolsbusIT}`}
-            >
+            >  School of Business and Digital Technologies{" "}
               {/* <Link href="/programmes/schools/busIT">
-                School of Business and Digital Technologies{" "}
+              
               </Link> */}
             </div>
           </div>
@@ -277,31 +280,31 @@ const Ataglance = () => {
           <div className={AboutStyles.schoolflex__item}>
             <div
               className={`${AboutStyles.schools} ${AboutStyles.schoolsenviro}`}
-            >
+            >  School of Environment, Circular Economy and Sustainability{" "}
               {/* <Link href="/programmes/schools/enviro">
-                School of Environment, Circular Economy and Sustainability{" "}
+              }
               </Link> */}
             </div>
           </div>
           <div className={AboutStyles.schoolflex__item}>
             <div
               className={`${AboutStyles.schools} ${AboutStyles.schoolsworkF}`}
-            >
+            > School of Workforce, Enhancement and Development{" "}
               {/* <Link href="/programmes/schools/workF">
-                School of Workforce, Enhancement and Development{" "}
+               
               </Link> */}
             </div>
           </div>
         </div>
 
         <h2
-          className={`${AboutStyles.schoolHeading} ${standardStyles.centertext}`}
+          className={`${standardStyles.heading_primary__secondary} ${standardStyles.marginTopHuge} ${standardStyles.centertext}`}
         >
           {" "}
           UPSKILLING <span> Academy</span>
         </h2>
         <p
-          className={`${standardStyles.headingTertiary} ${standardStyles.centertext}`}
+          className={`${standardStyles.heading_primary__sub} ${standardStyles.centertext}`}
         >
           {" "}
           Vocational Training | Incubation | Acceleration | Business Coaching |

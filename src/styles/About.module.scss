@@ -1,6 +1,7 @@
 @use "./abstracts/variables" as v;
-@use "./layout/pagelayout" as l;
-@use"./base/typography" as t;
+@import "./layout/pagelayout" ;
+@import "./layout/grid" ;
+@import"./base/typography";
 @import "./pages/quality";
 @import "./layout/timeline";
 
@@ -151,7 +152,7 @@
 
   height: 200px;
   padding: 3rem 3rem;
-  font-size: v.$default-font-size;
+  font-size: 1.6rem;
   color: white;
   box-shadow: 0 1.5rem 4rem rgba(v.$color-black, 0.15);
   transition: transform 0.3s;
@@ -317,6 +318,10 @@
   padding: 0;
 
   &__photo {
+    width: 100%;
+    display: block;
+  }
+    &__item {
     width: 100%;
     display: block;
   }

@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as v;
+
 .centertext { text-align: center !important; }
 .leftalign { text-align: left !important;}
 
@@ -6,6 +8,8 @@
 }
 
 .whitefont{color:white;}
+
+.schoolcolor {color:v.$color-primary-dark  !important;}
 .centerbutton { margin: auto;}
 
 .paddingTopBig { padding-top: 5rem !important; }

@@ -2,8 +2,10 @@ import React from "react";
 import Link from "next/link";
 import Head from "next/head";
 import standardStyles from "../../styles/main.module.scss";
+import awaitingbanner from "../../../public/images/about/qualitycontrol1.jpg";
+
 import AboutStyles from "../../styles/About.module.scss";
-import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
+import HeadImage from "../../components/PageComponents/HeadImage";
 // import { useState } from "react";
 // import { useEffect } from "react";
 
@@ -13,7 +15,7 @@ const history = () => {
       <Head>
         <title>Profile |{""} COSTAATT</title>
       </Head>
-      <HeaderNoImage caption="History" />
+      <HeadImage mainimage={awaitingbanner} imagetext="Student Council" />
       <p
         className={`${standardStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}
       >
@@ -21,6 +23,13 @@ const history = () => {
         <Link href="/about">About/</Link>
         <Link href="/about/history">History</Link>
       </p>
+      <header>
+        <span className={standardStyles.heading_primary__main}>History</span>
+        <span className={standardStyles.heading_primary__sub}>
+          Transforming lives, Transforming communities,Transforming the Nation,
+          One studnet at a time
+        </span>
+      </header>
 
       <section id="mission" className={standardStyles.sectionNoSidenavFirst}>
         <div className={standardStyles.centertext}>
