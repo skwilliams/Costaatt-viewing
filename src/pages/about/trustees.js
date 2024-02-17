@@ -129,7 +129,7 @@ const trustees = () => {
             <span> Trustees </span>
           </h2>
           <p className={standardStyles.paragraph}>
-            The RIT Board of Trustees consists of 6 number active trustees
+            The COSTAATT Board of Trustees consists of 6 number active trustees
             (including the President of the College and representatives of the
             COSTAATT ...... Currently, the total number of active and emeriti
             trustees is ?.
