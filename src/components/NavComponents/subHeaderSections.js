@@ -180,9 +180,9 @@ export const subHeaderSections = {
     Contact: "contact",
   },
 
-  History: {
+  history: {
     Mission: "mission",
-    National: "national",
+    "National Community": "national",
     History: "achieve",
     "Our Numbers ": "enhance",
   },

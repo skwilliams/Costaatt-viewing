@@ -34,9 +34,10 @@
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 // display: grid;
 float:right;
+
 .name{
   text-align: center;
-  font-size:1.5rem;
+  font-size:1.6rem;
   color:$color-primary-dark;
 }
 .presidentimg{
@@ -90,7 +91,7 @@ float:right;
         }
 
         &:hover {
-            content: url("../img/ACTT-Logo.png");
+            content: url("../../../public/images/about/ACTT-Logo.png");
         }
     }
 }
@@ -139,7 +140,7 @@ float:right;
         }
 
         &:hover {
-            content: url("../img/ACTT-Logo.png");
+            content: url("../../../public/images/about/ACTT-Logo.png");
         }
     }
 }

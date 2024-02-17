@@ -66,11 +66,11 @@ const rentspace = () => {
           <Link href="/services/rentspace">Rental Spaces</Link>
         </div>
         <span className={servicesStyles.heading_primary__main}>
-            RENTAL SPACES
-          </span>
-          <span className={servicesStyles.heading_primary__sub}>
-            Modern and Attractive Locations
-          </span>
+          RENTAL SPACES
+        </span>
+        <span className={servicesStyles.heading_primary__sub}>
+          Modern and Attractive Locations
+        </span>
       </header>
       {/* <div id="intro" > */}
       <div id="intro" className={servicesStyles.sectionNoSidenav}>
@@ -187,9 +187,9 @@ const rentspace = () => {
 
       <section id="spaces" className={servicesStyles.sectionNoSidenavMar}>
         <h2
-          className={`${servicesStyles.centertext}  ${servicesStyles.marginTopBig} ${servicesStyles.newsHeading}`}
+          className={`${servicesStyles.centertext}  ${servicesStyles.marginTopBig} ${servicesStyles.heading_primary__secondary}`}
         >
-          Spaces for <span>Rent </span>{" "}
+          Spaces for Rent
         </h2>
         <div className={GridStyles.row}>
           <div className={GridStyles.col1of3}>
@@ -700,12 +700,16 @@ const rentspace = () => {
       </section> */}
       <section id="contact" className={servicesStyles.rentContact}>
         {/* Contact Text */}
+
+        <h2 className={`${servicesStyles.centertext}  ${servicesStyles.marginTopBig} ${servicesStyles.heading_primary__secondary}`}>
+          Book Now 
+          
+          </h2>
         <h3 className={servicesStyles.rentContact__text}>
           {" "}
           Contact <span> Haniffa Ali Parris </span> today to reserve these or
           other available spaces at the COSTAATT
         </h3>
-
         <div className={servicesStyles.contact}>
           <Image
             className={servicesStyles.package__icon}
@@ -745,14 +749,10 @@ const rentspace = () => {
             Book Online
           </a>
         </div>
-
-        {/* <div className={servicesStyles.brochure}> */}
         <h3 className={servicesStyles.rentContact__text}>
           <span> Download </span> Brochures
         </h3>
         <div className={servicesStyles.brochure}>
-          {/* <h2>Hello</h2>
-            <h2>Bye</h2> */}
           <div className={servicesStyles.brochure__text}>
             <Image
               className={servicesStyles.package__icon}
@@ -789,7 +789,7 @@ const rentspace = () => {
             </Link>
           </div>
         </div>
-      </section>
+      h</section>
       {/* </div> */}
       {/*end section Rent */}
     </>

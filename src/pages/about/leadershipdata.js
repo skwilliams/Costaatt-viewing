@@ -70,6 +70,8 @@ export const vps = [
   //   phone: "1-868-625-5030 ext 0000",
   // },
   {
+    id: 1,
+
     photo: require("../../../public/images/Leadership photos/Naseem-Koylass.jpg"),
     handle: "ccharles",
     altText: " photo of Naseem Koylass",
@@ -79,6 +81,7 @@ export const vps = [
     bio: "  Dr. Naseem Koylass was appointed to the position of Vice President, Academic Affairs effective July 1, 2022. Dr. Koylass is a long-standing member of the COSTAATT community and has held a wide range of leadership positions over the last 20 years, including department chair, campus dean and more recently, Associate Vice President, Academic Affairs. Dr Koylass has played a critical role in the College's accreditation and quality assurance activities since COSTAATT was first established in October 2000, and brings to her new position a wealth of knowledge and experience in academic and administrative leadership. As the chief administrator in the Division of Academic Affairs, she has guided and mentored the school deans, department chairs, faculty and staff and inspired them to continuously strive to achieve the institution's goals and objectives. Dr. Koylass' qualifications, which include a doctorate in Educational Leadership/Curriculum and Instruction, a Master of Science in Economics, a diploma in Educational Administration and a Bachelor of Science in Economics, ably position her to lead the Division of Academic Affairs in this next leg of COSTAATT's transformational journey to become a centre of excellence in teaching, research and service to the benefit of our diverse communities and the wider nation",
   },
   {
+    id: 2,
     photo: require("../../../public/images/Leadership photos/HelenWC_small.jpg"),
     handle: "hcumberbatch",
     altText: " photo of Helen Cumberbatch",
@@ -88,6 +91,7 @@ export const vps = [
     bio: "Dr. Helen Williams-Cumberbatch was appointed to the position of Vice President, Student Affairs effective July 1, 2022. Prior to this appointment, she served in a range of positions at COSTAATT for over 20 years. In the last decade, she has led the College's marketing and public relations and enrolment management departments. Dr. Williams-Cumberbatch is a Fulbright scholar who completed doctoral studies at Ohio University, USA. She holds a Ph.D. in Higher Education and Student Affairs, and a MSc. in Higher Education (Enrolment Management specialization) and a BSc. in Management Studies. Her doctoral research investigated the experiences and factors that contributed to thriving among community college students in Trinidad and Tobago, and the findings of her research have informed the development of a unique model of student development for COSTAATT which will play a critical role in the positive transformation of student experiences at the College in the years ahead. Dr. Williams-Cumberbatch currently serves as 1st Vice President of the Association of Caribbean Higher Education Administrators (ACHEA). Her passion for student success positions her to lead the Division of Student Affairs in the next chapter of the COSTAATT story of transforming lives, communities and the nation…one student at a time.",
   },
   {
+    id: 3,
     photo: require("../../../public/images/Leadership photos/Avenille-Matthew.jpg"),
     handle: "amatthew",
     altText: " photo of Avenille Matthew",
@@ -97,6 +101,7 @@ export const vps = [
     bio: " Dr. Alvinelle Matthew was appointed Vice President, Human Resources Division at the College of Science,Technology and Applied Arts of the Trinidad and Tobago (COSTAATT) in January 2018.She possess a wealth of experience in developing and administering strategic human resource functions within the tertiary level sector and in various private organisations. She is passionate about human resource development and on a part-time basis engages in teaching human resource principles as an adjunct faculty. She also serves as a practicum supervisor at the University of the West Indies. She is the holder of a Doctorate in Philosophy in Social Policy with an emphasis on Human Resource Development from the University of the West Indies. Her program was partially completed at the University of Alberta, Canada through a scholarship award from the Canada-CARICOM scholarship. She also holds a Master of Arts in Human Resource Management (distinction) from the Arthur Lok Graduate School of Business and a Bachelor of Arts with majors in Human Resource Management and Psychology Counselling from the Caribbean Nazarene College",
   },
   {
+    id: 4,
     photo: require("../../../public/images/Leadership photos/Lisa-Solomon.jpg"),
     handle: "rsolomon",
     altText: " photo of Lisa Solomon",
@@ -106,6 +111,7 @@ export const vps = [
     bio: "Lisa Solomon is an Attorney-at-Law with close to 20 years experience, having worked as a member of various firms, in public institutions and in her own private practice. She is knowledgeable in company law and corporate governance and has worked closely with various boards of directors in the capacity of Assistant Corporate Secretary and Corporate Secretary.Ms. Solomon obtained her Bachelor of Laws degree from the University of the West Indies and the Legal Education Certificate from the Hugh Wooding Law School.",
   },
   {
+    id: 5,
     photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
     handle: "dragoonanan",
     altText: " photo of Davis Ragoonanan",
@@ -113,6 +119,29 @@ export const vps = [
     position: "Vice President, Finance and Administration ",
     email: "dRagoonanan@costaatt.edu.tt",
     bio: "Davis Ragoonanan... ",
+  },
+  {
+    id: 6,
+    photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
+    handle: "FNicholas",
+    altText: " photo of Fiola Nicholas",
+    name: "Fayola Nicholas",
+    position: "Vice President, Advancement ",
+    email: "FNicholas@costaatt.edu.tt",
+    bio: "Fayola.. ",
+  },
+  {
+
+
+  
+    id: 7,
+    photo: require("../../../public/images/Leadership photos/deanavatar.jpg"),
+    handle: "Xmen",
+    altText: " photo of Professor Xavier",
+    name: "Professor Xavier",
+    position: "Vice President, Digital Transformation  ",
+    email: "pxavier@costaatt.edu.tt",
+    bio: "Professior Xavier founded the X-men, a group of displaced teenagers with special powers .. ",
   },
 ];
 

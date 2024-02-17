@@ -10,28 +10,40 @@ import DeptStyles from "../../styles/DepartCard.module.scss";
 
 import FacultyStaffCard from "../../components/PageComponents/FacultyStaffDepCard";
 import { officeofpresident } from "./leadershipdata";
-
+import HeadImage from "../../components/PageComponents/HeadImage";
+import awaitingbanner from "../../../public/images/about/qualitycontrol1.jpg"
 const trustees = () => {
   return (
     <>
       <Head>
         <title>Trustees |{""} COSTAATT</title>
       </Head>
-      <HeaderNoImage caption="Board of Trustees" />
+
+      <HeadImage mainimage={awaitingbanner} />
+
+      <header>
+        <span className={standardStyles.heading_primary__main}>
+          Board of Trustees
+        </span>
+        <span className={standardStyles.heading_primary__sub}>
+          Approves | Assures | Advises
+        </span>
+      </header>
+
       <SideNavOnlyLayout>
-        <p
+        {/* <p
           className={`${standardStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}
         >
           <Link href="/"> COSTAATT/ </Link>
           <Link href="/about">About/</Link>
           <Link href="/about/trustees">Trustees</Link>
-        </p>{" "}
+        </p>{" "} */}
         <section
           id="overview"
           className={standardStyles.sectionWithSideNavFirst}
         >
-          <h2 className={standardStyles.newsHeading}>
-            <span> BOARD </span>of Trustees
+          <h2 className={standardStyles.heading_primary__secondary}>
+            Board of Trustees
           </h2>
 
           <p className={standardStyles.paragraph}>
@@ -45,7 +57,9 @@ const trustees = () => {
           </p>
         </section>
         <section id="resp" className={standardStyles.sectionWithSideNav}>
-          <h2 className={standardStyles.newsHeading}>
+          <h2
+            className={`${standardStyles.marginTopSmall} ${standardStyles.heading_primary__tertiary}`}
+          >
             <span> Responsiblities </span>
           </h2>
 
@@ -96,7 +110,7 @@ const trustees = () => {
           </div>
         </section>
         <section id="vision" className={standardStyles.sectionWithSideNav}>
-          <h2 className={standardStyles.newsHeading}>
+          <h2 className={standardStyles.heading_primary__secondary}>
             <span> Vision </span>
           </h2>
           <p className={standardStyles.paragraph}>
@@ -110,8 +124,8 @@ const trustees = () => {
             exercitation proident adipisicing. Irure labore moll{" "}
           </p>
         </section>
-        <section id="trustees" className={standardStyles.sectionWithSideNav}>
-          <h2 className={standardStyles.newsHeading}>
+        <section id="trustees" className={`${standardStyles.sectionWithSideNav} ${standardStyles.marginTopSmall}`}>
+          <h2 className={standardStyles.heading_primary__secondary}>
             <span> Trustees </span>
           </h2>
           <p className={standardStyles.paragraph}>

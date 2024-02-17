@@ -4,9 +4,9 @@ import Head from "next/head";
 import standardStyles from "../../styles/main.module.scss";
 import awaitingbanner from "../../../public/images/about/qualitycontrol1.jpg";
 
-import AboutStyles from "../../styles/About.module.scss";
-import HeadImage from "../../components/PageComponents/HeadImage";
 
+import HeadImage from "../../components/PageComponents/HeadImage";
+import AboutStyles from "../../styles/About.module.scss";
 
 import Image from "next/image";
 
@@ -92,12 +92,12 @@ const Ataglance = () => {
       <section id="vision" className={AboutStyles.sectionbackGreyColor}>
         <div className={AboutStyles.sectionNoSidenav}>
           {" "}
-          <h2
+          {/* <h2
             className={` ${standardStyles.heading_primary__secondary} ${standardStyles.newsHeadingWhite} ${standardStyles.centertext}`}
           >
             {" "}
             Mission and Vision
-          </h2>
+          </h2> */}
           <div className={AboutStyles.twoGridCon}>
             <div className={AboutStyles.twoGridCol}>
               <h3 className={standardStyles.heading_primary__secondary}>
@@ -225,7 +225,7 @@ const Ataglance = () => {
         </div>{" "}
         {/*end of sidenav} */}
       </section>
-      <section id="schools" className={`${AboutStyles.sectionbackColor}`}>
+      <section id="schools" className={`${AboutStyles.sectionNoSidenav}`}>
         <h2
           className={`${standardStyles.heading_primary__secondary} ${standardStyles.centertext}`}
         >

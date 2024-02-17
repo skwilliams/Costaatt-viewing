@@ -3,6 +3,8 @@
 
 import { useState } from "react";
 import ModalStyles from "../../styles/Modal.module.scss";
+import AboutStyles from "../../styles/About.module.scss";
+
 import Image from "next/image";
 import photo from "../../../public/images/Leadership photos/Naseem-Koylass.jpg";
 
@@ -18,8 +20,8 @@ const Modal = ({ isOpen, onClose, children }) => {
           <div className={ModalStyles.modal}>
            
             <button 
-            className={ModalStyles.modal__overlay__closeButton}
-            onClick={handleClose}> Close</button>
+            className={`${AboutStyles.btn}  ${AboutStyles.rightalign } ${AboutStyles.btn__white }`}
+            onClick={handleClose}> X</button>
             {/* &times; */}
           
             <div className={ModalStyles.modal__content}>{children}</div>

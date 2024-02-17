@@ -11,7 +11,7 @@
         border-radius: 10rem;
         transition: all .2s;
         position: relative;
-        font-size: $default-font-size;
+        font-size: 1.5rem;
         margin-bottom:2em;
 
         //Change for the <button> element
@@ -98,7 +98,7 @@
         transition: all .4s;
     }
     
-    &--animated {
+    &__animated {
         animation: moveInBottom .5s ease-out .75s;
         animation-fill-mode: backwards;
     }
@@ -155,4 +155,19 @@
 
 .strongcall .btn:hover {
   background-color: #222222;
+}
+
+.color_transition_button {
+  background-color:$color-primary-dark;
+  color: white;
+  border-radius: 60%;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transition for background-color */
+  animation: all ;
+}
+
+.color_transition_button:hover {
+  background-color: $color-primary-light; /* New background color on hover */
 }

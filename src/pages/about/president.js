@@ -2,17 +2,24 @@ import React from "react";
 import Layout from "../../components/Layouts/TopNavOnly_NoDropdown";
 import SideNavOnlyLayout from "../../components/Layouts/SideNavOnly_NoTopOrDropdown";
 import TopNavOnlyLayout from "../../components/Layouts/TopNavOnly_NoDropdown";
-import newsCardPre from "../../components/PageComponents/newsCardPre";
+
+
+
 import Head from "next/head";
 import standardStyles from "../../styles/main.module.scss";
-import HeaderNoImage from "../../components/PageComponents/HeaderNoImage";
+
+
+
+
 import Link from "next/link";
-import { FiBookOpen } from "react-icons/fi";
-import { IconContext } from "react-icons";
+
+
+
+
 import HomeStyles from "../../styles/Home.module.scss";
 import NewsTilePres from "../../components/HomeComponents/NewsTilePres";
 import DeptStyles from "../../styles/DepartCard.module.scss";
-import StaffStyle from "../../styles/StaffDeptCard.module.scss";
+import AboutStyles from "../../styles/About.module.scss";
 import Image from "next/image";
 
 import FacultyStaffCard from "../../components/PageComponents/FacultyStaffDepCard";
@@ -20,6 +27,8 @@ import { officeofpresident } from "./leadershipdata";
 import photo from "../../../public/images/Leadership photos/Keith-Nurse.jpeg";
 import { NEWS } from "../../components/HomeComponents/homeLinks";
 import StaffCard from "../../components/PageComponents/StaffCard";
+import HeadImage from "../../components/PageComponents/HeadImage";
+import awaitingbanner from "../../../public/images/about/qualitycontrol1.jpg";
 
 const president = () => {
   return (
@@ -28,33 +37,38 @@ const president = () => {
         <title>President |{""} COSTAATT</title>
       </Head>
 
-      <HeaderNoImage caption="College Leadership" />
+      <HeadImage mainimage={awaitingbanner} imagetext="Student Council" />
+
+      <header>
+        <span className={standardStyles.heading_primary__main}>President</span>
+        <span className={standardStyles.heading_primary__sub}></span>
+      </header>
 
       <SideNavOnlyLayout>
         {" "}
-        <p
+        {/* <p
           className={`${standardStyles.toplinksnav} ${standardStyles.marginBottomSmall}`}
         >
           <Link href="/"> COSTAATT/ </Link>
           <Link href="/about">About/</Link>
           <Link href="/about/president">President</Link>
-        </p>
+        </p> */}
         <section
           id="message"
           className={standardStyles.sectionWithSideNavFirst}
         >
-          <h2 className={standardStyles.newsHeading}>
-            <span> President's </span>MESSAGE
+          <h2 className={standardStyles.heading_primary__secondary}>
+            President's Message
           </h2>
-          <div className={standardStyles.president}>
+          <div className={AboutStyles.president}>
             <Image
-              className={standardStyles.presidentimg}
+              className={AboutStyles.presidentimg}
               src={photo}
               alt="Photo of Keith Nurse"
-              width="363"
-              height="422"
+              width="200"
+              height="200"
             />
-            <p className={standardStyles.name}>
+            <p className={AboutStyles.name}>
               <span> Dr. Keith Nurse</span>{" "}
             </p>
 
@@ -88,8 +102,11 @@ const president = () => {
             communities.
           </p>
         </section>
-        <section id="bio" className={standardStyles.sectionWithSideNav}>
-          <h2 className={standardStyles.newsHeading}>
+        <section
+          id="bio"
+          className={`${standardStyles.sectionWithSideNav} ${standardStyles.marginTopHuge}`}
+        >
+          <h2 className={standardStyles.heading_primary__secondary}>
             <span> Biography </span>
           </h2>
           <p className={standardStyles.paragraph}>
@@ -122,8 +139,10 @@ const president = () => {
           </p>
         </section>
         <section id="news" className={standardStyles.sectionWithSideNav}>
-          <h2 className={standardStyles.newsHeading}>
-            <span> President </span>in the NEWS
+          <h2
+            className={`${standardStyles.heading_primary__secondary} ${standardStyles.marginTopHuge}`}
+          >
+            President in the News
           </h2>
           <div className={HomeStyles.sectionFourTiles}>
             {NEWS.map((tile, index) => {
@@ -146,16 +165,20 @@ const president = () => {
           </div>
         </section>
         <section id="officers" className={standardStyles.sectionWithSideNav}>
-          <h2 className={standardStyles.newsHeading}>
-            <span> STAFF </span>
+          <h2
+            className={`${standardStyles.heading_primary__secondary} ${standardStyles.marginTopHuge}`}
+          >
+            <span> Staff</span>
           </h2>
           <div className={DeptStyles.threeColGridCon}>
             <FacultyStaffCard staff={officeofpresident} />
           </div>
         </section>
         <section id="contact" className={standardStyles.sectionWithSideNav}>
-          <h2 className={standardStyles.newsHeading}>
-            <span> CONTACT </span>
+          <h2
+            className={`${standardStyles.heading_primary__secondary} ${standardStyles.marginTopHuge}`}
+          >
+            <span> Contact </span>
           </h2>
         </section>
       </SideNavOnlyLayout>

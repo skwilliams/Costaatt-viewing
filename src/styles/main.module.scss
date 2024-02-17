@@ -1,7 +1,6 @@
-// all variables 
+// all variables
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
-
 
 //components
 
@@ -12,21 +11,13 @@
 @import "./components/activities";
 @import "./components/gallery";
 @import "./components/popup";
-
 @import "./components/story";
-
-
-
-
 
 // all headings, paragraphs
 @import "./base/typography";
 @import "./base/base";
 
-
-
 @import "./base/utilities";
-
 
 // @import "./pages/home";
 // @import "./pages/costLife";
@@ -35,19 +26,12 @@
 // @import "./pages/services";
 // @import "./pages/facultystaff";
 
-
-
-
-
-
 // // all grid layouts
 @import "./layout/grid";
 
-
-// //timeline for history 
+// //timeline for history
 // @import "./layout/timeline";
-@import "./layout/timeline2";
-
+// @import "./layout/timeline2";
 
 // //section margins based on layout
 // @import "./layout/pagelayout";
@@ -55,9 +39,8 @@
 // //Includes tables, ul , li
 @import "./layout/structures";
 
-// //header 
+// //header
 // @import "./layout/header";
 
 // //testing
 // @import "./layout/testlayout";
-

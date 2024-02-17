@@ -98,25 +98,25 @@
       color: whitesmoke;
       font-size: 1.7rem;
 
-      //   font-size: 1.8rem;
-      //   text-align: left;
-      //   color: white;
+        font-size: 1.8rem;
+        text-align: left;
+        color: white;
 
-      //  font-size: 1.6rem;
-      //         margin-bottom: 4rem;
+       font-size: 1.6rem;
+              margin-bottom: 4rem;
 
-      //         -moz-column-count: 2;
-      //         -moz-column-gap: 4rem; //1em = 14px;
-      //         -moz-column-rule: 1px solid v.$color-grey-light-2;
+              -moz-column-count: 2;
+              -moz-column-gap: 4rem; //1em = 14px;
+              -moz-column-rule: 1px solid v.$color-grey-light-2;
 
-      //         column-count: 2;
-      //         column-gap: 4rem; //1em = 14px;
-      //         column-rule: 1px solid v.$color-grey-light-2;
+              column-count: 2;
+              column-gap: 4rem; //1em = 14px;
+              column-rule: 1px solid v.$color-grey-light-2;
 
-      // -moz-hyphens: auto;
-      // -ms-hyphens: auto;
-      // -webkit-hyphens: auto;
-      // hyphens: auto;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      -webkit-hyphens: auto;
+      hyphens: auto;
     }
 
     &__closeButton {
@@ -128,14 +128,14 @@
 
         display: inline-block;
         padding: 10px 20px;
-        font-size: 16px;
+        font-size: 1.6rem;
         font-weight: bold;
-        text-align: center;
+        text-align: right;
         text-decoration: none;
         cursor: pointer;
         border: 2px solid #3498db; /* Border color */
         color: #3498db; /* Text color */
-        background-color: #fff; /* Background color */
+        background-color: orange; /* Background color */
         border-radius: 5px; /* Rounded corners */
         transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
         // color: white;
@@ -152,46 +152,11 @@
       }
 
       &:hover {
-        color: v.$color-primary;
+        color: v.$color-white;
       }
-    }
+    
 
-    // &__closeButton {
-    //   position: absolute;
-    //   top: 10px;
-    //   right: 10px;
-    //   font-size: 20px;
-    //   cursor: pointer;
-    //   background: none;
-    //   border: none;
-    //   color: #333; /* Adjust color as needed */
-    //   transition: transform 0.3s ease; /* Transition for smooth animation */
-
-    //   /* Hover state */
-    //   &:hover {
-    //     transform: rotate(45deg);
-    //   }
-
-    //   /* Diagonal lines of X */
-    //   &::before,
-    //   &::after {
-    //     content: '';
-    //     position: absolute;
-    //     height: 2px;
-    //     width: 20px;
-    //     background-color: #333; /* Adjust color as needed */
-    //     top: 50%;
-    //     left: 50%;
-    //     transform-origin: 50% 50%;
-    //   }
-
-    //   &::before {
-    //     transform: translate(-50%, -50%) rotate(-45deg);
-    //   }
-
-    //   &::after {
-    //     transform: translate(-50%, -50%) rotate(45deg);
-    //   }
-    // }
+  
   }
+}
 }

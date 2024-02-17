@@ -240,7 +240,7 @@ $gutter-horizontal-small: 1rem;
 }
 
 
-  @media (min-width:600px) {
+  @media (max-width:600px) {
   .fourColGridCon{
      grid-template-columns: 1fr ; 
   }
@@ -264,7 +264,7 @@ $gutter-horizontal-small: 1rem;
 }
 
 
-  @media (min-width:600px) {
+  @media (max-width:600px) {
   .twoGridCon{
      grid-template-columns: 1fr ; 
   }
@@ -288,7 +288,7 @@ $gutter-horizontal-small: 1rem;
 }
 
 
-  @media (min-width:50em) {
+  @media (max-width:50em) {
   .sixColGridCon{
      grid-template-columns: 1fr ; 
   }

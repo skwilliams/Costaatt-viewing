@@ -3,6 +3,8 @@ import Link from "next/link";
 import Head from "next/head";
 import standardStyles from "../../styles/main.module.scss";
 import awaitingbanner from "../../../public/images/about/qualitycontrol1.jpg";
+import Layout from "../../components/Layouts/TopNavOnly_NoDropdown";
+import Statistics from "../../components/PageComponents/StaticticsPage";
 
 import AboutStyles from "../../styles/About.module.scss";
 import HeadImage from "../../components/PageComponents/HeadImage";
@@ -31,19 +33,12 @@ const history = () => {
         </span>
       </header>
 
-      <section id="mission" className={standardStyles.sectionNoSidenavFirst}>
-        <div className={standardStyles.centertext}>
-          <h3 className={standardStyles.headingSecondary}>
-            {" "}
-            <span>Our Motto </span>
-          </h3>
-          <p className={standardStyles.paragraph}>
-            Transforming lives, Transforming communities,Transforming the
-            Nation, One studnet at a time
-          </p>
-        </div>
-        <div className={standardStyles.twoGridCon}>
-          <div className={standardStyles.twoGridCol}>
+      <section
+        id="mission"
+        className={`${AboutStyles.sectionNoSidenav} ${standardStyles.marginTopHuge}`}
+      >
+        <div className={AboutStyles.twoGridCon}>
+          <div className={AboutStyles.twoGridCol}>
             <h3 className={standardStyles.headingSecondary}> Our Mission</h3>
             <p className={standardStyles.paragraph}>
               To be the premier educational institution in providing
@@ -64,7 +59,7 @@ const history = () => {
           </div>
         </div>{" "}
       </section>
-      <section id="core" className={standardStyles.sectionNoSidenavFirst}>
+      <section id="core" className={AboutStyles.sectionNoSidenavFirst}>
         <div className={standardStyles.centertext}>
           <h3 className={standardStyles.headingSecondary}>Our Core Values</h3>
         </div>
@@ -79,7 +74,7 @@ const history = () => {
               </ul>
             </div>
           </div>
-          <div className={standardStyles.threeColGrid}>
+          <div className={AboutStyles.threeColGrid}>
             <div className={standardStyles.bullet}>
               <ul>
                 <li>Innovation and creativity</li>
@@ -88,7 +83,7 @@ const history = () => {
               </ul>
             </div>
           </div>
-          <div className={standardStyles.threeColGrid}>
+          <div className={AboutStyles.threeColGrid}>
             <div className={standardStyles.bullet}>
               <ul>
                 <li>Transparency and fairness in college operations</li>
@@ -99,16 +94,16 @@ const history = () => {
           </div>
         </div>
 
-        <p className={standardStyles.paragraph}>
+        <div className={standardStyles.heading_primary__sub}>
           {" "}
           <b> The primary mandate of the College is to deliver: </b>
-        </p>
-        <div className={standardStyles.fourColGridCon}>
-          <div className={standardStyles.fourColGrid}>
+        </div>
+        <div className={AboutStyles.fourColGridCon}>
+          <div className={AboutStyles.fourColGrid}>
             <div
               className={`${standardStyles.featurebox} ${AboutStyles.upskillnursing} ${standardStyles.whitefont}`}
             >
-              <h3 className={standardStyles.headingTertiary}>
+              <h3 className={standardStyles.heading_primary__sub}>
                 Career education <br />
               </h3>
               <p
@@ -124,7 +119,7 @@ const history = () => {
             <div
               className={`${standardStyles.featurebox} ${AboutStyles.upskillkengord} ${standardStyles.whitefont}`}
             >
-              <h3 className={standardStyles.headingTertiary}>
+              <h3 className={standardStyles.heading_primary__sub}>
                 Transfer
                 <br /> Education
               </h3>
@@ -140,7 +135,7 @@ const history = () => {
             <div
               className={`${standardStyles.featurebox} ${AboutStyles.upskillliberal} ${standardStyles.whitefont}`}
             >
-              <h3 className={standardStyles.headingTertiary}>
+              <h3 className={standardStyles.heading_primary__sub}>
                 Developmental
                 <br /> Education{" "}
               </h3>
@@ -158,7 +153,7 @@ const history = () => {
             <div
               className={`${standardStyles.featurebox} ${AboutStyles.upskillworkF} ${standardStyles.whitefont}`}
             >
-              <h3 className={standardStyles.headingTertiary}>
+              <h3 className={standardStyles.heading_primary__sub}>
                 Continuing & Community
                 <br /> Education{" "}
               </h3>
@@ -172,81 +167,78 @@ const history = () => {
           </div>
         </div>
       </section>
-      <section id="national">
-        <div className={standardStyles.sectionNoSidenavMar}>
-          {" "}
-          <h2
-            className={` ${standardStyles.newsHeading}  ${standardStyles.centertext}`}
+      <section id="national" className={AboutStyles.sectionNoSidenavMar}>
+        {/* <div > */}
+        {/* <h2
+            className={` ${standardStyles.heading_primary__sub}  ${standardStyles.centertext}`}
           >
             {" "}
             <span> NATIONAL</span> Community{" "}
-          </h2>
-          <p className={standardStyles.paragraph}>
-            {" "}
-            COSTAATT was established on October 27th 2000 by an Act of
-            Parliament (Act No. 77 of 2000) as a multi-campus community college,
-            based on the amalgamation of seven tertiary level institutions,
-            namely the:
-          </p>
-          <div className={AboutStyles.schoolflex}>
-            <div className={AboutStyles.schoolflex__item}>
-              <div
-                className={`${AboutStyles.joint} ${AboutStyles.jointcostaattCol}`}
-              >
-                NIHERST Colleges
-              </div>
-            </div>
-            <div className={AboutStyles.schoolflex__item}>
-              <p className={`${AboutStyles.joint} ${AboutStyles.jointliberal}`}>
-                John S. Donaldson Technical Institute{" "}
-              </p>
-            </div>
-            <div className={AboutStyles.schoolflex__item}>
-              <p className={`${AboutStyles.joint} ${AboutStyles.jointkengord}`}>
-                San Fernando Technical Institute{" "}
-              </p>
-            </div>
-            <div className={AboutStyles.schoolflex__item}>
-              <p className={`${AboutStyles.joint} ${AboutStyles.jointnursing}`}>
-                Government Vocational Centre (Point Fortin){" "}
-              </p>
-            </div>
-
-            <div className={AboutStyles.schoolflex__item}>
-              <p className={`${AboutStyles.joint} ${AboutStyles.jointbusIT}`}>
-                Eastern Caribbean Institute <br />
-                of Agriculture and Forestry (ECIAF){" "}
-              </p>
-            </div>
-
-            <div className={AboutStyles.schoolflex__item}>
-              <p className={`${AboutStyles.joint} ${AboutStyles.jointenviro}`}>
-                Joint Services Staff College{" "}
-              </p>
-            </div>
-            <div className={AboutStyles.schoolflex__item}>
-              <p className={`${AboutStyles.joint} ${AboutStyles.jointworkF}`}>
-                Metal Industries Company Limited (MIC){" "}
-              </p>
-            </div>
+          </h2> */}
+        <p className={standardStyles.paragraph}>
+          {" "}
+          COSTAATT was established on October 27th 2000 by an Act of Parliament
+          (Act No. 77 of 2000) as a multi-campus community college, based on the
+          amalgamation of seven tertiary level institutions, namely the:
+        </p>
+        <div className={AboutStyles.schoolflex}>
+          <div className={AboutStyles.schoolflex__item}>
+            <p
+              className={`${AboutStyles.joint} ${AboutStyles.jointcostaattCol}`}
+            >
+              NIHERST Colleges
+            </p>
           </div>
-          <p className={standardStyles.footnote}>
-            * NIHERST Colleges included: ( Information Technology College
-            College of Nursing,College of Health Sciences , School of
-            Languages,Business Management Division and General Education
-            Divisions )
-          </p>
+          <div className={AboutStyles.schoolflex__item}>
+            <p className={`${AboutStyles.joint} ${AboutStyles.jointliberal}`}>
+              John S. Donaldson Technical Institute{" "}
+            </p>
+          </div>
+          <div className={AboutStyles.schoolflex__item}>
+            <p className={`${AboutStyles.joint} ${AboutStyles.jointkengord}`}>
+              San Fernando Technical Institute{" "}
+            </p>
+          </div>
+          <div className={AboutStyles.schoolflex__item}>
+            <p className={`${AboutStyles.joint} ${AboutStyles.jointnursing}`}>
+              Government Vocational Centre <br /> (Point Fortin){" "}
+            </p>
+          </div>
+
+          <div className={AboutStyles.schoolflex__item}>
+            <p className={`${AboutStyles.joint} ${AboutStyles.jointbusIT}`}>
+              Eastern Caribbean Institute <br />
+              of Agriculture and Forestry (ECIAF){" "}
+            </p>
+          </div>
+
+          <div className={AboutStyles.schoolflex__item}>
+            <p className={`${AboutStyles.joint} ${AboutStyles.jointenviro}`}>
+              Joint Services Staff College{" "}
+            </p>
+          </div>
+          <div className={AboutStyles.schoolflex__item}>
+            <p className={`${AboutStyles.joint} ${AboutStyles.jointworkF}`}>
+              Metal Industries Company Limited (MIC){" "}
+            </p>
+          </div>
         </div>
+        <p className={AboutStyles.footnote}>
+          * NIHERST Colleges included: ( Information Technology College College
+          of Nursing, College of Health Sciences, School of Languages, Business
+          Management Division and General Education Divisions )
+        </p>
+        {/* </div> */}
       </section>
 
-      <secton id="achieve" className={standardStyles.sectiontimeline}>
-        <div className={standardStyles.timeline}>
-          <div className={standardStyles.entry}>
-            <div className={standardStyles.title}>
+      <section id="achieve" className={standardStyles.marginTopHuge}>
+        <div className={AboutStyles.timeline}>
+          <div className={AboutStyles.entry}>
+            <div className={AboutStyles.title}>
               <h3>1998-2000</h3>
               <p>The Early Years </p>
             </div>
-            <div className={`${standardStyles.bullet} ${standardStyles.body}`}>
+            <div className={`${standardStyles.bullet} ${AboutStyles.body}`}>
               <ul>
                 <li>
                   COSTAATT focused on aligning its programs with the North
@@ -266,12 +258,12 @@ const history = () => {
               </ul>
             </div>
           </div>
-          <div className={standardStyles.entry}>
-            <div className={standardStyles.title}>
+          <div className={AboutStyles.entry}>
+            <div className={AboutStyles.title}>
               <h3>2000-2002</h3>
               <p>COSTAATT was born </p>
             </div>
-            <div className={`${standardStyles.bullet} ${standardStyles.body}`}>
+            <div className={`${standardStyles.bullet} ${AboutStyles.body}`}>
               <ul>
                 <li>
                   COSTAATT was established on October 27th 2000 by an Act of
@@ -283,12 +275,12 @@ const history = () => {
               </ul>
             </div>
           </div>
-          <div className={standardStyles.entry}>
-            <div className={standardStyles.title}>
+          <div className={AboutStyles.entry}>
+            <div className={AboutStyles.title}>
               <h3>2002-2004</h3>
               <p>Restructuring of The Tertiary Education Sector </p>
             </div>
-            <div className={`${standardStyles.bullet} ${standardStyles.body}`}>
+            <div className={`${standardStyles.bullet} ${AboutStyles.body}`}>
               <ul>
                 <li>
                   A new vision led to the establishment of the University of
@@ -301,12 +293,12 @@ const history = () => {
               </ul>
             </div>
           </div>
-          <div className={standardStyles.entry}>
-            <div className={standardStyles.title}>
+          <div className={AboutStyles.entry}>
+            <div className={AboutStyles.title}>
               <h3>2004-2008</h3>
               <p>Additional Sector Reforms </p>
             </div>
-            <div className={`${standardStyles.bullet} ${standardStyles.body}`}>
+            <div className={`${standardStyles.bullet} ${AboutStyles.body}`}>
               <ul>
                 <li>
                   The Government Assistance for Tuition Expenses (GATE) program
@@ -330,12 +322,12 @@ const history = () => {
               </ul>
             </div>
           </div>
-          <div className={standardStyles.entry}>
-            <div className={standardStyles.title}>
+          <div className={AboutStyles.entry}>
+            <div className={AboutStyles.title}>
               <h3>2008-2012</h3>
               <p> A Period of Growth and Expansion</p>
             </div>
-            <div className={`${standardStyles.bullet} ${standardStyles.body}`}>
+            <div className={`${standardStyles.bullet} ${AboutStyles.body}`}>
               <ul>
                 <li>
                   Rapid growth in program offerings, student population, and
@@ -359,95 +351,109 @@ const history = () => {
             </div>
           </div>
         </div>
-      </secton>
-      <section id="enhance" className={standardStyles.sectionNoSidenav}>
-        <h2
-          className={`${standardStyles.newsHeading} ${standardStyles.centertext}`}
-        >
-          <span>Our</span> NUMBERS
-        </h2>
+      </section>
+      <section id="enhance">
         <div className={AboutStyles.bythenumbers}>
-          <p
-            className={`${standardStyles.headingTertiary} ${AboutStyles.headtext}`}
-          >
-            <span>Student Body </span>{" "}
+          <p className={standardStyles.heading_primary__secondary}>
+            {" "}
+            Our Numbers{" "}
           </p>
+          <div className={AboutStyles.horizontal_table}>
+            <table className={AboutStyles.numberstable}>
+              <caption>
+                <p
+                  className={`${standardStyles.heading_primary__sub} ${AboutStyles.headtext}`}
+                >
+                  <span>Student Body </span>{" "}
+                </p>
+              </caption>
+              <tbody>
+                <tr>
+                  <td> Male</td>
+                  <td> 1500 </td>
+                </tr>
+                <tr>
+                  <td>Female</td>
+                  <td>2500</td>
+                </tr>
+                <tr>
+                  <td className={AboutStyles.total}>Total from 2022-2023</td>
+                  <td> 4000</td>
+                </tr>
+              </tbody>
+            </table>
 
-          <table>
-            <tbody>
-              <tr>
-                <td> Male</td>
-                <td> 1500 </td>
-              </tr>
-              <tr>
-                <td>Female</td>
-                <td>2500</td>
-              </tr>
-              <tr>
-                <td className={AboutStyles.total}>Total from 2022-2023</td>
-                <td>4000</td>
-              </tr>
-            </tbody>
-          </table>
+            {/* <p
+              className={`${standardStyles.headingTertiary} ${AboutStyles.headtext}`}
+            ></p> */}
+            <table className={AboutStyles.numberstable}>
+              <caption>
+                <p
+                  className={`${standardStyles.heading_primary__sub} ${AboutStyles.headtext}`}
+                >
+                  <span> Faculty and Staff </span>
+                </p>
+              </caption>
+              <tbody>
+                <tr>
+                  <td>Faculty (Full-time)</td>
+                  <td>2000 </td>
+                </tr>
+                <tr>
+                  <td> Faculty ( Part-time)</td>
+                  <td>500 </td>
+                </tr>
+                <tr>
+                  <td>Adjunct</td>
+                  <td>250</td>
+                </tr>
+                <tr>
+                  <td className={AboutStyles.total}>Total from 2022-2023</td>
+                  <td>750</td>
+                </tr>
+              </tbody>
+            </table>
 
-          <p
-            className={`${standardStyles.headingTertiary} ${AboutStyles.headtext}`}
-          >
-            <span>Faculty and Staff </span>
-          </p>
-          <table>
-            <tbody>
-              <tr>
-                <td>Faculty (Full-time)</td>
-                <td>2000 </td>
-              </tr>
-              <tr>
-                <td> Faculty ( Part-time)</td>
-                <td>500 </td>
-              </tr>
-              <tr>
-                <td>Adjunct</td>
-                <td>250</td>
-              </tr>
-              <tr>
-                <td className={AboutStyles.total}>Total from 2022-2023</td>
-                <td>750</td>
-              </tr>
-            </tbody>
-          </table>
-          <p
-            className={`${standardStyles.headingTertiary} ${AboutStyles.headtext}`}
-          >
-            <span>Degrees Awarded</span>
-          </p>
-          <table className={AboutStyles.numberstable}>
-            <tbody>
-              <tr>
-                <td>Undergraduate</td>
-                <td>2000 </td>
-              </tr>
-              <tr>
-                <td> Associates</td>
-                <td>1500 </td>
-              </tr>
-              <tr>
-                <td>Diploma</td>
-                <td>500</td>
-              </tr>
-              <tr>
-                <td>Certificates</td>
-                <td>500</td>
-              </tr>
-              <tr className={AboutStyles.total}>
-                <td> Total as of 2022-2023</td>
-                <td>300</td>
-              </tr>
-            </tbody>
-          </table>
+            <table className={AboutStyles.numberstable}>
+              <caption>
+                <p
+                  className={`${standardStyles.heading_primary__sub} ${AboutStyles.headtext}`}
+                >
+                  <span> Degrees Awarded</span>
+                </p>
+              </caption>
+              <tbody>
+                <tr>
+                  <td>Undergraduate</td>
+                  <td>2000 </td>
+                </tr>
+                <tr>
+                  <td> Associates</td>
+                  <td>1500 </td>
+                </tr>
+                <tr>
+                  <td>Diploma</td>
+                  <td>500</td>
+                </tr>
+                <tr>
+                  <td>Certificates</td>
+                  <td>500</td>
+                </tr>
+                <tr className={AboutStyles.total}>
+                  <td> Total from 2022-2023</td>
+                  <td>300</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
     </>
   );
 };
+
+// history.getLayout = function getLayout(page) {
+//   return <Layout>{page}</Layout>;
+// };
 
 export default history;
