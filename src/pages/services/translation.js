@@ -42,34 +42,42 @@ const translation = () => {
         <title>Translation and Interpretation </title>
       </Head>{" "}
       <HeadImage mainimage={translationHeader} wide="3573" high="5379" />
-      <div className={standardStyles.linksTop}>
+      {/* <div className={standardStyles.linksTop}>
         <Link href="/"> COSTAATT/ </Link>
         <Link href="/services">Services/</Link>
         <Link href="/services/translation">Translation and Interpretation</Link>
-      </div>
+      </div> */}
       <>
-        <section id="translate" className={ServicesStyles.section_translation}>
+        <section
+          id="translate"
+          className={`${ServicesStyles.section_translation}
+          ${ServicesStyles.sectionbackGreyColor}`}
+        >
           <span className={ServicesStyles.heading_primary__main}>
             Translation and Interpreting Services
           </span>
           <span className={ServicesStyles.heading_primary__sub}>
-            The T&I Unit consistenlty strives for service excellence by
-            introducing new methods to improve our clients' experience.
-            Efficiency, effetiveness and relevance are our watchwords.
+            Strives for Service Excellence
           </span>
           {/* </section>
         // <section className={ServicesStyles.section_translation}> */}
-          <div className={standardStyles.marginTopHuge}>
-          <Marquee text="Welkom Welcome Bienvenue Willkommen Bem-vindo Bienvenida" />
+          <div id="overview" className={standardStyles.marginTopHuge}>
+            <Marquee text="Welkom Welcome Bienvenue Willkommen Bem-vindo Bienvenida" />
           </div>
-          <div className={styles.educationSection}>
-            <div className={styles.textContent}>
-              <h1 className={styles.header}>Translation Services</h1>
+          <div className={ServicesStyles.translationMotto}>
+            The T&I Unit consistenlty strives for service excellence by
+            introducing new methods to improve our clients' experience.
+            Efficiency, effetiveness and relevance are our watchwords.
+          </div>
+          <div className={ServicesStyles.translationSection}>
+            <div className={ServicesStyles.textContent}>
+              <h1 className={ServicesStyles.heading_primary__secondary}>
+                Translation Services
+              </h1>
               <p className={ServicesStyles.description}>
                 Translation service is available from and into the following
                 languages
               </p>
-              <div className={ServicesStyles.arrow}> &#9658;&#9658;</div>
               <p>
                 With respect to translation services, we can boast about the
                 availabity of fully online service - from client requests, to
@@ -81,93 +89,93 @@ const translation = () => {
                 Campus, with some support at other satellites campuses.
               </p>
             </div>
-            <div className={styles.imageContent}>
+            <div className={ServicesStyles.imageContent}>
               {/* Image component - for example purposes, using an img tag */}
 
               <div className={standardStyles.row}>
-                <div className={standardStyles.col2of3}>
-                  <div className={standardStyles.language}>
+                <div className={standardStyles.col3of3}>
+                  <div className={ServicesStyles.language}>
                     <Image
                       src={English}
                       alt="Icon"
-                      className={standardStyles.language__icon}
-                      width="90"
-                      height="90"
+                      className={ServicesStyles.language__icon}
+                      width="100"
+                      height="100"
                     />
-                    <h3 className={standardStyles.language__text}> English</h3>
+                    <h3 className={ServicesStyles.language__text}> English</h3>
                   </div>
                 </div>
               </div>
 
               <div className={standardStyles.row}>
                 <div className={standardStyles.col1of2}>
-                  <div className={standardStyles.language}>
+                  <div className={ServicesStyles.language}>
                     <Image
                       src={Spanish}
                       alt="Icon"
-                      className={standardStyles.language__icon}
+                      className={ServicesStyles.language__icon}
                       width="100"
                       height="100"
                     />
-                    <h3 className={standardStyles.language__text}> Spanish</h3>
+                    <h3 className={ServicesStyles.language__text}> Spanish</h3>
                   </div>
                 </div>
 
                 <div className={standardStyles.col1of2}>
-                  <div className={standardStyles.language}>
+                  <div className={ServicesStyles.language}>
                     <Image
                       src={French}
                       alt="Icon"
-                      className={standardStyles.language__icon}
+                      className={ServicesStyles.language__icon}
                       width="100"
                       height="100"
                     />
-                    <h3 className={standardStyles.language__text}> French</h3>
+                    <h3 className={ServicesStyles.language__text}> French</h3>
                   </div>
                 </div>
               </div>
               <div className={standardStyles.row}>
                 <div className={standardStyles.col1of3}>
-                  <div className={standardStyles.language}>
+                  <div className={ServicesStyles.language}>
                     <Image
                       src={Dutch}
                       alt="Icon"
-                      className={standardStyles.language__icon}
+                      className={ServicesStyles.language__icon}
                       width="100"
                       height="100"
                     />
-                    <h3 className={standardStyles.language__text}> Dutch</h3>
+                    <h3 className={ServicesStyles.language__text}> Dutch</h3>
                   </div>
                 </div>
                 <div className={standardStyles.col1of3}>
-                  <div className={standardStyles.language}>
+                  <div className={ServicesStyles.language}>
                     <Image
                       src={Portuguese}
                       alt="Icon"
-                      className={standardStyles.language__icon}
+                      className={ServicesStyles.language__icon}
                       width="100"
                       height="100"
                     />
-                    <h3 className={standardStyles.language__text}>
+                    <h3 className={ServicesStyles.language__text}>
                       {" "}
                       Portuguese
                     </h3>
                   </div>
                 </div>
                 <div className={standardStyles.col1of3}>
-                  <div className={standardStyles.language}>
+                  <div className={ServicesStyles.language}>
                     <Image
                       src={German}
                       alt="Icon"
-                      className={standardStyles.language__icon}
+                      className={ServicesStyles.language__icon}
                       width="100"
                       height="100"
                     />
-                    <h3 className={standardStyles.language__text}> German</h3>
+                    <h3 className={ServicesStyles.language__text}> German</h3>
                   </div>
                 </div>
               </div>
-              <div className={standardStyles.row}>
+              {/* <div className={standardStyles.row}>
                 <Image
                   className={styles.img}
                   width="500"
@@ -175,65 +183,68 @@ const translation = () => {
                   src={language}
                   alt="Campus Life"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
 
         <section
           id="interpret"
-          className={ServicesStyles.section__interpretation}
-        >
-          <div className={standardStyles.row}>
-            <h1 className={ServicesStyles.heading_primary__tertiary}>
-              Interpreting Service
-            </h1>
+          className={`${ServicesStyles.section__interpretation}
 
-            <p>
-              Translation service is available from and into the following
+         `}
+        >
+          {/* <div className={ServicesStyles.translationSection}> */}
+          <div className={ServicesStyles.textContentInterpret}>
+            <p className={ServicesStyles.translationLanguages}>
+              Interpretation service is available from and into the following
               languages: English, French and Spanish.
             </p>
             <div className={standardStyles.row}>
               <div className={standardStyles.col1of3}>
-                <div className={standardStyles.language}>
+                <div className={ServicesStyles.language}>
                   <Image
                     src={English}
                     alt="Icon"
-                    className={standardStyles.language__icon}
+                    className={ServicesStyles.language__icon}
                     width="90"
                     height="90"
                   />
-                  <h3 className={standardStyles.language__text}> English</h3>
+                  <h3 className={ServicesStyles.language__text}> English</h3>
                 </div>
               </div>
               <div className={standardStyles.col1of3}>
-                <div className={standardStyles.language}>
+                <div className={ServicesStyles.language}>
                   <Image
                     src={Spanish}
                     alt="Icon"
-                    className={standardStyles.language__icon}
+                    className={ServicesStyles.language__icon}
                     width="100"
                     height="100"
                   />
-                  <h3 className={standardStyles.language__text}> Spainsh</h3>
+                  <h3 className={ServicesStyles.language__text}> Spainsh</h3>
                 </div>
               </div>
 
               <div className={standardStyles.col1of3}>
-                <div className={standardStyles.language}>
+                <div className={ServicesStyles.language}>
                   <Image
                     src={French}
                     alt="Icon"
-                    className={standardStyles.language__icon}
+                    className={ServicesStyles.language__icon}
                     width="100"
                     height="100"
                   />
-                  <h3 className={standardStyles.language__text}> French</h3>
+                  <h3 className={ServicesStyles.language__text}> French</h3>
                 </div>
               </div>
             </div>
-
-            <p>
+          </div>
+          <div className={ServicesStyles.imageContentInterpret}>
+            <h1 className={ServicesStyles.heading_primary__secondary}>
+              Interpreting Service
+            </h1>
+            <p className={styles.textContent}>
               Our Interpreting services include a platform that facilitates the
               provision of remote Interpreting. This new approach to
               Interpreting is both attractive and cost-effective by reducing,
@@ -242,13 +253,19 @@ const translation = () => {
               trained and well versed in the available technologies and, as
               such, can offer guidance on their appropriate use.
             </p>
-            <p>
-              Please send us an email at our designated inbox{" "}
-              <a href="mailto:translation@costaatt.edu.tt">
-                translation@costaatt.edu.tt
-              </a>
-            </p>
           </div>
+          {/* </div> */}
+        </section>
+        <section id="contact" className={ServicesStyles.contactTranslation}>
+          <h1 className={ServicesStyles.heading_primary__secondary}>
+            Contact Us 
+          </h1>
+          <p>
+            Please send us an email at our designated inbox{" "}
+            <a href="mailto:translation@costaatt.edu.tt">
+              translation@costaatt.edu.tt
+            </a>
+          </p>
         </section>
       </>
     </>

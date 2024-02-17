@@ -1,4 +1,4 @@
-@import "../styles/abstracts/variables";
+@use "../styles/abstracts/variables" as v;
 @import "../styles/base/typography";
 
 @import "../styles/base/utilities";
@@ -7,8 +7,7 @@
 @import "../styles/layout/structures";
 
 @import "./pages/translation";
-@import"./components/bg-video";
-
+@import "./components/bg-video";
 
 //Index Services Page
 .headerRent {
@@ -17,9 +16,9 @@
   // width: 100vw;
   background-image: linear-gradient(
       to right,
-      rgba($color-white, 0.25),
-      rgba($color-primary-light, 0.25),
-      rgba($color-primary-light, 0.5)
+      rgba(v.$color-white, 0.25),
+      rgba(v.$color-primary-light, 0.25),
+      rgba(v.$color-primary-light, 0.5)
     ),
     url("../../public/images/about/qualitycontrol2.jpg");
   // Source: https://www.freepik.com/free-photo/standard-quality-control-collage-concept_30589253.htm#query=quality%20assurance&position=44&from_view=keyword&track=ais&uuid=11090649-220d-41aa-874a-c89449145375
@@ -28,36 +27,35 @@
   position: relative;
 }
 
-.sectionAllServices{
-
+.sectionAllServices {
   display: grid;
   grid-template-rows: 50vh min-content min-content 40vw min-content min-content;
 
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
       8,
       [col-start] minmax(min-content, 14rem) [col-end]
-    ) [center-end] minmax(6rem, 1fr) [full-end];
-
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
 }
 
-
-
-
-// Rental Service Page 
+// Rental Service Page
 .sectionRent {
   display: grid;
   grid-template-rows: 50vh min-content min-content 40vw repeat(2, min-content);
 
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
       8,
       [col-start] minmax(min-content, 14rem) [col-end]
-    ) [center-end] minmax(6rem, 1fr) [full-end];
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
 
-  // @media only screen and (max-width: $bp-large) {
+  // @media only screen and (max-width: v.$bp-large) {
   //     grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
   //     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   // }
-  // @media only screen and (max-width: $bp-medium) {
+  // @media only screen and (max-width: v.$bp-medium) {
   //     grid-template-rows: 6rem calc(100vh - 6rem);
   // }
 
@@ -70,16 +68,14 @@
 }
 .rentHeader {
   grid-column: full-start / full-end;
-
 }
 .rentIntro {
-//   grid-column: center-start / center-end;
+  //   grid-column: center-start / center-end;
 
   margin: 10rem;
 }
 
 .rentPackage {
-
   grid-column: center-start / center-end;
   display: grid;
   padding: 4rem;
@@ -87,68 +83,54 @@
 
   grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
   grid-gap: 6rem;
-
 }
 
 .package {
   display: grid;
   grid-template-columns: min-content 1fr;
   gap: 1.6rem;
- 
 
   &__icon {
-    fill: $color-primary;
+    fill: v.$color-primary;
     width: 4.5rem;
     height: 4.5rem;
     // grid-row: 1 / span 2;
- 
-  //   &:hover {
-  //           transform: scale(1.05) translateY(-.5rem);
-  //           box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
-  //           transition: all .8s;
-  //           z-index: 20;
-  //  }
- 
+
+    //   &:hover {
+    //           transform: scale(1.05) translateY(-.5rem);
+    //           box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+    //           transition: all .8s;
+    //           z-index: 20;
+    //  }
   }
   &__text {
     font-size: 1.8rem;
-
-  
- 
-
-  }  &:hover {
-            transform: scale(1.05) translateY(-.5rem);
-            // box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
-            transition: all .8s;
-            //  background-color: $color-grey-light-1;
-            z-index: 20;
-   }
+  }
+  &:hover {
+    transform: scale(1.05) translateY(-0.5rem);
+    // box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+    transition: all 0.8s;
+    //  background-color: $color-grey-light-1;
+    z-index: 20;
+  }
 }
 .rentWhy {
-  
   &__img1 {
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+    border-radius: 2px;
 
-        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
-        border-radius: 2px;
-       
-        z-index: 10;
-        transition: all .2s;
-        outline-offset: 2rem;
+    z-index: 10;
+    transition: all 0.2s;
+    outline-offset: 2rem;
 
-
-
-   &:hover {
-         outline: 1.25rem solid $color-primary;
-            transform: scale(1.05) translateY(-.5rem);
-            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
-            transition: all .8s;
-            z-index: 20;
-   }
-  
+    &:hover {
+      outline: 1.25rem solid $color-primary;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+      transition: all 0.8s;
+      z-index: 20;
+    }
   }
-
-
-
 
   &__content {
     background-color: $color-grey-light-1;
@@ -166,18 +148,17 @@
 }
 
 .rentSpaces {
-
   grid-column: center-start / center-end;
   margin: 10rem 0;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
-//   grid-template-rows: 1fr 1fr;
+  //   grid-template-rows: 1fr 1fr;
   grid-gap: 4rem;
 }
 
 .space {
-  background-color: $color-grey-light-1;
+  background-color: v.$color-grey-light-1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-row-gap: 7.2rem;
@@ -192,7 +173,7 @@
   // &__like {
   //   grid-row: 1 / 2;
   //   grid-column: 2 / 3;
-  //   fill: $color-primary;
+  //   fill: v.$color-primary;
   //   height: 3rem;
   //   width: 3rem;
   //   z-index: 2;
@@ -208,11 +189,11 @@
     z-index: 3;
 
     width: 80%;
-    font-family: $default-font-family;
+    font-family: v.$default-font-family;
     font-size: 1.8rem;
     text-align: center;
     padding: 1.2rem;
-    background-color: $color-primary-dark;
+    background-color: v.$color-primary-dark;
     color: #fff;
     font-weight: 400;
     transform: translateY(50%);
@@ -229,59 +210,45 @@
     align-items: center;
   }
   &__svg {
-    fill: $color-primary;
+    fill: v.$color-primary;
     height: 2.4rem;
     width: 2.4rem;
     margin-right: 1.2rem;
   }
-//   p{color:red;}
-    
-  
+  //   p{color:red;}
 
-&__downloads{
+  &__downloads {
     margin: 1.2rem auto;
     font-size: 1.38rem;
-   align-content: center;
-    
+    align-content: center;
 
-&:hover{
-    color: $color-primary;
-}
-}
-
+    &:hover {
+      color: v.$color-primary;
+    }
+  }
 
   &__btn {
-
-
     grid-column: 1 / -1;
-       align-self: end;
+    align-self: end;
     margin-bottom: 0;
-    background-color: $grey;
-    opacity: .8;
+    background-color: v.$grey;
+    opacity: 0.8;
 
-
-
-  
     color: #fff;
     border: none;
     border-radius: 0;
-    font-family: $default-font-family;
+    font-family: v.$default-font-family;
     font-size: 1.6rem;
     text-transform: uppercase;
     padding: 1.2rem 2.4rem;
     cursor: pointer;
-    transition: all .2s; 
+    transition: all 0.2s;
     text-align: center;
-    
 
     &:hover {
-        background-color: $color-primary-dark;
+      background-color: v.$color-primary-dark;
     }
-
-
-
   }
-
 }
 
 // .rentCollage{
@@ -289,14 +256,13 @@
 //       margin-bottom:2.5rem;
 
 //     .gallery {
-//     background-color: $lightgrey1;
+//     background-color: v.$lightgrey1;
 //     grid-column: full-start / full-end;
 
 //     display: grid;
 //     /*grid-template-columns: repeat(8, 1fr);
 //     grid-template-rows: repeat(7, 5vw);*/
 //     grid-template: repeat(7, 5vw) / repeat(8, 1fr);
-
 
 //     grid-gap: 1rem;
 //     padding: 1rem;
@@ -388,9 +354,7 @@
 //       }
 // }
 
-
 .rentContact {
-
   grid-column: center-start / center-end;
   display: grid;
   padding: 4rem;
@@ -398,112 +362,261 @@
 
   grid-template-columns: repeat(3, minmax(35rem, 1fr));
 
+  @media only screen and (max-width: v.$bp-medium) {
+    grid-column: 1 / -1;
+  }
 
-    @media only screen and (max-width: $bp-medium) {
-        grid-column: 1 / -1;
-    }
-
-
-  &__text{
+  &__text {
     grid-column: 1/ -1;
     font-size: 1.8rem;
     height: 2rem;
-    margin: 3rem auto;   
-    padding:4em;
+    margin: 3rem auto;
+    padding: 4em;
 
-     span{
-            color:$color-primary;
-            font-size:1.9rem;
-        }
+    span {
+      color: v.$color-primary;
+      font-size: 1.9rem;
     }
   }
+}
 
-
-  
 .contact {
-
   margin: auto;
   text-align: center;
 
-
-  a{
+  a {
     display: block;
   }
-  a:hover{
-    color: $color-primary;
+  a:hover {
+    color: v.$color-primary;
   }
   &__icon {
     fill: white;
     width: 4.5rem;
     height: 4.5rem;
-    margin:2rem 0;
-
-
+    margin: 2rem 0;
   }
   &__text {
     font-size: 1.8rem;
     text-align: center;
   }
-
-
 }
-     
-.brochure{
-   
-    grid-column: 1/-1;
-      display: grid;
-      gap: 3rem;
-   grid-template-columns: repeat(2,1fr);
-  
 
-  &__text{
-    
-    font-size:1.8rem;
-    margin:auto;
+.brochure {
+  grid-column: 1/-1;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+
+  &__text {
+    font-size: 1.8rem;
+    margin: auto;
   }
 
   .highlight {
-  
-  &:hover{
+    &:hover {
+      color: v.$color-primary;
+    }
+  }
+}
+//End of Rental Service Pages
+
+.translationMotto {
+  margin: 5rem 15rem 2rem 15rem;
+  font-size: 2rem;
+  line-height: 2;
+}
+
+.translationLanguages {
+  font-size: 3rem;
+  color: v.$color-primary;
+  font-weight: 600;
+  font-style: italic;
+}
+.translationSection {
+  // display: flex;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 15rem 5rem; /* Adjust margin as needed */
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    margin: 15rem 10rem; /* Adjust margin as needed */
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin: 15rem 15rem; /* Adjust margin as needed */
+  }
+}
+
+.textContent {
+  flex-grow: 1;
+  grid-column: 1/2;
+  padding: 20px;
+  border-width: 5rem;
+  border-style: solid;
+  border-color: v.$color-primary-dark; /* Adjust color as needed */
+  border-top-width: 0; /* No border on top */
+  border-right-width: 0; /* Border on right */
+  border-bottom-width: 3rem; /* Border on bottom */
+  border-left-width: 3rem; /* Border on left */
+
+  .header {
+    font-size: 5rem;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+  }
+
+  .description {
+    font-size: 2rem;
+    margin-bottom: 1em;
+  }
+
+  .linkList {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.5em;
+      cursor: pointer;
+      font-weight: normal;
+      color: black;
+      font-size: 1.8rem;
+
+      &:hover,
+      &.activeLink {
+        font-weight: bold;
+        color: v.$color-primary;
+      }
+    }
+  }
+}
+
+.imageContent {
+  flex-shrink: 0;
+  padding: 20px;
+  text-align: right;
+
+  border: none;
+  // border-width: 5rem;
+  // border-style: solid;
+  // border-color: v.$color-white; /* Adjust color as needed */
+  // border-top-width: 0; /* No border on top */
+  // border-right-width: 3rem; /* Border on right */
+  // border-bottom-width: 3rem; /* Border on bottom */
+  // border-left-width: 0; /* Border on left */
+
+  .img {
+    max-width: 100%;
+
+    height: auto;
+  }
+}
+
+.section__interpretation {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-between;
+  align-items: center;
+
+  // margin: 5rem 5rem; /* Adjust margin as needed */
+  // margin:0;
+  margin: 0 5rem;
+  // background-color: red;
+
+  border-width: 5rem;
+  border-style: solid;
+  border-color: v.$grey; /* Adjust color as needed */
+  border-top-width: 0; /* No border on top */
+  border-right-width: 0; /* Border on right */
+  border-bottom-width: 3rem; /* Border on bottom */
+  border-left-width: 5rem; /* Border on left */
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    margin: 15rem 10rem; /* Adjust margin as needed */
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin: 15rem 15rem; /* Adjust margin as needed */
+  }
+}
+.textContentInterpret {
+  // flex-grow: 1;
+  grid-column: 1/2;
+  padding: 2rem 2rem;
+  // color: olivedrab;
+  // background-color: purple;
+  text-align: left;
+
+  .header {
+    font-size: 5rem;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+  }
+}
+
+.imageContentInterpret {
+  flex-shrink: 0;
+  padding: 20px;
+  text-align: right;
+
+  border: none;
+  // border-width: 5rem;
+  // border-style: solid;
+  // border-color: v.$color-white; /* Adjust color as needed */
+  // border-top-width: 0; /* No border on top */
+  // border-right-width: 3rem; /* Border on right */
+  // border-bottom-width: 3rem; /* Border on bottom */
+  // border-left-width: 0; /* Border on left */
+
+  .img {
+    max-width: 100%;
+
+    height: auto;
+  }
+}
+
+.language {
+  // background-color: rgba($color-grey-light-2, .5);
+  font-size: 2rem;
+  padding: .5rem;
+  text-align: center;
+  // border-radius: 3px;
+  // box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  transition: transform 0.3s;
+  width: 10rem;
+  // height: auto;
+
+  &__icon {
+    // width: 20px;
+    width: 100%;
+    height: 100%;
+    font-size: 5rem;
+  }
+
+  &__icon:hover {
+    transform: translate(1.5);
+  }
+  &__text {
+    font-size: 2rem;
     color: $color-primary;
   }
 }
-      
 
+.contactTranslation{
+
+  margin: 5rem 10rem;
+
+  a{
+    text-decoration: underline;
+      text-underline-offset: .5rem;
+
+  }
+  a:hover{
+    color:v.$color-primary;
+  }
 }
-//End of Rental Service Pages
-// .translateHeading{
-
-
- 
-// text-align: left;
-//   font-size: 2.5rem;
-//   margin-bottom: 4rem;
-//   color:$grey;
-
-//    grid-column: 1 / span 3;
-
-//   span {
-//     color: $color-primary;
-//   }
-// }
-// .interpretHeading{
-
- 
-// text-align: left;
-//   font-size: 2.5rem;
-//   margin-bottom: 4rem;
-//   color:$grey;
-
-//    grid-column: 1 / span 4;
-
-//   span {
-//     color: $color-primary;
-//   }
-
-// }
-        
-    
-
-   
-

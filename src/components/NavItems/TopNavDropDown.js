@@ -1,4 +1,7 @@
 // TopNavDropDown.js
+
+'use client'
+
 import React, { useState } from "react";
 import navStyles from "../../styles/NavItems.module.scss";
 import Link from "next/link";
