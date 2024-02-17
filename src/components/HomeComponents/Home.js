@@ -90,7 +90,6 @@ const Home = () => {
   return (
     <>
       <section id="video">
-        
         <div className={HomeStyles.sectionLeftBottom}>
           <div className={HomeStyles.selectContainer}>
             <h2 className={HomeStyles.heading}>
@@ -149,9 +148,8 @@ const Home = () => {
 
       <section> */}
         <div id="unique" className={HomeStyles.containerunique}>
-          
           {/* <div className={HomeStyles.row}> */}
-            <div className={HomeStyles.threeholder}>
+          <div className={HomeStyles.threeholder}>
             <div className={HomeStyles.threeone}>
               <div className={HomeStyles.circlepic}></div>
               <div className={HomeStyles.circleborder}>
@@ -356,6 +354,11 @@ const Home = () => {
       </section>
       <section id="events" className={HomeStyles.sectionEvents}>
         <EventsCalendar />
+        <buton
+          className={`${HomeStyles.btn__selecthome} ${HomeStyles.rightalign} ${HomeStyles.btn__purple}`}
+        >
+          MORE EVENTS
+        </buton>
 
         {/* <div className={HomeStyles.sectionThreeTiles}>
        
@@ -378,9 +381,7 @@ const Home = () => {
           })}
         </div> */}
       </section>
-      <section id="news">
-    
-        </section>
+      <section id="news"></section>
 
       {/* <section id="news" className={HomeStyles.sectionFour}>
         // /

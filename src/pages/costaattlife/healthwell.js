@@ -31,7 +31,7 @@ const healthwell = () => {
           Health and Wellness
         </span>
         <span className={standardStyles.heading_primary__sub}>
-          Auccess is also based on positive social and emotional adjustment of
+          Success is also based on positive social and emotional adjustment of
           the individual
         </span>
       </header>
