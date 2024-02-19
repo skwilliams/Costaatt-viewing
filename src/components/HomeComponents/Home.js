@@ -354,11 +354,11 @@ const Home = () => {
       </section>
       <section id="events" className={HomeStyles.sectionEvents}>
         <EventsCalendar />
-        <buton
+        {/* <buton
           className={`${HomeStyles.btn__selecthome} ${HomeStyles.rightalign} ${HomeStyles.btn__purple}`}
         >
           MORE EVENTS
-        </buton>
+        </buton> */}
 
         {/* <div className={HomeStyles.sectionThreeTiles}>
        
