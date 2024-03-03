@@ -75,7 +75,7 @@ const index = () => {
           Transformation, Sustainable Futures and Global Pathways.
         </p>
       </section>
-      <section id="vision" className={AboutStyles.aboutbackColor}>
+      {/* <section id="vision" className={AboutStyles.aboutbackColor}>
         <div className={standardStyles.sectionNoSidenav}>
           {" "}
           <h2
@@ -186,6 +186,142 @@ const index = () => {
             <div className={standardStyles.threeColGrid}>
               <div className={standardStyles.featurebox}>
                 <h3 className={standardStyles.headingTertiary}>
+                  Global
+                  <br /> Pathways
+                </h3>
+                <p
+                  className={`${standardStyles.featurebox__text} ${standardStyles.leftalign}`}
+                >
+                  Enabling diverse global opportunities enriches the educational
+                  journey for COSTAATT students. By continually fostering
+                  international collaborations, cultural exchanges, and mobility
+                  programmes, at COSTAATT, we equip students with broader
+                  perspective and vital cross-cultural skills. This imperative
+                  opens doors to varied career pathways and exclusively equips
+                  our graduates to thrive in an interconnected, multicultural
+                  world.
+                </p>
+              </div>{" "}
+            </div>
+          </div>
+        </div>{" "}
+        {/*end of sidenav} 
+      </section> */}
+      <section id="vision" className={AboutStyles.sectionbackGreyColor}>
+        <div className={AboutStyles.sectionNoSidenav}>
+          {" "}
+          {/* <h2
+            className={` ${standardStyles.heading_primary__secondary} ${standardStyles.newsHeadingWhite} ${standardStyles.centertext}`}
+          >
+            {" "}
+            Mission and Vision
+          </h2> */}
+          <div className={AboutStyles.twoGridCon}>
+            <div className={AboutStyles.twoGridCol}>
+              <h3 className={standardStyles.heading_primary__secondary}>
+                Vision
+              </h3>
+              <p className={standardStyles.paragraph}>
+                To be a student-cantered, dynamic and innovative, world-class
+                multi-campus college, promoting excellence in teaching and
+                learning, serving diverse communities and producing lifelong
+                learners who can compete globally.
+              </p>
+            </div>
+            <div className={AboutStyles.twoGridCol}>
+              <h3 className={standardStyles.heading_primary__secondary}>
+                Mission
+              </h3>
+              <p className={standardStyles.paragraph}>
+                To be the premier educational institution in providing
+                high-quality, affordable and accessible educational programmes
+                serving the needs of business, industry and the diverse campus
+                communities and facilitating the personal and professional
+                development of its students, faculty and staff.
+              </p>
+            </div>
+          </div>
+          <div className={AboutStyles.gallery}>
+            <>
+              <figure className={AboutStyles.gallery__item}>
+                <Image
+                  src={home6}
+                  width={300}
+                  height={300}
+                  alt="Photo of  Home6"
+                  className={AboutStyles.gallery__photo}
+                />
+              </figure>
+              <figure className={AboutStyles.gallery__item}>
+                <Image
+                  src={home3}
+                  width={300}
+                  height={300}
+                  alt="Photo of hotel 2"
+                  className={AboutStyles.gallery__photo}
+                />
+              </figure>
+              <figure className={AboutStyles.gallery__item}>
+                <Image
+                  src={home5}
+                  width={300}
+                  height={300}
+                  alt="Photo of hotel 3"
+                  className={AboutStyles.gallery__photo}
+                />
+              </figure>
+              {/* <figure className={AboutStyles.gallery__item}>
+                <Image
+                  src={home2}
+                  width={300}
+                  height={300}
+                  alt="Photo of hotel 3"
+                  className={AboutStyles.gallery__photo}
+                />
+              </figure> */}
+            </>
+          </div>
+          <div className={AboutStyles.threeColGridCon}>
+            <div className={AboutStyles.threeColGrid}>
+              <div className={standardStyles.featurebox}>
+                <h3 className={standardStyles.heading_primary_secondary}>
+                  Digital
+                  <br /> Transformation{" "}
+                </h3>
+                <p
+                  className={`${standardStyles.featurebox__text} ${standardStyles.leftalign}`}
+                >
+                  Adapting to the digital era is imperative to staying relevant
+                  and competitive. COSTAATT's commitment to cutting-edge
+                  technology enhances learning experiences, fosters innovative
+                  teaching methods, and prepares our students for tech-driven
+                  careers. Through this transformation, we empower learners to
+                  navigate the digital landscape confidently and contribute to a
+                  tech-savvy workforce.
+                </p>
+              </div>
+            </div>
+            <div className={AboutStyles.threeColGrid}>
+              <div className={standardStyles.featurebox}>
+                <h3 className={standardStyles.heading_primary_secondary}>
+                  Sustainable <br /> Futures
+                </h3>
+                <p
+                  className={`${standardStyles.featurebox__text} ${standardStyles.leftalign}`}
+                >
+                  Embracing sustainable practices in vital for COSTAATT's
+                  enduring impact. By integrating eco-friendly initiatives into
+                  curricula and operations, we cultivate environmentally
+                  conscious graduates. This imperative ensures resource
+                  efficiency, aligns with the United Nations Sustainable
+                  Development Goals (SDGs), and equips our students to drive
+                  positive change, securing a greener, more resilient future
+                </p>
+              </div>{" "}
+            </div>
+            <div className={standardStyles.threeColGrid}>
+              <div className={standardStyles.featurebox}>
+                <h3 className={standardStyles.heading_primary_secondary}>
                   Global
                   <br /> Pathways
                 </h3>

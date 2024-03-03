@@ -9,11 +9,15 @@ export async function fetchCampus() {
     // console.log('Fetching revenue data...');
     // await new Promise((resolve) => setTimeout(resolve, 3000));
 
-    const data = await sql`SELECT * FROM campus`;
+    const res = await sql`SELECT * FROM campus`;
 
     // console.log('Data fetch completed after 3 seconds.');
-     console.log(data.rows);
-    return data.rows;
+   
+
+
+     return res.json;
+     
+    //  ({ campus: campus.rows });
    
 
   } catch (error) {
@@ -30,7 +34,7 @@ export async function fetchSchools() {
     // console.log('Fetching revenue data...');
     // await new Promise((resolve) => setTimeout(resolve, 3000));
 
-    const data = await sql`SELECT * FROM campus`;
+    const data = await sql`SELECT * FROM schools`;
 
     // console.log('Data fetch completed after 3 seconds.');
 
