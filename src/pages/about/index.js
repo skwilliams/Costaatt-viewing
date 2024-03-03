@@ -225,6 +225,7 @@ const index = () => {
             <div
               className={`${AboutStyles.schools} ${AboutStyles.schoolsliberal}`}
             >
+              School of Liberal Arts, Education and Digital Humanities
               {/* <Link href="/programmes/schools/liberal">
                 School of Liberal Arts, Education and Digital Humanities
               </Link> */}
@@ -234,6 +235,7 @@ const index = () => {
             <div
               className={`${AboutStyles.schools} ${AboutStyles.schoolskengord}`}
             >
+              Ken Gordon School of Communication, Creative and Digital Media{" "}
               {/* <Link href="/programmes/schools/kengord">
                 Ken Gordon School of Communication, Creative and Digital Media{" "}
               </Link> */}
@@ -243,6 +245,7 @@ const index = () => {
             <div
               className={`${AboutStyles.schools} ${AboutStyles.schoolsnursing}`}
             >
+              School of Nursing, Health and Medical Technologies{" "}
               {/* <Link href="/programmes/schools/nursing">
                 School of Nursing, Health and Medical Technologies{" "}
               </Link> */}
@@ -252,6 +255,7 @@ const index = () => {
             <div
               className={`${AboutStyles.schools} ${AboutStyles.schoolsbusIT}`}
             >
+              School of Business and Digital Technologies{" "}
               {/* <Link href="/programmes/schools/busIT">
                 School of Business and Digital Technologies{" "}
               </Link> */}
@@ -262,6 +266,7 @@ const index = () => {
             <div
               className={`${AboutStyles.schools} ${AboutStyles.schoolsenviro}`}
             >
+              School of Environment, Circular Economy and Sustainability{" "}
               {/* <Link href="/programmes/schools/enviro">
                 School of Environment, Circular Economy and Sustainability{" "}
               </Link> */}
@@ -271,6 +276,7 @@ const index = () => {
             <div
               className={`${AboutStyles.schools} ${AboutStyles.schoolsworkF}`}
             >
+              School of Workforce, Enhancement and Development{" "}
               {/* <Link href="/programmes/schools/workF">
                 School of Workforce, Enhancement and Development{" "}
               </Link> */}
