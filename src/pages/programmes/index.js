@@ -232,7 +232,7 @@ The Ken Gordon School of Communication Creative and Digital Media's dedicated, q
           shortname="SECE"
         />
       </section>
-      {/* <section id="areastudy" className={ProgStyles.sectionareasofstudy}>
+     <section id="areastudy" className={ProgStyles.sectionareasofstudy}>
         <div className={ProgStyles.umargintopsmall}>
           <h2
             className={`${standardStyles.newsHeading} ${standardStyles.centertext} ${standardStyles.whitefont}`}
@@ -243,9 +243,9 @@ The Ken Gordon School of Communication Creative and Digital Media's dedicated, q
           <p className={ProgStyles.umargintopsmall}></p>
           <div className={ProgStyles.row}>
             <div className={ProgStyles.col1of6}>
-              <Link href="#">
+              {/* <Link href="#">
                 School of Nursing, Health and Medical Technologies
-              </Link>
+              </Link> */}
 
               <ul className={ProgStyles.areasofstudyul}>
                 <li className={ProgStyles.areasofstudyli}>
@@ -435,7 +435,7 @@ The Ken Gordon School of Communication Creative and Digital Media's dedicated, q
             </div>
           </div>
         </div>
-      </section> */}
+      </section> 
       <section id="highlight" className={ProgStyles.sectionhighlights}>
         <div className={ProgStyles.umargintopsmall}>
           <h2 className={standardStyles.newsHeading}> Highlights </h2>
