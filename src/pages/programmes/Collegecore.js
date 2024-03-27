@@ -200,9 +200,7 @@ const Collegecore = () => {
     </>
   );
 };
-// allcourses.getLayout = function getLayout(page) {
-//   return <Layout>{page}</Layout>;
-// };
+
 Collegecore.getLayout = function getLayout(page) {
   return <Layout>{page}</Layout>;
 };

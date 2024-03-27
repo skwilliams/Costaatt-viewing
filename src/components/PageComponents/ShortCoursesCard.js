@@ -7,12 +7,12 @@ const ShortCoursesCard = ({ course }) => {
       <div className={CardStyle.progGridConthree}>
         <>
           <div className={CardStyle.progGridthree}>
-            <div className={CardStyle.coursetitle}>{course.courseTitle}</div>{" "}
+            <div className={CardStyle.coursetitle}>{course.course_title}</div>{" "}
             {/*dynamic content}*/}
             <div className={CardStyle.block}>
               <p className={CardStyle.courseDescript}>
                 {" "}
-                {course.courseDescript}
+                {course.course_description}
               </p>{" "}
               {/* fixed */}
               <p className={CardStyle.cardtextIn}>
@@ -23,22 +23,18 @@ const ShortCoursesCard = ({ course }) => {
               <p className={CardStyle.cardtextIn}>
                 Modality: {course.modality}
               </p>{" "}
+              <p className={CardStyle.cardtextCost}> Cost :${course.cost}</p>
               {/*dynamic content}*/}
             </div>
-            {/* <div className={CardStyle.bannerbottomAas}> Associate</div> */}
           </div>
         </>
       </div>
       <div className={CardStyle.progGridConthree}>
-        <> 
-
-        <div className={CardStyle.bannerbottomleft}>
-          {" "}
-          Cost :${course.cost}  
-        </div>
-
-      </>
-    </div>
+        <>
+          <div className={CardStyle.bannerbottomleft}> {course.area}</div>
+        
+        </>
+      </div>
     </>
   );
 };
