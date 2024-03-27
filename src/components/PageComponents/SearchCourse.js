@@ -33,8 +33,8 @@ const SearchCourse = ({ handleSearchSubmit, DATA }) => {
     const hintVals = DATA
       ? DATA.filter((data) => {
           console.log(data);
-          const course = data.courseTitle.toLowerCase();
-          return data.courseTitle && course.includes(value);
+          const course = data.course_title.toLowerCase();
+          return data.course_title && course.includes(value);
         })
       : indexedCourses.filter((course) => {
           const prgName = course.prog_name.toLowerCase();

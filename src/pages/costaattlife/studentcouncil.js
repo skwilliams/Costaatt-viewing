@@ -27,7 +27,7 @@ const studentcouncil = () => {
       >
         <Link href="/"> COSTAATT/ </Link>
         <Link href="/costaattlife">COSTAATTLIFE / </Link>
-        <Link href="/costaattlife/studentcouncil">Studnet Council</Link>
+        <Link href="/costaattlife/studentcouncil">Student Council</Link>
       </p>
 
       <header>
