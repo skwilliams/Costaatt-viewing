@@ -43,13 +43,13 @@ const visitus = ({ schools }) => {
                     <ul>
                       <li>
                         {" "}
-                        <h2> {school.school_name}</h2>{" "}
+                        <h2> {school.name}</h2>{" "}
                       </li>
                       {/* <li>{school.address} </li>
                         <li>{campus.city} </li> */}
                     </ul>
                     <Image
-                      src={school.school_image}
+                      src={school.image}
                       alt="Image of campus"
                       width={200}
                       height={200}
