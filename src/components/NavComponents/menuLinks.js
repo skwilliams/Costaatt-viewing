@@ -213,7 +213,7 @@ export const mainNavLinks = [
       {
         title: "Professional Development Courses",
         // path: "#",
-        path: "/programmes/Shortcourses",
+        path: "/programmes/shortcourses",
       },
     ],
     submenuImage: [
