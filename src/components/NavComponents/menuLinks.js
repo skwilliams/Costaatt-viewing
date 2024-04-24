@@ -129,10 +129,10 @@ export const topNavLinksLeft = [
     title: "MY COSTAATT",
     path: "https://id.quicklaunch.io/authenticationendpoint/login.do?commonAuthCallerPath=%2Fpassivests&forceAuth=false&passiveAuth=false&tenantDomain=costaatt.edu.tt&wa=wsignin1.0&wct=2023-12-12T18%3A53%3A00Z&wctx=rm%3D0%26id%3Dpassive%26ru%3D%252fcas%252flogin%253fservice%253dhttps%25253A%25252F%25252Fmy.costaatt.edu.tt%25252Fpaf%25252Fauthorize&wtrealm=https%3A%2F%2Fcas-costaatt.quicklaunch.io%2F&sessionDataKey=e15b0fcf-9c94-4f15-9f66-2eb65f1db66a&relyingParty=https%3A%2F%2Fcas-costaatt.quicklaunch.io%2F&type=passivests&sp=costaattedutt&isSaaSApp=false&authenticators=BasicAuthenticator:LOCAL",
   },
-  {
-    title: "Alumni",
-    path: "/alumni",
-  },
+  // {
+  //   title: "Alumni",
+  //   path: "/alumni",
+  // },
 ];
 
 export const topNavLinksRight = [
@@ -181,10 +181,10 @@ export const footerLinks = [
     // path: "/programmes",
     path:"#",
   },
-  {
-    title: "Alumni",
-    path: "/alumni",
-  },
+  // {
+  //   title: "Alumni",
+  //   path: "/alumni",
+  // },
   {
     title: "Facilities",
     path: "/facilities",
@@ -234,10 +234,7 @@ export const mainNavLinks = [
   {
     title: "Admissions and Aid ",
     submenu: [
-      {
-        title: "Registry Services",
-        path: "/admissions",
-      },
+   
       {
         title: "Apply Now",
         path: "/admissions/howtoapply",
