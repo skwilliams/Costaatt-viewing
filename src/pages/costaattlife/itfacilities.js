@@ -22,7 +22,7 @@ import gal4 from "../../../public/images/costaattlife/lab4.jpg";
 import { useState } from "react";
 import { useEffect } from "react";
 
-const Itfacilities = () => {
+const itfacilities = () => {
   const [setHasWindow] = useState(false);
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -137,7 +137,6 @@ const Itfacilities = () => {
         id="services"
         className={`${costlifeStyles.sectionbackGreyColor}`}
       >
-       
         <h2
           className={`${standardStyles.heading_primary__secondary} ${standardStyles.centertext}`}
         >
