@@ -136,7 +136,6 @@ export const topNavLinksLeft = [
 ];
 
 export const topNavLinksRight = [
-
   {
     id: "apply",
     title: "Apply",
@@ -179,7 +178,7 @@ export const footerLinks = [
   {
     title: "MY COSTAATT",
     // path: "/programmes",
-    path:"#",
+    path: "#",
   },
   // {
   //   title: "Alumni",
@@ -234,7 +233,6 @@ export const mainNavLinks = [
   {
     title: "Admissions and Aid ",
     submenu: [
-   
       {
         title: "Apply Now",
         path: "/admissions/howtoapply",
@@ -314,7 +312,7 @@ export const mainNavLinks = [
       },
       {
         title: "I.T. Facilities",
-        path: "/costaattlife/Itfacilities",
+        path: "/costaattlife/itfacilities",
       },
       {
         title: "Events",
